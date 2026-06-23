@@ -39,8 +39,3 @@ multimodal_modality_gate = true  # 비전 미지원 모델은 추정 대신 "미
 display = "zscore"
 zscore_center = 50
 zscore_scale = 15
-
-[artifact]
-# 재발행 대상 Artifact URL — 비우면 새로 생성됨. 루틴이 이 URL로 덮어씀.
-url = "https://claude.ai/code/artifact/093518ef-b3d0-4a2b-a25e-486727d51f79"
-favicon = "📡"
