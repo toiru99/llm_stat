@@ -1,0 +1,13 @@
+{
+  "name": "llm-stat",
+  "private": true,
+  "version": "0.1.0",
+  "description": "AA 리더보드 기반 LLM 능력 레이더 파이프라인",
+  "type": "module",
+  "scripts": {
+    "scrape": "node scripts/scrape_aa.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0"
+  }
+}
