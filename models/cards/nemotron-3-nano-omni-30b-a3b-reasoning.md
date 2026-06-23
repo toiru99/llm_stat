@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: 15.0
 price_blended_usd_1m: 0.1
-output_speed_tps: 275.0
+output_speed_tps: 279.0
 context_window: 256000
 radar:
   knowledge: { s: 25.3, z: -1.17, r: 32.4, estimated: false }  # 전문 지식
@@ -33,7 +33,7 @@ NVIDIA · Open · 컨텍스트 256k · 종합지능 **15.0**
 - **약점**: 추론, 멀티모달
 
 ## 실용 지표
-`입력 $0.07 · 출력 $0.3 · 혼합 $0.1/1M · 275.0 t/s · TTFT 1.0s · 256k ctx` · 가성비 150.0
+`입력 $0.07 · 출력 $0.3 · 혼합 $0.1/1M · 279.0 t/s · TTFT 1.01s · 256k ctx` · 가성비 150.0
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: Google
 license: Open
 intelligence_index: 13.0
 price_blended_usd_1m: 0.12
-output_speed_tps: 135.0
+output_speed_tps: 136.0
 context_window: 262000
 radar:
   knowledge: { s: 28.1, z: -1.05, r: 34.3, estimated: false }  # 전문 지식
@@ -33,7 +33,7 @@ Google · Open · 컨텍스트 262k · 종합지능 **13.0**
 - **약점**: 전문 지식, 에이전트
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.3 · 혼합 $0.12/1M · 135.0 t/s · TTFT 2.58s · 262k ctx` · 가성비 108.3
+`입력 $0.1 · 출력 $0.3 · 혼합 $0.12/1M · 136.0 t/s · TTFT 2.58s · 262k ctx` · 가성비 108.3
 
 ## 레이더 8축 (평균=50 기준선)
 

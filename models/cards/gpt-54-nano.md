@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 30.0
 price_blended_usd_1m: 0.18
-output_speed_tps: 162.0
+output_speed_tps: 163.0
 context_window: 400000
 radar:
   knowledge: { s: 42.8, z: -0.38, r: 44.2, estimated: false }  # 전문 지식
@@ -33,7 +33,7 @@ OpenAI · Proprietary · 컨텍스트 400k · 종합지능 **30.0**
 - **약점**: 전문 지식, 멀티모달
 
 ## 실용 지표
-`입력 $0.2 · 출력 $1.25 · 혼합 $0.18/1M · 162.0 t/s · TTFT 3.99s · 400k ctx` · 가성비 166.7
+`입력 $0.2 · 출력 $1.25 · 혼합 $0.18/1M · 163.0 t/s · TTFT 4.2s · 400k ctx` · 가성비 166.7
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 30.0
 price_blended_usd_1m: 0.77
-output_speed_tps: 94.0
+output_speed_tps: 101.0
 context_window: 200000
 radar:
   knowledge: { s: 34.6, z: -0.75, r: 38.7, estimated: false }  # 전문 지식
@@ -33,7 +33,7 @@ Anthropic · Proprietary · 컨텍스트 200k · 종합지능 **30.0**
 - **약점**: 추론, 멀티모달
 
 ## 실용 지표
-`입력 $1.0 · 출력 $5.0 · 혼합 $0.77/1M · 94.0 t/s · TTFT 18.73s · 200k ctx` · 가성비 39.0
+`입력 $1.0 · 출력 $5.0 · 혼합 $0.77/1M · 101.0 t/s · TTFT 18.73s · 200k ctx` · 가성비 39.0
 
 ## 레이더 8축 (평균=50 기준선)
 

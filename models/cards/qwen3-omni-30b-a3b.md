@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 10.0
 price_blended_usd_1m: 0.32
-output_speed_tps: 87.0
+output_speed_tps: 84.0
 context_window: 65500
 radar:
   knowledge: { s: 33.3, z: -0.81, r: 37.9, estimated: false }  # 전문 지식
@@ -33,7 +33,7 @@ Alibaba · Open · 컨텍스트 65k · 종합지능 **10.0**
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.25 · 출력 $0.97 · 혼합 $0.32/1M · 87.0 t/s · TTFT 2.05s · 65k ctx` · 가성비 31.2
+`입력 $0.25 · 출력 $0.97 · 혼합 $0.32/1M · 84.0 t/s · TTFT 2.08s · 65k ctx` · 가성비 31.2
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: Z AI
 license: Open
 intelligence_index: 51.0
 price_blended_usd_1m: 0.9
-output_speed_tps: 116.0
+output_speed_tps: 118.0
 context_window: 1000000
 radar:
   knowledge: { s: 58.9, z: 0.34, r: 55.1, estimated: false }  # 전문 지식
@@ -33,7 +33,7 @@ Z AI · Open · 컨텍스트 1M · 종합지능 **51.0**
 - **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
-`입력 $1.4 · 출력 $4.4 · 혼합 $0.9/1M · 116.0 t/s · TTFT 1.35s · 1M ctx` · 가성비 56.7
+`입력 $1.4 · 출력 $4.4 · 혼합 $0.9/1M · 118.0 t/s · TTFT 1.37s · 1M ctx` · 가성비 56.7
 
 ## 레이더 8축 (평균=50 기준선)
 
