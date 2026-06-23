@@ -1,0 +1,45 @@
+# llm_stat 설정 — 이 파일만 고치면 파이프라인 동작이 바뀝니다.
+# 파싱: Python 3.11+ 표준 라이브러리 tomllib (외부 의존성 없음).
+# 자주 바뀌는 값(제작사 필터·갱신주기·추정 방식 등)을 여기 모아 둠.
+
+[creators]
+# 카드로 만들 제작사 화이트리스트 — 리더보드 "Creator" 표기와 정확히 일치해야 함.
+# 비우면 [] → 전체 제작사 허용.
+whitelist = [
+  "Anthropic", "OpenAI", "Google", "Z AI", "Alibaba",
+  "MiniMax", "DeepSeek", "Kimi", "NVIDIA", "LG AI Research",
+]
+
+[cards]
+top_n = 0                     # 0 = 화이트리스트 통과 전체, N = 종합지능 상위 N만
+sort_by = "intelligence_index"
+output_dir = "models/cards"   # 자동 생성 카드 위치 (매주 이 폴더만 통째 재생성)
+dedupe_variants = true        # 동명 중복(추론 ON/OFF 등) 시 최고 종합지능 1개만 카드화. false면 전부(slug 자동 구분)
+
+[update]
+# 갱신 스케줄 — 스케줄러(cron/클라우드 routine)가 이 값을 읽어 실행 시점을 정함.
+enabled = true
+cadence = "weekly"            # "daily" | "weekly" | "monthly"
+day_of_week = "mon"           # cadence=weekly 일 때 (mon/tue/wed/thu/fri/sat/sun)
+day_of_month = 1              # cadence=monthly 일 때 (1~28)
+time = "06:00"               # 실행 시각 HH:MM (24시간제)
+timezone = "Asia/Seoul"       # 시각 기준 타임존
+cron = ""                     # 직접 cron 식 지정 시 위 설정보다 우선 (예: "0 6 * * 1")
+
+[imputation]
+# 빈 축 추정 — models/radar-spec.md 방법론과 동기화.
+empty_axis_method = "knn"     # "knn" | "none"
+knn_k = 5
+mark_estimated = true         # 추정값은 '추정'으로 표기(실측과 구분)
+multimodal_modality_gate = true  # 비전 미지원 모델은 추정 대신 "미지원"
+
+[normalization]
+# 평균 기준선(z-score) 표시: r = center + scale * z (clamp 0~100)
+display = "zscore"
+zscore_center = 50
+zscore_scale = 15
+
+[artifact]
+# 재발행 대상 Artifact URL — 비우면 새로 생성됨. 루틴이 이 URL로 덮어씀.
+url = "https://claude.ai/code/artifact/093518ef-b3d0-4a2b-a25e-486727d51f79"
+favicon = "📡"

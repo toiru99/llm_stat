@@ -1,0 +1,6065 @@
+<style>
+  :root{
+    --ground:#EAEEF2; --panel:#FFFFFF; --ink:#16222E; --muted:#5C6B77;
+    --line:#D2DAE1; --line-soft:#E4E9ee;
+    --signal:#1F6FEB; --signal-soft:rgba(31,111,235,.14);
+    --amber:#E8833A; --amber-soft:rgba(232,131,58,.16);
+    --violet:#7C5CFF;
+    --base:#9AA7B2;
+    --good:#1F8F6b; --warn:#C26A2E;
+    --mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    --series-0:#1F6FEB; --series-1:#E8833A; --series-2:#7C5CFF;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);
+    -webkit-font-smoothing:antialiased;line-height:1.5}
+  .wrap{max-width:1320px;margin:0 auto;padding:22px clamp(14px,3vw,30px) 60px}
+
+  /* header */
+  header.top{display:flex;justify-content:space-between;align-items:flex-end;
+    gap:20px;flex-wrap:wrap;border-bottom:1.5px solid var(--ink);padding-bottom:14px;margin-bottom:20px}
+  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--muted);margin:0 0 6px}
+  h1{font-size:clamp(22px,3.2vw,34px);font-weight:760;letter-spacing:-.02em;margin:0;line-height:1.05}
+  h1 .dim{color:var(--muted);font-weight:560}
+  .meta{font-family:var(--mono);font-size:11px;color:var(--muted);text-align:right;letter-spacing:.04em}
+  .meta a{color:var(--signal);text-decoration:none;border-bottom:1px solid transparent}
+  .meta a:hover{border-color:var(--signal)}
+
+  /* layout */
+  .grid{display:grid;grid-template-columns:248px minmax(0,1fr) 320px;gap:18px;align-items:start}
+  @media(max-width:1080px){.grid{grid-template-columns:220px minmax(0,1fr)}.panel{grid-column:1/-1}}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}.rail{order:2}}
+
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px}
+  .rail{position:sticky;top:14px;display:flex;flex-direction:column;gap:14px}
+  @media(max-width:760px){.rail{position:static}}
+
+  .sect-h{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--muted);padding:12px 14px 8px;border-bottom:1px solid var(--line-soft)}
+
+  /* search + filters */
+  .search{width:100%;border:none;border-bottom:1px solid var(--line);background:transparent;
+    padding:10px 14px;font-family:var(--mono);font-size:13px;color:var(--ink);outline:none}
+  .search::placeholder{color:var(--muted)}
+  .search:focus{border-color:var(--signal)}
+  .filters{padding:12px 14px;display:flex;flex-direction:column;gap:12px}
+  .filter-grp{display:flex;flex-direction:column;gap:6px}
+  .filter-grp > span{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+  .chips{display:flex;flex-wrap:wrap;gap:5px}
+  .chip{font-family:var(--mono);font-size:11px;padding:3px 8px;border:1px solid var(--line);
+    border-radius:20px;cursor:pointer;color:var(--muted);user-select:none}
+  .chip[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .rng{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;color:var(--muted)}
+  .rng input{flex:1}
+  input[type=range]{accent-color:var(--signal)}
+
+  /* model list */
+  .list{max-height:560px;overflow:auto}
+  .mrow{display:flex;align-items:center;gap:8px;padding:8px 14px;cursor:pointer;border-bottom:1px solid var(--line-soft);
+    border-left:3px solid transparent}
+  .mrow:hover{background:#F4F7FA}
+  .mrow[aria-selected="true"]{background:var(--signal-soft);border-left-color:var(--signal)}
+  .mrow.cmp{border-left-style:dashed}
+  .mrow .nm{flex:1;min-width:0;font-size:12.5px;font-weight:560;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .mrow .ix{font-family:var(--mono);font-size:12px;color:var(--muted)}
+  .mrow .dot{width:8px;height:8px;border-radius:2px;flex:none}
+  .listcount{font-family:var(--mono);font-size:10px;color:var(--muted);padding:7px 14px;border-top:1px solid var(--line-soft)}
+
+  /* stage */
+  .stage{display:flex;flex-direction:column;gap:14px;min-width:0}
+  .tabs{display:flex;gap:2px;padding:8px 8px 0}
+  .tab{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+    padding:8px 14px;border:1px solid var(--line);border-bottom:none;border-radius:8px 8px 0 0;
+    background:#F1F4F7;color:var(--muted);cursor:pointer;margin-bottom:-1px}
+  .tab[aria-selected="true"]{background:var(--panel);color:var(--ink);border-color:var(--line);font-weight:600}
+  .view{padding:8px 8px 16px}
+  .view-wrap{position:relative}
+  svg{display:block;width:100%;height:auto}
+  text{font-family:var(--mono)}
+
+  .legend{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;font-family:var(--mono);font-size:11px;padding:4px 10px 10px}
+  .legend .it{display:flex;align-items:center;gap:6px;color:var(--ink)}
+  .legend .sw{width:12px;height:3px;border-radius:2px}
+  .hint{font-family:var(--mono);font-size:10.5px;color:var(--muted);text-align:center;padding:0 10px 6px}
+
+  /* right panel */
+  .panel{display:flex;flex-direction:column;gap:14px;position:sticky;top:14px}
+  @media(max-width:1080px){.panel{position:static}}
+  .ph{padding:14px}
+  .ph .creator{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .ph h2{margin:3px 0 0;font-size:19px;font-weight:740;letter-spacing:-.01em}
+  .badges{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-soft);
+    border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);margin-top:12px}
+  .badge{background:var(--panel);padding:9px 14px}
+  .badge .k{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .badge .v{font-family:var(--mono);font-size:15px;font-weight:600;margin-top:1px}
+  .badge .v small{font-size:10px;color:var(--muted);font-weight:400}
+
+  .praise{padding:12px 14px}
+  .praise h3{font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;margin:0 0 8px;
+    display:flex;align-items:center;gap:7px}
+  .praise h3.s::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--good)}
+  .praise h3.w{margin-top:14px}
+  .praise h3.w::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--warn)}
+  .praise ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px}
+  .praise li{display:grid;grid-template-columns:auto 1fr;gap:9px;align-items:baseline}
+  .praise li .ax{font-family:var(--mono);font-size:11px;font-weight:600;white-space:nowrap}
+  .praise li .ax .z{color:var(--muted);font-weight:400}
+  .praise li .ds{font-size:12.5px;color:#33414d;line-height:1.45}
+  .praise .na{color:var(--muted);font-size:12px;font-family:var(--mono)}
+  .empty{padding:30px 16px;text-align:center;color:var(--muted);font-family:var(--mono);font-size:12px}
+
+  .foot{margin-top:26px;font-family:var(--mono);font-size:10.5px;color:var(--muted);
+    border-top:1px solid var(--line);padding-top:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <p class="eyebrow">Alan · LLM capability instrument</p>
+      <h1>LLM 능력 레이더 <span class="dim">— 평균 대비 강·약점</span></h1>
+    </div>
+    <div class="meta" id="meta"></div>
+  </header>
+
+  <div class="grid">
+    <!-- LEFT RAIL -->
+    <aside class="rail">
+      <div class="card">
+        <input class="search" id="search" placeholder="모델 검색…" autocomplete="off">
+        <div class="filters" id="filters"></div>
+      </div>
+      <div class="card">
+        <div class="sect-h">모델 <span id="cmpnote" style="text-transform:none;letter-spacing:0"></span></div>
+        <div class="list" id="list"></div>
+        <div class="listcount" id="listcount"></div>
+      </div>
+    </aside>
+
+    <!-- STAGE -->
+    <section class="stage card">
+      <div class="tabs">
+        <button class="tab" data-view="radar" aria-selected="true">레이더</button>
+        <button class="tab" data-view="scatter" aria-selected="false">가성비</button>
+      </div>
+      <div class="view">
+        <div class="view-wrap" id="viewwrap"></div>
+        <div class="legend" id="legend"></div>
+        <div class="hint" id="hint"></div>
+      </div>
+    </section>
+
+    <!-- RIGHT PANEL -->
+    <aside class="panel card" id="panel"></aside>
+  </div>
+
+  <div class="foot">
+    <span>출처: <a href="https://artificialanalysis.ai/leaderboards/models" target="_blank" rel="noopener" style="color:var(--signal)">artificialanalysis.ai</a> · 8축 = 평균 50 기준선(z-score) · 추정/미측정 구분 표기</span>
+    <span id="footdate"></span>
+  </div>
+</div>
+
+<script>
+const PAYLOAD = {
+  "scraped_at": "2026-06-23",
+  "axes": [
+    "knowledge",
+    "reasoning",
+    "coding",
+    "agentic",
+    "trust",
+    "multimodal",
+    "long_context",
+    "instruction"
+  ],
+  "labels": {
+    "knowledge": "전문 지식",
+    "reasoning": "추론",
+    "coding": "코딩",
+    "agentic": "에이전트",
+    "trust": "신뢰성",
+    "multimodal": "멀티모달",
+    "long_context": "긴문맥",
+    "instruction": "지시 따르기"
+  },
+  "models": [
+    {
+      "slug": "claude-fable-5-with-fallback",
+      "name": "Claude Fable 5 (with fallback)",
+      "creator": "Anthropic",
+      "license": "Proprietary",
+      "intel": 60.0,
+      "price": 7.7,
+      "price_in": 10.0,
+      "price_out": 50.0,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
+      "ctx": 1000000,
+      "value": 7.8,
+      "radar": {
+        "knowledge": {
+          "r": 82.6,
+          "z": 2.17,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 87.4,
+          "z": 2.49,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 76.3,
+          "z": 1.75,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 76.2,
+          "z": 1.75,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 59.2,
+          "z": 0.62,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 62.9,
+          "z": 0.86,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 53.0,
+          "z": 0.2,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "claude-opus-48-max",
+      "name": "Claude Opus 4.8 (max)",
+      "creator": "Anthropic",
+      "license": "Proprietary",
+      "intel": 56.0,
+      "price": 3.85,
+      "price_in": 5.0,
+      "price_out": 25.0,
+      "ttft": 32.16,
+      "total_resp": 39.87,
+      "speed": 65.0,
+      "ctx": 1000000,
+      "value": 14.5,
+      "radar": {
+        "knowledge": {
+          "r": 71.5,
+          "z": 1.44,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 77.8,
+          "z": 1.86,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 69.5,
+          "z": 1.3,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 72.8,
+          "z": 1.52,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 71.8,
+          "z": 1.45,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 61.4,
+          "z": 0.76,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 52.2,
+          "z": 0.14,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gpt-55-xhigh",
+      "name": "GPT-5.5 (xhigh)",
+      "creator": "OpenAI",
+      "license": "Proprietary",
+      "intel": 55.0,
+      "price": 4.35,
+      "price_in": 5.0,
+      "price_out": 30.0,
+      "ttft": 121.48,
+      "total_resp": 128.88,
+      "speed": 68.0,
+      "ctx": 922000,
+      "value": 12.6,
+      "radar": {
+        "knowledge": {
+          "r": 78.1,
+          "z": 1.87,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 82.1,
+          "z": 2.14,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 72.7,
+          "z": 1.51,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 73.4,
+          "z": 1.56,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 38.8,
+          "z": -0.75,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 63.8,
+          "z": 0.92,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 65.8,
+          "z": 1.05,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 64.5,
+          "z": 0.97,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "claude-opus-47-max",
+      "name": "Claude Opus 4.7 (max)",
+      "creator": "Anthropic",
+      "license": "Proprietary",
+      "intel": 54.0,
+      "price": 3.85,
+      "price_in": 5.0,
+      "price_out": 25.0,
+      "ttft": 15.97,
+      "total_resp": 26.01,
+      "speed": 50.0,
+      "ctx": 1000000,
+      "value": 14.0,
+      "radar": {
+        "knowledge": {
+          "r": 69.3,
+          "z": 1.29,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 68.0,
+          "z": 1.2,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 68.9,
+          "z": 1.26,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 71.7,
+          "z": 1.45,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 71.8,
+          "z": 1.45,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 62.5,
+          "z": 0.83,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 62.9,
+          "z": 0.86,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 49.5,
+          "z": -0.03,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gpt-55-high",
+      "name": "GPT-5.5 (high)",
+      "creator": "OpenAI",
+      "license": "Proprietary",
+      "intel": 53.0,
+      "price": 4.35,
+      "price_in": 5.0,
+      "price_out": 30.0,
+      "ttft": 30.15,
+      "total_resp": 37.83,
+      "speed": 65.0,
+      "ctx": 922000,
+      "value": 12.2,
+      "radar": {
+        "knowledge": {
+          "r": 77.0,
+          "z": 1.8,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 79.8,
+          "z": 1.99,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 72.4,
+          "z": 1.49,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 72.3,
+          "z": 1.48,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 38.8,
+          "z": -0.75,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 65.1,
+          "z": 1.01,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 65.0,
+          "z": 1.0,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 61.0,
+          "z": 0.73,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "glm-52-max",
+      "name": "GLM-5.2 (max)",
+      "creator": "Z AI",
+      "license": "Open",
+      "intel": 51.0,
+      "price": 0.9,
+      "price_in": 1.4,
+      "price_out": 4.4,
+      "ttft": 1.35,
+      "total_resp": 22.94,
+      "speed": 116.0,
+      "ctx": 1000000,
+      "value": 56.7,
+      "radar": {
+        "knowledge": {
+          "r": 55.1,
+          "z": 0.34,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 74.3,
+          "z": 1.62,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 65.0,
+          "z": 1.0,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 70.3,
+          "z": 1.35,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 77.1,
+          "z": 1.8,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 63.6,
+          "z": 0.91,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 61.9,
+          "z": 0.79,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gemini-35-flash",
+      "name": "Gemini 3.5 Flash",
+      "creator": "Google",
+      "license": "Proprietary",
+      "intel": 50.0,
+      "price": 1.31,
+      "price_in": 1.5,
+      "price_out": 9.0,
+      "ttft": 17.89,
+      "total_resp": 20.92,
+      "speed": 165.0,
+      "ctx": 1000000,
+      "value": 38.2,
+      "radar": {
+        "knowledge": {
+          "r": 73.7,
+          "z": 1.58,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 69.5,
+          "z": 1.3,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 63.7,
+          "z": 0.91,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 67.4,
+          "z": 1.16,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 55.3,
+          "z": 0.35,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 69.0,
+          "z": 1.27,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 62.1,
+          "z": 0.81,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 64.5,
+          "z": 0.97,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gpt-55-medium",
+      "name": "GPT-5.5 (medium)",
+      "creator": "OpenAI",
+      "license": "Proprietary",
+      "intel": 50.0,
+      "price": 4.35,
+      "price_in": 5.0,
+      "price_out": 30.0,
+      "ttft": 11.33,
+      "total_resp": 19.76,
+      "speed": 59.0,
+      "ctx": 922000,
+      "value": 11.5,
+      "radar": {
+        "knowledge": {
+          "r": 76.5,
+          "z": 1.77,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 74.3,
+          "z": 1.62,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 69.5,
+          "z": 1.3,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 68.7,
+          "z": 1.24,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 38.8,
+          "z": -0.75,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 65.1,
+          "z": 1.01,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 64.3,
+          "z": 0.95,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 60.1,
+          "z": 0.67,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "claude-sonnet-46-max",
+      "name": "Claude Sonnet 4.6 (max)",
+      "creator": "Anthropic",
+      "license": "Proprietary",
+      "intel": 47.0,
+      "price": 2.31,
+      "price_in": 3.0,
+      "price_out": 15.0,
+      "ttft": 100.96,
+      "total_resp": 110.49,
+      "speed": 52.0,
+      "ctx": 1000000,
+      "value": 20.3,
+      "radar": {
+        "knowledge": {
+          "r": 62.3,
+          "z": 0.82,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 55.5,
+          "z": 0.37,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 63.5,
+          "z": 0.9,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 66.0,
+          "z": 1.06,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 65.2,
+          "z": 1.01,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 54.7,
+          "z": 0.31,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 63.6,
+          "z": 0.91,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 47.7,
+          "z": -0.15,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gemini-31-pro-preview",
+      "name": "Gemini 3.1 Pro Preview",
+      "creator": "Google",
+      "license": "Proprietary",
+      "intel": 46.0,
+      "price": 1.74,
+      "price_in": 2.0,
+      "price_out": 12.0,
+      "ttft": 25.05,
+      "total_resp": 28.84,
+      "speed": 132.0,
+      "ctx": 1000000,
+      "value": 26.4,
+      "radar": {
+        "knowledge": {
+          "r": 77.0,
+          "z": 1.8,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 75.7,
+          "z": 1.71,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 72.5,
+          "z": 1.5,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 57.6,
+          "z": 0.51,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 62.5,
+          "z": 0.84,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 66.4,
+          "z": 1.1,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 65.0,
+          "z": 1.0,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 65.4,
+          "z": 1.03,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "qwen37-max",
+      "name": "Qwen3.7 Max",
+      "creator": "Alibaba",
+      "license": "Proprietary",
+      "intel": 46.0,
+      "price": 1.43,
+      "price_in": 2.5,
+      "price_out": 7.5,
+      "ttft": 2.54,
+      "total_resp": 17.22,
+      "speed": 198.0,
+      "ctx": 1000000,
+      "value": 32.2,
+      "radar": {
+        "knowledge": {
+          "r": 58.5,
+          "z": 0.57,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 68.2,
+          "z": 1.21,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 64.2,
+          "z": 0.95,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 60.3,
+          "z": 0.69,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 80.4,
+          "z": 2.02,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 62.1,
+          "z": 0.81,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 68.9,
+          "z": 1.26,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gemini-35-flash-medium",
+      "name": "Gemini 3.5 Flash (medium)",
+      "creator": "Google",
+      "license": "Proprietary",
+      "intel": 45.0,
+      "price": 1.31,
+      "price_in": 1.5,
+      "price_out": 9.0,
+      "ttft": 17.6,
+      "total_resp": 20.27,
+      "speed": 187.0,
+      "ctx": 1000000,
+      "value": 34.4,
+      "radar": {
+        "knowledge": {
+          "r": 72.8,
+          "z": 1.52,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 67.5,
+          "z": 1.17,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 63.0,
+          "z": 0.87,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 66.4,
+          "z": 1.09,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 55.9,
+          "z": 0.4,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 69.0,
+          "z": 1.27,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 63.6,
+          "z": 0.91,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 63.6,
+          "z": 0.91,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gpt-53-codex-xhigh",
+      "name": "GPT-5.3 Codex (xhigh)",
+      "creator": "OpenAI",
+      "license": "Proprietary",
+      "intel": 44.0,
+      "price": 1.87,
+      "price_in": 1.75,
+      "price_out": 14.0,
+      "ttft": 90.69,
+      "total_resp": 96.18,
+      "speed": 91.0,
+      "ctx": 400000,
+      "value": 23.5,
+      "radar": {
+        "knowledge": {
+          "r": 73.5,
+          "z": 1.56,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 72.1,
+          "z": 1.47,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 67.8,
+          "z": 1.19,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 70.0,
+          "z": 1.33,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 38.1,
+          "z": -0.79,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 61.2,
+          "z": 0.75,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 65.8,
+          "z": 1.05,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 63.6,
+          "z": 0.91,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "deepseek-v4-pro-max",
+      "name": "DeepSeek V4 Pro (Max)",
+      "creator": "DeepSeek",
+      "license": "Open",
+      "intel": 44.0,
+      "price": 0.18,
+      "price_in": 0.43,
+      "price_out": 0.87,
+      "ttft": 1.73,
+      "total_resp": 64.07,
+      "speed": 78.0,
+      "ctx": 1000000,
+      "value": 244.4,
+      "radar": {
+        "knowledge": {
+          "r": 66.0,
+          "z": 1.07,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 66.4,
+          "z": 1.09,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 63.3,
+          "z": 0.88,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 63.1,
+          "z": 0.88,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 33.5,
+          "z": -1.1,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 60.0,
+          "z": 0.66,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 64.5,
+          "z": 0.97,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "minimax-m3",
+      "name": "MiniMax-M3",
+      "creator": "MiniMax",
+      "license": "Open",
+      "intel": 44.0,
+      "price": 0.22,
+      "price_in": 0.3,
+      "price_out": 1.2,
+      "ttft": 3.57,
+      "total_resp": 33.38,
+      "speed": 84.0,
+      "ctx": 1000000,
+      "value": 200.0,
+      "radar": {
+        "knowledge": {
+          "r": 48.5,
+          "z": -0.1,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 61.2,
+          "z": 0.74,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 58.3,
+          "z": 0.55,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 57.0,
+          "z": 0.46,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 85.0,
+          "z": 2.33,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 65.8,
+          "z": 1.05,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 70.7,
+          "z": 1.38,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "kimi-k26",
+      "name": "Kimi K2.6",
+      "creator": "Kimi",
+      "license": "Open",
+      "intel": 43.0,
+      "price": 0.7,
+      "price_in": 0.95,
+      "price_out": 4.0,
+      "ttft": 2.76,
+      "total_resp": 70.35,
+      "speed": 73.0,
+      "ctx": 256000,
+      "value": 61.4,
+      "radar": {
+        "knowledge": {
+          "r": 59.8,
+          "z": 0.65,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 63.2,
+          "z": 0.88,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 64.7,
+          "z": 0.98,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 59.2,
+          "z": 0.62,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 69.8,
+          "z": 1.32,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 62.5,
+          "z": 0.83,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 62.9,
+          "z": 0.86,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 64.5,
+          "z": 0.97,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "claude-opus-47-non-reasoning-high",
+      "name": "Claude Opus 4.7 (Non-reasoning, high)",
+      "creator": "Anthropic",
+      "license": "Proprietary",
+      "intel": 43.0,
+      "price": 3.85,
+      "price_in": 5.0,
+      "price_out": 25.0,
+      "ttft": 1.51,
+      "total_resp": 12.99,
+      "speed": 44.0,
+      "ctx": 1000000,
+      "value": 11.2,
+      "radar": {
+        "knowledge": {
+          "r": 65.4,
+          "z": 1.02,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 57.8,
+          "z": 0.52,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 66.3,
+          "z": 1.09,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 67.3,
+          "z": 1.15,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 61.2,
+          "z": 0.75,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 58.6,
+          "z": 0.57,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 60.7,
+          "z": 0.71,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 36.3,
+          "z": -0.91,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gpt-55-low",
+      "name": "GPT-5.5 (low)",
+      "creator": "OpenAI",
+      "license": "Proprietary",
+      "intel": 43.0,
+      "price": 4.35,
+      "price_in": 5.0,
+      "price_out": 30.0,
+      "ttft": 1.9,
+      "total_resp": 10.44,
+      "speed": 59.0,
+      "ctx": 922000,
+      "value": 9.9,
+      "radar": {
+        "knowledge": {
+          "r": 72.5,
+          "z": 1.5,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 60.9,
+          "z": 0.73,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 66.7,
+          "z": 1.12,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 61.0,
+          "z": 0.73,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 38.8,
+          "z": -0.75,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 62.5,
+          "z": 0.83,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 64.3,
+          "z": 0.95,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 53.9,
+          "z": 0.26,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "kimi-k27-code",
+      "name": "Kimi K2.7 Code",
+      "creator": "Kimi",
+      "license": "Open",
+      "intel": 42.0,
+      "price": 0.7,
+      "price_in": 0.95,
+      "price_out": 4.0,
+      "ttft": 2.29,
+      "total_resp": 54.68,
+      "speed": 52.0,
+      "ctx": 256000,
+      "value": 60.0,
+      "radar": {
+        "knowledge": {
+          "r": 62.9,
+          "z": 0.86,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 63.0,
+          "z": 0.87,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 60.8,
+          "z": 0.72,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 58.4,
+          "z": 0.56,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 42.8,
+          "z": -0.48,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 60.0,
+          "z": 0.66,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 53.0,
+          "z": 0.2,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "deepseek-v4-pro-high",
+      "name": "DeepSeek V4 Pro (High)",
+      "creator": "DeepSeek",
+      "license": "Open",
+      "intel": 41.0,
+      "price": 0.18,
+      "price_in": 0.43,
+      "price_out": 0.87,
+      "ttft": 1.73,
+      "total_resp": 29.47,
+      "speed": 90.0,
+      "ctx": 1000000,
+      "value": 227.8,
+      "radar": {
+        "knowledge": {
+          "r": 65.3,
+          "z": 1.02,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 63.8,
+          "z": 0.92,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 59.0,
+          "z": 0.6,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 67.2,
+          "z": 1.15,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 36.8,
+          "z": -0.88,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 59.2,
+          "z": 0.62,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 60.1,
+          "z": 0.67,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "qwen36-plus",
+      "name": "Qwen3.6 Plus",
+      "creator": "Alibaba",
+      "license": "Proprietary",
+      "intel": 40.0,
+      "price": 0.43,
+      "price_in": 0.5,
+      "price_out": 3.0,
+      "ttft": 2.58,
+      "total_resp": 117.66,
+      "speed": 53.0,
+      "ctx": 1000000,
+      "value": 93.0,
+      "radar": {
+        "knowledge": {
+          "r": 52.3,
+          "z": 0.16,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 54.0,
+          "z": 0.27,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 56.1,
+          "z": 0.41,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 57.7,
+          "z": 0.52,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 74.4,
+          "z": 1.63,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 61.2,
+          "z": 0.75,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 62.9,
+          "z": 0.86,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 63.6,
+          "z": 0.91,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "deepseek-v4-flash-max",
+      "name": "DeepSeek V4 Flash (Max)",
+      "creator": "DeepSeek",
+      "license": "Open",
+      "intel": 40.0,
+      "price": 0.06,
+      "price_in": 0.14,
+      "price_out": 0.28,
+      "ttft": 1.42,
+      "total_resp": 62.09,
+      "speed": 101.0,
+      "ctx": 1000000,
+      "value": 666.7,
+      "radar": {
+        "knowledge": {
+          "r": 61.2,
+          "z": 0.74,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 60.0,
+          "z": 0.67,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 56.2,
+          "z": 0.42,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 59.7,
+          "z": 0.65,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 32.2,
+          "z": -1.19,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 57.8,
+          "z": 0.52,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 67.2,
+          "z": 1.14,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "glm-51",
+      "name": "GLM-5.1",
+      "creator": "Z AI",
+      "license": "Open",
+      "intel": 40.0,
+      "price": 0.9,
+      "price_in": 1.4,
+      "price_out": 4.4,
+      "ttft": 1.54,
+      "total_resp": 44.29,
+      "speed": 100.0,
+      "ctx": 200000,
+      "value": 44.4,
+      "radar": {
+        "knowledge": {
+          "r": 51.3,
+          "z": 0.09,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 56.1,
+          "z": 0.41,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 57.9,
+          "z": 0.53,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 58.9,
+          "z": 0.6,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 76.4,
+          "z": 1.76,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 57.1,
+          "z": 0.47,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 64.5,
+          "z": 0.97,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gpt-54-mini-xhigh",
+      "name": "GPT-5.4 mini (xhigh)",
+      "creator": "OpenAI",
+      "license": "Proprietary",
+      "intel": 40.0,
+      "price": 0.65,
+      "price_in": 0.75,
+      "price_out": 4.5,
+      "ttft": 11.56,
+      "total_resp": 14.23,
+      "speed": 187.0,
+      "ctx": 400000,
+      "value": 61.5,
+      "radar": {
+        "knowledge": {
+          "r": 59.6,
+          "z": 0.64,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 59.5,
+          "z": 0.63,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 65.3,
+          "z": 1.02,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 59.9,
+          "z": 0.66,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 36.2,
+          "z": -0.92,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 54.7,
+          "z": 0.31,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 62.1,
+          "z": 0.81,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 61.9,
+          "z": 0.79,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "qwen37-plus",
+      "name": "Qwen3.7 Plus",
+      "creator": "Alibaba",
+      "license": "Proprietary",
+      "intel": 39.0,
+      "price": 0.25,
+      "price_in": 0.4,
+      "price_out": 1.16,
+      "ttft": 2.74,
+      "total_resp": 54.82,
+      "speed": 48.0,
+      "ctx": 1000000,
+      "value": 156.0,
+      "radar": {
+        "knowledge": {
+          "r": 51.7,
+          "z": 0.11,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 62.3,
+          "z": 0.82,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 60.0,
+          "z": 0.67,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 54.3,
+          "z": 0.29,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 79.0,
+          "z": 1.94,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 63.8,
+          "z": 0.92,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 59.2,
+          "z": 0.62,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 66.3,
+          "z": 1.08,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "minimax-m27",
+      "name": "MiniMax-M2.7",
+      "creator": "MiniMax",
+      "license": "Open",
+      "intel": 38.0,
+      "price": 0.22,
+      "price_in": 0.3,
+      "price_out": 1.2,
+      "ttft": 2.32,
+      "total_resp": 67.73,
+      "speed": 45.0,
+      "ctx": 205000,
+      "value": 172.7,
+      "radar": {
+        "knowledge": {
+          "r": 52.6,
+          "z": 0.17,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 53.1,
+          "z": 0.21,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 58.7,
+          "z": 0.58,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 47.7,
+          "z": -0.15,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 73.1,
+          "z": 1.54,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 62.1,
+          "z": 0.81,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 64.5,
+          "z": 0.97,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "nemotron-3-ultra",
+      "name": "Nemotron 3 Ultra",
+      "creator": "NVIDIA",
+      "license": "Open",
+      "intel": 38.0,
+      "price": 0.58,
+      "price_in": 0.68,
+      "price_out": 2.67,
+      "ttft": 1.17,
+      "total_resp": 20.86,
+      "speed": 141.0,
+      "ctx": 262000,
+      "value": 65.5,
+      "radar": {
+        "knowledge": {
+          "r": 49.7,
+          "z": -0.02,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 54.2,
+          "z": 0.28,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 52.6,
+          "z": 0.18,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 52.6,
+          "z": 0.18,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 76.4,
+          "z": 1.76,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 60.7,
+          "z": 0.71,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 68.9,
+          "z": 1.26,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gpt-54-nano-xhigh",
+      "name": "GPT-5.4 nano (xhigh)",
+      "creator": "OpenAI",
+      "license": "Proprietary",
+      "intel": 38.0,
+      "price": 0.18,
+      "price_in": 0.2,
+      "price_out": 1.25,
+      "ttft": 7.48,
+      "total_resp": 10.38,
+      "speed": 172.0,
+      "ctx": 400000,
+      "value": 211.1,
+      "radar": {
+        "knowledge": {
+          "r": 50.5,
+          "z": 0.04,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 56.8,
+          "z": 0.46,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 59.7,
+          "z": 0.65,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 54.0,
+          "z": 0.27,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 46.7,
+          "z": -0.22,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 44.3,
+          "z": -0.38,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 60.0,
+          "z": 0.66,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 64.5,
+          "z": 0.97,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "glm-5-turbo",
+      "name": "GLM-5-Turbo",
+      "creator": "Z AI",
+      "license": "Proprietary",
+      "intel": 38.0,
+      "price": null,
+      "price_in": null,
+      "price_out": null,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
+      "ctx": 200000,
+      "value": null,
+      "radar": {
+        "knowledge": {
+          "r": 53.5,
+          "z": 0.23,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 50.4,
+          "z": 0.03,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 54.5,
+          "z": 0.3,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 64.4,
+          "z": 0.96,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 54.6,
+          "z": 0.31,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 56.3,
+          "z": 0.42,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 61.9,
+          "z": 0.79,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "qwen36-27b",
+      "name": "Qwen3.6 27B",
+      "creator": "Alibaba",
+      "license": "Open",
+      "intel": 37.0,
+      "price": 0.9,
+      "price_in": 0.6,
+      "price_out": 3.6,
+      "ttft": 3.68,
+      "total_resp": 105.3,
+      "speed": 61.0,
+      "ctx": 262000,
+      "value": 41.1,
+      "radar": {
+        "knowledge": {
+          "r": 46.0,
+          "z": -0.26,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 49.5,
+          "z": -0.03,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 52.3,
+          "z": 0.15,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 54.4,
+          "z": 0.29,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 63.9,
+          "z": 0.92,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 57.3,
+          "z": 0.49,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 62.1,
+          "z": 0.81,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 57.4,
+          "z": 0.5,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "deepseek-v4-flash-high",
+      "name": "DeepSeek V4 Flash (High)",
+      "creator": "DeepSeek",
+      "license": "Open",
+      "intel": 37.0,
+      "price": 0.08,
+      "price_in": 0.14,
+      "price_out": 0.28,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
+      "ctx": 1000000,
+      "value": 462.5,
+      "radar": {
+        "knowledge": {
+          "r": 59.2,
+          "z": 0.61,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 54.6,
+          "z": 0.31,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 55.1,
+          "z": 0.34,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 66.4,
+          "z": 1.09,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 36.2,
+          "z": -0.92,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 57.8,
+          "z": 0.52,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 61.9,
+          "z": 0.79,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "claude-sonnet-46-non-reasoning",
+      "name": "Claude Sonnet 4.6 (Non-reasoning)",
+      "creator": "Anthropic",
+      "license": "Proprietary",
+      "intel": 36.0,
+      "price": 2.31,
+      "price_in": 3.0,
+      "price_out": 15.0,
+      "ttft": 1.2,
+      "total_resp": 12.18,
+      "speed": 46.0,
+      "ctx": 1000000,
+      "value": 15.6,
+      "radar": {
+        "knowledge": {
+          "r": 55.8,
+          "z": 0.38,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 44.3,
+          "z": -0.38,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 61.1,
+          "z": 0.74,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 64.9,
+          "z": 0.99,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 52.0,
+          "z": 0.13,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 52.1,
+          "z": 0.14,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 54.2,
+          "z": 0.28,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 33.6,
+          "z": -1.09,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gpt-55-non-reasoning",
+      "name": "GPT-5.5 (Non-reasoning)",
+      "creator": "OpenAI",
+      "license": "Proprietary",
+      "intel": 35.0,
+      "price": 4.35,
+      "price_in": 5.0,
+      "price_out": 30.0,
+      "ttft": 0.89,
+      "total_resp": 9.11,
+      "speed": 61.0,
+      "ctx": 922000,
+      "value": 8.0,
+      "radar": {
+        "knowledge": {
+          "r": 59.8,
+          "z": 0.65,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 43.5,
+          "z": -0.44,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 62.1,
+          "z": 0.81,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 52.9,
+          "z": 0.19,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 35.5,
+          "z": -0.97,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 52.1,
+          "z": 0.14,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 52.7,
+          "z": 0.18,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 38.0,
+          "z": -0.8,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gemini-35-flash-minimal",
+      "name": "Gemini 3.5 Flash (minimal)",
+      "creator": "Google",
+      "license": "Proprietary",
+      "intel": 35.0,
+      "price": 1.31,
+      "price_in": 1.5,
+      "price_out": 9.0,
+      "ttft": 0.95,
+      "total_resp": 3.82,
+      "speed": 174.0,
+      "ctx": 1000000,
+      "value": 26.7,
+      "radar": {
+        "knowledge": {
+          "r": 61.9,
+          "z": 0.8,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 49.7,
+          "z": -0.02,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 62.5,
+          "z": 0.84,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 58.6,
+          "z": 0.57,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 47.4,
+          "z": -0.18,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 63.8,
+          "z": 0.92,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 50.5,
+          "z": 0.04,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 38.9,
+          "z": -0.74,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "qwen35-397b-a17b",
+      "name": "Qwen3.5 397B A17B",
+      "creator": "Alibaba",
+      "license": "Open",
+      "intel": 34.0,
+      "price": 0.9,
+      "price_in": 0.6,
+      "price_out": 3.6,
+      "ttft": 2.68,
+      "total_resp": 77.31,
+      "speed": 49.0,
+      "ctx": 262000,
+      "value": 37.8,
+      "radar": {
+        "knowledge": {
+          "r": 56.1,
+          "z": 0.4,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 54.0,
+          "z": 0.26,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 55.8,
+          "z": 0.39,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 51.6,
+          "z": 0.1,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 36.8,
+          "z": -0.88,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 59.9,
+          "z": 0.66,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 60.0,
+          "z": 0.66,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 67.2,
+          "z": 1.14,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "claude-sonnet-46-non-reasoning-low-effort",
+      "name": "Claude Sonnet 4.6 (Non-reasoning, Low Effort)",
+      "creator": "Anthropic",
+      "license": "Proprietary",
+      "intel": 34.0,
+      "price": 2.31,
+      "price_in": 3.0,
+      "price_out": 15.0,
+      "ttft": 1.21,
+      "total_resp": 12.11,
+      "speed": 46.0,
+      "ctx": 1000000,
+      "value": 14.7,
+      "radar": {
+        "knowledge": {
+          "r": 54.0,
+          "z": 0.27,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 43.4,
+          "z": -0.44,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 57.6,
+          "z": 0.5,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 62.7,
+          "z": 0.85,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 55.9,
+          "z": 0.4,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 49.5,
+          "z": -0.03,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 54.9,
+          "z": 0.33,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 34.5,
+          "z": -1.03,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "glm-5v-turbo",
+      "name": "GLM 5V Turbo",
+      "creator": "Z AI",
+      "license": "Proprietary",
+      "intel": 34.0,
+      "price": null,
+      "price_in": null,
+      "price_out": null,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
+      "ctx": 200000,
+      "value": null,
+      "radar": {
+        "knowledge": {
+          "r": 50.7,
+          "z": 0.05,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 46.0,
+          "z": -0.27,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 54.5,
+          "z": 0.3,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 64.4,
+          "z": 0.96,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 50.7,
+          "z": 0.04,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 54.7,
+          "z": 0.31,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 56.3,
+          "z": 0.42,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 51.3,
+          "z": 0.09,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gpt-55-instant-may-2026",
+      "name": "GPT-5.5 Instant (May 2026)",
+      "creator": "OpenAI",
+      "license": "Proprietary",
+      "intel": 34.0,
+      "price": 4.35,
+      "price_in": 5.0,
+      "price_out": 30.0,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
+      "ctx": 400000,
+      "value": 7.8,
+      "radar": {
+        "knowledge": {
+          "r": 62.9,
+          "z": 0.86,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 50.4,
+          "z": 0.03,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 61.9,
+          "z": 0.79,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 53.7,
+          "z": 0.25,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 53.3,
+          "z": 0.22,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 52.7,
+          "z": 0.18,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 60.1,
+          "z": 0.67,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "qwen36-35b-a3b",
+      "name": "Qwen3.6 35B A3B",
+      "creator": "Alibaba",
+      "license": "Open",
+      "intel": 32.0,
+      "price": 0.37,
+      "price_in": 0.25,
+      "price_out": 1.49,
+      "ttft": 2.33,
+      "total_resp": 35.54,
+      "speed": 178.0,
+      "ctx": 262000,
+      "value": 86.5,
+      "radar": {
+        "knowledge": {
+          "r": 45.6,
+          "z": -0.29,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 47.9,
+          "z": -0.14,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 49.4,
+          "z": -0.04,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 49.8,
+          "z": -0.01,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 62.5,
+          "z": 0.84,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 57.3,
+          "z": 0.49,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 58.5,
+          "z": 0.57,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 53.9,
+          "z": 0.26,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "qwen35-122b-a10b",
+      "name": "Qwen3.5 122B A10B",
+      "creator": "Alibaba",
+      "license": "Open",
+      "intel": 32.0,
+      "price": 0.68,
+      "price_in": 0.4,
+      "price_out": 3.2,
+      "ttft": 2.39,
+      "total_resp": 20.23,
+      "speed": 140.0,
+      "ctx": 262000,
+      "value": 47.1,
+      "radar": {
+        "knowledge": {
+          "r": 50.6,
+          "z": 0.04,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 50.6,
+          "z": 0.04,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 52.4,
+          "z": 0.16,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 50.8,
+          "z": 0.05,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 39.5,
+          "z": -0.7,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 57.3,
+          "z": 0.49,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 60.7,
+          "z": 0.71,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 64.5,
+          "z": 0.97,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "qwen35-omni-plus",
+      "name": "Qwen3.5 Omni Plus",
+      "creator": "Alibaba",
+      "license": "Proprietary",
+      "intel": 31.0,
+      "price": 0.84,
+      "price_in": 0.4,
+      "price_out": 4.8,
+      "ttft": 2.38,
+      "total_resp": 12.59,
+      "speed": 49.0,
+      "ctx": 256000,
+      "value": 36.9,
+      "radar": {
+        "knowledge": {
+          "r": 42.7,
+          "z": -0.49,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 45.6,
+          "z": -0.29,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 48.2,
+          "z": -0.12,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 55.5,
+          "z": 0.37,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 71.8,
+          "z": 1.45,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 52.1,
+          "z": 0.14,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 50.5,
+          "z": 0.04,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 42.5,
+          "z": -0.5,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "deepseek-v4-pro",
+      "name": "DeepSeek V4 Pro",
+      "creator": "DeepSeek",
+      "license": "Open",
+      "intel": 31.0,
+      "price": 0.18,
+      "price_in": 0.43,
+      "price_out": 0.87,
+      "ttft": 1.92,
+      "total_resp": 7.54,
+      "speed": 89.0,
+      "ctx": 1000000,
+      "value": 172.2,
+      "radar": {
+        "knowledge": {
+          "r": 48.5,
+          "z": -0.1,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 39.8,
+          "z": -0.68,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 54.1,
+          "z": 0.27,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 63.5,
+          "z": 0.9,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 37.5,
+          "z": -0.84,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 44.7,
+          "z": -0.35,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 38.0,
+          "z": -0.8,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "claude-45-haiku",
+      "name": "Claude 4.5 Haiku",
+      "creator": "Anthropic",
+      "license": "Proprietary",
+      "intel": 30.0,
+      "price": 0.77,
+      "price_in": 1.0,
+      "price_out": 5.0,
+      "ttft": 18.73,
+      "total_resp": 24.02,
+      "speed": 94.0,
+      "ctx": 200000,
+      "value": 39.0,
+      "radar": {
+        "knowledge": {
+          "r": 38.7,
+          "z": -0.75,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 38.5,
+          "z": -0.77,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 51.7,
+          "z": 0.11,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 42.6,
+          "z": -0.49,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 78.4,
+          "z": 1.89,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 36.5,
+          "z": -0.9,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 62.9,
+          "z": 0.86,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 45.1,
+          "z": -0.33,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gpt-54-mini-medium",
+      "name": "GPT-5.4 mini (medium)",
+      "creator": "OpenAI",
+      "license": "Proprietary",
+      "intel": 30.0,
+      "price": 0.65,
+      "price_in": 0.75,
+      "price_out": 4.5,
+      "ttft": 10.75,
+      "total_resp": 13.45,
+      "speed": 185.0,
+      "ctx": 400000,
+      "value": 46.2,
+      "radar": {
+        "knowledge": {
+          "r": 56.4,
+          "z": 0.43,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 48.2,
+          "z": -0.12,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 54.8,
+          "z": 0.32,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 46.3,
+          "z": -0.25,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 36.8,
+          "z": -0.88,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 52.1,
+          "z": 0.14,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 56.3,
+          "z": 0.42,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 54.8,
+          "z": 0.32,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "o3",
+      "name": "o3",
+      "creator": "OpenAI",
+      "license": "Proprietary",
+      "intel": 30.0,
+      "price": 1.55,
+      "price_in": 2.0,
+      "price_out": 8.0,
+      "ttft": 5.11,
+      "total_resp": 8.04,
+      "speed": 170.0,
+      "ctx": 200000,
+      "value": 19.4,
+      "radar": {
+        "knowledge": {
+          "r": 57.9,
+          "z": 0.53,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 48.3,
+          "z": -0.11,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 53.7,
+          "z": 0.25,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 60.9,
+          "z": 0.73,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 38.1,
+          "z": -0.79,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 50.8,
+          "z": 0.05,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 62.1,
+          "z": 0.81,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 60.1,
+          "z": 0.67,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gpt-54-nano",
+      "name": "GPT-5.4 nano",
+      "creator": "OpenAI",
+      "license": "Proprietary",
+      "intel": 30.0,
+      "price": 0.18,
+      "price_in": 0.2,
+      "price_out": 1.25,
+      "ttft": 3.99,
+      "total_resp": 7.07,
+      "speed": 162.0,
+      "ctx": 400000,
+      "value": 166.7,
+      "radar": {
+        "knowledge": {
+          "r": 44.2,
+          "z": -0.38,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 47.1,
+          "z": -0.19,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 50.2,
+          "z": 0.01,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 50.6,
+          "z": 0.04,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 62.5,
+          "z": 0.84,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 37.8,
+          "z": -0.82,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 53.4,
+          "z": 0.23,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 53.9,
+          "z": 0.26,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gemma-4-31b",
+      "name": "Gemma 4 31B",
+      "creator": "Google",
+      "license": "Open",
+      "intel": 29.0,
+      "price": 0.0,
+      "price_in": 0.0,
+      "price_out": 0.0,
+      "ttft": 1.13,
+      "total_resp": 64.43,
+      "speed": 35.0,
+      "ctx": 256000,
+      "value": null,
+      "radar": {
+        "knowledge": {
+          "r": 47.3,
+          "z": -0.18,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 50.6,
+          "z": 0.04,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 54.8,
+          "z": 0.32,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 49.2,
+          "z": -0.05,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 41.4,
+          "z": -0.57,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 54.7,
+          "z": 0.31,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 57.1,
+          "z": 0.47,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 64.5,
+          "z": 0.97,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "deepseek-v4-flash",
+      "name": "DeepSeek V4 Flash",
+      "creator": "DeepSeek",
+      "license": "Open",
+      "intel": 29.0,
+      "price": 0.06,
+      "price_in": 0.14,
+      "price_out": 0.28,
+      "ttft": 1.44,
+      "total_resp": 6.27,
+      "speed": 104.0,
+      "ctx": 1000000,
+      "value": 483.3,
+      "radar": {
+        "knowledge": {
+          "r": 44.9,
+          "z": -0.34,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 38.6,
+          "z": -0.76,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 49.8,
+          "z": -0.01,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 63.4,
+          "z": 0.89,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 32.9,
+          "z": -1.14,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 36.0,
+          "z": -0.93,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 38.9,
+          "z": -0.74,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gemini-25-pro",
+      "name": "Gemini 2.5 Pro",
+      "creator": "Google",
+      "license": "Proprietary",
+      "intel": 27.0,
+      "price": 1.34,
+      "price_in": 1.25,
+      "price_out": 10.0,
+      "ttft": 16.14,
+      "total_resp": 20.13,
+      "speed": 125.0,
+      "ctx": 1000000,
+      "value": 20.1,
+      "radar": {
+        "knowledge": {
+          "r": 59.0,
+          "z": 0.6,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 50.6,
+          "z": 0.04,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 51.7,
+          "z": 0.11,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 48.1,
+          "z": -0.13,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 38.1,
+          "z": -0.79,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 57.3,
+          "z": 0.49,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 60.0,
+          "z": 0.66,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 40.7,
+          "z": -0.62,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gemma-4-26b-a4b",
+      "name": "Gemma 4 26B A4B",
+      "creator": "Google",
+      "license": "Open",
+      "intel": 26.0,
+      "price": 0.14,
+      "price_in": 0.13,
+      "price_out": 0.4,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
+      "ctx": 256000,
+      "value": 185.7,
+      "radar": {
+        "knowledge": {
+          "r": 43.5,
+          "z": -0.43,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 45.5,
+          "z": -0.3,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 45.1,
+          "z": -0.33,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 37.8,
+          "z": -0.82,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 42.1,
+          "z": -0.53,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 49.5,
+          "z": -0.03,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 52.7,
+          "z": 0.18,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 61.0,
+          "z": 0.73,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "qwen35-9b",
+      "name": "Qwen3.5 9B",
+      "creator": "Alibaba",
+      "license": "Open",
+      "intel": 25.0,
+      "price": 0.11,
+      "price_in": 0.1,
+      "price_out": 0.15,
+      "ttft": 1.72,
+      "total_resp": 41.93,
+      "speed": 62.0,
+      "ctx": 262000,
+      "value": 227.3,
+      "radar": {
+        "knowledge": {
+          "r": 41.4,
+          "z": -0.57,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 43.8,
+          "z": -0.41,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 39.9,
+          "z": -0.67,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 45.7,
+          "z": -0.29,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 42.1,
+          "z": -0.53,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 49.5,
+          "z": -0.03,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 54.9,
+          "z": 0.33,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 56.6,
+          "z": 0.44,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "nvidia-nemotron-3-super",
+      "name": "NVIDIA Nemotron 3 Super",
+      "creator": "NVIDIA",
+      "license": "Open",
+      "intel": 25.0,
+      "price": 0.28,
+      "price_in": 0.3,
+      "price_out": 0.75,
+      "ttft": 1.42,
+      "total_resp": 13.29,
+      "speed": 211.0,
+      "ctx": 1000000,
+      "value": 89.3,
+      "radar": {
+        "knowledge": {
+          "r": 47.9,
+          "z": -0.14,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 48.6,
+          "z": -0.1,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 47.4,
+          "z": -0.17,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 33.4,
+          "z": -1.11,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 38.1,
+          "z": -0.79,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 55.6,
+          "z": 0.37,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 60.1,
+          "z": 0.67,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gemini-31-flash-lite",
+      "name": "Gemini 3.1 Flash-Lite",
+      "creator": "Google",
+      "license": "Proprietary",
+      "intel": 25.0,
+      "price": 0.22,
+      "price_in": 0.25,
+      "price_out": 1.5,
+      "ttft": 5.58,
+      "total_resp": 7.08,
+      "speed": 334.0,
+      "ctx": 1000000,
+      "value": 113.6,
+      "radar": {
+        "knowledge": {
+          "r": 55.5,
+          "z": 0.37,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 46.2,
+          "z": -0.25,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 50.0,
+          "z": -0.0,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 32.4,
+          "z": -1.17,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 41.4,
+          "z": -0.57,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 58.6,
+          "z": 0.57,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 59.2,
+          "z": 0.62,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 65.4,
+          "z": 1.03,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "k-exaone",
+      "name": "K-EXAONE",
+      "creator": "LG AI Research",
+      "license": "Open",
+      "intel": 25.0,
+      "price": null,
+      "price_in": null,
+      "price_out": null,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
+      "ctx": 256000,
+      "value": null,
+      "radar": {
+        "knowledge": {
+          "r": 40.9,
+          "z": -0.61,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 43.8,
+          "z": -0.42,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 45.3,
+          "z": -0.31,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 52.2,
+          "z": 0.15,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 36.8,
+          "z": -0.88,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 52.7,
+          "z": 0.18,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 54.8,
+          "z": 0.32,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gpt-oss-120b-high",
+      "name": "gpt-oss-120b (high)",
+      "creator": "OpenAI",
+      "license": "Open",
+      "intel": 24.0,
+      "price": 0.2,
+      "price_in": 0.15,
+      "price_out": 0.6,
+      "ttft": 0.92,
+      "total_resp": 8.2,
+      "speed": 343.0,
+      "ctx": 131000,
+      "value": 120.0,
+      "radar": {
+        "knowledge": {
+          "r": 46.0,
+          "z": -0.27,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 46.0,
+          "z": -0.27,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 47.5,
+          "z": -0.17,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 35.3,
+          "z": -0.98,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 35.5,
+          "z": -0.97,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 49.1,
+          "z": -0.06,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 58.3,
+          "z": 0.56,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "qwen35-35b-a3b",
+      "name": "Qwen3.5 35B A3B",
+      "creator": "Alibaba",
+      "license": "Open",
+      "intel": 23.0,
+      "price": 0.42,
+      "price_in": 0.25,
+      "price_out": 2.0,
+      "ttft": 2.22,
+      "total_resp": 4.82,
+      "speed": 192.0,
+      "ctx": 262000,
+      "value": 54.8,
+      "radar": {
+        "knowledge": {
+          "r": 41.6,
+          "z": -0.56,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 44.9,
+          "z": -0.34,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 36.2,
+          "z": -0.92,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 50.2,
+          "z": 0.01,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 34.8,
+          "z": -1.01,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 49.5,
+          "z": -0.03,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 52.0,
+          "z": 0.13,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 36.3,
+          "z": -0.91,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "exaone-45-33b",
+      "name": "EXAONE 4.5 33B",
+      "creator": "LG AI Research",
+      "license": "Open",
+      "intel": 23.0,
+      "price": null,
+      "price_in": null,
+      "price_out": null,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
+      "ctx": 262000,
+      "value": null,
+      "radar": {
+        "knowledge": {
+          "r": 40.8,
+          "z": -0.61,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 42.8,
+          "z": -0.48,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 38.6,
+          "z": -0.76,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 52.0,
+          "z": 0.13,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 42.1,
+          "z": -0.53,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 46.9,
+          "z": -0.21,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 47.6,
+          "z": -0.16,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 48.6,
+          "z": -0.09,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gemma-4-12b",
+      "name": "Gemma 4 12B",
+      "creator": "Google",
+      "license": "Open",
+      "intel": 22.0,
+      "price": 0.12,
+      "price_in": 0.1,
+      "price_out": 0.3,
+      "ttft": 2.45,
+      "total_resp": 22.5,
+      "speed": 125.0,
+      "ctx": 256000,
+      "value": 183.3,
+      "radar": {
+        "knowledge": {
+          "r": 40.7,
+          "z": -0.62,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 43.1,
+          "z": -0.46,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 45.1,
+          "z": -0.33,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 38.5,
+          "z": -0.77,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 42.1,
+          "z": -0.53,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 50.8,
+          "z": 0.05,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 52.0,
+          "z": 0.13,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 62.7,
+          "z": 0.85,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "qwen3-coder-next",
+      "name": "Qwen3 Coder Next",
+      "creator": "Alibaba",
+      "license": "Open",
+      "intel": 21.0,
+      "price": 0.43,
+      "price_in": 0.35,
+      "price_out": 1.2,
+      "ttft": 1.66,
+      "total_resp": 5.66,
+      "speed": 125.0,
+      "ctx": 256000,
+      "value": 48.8,
+      "radar": {
+        "knowledge": {
+          "r": 39.2,
+          "z": -0.72,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 40.1,
+          "z": -0.66,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 40.7,
+          "z": -0.62,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 51.7,
+          "z": 0.11,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 35.5,
+          "z": -0.97,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 41.1,
+          "z": -0.59,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 28.3,
+          "z": -1.44,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "nemotron-cascade-2-30b-a3b",
+      "name": "Nemotron Cascade 2 30B A3B",
+      "creator": "NVIDIA",
+      "license": "Open",
+      "intel": 21.0,
+      "price": null,
+      "price_in": null,
+      "price_out": null,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
+      "ctx": 1000000,
+      "value": null,
+      "radar": {
+        "knowledge": {
+          "r": 41.3,
+          "z": -0.58,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 42.3,
+          "z": -0.51,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 43.9,
+          "z": -0.41,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 45.0,
+          "z": -0.34,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 39.5,
+          "z": -0.7,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 36.7,
+          "z": -0.88,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 68.0,
+          "z": 1.2,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "qwen35-4b",
+      "name": "Qwen3.5 4B",
+      "creator": "Alibaba",
+      "license": "Open",
+      "intel": 20.0,
+      "price": 0.04,
+      "price_in": 0.03,
+      "price_out": 0.15,
+      "ttft": 0.7,
+      "total_resp": 56.38,
+      "speed": 45.0,
+      "ctx": 262000,
+      "value": 500.0,
+      "radar": {
+        "knowledge": {
+          "r": 37.5,
+          "z": -0.83,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 40.5,
+          "z": -0.64,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 29.2,
+          "z": -1.38,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 44.8,
+          "z": -0.35,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 42.8,
+          "z": -0.48,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 44.3,
+          "z": -0.38,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 52.7,
+          "z": 0.18,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 43.3,
+          "z": -0.44,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "qwen3-next-80b-a3b",
+      "name": "Qwen3 Next 80B A3B",
+      "creator": "Alibaba",
+      "license": "Open",
+      "intel": 20.0,
+      "price": 1.05,
+      "price_in": 0.5,
+      "price_out": 6.0,
+      "ttft": 2.11,
+      "total_resp": 16.15,
+      "speed": 178.0,
+      "ctx": 262000,
+      "value": 19.0,
+      "radar": {
+        "knowledge": {
+          "r": 40.9,
+          "z": -0.61,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 42.0,
+          "z": -0.53,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 43.0,
+          "z": -0.46,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 36.5,
+          "z": -0.9,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 41.4,
+          "z": -0.57,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 55.6,
+          "z": 0.37,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 51.3,
+          "z": 0.09,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "qwen35-omni-flash",
+      "name": "Qwen3.5 Omni Flash",
+      "creator": "Alibaba",
+      "license": "Proprietary",
+      "intel": 19.0,
+      "price": 0.17,
+      "price_in": 0.1,
+      "price_out": 0.8,
+      "ttft": 1.94,
+      "total_resp": 3.85,
+      "speed": 262.0,
+      "ctx": 256000,
+      "value": 111.8,
+      "radar": {
+        "knowledge": {
+          "r": 37.4,
+          "z": -0.84,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 39.1,
+          "z": -0.72,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 32.3,
+          "z": -1.18,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 48.4,
+          "z": -0.1,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 33.5,
+          "z": -1.1,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 44.3,
+          "z": -0.38,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 44.0,
+          "z": -0.4,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 31.0,
+          "z": -1.27,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "nvidia-nemotron-3-nano",
+      "name": "NVIDIA Nemotron 3 Nano",
+      "creator": "NVIDIA",
+      "license": "Open",
+      "intel": 18.0,
+      "price": 0.07,
+      "price_in": 0.06,
+      "price_out": 0.22,
+      "ttft": 1.95,
+      "total_resp": 26.29,
+      "speed": 103.0,
+      "ctx": 1000000,
+      "value": 257.1,
+      "radar": {
+        "knowledge": {
+          "r": 40.4,
+          "z": -0.64,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 41.8,
+          "z": -0.54,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 37.9,
+          "z": -0.8,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 38.1,
+          "z": -0.8,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 40.8,
+          "z": -0.62,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 36.7,
+          "z": -0.88,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 60.1,
+          "z": 0.67,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gpt-oss-120b-low",
+      "name": "gpt-oss-120b (low)",
+      "creator": "OpenAI",
+      "license": "Open",
+      "intel": 18.0,
+      "price": 0.2,
+      "price_in": 0.15,
+      "price_out": 0.6,
+      "ttft": 0.9,
+      "total_resp": 8.06,
+      "speed": 350.0,
+      "ctx": 131000,
+      "value": 90.0,
+      "radar": {
+        "knowledge": {
+          "r": 36.9,
+          "z": -0.87,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 36.3,
+          "z": -0.92,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 39.2,
+          "z": -0.72,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 35.0,
+          "z": -1.0,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 44.1,
+          "z": -0.4,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 44.0,
+          "z": -0.4,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 48.6,
+          "z": -0.09,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gpt-54-mini",
+      "name": "GPT-5.4 mini",
+      "creator": "OpenAI",
+      "license": "Proprietary",
+      "intel": 17.0,
+      "price": 0.65,
+      "price_in": 0.75,
+      "price_out": 4.5,
+      "ttft": 0.72,
+      "total_resp": 3.73,
+      "speed": 166.0,
+      "ctx": 400000,
+      "value": 26.2,
+      "radar": {
+        "knowledge": {
+          "r": 41.9,
+          "z": -0.54,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 35.0,
+          "z": -1.0,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 46.5,
+          "z": -0.23,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 34.9,
+          "z": -1.01,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 32.9,
+          "z": -1.14,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 37.8,
+          "z": -0.82,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 33.8,
+          "z": -1.08,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 31.9,
+          "z": -1.21,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gpt-oss-20b-high",
+      "name": "gpt-oss-20B (high)",
+      "creator": "OpenAI",
+      "license": "Open",
+      "intel": 15.0,
+      "price": 0.07,
+      "price_in": 0.05,
+      "price_out": 0.2,
+      "ttft": 0.91,
+      "total_resp": 12.16,
+      "speed": 222.0,
+      "ctx": 131000,
+      "value": 214.3,
+      "radar": {
+        "knowledge": {
+          "r": 38.4,
+          "z": -0.77,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 39.8,
+          "z": -0.68,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 39.8,
+          "z": -0.68,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 28.9,
+          "z": -1.41,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 33.5,
+          "z": -1.1,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 34.6,
+          "z": -1.03,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 54.8,
+          "z": 0.32,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "nemotron-3-nano-omni-30b-a3b-reasoning",
+      "name": "Nemotron 3 Nano Omni 30B A3B Reasoning",
+      "creator": "NVIDIA",
+      "license": "Open",
+      "intel": 15.0,
+      "price": 0.1,
+      "price_in": 0.07,
+      "price_out": 0.3,
+      "ttft": 1.0,
+      "total_resp": 10.09,
+      "speed": 275.0,
+      "ctx": 256000,
+      "value": 150.0,
+      "radar": {
+        "knowledge": {
+          "r": 32.4,
+          "z": -1.17,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 30.6,
+          "z": -1.29,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 34.4,
+          "z": -1.04,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 36.4,
+          "z": -0.9,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 40.8,
+          "z": -0.62,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 28.6,
+          "z": -1.42,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 38.2,
+          "z": -0.79,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 53.0,
+          "z": 0.2,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gpt-oss-20b-low",
+      "name": "gpt-oss-20B (low)",
+      "creator": "OpenAI",
+      "license": "Open",
+      "intel": 14.0,
+      "price": 0.07,
+      "price_in": 0.06,
+      "price_out": 0.2,
+      "ttft": 0.87,
+      "total_resp": 12.24,
+      "speed": 220.0,
+      "ctx": 131000,
+      "value": 200.0,
+      "radar": {
+        "knowledge": {
+          "r": 34.5,
+          "z": -1.04,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 34.6,
+          "z": -1.03,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 37.7,
+          "z": -0.82,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 36.5,
+          "z": -0.9,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 38.1,
+          "z": -0.79,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 34.6,
+          "z": -1.03,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 48.6,
+          "z": -0.09,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gemma-4-12b-non-reasoning",
+      "name": "Gemma 4 12B (Non-reasoning)",
+      "creator": "Google",
+      "license": "Open",
+      "intel": 13.0,
+      "price": 0.12,
+      "price_in": 0.1,
+      "price_out": 0.3,
+      "ttft": 2.58,
+      "total_resp": 6.28,
+      "speed": 135.0,
+      "ctx": 262000,
+      "value": 108.3,
+      "radar": {
+        "knowledge": {
+          "r": 34.3,
+          "z": -1.05,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 36.4,
+          "z": -0.9,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 36.9,
+          "z": -0.87,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 34.0,
+          "z": -1.07,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 47.4,
+          "z": -0.18,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 40.4,
+          "z": -0.64,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 34.6,
+          "z": -1.03,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 37.2,
+          "z": -0.86,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "llama-nemotron-super-49b-v15",
+      "name": "Llama Nemotron Super 49B v1.5",
+      "creator": "NVIDIA",
+      "license": "Open",
+      "intel": 12.0,
+      "price": 0.13,
+      "price_in": 0.1,
+      "price_out": 0.4,
+      "ttft": 1.25,
+      "total_resp": 50.66,
+      "speed": 51.0,
+      "ctx": 128000,
+      "value": 92.3,
+      "radar": {
+        "knowledge": {
+          "r": 39.6,
+          "z": -0.7,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 39.4,
+          "z": -0.7,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 38.4,
+          "z": -0.77,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 29.9,
+          "z": -1.34,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 45.4,
+          "z": -0.31,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 36.7,
+          "z": -0.88,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 30.1,
+          "z": -1.33,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gemma-4-e4b",
+      "name": "Gemma 4 E4B",
+      "creator": "Google",
+      "license": "Open",
+      "intel": 12.0,
+      "price": null,
+      "price_in": null,
+      "price_out": null,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
+      "ctx": 128000,
+      "value": null,
+      "radar": {
+        "knowledge": {
+          "r": 30.4,
+          "z": -1.31,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 34.0,
+          "z": -1.07,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 31.6,
+          "z": -1.23,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 29.2,
+          "z": -1.38,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 75.1,
+          "z": 1.67,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 26.0,
+          "z": -1.6,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 34.6,
+          "z": -1.03,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 36.3,
+          "z": -0.91,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "exaone-40-32b",
+      "name": "EXAONE 4.0 32B",
+      "creator": "LG AI Research",
+      "license": "Open",
+      "intel": 11.0,
+      "price": null,
+      "price_in": null,
+      "price_out": null,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
+      "ctx": 131000,
+      "value": null,
+      "radar": {
+        "knowledge": {
+          "r": 38.3,
+          "z": -0.78,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 41.0,
+          "z": -0.6,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 37.4,
+          "z": -0.84,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 26.1,
+          "z": -1.59,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 38.8,
+          "z": -0.75,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 22.2,
+          "z": -1.85,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 29.2,
+          "z": -1.38,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "qwen35-2b",
+      "name": "Qwen3.5 2B",
+      "creator": "Alibaba",
+      "license": "Open",
+      "intel": 10.0,
+      "price": 0.03,
+      "price_in": 0.02,
+      "price_out": 0.1,
+      "ttft": 0.7,
+      "total_resp": 61.86,
+      "speed": 41.0,
+      "ctx": 262000,
+      "value": 333.3,
+      "radar": {
+        "knowledge": {
+          "r": 25.0,
+          "z": -1.67,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 28.9,
+          "z": -1.4,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 15.1,
+          "z": -2.33,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 34.2,
+          "z": -1.05,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 59.2,
+          "z": 0.62,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 15.6,
+          "z": -2.29,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 29.5,
+          "z": -1.37,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 24.8,
+          "z": -1.68,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "qwen3-omni-30b-a3b",
+      "name": "Qwen3 Omni 30B A3B",
+      "creator": "Alibaba",
+      "license": "Open",
+      "intel": 10.0,
+      "price": 0.32,
+      "price_in": 0.25,
+      "price_out": 0.97,
+      "ttft": 2.05,
+      "total_resp": 30.93,
+      "speed": 87.0,
+      "ctx": 65500,
+      "value": 31.2,
+      "radar": {
+        "knowledge": {
+          "r": 37.9,
+          "z": -0.81,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 38.9,
+          "z": -0.74,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 35.2,
+          "z": -0.98,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 27.3,
+          "z": -1.51,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 36.8,
+          "z": -0.88,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 37.8,
+          "z": -0.82,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 12.1,
+          "z": -2.53,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 35.4,
+          "z": -0.97,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "llama-nemotron-ultra",
+      "name": "Llama Nemotron Ultra",
+      "creator": "NVIDIA",
+      "license": "Open",
+      "intel": 9.0,
+      "price": 0.72,
+      "price_in": 0.6,
+      "price_out": 1.8,
+      "ttft": 2.4,
+      "total_resp": 50.64,
+      "speed": 52.0,
+      "ctx": 128000,
+      "value": 12.5,
+      "radar": {
+        "knowledge": {
+          "r": 41.4,
+          "z": -0.57,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 39.3,
+          "z": -0.71,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 37.4,
+          "z": -0.84,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 23.4,
+          "z": -1.77,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 41.4,
+          "z": -0.57,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 17.1,
+          "z": -2.19,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 31.0,
+          "z": -1.27,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "nvidia-nemotron-nano-9b-v2",
+      "name": "NVIDIA Nemotron Nano 9B V2",
+      "creator": "NVIDIA",
+      "license": "Open",
+      "intel": 9.0,
+      "price": 0.05,
+      "price_in": 0.04,
+      "price_out": 0.16,
+      "ttft": 5.9,
+      "total_resp": 33.07,
+      "speed": 92.0,
+      "ctx": 131000,
+      "value": 180.0,
+      "radar": {
+        "knowledge": {
+          "r": 31.7,
+          "z": -1.22,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 33.4,
+          "z": -1.11,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 28.1,
+          "z": -1.46,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 26.7,
+          "z": -1.55,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 55.3,
+          "z": 0.35,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 27.3,
+          "z": -1.51,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 22.2,
+          "z": -1.86,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "nvidia-nemotron-nano-12b-v2-vl",
+      "name": "NVIDIA Nemotron Nano 12B v2 VL",
+      "creator": "NVIDIA",
+      "license": "Open",
+      "intel": 9.0,
+      "price": 0.24,
+      "price_in": 0.2,
+      "price_out": 0.6,
+      "ttft": 0.44,
+      "total_resp": 9.38,
+      "speed": 279.0,
+      "ctx": 128000,
+      "value": 37.5,
+      "radar": {
+        "knowledge": {
+          "r": 33.7,
+          "z": -1.09,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 33.4,
+          "z": -1.11,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 32.0,
+          "z": -1.2,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 27.8,
+          "z": -1.48,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 35.5,
+          "z": -0.97,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 28.6,
+          "z": -1.42,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 41.1,
+          "z": -0.59,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 25.7,
+          "z": -1.62,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "kimi-linear-48b-a3b-instruct",
+      "name": "Kimi Linear 48B A3B Instruct",
+      "creator": "Kimi",
+      "license": "Open",
+      "intel": 9.0,
+      "price": null,
+      "price_in": null,
+      "price_out": null,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
+      "ctx": 1000000,
+      "value": null,
+      "radar": {
+        "knowledge": {
+          "r": 30.4,
+          "z": -1.3,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 32.7,
+          "z": -1.15,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 29.7,
+          "z": -1.35,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 24.3,
+          "z": -1.71,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 57.9,
+          "z": 0.53,
+          "estimated": true,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 30.9,
+          "z": -1.27,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 22.2,
+          "z": -1.86,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gemma-4-e2b",
+      "name": "Gemma 4 E2B",
+      "creator": "Google",
+      "license": "Open",
+      "intel": 9.0,
+      "price": null,
+      "price_in": null,
+      "price_out": null,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
+      "ctx": 128000,
+      "value": null,
+      "radar": {
+        "knowledge": {
+          "r": 26.4,
+          "z": -1.57,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 29.5,
+          "z": -1.37,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 27.7,
+          "z": -1.49,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 26.9,
+          "z": -1.54,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 73.8,
+          "z": 1.58,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 18.2,
+          "z": -2.12,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 23.0,
+          "z": -1.8,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 31.0,
+          "z": -1.27,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "nvidia-nemotron-3-nano-4b",
+      "name": "NVIDIA Nemotron 3 Nano 4B",
+      "creator": "NVIDIA",
+      "license": "Open",
+      "intel": 9.0,
+      "price": null,
+      "price_in": null,
+      "price_out": null,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
+      "ctx": 262000,
+      "value": null,
+      "radar": {
+        "knowledge": {
+          "r": 29.2,
+          "z": -1.38,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 31.7,
+          "z": -1.22,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 25.5,
+          "z": -1.63,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 30.9,
+          "z": -1.28,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 36.8,
+          "z": -0.88,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 24.4,
+          "z": -1.71,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 48.6,
+          "z": -0.09,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "llama-31-nemotron-70b",
+      "name": "Llama 3.1 Nemotron 70B",
+      "creator": "NVIDIA",
+      "license": "Open",
+      "intel": 8.0,
+      "price": 1.2,
+      "price_in": 1.2,
+      "price_out": 1.2,
+      "ttft": 5.35,
+      "total_resp": 7.01,
+      "speed": 301.0,
+      "ctx": 128000,
+      "value": 6.7,
+      "radar": {
+        "knowledge": {
+          "r": 32.9,
+          "z": -1.14,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 30.3,
+          "z": -1.31,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 29.8,
+          "z": -1.34,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 28.4,
+          "z": -1.44,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 50.0,
+          "z": 0.0,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 17.1,
+          "z": -2.19,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 24.8,
+          "z": -1.68,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "qwen35-08b",
+      "name": "Qwen3.5 0.8B",
+      "creator": "Alibaba",
+      "license": "Open",
+      "intel": 5.0,
+      "price": 0.01,
+      "price_in": 0.01,
+      "price_out": 0.05,
+      "ttft": 0.73,
+      "total_resp": 56.21,
+      "speed": 45.0,
+      "ctx": 262000,
+      "value": 500.0,
+      "radar": {
+        "knowledge": {
+          "r": 15.4,
+          "z": -2.31,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 18.6,
+          "z": -2.1,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 11.6,
+          "z": -2.56,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 33.6,
+          "z": -1.1,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 71.1,
+          "z": 1.41,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 0,
+          "z": -3.77,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 15.7,
+          "z": -2.29,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 16.0,
+          "z": -2.27,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "exaone-40-12b",
+      "name": "Exaone 4.0 1.2B",
+      "creator": "LG AI Research",
+      "license": "Open",
+      "intel": 3.0,
+      "price": null,
+      "price_in": null,
+      "price_out": null,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
+      "ctx": 64000,
+      "value": null,
+      "radar": {
+        "knowledge": {
+          "r": 25.1,
+          "z": -1.66,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 29.6,
+          "z": -1.36,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 16.6,
+          "z": -2.23,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 25.2,
+          "z": -1.66,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 35.5,
+          "z": -0.97,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 12.1,
+          "z": -2.53,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 19.5,
+          "z": -2.03,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gemma-3-270m",
+      "name": "Gemma 3 270M",
+      "creator": "Google",
+      "license": "Open",
+      "intel": 2.0,
+      "price": null,
+      "price_in": null,
+      "price_out": null,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
+      "ctx": 32000,
+      "value": null,
+      "radar": {
+        "knowledge": {
+          "r": 18.2,
+          "z": -2.12,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 23.0,
+          "z": -1.8,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 11.6,
+          "z": -2.56,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 21.9,
+          "z": -1.88,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 74.4,
+          "z": 1.63,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 12.1,
+          "z": -2.53,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 8.1,
+          "z": -2.8,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gemini-3-deep-think",
+      "name": "Gemini 3 Deep Think",
+      "creator": "Google",
+      "license": "Proprietary",
+      "intel": null,
+      "price": null,
+      "price_in": null,
+      "price_out": null,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
+      "ctx": 128000,
+      "value": null,
+      "radar": {
+        "knowledge": {
+          "r": 71.4,
+          "z": 1.43,
+          "estimated": true,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 77.8,
+          "z": 1.85,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 70.3,
+          "z": 1.36,
+          "estimated": true,
+          "measured": true
+        },
+        "agentic": {
+          "r": 68.2,
+          "z": 1.22,
+          "estimated": true,
+          "measured": true
+        },
+        "trust": {
+          "r": 45.3,
+          "z": -0.32,
+          "estimated": true,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 64.6,
+          "z": 0.97,
+          "estimated": true,
+          "measured": true
+        },
+        "instruction": {
+          "r": 62.7,
+          "z": 0.85,
+          "estimated": true,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gpt-55-pro-xhigh",
+      "name": "GPT-5.5 Pro (xhigh)",
+      "creator": "OpenAI",
+      "license": "Proprietary",
+      "intel": null,
+      "price": null,
+      "price_in": null,
+      "price_out": null,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
+      "ctx": 922000,
+      "value": null,
+      "radar": {
+        "knowledge": {
+          "r": 76.1,
+          "z": 1.74,
+          "estimated": true,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 89.2,
+          "z": 2.61,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 72.2,
+          "z": 1.48,
+          "estimated": true,
+          "measured": true
+        },
+        "agentic": {
+          "r": 72.6,
+          "z": 1.51,
+          "estimated": true,
+          "measured": true
+        },
+        "trust": {
+          "r": 50.8,
+          "z": 0.05,
+          "estimated": true,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 64.5,
+          "z": 0.97,
+          "estimated": true,
+          "measured": true
+        },
+        "instruction": {
+          "r": 60.3,
+          "z": 0.68,
+          "estimated": true,
+          "measured": true
+        }
+      }
+    }
+  ]
+};
+const AX = PAYLOAD.axes, LAB = PAYLOAD.labels, MODELS = PAYLOAD.models;
+
+// 축별 강점/약점 의미 (벤치마크 문서 근거, 개조식)
+const BLURB = {
+  knowledge:{s:"AA-Omniscience 기준 비즈니스·법·STEM 등 여러 도메인 사실 지식이 넓음",w:"도메인 사실 지식의 폭이 평균 이하 — 전문 지식 답변은 검증 권장"},
+  reasoning:{s:"HLE·GPQA·CritPt 기준 다분야 고난도·연구급 추론에 강함",w:"고난도 추론이 평균 이하 — 복잡한 논리·과학 문제에 약할 수 있음"},
+  coding:{s:"SciCode·Terminal-Bench 기준 연구·실무 코드 작성·실행에 강함",w:"코드 생성·구현이 평균 이하"},
+  agentic:{s:"τ²·Terminal·GDPval 기준 도구 호출로 다단계 실무를 끝까지 수행",w:"도구 사용·에이전트 수행이 평균 이하"},
+  trust:{s:"Omniscience 비환각률 기준 환각이 적고 모르면 기권 — 사실성 신뢰 높음",w:"환각 위험이 평균 이상 — 사실 확인이 중요한 용도엔 주의"},
+  multimodal:{s:"MMMU-Pro 기준 이미지·도표·시각 자료 이해·추론에 강함",w:"시각 자료 이해가 평균 이하",na:"멀티모달 미측정 — 이미지 능력은 별도 확인 필요"},
+  long_context:{s:"AA-LCR 기준 ~10만 토큰 다문서를 통합 추론하는 데 강함",w:"긴 문맥 통합이 평균 이하"},
+  instruction:{s:"IFBench 기준 형식·제약 지시를 정확히 준수",w:"형식·제약 준수가 평균 이하 — 출력 포맷 통제에 주의"}
+};
+
+const $=s=>document.querySelector(s), el=(t,c)=>{const e=document.createElement(t);if(c)e.className=c;return e;};
+const fmtCtx=n=>!n?"—":n>=1e6?(n/1e6)+"M":Math.round(n/1e3)+"k";
+const SERIES=["--series-0","--series-1","--series-2"];
+
+let state={view:"radar",selected:[MODELS[0].slug],q:"",creators:new Set(),lic:new Set(),maxPrice:Infinity,minCtx:0};
+
+// ---------- filters ----------
+function buildFilters(){
+  const f=$("#filters");
+  const creators=[...new Set(MODELS.map(m=>m.creator))].sort();
+  const lics=[...new Set(MODELS.map(m=>m.license).filter(Boolean))];
+  const maxP=Math.ceil(Math.max(...MODELS.map(m=>m.price||0)));
+  f.innerHTML="";
+  const cg=el("div","filter-grp");cg.innerHTML="<span>제작사</span>";
+  const cc=el("div","chips");
+  creators.forEach(c=>{const b=el("span","chip");b.textContent=c;b.setAttribute("aria-pressed","false");
+    b.onclick=()=>{b.getAttribute("aria-pressed")==="true"?(state.creators.delete(c),b.setAttribute("aria-pressed","false")):(state.creators.add(c),b.setAttribute("aria-pressed","true"));render();};cc.appendChild(b);});
+  cg.appendChild(cc);f.appendChild(cg);
+  const lg=el("div","filter-grp");lg.innerHTML="<span>라이선스</span>";
+  const lc=el("div","chips");
+  lics.forEach(c=>{const b=el("span","chip");b.textContent=c==="Open"?"오픈":c==="Proprietary"?"독점":c;b.setAttribute("aria-pressed","false");
+    b.onclick=()=>{b.getAttribute("aria-pressed")==="true"?(state.lic.delete(c),b.setAttribute("aria-pressed","false")):(state.lic.add(c),b.setAttribute("aria-pressed","true"));render();};lc.appendChild(b);});
+  lg.appendChild(lc);f.appendChild(lg);
+  const pg=el("div","filter-grp");pg.innerHTML="<span>최대 가격 ($/1M)</span>";
+  const pr=el("div","rng");const pi=el("input");pi.type="range";pi.min=0;pi.max=maxP;pi.value=maxP;pi.step=0.5;
+  const pv=el("span");pv.textContent="≤$"+maxP;
+  pi.oninput=()=>{state.maxPrice=+pi.value>=maxP?Infinity:+pi.value;pv.textContent=state.maxPrice===Infinity?"전체":"≤$"+(+pi.value);render();};
+  pr.append(pi,pv);pg.appendChild(pr);f.appendChild(pg);
+}
+
+function filtered(){
+  return MODELS.filter(m=>{
+    if(state.q && !m.name.toLowerCase().includes(state.q)) return false;
+    if(state.creators.size && !state.creators.has(m.creator)) return false;
+    if(state.lic.size && !state.lic.has(m.license)) return false;
+    if(m.price!=null && m.price>state.maxPrice) return false;
+    return true;
+  });
+}
+
+// ---------- model list ----------
+function buildList(){
+  const list=$("#list"), rows=filtered();
+  list.innerHTML="";
+  rows.forEach(m=>{
+    const r=el("div","mrow");
+    const si=state.selected.indexOf(m.slug);
+    r.setAttribute("aria-selected", si>=0);
+    if(si>0)r.classList.add("cmp");
+    const dot=el("span","dot");dot.style.background= si>=0?`var(${SERIES[si]})`:"transparent";
+    const nm=el("span","nm");nm.textContent=m.name;
+    const ix=el("span","ix");ix.textContent=m.intel==null?"—":m.intel;
+    r.append(dot,nm,ix);
+    r.onclick=(e)=>toggleSelect(m.slug,e.metaKey||e.ctrlKey||e.shiftKey);
+    list.appendChild(r);
+  });
+  $("#listcount").textContent=rows.length+" / "+MODELS.length+" 모델";
+  $("#cmpnote").textContent = state.selected.length>1 ? `· 비교 ${state.selected.length}/3` : "· ⌘+클릭으로 비교";
+}
+function toggleSelect(slug,multi){
+  if(multi){
+    const i=state.selected.indexOf(slug);
+    if(i>=0){ if(state.selected.length>1) state.selected.splice(i,1); }
+    else if(state.selected.length<3) state.selected.push(slug);
+  } else state.selected=[slug];
+  render();
+}
+
+// ---------- radar ----------
+function radarSVG(){
+  const S=460,cx=S/2,cy=S/2+6,R=158,n=AX.length;
+  const ang=i=>-Math.PI/2 + i*2*Math.PI/n;
+  const pt=(i,rad)=>[cx+Math.cos(ang(i))*rad*(R/100), cy+Math.sin(ang(i))*rad*(R/100)];
+  let g=`<svg viewBox="0 0 ${S} ${S+20}" role="img" aria-label="능력 레이더">`;
+  // rings
+  [25,50,75,100].forEach(rr=>{
+    const pts=AX.map((_,i)=>pt(i,rr).join(",")).join(" ");
+    const base=rr===50;
+    g+=`<polygon points="${pts}" fill="none" stroke="${base?'var(--base)':'var(--line)'}" stroke-width="${base?1.4:1}" ${base?'stroke-dasharray="2 3"':''}/>`;
+  });
+  // spokes + labels
+  AX.forEach((ax,i)=>{
+    const [x,y]=pt(i,100);
+    g+=`<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="var(--line)" stroke-width="1"/>`;
+    const [lx,ly]=pt(i,118);
+    const anchor=Math.abs(lx-cx)<6?"middle":lx>cx?"start":"end";
+    g+=`<text x="${lx}" y="${ly+3}" text-anchor="${anchor}" font-size="11" font-weight="600" fill="var(--ink)">${LAB[ax]}</text>`;
+  });
+  g+=`<text x="${cx}" y="${pt(4,50)[1]-4}" text-anchor="middle" font-size="9" fill="var(--base)">평균</text>`;
+  // model polygons
+  state.selected.forEach((slug,si)=>{
+    const m=MODELS.find(x=>x.slug===slug);if(!m)return;
+    const col=`var(${SERIES[si]})`;
+    const verts=AX.map((ax,i)=>{const d=m.radar[ax];const rad=d.measured?d.r:50;return {i,rad,d,xy:pt(i,rad)};});
+    const poly=verts.map(v=>v.xy.join(",")).join(" ");
+    g+=`<polygon class="trace" points="${poly}" fill="${si===0?'var(--signal-soft)':'none'}" stroke="${col}" stroke-width="2" stroke-linejoin="round" style="--i:${si}"/>`;
+    verts.forEach(v=>{
+      if(v.d.measured){
+        const above=v.d.r>=50;
+        g+=`<circle cx="${v.xy[0]}" cy="${v.xy[1]}" r="3.2" fill="${col}"><title>${LAB[AX[v.i]]}: r ${v.d.r} (z ${v.d.z>=0?'+':''}${v.d.z})</title></circle>`;
+      } else {
+        g+=`<circle cx="${v.xy[0]}" cy="${v.xy[1]}" r="3.4" fill="var(--ground)" stroke="var(--base)" stroke-width="1.2" stroke-dasharray="2 2"><title>${LAB[AX[v.i]]}: 측정 안 됨</title></circle>`;
+      }
+    });
+  });
+  g+=`</svg>`;
+  return g;
+}
+
+// ---------- scatter (가성비) ----------
+function scatterSVG(){
+  const W=560,H=420,m={l:54,r:18,t:18,b:46};
+  const rows=filtered().filter(d=>d.price!=null&&d.intel!=null&&d.price>0);
+  const xs=rows.map(d=>Math.log10(d.price)), ys=rows.map(d=>d.intel);
+  const xmin=Math.min(...xs,Math.log10(0.1)),xmax=Math.max(...xs,Math.log10(30));
+  const ymin=0,ymax=Math.max(...ys,60);
+  const X=v=>m.l+(Math.log10(v)-xmin)/(xmax-xmin)*(W-m.l-m.r);
+  const Y=v=>H-m.b-(v-ymin)/(ymax-ymin)*(H-m.t-m.b);
+  let g=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="가성비 산점도">`;
+  g+=`<line x1="${m.l}" y1="${H-m.b}" x2="${W-m.r}" y2="${H-m.b}" stroke="var(--ink)" stroke-width="1.2"/>`;
+  g+=`<line x1="${m.l}" y1="${m.t}" x2="${m.l}" y2="${H-m.b}" stroke="var(--ink)" stroke-width="1.2"/>`;
+  [0.1,0.5,1,3,10,30].forEach(p=>{const x=X(p);g+=`<line x1="${x}" y1="${m.t}" x2="${x}" y2="${H-m.b}" stroke="var(--line-soft)"/><text x="${x}" y="${H-m.b+16}" text-anchor="middle" font-size="9" fill="var(--muted)">$${p}</text>`;});
+  [0,20,40,60].forEach(v=>{const y=Y(v);g+=`<line x1="${m.l}" y1="${y}" x2="${W-m.r}" y2="${y}" stroke="var(--line-soft)"/><text x="${m.l-7}" y="${y+3}" text-anchor="end" font-size="9" fill="var(--muted)">${v}</text>`;});
+  g+=`<text x="${(W-m.r+m.l)/2}" y="${H-6}" text-anchor="middle" font-size="10" fill="var(--muted)">가격 $/1M (로그) →</text>`;
+  g+=`<text x="14" y="${m.t+4}" font-size="10" fill="var(--muted)">↑ 종합지능</text>`;
+  g+=`<text x="${m.l+6}" y="${m.t+12}" font-size="9" fill="var(--good)">◀ 가성비 우수 (싸고 똑똑)</text>`;
+  rows.forEach(d=>{
+    const sel=state.selected.includes(d.slug);
+    g+=`<circle cx="${X(d.price)}" cy="${Y(d.intel)}" r="${sel?6:4}" fill="${sel?'var(--signal)':'rgba(92,107,119,.5)'}" stroke="${sel?'#fff':'none'}" stroke-width="1.5" style="cursor:pointer" data-slug="${d.slug}"><title>${d.name} · 지능 ${d.intel} · $${d.price} · 가성비 ${d.value??'—'}</title></circle>`;
+  });
+  g+=`</svg>`;
+  return g;
+}
+
+// ---------- right panel ----------
+function panelHTML(){
+  const p=$("#panel");
+  const m=MODELS.find(x=>x.slug===state.selected[0]);
+  if(!m){p.innerHTML='<div class="empty">모델을 선택하세요</div>';return;}
+  const axsorted=AX.filter(a=>m.radar[a].measured).sort((a,b)=>m.radar[b].z-m.radar[a].z);
+  const strong=axsorted.filter(a=>m.radar[a].z>=0.5).slice(0,4);
+  const weak=axsorted.filter(a=>m.radar[a].z<=-0.5).slice(-4).reverse();
+  const na=AX.filter(a=>!m.radar[a].measured);
+  const li=(a,kind)=>{
+    const d=m.radar[a];const z=(d.z>=0?'+':'')+d.z;
+    return `<li><span class="ax">${LAB[a]} <span class="z">z${z}</span></span><span class="ds">${kind==='s'?BLURB[a].s:BLURB[a].w}</span></li>`;
+  };
+  p.innerHTML=`
+    <div class="ph">
+      <div class="creator">${m.creator} · ${m.license==='Open'?'오픈':m.license==='Proprietary'?'독점':m.license||''}</div>
+      <h2>${m.name}</h2>
+      <div class="badges">
+        <div class="badge"><div class="k">종합지능</div><div class="v">${m.intel??'—'}</div></div>
+        <div class="badge"><div class="k">가성비 (지능÷혼합$)</div><div class="v">${m.value??'—'}</div></div>
+        <div class="badge"><div class="k">입력가</div><div class="v">$${m.price_in??'—'}<small>/1M</small></div></div>
+        <div class="badge"><div class="k">출력가</div><div class="v">$${m.price_out??'—'}<small>/1M</small></div></div>
+        <div class="badge"><div class="k">혼합가 (3:1)</div><div class="v">$${m.price??'—'}<small>/1M</small></div></div>
+        <div class="badge"><div class="k">컨텍스트</div><div class="v">${fmtCtx(m.ctx)}</div></div>
+        <div class="badge"><div class="k">속도</div><div class="v">${m.speed??'—'}<small> t/s</small></div></div>
+        <div class="badge" title="첫 토큰까지 지연. 추론 모델은 사고시간 포함이라 큼"><div class="k">TTFT</div><div class="v">${m.ttft??'—'}<small> s</small></div></div>
+        <div class="badge"><div class="k">총 응답시간</div><div class="v">${m.total_resp??'—'}<small> s</small></div></div>
+        <div class="badge"><div class="k">멀티모달</div><div class="v">${m.radar.multimodal.measured?'측정':'미측정'}</div></div>
+      </div>
+    </div>
+    <div class="praise">
+      <h3 class="s">강점 · 평균 이상</h3>
+      <ul>${strong.length?strong.map(a=>li(a,'s')).join(''):'<li><span class="ds" style="color:var(--muted)">평균을 크게 웃도는 축 없음</span></li>'}</ul>
+      <h3 class="w">약점 · 평균 이하</h3>
+      <ul>${weak.length?weak.map(a=>li(a,'w')).join(''):'<li><span class="ds" style="color:var(--muted)">평균을 크게 밑도는 축 없음</span></li>'}</ul>
+      ${na.length?`<p class="na" style="margin-top:12px">측정 안 됨: ${na.map(a=>LAB[a]).join(', ')} — ${na.includes('multimodal')?BLURB.multimodal.na:'별도 확인 필요'}</p>`:''}
+    </div>`;
+}
+
+// ---------- legend ----------
+function legendHTML(){
+  const lg=$("#legend"),hint=$("#hint");
+  if(state.view==="radar"){
+    lg.innerHTML=state.selected.map((s,i)=>{const m=MODELS.find(x=>x.slug===s);return m?`<span class="it"><span class="sw" style="background:var(${SERIES[i]})"></span>${m.name}</span>`:'';}).join('')
+      +`<span class="it"><span class="sw" style="background:var(--base)"></span>평균(50) 기준선</span>`;
+    hint.textContent="축이 기준선 밖 = 평균 이상. 점선 표식 = 측정 안 됨. ⌘+클릭으로 최대 3개 비교.";
+  } else {
+    lg.innerHTML="";
+    hint.textContent="왼쪽 위일수록 가성비 우수(싸고 똑똑). 점 클릭 → 선택. 가격은 로그 축.";
+  }
+}
+
+// ---------- render ----------
+function render(){
+  buildList();panelHTML();legendHTML();
+  $("#viewwrap").innerHTML = state.view==="radar"?radarSVG():scatterSVG();
+  if(state.view==="scatter"){
+    $("#viewwrap").querySelectorAll("circle[data-slug]").forEach(c=>c.onclick=e=>toggleSelect(c.getAttribute("data-slug"),e.metaKey||e.ctrlKey||e.shiftKey));
+  }
+}
+
+// init
+$("#meta").innerHTML=`데이터 ${PAYLOAD.scraped_at} · ${MODELS.length}개 모델 · 제작사 화이트리스트`;
+$("#footdate").textContent="갱신 "+PAYLOAD.scraped_at;
+$("#search").oninput=e=>{state.q=e.target.value.toLowerCase().trim();render();};
+document.querySelectorAll(".tab").forEach(t=>t.onclick=()=>{
+  state.view=t.dataset.view;
+  document.querySelectorAll(".tab").forEach(x=>x.setAttribute("aria-selected",x===t));
+  render();
+});
+buildFilters();render();
+</script>
