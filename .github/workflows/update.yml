@@ -1,10 +1,10 @@
-name: weekly-update
+name: site-update
 
-# 매주 일 21:00 UTC = 월 06:00 KST (config.toml [update] 기본값과 일치).
+# 매일 00:00 UTC = 09:00 KST (config.toml [update] 와 일치).
 # 스케줄 변경 시 이 cron을 직접 수정 (Actions cron은 항상 UTC).
 on:
   schedule:
-    - cron: "0 21 * * 0"
+    - cron: "0 0 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -52,7 +52,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "chore: weekly data refresh ($(date -u +%F))" || echo "변경 없음"
+          git commit -m "chore: daily data refresh ($(date -u +%F))" || echo "변경 없음"
           git push || echo "push 생략"
 
       - uses: actions/upload-pages-artifact@v3
