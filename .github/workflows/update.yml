@@ -1,10 +1,11 @@
 name: site-update
 
-# 매일 00:00 UTC = 09:00 KST (config.toml [update] 와 일치).
+# [임시 테스트] 02:30 UTC = 11:30 KST — 정각(00:00 UTC) 드롭 가설 검증용.
+# 검증 후 운영 시각으로 되돌릴 것(예: "17 0 * * *" = 09:17 KST, 정각 회피).
 # 스케줄 변경 시 이 cron을 직접 수정 (Actions cron은 항상 UTC).
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "30 2 * * *"
   workflow_dispatch: {}
 
 permissions:
