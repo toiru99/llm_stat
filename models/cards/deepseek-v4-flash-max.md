@@ -8,7 +8,7 @@ price_blended_usd_1m: 0.06
 output_speed_tps: 105.0
 context_window: 1000000
 radar:
-  knowledge: { s: 67.9, z: 0.74, r: 61.2, estimated: false }  # 전문 지식
+  knowledge: { s: 67.9, z: 0.74, r: 61.1, estimated: false }  # 전문 지식
   reasoning: { s: 58.7, z: 0.67, r: 60.0, estimated: false }  # 추론
   coding: { s: 69.0, z: 0.42, r: 56.2, estimated: false }  # 코딩
   agentic: { s: 68.2, z: 0.65, r: 59.7, estimated: false }  # 에이전트
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Flash (Max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-23
-timestamp: 2026-06-23T00:00:00Z
+updated: 2026-06-24
+timestamp: 2026-06-24T00:00:00Z
 ---
 
 # DeepSeek V4 Flash (Max)
@@ -33,13 +33,13 @@ DeepSeek · Open · 컨텍스트 1M · 종합지능 **40.0**
 - **약점**: 코딩, 신뢰성
 
 ## 실용 지표
-`입력 $0.14 · 출력 $0.28 · 혼합 $0.06/1M · 105.0 t/s · TTFT 1.45s · 1M ctx` · 가성비 666.7
+`입력 $0.14 · 출력 $0.28 · 혼합 $0.06/1M · 105.0 t/s · TTFT 1.51s · 1M ctx` · 가성비 666.7
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 61.2 | +0.74 | 실측 | [[aa-omniscience]] 37.0%×1.0, [[gpqa-diamond]] 89.0%×0.4, [[humanitys-last-exam]] 32.0%×0.3 |
+| 전문 지식 | 61.1 | +0.74 | 실측 | [[aa-omniscience]] 37.0%×1.0, [[gpqa-diamond]] 89.0%×0.4, [[humanitys-last-exam]] 32.0%×0.3 |
 | 추론 | 60.0 | +0.67 | 실측 | [[critpt]] 7.0%×1.0, [[gpqa-diamond]] 89.0%×1.0, [[humanitys-last-exam]] 32.0%×1.0 |
 | 코딩 | 56.2 | +0.42 | 실측 | [[scicode]] 45.0%×1.0, [[terminal-bench]] 36.0%×0.5 |
 | 에이전트 | 59.7 | +0.65 | 실측 | [[gdpval]] 34.0%×1.0, [[itbench]] 32.0%×1.0, [[tau2-bench]] 95.0%×1.0, [[tau3-banking]] 23.0%×1.0, [[terminal-bench]] 36.0%×1.0 |

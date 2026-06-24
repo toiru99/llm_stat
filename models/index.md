@@ -1,6 +1,6 @@
 # 모델 (Models)
 
-`scripts/build_cards.py` 자동 생성 · 데이터 2026-06-23 · 제작사 10곳 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
+`scripts/build_cards.py` 자동 생성 · 데이터 2026-06-24 · 제작사 10곳 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
 
 - 레이더 축·방법론: [radar-spec.md](radar-spec.md) · 설정: [../config.toml](../config.toml)
 
@@ -42,8 +42,8 @@
 * [Gemini 3.5 Flash (minimal)](cards/gemini-35-flash-minimal.md) - 종합지능 35.0
 * [Qwen3.5 397B A17B](cards/qwen35-397b-a17b.md) - 종합지능 34.0
 * [Claude Sonnet 4.6 (Non-reasoning, Low Effort)](cards/claude-sonnet-46-non-reasoning-low-effort.md) - 종합지능 34.0
-* [GLM 5V Turbo](cards/glm-5v-turbo.md) - 종합지능 34.0
 * [GPT-5.5 Instant (May 2026)](cards/gpt-55-instant-may-2026.md) - 종합지능 34.0
+* [GLM 5V Turbo](cards/glm-5v-turbo.md) - 종합지능 34.0
 * [Qwen3.6 35B A3B](cards/qwen36-35b-a3b.md) - 종합지능 32.0
 * [Qwen3.5 122B A10B](cards/qwen35-122b-a10b.md) - 종합지능 32.0
 * [Qwen3.5 Omni Plus](cards/qwen35-omni-plus.md) - 종합지능 31.0
@@ -84,12 +84,12 @@
 * [Llama Nemotron Ultra](cards/llama-nemotron-ultra.md) - 종합지능 9.0
 * [NVIDIA Nemotron Nano 9B V2](cards/nvidia-nemotron-nano-9b-v2.md) - 종합지능 9.0
 * [NVIDIA Nemotron Nano 12B v2 VL](cards/nvidia-nemotron-nano-12b-v2-vl.md) - 종합지능 9.0
-* [Kimi Linear 48B A3B Instruct](cards/kimi-linear-48b-a3b-instruct.md) - 종합지능 9.0
 * [Gemma 4 E2B](cards/gemma-4-e2b.md) - 종합지능 9.0
 * [NVIDIA Nemotron 3 Nano 4B](cards/nvidia-nemotron-3-nano-4b.md) - 종합지능 9.0
+* [Kimi Linear 48B A3B Instruct](cards/kimi-linear-48b-a3b-instruct.md) - 종합지능 9.0
 * [Llama 3.1 Nemotron 70B](cards/llama-31-nemotron-70b.md) - 종합지능 8.0
 * [Qwen3.5 0.8B](cards/qwen35-08b.md) - 종합지능 5.0
 * [Exaone 4.0 1.2B](cards/exaone-40-12b.md) - 종합지능 3.0
 * [Gemma 3 270M](cards/gemma-3-270m.md) - 종합지능 2.0
-* [Gemini 3 Deep Think](cards/gemini-3-deep-think.md) - 종합지능 None
 * [GPT-5.5 Pro (xhigh)](cards/gpt-55-pro-xhigh.md) - 종합지능 None
+* [Gemini 3 Deep Think](cards/gemini-3-deep-think.md) - 종합지능 None

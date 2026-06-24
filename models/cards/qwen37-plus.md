@@ -14,14 +14,14 @@ radar:
   agentic: { s: 59.1, z: 0.29, r: 54.3, estimated: false }  # 에이전트
   trust: { s: 88.8, z: 1.94, r: 79.0, estimated: false }  # 신뢰성
   multimodal: { s: 93.1, z: 0.92, r: 63.8, estimated: false }  # 멀티모달
-  long_context: { s: 87.8, z: 0.62, r: 59.2, estimated: false }  # 긴문맥
-  instruction: { s: 93.0, z: 1.08, r: 66.3, estimated: false }  # 지시 따르기
+  long_context: { s: 87.8, z: 0.61, r: 59.2, estimated: false }  # 긴문맥
+  instruction: { s: 93.0, z: 1.09, r: 66.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.7 Plus
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-23
-timestamp: 2026-06-23T00:00:00Z
+updated: 2026-06-24
+timestamp: 2026-06-24T00:00:00Z
 ---
 
 # Qwen3.7 Plus
@@ -33,7 +33,7 @@ Alibaba · Proprietary · 컨텍스트 1M · 종합지능 **39.0**
 - **약점**: 에이전트, 전문 지식
 
 ## 실용 지표
-`입력 $0.4 · 출력 $1.16 · 혼합 $0.25/1M · 48.0 t/s · TTFT 2.74s · 1M ctx` · 가성비 156.0
+`입력 $0.4 · 출력 $1.16 · 혼합 $0.25/1M · 48.0 t/s · TTFT 2.81s · 1M ctx` · 가성비 156.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,8 +45,8 @@ Alibaba · Proprietary · 컨텍스트 1M · 종합지능 **39.0**
 | 에이전트 | 54.3 | +0.29 | 실측 | [[apex-agents]] 22.0%×1.0, [[gdpval]] 22.0%×1.0, [[tau2-bench]] 93.0%×1.0, [[tau3-banking]] 18.0%×1.0, [[terminal-bench]] 47.0%×1.0 |
 | 신뢰성 | 79.0 | +1.94 | 실측 | [[aa-omniscience]] 75.0%×1.0 |
 | 멀티모달 | 63.8 | +0.92 | 실측 | [[mmmu-pro]] 80.0%×1.0 |
-| 긴문맥 | 59.2 | +0.62 | 실측 | [[aa-lcr]] 65.0%×1.0 |
-| 지시 따르기 | 66.3 | +1.08 | 실측 | [[ifbench]] 78.0%×1.0 |
+| 긴문맥 | 59.2 | +0.61 | 실측 | [[aa-lcr]] 65.0%×1.0 |
+| 지시 따르기 | 66.3 | +1.09 | 실측 | [[ifbench]] 78.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

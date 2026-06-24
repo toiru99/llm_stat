@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: 9.0
 price_blended_usd_1m: 0.24
-output_speed_tps: 279.0
+output_speed_tps: 278.0
 context_window: 128000
 radar:
   knowledge: { s: 27.1, z: -1.09, r: 33.7, estimated: false }  # 전문 지식
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — NVIDIA Nemotron Nano 12B v2 VL
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-23
-timestamp: 2026-06-23T00:00:00Z
+updated: 2026-06-24
+timestamp: 2026-06-24T00:00:00Z
 ---
 
 # NVIDIA Nemotron Nano 12B v2 VL
@@ -33,7 +33,7 @@ NVIDIA · Open · 컨텍스트 128k · 종합지능 **9.0**
 - **약점**: 에이전트, 지시 따르기
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.6 · 혼합 $0.24/1M · 279.0 t/s · TTFT 0.44s · 128k ctx` · 가성비 37.5
+`입력 $0.2 · 출력 $0.6 · 혼합 $0.24/1M · 278.0 t/s · TTFT 0.44s · 128k ctx` · 가성비 37.5
 
 ## 레이더 8축 (평균=50 기준선)
 
