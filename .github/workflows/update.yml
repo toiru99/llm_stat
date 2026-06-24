@@ -22,6 +22,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # rebase 재시도용 전체 히스토리
 
       - uses: actions/setup-node@v4
         with:
@@ -53,8 +55,24 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "chore: daily data refresh ($(date -u +%F))" || echo "변경 없음"
-          git push || echo "push 생략"
+          # 변경이 없으면 깔끔히 종료(정상)
+          if git diff --cached --quiet; then
+            echo "변경 없음 — 커밋·푸시 생략"
+            exit 0
+          fi
+          git commit -m "chore: daily data refresh ($(date -u +%F))"
+          # 동시 푸시(다른 런·수동 푸시) 대비: 거부되면 rebase 후 재시도(최대 3회).
+          # 끝내 실패하면 잡을 실패시켜 가시화한다(과거 'push 생략' silent 무시 제거).
+          for i in 1 2 3; do
+            if git push; then
+              echo "push 성공 (시도 $i)"
+              exit 0
+            fi
+            echo "push 거부 — origin 변경 감지, rebase 후 재시도 ($i)"
+            git pull --rebase origin main || { echo "rebase 실패"; exit 1; }
+          done
+          echo "push 3회 실패"
+          exit 1
 
       - uses: actions/upload-pages-artifact@v3
         with:
