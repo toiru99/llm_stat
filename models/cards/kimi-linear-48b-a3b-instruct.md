@@ -11,7 +11,7 @@ radar:
   knowledge: { s: 22.3, z: -1.3, r: 30.4, estimated: false }  # 전문 지식
   reasoning: { s: 20.0, z: -1.15, r: 32.7, estimated: false }  # 추론
   coding: { s: 28.0, z: -1.35, r: 29.7, estimated: false }  # 코딩
-  agentic: { s: 8.7, z: -1.71, r: 24.3, estimated: false }  # 에이전트
+  agentic: { s: 8.7, z: -1.7, r: 24.5, estimated: false }  # 에이전트
   trust: { s: 48.8, z: 0.53, r: 57.9, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 35.1, z: -1.27, r: 30.9, estimated: false }  # 긴문맥
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi Linear 48B A3B Instruct
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-24
-timestamp: 2026-06-24T00:00:00Z
+updated: 2026-06-25
+timestamp: 2026-06-25T00:00:00Z
 ---
 
 # Kimi Linear 48B A3B Instruct
@@ -42,7 +42,7 @@ Kimi · Open · 컨텍스트 1M · 종합지능 **9.0**
 | 전문 지식 | 30.4 | -1.3 | 실측 | [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
 | 추론 | 32.7 | -1.15 | 실측 | [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 29.7 | -1.35 | 실측 | [[scicode]] 20.0%×1.0, [[terminal-bench]] 11.0%×0.5 |
-| 에이전트 | 24.3 | -1.71 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
+| 에이전트 | 24.5 | -1.7 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
 | 신뢰성 | 57.9 | +0.53 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 30.9 | -1.27 | 실측 | [[aa-lcr]] 26.0%×1.0 |

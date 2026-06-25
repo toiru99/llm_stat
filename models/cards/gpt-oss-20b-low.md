@@ -5,13 +5,13 @@ creator: OpenAI
 license: Open
 intelligence_index: 14.0
 price_blended_usd_1m: 0.07
-output_speed_tps: 224.0
+output_speed_tps: 232.0
 context_window: 131000
 radar:
   knowledge: { s: 28.3, z: -1.04, r: 34.5, estimated: false }  # 전문 지식
   reasoning: { s: 22.6, z: -1.03, r: 34.6, estimated: false }  # 추론
   coding: { s: 40.4, z: -0.82, r: 37.7, estimated: false }  # 코딩
-  agentic: { s: 29.2, z: -0.9, r: 36.5, estimated: false }  # 에이전트
+  agentic: { s: 29.2, z: -0.89, r: 36.6, estimated: false }  # 에이전트
   trust: { s: 11.2, z: -0.79, r: 38.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 41.9, z: -1.03, r: 34.6, estimated: false }  # 긴문맥
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — gpt-oss-20B (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-24
-timestamp: 2026-06-24T00:00:00Z
+updated: 2026-06-25
+timestamp: 2026-06-25T00:00:00Z
 ---
 
 # gpt-oss-20B (low)
@@ -33,7 +33,7 @@ OpenAI · Open · 컨텍스트 131k · 종합지능 **14.0**
 - **약점**: 긴문맥, 전문 지식
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.2 · 혼합 $0.07/1M · 224.0 t/s · TTFT 0.87s · 131k ctx` · 가성비 200.0
+`입력 $0.06 · 출력 $0.2 · 혼합 $0.07/1M · 232.0 t/s · TTFT 0.87s · 131k ctx` · 가성비 200.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -42,7 +42,7 @@ OpenAI · Open · 컨텍스트 131k · 종합지능 **14.0**
 | 전문 지식 | 34.5 | -1.04 | 실측 | [[aa-omniscience]] 14.0%×1.0, [[gpqa-diamond]] 61.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 34.6 | -1.03 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 61.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 37.7 | -0.82 | 실측 | [[scicode]] 34.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
-| 에이전트 | 36.5 | -0.9 | 실측 | [[tau2-bench]] 50.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
+| 에이전트 | 36.6 | -0.89 | 실측 | [[tau2-bench]] 50.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
 | 신뢰성 | 38.1 | -0.79 | 실측 | [[aa-omniscience]] 13.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 34.6 | -1.03 | 실측 | [[aa-lcr]] 31.0%×1.0 |

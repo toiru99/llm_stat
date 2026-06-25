@@ -5,13 +5,13 @@ creator: Alibaba
 license: Open
 intelligence_index: 10.0
 price_blended_usd_1m: 0.32
-output_speed_tps: 82.0
+output_speed_tps: 83.0
 context_window: 65500
 radar:
   knowledge: { s: 33.3, z: -0.81, r: 37.9, estimated: false }  # 전문 지식
   reasoning: { s: 28.7, z: -0.74, r: 38.9, estimated: false }  # 추론
   coding: { s: 36.6, z: -0.98, r: 35.2, estimated: false }  # 코딩
-  agentic: { s: 13.8, z: -1.51, r: 27.3, estimated: false }  # 에이전트
+  agentic: { s: 13.8, z: -1.5, r: 27.5, estimated: false }  # 에이전트
   trust: { s: 8.8, z: -0.88, r: 36.8, estimated: false }  # 신뢰성
   multimodal: { s: 58.6, z: -0.82, r: 37.8, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -2.53, r: 12.1, estimated: false }  # 긴문맥
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Omni 30B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-24
-timestamp: 2026-06-24T00:00:00Z
+updated: 2026-06-25
+timestamp: 2026-06-25T00:00:00Z
 ---
 
 # Qwen3 Omni 30B A3B
@@ -33,7 +33,7 @@ Alibaba · Open · 컨텍스트 65k · 종합지능 **10.0**
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.25 · 출력 $0.97 · 혼합 $0.32/1M · 82.0 t/s · TTFT 2.08s · 65k ctx` · 가성비 31.2
+`입력 $0.25 · 출력 $0.97 · 혼합 $0.32/1M · 83.0 t/s · TTFT 2.09s · 65k ctx` · 가성비 31.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -42,7 +42,7 @@ Alibaba · Open · 컨텍스트 65k · 종합지능 **10.0**
 | 전문 지식 | 37.9 | -0.81 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
 | 추론 | 38.9 | -0.74 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
 | 코딩 | 35.2 | -0.98 | 실측 | [[scicode]] 31.0%×1.0, [[terminal-bench]] 4.0%×0.5 |
-| 에이전트 | 27.3 | -1.51 | 실측 | [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 4.0%×1.0 |
+| 에이전트 | 27.5 | -1.5 | 실측 | [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 4.0%×1.0 |
 | 신뢰성 | 36.8 | -0.88 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | 37.8 | -0.82 | 실측 | [[mmmu-pro]] 60.0%×1.0 |
 | 긴문맥 | 12.1 | -2.53 | 실측 | [[aa-lcr]] 0.0%×1.0 |

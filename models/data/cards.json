@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-06-24",
+  "scraped_at": "2026-06-25",
   "axes": [
     "knowledge",
     "reasoning",
@@ -37,7 +37,7 @@
       "value": 7.8,
       "radar": {
         "knowledge": {
-          "r": 82.5,
+          "r": 82.6,
           "z": 2.17,
           "estimated": false,
           "measured": true
@@ -49,19 +49,19 @@
           "measured": true
         },
         "coding": {
-          "r": 76.2,
-          "z": 1.75,
-          "estimated": false,
-          "measured": true
-        },
-        "agentic": {
           "r": 76.3,
           "z": 1.75,
           "estimated": false,
           "measured": true
         },
+        "agentic": {
+          "r": 76.0,
+          "z": 1.73,
+          "estimated": false,
+          "measured": true
+        },
         "trust": {
-          "r": 59.3,
+          "r": 59.2,
           "z": 0.62,
           "estimated": false,
           "measured": true
@@ -73,7 +73,7 @@
           "measured": false
         },
         "long_context": {
-          "r": 62.8,
+          "r": 62.9,
           "z": 0.86,
           "estimated": false,
           "measured": true
@@ -95,15 +95,15 @@
       "price": 3.85,
       "price_in": 5.0,
       "price_out": 25.0,
-      "ttft": 33.32,
-      "total_resp": 40.48,
-      "speed": 70.0,
+      "ttft": 23.03,
+      "total_resp": 30.51,
+      "speed": 67.0,
       "ctx": 1000000,
       "value": 14.5,
       "radar": {
         "knowledge": {
           "r": 71.5,
-          "z": 1.43,
+          "z": 1.44,
           "estimated": false,
           "measured": true
         },
@@ -160,14 +160,14 @@
       "price": 4.35,
       "price_in": 5.0,
       "price_out": 30.0,
-      "ttft": 92.21,
-      "total_resp": 99.76,
-      "speed": 66.0,
+      "ttft": 85.04,
+      "total_resp": 92.52,
+      "speed": 67.0,
       "ctx": 922000,
       "value": 12.6,
       "radar": {
         "knowledge": {
-          "r": 78.0,
+          "r": 78.1,
           "z": 1.87,
           "estimated": false,
           "measured": true
@@ -185,8 +185,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 73.5,
-          "z": 1.57,
+          "r": 73.4,
+          "z": 1.56,
           "estimated": false,
           "measured": true
         },
@@ -225,9 +225,9 @@
       "price": 3.85,
       "price_in": 5.0,
       "price_out": 25.0,
-      "ttft": 13.93,
-      "total_resp": 23.91,
-      "speed": 50.0,
+      "ttft": 14.06,
+      "total_resp": 24.49,
+      "speed": 48.0,
       "ctx": 1000000,
       "value": 14.0,
       "radar": {
@@ -250,7 +250,7 @@
           "measured": true
         },
         "agentic": {
-          "r": 71.8,
+          "r": 71.7,
           "z": 1.45,
           "estimated": false,
           "measured": true
@@ -268,7 +268,7 @@
           "measured": true
         },
         "long_context": {
-          "r": 62.8,
+          "r": 62.9,
           "z": 0.86,
           "estimated": false,
           "measured": true
@@ -290,14 +290,14 @@
       "price": 4.35,
       "price_in": 5.0,
       "price_out": 30.0,
-      "ttft": 19.96,
-      "total_resp": 27.65,
-      "speed": 65.0,
+      "ttft": 19.33,
+      "total_resp": 26.67,
+      "speed": 68.0,
       "ctx": 922000,
       "value": 12.2,
       "radar": {
         "knowledge": {
-          "r": 76.9,
+          "r": 77.0,
           "z": 1.8,
           "estimated": false,
           "measured": true
@@ -309,7 +309,7 @@
           "measured": true
         },
         "coding": {
-          "r": 72.3,
+          "r": 72.4,
           "z": 1.49,
           "estimated": false,
           "measured": true
@@ -355,14 +355,14 @@
       "price": 0.9,
       "price_in": 1.4,
       "price_out": 4.4,
-      "ttft": 1.49,
-      "total_resp": 19.56,
-      "speed": 138.0,
+      "ttft": 1.61,
+      "total_resp": 19.3,
+      "speed": 141.0,
       "ctx": 1000000,
       "value": 56.7,
       "radar": {
         "knowledge": {
-          "r": 55.0,
+          "r": 55.1,
           "z": 0.34,
           "estimated": false,
           "measured": true
@@ -399,7 +399,7 @@
         },
         "long_context": {
           "r": 63.6,
-          "z": 0.9,
+          "z": 0.91,
           "estimated": false,
           "measured": true
         },
@@ -420,9 +420,9 @@
       "price": 1.31,
       "price_in": 1.5,
       "price_out": 9.0,
-      "ttft": 21.99,
-      "total_resp": 24.79,
-      "speed": 179.0,
+      "ttft": 21.32,
+      "total_resp": 23.94,
+      "speed": 191.0,
       "ctx": 1000000,
       "value": 38.2,
       "radar": {
@@ -485,9 +485,9 @@
       "price": 4.35,
       "price_in": 5.0,
       "price_out": 30.0,
-      "ttft": 10.01,
-      "total_resp": 18.27,
-      "speed": 61.0,
+      "ttft": 6.47,
+      "total_resp": 14.37,
+      "speed": 63.0,
       "ctx": 922000,
       "value": 11.5,
       "radar": {
@@ -510,7 +510,7 @@
           "measured": true
         },
         "agentic": {
-          "r": 68.7,
+          "r": 68.8,
           "z": 1.25,
           "estimated": false,
           "measured": true
@@ -550,8 +550,8 @@
       "price": 2.31,
       "price_in": 3.0,
       "price_out": 15.0,
-      "ttft": 117.1,
-      "total_resp": 126.5,
+      "ttft": 136.81,
+      "total_resp": 146.2,
       "speed": 53.0,
       "ctx": 1000000,
       "value": 20.3,
@@ -594,12 +594,12 @@
         },
         "long_context": {
           "r": 63.6,
-          "z": 0.9,
+          "z": 0.91,
           "estimated": false,
           "measured": true
         },
         "instruction": {
-          "r": 47.8,
+          "r": 47.7,
           "z": -0.15,
           "estimated": false,
           "measured": true
@@ -615,14 +615,14 @@
       "price": 1.74,
       "price_in": 2.0,
       "price_out": 12.0,
-      "ttft": 35.5,
-      "total_resp": 39.13,
+      "ttft": 34.71,
+      "total_resp": 38.34,
       "speed": 138.0,
       "ctx": 1000000,
       "value": 26.4,
       "radar": {
         "knowledge": {
-          "r": 76.9,
+          "r": 77.0,
           "z": 1.8,
           "estimated": false,
           "measured": true
@@ -634,19 +634,19 @@
           "measured": true
         },
         "coding": {
-          "r": 72.4,
+          "r": 72.5,
           "z": 1.5,
           "estimated": false,
           "measured": true
         },
         "agentic": {
-          "r": 57.6,
+          "r": 57.7,
           "z": 0.51,
           "estimated": false,
           "measured": true
         },
         "trust": {
-          "r": 62.6,
+          "r": 62.5,
           "z": 0.84,
           "estimated": false,
           "measured": true
@@ -680,15 +680,15 @@
       "price": 1.43,
       "price_in": 2.5,
       "price_out": 7.5,
-      "ttft": 2.54,
-      "total_resp": 17.04,
-      "speed": 201.0,
+      "ttft": 2.49,
+      "total_resp": 16.62,
+      "speed": 206.0,
       "ctx": 1000000,
       "value": 32.2,
       "radar": {
         "knowledge": {
           "r": 58.5,
-          "z": 0.56,
+          "z": 0.57,
           "estimated": false,
           "measured": true
         },
@@ -706,7 +706,7 @@
         },
         "agentic": {
           "r": 60.4,
-          "z": 0.69,
+          "z": 0.7,
           "estimated": false,
           "measured": true
         },
@@ -745,9 +745,9 @@
       "price": 1.31,
       "price_in": 1.5,
       "price_out": 9.0,
-      "ttft": 16.8,
-      "total_resp": 19.47,
-      "speed": 187.0,
+      "ttft": 17.22,
+      "total_resp": 19.89,
+      "speed": 188.0,
       "ctx": 1000000,
       "value": 34.4,
       "radar": {
@@ -770,13 +770,13 @@
           "measured": true
         },
         "agentic": {
-          "r": 66.4,
-          "z": 1.09,
+          "r": 66.2,
+          "z": 1.08,
           "estimated": false,
           "measured": true
         },
         "trust": {
-          "r": 56.0,
+          "r": 55.9,
           "z": 0.4,
           "estimated": false,
           "measured": true
@@ -789,7 +789,7 @@
         },
         "long_context": {
           "r": 63.6,
-          "z": 0.9,
+          "z": 0.91,
           "estimated": false,
           "measured": true
         },
@@ -810,14 +810,14 @@
       "price": 1.87,
       "price_in": 1.75,
       "price_out": 14.0,
-      "ttft": 85.73,
-      "total_resp": 91.43,
-      "speed": 88.0,
+      "ttft": 84.67,
+      "total_resp": 90.53,
+      "speed": 85.0,
       "ctx": 400000,
       "value": 23.5,
       "radar": {
         "knowledge": {
-          "r": 73.4,
+          "r": 73.5,
           "z": 1.56,
           "estimated": false,
           "measured": true
@@ -835,8 +835,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 70.0,
-          "z": 1.33,
+          "r": 69.8,
+          "z": 1.32,
           "estimated": false,
           "measured": true
         },
@@ -875,9 +875,9 @@
       "price": 0.18,
       "price_in": 0.43,
       "price_out": 0.87,
-      "ttft": 1.76,
-      "total_resp": 64.96,
-      "speed": 77.0,
+      "ttft": 1.56,
+      "total_resp": 71.92,
+      "speed": 69.0,
       "ctx": 1000000,
       "value": 244.4,
       "radar": {
@@ -894,14 +894,14 @@
           "measured": true
         },
         "coding": {
-          "r": 63.2,
+          "r": 63.3,
           "z": 0.88,
           "estimated": false,
           "measured": true
         },
         "agentic": {
-          "r": 63.2,
-          "z": 0.88,
+          "r": 63.0,
+          "z": 0.87,
           "estimated": false,
           "measured": true
         },
@@ -918,7 +918,7 @@
           "measured": false
         },
         "long_context": {
-          "r": 59.9,
+          "r": 60.0,
           "z": 0.66,
           "estimated": false,
           "measured": true
@@ -940,9 +940,9 @@
       "price": 0.22,
       "price_in": 0.3,
       "price_out": 1.2,
-      "ttft": 3.12,
-      "total_resp": 31.9,
-      "speed": 87.0,
+      "ttft": 2.19,
+      "total_resp": 29.71,
+      "speed": 91.0,
       "ctx": 1000000,
       "value": 200.0,
       "radar": {
@@ -965,8 +965,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 57.0,
-          "z": 0.47,
+          "r": 57.1,
+          "z": 0.48,
           "estimated": false,
           "measured": true
         },
@@ -1005,9 +1005,9 @@
       "price": 0.7,
       "price_in": 0.95,
       "price_out": 4.0,
-      "ttft": 2.82,
-      "total_resp": 74.27,
-      "speed": 69.0,
+      "ttft": 3.04,
+      "total_resp": 175.88,
+      "speed": 29.0,
       "ctx": 256000,
       "value": 61.4,
       "radar": {
@@ -1048,7 +1048,7 @@
           "measured": true
         },
         "long_context": {
-          "r": 62.8,
+          "r": 62.9,
           "z": 0.86,
           "estimated": false,
           "measured": true
@@ -1070,14 +1070,14 @@
       "price": 3.85,
       "price_in": 5.0,
       "price_out": 25.0,
-      "ttft": 1.55,
-      "total_resp": 11.94,
-      "speed": 48.0,
+      "ttft": 1.58,
+      "total_resp": 13.38,
+      "speed": 42.0,
       "ctx": 1000000,
       "value": 11.2,
       "radar": {
         "knowledge": {
-          "r": 65.3,
+          "r": 65.4,
           "z": 1.02,
           "estimated": false,
           "measured": true
@@ -1095,8 +1095,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 67.4,
-          "z": 1.16,
+          "r": 67.2,
+          "z": 1.15,
           "estimated": false,
           "measured": true
         },
@@ -1135,8 +1135,8 @@
       "price": 4.35,
       "price_in": 5.0,
       "price_out": 30.0,
-      "ttft": 1.87,
-      "total_resp": 10.05,
+      "ttft": 1.88,
+      "total_resp": 10.1,
       "speed": 61.0,
       "ctx": 922000,
       "value": 9.9,
@@ -1160,8 +1160,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 61.0,
-          "z": 0.73,
+          "r": 61.1,
+          "z": 0.74,
           "estimated": false,
           "measured": true
         },
@@ -1200,9 +1200,9 @@
       "price": 0.7,
       "price_in": 0.95,
       "price_out": 4.0,
-      "ttft": 2.31,
-      "total_resp": 54.87,
-      "speed": 52.0,
+      "ttft": 2.32,
+      "total_resp": 52.34,
+      "speed": 55.0,
       "ctx": 256000,
       "value": 60.0,
       "radar": {
@@ -1219,14 +1219,14 @@
           "measured": true
         },
         "coding": {
-          "r": 60.7,
+          "r": 60.8,
           "z": 0.72,
           "estimated": false,
           "measured": true
         },
         "agentic": {
-          "r": 58.5,
-          "z": 0.56,
+          "r": 58.6,
+          "z": 0.57,
           "estimated": false,
           "measured": true
         },
@@ -1243,7 +1243,7 @@
           "measured": false
         },
         "long_context": {
-          "r": 59.9,
+          "r": 60.0,
           "z": 0.66,
           "estimated": false,
           "measured": true
@@ -1265,9 +1265,9 @@
       "price": 0.18,
       "price_in": 0.43,
       "price_out": 0.87,
-      "ttft": 1.86,
-      "total_resp": 30.71,
-      "speed": 86.0,
+      "ttft": 1.8,
+      "total_resp": 34.99,
+      "speed": 75.0,
       "ctx": 1000000,
       "value": 227.8,
       "radar": {
@@ -1290,8 +1290,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 67.2,
-          "z": 1.15,
+          "r": 67.0,
+          "z": 1.14,
           "estimated": false,
           "measured": true
         },
@@ -1309,7 +1309,7 @@
         },
         "long_context": {
           "r": 59.2,
-          "z": 0.61,
+          "z": 0.62,
           "estimated": false,
           "measured": true
         },
@@ -1330,15 +1330,15 @@
       "price": 0.43,
       "price_in": 0.5,
       "price_out": 3.0,
-      "ttft": 2.58,
-      "total_resp": 119.28,
+      "ttft": 2.72,
+      "total_resp": 118.08,
       "speed": 52.0,
       "ctx": 1000000,
       "value": 93.0,
       "radar": {
         "knowledge": {
           "r": 52.3,
-          "z": 0.15,
+          "z": 0.16,
           "estimated": false,
           "measured": true
         },
@@ -1355,8 +1355,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 57.8,
-          "z": 0.52,
+          "r": 57.7,
+          "z": 0.51,
           "estimated": false,
           "measured": true
         },
@@ -1373,7 +1373,7 @@
           "measured": true
         },
         "long_context": {
-          "r": 62.8,
+          "r": 62.9,
           "z": 0.86,
           "estimated": false,
           "measured": true
@@ -1395,14 +1395,14 @@
       "price": 0.06,
       "price_in": 0.14,
       "price_out": 0.28,
-      "ttft": 1.51,
-      "total_resp": 59.89,
-      "speed": 105.0,
+      "ttft": 1.44,
+      "total_resp": 52.6,
+      "speed": 119.0,
       "ctx": 1000000,
       "value": 666.7,
       "radar": {
         "knowledge": {
-          "r": 61.1,
+          "r": 61.2,
           "z": 0.74,
           "estimated": false,
           "measured": true
@@ -1420,7 +1420,7 @@
           "measured": true
         },
         "agentic": {
-          "r": 59.7,
+          "r": 59.8,
           "z": 0.65,
           "estimated": false,
           "measured": true
@@ -1460,15 +1460,15 @@
       "price": 0.9,
       "price_in": 1.4,
       "price_out": 4.4,
-      "ttft": 1.55,
-      "total_resp": 47.27,
-      "speed": 94.0,
+      "ttft": 1.53,
+      "total_resp": 50.19,
+      "speed": 88.0,
       "ctx": 200000,
       "value": 44.4,
       "radar": {
         "knowledge": {
           "r": 51.3,
-          "z": 0.08,
+          "z": 0.09,
           "estimated": false,
           "measured": true
         },
@@ -1485,7 +1485,7 @@
           "measured": true
         },
         "agentic": {
-          "r": 59.0,
+          "r": 59.1,
           "z": 0.6,
           "estimated": false,
           "measured": true
@@ -1503,7 +1503,7 @@
           "measured": false
         },
         "long_context": {
-          "r": 57.0,
+          "r": 57.1,
           "z": 0.47,
           "estimated": false,
           "measured": true
@@ -1525,9 +1525,9 @@
       "price": 0.65,
       "price_in": 0.75,
       "price_out": 4.5,
-      "ttft": 11.34,
-      "total_resp": 14.07,
-      "speed": 183.0,
+      "ttft": 8.32,
+      "total_resp": 11.15,
+      "speed": 177.0,
       "ctx": 400000,
       "value": 61.5,
       "radar": {
@@ -1550,8 +1550,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 59.9,
-          "z": 0.66,
+          "r": 60.0,
+          "z": 0.67,
           "estimated": false,
           "measured": true
         },
@@ -1591,8 +1591,8 @@
       "price_in": 0.4,
       "price_out": 1.16,
       "ttft": 2.81,
-      "total_resp": 54.88,
-      "speed": 48.0,
+      "total_resp": 54.11,
+      "speed": 49.0,
       "ctx": 1000000,
       "value": 156.0,
       "radar": {
@@ -1615,8 +1615,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 54.3,
-          "z": 0.29,
+          "r": 54.4,
+          "z": 0.3,
           "estimated": false,
           "measured": true
         },
@@ -1634,13 +1634,13 @@
         },
         "long_context": {
           "r": 59.2,
-          "z": 0.61,
+          "z": 0.62,
           "estimated": false,
           "measured": true
         },
         "instruction": {
           "r": 66.3,
-          "z": 1.09,
+          "z": 1.08,
           "estimated": false,
           "measured": true
         }
@@ -1655,9 +1655,9 @@
       "price": 0.22,
       "price_in": 0.3,
       "price_out": 1.2,
-      "ttft": 2.42,
-      "total_resp": 59.92,
-      "speed": 52.0,
+      "ttft": 2.14,
+      "total_resp": 61.42,
+      "speed": 50.0,
       "ctx": 205000,
       "value": 172.7,
       "radar": {
@@ -1720,9 +1720,9 @@
       "price": 0.58,
       "price_in": 0.68,
       "price_out": 2.67,
-      "ttft": 1.19,
-      "total_resp": 21.61,
-      "speed": 136.0,
+      "ttft": 1.3,
+      "total_resp": 20.63,
+      "speed": 144.0,
       "ctx": 262000,
       "value": 65.5,
       "radar": {
@@ -1745,8 +1745,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 52.4,
-          "z": 0.16,
+          "r": 52.6,
+          "z": 0.17,
           "estimated": false,
           "measured": true
         },
@@ -1785,15 +1785,15 @@
       "price": 0.18,
       "price_in": 0.2,
       "price_out": 1.25,
-      "ttft": 5.11,
-      "total_resp": 8.15,
-      "speed": 164.0,
+      "ttft": 3.67,
+      "total_resp": 6.8,
+      "speed": 160.0,
       "ctx": 400000,
       "value": 211.1,
       "radar": {
         "knowledge": {
           "r": 50.5,
-          "z": 0.03,
+          "z": 0.04,
           "estimated": false,
           "measured": true
         },
@@ -1810,7 +1810,7 @@
           "measured": true
         },
         "agentic": {
-          "r": 54.0,
+          "r": 54.1,
           "z": 0.27,
           "estimated": false,
           "measured": true
@@ -1828,7 +1828,7 @@
           "measured": true
         },
         "long_context": {
-          "r": 59.9,
+          "r": 60.0,
           "z": 0.66,
           "estimated": false,
           "measured": true
@@ -1875,8 +1875,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 64.5,
-          "z": 0.97,
+          "r": 64.3,
+          "z": 0.96,
           "estimated": false,
           "measured": true
         },
@@ -1915,9 +1915,9 @@
       "price": 0.9,
       "price_in": 0.6,
       "price_out": 3.6,
-      "ttft": 3.7,
-      "total_resp": 102.9,
-      "speed": 62.0,
+      "ttft": 3.81,
+      "total_resp": 108.96,
+      "speed": 59.0,
       "ctx": 262000,
       "value": 41.1,
       "radar": {
@@ -1941,13 +1941,13 @@
         },
         "agentic": {
           "r": 54.4,
-          "z": 0.3,
+          "z": 0.29,
           "estimated": false,
           "measured": true
         },
         "trust": {
           "r": 63.9,
-          "z": 0.93,
+          "z": 0.92,
           "estimated": false,
           "measured": true
         },
@@ -1964,7 +1964,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 57.5,
+          "r": 57.4,
           "z": 0.5,
           "estimated": false,
           "measured": true
@@ -2005,8 +2005,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 66.4,
-          "z": 1.09,
+          "r": 66.2,
+          "z": 1.08,
           "estimated": false,
           "measured": true
         },
@@ -2045,14 +2045,14 @@
       "price": 2.31,
       "price_in": 3.0,
       "price_out": 15.0,
-      "ttft": 1.37,
-      "total_resp": 12.16,
-      "speed": 46.0,
+      "ttft": 1.39,
+      "total_resp": 12.51,
+      "speed": 45.0,
       "ctx": 1000000,
       "value": 15.6,
       "radar": {
         "knowledge": {
-          "r": 55.7,
+          "r": 55.8,
           "z": 0.38,
           "estimated": false,
           "measured": true
@@ -2070,8 +2070,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 64.9,
-          "z": 0.99,
+          "r": 64.8,
+          "z": 0.98,
           "estimated": false,
           "measured": true
         },
@@ -2088,7 +2088,7 @@
           "measured": true
         },
         "long_context": {
-          "r": 54.1,
+          "r": 54.2,
           "z": 0.28,
           "estimated": false,
           "measured": true
@@ -2110,8 +2110,8 @@
       "price": 4.35,
       "price_in": 5.0,
       "price_out": 30.0,
-      "ttft": 0.88,
-      "total_resp": 9.5,
+      "ttft": 0.92,
+      "total_resp": 9.47,
       "speed": 58.0,
       "ctx": 922000,
       "value": 8.0,
@@ -2135,8 +2135,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 52.9,
-          "z": 0.19,
+          "r": 53.1,
+          "z": 0.21,
           "estimated": false,
           "measured": true
         },
@@ -2175,15 +2175,15 @@
       "price": 1.31,
       "price_in": 1.5,
       "price_out": 9.0,
-      "ttft": 0.93,
-      "total_resp": 3.76,
+      "ttft": 0.89,
+      "total_resp": 3.72,
       "speed": 177.0,
       "ctx": 1000000,
       "value": 26.7,
       "radar": {
         "knowledge": {
           "r": 61.9,
-          "z": 0.79,
+          "z": 0.8,
           "estimated": false,
           "measured": true
         },
@@ -2195,19 +2195,19 @@
         },
         "coding": {
           "r": 62.5,
-          "z": 0.83,
+          "z": 0.84,
           "estimated": false,
           "measured": true
         },
         "agentic": {
-          "r": 58.6,
+          "r": 58.5,
           "z": 0.57,
           "estimated": false,
           "measured": true
         },
         "trust": {
           "r": 47.4,
-          "z": -0.17,
+          "z": -0.18,
           "estimated": false,
           "measured": true
         },
@@ -2219,7 +2219,7 @@
         },
         "long_context": {
           "r": 50.5,
-          "z": 0.03,
+          "z": 0.04,
           "estimated": false,
           "measured": true
         },
@@ -2240,14 +2240,14 @@
       "price": 0.9,
       "price_in": 0.6,
       "price_out": 3.6,
-      "ttft": 2.71,
-      "total_resp": 76.83,
-      "speed": 50.0,
+      "ttft": 2.78,
+      "total_resp": 73.16,
+      "speed": 52.0,
       "ctx": 262000,
       "value": 37.8,
       "radar": {
         "knowledge": {
-          "r": 56.0,
+          "r": 56.1,
           "z": 0.4,
           "estimated": false,
           "measured": true
@@ -2265,7 +2265,7 @@
           "measured": true
         },
         "agentic": {
-          "r": 51.6,
+          "r": 51.7,
           "z": 0.11,
           "estimated": false,
           "measured": true
@@ -2283,7 +2283,7 @@
           "measured": true
         },
         "long_context": {
-          "r": 59.9,
+          "r": 60.0,
           "z": 0.66,
           "estimated": false,
           "measured": true
@@ -2305,15 +2305,15 @@
       "price": 2.31,
       "price_in": 3.0,
       "price_out": 15.0,
-      "ttft": 1.24,
-      "total_resp": 11.93,
-      "speed": 47.0,
+      "ttft": 1.36,
+      "total_resp": 12.31,
+      "speed": 46.0,
       "ctx": 1000000,
       "value": 14.7,
       "radar": {
         "knowledge": {
           "r": 54.0,
-          "z": 0.26,
+          "z": 0.27,
           "estimated": false,
           "measured": true
         },
@@ -2330,13 +2330,13 @@
           "measured": true
         },
         "agentic": {
-          "r": 62.7,
-          "z": 0.85,
+          "r": 62.6,
+          "z": 0.84,
           "estimated": false,
           "measured": true
         },
         "trust": {
-          "r": 56.0,
+          "r": 55.9,
           "z": 0.4,
           "estimated": false,
           "measured": true
@@ -2349,78 +2349,13 @@
         },
         "long_context": {
           "r": 54.9,
-          "z": 0.32,
+          "z": 0.33,
           "estimated": false,
           "measured": true
         },
         "instruction": {
           "r": 34.5,
           "z": -1.03,
-          "estimated": false,
-          "measured": true
-        }
-      }
-    },
-    {
-      "slug": "gpt-55-instant-may-2026",
-      "name": "GPT-5.5 Instant (May 2026)",
-      "creator": "OpenAI",
-      "license": "Proprietary",
-      "intel": 34.0,
-      "price": 4.35,
-      "price_in": 5.0,
-      "price_out": 30.0,
-      "ttft": null,
-      "total_resp": null,
-      "speed": null,
-      "ctx": 400000,
-      "value": 7.8,
-      "radar": {
-        "knowledge": {
-          "r": 62.9,
-          "z": 0.86,
-          "estimated": false,
-          "measured": true
-        },
-        "reasoning": {
-          "r": 50.4,
-          "z": 0.03,
-          "estimated": false,
-          "measured": true
-        },
-        "coding": {
-          "r": 61.9,
-          "z": 0.79,
-          "estimated": false,
-          "measured": true
-        },
-        "agentic": {
-          "r": 53.7,
-          "z": 0.25,
-          "estimated": false,
-          "measured": true
-        },
-        "trust": {
-          "r": 53.3,
-          "z": 0.22,
-          "estimated": false,
-          "measured": true
-        },
-        "multimodal": {
-          "r": null,
-          "z": null,
-          "estimated": false,
-          "measured": false
-        },
-        "long_context": {
-          "r": 52.7,
-          "z": 0.18,
-          "estimated": false,
-          "measured": true
-        },
-        "instruction": {
-          "r": 60.1,
-          "z": 0.67,
           "estimated": false,
           "measured": true
         }
@@ -2460,14 +2395,14 @@
           "measured": true
         },
         "agentic": {
-          "r": 64.5,
-          "z": 0.97,
+          "r": 64.3,
+          "z": 0.96,
           "estimated": false,
           "measured": true
         },
         "trust": {
           "r": 50.7,
-          "z": 0.05,
+          "z": 0.04,
           "estimated": false,
           "measured": true
         },
@@ -2492,6 +2427,71 @@
       }
     },
     {
+      "slug": "gpt-55-instant-may-2026",
+      "name": "GPT-5.5 Instant (May 2026)",
+      "creator": "OpenAI",
+      "license": "Proprietary",
+      "intel": 34.0,
+      "price": 4.35,
+      "price_in": 5.0,
+      "price_out": 30.0,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
+      "ctx": 400000,
+      "value": 7.8,
+      "radar": {
+        "knowledge": {
+          "r": 62.9,
+          "z": 0.86,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 50.4,
+          "z": 0.03,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 61.9,
+          "z": 0.79,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 53.6,
+          "z": 0.24,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 53.3,
+          "z": 0.22,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 52.7,
+          "z": 0.18,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 60.1,
+          "z": 0.67,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
       "slug": "qwen36-35b-a3b",
       "name": "Qwen3.6 35B A3B",
       "creator": "Alibaba",
@@ -2500,7 +2500,7 @@
       "price": 0.37,
       "price_in": 0.25,
       "price_out": 1.49,
-      "ttft": 2.31,
+      "ttft": 2.32,
       "total_resp": 35.91,
       "speed": 175.0,
       "ctx": 262000,
@@ -2508,7 +2508,7 @@
       "radar": {
         "knowledge": {
           "r": 45.6,
-          "z": -0.3,
+          "z": -0.29,
           "estimated": false,
           "measured": true
         },
@@ -2525,13 +2525,13 @@
           "measured": true
         },
         "agentic": {
-          "r": 49.8,
-          "z": -0.01,
+          "r": 50.0,
+          "z": 0.0,
           "estimated": false,
           "measured": true
         },
         "trust": {
-          "r": 62.6,
+          "r": 62.5,
           "z": 0.84,
           "estimated": false,
           "measured": true
@@ -2565,8 +2565,8 @@
       "price": 0.68,
       "price_in": 0.4,
       "price_out": 3.2,
-      "ttft": 2.39,
-      "total_resp": 20.27,
+      "ttft": 2.41,
+      "total_resp": 20.25,
       "speed": 140.0,
       "ctx": 262000,
       "value": 47.1,
@@ -2590,8 +2590,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 50.8,
-          "z": 0.05,
+          "r": 51.0,
+          "z": 0.07,
           "estimated": false,
           "measured": true
         },
@@ -2630,9 +2630,9 @@
       "price": 0.84,
       "price_in": 0.4,
       "price_out": 4.8,
-      "ttft": 2.38,
-      "total_resp": 12.6,
-      "speed": 49.0,
+      "ttft": 2.37,
+      "total_resp": 12.27,
+      "speed": 50.0,
       "ctx": 256000,
       "value": 36.9,
       "radar": {
@@ -2655,8 +2655,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 55.5,
-          "z": 0.37,
+          "r": 55.4,
+          "z": 0.36,
           "estimated": false,
           "measured": true
         },
@@ -2674,7 +2674,7 @@
         },
         "long_context": {
           "r": 50.5,
-          "z": 0.03,
+          "z": 0.04,
           "estimated": false,
           "measured": true
         },
@@ -2695,9 +2695,9 @@
       "price": 0.18,
       "price_in": 0.43,
       "price_out": 0.87,
-      "ttft": 1.9,
-      "total_resp": 7.58,
-      "speed": 88.0,
+      "ttft": 1.68,
+      "total_resp": 8.14,
+      "speed": 77.0,
       "ctx": 1000000,
       "value": 172.2,
       "radar": {
@@ -2720,14 +2720,14 @@
           "measured": true
         },
         "agentic": {
-          "r": 63.5,
-          "z": 0.9,
+          "r": 63.3,
+          "z": 0.89,
           "estimated": false,
           "measured": true
         },
         "trust": {
           "r": 37.5,
-          "z": -0.83,
+          "z": -0.84,
           "estimated": false,
           "measured": true
         },
@@ -2760,9 +2760,9 @@
       "price": 0.77,
       "price_in": 1.0,
       "price_out": 5.0,
-      "ttft": 23.55,
-      "total_resp": 27.73,
-      "speed": 119.0,
+      "ttft": 20.25,
+      "total_resp": 25.32,
+      "speed": 99.0,
       "ctx": 200000,
       "value": 39.0,
       "radar": {
@@ -2785,8 +2785,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 42.6,
-          "z": -0.49,
+          "r": 42.8,
+          "z": -0.48,
           "estimated": false,
           "measured": true
         },
@@ -2803,7 +2803,7 @@
           "measured": true
         },
         "long_context": {
-          "r": 62.8,
+          "r": 62.9,
           "z": 0.86,
           "estimated": false,
           "measured": true
@@ -2825,9 +2825,9 @@
       "price": 0.65,
       "price_in": 0.75,
       "price_out": 4.5,
-      "ttft": 9.8,
-      "total_resp": 12.62,
-      "speed": 178.0,
+      "ttft": 6.96,
+      "total_resp": 9.88,
+      "speed": 171.0,
       "ctx": 400000,
       "value": 46.2,
       "radar": {
@@ -2890,9 +2890,9 @@
       "price": 1.55,
       "price_in": 2.0,
       "price_out": 8.0,
-      "ttft": 5.42,
-      "total_resp": 8.53,
-      "speed": 161.0,
+      "ttft": 5.47,
+      "total_resp": 9.13,
+      "speed": 137.0,
       "ctx": 200000,
       "value": 19.4,
       "radar": {
@@ -2915,8 +2915,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 61.0,
-          "z": 0.73,
+          "r": 60.8,
+          "z": 0.72,
           "estimated": false,
           "measured": true
         },
@@ -2955,9 +2955,9 @@
       "price": 0.18,
       "price_in": 0.2,
       "price_out": 1.25,
-      "ttft": 4.33,
-      "total_resp": 7.41,
-      "speed": 163.0,
+      "ttft": 2.49,
+      "total_resp": 5.66,
+      "speed": 158.0,
       "ctx": 400000,
       "value": 166.7,
       "radar": {
@@ -2980,13 +2980,13 @@
           "measured": true
         },
         "agentic": {
-          "r": 50.7,
+          "r": 50.6,
           "z": 0.04,
           "estimated": false,
           "measured": true
         },
         "trust": {
-          "r": 62.6,
+          "r": 62.5,
           "z": 0.84,
           "estimated": false,
           "measured": true
@@ -3020,8 +3020,8 @@
       "price": 0.0,
       "price_in": 0.0,
       "price_out": 0.0,
-      "ttft": 1.13,
-      "total_resp": 64.53,
+      "ttft": 1.12,
+      "total_resp": 64.25,
       "speed": 35.0,
       "ctx": 256000,
       "value": null,
@@ -3045,8 +3045,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 49.2,
-          "z": -0.05,
+          "r": 49.4,
+          "z": -0.04,
           "estimated": false,
           "measured": true
         },
@@ -3063,7 +3063,7 @@
           "measured": true
         },
         "long_context": {
-          "r": 57.0,
+          "r": 57.1,
           "z": 0.47,
           "estimated": false,
           "measured": true
@@ -3085,9 +3085,9 @@
       "price": 0.06,
       "price_in": 0.14,
       "price_out": 0.28,
-      "ttft": 1.4,
-      "total_resp": 5.95,
-      "speed": 110.0,
+      "ttft": 1.53,
+      "total_resp": 5.29,
+      "speed": 133.0,
       "ctx": 1000000,
       "value": 483.3,
       "radar": {
@@ -3110,8 +3110,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 63.5,
-          "z": 0.9,
+          "r": 63.3,
+          "z": 0.89,
           "estimated": false,
           "measured": true
         },
@@ -3151,8 +3151,8 @@
       "price_in": 1.25,
       "price_out": 10.0,
       "ttft": 19.34,
-      "total_resp": 23.08,
-      "speed": 134.0,
+      "total_resp": 23.16,
+      "speed": 131.0,
       "ctx": 1000000,
       "value": 20.1,
       "radar": {
@@ -3193,7 +3193,7 @@
           "measured": true
         },
         "long_context": {
-          "r": 59.9,
+          "r": 60.0,
           "z": 0.66,
           "estimated": false,
           "measured": true
@@ -3240,8 +3240,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 37.8,
-          "z": -0.82,
+          "r": 38.0,
+          "z": -0.8,
           "estimated": false,
           "measured": true
         },
@@ -3280,9 +3280,9 @@
       "price": 0.11,
       "price_in": 0.1,
       "price_out": 0.15,
-      "ttft": 1.85,
-      "total_resp": 45.13,
-      "speed": 58.0,
+      "ttft": 1.83,
+      "total_resp": 46.35,
+      "speed": 56.0,
       "ctx": 262000,
       "value": 227.3,
       "radar": {
@@ -3324,7 +3324,7 @@
         },
         "long_context": {
           "r": 54.9,
-          "z": 0.32,
+          "z": 0.33,
           "estimated": false,
           "measured": true
         },
@@ -3345,9 +3345,9 @@
       "price": 0.28,
       "price_in": 0.3,
       "price_out": 0.75,
-      "ttft": 1.32,
-      "total_resp": 10.55,
-      "speed": 271.0,
+      "ttft": 1.35,
+      "total_resp": 11.64,
+      "speed": 243.0,
       "ctx": 1000000,
       "value": 89.3,
       "radar": {
@@ -3365,13 +3365,13 @@
         },
         "coding": {
           "r": 47.4,
-          "z": -0.18,
+          "z": -0.17,
           "estimated": false,
           "measured": true
         },
         "agentic": {
-          "r": 33.4,
-          "z": -1.11,
+          "r": 33.7,
+          "z": -1.09,
           "estimated": false,
           "measured": true
         },
@@ -3410,9 +3410,9 @@
       "price": 0.22,
       "price_in": 0.25,
       "price_out": 1.5,
-      "ttft": 5.78,
-      "total_resp": 7.17,
-      "speed": 359.0,
+      "ttft": 5.6,
+      "total_resp": 7.0,
+      "speed": 357.0,
       "ctx": 1000000,
       "value": 113.6,
       "radar": {
@@ -3435,8 +3435,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 32.4,
-          "z": -1.17,
+          "r": 32.7,
+          "z": -1.15,
           "estimated": false,
           "measured": true
         },
@@ -3454,7 +3454,7 @@
         },
         "long_context": {
           "r": 59.2,
-          "z": 0.61,
+          "z": 0.62,
           "estimated": false,
           "measured": true
         },
@@ -3540,9 +3540,9 @@
       "price": 0.2,
       "price_in": 0.15,
       "price_out": 0.6,
-      "ttft": 0.92,
-      "total_resp": 8.38,
-      "speed": 335.0,
+      "ttft": 0.95,
+      "total_resp": 8.67,
+      "speed": 324.0,
       "ctx": 131000,
       "value": 120.0,
       "radar": {
@@ -3565,8 +3565,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 35.3,
-          "z": -0.98,
+          "r": 35.6,
+          "z": -0.96,
           "estimated": false,
           "measured": true
         },
@@ -3605,9 +3605,9 @@
       "price": 0.42,
       "price_in": 0.25,
       "price_out": 2.0,
-      "ttft": 2.22,
-      "total_resp": 4.79,
-      "speed": 195.0,
+      "ttft": 2.23,
+      "total_resp": 4.8,
+      "speed": 194.0,
       "ctx": 262000,
       "value": 54.8,
       "radar": {
@@ -3636,7 +3636,7 @@
           "measured": true
         },
         "trust": {
-          "r": 34.9,
+          "r": 34.8,
           "z": -1.01,
           "estimated": false,
           "measured": true
@@ -3696,7 +3696,7 @@
         },
         "agentic": {
           "r": 52.0,
-          "z": 0.14,
+          "z": 0.13,
           "estimated": false,
           "measured": true
         },
@@ -3735,8 +3735,8 @@
       "price": 0.12,
       "price_in": 0.1,
       "price_out": 0.3,
-      "ttft": 2.45,
-      "total_resp": 22.24,
+      "ttft": 2.41,
+      "total_resp": 22.21,
       "speed": 126.0,
       "ctx": 256000,
       "value": 183.3,
@@ -3754,14 +3754,14 @@
           "measured": true
         },
         "coding": {
-          "r": 45.0,
+          "r": 45.1,
           "z": -0.33,
           "estimated": false,
           "measured": true
         },
         "agentic": {
           "r": 38.5,
-          "z": -0.77,
+          "z": -0.76,
           "estimated": false,
           "measured": true
         },
@@ -3784,7 +3784,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 62.8,
+          "r": 62.7,
           "z": 0.85,
           "estimated": false,
           "measured": true
@@ -3800,9 +3800,9 @@
       "price": 0.43,
       "price_in": 0.35,
       "price_out": 1.2,
-      "ttft": 1.66,
-      "total_resp": 6.15,
-      "speed": 111.0,
+      "ttft": 1.76,
+      "total_resp": 6.46,
+      "speed": 106.0,
       "ctx": 256000,
       "value": 48.8,
       "radar": {
@@ -3825,7 +3825,7 @@
           "measured": true
         },
         "agentic": {
-          "r": 51.7,
+          "r": 51.6,
           "z": 0.11,
           "estimated": false,
           "measured": true
@@ -3930,9 +3930,9 @@
       "price": 0.04,
       "price_in": 0.03,
       "price_out": 0.15,
-      "ttft": 0.76,
-      "total_resp": 79.58,
-      "speed": 32.0,
+      "ttft": 0.92,
+      "total_resp": 92.7,
+      "speed": 27.0,
       "ctx": 262000,
       "value": 500.0,
       "radar": {
@@ -3956,7 +3956,7 @@
         },
         "agentic": {
           "r": 44.8,
-          "z": -0.35,
+          "z": -0.34,
           "estimated": false,
           "measured": true
         },
@@ -3995,8 +3995,8 @@
       "price": 1.05,
       "price_in": 0.5,
       "price_out": 6.0,
-      "ttft": 2.09,
-      "total_resp": 15.91,
+      "ttft": 2.12,
+      "total_resp": 15.92,
       "speed": 181.0,
       "ctx": 262000,
       "value": 19.0,
@@ -4020,7 +4020,7 @@
           "measured": true
         },
         "agentic": {
-          "r": 36.5,
+          "r": 36.6,
           "z": -0.9,
           "estimated": false,
           "measured": true
@@ -4060,9 +4060,9 @@
       "price": 0.17,
       "price_in": 0.1,
       "price_out": 0.8,
-      "ttft": 1.87,
-      "total_resp": 3.71,
-      "speed": 272.0,
+      "ttft": 1.92,
+      "total_resp": 3.79,
+      "speed": 267.0,
       "ctx": 256000,
       "value": 111.8,
       "radar": {
@@ -4085,7 +4085,7 @@
           "measured": true
         },
         "agentic": {
-          "r": 48.5,
+          "r": 48.4,
           "z": -0.1,
           "estimated": false,
           "measured": true
@@ -4125,9 +4125,9 @@
       "price": 0.07,
       "price_in": 0.06,
       "price_out": 0.22,
-      "ttft": 2.69,
-      "total_resp": 30.07,
-      "speed": 91.0,
+      "ttft": 2.89,
+      "total_resp": 34.8,
+      "speed": 78.0,
       "ctx": 1000000,
       "value": 257.1,
       "radar": {
@@ -4150,14 +4150,14 @@
           "measured": true
         },
         "agentic": {
-          "r": 38.1,
-          "z": -0.8,
+          "r": 31.9,
+          "z": -1.21,
           "estimated": false,
           "measured": true
         },
         "trust": {
           "r": 40.8,
-          "z": -0.61,
+          "z": -0.62,
           "estimated": false,
           "measured": true
         },
@@ -4190,9 +4190,9 @@
       "price": 0.2,
       "price_in": 0.15,
       "price_out": 0.6,
-      "ttft": 0.91,
-      "total_resp": 8.13,
-      "speed": 346.0,
+      "ttft": 0.93,
+      "total_resp": 8.3,
+      "speed": 339.0,
       "ctx": 131000,
       "value": 90.0,
       "radar": {
@@ -4215,14 +4215,14 @@
           "measured": true
         },
         "agentic": {
-          "r": 35.0,
-          "z": -1.0,
+          "r": 35.1,
+          "z": -0.99,
           "estimated": false,
           "measured": true
         },
         "trust": {
           "r": 44.1,
-          "z": -0.39,
+          "z": -0.4,
           "estimated": false,
           "measured": true
         },
@@ -4255,9 +4255,9 @@
       "price": 0.65,
       "price_in": 0.75,
       "price_out": 4.5,
-      "ttft": 0.74,
-      "total_resp": 3.76,
-      "speed": 165.0,
+      "ttft": 0.82,
+      "total_resp": 3.99,
+      "speed": 158.0,
       "ctx": 400000,
       "value": 26.2,
       "radar": {
@@ -4280,8 +4280,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 34.8,
-          "z": -1.01,
+          "r": 35.2,
+          "z": -0.99,
           "estimated": false,
           "measured": true
         },
@@ -4320,14 +4320,14 @@
       "price": 0.07,
       "price_in": 0.05,
       "price_out": 0.2,
-      "ttft": 0.91,
-      "total_resp": 12.07,
-      "speed": 224.0,
+      "ttft": 0.92,
+      "total_resp": 11.96,
+      "speed": 226.0,
       "ctx": 131000,
       "value": 214.3,
       "radar": {
         "knowledge": {
-          "r": 38.5,
+          "r": 38.4,
           "z": -0.77,
           "estimated": false,
           "measured": true
@@ -4345,8 +4345,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 28.9,
-          "z": -1.41,
+          "r": 29.2,
+          "z": -1.38,
           "estimated": false,
           "measured": true
         },
@@ -4385,14 +4385,14 @@
       "price": 0.1,
       "price_in": 0.07,
       "price_out": 0.3,
-      "ttft": 1.05,
-      "total_resp": 10.02,
-      "speed": 279.0,
+      "ttft": 1.0,
+      "total_resp": 9.57,
+      "speed": 292.0,
       "ctx": 256000,
       "value": 150.0,
       "radar": {
         "knowledge": {
-          "r": 32.5,
+          "r": 32.4,
           "z": -1.17,
           "estimated": false,
           "measured": true
@@ -4410,14 +4410,14 @@
           "measured": true
         },
         "agentic": {
-          "r": 36.4,
+          "r": 36.5,
           "z": -0.9,
           "estimated": false,
           "measured": true
         },
         "trust": {
           "r": 40.8,
-          "z": -0.61,
+          "z": -0.62,
           "estimated": false,
           "measured": true
         },
@@ -4451,8 +4451,8 @@
       "price_in": 0.06,
       "price_out": 0.2,
       "ttft": 0.87,
-      "total_resp": 12.05,
-      "speed": 224.0,
+      "total_resp": 11.67,
+      "speed": 232.0,
       "ctx": 131000,
       "value": 200.0,
       "radar": {
@@ -4475,8 +4475,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 36.5,
-          "z": -0.9,
+          "r": 36.6,
+          "z": -0.89,
           "estimated": false,
           "measured": true
         },
@@ -4515,15 +4515,15 @@
       "price": 0.12,
       "price_in": 0.1,
       "price_out": 0.3,
-      "ttft": 2.81,
-      "total_resp": 6.46,
-      "speed": 137.0,
+      "ttft": 2.71,
+      "total_resp": 6.39,
+      "speed": 136.0,
       "ctx": 262000,
       "value": 108.3,
       "radar": {
         "knowledge": {
           "r": 34.3,
-          "z": -1.04,
+          "z": -1.05,
           "estimated": false,
           "measured": true
         },
@@ -4540,14 +4540,14 @@
           "measured": true
         },
         "agentic": {
-          "r": 33.9,
-          "z": -1.07,
+          "r": 34.1,
+          "z": -1.06,
           "estimated": false,
           "measured": true
         },
         "trust": {
           "r": 47.4,
-          "z": -0.17,
+          "z": -0.18,
           "estimated": false,
           "measured": true
         },
@@ -4581,8 +4581,8 @@
       "price_in": 0.1,
       "price_out": 0.4,
       "ttft": 1.25,
-      "total_resp": 50.7,
-      "speed": 51.0,
+      "total_resp": 50.96,
+      "speed": 50.0,
       "ctx": 128000,
       "value": 92.3,
       "radar": {
@@ -4605,8 +4605,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 29.9,
-          "z": -1.34,
+          "r": 30.1,
+          "z": -1.33,
           "estimated": false,
           "measured": true
         },
@@ -4670,8 +4670,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 29.2,
-          "z": -1.39,
+          "r": 29.4,
+          "z": -1.37,
           "estimated": false,
           "measured": true
         },
@@ -4735,8 +4735,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 26.1,
-          "z": -1.59,
+          "r": 26.3,
+          "z": -1.58,
           "estimated": false,
           "measured": true
         },
@@ -4775,9 +4775,9 @@
       "price": 0.03,
       "price_in": 0.02,
       "price_out": 0.1,
-      "ttft": 0.7,
-      "total_resp": 67.07,
-      "speed": 38.0,
+      "ttft": 0.96,
+      "total_resp": 69.14,
+      "speed": 37.0,
       "ctx": 262000,
       "value": 333.3,
       "radar": {
@@ -4795,18 +4795,18 @@
         },
         "coding": {
           "r": 15.1,
-          "z": -2.32,
+          "z": -2.33,
           "estimated": false,
           "measured": true
         },
         "agentic": {
-          "r": 34.2,
-          "z": -1.05,
+          "r": 34.3,
+          "z": -1.04,
           "estimated": false,
           "measured": true
         },
         "trust": {
-          "r": 59.3,
+          "r": 59.2,
           "z": 0.62,
           "estimated": false,
           "measured": true
@@ -4840,9 +4840,9 @@
       "price": 0.32,
       "price_in": 0.25,
       "price_out": 0.97,
-      "ttft": 2.08,
-      "total_resp": 32.67,
-      "speed": 82.0,
+      "ttft": 2.09,
+      "total_resp": 32.15,
+      "speed": 83.0,
       "ctx": 65500,
       "value": 31.2,
       "radar": {
@@ -4865,8 +4865,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 27.3,
-          "z": -1.51,
+          "r": 27.5,
+          "z": -1.5,
           "estimated": false,
           "measured": true
         },
@@ -4905,8 +4905,8 @@
       "price": 0.72,
       "price_in": 0.6,
       "price_out": 1.8,
-      "ttft": 2.41,
-      "total_resp": 50.72,
+      "ttft": 2.42,
+      "total_resp": 50.92,
       "speed": 52.0,
       "ctx": 128000,
       "value": 12.5,
@@ -4930,8 +4930,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 23.4,
-          "z": -1.77,
+          "r": 23.6,
+          "z": -1.76,
           "estimated": false,
           "measured": true
         },
@@ -4948,7 +4948,7 @@
           "measured": false
         },
         "long_context": {
-          "r": 17.2,
+          "r": 17.1,
           "z": -2.19,
           "estimated": false,
           "measured": true
@@ -4970,9 +4970,9 @@
       "price": 0.05,
       "price_in": 0.04,
       "price_out": 0.16,
-      "ttft": 5.47,
-      "total_resp": 34.56,
-      "speed": 86.0,
+      "ttft": 4.53,
+      "total_resp": 34.26,
+      "speed": 84.0,
       "ctx": 131000,
       "value": 180.0,
       "radar": {
@@ -4995,8 +4995,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 26.7,
-          "z": -1.55,
+          "r": 26.9,
+          "z": -1.54,
           "estimated": false,
           "measured": true
         },
@@ -5036,8 +5036,8 @@
       "price_in": 0.2,
       "price_out": 0.6,
       "ttft": 0.44,
-      "total_resp": 9.43,
-      "speed": 278.0,
+      "total_resp": 10.18,
+      "speed": 256.0,
       "ctx": 128000,
       "value": 37.5,
       "radar": {
@@ -5060,8 +5060,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 27.8,
-          "z": -1.48,
+          "r": 28.0,
+          "z": -1.47,
           "estimated": false,
           "measured": true
         },
@@ -5086,6 +5086,71 @@
         "instruction": {
           "r": 25.7,
           "z": -1.62,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "kimi-linear-48b-a3b-instruct",
+      "name": "Kimi Linear 48B A3B Instruct",
+      "creator": "Kimi",
+      "license": "Open",
+      "intel": 9.0,
+      "price": null,
+      "price_in": null,
+      "price_out": null,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
+      "ctx": 1000000,
+      "value": null,
+      "radar": {
+        "knowledge": {
+          "r": 30.4,
+          "z": -1.3,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 32.7,
+          "z": -1.15,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 29.7,
+          "z": -1.35,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 24.5,
+          "z": -1.7,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 57.9,
+          "z": 0.53,
+          "estimated": true,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 30.9,
+          "z": -1.27,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 22.2,
+          "z": -1.86,
           "estimated": false,
           "measured": true
         }
@@ -5125,8 +5190,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 26.9,
-          "z": -1.54,
+          "r": 27.0,
+          "z": -1.53,
           "estimated": false,
           "measured": true
         },
@@ -5172,7 +5237,7 @@
       "value": null,
       "radar": {
         "knowledge": {
-          "r": 29.3,
+          "r": 29.2,
           "z": -1.38,
           "estimated": false,
           "measured": true
@@ -5190,8 +5255,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 30.9,
-          "z": -1.28,
+          "r": 31.0,
+          "z": -1.27,
           "estimated": false,
           "measured": true
         },
@@ -5222,71 +5287,6 @@
       }
     },
     {
-      "slug": "kimi-linear-48b-a3b-instruct",
-      "name": "Kimi Linear 48B A3B Instruct",
-      "creator": "Kimi",
-      "license": "Open",
-      "intel": 9.0,
-      "price": null,
-      "price_in": null,
-      "price_out": null,
-      "ttft": null,
-      "total_resp": null,
-      "speed": null,
-      "ctx": 1000000,
-      "value": null,
-      "radar": {
-        "knowledge": {
-          "r": 30.4,
-          "z": -1.3,
-          "estimated": false,
-          "measured": true
-        },
-        "reasoning": {
-          "r": 32.7,
-          "z": -1.15,
-          "estimated": false,
-          "measured": true
-        },
-        "coding": {
-          "r": 29.7,
-          "z": -1.35,
-          "estimated": false,
-          "measured": true
-        },
-        "agentic": {
-          "r": 24.3,
-          "z": -1.71,
-          "estimated": false,
-          "measured": true
-        },
-        "trust": {
-          "r": 57.9,
-          "z": 0.53,
-          "estimated": true,
-          "measured": true
-        },
-        "multimodal": {
-          "r": null,
-          "z": null,
-          "estimated": false,
-          "measured": false
-        },
-        "long_context": {
-          "r": 30.9,
-          "z": -1.27,
-          "estimated": false,
-          "measured": true
-        },
-        "instruction": {
-          "r": 22.2,
-          "z": -1.86,
-          "estimated": false,
-          "measured": true
-        }
-      }
-    },
-    {
       "slug": "llama-31-nemotron-70b",
       "name": "Llama 3.1 Nemotron 70B",
       "creator": "NVIDIA",
@@ -5296,8 +5296,8 @@
       "price_in": 1.2,
       "price_out": 1.2,
       "ttft": 5.35,
-      "total_resp": 7.33,
-      "speed": 253.0,
+      "total_resp": 7.42,
+      "speed": 243.0,
       "ctx": 128000,
       "value": 6.7,
       "radar": {
@@ -5320,8 +5320,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 28.4,
-          "z": -1.44,
+          "r": 28.6,
+          "z": -1.43,
           "estimated": false,
           "measured": true
         },
@@ -5338,7 +5338,7 @@
           "measured": false
         },
         "long_context": {
-          "r": 17.2,
+          "r": 17.1,
           "z": -2.19,
           "estimated": false,
           "measured": true
@@ -5360,15 +5360,15 @@
       "price": 0.01,
       "price_in": 0.01,
       "price_out": 0.05,
-      "ttft": 0.76,
-      "total_resp": 63.76,
-      "speed": 40.0,
+      "ttft": 0.8,
+      "total_resp": 78.85,
+      "speed": 32.0,
       "ctx": 262000,
       "value": 500.0,
       "radar": {
         "knowledge": {
           "r": 15.4,
-          "z": -2.3,
+          "z": -2.31,
           "estimated": false,
           "measured": true
         },
@@ -5385,8 +5385,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 33.6,
-          "z": -1.1,
+          "r": 33.7,
+          "z": -1.09,
           "estimated": false,
           "measured": true
         },
@@ -5445,13 +5445,13 @@
         },
         "coding": {
           "r": 16.6,
-          "z": -2.22,
+          "z": -2.23,
           "estimated": false,
           "measured": true
         },
         "agentic": {
-          "r": 25.1,
-          "z": -1.66,
+          "r": 25.3,
+          "z": -1.64,
           "estimated": false,
           "measured": true
         },
@@ -5515,8 +5515,8 @@
           "measured": true
         },
         "agentic": {
-          "r": 21.8,
-          "z": -1.88,
+          "r": 22.1,
+          "z": -1.86,
           "estimated": false,
           "measured": true
         },
@@ -5539,74 +5539,9 @@
           "measured": true
         },
         "instruction": {
-          "r": 8.0,
+          "r": 8.1,
           "z": -2.8,
           "estimated": false,
-          "measured": true
-        }
-      }
-    },
-    {
-      "slug": "gpt-55-pro-xhigh",
-      "name": "GPT-5.5 Pro (xhigh)",
-      "creator": "OpenAI",
-      "license": "Proprietary",
-      "intel": null,
-      "price": null,
-      "price_in": null,
-      "price_out": null,
-      "ttft": null,
-      "total_resp": null,
-      "speed": null,
-      "ctx": 922000,
-      "value": null,
-      "radar": {
-        "knowledge": {
-          "r": 77.2,
-          "z": 1.81,
-          "estimated": true,
-          "measured": true
-        },
-        "reasoning": {
-          "r": 89.2,
-          "z": 2.61,
-          "estimated": false,
-          "measured": true
-        },
-        "coding": {
-          "r": 72.6,
-          "z": 1.51,
-          "estimated": true,
-          "measured": true
-        },
-        "agentic": {
-          "r": 70.5,
-          "z": 1.37,
-          "estimated": true,
-          "measured": true
-        },
-        "trust": {
-          "r": 49.5,
-          "z": -0.03,
-          "estimated": true,
-          "measured": true
-        },
-        "multimodal": {
-          "r": null,
-          "z": null,
-          "estimated": false,
-          "measured": false
-        },
-        "long_context": {
-          "r": 64.7,
-          "z": 0.98,
-          "estimated": true,
-          "measured": true
-        },
-        "instruction": {
-          "r": 60.5,
-          "z": 0.7,
-          "estimated": true,
           "measured": true
         }
       }
@@ -5640,7 +5575,7 @@
         },
         "coding": {
           "r": 70.3,
-          "z": 1.35,
+          "z": 1.36,
           "estimated": true,
           "measured": true
         },
@@ -5663,14 +5598,79 @@
           "measured": false
         },
         "long_context": {
-          "r": 65.1,
-          "z": 1.01,
+          "r": 64.6,
+          "z": 0.97,
           "estimated": true,
           "measured": true
         },
         "instruction": {
-          "r": 61.9,
-          "z": 0.8,
+          "r": 62.7,
+          "z": 0.85,
+          "estimated": true,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "gpt-55-pro-xhigh",
+      "name": "GPT-5.5 Pro (xhigh)",
+      "creator": "OpenAI",
+      "license": "Proprietary",
+      "intel": null,
+      "price": null,
+      "price_in": null,
+      "price_out": null,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
+      "ctx": 922000,
+      "value": null,
+      "radar": {
+        "knowledge": {
+          "r": 76.1,
+          "z": 1.74,
+          "estimated": true,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 89.2,
+          "z": 2.61,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 72.2,
+          "z": 1.48,
+          "estimated": true,
+          "measured": true
+        },
+        "agentic": {
+          "r": 72.6,
+          "z": 1.5,
+          "estimated": true,
+          "measured": true
+        },
+        "trust": {
+          "r": 50.8,
+          "z": 0.05,
+          "estimated": true,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 64.5,
+          "z": 0.97,
+          "estimated": true,
+          "measured": true
+        },
+        "instruction": {
+          "r": 60.3,
+          "z": 0.68,
           "estimated": true,
           "measured": true
         }
