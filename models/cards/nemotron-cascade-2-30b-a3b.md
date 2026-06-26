@@ -11,7 +11,7 @@ radar:
   knowledge: { s: 38.5, z: -0.58, r: 41.3, estimated: false }  # 전문 지식
   reasoning: { s: 33.6, z: -0.51, r: 42.3, estimated: false }  # 추론
   coding: { s: 50.0, z: -0.41, r: 43.9, estimated: false }  # 코딩
-  agentic: { s: 43.4, z: -0.33, r: 45.0, estimated: false }  # 에이전트
+  agentic: { s: 43.4, z: -0.32, r: 45.2, estimated: false }  # 에이전트
   trust: { s: 13.8, z: -0.7, r: 39.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 45.9, z: -0.88, r: 36.7, estimated: false }  # 긴문맥
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron Cascade 2 30B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-25
-timestamp: 2026-06-25T00:00:00Z
+updated: 2026-06-26
+timestamp: 2026-06-26T00:00:00Z
 ---
 
 # Nemotron Cascade 2 30B A3B
@@ -42,7 +42,7 @@ NVIDIA · Open · 컨텍스트 1M · 종합지능 **21.0**
 | 전문 지식 | 41.3 | -0.58 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 76.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
 | 추론 | 42.3 | -0.51 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
 | 코딩 | 43.9 | -0.41 | 실측 | [[scicode]] 35.0%×1.0, [[terminal-bench]] 21.0%×0.5 |
-| 에이전트 | 45.0 | -0.33 | 실측 | [[tau2-bench]] 53.0%×1.0, [[terminal-bench]] 21.0%×1.0 |
+| 에이전트 | 45.2 | -0.32 | 실측 | [[tau2-bench]] 53.0%×1.0, [[terminal-bench]] 21.0%×1.0 |
 | 신뢰성 | 39.5 | -0.7 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 36.7 | -0.88 | 실측 | [[aa-lcr]] 34.0%×1.0 |

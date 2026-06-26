@@ -11,7 +11,7 @@ radar:
   knowledge: { s: 99.7, z: 2.17, r: 82.6, estimated: false }  # 전문 지식
   reasoning: { s: 97.4, z: 2.49, r: 87.4, estimated: false }  # 추론
   coding: { s: 100.0, z: 1.75, r: 76.3, estimated: false }  # 코딩
-  agentic: { s: 96.0, z: 1.73, r: 76.0, estimated: false }  # 에이전트
+  agentic: { s: 96.0, z: 1.74, r: 76.0, estimated: false }  # 에이전트
   trust: { s: 51.2, z: 0.62, r: 59.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 94.6, z: 0.86, r: 62.9, estimated: false }  # 긴문맥
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Fable 5 (with fallback)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-25
-timestamp: 2026-06-25T00:00:00Z
+updated: 2026-06-26
+timestamp: 2026-06-26T00:00:00Z
 ---
 
 # Claude Fable 5 (with fallback)
@@ -42,7 +42,7 @@ Anthropic · Proprietary · 컨텍스트 1M · 종합지능 **60.0**
 | 전문 지식 | 82.6 | +2.17 | 실측 | [[aa-omniscience]] 61.0%×1.0, [[gpqa-diamond]] 93.0%×0.4, [[humanitys-last-exam]] 53.0%×0.3 |
 | 추론 | 87.4 | +2.49 | 실측 | [[critpt]] 29.0%×1.0, [[gpqa-diamond]] 93.0%×1.0, [[humanitys-last-exam]] 53.0%×1.0 |
 | 코딩 | 76.3 | +1.75 | 실측 | [[scicode]] 60.0%×1.0, [[terminal-bench]] 63.0%×0.5 |
-| 에이전트 | 76.0 | +1.73 | 실측 | [[gdpval]] 63.0%×1.0, [[tau2-bench]] 99.0%×1.0, [[tau3-banking]] 27.0%×1.0, [[terminal-bench]] 63.0%×1.0 |
+| 에이전트 | 76.0 | +1.74 | 실측 | [[gdpval]] 63.0%×1.0, [[tau2-bench]] 99.0%×1.0, [[tau3-banking]] 27.0%×1.0, [[terminal-bench]] 63.0%×1.0 |
 | 신뢰성 | 59.2 | +0.62 | 실측 | [[aa-omniscience]] 45.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 62.9 | +0.86 | 실측 | [[aa-lcr]] 70.0%×1.0 |

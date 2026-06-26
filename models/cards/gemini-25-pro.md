@@ -5,23 +5,23 @@ creator: Google
 license: Proprietary
 intelligence_index: 27.0
 price_blended_usd_1m: 1.34
-output_speed_tps: 131.0
+output_speed_tps: 133.0
 context_window: 1000000
 radar:
   knowledge: { s: 64.7, z: 0.6, r: 59.0, estimated: false }  # 전문 지식
   reasoning: { s: 45.4, z: 0.04, r: 50.6, estimated: false }  # 추론
   coding: { s: 62.1, z: 0.11, r: 51.7, estimated: false }  # 코딩
-  agentic: { s: 48.7, z: -0.13, r: 48.1, estimated: false }  # 에이전트
+  agentic: { s: 35.6, z: -0.63, r: 40.6, estimated: false }  # 에이전트
   trust: { s: 11.2, z: -0.79, r: 38.1, estimated: false }  # 신뢰성
-  multimodal: { s: 84.5, z: 0.49, r: 57.3, estimated: false }  # 멀티모달
+  multimodal: { s: 84.5, z: 0.47, r: 57.1, estimated: false }  # 멀티모달
   long_context: { s: 89.2, z: 0.66, r: 60.0, estimated: false }  # 긴문맥
   instruction: { s: 52.1, z: -0.62, r: 40.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.5 Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-25
-timestamp: 2026-06-25T00:00:00Z
+updated: 2026-06-26
+timestamp: 2026-06-26T00:00:00Z
 ---
 
 # Gemini 2.5 Pro
@@ -30,10 +30,10 @@ Google · Proprietary · 컨텍스트 1M · 종합지능 **27.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 전문 지식
-- **약점**: 지시 따르기, 신뢰성
+- **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $1.25 · 출력 $10.0 · 혼합 $1.34/1M · 131.0 t/s · TTFT 19.34s · 1M ctx` · 가성비 20.1
+`입력 $1.25 · 출력 $10.0 · 혼합 $1.34/1M · 133.0 t/s · TTFT 20.92s · 1M ctx` · 가성비 20.1
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -42,9 +42,9 @@ Google · Proprietary · 컨텍스트 1M · 종합지능 **27.0**
 | 전문 지식 | 59.0 | +0.6 | 실측 | [[aa-omniscience]] 39.0%×1.0, [[gpqa-diamond]] 84.0%×0.4, [[humanitys-last-exam]] 21.0%×0.3 |
 | 추론 | 50.6 | +0.04 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 84.0%×1.0, [[humanitys-last-exam]] 21.0%×1.0 |
 | 코딩 | 51.7 | +0.11 | 실측 | [[scicode]] 43.0%×1.0, [[terminal-bench]] 27.0%×0.5 |
-| 에이전트 | 48.1 | -0.13 | 실측 | [[tau2-bench]] 54.0%×1.0, [[terminal-bench]] 27.0%×1.0 |
+| 에이전트 | 40.6 | -0.63 | 실측 | [[gdpval]] 6.0%×1.0, [[tau2-bench]] 54.0%×1.0, [[terminal-bench]] 27.0%×1.0 |
 | 신뢰성 | 38.1 | -0.79 | 실측 | [[aa-omniscience]] 13.0%×1.0 |
-| 멀티모달 | 57.3 | +0.49 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
+| 멀티모달 | 57.1 | +0.47 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
 | 긴문맥 | 60.0 | +0.66 | 실측 | [[aa-lcr]] 66.0%×1.0 |
 | 지시 따르기 | 40.7 | -0.62 | 실측 | [[ifbench]] 49.0%×1.0 |
 

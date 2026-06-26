@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5.2 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-25
-timestamp: 2026-06-25T00:00:00Z
+updated: 2026-06-26
+timestamp: 2026-06-26T00:00:00Z
 ---
 
 # GLM-5.2 (max)

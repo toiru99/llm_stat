@@ -11,7 +11,7 @@ radar:
   knowledge: { s: 14.4, z: -1.66, r: 25.1, estimated: false }  # 전문 지식
   reasoning: { s: 15.7, z: -1.36, r: 29.6, estimated: false }  # 추론
   coding: { s: 7.8, z: -2.23, r: 16.6, estimated: false }  # 코딩
-  agentic: { s: 10.1, z: -1.64, r: 25.3, estimated: false }  # 에이전트
+  agentic: { s: 10.1, z: -1.63, r: 25.6, estimated: false }  # 에이전트
   trust: { s: 6.2, z: -0.97, r: 35.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -2.53, r: 12.1, estimated: false }  # 긴문맥
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Exaone 4.0 1.2B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-25
-timestamp: 2026-06-25T00:00:00Z
+updated: 2026-06-26
+timestamp: 2026-06-26T00:00:00Z
 ---
 
 # Exaone 4.0 1.2B
@@ -42,7 +42,7 @@ LG AI Research · Open · 컨텍스트 64k · 종합지능 **3.0**
 | 전문 지식 | 25.1 | -1.66 | 실측 | [[aa-omniscience]] 5.0%×1.0, [[gpqa-diamond]] 42.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 29.6 | -1.36 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 42.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 16.6 | -2.23 | 실측 | [[scicode]] 7.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 25.3 | -1.64 | 실측 | [[tau2-bench]] 20.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 에이전트 | 25.6 | -1.63 | 실측 | [[tau2-bench]] 20.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | 35.5 | -0.97 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 12.1 | -2.53 | 실측 | [[aa-lcr]] 0.0%×1.0 |

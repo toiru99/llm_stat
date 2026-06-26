@@ -5,13 +5,13 @@ creator: OpenAI
 license: Open
 intelligence_index: 15.0
 price_blended_usd_1m: 0.07
-output_speed_tps: 226.0
+output_speed_tps: 233.0
 context_window: 131000
 radar:
   knowledge: { s: 34.2, z: -0.77, r: 38.4, estimated: false }  # 전문 지식
   reasoning: { s: 30.1, z: -0.68, r: 39.8, estimated: false }  # 추론
   coding: { s: 43.6, z: -0.68, r: 39.8, estimated: false }  # 코딩
-  agentic: { s: 16.7, z: -1.38, r: 29.2, estimated: false }  # 에이전트
+  agentic: { s: 16.7, z: -1.37, r: 29.5, estimated: false }  # 에이전트
   trust: { s: 2.5, z: -1.1, r: 33.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 41.9, z: -1.03, r: 34.6, estimated: false }  # 긴문맥
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — gpt-oss-20B (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-25
-timestamp: 2026-06-25T00:00:00Z
+updated: 2026-06-26
+timestamp: 2026-06-26T00:00:00Z
 ---
 
 # gpt-oss-20B (high)
@@ -33,7 +33,7 @@ OpenAI · Open · 컨텍스트 131k · 종합지능 **15.0**
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.2 · 혼합 $0.07/1M · 226.0 t/s · TTFT 0.92s · 131k ctx` · 가성비 214.3
+`입력 $0.05 · 출력 $0.2 · 혼합 $0.07/1M · 233.0 t/s · TTFT 0.95s · 131k ctx` · 가성비 214.3
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -42,7 +42,7 @@ OpenAI · Open · 컨텍스트 131k · 종합지능 **15.0**
 | 전문 지식 | 38.4 | -0.77 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 69.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
 | 추론 | 39.8 | -0.68 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 69.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
 | 코딩 | 39.8 | -0.68 | 실측 | [[scicode]] 34.0%×1.0, [[terminal-bench]] 11.0%×0.5 |
-| 에이전트 | 29.2 | -1.38 | 실측 | [[apex-agents]] 1.0%×1.0, [[gdpval]] 1.0%×1.0, [[tau2-bench]] 60.0%×1.0, [[tau3-banking]] 7.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
+| 에이전트 | 29.5 | -1.37 | 실측 | [[apex-agents]] 1.0%×1.0, [[gdpval]] 1.0%×1.0, [[tau2-bench]] 60.0%×1.0, [[tau3-banking]] 7.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
 | 신뢰성 | 33.5 | -1.1 | 실측 | [[aa-omniscience]] 6.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 34.6 | -1.03 | 실측 | [[aa-lcr]] 31.0%×1.0 |

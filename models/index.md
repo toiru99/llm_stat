@@ -1,6 +1,6 @@
 # 모델 (Models)
 
-`scripts/build_cards.py` 자동 생성 · 데이터 2026-06-25 · 제작사 10곳 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
+`scripts/build_cards.py` 자동 생성 · 데이터 2026-06-26 · 제작사 10곳 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
 
 - 레이더 축·방법론: [radar-spec.md](radar-spec.md) · 설정: [../config.toml](../config.toml)
 
@@ -69,11 +69,11 @@
 * [Qwen3.5 4B](cards/qwen35-4b.md) - 종합지능 20.0
 * [Qwen3 Next 80B A3B](cards/qwen3-next-80b-a3b.md) - 종합지능 20.0
 * [Qwen3.5 Omni Flash](cards/qwen35-omni-flash.md) - 종합지능 19.0
-* [NVIDIA Nemotron 3 Nano](cards/nvidia-nemotron-3-nano.md) - 종합지능 18.0
 * [gpt-oss-120b (low)](cards/gpt-oss-120b-low.md) - 종합지능 18.0
 * [GPT-5.4 mini](cards/gpt-54-mini.md) - 종합지능 17.0
 * [gpt-oss-20B (high)](cards/gpt-oss-20b-high.md) - 종합지능 15.0
 * [Nemotron 3 Nano Omni 30B A3B Reasoning](cards/nemotron-3-nano-omni-30b-a3b-reasoning.md) - 종합지능 15.0
+* [NVIDIA Nemotron 3 Nano](cards/nvidia-nemotron-3-nano.md) - 종합지능 14.0
 * [gpt-oss-20B (low)](cards/gpt-oss-20b-low.md) - 종합지능 14.0
 * [Gemma 4 12B (Non-reasoning)](cards/gemma-4-12b-non-reasoning.md) - 종합지능 13.0
 * [Llama Nemotron Super 49B v1.5](cards/llama-nemotron-super-49b-v15.md) - 종합지능 12.0

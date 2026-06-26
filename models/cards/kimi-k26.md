@@ -5,23 +5,23 @@ creator: Kimi
 license: Open
 intelligence_index: 43.0
 price_blended_usd_1m: 0.7
-output_speed_tps: 29.0
+output_speed_tps: 36.0
 context_window: 256000
 radar:
   knowledge: { s: 65.9, z: 0.65, r: 59.8, estimated: false }  # 전문 지식
   reasoning: { s: 63.2, z: 0.88, r: 63.2, estimated: false }  # 추론
   coding: { s: 82.2, z: 0.98, r: 64.7, estimated: false }  # 코딩
-  agentic: { s: 67.7, z: 0.62, r: 59.3, estimated: false }  # 에이전트
+  agentic: { s: 67.7, z: 0.63, r: 59.4, estimated: false }  # 에이전트
   trust: { s: 71.2, z: 1.32, r: 69.8, estimated: false }  # 신뢰성
-  multimodal: { s: 91.4, z: 0.83, r: 62.5, estimated: false }  # 멀티모달
+  multimodal: { s: 91.4, z: 0.82, r: 62.3, estimated: false }  # 멀티모달
   long_context: { s: 94.6, z: 0.86, r: 62.9, estimated: false }  # 긴문맥
   instruction: { s: 90.1, z: 0.97, r: 64.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2.6
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-25
-timestamp: 2026-06-25T00:00:00Z
+updated: 2026-06-26
+timestamp: 2026-06-26T00:00:00Z
 ---
 
 # Kimi K2.6
@@ -33,7 +33,7 @@ Kimi · Open · 컨텍스트 256k · 종합지능 **43.0**
 - **약점**: 전문 지식, 에이전트
 
 ## 실용 지표
-`입력 $0.95 · 출력 $4.0 · 혼합 $0.7/1M · 29.0 t/s · TTFT 3.04s · 256k ctx` · 가성비 61.4
+`입력 $0.95 · 출력 $4.0 · 혼합 $0.7/1M · 36.0 t/s · TTFT 2.8s · 256k ctx` · 가성비 61.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -42,9 +42,9 @@ Kimi · Open · 컨텍스트 256k · 종합지능 **43.0**
 | 전문 지식 | 59.8 | +0.65 | 실측 | [[aa-omniscience]] 33.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 36.0%×0.3 |
 | 추론 | 63.2 | +0.88 | 실측 | [[critpt]] 8.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 36.0%×1.0 |
 | 코딩 | 64.7 | +0.98 | 실측 | [[scicode]] 53.0%×1.0, [[terminal-bench]] 44.0%×0.5 |
-| 에이전트 | 59.3 | +0.62 | 실측 | [[apex-agents]] 28.0%×1.0, [[gdpval]] 35.0%×1.0, [[itbench]] 31.0%×1.0, [[tau2-bench]] 96.0%×1.0, [[tau3-banking]] 21.0%×1.0, [[terminal-bench]] 44.0%×1.0 |
+| 에이전트 | 59.4 | +0.63 | 실측 | [[apex-agents]] 28.0%×1.0, [[gdpval]] 35.0%×1.0, [[itbench]] 31.0%×1.0, [[tau2-bench]] 96.0%×1.0, [[tau3-banking]] 21.0%×1.0, [[terminal-bench]] 44.0%×1.0 |
 | 신뢰성 | 69.8 | +1.32 | 실측 | [[aa-omniscience]] 61.0%×1.0 |
-| 멀티모달 | 62.5 | +0.83 | 실측 | [[mmmu-pro]] 79.0%×1.0 |
+| 멀티모달 | 62.3 | +0.82 | 실측 | [[mmmu-pro]] 79.0%×1.0 |
 | 긴문맥 | 62.9 | +0.86 | 실측 | [[aa-lcr]] 70.0%×1.0 |
 | 지시 따르기 | 64.5 | +0.97 | 실측 | [[ifbench]] 76.0%×1.0 |
 

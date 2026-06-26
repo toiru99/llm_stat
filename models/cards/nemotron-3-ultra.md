@@ -5,13 +5,13 @@ creator: NVIDIA
 license: Open
 intelligence_index: 38.0
 price_blended_usd_1m: 0.58
-output_speed_tps: 144.0
+output_speed_tps: 139.0
 context_window: 262000
 radar:
   knowledge: { s: 51.0, z: -0.02, r: 49.7, estimated: false }  # 전문 지식
   reasoning: { s: 50.4, z: 0.28, r: 54.2, estimated: false }  # 추론
   coding: { s: 63.5, z: 0.18, r: 52.6, estimated: false }  # 코딩
-  agentic: { s: 56.3, z: 0.17, r: 52.6, estimated: false }  # 에이전트
+  agentic: { s: 56.3, z: 0.18, r: 52.7, estimated: false }  # 에이전트
   trust: { s: 83.8, z: 1.76, r: 76.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 90.5, z: 0.71, r: 60.7, estimated: false }  # 긴문맥
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3 Ultra
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-25
-timestamp: 2026-06-25T00:00:00Z
+updated: 2026-06-26
+timestamp: 2026-06-26T00:00:00Z
 ---
 
 # Nemotron 3 Ultra
@@ -33,7 +33,7 @@ NVIDIA · Open · 컨텍스트 262k · 종합지능 **38.0**
 - **약점**: 에이전트, 전문 지식
 
 ## 실용 지표
-`입력 $0.68 · 출력 $2.67 · 혼합 $0.58/1M · 144.0 t/s · TTFT 1.3s · 262k ctx` · 가성비 65.5
+`입력 $0.68 · 출력 $2.67 · 혼합 $0.58/1M · 139.0 t/s · TTFT 1.53s · 262k ctx` · 가성비 65.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -42,7 +42,7 @@ NVIDIA · Open · 컨텍스트 262k · 종합지능 **38.0**
 | 전문 지식 | 49.7 | -0.02 | 실측 | [[aa-omniscience]] 22.0%×1.0, [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 27.0%×0.3 |
 | 추론 | 54.2 | +0.28 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 27.0%×1.0 |
 | 코딩 | 52.6 | +0.18 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 36.0%×0.5 |
-| 에이전트 | 52.6 | +0.17 | 실측 | [[gdpval]] 33.0%×1.0, [[tau2-bench]] 83.0%×1.0, [[tau3-banking]] 14.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
+| 에이전트 | 52.7 | +0.18 | 실측 | [[gdpval]] 33.0%×1.0, [[tau2-bench]] 83.0%×1.0, [[tau3-banking]] 14.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
 | 신뢰성 | 76.4 | +1.76 | 실측 | [[aa-omniscience]] 71.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 60.7 | +0.71 | 실측 | [[aa-lcr]] 67.0%×1.0 |

@@ -5,23 +5,23 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 40.0
 price_blended_usd_1m: 0.65
-output_speed_tps: 177.0
+output_speed_tps: 165.0
 context_window: 400000
 radar:
   knowledge: { s: 65.7, z: 0.64, r: 59.6, estimated: false }  # 전문 지식
   reasoning: { s: 57.9, z: 0.63, r: 59.5, estimated: false }  # 추론
   coding: { s: 83.1, z: 1.02, r: 65.3, estimated: false }  # 코딩
-  agentic: { s: 68.8, z: 0.67, r: 60.0, estimated: false }  # 에이전트
+  agentic: { s: 68.8, z: 0.67, r: 60.1, estimated: false }  # 에이전트
   trust: { s: 7.5, z: -0.92, r: 36.2, estimated: false }  # 신뢰성
-  multimodal: { s: 81.0, z: 0.31, r: 54.7, estimated: false }  # 멀티모달
+  multimodal: { s: 81.0, z: 0.3, r: 54.5, estimated: false }  # 멀티모달
   long_context: { s: 93.2, z: 0.81, r: 62.1, estimated: false }  # 긴문맥
   instruction: { s: 85.9, z: 0.79, r: 61.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.4 mini (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-25
-timestamp: 2026-06-25T00:00:00Z
+updated: 2026-06-26
+timestamp: 2026-06-26T00:00:00Z
 ---
 
 # GPT-5.4 mini (xhigh)
@@ -33,7 +33,7 @@ OpenAI · Proprietary · 컨텍스트 400k · 종합지능 **40.0**
 - **약점**: 멀티모달, 신뢰성
 
 ## 실용 지표
-`입력 $0.75 · 출력 $4.5 · 혼합 $0.65/1M · 177.0 t/s · TTFT 8.32s · 400k ctx` · 가성비 61.5
+`입력 $0.75 · 출력 $4.5 · 혼합 $0.65/1M · 165.0 t/s · TTFT 5.77s · 400k ctx` · 가성비 61.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -42,9 +42,9 @@ OpenAI · Proprietary · 컨텍스트 400k · 종합지능 **40.0**
 | 전문 지식 | 59.6 | +0.64 | 실측 | [[aa-omniscience]] 37.0%×1.0, [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 27.0%×0.3 |
 | 추론 | 59.5 | +0.63 | 실측 | [[critpt]] 10.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 27.0%×1.0 |
 | 코딩 | 65.3 | +1.02 | 실측 | [[scicode]] 50.0%×1.0, [[terminal-bench]] 52.0%×0.5 |
-| 에이전트 | 60.0 | +0.67 | 실측 | [[apex-agents]] 28.0%×1.0, [[gdpval]] 34.0%×1.0, [[itbench]] 35.0%×1.0, [[tau2-bench]] 83.0%×1.0, [[tau3-banking]] 21.0%×1.0, [[terminal-bench]] 52.0%×1.0 |
+| 에이전트 | 60.1 | +0.67 | 실측 | [[apex-agents]] 28.0%×1.0, [[gdpval]] 34.0%×1.0, [[itbench]] 35.0%×1.0, [[tau2-bench]] 83.0%×1.0, [[tau3-banking]] 21.0%×1.0, [[terminal-bench]] 52.0%×1.0 |
 | 신뢰성 | 36.2 | -0.92 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
-| 멀티모달 | 54.7 | +0.31 | 실측 | [[mmmu-pro]] 73.0%×1.0 |
+| 멀티모달 | 54.5 | +0.3 | 실측 | [[mmmu-pro]] 73.0%×1.0 |
 | 긴문맥 | 62.1 | +0.81 | 실측 | [[aa-lcr]] 69.0%×1.0 |
 | 지시 따르기 | 61.9 | +0.79 | 실측 | [[ifbench]] 73.0%×1.0 |
 
