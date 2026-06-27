@@ -1,6 +1,6 @@
 # 모델 (Models)
 
-`scripts/build_cards.py` 자동 생성 · 데이터 2026-06-26 · 제작사 10곳 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
+`scripts/build_cards.py` 자동 생성 · 데이터 2026-06-27 · 제작사 10곳 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
 
 - 레이더 축·방법론: [radar-spec.md](radar-spec.md) · 설정: [../config.toml](../config.toml)
 
@@ -54,7 +54,7 @@
 * [GPT-5.4 nano](cards/gpt-54-nano.md) - 종합지능 30.0
 * [Gemma 4 31B](cards/gemma-4-31b.md) - 종합지능 29.0
 * [DeepSeek V4 Flash](cards/deepseek-v4-flash.md) - 종합지능 29.0
-* [Gemini 2.5 Pro](cards/gemini-25-pro.md) - 종합지능 27.0
+* [Gemini 2.5 Pro](cards/gemini-25-pro.md) - 종합지능 26.0
 * [Gemma 4 26B A4B](cards/gemma-4-26b-a4b.md) - 종합지능 26.0
 * [Qwen3.5 9B](cards/qwen35-9b.md) - 종합지능 25.0
 * [NVIDIA Nemotron 3 Super](cards/nvidia-nemotron-3-super.md) - 종합지능 25.0

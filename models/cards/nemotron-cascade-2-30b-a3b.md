@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron Cascade 2 30B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-26
-timestamp: 2026-06-26T00:00:00Z
+updated: 2026-06-27
+timestamp: 2026-06-27T00:00:00Z
 ---
 
 # Nemotron Cascade 2 30B A3B

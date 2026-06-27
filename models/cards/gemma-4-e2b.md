@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 E2B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-26
-timestamp: 2026-06-26T00:00:00Z
+updated: 2026-06-27
+timestamp: 2026-06-27T00:00:00Z
 ---
 
 # Gemma 4 E2B

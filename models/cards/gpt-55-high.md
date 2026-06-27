@@ -5,13 +5,13 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 53.0
 price_blended_usd_1m: 4.35
-output_speed_tps: 69.0
+output_speed_tps: 74.0
 context_window: 922000
 radar:
   knowledge: { s: 91.4, z: 1.8, r: 77.0, estimated: false }  # 전문 지식
   reasoning: { s: 86.7, z: 1.99, r: 79.8, estimated: false }  # 추론
   coding: { s: 94.0, z: 1.49, r: 72.4, estimated: false }  # 코딩
-  agentic: { s: 89.3, z: 1.47, r: 72.1, estimated: false }  # 에이전트
+  agentic: { s: 89.3, z: 1.48, r: 72.2, estimated: false }  # 에이전트
   trust: { s: 12.5, z: -0.75, r: 38.8, estimated: false }  # 신뢰성
   multimodal: { s: 94.8, z: 1.0, r: 64.9, estimated: false }  # 멀티모달
   long_context: { s: 98.6, z: 1.0, r: 65.0, estimated: false }  # 긴문맥
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.5 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-26
-timestamp: 2026-06-26T00:00:00Z
+updated: 2026-06-27
+timestamp: 2026-06-27T00:00:00Z
 ---
 
 # GPT-5.5 (high)
@@ -33,7 +33,7 @@ OpenAI · Proprietary · 컨텍스트 922k · 종합지능 **53.0**
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $5.0 · 출력 $30.0 · 혼합 $4.35/1M · 69.0 t/s · TTFT 18.96s · 922k ctx` · 가성비 12.2
+`입력 $5.0 · 출력 $30.0 · 혼합 $4.35/1M · 74.0 t/s · TTFT 22.86s · 922k ctx` · 가성비 12.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -42,7 +42,7 @@ OpenAI · Proprietary · 컨텍스트 922k · 종합지능 **53.0**
 | 전문 지식 | 77.0 | +1.8 | 실측 | [[aa-omniscience]] 56.0%×1.0, [[gpqa-diamond]] 93.0%×0.4, [[humanitys-last-exam]] 43.0%×0.3 |
 | 추론 | 79.8 | +1.99 | 실측 | [[critpt]] 25.0%×1.0, [[gpqa-diamond]] 93.0%×1.0, [[humanitys-last-exam]] 43.0%×1.0 |
 | 코딩 | 72.4 | +1.49 | 실측 | [[scicode]] 56.0%×1.0, [[terminal-bench]] 60.0%×0.5 |
-| 에이전트 | 72.1 | +1.47 | 실측 | [[gdpval]] 48.0%×1.0, [[tau2-bench]] 93.0%×1.0, [[tau3-banking]] 29.0%×1.0, [[terminal-bench]] 60.0%×1.0 |
+| 에이전트 | 72.2 | +1.48 | 실측 | [[gdpval]] 48.0%×1.0, [[tau2-bench]] 93.0%×1.0, [[tau3-banking]] 29.0%×1.0, [[terminal-bench]] 60.0%×1.0 |
 | 신뢰성 | 38.8 | -0.75 | 실측 | [[aa-omniscience]] 14.0%×1.0 |
 | 멀티모달 | 64.9 | +1.0 | 실측 | [[mmmu-pro]] 81.0%×1.0 |
 | 긴문맥 | 65.0 | +1.0 | 실측 | [[aa-lcr]] 73.0%×1.0 |

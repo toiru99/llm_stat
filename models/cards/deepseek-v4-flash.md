@@ -5,13 +5,13 @@ creator: DeepSeek
 license: Open
 intelligence_index: 29.0
 price_blended_usd_1m: 0.06
-output_speed_tps: 113.0
+output_speed_tps: 111.0
 context_window: 1000000
 radar:
   knowledge: { s: 43.8, z: -0.34, r: 44.9, estimated: false }  # 전문 지식
   reasoning: { s: 28.3, z: -0.76, r: 38.6, estimated: false }  # 추론
   coding: { s: 59.1, z: -0.01, r: 49.8, estimated: false }  # 코딩
-  agentic: { s: 74.5, z: 0.89, r: 63.4, estimated: false }  # 에이전트
+  agentic: { s: 74.5, z: 0.9, r: 63.4, estimated: false }  # 에이전트
   trust: { s: 1.2, z: -1.14, r: 32.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 44.6, z: -0.93, r: 36.0, estimated: false }  # 긴문맥
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-26
-timestamp: 2026-06-26T00:00:00Z
+updated: 2026-06-27
+timestamp: 2026-06-27T00:00:00Z
 ---
 
 # DeepSeek V4 Flash
@@ -33,7 +33,7 @@ DeepSeek · Open · 컨텍스트 1M · 종합지능 **29.0**
 - **약점**: 긴문맥, 신뢰성
 
 ## 실용 지표
-`입력 $0.14 · 출력 $0.28 · 혼합 $0.06/1M · 113.0 t/s · TTFT 1.51s · 1M ctx` · 가성비 483.3
+`입력 $0.14 · 출력 $0.28 · 혼합 $0.06/1M · 111.0 t/s · TTFT 1.43s · 1M ctx` · 가성비 483.3
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -42,7 +42,7 @@ DeepSeek · Open · 컨텍스트 1M · 종합지능 **29.0**
 | 전문 지식 | 44.9 | -0.34 | 실측 | [[aa-omniscience]] 26.0%×1.0, [[gpqa-diamond]] 72.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
 | 추론 | 38.6 | -0.76 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 72.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
 | 코딩 | 49.8 | -0.01 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 34.0%×0.5 |
-| 에이전트 | 63.4 | +0.89 | 실측 | [[tau2-bench]] 94.0%×1.0, [[terminal-bench]] 34.0%×1.0 |
+| 에이전트 | 63.4 | +0.9 | 실측 | [[tau2-bench]] 94.0%×1.0, [[terminal-bench]] 34.0%×1.0 |
 | 신뢰성 | 32.9 | -1.14 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 36.0 | -0.93 | 실측 | [[aa-lcr]] 33.0%×1.0 |

@@ -11,7 +11,7 @@ radar:
   knowledge: { s: 74.2, z: 1.02, r: 65.4, estimated: false }  # 전문 지식
   reasoning: { s: 55.5, z: 0.52, r: 57.8, estimated: false }  # 추론
   coding: { s: 84.7, z: 1.09, r: 66.3, estimated: false }  # 코딩
-  agentic: { s: 81.0, z: 1.15, r: 67.2, estimated: false }  # 에이전트
+  agentic: { s: 81.0, z: 1.15, r: 67.3, estimated: false }  # 에이전트
   trust: { s: 55.0, z: 0.75, r: 61.2, estimated: false }  # 신뢰성
   multimodal: { s: 86.2, z: 0.56, r: 58.4, estimated: false }  # 멀티모달
   long_context: { s: 90.5, z: 0.71, r: 60.7, estimated: false }  # 긴문맥
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 4.7 (Non-reasoning, high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-26
-timestamp: 2026-06-26T00:00:00Z
+updated: 2026-06-27
+timestamp: 2026-06-27T00:00:00Z
 ---
 
 # Claude Opus 4.7 (Non-reasoning, high)
@@ -33,7 +33,7 @@ Anthropic · Proprietary · 컨텍스트 1M · 종합지능 **43.0**
 - **약점**: 추론, 지시 따르기
 
 ## 실용 지표
-`입력 $5.0 · 출력 $25.0 · 혼합 $3.85/1M · 42.0 t/s · TTFT 1.22s · 1M ctx` · 가성비 11.2
+`입력 $5.0 · 출력 $25.0 · 혼합 $3.85/1M · 42.0 t/s · TTFT 1.21s · 1M ctx` · 가성비 11.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -42,7 +42,7 @@ Anthropic · Proprietary · 컨텍스트 1M · 종합지능 **43.0**
 | 전문 지식 | 65.4 | +1.02 | 실측 | [[aa-omniscience]] 44.0%×1.0, [[gpqa-diamond]] 88.0%×0.4, [[humanitys-last-exam]] 31.0%×0.3 |
 | 추론 | 57.8 | +0.52 | 실측 | [[critpt]] 5.0%×1.0, [[gpqa-diamond]] 88.0%×1.0, [[humanitys-last-exam]] 31.0%×1.0 |
 | 코딩 | 66.3 | +1.09 | 실측 | [[scicode]] 50.0%×1.0, [[terminal-bench]] 55.0%×0.5 |
-| 에이전트 | 67.2 | +1.15 | 실측 | [[tau2-bench]] 74.0%×1.0, [[terminal-bench]] 55.0%×1.0 |
+| 에이전트 | 67.3 | +1.15 | 실측 | [[tau2-bench]] 74.0%×1.0, [[terminal-bench]] 55.0%×1.0 |
 | 신뢰성 | 61.2 | +0.75 | 실측 | [[aa-omniscience]] 48.0%×1.0 |
 | 멀티모달 | 58.4 | +0.56 | 실측 | [[mmmu-pro]] 76.0%×1.0 |
 | 긴문맥 | 60.7 | +0.71 | 실측 | [[aa-lcr]] 67.0%×1.0 |

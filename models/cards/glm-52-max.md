@@ -5,13 +5,13 @@ creator: Z AI
 license: Open
 intelligence_index: 51.0
 price_blended_usd_1m: 0.9
-output_speed_tps: 141.0
+output_speed_tps: 115.0
 context_window: 1000000
 radar:
   knowledge: { s: 58.9, z: 0.34, r: 55.1, estimated: false }  # 전문 지식
   reasoning: { s: 78.9, z: 1.62, r: 74.3, estimated: false }  # 추론
   coding: { s: 82.5, z: 1.0, r: 65.0, estimated: false }  # 코딩
-  agentic: { s: 87.4, z: 1.4, r: 71.0, estimated: false }  # 에이전트
+  agentic: { s: 84.8, z: 1.3, r: 69.5, estimated: false }  # 에이전트
   trust: { s: 85.0, z: 1.8, r: 77.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 95.9, z: 0.91, r: 63.6, estimated: false }  # 긴문맥
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5.2 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-26
-timestamp: 2026-06-26T00:00:00Z
+updated: 2026-06-27
+timestamp: 2026-06-27T00:00:00Z
 ---
 
 # GLM-5.2 (max)
@@ -33,7 +33,7 @@ Z AI · Open · 컨텍스트 1M · 종합지능 **51.0**
 - **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
-`입력 $1.4 · 출력 $4.4 · 혼합 $0.9/1M · 141.0 t/s · TTFT 1.61s · 1M ctx` · 가성비 56.7
+`입력 $1.4 · 출력 $4.4 · 혼합 $0.9/1M · 115.0 t/s · TTFT 1.59s · 1M ctx` · 가성비 56.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -42,7 +42,7 @@ Z AI · Open · 컨텍스트 1M · 종합지능 **51.0**
 | 전문 지식 | 55.1 | +0.34 | 실측 | [[aa-omniscience]] 25.0%×1.0, [[gpqa-diamond]] 89.0%×0.4, [[humanitys-last-exam]] 40.0%×0.3 |
 | 추론 | 74.3 | +1.62 | 실측 | [[critpt]] 21.0%×1.0, [[gpqa-diamond]] 89.0%×1.0, [[humanitys-last-exam]] 40.0%×1.0 |
 | 코딩 | 65.0 | +1.0 | 실측 | [[scicode]] 50.0%×1.0, [[terminal-bench]] 51.0%×0.5 |
-| 에이전트 | 71.0 | +1.4 | 실측 | [[gdpval]] 51.0%×1.0, [[itbench]] 43.0%×1.0, [[tau2-bench]] 99.0%×1.0, [[tau3-banking]] 27.0%×1.0, [[terminal-bench]] 51.0%×1.0 |
+| 에이전트 | 69.5 | +1.3 | 실측 | [[apex-agents]] 34.0%×1.0, [[gdpval]] 51.0%×1.0, [[itbench]] 43.0%×1.0, [[tau2-bench]] 99.0%×1.0, [[tau3-banking]] 27.0%×1.0, [[terminal-bench]] 51.0%×1.0 |
 | 신뢰성 | 77.1 | +1.8 | 실측 | [[aa-omniscience]] 72.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 63.6 | +0.91 | 실측 | [[aa-lcr]] 71.0%×1.0 |
