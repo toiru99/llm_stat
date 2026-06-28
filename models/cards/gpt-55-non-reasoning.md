@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.5 (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-27
-timestamp: 2026-06-27T00:00:00Z
+updated: 2026-06-28
+timestamp: 2026-06-28T00:00:00Z
 ---
 
 # GPT-5.5 (Non-reasoning)
@@ -33,7 +33,7 @@ OpenAI · Proprietary · 컨텍스트 922k · 종합지능 **35.0**
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $5.0 · 출력 $30.0 · 혼합 $4.35/1M · 67.0 t/s · TTFT 0.92s · 922k ctx` · 가성비 8.0
+`입력 $5.0 · 출력 $30.0 · 혼합 $4.35/1M · 67.0 t/s · TTFT 0.93s · 922k ctx` · 가성비 8.0
 
 ## 레이더 8축 (평균=50 기준선)
 

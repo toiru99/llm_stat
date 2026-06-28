@@ -5,7 +5,7 @@ creator: Alibaba
 license: Proprietary
 intelligence_index: 39.0
 price_blended_usd_1m: 0.25
-output_speed_tps: 50.0
+output_speed_tps: 49.0
 context_window: 1000000
 radar:
   knowledge: { s: 53.8, z: 0.11, r: 51.7, estimated: false }  # 전문 지식
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.7 Plus
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-27
-timestamp: 2026-06-27T00:00:00Z
+updated: 2026-06-28
+timestamp: 2026-06-28T00:00:00Z
 ---
 
 # Qwen3.7 Plus
@@ -33,7 +33,7 @@ Alibaba · Proprietary · 컨텍스트 1M · 종합지능 **39.0**
 - **약점**: 에이전트, 전문 지식
 
 ## 실용 지표
-`입력 $0.4 · 출력 $1.16 · 혼합 $0.25/1M · 50.0 t/s · TTFT 2.83s · 1M ctx` · 가성비 156.0
+`입력 $0.4 · 출력 $1.16 · 혼합 $0.25/1M · 49.0 t/s · TTFT 2.85s · 1M ctx` · 가성비 156.0
 
 ## 레이더 8축 (평균=50 기준선)
 

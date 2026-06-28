@@ -5,7 +5,7 @@ creator: OpenAI
 license: Open
 intelligence_index: 14.0
 price_blended_usd_1m: 0.07
-output_speed_tps: 228.0
+output_speed_tps: 224.0
 context_window: 131000
 radar:
   knowledge: { s: 28.3, z: -1.04, r: 34.5, estimated: false }  # 전문 지식
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — gpt-oss-20B (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-27
-timestamp: 2026-06-27T00:00:00Z
+updated: 2026-06-28
+timestamp: 2026-06-28T00:00:00Z
 ---
 
 # gpt-oss-20B (low)
@@ -33,7 +33,7 @@ OpenAI · Open · 컨텍스트 131k · 종합지능 **14.0**
 - **약점**: 긴문맥, 전문 지식
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.2 · 혼합 $0.07/1M · 228.0 t/s · TTFT 0.94s · 131k ctx` · 가성비 200.0
+`입력 $0.06 · 출력 $0.2 · 혼합 $0.07/1M · 224.0 t/s · TTFT 0.94s · 131k ctx` · 가성비 200.0
 
 ## 레이더 8축 (평균=50 기준선)
 

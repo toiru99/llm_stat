@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: 38.0
 price_blended_usd_1m: 0.58
-output_speed_tps: 144.0
+output_speed_tps: 155.0
 context_window: 262000
 radar:
   knowledge: { s: 51.0, z: -0.02, r: 49.7, estimated: false }  # 전문 지식
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3 Ultra
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-27
-timestamp: 2026-06-27T00:00:00Z
+updated: 2026-06-28
+timestamp: 2026-06-28T00:00:00Z
 ---
 
 # Nemotron 3 Ultra
@@ -33,7 +33,7 @@ NVIDIA · Open · 컨텍스트 262k · 종합지능 **38.0**
 - **약점**: 코딩, 전문 지식
 
 ## 실용 지표
-`입력 $0.68 · 출력 $2.67 · 혼합 $0.58/1M · 144.0 t/s · TTFT 1.52s · 262k ctx` · 가성비 65.5
+`입력 $0.68 · 출력 $2.67 · 혼합 $0.58/1M · 155.0 t/s · TTFT 1.39s · 262k ctx` · 가성비 65.5
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -1,6 +1,6 @@
 # 모델 (Models)
 
-`scripts/build_cards.py` 자동 생성 · 데이터 2026-06-27 · 제작사 10곳 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
+`scripts/build_cards.py` 자동 생성 · 데이터 2026-06-28 · 제작사 10곳 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
 
 - 레이더 축·방법론: [radar-spec.md](radar-spec.md) · 설정: [../config.toml](../config.toml)
 

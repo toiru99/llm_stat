@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Next 80B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-27
-timestamp: 2026-06-27T00:00:00Z
+updated: 2026-06-28
+timestamp: 2026-06-28T00:00:00Z
 ---
 
 # Qwen3 Next 80B A3B
@@ -33,7 +33,7 @@ Alibaba · Open · 컨텍스트 262k · 종합지능 **20.0**
 - **약점**: 전문 지식, 에이전트
 
 ## 실용 지표
-`입력 $0.5 · 출력 $6.0 · 혼합 $1.05/1M · 178.0 t/s · TTFT 2.24s · 262k ctx` · 가성비 19.0
+`입력 $0.5 · 출력 $6.0 · 혼합 $1.05/1M · 178.0 t/s · TTFT 2.25s · 262k ctx` · 가성비 19.0
 
 ## 레이더 8축 (평균=50 기준선)
 
