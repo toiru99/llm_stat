@@ -8,20 +8,20 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 256000
 radar:
-  knowledge: { s: 37.8, z: -0.61, r: 40.9, estimated: false }  # 전문 지식
-  reasoning: { s: 35.7, z: -0.42, r: 43.8, estimated: false }  # 추론
-  coding: { s: 52.2, z: -0.31, r: 45.3, estimated: false }  # 코딩
+  knowledge: { s: 37.8, z: -0.6, r: 41.0, estimated: false }  # 전문 지식
+  reasoning: { s: 35.7, z: -0.41, r: 43.8, estimated: false }  # 추론
+  coding: { s: 52.2, z: -0.3, r: 45.5, estimated: false }  # 코딩
   agentic: { s: 55.6, z: 0.16, r: 52.4, estimated: false }  # 에이전트
-  trust: { s: 8.8, z: -0.88, r: 36.8, estimated: false }  # 신뢰성
+  trust: { s: 8.8, z: -0.87, r: 36.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 75.7, z: 0.18, r: 52.7, estimated: false }  # 긴문맥
-  instruction: { s: 74.6, z: 0.32, r: 54.8, estimated: false }  # 지시 따르기
+  instruction: { s: 74.6, z: 0.33, r: 54.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — K-EXAONE
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-28
-timestamp: 2026-06-28T00:00:00Z
+updated: 2026-06-29
+timestamp: 2026-06-29T00:00:00Z
 ---
 
 # K-EXAONE
@@ -39,14 +39,14 @@ LG AI Research · Open · 컨텍스트 256k · 종합지능 **25.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 40.9 | -0.61 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
-| 추론 | 43.8 | -0.42 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
-| 코딩 | 45.3 | -0.31 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 23.0%×0.5 |
+| 전문 지식 | 41.0 | -0.6 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
+| 추론 | 43.8 | -0.41 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
+| 코딩 | 45.5 | -0.3 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 23.0%×0.5 |
 | 에이전트 | 52.4 | +0.16 | 실측 | [[tau2-bench]] 74.0%×1.0, [[terminal-bench]] 23.0%×1.0 |
-| 신뢰성 | 36.8 | -0.88 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
+| 신뢰성 | 36.9 | -0.87 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 52.7 | +0.18 | 실측 | [[aa-lcr]] 56.0%×1.0 |
-| 지시 따르기 | 54.8 | +0.32 | 실측 | [[ifbench]] 65.0%×1.0 |
+| 지시 따르기 | 54.9 | +0.33 | 실측 | [[ifbench]] 65.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
