@@ -5,23 +5,23 @@ creator: NVIDIA
 license: Open
 intelligence_index: 9.0
 price_blended_usd_1m: 0.24
-output_speed_tps: 274.0
+output_speed_tps: 272.0
 context_window: 128000
 radar:
-  knowledge: { s: 27.1, z: -1.08, r: 33.9, estimated: false }  # 전문 지식
-  reasoning: { s: 21.0, z: -1.1, r: 33.5, estimated: false }  # 추론
-  coding: { s: 31.5, z: -1.19, r: 32.2, estimated: false }  # 코딩
-  agentic: { s: 14.6, z: -1.44, r: 28.4, estimated: false }  # 에이전트
-  trust: { s: 6.2, z: -0.96, r: 35.6, estimated: false }  # 신뢰성
+  knowledge: { s: 27.1, z: -1.08, r: 33.8, estimated: false }  # 전문 지식
+  reasoning: { s: 21.0, z: -1.1, r: 33.6, estimated: false }  # 추론
+  coding: { s: 31.5, z: -1.21, r: 31.9, estimated: false }  # 코딩
+  agentic: { s: 14.6, z: -1.38, r: 29.2, estimated: false }  # 에이전트
+  trust: { s: 6.2, z: -0.95, r: 35.7, estimated: false }  # 신뢰성
   multimodal: { s: 46.6, z: -1.44, r: 28.3, estimated: false }  # 멀티모달
-  long_context: { s: 54.1, z: -0.59, r: 41.2, estimated: false }  # 긴문맥
-  instruction: { s: 28.2, z: -1.61, r: 25.9, estimated: false }  # 지시 따르기
+  long_context: { s: 54.1, z: -0.57, r: 41.5, estimated: false }  # 긴문맥
+  instruction: { s: 28.2, z: -1.63, r: 25.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — NVIDIA Nemotron Nano 12B v2 VL
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-29
-timestamp: 2026-06-29T00:00:00Z
+updated: 2026-06-30
+timestamp: 2026-06-30T00:00:00Z
 ---
 
 # NVIDIA Nemotron Nano 12B v2 VL
@@ -33,20 +33,20 @@ NVIDIA · Open · 컨텍스트 128k · 종합지능 **9.0**
 - **약점**: 멀티모달, 지시 따르기
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.6 · 혼합 $0.24/1M · 274.0 t/s · TTFT 0.45s · 128k ctx` · 가성비 37.5
+`입력 $0.2 · 출력 $0.6 · 혼합 $0.24/1M · 272.0 t/s · TTFT 0.45s · 128k ctx` · 가성비 37.5
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 33.9 | -1.08 | 실측 | [[aa-omniscience]] 14.0%×1.0, [[gpqa-diamond]] 57.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 33.5 | -1.1 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 57.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 32.2 | -1.19 | 실측 | [[scicode]] 26.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
-| 에이전트 | 28.4 | -1.44 | 실측 | [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
-| 신뢰성 | 35.6 | -0.96 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 전문 지식 | 33.8 | -1.08 | 실측 | [[aa-omniscience]] 14.0%×1.0, [[gpqa-diamond]] 57.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 추론 | 33.6 | -1.1 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 57.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 31.9 | -1.21 | 실측 | [[scicode]] 26.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
+| 에이전트 | 29.2 | -1.38 | 실측 | [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
+| 신뢰성 | 35.7 | -0.95 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | 28.3 | -1.44 | 실측 | [[mmmu-pro]] 53.0%×1.0 |
-| 긴문맥 | 41.2 | -0.59 | 실측 | [[aa-lcr]] 40.0%×1.0 |
-| 지시 따르기 | 25.9 | -1.61 | 실측 | [[ifbench]] 32.0%×1.0 |
+| 긴문맥 | 41.5 | -0.57 | 실측 | [[aa-lcr]] 40.0%×1.0 |
+| 지시 따르기 | 25.6 | -1.63 | 실측 | [[ifbench]] 32.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

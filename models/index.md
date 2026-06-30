@@ -1,10 +1,10 @@
 # 모델 (Models)
 
-`scripts/build_cards.py` 자동 생성 · 데이터 2026-06-29 · 제작사 10곳 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
+`scripts/build_cards.py` 자동 생성 · 데이터 2026-06-30 · 제작사 10곳 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
 
 - 레이더 축·방법론: [radar-spec.md](radar-spec.md) · 설정: [../config.toml](../config.toml)
 
-## 모델 목록 (종합지능 내림차순, 87개)
+## 모델 목록 (종합지능 내림차순, 88개)
 
 * [Claude Fable 5 (with fallback)](cards/claude-fable-5-with-fallback.md) - 종합지능 60.0
 * [Claude Opus 4.8 (max)](cards/claude-opus-48-max.md) - 종합지능 56.0
@@ -27,8 +27,8 @@
 * [Kimi K2.7 Code](cards/kimi-k27-code.md) - 종합지능 42.0
 * [DeepSeek V4 Pro (High)](cards/deepseek-v4-pro-high.md) - 종합지능 41.0
 * [Qwen3.6 Plus](cards/qwen36-plus.md) - 종합지능 40.0
-* [DeepSeek V4 Flash (Max)](cards/deepseek-v4-flash-max.md) - 종합지능 40.0
 * [GLM-5.1](cards/glm-51.md) - 종합지능 40.0
+* [DeepSeek V4 Flash (Max)](cards/deepseek-v4-flash-max.md) - 종합지능 40.0
 * [GPT-5.4 mini (xhigh)](cards/gpt-54-mini-xhigh.md) - 종합지능 40.0
 * [Qwen3.7 Plus](cards/qwen37-plus.md) - 종합지능 39.0
 * [MiniMax-M2.7](cards/minimax-m27.md) - 종합지능 38.0
@@ -49,10 +49,11 @@
 * [DeepSeek V4 Pro](cards/deepseek-v4-pro.md) - 종합지능 31.0
 * [Claude 4.5 Haiku](cards/claude-45-haiku.md) - 종합지능 30.0
 * [GPT-5.4 mini (medium)](cards/gpt-54-mini-medium.md) - 종합지능 30.0
-* [GPT-5.4 nano](cards/gpt-54-nano.md) - 종합지능 30.0
 * [o3](cards/o3.md) - 종합지능 30.0
+* [GPT-5.4 nano](cards/gpt-54-nano.md) - 종합지능 30.0
 * [Gemma 4 31B](cards/gemma-4-31b.md) - 종합지능 29.0
 * [DeepSeek V4 Flash](cards/deepseek-v4-flash.md) - 종합지능 29.0
+* [GPT-5.5 Instant (June 2026)](cards/gpt-55-instant-june-2026.md) - 종합지능 29.0
 * [Gemini 2.5 Pro](cards/gemini-25-pro.md) - 종합지능 26.0
 * [Gemma 4 26B A4B](cards/gemma-4-26b-a4b.md) - 종합지능 26.0
 * [Qwen3.5 9B](cards/qwen35-9b.md) - 종합지능 25.0
@@ -75,13 +76,14 @@
 * [NVIDIA Nemotron 3 Nano](cards/nvidia-nemotron-3-nano.md) - 종합지능 14.0
 * [gpt-oss-20B (low)](cards/gpt-oss-20b-low.md) - 종합지능 14.0
 * [Gemma 4 12B (Non-reasoning)](cards/gemma-4-12b-non-reasoning.md) - 종합지능 13.0
+* [DiffusionGemma 26B A4B](cards/diffusiongemma-26b-a4b.md) - 종합지능 13.0
 * [Llama Nemotron Super 49B v1.5](cards/llama-nemotron-super-49b-v15.md) - 종합지능 12.0
 * [Gemma 4 E4B](cards/gemma-4-e4b.md) - 종합지능 12.0
 * [EXAONE 4.0 32B](cards/exaone-40-32b.md) - 종합지능 11.0
 * [Qwen3.5 2B](cards/qwen35-2b.md) - 종합지능 10.0
 * [Qwen3 Omni 30B A3B](cards/qwen3-omni-30b-a3b.md) - 종합지능 10.0
-* [Llama Nemotron Ultra](cards/llama-nemotron-ultra.md) - 종합지능 9.0
 * [NVIDIA Nemotron Nano 9B V2](cards/nvidia-nemotron-nano-9b-v2.md) - 종합지능 9.0
+* [Llama Nemotron Ultra](cards/llama-nemotron-ultra.md) - 종합지능 9.0
 * [NVIDIA Nemotron Nano 12B v2 VL](cards/nvidia-nemotron-nano-12b-v2-vl.md) - 종합지능 9.0
 * [Kimi Linear 48B A3B Instruct](cards/kimi-linear-48b-a3b-instruct.md) - 종합지능 9.0
 * [Gemma 4 E2B](cards/gemma-4-e2b.md) - 종합지능 9.0
@@ -91,5 +93,4 @@
 * [Exaone 4.0 1.2B](cards/exaone-40-12b.md) - 종합지능 3.0
 * [Gemma 3 270M](cards/gemma-3-270m.md) - 종합지능 2.0
 * [Gemini 3 Deep Think](cards/gemini-3-deep-think.md) - 종합지능 None
-* [GPT-5.5 Instant (June 2026)](cards/gpt-55-instant-june-2026.md) - 종합지능 None
 * [GPT-5.5 Pro (xhigh)](cards/gpt-55-pro-xhigh.md) - 종합지능 None

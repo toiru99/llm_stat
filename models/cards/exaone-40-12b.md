@@ -8,20 +8,20 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 64000
 radar:
-  knowledge: { s: 14.4, z: -1.65, r: 25.3, estimated: false }  # 전문 지식
+  knowledge: { s: 14.4, z: -1.66, r: 25.2, estimated: false }  # 전문 지식
   reasoning: { s: 15.7, z: -1.35, r: 29.7, estimated: false }  # 추론
-  coding: { s: 7.8, z: -2.21, r: 16.8, estimated: false }  # 코딩
-  agentic: { s: 10.1, z: -1.61, r: 25.8, estimated: false }  # 에이전트
-  trust: { s: 6.2, z: -0.96, r: 35.6, estimated: false }  # 신뢰성
+  coding: { s: 7.8, z: -2.23, r: 16.5, estimated: false }  # 코딩
+  agentic: { s: 10.1, z: -1.56, r: 26.7, estimated: false }  # 에이전트
+  trust: { s: 6.2, z: -0.95, r: 35.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -2.51, r: 12.3, estimated: false }  # 긴문맥
-  instruction: { s: 18.3, z: -2.02, r: 19.7, estimated: false }  # 지시 따르기
+  long_context: { s: 0.0, z: -2.47, r: 12.9, estimated: false }  # 긴문맥
+  instruction: { s: 18.3, z: -2.04, r: 19.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Exaone 4.0 1.2B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-29
-timestamp: 2026-06-29T00:00:00Z
+updated: 2026-06-30
+timestamp: 2026-06-30T00:00:00Z
 ---
 
 # Exaone 4.0 1.2B
@@ -39,14 +39,14 @@ LG AI Research · Open · 컨텍스트 64k · 종합지능 **3.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 25.3 | -1.65 | 실측 | [[aa-omniscience]] 5.0%×1.0, [[gpqa-diamond]] 42.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 전문 지식 | 25.2 | -1.66 | 실측 | [[aa-omniscience]] 5.0%×1.0, [[gpqa-diamond]] 42.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 29.7 | -1.35 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 42.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 16.8 | -2.21 | 실측 | [[scicode]] 7.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 25.8 | -1.61 | 실측 | [[tau2-bench]] 20.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 35.6 | -0.96 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 코딩 | 16.5 | -2.23 | 실측 | [[scicode]] 7.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
+| 에이전트 | 26.7 | -1.56 | 실측 | [[tau2-bench]] 20.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 신뢰성 | 35.7 | -0.95 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 12.3 | -2.51 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 19.7 | -2.02 | 실측 | [[ifbench]] 25.0%×1.0 |
+| 긴문맥 | 12.9 | -2.47 | 실측 | [[aa-lcr]] 0.0%×1.0 |
+| 지시 따르기 | 19.4 | -2.04 | 실측 | [[ifbench]] 25.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
