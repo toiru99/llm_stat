@@ -8,6 +8,7 @@
 whitelist = [
   "Anthropic", "OpenAI", "Google", "Z AI", "Alibaba",
   "MiniMax", "DeepSeek", "Kimi", "NVIDIA", "LG AI Research",
+  "xAI",
 ]
 
 [cards]
@@ -22,10 +23,11 @@ enabled = true
 cadence = "daily"             # "daily" | "weekly" | "monthly"
 day_of_week = "mon"           # cadence=weekly 일 때 (mon/tue/wed/thu/fri/sat/sun)
 day_of_month = 1              # cadence=monthly 일 때 (1~28)
-time = "09:00"                # 실행 시각 HH:MM (24시간제, KST)
+time = "06:00"                # 실행 시각 HH:MM (24시간제, KST)
 timezone = "Asia/Seoul"       # 시각 기준 타임존
-# 실제 스케줄은 .github/workflows/update.yml 의 cron(UTC)이 구동: "0 0 * * *" = 매일 09:00 KST
-cron = "0 0 * * *"
+# 실제 스케줄은 .github/workflows/update.yml 의 cron(UTC)이 구동: "0 21 * * *" = 매일 06:00 KST(예약)
+# 주의: GitHub 스케줄은 고부하 시 수 시간 지연됨(관측상 ~4h) → 실제 발동은 오전 중 유동적
+cron = "0 21 * * *"
 
 [imputation]
 # 빈 축 추정 — models/radar-spec.md 방법론과 동기화.

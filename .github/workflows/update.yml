@@ -1,11 +1,11 @@
 name: site-update
 
-# [임시 테스트] 02:30 UTC = 11:30 KST — 정각(00:00 UTC) 드롭 가설 검증용.
-# 검증 후 운영 시각으로 되돌릴 것(예: "17 0 * * *" = 09:17 KST, 정각 회피).
+# 운영 스케줄: 0 21 UTC = 06:00 KST(예약). config.toml [update] 와 일치.
+# 주의: GitHub 스케줄은 고부하 시 수 시간 지연됨(관측상 ~4h) → 실제 발동은 오전 중 유동적.
 # 스케줄 변경 시 이 cron을 직접 수정 (Actions cron은 항상 UTC).
 on:
   schedule:
-    - cron: "30 2 * * *"
+    - cron: "0 21 * * *"
   workflow_dispatch: {}
 
 permissions:

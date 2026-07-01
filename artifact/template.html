@@ -278,7 +278,7 @@ function scatterSVG(){
   [0.1,0.5,1,3,10,30].forEach(p=>{const x=X(p);g+=`<line x1="${x}" y1="${m.t}" x2="${x}" y2="${H-m.b}" stroke="var(--line-soft)"/><text x="${x}" y="${H-m.b+16}" text-anchor="middle" font-size="9" fill="var(--muted)">$${p}</text>`;});
   [0,20,40,60].forEach(v=>{const y=Y(v);g+=`<line x1="${m.l}" y1="${y}" x2="${W-m.r}" y2="${y}" stroke="var(--line-soft)"/><text x="${m.l-7}" y="${y+3}" text-anchor="end" font-size="9" fill="var(--muted)">${v}</text>`;});
   g+=`<text x="${(W-m.r+m.l)/2}" y="${H-6}" text-anchor="middle" font-size="10" fill="var(--muted)">가격 $/1M (로그) →</text>`;
-  g+=`<text x="14" y="${m.t+4}" font-size="10" fill="var(--muted)">↑ 종합지능</text>`;
+  g+=`<text transform="translate(13 ${(m.t+H-m.b)/2}) rotate(-90)" text-anchor="middle" font-size="10" fill="var(--muted)">종합지능</text>`;
   g+=`<text x="${m.l+6}" y="${m.t+12}" font-size="9" fill="var(--good)">◀ 가성비 우수 (싸고 똑똑)</text>`;
   rows.forEach(d=>{
     const sel=state.selected.includes(d.slug);
