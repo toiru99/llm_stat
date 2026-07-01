@@ -4,7 +4,7 @@
 
 - 레이더 축·방법론: [radar-spec.md](radar-spec.md) · 설정: [../config.toml](../config.toml)
 
-## 모델 목록 (종합지능 내림차순, 98개)
+## 모델 목록 (종합지능 내림차순, 97개)
 
 * [Claude Fable 5 (with fallback)](cards/claude-fable-5-with-fallback.md) - 종합지능 60.0
 * [Claude Opus 4.8 (max)](cards/claude-opus-48-max.md) - 종합지능 56.0
@@ -15,7 +15,6 @@
 * [GLM-5.2 (max)](cards/glm-52-max.md) - 종합지능 51.0
 * [Gemini 3.5 Flash](cards/gemini-35-flash.md) - 종합지능 50.0
 * [GPT-5.5 (medium)](cards/gpt-55-medium.md) - 종합지능 50.0
-* [Claude Sonnet 4.6 (max)](cards/claude-sonnet-46-max.md) - 종합지능 47.0
 * [Gemini 3.1 Pro Preview](cards/gemini-31-pro-preview.md) - 종합지능 46.0
 * [Qwen3.7 Max](cards/qwen37-max.md) - 종합지능 46.0
 * [Gemini 3.5 Flash (medium)](cards/gemini-35-flash-medium.md) - 종합지능 45.0
@@ -26,6 +25,7 @@
 * [Claude Opus 4.7 (Non-reasoning, high)](cards/claude-opus-47-non-reasoning-high.md) - 종합지능 43.0
 * [GPT-5.5 (low)](cards/gpt-55-low.md) - 종합지능 43.0
 * [Kimi K2.7 Code](cards/kimi-k27-code.md) - 종합지능 42.0
+* [Claude Sonnet 5 (Non-reasoning)](cards/claude-sonnet-5-non-reasoning.md) - 종합지능 42.0
 * [DeepSeek V4 Pro (High)](cards/deepseek-v4-pro-high.md) - 종합지능 41.0
 * [Qwen3.6 Plus](cards/qwen36-plus.md) - 종합지능 40.0
 * [GLM-5.1](cards/glm-51.md) - 종합지능 40.0
@@ -41,7 +41,6 @@
 * [Qwen3.6 27B](cards/qwen36-27b.md) - 종합지능 37.0
 * [DeepSeek V4 Flash (High)](cards/deepseek-v4-flash-high.md) - 종합지능 37.0
 * [Grok 4.3 (medium)](cards/grok-43-medium.md) - 종합지능 36.0
-* [Claude Sonnet 4.6 (Non-reasoning)](cards/claude-sonnet-46-non-reasoning.md) - 종합지능 36.0
 * [Grok 4.3 (low)](cards/grok-43-low.md) - 종합지능 35.0
 * [GPT-5.5 (Non-reasoning)](cards/gpt-55-non-reasoning.md) - 종합지능 35.0
 * [Gemini 3.5 Flash (minimal)](cards/gemini-35-flash-minimal.md) - 종합지능 35.0
