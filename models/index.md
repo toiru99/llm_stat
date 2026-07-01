@@ -1,15 +1,16 @@
 # 모델 (Models)
 
-`scripts/build_cards.py` 자동 생성 · 데이터 2026-06-30 · 제작사 10곳 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
+`scripts/build_cards.py` 자동 생성 · 데이터 2026-07-01 · 제작사 11곳 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
 
 - 레이더 축·방법론: [radar-spec.md](radar-spec.md) · 설정: [../config.toml](../config.toml)
 
-## 모델 목록 (종합지능 내림차순, 88개)
+## 모델 목록 (종합지능 내림차순, 98개)
 
 * [Claude Fable 5 (with fallback)](cards/claude-fable-5-with-fallback.md) - 종합지능 60.0
 * [Claude Opus 4.8 (max)](cards/claude-opus-48-max.md) - 종합지능 56.0
 * [GPT-5.5 (xhigh)](cards/gpt-55-xhigh.md) - 종합지능 55.0
 * [Claude Opus 4.7 (max)](cards/claude-opus-47-max.md) - 종합지능 54.0
+* [Claude Sonnet 5 (max)](cards/claude-sonnet-5-max.md) - 종합지능 53.0
 * [GPT-5.5 (high)](cards/gpt-55-high.md) - 종합지능 53.0
 * [GLM-5.2 (max)](cards/glm-52-max.md) - 종합지능 51.0
 * [Gemini 3.5 Flash](cards/gemini-35-flash.md) - 종합지능 50.0
@@ -29,15 +30,19 @@
 * [Qwen3.6 Plus](cards/qwen36-plus.md) - 종합지능 40.0
 * [GLM-5.1](cards/glm-51.md) - 종합지능 40.0
 * [DeepSeek V4 Flash (Max)](cards/deepseek-v4-flash-max.md) - 종합지능 40.0
+* [Grok Build 0.1 0616](cards/grok-build-01-0616.md) - 종합지능 40.0
 * [GPT-5.4 mini (xhigh)](cards/gpt-54-mini-xhigh.md) - 종합지능 40.0
 * [Qwen3.7 Plus](cards/qwen37-plus.md) - 종합지능 39.0
 * [MiniMax-M2.7](cards/minimax-m27.md) - 종합지능 38.0
+* [Grok 4.3 (high)](cards/grok-43-high.md) - 종합지능 38.0
 * [Nemotron 3 Ultra](cards/nemotron-3-ultra.md) - 종합지능 38.0
 * [GPT-5.4 nano (xhigh)](cards/gpt-54-nano-xhigh.md) - 종합지능 38.0
 * [GLM-5-Turbo](cards/glm-5-turbo.md) - 종합지능 38.0
 * [Qwen3.6 27B](cards/qwen36-27b.md) - 종합지능 37.0
 * [DeepSeek V4 Flash (High)](cards/deepseek-v4-flash-high.md) - 종합지능 37.0
+* [Grok 4.3 (medium)](cards/grok-43-medium.md) - 종합지능 36.0
 * [Claude Sonnet 4.6 (Non-reasoning)](cards/claude-sonnet-46-non-reasoning.md) - 종합지능 36.0
+* [Grok 4.3 (low)](cards/grok-43-low.md) - 종합지능 35.0
 * [GPT-5.5 (Non-reasoning)](cards/gpt-55-non-reasoning.md) - 종합지능 35.0
 * [Gemini 3.5 Flash (minimal)](cards/gemini-35-flash-minimal.md) - 종합지능 35.0
 * [Qwen3.5 397B A17B](cards/qwen35-397b-a17b.md) - 종합지능 34.0
@@ -56,14 +61,15 @@
 * [GPT-5.5 Instant (June 2026)](cards/gpt-55-instant-june-2026.md) - 종합지능 29.0
 * [Gemini 2.5 Pro](cards/gemini-25-pro.md) - 종합지능 26.0
 * [Gemma 4 26B A4B](cards/gemma-4-26b-a4b.md) - 종합지능 26.0
-* [Qwen3.5 9B](cards/qwen35-9b.md) - 종합지능 25.0
 * [NVIDIA Nemotron 3 Super](cards/nvidia-nemotron-3-super.md) - 종합지능 25.0
 * [Gemini 3.1 Flash-Lite](cards/gemini-31-flash-lite.md) - 종합지능 25.0
+* [Grok 4.3 (Non-reasoning)](cards/grok-43-non-reasoning.md) - 종합지능 25.0
 * [K-EXAONE](cards/k-exaone.md) - 종합지능 25.0
 * [gpt-oss-120b (high)](cards/gpt-oss-120b-high.md) - 종합지능 24.0
 * [Qwen3.5 35B A3B](cards/qwen35-35b-a3b.md) - 종합지능 23.0
 * [EXAONE 4.5 33B](cards/exaone-45-33b.md) - 종합지능 23.0
 * [Gemma 4 12B](cards/gemma-4-12b.md) - 종합지능 22.0
+* [Qwen3.5 9B](cards/qwen35-9b.md) - 종합지능 21.0
 * [Qwen3 Coder Next](cards/qwen3-coder-next.md) - 종합지능 21.0
 * [Nemotron Cascade 2 30B A3B](cards/nemotron-cascade-2-30b-a3b.md) - 종합지능 21.0
 * [Qwen3.5 4B](cards/qwen35-4b.md) - 종합지능 20.0
@@ -82,8 +88,8 @@
 * [EXAONE 4.0 32B](cards/exaone-40-32b.md) - 종합지능 11.0
 * [Qwen3.5 2B](cards/qwen35-2b.md) - 종합지능 10.0
 * [Qwen3 Omni 30B A3B](cards/qwen3-omni-30b-a3b.md) - 종합지능 10.0
-* [NVIDIA Nemotron Nano 9B V2](cards/nvidia-nemotron-nano-9b-v2.md) - 종합지능 9.0
 * [Llama Nemotron Ultra](cards/llama-nemotron-ultra.md) - 종합지능 9.0
+* [NVIDIA Nemotron Nano 9B V2](cards/nvidia-nemotron-nano-9b-v2.md) - 종합지능 9.0
 * [NVIDIA Nemotron Nano 12B v2 VL](cards/nvidia-nemotron-nano-12b-v2-vl.md) - 종합지능 9.0
 * [Kimi Linear 48B A3B Instruct](cards/kimi-linear-48b-a3b-instruct.md) - 종합지능 9.0
 * [Gemma 4 E2B](cards/gemma-4-e2b.md) - 종합지능 9.0
@@ -92,5 +98,9 @@
 * [Qwen3.5 0.8B](cards/qwen35-08b.md) - 종합지능 5.0
 * [Exaone 4.0 1.2B](cards/exaone-40-12b.md) - 종합지능 3.0
 * [Gemma 3 270M](cards/gemma-3-270m.md) - 종합지능 2.0
+* [Claude Sonnet 5 (xhigh)](cards/claude-sonnet-5-xhigh.md) - 종합지능 None
+* [Claude Sonnet 5 (high)](cards/claude-sonnet-5-high.md) - 종합지능 None
+* [Claude Sonnet 5 (medium)](cards/claude-sonnet-5-medium.md) - 종합지능 None
+* [Claude Sonnet 5 (low)](cards/claude-sonnet-5-low.md) - 종합지능 None
 * [Gemini 3 Deep Think](cards/gemini-3-deep-think.md) - 종합지능 None
 * [GPT-5.5 Pro (xhigh)](cards/gpt-55-pro-xhigh.md) - 종합지능 None

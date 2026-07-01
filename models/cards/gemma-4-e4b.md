@@ -8,20 +8,20 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
 radar:
-  knowledge: { s: 22.2, z: -1.3, r: 30.4, estimated: false }  # 전문 지식
-  reasoning: { s: 21.9, z: -1.06, r: 34.1, estimated: false }  # 추론
-  coding: { s: 30.9, z: -1.23, r: 31.5, estimated: false }  # 코딩
-  agentic: { s: 17.0, z: -1.29, r: 30.6, estimated: false }  # 에이전트
-  trust: { s: 81.2, z: 1.69, r: 75.3, estimated: false }  # 신뢰성
-  multimodal: { s: 43.1, z: -1.62, r: 25.7, estimated: false }  # 멀티모달
-  long_context: { s: 41.9, z: -1.0, r: 35.0, estimated: false }  # 긴문맥
-  instruction: { s: 45.1, z: -0.92, r: 36.2, estimated: false }  # 지시 따르기
+  knowledge: { s: 22.2, z: -1.39, r: 29.2, estimated: false }  # 전문 지식
+  reasoning: { s: 21.9, z: -1.13, r: 33.0, estimated: false }  # 추론
+  coding: { s: 30.9, z: -1.33, r: 30.1, estimated: false }  # 코딩
+  agentic: { s: 17.0, z: -1.37, r: 29.5, estimated: false }  # 에이전트
+  trust: { s: 81.2, z: 1.55, r: 73.3, estimated: false }  # 신뢰성
+  multimodal: { s: 43.1, z: -1.73, r: 24.1, estimated: false }  # 멀티모달
+  long_context: { s: 41.9, z: -1.07, r: 34.0, estimated: false }  # 긴문맥
+  instruction: { s: 45.1, z: -0.99, r: 35.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 E4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-06-30
-timestamp: 2026-06-30T00:00:00Z
+updated: 2026-07-01
+timestamp: 2026-07-01T00:00:00Z
 ---
 
 # Gemma 4 E4B
@@ -39,14 +39,14 @@ Google · Open · 컨텍스트 128k · 종합지능 **12.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 30.4 | -1.3 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 58.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 34.1 | -1.06 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 58.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 31.5 | -1.23 | 실측 | [[scicode]] 24.0%×1.0, [[terminal-bench]] 8.0%×0.5 |
-| 에이전트 | 30.6 | -1.29 | 실측 | [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
-| 신뢰성 | 75.3 | +1.69 | 실측 | [[aa-omniscience]] 69.0%×1.0 |
-| 멀티모달 | 25.7 | -1.62 | 실측 | [[mmmu-pro]] 51.0%×1.0 |
-| 긴문맥 | 35.0 | -1.0 | 실측 | [[aa-lcr]] 31.0%×1.0 |
-| 지시 따르기 | 36.2 | -0.92 | 실측 | [[ifbench]] 44.0%×1.0 |
+| 전문 지식 | 29.2 | -1.39 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 58.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 33.0 | -1.13 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 58.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 30.1 | -1.33 | 실측 | [[scicode]] 24.0%×1.0, [[terminal-bench]] 8.0%×0.5 |
+| 에이전트 | 29.5 | -1.37 | 실측 | [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
+| 신뢰성 | 73.3 | +1.55 | 실측 | [[aa-omniscience]] 69.0%×1.0 |
+| 멀티모달 | 24.1 | -1.73 | 실측 | [[mmmu-pro]] 51.0%×1.0 |
+| 긴문맥 | 34.0 | -1.07 | 실측 | [[aa-lcr]] 31.0%×1.0 |
+| 지시 따르기 | 35.1 | -0.99 | 실측 | [[ifbench]] 44.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
