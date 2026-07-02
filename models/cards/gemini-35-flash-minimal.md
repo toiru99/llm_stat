@@ -5,13 +5,13 @@ creator: Google
 license: Proprietary
 intelligence_index: 35.0
 price_blended_usd_1m: 1.31
-output_speed_tps: 154.0
+output_speed_tps: 156.0
 context_window: 1000000
 radar:
   knowledge: { s: 69.1, z: 0.78, r: 61.7, estimated: false }  # 전문 지식
   reasoning: { s: 44.1, z: -0.06, r: 49.1, estimated: false }  # 추론
   coding: { s: 78.8, z: 0.81, r: 62.1, estimated: false }  # 코딩
-  agentic: { s: 66.3, z: 0.6, r: 58.9, estimated: false }  # 에이전트
+  agentic: { s: 66.3, z: 0.6, r: 59.0, estimated: false }  # 에이전트
   trust: { s: 28.7, z: -0.23, r: 46.6, estimated: false }  # 신뢰성
   multimodal: { s: 93.1, z: 0.89, r: 63.4, estimated: false }  # 멀티모달
   long_context: { s: 71.6, z: 0.02, r: 50.3, estimated: false }  # 긴문맥
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.5 Flash (minimal)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-01
-timestamp: 2026-07-01T00:00:00Z
+updated: 2026-07-02
+timestamp: 2026-07-02T00:00:00Z
 ---
 
 # Gemini 3.5 Flash (minimal)
@@ -33,7 +33,7 @@ Google · Proprietary · 컨텍스트 1M · 종합지능 **35.0**
 - **약점**: 신뢰성, 지시 따르기
 
 ## 실용 지표
-`입력 $1.5 · 출력 $9.0 · 혼합 $1.31/1M · 154.0 t/s · TTFT 0.99s · 1M ctx` · 가성비 26.7
+`입력 $1.5 · 출력 $9.0 · 혼합 $1.31/1M · 156.0 t/s · TTFT 0.94s · 1M ctx` · 가성비 26.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -42,7 +42,7 @@ Google · Proprietary · 컨텍스트 1M · 종합지능 **35.0**
 | 전문 지식 | 61.7 | +0.78 | 실측 | [[aa-omniscience]] 43.0%×1.0, [[gpqa-diamond]] 83.0%×0.4, [[humanitys-last-exam]] 23.0%×0.3 |
 | 추론 | 49.1 | -0.06 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 83.0%×1.0, [[humanitys-last-exam]] 23.0%×1.0 |
 | 코딩 | 62.1 | +0.81 | 실측 | [[scicode]] 49.0%×1.0, [[terminal-bench]] 46.0%×0.5 |
-| 에이전트 | 58.9 | +0.6 | 실측 | [[tau2-bench]] 59.0%×1.0, [[terminal-bench]] 46.0%×1.0 |
+| 에이전트 | 59.0 | +0.6 | 실측 | [[tau2-bench]] 59.0%×1.0, [[terminal-bench]] 46.0%×1.0 |
 | 신뢰성 | 46.6 | -0.23 | 실측 | [[aa-omniscience]] 27.0%×1.0 |
 | 멀티모달 | 63.4 | +0.89 | 실측 | [[mmmu-pro]] 80.0%×1.0 |
 | 긴문맥 | 50.3 | +0.02 | 실측 | [[aa-lcr]] 53.0%×1.0 |

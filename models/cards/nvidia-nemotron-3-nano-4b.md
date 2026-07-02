@@ -11,7 +11,7 @@ radar:
   knowledge: { s: 20.5, z: -1.45, r: 28.2, estimated: false }  # 전문 지식
   reasoning: { s: 18.6, z: -1.28, r: 30.8, estimated: false }  # 추론
   coding: { s: 21.5, z: -1.73, r: 24.0, estimated: false }  # 코딩
-  agentic: { s: 19.7, z: -1.25, r: 31.3, estimated: false }  # 에이전트
+  agentic: { s: 19.7, z: -1.23, r: 31.5, estimated: false }  # 에이전트
   trust: { s: 8.8, z: -0.91, r: 36.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 23.0, z: -1.74, r: 23.9, estimated: false }  # 긴문맥
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — NVIDIA Nemotron 3 Nano 4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-01
-timestamp: 2026-07-01T00:00:00Z
+updated: 2026-07-02
+timestamp: 2026-07-02T00:00:00Z
 ---
 
 # NVIDIA Nemotron 3 Nano 4B
@@ -42,7 +42,7 @@ NVIDIA · Open · 컨텍스트 262k · 종합지능 **9.0**
 | 전문 지식 | 28.2 | -1.45 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 51.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 30.8 | -1.28 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 51.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 24.0 | -1.73 | 실측 | [[scicode]] 16.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
-| 에이전트 | 31.3 | -1.25 | 실측 | [[tau2-bench]] 28.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
+| 에이전트 | 31.5 | -1.23 | 실측 | [[tau2-bench]] 28.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
 | 신뢰성 | 36.4 | -0.91 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 23.9 | -1.74 | 실측 | [[aa-lcr]] 17.0%×1.0 |

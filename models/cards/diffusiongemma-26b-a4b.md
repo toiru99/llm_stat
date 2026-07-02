@@ -11,7 +11,7 @@ radar:
   knowledge: { s: 34.6, z: -0.8, r: 37.9, estimated: false }  # 전문 지식
   reasoning: { s: 28.3, z: -0.82, r: 37.7, estimated: false }  # 추론
   coding: { s: 56.7, z: -0.17, r: 47.4, estimated: false }  # 코딩
-  agentic: { s: 3.6, z: -1.88, r: 21.8, estimated: false }  # 에이전트
+  agentic: { s: 3.6, z: -1.86, r: 22.0, estimated: false }  # 에이전트
   trust: { s: 6.2, z: -0.99, r: 35.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 18.9, z: -1.89, r: 21.7, estimated: false }  # 긴문맥
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DiffusionGemma 26B A4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-01
-timestamp: 2026-07-01T00:00:00Z
+updated: 2026-07-02
+timestamp: 2026-07-02T00:00:00Z
 ---
 
 # DiffusionGemma 26B A4B
@@ -42,7 +42,7 @@ Google · Open · 컨텍스트 256k · 종합지능 **13.0**
 | 전문 지식 | 37.9 | -0.8 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
 | 추론 | 37.7 | -0.82 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 67.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
 | 코딩 | 47.4 | -0.17 | 실측 | [[scicode]] 34.0%×1.0 |
-| 에이전트 | 21.8 | -1.88 | 실측 | [[gdpval]] 2.0%×1.0, [[tau3-banking]] 7.0%×1.0 |
+| 에이전트 | 22.0 | -1.86 | 실측 | [[gdpval]] 2.0%×1.0, [[tau3-banking]] 7.0%×1.0 |
 | 신뢰성 | 35.1 | -0.99 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 21.7 | -1.89 | 실측 | [[aa-lcr]] 14.0%×1.0 |

@@ -5,13 +5,13 @@ creator: NVIDIA
 license: Open
 intelligence_index: 15.0
 price_blended_usd_1m: 0.1
-output_speed_tps: 300.0
+output_speed_tps: 293.0
 context_window: 256000
 radar:
   knowledge: { s: 25.3, z: -1.23, r: 31.5, estimated: false }  # 전문 지식
   reasoning: { s: 17.0, z: -1.36, r: 29.6, estimated: false }  # 추론
   coding: { s: 35.3, z: -1.12, r: 33.2, estimated: false }  # 코딩
-  agentic: { s: 29.1, z: -0.87, r: 36.9, estimated: false }  # 에이전트
+  agentic: { s: 29.1, z: -0.86, r: 37.0, estimated: false }  # 에이전트
   trust: { s: 16.2, z: -0.65, r: 40.2, estimated: false }  # 신뢰성
   multimodal: { s: 46.6, z: -1.53, r: 27.0, estimated: false }  # 멀티모달
   long_context: { s: 48.6, z: -0.81, r: 37.8, estimated: false }  # 긴문맥
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3 Nano Omni 30B A3B Reasoning
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-01
-timestamp: 2026-07-01T00:00:00Z
+updated: 2026-07-02
+timestamp: 2026-07-02T00:00:00Z
 ---
 
 # Nemotron 3 Nano Omni 30B A3B Reasoning
@@ -33,7 +33,7 @@ NVIDIA · Open · 컨텍스트 256k · 종합지능 **15.0**
 - **약점**: 추론, 멀티모달
 
 ## 실용 지표
-`입력 $0.07 · 출력 $0.3 · 혼합 $0.1/1M · 300.0 t/s · TTFT 1.0s · 256k ctx` · 가성비 150.0
+`입력 $0.07 · 출력 $0.3 · 혼합 $0.1/1M · 293.0 t/s · TTFT 0.99s · 256k ctx` · 가성비 150.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -42,7 +42,7 @@ NVIDIA · Open · 컨텍스트 256k · 종합지능 **15.0**
 | 전문 지식 | 31.5 | -1.23 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 47.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 29.6 | -1.36 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 47.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 33.2 | -1.12 | 실측 | [[scicode]] 28.0%×1.0, [[terminal-bench]] 8.0%×0.5 |
-| 에이전트 | 36.9 | -0.87 | 실측 | [[tau2-bench]] 45.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
+| 에이전트 | 37.0 | -0.86 | 실측 | [[tau2-bench]] 45.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
 | 신뢰성 | 40.2 | -0.65 | 실측 | [[aa-omniscience]] 17.0%×1.0 |
 | 멀티모달 | 27.0 | -1.53 | 실측 | [[mmmu-pro]] 53.0%×1.0 |
 | 긴문맥 | 37.8 | -0.81 | 실측 | [[aa-lcr]] 36.0%×1.0 |

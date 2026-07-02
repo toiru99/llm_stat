@@ -5,13 +5,13 @@ creator: xAI
 license: Proprietary
 intelligence_index: 38.0
 price_blended_usd_1m: 0.64
-output_speed_tps: 112.0
+output_speed_tps: 115.0
 context_window: 1000000
 radar:
   knowledge: { s: 67.3, z: 0.7, r: 60.5, estimated: false }  # 전문 지식
   reasoning: { s: 62.1, z: 0.8, r: 62.0, estimated: false }  # 추론
   coding: { s: 72.3, z: 0.52, r: 57.8, estimated: false }  # 코딩
-  agentic: { s: 55.6, z: 0.17, r: 52.6, estimated: false }  # 에이전트
+  agentic: { s: 55.6, z: 0.18, r: 52.7, estimated: false }  # 에이전트
   trust: { s: 88.8, z: 1.8, r: 77.0, estimated: false }  # 신뢰성
   multimodal: { s: 89.7, z: 0.71, r: 60.7, estimated: false }  # 멀티모달
   long_context: { s: 86.5, z: 0.55, r: 58.3, estimated: false }  # 긴문맥
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.3 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-01
-timestamp: 2026-07-01T00:00:00Z
+updated: 2026-07-02
+timestamp: 2026-07-02T00:00:00Z
 ---
 
 # Grok 4.3 (high)
@@ -33,7 +33,7 @@ xAI · Proprietary · 컨텍스트 1M · 종합지능 **38.0**
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $1.25 · 출력 $2.5 · 혼합 $0.64/1M · 112.0 t/s · TTFT 20.31s · 1M ctx` · 가성비 59.4
+`입력 $1.25 · 출력 $2.5 · 혼합 $0.64/1M · 115.0 t/s · TTFT 19.64s · 1M ctx` · 가성비 59.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -42,7 +42,7 @@ xAI · Proprietary · 컨텍스트 1M · 종합지능 **38.0**
 | 전문 지식 | 60.5 | +0.7 | 실측 | [[aa-omniscience]] 35.0%×1.0, [[gpqa-diamond]] 90.0%×0.4, [[humanitys-last-exam]] 35.0%×0.3 |
 | 추론 | 62.0 | +0.8 | 실측 | [[critpt]] 8.0%×1.0, [[gpqa-diamond]] 90.0%×1.0, [[humanitys-last-exam]] 35.0%×1.0 |
 | 코딩 | 57.8 | +0.52 | 실측 | [[scicode]] 47.0%×1.0, [[terminal-bench]] 38.0%×0.5 |
-| 에이전트 | 52.6 | +0.17 | 실측 | [[apex-agents]] 17.0%×1.0, [[gdpval]] 29.0%×1.0, [[itbench]] 33.0%×1.0, [[tau2-bench]] 98.0%×1.0, [[tau3-banking]] 12.0%×1.0, [[terminal-bench]] 38.0%×1.0 |
+| 에이전트 | 52.7 | +0.18 | 실측 | [[apex-agents]] 17.0%×1.0, [[gdpval]] 29.0%×1.0, [[itbench]] 33.0%×1.0, [[tau2-bench]] 98.0%×1.0, [[tau3-banking]] 12.0%×1.0, [[terminal-bench]] 38.0%×1.0 |
 | 신뢰성 | 77.0 | +1.8 | 실측 | [[aa-omniscience]] 75.0%×1.0 |
 | 멀티모달 | 60.7 | +0.71 | 실측 | [[mmmu-pro]] 78.0%×1.0 |
 | 긴문맥 | 58.3 | +0.55 | 실측 | [[aa-lcr]] 64.0%×1.0 |

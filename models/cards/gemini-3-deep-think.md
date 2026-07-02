@@ -11,7 +11,7 @@ radar:
   knowledge: { s: 83.2, z: 1.43, r: 71.5, estimated: true }  # 전문 지식
   reasoning: { s: 83.9, z: 1.84, r: 77.6, estimated: false }  # 추론
   coding: { s: 90.8, z: 1.34, r: 70.1, estimated: true }  # 코딩
-  agentic: { s: 82.7, z: 1.25, r: 68.7, estimated: true }  # 에이전트
+  agentic: { s: 82.7, z: 1.24, r: 68.6, estimated: true }  # 에이전트
   trust: { s: 37.0, z: 0.05, r: 50.8, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 95.6, z: 0.88, r: 63.2, estimated: true }  # 긴문맥
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3 Deep Think
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-01
-timestamp: 2026-07-01T00:00:00Z
+updated: 2026-07-02
+timestamp: 2026-07-02T00:00:00Z
 ---
 
 # Gemini 3 Deep Think
@@ -42,7 +42,7 @@ Google · Proprietary · 컨텍스트 128k · 종합지능 **None**
 | 전문 지식 | 71.5 | +1.43 | 추정 | (추정) |
 | 추론 | 77.6 | +1.84 | 실측 | [[critpt]] 26.0%×1.0 |
 | 코딩 | 70.1 | +1.34 | 추정 | (추정) |
-| 에이전트 | 68.7 | +1.25 | 추정 | (추정) |
+| 에이전트 | 68.6 | +1.24 | 추정 | (추정) |
 | 신뢰성 | 50.8 | +0.05 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 63.2 | +0.88 | 추정 | (추정) |

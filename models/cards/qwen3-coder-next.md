@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 21.0
 price_blended_usd_1m: 0.43
-output_speed_tps: 109.0
+output_speed_tps: 106.0
 context_window: 256000
 radar:
   knowledge: { s: 35.3, z: -0.77, r: 38.4, estimated: false }  # 전문 지식
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Coder Next
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-01
-timestamp: 2026-07-01T00:00:00Z
+updated: 2026-07-02
+timestamp: 2026-07-02T00:00:00Z
 ---
 
 # Qwen3 Coder Next
@@ -33,7 +33,7 @@ Alibaba · Open · 컨텍스트 256k · 종합지능 **21.0**
 - **약점**: 신뢰성, 지시 따르기
 
 ## 실용 지표
-`입력 $0.35 · 출력 $1.2 · 혼합 $0.43/1M · 109.0 t/s · TTFT 1.83s · 256k ctx` · 가성비 48.8
+`입력 $0.35 · 출력 $1.2 · 혼합 $0.43/1M · 106.0 t/s · TTFT 1.63s · 256k ctx` · 가성비 48.8
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,13 +5,13 @@ creator: MiniMax
 license: Open
 intelligence_index: 38.0
 price_blended_usd_1m: 0.22
-output_speed_tps: 46.0
+output_speed_tps: 51.0
 context_window: 205000
 radar:
   knowledge: { s: 55.2, z: 0.14, r: 52.2, estimated: false }  # 전문 지식
   reasoning: { s: 48.9, z: 0.17, r: 52.5, estimated: false }  # 추론
   coding: { s: 72.9, z: 0.54, r: 58.2, estimated: false }  # 코딩
-  agentic: { s: 48.0, z: -0.13, r: 48.1, estimated: false }  # 에이전트
+  agentic: { s: 48.0, z: -0.12, r: 48.2, estimated: false }  # 에이전트
   trust: { s: 77.5, z: 1.42, r: 71.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 93.2, z: 0.8, r: 62.0, estimated: false }  # 긴문맥
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax-M2.7
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-01
-timestamp: 2026-07-01T00:00:00Z
+updated: 2026-07-02
+timestamp: 2026-07-02T00:00:00Z
 ---
 
 # MiniMax-M2.7
@@ -33,7 +33,7 @@ MiniMax · Open · 컨텍스트 205k · 종합지능 **38.0**
 - **약점**: 전문 지식, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.22/1M · 46.0 t/s · TTFT 2.16s · 205k ctx` · 가성비 172.7
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.22/1M · 51.0 t/s · TTFT 2.12s · 205k ctx` · 가성비 172.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -42,7 +42,7 @@ MiniMax · Open · 컨텍스트 205k · 종합지능 **38.0**
 | 전문 지식 | 52.2 | +0.14 | 실측 | [[aa-omniscience]] 26.0%×1.0, [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 28.0%×0.3 |
 | 추론 | 52.5 | +0.17 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
 | 코딩 | 58.2 | +0.54 | 실측 | [[scicode]] 47.0%×1.0, [[terminal-bench]] 39.0%×0.5 |
-| 에이전트 | 48.1 | -0.13 | 실측 | [[apex-agents]] 11.0%×1.0, [[gdpval]] 33.0%×1.0, [[itbench]] 26.0%×1.0, [[tau2-bench]] 85.0%×1.0, [[tau3-banking]] 9.0%×1.0, [[terminal-bench]] 39.0%×1.0 |
+| 에이전트 | 48.2 | -0.12 | 실측 | [[apex-agents]] 11.0%×1.0, [[gdpval]] 33.0%×1.0, [[itbench]] 26.0%×1.0, [[tau2-bench]] 85.0%×1.0, [[tau3-banking]] 9.0%×1.0, [[terminal-bench]] 39.0%×1.0 |
 | 신뢰성 | 71.3 | +1.42 | 실측 | [[aa-omniscience]] 66.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 62.0 | +0.8 | 실측 | [[aa-lcr]] 69.0%×1.0 |

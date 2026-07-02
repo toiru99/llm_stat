@@ -5,7 +5,7 @@ creator: xAI
 license: Proprietary
 intelligence_index: 35.0
 price_blended_usd_1m: 0.64
-output_speed_tps: 103.0
+output_speed_tps: 115.0
 context_window: 1000000
 radar:
   knowledge: { s: 50.6, z: -0.07, r: 49.0, estimated: false }  # 전문 지식
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.3 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-01
-timestamp: 2026-07-01T00:00:00Z
+updated: 2026-07-02
+timestamp: 2026-07-02T00:00:00Z
 ---
 
 # Grok 4.3 (low)
@@ -33,7 +33,7 @@ xAI · Proprietary · 컨텍스트 1M · 종합지능 **35.0**
 - **약점**: 전문 지식, 추론
 
 ## 실용 지표
-`입력 $1.25 · 출력 $2.5 · 혼합 $0.64/1M · 103.0 t/s · TTFT 5.49s · 1M ctx` · 가성비 54.7
+`입력 $1.25 · 출력 $2.5 · 혼합 $0.64/1M · 115.0 t/s · TTFT 5.64s · 1M ctx` · 가성비 54.7
 
 ## 레이더 8축 (평균=50 기준선)
 

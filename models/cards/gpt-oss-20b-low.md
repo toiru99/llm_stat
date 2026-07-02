@@ -1,30 +1,30 @@
 ---
 type: Model
-title: gpt-oss-20B (low)
+title: gpt-oss-20b (low)
 creator: OpenAI
 license: Open
 intelligence_index: 14.0
 price_blended_usd_1m: 0.07
-output_speed_tps: 225.0
+output_speed_tps: 238.0
 context_window: 131000
 radar:
   knowledge: { s: 28.3, z: -1.1, r: 33.6, estimated: false }  # 전문 지식
   reasoning: { s: 22.6, z: -1.09, r: 33.7, estimated: false }  # 추론
   coding: { s: 40.4, z: -0.89, r: 36.6, estimated: false }  # 코딩
-  agentic: { s: 29.2, z: -0.87, r: 37.0, estimated: false }  # 에이전트
+  agentic: { s: 29.2, z: -0.86, r: 37.1, estimated: false }  # 에이전트
   trust: { s: 11.2, z: -0.82, r: 37.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 41.9, z: -1.06, r: 34.1, estimated: false }  # 긴문맥
   instruction: { s: 64.8, z: -0.16, r: 47.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
-    title: Artificial Analysis — gpt-oss-20B (low)
+    title: Artificial Analysis — gpt-oss-20b (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-01
-timestamp: 2026-07-01T00:00:00Z
+updated: 2026-07-02
+timestamp: 2026-07-02T00:00:00Z
 ---
 
-# gpt-oss-20B (low)
+# gpt-oss-20b (low)
 
 OpenAI · Open · 컨텍스트 131k · 종합지능 **14.0**
 
@@ -33,7 +33,7 @@ OpenAI · Open · 컨텍스트 131k · 종합지능 **14.0**
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.2 · 혼합 $0.07/1M · 225.0 t/s · TTFT 0.89s · 131k ctx` · 가성비 200.0
+`입력 $0.06 · 출력 $0.2 · 혼합 $0.07/1M · 238.0 t/s · TTFT 0.84s · 131k ctx` · 가성비 200.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -42,7 +42,7 @@ OpenAI · Open · 컨텍스트 131k · 종합지능 **14.0**
 | 전문 지식 | 33.6 | -1.1 | 실측 | [[aa-omniscience]] 14.0%×1.0, [[gpqa-diamond]] 61.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 33.7 | -1.09 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 61.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 36.6 | -0.89 | 실측 | [[scicode]] 34.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
-| 에이전트 | 37.0 | -0.87 | 실측 | [[tau2-bench]] 50.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
+| 에이전트 | 37.1 | -0.86 | 실측 | [[tau2-bench]] 50.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
 | 신뢰성 | 37.7 | -0.82 | 실측 | [[aa-omniscience]] 13.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 34.1 | -1.06 | 실측 | [[aa-lcr]] 31.0%×1.0 |
