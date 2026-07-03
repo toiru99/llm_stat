@@ -5,13 +5,13 @@ creator: Z AI
 license: Open
 intelligence_index: 40.0
 price_blended_usd_1m: 0.9
-output_speed_tps: 64.0
+output_speed_tps: 70.0
 context_window: 200000
 radar:
   knowledge: { s: 53.3, z: 0.05, r: 50.8, estimated: false }  # 전문 지식
   reasoning: { s: 53.2, z: 0.37, r: 55.6, estimated: false }  # 추론
   coding: { s: 71.6, z: 0.49, r: 57.4, estimated: false }  # 코딩
-  agentic: { s: 67.0, z: 0.62, r: 59.3, estimated: false }  # 에이전트
+  agentic: { s: 67.0, z: 0.63, r: 59.4, estimated: false }  # 에이전트
   trust: { s: 83.8, z: 1.63, r: 74.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 83.8, z: 0.46, r: 56.9, estimated: false }  # 긴문맥
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-02
-timestamp: 2026-07-02T00:00:00Z
+updated: 2026-07-03
+timestamp: 2026-07-03T00:00:00Z
 ---
 
 # GLM-5.1
@@ -33,7 +33,7 @@ Z AI · Open · 컨텍스트 200k · 종합지능 **40.0**
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $1.4 · 출력 $4.4 · 혼합 $0.9/1M · 64.0 t/s · TTFT 1.47s · 200k ctx` · 가성비 44.4
+`입력 $1.4 · 출력 $4.4 · 혼합 $0.9/1M · 70.0 t/s · TTFT 1.42s · 200k ctx` · 가성비 44.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -42,7 +42,7 @@ Z AI · Open · 컨텍스트 200k · 종합지능 **40.0**
 | 전문 지식 | 50.8 | +0.05 | 실측 | [[aa-omniscience]] 24.0%×1.0, [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 28.0%×0.3 |
 | 추론 | 55.6 | +0.37 | 실측 | [[critpt]] 5.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
 | 코딩 | 57.4 | +0.49 | 실측 | [[scicode]] 44.0%×1.0, [[terminal-bench]] 43.0%×0.5 |
-| 에이전트 | 59.3 | +0.62 | 실측 | [[gdpval]] 37.0%×1.0, [[itbench]] 40.0%×1.0, [[tau2-bench]] 98.0%×1.0, [[tau3-banking]] 12.0%×1.0, [[terminal-bench]] 43.0%×1.0 |
+| 에이전트 | 59.4 | +0.63 | 실측 | [[gdpval]] 37.0%×1.0, [[itbench]] 40.0%×1.0, [[tau2-bench]] 98.0%×1.0, [[tau3-banking]] 12.0%×1.0, [[terminal-bench]] 43.0%×1.0 |
 | 신뢰성 | 74.5 | +1.63 | 실측 | [[aa-omniscience]] 71.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 56.9 | +0.46 | 실측 | [[aa-lcr]] 62.0%×1.0 |

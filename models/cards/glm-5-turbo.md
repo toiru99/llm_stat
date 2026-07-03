@@ -11,7 +11,7 @@ radar:
   knowledge: { s: 56.6, z: 0.21, r: 53.1, estimated: false }  # 전문 지식
   reasoning: { s: 45.1, z: -0.01, r: 49.8, estimated: false }  # 추론
   coding: { s: 66.3, z: 0.26, r: 53.8, estimated: false }  # 코딩
-  agentic: { s: 76.2, z: 0.99, r: 64.8, estimated: false }  # 에이전트
+  agentic: { s: 76.2, z: 0.99, r: 64.9, estimated: false }  # 에이전트
   trust: { s: 42.5, z: 0.24, r: 53.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 82.4, z: 0.41, r: 56.1, estimated: false }  # 긴문맥
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5-Turbo
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-02
-timestamp: 2026-07-02T00:00:00Z
+updated: 2026-07-03
+timestamp: 2026-07-03T00:00:00Z
 ---
 
 # GLM-5-Turbo
@@ -42,7 +42,7 @@ Z AI · Proprietary · 컨텍스트 200k · 종합지능 **38.0**
 | 전문 지식 | 53.1 | +0.21 | 실측 | [[aa-omniscience]] 29.0%×1.0, [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 25.0%×0.3 |
 | 추론 | 49.8 | -0.01 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 25.0%×1.0 |
 | 코딩 | 53.8 | +0.26 | 실측 | [[scicode]] 44.0%×1.0, [[terminal-bench]] 33.0%×0.5 |
-| 에이전트 | 64.8 | +0.99 | 실측 | [[tau2-bench]] 99.0%×1.0, [[terminal-bench]] 33.0%×1.0 |
+| 에이전트 | 64.9 | +0.99 | 실측 | [[tau2-bench]] 99.0%×1.0, [[terminal-bench]] 33.0%×1.0 |
 | 신뢰성 | 53.5 | +0.24 | 실측 | [[aa-omniscience]] 38.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 56.1 | +0.41 | 실측 | [[aa-lcr]] 61.0%×1.0 |

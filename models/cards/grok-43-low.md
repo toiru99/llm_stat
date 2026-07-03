@@ -5,13 +5,13 @@ creator: xAI
 license: Proprietary
 intelligence_index: 35.0
 price_blended_usd_1m: 0.64
-output_speed_tps: 115.0
+output_speed_tps: 125.0
 context_window: 1000000
 radar:
   knowledge: { s: 50.6, z: -0.07, r: 49.0, estimated: false }  # 전문 지식
   reasoning: { s: 40.6, z: -0.23, r: 46.6, estimated: false }  # 추론
   coding: { s: 61.0, z: 0.02, r: 50.3, estimated: false }  # 코딩
-  agentic: { s: 66.4, z: 0.6, r: 59.0, estimated: false }  # 에이전트
+  agentic: { s: 66.4, z: 0.61, r: 59.1, estimated: false }  # 에이전트
   trust: { s: 100.0, z: 2.18, r: 82.7, estimated: false }  # 신뢰성
   multimodal: { s: 81.0, z: 0.26, r: 54.0, estimated: false }  # 멀티모달
   long_context: { s: 86.5, z: 0.55, r: 58.3, estimated: false }  # 긴문맥
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.3 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-02
-timestamp: 2026-07-02T00:00:00Z
+updated: 2026-07-03
+timestamp: 2026-07-03T00:00:00Z
 ---
 
 # Grok 4.3 (low)
@@ -33,7 +33,7 @@ xAI · Proprietary · 컨텍스트 1M · 종합지능 **35.0**
 - **약점**: 전문 지식, 추론
 
 ## 실용 지표
-`입력 $1.25 · 출력 $2.5 · 혼합 $0.64/1M · 115.0 t/s · TTFT 5.64s · 1M ctx` · 가성비 54.7
+`입력 $1.25 · 출력 $2.5 · 혼합 $0.64/1M · 125.0 t/s · TTFT 4.94s · 1M ctx` · 가성비 54.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -42,7 +42,7 @@ xAI · Proprietary · 컨텍스트 1M · 종합지능 **35.0**
 | 전문 지식 | 49.0 | -0.07 | 실측 | [[aa-omniscience]] 26.0%×1.0, [[gpqa-diamond]] 84.0%×0.4, [[humanitys-last-exam]] 17.0%×0.3 |
 | 추론 | 46.6 | -0.23 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 84.0%×1.0, [[humanitys-last-exam]] 17.0%×1.0 |
 | 코딩 | 50.3 | +0.02 | 실측 | [[scicode]] 42.0%×1.0, [[terminal-bench]] 27.0%×0.5 |
-| 에이전트 | 59.0 | +0.6 | 실측 | [[tau2-bench]] 89.0%×1.0, [[terminal-bench]] 27.0%×1.0 |
+| 에이전트 | 59.1 | +0.61 | 실측 | [[tau2-bench]] 89.0%×1.0, [[terminal-bench]] 27.0%×1.0 |
 | 신뢰성 | 82.7 | +2.18 | 실측 | [[aa-omniscience]] 84.0%×1.0 |
 | 멀티모달 | 54.0 | +0.26 | 실측 | [[mmmu-pro]] 73.0%×1.0 |
 | 긴문맥 | 58.3 | +0.55 | 실측 | [[aa-lcr]] 64.0%×1.0 |
