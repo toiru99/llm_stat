@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — EXAONE 4.5 33B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-03
-timestamp: 2026-07-03T00:00:00Z
+updated: 2026-07-04
+timestamp: 2026-07-04T00:00:00Z
 ---
 
 # EXAONE 4.5 33B

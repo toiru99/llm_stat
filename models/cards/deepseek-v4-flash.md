@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-03
-timestamp: 2026-07-03T00:00:00Z
+updated: 2026-07-04
+timestamp: 2026-07-04T00:00:00Z
 ---
 
 # DeepSeek V4 Flash
@@ -33,7 +33,7 @@ DeepSeek · Open · 컨텍스트 1M · 종합지능 **29.0**
 - **약점**: 긴문맥, 신뢰성
 
 ## 실용 지표
-`입력 $0.14 · 출력 $0.28 · 혼합 $0.06/1M · 99.0 t/s · TTFT 1.27s · 1M ctx` · 가성비 483.3
+`입력 $0.14 · 출력 $0.28 · 혼합 $0.06/1M · 99.0 t/s · TTFT 1.23s · 1M ctx` · 가성비 483.3
 
 ## 레이더 8축 (평균=50 기준선)
 

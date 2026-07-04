@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama Nemotron Ultra
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-03
-timestamp: 2026-07-03T00:00:00Z
+updated: 2026-07-04
+timestamp: 2026-07-04T00:00:00Z
 ---
 
 # Llama Nemotron Ultra
@@ -33,7 +33,7 @@ NVIDIA · Open · 컨텍스트 128k · 종합지능 **9.0**
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.6 · 출력 $1.8 · 혼합 $0.72/1M · 52.0 t/s · TTFT 2.38s · 128k ctx` · 가성비 12.5
+`입력 $0.6 · 출력 $1.8 · 혼합 $0.72/1M · 52.0 t/s · TTFT 2.39s · 128k ctx` · 가성비 12.5
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -1,6 +1,6 @@
 # 모델 (Models)
 
-`scripts/build_cards.py` 자동 생성 · 데이터 2026-07-03 · 제작사 11곳 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
+`scripts/build_cards.py` 자동 생성 · 데이터 2026-07-04 · 제작사 11곳 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
 
 - 레이더 축·방법론: [radar-spec.md](radar-spec.md) · 설정: [../config.toml](../config.toml)
 
@@ -28,8 +28,8 @@
 * [Claude Sonnet 5 (Non-reasoning)](cards/claude-sonnet-5-non-reasoning.md) - 종합지능 42.0
 * [DeepSeek V4 Pro (high)](cards/deepseek-v4-pro-high.md) - 종합지능 41.0
 * [Qwen3.6 Plus](cards/qwen36-plus.md) - 종합지능 40.0
-* [GLM-5.1](cards/glm-51.md) - 종합지능 40.0
 * [DeepSeek V4 Flash (max)](cards/deepseek-v4-flash-max.md) - 종합지능 40.0
+* [GLM-5.1](cards/glm-51.md) - 종합지능 40.0
 * [Grok Build 0.1 0616](cards/grok-build-01-0616.md) - 종합지능 40.0
 * [GPT-5.4 mini (xhigh)](cards/gpt-54-mini-xhigh.md) - 종합지능 40.0
 * [Qwen3.7 Plus](cards/qwen37-plus.md) - 종합지능 39.0
@@ -41,8 +41,8 @@
 * [Qwen3.6 27B](cards/qwen36-27b.md) - 종합지능 37.0
 * [DeepSeek V4 Flash (high)](cards/deepseek-v4-flash-high.md) - 종합지능 37.0
 * [Grok 4.3 (medium)](cards/grok-43-medium.md) - 종합지능 36.0
-* [GPT-5.5 (Non-reasoning)](cards/gpt-55-non-reasoning.md) - 종합지능 35.0
 * [Grok 4.3 (low)](cards/grok-43-low.md) - 종합지능 35.0
+* [GPT-5.5 (Non-reasoning)](cards/gpt-55-non-reasoning.md) - 종합지능 35.0
 * [Gemini 3.5 Flash (minimal)](cards/gemini-35-flash-minimal.md) - 종합지능 35.0
 * [Qwen3.5 397B A17B](cards/qwen35-397b-a17b.md) - 종합지능 34.0
 * [Claude Sonnet 4.6 (Non-reasoning, Low Effort)](cards/claude-sonnet-46-non-reasoning-low-effort.md) - 종합지능 34.0

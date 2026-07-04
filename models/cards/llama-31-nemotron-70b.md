@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: 8.0
 price_blended_usd_1m: 1.2
-output_speed_tps: 303.0
+output_speed_tps: 306.0
 context_window: 128000
 radar:
   knowledge: { s: 26.0, z: -1.2, r: 32.0, estimated: false }  # 전문 지식
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.1 Nemotron 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-03
-timestamp: 2026-07-03T00:00:00Z
+updated: 2026-07-04
+timestamp: 2026-07-04T00:00:00Z
 ---
 
 # Llama 3.1 Nemotron 70B
@@ -33,7 +33,7 @@ NVIDIA · Open · 컨텍스트 128k · 종합지능 **8.0**
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
-`입력 $1.2 · 출력 $1.2 · 혼합 $1.2/1M · 303.0 t/s · TTFT 4.86s · 128k ctx` · 가성비 6.7
+`입력 $1.2 · 출력 $1.2 · 혼합 $1.2/1M · 306.0 t/s · TTFT 3.83s · 128k ctx` · 가성비 6.7
 
 ## 레이더 8축 (평균=50 기준선)
 
