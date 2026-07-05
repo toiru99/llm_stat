@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Pro (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-04
-timestamp: 2026-07-04T00:00:00Z
+updated: 2026-07-05
+timestamp: 2026-07-05T00:00:00Z
 ---
 
 # DeepSeek V4 Pro (high)
@@ -33,7 +33,7 @@ DeepSeek · Open · 컨텍스트 1M · 종합지능 **41.0**
 - **약점**: 코딩, 신뢰성
 
 ## 실용 지표
-`입력 $0.43 · 출력 $0.87 · 혼합 $0.18/1M · 68.0 t/s · TTFT 1.77s · 1M ctx` · 가성비 227.8
+`입력 $0.43 · 출력 $0.87 · 혼합 $0.18/1M · 68.0 t/s · TTFT 1.83s · 1M ctx` · 가성비 227.8
 
 ## 레이더 8축 (평균=50 기준선)
 

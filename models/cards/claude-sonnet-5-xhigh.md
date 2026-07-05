@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 2.31
-output_speed_tps: 80.0
+output_speed_tps: 81.0
 context_window: 1000000
 radar:
   knowledge: { s: 77.0, z: 1.15, r: 67.2, estimated: true }  # 전문 지식
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-04
-timestamp: 2026-07-04T00:00:00Z
+updated: 2026-07-05
+timestamp: 2026-07-05T00:00:00Z
 ---
 
 # Claude Sonnet 5 (xhigh)
@@ -33,7 +33,7 @@ Anthropic · Proprietary · 컨텍스트 1M · 종합지능 **None**
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $3.0 · 출력 $15.0 · 혼합 $2.31/1M · 80.0 t/s · TTFT 29.26s · 1M ctx`
+`입력 $3.0 · 출력 $15.0 · 혼합 $2.31/1M · 81.0 t/s · TTFT 22.3s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
