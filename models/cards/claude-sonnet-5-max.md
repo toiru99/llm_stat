@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-05
-timestamp: 2026-07-05T00:00:00Z
+updated: 2026-07-06
+timestamp: 2026-07-06T00:00:00Z
 ---
 
 # Claude Sonnet 5 (max)
@@ -33,7 +33,7 @@ Anthropic · Proprietary · 컨텍스트 1M · 종합지능 **53.0**
 - **약점**: 멀티모달, 지시 따르기
 
 ## 실용 지표
-`입력 $3.0 · 출력 $15.0 · 혼합 $2.31/1M · 74.0 t/s · TTFT 191.31s · 1M ctx` · 가성비 22.9
+`입력 $3.0 · 출력 $15.0 · 혼합 $2.31/1M · 74.0 t/s · TTFT 197.77s · 1M ctx` · 가성비 22.9
 
 ## 레이더 8축 (평균=50 기준선)
 

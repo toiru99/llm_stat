@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.5 Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-05
-timestamp: 2026-07-05T00:00:00Z
+updated: 2026-07-06
+timestamp: 2026-07-06T00:00:00Z
 ---
 
 # Gemini 2.5 Pro
@@ -33,7 +33,7 @@ Google · Proprietary · 컨텍스트 1M · 종합지능 **26.0**
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $1.25 · 출력 $10.0 · 혼합 $1.34/1M · 150.0 t/s · TTFT 18.01s · 1M ctx` · 가성비 19.4
+`입력 $1.25 · 출력 $10.0 · 혼합 $1.34/1M · 150.0 t/s · TTFT 17.98s · 1M ctx` · 가성비 19.4
 
 ## 레이더 8축 (평균=50 기준선)
 

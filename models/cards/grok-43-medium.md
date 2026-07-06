@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.3 (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-05
-timestamp: 2026-07-05T00:00:00Z
+updated: 2026-07-06
+timestamp: 2026-07-06T00:00:00Z
 ---
 
 # Grok 4.3 (medium)
@@ -33,7 +33,7 @@ xAI · Proprietary · 컨텍스트 1M · 종합지능 **36.0**
 - **약점**: 전문 지식, 코딩
 
 ## 실용 지표
-`입력 $1.25 · 출력 $2.5 · 혼합 $0.64/1M · 140.0 t/s · TTFT 10.13s · 1M ctx` · 가성비 56.2
+`입력 $1.25 · 출력 $2.5 · 혼합 $0.64/1M · 140.0 t/s · TTFT 10.95s · 1M ctx` · 가성비 56.2
 
 ## 레이더 8축 (평균=50 기준선)
 

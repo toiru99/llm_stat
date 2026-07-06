@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.7 Plus
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-05
-timestamp: 2026-07-05T00:00:00Z
+updated: 2026-07-06
+timestamp: 2026-07-06T00:00:00Z
 ---
 
 # Qwen3.7 Plus

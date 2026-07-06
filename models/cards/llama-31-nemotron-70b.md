@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.1 Nemotron 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-05
-timestamp: 2026-07-05T00:00:00Z
+updated: 2026-07-06
+timestamp: 2026-07-06T00:00:00Z
 ---
 
 # Llama 3.1 Nemotron 70B
@@ -33,7 +33,7 @@ NVIDIA · Open · 컨텍스트 128k · 종합지능 **8.0**
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
-`입력 $1.2 · 출력 $1.2 · 혼합 $1.2/1M · 307.0 t/s · TTFT 5.21s · 128k ctx` · 가성비 6.7
+`입력 $1.2 · 출력 $1.2 · 혼합 $1.2/1M · 307.0 t/s · TTFT 5.4s · 128k ctx` · 가성비 6.7
 
 ## 레이더 8축 (평균=50 기준선)
 

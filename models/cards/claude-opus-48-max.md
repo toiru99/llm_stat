@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 4.8 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-05
-timestamp: 2026-07-05T00:00:00Z
+updated: 2026-07-06
+timestamp: 2026-07-06T00:00:00Z
 ---
 
 # Claude Opus 4.8 (max)
@@ -33,7 +33,7 @@ Anthropic · Proprietary · 컨텍스트 1M · 종합지능 **56.0**
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $5.0 · 출력 $25.0 · 혼합 $3.85/1M · 59.0 t/s · TTFT 31.91s · 1M ctx` · 가성비 14.5
+`입력 $5.0 · 출력 $25.0 · 혼합 $3.85/1M · 59.0 t/s · TTFT 40.33s · 1M ctx` · 가성비 14.5
 
 ## 레이더 8축 (평균=50 기준선)
 
