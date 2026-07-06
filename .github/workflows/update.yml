@@ -1,11 +1,13 @@
 name: site-update
 
-# 운영 스케줄: 0 21 UTC = 06:00 KST(예약). config.toml [update] 와 일치.
-# 주의: GitHub 스케줄은 고부하 시 수 시간 지연됨(관측상 ~4h) → 실제 발동은 오전 중 유동적.
+# 운영 스케줄: 29 2 UTC = 11:29 KST(예약). config.toml [update] 와 일치.
+# 시각 선정: GitHub Actions 저부하 창(02~07 UTC) + top-of-hour 회피용 :29 오프셋.
+#   과거 21 UTC(미국 오후 피크)에서 Pages 배포가 3일 연속 transient 실패 → 한산한 시간대로 이동.
+# 주의: GitHub 스케줄은 고부하 시 지연될 수 있음 → 실제 발동은 유동적.
 # 스케줄 변경 시 이 cron을 직접 수정 (Actions cron은 항상 UTC).
 on:
   schedule:
-    - cron: "0 21 * * *"
+    - cron: "29 2 * * *"
   workflow_dispatch: {}
 
 permissions:
