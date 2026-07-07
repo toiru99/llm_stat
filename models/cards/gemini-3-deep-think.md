@@ -9,19 +9,19 @@ output_speed_tps: None
 context_window: 128000
 radar:
   knowledge: { s: 83.2, z: 1.43, r: 71.5, estimated: true }  # 전문 지식
-  reasoning: { s: 83.9, z: 1.84, r: 77.6, estimated: false }  # 추론
-  coding: { s: 90.8, z: 1.34, r: 70.1, estimated: true }  # 코딩
-  agentic: { s: 82.7, z: 1.25, r: 68.7, estimated: true }  # 에이전트
-  trust: { s: 37.0, z: 0.05, r: 50.8, estimated: true }  # 신뢰성
+  reasoning: { s: 83.9, z: 1.85, r: 77.7, estimated: false }  # 추론
+  coding: { s: 90.8, z: 1.35, r: 70.2, estimated: true }  # 코딩
+  agentic: { s: 83.7, z: 1.24, r: 68.6, estimated: true }  # 에이전트
+  trust: { s: 25.7, z: -0.35, r: 44.7, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 95.6, z: 0.88, r: 63.2, estimated: true }  # 긴문맥
-  instruction: { s: 85.6, z: 0.73, r: 60.9, estimated: true }  # 지시 따르기
+  long_context: { s: 97.7, z: 0.95, r: 64.3, estimated: true }  # 긴문맥
+  instruction: { s: 85.6, z: 0.71, r: 60.7, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3 Deep Think
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-06
-timestamp: 2026-07-06T00:00:00Z
+updated: 2026-07-07
+timestamp: 2026-07-07T00:00:00Z
 ---
 
 # Gemini 3 Deep Think
@@ -40,13 +40,13 @@ Google · Proprietary · 컨텍스트 128k · 종합지능 **None**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 71.5 | +1.43 | 추정 | (추정) |
-| 추론 | 77.6 | +1.84 | 실측 | [[critpt]] 26.0%×1.0 |
-| 코딩 | 70.1 | +1.34 | 추정 | (추정) |
-| 에이전트 | 68.7 | +1.25 | 추정 | (추정) |
-| 신뢰성 | 50.8 | +0.05 | 추정 | (추정) |
+| 추론 | 77.7 | +1.85 | 실측 | [[critpt]] 26.0%×1.0 |
+| 코딩 | 70.2 | +1.35 | 추정 | (추정) |
+| 에이전트 | 68.6 | +1.24 | 추정 | (추정) |
+| 신뢰성 | 44.7 | -0.35 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 63.2 | +0.88 | 추정 | (추정) |
-| 지시 따르기 | 60.9 | +0.73 | 추정 | (추정) |
+| 긴문맥 | 64.3 | +0.95 | 추정 | (추정) |
+| 지시 따르기 | 60.7 | +0.71 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

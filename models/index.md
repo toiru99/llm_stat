@@ -1,6 +1,6 @@
 # 모델 (Models)
 
-`scripts/build_cards.py` 자동 생성 · 데이터 2026-07-06 · 제작사 11곳 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
+`scripts/build_cards.py` 자동 생성 · 데이터 2026-07-07 · 제작사 11곳 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
 
 - 레이더 축·방법론: [radar-spec.md](radar-spec.md) · 설정: [../config.toml](../config.toml)
 
@@ -20,16 +20,16 @@
 * [Gemini 3.5 Flash (medium)](cards/gemini-35-flash-medium.md) - 종합지능 45.0
 * [GPT-5.3 Codex (xhigh)](cards/gpt-53-codex-xhigh.md) - 종합지능 44.0
 * [DeepSeek V4 Pro (max)](cards/deepseek-v4-pro-max.md) - 종합지능 44.0
+* [Kimi K2.6](cards/kimi-k26.md) - 종합지능 44.0
 * [MiniMax-M3](cards/minimax-m3.md) - 종합지능 44.0
-* [Kimi K2.6](cards/kimi-k26.md) - 종합지능 43.0
 * [Claude Opus 4.7 (Non-reasoning, high)](cards/claude-opus-47-non-reasoning-high.md) - 종합지능 43.0
 * [GPT-5.5 (low)](cards/gpt-55-low.md) - 종합지능 43.0
 * [Kimi K2.7 Code](cards/kimi-k27-code.md) - 종합지능 42.0
 * [Claude Sonnet 5 (Non-reasoning)](cards/claude-sonnet-5-non-reasoning.md) - 종합지능 42.0
 * [DeepSeek V4 Pro (high)](cards/deepseek-v4-pro-high.md) - 종합지능 41.0
 * [Qwen3.6 Plus](cards/qwen36-plus.md) - 종합지능 40.0
-* [DeepSeek V4 Flash (max)](cards/deepseek-v4-flash-max.md) - 종합지능 40.0
 * [GLM-5.1](cards/glm-51.md) - 종합지능 40.0
+* [DeepSeek V4 Flash (max)](cards/deepseek-v4-flash-max.md) - 종합지능 40.0
 * [Grok Build 0.1 0616](cards/grok-build-01-0616.md) - 종합지능 40.0
 * [GPT-5.4 mini (xhigh)](cards/gpt-54-mini-xhigh.md) - 종합지능 40.0
 * [Qwen3.7 Plus](cards/qwen37-plus.md) - 종합지능 39.0
@@ -86,10 +86,10 @@
 * [Gemma 4 E4B](cards/gemma-4-e4b.md) - 종합지능 12.0
 * [EXAONE 4.0 32B](cards/exaone-40-32b.md) - 종합지능 11.0
 * [Qwen3 Omni 30B A3B](cards/qwen3-omni-30b-a3b.md) - 종합지능 10.0
-* [Qwen3.5 2B](cards/qwen35-2b.md) - 종합지능 10.0
 * [Llama Nemotron Ultra](cards/llama-nemotron-ultra.md) - 종합지능 9.0
 * [NVIDIA Nemotron Nano 9B V2](cards/nvidia-nemotron-nano-9b-v2.md) - 종합지능 9.0
 * [NVIDIA Nemotron Nano 12B v2 VL](cards/nvidia-nemotron-nano-12b-v2-vl.md) - 종합지능 9.0
+* [Qwen3.5 2B](cards/qwen35-2b.md) - 종합지능 9.0
 * [Kimi Linear 48B A3B Instruct](cards/kimi-linear-48b-a3b-instruct.md) - 종합지능 9.0
 * [Gemma 4 E2B](cards/gemma-4-e2b.md) - 종합지능 9.0
 * [NVIDIA Nemotron 3 Nano 4B](cards/nvidia-nemotron-3-nano-4b.md) - 종합지능 9.0
