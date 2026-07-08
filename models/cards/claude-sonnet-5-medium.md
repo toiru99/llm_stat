@@ -5,23 +5,23 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 1.54
-output_speed_tps: 78.0
+output_speed_tps: 69.0
 context_window: 1000000
 radar:
-  knowledge: { s: 51.9, z: -0.01, r: 49.9, estimated: true }  # 전문 지식
-  reasoning: { s: 53.5, z: 0.39, r: 55.9, estimated: true }  # 추론
-  coding: { s: 70.1, z: 0.43, r: 56.4, estimated: true }  # 코딩
-  agentic: { s: 63.5, z: 0.44, r: 56.6, estimated: false }  # 에이전트
-  trust: { s: 75.3, z: 1.32, r: 69.8, estimated: true }  # 신뢰성
+  knowledge: { s: 55.0, z: 0.15, r: 52.3, estimated: true }  # 전문 지식
+  reasoning: { s: 51.3, z: 0.29, r: 54.4, estimated: true }  # 추론
+  coding: { s: 69.4, z: 0.4, r: 56.0, estimated: true }  # 코딩
+  agentic: { s: 63.5, z: 0.44, r: 56.7, estimated: false }  # 에이전트
+  trust: { s: 56.8, z: 0.81, r: 62.1, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 90.0, z: 0.68, r: 60.1, estimated: true }  # 긴문맥
-  instruction: { s: 91.8, z: 0.98, r: 64.7, estimated: true }  # 지시 따르기
+  long_context: { s: 83.8, z: 0.46, r: 56.9, estimated: true }  # 긴문맥
+  instruction: { s: 70.7, z: 0.12, r: 51.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5 (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-07
-timestamp: 2026-07-07T00:00:00Z
+updated: 2026-07-08
+timestamp: 2026-07-08T00:00:00Z
 ---
 
 # Claude Sonnet 5 (medium)
@@ -29,24 +29,24 @@ timestamp: 2026-07-07T00:00:00Z
 Anthropic · Proprietary · 컨텍스트 1M · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 신뢰성, 지시 따르기
-- **약점**: 추론, 전문 지식
+- **강점**: 신뢰성, 긴문맥
+- **약점**: 전문 지식, 지시 따르기
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 78.0 t/s · TTFT 4.14s · 1M ctx`
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 69.0 t/s · TTFT 2.45s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 49.9 | -0.01 | 추정 | (추정) |
-| 추론 | 55.9 | +0.39 | 추정 | (추정) |
-| 코딩 | 56.4 | +0.43 | 추정 | (추정) |
-| 에이전트 | 56.6 | +0.44 | 실측 | [[gdpval]] 40.0%×1.0 |
-| 신뢰성 | 69.8 | +1.32 | 추정 | (추정) |
+| 전문 지식 | 52.3 | +0.15 | 추정 | (추정) |
+| 추론 | 54.4 | +0.29 | 추정 | (추정) |
+| 코딩 | 56.0 | +0.4 | 추정 | (추정) |
+| 에이전트 | 56.7 | +0.44 | 실측 | [[gdpval]] 40.0%×1.0 |
+| 신뢰성 | 62.1 | +0.81 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 60.1 | +0.68 | 추정 | (추정) |
-| 지시 따르기 | 64.7 | +0.98 | 추정 | (추정) |
+| 긴문맥 | 56.9 | +0.46 | 추정 | (추정) |
+| 지시 따르기 | 51.8 | +0.12 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

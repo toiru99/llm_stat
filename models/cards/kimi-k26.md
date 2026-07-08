@@ -5,23 +5,23 @@ creator: Kimi
 license: Open
 intelligence_index: 44.0
 price_blended_usd_1m: 0.7
-output_speed_tps: 77.0
+output_speed_tps: 56.0
 context_window: 256000
 radar:
-  knowledge: { s: 65.9, z: 0.64, r: 59.6, estimated: false }  # 전문 지식
-  reasoning: { s: 63.2, z: 0.86, r: 62.8, estimated: false }  # 추론
+  knowledge: { s: 65.9, z: 0.65, r: 59.8, estimated: false }  # 전문 지식
+  reasoning: { s: 63.2, z: 0.85, r: 62.8, estimated: false }  # 추론
   coding: { s: 82.2, z: 0.96, r: 64.4, estimated: false }  # 코딩
   agentic: { s: 69.0, z: 0.66, r: 59.8, estimated: false }  # 에이전트
-  trust: { s: 71.6, z: 1.19, r: 67.9, estimated: false }  # 신뢰성
-  multimodal: { s: 91.4, z: 0.82, r: 62.2, estimated: false }  # 멀티모달
-  long_context: { s: 94.6, z: 0.84, r: 62.6, estimated: false }  # 긴문맥
-  instruction: { s: 90.1, z: 0.91, r: 63.6, estimated: false }  # 지시 따르기
+  trust: { s: 71.2, z: 1.32, r: 69.9, estimated: false }  # 신뢰성
+  multimodal: { s: 91.4, z: 0.82, r: 62.3, estimated: false }  # 멀티모달
+  long_context: { s: 94.6, z: 0.85, r: 62.7, estimated: false }  # 긴문맥
+  instruction: { s: 90.1, z: 0.96, r: 64.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2.6
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-07
-timestamp: 2026-07-07T00:00:00Z
+updated: 2026-07-08
+timestamp: 2026-07-08T00:00:00Z
 ---
 
 # Kimi K2.6
@@ -33,20 +33,20 @@ Kimi · Open · 컨텍스트 256k · 종합지능 **44.0**
 - **약점**: 에이전트, 전문 지식
 
 ## 실용 지표
-`입력 $0.95 · 출력 $4.0 · 혼합 $0.7/1M · 77.0 t/s · TTFT 2.48s · 256k ctx` · 가성비 62.9
+`입력 $0.95 · 출력 $4.0 · 혼합 $0.7/1M · 56.0 t/s · TTFT 2.82s · 256k ctx` · 가성비 62.9
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 59.6 | +0.64 | 실측 | [[aa-omniscience]] 33.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 36.0%×0.3 |
-| 추론 | 62.8 | +0.86 | 실측 | [[critpt]] 8.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 36.0%×1.0 |
+| 전문 지식 | 59.8 | +0.65 | 실측 | [[aa-omniscience]] 33.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 36.0%×0.3 |
+| 추론 | 62.8 | +0.85 | 실측 | [[critpt]] 8.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 36.0%×1.0 |
 | 코딩 | 64.4 | +0.96 | 실측 | [[scicode]] 53.0%×1.0, [[terminal-bench]] 44.0%×0.5 |
 | 에이전트 | 59.8 | +0.66 | 실측 | [[apex-agents]] 28.0%×1.0, [[gdpval]] 35.0%×1.0, [[itbench]] 31.0%×1.0, [[tau2-bench]] 96.0%×1.0, [[tau3-banking]] 21.0%×1.0, [[terminal-bench]] 44.0%×1.0 |
-| 신뢰성 | 67.9 | +1.19 | 실측 | [[aa-omniscience]] 61.0%×1.0 |
-| 멀티모달 | 62.2 | +0.82 | 실측 | [[mmmu-pro]] 79.0%×1.0 |
-| 긴문맥 | 62.6 | +0.84 | 실측 | [[aa-lcr]] 70.0%×1.0 |
-| 지시 따르기 | 63.6 | +0.91 | 실측 | [[ifbench]] 76.0%×1.0 |
+| 신뢰성 | 69.9 | +1.32 | 실측 | [[aa-omniscience]] 61.0%×1.0 |
+| 멀티모달 | 62.3 | +0.82 | 실측 | [[mmmu-pro]] 79.0%×1.0 |
+| 긴문맥 | 62.7 | +0.85 | 실측 | [[aa-lcr]] 70.0%×1.0 |
+| 지시 따르기 | 64.4 | +0.96 | 실측 | [[ifbench]] 76.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
