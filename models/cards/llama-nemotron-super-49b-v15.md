@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: 12.0
 price_blended_usd_1m: 0.4
-output_speed_tps: 50.0
+output_speed_tps: 51.0
 context_window: 128000
 radar:
   knowledge: { s: 35.9, z: -0.72, r: 39.2, estimated: false }  # 전문 지식
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama Nemotron Super 49B v1.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-08
-timestamp: 2026-07-08T00:00:00Z
+updated: 2026-07-09
+timestamp: 2026-07-09T00:00:00Z
 ---
 
 # Llama Nemotron Super 49B v1.5
@@ -33,7 +33,7 @@ NVIDIA · Open · 컨텍스트 128k · 종합지능 **12.0**
 - **약점**: 에이전트, 지시 따르기
 
 ## 실용 지표
-`입력 $0.4 · 출력 $0.4 · 혼합 $0.4/1M · 50.0 t/s · TTFT 1.27s · 128k ctx` · 가성비 30.0
+`입력 $0.4 · 출력 $0.4 · 혼합 $0.4/1M · 51.0 t/s · TTFT 1.27s · 128k ctx` · 가성비 30.0
 
 ## 레이더 8축 (평균=50 기준선)
 

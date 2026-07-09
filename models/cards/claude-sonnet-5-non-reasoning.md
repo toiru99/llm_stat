@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5 (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-08
-timestamp: 2026-07-08T00:00:00Z
+updated: 2026-07-09
+timestamp: 2026-07-09T00:00:00Z
 ---
 
 # Claude Sonnet 5 (Non-reasoning)

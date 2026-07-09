@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — NVIDIA Nemotron Nano 12B v2 VL
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-08
-timestamp: 2026-07-08T00:00:00Z
+updated: 2026-07-09
+timestamp: 2026-07-09T00:00:00Z
 ---
 
 # NVIDIA Nemotron Nano 12B v2 VL
@@ -33,7 +33,7 @@ NVIDIA · Open · 컨텍스트 128k · 종합지능 **9.0**
 - **약점**: 멀티모달, 지시 따르기
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.6 · 혼합 $0.24/1M · 285.0 t/s · TTFT 0.44s · 128k ctx` · 가성비 37.5
+`입력 $0.2 · 출력 $0.6 · 혼합 $0.24/1M · 285.0 t/s · TTFT 0.46s · 128k ctx` · 가성비 37.5
 
 ## 레이더 8축 (평균=50 기준선)
 

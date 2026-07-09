@@ -5,7 +5,7 @@ creator: Google
 license: Open
 intelligence_index: 22.0
 price_blended_usd_1m: 0.12
-output_speed_tps: 118.0
+output_speed_tps: 117.0
 context_window: 256000
 radar:
   knowledge: { s: 37.6, z: -0.64, r: 40.4, estimated: false }  # 전문 지식
@@ -20,8 +20,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 12B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-08
-timestamp: 2026-07-08T00:00:00Z
+updated: 2026-07-09
+timestamp: 2026-07-09T00:00:00Z
 ---
 
 # Gemma 4 12B
@@ -33,7 +33,7 @@ Google · Open · 컨텍스트 256k · 종합지능 **22.0**
 - **약점**: 전문 지식, 에이전트
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.3 · 혼합 $0.12/1M · 118.0 t/s · TTFT 2.38s · 256k ctx` · 가성비 183.3
+`입력 $0.1 · 출력 $0.3 · 혼합 $0.12/1M · 117.0 t/s · TTFT 2.38s · 256k ctx` · 가성비 183.3
 
 ## 레이더 8축 (평균=50 기준선)
 
