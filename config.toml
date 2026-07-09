@@ -8,7 +8,7 @@
 whitelist = [
   "Anthropic", "OpenAI", "Google", "Z AI", "Alibaba",
   "MiniMax", "DeepSeek", "Kimi", "NVIDIA", "LG AI Research",
-  "xAI",
+  "xAI", "SpaceXAI",   # 2026-07-08 원본이 xAI→SpaceXAI로 rename. 롤백 대비 둘 다 유지.
 ]
 
 [cards]
