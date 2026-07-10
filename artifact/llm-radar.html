@@ -183,6 +183,19 @@ const PAYLOAD = {
     "long_context": "긴문맥",
     "instruction": "지시 따르기"
   },
+  "defaultCreators": [
+    "Anthropic",
+    "OpenAI",
+    "Google",
+    "Z AI",
+    "Alibaba",
+    "MiniMax",
+    "DeepSeek",
+    "Kimi",
+    "NVIDIA",
+    "LG AI Research",
+    "SpaceXAI"
+  ],
   "models": [
     {
       "slug": "claude-fable-5-with-fallback",
@@ -34352,7 +34365,7 @@ const $=s=>document.querySelector(s), el=(t,c)=>{const e=document.createElement(
 const fmtCtx=n=>!n?"—":n>=1e6?(n/1e6)+"M":Math.round(n/1e3)+"k";
 const SERIES=["--series-0","--series-1","--series-2"];
 
-let state={view:"radar",selected:[(MODELS.find(m=>m.status==="current")||MODELS[0]).slug],q:"",creators:new Set(),lic:new Set(),maxPrice:Infinity,minCtx:0,sizes:new Set(),reasoning:new Set(),curOnly:true};
+let state={view:"radar",selected:[(MODELS.find(m=>m.status==="current")||MODELS[0]).slug],q:"",creators:new Set(PAYLOAD.defaultCreators||[]),lic:new Set(),maxPrice:Infinity,minCtx:0,sizes:new Set(),reasoning:new Set(),curOnly:true};
 
 // ---------- filters ----------
 function buildFilters(){
@@ -34363,7 +34376,7 @@ function buildFilters(){
   f.innerHTML="";
   const cg=el("div","filter-grp");cg.innerHTML="<span>제작사</span>";
   const cc=el("div","chips");
-  creators.forEach(c=>{const b=el("span","chip");b.textContent=c;b.setAttribute("aria-pressed","false");
+  creators.forEach(c=>{const b=el("span","chip");b.textContent=c;b.setAttribute("aria-pressed",String(state.creators.has(c)));
     b.onclick=()=>{b.getAttribute("aria-pressed")==="true"?(state.creators.delete(c),b.setAttribute("aria-pressed","false")):(state.creators.add(c),b.setAttribute("aria-pressed","true"));render();};cc.appendChild(b);});
   cg.appendChild(cc);f.appendChild(cg);
   const lg=el("div","filter-grp");lg.innerHTML="<span>라이선스</span>";

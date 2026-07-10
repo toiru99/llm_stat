@@ -20,6 +20,19 @@
     "long_context": "긴문맥",
     "instruction": "지시 따르기"
   },
+  "defaultCreators": [
+    "Anthropic",
+    "OpenAI",
+    "Google",
+    "Z AI",
+    "Alibaba",
+    "MiniMax",
+    "DeepSeek",
+    "Kimi",
+    "NVIDIA",
+    "LG AI Research",
+    "SpaceXAI"
+  ],
   "models": [
     {
       "slug": "claude-fable-5-with-fallback",

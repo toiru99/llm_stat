@@ -8,6 +8,13 @@
 # 2026-07-10: AA 필터 5종 재현으로 전체 유니버스 개방(스펙 docs/superpowers/specs/2026-07-10-aa-filters-design.md).
 # 이전 큐레이션: Anthropic OpenAI Google "Z AI" Alibaba MiniMax DeepSeek Kimi NVIDIA "LG AI Research" xAI SpaceXAI
 whitelist = []
+# 아티팩트 로드 시 기본 선택되는 제작사(이전 큐레이션 세트). 칩 해제/추가로 자유 변경.
+# 데이터에 없는 표기(xAI 등 rename 잔재)는 빌드 시 자동 무시.
+default_selected = [
+  "Anthropic", "OpenAI", "Google", "Z AI", "Alibaba",
+  "MiniMax", "DeepSeek", "Kimi", "NVIDIA", "LG AI Research",
+  "xAI", "SpaceXAI",
+]
 
 [cards]
 top_n = 0                     # 0 = 화이트리스트 통과 전체, N = 종합지능 상위 N만

@@ -283,9 +283,12 @@ def main():
         idx.append(f"* [{name}]({rel}/{slug}.md) - 종합지능 {intel}{tag}")
     (ROOT / "models" / "index.md").write_text("\n".join(idx) + "\n", encoding="utf-8")
 
-    # Artifact/뷰용 집계 JSON
+    # Artifact/뷰용 집계 JSON — 기본 선택 제작사는 실제 존재하는 표기만 전달
+    present = {m["creator"] for m in emit}
+    default_creators = [c for c in CFG["creators"].get("default_selected", []) if c in present]
     (ROOT / "models" / "data" / "cards.json").write_text(
-        json.dumps({"scraped_at": scraped_at, "axes": AX_ORDER, "labels": AX_LABEL, "models": export},
+        json.dumps({"scraped_at": scraped_at, "axes": AX_ORDER, "labels": AX_LABEL,
+                    "defaultCreators": default_creators, "models": export},
                    ensure_ascii=False, indent=2), encoding="utf-8")
 
     # 리포트
