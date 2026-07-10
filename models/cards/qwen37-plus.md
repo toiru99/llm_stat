@@ -8,20 +8,20 @@ price_blended_usd_1m: 0.27
 output_speed_tps: 50.0
 context_window: 1000000
 radar:
-  knowledge: { s: 53.8, z: 0.1, r: 51.5, estimated: false }  # 전문 지식
-  reasoning: { s: 61.9, z: 0.8, r: 61.9, estimated: false }  # 추론
-  coding: { s: 74.9, z: 0.64, r: 59.6, estimated: false }  # 코딩
-  agentic: { s: 61.4, z: 0.37, r: 55.5, estimated: false }  # 에이전트
-  trust: { s: 88.8, z: 1.94, r: 79.2, estimated: false }  # 신뢰성
-  multimodal: { s: 93.1, z: 0.91, r: 63.6, estimated: false }  # 멀티모달
-  long_context: { s: 87.8, z: 0.6, r: 59.1, estimated: false }  # 긴문맥
-  instruction: { s: 93.0, z: 1.08, r: 66.2, estimated: false }  # 지시 따르기
+  knowledge: { s: 53.8, z: -0.11, r: 48.4, estimated: false }  # 전문 지식
+  reasoning: { s: 61.6, z: 0.57, r: 58.5, estimated: false }  # 추론
+  coding: { s: 73.7, z: 0.43, r: 56.4, estimated: false }  # 코딩
+  agentic: { s: 60.1, z: 0.22, r: 53.4, estimated: false }  # 에이전트
+  trust: { s: 88.8, z: 2.0, r: 80.1, estimated: false }  # 신뢰성
+  multimodal: { s: 93.1, z: 0.78, r: 61.8, estimated: false }  # 멀티모달
+  long_context: { s: 87.8, z: 0.51, r: 57.7, estimated: false }  # 긴문맥
+  instruction: { s: 93.0, z: 1.07, r: 66.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.7 Plus
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-09
-timestamp: 2026-07-09T00:00:00Z
+updated: 2026-07-10
+timestamp: 2026-07-10T00:00:00Z
 ---
 
 # Qwen3.7 Plus
@@ -33,20 +33,20 @@ Alibaba · Proprietary · 컨텍스트 1M · 종합지능 **39.0**
 - **약점**: 에이전트, 전문 지식
 
 ## 실용 지표
-`입력 $0.4 · 출력 $1.6 · 혼합 $0.27/1M · 50.0 t/s · TTFT 3.11s · 1M ctx` · 가성비 144.4
+`입력 $0.4 · 출력 $1.6 · 혼합 $0.27/1M · 50.0 t/s · TTFT 3.13s · 1M ctx` · 가성비 144.4
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 51.5 | +0.1 | 실측 | [[aa-omniscience]] 22.0%×1.0, [[gpqa-diamond]] 90.0%×0.4, [[humanitys-last-exam]] 33.0%×0.3 |
-| 추론 | 61.9 | +0.8 | 실측 | [[critpt]] 9.0%×1.0, [[gpqa-diamond]] 90.0%×1.0, [[humanitys-last-exam]] 33.0%×1.0 |
-| 코딩 | 59.6 | +0.64 | 실측 | [[scicode]] 45.0%×1.0, [[terminal-bench]] 47.0%×0.5 |
-| 에이전트 | 55.5 | +0.37 | 실측 | [[apex-agents]] 22.0%×1.0, [[gdpval]] 22.0%×1.0, [[tau2-bench]] 93.0%×1.0, [[tau3-banking]] 18.0%×1.0, [[terminal-bench]] 47.0%×1.0 |
-| 신뢰성 | 79.2 | +1.94 | 실측 | [[aa-omniscience]] 75.0%×1.0 |
-| 멀티모달 | 63.6 | +0.91 | 실측 | [[mmmu-pro]] 80.0%×1.0 |
-| 긴문맥 | 59.1 | +0.6 | 실측 | [[aa-lcr]] 65.0%×1.0 |
-| 지시 따르기 | 66.2 | +1.08 | 실측 | [[ifbench]] 78.0%×1.0 |
+| 전문 지식 | 48.4 | -0.11 | 실측 | [[aa-omniscience]] 22.0%×1.0, [[gpqa-diamond]] 90.0%×0.4, [[humanitys-last-exam]] 33.0%×0.3 |
+| 추론 | 58.5 | +0.57 | 실측 | [[critpt]] 9.0%×1.0, [[gpqa-diamond]] 90.0%×1.0, [[humanitys-last-exam]] 33.0%×1.0 |
+| 코딩 | 56.4 | +0.43 | 실측 | [[scicode]] 45.0%×1.0, [[terminal-bench]] 47.0%×0.5 |
+| 에이전트 | 53.4 | +0.22 | 실측 | [[apex-agents]] 22.0%×1.0, [[gdpval]] 22.0%×1.0, [[tau2-bench]] 93.0%×1.0, [[tau3-banking]] 18.0%×1.0, [[terminal-bench]] 47.0%×1.0 |
+| 신뢰성 | 80.1 | +2.0 | 실측 | [[aa-omniscience]] 75.0%×1.0 |
+| 멀티모달 | 61.8 | +0.78 | 실측 | [[mmmu-pro]] 80.0%×1.0 |
+| 긴문맥 | 57.7 | +0.51 | 실측 | [[aa-lcr]] 65.0%×1.0 |
+| 지시 따르기 | 66.0 | +1.07 | 실측 | [[ifbench]] 78.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
