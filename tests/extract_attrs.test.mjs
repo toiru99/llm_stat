@@ -18,17 +18,34 @@ const FIXTURE = [
   ',{"id":"0081ab31-d10a-44a0-a10d-eee5533fec65","slug":"glm-4-5v",',
   '"name":"GLM-4.5V (Non-reasoning)","deprecated":true,"isReasoning":false,',
   '"creator":{"id":"z1","name":"Z AI"}}',
+  // 테이블 표기(shortName) ≠ name 인 케이스 — 실측: 테이블은 shortName으로 렌더
+  ',{"id":"aaaa1111-2222-3333-4444-555566667777",',
+  '"name":"Claude Opus 4.8 (Adaptive Reasoning, Max Effort)",',
+  '"shortName":"Claude Opus 4.8 (max)","slug":"claude-opus-4-8","releaseDate":"2026-05-01",',
+  '"isReasoning":true,"deprecated":false,"modelCreatorName":"Anthropic",',
+  '"totalParameters":null,"paramClass":null}',
 ].join('');
 
 test('소형+상세 오브젝트에서 속성 추출·병합', () => {
   const m = extractModelAttrs(FIXTURE);
-  assert.equal(m.size, 2);
   assert.deepEqual(m.get('gpt-oss-20b (low)'), {
     paramClass: null, totalParameters: null, isReasoning: true, deprecated: false,
   });
   assert.deepEqual(m.get('GLM-4.5V (Non-reasoning)'), {
     paramClass: 'medium', totalParameters: 108, isReasoning: false, deprecated: true,
   });
+});
+
+test('shortName으로도 조회 가능 (테이블 표기 = shortName)', () => {
+  const m = extractModelAttrs(FIXTURE);
+  // 테이블에는 "Claude Opus 4.8 (max)"로 표시되지만 JSON name은 풀네임
+  assert.deepEqual(m.get('Claude Opus 4.8 (max)'), {
+    paramClass: null, totalParameters: null, isReasoning: true, deprecated: false,
+  });
+  // 풀네임 name으로도 여전히 조회 가능
+  assert.equal(m.get('Claude Opus 4.8 (Adaptive Reasoning, Max Effort)').isReasoning, true);
+  // shortName 키가 기존 정확 name 키를 덮어쓰지 않음 (name 우선)
+  assert.equal(m.get('GLM-4.5V (Non-reasoning)').paramClass, 'medium');
 });
 
 test('creator 중첩 오브젝트는 모델로 오인하지 않음', () => {

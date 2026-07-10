@@ -2,6 +2,9 @@
 // 소형(nav)·상세 두 형태의 모델 오브젝트가 있고 둘 다 "deprecated" 키를 가짐.
 // "deprecated": 등장 지점마다 가장 가까운 {"id":" 를 시작 후보로 균형 파싱 →
 // name+deprecated 를 갖춘 오브젝트만 채택. paramClass 보유(상세) 엔트리 우선.
+// 리더보드 테이블은 shortName으로 렌더되므로(실측: "Claude Opus 4.8 (max)" ←
+// name "Claude Opus 4.8 (Adaptive Reasoning, Max Effort)") name·shortName 둘 다
+// 키로 등록한다. 정확한 name 매치가 shortName 매치보다 우선.
 // 출처: artificialanalysis.ai (내부 구조 — 변경 시 scrape 새너티 체크가 잡는다)
 
 export function parseBalanced(text, start) {
@@ -21,7 +24,8 @@ export function parseBalanced(text, start) {
 }
 
 export function extractModelAttrs(text) {
-  const out = new Map();
+  const byName = new Map();   // 정확한 name 키 (우선)
+  const byShort = new Map();  // shortName 키 (보조 — 테이블 표기)
   let i = 0;
   for (;;) {
     const k = text.indexOf('"deprecated":', i);
@@ -34,14 +38,23 @@ export function extractModelAttrs(text) {
     let o;
     try { o = JSON.parse(raw); } catch { continue; }
     if (typeof o.name !== 'string' || typeof o.deprecated !== 'boolean') continue;
-    const prev = out.get(o.name);
-    if (prev && prev.paramClass != null && o.paramClass == null) continue; // 상세 유지
-    out.set(o.name, {
+    const attrs = {
       paramClass: o.paramClass ?? null,
       totalParameters: o.totalParameters ?? null,
       isReasoning: typeof o.isReasoning === 'boolean' ? o.isReasoning : null,
       deprecated: o.deprecated,
-    });
+    };
+    const prev = byName.get(o.name);
+    if (!(prev && prev.paramClass != null && attrs.paramClass == null)) // 상세 유지
+      byName.set(o.name, attrs);
+    if (typeof o.shortName === 'string' && o.shortName !== o.name) {
+      const prevS = byShort.get(o.shortName);
+      if (!(prevS && prevS.paramClass != null && attrs.paramClass == null))
+        byShort.set(o.shortName, attrs);
+    }
   }
+  // 병합: shortName 항목을 먼저 깔고 정확 name 항목으로 덮어씀 (name 우선)
+  const out = new Map(byShort);
+  for (const [k, v] of byName) out.set(k, v);
   return out;
 }
