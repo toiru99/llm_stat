@@ -5,11 +5,9 @@
 [creators]
 # 카드로 만들 제작사 화이트리스트 — 리더보드 "Creator" 표기와 정확히 일치해야 함.
 # 비우면 [] → 전체 제작사 허용.
-whitelist = [
-  "Anthropic", "OpenAI", "Google", "Z AI", "Alibaba",
-  "MiniMax", "DeepSeek", "Kimi", "NVIDIA", "LG AI Research",
-  "xAI", "SpaceXAI",   # 2026-07-08 원본이 xAI→SpaceXAI로 rename. 롤백 대비 둘 다 유지.
-]
+# 2026-07-10: AA 필터 5종 재현으로 전체 유니버스 개방(스펙 docs/superpowers/specs/2026-07-10-aa-filters-design.md).
+# 이전 큐레이션: Anthropic OpenAI Google "Z AI" Alibaba MiniMax DeepSeek Kimi NVIDIA "LG AI Research" xAI SpaceXAI
+whitelist = []
 
 [cards]
 top_n = 0                     # 0 = 화이트리스트 통과 전체, N = 종합지능 상위 N만

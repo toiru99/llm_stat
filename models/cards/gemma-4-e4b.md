@@ -7,15 +7,19 @@ intelligence_index: 12.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
+status: current
+size_class: Small
+params_b: 8
+is_reasoning: true
 radar:
-  knowledge: { s: 22.2, z: -1.51, r: 27.3, estimated: false }  # 전문 지식
-  reasoning: { s: 21.8, z: -1.22, r: 31.7, estimated: false }  # 추론
-  coding: { s: 30.7, z: -1.47, r: 27.9, estimated: false }  # 코딩
-  agentic: { s: 16.7, z: -1.5, r: 27.5, estimated: false }  # 에이전트
-  trust: { s: 81.2, z: 1.74, r: 76.1, estimated: false }  # 신뢰성
-  multimodal: { s: 43.1, z: -2.0, r: 20.1, estimated: false }  # 멀티모달
-  long_context: { s: 41.9, z: -1.21, r: 31.9, estimated: false }  # 긴문맥
-  instruction: { s: 45.1, z: -1.14, r: 32.8, estimated: false }  # 지시 따르기
+  knowledge: { s: 22.3, z: -0.87, r: 36.9, estimated: false }  # 전문 지식
+  reasoning: { s: 22.0, z: -0.6, r: 41.0, estimated: false }  # 추론
+  coding: { s: 30.7, z: -0.64, r: 40.3, estimated: false }  # 코딩
+  agentic: { s: 16.7, z: -0.75, r: 38.7, estimated: false }  # 에이전트
+  trust: { s: 80.0, z: 2.48, r: 87.2, estimated: false }  # 신뢰성
+  multimodal: { s: 52.2, z: -0.92, r: 36.2, estimated: false }  # 멀티모달
+  long_context: { s: 40.8, z: -0.22, r: 46.7, estimated: false }  # 긴문맥
+  instruction: { s: 45.1, z: -0.29, r: 45.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 E4B
@@ -26,10 +30,10 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Gemma 4 E4B
 
-Google · Open · 컨텍스트 128k · 종합지능 **12.0**
+Google · Open · Small(8B) · 컨텍스트 128k · 종합지능 **12.0**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 신뢰성, 지시 따르기
+- **강점**: 신뢰성, 긴문맥
 - **약점**: 전문 지식, 멀티모달
 
 ## 실용 지표
@@ -39,14 +43,14 @@ Google · Open · 컨텍스트 128k · 종합지능 **12.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 27.3 | -1.51 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 58.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 31.7 | -1.22 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 58.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 27.9 | -1.47 | 실측 | [[scicode]] 24.0%×1.0, [[terminal-bench]] 8.0%×0.5 |
-| 에이전트 | 27.5 | -1.5 | 실측 | [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
-| 신뢰성 | 76.1 | +1.74 | 실측 | [[aa-omniscience]] 69.0%×1.0 |
-| 멀티모달 | 20.1 | -2.0 | 실측 | [[mmmu-pro]] 51.0%×1.0 |
-| 긴문맥 | 31.9 | -1.21 | 실측 | [[aa-lcr]] 31.0%×1.0 |
-| 지시 따르기 | 32.8 | -1.14 | 실측 | [[ifbench]] 44.0%×1.0 |
+| 전문 지식 | 36.9 | -0.87 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 58.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 41.0 | -0.6 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 58.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 40.3 | -0.64 | 실측 | [[scicode]] 24.0%×1.0, [[terminal-bench]] 8.0%×0.5 |
+| 에이전트 | 38.7 | -0.75 | 실측 | [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
+| 신뢰성 | 87.2 | +2.48 | 실측 | [[aa-omniscience]] 69.0%×1.0 |
+| 멀티모달 | 36.2 | -0.92 | 실측 | [[mmmu-pro]] 51.0%×1.0 |
+| 긴문맥 | 46.7 | -0.22 | 실측 | [[aa-lcr]] 31.0%×1.0 |
+| 지시 따르기 | 45.6 | -0.29 | 실측 | [[ifbench]] 44.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

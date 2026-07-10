@@ -7,15 +7,19 @@ intelligence_index: 55.0
 price_blended_usd_1m: 4.35
 output_speed_tps: 66.0
 context_window: 922000
+status: current
+size_class: Unknown
+params_b: null
+is_reasoning: true
 radar:
-  knowledge: { s: 93.0, z: 1.63, r: 74.5, estimated: false }  # 전문 지식
-  reasoning: { s: 89.0, z: 1.8, r: 77.0, estimated: false }  # 추론
-  coding: { s: 93.0, z: 1.28, r: 69.2, estimated: false }  # 코딩
-  agentic: { s: 87.2, z: 1.3, r: 69.5, estimated: false }  # 에이전트
-  trust: { s: 12.5, z: -0.65, r: 40.3, estimated: false }  # 신뢰성
-  multimodal: { s: 93.1, z: 0.78, r: 61.8, estimated: false }  # 멀티모달
-  long_context: { s: 100.0, z: 0.97, r: 64.6, estimated: false }  # 긴문맥
-  instruction: { s: 90.1, z: 0.94, r: 64.1, estimated: false }  # 지시 따르기
+  knowledge: { s: 93.0, z: 2.56, r: 88.4, estimated: false }  # 전문 지식
+  reasoning: { s: 89.0, z: 2.95, r: 94.3, estimated: false }  # 추론
+  coding: { s: 93.0, z: 2.01, r: 80.1, estimated: false }  # 코딩
+  agentic: { s: 87.2, z: 1.99, r: 79.9, estimated: false }  # 에이전트
+  trust: { s: 15.3, z: -0.59, r: 41.2, estimated: false }  # 신뢰성
+  multimodal: { s: 94.2, z: 1.09, r: 66.3, estimated: false }  # 멀티모달
+  long_context: { s: 97.4, z: 1.45, r: 71.8, estimated: false }  # 긴문맥
+  instruction: { s: 90.1, z: 1.56, r: 73.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.5 (xhigh)
@@ -26,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # GPT-5.5 (xhigh)
 
-OpenAI · Proprietary · 컨텍스트 922k · 종합지능 **55.0**
+OpenAI · Proprietary · Unknown · 컨텍스트 922k · 종합지능 **55.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 전문 지식
@@ -39,14 +43,14 @@ OpenAI · Proprietary · 컨텍스트 922k · 종합지능 **55.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 74.5 | +1.63 | 실측 | [[aa-omniscience]] 57.0%×1.0, [[gpqa-diamond]] 94.0%×0.4, [[humanitys-last-exam]] 44.0%×0.3 |
-| 추론 | 77.0 | +1.8 | 실측 | [[critpt]] 27.0%×1.0, [[gpqa-diamond]] 94.0%×1.0, [[humanitys-last-exam]] 44.0%×1.0 |
-| 코딩 | 69.2 | +1.28 | 실측 | [[scicode]] 56.0%×1.0, [[terminal-bench]] 61.0%×0.5 |
-| 에이전트 | 69.5 | +1.3 | 실측 | [[apex-agents]] 38.0%×1.0, [[gdpval]] 50.0%×1.0, [[itbench]] 46.0%×1.0, [[tau2-bench]] 94.0%×1.0, [[tau3-banking]] 31.0%×1.0, [[terminal-bench]] 61.0%×1.0 |
-| 신뢰성 | 40.3 | -0.65 | 실측 | [[aa-omniscience]] 14.0%×1.0 |
-| 멀티모달 | 61.8 | +0.78 | 실측 | [[mmmu-pro]] 80.0%×1.0 |
-| 긴문맥 | 64.6 | +0.97 | 실측 | [[aa-lcr]] 74.0%×1.0 |
-| 지시 따르기 | 64.1 | +0.94 | 실측 | [[ifbench]] 76.0%×1.0 |
+| 전문 지식 | 88.4 | +2.56 | 실측 | [[aa-omniscience]] 57.0%×1.0, [[gpqa-diamond]] 94.0%×0.4, [[humanitys-last-exam]] 44.0%×0.3 |
+| 추론 | 94.3 | +2.95 | 실측 | [[critpt]] 27.0%×1.0, [[gpqa-diamond]] 94.0%×1.0, [[humanitys-last-exam]] 44.0%×1.0 |
+| 코딩 | 80.1 | +2.01 | 실측 | [[scicode]] 56.0%×1.0, [[terminal-bench]] 61.0%×0.5 |
+| 에이전트 | 79.9 | +1.99 | 실측 | [[apex-agents]] 38.0%×1.0, [[gdpval]] 50.0%×1.0, [[itbench]] 46.0%×1.0, [[tau2-bench]] 94.0%×1.0, [[tau3-banking]] 31.0%×1.0, [[terminal-bench]] 61.0%×1.0 |
+| 신뢰성 | 41.2 | -0.59 | 실측 | [[aa-omniscience]] 14.0%×1.0 |
+| 멀티모달 | 66.3 | +1.09 | 실측 | [[mmmu-pro]] 80.0%×1.0 |
+| 긴문맥 | 71.8 | +1.45 | 실측 | [[aa-lcr]] 74.0%×1.0 |
+| 지시 따르기 | 73.4 | +1.56 | 실측 | [[ifbench]] 76.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

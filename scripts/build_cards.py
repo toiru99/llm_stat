@@ -47,6 +47,21 @@ def slugify(name):
     return re.sub(r"[\s_]+", "-", re.sub(r"[^\w\s-]", "", name.lower())).strip("-")
 
 
+# ---------- AA 필터 속성 파생 (스크래퍼가 조인한 paramClass/deprecated/가격 → UI 버킷) ----------
+def size_bucket(param_class):
+    """AA Size 필터 버킷: Tiny(<4.5B)/Small(4.5-40B)/Medium(40-150B)/Large(>150B). 비공개는 Unknown."""
+    return {"tiny": "Tiny", "small": "Small", "medium": "Medium", "large": "Large"}.get(param_class or "", "Unknown")
+
+def price_bucket(blended):
+    """AA Price 필터 버킷: Low(<$0.15) / Medium($0.15~1) / High(>$1). Blended 기준."""
+    if blended is None: return None
+    return "Low" if blended < 0.15 else "Medium" if blended <= 1.0 else "High"
+
+def status_of(deprecated):
+    """AA Status: deprecated=True → past, 그 외(false/결측) → current."""
+    return "past" if deprecated is True else "current"
+
+
 # ---------- 벤치마크 문서에서 축 매핑 로드 (SSOT) ----------
 def load_axis_map():
     """return axis -> list of {bench, column, weight}, and benchmark wiki slug per column."""
@@ -139,6 +154,8 @@ def main():
             "price_in": money(col(m, H_PIN)), "price_out": money(col(m, H_POUT)),
             "ttft": pct(col(m, H_TTFT)), "total_resp": pct(col(m, H_TOTAL)),
             "speed": pct(col(m, H_SPEED)), "ctx": ctx(col(m, H_CTX)),
+            "size": size_bucket(m.get("paramClass")), "params": m.get("totalParameters"),
+            "reasoning": m.get("isReasoning"), "status": status_of(m.get("deprecated")),
             "s": axes_s, "comps": comps, "est": {ax: False for ax in AX_ORDER},
         })
 
@@ -202,7 +219,11 @@ def main():
 
         fm = ["---", "type: Model", f"title: {m['name']}", f"creator: {m['creator']}", f"license: {m['license']}",
               f"intelligence_index: {m['intel']}", f"price_blended_usd_1m: {m['price']}",
-              f"output_speed_tps: {m['speed']}", f"context_window: {m['ctx']}", "radar:"]
+              f"output_speed_tps: {m['speed']}", f"context_window: {m['ctx']}",
+              f"status: {m['status']}", f"size_class: {m['size']}",
+              f"params_b: {m['params'] if m['params'] is not None else 'null'}",
+              f"is_reasoning: {str(m['reasoning']).lower() if m['reasoning'] is not None else 'null'}",
+              "radar:"]
         for ax in AX_ORDER:
             s = m["s"][ax]; zz, rr = z[ax]
             sv = round(s, 1) if s is not None else "null"
@@ -214,7 +235,10 @@ def main():
                f"updated: {scraped_at}", f"timestamp: {scraped_at}T00:00:00Z", "---"]
 
         body = ["", f"# {m['name']}", "",
-                f"{m['creator']} · {m['license']} · 컨텍스트 {ctxd} · 종합지능 **{m['intel']}**", "",
+                f"{m['creator']} · {m['license']} · {m['size']}"
+                + (f"({m['params']}B)" if m['params'] is not None else "")
+                + f" · 컨텍스트 {ctxd} · 종합지능 **{m['intel']}**"
+                + (" · ⚠️ past(구세대)" if m['status'] == 'past' else ""), "",
                 "## 강점 / 약점 (평균 대비)",
                 f"- **강점**: {', '.join(strong) if strong else '—'}",
                 f"- **약점**: {', '.join(weak) if weak else '—'}", "",
@@ -235,23 +259,28 @@ def main():
         body += ["", "> r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).",
                  "", "## 출처", "출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)", ""]
         (out_dir / f"{slug}.md").write_text("\n".join(fm + body), encoding="utf-8")
-        written.append((slug, m["name"], m["intel"]))
+        written.append((slug, m["name"], m["intel"], m["status"]))
         export.append({
             "slug": slug, "name": m["name"], "creator": m["creator"], "license": m["license"],
             "intel": m["intel"], "price": m["price"], "price_in": m["price_in"], "price_out": m["price_out"],
             "ttft": m["ttft"], "total_resp": m["total_resp"], "speed": m["speed"], "ctx": m["ctx"], "value": value,
+            "size": m["size"], "params": m["params"], "reasoning": m["reasoning"],
+            "status": m["status"], "priceBucket": price_bucket(m["price"]),
             "radar": {ax: {"r": z[ax][1], "z": z[ax][0], "estimated": m["est"][ax],
                            "measured": m["s"][ax] is not None} for ax in AX_ORDER},
         })
 
     # index.md
     rel = out_dir.relative_to(ROOT / "models")
+    n_creators = len({m["creator"] for m in emit})
+    n_past = sum(1 for m in emit if m["status"] == "past")
     idx = ["# 모델 (Models)", "",
-           f"`scripts/build_cards.py` 자동 생성 · 데이터 {scraped_at} · 제작사 {len(wl)}곳 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)",
+           f"`scripts/build_cards.py` 자동 생성 · 데이터 {scraped_at} · 제작사 {n_creators}곳 · current {len(emit)-n_past} + past {n_past} · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)",
            "", "- 레이더 축·방법론: [radar-spec.md](radar-spec.md) · 설정: [../config.toml](../config.toml)",
            "", f"## 모델 목록 (종합지능 내림차순, {len(written)}개)", ""]
-    for slug, name, intel in written:
-        idx.append(f"* [{name}]({rel}/{slug}.md) - 종합지능 {intel}")
+    for slug, name, intel, status in written:
+        tag = " · past" if status == "past" else ""
+        idx.append(f"* [{name}]({rel}/{slug}.md) - 종합지능 {intel}{tag}")
     (ROOT / "models" / "index.md").write_text("\n".join(idx) + "\n", encoding="utf-8")
 
     # Artifact/뷰용 집계 JSON

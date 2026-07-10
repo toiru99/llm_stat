@@ -7,15 +7,19 @@ intelligence_index: 41.0
 price_blended_usd_1m: 0.18
 output_speed_tps: 59.0
 context_window: 1000000
+status: current
+size_class: Large
+params_b: 1600
+is_reasoning: true
 radar:
-  knowledge: { s: 74.1, z: 0.79, r: 61.9, estimated: false }  # 전문 지식
-  reasoning: { s: 63.7, z: 0.66, r: 59.9, estimated: false }  # 추론
-  coding: { s: 72.3, z: 0.36, r: 55.4, estimated: false }  # 코딩
-  agentic: { s: 79.3, z: 0.99, r: 64.8, estimated: false }  # 에이전트
-  trust: { s: 8.8, z: -0.78, r: 38.3, estimated: false }  # 신뢰성
+  knowledge: { s: 74.1, z: 1.64, r: 74.6, estimated: false }  # 전문 지식
+  reasoning: { s: 63.7, z: 1.61, r: 74.2, estimated: false }  # 추론
+  coding: { s: 72.3, z: 1.13, r: 66.9, estimated: false }  # 코딩
+  agentic: { s: 74.0, z: 1.48, r: 72.2, estimated: false }  # 에이전트
+  trust: { s: 11.8, z: -0.75, r: 38.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 87.8, z: 0.51, r: 57.7, estimated: false }  # 긴문맥
-  instruction: { s: 83.1, z: 0.61, r: 59.2, estimated: false }  # 지시 따르기
+  long_context: { s: 85.5, z: 1.1, r: 66.6, estimated: false }  # 긴문맥
+  instruction: { s: 83.1, z: 1.27, r: 69.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Pro (high)
@@ -26,11 +30,11 @@ timestamp: 2026-07-10T00:00:00Z
 
 # DeepSeek V4 Pro (high)
 
-DeepSeek · Open · 컨텍스트 1M · 종합지능 **41.0**
+DeepSeek · Open · Large(1600B) · 컨텍스트 1M · 종합지능 **41.0**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 에이전트, 전문 지식
-- **약점**: 코딩, 신뢰성
+- **강점**: 전문 지식, 추론
+- **약점**: 긴문맥, 신뢰성
 
 ## 실용 지표
 `입력 $0.43 · 출력 $0.87 · 혼합 $0.18/1M · 59.0 t/s · TTFT 1.72s · 1M ctx` · 가성비 227.8
@@ -39,14 +43,14 @@ DeepSeek · Open · 컨텍스트 1M · 종합지능 **41.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 61.9 | +0.79 | 실측 | [[aa-omniscience]] 42.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 34.0%×0.3 |
-| 추론 | 59.9 | +0.66 | 실측 | [[critpt]] 10.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 34.0%×1.0 |
-| 코딩 | 55.4 | +0.36 | 실측 | [[scicode]] 46.0%×1.0, [[terminal-bench]] 42.0%×0.5 |
-| 에이전트 | 64.8 | +0.99 | 실측 | [[tau2-bench]] 94.0%×1.0, [[terminal-bench]] 42.0%×1.0 |
-| 신뢰성 | 38.3 | -0.78 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
+| 전문 지식 | 74.6 | +1.64 | 실측 | [[aa-omniscience]] 42.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 34.0%×0.3 |
+| 추론 | 74.2 | +1.61 | 실측 | [[critpt]] 10.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 34.0%×1.0 |
+| 코딩 | 66.9 | +1.13 | 실측 | [[scicode]] 46.0%×1.0, [[terminal-bench]] 42.0%×0.5 |
+| 에이전트 | 72.2 | +1.48 | 실측 | [[gdpval]] 40.0%×1.0, [[tau2-bench]] 94.0%×1.0, [[terminal-bench]] 42.0%×1.0 |
+| 신뢰성 | 38.7 | -0.75 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 57.7 | +0.51 | 실측 | [[aa-lcr]] 65.0%×1.0 |
-| 지시 따르기 | 59.2 | +0.61 | 실측 | [[ifbench]] 71.0%×1.0 |
+| 긴문맥 | 66.6 | +1.1 | 실측 | [[aa-lcr]] 65.0%×1.0 |
+| 지시 따르기 | 69.1 | +1.27 | 실측 | [[ifbench]] 71.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

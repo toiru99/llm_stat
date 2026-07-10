@@ -7,15 +7,19 @@ intelligence_index: 25.0
 price_blended_usd_1m: 0.23
 output_speed_tps: 147.0
 context_window: 1000000
+status: current
+size_class: Medium
+params_b: 120.6
+is_reasoning: true
 radar:
-  knowledge: { s: 48.2, z: -0.36, r: 44.7, estimated: false }  # 전문 지식
-  reasoning: { s: 42.4, z: -0.3, r: 45.6, estimated: false }  # 추론
-  coding: { s: 54.6, z: -0.42, r: 43.7, estimated: false }  # 코딩
-  agentic: { s: 26.8, z: -1.1, r: 33.5, estimated: false }  # 에이전트
-  trust: { s: 11.2, z: -0.69, r: 39.6, estimated: false }  # 신뢰성
+  knowledge: { s: 48.3, z: 0.39, r: 55.8, estimated: false }  # 전문 지식
+  reasoning: { s: 42.4, z: 0.48, r: 57.2, estimated: false }  # 추론
+  coding: { s: 54.6, z: 0.37, r: 55.6, estimated: false }  # 코딩
+  agentic: { s: 26.8, z: -0.36, r: 44.6, estimated: false }  # 에이전트
+  trust: { s: 14.1, z: -0.64, r: 40.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 81.1, z: 0.26, r: 53.9, estimated: false }  # 긴문맥
-  instruction: { s: 83.1, z: 0.61, r: 59.2, estimated: false }  # 지시 따르기
+  long_context: { s: 78.9, z: 0.91, r: 63.6, estimated: false }  # 긴문맥
+  instruction: { s: 83.1, z: 1.27, r: 69.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — NVIDIA Nemotron 3 Super
@@ -26,11 +30,11 @@ timestamp: 2026-07-10T00:00:00Z
 
 # NVIDIA Nemotron 3 Super
 
-NVIDIA · Open · 컨텍스트 1M · 종합지능 **25.0**
+NVIDIA · Open · Medium(120.6B) · 컨텍스트 1M · 종합지능 **25.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 긴문맥
-- **약점**: 신뢰성, 에이전트
+- **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
 `입력 $0.25 · 출력 $0.78 · 혼합 $0.23/1M · 147.0 t/s · TTFT 1.06s · 1M ctx` · 가성비 108.7
@@ -39,14 +43,14 @@ NVIDIA · Open · 컨텍스트 1M · 종합지능 **25.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 44.7 | -0.36 | 실측 | [[aa-omniscience]] 24.0%×1.0, [[gpqa-diamond]] 80.0%×0.4, [[humanitys-last-exam]] 19.0%×0.3 |
-| 추론 | 45.6 | -0.3 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 80.0%×1.0, [[humanitys-last-exam]] 19.0%×1.0 |
-| 코딩 | 43.7 | -0.42 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 29.0%×0.5 |
-| 에이전트 | 33.5 | -1.1 | 실측 | [[apex-agents]] 2.0%×1.0, [[gdpval]] 10.0%×1.0, [[itbench]] 1.0%×1.0, [[tau2-bench]] 68.0%×1.0, [[tau3-banking]] 10.0%×1.0, [[terminal-bench]] 29.0%×1.0 |
-| 신뢰성 | 39.6 | -0.69 | 실측 | [[aa-omniscience]] 13.0%×1.0 |
+| 전문 지식 | 55.8 | +0.39 | 실측 | [[aa-omniscience]] 24.0%×1.0, [[gpqa-diamond]] 80.0%×0.4, [[humanitys-last-exam]] 19.0%×0.3 |
+| 추론 | 57.2 | +0.48 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 80.0%×1.0, [[humanitys-last-exam]] 19.0%×1.0 |
+| 코딩 | 55.6 | +0.37 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 29.0%×0.5 |
+| 에이전트 | 44.6 | -0.36 | 실측 | [[apex-agents]] 2.0%×1.0, [[gdpval]] 10.0%×1.0, [[itbench]] 1.0%×1.0, [[tau2-bench]] 68.0%×1.0, [[tau3-banking]] 10.0%×1.0, [[terminal-bench]] 29.0%×1.0 |
+| 신뢰성 | 40.4 | -0.64 | 실측 | [[aa-omniscience]] 13.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 53.9 | +0.26 | 실측 | [[aa-lcr]] 60.0%×1.0 |
-| 지시 따르기 | 59.2 | +0.61 | 실측 | [[ifbench]] 71.0%×1.0 |
+| 긴문맥 | 63.6 | +0.91 | 실측 | [[aa-lcr]] 60.0%×1.0 |
+| 지시 따르기 | 69.1 | +1.27 | 실측 | [[ifbench]] 71.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
