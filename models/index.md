@@ -70,8 +70,8 @@
 * [Qwen3.5 Omni Plus](cards/qwen35-omni-plus.md) - 종합지능 31.0
 * [DeepSeek V4 Pro](cards/deepseek-v4-pro.md) - 종합지능 31.0
 * [Claude 4.5 Haiku](cards/claude-45-haiku.md) - 종합지능 30.0
-* [GPT-5.4 mini (medium)](cards/gpt-54-mini-medium.md) - 종합지능 30.0
 * [o3](cards/o3.md) - 종합지능 30.0
+* [GPT-5.4 mini (medium)](cards/gpt-54-mini-medium.md) - 종합지능 30.0
 * [GPT-5.4 nano](cards/gpt-54-nano.md) - 종합지능 30.0
 * [Gemma 4 31B](cards/gemma-4-31b.md) - 종합지능 29.0
 * [DeepSeek V4 Flash](cards/deepseek-v4-flash.md) - 종합지능 29.0

@@ -5,7 +5,7 @@ creator: SpaceXAI
 license: Proprietary
 intelligence_index: 40.0
 price_blended_usd_1m: 0.54
-output_speed_tps: 63.0
+output_speed_tps: 66.0
 context_window: 256000
 radar:
   knowledge: { s: 83.0, z: 1.19, r: 67.8, estimated: false }  # 전문 지식
@@ -33,7 +33,7 @@ SpaceXAI · Proprietary · 컨텍스트 256k · 종합지능 **40.0**
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $1.0 · 출력 $2.0 · 혼합 $0.54/1M · 63.0 t/s · TTFT 0.52s · 256k ctx` · 가성비 74.1
+`입력 $1.0 · 출력 $2.0 · 혼합 $0.54/1M · 66.0 t/s · TTFT 0.52s · 256k ctx` · 가성비 74.1
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: Alibaba
 license: Proprietary
 intelligence_index: 46.0
 price_blended_usd_1m: 1.43
-output_speed_tps: 198.0
+output_speed_tps: 195.0
 context_window: 1000000
 radar:
   knowledge: { s: 64.0, z: 0.34, r: 55.1, estimated: false }  # 전문 지식
@@ -33,7 +33,7 @@ Alibaba · Proprietary · 컨텍스트 1M · 종합지능 **46.0**
 - **약점**: 에이전트, 전문 지식
 
 ## 실용 지표
-`입력 $2.5 · 출력 $7.5 · 혼합 $1.43/1M · 198.0 t/s · TTFT 2.51s · 1M ctx` · 가성비 32.2
+`입력 $2.5 · 출력 $7.5 · 혼합 $1.43/1M · 195.0 t/s · TTFT 2.55s · 1M ctx` · 가성비 32.2
 
 ## 레이더 8축 (평균=50 기준선)
 
