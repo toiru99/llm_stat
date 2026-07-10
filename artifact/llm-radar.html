@@ -34376,9 +34376,21 @@ function buildFilters(){
   f.innerHTML="";
   const cg=el("div","filter-grp");cg.innerHTML="<span>제작사</span>";
   const cc=el("div","chips");
-  creators.forEach(c=>{const b=el("span","chip");b.textContent=c;b.setAttribute("aria-pressed",String(state.creators.has(c)));
-    b.onclick=()=>{b.getAttribute("aria-pressed")==="true"?(state.creators.delete(c),b.setAttribute("aria-pressed","false")):(state.creators.add(c),b.setAttribute("aria-pressed","true"));render();};cc.appendChild(b);});
-  cg.appendChild(cc);f.appendChild(cg);
+  const mkChip=(c,parent)=>{const b=el("span","chip");b.textContent=c;b.setAttribute("aria-pressed",String(state.creators.has(c)));
+    b.onclick=()=>{b.getAttribute("aria-pressed")==="true"?(state.creators.delete(c),b.setAttribute("aria-pressed","false")):(state.creators.add(c),b.setAttribute("aria-pressed","true"));render();};parent.appendChild(b);};
+  // 기본(큐레이션) 제작사 칩만 노출, 나머지는 "+N 더보기"로 접기 — 이전 화면과 동일한 첫인상
+  const defSet=new Set(PAYLOAD.defaultCreators||[]);
+  const primary=creators.filter(c=>defSet.has(c)), rest=creators.filter(c=>!defSet.has(c));
+  (primary.length?primary:creators).forEach(c=>mkChip(c,cc));
+  cg.appendChild(cc);
+  if(primary.length&&rest.length){
+    const xc=el("div","chips");xc.style.display="none";
+    rest.forEach(c=>mkChip(c,xc));
+    const tg=el("span","chip");tg.textContent=`+${rest.length} 더보기`;tg.setAttribute("aria-pressed","false");
+    tg.onclick=()=>{const open=xc.style.display==="none";xc.style.display=open?"flex":"none";tg.textContent=open?"접기":`+${rest.length} 더보기`;tg.setAttribute("aria-pressed",String(open));};
+    cc.appendChild(tg);cg.appendChild(xc);
+  }
+  f.appendChild(cg);
   const lg=el("div","filter-grp");lg.innerHTML="<span>라이선스</span>";
   const lc=el("div","chips");
   lics.forEach(c=>{const b=el("span","chip");b.textContent=c==="Open"?"오픈":c==="Proprietary"?"독점":c;b.setAttribute("aria-pressed","false");
