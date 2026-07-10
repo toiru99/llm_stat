@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.0
 output_speed_tps: None
 context_window: 32800
 status: past
-size_class: Small
-params_b: 23.6
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 23.4, z: -0.82, r: 37.7, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Sarvam M
 
-Sarvam · Open · Small(23.6B) · 컨텍스트 32k · 종합지능 **3.0** · ⚠️ past(구세대)
+Sarvam · Open · Unknown · 컨텍스트 32k · 종합지능 **3.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 전문 지식, 신뢰성

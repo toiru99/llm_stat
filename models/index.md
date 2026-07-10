@@ -1,6 +1,6 @@
 # 모델 (Models)
 
-`scripts/build_cards.py` 자동 생성 · 데이터 2026-07-10 · 제작사 53곳 · current 234 + past 254 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
+`scripts/build_cards.py` 자동 생성 · 데이터 2026-07-10 · 제작사 53곳 · current 233 + past 255 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
 
 - 레이더 축·방법론: [radar-spec.md](radar-spec.md) · 설정: [../config.toml](../config.toml)
 
@@ -132,7 +132,7 @@
 * [DeepSeek V3.1 Terminus](cards/deepseek-v31-terminus.md) - 종합지능 30.0 · past
 * [Gemma 4 31B](cards/gemma-4-31b.md) - 종합지능 29.0
 * [GLM-4.6](cards/glm-46.md) - 종합지능 29.0 · past
-* [Qwen3.5 35B A3B](cards/qwen35-35b-a3b.md) - 종합지능 29.0
+* [Qwen3.5 35B A3B](cards/qwen35-35b-a3b.md) - 종합지능 29.0 · past
 * [DeepSeek V4 Flash](cards/deepseek-v4-flash.md) - 종합지능 29.0
 * [Claude 4 Sonnet](cards/claude-4-sonnet.md) - 종합지능 29.0 · past
 * [GPT-5.5 Instant (June 2026)](cards/gpt-55-instant-june-2026.md) - 종합지능 29.0

@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
 status: past
-size_class: Large
-params_b: 1000
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 40.4, z: 0.01, r: 50.1, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Ring-1T
 
-InclusionAI · Open · Large(1000B) · 컨텍스트 128k · 종합지능 **16.0** · ⚠️ past(구세대)
+InclusionAI · Open · Unknown · 컨텍스트 128k · 종합지능 **16.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 전문 지식

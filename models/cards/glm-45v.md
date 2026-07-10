@@ -8,9 +8,9 @@ price_blended_usd_1m: 0.72
 output_speed_tps: 82.0
 context_window: 64000
 status: past
-size_class: Medium
-params_b: 108
-is_reasoning: true
+size_class: Unknown
+params_b: null
+is_reasoning: false
 radar:
   knowledge: { s: 37.6, z: -0.13, r: 48.0, estimated: false }  # 전문 지식
   reasoning: { s: 26.2, z: -0.38, r: 44.3, estimated: false }  # 추론
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # GLM-4.5V
 
-Z AI · Open · Medium(108B) · 컨텍스트 64k · 종합지능 **9.0** · ⚠️ past(구세대)
+Z AI · Open · Unknown · 컨텍스트 64k · 종합지능 **9.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 전문 지식, 신뢰성

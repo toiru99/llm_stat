@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.4
 output_speed_tps: 50.0
 context_window: 128000
 status: current
-size_class: Medium
-params_b: 49
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 35.9, z: -0.21, r: 46.8, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Llama Nemotron Super 49B v1.5
 
-NVIDIA · Open · Medium(49B) · 컨텍스트 128k · 종합지능 **12.0**
+NVIDIA · Open · Unknown · 컨텍스트 128k · 종합지능 **12.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 긴문맥

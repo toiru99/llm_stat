@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.79
 output_speed_tps: 159.0
 context_window: 256000
 status: past
-size_class: Large
-params_b: 1000
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 56.3, z: 0.78, r: 61.7, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Kimi K2 Thinking
 
-Kimi · Open · Large(1000B) · 컨텍스트 256k · 종합지능 **33.0** · ⚠️ past(구세대)
+Kimi · Open · Unknown · 컨텍스트 256k · 종합지능 **33.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 긴문맥

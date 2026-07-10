@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
 status: current
-size_class: Medium
-params_b: 102
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 37.1, z: -0.15, r: 47.7, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Solar Pro 3
 
-Upstage · Proprietary · Medium(102B) · 컨텍스트 128k · 종합지능 **14.0**
+Upstage · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **14.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 전문 지식

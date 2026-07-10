@@ -8,9 +8,9 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
 status: current
-size_class: Small
-params_b: 8
-is_reasoning: true
+size_class: Unknown
+params_b: null
+is_reasoning: false
 radar:
   knowledge: { s: 22.3, z: -0.87, r: 36.9, estimated: false }  # 전문 지식
   reasoning: { s: 22.0, z: -0.6, r: 41.0, estimated: false }  # 추론
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Gemma 4 E4B
 
-Google · Open · Small(8B) · 컨텍스트 128k · 종합지능 **12.0**
+Google · Open · Unknown · 컨텍스트 128k · 종합지능 **12.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 긴문맥

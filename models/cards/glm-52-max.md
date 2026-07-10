@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.9
 output_speed_tps: 191.0
 context_window: 1000000
 status: current
-size_class: Large
-params_b: 753
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 58.9, z: 0.9, r: 63.6, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # GLM-5.2 (max)
 
-Z AI · Open · Large(753B) · 컨텍스트 1M · 종합지능 **51.0**
+Z AI · Open · Unknown · 컨텍스트 1M · 종합지능 **51.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 추론

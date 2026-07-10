@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.22
 output_speed_tps: 99.0
 context_window: 1000000
 status: current
-size_class: Large
-params_b: 428
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 49.2, z: 0.43, r: 56.5, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # MiniMax-M3
 
-MiniMax · Open · Large(428B) · 컨텍스트 1M · 종합지능 **44.0**
+MiniMax · Open · Unknown · 컨텍스트 1M · 종합지능 **44.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 지시 따르기

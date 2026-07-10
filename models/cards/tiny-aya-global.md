@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.0
 output_speed_tps: None
 context_window: 8189
 status: current
-size_class: Tiny
-params_b: 3.35
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 12.1, z: -1.37, r: 29.5, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Tiny Aya Global
 
-Cohere · Open · Tiny(3.35B) · 컨텍스트 8k · 종합지능 **1.0**
+Cohere · Open · Unknown · 컨텍스트 8k · 종합지능 **1.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 추론

@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.04
 output_speed_tps: 132.0
 context_window: 128000
 status: current
-size_class: Medium
-params_b: 106
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 37.6, z: -0.13, r: 48.1, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Sarvam 105B (high)
 
-Sarvam · Open · Medium(106B) · 컨텍스트 128k · 종합지능 **12.0**
+Sarvam · Open · Unknown · 컨텍스트 128k · 종합지능 **12.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 전문 지식

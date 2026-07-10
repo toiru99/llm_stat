@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 1050000
 status: past
-size_class: Small
-params_b: 8
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 21.0, z: -0.94, r: 36.0, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Gemini 1.5 Flash-8B
 
-Google · Proprietary · Small(8B) · 컨텍스트 1M · 종합지능 **6.0** · ⚠️ past(구세대)
+Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **6.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 코딩

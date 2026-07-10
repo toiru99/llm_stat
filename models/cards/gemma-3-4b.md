@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.0
 output_speed_tps: None
 context_window: 128000
 status: past
-size_class: Tiny
-params_b: 4.3
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 13.5, z: -1.3, r: 30.5, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Gemma 3 4B
 
-Google · Open · Tiny(4.3B) · 컨텍스트 128k · 종합지능 **1.0** · ⚠️ past(구세대)
+Google · Open · Unknown · 컨텍스트 128k · 종합지능 **1.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 지시 따르기

@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.05
 output_speed_tps: 84.0
 context_window: 128000
 status: past
-size_class: Tiny
-params_b: 1
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 10.0, z: -1.47, r: 28.0, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Llama 3.2 1B
 
-Meta · Open · Tiny(1B) · 컨텍스트 128k · 종합지능 **1.0** · ⚠️ past(구세대)
+Meta · Open · Unknown · 컨텍스트 128k · 종합지능 **1.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 긴문맥

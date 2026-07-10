@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
 status: past
-size_class: Tiny
-params_b: 1.5
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 1.6, z: -1.88, r: 21.9, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # DeepSeek R1 Distill Qwen 1.5B
 
-DeepSeek · Open · Tiny(1.5B) · 컨텍스트 128k · 종합지능 **4.0** · ⚠️ past(구세대)
+DeepSeek · Open · Unknown · 컨텍스트 128k · 종합지능 **4.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 에이전트

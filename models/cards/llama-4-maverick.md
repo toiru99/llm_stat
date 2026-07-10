@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.34
 output_speed_tps: 113.0
 context_window: 1000000
 status: current
-size_class: Large
-params_b: 402
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 39.9, z: -0.02, r: 49.7, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Llama 4 Maverick
 
-Meta · Open · Large(402B) · 컨텍스트 1M · 종합지능 **14.0**
+Meta · Open · Unknown · 컨텍스트 1M · 종합지능 **14.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 전문 지식

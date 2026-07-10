@@ -8,9 +8,9 @@ price_blended_usd_1m: 0.2
 output_speed_tps: 168.0
 context_window: 256000
 status: current
-size_class: Medium
-params_b: 119
-is_reasoning: true
+size_class: Unknown
+params_b: null
+is_reasoning: false
 radar:
   knowledge: { s: 42.1, z: 0.09, r: 51.3, estimated: false }  # 전문 지식
   reasoning: { s: 31.7, z: -0.09, r: 48.7, estimated: false }  # 추론
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Mistral Small 4
 
-Mistral · Open · Medium(119B) · 컨텍스트 256k · 종합지능 **20.0**
+Mistral · Open · Unknown · 컨텍스트 256k · 종합지능 **20.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 긴문맥

@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 256000
 status: current
-size_class: Small
-params_b: 7
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 31.8, z: -0.41, r: 43.9, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Falcon-H1R-7B
 
-TII UAE · Open · Small(7B) · 컨텍스트 256k · 종합지능 **10.0**
+TII UAE · Open · Unknown · 컨텍스트 256k · 종합지능 **10.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 추론

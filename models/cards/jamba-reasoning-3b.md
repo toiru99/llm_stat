@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 262000
 status: current
-size_class: Tiny
-params_b: 3
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 13.7, z: -1.29, r: 30.6, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Jamba Reasoning 3B
 
-AI21 Labs · Open · Tiny(3B) · 컨텍스트 262k · 종합지능 **4.0**
+AI21 Labs · Open · Unknown · 컨텍스트 262k · 종합지능 **4.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 신뢰성

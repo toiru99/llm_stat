@@ -8,8 +8,8 @@ price_blended_usd_1m: 2.1
 output_speed_tps: 56.0
 context_window: 262000
 status: past
-size_class: Large
-params_b: 480
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 29.3, z: -0.53, r: 42.0, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Qwen3 Coder 480B
 
-Alibaba · Open · Large(480B) · 컨텍스트 262k · 종합지능 **18.0** · ⚠️ past(구세대)
+Alibaba · Open · Unknown · 컨텍스트 262k · 종합지능 **18.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 긴문맥

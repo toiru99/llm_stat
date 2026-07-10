@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.52
 output_speed_tps: 124.0
 context_window: 262000
 status: current
-size_class: Large
-params_b: 1000
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 50.6, z: 0.5, r: 57.5, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Ring-2.6-1T
 
-InclusionAI · Open · Large(1000B) · 컨텍스트 262k · 종합지능 **31.0**
+InclusionAI · Open · Unknown · 컨텍스트 262k · 종합지능 **31.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 에이전트

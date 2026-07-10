@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 32000
 status: past
-size_class: Medium
-params_b: 40.3
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 18.9, z: -1.04, r: 34.5, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # LFM 40B
 
-Liquid AI · Proprietary · Medium(40.3B) · 컨텍스트 32k · 종합지능 **3.0** · ⚠️ past(구세대)
+Liquid AI · Proprietary · Unknown · 컨텍스트 32k · 종합지능 **3.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 추론

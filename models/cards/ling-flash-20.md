@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.18
 output_speed_tps: 79.0
 context_window: 128000
 status: past
-size_class: Medium
-params_b: 103
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 30.1, z: -0.49, r: 42.6, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Ling-flash-2.0
 
-InclusionAI · Open · Medium(103B) · 컨텍스트 128k · 종합지능 **10.0** · ⚠️ past(구세대)
+InclusionAI · Open · Unknown · 컨텍스트 128k · 종합지능 **10.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 코딩, 추론

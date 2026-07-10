@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.24
 output_speed_tps: 147.0
 context_window: 32800
 status: past
-size_class: Small
-params_b: 22
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 21.5, z: -0.91, r: 36.3, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Mistral Small (Sep)
 
-Mistral · Open · Small(22B) · 컨텍스트 32k · 종합지능 **5.0** · ⚠️ past(구세대)
+Mistral · Open · Unknown · 컨텍스트 32k · 종합지능 **5.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 신뢰성

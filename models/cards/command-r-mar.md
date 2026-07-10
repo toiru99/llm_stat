@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.6
 output_speed_tps: None
 context_window: 128000
 status: past
-size_class: Small
-params_b: 35
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 15.5, z: -1.2, r: 32.0, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Command-R (Mar)
 
-Cohere · Open · Small(35B) · 컨텍스트 128k · 종합지능 **2.0** · ⚠️ past(구세대)
+Cohere · Open · Unknown · 컨텍스트 128k · 종합지능 **2.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 추론

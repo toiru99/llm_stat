@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.42
 output_speed_tps: 111.0
 context_window: 256000
 status: past
-size_class: Small
-params_b: 30
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 35.8, z: -0.22, r: 46.7, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Qwen3 VL 30B A3B
 
-Alibaba · Open · Small(30B) · 컨텍스트 256k · 종합지능 **13.0** · ⚠️ past(구세대)
+Alibaba · Open · Unknown · 컨텍스트 256k · 종합지능 **13.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 멀티모달

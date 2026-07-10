@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 32800
 status: past
-size_class: Small
-params_b: 8.19
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 26.8, z: -0.66, r: 40.2, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # DeepSeek R1 0528 Qwen3 8B
 
-DeepSeek · Open · Small(8.19B) · 컨텍스트 32k · 종합지능 **10.0** · ⚠️ past(구세대)
+DeepSeek · Open · Unknown · 컨텍스트 32k · 종합지능 **10.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 신뢰성

@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.18
 output_speed_tps: 62.0
 context_window: 1000000
 status: current
-size_class: Large
-params_b: 1600
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 49.2, z: 0.43, r: 56.5, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # DeepSeek V4 Pro
 
-DeepSeek · Open · Large(1600B) · 컨텍스트 1M · 종합지능 **31.0**
+DeepSeek · Open · Unknown · 컨텍스트 1M · 종합지능 **31.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 코딩

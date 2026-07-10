@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 512000
 status: current
-size_class: Medium
-params_b: 70
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 28.0, z: -0.59, r: 41.1, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # K2-V2 (low)
 
-MBZUAI Institute of Foundation Models · Open · Medium(70B) · 컨텍스트 512k · 종합지능 **9.0**
+MBZUAI Institute of Foundation Models · Open · Unknown · 컨텍스트 512k · 종합지능 **9.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 지시 따르기

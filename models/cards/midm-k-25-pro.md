@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
 status: current
-size_class: Small
-params_b: 32
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 34.9, z: -0.26, r: 46.1, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Mi:dm K 2.5 Pro
 
-Korea Telecom · Proprietary · Small(32B) · 컨텍스트 128k · 종합지능 **16.0**
+Korea Telecom · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **16.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 지시 따르기

@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 1000000
 status: past
-size_class: Large
-params_b: 456
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 45.2, z: 0.24, r: 53.6, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # MiniMax M1 40k
 
-MiniMax · Open · Large(456B) · 컨텍스트 1M · 종합지능 **14.0** · ⚠️ past(구세대)
+MiniMax · Open · Unknown · 컨텍스트 1M · 종합지능 **14.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 추론

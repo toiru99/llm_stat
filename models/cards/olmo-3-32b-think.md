@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 65500
 status: past
-size_class: Small
-params_b: 32.2
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 28.7, z: -0.56, r: 41.6, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Olmo 3 32B Think
 
-Allen Institute for AI · Open · Small(32.2B) · 컨텍스트 65k · 종합지능 **6.0** · ⚠️ past(구세대)
+Allen Institute for AI · Open · Unknown · 컨텍스트 65k · 종합지능 **6.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 추론

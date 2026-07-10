@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
 status: current
-size_class: Small
-params_b: 12.7
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 32.6, z: -0.37, r: 44.4, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Motif-2-12.7B
 
-Motif Technologies · Proprietary · Small(12.7B) · 컨텍스트 128k · 종합지능 **13.0**
+Motif Technologies · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **13.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 추론

@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 258000
 status: current
-size_class: Medium
-params_b: 52
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 17.0, z: -1.13, r: 33.0, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Jamba 1.7 Mini
 
-AI21 Labs · Open · Medium(52B) · 컨텍스트 258k · 종합지능 **3.0**
+AI21 Labs · Open · Unknown · 컨텍스트 258k · 종합지능 **3.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 지시 따르기

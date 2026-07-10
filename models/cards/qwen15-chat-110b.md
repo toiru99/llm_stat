@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 32000
 status: past
-size_class: Medium
-params_b: 110
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 22.6, z: -0.86, r: 37.1, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Qwen1.5 Chat 110B
 
-Alibaba · Open · Medium(110B) · 컨텍스트 32k · 종합지능 **4.0** · ⚠️ past(구세대)
+Alibaba · Open · Unknown · 컨텍스트 32k · 종합지능 **4.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 코딩

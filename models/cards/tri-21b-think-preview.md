@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 32000
 status: current
-size_class: Small
-params_b: 21
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 21.9, z: -0.89, r: 36.6, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Tri-21B-think Preview
 
-Trillion Labs · Open · Small(21B) · 컨텍스트 32k · 종합지능 **14.0**
+Trillion Labs · Open · Unknown · 컨텍스트 32k · 종합지능 **14.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 신뢰성

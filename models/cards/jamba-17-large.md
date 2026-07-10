@@ -8,8 +8,8 @@ price_blended_usd_1m: 2.6
 output_speed_tps: 56.0
 context_window: 256000
 status: current
-size_class: Large
-params_b: 398
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 27.8, z: -0.61, r: 40.9, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Jamba 1.7 Large
 
-AI21 Labs · Open · Large(398B) · 컨텍스트 256k · 종합지능 **5.0**
+AI21 Labs · Open · Unknown · 컨텍스트 256k · 종합지능 **5.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 전문 지식, 긴문맥

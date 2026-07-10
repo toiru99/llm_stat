@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.2
 output_speed_tps: 325.0
 context_window: 131000
 status: current
-size_class: Medium
-params_b: 117
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 32.0, z: -0.4, r: 44.0, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # gpt-oss-120b (low)
 
-OpenAI · Open · Medium(117B) · 컨텍스트 131k · 종합지능 **18.0**
+OpenAI · Open · Unknown · 컨텍스트 131k · 종합지능 **18.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 긴문맥

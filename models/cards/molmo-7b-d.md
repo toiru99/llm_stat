@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 4100
 status: current
-size_class: Small
-params_b: 8.02
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 12.8, z: -1.33, r: 30.0, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Molmo 7B-D
 
-Allen Institute for AI · Open · Small(8.02B) · 컨텍스트 4k · 종합지능 **4.0**
+Allen Institute for AI · Open · Unknown · 컨텍스트 4k · 종합지능 **4.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 추론

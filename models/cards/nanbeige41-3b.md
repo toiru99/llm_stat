@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 256000
 status: current
-size_class: Tiny
-params_b: 3.93
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 32.9, z: -0.36, r: 44.6, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Nanbeige4.1-3B
 
-Nanbeige · Open · Tiny(3.93B) · 컨텍스트 256k · 종합지능 **11.0**
+Nanbeige · Open · Unknown · 컨텍스트 256k · 종합지능 **11.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 추론

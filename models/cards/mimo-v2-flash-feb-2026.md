@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.06
 output_speed_tps: None
 context_window: 256000
 status: current
-size_class: Large
-params_b: 309
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 45.8, z: 0.27, r: 54.0, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # MiMo-V2-Flash (Feb 2026)
 
-Xiaomi · Open · Large(309B) · 컨텍스트 256k · 종합지능 **33.0**
+Xiaomi · Open · Unknown · 컨텍스트 256k · 종합지능 **33.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 에이전트

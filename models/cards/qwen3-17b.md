@@ -8,9 +8,9 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 32000
 status: past
-size_class: Tiny
-params_b: 2.03
-is_reasoning: true
+size_class: Unknown
+params_b: null
+is_reasoning: false
 radar:
   knowledge: { s: 15.5, z: -1.2, r: 32.0, estimated: false }  # 전문 지식
   reasoning: { s: 12.9, z: -1.09, r: 33.7, estimated: false }  # 추론
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Qwen3 1.7B
 
-Alibaba · Open · Tiny(2.03B) · 컨텍스트 32k · 종합지능 **3.0** · ⚠️ past(구세대)
+Alibaba · Open · Unknown · 컨텍스트 32k · 종합지능 **3.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 신뢰성

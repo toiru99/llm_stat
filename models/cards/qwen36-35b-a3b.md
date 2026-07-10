@@ -8,9 +8,9 @@ price_blended_usd_1m: 0.37
 output_speed_tps: 156.0
 context_window: 262000
 status: current
-size_class: Small
-params_b: 36
-is_reasoning: true
+size_class: Unknown
+params_b: null
+is_reasoning: false
 radar:
   knowledge: { s: 44.8, z: 0.22, r: 53.3, estimated: false }  # 전문 지식
   reasoning: { s: 41.5, z: 0.43, r: 56.5, estimated: false }  # 추론
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Qwen3.6 35B A3B
 
-Alibaba · Open · Small(36B) · 컨텍스트 262k · 종합지능 **32.0**
+Alibaba · Open · Unknown · 컨텍스트 262k · 종합지능 **32.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 긴문맥

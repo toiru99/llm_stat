@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.25
 output_speed_tps: 35.0
 context_window: 512000
 status: past
-size_class: Small
-params_b: 36.2
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 37.0, z: -0.16, r: 47.6, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Seed-OSS-36B-Instruct
 
-ByteDance Seed · Open · Small(36.2B) · 컨텍스트 512k · 종합지능 **18.0** · ⚠️ past(구세대)
+ByteDance Seed · Open · Unknown · 컨텍스트 512k · 종합지능 **18.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 코딩

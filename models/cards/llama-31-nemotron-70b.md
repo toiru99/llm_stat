@@ -8,8 +8,8 @@ price_blended_usd_1m: 1.2
 output_speed_tps: 300.0
 context_window: 128000
 status: current
-size_class: Medium
-params_b: 70
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 26.1, z: -0.69, r: 39.7, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Llama 3.1 Nemotron 70B
 
-NVIDIA · Open · Medium(70B) · 컨텍스트 128k · 종합지능 **8.0**
+NVIDIA · Open · Unknown · 컨텍스트 128k · 종합지능 **8.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 전문 지식

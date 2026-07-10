@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.43
 output_speed_tps: 95.0
 context_window: 256000
 status: current
-size_class: Medium
-params_b: 79.7
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 35.3, z: -0.24, r: 46.4, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Qwen3 Coder Next
 
-Alibaba · Open · Medium(79.7B) · 컨텍스트 256k · 종합지능 **21.0**
+Alibaba · Open · Unknown · 컨텍스트 256k · 종합지능 **21.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 에이전트

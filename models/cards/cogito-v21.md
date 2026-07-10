@@ -8,8 +8,8 @@ price_blended_usd_1m: 1.25
 output_speed_tps: 91.0
 context_window: 128000
 status: current
-size_class: Large
-params_b: 671
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 50.6, z: 0.5, r: 57.5, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Cogito v2.1
 
-Deep Cogito · Open · Large(671B) · 컨텍스트 128k · 종합지능 **None**
+Deep Cogito · Open · Unknown · 컨텍스트 128k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 전문 지식, 코딩

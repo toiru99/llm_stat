@@ -8,9 +8,9 @@ price_blended_usd_1m: 1.05
 output_speed_tps: 169.0
 context_window: 262000
 status: current
-size_class: Medium
-params_b: 80
-is_reasoning: true
+size_class: Unknown
+params_b: null
+is_reasoning: false
 radar:
   knowledge: { s: 37.9, z: -0.11, r: 48.3, estimated: false }  # 전문 지식
   reasoning: { s: 33.2, z: -0.01, r: 49.9, estimated: false }  # 추론
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Qwen3 Next 80B A3B
 
-Alibaba · Open · Medium(80B) · 컨텍스트 262k · 종합지능 **17.0**
+Alibaba · Open · Unknown · 컨텍스트 262k · 종합지능 **17.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 지시 따르기

@@ -8,9 +8,9 @@ price_blended_usd_1m: 1.2
 output_speed_tps: 41.0
 context_window: 128000
 status: current
-size_class: Large
-params_b: 406
-is_reasoning: false
+size_class: Unknown
+params_b: null
+is_reasoning: true
 radar:
   knowledge: { s: 49.1, z: 0.43, r: 56.5, estimated: false }  # 전문 지식
   reasoning: { s: 30.8, z: -0.14, r: 47.9, estimated: false }  # 추론
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Hermes 4 405B
 
-Nous Research · Open · Large(406B) · 컨텍스트 128k · 종합지능 **9.0**
+Nous Research · Open · Unknown · 컨텍스트 128k · 종합지능 **9.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 전문 지식, 추론

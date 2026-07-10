@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.11
 output_speed_tps: None
 context_window: 128000
 status: past
-size_class: Large
-params_b: 685
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 59.2, z: 0.92, r: 63.8, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # DeepSeek V3.2
 
-DeepSeek · Open · Large(685B) · 컨텍스트 128k · 종합지능 **32.0** · ⚠️ past(구세대)
+DeepSeek · Open · Unknown · 컨텍스트 128k · 종합지능 **32.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 전문 지식

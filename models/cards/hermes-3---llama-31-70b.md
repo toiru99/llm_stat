@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.7
 output_speed_tps: 35.0
 context_window: 128000
 status: past
-size_class: Medium
-params_b: 70.6
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 22.9, z: -0.84, r: 37.3, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Hermes 3 - Llama-3.1 70B
 
-Nous Research · Open · Medium(70.6B) · 컨텍스트 128k · 종합지능 **5.0** · ⚠️ past(구세대)
+Nous Research · Open · Unknown · 컨텍스트 128k · 종합지능 **5.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 코딩, 신뢰성

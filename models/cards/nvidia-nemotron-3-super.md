@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.23
 output_speed_tps: 147.0
 context_window: 1000000
 status: current
-size_class: Medium
-params_b: 120.6
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 48.3, z: 0.39, r: 55.8, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # NVIDIA Nemotron 3 Super
 
-NVIDIA · Open · Medium(120.6B) · 컨텍스트 1M · 종합지능 **25.0**
+NVIDIA · Open · Unknown · 컨텍스트 1M · 종합지능 **25.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 긴문맥

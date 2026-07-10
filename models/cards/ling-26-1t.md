@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.52
 output_speed_tps: None
 context_window: 262000
 status: current
-size_class: Large
-params_b: 1026
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 40.2, z: -0.0, r: 49.9, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Ling-2.6-1T
 
-InclusionAI · Open · Large(1026B) · 컨텍스트 262k · 종합지능 **26.0**
+InclusionAI · Open · Unknown · 컨텍스트 262k · 종합지능 **26.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 코딩

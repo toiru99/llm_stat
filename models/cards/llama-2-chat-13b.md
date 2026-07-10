@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 4100
 status: past
-size_class: Small
-params_b: 13
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 18.3, z: -1.07, r: 34.0, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Llama 2 Chat 13B
 
-Meta · Open · Small(13B) · 컨텍스트 4k · 종합지능 **3.0** · ⚠️ past(구세대)
+Meta · Open · Unknown · 컨텍스트 4k · 종합지능 **3.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 추론

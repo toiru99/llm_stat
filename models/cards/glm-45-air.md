@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.25
 output_speed_tps: 78.0
 context_window: 128000
 status: past
-size_class: Medium
-params_b: 106
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 34.4, z: -0.29, r: 45.7, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # GLM-4.5-Air
 
-Z AI · Open · Medium(106B) · 컨텍스트 128k · 종합지능 **17.0** · ⚠️ past(구세대)
+Z AI · Open · Unknown · 컨텍스트 128k · 종합지능 **17.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 에이전트

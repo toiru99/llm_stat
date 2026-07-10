@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.26
 output_speed_tps: None
 context_window: 128000
 status: current
-size_class: Small
-params_b: 21
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 25.2, z: -0.73, r: 39.0, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Reka Flash 3
 
-Reka AI · Open · Small(21B) · 컨텍스트 128k · 종합지능 **4.0**
+Reka AI · Open · Unknown · 컨텍스트 128k · 종합지능 **4.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 코딩, 전문 지식

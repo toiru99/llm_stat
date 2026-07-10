@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.04
 output_speed_tps: 119.0
 context_window: 32800
 status: current
-size_class: Small
-params_b: 23.8
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 16.3, z: -1.16, r: 32.5, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # LFM2 24B A2B
 
-Liquid AI · Open · Small(23.8B) · 컨텍스트 32k · 종합지능 **5.0**
+Liquid AI · Open · Unknown · 컨텍스트 32k · 종합지능 **5.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 지시 따르기

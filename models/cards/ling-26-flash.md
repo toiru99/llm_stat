@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.06
 output_speed_tps: 167.0
 context_window: 262000
 status: current
-size_class: Medium
-params_b: 107
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 29.1, z: -0.54, r: 41.9, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Ling 2.6 Flash
 
-InclusionAI · Open · Medium(107B) · 컨텍스트 262k · 종합지능 **14.0**
+InclusionAI · Open · Unknown · 컨텍스트 262k · 종합지능 **14.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 에이전트

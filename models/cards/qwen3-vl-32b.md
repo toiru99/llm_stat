@@ -8,8 +8,8 @@ price_blended_usd_1m: 1.47
 output_speed_tps: 91.0
 context_window: 256000
 status: past
-size_class: Small
-params_b: 33.4
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 36.4, z: -0.19, r: 47.2, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Qwen3 VL 32B
 
-Alibaba · Open · Small(33.4B) · 컨텍스트 256k · 종합지능 **18.0** · ⚠️ past(구세대)
+Alibaba · Open · Unknown · 컨텍스트 256k · 종합지능 **18.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 지시 따르기

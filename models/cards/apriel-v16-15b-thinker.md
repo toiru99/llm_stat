@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.0
 output_speed_tps: None
 context_window: 128000
 status: current
-size_class: Small
-params_b: 15
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 36.4, z: -0.19, r: 47.2, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Apriel-v1.6-15B-Thinker
 
-ServiceNow · Open · Small(15B) · 컨텍스트 128k · 종합지능 **21.0**
+ServiceNow · Open · Unknown · 컨텍스트 128k · 종합지능 **21.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 긴문맥

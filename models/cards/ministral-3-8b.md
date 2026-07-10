@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.15
 output_speed_tps: 82.0
 context_window: 256000
 status: current
-size_class: Small
-params_b: 8
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 21.2, z: -0.93, r: 36.1, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Ministral 3 8B
 
-Mistral · Open · Small(8B) · 컨텍스트 256k · 종합지능 **9.0**
+Mistral · Open · Unknown · 컨텍스트 256k · 종합지능 **9.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 신뢰성

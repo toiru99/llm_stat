@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.63
 output_speed_tps: 101.0
 context_window: 262000
 status: past
-size_class: Small
-params_b: 30.5
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 27.5, z: -0.62, r: 40.7, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Qwen3 Coder 30B A3B
 
-Alibaba · Open · Small(30.5B) · 컨텍스트 262k · 종합지능 **14.0** · ⚠️ past(구세대)
+Alibaba · Open · Unknown · 컨텍스트 262k · 종합지능 **14.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 에이전트

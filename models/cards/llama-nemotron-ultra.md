@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.72
 output_speed_tps: 52.0
 context_window: 128000
 status: current
-size_class: Large
-params_b: 253
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 38.7, z: -0.08, r: 48.8, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Llama Nemotron Ultra
 
-NVIDIA · Open · Large(253B) · 컨텍스트 128k · 종합지능 **9.0**
+NVIDIA · Open · Unknown · 컨텍스트 128k · 종합지능 **9.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 전문 지식, 추론

@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.05
 output_speed_tps: 334.0
 context_window: 131000
 status: current
-size_class: Medium
-params_b: 58.7
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 35.1, z: -0.25, r: 46.3, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # HyperNova 60B 2605
 
-Multiverse Computing · Open · Medium(58.7B) · 컨텍스트 131k · 종합지능 **18.0**
+Multiverse Computing · Open · Unknown · 컨텍스트 131k · 종합지능 **18.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 코딩

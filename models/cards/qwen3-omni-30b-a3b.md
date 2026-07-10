@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.32
 output_speed_tps: 90.0
 context_window: 65500
 status: current
-size_class: Small
-params_b: 35.3
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 33.4, z: -0.33, r: 45.0, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Qwen3 Omni 30B A3B
 
-Alibaba · Open · Small(35.3B) · 컨텍스트 65k · 종합지능 **10.0**
+Alibaba · Open · Unknown · 컨텍스트 65k · 종합지능 **10.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 멀티모달

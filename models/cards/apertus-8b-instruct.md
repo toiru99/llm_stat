@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.11
 output_speed_tps: None
 context_window: 65500
 status: current
-size_class: Small
-params_b: 8
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 14.7, z: -1.24, r: 31.4, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Apertus 8B Instruct
 
-Swiss AI Initiative · Open · Small(8B) · 컨텍스트 65k · 종합지능 **1.0**
+Swiss AI Initiative · Open · Unknown · 컨텍스트 65k · 종합지능 **1.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 에이전트

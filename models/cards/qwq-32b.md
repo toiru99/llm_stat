@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.69
 output_speed_tps: 31.0
 context_window: 131000
 status: past
-size_class: Small
-params_b: 32.8
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 39.1, z: -0.06, r: 49.2, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # QwQ-32B
 
-Alibaba · Open · Small(32.8B) · 컨텍스트 131k · 종합지능 **13.0** · ⚠️ past(구세대)
+Alibaba · Open · Unknown · 컨텍스트 131k · 종합지능 **13.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 코딩, 추론

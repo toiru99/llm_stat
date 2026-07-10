@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.22
 output_speed_tps: 102.0
 context_window: 10000000
 status: current
-size_class: Medium
-params_b: 109
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 28.5, z: -0.57, r: 41.4, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Llama 4 Scout
 
-Meta · Open · Medium(109B) · 컨텍스트 10M · 종합지능 **10.0**
+Meta · Open · Unknown · 컨텍스트 10M · 종합지능 **10.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 긴문맥

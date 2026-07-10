@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.12
 output_speed_tps: 200.0
 context_window: 256000
 status: past
-size_class: Large
-params_b: 196
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 49.1, z: 0.43, r: 56.4, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Step 3.5 Flash
 
-StepFun · Open · Large(196B) · 컨텍스트 256k · 종합지능 **26.0** · ⚠️ past(구세대)
+StepFun · Open · Unknown · 컨텍스트 256k · 종합지능 **26.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 지시 따르기

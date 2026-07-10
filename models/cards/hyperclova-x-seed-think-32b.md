@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
 status: current
-size_class: Small
-params_b: 32
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 29.6, z: -0.52, r: 42.3, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # HyperCLOVA X SEED Think (32B)
 
-Naver · Open · Small(32B) · 컨텍스트 128k · 종합지능 **17.0**
+Naver · Open · Unknown · 컨텍스트 128k · 종합지능 **17.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 신뢰성

@@ -10,7 +10,7 @@ context_window: 200000
 status: past
 size_class: Unknown
 params_b: null
-is_reasoning: false
+is_reasoning: true
 radar:
   knowledge: { s: 48.3, z: 0.39, r: 55.8, estimated: false }  # 전문 지식
   reasoning: { s: 33.4, z: 0.0, r: 50.0, estimated: false }  # 추론

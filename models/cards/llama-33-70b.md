@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.59
 output_speed_tps: 86.0
 context_window: 128000
 status: current
-size_class: Medium
-params_b: 70
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 28.9, z: -0.55, r: 41.7, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Llama 3.3 70B
 
-Meta · Open · Medium(70B) · 컨텍스트 128k · 종합지능 **9.0**
+Meta · Open · Unknown · 컨텍스트 128k · 종합지능 **9.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 신뢰성

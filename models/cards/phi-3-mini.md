@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 4100
 status: past
-size_class: Tiny
-params_b: 3.8
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 17.4, z: -1.11, r: 33.4, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Phi-3 Mini
 
-Microsoft · Open · Tiny(3.8B) · 컨텍스트 4k · 종합지능 **5.0** · ⚠️ past(구세대)
+Microsoft · Open · Unknown · 컨텍스트 4k · 종합지능 **5.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 추론

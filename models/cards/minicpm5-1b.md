@@ -8,9 +8,9 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
 status: current
-size_class: Tiny
-params_b: 1
-is_reasoning: false
+size_class: Unknown
+params_b: null
+is_reasoning: true
 radar:
   knowledge: { s: 8.1, z: -1.56, r: 26.5, estimated: false }  # 전문 지식
   reasoning: { s: 11.0, z: -1.19, r: 32.2, estimated: false }  # 추론
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # MiniCPM5-1B
 
-OpenBMB · Open · Tiny(1B) · 컨텍스트 128k · 종합지능 **12.0**
+OpenBMB · Open · Unknown · 컨텍스트 128k · 종합지능 **12.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 에이전트

@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.11
 output_speed_tps: None
 context_window: 65500
 status: current
-size_class: Small
-params_b: 7
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 16.0, z: -1.18, r: 32.3, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Olmo 3 7B
 
-Allen Institute for AI · Open · Small(7B) · 컨텍스트 65k · 종합지능 **3.0**
+Allen Institute for AI · Open · Unknown · 컨텍스트 65k · 종합지능 **3.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 지시 따르기

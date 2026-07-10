@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 256000
 status: past
-size_class: Tiny
-params_b: 4.44
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 22.7, z: -0.85, r: 37.2, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Qwen3 VL 4B
 
-Alibaba · Open · Tiny(4.44B) · 컨텍스트 256k · 종합지능 **8.0** · ⚠️ past(구세대)
+Alibaba · Open · Unknown · 컨텍스트 256k · 종합지능 **8.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 지시 따르기

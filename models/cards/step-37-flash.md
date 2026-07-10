@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.18
 output_speed_tps: 369.0
 context_window: 262000
 status: current
-size_class: Large
-params_b: 198
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 49.9, z: 0.47, r: 57.0, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Step 3.7 Flash
 
-StepFun · Open · Large(198B) · 컨텍스트 262k · 종합지능 **30.0**
+StepFun · Open · Unknown · 컨텍스트 262k · 종합지능 **30.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 지시 따르기

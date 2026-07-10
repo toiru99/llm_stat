@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 256000
 status: current
-size_class: Small
-params_b: 35
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 45.7, z: 0.26, r: 53.9, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # JT-35B-Flash
 
-China Mobile · Proprietary · Small(35B) · 컨텍스트 256k · 종합지능 **28.0**
+China Mobile · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **28.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 긴문맥

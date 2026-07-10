@@ -8,9 +8,9 @@ price_blended_usd_1m: 0.07
 output_speed_tps: 126.0
 context_window: 1000000
 status: current
-size_class: Small
-params_b: 31.6
-is_reasoning: true
+size_class: Unknown
+params_b: null
+is_reasoning: false
 radar:
   knowledge: { s: 37.2, z: -0.15, r: 47.8, estimated: false }  # 전문 지식
   reasoning: { s: 33.0, z: -0.02, r: 49.7, estimated: false }  # 추론
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # NVIDIA Nemotron 3 Nano
 
-NVIDIA · Open · Small(31.6B) · 컨텍스트 1M · 종합지능 **14.0**
+NVIDIA · Open · Unknown · 컨텍스트 1M · 종합지능 **14.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 추론

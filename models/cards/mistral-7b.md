@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.25
 output_speed_tps: 72.0
 context_window: 8189
 status: past
-size_class: Small
-params_b: 7
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 10.1, z: -1.46, r: 28.0, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Mistral 7B
 
-Mistral · Open · Small(7B) · 컨텍스트 8k · 종합지능 **2.0** · ⚠️ past(구세대)
+Mistral · Open · Unknown · 컨텍스트 8k · 종합지능 **2.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 에이전트

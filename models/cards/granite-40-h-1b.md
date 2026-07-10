@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
 status: current
-size_class: Tiny
-params_b: 1.5
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 9.8, z: -1.48, r: 27.8, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Granite 4.0 H 1B
 
-IBM · Open · Tiny(1.5B) · 컨텍스트 128k · 종합지능 **3.0**
+IBM · Open · Unknown · 컨텍스트 128k · 종합지능 **3.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 에이전트

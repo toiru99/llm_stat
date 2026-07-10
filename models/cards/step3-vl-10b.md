@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 65500
 status: current
-size_class: Small
-params_b: 10.2
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 31.3, z: -0.43, r: 43.5, estimated: false }  # 전문 지식
@@ -30,7 +30,7 @@ timestamp: 2026-07-10T00:00:00Z
 
 # Step3 VL 10B
 
-StepFun · Open · Small(10.2B) · 컨텍스트 65k · 종합지능 **9.0**
+StepFun · Open · Unknown · 컨텍스트 65k · 종합지능 **9.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 멀티모달
