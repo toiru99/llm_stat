@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 36.6, z: -0.18, r: 47.4, estimated: false }  # 전문 지식
+  knowledge: { s: 36.6, z: -0.18, r: 47.3, estimated: false }  # 전문 지식
   reasoning: { s: 33.0, z: -0.02, r: 49.7, estimated: false }  # 추론
-  coding: { s: 56.7, z: 0.46, r: 56.9, estimated: false }  # 코딩
-  agentic: { s: 42.6, z: 0.26, r: 53.8, estimated: true }  # 에이전트
-  trust: { s: 38.0, z: 0.49, r: 57.3, estimated: true }  # 신뢰성
+  coding: { s: 56.7, z: 0.45, r: 56.8, estimated: false }  # 코딩
+  agentic: { s: 52.0, z: 0.61, r: 59.2, estimated: true }  # 에이전트
+  trust: { s: 46.5, z: 0.87, r: 63.1, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 41.1, z: -0.21, r: 46.8, estimated: true }  # 긴문맥
-  instruction: { s: 47.2, z: -0.21, r: 46.9, estimated: true }  # 지시 따르기
+  long_context: { s: 55.2, z: 0.2, r: 53.1, estimated: true }  # 긴문맥
+  instruction: { s: 51.4, z: -0.04, r: 49.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen2.5 Max
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-10
-timestamp: 2026-07-10T00:00:00Z
+updated: 2026-07-11
+timestamp: 2026-07-11T00:00:00Z
 ---
 
 # Qwen2.5 Max
@@ -33,8 +33,8 @@ timestamp: 2026-07-10T00:00:00Z
 Alibaba · Proprietary · Unknown · 컨텍스트 32k · 종합지능 **10.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 신뢰성, 코딩
-- **약점**: 긴문맥, 지시 따르기
+- **강점**: 신뢰성, 에이전트
+- **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 32k ctx`
@@ -43,14 +43,14 @@ Alibaba · Proprietary · Unknown · 컨텍스트 32k · 종합지능 **10.0** �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 47.4 | -0.18 | 실측 | [[gpqa-diamond]] 59.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 전문 지식 | 47.3 | -0.18 | 실측 | [[gpqa-diamond]] 59.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 49.7 | -0.02 | 실측 | [[gpqa-diamond]] 59.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 56.9 | +0.46 | 실측 | [[scicode]] 34.0%×1.0 |
-| 에이전트 | 53.8 | +0.26 | 추정 | (추정) |
-| 신뢰성 | 57.3 | +0.49 | 추정 | (추정) |
+| 코딩 | 56.8 | +0.45 | 실측 | [[scicode]] 34.0%×1.0 |
+| 에이전트 | 59.2 | +0.61 | 추정 | (추정) |
+| 신뢰성 | 63.1 | +0.87 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 46.8 | -0.21 | 추정 | (추정) |
-| 지시 따르기 | 46.9 | -0.21 | 추정 | (추정) |
+| 긴문맥 | 53.1 | +0.2 | 추정 | (추정) |
+| 지시 따르기 | 49.4 | -0.04 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

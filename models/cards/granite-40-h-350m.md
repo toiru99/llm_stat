@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 9.1, z: -1.51, r: 27.3, estimated: false }  # 전문 지식
   reasoning: { s: 9.6, z: -1.26, r: 31.1, estimated: false }  # 추론
   coding: { s: 2.2, z: -1.86, r: 22.2, estimated: false }  # 코딩
-  agentic: { s: 7.6, z: -1.11, r: 33.4, estimated: false }  # 에이전트
+  agentic: { s: 7.6, z: -1.11, r: 33.3, estimated: false }  # 에이전트
   trust: { s: 5.9, z: -1.03, r: 34.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.43, r: 28.6, estimated: false }  # 긴문맥
-  instruction: { s: 8.5, z: -1.8, r: 23.0, estimated: false }  # 지시 따르기
+  long_context: { s: 0.0, z: -1.43, r: 28.5, estimated: false }  # 긴문맥
+  instruction: { s: 8.5, z: -1.81, r: 22.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.0 H 350M
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-10
-timestamp: 2026-07-10T00:00:00Z
+updated: 2026-07-11
+timestamp: 2026-07-11T00:00:00Z
 ---
 
 # Granite 4.0 H 350M
@@ -46,11 +46,11 @@ IBM · Open · Unknown · 컨텍스트 32k · 종합지능 **1.0**
 | 전문 지식 | 27.3 | -1.51 | 실측 | [[aa-omniscience]] 4.0%×1.0, [[gpqa-diamond]] 26.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 31.1 | -1.26 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 26.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 22.2 | -1.86 | 실측 | [[scicode]] 2.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 33.4 | -1.11 | 실측 | [[tau2-bench]] 15.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 에이전트 | 33.3 | -1.11 | 실측 | [[tau2-bench]] 15.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | 34.5 | -1.03 | 실측 | [[aa-omniscience]] 6.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 28.6 | -1.43 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 23.0 | -1.8 | 실측 | [[ifbench]] 18.0%×1.0 |
+| 긴문맥 | 28.5 | -1.43 | 실측 | [[aa-lcr]] 0.0%×1.0 |
+| 지시 따르기 | 22.9 | -1.81 | 실측 | [[ifbench]] 18.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

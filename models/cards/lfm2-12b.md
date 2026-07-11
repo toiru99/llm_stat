@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 8.3, z: -1.55, r: 26.7, estimated: false }  # 전문 지식
   reasoning: { s: 8.4, z: -1.33, r: 30.1, estimated: false }  # 추론
   coding: { s: 3.3, z: -1.81, r: 22.9, estimated: false }  # 코딩
-  agentic: { s: 6.6, z: -1.15, r: 32.8, estimated: false }  # 에이전트
-  trust: { s: 23.5, z: -0.2, r: 47.1, estimated: false }  # 신뢰성
+  agentic: { s: 6.6, z: -1.15, r: 32.7, estimated: false }  # 에이전트
+  trust: { s: 23.5, z: -0.21, r: 46.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.43, r: 28.6, estimated: false }  # 긴문맥
-  instruction: { s: 14.1, z: -1.57, r: 26.5, estimated: false }  # 지시 따르기
+  long_context: { s: 0.0, z: -1.43, r: 28.5, estimated: false }  # 긴문맥
+  instruction: { s: 14.1, z: -1.58, r: 26.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — LFM2 1.2B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-10
-timestamp: 2026-07-10T00:00:00Z
+updated: 2026-07-11
+timestamp: 2026-07-11T00:00:00Z
 ---
 
 # LFM2 1.2B
@@ -46,11 +46,11 @@ Liquid AI · Open · Unknown · 컨텍스트 32k · 종합지능 **1.0** · ⚠�
 | 전문 지식 | 26.7 | -1.55 | 실측 | [[aa-omniscience]] 4.0%×1.0, [[gpqa-diamond]] 23.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 30.1 | -1.33 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 23.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 22.9 | -1.81 | 실측 | [[scicode]] 3.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 32.8 | -1.15 | 실측 | [[tau2-bench]] 13.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 47.1 | -0.2 | 실측 | [[aa-omniscience]] 21.0%×1.0 |
+| 에이전트 | 32.7 | -1.15 | 실측 | [[tau2-bench]] 13.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 신뢰성 | 46.9 | -0.21 | 실측 | [[aa-omniscience]] 21.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 28.6 | -1.43 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 26.5 | -1.57 | 실측 | [[ifbench]] 22.0%×1.0 |
+| 긴문맥 | 28.5 | -1.43 | 실측 | [[aa-lcr]] 0.0%×1.0 |
+| 지시 따르기 | 26.4 | -1.58 | 실측 | [[ifbench]] 22.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

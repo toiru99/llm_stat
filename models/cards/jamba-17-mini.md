@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 17.0, z: -1.13, r: 33.0, estimated: false }  # 전문 지식
   reasoning: { s: 10.7, z: -1.2, r: 31.9, estimated: false }  # 추론
-  coding: { s: 10.0, z: -1.52, r: 27.1, estimated: false }  # 코딩
-  agentic: { s: 6.6, z: -1.15, r: 32.8, estimated: false }  # 에이전트
+  coding: { s: 10.0, z: -1.53, r: 27.1, estimated: false }  # 코딩
+  agentic: { s: 6.6, z: -1.15, r: 32.7, estimated: false }  # 에이전트
   trust: { s: 2.4, z: -1.2, r: 32.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 17.1, z: -0.92, r: 36.2, estimated: false }  # 긴문맥
-  instruction: { s: 26.8, z: -1.05, r: 34.3, estimated: false }  # 지시 따르기
+  long_context: { s: 17.1, z: -0.93, r: 36.1, estimated: false }  # 긴문맥
+  instruction: { s: 26.8, z: -1.05, r: 34.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba 1.7 Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-10
-timestamp: 2026-07-10T00:00:00Z
+updated: 2026-07-11
+timestamp: 2026-07-11T00:00:00Z
 ---
 
 # Jamba 1.7 Mini
@@ -45,12 +45,12 @@ AI21 Labs · Open · Unknown · 컨텍스트 258k · 종합지능 **3.0**
 |---|---|---|---|---|
 | 전문 지식 | 33.0 | -1.13 | 실측 | [[aa-omniscience]] 11.0%×1.0, [[gpqa-diamond]] 32.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 31.9 | -1.2 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 32.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 27.1 | -1.52 | 실측 | [[scicode]] 9.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 32.8 | -1.15 | 실측 | [[tau2-bench]] 13.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 코딩 | 27.1 | -1.53 | 실측 | [[scicode]] 9.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
+| 에이전트 | 32.7 | -1.15 | 실측 | [[tau2-bench]] 13.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | 32.0 | -1.2 | 실측 | [[aa-omniscience]] 3.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 36.2 | -0.92 | 실측 | [[aa-lcr]] 13.0%×1.0 |
-| 지시 따르기 | 34.3 | -1.05 | 실측 | [[ifbench]] 31.0%×1.0 |
+| 긴문맥 | 36.1 | -0.93 | 실측 | [[aa-lcr]] 13.0%×1.0 |
+| 지시 따르기 | 34.2 | -1.05 | 실측 | [[ifbench]] 31.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
