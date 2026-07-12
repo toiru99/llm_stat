@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Max Thinking (Preview)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-11
-timestamp: 2026-07-11T00:00:00Z
+updated: 2026-07-12
+timestamp: 2026-07-12T00:00:00Z
 ---
 
 # Qwen3 Max Thinking (Preview)
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 262k · 종합지능 **25.0** 
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $1.2 · 출력 $6.0 · 혼합 $1.68/1M · 58.0 t/s · TTFT 4.21s · 262k ctx` · 가성비 14.9
+`입력 $1.2 · 출력 $6.0 · 혼합 $1.68/1M · 58.0 t/s · TTFT 4.09s · 262k ctx` · 가성비 14.9
 
 ## 레이더 8축 (평균=50 기준선)
 

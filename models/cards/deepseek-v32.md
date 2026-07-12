@@ -10,7 +10,7 @@ context_window: 128000
 status: past
 size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: false
 radar:
   knowledge: { s: 59.2, z: 0.92, r: 63.7, estimated: false }  # 전문 지식
   reasoning: { s: 46.0, z: 0.66, r: 59.9, estimated: false }  # 추론
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V3.2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-11
-timestamp: 2026-07-11T00:00:00Z
+updated: 2026-07-12
+timestamp: 2026-07-12T00:00:00Z
 ---
 
 # DeepSeek V3.2

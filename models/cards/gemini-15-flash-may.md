@@ -19,13 +19,13 @@ radar:
   trust: { s: 41.8, z: 0.65, r: 59.7, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 14.8, z: -0.99, r: 35.1, estimated: true }  # 긴문맥
-  instruction: { s: 27.3, z: -1.03, r: 34.5, estimated: true }  # 지시 따르기
+  instruction: { s: 27.2, z: -1.03, r: 34.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 1.5 Flash (May)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-11
-timestamp: 2026-07-11T00:00:00Z
+updated: 2026-07-12
+timestamp: 2026-07-12T00:00:00Z
 ---
 
 # Gemini 1.5 Flash (May)

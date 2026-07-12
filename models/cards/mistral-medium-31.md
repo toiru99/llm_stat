@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Medium 3.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-11
-timestamp: 2026-07-11T00:00:00Z
+updated: 2026-07-12
+timestamp: 2026-07-12T00:00:00Z
 ---
 
 # Mistral Medium 3.1
@@ -37,7 +37,7 @@ Mistral · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **15.0** 
 - **약점**: 긴문맥, 멀티모달
 
 ## 실용 지표
-`입력 $0.4 · 출력 $2.0 · 혼합 $0.56/1M · 83.0 t/s · TTFT 1.49s · 128k ctx` · 가성비 26.8
+`입력 $0.4 · 출력 $2.0 · 혼합 $0.56/1M · 83.0 t/s · TTFT 1.51s · 128k ctx` · 가성비 26.8
 
 ## 레이더 8축 (평균=50 기준선)
 

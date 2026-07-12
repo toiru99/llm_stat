@@ -10,7 +10,7 @@ context_window: 256000
 status: current
 size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: false
 radar:
   knowledge: { s: 37.8, z: -0.12, r: 48.2, estimated: false }  # 전문 지식
   reasoning: { s: 35.7, z: 0.12, r: 51.8, estimated: false }  # 추론
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — K-EXAONE
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-11
-timestamp: 2026-07-11T00:00:00Z
+updated: 2026-07-12
+timestamp: 2026-07-12T00:00:00Z
 ---
 
 # K-EXAONE

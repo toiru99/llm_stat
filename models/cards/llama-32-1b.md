@@ -19,13 +19,13 @@ radar:
   trust: { s: 37.6, z: 0.46, r: 56.8, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 6.6, z: -1.24, r: 31.4, estimated: false }  # 긴문맥
-  instruction: { s: 15.5, z: -1.52, r: 27.2, estimated: false }  # 지시 따르기
+  instruction: { s: 15.5, z: -1.52, r: 27.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.2 1B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-11
-timestamp: 2026-07-11T00:00:00Z
+updated: 2026-07-12
+timestamp: 2026-07-12T00:00:00Z
 ---
 
 # Llama 3.2 1B
@@ -37,7 +37,7 @@ Meta · Open · Unknown · 컨텍스트 128k · 종합지능 **1.0** · ⚠️ p
 - **약점**: 지시 따르기, 코딩
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.05 · 혼합 $0.05/1M · 85.0 t/s · TTFT 0.89s · 128k ctx` · 가성비 20.0
+`입력 $0.05 · 출력 $0.05 · 혼합 $0.05/1M · 85.0 t/s · TTFT 0.88s · 128k ctx` · 가성비 20.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Meta · Open · Unknown · 컨텍스트 128k · 종합지능 **1.0** · ⚠️ p
 | 신뢰성 | 56.8 | +0.46 | 실측 | [[aa-omniscience]] 33.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 31.4 | -1.24 | 실측 | [[aa-lcr]] 5.0%×1.0 |
-| 지시 따르기 | 27.2 | -1.52 | 실측 | [[ifbench]] 23.0%×1.0 |
+| 지시 따르기 | 27.3 | -1.52 | 실측 | [[ifbench]] 23.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

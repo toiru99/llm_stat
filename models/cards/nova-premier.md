@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova Premier
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-11
-timestamp: 2026-07-11T00:00:00Z
+updated: 2026-07-12
+timestamp: 2026-07-12T00:00:00Z
 ---
 
 # Nova Premier
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **13.0**
 - **약점**: 추론, 지시 따르기
 
 ## 실용 지표
-`입력 $2.5 · 출력 $12.5 · 혼합 $2.18/1M · 34.0 t/s · TTFT 2.91s · 1M ctx` · 가성비 6.0
+`입력 $2.5 · 출력 $12.5 · 혼합 $2.18/1M · 34.0 t/s · TTFT 2.89s · 1M ctx` · 가성비 6.0
 
 ## 레이더 8축 (평균=50 기준선)
 

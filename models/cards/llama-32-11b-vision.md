@@ -5,7 +5,7 @@ creator: Meta
 license: Open
 intelligence_index: 3.0
 price_blended_usd_1m: 0.35
-output_speed_tps: 51.0
+output_speed_tps: 52.0
 context_window: 128000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.2 11B (Vision)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-11
-timestamp: 2026-07-11T00:00:00Z
+updated: 2026-07-12
+timestamp: 2026-07-12T00:00:00Z
 ---
 
 # Llama 3.2 11B (Vision)
@@ -37,7 +37,7 @@ Meta · Open · Unknown · 컨텍스트 128k · 종합지능 **3.0**
 - **약점**: 코딩, 멀티모달
 
 ## 실용 지표
-`입력 $0.34 · 출력 $0.34 · 혼합 $0.35/1M · 51.0 t/s · TTFT 0.74s · 128k ctx` · 가성비 8.6
+`입력 $0.34 · 출력 $0.34 · 혼합 $0.35/1M · 52.0 t/s · TTFT 0.75s · 128k ctx` · 가성비 8.6
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Coder 30B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-11
-timestamp: 2026-07-11T00:00:00Z
+updated: 2026-07-12
+timestamp: 2026-07-12T00:00:00Z
 ---
 
 # Qwen3 Coder 30B A3B
@@ -37,7 +37,7 @@ Alibaba · Open · Unknown · 컨텍스트 262k · 종합지능 **14.0** · ⚠�
 - **약점**: 추론, 지시 따르기
 
 ## 실용 지표
-`입력 $0.45 · 출력 $2.25 · 혼합 $0.63/1M · 101.0 t/s · TTFT 2.7s · 262k ctx` · 가성비 22.2
+`입력 $0.45 · 출력 $2.25 · 혼합 $0.63/1M · 101.0 t/s · TTFT 2.6s · 262k ctx` · 가성비 22.2
 
 ## 레이더 8축 (평균=50 기준선)
 

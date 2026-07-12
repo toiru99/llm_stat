@@ -5,12 +5,12 @@ creator: Alibaba
 license: Open
 intelligence_index: 13.0
 price_blended_usd_1m: 0.42
-output_speed_tps: 112.0
+output_speed_tps: 111.0
 context_window: 256000
 status: past
 size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: false
 radar:
   knowledge: { s: 35.8, z: -0.22, r: 46.7, estimated: false }  # 전문 지식
   reasoning: { s: 29.7, z: -0.2, r: 47.1, estimated: false }  # 추론
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 VL 30B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-11
-timestamp: 2026-07-11T00:00:00Z
+updated: 2026-07-12
+timestamp: 2026-07-12T00:00:00Z
 ---
 
 # Qwen3 VL 30B A3B
@@ -37,7 +37,7 @@ Alibaba · Open · Unknown · 컨텍스트 256k · 종합지능 **13.0** · ⚠�
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $0.2 · 출력 $2.4 · 혼합 $0.42/1M · 112.0 t/s · TTFT 2.32s · 256k ctx` · 가성비 31.0
+`입력 $0.2 · 출력 $2.4 · 혼합 $0.42/1M · 111.0 t/s · TTFT 2.33s · 256k ctx` · 가성비 31.0
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 25.0
 price_blended_usd_1m: 0.27
-output_speed_tps: 96.0
+output_speed_tps: 98.0
 context_window: 400000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5 mini (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-11
-timestamp: 2026-07-11T00:00:00Z
+updated: 2026-07-12
+timestamp: 2026-07-12T00:00:00Z
 ---
 
 # GPT-5 mini (high)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **25.0** �
 - **약점**: 추론, 멀티모달
 
 ## 실용 지표
-`입력 $0.25 · 출력 $2.0 · 혼합 $0.27/1M · 96.0 t/s · TTFT 81.41s · 400k ctx` · 가성비 92.6
+`입력 $0.25 · 출력 $2.0 · 혼합 $0.27/1M · 98.0 t/s · TTFT 104.26s · 400k ctx` · 가성비 92.6
 
 ## 레이더 8축 (평균=50 기준선)
 

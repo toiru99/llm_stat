@@ -10,7 +10,7 @@ context_window: 256000
 status: current
 size_class: Unknown
 params_b: null
-is_reasoning: false
+is_reasoning: true
 radar:
   knowledge: { s: 41.8, z: 0.07, r: 51.0, estimated: false }  # 전문 지식
   reasoning: { s: 38.3, z: 0.26, r: 53.8, estimated: false }  # 추론
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 26B A4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-11
-timestamp: 2026-07-11T00:00:00Z
+updated: 2026-07-12
+timestamp: 2026-07-12T00:00:00Z
 ---
 
 # Gemma 4 26B A4B

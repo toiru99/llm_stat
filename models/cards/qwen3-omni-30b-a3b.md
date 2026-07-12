@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Omni 30B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-11
-timestamp: 2026-07-11T00:00:00Z
+updated: 2026-07-12
+timestamp: 2026-07-12T00:00:00Z
 ---
 
 # Qwen3 Omni 30B A3B
@@ -37,7 +37,7 @@ Alibaba · Open · Unknown · 컨텍스트 65k · 종합지능 **10.0**
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.25 · 출력 $0.97 · 혼합 $0.32/1M · 97.0 t/s · TTFT 2.07s · 65k ctx` · 가성비 31.2
+`입력 $0.25 · 출력 $0.97 · 혼합 $0.32/1M · 97.0 t/s · TTFT 1.94s · 65k ctx` · 가성비 31.2
 
 ## 레이더 8축 (평균=50 기준선)
 

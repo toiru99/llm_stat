@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 33.0
 price_blended_usd_1m: 26.0
-output_speed_tps: 33.0
+output_speed_tps: 36.0
 context_window: 200000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — o3-pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-11
-timestamp: 2026-07-11T00:00:00Z
+updated: 2026-07-12
+timestamp: 2026-07-12T00:00:00Z
 ---
 
 # o3-pro
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **33.0** �
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $20.0 · 출력 $80.0 · 혼합 $26.0/1M · 33.0 t/s · TTFT 77.36s · 200k ctx` · 가성비 1.3
+`입력 $20.0 · 출력 $80.0 · 혼합 $26.0/1M · 36.0 t/s · TTFT 69.7s · 200k ctx` · 가성비 1.3
 
 ## 레이더 8축 (평균=50 기준선)
 

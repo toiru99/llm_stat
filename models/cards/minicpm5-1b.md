@@ -10,7 +10,7 @@ context_window: 128000
 status: current
 size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: false
 radar:
   knowledge: { s: 8.1, z: -1.57, r: 26.5, estimated: false }  # 전문 지식
   reasoning: { s: 11.0, z: -1.19, r: 32.2, estimated: false }  # 추론
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniCPM5-1B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-11
-timestamp: 2026-07-11T00:00:00Z
+updated: 2026-07-12
+timestamp: 2026-07-12T00:00:00Z
 ---
 
 # MiniCPM5-1B

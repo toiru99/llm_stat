@@ -19,13 +19,13 @@ radar:
   trust: { s: 39.7, z: 0.55, r: 58.3, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 13.2, z: -1.04, r: 34.4, estimated: true }  # 긴문맥
-  instruction: { s: 28.0, z: -1.0, r: 34.9, estimated: true }  # 지시 따르기
+  instruction: { s: 27.9, z: -1.0, r: 34.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Mixtral 8x22B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-11
-timestamp: 2026-07-11T00:00:00Z
+updated: 2026-07-12
+timestamp: 2026-07-12T00:00:00Z
 ---
 
 # Mixtral 8x22B

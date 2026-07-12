@@ -10,7 +10,7 @@ context_window: 32800
 status: past
 size_class: Unknown
 params_b: null
-is_reasoning: false
+is_reasoning: true
 radar:
   knowledge: { s: 28.7, z: -0.56, r: 41.6, estimated: false }  # 전문 지식
   reasoning: { s: 21.8, z: -0.62, r: 40.7, estimated: false }  # 추론
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 14B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-11
-timestamp: 2026-07-11T00:00:00Z
+updated: 2026-07-12
+timestamp: 2026-07-12T00:00:00Z
 ---
 
 # Qwen3 14B
@@ -37,7 +37,7 @@ Alibaba · Open · Unknown · 컨텍스트 32k · 종합지능 **10.0** · ⚠�
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.35 · 출력 $4.2 · 혼합 $0.73/1M · 62.0 t/s · TTFT 2.77s · 32k ctx` · 가성비 13.7
+`입력 $0.35 · 출력 $4.2 · 혼합 $0.73/1M · 62.0 t/s · TTFT 2.8s · 32k ctx` · 가성비 13.7
 
 ## 레이더 8축 (평균=50 기준선)
 
