@@ -5,7 +5,7 @@ creator: Microsoft
 license: Open
 intelligence_index: 5.0
 price_blended_usd_1m: 0.0
-output_speed_tps: 17.0
+output_speed_tps: 18.0
 context_window: 128000
 status: current
 size_class: Unknown
@@ -19,13 +19,13 @@ radar:
   trust: { s: 24.9, z: -0.14, r: 47.9, estimated: true }  # 신뢰성
   multimodal: { s: 0.0, z: -3.41, r: 0, estimated: false }  # 멀티모달
   long_context: { s: 7.6, z: -1.21, r: 31.9, estimated: true }  # 긴문맥
-  instruction: { s: 24.8, z: -1.13, r: 33.0, estimated: true }  # 지시 따르기
+  instruction: { s: 24.8, z: -1.14, r: 33.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Phi-4 Multimodal
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-12
-timestamp: 2026-07-12T00:00:00Z
+updated: 2026-07-13
+timestamp: 2026-07-13T00:00:00Z
 ---
 
 # Phi-4 Multimodal
@@ -37,7 +37,7 @@ Microsoft · Open · Unknown · 컨텍스트 128k · 종합지능 **5.0**
 - **약점**: 긴문맥, 멀티모달
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0.0/1M · 17.0 t/s · TTFT 0.82s · 128k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0.0/1M · 18.0 t/s · TTFT 0.83s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Microsoft · Open · Unknown · 컨텍스트 128k · 종합지능 **5.0**
 | 신뢰성 | 47.9 | -0.14 | 추정 | (추정) |
 | 멀티모달 | 0 | -3.41 | 실측 | [[mmmu-pro]] 15.0%×1.0 |
 | 긴문맥 | 31.9 | -1.21 | 추정 | (추정) |
-| 지시 따르기 | 33.0 | -1.13 | 추정 | (추정) |
+| 지시 따르기 | 33.0 | -1.14 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

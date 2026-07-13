@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama Nemotron Super 49B v1.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-12
-timestamp: 2026-07-12T00:00:00Z
+updated: 2026-07-13
+timestamp: 2026-07-13T00:00:00Z
 ---
 
 # Llama Nemotron Super 49B v1.5
@@ -37,7 +37,7 @@ NVIDIA · Open · Unknown · 컨텍스트 128k · 종합지능 **12.0**
 - **약점**: 에이전트, 지시 따르기
 
 ## 실용 지표
-`입력 $0.4 · 출력 $0.4 · 혼합 $0.4/1M · 49.0 t/s · TTFT 1.23s · 128k ctx` · 가성비 30.0
+`입력 $0.4 · 출력 $0.4 · 혼합 $0.4/1M · 49.0 t/s · TTFT 1.25s · 128k ctx` · 가성비 30.0
 
 ## 레이더 8축 (평균=50 기준선)
 

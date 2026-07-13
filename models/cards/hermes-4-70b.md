@@ -5,7 +5,7 @@ creator: Nous Research
 license: Open
 intelligence_index: 10.0
 price_blended_usd_1m: 0.16
-output_speed_tps: 92.0
+output_speed_tps: 91.0
 context_window: 128000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hermes 4 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-12
-timestamp: 2026-07-12T00:00:00Z
+updated: 2026-07-13
+timestamp: 2026-07-13T00:00:00Z
 ---
 
 # Hermes 4 70B
@@ -37,7 +37,7 @@ Nous Research · Open · Unknown · 컨텍스트 128k · 종합지능 **10.0**
 - **약점**: 신뢰성, 긴문맥
 
 ## 실용 지표
-`입력 $0.13 · 출력 $0.4 · 혼합 $0.16/1M · 92.0 t/s · TTFT 1.35s · 128k ctx` · 가성비 62.5
+`입력 $0.13 · 출력 $0.4 · 혼합 $0.16/1M · 91.0 t/s · TTFT 1.35s · 128k ctx` · 가성비 62.5
 
 ## 레이더 8축 (평균=50 기준선)
 

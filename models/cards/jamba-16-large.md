@@ -19,13 +19,13 @@ radar:
   trust: { s: 20.2, z: -0.36, r: 44.6, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 20.3, z: -0.83, r: 37.5, estimated: true }  # 긴문맥
-  instruction: { s: 35.5, z: -0.69, r: 39.6, estimated: true }  # 지시 따르기
+  instruction: { s: 35.5, z: -0.7, r: 39.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba 1.6 Large
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-12
-timestamp: 2026-07-12T00:00:00Z
+updated: 2026-07-13
+timestamp: 2026-07-13T00:00:00Z
 ---
 
 # Jamba 1.6 Large
@@ -37,7 +37,7 @@ AI21 Labs · Open · Unknown · 컨텍스트 256k · 종합지능 **5.0** · ⚠
 - **약점**: 전문 지식, 에이전트
 
 ## 실용 지표
-`입력 $2.0 · 출력 $8.0 · 혼합 $2.6/1M · 58.0 t/s · TTFT 1.39s · 256k ctx` · 가성비 1.9
+`입력 $2.0 · 출력 $8.0 · 혼합 $2.6/1M · 58.0 t/s · TTFT 1.43s · 256k ctx` · 가성비 1.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ AI21 Labs · Open · Unknown · 컨텍스트 256k · 종합지능 **5.0** · ⚠
 | 신뢰성 | 44.6 | -0.36 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 37.5 | -0.83 | 추정 | (추정) |
-| 지시 따르기 | 39.6 | -0.69 | 추정 | (추정) |
+| 지시 따르기 | 39.6 | -0.7 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

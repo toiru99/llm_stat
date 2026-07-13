@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 12.0
 price_blended_usd_1m: 1.47
-output_speed_tps: 91.0
+output_speed_tps: 94.0
 context_window: 32800
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 32B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-12
-timestamp: 2026-07-12T00:00:00Z
+updated: 2026-07-13
+timestamp: 2026-07-13T00:00:00Z
 ---
 
 # Qwen3 32B
@@ -37,7 +37,7 @@ Alibaba · Open · Unknown · 컨텍스트 32k · 종합지능 **12.0** · ⚠�
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.7 · 출력 $8.4 · 혼합 $1.47/1M · 91.0 t/s · TTFT 2.58s · 32k ctx` · 가성비 8.2
+`입력 $0.7 · 출력 $8.4 · 혼합 $1.47/1M · 94.0 t/s · TTFT 2.6s · 32k ctx` · 가성비 8.2
 
 ## 레이더 8축 (평균=50 기준선)
 

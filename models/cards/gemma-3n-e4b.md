@@ -5,7 +5,7 @@ creator: Google
 license: Open
 intelligence_index: 1.0
 price_blended_usd_1m: 0.02
-output_speed_tps: 57.0
+output_speed_tps: 56.0
 context_window: 32000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 3n E4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-12
-timestamp: 2026-07-12T00:00:00Z
+updated: 2026-07-13
+timestamp: 2026-07-13T00:00:00Z
 ---
 
 # Gemma 3n E4B
@@ -37,7 +37,7 @@ Google · Open · Unknown · 컨텍스트 32k · 종합지능 **1.0** · ⚠️ 
 - **약점**: 코딩, 멀티모달
 
 ## 실용 지표
-`입력 $0.02 · 출력 $0.04 · 혼합 $0.02/1M · 57.0 t/s · TTFT 1.2s · 32k ctx` · 가성비 50.0
+`입력 $0.02 · 출력 $0.04 · 혼합 $0.02/1M · 56.0 t/s · TTFT 1.22s · 32k ctx` · 가성비 50.0
 
 ## 레이더 8축 (평균=50 기준선)
 

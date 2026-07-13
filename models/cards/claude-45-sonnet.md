@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 4.5 Sonnet
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-12
-timestamp: 2026-07-12T00:00:00Z
+updated: 2026-07-13
+timestamp: 2026-07-13T00:00:00Z
 ---
 
 # Claude 4.5 Sonnet
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **36.0** 
 - **약점**: 추론, 멀티모달
 
 ## 실용 지표
-`입력 $3.0 · 출력 $15.0 · 혼합 $2.31/1M · 42.0 t/s · TTFT 15.7s · 1M ctx` · 가성비 15.6
+`입력 $3.0 · 출력 $15.0 · 혼합 $2.31/1M · 42.0 t/s · TTFT 14.97s · 1M ctx` · 가성비 15.6
 
 ## 레이더 8축 (평균=50 기준선)
 

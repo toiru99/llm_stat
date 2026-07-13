@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Sol (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-12
-timestamp: 2026-07-12T00:00:00Z
+updated: 2026-07-13
+timestamp: 2026-07-13T00:00:00Z
 ---
 
 # GPT-5.6 Sol (max)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **59.0**
 - **약점**: 멀티모달, 신뢰성
 
 ## 실용 지표
-`입력 $5.0 · 출력 $30.0 · 혼합 $4.35/1M · 69.0 t/s · TTFT 193.39s · 1M ctx` · 가성비 13.6
+`입력 $5.0 · 출력 $30.0 · 혼합 $4.35/1M · 69.0 t/s · TTFT 142.57s · 1M ctx` · 가성비 13.6
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-12
-timestamp: 2026-07-12T00:00:00Z
+updated: 2026-07-13
+timestamp: 2026-07-13T00:00:00Z
 ---
 
 # Kimi K2
@@ -37,7 +37,7 @@ Kimi · Open · Unknown · 컨텍스트 128k · 종합지능 **19.0** · ⚠️ 
 - **약점**: 추론, 지시 따르기
 
 ## 실용 지표
-`입력 $0.58 · 출력 $2.4 · 혼합 $0.61/1M · 36.0 t/s · TTFT 2.3s · 128k ctx` · 가성비 31.1
+`입력 $0.58 · 출력 $2.4 · 혼합 $0.61/1M · 36.0 t/s · TTFT 2.36s · 128k ctx` · 가성비 31.1
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -19,13 +19,13 @@ radar:
   trust: { s: 26.4, z: -0.07, r: 48.9, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 10.6, z: -1.12, r: 33.2, estimated: true }  # 긴문맥
-  instruction: { s: 25.3, z: -1.11, r: 33.3, estimated: true }  # 지시 따르기
+  instruction: { s: 26.0, z: -1.09, r: 33.7, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Command-R+ (Apr)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-12
-timestamp: 2026-07-12T00:00:00Z
+updated: 2026-07-13
+timestamp: 2026-07-13T00:00:00Z
 ---
 
 # Command-R+ (Apr)
@@ -34,7 +34,7 @@ Cohere · Open · Unknown · 컨텍스트 128k · 종합지능 **3.0** · ⚠️
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 추론
-- **약점**: 지시 따르기, 긴문맥
+- **약점**: 코딩, 긴문맥
 
 ## 실용 지표
 `입력 $3.0 · 출력 $15.0 · 혼합 $4.2/1M · None t/s · TTFT Nones · 128k ctx` · 가성비 0.7
@@ -50,7 +50,7 @@ Cohere · Open · Unknown · 컨텍스트 128k · 종합지능 **3.0** · ⚠️
 | 신뢰성 | 48.9 | -0.07 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 33.2 | -1.12 | 추정 | (추정) |
-| 지시 따르기 | 33.3 | -1.11 | 추정 | (추정) |
+| 지시 따르기 | 33.7 | -1.09 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

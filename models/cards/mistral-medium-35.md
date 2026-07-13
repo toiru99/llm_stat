@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: 30.0
 price_blended_usd_1m: 1.16
-output_speed_tps: 126.0
+output_speed_tps: 145.0
 context_window: 256000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Medium 3.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-12
-timestamp: 2026-07-12T00:00:00Z
+updated: 2026-07-13
+timestamp: 2026-07-13T00:00:00Z
 ---
 
 # Mistral Medium 3.5
@@ -37,7 +37,7 @@ Mistral · Open · Unknown · 컨텍스트 256k · 종합지능 **30.0**
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $1.5 · 출력 $7.5 · 혼합 $1.16/1M · 126.0 t/s · TTFT 2.17s · 256k ctx` · 가성비 25.9
+`입력 $1.5 · 출력 $7.5 · 혼합 $1.16/1M · 145.0 t/s · TTFT 2.13s · 256k ctx` · 가성비 25.9
 
 ## 레이더 8축 (평균=50 기준선)
 

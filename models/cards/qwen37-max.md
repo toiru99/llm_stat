@@ -5,7 +5,7 @@ creator: Alibaba
 license: Proprietary
 intelligence_index: 46.0
 price_blended_usd_1m: 1.43
-output_speed_tps: 197.0
+output_speed_tps: 202.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.7 Max
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-12
-timestamp: 2026-07-12T00:00:00Z
+updated: 2026-07-13
+timestamp: 2026-07-13T00:00:00Z
 ---
 
 # Qwen3.7 Max
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **46.0**
 - **약점**: 긴문맥, 전문 지식
 
 ## 실용 지표
-`입력 $2.5 · 출력 $7.5 · 혼합 $1.43/1M · 197.0 t/s · TTFT 2.55s · 1M ctx` · 가성비 32.2
+`입력 $2.5 · 출력 $7.5 · 혼합 $1.43/1M · 202.0 t/s · TTFT 2.53s · 1M ctx` · 가성비 32.2
 
 ## 레이더 8축 (평균=50 기준선)
 

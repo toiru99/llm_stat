@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.4 nano
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-12
-timestamp: 2026-07-12T00:00:00Z
+updated: 2026-07-13
+timestamp: 2026-07-13T00:00:00Z
 ---
 
 # GPT-5.4 nano
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **30.0**
 - **약점**: 전문 지식, 멀티모달
 
 ## 실용 지표
-`입력 $0.2 · 출력 $1.25 · 혼합 $0.18/1M · 166.0 t/s · TTFT 5.38s · 400k ctx` · 가성비 166.7
+`입력 $0.2 · 출력 $1.25 · 혼합 $0.18/1M · 166.0 t/s · TTFT 6.01s · 400k ctx` · 가성비 166.7
 
 ## 레이더 8축 (평균=50 기준선)
 

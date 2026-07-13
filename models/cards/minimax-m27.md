@@ -5,7 +5,7 @@ creator: MiniMax
 license: Open
 intelligence_index: 38.0
 price_blended_usd_1m: 0.22
-output_speed_tps: 45.0
+output_speed_tps: 57.0
 context_window: 205000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax-M2.7
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-12
-timestamp: 2026-07-12T00:00:00Z
+updated: 2026-07-13
+timestamp: 2026-07-13T00:00:00Z
 ---
 
 # MiniMax-M2.7
@@ -37,7 +37,7 @@ MiniMax · Open · Unknown · 컨텍스트 205k · 종합지능 **38.0**
 - **약점**: 전문 지식, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.22/1M · 45.0 t/s · TTFT 1.92s · 205k ctx` · 가성비 172.7
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.22/1M · 57.0 t/s · TTFT 1.89s · 205k ctx` · 가성비 172.7
 
 ## 레이더 8축 (평균=50 기준선)
 

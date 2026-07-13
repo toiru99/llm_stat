@@ -5,7 +5,7 @@ creator: Microsoft
 license: Open
 intelligence_index: 5.0
 price_blended_usd_1m: 0.16
-output_speed_tps: 25.0
+output_speed_tps: 23.0
 context_window: 16000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Phi-4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-12
-timestamp: 2026-07-12T00:00:00Z
+updated: 2026-07-13
+timestamp: 2026-07-13T00:00:00Z
 ---
 
 # Phi-4
@@ -37,7 +37,7 @@ Microsoft · Open · Unknown · 컨텍스트 16k · 종합지능 **5.0**
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.13 · 출력 $0.5 · 혼합 $0.16/1M · 25.0 t/s · TTFT 2.19s · 16k ctx` · 가성비 31.2
+`입력 $0.13 · 출력 $0.5 · 혼합 $0.16/1M · 23.0 t/s · TTFT 2.23s · 16k ctx` · 가성비 31.2
 
 ## 레이더 8축 (평균=50 기준선)
 
