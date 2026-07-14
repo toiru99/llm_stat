@@ -8,29 +8,29 @@ price_blended_usd_1m: 0.69
 output_speed_tps: 31.0
 context_window: 131000
 status: past
-size_class: Unknown
-params_b: null
+size_class: Small
+params_b: 32.8
 is_reasoning: true
 radar:
   knowledge: { s: 39.1, z: -0.06, r: 49.1, estimated: false }  # 전문 지식
-  reasoning: { s: 35.9, z: 0.13, r: 52.0, estimated: false }  # 추론
-  coding: { s: 60.0, z: 0.59, r: 58.9, estimated: false }  # 코딩
+  reasoning: { s: 35.9, z: 0.13, r: 51.9, estimated: false }  # 추론
+  coding: { s: 60.0, z: 0.59, r: 58.8, estimated: false }  # 코딩
   agentic: { s: 38.7, z: 0.1, r: 51.5, estimated: true }  # 에이전트
-  trust: { s: 21.2, z: -0.32, r: 45.2, estimated: true }  # 신뢰성
+  trust: { s: 21.2, z: -0.31, r: 45.3, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 32.9, z: -0.46, r: 43.1, estimated: false }  # 긴문맥
-  instruction: { s: 38.0, z: -0.59, r: 41.1, estimated: false }  # 지시 따르기
+  instruction: { s: 38.0, z: -0.58, r: 41.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — QwQ-32B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-13
-timestamp: 2026-07-13T00:00:00Z
+updated: 2026-07-14
+timestamp: 2026-07-14T00:00:00Z
 ---
 
 # QwQ-32B
 
-Alibaba · Open · Unknown · 컨텍스트 131k · 종합지능 **13.0** · ⚠️ past(구세대)
+Alibaba · Open · Small(32.8B) · 컨텍스트 131k · 종합지능 **13.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 코딩, 추론
@@ -44,13 +44,13 @@ Alibaba · Open · Unknown · 컨텍스트 131k · 종합지능 **13.0** · ⚠�
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 49.1 | -0.06 | 실측 | [[gpqa-diamond]] 59.0%×0.4, [[humanitys-last-exam]] 8.0%×0.3 |
-| 추론 | 52.0 | +0.13 | 실측 | [[gpqa-diamond]] 59.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
-| 코딩 | 58.9 | +0.59 | 실측 | [[scicode]] 36.0%×1.0 |
+| 추론 | 51.9 | +0.13 | 실측 | [[gpqa-diamond]] 59.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
+| 코딩 | 58.8 | +0.59 | 실측 | [[scicode]] 36.0%×1.0 |
 | 에이전트 | 51.5 | +0.1 | 추정 | (추정) |
-| 신뢰성 | 45.2 | -0.32 | 추정 | (추정) |
+| 신뢰성 | 45.3 | -0.31 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 43.1 | -0.46 | 실측 | [[aa-lcr]] 25.0%×1.0 |
-| 지시 따르기 | 41.1 | -0.59 | 실측 | [[ifbench]] 39.0%×1.0 |
+| 지시 따르기 | 41.3 | -0.58 | 실측 | [[ifbench]] 39.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

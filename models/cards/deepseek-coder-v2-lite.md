@@ -8,29 +8,29 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
 status: past
-size_class: Unknown
-params_b: null
+size_class: Small
+params_b: 16
 is_reasoning: false
 radar:
   knowledge: { s: 18.3, z: -1.07, r: 33.9, estimated: false }  # 전문 지식
   reasoning: { s: 16.9, z: -0.87, r: 36.9, estimated: false }  # 추론
   coding: { s: 23.3, z: -0.96, r: 35.6, estimated: false }  # 코딩
   agentic: { s: 12.7, z: -0.91, r: 36.3, estimated: true }  # 에이전트
-  trust: { s: 36.3, z: 0.39, r: 55.9, estimated: true }  # 신뢰성
+  trust: { s: 36.3, z: 0.4, r: 56.0, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 9.3, z: -1.16, r: 32.6, estimated: true }  # 긴문맥
-  instruction: { s: 28.1, z: -1.0, r: 35.0, estimated: true }  # 지시 따르기
+  long_context: { s: 9.3, z: -1.15, r: 32.7, estimated: true }  # 긴문맥
+  instruction: { s: 27.9, z: -1.0, r: 35.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek Coder V2 Lite
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-13
-timestamp: 2026-07-13T00:00:00Z
+updated: 2026-07-14
+timestamp: 2026-07-14T00:00:00Z
 ---
 
 # DeepSeek Coder V2 Lite
 
-DeepSeek · Open · Unknown · 컨텍스트 128k · 종합지능 **3.0** · ⚠️ past(구세대)
+DeepSeek · Open · Small(16B) · 컨텍스트 128k · 종합지능 **3.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 추론
@@ -47,9 +47,9 @@ DeepSeek · Open · Unknown · 컨텍스트 128k · 종합지능 **3.0** · ⚠�
 | 추론 | 36.9 | -0.87 | 실측 | [[gpqa-diamond]] 32.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 35.6 | -0.96 | 실측 | [[scicode]] 14.0%×1.0 |
 | 에이전트 | 36.3 | -0.91 | 추정 | (추정) |
-| 신뢰성 | 55.9 | +0.39 | 추정 | (추정) |
+| 신뢰성 | 56.0 | +0.4 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 32.6 | -1.16 | 추정 | (추정) |
+| 긴문맥 | 32.7 | -1.15 | 추정 | (추정) |
 | 지시 따르기 | 35.0 | -1.0 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

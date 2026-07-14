@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 43.0
 price_blended_usd_1m: 3.85
-output_speed_tps: 46.0
+output_speed_tps: 45.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 74.2, z: 1.64, r: 74.6, estimated: false }  # 전문 지식
   reasoning: { s: 55.4, z: 1.16, r: 67.4, estimated: false }  # 추론
   coding: { s: 83.3, z: 1.58, r: 73.7, estimated: false }  # 코딩
-  agentic: { s: 79.0, z: 1.67, r: 75.0, estimated: false }  # 에이전트
-  trust: { s: 55.3, z: 1.28, r: 69.2, estimated: false }  # 신뢰성
+  agentic: { s: 79.0, z: 1.67, r: 75.1, estimated: false }  # 에이전트
+  trust: { s: 55.3, z: 1.3, r: 69.5, estimated: false }  # 신뢰성
   multimodal: { s: 88.4, z: 0.81, r: 62.1, estimated: false }  # 멀티모달
   long_context: { s: 88.2, z: 1.18, r: 67.7, estimated: false }  # 긴문맥
-  instruction: { s: 45.1, z: -0.3, r: 45.5, estimated: false }  # 지시 따르기
+  instruction: { s: 45.1, z: -0.29, r: 45.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 4.7 (Non-reasoning, high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-13
-timestamp: 2026-07-13T00:00:00Z
+updated: 2026-07-14
+timestamp: 2026-07-14T00:00:00Z
 ---
 
 # Claude Opus 4.7 (Non-reasoning, high)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **43.0**
 - **약점**: 멀티모달, 지시 따르기
 
 ## 실용 지표
-`입력 $5.0 · 출력 $25.0 · 혼합 $3.85/1M · 46.0 t/s · TTFT 1.66s · 1M ctx` · 가성비 11.2
+`입력 $5.0 · 출력 $25.0 · 혼합 $3.85/1M · 45.0 t/s · TTFT 1.73s · 1M ctx` · 가성비 11.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,11 +46,11 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **43.0**
 | 전문 지식 | 74.6 | +1.64 | 실측 | [[aa-omniscience]] 44.0%×1.0, [[gpqa-diamond]] 88.0%×0.4, [[humanitys-last-exam]] 31.0%×0.3 |
 | 추론 | 67.4 | +1.16 | 실측 | [[critpt]] 5.0%×1.0, [[gpqa-diamond]] 88.0%×1.0, [[humanitys-last-exam]] 31.0%×1.0 |
 | 코딩 | 73.7 | +1.58 | 실측 | [[scicode]] 50.0%×1.0, [[terminal-bench]] 55.0%×0.5 |
-| 에이전트 | 75.0 | +1.67 | 실측 | [[tau2-bench]] 74.0%×1.0, [[terminal-bench]] 55.0%×1.0 |
-| 신뢰성 | 69.2 | +1.28 | 실측 | [[aa-omniscience]] 48.0%×1.0 |
+| 에이전트 | 75.1 | +1.67 | 실측 | [[tau2-bench]] 74.0%×1.0, [[terminal-bench]] 55.0%×1.0 |
+| 신뢰성 | 69.5 | +1.3 | 실측 | [[aa-omniscience]] 48.0%×1.0 |
 | 멀티모달 | 62.1 | +0.81 | 실측 | [[mmmu-pro]] 76.0%×1.0 |
 | 긴문맥 | 67.7 | +1.18 | 실측 | [[aa-lcr]] 67.0%×1.0 |
-| 지시 따르기 | 45.5 | -0.3 | 실측 | [[ifbench]] 44.0%×1.0 |
+| 지시 따르기 | 45.6 | -0.29 | 실측 | [[ifbench]] 44.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

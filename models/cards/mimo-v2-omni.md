@@ -4,7 +4,7 @@ title: MiMo-V2-Omni
 creator: Xiaomi
 license: Proprietary
 intelligence_index: 35.0
-price_blended_usd_1m: 0.0
+price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 256000
 status: current
@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 44.5, z: 0.2, r: 53.1, estimated: false }  # 전문 지식
+  knowledge: { s: 44.5, z: 0.2, r: 53.0, estimated: false }  # 전문 지식
   reasoning: { s: 42.2, z: 0.46, r: 56.9, estimated: false }  # 추론
   coding: { s: 58.8, z: 0.54, r: 58.1, estimated: false }  # 코딩
-  agentic: { s: 72.5, z: 1.41, r: 71.2, estimated: false }  # 에이전트
-  trust: { s: 64.7, z: 1.72, r: 75.9, estimated: false }  # 신뢰성
+  agentic: { s: 72.5, z: 1.42, r: 71.3, estimated: false }  # 에이전트
+  trust: { s: 64.7, z: 1.74, r: 76.1, estimated: false }  # 신뢰성
   multimodal: { s: 79.7, z: 0.39, r: 55.9, estimated: false }  # 멀티모달
   long_context: { s: 88.2, z: 1.18, r: 67.7, estimated: false }  # 긴문맥
-  instruction: { s: 59.2, z: 0.28, r: 54.2, estimated: false }  # 지시 따르기
+  instruction: { s: 59.2, z: 0.29, r: 54.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2-Omni
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-13
-timestamp: 2026-07-13T00:00:00Z
+updated: 2026-07-14
+timestamp: 2026-07-14T00:00:00Z
 ---
 
 # MiMo-V2-Omni
@@ -37,20 +37,20 @@ Xiaomi · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **35.0**
 - **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0.0/1M · None t/s · TTFT Nones · 256k ctx`
+`입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 53.1 | +0.2 | 실측 | [[aa-omniscience]] 19.0%×1.0, [[gpqa-diamond]] 83.0%×0.4, [[humanitys-last-exam]] 20.0%×0.3 |
+| 전문 지식 | 53.0 | +0.2 | 실측 | [[aa-omniscience]] 19.0%×1.0, [[gpqa-diamond]] 83.0%×0.4, [[humanitys-last-exam]] 20.0%×0.3 |
 | 추론 | 56.9 | +0.46 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 83.0%×1.0, [[humanitys-last-exam]] 20.0%×1.0 |
 | 코딩 | 58.1 | +0.54 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 35.0%×0.5 |
-| 에이전트 | 71.2 | +1.41 | 실측 | [[tau2-bench]] 91.0%×1.0, [[terminal-bench]] 35.0%×1.0 |
-| 신뢰성 | 75.9 | +1.72 | 실측 | [[aa-omniscience]] 56.0%×1.0 |
+| 에이전트 | 71.3 | +1.42 | 실측 | [[tau2-bench]] 91.0%×1.0, [[terminal-bench]] 35.0%×1.0 |
+| 신뢰성 | 76.1 | +1.74 | 실측 | [[aa-omniscience]] 56.0%×1.0 |
 | 멀티모달 | 55.9 | +0.39 | 실측 | [[mmmu-pro]] 70.0%×1.0 |
 | 긴문맥 | 67.7 | +1.18 | 실측 | [[aa-lcr]] 67.0%×1.0 |
-| 지시 따르기 | 54.2 | +0.28 | 실측 | [[ifbench]] 54.0%×1.0 |
+| 지시 따르기 | 54.3 | +0.29 | 실측 | [[ifbench]] 54.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

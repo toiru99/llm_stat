@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 70.0, z: 1.44, r: 71.6, estimated: false }  # 전문 지식
+  knowledge: { s: 70.0, z: 1.43, r: 71.5, estimated: false }  # 전문 지식
   reasoning: { s: 44.0, z: 0.56, r: 58.4, estimated: false }  # 추론
-  coding: { s: 75.4, z: 1.24, r: 68.7, estimated: false }  # 코딩
-  agentic: { s: 79.3, z: 1.68, r: 75.2, estimated: false }  # 에이전트
-  trust: { s: 27.1, z: -0.04, r: 49.4, estimated: false }  # 신뢰성
+  coding: { s: 75.4, z: 1.24, r: 68.6, estimated: false }  # 코딩
+  agentic: { s: 79.3, z: 1.68, r: 75.3, estimated: false }  # 에이전트
+  trust: { s: 27.1, z: -0.03, r: 49.5, estimated: false }  # 신뢰성
   multimodal: { s: 84.1, z: 0.6, r: 59.0, estimated: false }  # 멀티모달
   long_context: { s: 76.3, z: 0.83, r: 62.4, estimated: false }  # 긴문맥
-  instruction: { s: 46.5, z: -0.24, r: 46.4, estimated: false }  # 지시 따르기
+  instruction: { s: 46.5, z: -0.23, r: 46.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 4.6 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-13
-timestamp: 2026-07-13T00:00:00Z
+updated: 2026-07-14
+timestamp: 2026-07-14T00:00:00Z
 ---
 
 # Claude Opus 4.6 (high)
@@ -43,14 +43,14 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **38.0** 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 71.6 | +1.44 | 실측 | [[aa-omniscience]] 45.0%×1.0, [[gpqa-diamond]] 84.0%×0.4, [[humanitys-last-exam]] 19.0%×0.3 |
+| 전문 지식 | 71.5 | +1.43 | 실측 | [[aa-omniscience]] 45.0%×1.0, [[gpqa-diamond]] 84.0%×0.4, [[humanitys-last-exam]] 19.0%×0.3 |
 | 추론 | 58.4 | +0.56 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 84.0%×1.0, [[humanitys-last-exam]] 19.0%×1.0 |
-| 코딩 | 68.7 | +1.24 | 실측 | [[scicode]] 46.0%×1.0, [[terminal-bench]] 48.0%×0.5 |
-| 에이전트 | 75.2 | +1.68 | 실측 | [[tau2-bench]] 85.0%×1.0, [[terminal-bench]] 48.0%×1.0 |
-| 신뢰성 | 49.4 | -0.04 | 실측 | [[aa-omniscience]] 24.0%×1.0 |
+| 코딩 | 68.6 | +1.24 | 실측 | [[scicode]] 46.0%×1.0, [[terminal-bench]] 48.0%×0.5 |
+| 에이전트 | 75.3 | +1.68 | 실측 | [[tau2-bench]] 85.0%×1.0, [[terminal-bench]] 48.0%×1.0 |
+| 신뢰성 | 49.5 | -0.03 | 실측 | [[aa-omniscience]] 24.0%×1.0 |
 | 멀티모달 | 59.0 | +0.6 | 실측 | [[mmmu-pro]] 73.0%×1.0 |
 | 긴문맥 | 62.4 | +0.83 | 실측 | [[aa-lcr]] 58.0%×1.0 |
-| 지시 따르기 | 46.4 | -0.24 | 실측 | [[ifbench]] 45.0%×1.0 |
+| 지시 따르기 | 46.5 | -0.23 | 실측 | [[ifbench]] 45.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

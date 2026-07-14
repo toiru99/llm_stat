@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 131000
 status: current
-size_class: Unknown
-params_b: null
+size_class: Tiny
+params_b: 3
 is_reasoning: false
 radar:
   knowledge: { s: 14.4, z: -1.26, r: 31.1, estimated: false }  # 전문 지식
@@ -18,19 +18,19 @@ radar:
   agentic: { s: 6.6, z: -1.15, r: 32.7, estimated: false }  # 에이전트
   trust: { s: 4.7, z: -1.09, r: 33.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 3.9, z: -1.32, r: 30.3, estimated: false }  # 긴문맥
-  instruction: { s: 31.0, z: -0.88, r: 36.8, estimated: false }  # 지시 따르기
+  long_context: { s: 3.9, z: -1.31, r: 30.3, estimated: false }  # 긴문맥
+  instruction: { s: 31.0, z: -0.87, r: 36.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.1 3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-13
-timestamp: 2026-07-13T00:00:00Z
+updated: 2026-07-14
+timestamp: 2026-07-14T00:00:00Z
 ---
 
 # Granite 4.1 3B
 
-IBM · Open · Unknown · 컨텍스트 131k · 종합지능 **5.0**
+IBM · Open · Tiny(3B) · 컨텍스트 131k · 종합지능 **5.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 신뢰성
@@ -49,8 +49,8 @@ IBM · Open · Unknown · 컨텍스트 131k · 종합지능 **5.0**
 | 에이전트 | 32.7 | -1.15 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 20.0%×1.0, [[tau3-banking]] 1.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | 33.7 | -1.09 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 30.3 | -1.32 | 실측 | [[aa-lcr]] 3.0%×1.0 |
-| 지시 따르기 | 36.8 | -0.88 | 실측 | [[ifbench]] 34.0%×1.0 |
+| 긴문맥 | 30.3 | -1.31 | 실측 | [[aa-lcr]] 3.0%×1.0 |
+| 지시 따르기 | 36.9 | -0.87 | 실측 | [[ifbench]] 34.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

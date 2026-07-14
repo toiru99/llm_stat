@@ -8,29 +8,29 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 32000
 status: past
-size_class: Unknown
-params_b: null
+size_class: Medium
+params_b: 110
 is_reasoning: false
 radar:
   knowledge: { s: 22.6, z: -0.86, r: 37.1, estimated: false }  # 전문 지식
   reasoning: { s: 22.6, z: -0.57, r: 41.4, estimated: false }  # 추론
-  coding: { s: 34.8, z: -0.47, r: 42.9, estimated: true }  # 코딩
+  coding: { s: 34.8, z: -0.48, r: 42.8, estimated: true }  # 코딩
   agentic: { s: 19.4, z: -0.65, r: 40.2, estimated: true }  # 에이전트
-  trust: { s: 37.0, z: 0.42, r: 56.4, estimated: true }  # 신뢰성
+  trust: { s: 36.4, z: 0.41, r: 56.1, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 13.1, z: -1.04, r: 34.4, estimated: true }  # 긴문맥
-  instruction: { s: 25.2, z: -1.12, r: 33.2, estimated: true }  # 지시 따르기
+  long_context: { s: 9.9, z: -1.14, r: 32.9, estimated: true }  # 긴문맥
+  instruction: { s: 23.6, z: -1.18, r: 32.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen1.5 Chat 110B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-13
-timestamp: 2026-07-13T00:00:00Z
+updated: 2026-07-14
+timestamp: 2026-07-14T00:00:00Z
 ---
 
 # Qwen1.5 Chat 110B
 
-Alibaba · Open · Unknown · 컨텍스트 32k · 종합지능 **4.0** · ⚠️ past(구세대)
+Alibaba · Open · Medium(110B) · 컨텍스트 32k · 종합지능 **4.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 코딩
@@ -45,12 +45,12 @@ Alibaba · Open · Unknown · 컨텍스트 32k · 종합지능 **4.0** · ⚠️
 |---|---|---|---|---|
 | 전문 지식 | 37.1 | -0.86 | 실측 | [[gpqa-diamond]] 29.0%×0.4 |
 | 추론 | 41.4 | -0.57 | 실측 | [[gpqa-diamond]] 29.0%×1.0 |
-| 코딩 | 42.9 | -0.47 | 추정 | (추정) |
+| 코딩 | 42.8 | -0.48 | 추정 | (추정) |
 | 에이전트 | 40.2 | -0.65 | 추정 | (추정) |
-| 신뢰성 | 56.4 | +0.42 | 추정 | (추정) |
+| 신뢰성 | 56.1 | +0.41 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 34.4 | -1.04 | 추정 | (추정) |
-| 지시 따르기 | 33.2 | -1.12 | 추정 | (추정) |
+| 긴문맥 | 32.9 | -1.14 | 추정 | (추정) |
+| 지시 따르기 | 32.4 | -1.18 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
