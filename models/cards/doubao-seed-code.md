@@ -12,9 +12,9 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 46.1, z: 0.28, r: 54.1, estimated: false }  # 전문 지식
+  knowledge: { s: 46.1, z: 0.27, r: 54.1, estimated: false }  # 전문 지식
   reasoning: { s: 33.9, z: 0.02, r: 50.3, estimated: false }  # 추론
-  coding: { s: 59.2, z: 0.56, r: 58.3, estimated: false }  # 코딩
+  coding: { s: 59.2, z: 0.55, r: 58.3, estimated: false }  # 코딩
   agentic: { s: 49.7, z: 0.53, r: 58.0, estimated: false }  # 에이전트
   trust: { s: 23.5, z: -0.2, r: 47.0, estimated: false }  # 신뢰성
   multimodal: { s: 76.8, z: 0.26, r: 53.9, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Doubao Seed Code
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-14
-timestamp: 2026-07-14T00:00:00Z
+updated: 2026-07-15
+timestamp: 2026-07-15T00:00:00Z
 ---
 
 # Doubao Seed Code
@@ -43,9 +43,9 @@ ByteDance Seed · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 54.1 | +0.28 | 실측 | [[aa-omniscience]] 25.0%×1.0, [[gpqa-diamond]] 76.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
+| 전문 지식 | 54.1 | +0.27 | 실측 | [[aa-omniscience]] 25.0%×1.0, [[gpqa-diamond]] 76.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
 | 추론 | 50.3 | +0.02 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
-| 코딩 | 58.3 | +0.56 | 실측 | [[scicode]] 41.0%×1.0, [[terminal-bench]] 27.0%×0.5 |
+| 코딩 | 58.3 | +0.55 | 실측 | [[scicode]] 41.0%×1.0, [[terminal-bench]] 27.0%×0.5 |
 | 에이전트 | 58.0 | +0.53 | 실측 | [[tau2-bench]] 58.0%×1.0, [[terminal-bench]] 27.0%×1.0 |
 | 신뢰성 | 47.0 | -0.2 | 실측 | [[aa-omniscience]] 21.0%×1.0 |
 | 멀티모달 | 53.9 | +0.26 | 실측 | [[mmmu-pro]] 68.0%×1.0 |

@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 84.8, z: 2.15, r: 82.3, estimated: false }  # 전문 지식
   reasoning: { s: 59.7, z: 1.39, r: 70.8, estimated: false }  # 추론
   coding: { s: 84.0, z: 1.61, r: 74.1, estimated: false }  # 코딩
-  agentic: { s: 70.7, z: 1.35, r: 70.2, estimated: false }  # 에이전트
+  agentic: { s: 70.7, z: 1.35, r: 70.3, estimated: false }  # 에이전트
   trust: { s: 15.3, z: -0.59, r: 41.2, estimated: false }  # 신뢰성
   multimodal: { s: 92.8, z: 1.02, r: 65.3, estimated: false }  # 멀티모달
   long_context: { s: 94.7, z: 1.37, r: 70.6, estimated: false }  # 긴문맥
-  instruction: { s: 73.2, z: 0.87, r: 63.0, estimated: false }  # 지시 따르기
+  instruction: { s: 73.2, z: 0.86, r: 63.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.5 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-14
-timestamp: 2026-07-14T00:00:00Z
+updated: 2026-07-15
+timestamp: 2026-07-15T00:00:00Z
 ---
 
 # GPT-5.5 (low)
@@ -46,11 +46,11 @@ OpenAI · Proprietary · Unknown · 컨텍스트 922k · 종합지능 **43.0**
 | 전문 지식 | 82.3 | +2.15 | 실측 | [[aa-omniscience]] 54.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 31.0%×0.3 |
 | 추론 | 70.8 | +1.39 | 실측 | [[critpt]] 8.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 31.0%×1.0 |
 | 코딩 | 74.1 | +1.61 | 실측 | [[scicode]] 52.0%×1.0, [[terminal-bench]] 52.0%×0.5 |
-| 에이전트 | 70.2 | +1.35 | 실측 | [[gdpval]] 35.0%×1.0, [[tau2-bench]] 84.0%×1.0, [[tau3-banking]] 21.0%×1.0, [[terminal-bench]] 52.0%×1.0 |
+| 에이전트 | 70.3 | +1.35 | 실측 | [[gdpval]] 35.0%×1.0, [[tau2-bench]] 84.0%×1.0, [[tau3-banking]] 21.0%×1.0, [[terminal-bench]] 52.0%×1.0 |
 | 신뢰성 | 41.2 | -0.59 | 실측 | [[aa-omniscience]] 14.0%×1.0 |
 | 멀티모달 | 65.3 | +1.02 | 실측 | [[mmmu-pro]] 79.0%×1.0 |
 | 긴문맥 | 70.6 | +1.37 | 실측 | [[aa-lcr]] 72.0%×1.0 |
-| 지시 따르기 | 63.0 | +0.87 | 실측 | [[ifbench]] 64.0%×1.0 |
+| 지시 따르기 | 63.0 | +0.86 | 실측 | [[ifbench]] 64.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

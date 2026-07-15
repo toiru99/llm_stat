@@ -5,7 +5,7 @@ creator: Z AI
 license: Open
 intelligence_index: 9.0
 price_blended_usd_1m: 0.72
-output_speed_tps: 47.0
+output_speed_tps: 58.0
 context_window: 64000
 status: past
 size_class: Medium
@@ -13,8 +13,8 @@ params_b: 108
 is_reasoning: true
 radar:
   knowledge: { s: 37.6, z: -0.14, r: 47.9, estimated: false }  # 전문 지식
-  reasoning: { s: 26.2, z: -0.38, r: 44.2, estimated: false }  # 추론
-  coding: { s: 27.0, z: -0.81, r: 37.9, estimated: false }  # 코딩
+  reasoning: { s: 26.2, z: -0.39, r: 44.2, estimated: false }  # 추론
+  coding: { s: 27.0, z: -0.81, r: 37.8, estimated: false }  # 코딩
   agentic: { s: 15.4, z: -0.81, r: 37.9, estimated: false }  # 에이전트
   trust: { s: 21.2, z: -0.31, r: 45.3, estimated: false }  # 신뢰성
   multimodal: { s: 50.7, z: -0.99, r: 35.2, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.5V
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-14
-timestamp: 2026-07-14T00:00:00Z
+updated: 2026-07-15
+timestamp: 2026-07-15T00:00:00Z
 ---
 
 # GLM-4.5V
@@ -37,15 +37,15 @@ Z AI · Open · Medium(108B) · 컨텍스트 64k · 종합지능 **9.0** · ⚠�
 - **약점**: 멀티모달, 긴문맥
 
 ## 실용 지표
-`입력 $0.6 · 출력 $1.8 · 혼합 $0.72/1M · 47.0 t/s · TTFT 4.49s · 64k ctx` · 가성비 12.5
+`입력 $0.6 · 출력 $1.8 · 혼합 $0.72/1M · 58.0 t/s · TTFT 4.3s · 64k ctx` · 가성비 12.5
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 47.9 | -0.14 | 실측 | [[aa-omniscience]] 21.0%×1.0, [[gpqa-diamond]] 68.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
-| 추론 | 44.2 | -0.38 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 68.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 37.9 | -0.81 | 실측 | [[scicode]] 22.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
+| 추론 | 44.2 | -0.39 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 68.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
+| 코딩 | 37.8 | -0.81 | 실측 | [[scicode]] 22.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
 | 에이전트 | 37.9 | -0.81 | 실측 | [[tau2-bench]] 23.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
 | 신뢰성 | 45.3 | -0.31 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
 | 멀티모달 | 35.2 | -0.99 | 실측 | [[mmmu-pro]] 50.0%×1.0 |

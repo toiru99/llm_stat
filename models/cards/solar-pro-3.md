@@ -13,8 +13,8 @@ params_b: 102
 is_reasoning: true
 radar:
   knowledge: { s: 37.1, z: -0.16, r: 47.6, estimated: false }  # 전문 지식
-  reasoning: { s: 30.4, z: -0.16, r: 47.5, estimated: false }  # 추론
-  coding: { s: 31.8, z: -0.6, r: 40.9, estimated: false }  # 코딩
+  reasoning: { s: 30.4, z: -0.17, r: 47.5, estimated: false }  # 추론
+  coding: { s: 31.8, z: -0.61, r: 40.9, estimated: false }  # 코딩
   agentic: { s: 30.8, z: -0.21, r: 46.9, estimated: false }  # 에이전트
   trust: { s: 12.9, z: -0.7, r: 39.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Pro 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-14
-timestamp: 2026-07-14T00:00:00Z
+updated: 2026-07-15
+timestamp: 2026-07-15T00:00:00Z
 ---
 
 # Solar Pro 3
@@ -44,8 +44,8 @@ Upstage · Proprietary · Medium(102B) · 컨텍스트 128k · 종합지능 **14
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 47.6 | -0.16 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 72.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
-| 추론 | 47.5 | -0.16 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 72.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
-| 코딩 | 40.9 | -0.6 | 실측 | [[scicode]] 25.0%×1.0, [[terminal-bench]] 8.0%×0.5 |
+| 추론 | 47.5 | -0.17 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 72.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
+| 코딩 | 40.9 | -0.61 | 실측 | [[scicode]] 25.0%×1.0, [[terminal-bench]] 8.0%×0.5 |
 | 에이전트 | 46.9 | -0.21 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 86.0%×1.0, [[tau3-banking]] 8.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
 | 신뢰성 | 39.5 | -0.7 | 실측 | [[aa-omniscience]] 12.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

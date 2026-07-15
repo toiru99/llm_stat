@@ -12,9 +12,9 @@ size_class: Tiny
 params_b: 1.17
 is_reasoning: false
 radar:
-  knowledge: { s: 8.3, z: -1.56, r: 26.7, estimated: false }  # 전문 지식
-  reasoning: { s: 8.4, z: -1.33, r: 30.1, estimated: false }  # 추론
-  coding: { s: 3.3, z: -1.81, r: 22.9, estimated: false }  # 코딩
+  knowledge: { s: 8.3, z: -1.56, r: 26.6, estimated: false }  # 전문 지식
+  reasoning: { s: 8.4, z: -1.33, r: 30.0, estimated: false }  # 추론
+  coding: { s: 3.3, z: -1.81, r: 22.8, estimated: false }  # 코딩
   agentic: { s: 6.6, z: -1.15, r: 32.7, estimated: false }  # 에이전트
   trust: { s: 23.5, z: -0.2, r: 47.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — LFM2 1.2B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-14
-timestamp: 2026-07-14T00:00:00Z
+updated: 2026-07-15
+timestamp: 2026-07-15T00:00:00Z
 ---
 
 # LFM2 1.2B
@@ -43,9 +43,9 @@ Liquid AI · Open · Tiny(1.17B) · 컨텍스트 32k · 종합지능 **1.0** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 26.7 | -1.56 | 실측 | [[aa-omniscience]] 4.0%×1.0, [[gpqa-diamond]] 23.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
-| 추론 | 30.1 | -1.33 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 23.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 22.9 | -1.81 | 실측 | [[scicode]] 3.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
+| 전문 지식 | 26.6 | -1.56 | 실측 | [[aa-omniscience]] 4.0%×1.0, [[gpqa-diamond]] 23.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 추론 | 30.0 | -1.33 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 23.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
+| 코딩 | 22.8 | -1.81 | 실측 | [[scicode]] 3.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 32.7 | -1.15 | 실측 | [[tau2-bench]] 13.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | 47.0 | -0.2 | 실측 | [[aa-omniscience]] 21.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

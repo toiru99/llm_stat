@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 42.2, z: 0.09, r: 51.3, estimated: false }  # 전문 지식
-  reasoning: { s: 28.8, z: -0.24, r: 46.3, estimated: false }  # 추론
+  reasoning: { s: 28.8, z: -0.25, r: 46.3, estimated: false }  # 추론
   coding: { s: 48.6, z: 0.11, r: 51.6, estimated: false }  # 코딩
   agentic: { s: 51.3, z: 0.59, r: 58.9, estimated: false }  # 에이전트
   trust: { s: 23.5, z: -0.2, r: 47.0, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok Code Fast 1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-14
-timestamp: 2026-07-14T00:00:00Z
+updated: 2026-07-15
+timestamp: 2026-07-15T00:00:00Z
 ---
 
 # Grok Code Fast 1
@@ -44,7 +44,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **22.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 51.3 | +0.09 | 실측 | [[aa-omniscience]] 24.0%×1.0, [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
-| 추론 | 46.3 | -0.24 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
+| 추론 | 46.3 | -0.25 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
 | 코딩 | 51.6 | +0.11 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
 | 에이전트 | 58.9 | +0.59 | 실측 | [[tau2-bench]] 76.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
 | 신뢰성 | 47.0 | -0.2 | 실측 | [[aa-omniscience]] 21.0%×1.0 |

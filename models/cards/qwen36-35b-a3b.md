@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 32.0
 price_blended_usd_1m: 0.37
-output_speed_tps: 168.0
+output_speed_tps: 147.0
 context_window: 262000
 status: current
 size_class: Small
@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 41.5, z: 0.43, r: 56.4, estimated: false }  # 추론
   coding: { s: 57.7, z: 0.49, r: 57.4, estimated: false }  # 코딩
   agentic: { s: 54.8, z: 0.73, r: 60.9, estimated: false }  # 에이전트
-  trust: { s: 57.6, z: 1.41, r: 71.1, estimated: false }  # 신뢰성
+  trust: { s: 57.6, z: 1.41, r: 71.2, estimated: false }  # 신뢰성
   multimodal: { s: 87.0, z: 0.74, r: 61.1, estimated: false }  # 멀티모달
   long_context: { s: 84.2, z: 1.06, r: 65.9, estimated: false }  # 긴문맥
-  instruction: { s: 73.2, z: 0.87, r: 63.0, estimated: false }  # 지시 따르기
+  instruction: { s: 73.2, z: 0.86, r: 63.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.6 35B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-14
-timestamp: 2026-07-14T00:00:00Z
+updated: 2026-07-15
+timestamp: 2026-07-15T00:00:00Z
 ---
 
 # Qwen3.6 35B A3B
@@ -37,7 +37,7 @@ Alibaba · Open · Small(36B) · 컨텍스트 262k · 종합지능 **32.0**
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.25 · 출력 $1.49 · 혼합 $0.37/1M · 168.0 t/s · TTFT 2.29s · 262k ctx` · 가성비 86.5
+`입력 $0.25 · 출력 $1.49 · 혼합 $0.37/1M · 147.0 t/s · TTFT 2.28s · 262k ctx` · 가성비 86.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,10 +47,10 @@ Alibaba · Open · Small(36B) · 컨텍스트 262k · 종합지능 **32.0**
 | 추론 | 56.4 | +0.43 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 84.0%×1.0, [[humanitys-last-exam]] 20.0%×1.0 |
 | 코딩 | 57.4 | +0.49 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 35.0%×0.5 |
 | 에이전트 | 60.9 | +0.73 | 실측 | [[gdpval]] 27.0%×1.0, [[tau2-bench]] 95.0%×1.0, [[tau3-banking]] 9.0%×1.0, [[terminal-bench]] 35.0%×1.0 |
-| 신뢰성 | 71.1 | +1.41 | 실측 | [[aa-omniscience]] 50.0%×1.0 |
+| 신뢰성 | 71.2 | +1.41 | 실측 | [[aa-omniscience]] 50.0%×1.0 |
 | 멀티모달 | 61.1 | +0.74 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
 | 긴문맥 | 65.9 | +1.06 | 실측 | [[aa-lcr]] 64.0%×1.0 |
-| 지시 따르기 | 63.0 | +0.87 | 실측 | [[ifbench]] 64.0%×1.0 |
+| 지시 따르기 | 63.0 | +0.86 | 실측 | [[ifbench]] 64.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

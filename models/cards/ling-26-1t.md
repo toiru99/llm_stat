@@ -12,8 +12,8 @@ size_class: Large
 params_b: 1026
 is_reasoning: false
 radar:
-  knowledge: { s: 40.2, z: -0.01, r: 49.9, estimated: false }  # 전문 지식
-  reasoning: { s: 30.3, z: -0.17, r: 47.5, estimated: false }  # 추론
+  knowledge: { s: 40.2, z: -0.01, r: 49.8, estimated: false }  # 전문 지식
+  reasoning: { s: 30.3, z: -0.17, r: 47.4, estimated: false }  # 추론
   coding: { s: 56.8, z: 0.45, r: 56.8, estimated: false }  # 코딩
   agentic: { s: 68.9, z: 1.28, r: 69.2, estimated: false }  # 에이전트
   trust: { s: 8.2, z: -0.92, r: 36.2, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling-2.6-1T
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-14
-timestamp: 2026-07-14T00:00:00Z
+updated: 2026-07-15
+timestamp: 2026-07-15T00:00:00Z
 ---
 
 # Ling-2.6-1T
@@ -43,8 +43,8 @@ InclusionAI · Open · Large(1026B) · 컨텍스트 262k · 종합지능 **26.0*
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 49.9 | -0.01 | 실측 | [[aa-omniscience]] 21.0%×1.0, [[gpqa-diamond]] 75.0%×0.4, [[humanitys-last-exam]] 8.0%×0.3 |
-| 추론 | 47.5 | -0.17 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 75.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
+| 전문 지식 | 49.8 | -0.01 | 실측 | [[aa-omniscience]] 21.0%×1.0, [[gpqa-diamond]] 75.0%×0.4, [[humanitys-last-exam]] 8.0%×0.3 |
+| 추론 | 47.4 | -0.17 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 75.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
 | 코딩 | 56.8 | +0.45 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 31.0%×0.5 |
 | 에이전트 | 69.2 | +1.28 | 실측 | [[tau2-bench]] 90.0%×1.0, [[terminal-bench]] 31.0%×1.0 |
 | 신뢰성 | 36.2 | -0.92 | 실측 | [[aa-omniscience]] 8.0%×1.0 |

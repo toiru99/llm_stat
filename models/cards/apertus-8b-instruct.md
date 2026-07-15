@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 14.7, z: -1.25, r: 31.3, estimated: false }  # 전문 지식
   reasoning: { s: 8.9, z: -1.3, r: 30.5, estimated: false }  # 추론
-  coding: { s: 4.4, z: -1.76, r: 23.6, estimated: false }  # 코딩
+  coding: { s: 4.4, z: -1.76, r: 23.5, estimated: false }  # 코딩
   agentic: { s: 5.6, z: -1.19, r: 32.1, estimated: false }  # 에이전트
   trust: { s: 4.7, z: -1.09, r: 33.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Apertus 8B Instruct
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-14
-timestamp: 2026-07-14T00:00:00Z
+updated: 2026-07-15
+timestamp: 2026-07-15T00:00:00Z
 ---
 
 # Apertus 8B Instruct
@@ -45,7 +45,7 @@ Swiss AI Initiative · Open · Small(8B) · 컨텍스트 65k · 종합지능 **1
 |---|---|---|---|---|
 | 전문 지식 | 31.3 | -1.25 | 실측 | [[aa-omniscience]] 10.0%×1.0, [[gpqa-diamond]] 26.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 30.5 | -1.3 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 26.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 23.6 | -1.76 | 실측 | [[scicode]] 4.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
+| 코딩 | 23.5 | -1.76 | 실측 | [[scicode]] 4.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 32.1 | -1.19 | 실측 | [[tau2-bench]] 11.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | 33.7 | -1.09 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

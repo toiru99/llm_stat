@@ -12,8 +12,8 @@ size_class: Small
 params_b: 24
 is_reasoning: false
 radar:
-  knowledge: { s: 21.5, z: -0.91, r: 36.3, estimated: false }  # 전문 지식
-  reasoning: { s: 19.6, z: -0.74, r: 39.0, estimated: false }  # 추론
+  knowledge: { s: 21.5, z: -0.92, r: 36.2, estimated: false }  # 전문 지식
+  reasoning: { s: 19.6, z: -0.74, r: 38.9, estimated: false }  # 추론
   coding: { s: 38.3, z: -0.33, r: 45.1, estimated: false }  # 코딩
   agentic: { s: 17.2, z: -0.74, r: 38.9, estimated: true }  # 에이전트
   trust: { s: 26.5, z: -0.06, r: 49.1, estimated: true }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepHermes 3 - Mistral 24B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-14
-timestamp: 2026-07-14T00:00:00Z
+updated: 2026-07-15
+timestamp: 2026-07-15T00:00:00Z
 ---
 
 # DeepHermes 3 - Mistral 24B
@@ -43,8 +43,8 @@ Nous Research · Open · Small(24B) · 컨텍스트 32k · 종합지능 **5.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 36.3 | -0.91 | 실측 | [[gpqa-diamond]] 38.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 39.0 | -0.74 | 실측 | [[gpqa-diamond]] 38.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 전문 지식 | 36.2 | -0.92 | 실측 | [[gpqa-diamond]] 38.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 38.9 | -0.74 | 실측 | [[gpqa-diamond]] 38.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 45.1 | -0.33 | 실측 | [[scicode]] 23.0%×1.0 |
 | 에이전트 | 38.9 | -0.74 | 추정 | (추정) |
 | 신뢰성 | 49.1 | -0.06 | 추정 | (추정) |

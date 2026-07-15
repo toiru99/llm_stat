@@ -5,14 +5,14 @@ creator: Z AI
 license: Open
 intelligence_index: 23.0
 price_blended_usd_1m: 0.1
-output_speed_tps: 94.0
+output_speed_tps: 93.0
 context_window: 200000
 status: past
 size_class: Small
 params_b: 31.2
 is_reasoning: false
 radar:
-  knowledge: { s: 30.2, z: -0.49, r: 42.6, estimated: false }  # 전문 지식
+  knowledge: { s: 30.2, z: -0.5, r: 42.6, estimated: false }  # 전문 지식
   reasoning: { s: 22.9, z: -0.56, r: 41.6, estimated: false }  # 추론
   coding: { s: 48.9, z: 0.12, r: 51.8, estimated: false }  # 코딩
   agentic: { s: 66.7, z: 1.19, r: 67.9, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.7-Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-14
-timestamp: 2026-07-14T00:00:00Z
+updated: 2026-07-15
+timestamp: 2026-07-15T00:00:00Z
 ---
 
 # GLM-4.7-Flash
@@ -37,13 +37,13 @@ Z AI · Open · Small(31.2B) · 컨텍스트 200k · 종합지능 **23.0** · �
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $0.07 · 출력 $0.4 · 혼합 $0.1/1M · 94.0 t/s · TTFT 1.35s · 200k ctx` · 가성비 230.0
+`입력 $0.07 · 출력 $0.4 · 혼합 $0.1/1M · 93.0 t/s · TTFT 1.49s · 200k ctx` · 가성비 230.0
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 42.6 | -0.49 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 58.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
+| 전문 지식 | 42.6 | -0.5 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 58.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
 | 추론 | 41.6 | -0.56 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 58.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
 | 코딩 | 51.8 | +0.12 | 실측 | [[scicode]] 34.0%×1.0, [[terminal-bench]] 22.0%×0.5 |
 | 에이전트 | 67.9 | +1.19 | 실측 | [[tau2-bench]] 99.0%×1.0, [[terminal-bench]] 22.0%×1.0 |

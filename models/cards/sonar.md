@@ -18,14 +18,14 @@ radar:
   agentic: { s: 31.1, z: -0.2, r: 47.1, estimated: true }  # 에이전트
   trust: { s: 24.6, z: -0.15, r: 47.7, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 45.1, z: -0.1, r: 48.6, estimated: true }  # 긴문맥
-  instruction: { s: 48.0, z: -0.17, r: 47.4, estimated: true }  # 지시 따르기
+  long_context: { s: 45.1, z: -0.1, r: 48.5, estimated: true }  # 긴문맥
+  instruction: { s: 50.2, z: -0.08, r: 48.7, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Sonar
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-14
-timestamp: 2026-07-14T00:00:00Z
+updated: 2026-07-15
+timestamp: 2026-07-15T00:00:00Z
 ---
 
 # Sonar
@@ -33,7 +33,7 @@ timestamp: 2026-07-14T00:00:00Z
 Perplexity · Proprietary · Unknown · 컨텍스트 127k · 종합지능 **10.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 긴문맥, 신뢰성
+- **강점**: 지시 따르기, 긴문맥
 - **약점**: 코딩, 전문 지식
 
 ## 실용 지표
@@ -49,8 +49,8 @@ Perplexity · Proprietary · Unknown · 컨텍스트 127k · 종합지능 **10.0
 | 에이전트 | 47.1 | -0.2 | 추정 | (추정) |
 | 신뢰성 | 47.7 | -0.15 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 48.6 | -0.1 | 추정 | (추정) |
-| 지시 따르기 | 47.4 | -0.17 | 추정 | (추정) |
+| 긴문맥 | 48.5 | -0.1 | 추정 | (추정) |
+| 지시 따르기 | 48.7 | -0.08 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

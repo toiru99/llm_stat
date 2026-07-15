@@ -12,7 +12,7 @@ size_class: Small
 params_b: 7
 is_reasoning: false
 radar:
-  knowledge: { s: 13.0, z: -1.33, r: 30.1, estimated: false }  # 전문 지식
+  knowledge: { s: 13.0, z: -1.33, r: 30.0, estimated: false }  # 전문 지식
   reasoning: { s: 12.5, z: -1.11, r: 33.4, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.95, r: 20.7, estimated: false }  # 코딩
   agentic: { s: 9.2, z: -1.05, r: 34.2, estimated: true }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 2 Chat 7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-14
-timestamp: 2026-07-14T00:00:00Z
+updated: 2026-07-15
+timestamp: 2026-07-15T00:00:00Z
 ---
 
 # Llama 2 Chat 7B
@@ -43,7 +43,7 @@ Meta · Open · Small(7B) · 컨텍스트 4k · 종합지능 **4.0** · ⚠️ p
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 30.1 | -1.33 | 실측 | [[gpqa-diamond]] 23.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 전문 지식 | 30.0 | -1.33 | 실측 | [[gpqa-diamond]] 23.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 33.4 | -1.11 | 실측 | [[gpqa-diamond]] 23.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 20.7 | -1.95 | 실측 | [[scicode]] 0.0%×1.0 |
 | 에이전트 | 34.2 | -1.05 | 추정 | (추정) |

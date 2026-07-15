@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 17.4, z: -1.11, r: 33.3, estimated: false }  # 전문 지식
   reasoning: { s: 16.0, z: -0.93, r: 36.1, estimated: false }  # 추론
   coding: { s: 30.0, z: -0.68, r: 39.8, estimated: false }  # 코딩
-  agentic: { s: 13.6, z: -0.88, r: 36.9, estimated: true }  # 에이전트
+  agentic: { s: 13.6, z: -0.88, r: 36.8, estimated: true }  # 에이전트
   trust: { s: 41.8, z: 0.66, r: 59.9, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 15.0, z: -0.99, r: 35.2, estimated: true }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 1.5 Flash (May)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-14
-timestamp: 2026-07-14T00:00:00Z
+updated: 2026-07-15
+timestamp: 2026-07-15T00:00:00Z
 ---
 
 # Gemini 1.5 Flash (May)
@@ -46,7 +46,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **5.0** · �
 | 전문 지식 | 33.3 | -1.11 | 실측 | [[gpqa-diamond]] 32.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 36.1 | -0.93 | 실측 | [[gpqa-diamond]] 32.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 39.8 | -0.68 | 실측 | [[scicode]] 18.0%×1.0 |
-| 에이전트 | 36.9 | -0.88 | 추정 | (추정) |
+| 에이전트 | 36.8 | -0.88 | 추정 | (추정) |
 | 신뢰성 | 59.9 | +0.66 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 35.2 | -0.99 | 추정 | (추정) |

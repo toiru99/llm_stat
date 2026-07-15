@@ -19,13 +19,13 @@ radar:
   trust: { s: 10.6, z: -0.81, r: 37.8, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.43, r: 28.5, estimated: false }  # 긴문맥
-  instruction: { s: 25.4, z: -1.1, r: 33.5, estimated: false }  # 지시 따르기
+  instruction: { s: 25.4, z: -1.11, r: 33.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Reka Flash 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-14
-timestamp: 2026-07-14T00:00:00Z
+updated: 2026-07-15
+timestamp: 2026-07-15T00:00:00Z
 ---
 
 # Reka Flash 3
@@ -50,7 +50,7 @@ Reka AI · Open · Small(21B) · 컨텍스트 128k · 종합지능 **4.0**
 | 신뢰성 | 37.8 | -0.81 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.5 | -1.43 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 33.5 | -1.1 | 실측 | [[ifbench]] 30.0%×1.0 |
+| 지시 따르기 | 33.4 | -1.11 | 실측 | [[ifbench]] 30.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

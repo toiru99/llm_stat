@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 28.0, z: -0.6, r: 41.0, estimated: false }  # 전문 지식
   reasoning: { s: 19.4, z: -0.75, r: 38.8, estimated: false }  # 추론
-  coding: { s: 27.0, z: -0.81, r: 37.9, estimated: false }  # 코딩
+  coding: { s: 27.0, z: -0.81, r: 37.8, estimated: false }  # 코딩
   agentic: { s: 14.4, z: -0.85, r: 37.3, estimated: false }  # 에이전트
   trust: { s: 27.1, z: -0.03, r: 49.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — K2-V2 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-14
-timestamp: 2026-07-14T00:00:00Z
+updated: 2026-07-15
+timestamp: 2026-07-15T00:00:00Z
 ---
 
 # K2-V2 (low)
@@ -45,7 +45,7 @@ MBZUAI Institute of Foundation Models · Open · Medium(70B) · 컨텍스트 512
 |---|---|---|---|---|
 | 전문 지식 | 41.0 | -0.6 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 54.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 38.8 | -0.75 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 54.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 37.9 | -0.81 | 실측 | [[scicode]] 22.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
+| 코딩 | 37.8 | -0.81 | 실측 | [[scicode]] 22.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
 | 에이전트 | 37.3 | -0.85 | 실측 | [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
 | 신뢰성 | 49.5 | -0.03 | 실측 | [[aa-omniscience]] 24.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

@@ -12,7 +12,7 @@ size_class: Small
 params_b: 31.6
 is_reasoning: true
 radar:
-  knowledge: { s: 37.2, z: -0.15, r: 47.7, estimated: false }  # 전문 지식
+  knowledge: { s: 37.2, z: -0.16, r: 47.7, estimated: false }  # 전문 지식
   reasoning: { s: 33.0, z: -0.03, r: 49.6, estimated: false }  # 추론
   coding: { s: 40.4, z: -0.24, r: 46.4, estimated: false }  # 코딩
   agentic: { s: 20.2, z: -0.62, r: 40.7, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — NVIDIA Nemotron 3 Nano
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-14
-timestamp: 2026-07-14T00:00:00Z
+updated: 2026-07-15
+timestamp: 2026-07-15T00:00:00Z
 ---
 
 # NVIDIA Nemotron 3 Nano
@@ -37,13 +37,13 @@ NVIDIA · Open · Small(31.6B) · 컨텍스트 1M · 종합지능 **14.0**
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.2 · 혼합 $0.07/1M · 100.0 t/s · TTFT 1.4s · 1M ctx` · 가성비 200.0
+`입력 $0.05 · 출력 $0.2 · 혼합 $0.07/1M · 100.0 t/s · TTFT 1.36s · 1M ctx` · 가성비 200.0
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 47.7 | -0.15 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 76.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
+| 전문 지식 | 47.7 | -0.16 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 76.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
 | 추론 | 49.6 | -0.03 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
 | 코딩 | 46.4 | -0.24 | 실측 | [[scicode]] 30.0%×1.0, [[terminal-bench]] 14.0%×0.5 |
 | 에이전트 | 40.7 | -0.62 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 41.0%×1.0, [[tau3-banking]] 6.0%×1.0, [[terminal-bench]] 14.0%×1.0 |

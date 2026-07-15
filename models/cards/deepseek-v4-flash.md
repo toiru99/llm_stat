@@ -5,16 +5,16 @@ creator: DeepSeek
 license: Open
 intelligence_index: 29.0
 price_blended_usd_1m: 0.06
-output_speed_tps: 104.0
+output_speed_tps: 105.0
 context_window: 1000000
 status: current
 size_class: Large
 params_b: 284
 is_reasoning: false
 radar:
-  knowledge: { s: 43.9, z: 0.17, r: 52.6, estimated: false }  # 전문 지식
+  knowledge: { s: 43.9, z: 0.17, r: 52.5, estimated: false }  # 전문 지식
   reasoning: { s: 28.4, z: -0.27, r: 46.0, estimated: false }  # 추론
-  coding: { s: 58.3, z: 0.52, r: 57.8, estimated: false }  # 코딩
+  coding: { s: 58.3, z: 0.52, r: 57.7, estimated: false }  # 코딩
   agentic: { s: 73.2, z: 1.45, r: 71.7, estimated: false }  # 에이전트
   trust: { s: 4.7, z: -1.09, r: 33.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-14
-timestamp: 2026-07-14T00:00:00Z
+updated: 2026-07-15
+timestamp: 2026-07-15T00:00:00Z
 ---
 
 # DeepSeek V4 Flash
@@ -37,15 +37,15 @@ DeepSeek · Open · Large(284B) · 컨텍스트 1M · 종합지능 **29.0**
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $0.14 · 출력 $0.28 · 혼합 $0.06/1M · 104.0 t/s · TTFT 1.2s · 1M ctx` · 가성비 483.3
+`입력 $0.14 · 출력 $0.28 · 혼합 $0.06/1M · 105.0 t/s · TTFT 1.23s · 1M ctx` · 가성비 483.3
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 52.6 | +0.17 | 실측 | [[aa-omniscience]] 26.0%×1.0, [[gpqa-diamond]] 72.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
+| 전문 지식 | 52.5 | +0.17 | 실측 | [[aa-omniscience]] 26.0%×1.0, [[gpqa-diamond]] 72.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
 | 추론 | 46.0 | -0.27 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 72.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
-| 코딩 | 57.8 | +0.52 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 34.0%×0.5 |
+| 코딩 | 57.7 | +0.52 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 34.0%×0.5 |
 | 에이전트 | 71.7 | +1.45 | 실측 | [[tau2-bench]] 94.0%×1.0, [[terminal-bench]] 34.0%×1.0 |
 | 신뢰성 | 33.7 | -1.09 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

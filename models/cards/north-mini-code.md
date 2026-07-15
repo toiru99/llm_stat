@@ -5,7 +5,7 @@ creator: Cohere
 license: Open
 intelligence_index: 21.0
 price_blended_usd_1m: 0.0
-output_speed_tps: 115.0
+output_speed_tps: 101.0
 context_window: 256000
 status: current
 size_class: Small
@@ -18,14 +18,14 @@ radar:
   agentic: { s: 29.2, z: -0.27, r: 45.9, estimated: false }  # 에이전트
   trust: { s: 18.8, z: -0.42, r: 43.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 42.1, z: -0.18, r: 47.2, estimated: false }  # 긴문맥
+  long_context: { s: 42.1, z: -0.19, r: 47.2, estimated: false }  # 긴문맥
   instruction: { s: 64.8, z: 0.52, r: 57.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — North Mini Code
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-14
-timestamp: 2026-07-14T00:00:00Z
+updated: 2026-07-15
+timestamp: 2026-07-15T00:00:00Z
 ---
 
 # North Mini Code
@@ -37,7 +37,7 @@ Cohere · Open · Small(30B) · 컨텍스트 256k · 종합지능 **21.0**
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0.0/1M · 115.0 t/s · TTFT 0.31s · 256k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0.0/1M · 101.0 t/s · TTFT 0.31s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ Cohere · Open · Small(30B) · 컨텍스트 256k · 종합지능 **21.0**
 | 에이전트 | 45.9 | -0.27 | 실측 | [[gdpval]] 2.0%×1.0, [[tau2-bench]] 37.0%×1.0, [[terminal-bench]] 31.0%×1.0 |
 | 신뢰성 | 43.7 | -0.42 | 실측 | [[aa-omniscience]] 17.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 47.2 | -0.18 | 실측 | [[aa-lcr]] 32.0%×1.0 |
+| 긴문맥 | 47.2 | -0.19 | 실측 | [[aa-lcr]] 32.0%×1.0 |
 | 지시 따르기 | 57.8 | +0.52 | 실측 | [[ifbench]] 58.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

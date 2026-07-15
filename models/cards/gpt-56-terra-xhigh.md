@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 79.1, z: 1.87, r: 78.1, estimated: false }  # 전문 지식
   reasoning: { s: 85.3, z: 2.74, r: 91.1, estimated: false }  # 추론
   coding: { s: 89.6, z: 1.84, r: 77.6, estimated: false }  # 코딩
-  agentic: { s: 83.7, z: 1.86, r: 77.8, estimated: false }  # 에이전트
+  agentic: { s: 83.7, z: 1.86, r: 77.9, estimated: false }  # 에이전트
   trust: { s: 14.1, z: -0.64, r: 40.3, estimated: false }  # 신뢰성
   multimodal: { s: 92.8, z: 1.02, r: 65.3, estimated: false }  # 멀티모달
   long_context: { s: 93.4, z: 1.33, r: 70.0, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Terra (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-14
-timestamp: 2026-07-14T00:00:00Z
+updated: 2026-07-15
+timestamp: 2026-07-15T00:00:00Z
 ---
 
 # GPT-5.6 Terra (xhigh)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **52.0**
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $2.5 · 출력 $15.0 · 혼합 $2.17/1M · 125.0 t/s · TTFT 19.46s · 1M ctx` · 가성비 24.0
+`입력 $2.5 · 출력 $15.0 · 혼합 $2.17/1M · 125.0 t/s · TTFT 16.24s · 1M ctx` · 가성비 24.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **52.0**
 | 전문 지식 | 78.1 | +1.87 | 실측 | [[aa-omniscience]] 45.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 40.0%×0.3 |
 | 추론 | 91.1 | +2.74 | 실측 | [[critpt]] 27.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 40.0%×1.0 |
 | 코딩 | 77.6 | +1.84 | 실측 | [[scicode]] 52.0%×1.0, [[terminal-bench]] 63.0%×0.5 |
-| 에이전트 | 77.8 | +1.86 | 실측 | [[gdpval]] 54.0%×1.0, [[tau2-bench]] 80.0%×1.0, [[tau3-banking]] 24.0%×1.0, [[terminal-bench]] 63.0%×1.0 |
+| 에이전트 | 77.9 | +1.86 | 실측 | [[gdpval]] 54.0%×1.0, [[tau2-bench]] 80.0%×1.0, [[tau3-banking]] 24.0%×1.0, [[terminal-bench]] 63.0%×1.0 |
 | 신뢰성 | 40.3 | -0.64 | 실측 | [[aa-omniscience]] 13.0%×1.0 |
 | 멀티모달 | 65.3 | +1.02 | 실측 | [[mmmu-pro]] 79.0%×1.0 |
 | 긴문맥 | 70.0 | +1.33 | 실측 | [[aa-lcr]] 71.0%×1.0 |
