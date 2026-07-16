@@ -8,29 +8,29 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 32800
 status: current
-size_class: Tiny
-params_b: 0.34
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 9.1, z: -1.52, r: 27.2, estimated: false }  # 전문 지식
   reasoning: { s: 9.6, z: -1.27, r: 31.0, estimated: false }  # 추론
   coding: { s: 2.2, z: -1.86, r: 22.1, estimated: false }  # 코딩
   agentic: { s: 7.6, z: -1.11, r: 33.3, estimated: false }  # 에이전트
-  trust: { s: 5.9, z: -1.03, r: 34.5, estimated: false }  # 신뢰성
+  trust: { s: 5.9, z: -1.04, r: 34.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.43, r: 28.5, estimated: false }  # 긴문맥
-  instruction: { s: 8.5, z: -1.8, r: 23.0, estimated: false }  # 지시 따르기
+  instruction: { s: 8.5, z: -1.8, r: 22.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.0 H 350M
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-15
-timestamp: 2026-07-15T00:00:00Z
+updated: 2026-07-16
+timestamp: 2026-07-16T00:00:00Z
 ---
 
 # Granite 4.0 H 350M
 
-IBM · Open · Tiny(0.34B) · 컨텍스트 32k · 종합지능 **1.0**
+IBM · Open · Unknown · 컨텍스트 32k · 종합지능 **1.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 에이전트
@@ -47,10 +47,10 @@ IBM · Open · Tiny(0.34B) · 컨텍스트 32k · 종합지능 **1.0**
 | 추론 | 31.0 | -1.27 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 26.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 22.1 | -1.86 | 실측 | [[scicode]] 2.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 33.3 | -1.11 | 실측 | [[tau2-bench]] 15.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 34.5 | -1.03 | 실측 | [[aa-omniscience]] 6.0%×1.0 |
+| 신뢰성 | 34.5 | -1.04 | 실측 | [[aa-omniscience]] 6.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.5 | -1.43 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 23.0 | -1.8 | 실측 | [[ifbench]] 18.0%×1.0 |
+| 지시 따르기 | 22.9 | -1.8 | 실측 | [[ifbench]] 18.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

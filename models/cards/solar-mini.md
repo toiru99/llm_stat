@@ -8,12 +8,12 @@ price_blended_usd_1m: 0.15
 output_speed_tps: None
 context_window: 4100
 status: past
-size_class: Small
-params_b: 10.7
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 29.9, z: -0.51, r: 42.3, estimated: true }  # 전문 지식
-  reasoning: { s: 23.3, z: -0.54, r: 41.9, estimated: true }  # 추론
+  reasoning: { s: 23.3, z: -0.54, r: 41.8, estimated: true }  # 추론
   coding: { s: 36.0, z: -0.43, r: 43.6, estimated: true }  # 코딩
   agentic: { s: 20.2, z: -0.62, r: 40.7, estimated: false }  # 에이전트
   trust: { s: 28.5, z: 0.03, r: 50.5, estimated: true }  # 신뢰성
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-15
-timestamp: 2026-07-15T00:00:00Z
+updated: 2026-07-16
+timestamp: 2026-07-16T00:00:00Z
 ---
 
 # Solar Mini
 
-Upstage · Open · Small(10.7B) · 컨텍스트 4k · 종합지능 **6.0** · ⚠️ past(구세대)
+Upstage · Open · Unknown · 컨텍스트 4k · 종합지능 **6.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 코딩
@@ -44,7 +44,7 @@ Upstage · Open · Small(10.7B) · 컨텍스트 4k · 종합지능 **6.0** · �
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 42.3 | -0.51 | 추정 | (추정) |
-| 추론 | 41.9 | -0.54 | 추정 | (추정) |
+| 추론 | 41.8 | -0.54 | 추정 | (추정) |
 | 코딩 | 43.6 | -0.43 | 추정 | (추정) |
 | 에이전트 | 40.7 | -0.62 | 실측 | [[tau2-bench]] 20.0%×1.0 |
 | 신뢰성 | 50.5 | +0.03 | 추정 | (추정) |

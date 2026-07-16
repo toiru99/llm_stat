@@ -8,8 +8,8 @@ price_blended_usd_1m: 1.03
 output_speed_tps: None
 context_window: 65500
 status: current
-size_class: Medium
-params_b: 70
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 17.9, z: -1.09, r: 33.6, estimated: false }  # 전문 지식
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Apertus 70B Instruct
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-15
-timestamp: 2026-07-15T00:00:00Z
+updated: 2026-07-16
+timestamp: 2026-07-16T00:00:00Z
 ---
 
 # Apertus 70B Instruct
 
-Swiss AI Initiative · Open · Medium(70B) · 컨텍스트 65k · 종합지능 **2.0**
+Swiss AI Initiative · Open · Unknown · 컨텍스트 65k · 종합지능 **2.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 전문 지식

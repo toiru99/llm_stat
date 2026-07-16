@@ -8,29 +8,29 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 65500
 status: past
-size_class: Small
-params_b: 32.2
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 28.7, z: -0.57, r: 41.5, estimated: false }  # 전문 지식
   reasoning: { s: 23.4, z: -0.53, r: 42.0, estimated: false }  # 추론
   coding: { s: 33.2, z: -0.55, r: 41.8, estimated: false }  # 코딩
-  agentic: { s: 1.5, z: -1.35, r: 29.8, estimated: false }  # 에이전트
+  agentic: { s: 1.5, z: -1.35, r: 29.7, estimated: false }  # 에이전트
   trust: { s: 16.5, z: -0.53, r: 42.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.43, r: 28.5, estimated: false }  # 긴문맥
-  instruction: { s: 52.1, z: -0.0, r: 49.9, estimated: false }  # 지시 따르기
+  instruction: { s: 52.1, z: -0.01, r: 49.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Olmo 3 32B Think
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-15
-timestamp: 2026-07-15T00:00:00Z
+updated: 2026-07-16
+timestamp: 2026-07-16T00:00:00Z
 ---
 
 # Olmo 3 32B Think
 
-Allen Institute for AI · Open · Small(32.2B) · 컨텍스트 65k · 종합지능 **6.0** · ⚠️ past(구세대)
+Allen Institute for AI · Open · Unknown · 컨텍스트 65k · 종합지능 **6.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 추론
@@ -46,11 +46,11 @@ Allen Institute for AI · Open · Small(32.2B) · 컨텍스트 65k · 종합지�
 | 전문 지식 | 41.5 | -0.57 | 실측 | [[aa-omniscience]] 14.0%×1.0, [[gpqa-diamond]] 61.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 42.0 | -0.53 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 61.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 41.8 | -0.55 | 실측 | [[scicode]] 29.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 29.8 | -1.35 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 에이전트 | 29.7 | -1.35 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | 42.0 | -0.53 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.5 | -1.43 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 49.9 | +-0.0 | 실측 | [[ifbench]] 49.0%×1.0 |
+| 지시 따르기 | 49.9 | -0.01 | 실측 | [[ifbench]] 49.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

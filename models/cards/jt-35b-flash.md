@@ -8,13 +8,13 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 256000
 status: current
-size_class: Small
-params_b: 35
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 45.7, z: 0.25, r: 53.8, estimated: false }  # 전문 지식
   reasoning: { s: 32.2, z: -0.07, r: 48.9, estimated: false }  # 추론
-  coding: { s: 46.9, z: 0.03, r: 50.5, estimated: false }  # 코딩
+  coding: { s: 46.9, z: 0.03, r: 50.4, estimated: false }  # 코딩
   agentic: { s: 72.0, z: 1.4, r: 71.0, estimated: false }  # 에이전트
   trust: { s: 42.4, z: 0.69, r: 60.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — JT-35B-Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-15
-timestamp: 2026-07-15T00:00:00Z
+updated: 2026-07-16
+timestamp: 2026-07-16T00:00:00Z
 ---
 
 # JT-35B-Flash
 
-China Mobile · Proprietary · Small(35B) · 컨텍스트 256k · 종합지능 **28.0**
+China Mobile · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **28.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 긴문맥
@@ -45,7 +45,7 @@ China Mobile · Proprietary · Small(35B) · 컨텍스트 256k · 종합지능 *
 |---|---|---|---|---|
 | 전문 지식 | 53.8 | +0.25 | 실측 | [[aa-omniscience]] 25.0%×1.0, [[gpqa-diamond]] 83.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 48.9 | -0.07 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 83.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 50.5 | +0.03 | 실측 | [[scicode]] 29.0%×1.0, [[terminal-bench]] 29.0%×0.5 |
+| 코딩 | 50.4 | +0.03 | 실측 | [[scicode]] 29.0%×1.0, [[terminal-bench]] 29.0%×0.5 |
 | 에이전트 | 71.0 | +1.4 | 실측 | [[tau2-bench]] 99.0%×1.0, [[terminal-bench]] 29.0%×1.0 |
 | 신뢰성 | 60.3 | +0.69 | 실측 | [[aa-omniscience]] 37.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

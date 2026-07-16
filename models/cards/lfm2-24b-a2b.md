@@ -8,13 +8,13 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 32800
 status: current
-size_class: Small
-params_b: 23.8
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 16.3, z: -1.17, r: 32.4, estimated: false }  # 전문 지식
-  reasoning: { s: 16.6, z: -0.89, r: 36.6, estimated: false }  # 추론
-  coding: { s: 12.2, z: -1.44, r: 28.5, estimated: false }  # 코딩
+  reasoning: { s: 16.6, z: -0.9, r: 36.6, estimated: false }  # 추론
+  coding: { s: 12.2, z: -1.44, r: 28.4, estimated: false }  # 코딩
   agentic: { s: 5.6, z: -1.19, r: 32.1, estimated: false }  # 에이전트
   trust: { s: 34.1, z: 0.3, r: 54.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — LFM2 24B A2B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-15
-timestamp: 2026-07-15T00:00:00Z
+updated: 2026-07-16
+timestamp: 2026-07-16T00:00:00Z
 ---
 
 # LFM2 24B A2B
 
-Liquid AI · Open · Small(23.8B) · 컨텍스트 32k · 종합지능 **5.0**
+Liquid AI · Open · Unknown · 컨텍스트 32k · 종합지능 **5.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 지시 따르기
@@ -44,8 +44,8 @@ Liquid AI · Open · Small(23.8B) · 컨텍스트 32k · 종합지능 **5.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 32.4 | -1.17 | 실측 | [[aa-omniscience]] 6.0%×1.0, [[gpqa-diamond]] 47.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 36.6 | -0.89 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 47.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 28.5 | -1.44 | 실측 | [[scicode]] 11.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
+| 추론 | 36.6 | -0.9 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 47.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 28.4 | -1.44 | 실측 | [[scicode]] 11.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 32.1 | -1.19 | 실측 | [[tau2-bench]] 11.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | 54.5 | +0.3 | 실측 | [[aa-omniscience]] 30.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

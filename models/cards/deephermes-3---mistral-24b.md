@@ -8,29 +8,29 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 32000
 status: current
-size_class: Small
-params_b: 24
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 21.5, z: -0.92, r: 36.2, estimated: false }  # 전문 지식
   reasoning: { s: 19.6, z: -0.74, r: 38.9, estimated: false }  # 추론
-  coding: { s: 38.3, z: -0.33, r: 45.1, estimated: false }  # 코딩
+  coding: { s: 38.3, z: -0.33, r: 45.0, estimated: false }  # 코딩
   agentic: { s: 17.2, z: -0.74, r: 38.9, estimated: true }  # 에이전트
   trust: { s: 26.5, z: -0.06, r: 49.1, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 21.6, z: -0.79, r: 38.1, estimated: true }  # 긴문맥
-  instruction: { s: 27.9, z: -1.0, r: 35.0, estimated: true }  # 지시 따르기
+  instruction: { s: 27.9, z: -1.01, r: 34.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepHermes 3 - Mistral 24B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-15
-timestamp: 2026-07-15T00:00:00Z
+updated: 2026-07-16
+timestamp: 2026-07-16T00:00:00Z
 ---
 
 # DeepHermes 3 - Mistral 24B
 
-Nous Research · Open · Small(24B) · 컨텍스트 32k · 종합지능 **5.0**
+Nous Research · Open · Unknown · 컨텍스트 32k · 종합지능 **5.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 코딩
@@ -45,12 +45,12 @@ Nous Research · Open · Small(24B) · 컨텍스트 32k · 종합지능 **5.0**
 |---|---|---|---|---|
 | 전문 지식 | 36.2 | -0.92 | 실측 | [[gpqa-diamond]] 38.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 38.9 | -0.74 | 실측 | [[gpqa-diamond]] 38.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 45.1 | -0.33 | 실측 | [[scicode]] 23.0%×1.0 |
+| 코딩 | 45.0 | -0.33 | 실측 | [[scicode]] 23.0%×1.0 |
 | 에이전트 | 38.9 | -0.74 | 추정 | (추정) |
 | 신뢰성 | 49.1 | -0.06 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 38.1 | -0.79 | 추정 | (추정) |
-| 지시 따르기 | 35.0 | -1.0 | 추정 | (추정) |
+| 지시 따르기 | 34.9 | -1.01 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

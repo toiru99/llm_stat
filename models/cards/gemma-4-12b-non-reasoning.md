@@ -8,11 +8,11 @@ price_blended_usd_1m: 0.12
 output_speed_tps: 107.0
 context_window: 262000
 status: current
-size_class: Small
-params_b: 12
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 28.2, z: -0.59, r: 41.1, estimated: false }  # 전문 지식
+  knowledge: { s: 28.2, z: -0.6, r: 41.0, estimated: false }  # 전문 지식
   reasoning: { s: 25.4, z: -0.43, r: 43.6, estimated: false }  # 추론
   coding: { s: 38.9, z: -0.31, r: 45.4, estimated: false }  # 코딩
   agentic: { s: 24.5, z: -0.45, r: 43.2, estimated: false }  # 에이전트
@@ -24,26 +24,26 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 12B (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-15
-timestamp: 2026-07-15T00:00:00Z
+updated: 2026-07-16
+timestamp: 2026-07-16T00:00:00Z
 ---
 
 # Gemma 4 12B (Non-reasoning)
 
-Google · Open · Small(12B) · 컨텍스트 262k · 종합지능 **13.0**
+Google · Open · Unknown · 컨텍스트 262k · 종합지능 **13.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 멀티모달
 - **약점**: 에이전트, 전문 지식
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.3 · 혼합 $0.12/1M · 107.0 t/s · TTFT 2.7s · 262k ctx` · 가성비 108.3
+`입력 $0.1 · 출력 $0.3 · 혼합 $0.12/1M · 107.0 t/s · TTFT 2.74s · 262k ctx` · 가성비 108.3
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 41.1 | -0.59 | 실측 | [[aa-omniscience]] 12.0%×1.0, [[gpqa-diamond]] 66.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 전문 지식 | 41.0 | -0.6 | 실측 | [[aa-omniscience]] 12.0%×1.0, [[gpqa-diamond]] 66.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 43.6 | -0.43 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 66.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 45.4 | -0.31 | 실측 | [[scicode]] 30.0%×1.0, [[terminal-bench]] 11.0%×0.5 |
 | 에이전트 | 43.2 | -0.45 | 실측 | [[tau2-bench]] 32.0%×1.0, [[terminal-bench]] 11.0%×1.0 |

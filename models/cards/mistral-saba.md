@@ -8,11 +8,11 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 32000
 status: past
-size_class: Small
-params_b: 24
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 24.2, z: -0.78, r: 38.2, estimated: false }  # 전문 지식
+  knowledge: { s: 24.2, z: -0.79, r: 38.2, estimated: false }  # 전문 지식
   reasoning: { s: 21.9, z: -0.61, r: 40.8, estimated: false }  # 추론
   coding: { s: 40.0, z: -0.26, r: 46.1, estimated: false }  # 코딩
   agentic: { s: 19.4, z: -0.65, r: 40.2, estimated: true }  # 에이전트
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Saba
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-15
-timestamp: 2026-07-15T00:00:00Z
+updated: 2026-07-16
+timestamp: 2026-07-16T00:00:00Z
 ---
 
 # Mistral Saba
 
-Mistral · Proprietary · Small(24B) · 컨텍스트 32k · 종합지능 **6.0** · ⚠️ past(구세대)
+Mistral · Proprietary · Unknown · 컨텍스트 32k · 종합지능 **6.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 코딩
@@ -43,7 +43,7 @@ Mistral · Proprietary · Small(24B) · 컨텍스트 32k · 종합지능 **6.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 38.2 | -0.78 | 실측 | [[gpqa-diamond]] 42.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 전문 지식 | 38.2 | -0.79 | 실측 | [[gpqa-diamond]] 42.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 40.8 | -0.61 | 실측 | [[gpqa-diamond]] 42.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 46.1 | -0.26 | 실측 | [[scicode]] 24.0%×1.0 |
 | 에이전트 | 40.2 | -0.65 | 추정 | (추정) |

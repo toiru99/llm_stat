@@ -5,16 +5,16 @@ creator: MiniMax
 license: Open
 intelligence_index: 28.0
 price_blended_usd_1m: 0.39
-output_speed_tps: 82.0
+output_speed_tps: 79.0
 context_window: 205000
 status: past
-size_class: Large
-params_b: 230
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 43.4, z: 0.14, r: 52.1, estimated: false }  # 전문 지식
   reasoning: { s: 35.1, z: 0.08, r: 51.2, estimated: false }  # 추론
-  coding: { s: 53.1, z: 0.3, r: 54.5, estimated: false }  # 코딩
+  coding: { s: 53.1, z: 0.29, r: 54.4, estimated: false }  # 코딩
   agentic: { s: 63.6, z: 1.07, r: 66.1, estimated: false }  # 에이전트
   trust: { s: 12.9, z: -0.7, r: 39.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax-M2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-15
-timestamp: 2026-07-15T00:00:00Z
+updated: 2026-07-16
+timestamp: 2026-07-16T00:00:00Z
 ---
 
 # MiniMax-M2
 
-MiniMax · Open · Large(230B) · 컨텍스트 205k · 종합지능 **28.0** · ⚠️ past(구세대)
+MiniMax · Open · Unknown · 컨텍스트 205k · 종합지능 **28.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 에이전트
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.39/1M · 82.0 t/s · TTFT 1.81s · 205k ctx` · 가성비 71.8
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.39/1M · 79.0 t/s · TTFT 1.76s · 205k ctx` · 가성비 71.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ MiniMax · Open · Large(230B) · 컨텍스트 205k · 종합지능 **28.0** · 
 |---|---|---|---|---|
 | 전문 지식 | 52.1 | +0.14 | 실측 | [[aa-omniscience]] 22.0%×1.0, [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 12.0%×0.3 |
 | 추론 | 51.2 | +0.08 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
-| 코딩 | 54.5 | +0.3 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 26.0%×0.5 |
+| 코딩 | 54.4 | +0.29 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 26.0%×0.5 |
 | 에이전트 | 66.1 | +1.07 | 실측 | [[tau2-bench]] 87.0%×1.0, [[terminal-bench]] 26.0%×1.0 |
 | 신뢰성 | 39.5 | -0.7 | 실측 | [[aa-omniscience]] 12.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 32000
 status: current
-size_class: Tiny
-params_b: 0.268
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 4.4, z: -1.75, r: 23.8, estimated: false }  # 전문 지식
@@ -19,18 +19,18 @@ radar:
   trust: { s: 78.8, z: 2.41, r: 86.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.43, r: 28.5, estimated: false }  # 긴문맥
-  instruction: { s: 0.0, z: -2.15, r: 17.8, estimated: false }  # 지시 따르기
+  instruction: { s: 0.0, z: -2.15, r: 17.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 3 270M
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-15
-timestamp: 2026-07-15T00:00:00Z
+updated: 2026-07-16
+timestamp: 2026-07-16T00:00:00Z
 ---
 
 # Gemma 3 270M
 
-Google · Open · Tiny(0.268B) · 컨텍스트 32k · 종합지능 **2.0**
+Google · Open · Unknown · 컨텍스트 32k · 종합지능 **2.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 에이전트
@@ -50,7 +50,7 @@ Google · Open · Tiny(0.268B) · 컨텍스트 32k · 종합지능 **2.0**
 | 신뢰성 | 86.2 | +2.41 | 실측 | [[aa-omniscience]] 68.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.5 | -1.43 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 17.8 | -2.15 | 실측 | [[ifbench]] 12.0%×1.0 |
+| 지시 따르기 | 17.7 | -2.15 | 실측 | [[ifbench]] 12.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

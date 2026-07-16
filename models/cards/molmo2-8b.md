@@ -8,29 +8,29 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 36900
 status: current
-size_class: Small
-params_b: 8.66
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 20.1, z: -0.99, r: 35.2, estimated: false }  # 전문 지식
   reasoning: { s: 15.0, z: -0.98, r: 35.3, estimated: false }  # 추론
   coding: { s: 14.4, z: -1.34, r: 29.9, estimated: false }  # 코딩
-  agentic: { s: 0.0, z: -1.41, r: 28.9, estimated: false }  # 에이전트
+  agentic: { s: 0.0, z: -1.41, r: 28.8, estimated: false }  # 에이전트
   trust: { s: 9.4, z: -0.87, r: 37.0, estimated: false }  # 신뢰성
-  multimodal: { s: 31.9, z: -1.89, r: 21.6, estimated: false }  # 멀티모달
+  multimodal: { s: 31.9, z: -1.9, r: 21.5, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.43, r: 28.5, estimated: false }  # 긴문맥
   instruction: { s: 21.1, z: -1.28, r: 30.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Molmo2-8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-15
-timestamp: 2026-07-15T00:00:00Z
+updated: 2026-07-16
+timestamp: 2026-07-16T00:00:00Z
 ---
 
 # Molmo2-8B
 
-Allen Institute for AI · Open · Small(8.66B) · 컨텍스트 36k · 종합지능 **2.0**
+Allen Institute for AI · Open · Unknown · 컨텍스트 36k · 종합지능 **2.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 추론
@@ -46,9 +46,9 @@ Allen Institute for AI · Open · Small(8.66B) · 컨텍스트 36k · 종합지�
 | 전문 지식 | 35.2 | -0.99 | 실측 | [[aa-omniscience]] 11.0%×1.0, [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 35.3 | -0.98 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 29.9 | -1.34 | 실측 | [[scicode]] 13.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 28.9 | -1.41 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 에이전트 | 28.8 | -1.41 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | 37.0 | -0.87 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
-| 멀티모달 | 21.6 | -1.89 | 실측 | [[mmmu-pro]] 37.0%×1.0 |
+| 멀티모달 | 21.5 | -1.9 | 실측 | [[mmmu-pro]] 37.0%×1.0 |
 | 긴문맥 | 28.5 | -1.43 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 30.8 | -1.28 | 실측 | [[ifbench]] 27.0%×1.0 |
 

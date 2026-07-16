@@ -8,14 +8,14 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
 status: past
-size_class: Tiny
-params_b: 1.5
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 1.6, z: -1.88, r: 21.8, estimated: false }  # 전문 지식
   reasoning: { s: 1.9, z: -1.67, r: 24.9, estimated: false }  # 추론
   coding: { s: 11.7, z: -1.46, r: 28.1, estimated: false }  # 코딩
-  agentic: { s: 5.3, z: -1.2, r: 31.9, estimated: true }  # 에이전트
+  agentic: { s: 5.3, z: -1.21, r: 31.9, estimated: true }  # 에이전트
   trust: { s: 30.1, z: 0.11, r: 51.7, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.43, r: 28.5, estimated: false }  # 긴문맥
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek R1 Distill Qwen 1.5B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-15
-timestamp: 2026-07-15T00:00:00Z
+updated: 2026-07-16
+timestamp: 2026-07-16T00:00:00Z
 ---
 
 # DeepSeek R1 Distill Qwen 1.5B
 
-DeepSeek · Open · Tiny(1.5B) · 컨텍스트 128k · 종합지능 **4.0** · ⚠️ past(구세대)
+DeepSeek · Open · Unknown · 컨텍스트 128k · 종합지능 **4.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 에이전트
@@ -46,7 +46,7 @@ DeepSeek · Open · Tiny(1.5B) · 컨텍스트 128k · 종합지능 **4.0** · �
 | 전문 지식 | 21.8 | -1.88 | 실측 | [[gpqa-diamond]] 10.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
 | 추론 | 24.9 | -1.67 | 실측 | [[gpqa-diamond]] 10.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 28.1 | -1.46 | 실측 | [[scicode]] 7.0%×1.0 |
-| 에이전트 | 31.9 | -1.2 | 추정 | (추정) |
+| 에이전트 | 31.9 | -1.21 | 추정 | (추정) |
 | 신뢰성 | 51.7 | +0.11 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.5 | -1.43 | 실측 | [[aa-lcr]] 0.0%×1.0 |

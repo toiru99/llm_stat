@@ -8,12 +8,12 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 32000
 status: past
-size_class: Medium
-params_b: 110
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 22.6, z: -0.86, r: 37.0, estimated: false }  # 전문 지식
-  reasoning: { s: 22.6, z: -0.58, r: 41.4, estimated: false }  # 추론
+  knowledge: { s: 22.6, z: -0.87, r: 37.0, estimated: false }  # 전문 지식
+  reasoning: { s: 22.6, z: -0.58, r: 41.3, estimated: false }  # 추론
   coding: { s: 34.8, z: -0.48, r: 42.8, estimated: true }  # 코딩
   agentic: { s: 19.4, z: -0.65, r: 40.2, estimated: true }  # 에이전트
   trust: { s: 36.4, z: 0.41, r: 56.1, estimated: true }  # 신뢰성
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen1.5 Chat 110B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-15
-timestamp: 2026-07-15T00:00:00Z
+updated: 2026-07-16
+timestamp: 2026-07-16T00:00:00Z
 ---
 
 # Qwen1.5 Chat 110B
 
-Alibaba · Open · Medium(110B) · 컨텍스트 32k · 종합지능 **4.0** · ⚠️ past(구세대)
+Alibaba · Open · Unknown · 컨텍스트 32k · 종합지능 **4.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 코딩
@@ -43,8 +43,8 @@ Alibaba · Open · Medium(110B) · 컨텍스트 32k · 종합지능 **4.0** · �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 37.0 | -0.86 | 실측 | [[gpqa-diamond]] 29.0%×0.4 |
-| 추론 | 41.4 | -0.58 | 실측 | [[gpqa-diamond]] 29.0%×1.0 |
+| 전문 지식 | 37.0 | -0.87 | 실측 | [[gpqa-diamond]] 29.0%×0.4 |
+| 추론 | 41.3 | -0.58 | 실측 | [[gpqa-diamond]] 29.0%×1.0 |
 | 코딩 | 42.8 | -0.48 | 추정 | (추정) |
 | 에이전트 | 40.2 | -0.65 | 추정 | (추정) |
 | 신뢰성 | 56.1 | +0.41 | 추정 | (추정) |

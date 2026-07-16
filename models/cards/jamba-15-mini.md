@@ -8,14 +8,14 @@ price_blended_usd_1m: 0.22
 output_speed_tps: None
 context_window: 256000
 status: past
-size_class: Medium
-params_b: 52
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 16.9, z: -1.14, r: 32.9, estimated: false }  # 전문 지식
   reasoning: { s: 15.8, z: -0.94, r: 35.9, estimated: false }  # 추론
   coding: { s: 13.3, z: -1.39, r: 29.2, estimated: false }  # 코딩
-  agentic: { s: 5.2, z: -1.2, r: 31.9, estimated: true }  # 에이전트
+  agentic: { s: 5.2, z: -1.21, r: 31.9, estimated: true }  # 에이전트
   trust: { s: 21.0, z: -0.32, r: 45.2, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 6.1, z: -1.25, r: 31.2, estimated: true }  # 긴문맥
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba 1.5 Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-15
-timestamp: 2026-07-15T00:00:00Z
+updated: 2026-07-16
+timestamp: 2026-07-16T00:00:00Z
 ---
 
 # Jamba 1.5 Mini
 
-AI21 Labs · Open · Medium(52B) · 컨텍스트 256k · 종합지능 **3.0** · ⚠️ past(구세대)
+AI21 Labs · Open · Unknown · 컨텍스트 256k · 종합지능 **3.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 지시 따르기
@@ -46,7 +46,7 @@ AI21 Labs · Open · Medium(52B) · 컨텍스트 256k · 종합지능 **3.0** ·
 | 전문 지식 | 32.9 | -1.14 | 실측 | [[gpqa-diamond]] 30.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 35.9 | -0.94 | 실측 | [[gpqa-diamond]] 30.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 29.2 | -1.39 | 실측 | [[scicode]] 8.0%×1.0 |
-| 에이전트 | 31.9 | -1.2 | 추정 | (추정) |
+| 에이전트 | 31.9 | -1.21 | 추정 | (추정) |
 | 신뢰성 | 45.2 | -0.32 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 31.2 | -1.25 | 추정 | (추정) |

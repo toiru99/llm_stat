@@ -12,9 +12,9 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 64.0, z: 1.14, r: 67.1, estimated: false }  # 전문 지식
+  knowledge: { s: 64.0, z: 1.14, r: 67.0, estimated: false }  # 전문 지식
   reasoning: { s: 69.8, z: 1.92, r: 78.8, estimated: false }  # 추론
-  coding: { s: 80.2, z: 1.44, r: 71.7, estimated: false }  # 코딩
+  coding: { s: 80.2, z: 1.44, r: 71.6, estimated: false }  # 코딩
   agentic: { s: 68.6, z: 1.27, r: 69.0, estimated: false }  # 에이전트
   trust: { s: 89.4, z: 2.91, r: 93.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.7 Max
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-15
-timestamp: 2026-07-15T00:00:00Z
+updated: 2026-07-16
+timestamp: 2026-07-16T00:00:00Z
 ---
 
 # Qwen3.7 Max
@@ -37,15 +37,15 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **46.0**
 - **약점**: 긴문맥, 전문 지식
 
 ## 실용 지표
-`입력 $2.5 · 출력 $7.5 · 혼합 $1.43/1M · 200.0 t/s · TTFT 2.46s · 1M ctx` · 가성비 32.2
+`입력 $2.5 · 출력 $7.5 · 혼합 $1.43/1M · 200.0 t/s · TTFT 2.45s · 1M ctx` · 가성비 32.2
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 67.1 | +1.14 | 실측 | [[aa-omniscience]] 30.0%×1.0, [[gpqa-diamond]] 92.0%×0.4, [[humanitys-last-exam]] 38.0%×0.3 |
+| 전문 지식 | 67.0 | +1.14 | 실측 | [[aa-omniscience]] 30.0%×1.0, [[gpqa-diamond]] 92.0%×0.4, [[humanitys-last-exam]] 38.0%×0.3 |
 | 추론 | 78.8 | +1.92 | 실측 | [[critpt]] 13.0%×1.0, [[gpqa-diamond]] 92.0%×1.0, [[humanitys-last-exam]] 38.0%×1.0 |
-| 코딩 | 71.7 | +1.44 | 실측 | [[scicode]] 49.0%×1.0, [[terminal-bench]] 51.0%×0.5 |
+| 코딩 | 71.6 | +1.44 | 실측 | [[scicode]] 49.0%×1.0, [[terminal-bench]] 51.0%×0.5 |
 | 에이전트 | 69.0 | +1.27 | 실측 | [[gdpval]] 39.0%×1.0, [[itbench]] 42.0%×1.0, [[tau2-bench]] 95.0%×1.0, [[tau3-banking]] 11.0%×1.0, [[terminal-bench]] 51.0%×1.0 |
 | 신뢰성 | 93.7 | +2.91 | 실측 | [[aa-omniscience]] 77.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

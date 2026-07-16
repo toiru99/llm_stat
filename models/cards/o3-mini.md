@@ -12,9 +12,9 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 50.8, z: 0.5, r: 57.6, estimated: false }  # 전문 지식
+  knowledge: { s: 50.8, z: 0.5, r: 57.5, estimated: false }  # 전문 지식
   reasoning: { s: 46.4, z: 0.68, r: 60.2, estimated: false }  # 추론
-  coding: { s: 48.0, z: 0.08, r: 51.2, estimated: false }  # 코딩
+  coding: { s: 48.0, z: 0.08, r: 51.1, estimated: false }  # 코딩
   agentic: { s: 19.9, z: -0.63, r: 40.5, estimated: false }  # 에이전트
   trust: { s: 17.2, z: -0.5, r: 42.5, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — o3-mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-15
-timestamp: 2026-07-15T00:00:00Z
+updated: 2026-07-16
+timestamp: 2026-07-16T00:00:00Z
 ---
 
 # o3-mini
@@ -37,15 +37,15 @@ OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **19.0** �
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $1.1 · 출력 $4.4 · 혼합 $1.05/1M · 210.0 t/s · TTFT 5.22s · 200k ctx` · 가성비 18.1
+`입력 $1.1 · 출력 $4.4 · 혼합 $1.05/1M · 210.0 t/s · TTFT 5.0s · 200k ctx` · 가성비 18.1
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 57.6 | +0.5 | 실측 | [[gpqa-diamond]] 75.0%×0.4, [[humanitys-last-exam]] 9.0%×0.3 |
+| 전문 지식 | 57.5 | +0.5 | 실측 | [[gpqa-diamond]] 75.0%×0.4, [[humanitys-last-exam]] 9.0%×0.3 |
 | 추론 | 60.2 | +0.68 | 실측 | [[gpqa-diamond]] 75.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
-| 코딩 | 51.2 | +0.08 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
+| 코딩 | 51.1 | +0.08 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
 | 에이전트 | 40.5 | -0.63 | 실측 | [[tau2-bench]] 29.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
 | 신뢰성 | 42.5 | -0.5 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |

@@ -5,16 +5,16 @@ creator: StepFun
 license: Open
 intelligence_index: 26.0
 price_blended_usd_1m: 0.12
-output_speed_tps: 227.0
+output_speed_tps: 239.0
 context_window: 256000
 status: past
-size_class: Large
-params_b: 196
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 49.1, z: 0.42, r: 56.3, estimated: false }  # 전문 지식
   reasoning: { s: 42.6, z: 0.48, r: 57.2, estimated: false }  # 추론
-  coding: { s: 58.1, z: 0.51, r: 57.6, estimated: false }  # 코딩
+  coding: { s: 58.1, z: 0.5, r: 57.6, estimated: false }  # 코딩
   agentic: { s: 67.9, z: 1.24, r: 68.6, estimated: false }  # 에이전트
   trust: { s: 16.5, z: -0.53, r: 42.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Step 3.5 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-15
-timestamp: 2026-07-15T00:00:00Z
+updated: 2026-07-16
+timestamp: 2026-07-16T00:00:00Z
 ---
 
 # Step 3.5 Flash
 
-StepFun · Open · Large(196B) · 컨텍스트 256k · 종합지능 **26.0** · ⚠️ past(구세대)
+StepFun · Open · Unknown · 컨텍스트 256k · 종합지능 **26.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 지시 따르기
 - **약점**: 긴문맥, 신뢰성
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.3 · 혼합 $0.12/1M · 227.0 t/s · TTFT 1.01s · 256k ctx` · 가성비 216.7
+`입력 $0.1 · 출력 $0.3 · 혼합 $0.12/1M · 239.0 t/s · TTFT 1.0s · 256k ctx` · 가성비 216.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ StepFun · Open · Large(196B) · 컨텍스트 256k · 종합지능 **26.0** · 
 |---|---|---|---|---|
 | 전문 지식 | 56.3 | +0.42 | 실측 | [[aa-omniscience]] 24.0%×1.0, [[gpqa-diamond]] 83.0%×0.4, [[humanitys-last-exam]] 19.0%×0.3 |
 | 추론 | 57.2 | +0.48 | 실측 | [[critpt]] 2.0%×1.0, [[gpqa-diamond]] 83.0%×1.0, [[humanitys-last-exam]] 19.0%×1.0 |
-| 코딩 | 57.6 | +0.51 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 27.0%×0.5 |
+| 코딩 | 57.6 | +0.5 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 27.0%×0.5 |
 | 에이전트 | 68.6 | +1.24 | 실측 | [[tau2-bench]] 94.0%×1.0, [[terminal-bench]] 27.0%×1.0 |
 | 신뢰성 | 42.0 | -0.53 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

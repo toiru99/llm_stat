@@ -8,13 +8,13 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 256000
 status: current
-size_class: Small
-params_b: 25.2
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 34.7, z: -0.28, r: 45.8, estimated: false }  # 전문 지식
   reasoning: { s: 28.4, z: -0.27, r: 45.9, estimated: false }  # 추론
-  coding: { s: 56.7, z: 0.45, r: 56.7, estimated: false }  # 코딩
+  coding: { s: 56.7, z: 0.44, r: 56.7, estimated: false }  # 코딩
   agentic: { s: 12.2, z: -0.93, r: 36.0, estimated: false }  # 에이전트
   trust: { s: 9.4, z: -0.87, r: 37.0, estimated: false }  # 신뢰성
   multimodal: { s: 75.4, z: 0.19, r: 52.8, estimated: false }  # 멀티모달
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DiffusionGemma 26B A4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-15
-timestamp: 2026-07-15T00:00:00Z
+updated: 2026-07-16
+timestamp: 2026-07-16T00:00:00Z
 ---
 
 # DiffusionGemma 26B A4B
 
-Google · Open · Small(25.2B) · 컨텍스트 256k · 종합지능 **13.0**
+Google · Open · Unknown · 컨텍스트 256k · 종합지능 **13.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 코딩
@@ -45,7 +45,7 @@ Google · Open · Small(25.2B) · 컨텍스트 256k · 종합지능 **13.0**
 |---|---|---|---|---|
 | 전문 지식 | 45.8 | -0.28 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
 | 추론 | 45.9 | -0.27 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 67.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
-| 코딩 | 56.7 | +0.45 | 실측 | [[scicode]] 34.0%×1.0 |
+| 코딩 | 56.7 | +0.44 | 실측 | [[scicode]] 34.0%×1.0 |
 | 에이전트 | 36.0 | -0.93 | 실측 | [[gdpval]] 2.0%×1.0, [[tau3-banking]] 7.0%×1.0 |
 | 신뢰성 | 37.0 | -0.87 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | 52.8 | +0.19 | 실측 | [[mmmu-pro]] 67.0%×1.0 |

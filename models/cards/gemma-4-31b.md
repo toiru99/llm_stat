@@ -8,47 +8,47 @@ price_blended_usd_1m: 0.0
 output_speed_tps: 35.0
 context_window: 256000
 status: current
-size_class: Small
-params_b: 30.7
-is_reasoning: false
+size_class: Unknown
+params_b: null
+is_reasoning: true
 radar:
-  knowledge: { s: 47.4, z: 0.34, r: 55.1, estimated: false }  # 전문 지식
-  reasoning: { s: 45.3, z: 0.62, r: 59.4, estimated: false }  # 추론
+  knowledge: { s: 47.4, z: 0.33, r: 55.0, estimated: false }  # 전문 지식
+  reasoning: { s: 45.3, z: 0.62, r: 59.3, estimated: false }  # 추론
   coding: { s: 66.0, z: 0.84, r: 62.6, estimated: false }  # 코딩
   agentic: { s: 50.0, z: 0.54, r: 58.1, estimated: false }  # 에이전트
   trust: { s: 20.0, z: -0.37, r: 44.5, estimated: false }  # 신뢰성
-  multimodal: { s: 84.1, z: 0.6, r: 59.1, estimated: false }  # 멀티모달
+  multimodal: { s: 84.1, z: 0.6, r: 59.0, estimated: false }  # 멀티모달
   long_context: { s: 81.6, z: 0.98, r: 64.7, estimated: false }  # 긴문맥
   instruction: { s: 90.1, z: 1.56, r: 73.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 31B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-15
-timestamp: 2026-07-15T00:00:00Z
+updated: 2026-07-16
+timestamp: 2026-07-16T00:00:00Z
 ---
 
 # Gemma 4 31B
 
-Google · Open · Small(30.7B) · 컨텍스트 256k · 종합지능 **29.0**
+Google · Open · Unknown · 컨텍스트 256k · 종합지능 **29.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 긴문맥
 - **약점**: 전문 지식, 신뢰성
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0.0/1M · 35.0 t/s · TTFT 1.06s · 256k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0.0/1M · 35.0 t/s · TTFT 1.08s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 55.1 | +0.34 | 실측 | [[aa-omniscience]] 20.0%×1.0, [[gpqa-diamond]] 86.0%×0.4, [[humanitys-last-exam]] 23.0%×0.3 |
-| 추론 | 59.4 | +0.62 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 86.0%×1.0, [[humanitys-last-exam]] 23.0%×1.0 |
+| 전문 지식 | 55.0 | +0.33 | 실측 | [[aa-omniscience]] 20.0%×1.0, [[gpqa-diamond]] 86.0%×0.4, [[humanitys-last-exam]] 23.0%×0.3 |
+| 추론 | 59.3 | +0.62 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 86.0%×1.0, [[humanitys-last-exam]] 23.0%×1.0 |
 | 코딩 | 62.6 | +0.84 | 실측 | [[scicode]] 43.0%×1.0, [[terminal-bench]] 36.0%×0.5 |
 | 에이전트 | 58.1 | +0.54 | 실측 | [[gdpval]] 15.0%×1.0, [[itbench]] 37.0%×1.0, [[tau2-bench]] 60.0%×1.0, [[tau3-banking]] 15.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
 | 신뢰성 | 44.5 | -0.37 | 실측 | [[aa-omniscience]] 18.0%×1.0 |
-| 멀티모달 | 59.1 | +0.6 | 실측 | [[mmmu-pro]] 73.0%×1.0 |
+| 멀티모달 | 59.0 | +0.6 | 실측 | [[mmmu-pro]] 73.0%×1.0 |
 | 긴문맥 | 64.7 | +0.98 | 실측 | [[aa-lcr]] 62.0%×1.0 |
 | 지시 따르기 | 73.4 | +1.56 | 실측 | [[ifbench]] 76.0%×1.0 |
 

@@ -5,15 +5,15 @@ creator: Kimi
 license: Open
 intelligence_index: 44.0
 price_blended_usd_1m: 0.7
-output_speed_tps: 46.0
+output_speed_tps: 44.0
 context_window: 256000
 status: current
-size_class: Large
-params_b: 1000
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 65.9, z: 1.24, r: 68.6, estimated: false }  # 전문 지식
-  reasoning: { s: 62.9, z: 1.56, r: 73.3, estimated: false }  # 추론
+  knowledge: { s: 65.9, z: 1.23, r: 68.5, estimated: false }  # 전문 지식
+  reasoning: { s: 62.9, z: 1.55, r: 73.3, estimated: false }  # 추론
   coding: { s: 81.1, z: 1.48, r: 72.2, estimated: false }  # 코딩
   agentic: { s: 66.0, z: 1.17, r: 67.5, estimated: false }  # 에이전트
   trust: { s: 70.6, z: 2.02, r: 80.3, estimated: false }  # 신뢰성
@@ -24,27 +24,27 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2.6
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-15
-timestamp: 2026-07-15T00:00:00Z
+updated: 2026-07-16
+timestamp: 2026-07-16T00:00:00Z
 ---
 
 # Kimi K2.6
 
-Kimi · Open · Large(1000B) · 컨텍스트 256k · 종합지능 **44.0**
+Kimi · Open · Unknown · 컨텍스트 256k · 종합지능 **44.0**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 신뢰성, 추론
+- **강점**: 신뢰성, 지시 따르기
 - **약점**: 에이전트, 멀티모달
 
 ## 실용 지표
-`입력 $0.95 · 출력 $4.0 · 혼합 $0.7/1M · 46.0 t/s · TTFT 2.79s · 256k ctx` · 가성비 62.9
+`입력 $0.95 · 출력 $4.0 · 혼합 $0.7/1M · 44.0 t/s · TTFT 2.91s · 256k ctx` · 가성비 62.9
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 68.6 | +1.24 | 실측 | [[aa-omniscience]] 33.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 36.0%×0.3 |
-| 추론 | 73.3 | +1.56 | 실측 | [[critpt]] 8.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 36.0%×1.0 |
+| 전문 지식 | 68.5 | +1.23 | 실측 | [[aa-omniscience]] 33.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 36.0%×0.3 |
+| 추론 | 73.3 | +1.55 | 실측 | [[critpt]] 8.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 36.0%×1.0 |
 | 코딩 | 72.2 | +1.48 | 실측 | [[scicode]] 53.0%×1.0, [[terminal-bench]] 44.0%×0.5 |
 | 에이전트 | 67.5 | +1.17 | 실측 | [[apex-agents]] 28.0%×1.0, [[gdpval]] 35.0%×1.0, [[itbench]] 31.0%×1.0, [[tau2-bench]] 96.0%×1.0, [[tau3-banking]] 21.0%×1.0, [[terminal-bench]] 44.0%×1.0 |
 | 신뢰성 | 80.3 | +2.02 | 실측 | [[aa-omniscience]] 61.0%×1.0 |
