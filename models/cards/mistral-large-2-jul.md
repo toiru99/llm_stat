@@ -12,11 +12,11 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 26.8, z: -0.66, r: 40.1, estimated: false }  # 전문 지식
-  reasoning: { s: 23.9, z: -0.51, r: 42.4, estimated: false }  # 추론
-  coding: { s: 45.0, z: -0.05, r: 49.3, estimated: false }  # 코딩
-  agentic: { s: 33.3, z: -0.11, r: 48.4, estimated: false }  # 에이전트
-  trust: { s: 41.4, z: 0.65, r: 59.7, estimated: true }  # 신뢰성
+  knowledge: { s: 26.8, z: -0.66, r: 40.0, estimated: false }  # 전문 지식
+  reasoning: { s: 23.9, z: -0.51, r: 42.3, estimated: false }  # 추론
+  coding: { s: 45.0, z: -0.05, r: 49.2, estimated: false }  # 코딩
+  agentic: { s: 33.3, z: -0.11, r: 48.3, estimated: false }  # 에이전트
+  trust: { s: 41.4, z: 0.64, r: 59.6, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 2.6, z: -1.36, r: 29.6, estimated: false }  # 긴문맥
   instruction: { s: 28.2, z: -0.99, r: 35.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Large 2 (Jul)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-16
-timestamp: 2026-07-16T00:00:00Z
+updated: 2026-07-17
+timestamp: 2026-07-17T00:00:00Z
 ---
 
 # Mistral Large 2 (Jul)
@@ -43,11 +43,11 @@ Mistral · Open · Unknown · 컨텍스트 128k · 종합지능 **7.0** · ⚠�
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 40.1 | -0.66 | 실측 | [[gpqa-diamond]] 47.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
-| 추론 | 42.4 | -0.51 | 실측 | [[gpqa-diamond]] 47.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
-| 코딩 | 49.3 | -0.05 | 실측 | [[scicode]] 27.0%×1.0 |
-| 에이전트 | 48.4 | -0.11 | 실측 | [[tau2-bench]] 33.0%×1.0 |
-| 신뢰성 | 59.7 | +0.65 | 추정 | (추정) |
+| 전문 지식 | 40.0 | -0.66 | 실측 | [[gpqa-diamond]] 47.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
+| 추론 | 42.3 | -0.51 | 실측 | [[gpqa-diamond]] 47.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
+| 코딩 | 49.2 | -0.05 | 실측 | [[scicode]] 27.0%×1.0 |
+| 에이전트 | 48.3 | -0.11 | 실측 | [[tau2-bench]] 33.0%×1.0 |
+| 신뢰성 | 59.6 | +0.64 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 29.6 | -1.36 | 실측 | [[aa-lcr]] 2.0%×1.0 |
 | 지시 따르기 | 35.1 | -0.99 | 실측 | [[ifbench]] 32.0%×1.0 |

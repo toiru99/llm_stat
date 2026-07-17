@@ -5,7 +5,7 @@ creator: Amazon
 license: Proprietary
 intelligence_index: 7.0
 price_blended_usd_1m: 0.05
-output_speed_tps: 171.0
+output_speed_tps: 172.0
 context_window: 300000
 status: past
 size_class: Unknown
@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 15.7, z: -0.95, r: 35.8, estimated: false }  # 추론
   coding: { s: 16.1, z: -1.27, r: 30.9, estimated: false }  # 코딩
   agentic: { s: 9.8, z: -1.03, r: 34.6, estimated: false }  # 에이전트
-  trust: { s: 50.6, z: 1.08, r: 66.2, estimated: false }  # 신뢰성
-  multimodal: { s: 33.3, z: -1.83, r: 22.6, estimated: false }  # 멀티모달
-  long_context: { s: 23.7, z: -0.73, r: 39.0, estimated: false }  # 긴문맥
+  trust: { s: 50.6, z: 1.07, r: 66.1, estimated: false }  # 신뢰성
+  multimodal: { s: 33.3, z: -1.83, r: 22.5, estimated: false }  # 멀티모달
+  long_context: { s: 23.7, z: -0.74, r: 39.0, estimated: false }  # 긴문맥
   instruction: { s: 31.0, z: -0.88, r: 36.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nova Lite
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-16
-timestamp: 2026-07-16T00:00:00Z
+updated: 2026-07-17
+timestamp: 2026-07-17T00:00:00Z
 ---
 
 # Nova Lite
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 300k · 종합지능 **7.0** ·
 - **약점**: 코딩, 멀티모달
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.24 · 혼합 $0.05/1M · 171.0 t/s · TTFT 0.96s · 300k ctx` · 가성비 140.0
+`입력 $0.06 · 출력 $0.24 · 혼합 $0.05/1M · 172.0 t/s · TTFT 0.97s · 300k ctx` · 가성비 140.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,9 +47,9 @@ Amazon · Proprietary · Unknown · 컨텍스트 300k · 종합지능 **7.0** ·
 | 추론 | 35.8 | -0.95 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 30.9 | -1.27 | 실측 | [[scicode]] 14.0%×1.0, [[terminal-bench]] 1.0%×0.5 |
 | 에이전트 | 34.6 | -1.03 | 실측 | [[tau2-bench]] 18.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
-| 신뢰성 | 66.2 | +1.08 | 실측 | [[aa-omniscience]] 44.0%×1.0 |
-| 멀티모달 | 22.6 | -1.83 | 실측 | [[mmmu-pro]] 38.0%×1.0 |
-| 긴문맥 | 39.0 | -0.73 | 실측 | [[aa-lcr]] 18.0%×1.0 |
+| 신뢰성 | 66.1 | +1.07 | 실측 | [[aa-omniscience]] 44.0%×1.0 |
+| 멀티모달 | 22.5 | -1.83 | 실측 | [[mmmu-pro]] 38.0%×1.0 |
+| 긴문맥 | 39.0 | -0.74 | 실측 | [[aa-lcr]] 18.0%×1.0 |
 | 지시 따르기 | 36.8 | -0.88 | 실측 | [[ifbench]] 34.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

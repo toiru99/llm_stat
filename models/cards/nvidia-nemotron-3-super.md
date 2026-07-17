@@ -5,17 +5,17 @@ creator: NVIDIA
 license: Open
 intelligence_index: 25.0
 price_blended_usd_1m: 0.23
-output_speed_tps: 157.0
+output_speed_tps: 152.0
 context_window: 1000000
 status: current
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 48.3, z: 0.38, r: 55.6, estimated: false }  # 전문 지식
-  reasoning: { s: 42.4, z: 0.47, r: 57.0, estimated: false }  # 추론
-  coding: { s: 54.6, z: 0.36, r: 55.4, estimated: false }  # 코딩
-  agentic: { s: 26.8, z: -0.36, r: 44.5, estimated: false }  # 에이전트
+  knowledge: { s: 48.3, z: 0.37, r: 55.6, estimated: false }  # 전문 지식
+  reasoning: { s: 42.4, z: 0.46, r: 56.9, estimated: false }  # 추론
+  coding: { s: 54.6, z: 0.35, r: 55.3, estimated: false }  # 코딩
+  agentic: { s: 26.8, z: -0.37, r: 44.5, estimated: false }  # 에이전트
   trust: { s: 14.1, z: -0.65, r: 40.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 78.9, z: 0.9, r: 63.5, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — NVIDIA Nemotron 3 Super
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-16
-timestamp: 2026-07-16T00:00:00Z
+updated: 2026-07-17
+timestamp: 2026-07-17T00:00:00Z
 ---
 
 # NVIDIA Nemotron 3 Super
@@ -37,16 +37,16 @@ NVIDIA · Open · Unknown · 컨텍스트 1M · 종합지능 **25.0**
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.25 · 출력 $0.78 · 혼합 $0.23/1M · 157.0 t/s · TTFT 1.65s · 1M ctx` · 가성비 108.7
+`입력 $0.25 · 출력 $0.78 · 혼합 $0.23/1M · 152.0 t/s · TTFT 1.67s · 1M ctx` · 가성비 108.7
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 55.6 | +0.38 | 실측 | [[aa-omniscience]] 24.0%×1.0, [[gpqa-diamond]] 80.0%×0.4, [[humanitys-last-exam]] 19.0%×0.3 |
-| 추론 | 57.0 | +0.47 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 80.0%×1.0, [[humanitys-last-exam]] 19.0%×1.0 |
-| 코딩 | 55.4 | +0.36 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 29.0%×0.5 |
-| 에이전트 | 44.5 | -0.36 | 실측 | [[apex-agents]] 2.0%×1.0, [[gdpval]] 10.0%×1.0, [[itbench]] 1.0%×1.0, [[tau2-bench]] 68.0%×1.0, [[tau3-banking]] 10.0%×1.0, [[terminal-bench]] 29.0%×1.0 |
+| 전문 지식 | 55.6 | +0.37 | 실측 | [[aa-omniscience]] 24.0%×1.0, [[gpqa-diamond]] 80.0%×0.4, [[humanitys-last-exam]] 19.0%×0.3 |
+| 추론 | 56.9 | +0.46 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 80.0%×1.0, [[humanitys-last-exam]] 19.0%×1.0 |
+| 코딩 | 55.3 | +0.35 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 29.0%×0.5 |
+| 에이전트 | 44.5 | -0.37 | 실측 | [[apex-agents]] 2.0%×1.0, [[gdpval]] 10.0%×1.0, [[itbench]] 1.0%×1.0, [[tau2-bench]] 68.0%×1.0, [[tau3-banking]] 10.0%×1.0, [[terminal-bench]] 29.0%×1.0 |
 | 신뢰성 | 40.3 | -0.65 | 실측 | [[aa-omniscience]] 13.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 63.5 | +0.9 | 실측 | [[aa-lcr]] 60.0%×1.0 |

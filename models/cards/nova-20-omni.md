@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 25.4, z: -0.73, r: 39.0, estimated: false }  # 전문 지식
   reasoning: { s: 19.8, z: -0.73, r: 39.1, estimated: false }  # 추론
-  coding: { s: 34.6, z: -0.49, r: 42.7, estimated: false }  # 코딩
+  coding: { s: 34.6, z: -0.49, r: 42.6, estimated: false }  # 코딩
   agentic: { s: 28.0, z: -0.32, r: 45.2, estimated: false }  # 에이전트
   trust: { s: 11.8, z: -0.76, r: 38.6, estimated: false }  # 신뢰성
-  multimodal: { s: 50.7, z: -0.99, r: 35.1, estimated: false }  # 멀티모달
+  multimodal: { s: 50.7, z: -1.0, r: 35.0, estimated: false }  # 멀티모달
   long_context: { s: 28.9, z: -0.58, r: 41.3, estimated: false }  # 긴문맥
   instruction: { s: 40.8, z: -0.47, r: 42.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nova 2.0 Omni
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-16
-timestamp: 2026-07-16T00:00:00Z
+updated: 2026-07-17
+timestamp: 2026-07-17T00:00:00Z
 ---
 
 # Nova 2.0 Omni
@@ -45,10 +45,10 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **11.0**
 |---|---|---|---|---|
 | 전문 지식 | 39.0 | -0.73 | 실측 | [[aa-omniscience]] 13.0%×1.0, [[gpqa-diamond]] 55.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 39.1 | -0.73 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 55.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 42.7 | -0.49 | 실측 | [[scicode]] 28.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
+| 코딩 | 42.6 | -0.49 | 실측 | [[scicode]] 28.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
 | 에이전트 | 45.2 | -0.32 | 실측 | [[tau2-bench]] 45.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
 | 신뢰성 | 38.6 | -0.76 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
-| 멀티모달 | 35.1 | -0.99 | 실측 | [[mmmu-pro]] 50.0%×1.0 |
+| 멀티모달 | 35.0 | -1.0 | 실측 | [[mmmu-pro]] 50.0%×1.0 |
 | 긴문맥 | 41.3 | -0.58 | 실측 | [[aa-lcr]] 22.0%×1.0 |
 | 지시 따르기 | 42.9 | -0.47 | 실측 | [[ifbench]] 41.0%×1.0 |
 

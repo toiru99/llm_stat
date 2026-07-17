@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 13.5, z: -1.31, r: 30.4, estimated: false }  # 전문 지식
   reasoning: { s: 10.1, z: -1.24, r: 31.4, estimated: false }  # 추론
-  coding: { s: 8.3, z: -1.6, r: 25.9, estimated: false }  # 코딩
-  agentic: { s: 2.2, z: -1.33, r: 30.1, estimated: false }  # 에이전트
-  trust: { s: 0.0, z: -1.31, r: 30.3, estimated: false }  # 신뢰성
-  multimodal: { s: 21.7, z: -2.38, r: 14.3, estimated: false }  # 멀티모달
+  coding: { s: 8.3, z: -1.6, r: 26.0, estimated: false }  # 코딩
+  agentic: { s: 2.2, z: -1.32, r: 30.1, estimated: false }  # 에이전트
+  trust: { s: 0.0, z: -1.32, r: 30.2, estimated: false }  # 신뢰성
+  multimodal: { s: 21.7, z: -2.39, r: 14.2, estimated: false }  # 멀티모달
   long_context: { s: 7.9, z: -1.2, r: 32.0, estimated: false }  # 긴문맥
   instruction: { s: 22.5, z: -1.23, r: 31.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 3 4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-16
-timestamp: 2026-07-16T00:00:00Z
+updated: 2026-07-17
+timestamp: 2026-07-17T00:00:00Z
 ---
 
 # Gemma 3 4B
@@ -45,10 +45,10 @@ Google · Open · Unknown · 컨텍스트 128k · 종합지능 **1.0** · ⚠️
 |---|---|---|---|---|
 | 전문 지식 | 30.4 | -1.31 | 실측 | [[aa-omniscience]] 8.0%×1.0, [[gpqa-diamond]] 29.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 31.4 | -1.24 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 29.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 25.9 | -1.6 | 실측 | [[scicode]] 7.0%×1.0, [[terminal-bench]] 1.0%×0.5 |
-| 에이전트 | 30.1 | -1.33 | 실측 | [[tau2-bench]] 5.0%×1.0, [[tau3-banking]] 0.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
-| 신뢰성 | 30.3 | -1.31 | 실측 | [[aa-omniscience]] 1.0%×1.0 |
-| 멀티모달 | 14.3 | -2.38 | 실측 | [[mmmu-pro]] 30.0%×1.0 |
+| 코딩 | 26.0 | -1.6 | 실측 | [[scicode]] 7.0%×1.0, [[terminal-bench]] 1.0%×0.5 |
+| 에이전트 | 30.1 | -1.32 | 실측 | [[tau2-bench]] 5.0%×1.0, [[tau3-banking]] 0.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
+| 신뢰성 | 30.2 | -1.32 | 실측 | [[aa-omniscience]] 1.0%×1.0 |
+| 멀티모달 | 14.2 | -2.39 | 실측 | [[mmmu-pro]] 30.0%×1.0 |
 | 긴문맥 | 32.0 | -1.2 | 실측 | [[aa-lcr]] 6.0%×1.0 |
 | 지시 따르기 | 31.6 | -1.23 | 실측 | [[ifbench]] 28.0%×1.0 |
 

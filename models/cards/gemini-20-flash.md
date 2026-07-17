@@ -18,14 +18,14 @@ radar:
   agentic: { s: 18.2, z: -0.7, r: 39.5, estimated: false }  # 에이전트
   trust: { s: 14.1, z: -0.65, r: 40.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 36.8, z: -0.34, r: 44.8, estimated: false }  # 긴문맥
-  instruction: { s: 39.4, z: -0.53, r: 42.1, estimated: false }  # 지시 따르기
+  long_context: { s: 36.8, z: -0.35, r: 44.8, estimated: false }  # 긴문맥
+  instruction: { s: 39.4, z: -0.53, r: 42.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.0 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-16
-timestamp: 2026-07-16T00:00:00Z
+updated: 2026-07-17
+timestamp: 2026-07-17T00:00:00Z
 ---
 
 # Gemini 2.0 Flash
@@ -49,8 +49,8 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **12.0** · 
 | 에이전트 | 39.5 | -0.7 | 실측 | [[tau2-bench]] 30.0%×1.0, [[terminal-bench]] 4.0%×1.0 |
 | 신뢰성 | 40.3 | -0.65 | 실측 | [[aa-omniscience]] 13.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 44.8 | -0.34 | 실측 | [[aa-lcr]] 28.0%×1.0 |
-| 지시 따르기 | 42.1 | -0.53 | 실측 | [[ifbench]] 40.0%×1.0 |
+| 긴문맥 | 44.8 | -0.35 | 실측 | [[aa-lcr]] 28.0%×1.0 |
+| 지시 따르기 | 42.0 | -0.53 | 실측 | [[ifbench]] 40.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

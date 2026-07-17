@@ -12,10 +12,10 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 66.3, z: 1.25, r: 68.8, estimated: false }  # 전문 지식
-  reasoning: { s: 53.9, z: 1.07, r: 66.1, estimated: false }  # 추론
-  coding: { s: 66.6, z: 0.86, r: 63.0, estimated: false }  # 코딩
-  agentic: { s: 26.5, z: -0.38, r: 44.4, estimated: false }  # 에이전트
+  knowledge: { s: 66.3, z: 1.24, r: 68.6, estimated: false }  # 전문 지식
+  reasoning: { s: 53.9, z: 1.06, r: 65.9, estimated: false }  # 추론
+  coding: { s: 66.6, z: 0.85, r: 62.8, estimated: false }  # 코딩
+  agentic: { s: 26.5, z: -0.38, r: 44.3, estimated: false }  # 에이전트
   trust: { s: 11.8, z: -0.76, r: 38.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 77.6, z: 0.86, r: 62.9, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V3.2 Speciale
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-16
-timestamp: 2026-07-16T00:00:00Z
+updated: 2026-07-17
+timestamp: 2026-07-17T00:00:00Z
 ---
 
 # DeepSeek V3.2 Speciale
@@ -43,10 +43,10 @@ DeepSeek · Open · Unknown · 컨텍스트 128k · 종합지능 **22.0** · ⚠
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 68.8 | +1.25 | 실측 | [[aa-omniscience]] 38.0%×1.0, [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 26.0%×0.3 |
-| 추론 | 66.1 | +1.07 | 실측 | [[critpt]] 7.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 26.0%×1.0 |
-| 코딩 | 63.0 | +0.86 | 실측 | [[scicode]] 44.0%×1.0, [[terminal-bench]] 35.0%×0.5 |
-| 에이전트 | 44.4 | -0.38 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 35.0%×1.0 |
+| 전문 지식 | 68.6 | +1.24 | 실측 | [[aa-omniscience]] 38.0%×1.0, [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 26.0%×0.3 |
+| 추론 | 65.9 | +1.06 | 실측 | [[critpt]] 7.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 26.0%×1.0 |
+| 코딩 | 62.8 | +0.85 | 실측 | [[scicode]] 44.0%×1.0, [[terminal-bench]] 35.0%×0.5 |
+| 에이전트 | 44.3 | -0.38 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 35.0%×1.0 |
 | 신뢰성 | 38.6 | -0.76 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 62.9 | +0.86 | 실측 | [[aa-lcr]] 59.0%×1.0 |

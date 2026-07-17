@@ -5,7 +5,7 @@ creator: IBM
 license: Open
 intelligence_index: 2.0
 price_blended_usd_1m: 0.05
-output_speed_tps: 329.0
+output_speed_tps: 323.0
 context_window: 128000
 status: past
 size_class: Unknown
@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 15.6, z: -1.21, r: 31.9, estimated: false }  # 전문 지식
   reasoning: { s: 11.4, z: -1.17, r: 32.5, estimated: false }  # 추론
-  coding: { s: 11.1, z: -1.48, r: 27.7, estimated: false }  # 코딩
+  coding: { s: 11.1, z: -1.48, r: 27.8, estimated: false }  # 코딩
   agentic: { s: 5.6, z: -1.19, r: 32.1, estimated: false }  # 에이전트
   trust: { s: 7.1, z: -0.98, r: 35.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 3.3 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-16
-timestamp: 2026-07-16T00:00:00Z
+updated: 2026-07-17
+timestamp: 2026-07-17T00:00:00Z
 ---
 
 # Granite 3.3 8B
@@ -37,7 +37,7 @@ IBM · Open · Unknown · 컨텍스트 128k · 종합지능 **2.0** · ⚠️ pa
 - **약점**: 코딩, 지시 따르기
 
 ## 실용 지표
-`입력 $0.03 · 출력 $0.25 · 혼합 $0.05/1M · 329.0 t/s · TTFT 26.09s · 128k ctx` · 가성비 40.0
+`입력 $0.03 · 출력 $0.25 · 혼합 $0.05/1M · 323.0 t/s · TTFT 21.11s · 128k ctx` · 가성비 40.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ IBM · Open · Unknown · 컨텍스트 128k · 종합지능 **2.0** · ⚠️ pa
 |---|---|---|---|---|
 | 전문 지식 | 31.9 | -1.21 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 34.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 32.5 | -1.17 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 34.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 27.7 | -1.48 | 실측 | [[scicode]] 10.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
+| 코딩 | 27.8 | -1.48 | 실측 | [[scicode]] 10.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 32.1 | -1.19 | 실측 | [[tau2-bench]] 11.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | 35.3 | -0.98 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
