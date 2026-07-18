@@ -8,15 +8,15 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 256000
 status: current
-size_class: Unknown
-params_b: null
+size_class: Large
+params_b: 309
 is_reasoning: true
 radar:
   knowledge: { s: 45.8, z: 0.25, r: 53.8, estimated: false }  # 전문 지식
   reasoning: { s: 44.7, z: 0.58, r: 58.7, estimated: false }  # 추론
   coding: { s: 57.9, z: 0.49, r: 57.3, estimated: false }  # 코딩
   agentic: { s: 70.5, z: 1.33, r: 69.9, estimated: false }  # 에이전트
-  trust: { s: 60.0, z: 1.52, r: 72.8, estimated: false }  # 신뢰성
+  trust: { s: 60.0, z: 1.52, r: 72.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 84.2, z: 1.05, r: 65.8, estimated: false }  # 긴문맥
   instruction: { s: 84.5, z: 1.32, r: 69.9, estimated: false }  # 지시 따르기
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2-Flash (Feb 2026)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-17
-timestamp: 2026-07-17T00:00:00Z
+updated: 2026-07-18
+timestamp: 2026-07-18T00:00:00Z
 ---
 
 # MiMo-V2-Flash (Feb 2026)
 
-Xiaomi · Open · Unknown · 컨텍스트 256k · 종합지능 **33.0**
+Xiaomi · Open · Large(309B) · 컨텍스트 256k · 종합지능 **33.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 에이전트
@@ -47,7 +47,7 @@ Xiaomi · Open · Unknown · 컨텍스트 256k · 종합지능 **33.0**
 | 추론 | 58.7 | +0.58 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 84.0%×1.0, [[humanitys-last-exam]] 20.0%×1.0 |
 | 코딩 | 57.3 | +0.49 | 실측 | [[scicode]] 38.0%×1.0, [[terminal-bench]] 31.0%×0.5 |
 | 에이전트 | 69.9 | +1.33 | 실측 | [[tau2-bench]] 93.0%×1.0, [[terminal-bench]] 31.0%×1.0 |
-| 신뢰성 | 72.8 | +1.52 | 실측 | [[aa-omniscience]] 52.0%×1.0 |
+| 신뢰성 | 72.9 | +1.52 | 실측 | [[aa-omniscience]] 52.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 65.8 | +1.05 | 실측 | [[aa-lcr]] 64.0%×1.0 |
 | 지시 따르기 | 69.9 | +1.32 | 실측 | [[ifbench]] 72.0%×1.0 |

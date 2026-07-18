@@ -8,15 +8,15 @@ price_blended_usd_1m: 1.75
 output_speed_tps: None
 context_window: 128000
 status: past
-size_class: Unknown
-params_b: null
+size_class: Large
+params_b: 685
 is_reasoning: false
 radar:
   knowledge: { s: 50.5, z: 0.48, r: 57.2, estimated: false }  # 전문 지식
   reasoning: { s: 38.4, z: 0.25, r: 53.8, estimated: false }  # 추론
   coding: { s: 60.7, z: 0.61, r: 59.1, estimated: false }  # 코딩
   agentic: { s: 40.4, z: 0.16, r: 52.4, estimated: false }  # 에이전트
-  trust: { s: 30.6, z: 0.13, r: 51.9, estimated: false }  # 신뢰성
+  trust: { s: 30.6, z: 0.14, r: 52.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 85.5, z: 1.09, r: 66.4, estimated: false }  # 긴문맥
   instruction: { s: 63.4, z: 0.45, r: 56.8, estimated: false }  # 지시 따르기
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V3.1 Terminus
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-17
-timestamp: 2026-07-17T00:00:00Z
+updated: 2026-07-18
+timestamp: 2026-07-18T00:00:00Z
 ---
 
 # DeepSeek V3.1 Terminus
 
-DeepSeek · Open · Unknown · 컨텍스트 128k · 종합지능 **30.0** · ⚠️ past(구세대)
+DeepSeek · Open · Large(685B) · 컨텍스트 128k · 종합지능 **30.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 코딩
@@ -47,7 +47,7 @@ DeepSeek · Open · Unknown · 컨텍스트 128k · 종합지능 **30.0** · ⚠
 | 추론 | 53.8 | +0.25 | 실측 | [[critpt]] 2.0%×1.0, [[gpqa-diamond]] 79.0%×1.0, [[humanitys-last-exam]] 15.0%×1.0 |
 | 코딩 | 59.1 | +0.61 | 실측 | [[scicode]] 41.0%×1.0, [[terminal-bench]] 30.0%×0.5 |
 | 에이전트 | 52.4 | +0.16 | 실측 | [[gdpval]] 19.0%×1.0, [[tau2-bench]] 37.0%×1.0, [[tau3-banking]] 16.0%×1.0, [[terminal-bench]] 30.0%×1.0 |
-| 신뢰성 | 51.9 | +0.13 | 실측 | [[aa-omniscience]] 27.0%×1.0 |
+| 신뢰성 | 52.0 | +0.14 | 실측 | [[aa-omniscience]] 27.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 66.4 | +1.09 | 실측 | [[aa-lcr]] 65.0%×1.0 |
 | 지시 따르기 | 56.8 | +0.45 | 실측 | [[ifbench]] 57.0%×1.0 |

@@ -8,15 +8,15 @@ price_blended_usd_1m: 0.18
 output_speed_tps: 61.0
 context_window: 1000000
 status: current
-size_class: Unknown
-params_b: null
+size_class: Large
+params_b: 1600
 is_reasoning: true
 radar:
   knowledge: { s: 74.1, z: 1.62, r: 74.3, estimated: false }  # 전문 지식
   reasoning: { s: 63.7, z: 1.58, r: 73.7, estimated: false }  # 추론
   coding: { s: 72.3, z: 1.1, r: 66.5, estimated: false }  # 코딩
   agentic: { s: 74.0, z: 1.47, r: 72.0, estimated: false }  # 에이전트
-  trust: { s: 11.8, z: -0.76, r: 38.6, estimated: false }  # 신뢰성
+  trust: { s: 11.8, z: -0.75, r: 38.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 85.5, z: 1.09, r: 66.4, estimated: false }  # 긴문맥
   instruction: { s: 83.1, z: 1.27, r: 69.0, estimated: false }  # 지시 따르기
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Pro (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-17
-timestamp: 2026-07-17T00:00:00Z
+updated: 2026-07-18
+timestamp: 2026-07-18T00:00:00Z
 ---
 
 # DeepSeek V4 Pro (high)
 
-DeepSeek · Open · Unknown · 컨텍스트 1M · 종합지능 **41.0**
+DeepSeek · Open · Large(1600B) · 컨텍스트 1M · 종합지능 **41.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 전문 지식, 추론
@@ -47,7 +47,7 @@ DeepSeek · Open · Unknown · 컨텍스트 1M · 종합지능 **41.0**
 | 추론 | 73.7 | +1.58 | 실측 | [[critpt]] 10.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 34.0%×1.0 |
 | 코딩 | 66.5 | +1.1 | 실측 | [[scicode]] 46.0%×1.0, [[terminal-bench]] 42.0%×0.5 |
 | 에이전트 | 72.0 | +1.47 | 실측 | [[gdpval]] 40.0%×1.0, [[tau2-bench]] 94.0%×1.0, [[terminal-bench]] 42.0%×1.0 |
-| 신뢰성 | 38.6 | -0.76 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
+| 신뢰성 | 38.7 | -0.75 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 66.4 | +1.09 | 실측 | [[aa-lcr]] 65.0%×1.0 |
 | 지시 따르기 | 69.0 | +1.27 | 실측 | [[ifbench]] 71.0%×1.0 |

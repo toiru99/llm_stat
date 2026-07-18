@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 31.0
 price_blended_usd_1m: 1.34
-output_speed_tps: 79.0
+output_speed_tps: 80.0
 context_window: 400000
 status: past
 size_class: Unknown
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 40.1, z: 0.34, r: 55.1, estimated: false }  # 추론
   coding: { s: 57.0, z: 0.45, r: 56.8, estimated: false }  # 코딩
   agentic: { s: 62.9, z: 1.03, r: 65.5, estimated: false }  # 에이전트
-  trust: { s: 27.1, z: -0.04, r: 49.4, estimated: false }  # 신뢰성
+  trust: { s: 27.1, z: -0.03, r: 49.5, estimated: false }  # 신뢰성
   multimodal: { s: 85.5, z: 0.66, r: 60.0, estimated: false }  # 멀티모달
   long_context: { s: 77.6, z: 0.86, r: 62.9, estimated: false }  # 긴문맥
   instruction: { s: 77.5, z: 1.03, r: 65.5, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-17
-timestamp: 2026-07-17T00:00:00Z
+updated: 2026-07-18
+timestamp: 2026-07-18T00:00:00Z
 ---
 
 # GPT-5 (low)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **31.0** �
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $1.25 · 출력 $10.0 · 혼합 $1.34/1M · 79.0 t/s · TTFT 7.04s · 400k ctx` · 가성비 23.1
+`입력 $1.25 · 출력 $10.0 · 혼합 $1.34/1M · 80.0 t/s · TTFT 7.15s · 400k ctx` · 가성비 23.1
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **31.0** �
 | 추론 | 55.1 | +0.34 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 81.0%×1.0, [[humanitys-last-exam]] 18.0%×1.0 |
 | 코딩 | 56.8 | +0.45 | 실측 | [[scicode]] 39.0%×1.0, [[terminal-bench]] 27.0%×0.5 |
 | 에이전트 | 65.5 | +1.03 | 실측 | [[tau2-bench]] 84.0%×1.0, [[terminal-bench]] 27.0%×1.0 |
-| 신뢰성 | 49.4 | -0.04 | 실측 | [[aa-omniscience]] 24.0%×1.0 |
+| 신뢰성 | 49.5 | -0.03 | 실측 | [[aa-omniscience]] 24.0%×1.0 |
 | 멀티모달 | 60.0 | +0.66 | 실측 | [[mmmu-pro]] 74.0%×1.0 |
 | 긴문맥 | 62.9 | +0.86 | 실측 | [[aa-lcr]] 59.0%×1.0 |
 | 지시 따르기 | 65.5 | +1.03 | 실측 | [[ifbench]] 67.0%×1.0 |

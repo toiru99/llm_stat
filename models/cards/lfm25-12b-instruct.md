@@ -8,29 +8,29 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 32000
 status: current
-size_class: Unknown
-params_b: null
+size_class: Tiny
+params_b: 1.17
 is_reasoning: false
 radar:
   knowledge: { s: 13.4, z: -1.31, r: 30.3, estimated: false }  # 전문 지식
   reasoning: { s: 13.0, z: -1.09, r: 33.7, estimated: false }  # 추론
   coding: { s: 2.2, z: -1.86, r: 22.1, estimated: false }  # 코딩
   agentic: { s: 5.6, z: -1.19, r: 32.1, estimated: false }  # 에이전트
-  trust: { s: 16.5, z: -0.54, r: 41.9, estimated: false }  # 신뢰성
+  trust: { s: 16.5, z: -0.53, r: 42.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.44, r: 28.5, estimated: false }  # 긴문맥
-  instruction: { s: 45.1, z: -0.3, r: 45.5, estimated: false }  # 지시 따르기
+  long_context: { s: 0.0, z: -1.44, r: 28.3, estimated: false }  # 긴문맥
+  instruction: { s: 45.1, z: -0.31, r: 45.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — LFM2.5-1.2B-Instruct
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-17
-timestamp: 2026-07-17T00:00:00Z
+updated: 2026-07-18
+timestamp: 2026-07-18T00:00:00Z
 ---
 
 # LFM2.5-1.2B-Instruct
 
-Liquid AI · Open · Unknown · 컨텍스트 32k · 종합지능 **3.0**
+Liquid AI · Open · Tiny(1.17B) · 컨텍스트 32k · 종합지능 **3.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 신뢰성
@@ -47,10 +47,10 @@ Liquid AI · Open · Unknown · 컨텍스트 32k · 종합지능 **3.0**
 | 추론 | 33.7 | -1.09 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
 | 코딩 | 22.1 | -1.86 | 실측 | [[scicode]] 2.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 32.1 | -1.19 | 실측 | [[tau2-bench]] 11.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 41.9 | -0.54 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
+| 신뢰성 | 42.0 | -0.53 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 28.5 | -1.44 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 45.5 | -0.3 | 실측 | [[ifbench]] 44.0%×1.0 |
+| 긴문맥 | 28.3 | -1.44 | 실측 | [[aa-lcr]] 0.0%×1.0 |
+| 지시 따르기 | 45.4 | -0.31 | 실측 | [[ifbench]] 44.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

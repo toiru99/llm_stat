@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 85.3, z: 2.71, r: 90.7, estimated: false }  # 추론
   coding: { s: 89.6, z: 1.83, r: 77.4, estimated: false }  # 코딩
   agentic: { s: 83.7, z: 1.84, r: 77.6, estimated: false }  # 에이전트
-  trust: { s: 14.1, z: -0.65, r: 40.3, estimated: false }  # 신뢰성
+  trust: { s: 14.1, z: -0.64, r: 40.4, estimated: false }  # 신뢰성
   multimodal: { s: 92.8, z: 1.01, r: 65.2, estimated: false }  # 멀티모달
   long_context: { s: 93.4, z: 1.33, r: 69.9, estimated: false }  # 긴문맥
-  instruction: { s: 76.1, z: 0.98, r: 64.6, estimated: false }  # 지시 따르기
+  instruction: { s: 76.1, z: 0.97, r: 64.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Terra (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-17
-timestamp: 2026-07-17T00:00:00Z
+updated: 2026-07-18
+timestamp: 2026-07-18T00:00:00Z
 ---
 
 # GPT-5.6 Terra (xhigh)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **52.0**
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $2.5 · 출력 $15.0 · 혼합 $2.17/1M · 123.0 t/s · TTFT 16.93s · 1M ctx` · 가성비 24.0
+`입력 $2.5 · 출력 $15.0 · 혼합 $2.17/1M · 123.0 t/s · TTFT 17.91s · 1M ctx` · 가성비 24.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,10 +47,10 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **52.0**
 | 추론 | 90.7 | +2.71 | 실측 | [[critpt]] 27.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 40.0%×1.0 |
 | 코딩 | 77.4 | +1.83 | 실측 | [[scicode]] 52.0%×1.0, [[terminal-bench]] 63.0%×0.5 |
 | 에이전트 | 77.6 | +1.84 | 실측 | [[gdpval]] 54.0%×1.0, [[tau2-bench]] 80.0%×1.0, [[tau3-banking]] 24.0%×1.0, [[terminal-bench]] 63.0%×1.0 |
-| 신뢰성 | 40.3 | -0.65 | 실측 | [[aa-omniscience]] 13.0%×1.0 |
+| 신뢰성 | 40.4 | -0.64 | 실측 | [[aa-omniscience]] 13.0%×1.0 |
 | 멀티모달 | 65.2 | +1.01 | 실측 | [[mmmu-pro]] 79.0%×1.0 |
 | 긴문맥 | 69.9 | +1.33 | 실측 | [[aa-lcr]] 71.0%×1.0 |
-| 지시 따르기 | 64.6 | +0.98 | 실측 | [[ifbench]] 66.0%×1.0 |
+| 지시 따르기 | 64.6 | +0.97 | 실측 | [[ifbench]] 66.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

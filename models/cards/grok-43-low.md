@@ -5,7 +5,7 @@ creator: SpaceXAI
 license: Proprietary
 intelligence_index: 35.0
 price_blended_usd_1m: 0.64
-output_speed_tps: 106.0
+output_speed_tps: 91.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 40.7, z: 0.37, r: 55.5, estimated: false }  # 추론
   coding: { s: 60.3, z: 0.59, r: 58.9, estimated: false }  # 코딩
   agentic: { s: 65.4, z: 1.13, r: 67.0, estimated: false }  # 에이전트
-  trust: { s: 97.6, z: 3.3, r: 99.4, estimated: false }  # 신뢰성
+  trust: { s: 97.6, z: 3.3, r: 99.5, estimated: false }  # 신뢰성
   multimodal: { s: 84.1, z: 0.59, r: 58.9, estimated: false }  # 멀티모달
   long_context: { s: 84.2, z: 1.05, r: 65.8, estimated: false }  # 긴문맥
   instruction: { s: 97.2, z: 1.85, r: 77.7, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.3 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-17
-timestamp: 2026-07-17T00:00:00Z
+updated: 2026-07-18
+timestamp: 2026-07-18T00:00:00Z
 ---
 
 # Grok 4.3 (low)
@@ -37,7 +37,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **35.0**
 - **약점**: 전문 지식, 추론
 
 ## 실용 지표
-`입력 $1.25 · 출력 $2.5 · 혼합 $0.64/1M · 106.0 t/s · TTFT 6.28s · 1M ctx` · 가성비 54.7
+`입력 $1.25 · 출력 $2.5 · 혼합 $0.64/1M · 91.0 t/s · TTFT 6.28s · 1M ctx` · 가성비 54.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **35.0**
 | 추론 | 55.5 | +0.37 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 84.0%×1.0, [[humanitys-last-exam]] 17.0%×1.0 |
 | 코딩 | 58.9 | +0.59 | 실측 | [[scicode]] 42.0%×1.0, [[terminal-bench]] 27.0%×0.5 |
 | 에이전트 | 67.0 | +1.13 | 실측 | [[tau2-bench]] 89.0%×1.0, [[terminal-bench]] 27.0%×1.0 |
-| 신뢰성 | 99.4 | +3.3 | 실측 | [[aa-omniscience]] 84.0%×1.0 |
+| 신뢰성 | 99.5 | +3.3 | 실측 | [[aa-omniscience]] 84.0%×1.0 |
 | 멀티모달 | 58.9 | +0.59 | 실측 | [[mmmu-pro]] 73.0%×1.0 |
 | 긴문맥 | 65.8 | +1.05 | 실측 | [[aa-lcr]] 64.0%×1.0 |
 | 지시 따르기 | 77.7 | +1.85 | 실측 | [[ifbench]] 81.0%×1.0 |

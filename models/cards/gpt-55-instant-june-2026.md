@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 40.1, z: 0.34, r: 55.1, estimated: false }  # 추론
   coding: { s: 81.7, z: 1.49, r: 72.4, estimated: false }  # 코딩
   agentic: { s: 26.9, z: -0.36, r: 44.5, estimated: false }  # 에이전트
-  trust: { s: 30.6, z: 0.13, r: 51.9, estimated: false }  # 신뢰성
+  trust: { s: 30.6, z: 0.14, r: 52.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 84.2, z: 1.05, r: 65.8, estimated: false }  # 긴문맥
   instruction: { s: 74.0, z: 0.89, r: 63.4, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.5 Instant (June 2026)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-17
-timestamp: 2026-07-17T00:00:00Z
+updated: 2026-07-18
+timestamp: 2026-07-18T00:00:00Z
 ---
 
 # GPT-5.5 Instant (June 2026)
@@ -47,7 +47,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **29.0**
 | 추론 | 55.1 | +0.34 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 82.0%×1.0, [[humanitys-last-exam]] 19.0%×1.0 |
 | 코딩 | 72.4 | +1.49 | 실측 | [[scicode]] 49.0%×1.0 |
 | 에이전트 | 44.5 | -0.36 | 실측 | [[gdpval]] 11.0%×1.0, [[tau3-banking]] 12.0%×1.0 |
-| 신뢰성 | 51.9 | +0.13 | 실측 | [[aa-omniscience]] 27.0%×1.0 |
+| 신뢰성 | 52.0 | +0.14 | 실측 | [[aa-omniscience]] 27.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 65.8 | +1.05 | 실측 | [[aa-lcr]] 64.0%×1.0 |
 | 지시 따르기 | 63.4 | +0.89 | 추정 | (추정) |

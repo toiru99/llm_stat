@@ -5,11 +5,11 @@ creator: Cohere
 license: Open
 intelligence_index: 23.0
 price_blended_usd_1m: 0.0
-output_speed_tps: 185.0
+output_speed_tps: 186.0
 context_window: 192000
 status: current
-size_class: Unknown
-params_b: null
+size_class: Large
+params_b: 218
 is_reasoning: true
 radar:
   knowledge: { s: 29.7, z: -0.52, r: 42.1, estimated: false }  # 전문 지식
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Command A+
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-17
-timestamp: 2026-07-17T00:00:00Z
+updated: 2026-07-18
+timestamp: 2026-07-18T00:00:00Z
 ---
 
 # Command A+
 
-Cohere · Open · Unknown · 컨텍스트 192k · 종합지능 **23.0**
+Cohere · Open · Large(218B) · 컨텍스트 192k · 종합지능 **23.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 지시 따르기
 - **약점**: 멀티모달, 전문 지식
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0.0/1M · 185.0 t/s · TTFT 0.4s · 192k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0.0/1M · 186.0 t/s · TTFT 0.4s · 192k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

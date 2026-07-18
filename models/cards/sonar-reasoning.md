@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 61.9, z: 1.48, r: 72.3, estimated: false }  # 추론
   coding: { s: 71.0, z: 1.04, r: 65.6, estimated: true }  # 코딩
   agentic: { s: 66.0, z: 1.15, r: 67.3, estimated: true }  # 에이전트
-  trust: { s: 34.0, z: 0.29, r: 54.3, estimated: true }  # 신뢰성
+  trust: { s: 34.0, z: 0.3, r: 54.4, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 86.1, z: 1.11, r: 66.6, estimated: true }  # 긴문맥
   instruction: { s: 73.2, z: 0.86, r: 62.9, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Sonar Reasoning
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-17
-timestamp: 2026-07-17T00:00:00Z
+updated: 2026-07-18
+timestamp: 2026-07-18T00:00:00Z
 ---
 
 # Sonar Reasoning
@@ -47,7 +47,7 @@ Perplexity · Proprietary · Unknown · 컨텍스트 127k · 종합지능 **12.0
 | 추론 | 72.3 | +1.48 | 실측 | [[gpqa-diamond]] 62.0%×1.0 |
 | 코딩 | 65.6 | +1.04 | 추정 | (추정) |
 | 에이전트 | 67.3 | +1.15 | 추정 | (추정) |
-| 신뢰성 | 54.3 | +0.29 | 추정 | (추정) |
+| 신뢰성 | 54.4 | +0.3 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 66.6 | +1.11 | 추정 | (추정) |
 | 지시 따르기 | 62.9 | +0.86 | 추정 | (추정) |

@@ -5,18 +5,18 @@ creator: Xiaomi
 license: Open
 intelligence_index: 37.0
 price_blended_usd_1m: 0.06
-output_speed_tps: 70.0
+output_speed_tps: 64.0
 context_window: 1000000
 status: current
-size_class: Unknown
-params_b: null
+size_class: Large
+params_b: 310
 is_reasoning: true
 radar:
   knowledge: { s: 44.8, z: 0.21, r: 53.1, estimated: false }  # 전문 지식
   reasoning: { s: 49.3, z: 0.82, r: 62.3, estimated: false }  # 추론
   coding: { s: 69.0, z: 0.96, r: 64.4, estimated: false }  # 코딩
   agentic: { s: 56.9, z: 0.8, r: 62.0, estimated: false }  # 에이전트
-  trust: { s: 78.8, z: 2.41, r: 86.1, estimated: false }  # 신뢰성
+  trust: { s: 78.8, z: 2.41, r: 86.2, estimated: false }  # 신뢰성
   multimodal: { s: 87.0, z: 0.73, r: 61.0, estimated: false }  # 멀티모달
   long_context: { s: 82.9, z: 1.01, r: 65.2, estimated: false }  # 긴문맥
   instruction: { s: 77.5, z: 1.03, r: 65.5, estimated: false }  # 지시 따르기
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-17
-timestamp: 2026-07-17T00:00:00Z
+updated: 2026-07-18
+timestamp: 2026-07-18T00:00:00Z
 ---
 
 # MiMo-V2.5
 
-Xiaomi · Open · Unknown · 컨텍스트 1M · 종합지능 **37.0**
+Xiaomi · Open · Large(310B) · 컨텍스트 1M · 종합지능 **37.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 지시 따르기
 - **약점**: 멀티모달, 전문 지식
 
 ## 실용 지표
-`입력 $0.14 · 출력 $0.28 · 혼합 $0.06/1M · 70.0 t/s · TTFT 3.36s · 1M ctx` · 가성비 616.7
+`입력 $0.14 · 출력 $0.28 · 혼합 $0.06/1M · 64.0 t/s · TTFT 3.37s · 1M ctx` · 가성비 616.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Xiaomi · Open · Unknown · 컨텍스트 1M · 종합지능 **37.0**
 | 추론 | 62.3 | +0.82 | 실측 | [[critpt]] 4.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 25.0%×1.0 |
 | 코딩 | 64.4 | +0.96 | 실측 | [[scicode]] 43.0%×1.0, [[terminal-bench]] 42.0%×0.5 |
 | 에이전트 | 62.0 | +0.8 | 실측 | [[gdpval]] 32.0%×1.0, [[tau2-bench]] 91.0%×1.0, [[tau3-banking]] 7.0%×1.0, [[terminal-bench]] 42.0%×1.0 |
-| 신뢰성 | 86.1 | +2.41 | 실측 | [[aa-omniscience]] 68.0%×1.0 |
+| 신뢰성 | 86.2 | +2.41 | 실측 | [[aa-omniscience]] 68.0%×1.0 |
 | 멀티모달 | 61.0 | +0.73 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
 | 긴문맥 | 65.2 | +1.01 | 실측 | [[aa-lcr]] 63.0%×1.0 |
 | 지시 따르기 | 65.5 | +1.03 | 실측 | [[ifbench]] 67.0%×1.0 |

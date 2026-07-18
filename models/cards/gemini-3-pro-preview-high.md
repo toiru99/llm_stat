@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 64.6, z: 1.62, r: 74.4, estimated: false }  # 추론
   coding: { s: 83.4, z: 1.57, r: 73.5, estimated: false }  # 코딩
   agentic: { s: 75.8, z: 1.53, r: 73.0, estimated: false }  # 에이전트
-  trust: { s: 9.4, z: -0.87, r: 36.9, estimated: false }  # 신뢰성
+  trust: { s: 9.4, z: -0.87, r: 37.0, estimated: false }  # 신뢰성
   multimodal: { s: 94.2, z: 1.08, r: 66.2, estimated: false }  # 멀티모달
   long_context: { s: 93.4, z: 1.33, r: 69.9, estimated: false }  # 긴문맥
   instruction: { s: 81.7, z: 1.21, r: 68.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3 Pro Preview (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-17
-timestamp: 2026-07-17T00:00:00Z
+updated: 2026-07-18
+timestamp: 2026-07-18T00:00:00Z
 ---
 
 # Gemini 3 Pro Preview (high)
@@ -47,7 +47,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **40.0** · 
 | 추론 | 74.4 | +1.62 | 실측 | [[critpt]] 9.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 37.0%×1.0 |
 | 코딩 | 73.5 | +1.57 | 실측 | [[scicode]] 56.0%×1.0, [[terminal-bench]] 42.0%×0.5 |
 | 에이전트 | 73.0 | +1.53 | 실측 | [[tau2-bench]] 87.0%×1.0, [[terminal-bench]] 42.0%×1.0 |
-| 신뢰성 | 36.9 | -0.87 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 신뢰성 | 37.0 | -0.87 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | 66.2 | +1.08 | 실측 | [[mmmu-pro]] 80.0%×1.0 |
 | 긴문맥 | 69.9 | +1.33 | 실측 | [[aa-lcr]] 71.0%×1.0 |
 | 지시 따르기 | 68.1 | +1.21 | 실측 | [[ifbench]] 70.0%×1.0 |

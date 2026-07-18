@@ -15,8 +15,8 @@ radar:
   knowledge: { s: 53.9, z: 0.64, r: 59.6, estimated: false }  # 전문 지식
   reasoning: { s: 61.6, z: 1.47, r: 72.0, estimated: false }  # 추론
   coding: { s: 73.7, z: 1.16, r: 67.4, estimated: false }  # 코딩
-  agentic: { s: 60.1, z: 0.92, r: 63.8, estimated: false }  # 에이전트
-  trust: { s: 87.1, z: 2.8, r: 91.9, estimated: false }  # 신뢰성
+  agentic: { s: 60.1, z: 0.92, r: 63.9, estimated: false }  # 에이전트
+  trust: { s: 87.1, z: 2.8, r: 92.0, estimated: false }  # 신뢰성
   multimodal: { s: 94.2, z: 1.08, r: 66.2, estimated: false }  # 멀티모달
   long_context: { s: 85.5, z: 1.09, r: 66.4, estimated: false }  # 긴문맥
   instruction: { s: 93.0, z: 1.67, r: 75.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.7 Plus
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-17
-timestamp: 2026-07-17T00:00:00Z
+updated: 2026-07-18
+timestamp: 2026-07-18T00:00:00Z
 ---
 
 # Qwen3.7 Plus
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **39.0**
 - **약점**: 에이전트, 전문 지식
 
 ## 실용 지표
-`입력 $0.4 · 출력 $1.6 · 혼합 $0.27/1M · 53.0 t/s · TTFT 2.91s · 1M ctx` · 가성비 144.4
+`입력 $0.4 · 출력 $1.6 · 혼합 $0.27/1M · 53.0 t/s · TTFT 2.59s · 1M ctx` · 가성비 144.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,8 +46,8 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **39.0**
 | 전문 지식 | 59.6 | +0.64 | 실측 | [[aa-omniscience]] 22.0%×1.0, [[gpqa-diamond]] 90.0%×0.4, [[humanitys-last-exam]] 33.0%×0.3 |
 | 추론 | 72.0 | +1.47 | 실측 | [[critpt]] 9.0%×1.0, [[gpqa-diamond]] 90.0%×1.0, [[humanitys-last-exam]] 33.0%×1.0 |
 | 코딩 | 67.4 | +1.16 | 실측 | [[scicode]] 45.0%×1.0, [[terminal-bench]] 47.0%×0.5 |
-| 에이전트 | 63.8 | +0.92 | 실측 | [[apex-agents]] 22.0%×1.0, [[gdpval]] 22.0%×1.0, [[tau2-bench]] 93.0%×1.0, [[tau3-banking]] 18.0%×1.0, [[terminal-bench]] 47.0%×1.0 |
-| 신뢰성 | 91.9 | +2.8 | 실측 | [[aa-omniscience]] 75.0%×1.0 |
+| 에이전트 | 63.9 | +0.92 | 실측 | [[apex-agents]] 22.0%×1.0, [[gdpval]] 22.0%×1.0, [[tau2-bench]] 93.0%×1.0, [[tau3-banking]] 18.0%×1.0, [[terminal-bench]] 47.0%×1.0 |
+| 신뢰성 | 92.0 | +2.8 | 실측 | [[aa-omniscience]] 75.0%×1.0 |
 | 멀티모달 | 66.2 | +1.08 | 실측 | [[mmmu-pro]] 80.0%×1.0 |
 | 긴문맥 | 66.4 | +1.09 | 실측 | [[aa-lcr]] 65.0%×1.0 |
 | 지시 따르기 | 75.1 | +1.67 | 실측 | [[ifbench]] 78.0%×1.0 |

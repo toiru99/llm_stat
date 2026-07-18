@@ -15,8 +15,8 @@ radar:
   knowledge: { s: 54.8, z: 0.69, r: 60.3, estimated: false }  # 전문 지식
   reasoning: { s: 50.1, z: 0.86, r: 63.0, estimated: false }  # 추론
   coding: { s: 67.8, z: 0.91, r: 63.6, estimated: false }  # 코딩
-  agentic: { s: 66.2, z: 1.16, r: 67.4, estimated: false }  # 에이전트
-  trust: { s: 78.8, z: 2.41, r: 86.1, estimated: false }  # 신뢰성
+  agentic: { s: 66.2, z: 1.16, r: 67.5, estimated: false }  # 에이전트
+  trust: { s: 78.8, z: 2.41, r: 86.2, estimated: false }  # 신뢰성
   multimodal: { s: 91.3, z: 0.94, r: 64.1, estimated: false }  # 멀티모달
   long_context: { s: 92.1, z: 1.29, r: 69.3, estimated: false }  # 긴문맥
   instruction: { s: 88.7, z: 1.5, r: 72.5, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.6 Plus
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-17
-timestamp: 2026-07-17T00:00:00Z
+updated: 2026-07-18
+timestamp: 2026-07-18T00:00:00Z
 ---
 
 # Qwen3.6 Plus
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **40.0**
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.5 · 출력 $3.0 · 혼합 $0.43/1M · 53.0 t/s · TTFT 2.55s · 1M ctx` · 가성비 93.0
+`입력 $0.5 · 출력 $3.0 · 혼합 $0.43/1M · 53.0 t/s · TTFT 2.5s · 1M ctx` · 가성비 93.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,8 +46,8 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **40.0**
 | 전문 지식 | 60.3 | +0.69 | 실측 | [[aa-omniscience]] 26.0%×1.0, [[gpqa-diamond]] 88.0%×0.4, [[humanitys-last-exam]] 26.0%×0.3 |
 | 추론 | 63.0 | +0.86 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 88.0%×1.0, [[humanitys-last-exam]] 26.0%×1.0 |
 | 코딩 | 63.6 | +0.91 | 실측 | [[scicode]] 41.0%×1.0, [[terminal-bench]] 44.0%×0.5 |
-| 에이전트 | 67.4 | +1.16 | 실측 | [[gdpval]] 32.0%×1.0, [[tau2-bench]] 98.0%×1.0, [[tau3-banking]] 16.0%×1.0, [[terminal-bench]] 44.0%×1.0 |
-| 신뢰성 | 86.1 | +2.41 | 실측 | [[aa-omniscience]] 68.0%×1.0 |
+| 에이전트 | 67.5 | +1.16 | 실측 | [[gdpval]] 32.0%×1.0, [[tau2-bench]] 98.0%×1.0, [[tau3-banking]] 16.0%×1.0, [[terminal-bench]] 44.0%×1.0 |
+| 신뢰성 | 86.2 | +2.41 | 실측 | [[aa-omniscience]] 68.0%×1.0 |
 | 멀티모달 | 64.1 | +0.94 | 실측 | [[mmmu-pro]] 78.0%×1.0 |
 | 긴문맥 | 69.3 | +1.29 | 실측 | [[aa-lcr]] 70.0%×1.0 |
 | 지시 따르기 | 72.5 | +1.5 | 실측 | [[ifbench]] 75.0%×1.0 |

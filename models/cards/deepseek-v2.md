@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
 status: past
-size_class: Unknown
-params_b: null
+size_class: Large
+params_b: 236
 is_reasoning: false
 radar:
   knowledge: { s: null, z: null, r: null, estimated: false }  # 전문 지식
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek-V2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-17
-timestamp: 2026-07-17T00:00:00Z
+updated: 2026-07-18
+timestamp: 2026-07-18T00:00:00Z
 ---
 
 # DeepSeek-V2
 
-DeepSeek · Open · Unknown · 컨텍스트 128k · 종합지능 **4.0** · ⚠️ past(구세대)
+DeepSeek · Open · Large(236B) · 컨텍스트 128k · 종합지능 **4.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: —

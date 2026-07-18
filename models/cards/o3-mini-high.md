@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 16.0
 price_blended_usd_1m: 1.05
-output_speed_tps: 212.0
+output_speed_tps: 207.0
 context_window: 200000
 status: past
 size_class: Unknown
@@ -14,9 +14,9 @@ is_reasoning: true
 radar:
   knowledge: { s: 42.1, z: 0.07, r: 51.1, estimated: false }  # 전문 지식
   reasoning: { s: 33.6, z: -0.0, r: 50.0, estimated: false }  # 추론
-  coding: { s: 47.5, z: 0.05, r: 50.8, estimated: false }  # 코딩
-  agentic: { s: 13.9, z: -0.87, r: 37.0, estimated: false }  # 에이전트
-  trust: { s: 23.5, z: -0.21, r: 46.9, estimated: false }  # 신뢰성
+  coding: { s: 47.5, z: 0.05, r: 50.7, estimated: false }  # 코딩
+  agentic: { s: 13.9, z: -0.87, r: 36.9, estimated: false }  # 에이전트
+  trust: { s: 23.5, z: -0.2, r: 47.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 51.3, z: 0.08, r: 51.2, estimated: false }  # 긴문맥
   instruction: { s: 77.5, z: 1.03, r: 65.5, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — o3-mini (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-17
-timestamp: 2026-07-17T00:00:00Z
+updated: 2026-07-18
+timestamp: 2026-07-18T00:00:00Z
 ---
 
 # o3-mini (high)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **16.0** �
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $1.1 · 출력 $4.4 · 혼합 $1.05/1M · 212.0 t/s · TTFT 19.56s · 200k ctx` · 가성비 15.2
+`입력 $1.1 · 출력 $4.4 · 혼합 $1.05/1M · 207.0 t/s · TTFT 18.85s · 200k ctx` · 가성비 15.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **16.0** �
 |---|---|---|---|---|
 | 전문 지식 | 51.1 | +0.07 | 실측 | [[aa-omniscience]] 21.0%×1.0, [[gpqa-diamond]] 77.0%×0.4, [[humanitys-last-exam]] 12.0%×0.3 |
 | 추론 | 50.0 | +-0.0 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 77.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
-| 코딩 | 50.8 | +0.05 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 6.0%×0.5 |
-| 에이전트 | 37.0 | -0.87 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 31.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 6.0%×1.0 |
-| 신뢰성 | 46.9 | -0.21 | 실측 | [[aa-omniscience]] 21.0%×1.0 |
+| 코딩 | 50.7 | +0.05 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 6.0%×0.5 |
+| 에이전트 | 36.9 | -0.87 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 31.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 6.0%×1.0 |
+| 신뢰성 | 47.0 | -0.2 | 실측 | [[aa-omniscience]] 21.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 51.2 | +0.08 | 실측 | [[aa-lcr]] 39.0%×1.0 |
 | 지시 따르기 | 65.5 | +1.03 | 실측 | [[ifbench]] 67.0%×1.0 |

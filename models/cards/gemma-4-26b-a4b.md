@@ -8,15 +8,15 @@ price_blended_usd_1m: 0.13
 output_speed_tps: None
 context_window: 256000
 status: current
-size_class: Unknown
-params_b: null
-is_reasoning: true
+size_class: Small
+params_b: 25.2
+is_reasoning: false
 radar:
   knowledge: { s: 41.8, z: 0.06, r: 50.9, estimated: false }  # 전문 지식
   reasoning: { s: 38.3, z: 0.24, r: 53.6, estimated: false }  # 추론
   coding: { s: 51.5, z: 0.22, r: 53.3, estimated: false }  # 코딩
   agentic: { s: 32.9, z: -0.13, r: 48.0, estimated: false }  # 에이전트
-  trust: { s: 21.2, z: -0.32, r: 45.3, estimated: false }  # 신뢰성
+  trust: { s: 21.2, z: -0.31, r: 45.4, estimated: false }  # 신뢰성
   multimodal: { s: 78.3, z: 0.32, r: 54.8, estimated: false }  # 멀티모달
   long_context: { s: 73.7, z: 0.74, r: 61.1, estimated: false }  # 긴문맥
   instruction: { s: 84.5, z: 1.32, r: 69.9, estimated: false }  # 지시 따르기
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 26B A4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-17
-timestamp: 2026-07-17T00:00:00Z
+updated: 2026-07-18
+timestamp: 2026-07-18T00:00:00Z
 ---
 
 # Gemma 4 26B A4B
 
-Google · Open · Unknown · 컨텍스트 256k · 종합지능 **26.0**
+Google · Open · Small(25.2B) · 컨텍스트 256k · 종합지능 **26.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 긴문맥
@@ -47,7 +47,7 @@ Google · Open · Unknown · 컨텍스트 256k · 종합지능 **26.0**
 | 추론 | 53.6 | +0.24 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 79.0%×1.0, [[humanitys-last-exam]] 18.0%×1.0 |
 | 코딩 | 53.3 | +0.22 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 14.0%×0.5 |
 | 에이전트 | 48.0 | -0.13 | 실측 | [[gdpval]] 13.0%×1.0, [[itbench]] 24.0%×1.0, [[tau2-bench]] 44.0%×1.0, [[tau3-banking]] 12.0%×1.0, [[terminal-bench]] 14.0%×1.0 |
-| 신뢰성 | 45.3 | -0.32 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
+| 신뢰성 | 45.4 | -0.31 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
 | 멀티모달 | 54.8 | +0.32 | 실측 | [[mmmu-pro]] 69.0%×1.0 |
 | 긴문맥 | 61.1 | +0.74 | 실측 | [[aa-lcr]] 56.0%×1.0 |
 | 지시 따르기 | 69.9 | +1.32 | 실측 | [[ifbench]] 72.0%×1.0 |

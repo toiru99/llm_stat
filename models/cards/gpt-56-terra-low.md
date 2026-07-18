@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 40.0
 price_blended_usd_1m: 2.17
-output_speed_tps: 112.0
+output_speed_tps: 122.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 55.4, z: 1.14, r: 67.1, estimated: false }  # 추론
   coding: { s: 76.7, z: 1.28, r: 69.2, estimated: false }  # 코딩
   agentic: { s: 58.9, z: 0.88, r: 63.2, estimated: false }  # 에이전트
-  trust: { s: 12.9, z: -0.71, r: 39.4, estimated: false }  # 신뢰성
+  trust: { s: 12.9, z: -0.7, r: 39.5, estimated: false }  # 신뢰성
   multimodal: { s: 88.4, z: 0.8, r: 62.0, estimated: false }  # 멀티모달
   long_context: { s: 84.2, z: 1.05, r: 65.8, estimated: false }  # 긴문맥
   instruction: { s: 67.6, z: 0.63, r: 59.4, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Terra (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-17
-timestamp: 2026-07-17T00:00:00Z
+updated: 2026-07-18
+timestamp: 2026-07-18T00:00:00Z
 ---
 
 # GPT-5.6 Terra (low)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **40.0**
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $2.5 · 출력 $15.0 · 혼합 $2.17/1M · 112.0 t/s · TTFT 1.46s · 1M ctx` · 가성비 18.4
+`입력 $2.5 · 출력 $15.0 · 혼합 $2.17/1M · 122.0 t/s · TTFT 1.35s · 1M ctx` · 가성비 18.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **40.0**
 | 추론 | 67.1 | +1.14 | 실측 | [[critpt]] 9.0%×1.0, [[gpqa-diamond]] 84.0%×1.0, [[humanitys-last-exam]] 27.0%×1.0 |
 | 코딩 | 69.2 | +1.28 | 실측 | [[scicode]] 49.0%×1.0, [[terminal-bench]] 44.0%×0.5 |
 | 에이전트 | 63.2 | +0.88 | 실측 | [[gdpval]] 37.0%×1.0, [[tau2-bench]] 61.0%×1.0, [[tau3-banking]] 16.0%×1.0, [[terminal-bench]] 44.0%×1.0 |
-| 신뢰성 | 39.4 | -0.71 | 실측 | [[aa-omniscience]] 12.0%×1.0 |
+| 신뢰성 | 39.5 | -0.7 | 실측 | [[aa-omniscience]] 12.0%×1.0 |
 | 멀티모달 | 62.0 | +0.8 | 실측 | [[mmmu-pro]] 76.0%×1.0 |
 | 긴문맥 | 65.8 | +1.05 | 실측 | [[aa-lcr]] 64.0%×1.0 |
 | 지시 따르기 | 59.4 | +0.63 | 실측 | [[ifbench]] 60.0%×1.0 |

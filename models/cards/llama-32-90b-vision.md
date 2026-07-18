@@ -4,40 +4,40 @@ title: Llama 3.2 90B (Vision)
 creator: Meta
 license: Open
 intelligence_index: 6.0
-price_blended_usd_1m: 1.38
-output_speed_tps: 57.0
+price_blended_usd_1m: 2.04
+output_speed_tps: None
 context_window: 128000
 status: current
-size_class: Unknown
-params_b: null
+size_class: Medium
+params_b: 90
 is_reasoning: false
 radar:
   knowledge: { s: 25.7, z: -0.72, r: 39.3, estimated: false }  # 전문 지식
   reasoning: { s: 23.5, z: -0.53, r: 42.0, estimated: false }  # 추론
-  coding: { s: 40.0, z: -0.26, r: 46.0, estimated: false }  # 코딩
-  agentic: { s: 20.1, z: -0.63, r: 40.6, estimated: true }  # 에이전트
-  trust: { s: 31.1, z: 0.15, r: 52.3, estimated: true }  # 신뢰성
+  coding: { s: 40.0, z: -0.27, r: 46.0, estimated: false }  # 코딩
+  agentic: { s: 26.3, z: -0.39, r: 44.2, estimated: true }  # 에이전트
+  trust: { s: 19.3, z: -0.4, r: 44.0, estimated: true }  # 신뢰성
   multimodal: { s: 34.8, z: -1.76, r: 23.6, estimated: false }  # 멀티모달
-  long_context: { s: 14.7, z: -1.0, r: 35.0, estimated: true }  # 긴문맥
-  instruction: { s: 22.5, z: -1.23, r: 31.6, estimated: true }  # 지시 따르기
+  long_context: { s: 27.0, z: -0.64, r: 40.3, estimated: true }  # 긴문맥
+  instruction: { s: 34.0, z: -0.76, r: 38.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.2 90B (Vision)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-17
-timestamp: 2026-07-17T00:00:00Z
+updated: 2026-07-18
+timestamp: 2026-07-18T00:00:00Z
 ---
 
 # Llama 3.2 90B (Vision)
 
-Meta · Open · Unknown · 컨텍스트 128k · 종합지능 **6.0**
+Meta · Open · Medium(90B) · 컨텍스트 128k · 종합지능 **6.0**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 신뢰성, 코딩
+- **강점**: 코딩, 에이전트
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $1.38 · 출력 $1.38 · 혼합 $1.38/1M · 57.0 t/s · TTFT 1.13s · 128k ctx` · 가성비 4.3
+`입력 $2.04 · 출력 $2.04 · 혼합 $2.04/1M · None t/s · TTFT Nones · 128k ctx` · 가성비 2.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,12 +45,12 @@ Meta · Open · Unknown · 컨텍스트 128k · 종합지능 **6.0**
 |---|---|---|---|---|
 | 전문 지식 | 39.3 | -0.72 | 실측 | [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 42.0 | -0.53 | 실측 | [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 46.0 | -0.26 | 실측 | [[scicode]] 24.0%×1.0 |
-| 에이전트 | 40.6 | -0.63 | 추정 | (추정) |
-| 신뢰성 | 52.3 | +0.15 | 추정 | (추정) |
+| 코딩 | 46.0 | -0.27 | 실측 | [[scicode]] 24.0%×1.0 |
+| 에이전트 | 44.2 | -0.39 | 추정 | (추정) |
+| 신뢰성 | 44.0 | -0.4 | 추정 | (추정) |
 | 멀티모달 | 23.6 | -1.76 | 실측 | [[mmmu-pro]] 39.0%×1.0 |
-| 긴문맥 | 35.0 | -1.0 | 추정 | (추정) |
-| 지시 따르기 | 31.6 | -1.23 | 추정 | (추정) |
+| 긴문맥 | 40.3 | -0.64 | 추정 | (추정) |
+| 지시 따르기 | 38.6 | -0.76 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

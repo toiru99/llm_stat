@@ -8,29 +8,29 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
 status: past
-size_class: Unknown
-params_b: null
+size_class: Small
+params_b: 8
 is_reasoning: true
 radar:
   knowledge: { s: 16.1, z: -1.18, r: 32.3, estimated: false }  # 전문 지식
   reasoning: { s: 14.8, z: -0.99, r: 35.1, estimated: false }  # 추론
   coding: { s: 20.0, z: -1.11, r: 33.4, estimated: false }  # 코딩
   agentic: { s: 5.1, z: -1.21, r: 31.8, estimated: true }  # 에이전트
-  trust: { s: 7.8, z: -0.95, r: 35.8, estimated: true }  # 신뢰성
+  trust: { s: 7.8, z: -0.94, r: 35.9, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.44, r: 28.5, estimated: false }  # 긴문맥
-  instruction: { s: 8.5, z: -1.81, r: 22.9, estimated: false }  # 지시 따르기
+  long_context: { s: 0.0, z: -1.44, r: 28.3, estimated: false }  # 긴문맥
+  instruction: { s: 8.5, z: -1.82, r: 22.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek R1 Distill Llama 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-17
-timestamp: 2026-07-17T00:00:00Z
+updated: 2026-07-18
+timestamp: 2026-07-18T00:00:00Z
 ---
 
 # DeepSeek R1 Distill Llama 8B
 
-DeepSeek · Open · Unknown · 컨텍스트 128k · 종합지능 **6.0** · ⚠️ past(구세대)
+DeepSeek · Open · Small(8B) · 컨텍스트 128k · 종합지능 **6.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 추론
@@ -47,10 +47,10 @@ DeepSeek · Open · Unknown · 컨텍스트 128k · 종합지능 **6.0** · ⚠�
 | 추론 | 35.1 | -0.99 | 실측 | [[gpqa-diamond]] 30.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 33.4 | -1.11 | 실측 | [[scicode]] 12.0%×1.0 |
 | 에이전트 | 31.8 | -1.21 | 추정 | (추정) |
-| 신뢰성 | 35.8 | -0.95 | 추정 | (추정) |
+| 신뢰성 | 35.9 | -0.94 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 28.5 | -1.44 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 22.9 | -1.81 | 실측 | [[ifbench]] 18.0%×1.0 |
+| 긴문맥 | 28.3 | -1.44 | 실측 | [[aa-lcr]] 0.0%×1.0 |
+| 지시 따르기 | 22.7 | -1.82 | 실측 | [[ifbench]] 18.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

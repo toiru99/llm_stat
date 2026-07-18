@@ -5,18 +5,18 @@ creator: Z AI
 license: Open
 intelligence_index: 40.0
 price_blended_usd_1m: 0.66
-output_speed_tps: 48.0
+output_speed_tps: 50.0
 context_window: 200000
 status: past
-size_class: Unknown
-params_b: null
+size_class: Large
+params_b: 744
 is_reasoning: false
 radar:
   knowledge: { s: 54.5, z: 0.67, r: 60.1, estimated: false }  # 전문 지식
   reasoning: { s: 47.3, z: 0.72, r: 60.8, estimated: false }  # 추론
   coding: { s: 72.8, z: 1.12, r: 66.8, estimated: false }  # 코딩
   agentic: { s: 64.1, z: 1.08, r: 66.2, estimated: false }  # 에이전트
-  trust: { s: 76.5, z: 2.3, r: 84.4, estimated: false }  # 신뢰성
+  trust: { s: 76.5, z: 2.3, r: 84.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 82.9, z: 1.01, r: 65.2, estimated: false }  # 긴문맥
   instruction: { s: 84.5, z: 1.32, r: 69.9, estimated: false }  # 지시 따르기
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-17
-timestamp: 2026-07-17T00:00:00Z
+updated: 2026-07-18
+timestamp: 2026-07-18T00:00:00Z
 ---
 
 # GLM-5
 
-Z AI · Open · Unknown · 컨텍스트 200k · 종합지능 **40.0** · ⚠️ past(구세대)
+Z AI · Open · Large(744B) · 컨텍스트 200k · 종합지능 **40.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 지시 따르기
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $1.0 · 출력 $3.2 · 혼합 $0.66/1M · 48.0 t/s · TTFT 1.79s · 200k ctx` · 가성비 60.6
+`입력 $1.0 · 출력 $3.2 · 혼합 $0.66/1M · 50.0 t/s · TTFT 1.79s · 200k ctx` · 가성비 60.6
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Z AI · Open · Unknown · 컨텍스트 200k · 종합지능 **40.0** · ⚠️ 
 | 추론 | 60.8 | +0.72 | 실측 | [[critpt]] 2.0%×1.0, [[gpqa-diamond]] 82.0%×1.0, [[humanitys-last-exam]] 27.0%×1.0 |
 | 코딩 | 66.8 | +1.12 | 실측 | [[scicode]] 46.0%×1.0, [[terminal-bench]] 43.0%×0.5 |
 | 에이전트 | 66.2 | +1.08 | 실측 | [[apex-agents]] 14.0%×1.0, [[tau2-bench]] 98.0%×1.0, [[terminal-bench]] 43.0%×1.0 |
-| 신뢰성 | 84.4 | +2.3 | 실측 | [[aa-omniscience]] 66.0%×1.0 |
+| 신뢰성 | 84.5 | +2.3 | 실측 | [[aa-omniscience]] 66.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 65.2 | +1.01 | 실측 | [[aa-lcr]] 63.0%×1.0 |
 | 지시 따르기 | 69.9 | +1.32 | 실측 | [[ifbench]] 72.0%×1.0 |

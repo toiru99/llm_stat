@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 31.0
 price_blended_usd_1m: 0.42
-output_speed_tps: 205.0
+output_speed_tps: 208.0
 context_window: 400000
 status: past
 size_class: Unknown
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 38.4, z: 0.25, r: 53.8, estimated: false }  # 추론
   coding: { s: 64.4, z: 0.77, r: 61.5, estimated: false }  # 코딩
   agentic: { s: 56.8, z: 0.8, r: 62.0, estimated: false }  # 에이전트
-  trust: { s: 56.5, z: 1.35, r: 70.3, estimated: false }  # 신뢰성
+  trust: { s: 56.5, z: 1.36, r: 70.4, estimated: false }  # 신뢰성
   multimodal: { s: 78.3, z: 0.32, r: 54.8, estimated: false }  # 멀티모달
   long_context: { s: 82.9, z: 1.01, r: 65.2, estimated: false }  # 긴문맥
   instruction: { s: 78.9, z: 1.09, r: 66.4, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.1 Codex mini (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-17
-timestamp: 2026-07-17T00:00:00Z
+updated: 2026-07-18
+timestamp: 2026-07-18T00:00:00Z
 ---
 
 # GPT-5.1 Codex mini (high)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **31.0** �
 - **약점**: 전문 지식, 추론
 
 ## 실용 지표
-`입력 $0.25 · 출력 $2.0 · 혼합 $0.42/1M · 205.0 t/s · TTFT 13.88s · 400k ctx` · 가성비 73.8
+`입력 $0.25 · 출력 $2.0 · 혼합 $0.42/1M · 208.0 t/s · TTFT 9.43s · 400k ctx` · 가성비 73.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **31.0** �
 | 추론 | 53.8 | +0.25 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 81.0%×1.0, [[humanitys-last-exam]] 17.0%×1.0 |
 | 코딩 | 61.5 | +0.77 | 실측 | [[scicode]] 43.0%×1.0, [[terminal-bench]] 33.0%×0.5 |
 | 에이전트 | 62.0 | +0.8 | 실측 | [[tau2-bench]] 63.0%×1.0, [[terminal-bench]] 33.0%×1.0 |
-| 신뢰성 | 70.3 | +1.35 | 실측 | [[aa-omniscience]] 49.0%×1.0 |
+| 신뢰성 | 70.4 | +1.36 | 실측 | [[aa-omniscience]] 49.0%×1.0 |
 | 멀티모달 | 54.8 | +0.32 | 실측 | [[mmmu-pro]] 69.0%×1.0 |
 | 긴문맥 | 65.2 | +1.01 | 실측 | [[aa-lcr]] 63.0%×1.0 |
 | 지시 따르기 | 66.4 | +1.09 | 실측 | [[ifbench]] 68.0%×1.0 |

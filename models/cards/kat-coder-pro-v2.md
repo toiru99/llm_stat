@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 39.4, z: 0.3, r: 54.5, estimated: false }  # 추론
   coding: { s: 67.0, z: 0.87, r: 63.1, estimated: false }  # 코딩
   agentic: { s: 53.5, z: 0.67, r: 60.0, estimated: false }  # 에이전트
-  trust: { s: 50.6, z: 1.07, r: 66.1, estimated: false }  # 신뢰성
+  trust: { s: 50.6, z: 1.08, r: 66.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 86.8, z: 1.13, r: 67.0, estimated: false }  # 긴문맥
   instruction: { s: 77.5, z: 1.03, r: 65.5, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — KAT-Coder-Pro V2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-17
-timestamp: 2026-07-17T00:00:00Z
+updated: 2026-07-18
+timestamp: 2026-07-18T00:00:00Z
 ---
 
 # KAT-Coder-Pro V2
@@ -47,7 +47,7 @@ KwaiKAT · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **34.0**
 | 추론 | 54.5 | +0.3 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 16.0%×1.0 |
 | 코딩 | 63.1 | +0.87 | 실측 | [[scicode]] 38.0%×1.0, [[terminal-bench]] 49.0%×0.5 |
 | 에이전트 | 60.0 | +0.67 | 실측 | [[gdpval]] 20.0%×1.0, [[tau2-bench]] 89.0%×1.0, [[tau3-banking]] 6.0%×1.0, [[terminal-bench]] 49.0%×1.0 |
-| 신뢰성 | 66.1 | +1.07 | 실측 | [[aa-omniscience]] 44.0%×1.0 |
+| 신뢰성 | 66.2 | +1.08 | 실측 | [[aa-omniscience]] 44.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 67.0 | +1.13 | 실측 | [[aa-lcr]] 66.0%×1.0 |
 | 지시 따르기 | 65.5 | +1.03 | 실측 | [[ifbench]] 67.0%×1.0 |
