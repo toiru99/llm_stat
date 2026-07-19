@@ -19,13 +19,13 @@ radar:
   trust: { s: 24.0, z: -0.18, r: 47.4, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 20.3, z: -0.84, r: 37.3, estimated: true }  # 긴문맥
-  instruction: { s: 37.7, z: -0.61, r: 40.9, estimated: true }  # 지시 따르기
+  instruction: { s: 37.8, z: -0.61, r: 40.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — QwQ 32B-Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-18
-timestamp: 2026-07-18T00:00:00Z
+updated: 2026-07-19
+timestamp: 2026-07-19T00:00:00Z
 ---
 
 # QwQ 32B-Preview

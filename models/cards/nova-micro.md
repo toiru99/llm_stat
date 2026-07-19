@@ -5,7 +5,7 @@ creator: Amazon
 license: Proprietary
 intelligence_index: 5.0
 price_blended_usd_1m: 0.03
-output_speed_tps: 291.0
+output_speed_tps: 284.0
 context_window: 130000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova Micro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-18
-timestamp: 2026-07-18T00:00:00Z
+updated: 2026-07-19
+timestamp: 2026-07-19T00:00:00Z
 ---
 
 # Nova Micro
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 130k · 종합지능 **5.0**
 - **약점**: 지시 따르기, 코딩
 
 ## 실용 지표
-`입력 $0.04 · 출력 $0.14 · 혼합 $0.03/1M · 291.0 t/s · TTFT 1.01s · 130k ctx` · 가성비 166.7
+`입력 $0.04 · 출력 $0.14 · 혼합 $0.03/1M · 284.0 t/s · TTFT 0.95s · 130k ctx` · 가성비 166.7
 
 ## 레이더 8축 (평균=50 기준선)
 

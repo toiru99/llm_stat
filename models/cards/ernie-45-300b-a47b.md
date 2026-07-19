@@ -19,13 +19,13 @@ radar:
   trust: { s: 37.6, z: 0.47, r: 57.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 2.6, z: -1.37, r: 29.5, estimated: false }  # 긴문맥
-  instruction: { s: 38.0, z: -0.6, r: 41.1, estimated: false }  # 지시 따르기
+  instruction: { s: 38.0, z: -0.6, r: 41.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — ERNIE 4.5 300B A47B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-18
-timestamp: 2026-07-18T00:00:00Z
+updated: 2026-07-19
+timestamp: 2026-07-19T00:00:00Z
 ---
 
 # ERNIE 4.5 300B A47B
@@ -50,7 +50,7 @@ Baidu · Open · Large(300B) · 컨텍스트 131k · 종합지능 **9.0**
 | 신뢰성 | 57.0 | +0.47 | 실측 | [[aa-omniscience]] 33.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 29.5 | -1.37 | 실측 | [[aa-lcr]] 2.0%×1.0 |
-| 지시 따르기 | 41.1 | -0.6 | 실측 | [[ifbench]] 39.0%×1.0 |
+| 지시 따르기 | 41.0 | -0.6 | 실측 | [[ifbench]] 39.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

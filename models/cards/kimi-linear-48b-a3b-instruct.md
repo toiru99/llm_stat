@@ -19,13 +19,13 @@ radar:
   trust: { s: 23.1, z: -0.22, r: 46.7, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 34.2, z: -0.43, r: 43.5, estimated: false }  # 긴문맥
-  instruction: { s: 22.5, z: -1.24, r: 31.5, estimated: false }  # 지시 따르기
+  instruction: { s: 22.5, z: -1.24, r: 31.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi Linear 48B A3B Instruct
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-18
-timestamp: 2026-07-18T00:00:00Z
+updated: 2026-07-19
+timestamp: 2026-07-19T00:00:00Z
 ---
 
 # Kimi Linear 48B A3B Instruct
@@ -50,7 +50,7 @@ Kimi · Open · Medium(49.1B) · 컨텍스트 1M · 종합지능 **9.0**
 | 신뢰성 | 46.7 | -0.22 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 43.5 | -0.43 | 실측 | [[aa-lcr]] 26.0%×1.0 |
-| 지시 따르기 | 31.5 | -1.24 | 실측 | [[ifbench]] 28.0%×1.0 |
+| 지시 따르기 | 31.4 | -1.24 | 실측 | [[ifbench]] 28.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

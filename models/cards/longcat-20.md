@@ -19,13 +19,13 @@ radar:
   trust: { s: 28.2, z: 0.02, r: 50.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 76.3, z: 0.82, r: 62.3, estimated: false }  # 긴문맥
-  instruction: { s: 65.1, z: 0.52, r: 57.8, estimated: true }  # 지시 따르기
+  instruction: { s: 65.1, z: 0.52, r: 57.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — LongCat 2.0
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-18
-timestamp: 2026-07-18T00:00:00Z
+updated: 2026-07-19
+timestamp: 2026-07-19T00:00:00Z
 ---
 
 # LongCat 2.0
@@ -50,7 +50,7 @@ LongCat · Open · Large(1600B) · 컨텍스트 1M · 종합지능 **33.0**
 | 신뢰성 | 50.4 | +0.02 | 실측 | [[aa-omniscience]] 25.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 62.3 | +0.82 | 실측 | [[aa-lcr]] 58.0%×1.0 |
-| 지시 따르기 | 57.8 | +0.52 | 추정 | (추정) |
+| 지시 따르기 | 57.9 | +0.52 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -5,7 +5,7 @@ creator: Meta
 license: Open
 intelligence_index: 9.0
 price_blended_usd_1m: 0.59
-output_speed_tps: 85.0
+output_speed_tps: 86.0
 context_window: 128000
 status: current
 size_class: Medium
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.3 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-18
-timestamp: 2026-07-18T00:00:00Z
+updated: 2026-07-19
+timestamp: 2026-07-19T00:00:00Z
 ---
 
 # Llama 3.3 70B
@@ -37,7 +37,7 @@ Meta · Open · Medium(70B) · 컨텍스트 128k · 종합지능 **9.0**
 - **약점**: 긴문맥, 에이전트
 
 ## 실용 지표
-`입력 $0.58 · 출력 $0.71 · 혼합 $0.59/1M · 85.0 t/s · TTFT 1.61s · 128k ctx` · 가성비 15.3
+`입력 $0.58 · 출력 $0.71 · 혼합 $0.59/1M · 86.0 t/s · TTFT 1.64s · 128k ctx` · 가성비 15.3
 
 ## 레이더 8축 (평균=50 기준선)
 

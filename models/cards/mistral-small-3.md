@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: 7.0
 price_blended_usd_1m: 0.12
-output_speed_tps: 153.0
+output_speed_tps: 149.0
 context_window: 32000
 status: past
 size_class: Small
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 27.0, z: -0.66, r: 40.1, estimated: false }  # 전문 지식
   reasoning: { s: 24.3, z: -0.49, r: 42.6, estimated: false }  # 추론
   coding: { s: 40.0, z: -0.27, r: 46.0, estimated: false }  # 코딩
-  agentic: { s: 20.2, z: -0.62, r: 40.6, estimated: false }  # 에이전트
+  agentic: { s: 20.2, z: -0.63, r: 40.6, estimated: false }  # 에이전트
   trust: { s: 40.7, z: 0.61, r: 59.2, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.44, r: 28.3, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Small 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-18
-timestamp: 2026-07-18T00:00:00Z
+updated: 2026-07-19
+timestamp: 2026-07-19T00:00:00Z
 ---
 
 # Mistral Small 3
@@ -37,7 +37,7 @@ Mistral · Open · Small(24B) · 컨텍스트 32k · 종합지능 **7.0** · ⚠
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.3 · 혼합 $0.12/1M · 153.0 t/s · TTFT 0.83s · 32k ctx` · 가성비 58.3
+`입력 $0.1 · 출력 $0.3 · 혼합 $0.12/1M · 149.0 t/s · TTFT 0.82s · 32k ctx` · 가성비 58.3
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Mistral · Open · Small(24B) · 컨텍스트 32k · 종합지능 **7.0** · ⚠
 | 전문 지식 | 40.1 | -0.66 | 실측 | [[gpqa-diamond]] 46.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 42.6 | -0.49 | 실측 | [[gpqa-diamond]] 46.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 46.0 | -0.27 | 실측 | [[scicode]] 24.0%×1.0 |
-| 에이전트 | 40.6 | -0.62 | 실측 | [[tau2-bench]] 20.0%×1.0 |
+| 에이전트 | 40.6 | -0.63 | 실측 | [[tau2-bench]] 20.0%×1.0 |
 | 신뢰성 | 59.2 | +0.61 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.3 | -1.44 | 실측 | [[aa-lcr]] 0.0%×1.0 |

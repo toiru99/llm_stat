@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 53.0
 price_blended_usd_1m: 1.54
-output_speed_tps: 86.0
+output_speed_tps: 82.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 72.2, z: 1.53, r: 72.9, estimated: false }  # 전문 지식
   reasoning: { s: 74.9, z: 2.16, r: 82.5, estimated: false }  # 추론
   coding: { s: 90.0, z: 1.84, r: 77.6, estimated: false }  # 코딩
-  agentic: { s: 86.1, z: 1.93, r: 79.0, estimated: false }  # 에이전트
+  agentic: { s: 86.1, z: 1.94, r: 79.0, estimated: false }  # 에이전트
   trust: { s: 72.9, z: 2.14, r: 82.0, estimated: false }  # 신뢰성
   multimodal: { s: 89.9, z: 0.87, r: 63.1, estimated: false }  # 멀티모달
   long_context: { s: 93.4, z: 1.33, r: 69.9, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-18
-timestamp: 2026-07-18T00:00:00Z
+updated: 2026-07-19
+timestamp: 2026-07-19T00:00:00Z
 ---
 
 # Claude Sonnet 5 (max)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **53.0**
 - **약점**: 멀티모달, 지시 따르기
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 86.0 t/s · TTFT 200.4s · 1M ctx` · 가성비 34.4
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 82.0 t/s · TTFT 195.72s · 1M ctx` · 가성비 34.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **53.0**
 | 전문 지식 | 72.9 | +1.53 | 실측 | [[aa-omniscience]] 38.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 40.0%×0.3 |
 | 추론 | 82.5 | +2.16 | 실측 | [[critpt]] 17.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 40.0%×1.0 |
 | 코딩 | 77.6 | +1.84 | 실측 | [[scicode]] 54.0%×1.0 |
-| 에이전트 | 79.0 | +1.93 | 실측 | [[gdpval]] 55.0%×1.0, [[tau3-banking]] 28.0%×1.0 |
+| 에이전트 | 79.0 | +1.94 | 실측 | [[gdpval]] 55.0%×1.0, [[tau3-banking]] 28.0%×1.0 |
 | 신뢰성 | 82.0 | +2.14 | 실측 | [[aa-omniscience]] 63.0%×1.0 |
 | 멀티모달 | 63.1 | +0.87 | 실측 | [[mmmu-pro]] 77.0%×1.0 |
 | 긴문맥 | 69.9 | +1.33 | 실측 | [[aa-lcr]] 71.0%×1.0 |

@@ -5,7 +5,7 @@ creator: Cohere
 license: Open
 intelligence_index: 20.0
 price_blended_usd_1m: 0.0
-output_speed_tps: 92.0
+output_speed_tps: 102.0
 context_window: 256000
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — North Mini Code
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-18
-timestamp: 2026-07-18T00:00:00Z
+updated: 2026-07-19
+timestamp: 2026-07-19T00:00:00Z
 ---
 
 # North Mini Code
@@ -37,7 +37,7 @@ Cohere · Open · Small(30B) · 컨텍스트 256k · 종합지능 **20.0**
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0.0/1M · 92.0 t/s · TTFT 0.31s · 256k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0.0/1M · 102.0 t/s · TTFT 0.32s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

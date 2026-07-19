@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: 11.0
 price_blended_usd_1m: 0.6
-output_speed_tps: 81.0
+output_speed_tps: 82.0
 context_window: 128000
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Magistral Small 1.2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-18
-timestamp: 2026-07-18T00:00:00Z
+updated: 2026-07-19
+timestamp: 2026-07-19T00:00:00Z
 ---
 
 # Magistral Small 1.2
@@ -37,7 +37,7 @@ Mistral · Open · Small(24B) · 컨텍스트 128k · 종합지능 **11.0**
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $0.5 · 출력 $1.5 · 혼합 $0.6/1M · 81.0 t/s · TTFT 0.94s · 128k ctx` · 가성비 18.3
+`입력 $0.5 · 출력 $1.5 · 혼합 $0.6/1M · 82.0 t/s · TTFT 0.92s · 128k ctx` · 가성비 18.3
 
 ## 레이더 8축 (평균=50 기준선)
 

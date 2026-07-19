@@ -5,7 +5,7 @@ creator: Nous Research
 license: Open
 intelligence_index: 9.0
 price_blended_usd_1m: 1.2
-output_speed_tps: 37.0
+output_speed_tps: 38.0
 context_window: 128000
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hermes 4 405B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-18
-timestamp: 2026-07-18T00:00:00Z
+updated: 2026-07-19
+timestamp: 2026-07-19T00:00:00Z
 ---
 
 # Hermes 4 405B
@@ -37,7 +37,7 @@ Nous Research · Open · Large(406B) · 컨텍스트 128k · 종합지능 **9.0*
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $1.0 · 출력 $3.0 · 혼합 $1.2/1M · 37.0 t/s · TTFT 2.4s · 128k ctx` · 가성비 7.5
+`입력 $1.0 · 출력 $3.0 · 혼합 $1.2/1M · 38.0 t/s · TTFT 2.4s · 128k ctx` · 가성비 7.5
 
 ## 레이더 8축 (평균=50 기준선)
 

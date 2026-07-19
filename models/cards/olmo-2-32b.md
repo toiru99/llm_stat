@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 18.1, z: -1.08, r: 33.7, estimated: false }  # 전문 지식
   reasoning: { s: 16.6, z: -0.9, r: 36.5, estimated: false }  # 추론
   coding: { s: 8.9, z: -1.58, r: 26.4, estimated: false }  # 코딩
-  agentic: { s: 0.0, z: -1.41, r: 28.9, estimated: false }  # 에이전트
+  agentic: { s: 0.0, z: -1.41, r: 28.8, estimated: false }  # 에이전트
   trust: { s: 18.9, z: -0.42, r: 43.8, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.44, r: 28.3, estimated: false }  # 긴문맥
-  instruction: { s: 36.6, z: -0.65, r: 40.2, estimated: false }  # 지시 따르기
+  instruction: { s: 36.6, z: -0.66, r: 40.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — OLMo 2 32B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-18
-timestamp: 2026-07-18T00:00:00Z
+updated: 2026-07-19
+timestamp: 2026-07-19T00:00:00Z
 ---
 
 # OLMo 2 32B
@@ -46,11 +46,11 @@ Allen Institute for AI · Open · Small(32.2B) · 컨텍스트 4k · 종합지�
 | 전문 지식 | 33.7 | -1.08 | 실측 | [[gpqa-diamond]] 33.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 36.5 | -0.9 | 실측 | [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 26.4 | -1.58 | 실측 | [[scicode]] 8.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 28.9 | -1.41 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 에이전트 | 28.8 | -1.41 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | 43.8 | -0.42 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.3 | -1.44 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 40.2 | -0.65 | 실측 | [[ifbench]] 38.0%×1.0 |
+| 지시 따르기 | 40.2 | -0.66 | 실측 | [[ifbench]] 38.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

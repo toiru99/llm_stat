@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 17.3, z: -1.12, r: 33.1, estimated: true }  # 전문 지식
   reasoning: { s: 16.1, z: -0.92, r: 36.2, estimated: true }  # 추론
   coding: { s: 16.7, z: -1.25, r: 31.3, estimated: true }  # 코딩
-  agentic: { s: 0.0, z: -1.41, r: 28.9, estimated: false }  # 에이전트
+  agentic: { s: 0.0, z: -1.41, r: 28.8, estimated: false }  # 에이전트
   trust: { s: 10.7, z: -0.8, r: 37.9, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.5, z: -1.43, r: 28.6, estimated: true }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-18
-timestamp: 2026-07-18T00:00:00Z
+updated: 2026-07-19
+timestamp: 2026-07-19T00:00:00Z
 ---
 
 # GPT-4
@@ -46,7 +46,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 8k · 종합지능 **7.0** · �
 | 전문 지식 | 33.1 | -1.12 | 추정 | (추정) |
 | 추론 | 36.2 | -0.92 | 추정 | (추정) |
 | 코딩 | 31.3 | -1.25 | 추정 | (추정) |
-| 에이전트 | 28.9 | -1.41 | 실측 | [[gdpval]] 0.0%×1.0 |
+| 에이전트 | 28.8 | -1.41 | 실측 | [[gdpval]] 0.0%×1.0 |
 | 신뢰성 | 37.9 | -0.8 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.6 | -1.43 | 추정 | (추정) |

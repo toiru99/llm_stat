@@ -5,7 +5,7 @@ creator: DeepSeek
 license: Open
 intelligence_index: 10.0
 price_blended_usd_1m: 0.73
-output_speed_tps: 23.0
+output_speed_tps: 25.0
 context_window: 128000
 status: past
 size_class: Medium
@@ -19,13 +19,13 @@ radar:
   trust: { s: 20.0, z: -0.37, r: 44.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 14.5, z: -1.02, r: 34.8, estimated: false }  # 긴문맥
-  instruction: { s: 22.5, z: -1.24, r: 31.5, estimated: false }  # 지시 따르기
+  instruction: { s: 22.5, z: -1.24, r: 31.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek R1 Distill Llama 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-18
-timestamp: 2026-07-18T00:00:00Z
+updated: 2026-07-19
+timestamp: 2026-07-19T00:00:00Z
 ---
 
 # DeepSeek R1 Distill Llama 70B
@@ -37,7 +37,7 @@ DeepSeek · Open · Medium(70B) · 컨텍스트 128k · 종합지능 **10.0** ·
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.7 · 출력 $1.05 · 혼합 $0.73/1M · 23.0 t/s · TTFT 0.77s · 128k ctx` · 가성비 13.7
+`입력 $0.7 · 출력 $1.05 · 혼합 $0.73/1M · 25.0 t/s · TTFT 0.77s · 128k ctx` · 가성비 13.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ DeepSeek · Open · Medium(70B) · 컨텍스트 128k · 종합지능 **10.0** ·
 | 신뢰성 | 44.5 | -0.37 | 실측 | [[aa-omniscience]] 18.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 34.8 | -1.02 | 실측 | [[aa-lcr]] 11.0%×1.0 |
-| 지시 따르기 | 31.5 | -1.24 | 실측 | [[ifbench]] 28.0%×1.0 |
+| 지시 따르기 | 31.4 | -1.24 | 실측 | [[ifbench]] 28.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

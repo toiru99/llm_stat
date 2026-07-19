@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hermes 4 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-18
-timestamp: 2026-07-18T00:00:00Z
+updated: 2026-07-19
+timestamp: 2026-07-19T00:00:00Z
 ---
 
 # Hermes 4 70B
@@ -37,7 +37,7 @@ Nous Research · Open · Medium(70.6B) · 컨텍스트 128k · 종합지능 **10
 - **약점**: 신뢰성, 긴문맥
 
 ## 실용 지표
-`입력 $0.13 · 출력 $0.4 · 혼합 $0.16/1M · 84.0 t/s · TTFT 1.38s · 128k ctx` · 가성비 62.5
+`입력 $0.13 · 출력 $0.4 · 혼합 $0.16/1M · 84.0 t/s · TTFT 1.39s · 128k ctx` · 가성비 62.5
 
 ## 레이더 8축 (평균=50 기준선)
 

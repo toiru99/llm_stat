@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 40.5, z: -0.0, r: 50.0, estimated: false }  # 전문 지식
   reasoning: { s: 38.3, z: 0.25, r: 53.7, estimated: false }  # 추론
   coding: { s: 56.2, z: 0.42, r: 56.2, estimated: false }  # 코딩
-  agentic: { s: 60.4, z: 0.93, r: 64.0, estimated: false }  # 에이전트
+  agentic: { s: 60.4, z: 0.94, r: 64.0, estimated: false }  # 에이전트
   trust: { s: 74.1, z: 2.19, r: 82.9, estimated: false }  # 신뢰성
   multimodal: { s: 81.2, z: 0.46, r: 56.8, estimated: false }  # 멀티모달
   long_context: { s: 69.7, z: 0.62, r: 59.3, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 Omni Plus
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-18
-timestamp: 2026-07-18T00:00:00Z
+updated: 2026-07-19
+timestamp: 2026-07-19T00:00:00Z
 ---
 
 # Qwen3.5 Omni Plus
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **31.0**
 - **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
-`입력 $0.4 · 출력 $4.8 · 혼합 $0.84/1M · 55.0 t/s · TTFT 2.4s · 256k ctx` · 가성비 36.9
+`입력 $0.4 · 출력 $4.8 · 혼합 $0.84/1M · 55.0 t/s · TTFT 2.35s · 256k ctx` · 가성비 36.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **31.0**
 | 전문 지식 | 50.0 | +-0.0 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 83.0%×0.4, [[humanitys-last-exam]] 14.0%×0.3 |
 | 추론 | 53.7 | +0.25 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 83.0%×1.0, [[humanitys-last-exam]] 14.0%×1.0 |
 | 코딩 | 56.2 | +0.42 | 실측 | [[scicode]] 41.0%×1.0, [[terminal-bench]] 21.0%×0.5 |
-| 에이전트 | 64.0 | +0.93 | 실측 | [[tau2-bench]] 88.0%×1.0, [[terminal-bench]] 21.0%×1.0 |
+| 에이전트 | 64.0 | +0.94 | 실측 | [[tau2-bench]] 88.0%×1.0, [[terminal-bench]] 21.0%×1.0 |
 | 신뢰성 | 82.9 | +2.19 | 실측 | [[aa-omniscience]] 64.0%×1.0 |
 | 멀티모달 | 56.8 | +0.46 | 실측 | [[mmmu-pro]] 71.0%×1.0 |
 | 긴문맥 | 59.3 | +0.62 | 실측 | [[aa-lcr]] 53.0%×1.0 |

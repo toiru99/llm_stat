@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 58.0
 price_blended_usd_1m: 4.35
-output_speed_tps: 55.0
+output_speed_tps: 53.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Sol (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-18
-timestamp: 2026-07-18T00:00:00Z
+updated: 2026-07-19
+timestamp: 2026-07-19T00:00:00Z
 ---
 
 # GPT-5.6 Sol (xhigh)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **58.0**
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $5.0 · 출력 $30.0 · 혼합 $4.35/1M · 55.0 t/s · TTFT 42.17s · 1M ctx` · 가성비 13.3
+`입력 $5.0 · 출력 $30.0 · 혼합 $4.35/1M · 53.0 t/s · TTFT 42.17s · 1M ctx` · 가성비 13.3
 
 ## 레이더 8축 (평균=50 기준선)
 

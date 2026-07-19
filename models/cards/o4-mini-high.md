@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 26.0
 price_blended_usd_1m: 0.85
-output_speed_tps: 156.0
+output_speed_tps: 174.0
 context_window: 200000
 status: past
 size_class: Unknown
@@ -19,13 +19,13 @@ radar:
   trust: { s: 22.4, z: -0.25, r: 46.2, estimated: false }  # 신뢰성
   multimodal: { s: 78.3, z: 0.32, r: 54.8, estimated: false }  # 멀티모달
   long_context: { s: 72.4, z: 0.7, r: 60.5, estimated: false }  # 긴문맥
-  instruction: { s: 80.3, z: 1.15, r: 67.2, estimated: false }  # 지시 따르기
+  instruction: { s: 80.3, z: 1.15, r: 67.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — o4-mini (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-18
-timestamp: 2026-07-18T00:00:00Z
+updated: 2026-07-19
+timestamp: 2026-07-19T00:00:00Z
 ---
 
 # o4-mini (high)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **26.0** �
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $1.1 · 출력 $4.4 · 혼합 $0.85/1M · 156.0 t/s · TTFT 26.56s · 200k ctx` · 가성비 30.6
+`입력 $1.1 · 출력 $4.4 · 혼합 $0.85/1M · 174.0 t/s · TTFT 26.05s · 200k ctx` · 가성비 30.6
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **26.0** �
 | 신뢰성 | 46.2 | -0.25 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
 | 멀티모달 | 54.8 | +0.32 | 실측 | [[mmmu-pro]] 69.0%×1.0 |
 | 긴문맥 | 60.5 | +0.7 | 실측 | [[aa-lcr]] 55.0%×1.0 |
-| 지시 따르기 | 67.2 | +1.15 | 실측 | [[ifbench]] 69.0%×1.0 |
+| 지시 따르기 | 67.3 | +1.15 | 실측 | [[ifbench]] 69.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

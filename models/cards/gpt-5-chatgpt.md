@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 15.0
 price_blended_usd_1m: 1.34
-output_speed_tps: 164.0
+output_speed_tps: 161.0
 context_window: 128000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5 (ChatGPT)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-18
-timestamp: 2026-07-18T00:00:00Z
+updated: 2026-07-19
+timestamp: 2026-07-19T00:00:00Z
 ---
 
 # GPT-5 (ChatGPT)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **15.0** �
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $1.25 · 출력 $10.0 · 혼합 $1.34/1M · 164.0 t/s · TTFT 0.81s · 128k ctx` · 가성비 11.2
+`입력 $1.25 · 출력 $10.0 · 혼합 $1.34/1M · 161.0 t/s · TTFT 0.77s · 128k ctx` · 가성비 11.2
 
 ## 레이더 8축 (평균=50 기준선)
 

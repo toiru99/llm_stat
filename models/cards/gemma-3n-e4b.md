@@ -5,7 +5,7 @@ creator: Google
 license: Open
 intelligence_index: 1.0
 price_blended_usd_1m: 0.02
-output_speed_tps: 54.0
+output_speed_tps: 56.0
 context_window: 32000
 status: past
 size_class: Small
@@ -19,13 +19,13 @@ radar:
   trust: { s: 3.5, z: -1.14, r: 32.9, estimated: false }  # 신뢰성
   multimodal: { s: 15.9, z: -2.66, r: 10.0, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.44, r: 28.3, estimated: false }  # 긴문맥
-  instruction: { s: 22.5, z: -1.24, r: 31.5, estimated: false }  # 지시 따르기
+  instruction: { s: 22.5, z: -1.24, r: 31.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 3n E4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-18
-timestamp: 2026-07-18T00:00:00Z
+updated: 2026-07-19
+timestamp: 2026-07-19T00:00:00Z
 ---
 
 # Gemma 3n E4B
@@ -37,7 +37,7 @@ Google · Open · Small(8.39B) · 컨텍스트 32k · 종합지능 **1.0** · �
 - **약점**: 코딩, 멀티모달
 
 ## 실용 지표
-`입력 $0.02 · 출력 $0.04 · 혼합 $0.02/1M · 54.0 t/s · TTFT 1.26s · 32k ctx` · 가성비 50.0
+`입력 $0.02 · 출력 $0.04 · 혼합 $0.02/1M · 56.0 t/s · TTFT 1.3s · 32k ctx` · 가성비 50.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Google · Open · Small(8.39B) · 컨텍스트 32k · 종합지능 **1.0** · �
 | 신뢰성 | 32.9 | -1.14 | 실측 | [[aa-omniscience]] 4.0%×1.0 |
 | 멀티모달 | 10.0 | -2.66 | 실측 | [[mmmu-pro]] 26.0%×1.0 |
 | 긴문맥 | 28.3 | -1.44 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 31.5 | -1.24 | 실측 | [[ifbench]] 28.0%×1.0 |
+| 지시 따르기 | 31.4 | -1.24 | 실측 | [[ifbench]] 28.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

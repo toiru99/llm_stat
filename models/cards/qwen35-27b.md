@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 27B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-18
-timestamp: 2026-07-18T00:00:00Z
+updated: 2026-07-19
+timestamp: 2026-07-19T00:00:00Z
 ---
 
 # Qwen3.5 27B
@@ -37,7 +37,7 @@ Alibaba · Open · Small(27.8B) · 컨텍스트 262k · 종합지능 **34.0** ·
 - **약점**: 전문 지식, 신뢰성
 
 ## 실용 지표
-`입력 $0.3 · 출력 $2.4 · 혼합 $0.51/1M · 77.0 t/s · TTFT 5.64s · 262k ctx` · 가성비 66.7
+`입력 $0.3 · 출력 $2.4 · 혼합 $0.51/1M · 77.0 t/s · TTFT 5.63s · 262k ctx` · 가성비 66.7
 
 ## 레이더 8축 (평균=50 기준선)
 

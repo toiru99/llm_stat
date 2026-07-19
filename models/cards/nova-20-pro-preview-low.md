@@ -19,13 +19,13 @@ radar:
   trust: { s: 14.1, z: -0.64, r: 40.4, estimated: false }  # 신뢰성
   multimodal: { s: 69.6, z: -0.1, r: 48.5, estimated: false }  # 멀티모달
   long_context: { s: 81.6, z: 0.97, r: 64.6, estimated: false }  # 긴문맥
-  instruction: { s: 95.8, z: 1.79, r: 76.8, estimated: false }  # 지시 따르기
+  instruction: { s: 95.8, z: 1.79, r: 76.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nova 2.0 Pro Preview (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-18
-timestamp: 2026-07-18T00:00:00Z
+updated: 2026-07-19
+timestamp: 2026-07-19T00:00:00Z
 ---
 
 # Nova 2.0 Pro Preview (low)
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **20.0**
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $1.25 · 출력 $10.0 · 혼합 $2.13/1M · 126.0 t/s · TTFT 11.25s · 256k ctx` · 가성비 9.4
+`입력 $1.25 · 출력 $10.0 · 혼합 $2.13/1M · 126.0 t/s · TTFT 9.78s · 256k ctx` · 가성비 9.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **20.0**
 | 신뢰성 | 40.4 | -0.64 | 실측 | [[aa-omniscience]] 13.0%×1.0 |
 | 멀티모달 | 48.5 | -0.1 | 실측 | [[mmmu-pro]] 63.0%×1.0 |
 | 긴문맥 | 64.6 | +0.97 | 실측 | [[aa-lcr]] 62.0%×1.0 |
-| 지시 따르기 | 76.8 | +1.79 | 실측 | [[ifbench]] 80.0%×1.0 |
+| 지시 따르기 | 76.9 | +1.79 | 실측 | [[ifbench]] 80.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

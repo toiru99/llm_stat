@@ -19,13 +19,13 @@ radar:
   trust: { s: 97.6, z: 3.3, r: 99.5, estimated: false }  # 신뢰성
   multimodal: { s: 92.8, z: 1.01, r: 65.2, estimated: false }  # 멀티모달
   long_context: { s: 97.4, z: 1.44, r: 71.6, estimated: false }  # 긴문맥
-  instruction: { s: 100.0, z: 1.96, r: 79.5, estimated: false }  # 지시 따르기
+  instruction: { s: 100.0, z: 1.97, r: 79.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax-M3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-18
-timestamp: 2026-07-18T00:00:00Z
+updated: 2026-07-19
+timestamp: 2026-07-19T00:00:00Z
 ---
 
 # MiniMax-M3
@@ -50,7 +50,7 @@ MiniMax · Open · Large(428B) · 컨텍스트 1M · 종합지능 **44.0**
 | 신뢰성 | 99.5 | +3.3 | 실측 | [[aa-omniscience]] 84.0%×1.0 |
 | 멀티모달 | 65.2 | +1.01 | 실측 | [[mmmu-pro]] 79.0%×1.0 |
 | 긴문맥 | 71.6 | +1.44 | 실측 | [[aa-lcr]] 74.0%×1.0 |
-| 지시 따르기 | 79.5 | +1.96 | 실측 | [[ifbench]] 83.0%×1.0 |
+| 지시 따르기 | 79.5 | +1.97 | 실측 | [[ifbench]] 83.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
