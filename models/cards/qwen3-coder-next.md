@@ -5,18 +5,18 @@ creator: Alibaba
 license: Open
 intelligence_index: 21.0
 price_blended_usd_1m: 0.43
-output_speed_tps: 96.0
+output_speed_tps: 106.0
 context_window: 256000
 status: current
-size_class: Medium
-params_b: 79.7
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 35.3, z: -0.25, r: 46.2, estimated: false }  # 전문 지식
   reasoning: { s: 30.5, z: -0.16, r: 47.5, estimated: false }  # 추론
   coding: { s: 44.6, z: -0.07, r: 49.0, estimated: false }  # 코딩
   agentic: { s: 35.2, z: -0.04, r: 49.4, estimated: false }  # 에이전트
-  trust: { s: 9.4, z: -0.87, r: 37.0, estimated: false }  # 신뢰성
+  trust: { s: 9.4, z: -0.86, r: 37.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 52.6, z: 0.12, r: 51.7, estimated: false }  # 긴문맥
   instruction: { s: 32.4, z: -0.83, r: 37.5, estimated: false }  # 지시 따르기
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Coder Next
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Qwen3 Coder Next
 
-Alibaba · Open · Medium(79.7B) · 컨텍스트 256k · 종합지능 **21.0**
+Alibaba · Open · Unknown · 컨텍스트 256k · 종합지능 **21.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 에이전트
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $0.35 · 출력 $1.2 · 혼합 $0.43/1M · 96.0 t/s · TTFT 1.76s · 256k ctx` · 가성비 48.8
+`입력 $0.35 · 출력 $1.2 · 혼합 $0.43/1M · 106.0 t/s · TTFT 1.5s · 256k ctx` · 가성비 48.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Alibaba · Open · Medium(79.7B) · 컨텍스트 256k · 종합지능 **21.0**
 | 추론 | 47.5 | -0.16 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 74.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
 | 코딩 | 49.0 | -0.07 | 실측 | [[scicode]] 32.0%×1.0, [[terminal-bench]] 18.0%×0.5 |
 | 에이전트 | 49.4 | -0.04 | 실측 | [[gdpval]] 11.0%×1.0, [[tau2-bench]] 80.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 18.0%×1.0 |
-| 신뢰성 | 37.0 | -0.87 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 신뢰성 | 37.0 | -0.86 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 51.7 | +0.12 | 실측 | [[aa-lcr]] 40.0%×1.0 |
 | 지시 따르기 | 37.5 | -0.83 | 실측 | [[ifbench]] 35.0%×1.0 |

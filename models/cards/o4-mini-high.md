@@ -5,14 +5,14 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 26.0
 price_blended_usd_1m: 0.85
-output_speed_tps: 174.0
+output_speed_tps: 177.0
 context_window: 200000
 status: past
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 48.3, z: 0.37, r: 55.6, estimated: false }  # 전문 지식
+  knowledge: { s: 48.3, z: 0.38, r: 55.6, estimated: false }  # 전문 지식
   reasoning: { s: 38.9, z: 0.28, r: 54.1, estimated: false }  # 추론
   coding: { s: 59.8, z: 0.57, r: 58.5, estimated: false }  # 코딩
   agentic: { s: 39.6, z: 0.13, r: 52.0, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — o4-mini (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # o4-mini (high)
@@ -37,13 +37,13 @@ OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **26.0** �
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $1.1 · 출력 $4.4 · 혼합 $0.85/1M · 174.0 t/s · TTFT 26.05s · 200k ctx` · 가성비 30.6
+`입력 $1.1 · 출력 $4.4 · 혼합 $0.85/1M · 177.0 t/s · TTFT 24.85s · 200k ctx` · 가성비 30.6
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 55.6 | +0.37 | 실측 | [[aa-omniscience]] 25.0%×1.0, [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 18.0%×0.3 |
+| 전문 지식 | 55.6 | +0.38 | 실측 | [[aa-omniscience]] 25.0%×1.0, [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 18.0%×0.3 |
 | 추론 | 54.1 | +0.28 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 18.0%×1.0 |
 | 코딩 | 58.5 | +0.57 | 실측 | [[scicode]] 47.0%×1.0, [[terminal-bench]] 15.0%×0.5 |
 | 에이전트 | 52.0 | +0.13 | 실측 | [[tau2-bench]] 56.0%×1.0, [[terminal-bench]] 15.0%×1.0 |

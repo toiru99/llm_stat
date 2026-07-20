@@ -5,11 +5,11 @@ creator: Arcee AI
 license: Open
 intelligence_index: 24.0
 price_blended_usd_1m: 0.24
-output_speed_tps: 207.0
+output_speed_tps: 208.0
 context_window: 512000
 status: current
-size_class: Large
-params_b: 399
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 44.5, z: 0.19, r: 52.9, estimated: false }  # 전문 지식
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Trinity Large Thinking
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Trinity Large Thinking
 
-Arcee AI · Open · Large(399B) · 컨텍스트 512k · 종합지능 **24.0**
+Arcee AI · Open · Unknown · 컨텍스트 512k · 종합지능 **24.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 에이전트
 - **약점**: 긴문맥, 신뢰성
 
 ## 실용 지표
-`입력 $0.23 · 출력 $0.88 · 혼합 $0.24/1M · 207.0 t/s · TTFT 1.06s · 512k ctx` · 가성비 100.0
+`입력 $0.23 · 출력 $0.88 · 혼합 $0.24/1M · 208.0 t/s · TTFT 0.99s · 512k ctx` · 가성비 100.0
 
 ## 레이더 8축 (평균=50 기준선)
 

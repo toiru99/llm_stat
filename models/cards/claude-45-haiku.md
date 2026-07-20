@@ -5,15 +5,15 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 30.0
 price_blended_usd_1m: 0.77
-output_speed_tps: 91.0
+output_speed_tps: 102.0
 context_window: 200000
 status: current
 size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 34.7, z: -0.28, r: 45.7, estimated: false }  # 전문 지식
-  reasoning: { s: 28.4, z: -0.28, r: 45.8, estimated: false }  # 추론
+  knowledge: { s: 34.7, z: -0.28, r: 45.8, estimated: false }  # 전문 지식
+  reasoning: { s: 28.4, z: -0.28, r: 45.9, estimated: false }  # 추론
   coding: { s: 61.4, z: 0.64, r: 59.6, estimated: false }  # 코딩
   agentic: { s: 40.6, z: 0.17, r: 52.5, estimated: false }  # 에이전트
   trust: { s: 85.9, z: 2.75, r: 91.2, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 4.5 Haiku
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Claude 4.5 Haiku
@@ -37,14 +37,14 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **30.0*
 - **약점**: 추론, 멀티모달
 
 ## 실용 지표
-`입력 $1.0 · 출력 $5.0 · 혼합 $0.77/1M · 91.0 t/s · TTFT 16.11s · 200k ctx` · 가성비 39.0
+`입력 $1.0 · 출력 $5.0 · 혼합 $0.77/1M · 102.0 t/s · TTFT 20.11s · 200k ctx` · 가성비 39.0
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 45.7 | -0.28 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
-| 추론 | 45.8 | -0.28 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 67.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
+| 전문 지식 | 45.8 | -0.28 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
+| 추론 | 45.9 | -0.28 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 67.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
 | 코딩 | 59.6 | +0.64 | 실측 | [[scicode]] 43.0%×1.0, [[terminal-bench]] 27.0%×0.5 |
 | 에이전트 | 52.5 | +0.17 | 실측 | [[gdpval]] 20.0%×1.0, [[itbench]] 27.0%×1.0, [[tau2-bench]] 55.0%×1.0, [[tau3-banking]] 9.0%×1.0, [[terminal-bench]] 27.0%×1.0 |
 | 신뢰성 | 91.2 | +2.75 | 실측 | [[aa-omniscience]] 74.0%×1.0 |

@@ -5,7 +5,7 @@ creator: Alibaba
 license: Proprietary
 intelligence_index: 25.0
 price_blended_usd_1m: 1.68
-output_speed_tps: 51.0
+output_speed_tps: 57.0
 context_window: 262000
 status: past
 size_class: Unknown
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 34.0, z: 0.02, r: 50.3, estimated: false }  # 추론
   coding: { s: 51.9, z: 0.24, r: 53.6, estimated: false }  # 코딩
   agentic: { s: 55.3, z: 0.74, r: 61.1, estimated: false }  # 에이전트
-  trust: { s: 9.4, z: -0.87, r: 37.0, estimated: false }  # 신뢰성
+  trust: { s: 9.4, z: -0.86, r: 37.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 76.3, z: 0.82, r: 62.3, estimated: false }  # 긴문맥
   instruction: { s: 59.2, z: 0.28, r: 54.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Max Thinking (Preview)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Qwen3 Max Thinking (Preview)
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 262k · 종합지능 **25.0** 
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $1.2 · 출력 $6.0 · 혼합 $1.68/1M · 51.0 t/s · TTFT 4.03s · 262k ctx` · 가성비 14.9
+`입력 $1.2 · 출력 $6.0 · 혼합 $1.68/1M · 57.0 t/s · TTFT 4.01s · 262k ctx` · 가성비 14.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 262k · 종합지능 **25.0** 
 | 추론 | 50.3 | +0.02 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
 | 코딩 | 53.6 | +0.24 | 실측 | [[scicode]] 39.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
 | 에이전트 | 61.1 | +0.74 | 실측 | [[tau2-bench]] 84.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
-| 신뢰성 | 37.0 | -0.87 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 신뢰성 | 37.0 | -0.86 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 62.3 | +0.82 | 실측 | [[aa-lcr]] 58.0%×1.0 |
 | 지시 따르기 | 54.1 | +0.28 | 실측 | [[ifbench]] 54.0%×1.0 |

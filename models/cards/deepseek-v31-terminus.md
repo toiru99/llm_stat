@@ -8,9 +8,9 @@ price_blended_usd_1m: 1.75
 output_speed_tps: None
 context_window: 128000
 status: past
-size_class: Large
-params_b: 685
-is_reasoning: false
+size_class: Unknown
+params_b: null
+is_reasoning: true
 radar:
   knowledge: { s: 50.5, z: 0.48, r: 57.2, estimated: false }  # 전문 지식
   reasoning: { s: 38.4, z: 0.25, r: 53.8, estimated: false }  # 추론
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V3.1 Terminus
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # DeepSeek V3.1 Terminus
 
-DeepSeek · Open · Large(685B) · 컨텍스트 128k · 종합지능 **30.0** · ⚠️ past(구세대)
+DeepSeek · Open · Unknown · 컨텍스트 128k · 종합지능 **30.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 코딩

@@ -8,9 +8,9 @@ price_blended_usd_1m: 0.13
 output_speed_tps: None
 context_window: 256000
 status: current
-size_class: Small
-params_b: 25.2
-is_reasoning: false
+size_class: Unknown
+params_b: null
+is_reasoning: true
 radar:
   knowledge: { s: 41.8, z: 0.06, r: 50.9, estimated: false }  # 전문 지식
   reasoning: { s: 38.3, z: 0.24, r: 53.6, estimated: false }  # 추론
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 26B A4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Gemma 4 26B A4B
 
-Google · Open · Small(25.2B) · 컨텍스트 256k · 종합지능 **26.0**
+Google · Open · Unknown · 컨텍스트 256k · 종합지능 **26.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 긴문맥

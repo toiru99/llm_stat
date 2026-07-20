@@ -5,11 +5,11 @@ creator: Nous Research
 license: Open
 intelligence_index: 5.0
 price_blended_usd_1m: 0.7
-output_speed_tps: 34.0
+output_speed_tps: 35.0
 context_window: 128000
 status: past
-size_class: Medium
-params_b: 70.6
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 22.9, z: -0.85, r: 37.2, estimated: false }  # 전문 지식
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hermes 3 - Llama-3.1 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Hermes 3 - Llama-3.1 70B
 
-Nous Research · Open · Medium(70.6B) · 컨텍스트 128k · 종합지능 **5.0** · ⚠️ past(구세대)
+Nous Research · Open · Unknown · 컨텍스트 128k · 종합지능 **5.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 코딩, 신뢰성
 - **약점**: 전문 지식, 지시 따르기
 
 ## 실용 지표
-`입력 $0.7 · 출력 $0.7 · 혼합 $0.7/1M · 34.0 t/s · TTFT 1.88s · 128k ctx` · 가성비 7.1
+`입력 $0.7 · 출력 $0.7 · 혼합 $0.7/1M · 35.0 t/s · TTFT 1.87s · 128k ctx` · 가성비 7.1
 
 ## 레이더 8축 (평균=50 기준선)
 

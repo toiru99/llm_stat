@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
 status: past
-size_class: Large
-params_b: 1000
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 38.0, z: -0.12, r: 48.2, estimated: false }  # 전문 지식
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling-1T
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Ling-1T
 
-InclusionAI · Open · Large(1000B) · 컨텍스트 128k · 종합지능 **13.0** · ⚠️ past(구세대)
+InclusionAI · Open · Unknown · 컨텍스트 128k · 종합지능 **13.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 코딩, 긴문맥

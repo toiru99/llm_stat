@@ -8,12 +8,12 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 64000
 status: past
-size_class: Small
-params_b: 30.9
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 36.8, z: -0.18, r: 47.2, estimated: false }  # 전문 지식
-  reasoning: { s: 33.4, z: -0.02, r: 49.8, estimated: false }  # 추론
+  reasoning: { s: 33.4, z: -0.01, r: 49.8, estimated: false }  # 추론
   coding: { s: 26.7, z: -0.83, r: 37.6, estimated: false }  # 코딩
   agentic: { s: 23.2, z: -0.51, r: 42.4, estimated: true }  # 에이전트
   trust: { s: 9.9, z: -0.84, r: 37.4, estimated: true }  # 신뢰성
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Pro 2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Solar Pro 2
 
-Upstage · Proprietary · Small(30.9B) · 컨텍스트 64k · 종합지능 **13.0** · ⚠️ past(구세대)
+Upstage · Proprietary · Unknown · 컨텍스트 64k · 종합지능 **13.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 전문 지식
@@ -44,7 +44,7 @@ Upstage · Proprietary · Small(30.9B) · 컨텍스트 64k · 종합지능 **13.
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 47.2 | -0.18 | 실측 | [[gpqa-diamond]] 58.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
-| 추론 | 49.8 | -0.02 | 실측 | [[gpqa-diamond]] 58.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
+| 추론 | 49.8 | -0.01 | 실측 | [[gpqa-diamond]] 58.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 37.6 | -0.83 | 실측 | [[scicode]] 16.0%×1.0 |
 | 에이전트 | 42.4 | -0.51 | 추정 | (추정) |
 | 신뢰성 | 37.4 | -0.84 | 추정 | (추정) |

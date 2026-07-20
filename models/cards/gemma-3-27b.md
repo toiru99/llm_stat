@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.0
 output_speed_tps: None
 context_window: 128000
 status: past
-size_class: Small
-params_b: 27.4
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 21.4, z: -0.93, r: 36.1, estimated: false }  # 전문 지식
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 3 27B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Gemma 3 27B
 
-Google · Open · Small(27.4B) · 컨텍스트 128k · 종합지능 **7.0** · ⚠️ past(구세대)
+Google · Open · Unknown · 컨텍스트 128k · 종합지능 **7.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 코딩

@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.0
 output_speed_tps: None
 context_window: 128000
 status: past
-size_class: Small
-params_b: 12.2
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 17.2, z: -1.13, r: 33.1, estimated: false }  # 전문 지식
@@ -19,18 +19,18 @@ radar:
   trust: { s: 2.4, z: -1.2, r: 32.0, estimated: false }  # 신뢰성
   multimodal: { s: 33.3, z: -1.83, r: 22.5, estimated: false }  # 멀티모달
   long_context: { s: 9.2, z: -1.17, r: 32.4, estimated: false }  # 긴문맥
-  instruction: { s: 35.2, z: -0.71, r: 39.3, estimated: false }  # 지시 따르기
+  instruction: { s: 35.2, z: -0.72, r: 39.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 3 12B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Gemma 3 12B
 
-Google · Open · Small(12.2B) · 컨텍스트 128k · 종합지능 **6.0** · ⚠️ past(구세대)
+Google · Open · Unknown · 컨텍스트 128k · 종합지능 **6.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 추론
@@ -50,7 +50,7 @@ Google · Open · Small(12.2B) · 컨텍스트 128k · 종합지능 **6.0** · �
 | 신뢰성 | 32.0 | -1.2 | 실측 | [[aa-omniscience]] 3.0%×1.0 |
 | 멀티모달 | 22.5 | -1.83 | 실측 | [[mmmu-pro]] 38.0%×1.0 |
 | 긴문맥 | 32.4 | -1.17 | 실측 | [[aa-lcr]] 7.0%×1.0 |
-| 지시 따르기 | 39.3 | -0.71 | 실측 | [[ifbench]] 37.0%×1.0 |
+| 지시 따르기 | 39.2 | -0.72 | 실측 | [[ifbench]] 37.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 1000000
 status: current
-size_class: Large
-params_b: 1600
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 58.0, z: 0.84, r: 62.6, estimated: false }  # 전문 지식
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — LongCat 2.0
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # LongCat 2.0
 
-LongCat · Open · Large(1600B) · 컨텍스트 1M · 종합지능 **33.0**
+LongCat · Open · Unknown · 컨텍스트 1M · 종합지능 **33.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 전문 지식

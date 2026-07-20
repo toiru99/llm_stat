@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 20.0
 price_blended_usd_1m: 1.34
-output_speed_tps: 95.0
+output_speed_tps: 100.0
 context_window: 400000
 status: past
 size_class: Unknown
@@ -19,13 +19,13 @@ radar:
   trust: { s: 10.6, z: -0.81, r: 37.9, estimated: false }  # 신뢰성
   multimodal: { s: 68.1, z: -0.17, r: 47.5, estimated: false }  # 멀티모달
   long_context: { s: 57.9, z: 0.27, r: 54.1, estimated: false }  # 긴문맥
-  instruction: { s: 43.7, z: -0.36, r: 44.5, estimated: false }  # 지시 따르기
+  instruction: { s: 43.7, z: -0.37, r: 44.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # GPT-5.1
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **20.0** �
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $1.25 · 출력 $10.0 · 혼합 $1.34/1M · 95.0 t/s · TTFT 0.98s · 400k ctx` · 가성비 14.9
+`입력 $1.25 · 출력 $10.0 · 혼합 $1.34/1M · 100.0 t/s · TTFT 0.98s · 400k ctx` · 가성비 14.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **20.0** �
 | 신뢰성 | 37.9 | -0.81 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
 | 멀티모달 | 47.5 | -0.17 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
 | 긴문맥 | 54.1 | +0.27 | 실측 | [[aa-lcr]] 44.0%×1.0 |
-| 지시 따르기 | 44.5 | -0.36 | 실측 | [[ifbench]] 43.0%×1.0 |
+| 지시 따르기 | 44.5 | -0.37 | 실측 | [[ifbench]] 43.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

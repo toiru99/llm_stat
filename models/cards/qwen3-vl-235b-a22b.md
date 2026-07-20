@@ -8,9 +8,9 @@ price_blended_usd_1m: 1.47
 output_speed_tps: 56.0
 context_window: 262000
 status: past
-size_class: Large
-params_b: 235
-is_reasoning: false
+size_class: Unknown
+params_b: null
+is_reasoning: true
 radar:
   knowledge: { s: 41.4, z: 0.04, r: 50.6, estimated: false }  # 전문 지식
   reasoning: { s: 32.4, z: -0.07, r: 49.0, estimated: false }  # 추론
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 VL 235B A22B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Qwen3 VL 235B A22B
 
-Alibaba · Open · Large(235B) · 컨텍스트 262k · 종합지능 **21.0** · ⚠️ past(구세대)
+Alibaba · Open · Unknown · 컨텍스트 262k · 종합지능 **21.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 지시 따르기
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $0.7 · 출력 $8.4 · 혼합 $1.47/1M · 56.0 t/s · TTFT 3.08s · 262k ctx` · 가성비 14.3
+`입력 $0.7 · 출력 $8.4 · 혼합 $1.47/1M · 56.0 t/s · TTFT 2.9s · 262k ctx` · 가성비 14.3
 
 ## 레이더 8축 (평균=50 기준선)
 

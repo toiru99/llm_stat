@@ -19,13 +19,13 @@ radar:
   trust: { s: 42.4, z: 0.69, r: 60.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 38.2, z: -0.31, r: 45.3, estimated: false }  # 긴문맥
-  instruction: { s: 25.4, z: -1.12, r: 33.2, estimated: false }  # 지시 따르기
+  instruction: { s: 25.4, z: -1.13, r: 33.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Devstral Medium
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Devstral Medium
@@ -50,7 +50,7 @@ Mistral · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **12.0** 
 | 신뢰성 | 60.4 | +0.69 | 실측 | [[aa-omniscience]] 37.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 45.3 | -0.31 | 실측 | [[aa-lcr]] 29.0%×1.0 |
-| 지시 따르기 | 33.2 | -1.12 | 실측 | [[ifbench]] 30.0%×1.0 |
+| 지시 따르기 | 33.1 | -1.13 | 실측 | [[ifbench]] 30.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

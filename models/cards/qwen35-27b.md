@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.51
 output_speed_tps: 77.0
 context_window: 262000
 status: past
-size_class: Small
-params_b: 27.8
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 48.0, z: 0.36, r: 55.4, estimated: false }  # 전문 지식
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 27B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Qwen3.5 27B
 
-Alibaba · Open · Small(27.8B) · 컨텍스트 262k · 종합지능 **34.0** · ⚠️ past(구세대)
+Alibaba · Open · Unknown · 컨텍스트 262k · 종합지능 **34.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 에이전트
 - **약점**: 전문 지식, 신뢰성
 
 ## 실용 지표
-`입력 $0.3 · 출력 $2.4 · 혼합 $0.51/1M · 77.0 t/s · TTFT 5.63s · 262k ctx` · 가성비 66.7
+`입력 $0.3 · 출력 $2.4 · 혼합 $0.51/1M · 77.0 t/s · TTFT 5.62s · 262k ctx` · 가성비 66.7
 
 ## 레이더 8축 (평균=50 기준선)
 

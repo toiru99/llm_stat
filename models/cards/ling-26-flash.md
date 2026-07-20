@@ -5,11 +5,11 @@ creator: InclusionAI
 license: Open
 intelligence_index: 14.0
 price_blended_usd_1m: 0.06
-output_speed_tps: 179.0
+output_speed_tps: 181.0
 context_window: 262000
 status: current
-size_class: Medium
-params_b: 107
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 29.1, z: -0.55, r: 41.7, estimated: false }  # 전문 지식
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling 2.6 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Ling 2.6 Flash
 
-InclusionAI · Open · Medium(107B) · 컨텍스트 262k · 종합지능 **14.0**
+InclusionAI · Open · Unknown · 컨텍스트 262k · 종합지능 **14.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 에이전트
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.3 · 혼합 $0.06/1M · 179.0 t/s · TTFT 1.14s · 262k ctx` · 가성비 233.3
+`입력 $0.1 · 출력 $0.3 · 혼합 $0.06/1M · 181.0 t/s · TTFT 1.12s · 262k ctx` · 가성비 233.3
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -8,13 +8,13 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 512000
 status: current
-size_class: Medium
-params_b: 70
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 30.7, z: -0.48, r: 42.9, estimated: false }  # 전문 지식
-  reasoning: { s: 21.8, z: -0.63, r: 40.6, estimated: false }  # 추론
-  coding: { s: 31.8, z: -0.61, r: 40.9, estimated: false }  # 코딩
+  reasoning: { s: 21.8, z: -0.62, r: 40.6, estimated: false }  # 추론
+  coding: { s: 31.8, z: -0.61, r: 40.8, estimated: false }  # 코딩
   agentic: { s: 18.7, z: -0.68, r: 39.7, estimated: false }  # 에이전트
   trust: { s: 21.2, z: -0.31, r: 45.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — K2-V2 (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # K2-V2 (medium)
 
-MBZUAI Institute of Foundation Models · Open · Medium(70B) · 컨텍스트 512k · 종합지능 **12.0**
+MBZUAI Institute of Foundation Models · Open · Unknown · 컨텍스트 512k · 종합지능 **12.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 신뢰성
@@ -44,8 +44,8 @@ MBZUAI Institute of Foundation Models · Open · Medium(70B) · 컨텍스트 512
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 42.9 | -0.48 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 60.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 40.6 | -0.63 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 60.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 40.9 | -0.61 | 실측 | [[scicode]] 25.0%×1.0, [[terminal-bench]] 8.0%×0.5 |
+| 추론 | 40.6 | -0.62 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 60.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 40.8 | -0.61 | 실측 | [[scicode]] 25.0%×1.0, [[terminal-bench]] 8.0%×0.5 |
 | 에이전트 | 39.7 | -0.68 | 실측 | [[tau2-bench]] 25.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
 | 신뢰성 | 45.4 | -0.31 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

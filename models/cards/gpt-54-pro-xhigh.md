@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 92.1, z: 2.49, r: 87.3, estimated: true }  # 전문 지식
-  reasoning: { s: 93.8, z: 3.16, r: 97.4, estimated: false }  # 추론
+  reasoning: { s: 93.8, z: 3.16, r: 97.3, estimated: false }  # 추론
   coding: { s: 93.9, z: 2.01, r: 80.1, estimated: true }  # 코딩
   agentic: { s: 91.3, z: 2.14, r: 82.1, estimated: true }  # 에이전트
   trust: { s: 13.1, z: -0.69, r: 39.7, estimated: true }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.4 Pro (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # GPT-5.4 Pro (xhigh)
@@ -44,7 +44,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 87.3 | +2.49 | 추정 | (추정) |
-| 추론 | 97.4 | +3.16 | 실측 | [[critpt]] 30.0%×1.0 |
+| 추론 | 97.3 | +3.16 | 실측 | [[critpt]] 30.0%×1.0 |
 | 코딩 | 80.1 | +2.01 | 추정 | (추정) |
 | 에이전트 | 82.1 | +2.14 | 추정 | (추정) |
 | 신뢰성 | 39.7 | -0.69 | 추정 | (추정) |

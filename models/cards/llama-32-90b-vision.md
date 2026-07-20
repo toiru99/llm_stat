@@ -8,8 +8,8 @@ price_blended_usd_1m: 2.04
 output_speed_tps: None
 context_window: 128000
 status: current
-size_class: Medium
-params_b: 90
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 25.7, z: -0.72, r: 39.3, estimated: false }  # 전문 지식
@@ -19,18 +19,18 @@ radar:
   trust: { s: 19.3, z: -0.4, r: 44.0, estimated: true }  # 신뢰성
   multimodal: { s: 34.8, z: -1.76, r: 23.6, estimated: false }  # 멀티모달
   long_context: { s: 27.0, z: -0.64, r: 40.3, estimated: true }  # 긴문맥
-  instruction: { s: 34.0, z: -0.76, r: 38.5, estimated: true }  # 지시 따르기
+  instruction: { s: 34.0, z: -0.77, r: 38.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.2 90B (Vision)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Llama 3.2 90B (Vision)
 
-Meta · Open · Medium(90B) · 컨텍스트 128k · 종합지능 **6.0**
+Meta · Open · Unknown · 컨텍스트 128k · 종합지능 **6.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 코딩, 에이전트
@@ -50,7 +50,7 @@ Meta · Open · Medium(90B) · 컨텍스트 128k · 종합지능 **6.0**
 | 신뢰성 | 44.0 | -0.4 | 추정 | (추정) |
 | 멀티모달 | 23.6 | -1.76 | 실측 | [[mmmu-pro]] 39.0%×1.0 |
 | 긴문맥 | 40.3 | -0.64 | 추정 | (추정) |
-| 지시 따르기 | 38.5 | -0.76 | 추정 | (추정) |
+| 지시 따르기 | 38.5 | -0.77 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

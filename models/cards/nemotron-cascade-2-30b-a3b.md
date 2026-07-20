@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 1000000
 status: current
-size_class: Small
-params_b: 31.6
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 38.5, z: -0.1, r: 48.5, estimated: false }  # 전문 지식
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron Cascade 2 30B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Nemotron Cascade 2 30B A3B
 
-NVIDIA · Open · Small(31.6B) · 컨텍스트 1M · 종합지능 **21.0**
+NVIDIA · Open · Unknown · 컨텍스트 1M · 종합지능 **21.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 에이전트

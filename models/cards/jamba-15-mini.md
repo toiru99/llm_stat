@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.22
 output_speed_tps: None
 context_window: 256000
 status: past
-size_class: Medium
-params_b: 52
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 16.9, z: -1.14, r: 32.9, estimated: false }  # 전문 지식
@@ -19,18 +19,18 @@ radar:
   trust: { s: 21.0, z: -0.32, r: 45.2, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 6.1, z: -1.26, r: 31.0, estimated: true }  # 긴문맥
-  instruction: { s: 30.9, z: -0.89, r: 36.6, estimated: true }  # 지시 따르기
+  instruction: { s: 30.9, z: -0.9, r: 36.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba 1.5 Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Jamba 1.5 Mini
 
-AI21 Labs · Open · Medium(52B) · 컨텍스트 256k · 종합지능 **3.0** · ⚠️ past(구세대)
+AI21 Labs · Open · Unknown · 컨텍스트 256k · 종합지능 **3.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 지시 따르기
@@ -50,7 +50,7 @@ AI21 Labs · Open · Medium(52B) · 컨텍스트 256k · 종합지능 **3.0** ·
 | 신뢰성 | 45.2 | -0.32 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 31.0 | -1.26 | 추정 | (추정) |
-| 지시 따르기 | 36.6 | -0.89 | 추정 | (추정) |
+| 지시 따르기 | 36.5 | -0.9 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

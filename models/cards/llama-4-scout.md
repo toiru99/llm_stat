@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.22
 output_speed_tps: 89.0
 context_window: 10000000
 status: current
-size_class: Medium
-params_b: 109
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 28.5, z: -0.58, r: 41.2, estimated: false }  # 전문 지식
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 4 Scout
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Llama 4 Scout
 
-Meta · Open · Medium(109B) · 컨텍스트 10M · 종합지능 **10.0**
+Meta · Open · Unknown · 컨텍스트 10M · 종합지능 **10.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 긴문맥
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.17 · 출력 $0.63 · 혼합 $0.22/1M · 89.0 t/s · TTFT 0.84s · 10M ctx` · 가성비 45.5
+`입력 $0.17 · 출력 $0.63 · 혼합 $0.22/1M · 89.0 t/s · TTFT 0.81s · 10M ctx` · 가성비 45.5
 
 ## 레이더 8축 (평균=50 기준선)
 

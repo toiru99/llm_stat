@@ -19,13 +19,13 @@ radar:
   trust: { s: 24.0, z: -0.18, r: 47.4, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 59.7, z: 0.33, r: 54.9, estimated: true }  # 긴문맥
-  instruction: { s: 55.8, z: 0.14, r: 52.1, estimated: true }  # 지시 따르기
+  instruction: { s: 55.8, z: 0.14, r: 52.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Sonar Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Sonar Pro
@@ -50,7 +50,7 @@ Perplexity · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **9.0*
 | 신뢰성 | 47.4 | -0.18 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 54.9 | +0.33 | 추정 | (추정) |
-| 지시 따르기 | 52.1 | +0.14 | 추정 | (추정) |
+| 지시 따르기 | 52.0 | +0.14 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

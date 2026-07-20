@@ -5,11 +5,11 @@ creator: AI21 Labs
 license: Open
 intelligence_index: 5.0
 price_blended_usd_1m: 2.6
-output_speed_tps: 59.0
+output_speed_tps: 57.0
 context_window: 256000
 status: current
-size_class: Large
-params_b: 398
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 27.8, z: -0.62, r: 40.7, estimated: false }  # 전문 지식
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba 1.7 Large
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Jamba 1.7 Large
 
-AI21 Labs · Open · Large(398B) · 컨텍스트 256k · 종합지능 **5.0**
+AI21 Labs · Open · Unknown · 컨텍스트 256k · 종합지능 **5.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 전문 지식, 긴문맥
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $2.0 · 출력 $8.0 · 혼합 $2.6/1M · 59.0 t/s · TTFT 1.38s · 256k ctx` · 가성비 1.9
+`입력 $2.0 · 출력 $8.0 · 혼합 $2.6/1M · 57.0 t/s · TTFT 1.39s · 256k ctx` · 가성비 1.9
 
 ## 레이더 8축 (평균=50 기준선)
 

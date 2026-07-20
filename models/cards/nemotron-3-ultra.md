@@ -5,11 +5,11 @@ creator: NVIDIA
 license: Open
 intelligence_index: 38.0
 price_blended_usd_1m: 0.58
-output_speed_tps: 189.0
+output_speed_tps: 218.0
 context_window: 262000
 status: current
-size_class: Large
-params_b: 550
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 51.0, z: 0.5, r: 57.5, estimated: false }  # 전문 지식
@@ -19,25 +19,25 @@ radar:
   trust: { s: 82.4, z: 2.58, r: 88.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 88.2, z: 1.17, r: 67.5, estimated: false }  # 긴문맥
-  instruction: { s: 97.2, z: 1.85, r: 77.7, estimated: false }  # 지시 따르기
+  instruction: { s: 97.2, z: 1.85, r: 77.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3 Ultra
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Nemotron 3 Ultra
 
-NVIDIA · Open · Large(550B) · 컨텍스트 262k · 종합지능 **38.0**
+NVIDIA · Open · Unknown · 컨텍스트 262k · 종합지능 **38.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 지시 따르기
 - **약점**: 코딩, 전문 지식
 
 ## 실용 지표
-`입력 $0.68 · 출력 $2.67 · 혼합 $0.58/1M · 189.0 t/s · TTFT 1.17s · 262k ctx` · 가성비 65.5
+`입력 $0.68 · 출력 $2.67 · 혼합 $0.58/1M · 218.0 t/s · TTFT 1.24s · 262k ctx` · 가성비 65.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ NVIDIA · Open · Large(550B) · 컨텍스트 262k · 종합지능 **38.0**
 | 신뢰성 | 88.7 | +2.58 | 실측 | [[aa-omniscience]] 71.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 67.5 | +1.17 | 실측 | [[aa-lcr]] 67.0%×1.0 |
-| 지시 따르기 | 77.7 | +1.85 | 실측 | [[ifbench]] 81.0%×1.0 |
+| 지시 따르기 | 77.8 | +1.85 | 실측 | [[ifbench]] 81.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

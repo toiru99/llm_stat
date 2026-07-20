@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 1000000
 status: current
-size_class: Medium
-params_b: 49.1
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 22.7, z: -0.86, r: 37.1, estimated: false }  # 전문 지식
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi Linear 48B A3B Instruct
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Kimi Linear 48B A3B Instruct
 
-Kimi · Open · Medium(49.1B) · 컨텍스트 1M · 종합지능 **9.0**
+Kimi · Open · Unknown · 컨텍스트 1M · 종합지능 **9.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 긴문맥

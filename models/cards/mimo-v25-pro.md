@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.18
 output_speed_tps: 61.0
 context_window: 1000000
 status: current
-size_class: Large
-params_b: 1023
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 54.3, z: 0.66, r: 60.0, estimated: false }  # 전문 지식
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2.5-Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # MiMo-V2.5-Pro
 
-Xiaomi · Open · Large(1023B) · 컨텍스트 1M · 종합지능 **42.0**
+Xiaomi · Open · Unknown · 컨텍스트 1M · 종합지능 **42.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 지시 따르기
 - **약점**: 전문 지식, 에이전트
 
 ## 실용 지표
-`입력 $0.43 · 출력 $0.87 · 혼합 $0.18/1M · 61.0 t/s · TTFT 3.08s · 1M ctx` · 가성비 233.3
+`입력 $0.43 · 출력 $0.87 · 혼합 $0.18/1M · 61.0 t/s · TTFT 3.17s · 1M ctx` · 가성비 233.3
 
 ## 레이더 8축 (평균=50 기준선)
 

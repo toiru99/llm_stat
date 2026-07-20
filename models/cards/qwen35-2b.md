@@ -8,9 +8,9 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 262000
 status: current
-size_class: Tiny
-params_b: 2.27
-is_reasoning: true
+size_class: Unknown
+params_b: null
+is_reasoning: false
 radar:
   knowledge: { s: 14.3, z: -1.27, r: 31.0, estimated: false }  # 전문 지식
   reasoning: { s: 14.9, z: -0.98, r: 35.2, estimated: false }  # 추론
@@ -19,18 +19,18 @@ radar:
   trust: { s: 51.8, z: 1.14, r: 67.0, estimated: false }  # 신뢰성
   multimodal: { s: 40.6, z: -1.49, r: 27.7, estimated: false }  # 멀티모달
   long_context: { s: 31.6, z: -0.51, r: 42.4, estimated: false }  # 긴문맥
-  instruction: { s: 26.8, z: -1.06, r: 34.1, estimated: false }  # 지시 따르기
+  instruction: { s: 26.8, z: -1.07, r: 34.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 2B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Qwen3.5 2B
 
-Alibaba · Open · Tiny(2.27B) · 컨텍스트 262k · 종합지능 **8.0**
+Alibaba · Open · Unknown · 컨텍스트 262k · 종합지능 **8.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 긴문맥
@@ -50,7 +50,7 @@ Alibaba · Open · Tiny(2.27B) · 컨텍스트 262k · 종합지능 **8.0**
 | 신뢰성 | 67.0 | +1.14 | 실측 | [[aa-omniscience]] 45.0%×1.0 |
 | 멀티모달 | 27.7 | -1.49 | 실측 | [[mmmu-pro]] 43.0%×1.0 |
 | 긴문맥 | 42.4 | -0.51 | 실측 | [[aa-lcr]] 24.0%×1.0 |
-| 지시 따르기 | 34.1 | -1.06 | 실측 | [[ifbench]] 31.0%×1.0 |
+| 지시 따르기 | 34.0 | -1.07 | 실측 | [[ifbench]] 31.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

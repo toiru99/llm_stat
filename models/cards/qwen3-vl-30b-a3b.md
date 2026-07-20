@@ -8,9 +8,9 @@ price_blended_usd_1m: 0.42
 output_speed_tps: 111.0
 context_window: 256000
 status: past
-size_class: Small
-params_b: 30
-is_reasoning: true
+size_class: Unknown
+params_b: null
+is_reasoning: false
 radar:
   knowledge: { s: 35.8, z: -0.23, r: 46.5, estimated: false }  # 전문 지식
   reasoning: { s: 29.7, z: -0.21, r: 46.9, estimated: false }  # 추론
@@ -19,25 +19,25 @@ radar:
   trust: { s: 11.8, z: -0.75, r: 38.7, estimated: false }  # 신뢰성
   multimodal: { s: 68.1, z: -0.17, r: 47.5, estimated: false }  # 멀티모달
   long_context: { s: 53.9, z: 0.16, r: 52.3, estimated: false }  # 긴문맥
-  instruction: { s: 46.5, z: -0.25, r: 46.3, estimated: false }  # 지시 따르기
+  instruction: { s: 46.5, z: -0.25, r: 46.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 VL 30B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Qwen3 VL 30B A3B
 
-Alibaba · Open · Small(30B) · 컨텍스트 256k · 종합지능 **13.0** · ⚠️ past(구세대)
+Alibaba · Open · Unknown · 컨텍스트 256k · 종합지능 **13.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 멀티모달
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $0.2 · 출력 $2.4 · 혼합 $0.42/1M · 111.0 t/s · TTFT 2.25s · 256k ctx` · 가성비 31.0
+`입력 $0.2 · 출력 $2.4 · 혼합 $0.42/1M · 111.0 t/s · TTFT 2.21s · 256k ctx` · 가성비 31.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Alibaba · Open · Small(30B) · 컨텍스트 256k · 종합지능 **13.0** · �
 | 신뢰성 | 38.7 | -0.75 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | 47.5 | -0.17 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
 | 긴문맥 | 52.3 | +0.16 | 실측 | [[aa-lcr]] 41.0%×1.0 |
-| 지시 따르기 | 46.3 | -0.25 | 실측 | [[ifbench]] 45.0%×1.0 |
+| 지시 따르기 | 46.2 | -0.25 | 실측 | [[ifbench]] 45.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

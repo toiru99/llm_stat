@@ -8,8 +8,8 @@ price_blended_usd_1m: 0.59
 output_speed_tps: 86.0
 context_window: 128000
 status: current
-size_class: Medium
-params_b: 70
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 28.9, z: -0.56, r: 41.5, estimated: false }  # 전문 지식
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.3 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Llama 3.3 70B
 
-Meta · Open · Medium(70B) · 컨텍스트 128k · 종합지능 **9.0**
+Meta · Open · Unknown · 컨텍스트 128k · 종합지능 **9.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 신뢰성
 - **약점**: 긴문맥, 에이전트
 
 ## 실용 지표
-`입력 $0.58 · 출력 $0.71 · 혼합 $0.59/1M · 86.0 t/s · TTFT 1.64s · 128k ctx` · 가성비 15.3
+`입력 $0.58 · 출력 $0.71 · 혼합 $0.59/1M · 86.0 t/s · TTFT 1.61s · 128k ctx` · 가성비 15.3
 
 ## 레이더 8축 (평균=50 기준선)
 

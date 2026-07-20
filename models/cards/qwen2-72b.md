@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 131000
 status: past
-size_class: Medium
-params_b: 72
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 20.8, z: -0.95, r: 35.7, estimated: false }  # 전문 지식
@@ -19,22 +19,22 @@ radar:
   trust: { s: 24.0, z: -0.18, r: 47.3, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 26.6, z: -0.65, r: 40.2, estimated: true }  # 긴문맥
-  instruction: { s: 29.7, z: -0.94, r: 35.8, estimated: true }  # 지시 따르기
+  instruction: { s: 29.7, z: -0.95, r: 35.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen2 72B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # Qwen2 72B
 
-Alibaba · Open · Medium(72B) · 컨텍스트 131k · 종합지능 **6.0** · ⚠️ past(구세대)
+Alibaba · Open · Unknown · 컨텍스트 131k · 종합지능 **6.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 코딩
-- **약점**: 지시 따르기, 전문 지식
+- **약점**: 전문 지식, 지시 따르기
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 131k ctx`
@@ -50,7 +50,7 @@ Alibaba · Open · Medium(72B) · 컨텍스트 131k · 종합지능 **6.0** · �
 | 신뢰성 | 47.3 | -0.18 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 40.2 | -0.65 | 추정 | (추정) |
-| 지시 따르기 | 35.8 | -0.94 | 추정 | (추정) |
+| 지시 따르기 | 35.8 | -0.95 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

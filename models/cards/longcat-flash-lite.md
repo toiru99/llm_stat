@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 256000
 status: current
-size_class: Medium
-params_b: 68.5
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 28.6, z: -0.58, r: 41.3, estimated: false }  # 전문 지식
@@ -19,18 +19,18 @@ radar:
   trust: { s: 3.5, z: -1.14, r: 32.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 34.2, z: -0.43, r: 43.5, estimated: false }  # 긴문맥
-  instruction: { s: 43.7, z: -0.36, r: 44.5, estimated: false }  # 지시 따르기
+  instruction: { s: 43.7, z: -0.37, r: 44.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — LongCat Flash Lite
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-19
-timestamp: 2026-07-19T00:00:00Z
+updated: 2026-07-20
+timestamp: 2026-07-20T00:00:00Z
 ---
 
 # LongCat Flash Lite
 
-LongCat · Open · Medium(68.5B) · 컨텍스트 256k · 종합지능 **17.0**
+LongCat · Open · Unknown · 컨텍스트 256k · 종합지능 **17.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 지시 따르기
@@ -50,7 +50,7 @@ LongCat · Open · Medium(68.5B) · 컨텍스트 256k · 종합지능 **17.0**
 | 신뢰성 | 32.9 | -1.14 | 실측 | [[aa-omniscience]] 4.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 43.5 | -0.43 | 실측 | [[aa-lcr]] 26.0%×1.0 |
-| 지시 따르기 | 44.5 | -0.36 | 실측 | [[ifbench]] 43.0%×1.0 |
+| 지시 따르기 | 44.5 | -0.37 | 실측 | [[ifbench]] 43.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
