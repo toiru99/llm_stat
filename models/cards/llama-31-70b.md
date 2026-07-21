@@ -4,19 +4,19 @@ title: Llama 3.1 70B
 creator: Meta
 license: Open
 intelligence_index: 7.0
-price_blended_usd_1m: 0.56
-output_speed_tps: 62.0
+price_blended_usd_1m: None
+output_speed_tps: 61.0
 context_window: 128000
 status: past
 size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 27.7, z: -0.62, r: 40.7, estimated: false }  # 전문 지식
+  knowledge: { s: 27.7, z: -0.62, r: 40.6, estimated: false }  # 전문 지식
   reasoning: { s: 14.9, z: -0.99, r: 35.2, estimated: false }  # 추론
-  coding: { s: 31.5, z: -0.62, r: 40.7, estimated: false }  # 코딩
+  coding: { s: 31.5, z: -0.63, r: 40.6, estimated: false }  # 코딩
   agentic: { s: 9.8, z: -1.03, r: 34.6, estimated: false }  # 에이전트
-  trust: { s: 28.2, z: 0.02, r: 50.4, estimated: false }  # 신뢰성
+  trust: { s: 28.2, z: 0.02, r: 50.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 7.9, z: -1.21, r: 31.8, estimated: false }  # 긴문맥
   instruction: { s: 31.0, z: -0.89, r: 36.6, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.1 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-20
-timestamp: 2026-07-20T00:00:00Z
+updated: 2026-07-21
+timestamp: 2026-07-21T00:00:00Z
 ---
 
 # Llama 3.1 70B
@@ -37,17 +37,17 @@ Meta · Open · Unknown · 컨텍스트 128k · 종합지능 **7.0** · ⚠️ p
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.56 · 출력 $0.56 · 혼합 $0.56/1M · 62.0 t/s · TTFT 1.43s · 128k ctx` · 가성비 12.5
+`입력 $0.56 · 출력 $0.56 · 혼합 $None/1M · 61.0 t/s · TTFT 1.38s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 40.7 | -0.62 | 실측 | [[aa-omniscience]] 19.0%×1.0, [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 전문 지식 | 40.6 | -0.62 | 실측 | [[aa-omniscience]] 19.0%×1.0, [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 35.2 | -0.99 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 40.7 | -0.62 | 실측 | [[scicode]] 27.0%×1.0, [[terminal-bench]] 3.0%×0.5 |
+| 코딩 | 40.6 | -0.63 | 실측 | [[scicode]] 27.0%×1.0, [[terminal-bench]] 3.0%×0.5 |
 | 에이전트 | 34.6 | -1.03 | 실측 | [[tau2-bench]] 15.0%×1.0, [[terminal-bench]] 3.0%×1.0 |
-| 신뢰성 | 50.4 | +0.02 | 실측 | [[aa-omniscience]] 25.0%×1.0 |
+| 신뢰성 | 50.3 | +0.02 | 실측 | [[aa-omniscience]] 25.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 31.8 | -1.21 | 실측 | [[aa-lcr]] 6.0%×1.0 |
 | 지시 따르기 | 36.6 | -0.89 | 실측 | [[ifbench]] 34.0%×1.0 |

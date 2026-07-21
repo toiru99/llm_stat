@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 13.5, z: -1.31, r: 30.4, estimated: false }  # 전문 지식
-  reasoning: { s: 12.8, z: -1.1, r: 33.6, estimated: false }  # 추론
+  reasoning: { s: 12.8, z: -1.1, r: 33.5, estimated: false }  # 추론
   coding: { s: 8.3, z: -1.6, r: 26.0, estimated: false }  # 코딩
   agentic: { s: 21.2, z: -0.59, r: 41.2, estimated: false }  # 에이전트
   trust: { s: 8.7, z: -0.9, r: 36.5, estimated: true }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.2 3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-20
-timestamp: 2026-07-20T00:00:00Z
+updated: 2026-07-21
+timestamp: 2026-07-21T00:00:00Z
 ---
 
 # Llama 3.2 3B
@@ -44,7 +44,7 @@ Meta · Open · Unknown · 컨텍스트 128k · 종합지능 **4.0** · ⚠️ p
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 30.4 | -1.31 | 실측 | [[gpqa-diamond]] 25.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 33.6 | -1.1 | 실측 | [[gpqa-diamond]] 25.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 추론 | 33.5 | -1.1 | 실측 | [[gpqa-diamond]] 25.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 26.0 | -1.6 | 실측 | [[scicode]] 5.0%×1.0 |
 | 에이전트 | 41.2 | -0.59 | 실측 | [[tau2-bench]] 21.0%×1.0 |
 | 신뢰성 | 36.5 | -0.9 | 추정 | (추정) |

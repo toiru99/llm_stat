@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 23.4, z: -0.83, r: 37.6, estimated: false }  # 전문 지식
   reasoning: { s: 14.2, z: -1.02, r: 34.7, estimated: false }  # 추론
   coding: { s: 29.7, z: -0.7, r: 39.5, estimated: false }  # 코딩
-  agentic: { s: 18.7, z: -0.68, r: 39.7, estimated: false }  # 에이전트
+  agentic: { s: 18.7, z: -0.69, r: 39.7, estimated: false }  # 에이전트
   trust: { s: 25.9, z: -0.09, r: 48.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 22.4, z: -0.78, r: 38.3, estimated: false }  # 긴문맥
-  instruction: { s: 32.4, z: -0.83, r: 37.5, estimated: false }  # 지시 따르기
+  instruction: { s: 32.4, z: -0.84, r: 37.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Devstral Small
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-20
-timestamp: 2026-07-20T00:00:00Z
+updated: 2026-07-21
+timestamp: 2026-07-21T00:00:00Z
 ---
 
 # Devstral Small
@@ -46,11 +46,11 @@ Mistral · Open · Unknown · 컨텍스트 256k · 종합지능 **9.0** · ⚠�
 | 전문 지식 | 37.6 | -0.83 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 34.7 | -1.02 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 39.5 | -0.7 | 실측 | [[scicode]] 24.0%×1.0, [[terminal-bench]] 6.0%×0.5 |
-| 에이전트 | 39.7 | -0.68 | 실측 | [[tau2-bench]] 28.0%×1.0, [[terminal-bench]] 6.0%×1.0 |
+| 에이전트 | 39.7 | -0.69 | 실측 | [[tau2-bench]] 28.0%×1.0, [[terminal-bench]] 6.0%×1.0 |
 | 신뢰성 | 48.7 | -0.09 | 실측 | [[aa-omniscience]] 23.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 38.3 | -0.78 | 실측 | [[aa-lcr]] 17.0%×1.0 |
-| 지시 따르기 | 37.5 | -0.83 | 실측 | [[ifbench]] 35.0%×1.0 |
+| 지시 따르기 | 37.5 | -0.84 | 실측 | [[ifbench]] 35.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

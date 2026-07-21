@@ -4,18 +4,18 @@ title: MiMo-V2.5-Pro
 creator: Xiaomi
 license: Open
 intelligence_index: 42.0
-price_blended_usd_1m: 0.18
-output_speed_tps: 61.0
+price_blended_usd_1m: None
+output_speed_tps: 58.0
 context_window: 1000000
 status: current
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 54.3, z: 0.66, r: 60.0, estimated: false }  # 전문 지식
-  reasoning: { s: 55.9, z: 1.17, r: 67.5, estimated: false }  # 추론
-  coding: { s: 77.3, z: 1.31, r: 69.6, estimated: false }  # 코딩
-  agentic: { s: 52.9, z: 0.64, r: 59.7, estimated: false }  # 에이전트
+  knowledge: { s: 54.3, z: 0.66, r: 59.9, estimated: false }  # 전문 지식
+  reasoning: { s: 55.9, z: 1.16, r: 67.4, estimated: false }  # 추론
+  coding: { s: 77.3, z: 1.3, r: 69.5, estimated: false }  # 코딩
+  agentic: { s: 52.9, z: 0.64, r: 59.6, estimated: false }  # 에이전트
   trust: { s: 87.1, z: 2.8, r: 92.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 96.1, z: 1.4, r: 71.0, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2.5-Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-20
-timestamp: 2026-07-20T00:00:00Z
+updated: 2026-07-21
+timestamp: 2026-07-21T00:00:00Z
 ---
 
 # MiMo-V2.5-Pro
@@ -37,16 +37,16 @@ Xiaomi · Open · Unknown · 컨텍스트 1M · 종합지능 **42.0**
 - **약점**: 전문 지식, 에이전트
 
 ## 실용 지표
-`입력 $0.43 · 출력 $0.87 · 혼합 $0.18/1M · 61.0 t/s · TTFT 3.17s · 1M ctx` · 가성비 233.3
+`입력 $0.43 · 출력 $0.87 · 혼합 $None/1M · 58.0 t/s · TTFT 3.17s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 60.0 | +0.66 | 실측 | [[aa-omniscience]] 23.0%×1.0, [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 34.0%×0.3 |
-| 추론 | 67.5 | +1.17 | 실측 | [[critpt]] 4.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 34.0%×1.0 |
-| 코딩 | 69.6 | +1.31 | 실측 | [[scicode]] 50.0%×1.0, [[terminal-bench]] 43.0%×0.5 |
-| 에이전트 | 59.7 | +0.64 | 실측 | [[apex-agents]] 2.0%×1.0, [[gdpval]] 38.0%×1.0, [[itbench]] 38.0%×1.0, [[tau2-bench]] 94.0%×1.0, [[tau3-banking]] 9.0%×1.0, [[terminal-bench]] 43.0%×1.0 |
+| 전문 지식 | 59.9 | +0.66 | 실측 | [[aa-omniscience]] 23.0%×1.0, [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 34.0%×0.3 |
+| 추론 | 67.4 | +1.16 | 실측 | [[critpt]] 4.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 34.0%×1.0 |
+| 코딩 | 69.5 | +1.3 | 실측 | [[scicode]] 50.0%×1.0, [[terminal-bench]] 43.0%×0.5 |
+| 에이전트 | 59.6 | +0.64 | 실측 | [[apex-agents]] 2.0%×1.0, [[gdpval]] 38.0%×1.0, [[itbench]] 38.0%×1.0, [[tau2-bench]] 94.0%×1.0, [[tau3-banking]] 9.0%×1.0, [[terminal-bench]] 43.0%×1.0 |
 | 신뢰성 | 92.0 | +2.8 | 실측 | [[aa-omniscience]] 75.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 71.0 | +1.4 | 실측 | [[aa-lcr]] 73.0%×1.0 |

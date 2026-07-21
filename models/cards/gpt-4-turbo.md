@@ -4,7 +4,7 @@ title: GPT-4 Turbo
 creator: OpenAI
 license: Proprietary
 intelligence_index: 8.0
-price_blended_usd_1m: 12.0
+price_blended_usd_1m: None
 output_speed_tps: 33.0
 context_window: 128000
 status: past
@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 3.8, z: -1.77, r: 23.4, estimated: false }  # 전문 지식
   reasoning: { s: 3.8, z: -1.57, r: 26.5, estimated: false }  # 추론
-  coding: { s: 53.3, z: 0.3, r: 54.5, estimated: false }  # 코딩
-  agentic: { s: 19.9, z: -0.64, r: 40.5, estimated: true }  # 에이전트
-  trust: { s: 30.6, z: 0.14, r: 52.0, estimated: true }  # 신뢰성
+  coding: { s: 53.3, z: 0.29, r: 54.4, estimated: false }  # 코딩
+  agentic: { s: 19.9, z: -0.64, r: 40.4, estimated: true }  # 에이전트
+  trust: { s: 30.6, z: 0.13, r: 52.0, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 28.9, z: -0.59, r: 41.2, estimated: true }  # 긴문맥
   instruction: { s: 28.7, z: -0.99, r: 35.2, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4 Turbo
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-20
-timestamp: 2026-07-20T00:00:00Z
+updated: 2026-07-21
+timestamp: 2026-07-21T00:00:00Z
 ---
 
 # GPT-4 Turbo
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **8.0** ·
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $10.0 · 출력 $30.0 · 혼합 $12.0/1M · 33.0 t/s · TTFT 2.99s · 128k ctx` · 가성비 0.7
+`입력 $10.0 · 출력 $30.0 · 혼합 $None/1M · 33.0 t/s · TTFT 2.91s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **8.0** ·
 |---|---|---|---|---|
 | 전문 지식 | 23.4 | -1.77 | 실측 | [[humanitys-last-exam]] 3.0%×0.3 |
 | 추론 | 26.5 | -1.57 | 실측 | [[humanitys-last-exam]] 3.0%×1.0 |
-| 코딩 | 54.5 | +0.3 | 실측 | [[scicode]] 32.0%×1.0 |
-| 에이전트 | 40.5 | -0.64 | 추정 | (추정) |
-| 신뢰성 | 52.0 | +0.14 | 추정 | (추정) |
+| 코딩 | 54.4 | +0.29 | 실측 | [[scicode]] 32.0%×1.0 |
+| 에이전트 | 40.4 | -0.64 | 추정 | (추정) |
+| 신뢰성 | 52.0 | +0.13 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 41.2 | -0.59 | 추정 | (추정) |
 | 지시 따르기 | 35.2 | -0.99 | 추정 | (추정) |

@@ -13,10 +13,10 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 30.4, z: -0.49, r: 42.6, estimated: false }  # 전문 지식
-  reasoning: { s: 27.3, z: -0.33, r: 45.0, estimated: false }  # 추론
-  coding: { s: 46.7, z: 0.02, r: 50.2, estimated: false }  # 코딩
+  reasoning: { s: 27.3, z: -0.34, r: 44.9, estimated: false }  # 추론
+  coding: { s: 46.7, z: 0.01, r: 50.2, estimated: false }  # 코딩
   agentic: { s: 30.2, z: -0.24, r: 46.4, estimated: true }  # 에이전트
-  trust: { s: 35.1, z: 0.35, r: 55.2, estimated: true }  # 신뢰성
+  trust: { s: 35.1, z: 0.34, r: 55.2, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 19.5, z: -0.87, r: 37.0, estimated: true }  # 긴문맥
   instruction: { s: 31.8, z: -0.86, r: 37.1, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-20
-timestamp: 2026-07-20T00:00:00Z
+updated: 2026-07-21
+timestamp: 2026-07-21T00:00:00Z
 ---
 
 # Grok 2
@@ -44,10 +44,10 @@ SpaceXAI · Open · Unknown · 컨텍스트 131k · 종합지능 **8.0** · ⚠�
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 42.6 | -0.49 | 실측 | [[gpqa-diamond]] 51.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 45.0 | -0.33 | 실측 | [[gpqa-diamond]] 51.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 50.2 | +0.02 | 실측 | [[scicode]] 28.0%×1.0 |
+| 추론 | 44.9 | -0.34 | 실측 | [[gpqa-diamond]] 51.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 50.2 | +0.01 | 실측 | [[scicode]] 28.0%×1.0 |
 | 에이전트 | 46.4 | -0.24 | 추정 | (추정) |
-| 신뢰성 | 55.2 | +0.35 | 추정 | (추정) |
+| 신뢰성 | 55.2 | +0.34 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 37.0 | -0.87 | 추정 | (추정) |
 | 지시 따르기 | 37.1 | -0.86 | 추정 | (추정) |

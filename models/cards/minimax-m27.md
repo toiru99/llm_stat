@@ -4,16 +4,16 @@ title: MiniMax-M2.7
 creator: MiniMax
 license: Open
 intelligence_index: 38.0
-price_blended_usd_1m: 0.22
-output_speed_tps: 69.0
+price_blended_usd_1m: None
+output_speed_tps: 73.0
 context_window: 205000
-status: current
+status: past
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 55.2, z: 0.71, r: 60.6, estimated: false }  # 전문 지식
-  reasoning: { s: 48.9, z: 0.8, r: 62.0, estimated: false }  # 추론
+  reasoning: { s: 48.9, z: 0.8, r: 61.9, estimated: false }  # 추론
   coding: { s: 71.9, z: 1.08, r: 66.2, estimated: false }  # 코딩
   agentic: { s: 48.6, z: 0.48, r: 57.2, estimated: false }  # 에이전트
   trust: { s: 76.5, z: 2.3, r: 84.5, estimated: false }  # 신뢰성
@@ -24,27 +24,27 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax-M2.7
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-20
-timestamp: 2026-07-20T00:00:00Z
+updated: 2026-07-21
+timestamp: 2026-07-21T00:00:00Z
 ---
 
 # MiniMax-M2.7
 
-MiniMax · Open · Unknown · 컨텍스트 205k · 종합지능 **38.0**
+MiniMax · Open · Unknown · 컨텍스트 205k · 종합지능 **38.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 지시 따르기
 - **약점**: 전문 지식, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.22/1M · 69.0 t/s · TTFT 1.65s · 205k ctx` · 가성비 172.7
+`입력 $0.3 · 출력 $1.2 · 혼합 $None/1M · 73.0 t/s · TTFT 1.66s · 205k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 60.6 | +0.71 | 실측 | [[aa-omniscience]] 26.0%×1.0, [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 28.0%×0.3 |
-| 추론 | 62.0 | +0.8 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
+| 추론 | 61.9 | +0.8 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
 | 코딩 | 66.2 | +1.08 | 실측 | [[scicode]] 47.0%×1.0, [[terminal-bench]] 39.0%×0.5 |
 | 에이전트 | 57.2 | +0.48 | 실측 | [[apex-agents]] 11.0%×1.0, [[gdpval]] 33.0%×1.0, [[itbench]] 26.0%×1.0, [[tau2-bench]] 85.0%×1.0, [[tau3-banking]] 9.0%×1.0, [[terminal-bench]] 39.0%×1.0 |
 | 신뢰성 | 84.5 | +2.3 | 실측 | [[aa-omniscience]] 66.0%×1.0 |

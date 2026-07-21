@@ -14,8 +14,8 @@ is_reasoning: true
 radar:
   knowledge: { s: 35.1, z: -0.27, r: 46.0, estimated: false }  # 전문 지식
   reasoning: { s: 27.4, z: -0.33, r: 45.0, estimated: false }  # 추론
-  coding: { s: 31.0, z: -0.64, r: 40.3, estimated: false }  # 코딩
-  agentic: { s: 25.8, z: -0.41, r: 43.9, estimated: false }  # 에이전트
+  coding: { s: 31.0, z: -0.65, r: 40.3, estimated: false }  # 코딩
+  agentic: { s: 25.8, z: -0.41, r: 43.8, estimated: false }  # 에이전트
   trust: { s: 12.9, z: -0.7, r: 39.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 47.4, z: -0.04, r: 49.4, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Open 100B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-20
-timestamp: 2026-07-20T00:00:00Z
+updated: 2026-07-21
+timestamp: 2026-07-21T00:00:00Z
 ---
 
 # Solar Open 100B
@@ -45,8 +45,8 @@ Upstage · Open · Unknown · 컨텍스트 128k · 종합지능 **15.0**
 |---|---|---|---|---|
 | 전문 지식 | 46.0 | -0.27 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 66.0%×0.4, [[humanitys-last-exam]] 9.0%×0.3 |
 | 추론 | 45.0 | -0.33 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 66.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
-| 코딩 | 40.3 | -0.64 | 실측 | [[scicode]] 27.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 43.9 | -0.41 | 실측 | [[tau2-bench]] 48.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 코딩 | 40.3 | -0.65 | 실측 | [[scicode]] 27.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
+| 에이전트 | 43.8 | -0.41 | 실측 | [[tau2-bench]] 48.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | 39.5 | -0.7 | 실측 | [[aa-omniscience]] 12.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 49.4 | -0.04 | 실측 | [[aa-lcr]] 36.0%×1.0 |

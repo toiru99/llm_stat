@@ -13,8 +13,8 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 30.2, z: -0.5, r: 42.5, estimated: false }  # 전문 지식
-  reasoning: { s: 26.9, z: -0.35, r: 44.7, estimated: false }  # 추론
-  coding: { s: 50.0, z: 0.16, r: 52.3, estimated: false }  # 코딩
+  reasoning: { s: 26.9, z: -0.36, r: 44.7, estimated: false }  # 추론
+  coding: { s: 50.0, z: 0.15, r: 52.3, estimated: false }  # 코딩
   agentic: { s: 42.7, z: 0.25, r: 53.7, estimated: true }  # 에이전트
   trust: { s: 41.7, z: 0.66, r: 59.9, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Tulu3 405B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-20
-timestamp: 2026-07-20T00:00:00Z
+updated: 2026-07-21
+timestamp: 2026-07-21T00:00:00Z
 ---
 
 # Tulu3 405B
@@ -44,8 +44,8 @@ Allen Institute for AI · Open · Unknown · 컨텍스트 128k · 종합지능 *
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 42.5 | -0.5 | 실측 | [[gpqa-diamond]] 52.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
-| 추론 | 44.7 | -0.35 | 실측 | [[gpqa-diamond]] 52.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
-| 코딩 | 52.3 | +0.16 | 실측 | [[scicode]] 30.0%×1.0 |
+| 추론 | 44.7 | -0.36 | 실측 | [[gpqa-diamond]] 52.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
+| 코딩 | 52.3 | +0.15 | 실측 | [[scicode]] 30.0%×1.0 |
 | 에이전트 | 53.7 | +0.25 | 추정 | (추정) |
 | 신뢰성 | 59.9 | +0.66 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |

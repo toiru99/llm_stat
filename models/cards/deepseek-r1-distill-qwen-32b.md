@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 38.7, z: -0.09, r: 48.6, estimated: false }  # 전문 지식
-  reasoning: { s: 34.8, z: 0.06, r: 50.9, estimated: false }  # 추론
-  coding: { s: 63.3, z: 0.72, r: 60.8, estimated: false }  # 코딩
+  reasoning: { s: 34.8, z: 0.06, r: 50.8, estimated: false }  # 추론
+  coding: { s: 63.3, z: 0.72, r: 60.7, estimated: false }  # 코딩
   agentic: { s: 31.7, z: -0.18, r: 47.3, estimated: true }  # 에이전트
-  trust: { s: 24.2, z: -0.17, r: 47.5, estimated: true }  # 신뢰성
+  trust: { s: 24.2, z: -0.17, r: 47.4, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 13.2, z: -1.05, r: 34.2, estimated: false }  # 긴문맥
+  long_context: { s: 13.2, z: -1.06, r: 34.2, estimated: false }  # 긴문맥
   instruction: { s: 15.5, z: -1.54, r: 27.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek R1 Distill Qwen 32B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-20
-timestamp: 2026-07-20T00:00:00Z
+updated: 2026-07-21
+timestamp: 2026-07-21T00:00:00Z
 ---
 
 # DeepSeek R1 Distill Qwen 32B
@@ -44,12 +44,12 @@ DeepSeek · Open · Unknown · 컨텍스트 128k · 종합지능 **11.0** · ⚠
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 48.6 | -0.09 | 실측 | [[gpqa-diamond]] 62.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 50.9 | +0.06 | 실측 | [[gpqa-diamond]] 62.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 60.8 | +0.72 | 실측 | [[scicode]] 38.0%×1.0 |
+| 추론 | 50.8 | +0.06 | 실측 | [[gpqa-diamond]] 62.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 60.7 | +0.72 | 실측 | [[scicode]] 38.0%×1.0 |
 | 에이전트 | 47.3 | -0.18 | 추정 | (추정) |
-| 신뢰성 | 47.5 | -0.17 | 추정 | (추정) |
+| 신뢰성 | 47.4 | -0.17 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 34.2 | -1.05 | 실측 | [[aa-lcr]] 10.0%×1.0 |
+| 긴문맥 | 34.2 | -1.06 | 실측 | [[aa-lcr]] 10.0%×1.0 |
 | 지시 따르기 | 27.0 | -1.54 | 실측 | [[ifbench]] 23.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

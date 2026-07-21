@@ -4,18 +4,18 @@ title: Llama Nemotron Super 49B v1.5
 creator: NVIDIA
 license: Open
 intelligence_index: 12.0
-price_blended_usd_1m: 0.4
-output_speed_tps: 58.0
+price_blended_usd_1m: None
+output_speed_tps: 108.0
 context_window: 128000
 status: current
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 35.9, z: -0.22, r: 46.6, estimated: false }  # 전문 지식
+  knowledge: { s: 35.9, z: -0.23, r: 46.6, estimated: false }  # 전문 지식
   reasoning: { s: 29.6, z: -0.21, r: 46.8, estimated: false }  # 추론
   coding: { s: 41.4, z: -0.21, r: 46.9, estimated: false }  # 코딩
-  agentic: { s: 17.9, z: -0.71, r: 39.3, estimated: false }  # 에이전트
+  agentic: { s: 17.9, z: -0.72, r: 39.3, estimated: false }  # 에이전트
   trust: { s: 27.1, z: -0.03, r: 49.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 44.7, z: -0.12, r: 48.2, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama Nemotron Super 49B v1.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-20
-timestamp: 2026-07-20T00:00:00Z
+updated: 2026-07-21
+timestamp: 2026-07-21T00:00:00Z
 ---
 
 # Llama Nemotron Super 49B v1.5
@@ -37,16 +37,16 @@ NVIDIA · Open · Unknown · 컨텍스트 128k · 종합지능 **12.0**
 - **약점**: 에이전트, 지시 따르기
 
 ## 실용 지표
-`입력 $0.4 · 출력 $0.4 · 혼합 $0.4/1M · 58.0 t/s · TTFT 2.36s · 128k ctx` · 가성비 30.0
+`입력 $0.4 · 출력 $0.4 · 혼합 $None/1M · 108.0 t/s · TTFT 4.4s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 46.6 | -0.22 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 75.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
+| 전문 지식 | 46.6 | -0.23 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 75.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
 | 추론 | 46.8 | -0.21 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 75.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
 | 코딩 | 46.9 | -0.21 | 실측 | [[scicode]] 35.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
-| 에이전트 | 39.3 | -0.71 | 실측 | [[tau2-bench]] 28.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
+| 에이전트 | 39.3 | -0.72 | 실측 | [[tau2-bench]] 28.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
 | 신뢰성 | 49.5 | -0.03 | 실측 | [[aa-omniscience]] 24.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 48.2 | -0.12 | 실측 | [[aa-lcr]] 34.0%×1.0 |

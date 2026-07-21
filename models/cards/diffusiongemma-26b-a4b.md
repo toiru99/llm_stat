@@ -12,11 +12,11 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 34.7, z: -0.28, r: 45.8, estimated: false }  # 전문 지식
-  reasoning: { s: 28.4, z: -0.28, r: 45.9, estimated: false }  # 추론
-  coding: { s: 56.7, z: 0.44, r: 56.6, estimated: false }  # 코딩
-  agentic: { s: 12.2, z: -0.94, r: 36.0, estimated: false }  # 에이전트
-  trust: { s: 9.4, z: -0.86, r: 37.0, estimated: false }  # 신뢰성
+  knowledge: { s: 34.7, z: -0.28, r: 45.7, estimated: false }  # 전문 지식
+  reasoning: { s: 28.4, z: -0.28, r: 45.8, estimated: false }  # 추론
+  coding: { s: 56.7, z: 0.43, r: 56.5, estimated: false }  # 코딩
+  agentic: { s: 12.2, z: -0.94, r: 35.9, estimated: false }  # 에이전트
+  trust: { s: 9.4, z: -0.87, r: 37.0, estimated: false }  # 신뢰성
   multimodal: { s: 75.4, z: 0.18, r: 52.7, estimated: false }  # 멀티모달
   long_context: { s: 18.4, z: -0.9, r: 36.5, estimated: false }  # 긴문맥
   instruction: { s: 66.2, z: 0.57, r: 58.5, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DiffusionGemma 26B A4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-20
-timestamp: 2026-07-20T00:00:00Z
+updated: 2026-07-21
+timestamp: 2026-07-21T00:00:00Z
 ---
 
 # DiffusionGemma 26B A4B
@@ -43,11 +43,11 @@ Google · Open · Unknown · 컨텍스트 256k · 종합지능 **13.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 45.8 | -0.28 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
-| 추론 | 45.9 | -0.28 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 67.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
-| 코딩 | 56.6 | +0.44 | 실측 | [[scicode]] 34.0%×1.0 |
-| 에이전트 | 36.0 | -0.94 | 실측 | [[gdpval]] 2.0%×1.0, [[tau3-banking]] 7.0%×1.0 |
-| 신뢰성 | 37.0 | -0.86 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 전문 지식 | 45.7 | -0.28 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
+| 추론 | 45.8 | -0.28 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 67.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
+| 코딩 | 56.5 | +0.43 | 실측 | [[scicode]] 34.0%×1.0 |
+| 에이전트 | 35.9 | -0.94 | 실측 | [[gdpval]] 2.0%×1.0, [[tau3-banking]] 7.0%×1.0 |
+| 신뢰성 | 37.0 | -0.87 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | 52.7 | +0.18 | 실측 | [[mmmu-pro]] 67.0%×1.0 |
 | 긴문맥 | 36.5 | -0.9 | 실측 | [[aa-lcr]] 14.0%×1.0 |
 | 지시 따르기 | 58.5 | +0.57 | 실측 | [[ifbench]] 59.0%×1.0 |

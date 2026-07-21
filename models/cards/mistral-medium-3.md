@@ -4,7 +4,7 @@ title: Mistral Medium 3
 creator: Mistral
 license: Proprietary
 intelligence_index: 12.0
-price_blended_usd_1m: 0.56
+price_blended_usd_1m: None
 output_speed_tps: 47.0
 context_window: 128000
 status: past
@@ -12,7 +12,7 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 31.1, z: -0.46, r: 43.2, estimated: false }  # 전문 지식
+  knowledge: { s: 31.1, z: -0.46, r: 43.1, estimated: false }  # 전문 지식
   reasoning: { s: 21.0, z: -0.67, r: 40.0, estimated: false }  # 추론
   coding: { s: 38.7, z: -0.32, r: 45.2, estimated: false }  # 코딩
   agentic: { s: 15.2, z: -0.82, r: 37.7, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Medium 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-20
-timestamp: 2026-07-20T00:00:00Z
+updated: 2026-07-21
+timestamp: 2026-07-21T00:00:00Z
 ---
 
 # Mistral Medium 3
@@ -37,13 +37,13 @@ Mistral · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **12.0** 
 - **약점**: 멀티모달, 에이전트
 
 ## 실용 지표
-`입력 $0.4 · 출력 $2.0 · 혼합 $0.56/1M · 47.0 t/s · TTFT 1.45s · 128k ctx` · 가성비 21.4
+`입력 $0.4 · 출력 $2.0 · 혼합 $None/1M · 47.0 t/s · TTFT 1.44s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 43.2 | -0.46 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 58.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 전문 지식 | 43.1 | -0.46 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 58.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 40.0 | -0.67 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 58.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 45.2 | -0.32 | 실측 | [[scicode]] 33.0%×1.0, [[terminal-bench]] 4.0%×0.5 |
 | 에이전트 | 37.7 | -0.82 | 실측 | [[tau2-bench]] 24.0%×1.0, [[terminal-bench]] 4.0%×1.0 |

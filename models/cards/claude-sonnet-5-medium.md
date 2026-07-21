@@ -4,18 +4,18 @@ title: Claude Sonnet 5 (medium)
 creator: Anthropic
 license: Proprietary
 intelligence_index: None
-price_blended_usd_1m: 1.54
-output_speed_tps: 61.0
+price_blended_usd_1m: None
+output_speed_tps: 66.0
 context_window: 1000000
 status: current
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 67.2, z: 1.29, r: 69.3, estimated: true }  # 전문 지식
-  reasoning: { s: 56.1, z: 1.18, r: 67.7, estimated: true }  # 추론
-  coding: { s: 74.2, z: 1.18, r: 67.7, estimated: true }  # 코딩
-  agentic: { s: 63.5, z: 1.06, r: 65.9, estimated: false }  # 에이전트
+  knowledge: { s: 67.2, z: 1.28, r: 69.3, estimated: true }  # 전문 지식
+  reasoning: { s: 56.1, z: 1.17, r: 67.6, estimated: true }  # 추론
+  coding: { s: 74.2, z: 1.17, r: 67.6, estimated: true }  # 코딩
+  agentic: { s: 63.5, z: 1.05, r: 65.8, estimated: false }  # 에이전트
   trust: { s: 21.6, z: -0.29, r: 45.7, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 89.5, z: 1.21, r: 68.1, estimated: true }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5 (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-20
-timestamp: 2026-07-20T00:00:00Z
+updated: 2026-07-21
+timestamp: 2026-07-21T00:00:00Z
 ---
 
 # Claude Sonnet 5 (medium)
@@ -37,16 +37,16 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None**
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 61.0 t/s · TTFT 2.33s · 1M ctx`
+`입력 $2.0 · 출력 $10.0 · 혼합 $None/1M · 66.0 t/s · TTFT 2.22s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 69.3 | +1.29 | 추정 | (추정) |
-| 추론 | 67.7 | +1.18 | 추정 | (추정) |
-| 코딩 | 67.7 | +1.18 | 추정 | (추정) |
-| 에이전트 | 65.9 | +1.06 | 실측 | [[gdpval]] 40.0%×1.0 |
+| 전문 지식 | 69.3 | +1.28 | 추정 | (추정) |
+| 추론 | 67.6 | +1.17 | 추정 | (추정) |
+| 코딩 | 67.6 | +1.17 | 추정 | (추정) |
+| 에이전트 | 65.8 | +1.05 | 실측 | [[gdpval]] 40.0%×1.0 |
 | 신뢰성 | 45.7 | -0.29 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 68.1 | +1.21 | 추정 | (추정) |

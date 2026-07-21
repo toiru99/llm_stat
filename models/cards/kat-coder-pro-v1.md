@@ -12,8 +12,8 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 45.0, z: 0.22, r: 53.2, estimated: false }  # 전문 지식
-  reasoning: { s: 46.7, z: 0.69, r: 60.3, estimated: false }  # 추론
+  knowledge: { s: 45.0, z: 0.21, r: 53.2, estimated: false }  # 전문 지식
+  reasoning: { s: 46.7, z: 0.68, r: 60.2, estimated: false }  # 추론
   coding: { s: 45.7, z: -0.03, r: 49.6, estimated: false }  # 코딩
   agentic: { s: 45.1, z: 0.34, r: 55.1, estimated: false }  # 에이전트
   trust: { s: 37.6, z: 0.47, r: 57.0, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — KAT-Coder-Pro V1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-20
-timestamp: 2026-07-20T00:00:00Z
+updated: 2026-07-21
+timestamp: 2026-07-21T00:00:00Z
 ---
 
 # KAT-Coder-Pro V1
@@ -43,8 +43,8 @@ KwaiKAT · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **28.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 53.2 | +0.22 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 76.0%×0.4, [[humanitys-last-exam]] 33.0%×0.3 |
-| 추론 | 60.3 | +0.69 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 33.0%×1.0 |
+| 전문 지식 | 53.2 | +0.21 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 76.0%×0.4, [[humanitys-last-exam]] 33.0%×0.3 |
+| 추론 | 60.2 | +0.68 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 33.0%×1.0 |
 | 코딩 | 49.6 | -0.03 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 9.0%×0.5 |
 | 에이전트 | 55.1 | +0.34 | 실측 | [[gdpval]] 20.0%×1.0, [[tau2-bench]] 89.0%×1.0, [[terminal-bench]] 9.0%×1.0 |
 | 신뢰성 | 57.0 | +0.47 | 실측 | [[aa-omniscience]] 33.0%×1.0 |

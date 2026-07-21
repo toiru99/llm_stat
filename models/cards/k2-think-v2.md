@@ -13,9 +13,9 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 34.5, z: -0.29, r: 45.6, estimated: false }  # 전문 지식
-  reasoning: { s: 29.3, z: -0.23, r: 46.6, estimated: false }  # 추론
-  coding: { s: 40.2, z: -0.26, r: 46.2, estimated: false }  # 코딩
-  agentic: { s: 12.8, z: -0.91, r: 36.3, estimated: false }  # 에이전트
+  reasoning: { s: 29.3, z: -0.23, r: 46.5, estimated: false }  # 추론
+  coding: { s: 40.2, z: -0.26, r: 46.1, estimated: false }  # 코딩
+  agentic: { s: 12.8, z: -0.92, r: 36.3, estimated: false }  # 에이전트
   trust: { s: 47.1, z: 0.91, r: 63.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 69.7, z: 0.62, r: 59.3, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — K2 Think V2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-20
-timestamp: 2026-07-20T00:00:00Z
+updated: 2026-07-21
+timestamp: 2026-07-21T00:00:00Z
 ---
 
 # K2 Think V2
@@ -44,9 +44,9 @@ MBZUAI Institute of Foundation Models · Open · Unknown · 컨텍스트 262k ·
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 45.6 | -0.29 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 71.0%×0.4, [[humanitys-last-exam]] 9.0%×0.3 |
-| 추론 | 46.6 | -0.23 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 71.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
-| 코딩 | 46.2 | -0.26 | 실측 | [[scicode]] 33.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
-| 에이전트 | 36.3 | -0.91 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 25.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
+| 추론 | 46.5 | -0.23 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 71.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
+| 코딩 | 46.1 | -0.26 | 실측 | [[scicode]] 33.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
+| 에이전트 | 36.3 | -0.92 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 25.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
 | 신뢰성 | 63.7 | +0.91 | 실측 | [[aa-omniscience]] 41.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 59.3 | +0.62 | 실측 | [[aa-lcr]] 53.0%×1.0 |

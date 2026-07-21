@@ -12,11 +12,11 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 27.6, z: -0.62, r: 40.6, estimated: false }  # 전문 지식
+  knowledge: { s: 27.6, z: -0.63, r: 40.6, estimated: false }  # 전문 지식
   reasoning: { s: 24.9, z: -0.46, r: 43.1, estimated: false }  # 추론
-  coding: { s: 38.3, z: -0.34, r: 45.0, estimated: false }  # 코딩
-  agentic: { s: 33.1, z: -0.12, r: 48.1, estimated: true }  # 에이전트
-  trust: { s: 20.2, z: -0.35, r: 44.7, estimated: true }  # 신뢰성
+  coding: { s: 38.3, z: -0.34, r: 44.9, estimated: false }  # 코딩
+  agentic: { s: 33.1, z: -0.13, r: 48.1, estimated: true }  # 에이전트
+  trust: { s: 20.2, z: -0.36, r: 44.7, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 38.7, z: -0.3, r: 45.5, estimated: true }  # 긴문맥
   instruction: { s: 53.8, z: 0.05, r: 50.8, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen2.5 Instruct 32B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-20
-timestamp: 2026-07-20T00:00:00Z
+updated: 2026-07-21
+timestamp: 2026-07-21T00:00:00Z
 ---
 
 # Qwen2.5 Instruct 32B
@@ -43,11 +43,11 @@ Alibaba · Open · Unknown · 컨텍스트 128k · 종합지능 **7.0** · ⚠�
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 40.6 | -0.62 | 실측 | [[gpqa-diamond]] 47.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 전문 지식 | 40.6 | -0.63 | 실측 | [[gpqa-diamond]] 47.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 43.1 | -0.46 | 실측 | [[gpqa-diamond]] 47.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 45.0 | -0.34 | 실측 | [[scicode]] 23.0%×1.0 |
-| 에이전트 | 48.1 | -0.12 | 추정 | (추정) |
-| 신뢰성 | 44.7 | -0.35 | 추정 | (추정) |
+| 코딩 | 44.9 | -0.34 | 실측 | [[scicode]] 23.0%×1.0 |
+| 에이전트 | 48.1 | -0.13 | 추정 | (추정) |
+| 신뢰성 | 44.7 | -0.36 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 45.5 | -0.3 | 추정 | (추정) |
 | 지시 따르기 | 50.8 | +0.05 | 추정 | (추정) |

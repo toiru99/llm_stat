@@ -4,13 +4,13 @@ title: GLM-4.7-Flash
 creator: Z AI
 license: Open
 intelligence_index: 23.0
-price_blended_usd_1m: 0.1
-output_speed_tps: 98.0
+price_blended_usd_1m: None
+output_speed_tps: 97.0
 context_window: 200000
 status: past
 size_class: Unknown
 params_b: null
-is_reasoning: false
+is_reasoning: true
 radar:
   knowledge: { s: 30.2, z: -0.5, r: 42.5, estimated: false }  # 전문 지식
   reasoning: { s: 22.9, z: -0.57, r: 41.5, estimated: false }  # 추론
@@ -19,13 +19,13 @@ radar:
   trust: { s: 11.8, z: -0.75, r: 38.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 46.1, z: -0.08, r: 48.8, estimated: false }  # 긴문맥
-  instruction: { s: 69.0, z: 0.68, r: 60.3, estimated: false }  # 지시 따르기
+  instruction: { s: 69.0, z: 0.68, r: 60.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.7-Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-20
-timestamp: 2026-07-20T00:00:00Z
+updated: 2026-07-21
+timestamp: 2026-07-21T00:00:00Z
 ---
 
 # GLM-4.7-Flash
@@ -37,7 +37,7 @@ Z AI · Open · Unknown · 컨텍스트 200k · 종합지능 **23.0** · ⚠️ 
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $0.07 · 출력 $0.4 · 혼합 $0.1/1M · 98.0 t/s · TTFT 1.31s · 200k ctx` · 가성비 230.0
+`입력 $0.07 · 출력 $0.4 · 혼합 $None/1M · 97.0 t/s · TTFT 1.2s · 200k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Z AI · Open · Unknown · 컨텍스트 200k · 종합지능 **23.0** · ⚠️ 
 | 신뢰성 | 38.7 | -0.75 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 48.8 | -0.08 | 실측 | [[aa-lcr]] 35.0%×1.0 |
-| 지시 따르기 | 60.3 | +0.68 | 실측 | [[ifbench]] 61.0%×1.0 |
+| 지시 따르기 | 60.2 | +0.68 | 실측 | [[ifbench]] 61.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

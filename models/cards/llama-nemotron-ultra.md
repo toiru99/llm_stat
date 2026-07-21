@@ -4,7 +4,7 @@ title: Llama Nemotron Ultra
 creator: NVIDIA
 license: Open
 intelligence_index: 9.0
-price_blended_usd_1m: 0.72
+price_blended_usd_1m: None
 output_speed_tps: 53.0
 context_window: 128000
 status: current
@@ -14,9 +14,9 @@ is_reasoning: true
 radar:
   knowledge: { s: 38.7, z: -0.09, r: 48.6, estimated: false }  # 전문 지식
   reasoning: { s: 29.5, z: -0.22, r: 46.7, estimated: false }  # 추론
-  coding: { s: 39.9, z: -0.27, r: 46.0, estimated: false }  # 코딩
-  agentic: { s: 7.1, z: -1.14, r: 33.0, estimated: false }  # 에이전트
-  trust: { s: 20.0, z: -0.36, r: 44.5, estimated: false }  # 신뢰성
+  coding: { s: 39.9, z: -0.27, r: 45.9, estimated: false }  # 코딩
+  agentic: { s: 7.1, z: -1.14, r: 32.9, estimated: false }  # 에이전트
+  trust: { s: 20.0, z: -0.37, r: 44.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 9.2, z: -1.17, r: 32.4, estimated: false }  # 긴문맥
   instruction: { s: 36.6, z: -0.66, r: 40.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama Nemotron Ultra
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-20
-timestamp: 2026-07-20T00:00:00Z
+updated: 2026-07-21
+timestamp: 2026-07-21T00:00:00Z
 ---
 
 # Llama Nemotron Ultra
@@ -37,7 +37,7 @@ NVIDIA · Open · Unknown · 컨텍스트 128k · 종합지능 **9.0**
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.6 · 출력 $1.8 · 혼합 $0.72/1M · 53.0 t/s · TTFT 2.3s · 128k ctx` · 가성비 12.5
+`입력 $0.6 · 출력 $1.8 · 혼합 $None/1M · 53.0 t/s · TTFT 2.32s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ NVIDIA · Open · Unknown · 컨텍스트 128k · 종합지능 **9.0**
 |---|---|---|---|---|
 | 전문 지식 | 48.6 | -0.09 | 실측 | [[aa-omniscience]] 20.0%×1.0, [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 8.0%×0.3 |
 | 추론 | 46.7 | -0.22 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
-| 코딩 | 46.0 | -0.27 | 실측 | [[scicode]] 35.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 33.0 | -1.14 | 실측 | [[tau2-bench]] 11.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 44.5 | -0.36 | 실측 | [[aa-omniscience]] 18.0%×1.0 |
+| 코딩 | 45.9 | -0.27 | 실측 | [[scicode]] 35.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
+| 에이전트 | 32.9 | -1.14 | 실측 | [[tau2-bench]] 11.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 신뢰성 | 44.5 | -0.37 | 실측 | [[aa-omniscience]] 18.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 32.4 | -1.17 | 실측 | [[aa-lcr]] 7.0%×1.0 |
 | 지시 따르기 | 40.1 | -0.66 | 실측 | [[ifbench]] 38.0%×1.0 |
