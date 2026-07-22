@@ -8,33 +8,33 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 4100
 status: past
-size_class: Unknown
-params_b: null
+size_class: Small
+params_b: 13
 is_reasoning: false
 radar:
   knowledge: { s: 18.3, z: -1.08, r: 33.8, estimated: false }  # 전문 지식
   reasoning: { s: 16.9, z: -0.88, r: 36.8, estimated: false }  # 추론
   coding: { s: 20.0, z: -1.11, r: 33.3, estimated: false }  # 코딩
-  agentic: { s: 12.1, z: -0.94, r: 35.9, estimated: true }  # 에이전트
-  trust: { s: 23.7, z: -0.19, r: 47.1, estimated: true }  # 신뢰성
+  agentic: { s: 12.0, z: -0.94, r: 35.9, estimated: true }  # 에이전트
+  trust: { s: 22.5, z: -0.25, r: 46.2, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 11.5, z: -1.11, r: 33.4, estimated: true }  # 긴문맥
-  instruction: { s: 25.0, z: -1.14, r: 32.9, estimated: true }  # 지시 따르기
+  long_context: { s: 13.1, z: -1.07, r: 33.9, estimated: true }  # 긴문맥
+  instruction: { s: 32.4, z: -0.85, r: 37.3, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 2 Chat 13B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-21
-timestamp: 2026-07-21T00:00:00Z
+updated: 2026-07-22
+timestamp: 2026-07-22T00:00:00Z
 ---
 
 # Llama 2 Chat 13B
 
-Meta · Open · Unknown · 컨텍스트 4k · 종합지능 **3.0** · ⚠️ past(구세대)
+Meta · Open · Small(13B) · 컨텍스트 4k · 종합지능 **3.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 신뢰성, 추론
-- **약점**: 긴문맥, 지시 따르기
+- **강점**: 신뢰성, 지시 따르기
+- **약점**: 전문 지식, 코딩
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 4k ctx`
@@ -47,10 +47,10 @@ Meta · Open · Unknown · 컨텍스트 4k · 종합지능 **3.0** · ⚠️ pas
 | 추론 | 36.8 | -0.88 | 실측 | [[gpqa-diamond]] 32.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 33.3 | -1.11 | 실측 | [[scicode]] 12.0%×1.0 |
 | 에이전트 | 35.9 | -0.94 | 추정 | (추정) |
-| 신뢰성 | 47.1 | -0.19 | 추정 | (추정) |
+| 신뢰성 | 46.2 | -0.25 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 33.4 | -1.11 | 추정 | (추정) |
-| 지시 따르기 | 32.9 | -1.14 | 추정 | (추정) |
+| 긴문맥 | 33.9 | -1.07 | 추정 | (추정) |
+| 지시 따르기 | 37.3 | -0.85 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

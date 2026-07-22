@@ -8,29 +8,29 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
 status: current
-size_class: Unknown
-params_b: null
+size_class: Small
+params_b: 8
 is_reasoning: false
 radar:
   knowledge: { s: 14.0, z: -1.28, r: 30.8, estimated: false }  # 전문 지식
   reasoning: { s: 13.0, z: -1.09, r: 33.7, estimated: false }  # 추론
-  coding: { s: 15.0, z: -1.32, r: 30.2, estimated: false }  # 코딩
-  agentic: { s: 5.5, z: -1.2, r: 32.0, estimated: true }  # 에이전트
-  trust: { s: 24.7, z: -0.15, r: 47.8, estimated: true }  # 신뢰성
+  coding: { s: 15.0, z: -1.32, r: 30.1, estimated: false }  # 코딩
+  agentic: { s: 5.5, z: -1.19, r: 32.1, estimated: true }  # 에이전트
+  trust: { s: 24.8, z: -0.14, r: 47.9, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 10.5, z: -1.14, r: 33.0, estimated: true }  # 긴문맥
-  instruction: { s: 22.6, z: -1.24, r: 31.3, estimated: true }  # 지시 따르기
+  long_context: { s: 11.8, z: -1.11, r: 33.3, estimated: true }  # 긴문맥
+  instruction: { s: 23.3, z: -1.23, r: 31.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepHermes 3 - Llama-3.1 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-21
-timestamp: 2026-07-21T00:00:00Z
+updated: 2026-07-22
+timestamp: 2026-07-22T00:00:00Z
 ---
 
 # DeepHermes 3 - Llama-3.1 8B
 
-Nous Research · Open · Unknown · 컨텍스트 128k · 종합지능 **2.0**
+Nous Research · Open · Small(8B) · 컨텍스트 128k · 종합지능 **2.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 추론
@@ -45,12 +45,12 @@ Nous Research · Open · Unknown · 컨텍스트 128k · 종합지능 **2.0**
 |---|---|---|---|---|
 | 전문 지식 | 30.8 | -1.28 | 실측 | [[gpqa-diamond]] 27.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 33.7 | -1.09 | 실측 | [[gpqa-diamond]] 27.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 30.2 | -1.32 | 실측 | [[scicode]] 9.0%×1.0 |
-| 에이전트 | 32.0 | -1.2 | 추정 | (추정) |
-| 신뢰성 | 47.8 | -0.15 | 추정 | (추정) |
+| 코딩 | 30.1 | -1.32 | 실측 | [[scicode]] 9.0%×1.0 |
+| 에이전트 | 32.1 | -1.19 | 추정 | (추정) |
+| 신뢰성 | 47.9 | -0.14 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 33.0 | -1.14 | 추정 | (추정) |
-| 지시 따르기 | 31.3 | -1.24 | 추정 | (추정) |
+| 긴문맥 | 33.3 | -1.11 | 추정 | (추정) |
+| 지시 따르기 | 31.6 | -1.23 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

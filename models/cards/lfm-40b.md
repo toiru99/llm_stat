@@ -8,29 +8,29 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 32000
 status: past
-size_class: Unknown
-params_b: null
+size_class: Medium
+params_b: 40.3
 is_reasoning: false
 radar:
   knowledge: { s: 18.9, z: -1.05, r: 34.3, estimated: false }  # 전문 지식
   reasoning: { s: 17.5, z: -0.85, r: 37.3, estimated: false }  # 추론
-  coding: { s: 11.7, z: -1.46, r: 28.1, estimated: false }  # 코딩
-  agentic: { s: 4.8, z: -1.23, r: 31.6, estimated: true }  # 에이전트
-  trust: { s: 19.1, z: -0.41, r: 43.8, estimated: true }  # 신뢰성
+  coding: { s: 11.7, z: -1.46, r: 28.0, estimated: false }  # 코딩
+  agentic: { s: 2.4, z: -1.31, r: 30.3, estimated: true }  # 에이전트
+  trust: { s: 19.8, z: -0.38, r: 44.3, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 3.7, z: -1.34, r: 29.9, estimated: true }  # 긴문맥
-  instruction: { s: 22.0, z: -1.27, r: 31.0, estimated: true }  # 지시 따르기
+  long_context: { s: 4.2, z: -1.34, r: 30.0, estimated: true }  # 긴문맥
+  instruction: { s: 21.7, z: -1.29, r: 30.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — LFM 40B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-21
-timestamp: 2026-07-21T00:00:00Z
+updated: 2026-07-22
+timestamp: 2026-07-22T00:00:00Z
 ---
 
 # LFM 40B
 
-Liquid AI · Proprietary · Unknown · 컨텍스트 32k · 종합지능 **3.0** · ⚠️ past(구세대)
+Liquid AI · Proprietary · Medium(40.3B) · 컨텍스트 32k · 종합지능 **3.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 추론
@@ -45,12 +45,12 @@ Liquid AI · Proprietary · Unknown · 컨텍스트 32k · 종합지능 **3.0** 
 |---|---|---|---|---|
 | 전문 지식 | 34.3 | -1.05 | 실측 | [[gpqa-diamond]] 33.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 37.3 | -0.85 | 실측 | [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 28.1 | -1.46 | 실측 | [[scicode]] 7.0%×1.0 |
-| 에이전트 | 31.6 | -1.23 | 추정 | (추정) |
-| 신뢰성 | 43.8 | -0.41 | 추정 | (추정) |
+| 코딩 | 28.0 | -1.46 | 실측 | [[scicode]] 7.0%×1.0 |
+| 에이전트 | 30.3 | -1.31 | 추정 | (추정) |
+| 신뢰성 | 44.3 | -0.38 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 29.9 | -1.34 | 추정 | (추정) |
-| 지시 따르기 | 31.0 | -1.27 | 추정 | (추정) |
+| 긴문맥 | 30.0 | -1.34 | 추정 | (추정) |
+| 지시 따르기 | 30.6 | -1.29 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
