@@ -5,18 +5,18 @@ creator: Cohere
 license: Open
 intelligence_index: 8.0
 price_blended_usd_1m: None
-output_speed_tps: 62.0
+output_speed_tps: 56.0
 context_window: 256000
 status: current
-size_class: Medium
-params_b: 111
+size_class: Unknown
+params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 28.1, z: -0.61, r: 40.9, estimated: false }  # 전문 지식
+  knowledge: { s: 28.1, z: -0.6, r: 41.0, estimated: false }  # 전문 지식
   reasoning: { s: 19.6, z: -0.74, r: 38.9, estimated: false }  # 추론
-  coding: { s: 31.6, z: -0.63, r: 40.6, estimated: false }  # 코딩
-  agentic: { s: 8.3, z: -1.08, r: 33.8, estimated: false }  # 에이전트
-  trust: { s: 27.1, z: -0.04, r: 49.4, estimated: false }  # 신뢰성
+  coding: { s: 31.6, z: -0.62, r: 40.6, estimated: false }  # 코딩
+  agentic: { s: 8.3, z: -1.08, r: 33.7, estimated: false }  # 에이전트
+  trust: { s: 26.4, z: -0.04, r: 49.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 23.7, z: -0.76, r: 38.6, estimated: false }  # 긴문맥
   instruction: { s: 33.8, z: -0.79, r: 38.2, estimated: false }  # 지시 따르기
@@ -24,29 +24,29 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Command A
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-22
-timestamp: 2026-07-22T00:00:00Z
+updated: 2026-07-23
+timestamp: 2026-07-23T00:00:00Z
 ---
 
 # Command A
 
-Cohere · Open · Medium(111B) · 컨텍스트 256k · 종합지능 **8.0**
+Cohere · Open · Unknown · 컨텍스트 256k · 종합지능 **8.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 전문 지식
 - **약점**: 지시 따르기, 에이전트
 
 ## 실용 지표
-`입력 $2.5 · 출력 $10.0 · 혼합 $None/1M · 62.0 t/s · TTFT 1.65s · 256k ctx`
+`입력 $2.5 · 출력 $10.0 · 혼합 $None/1M · 56.0 t/s · TTFT 1.69s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 40.9 | -0.61 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 53.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 전문 지식 | 41.0 | -0.6 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 53.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 38.9 | -0.74 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 53.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 40.6 | -0.63 | 실측 | [[scicode]] 28.0%×1.0, [[terminal-bench]] 1.0%×0.5 |
-| 에이전트 | 33.8 | -1.08 | 실측 | [[tau2-bench]] 15.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
+| 코딩 | 40.6 | -0.62 | 실측 | [[scicode]] 28.0%×1.0, [[terminal-bench]] 1.0%×0.5 |
+| 에이전트 | 33.7 | -1.08 | 실측 | [[tau2-bench]] 15.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
 | 신뢰성 | 49.4 | -0.04 | 실측 | [[aa-omniscience]] 24.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 38.6 | -0.76 | 실측 | [[aa-lcr]] 18.0%×1.0 |

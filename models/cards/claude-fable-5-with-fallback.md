@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 60.0
 price_blended_usd_1m: None
-output_speed_tps: 69.0
+output_speed_tps: 73.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -13,10 +13,10 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 99.7, z: 2.84, r: 92.6, estimated: false }  # 전문 지식
-  reasoning: { s: 96.5, z: 3.28, r: 99.1, estimated: false }  # 추론
-  coding: { s: 98.5, z: 2.19, r: 82.8, estimated: false }  # 코딩
-  agentic: { s: 94.3, z: 2.24, r: 83.6, estimated: false }  # 에이전트
-  trust: { s: 51.8, z: 1.12, r: 66.8, estimated: false }  # 신뢰성
+  reasoning: { s: 96.5, z: 3.28, r: 99.2, estimated: false }  # 추론
+  coding: { s: 98.5, z: 2.19, r: 82.9, estimated: false }  # 코딩
+  agentic: { s: 94.3, z: 2.25, r: 83.8, estimated: false }  # 에이전트
+  trust: { s: 50.6, z: 1.11, r: 66.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 92.1, z: 1.28, r: 69.2, estimated: false }  # 긴문맥
   instruction: { s: 71.8, z: 0.79, r: 61.8, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Fable 5 (with fallback)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-22
-timestamp: 2026-07-22T00:00:00Z
+updated: 2026-07-23
+timestamp: 2026-07-23T00:00:00Z
 ---
 
 # Claude Fable 5 (with fallback)
@@ -37,17 +37,17 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **60.0**
 - **약점**: 신뢰성, 지시 따르기
 
 ## 실용 지표
-`입력 $10.0 · 출력 $50.0 · 혼합 $None/1M · 69.0 t/s · TTFT 131.32s · 1M ctx`
+`입력 $10.0 · 출력 $50.0 · 혼합 $None/1M · 73.0 t/s · TTFT 129.05s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 92.6 | +2.84 | 실측 | [[aa-omniscience]] 61.0%×1.0, [[gpqa-diamond]] 93.0%×0.4, [[humanitys-last-exam]] 53.0%×0.3 |
-| 추론 | 99.1 | +3.28 | 실측 | [[critpt]] 29.0%×1.0, [[gpqa-diamond]] 93.0%×1.0, [[humanitys-last-exam]] 53.0%×1.0 |
-| 코딩 | 82.8 | +2.19 | 실측 | [[scicode]] 60.0%×1.0, [[terminal-bench]] 63.0%×0.5 |
-| 에이전트 | 83.6 | +2.24 | 실측 | [[gdpval]] 62.0%×1.0, [[tau2-bench]] 99.0%×1.0, [[tau3-banking]] 27.0%×1.0, [[terminal-bench]] 63.0%×1.0 |
-| 신뢰성 | 66.8 | +1.12 | 실측 | [[aa-omniscience]] 45.0%×1.0 |
+| 추론 | 99.2 | +3.28 | 실측 | [[critpt]] 29.0%×1.0, [[gpqa-diamond]] 93.0%×1.0, [[humanitys-last-exam]] 53.0%×1.0 |
+| 코딩 | 82.9 | +2.19 | 실측 | [[scicode]] 60.0%×1.0, [[terminal-bench]] 63.0%×0.5 |
+| 에이전트 | 83.8 | +2.25 | 실측 | [[gdpval]] 62.0%×1.0, [[tau2-bench]] 99.0%×1.0, [[tau3-banking]] 27.0%×1.0, [[terminal-bench]] 63.0%×1.0 |
+| 신뢰성 | 66.6 | +1.11 | 실측 | [[aa-omniscience]] 45.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 69.2 | +1.28 | 실측 | [[aa-lcr]] 70.0%×1.0 |
 | 지시 따르기 | 61.8 | +0.79 | 실측 | [[ifbench]] 63.0%×1.0 |

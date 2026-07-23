@@ -8,29 +8,29 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 32800
 status: past
-size_class: Small
-params_b: 23.6
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 23.4, z: -0.83, r: 37.5, estimated: false }  # 전문 지식
   reasoning: { s: 14.0, z: -1.03, r: 34.5, estimated: false }  # 추론
   coding: { s: 21.0, z: -1.07, r: 33.9, estimated: false }  # 코딩
   agentic: { s: 1.5, z: -1.35, r: 29.8, estimated: false }  # 에이전트
-  trust: { s: 9.4, z: -0.87, r: 37.0, estimated: false }  # 신뢰성
+  trust: { s: 9.2, z: -0.86, r: 37.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.46, r: 28.1, estimated: false }  # 긴문맥
+  long_context: { s: 0.0, z: -1.47, r: 28.0, estimated: false }  # 긴문맥
   instruction: { s: 28.2, z: -1.02, r: 34.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Sarvam M
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-22
-timestamp: 2026-07-22T00:00:00Z
+updated: 2026-07-23
+timestamp: 2026-07-23T00:00:00Z
 ---
 
 # Sarvam M
 
-Sarvam · Open · Small(23.6B) · 컨텍스트 32k · 종합지능 **3.0** · ⚠️ past(구세대)
+Sarvam · Open · Unknown · 컨텍스트 32k · 종합지능 **3.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 전문 지식, 신뢰성
@@ -47,9 +47,9 @@ Sarvam · Open · Small(23.6B) · 컨텍스트 32k · 종합지능 **3.0** · �
 | 추론 | 34.5 | -1.03 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 42.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 33.9 | -1.07 | 실측 | [[scicode]] 18.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 29.8 | -1.35 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 37.0 | -0.87 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 신뢰성 | 37.1 | -0.86 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 28.1 | -1.46 | 실측 | [[aa-lcr]] 0.0%×1.0 |
+| 긴문맥 | 28.0 | -1.47 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 34.7 | -1.02 | 실측 | [[ifbench]] 32.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

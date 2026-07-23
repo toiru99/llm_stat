@@ -5,18 +5,18 @@ creator: NVIDIA
 license: Open
 intelligence_index: 15.0
 price_blended_usd_1m: None
-output_speed_tps: 315.0
+output_speed_tps: 313.0
 context_window: 256000
 status: current
-size_class: Small
-params_b: 30
+size_class: Unknown
+params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 25.4, z: -0.73, r: 39.0, estimated: false }  # 전문 지식
-  reasoning: { s: 17.2, z: -0.86, r: 37.0, estimated: false }  # 추론
-  coding: { s: 35.2, z: -0.48, r: 42.8, estimated: false }  # 코딩
+  reasoning: { s: 17.2, z: -0.86, r: 37.1, estimated: false }  # 추론
+  coding: { s: 35.2, z: -0.48, r: 42.9, estimated: false }  # 코딩
   agentic: { s: 19.2, z: -0.66, r: 40.1, estimated: false }  # 에이전트
-  trust: { s: 18.8, z: -0.42, r: 43.6, estimated: false }  # 신뢰성
+  trust: { s: 18.4, z: -0.42, r: 43.6, estimated: false }  # 신뢰성
   multimodal: { s: 55.1, z: -0.8, r: 38.0, estimated: false }  # 멀티모달
   long_context: { s: 47.4, z: -0.05, r: 49.2, estimated: false }  # 긴문맥
   instruction: { s: 71.8, z: 0.79, r: 61.8, estimated: false }  # 지시 따르기
@@ -24,28 +24,28 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3 Nano Omni 30B A3B Reasoning
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-22
-timestamp: 2026-07-22T00:00:00Z
+updated: 2026-07-23
+timestamp: 2026-07-23T00:00:00Z
 ---
 
 # Nemotron 3 Nano Omni 30B A3B Reasoning
 
-NVIDIA · Open · Small(30B) · 컨텍스트 256k · 종합지능 **15.0**
+NVIDIA · Open · Unknown · 컨텍스트 256k · 종합지능 **15.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 긴문맥
 - **약점**: 멀티모달, 추론
 
 ## 실용 지표
-`입력 $0.07 · 출력 $0.3 · 혼합 $None/1M · 315.0 t/s · TTFT 1.0s · 256k ctx`
+`입력 $0.07 · 출력 $0.3 · 혼합 $None/1M · 313.0 t/s · TTFT 0.99s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 39.0 | -0.73 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 47.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 37.0 | -0.86 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 47.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 42.8 | -0.48 | 실측 | [[scicode]] 28.0%×1.0, [[terminal-bench]] 8.0%×0.5 |
+| 추론 | 37.1 | -0.86 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 47.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 42.9 | -0.48 | 실측 | [[scicode]] 28.0%×1.0, [[terminal-bench]] 8.0%×0.5 |
 | 에이전트 | 40.1 | -0.66 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 45.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
 | 신뢰성 | 43.6 | -0.42 | 실측 | [[aa-omniscience]] 17.0%×1.0 |
 | 멀티모달 | 38.0 | -0.8 | 실측 | [[mmmu-pro]] 53.0%×1.0 |

@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 61.9, z: 1.02, r: 65.3, estimated: false }  # 전문 지식
   reasoning: { s: 61.9, z: 1.47, r: 72.1, estimated: false }  # 추론
   coding: { s: 73.3, z: 1.13, r: 66.9, estimated: true }  # 코딩
-  agentic: { s: 64.7, z: 1.09, r: 66.4, estimated: true }  # 에이전트
-  trust: { s: 42.4, z: 0.68, r: 60.2, estimated: true }  # 신뢰성
+  agentic: { s: 64.7, z: 1.1, r: 66.5, estimated: true }  # 에이전트
+  trust: { s: 41.4, z: 0.67, r: 60.1, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 85.8, z: 1.09, r: 66.4, estimated: true }  # 긴문맥
-  instruction: { s: 71.5, z: 0.78, r: 61.6, estimated: true }  # 지시 따르기
+  instruction: { s: 72.1, z: 0.8, r: 62.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Sonar Reasoning
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-22
-timestamp: 2026-07-22T00:00:00Z
+updated: 2026-07-23
+timestamp: 2026-07-23T00:00:00Z
 ---
 
 # Sonar Reasoning
@@ -46,11 +46,11 @@ Perplexity · Proprietary · Unknown · 컨텍스트 127k · 종합지능 **12.0
 | 전문 지식 | 65.3 | +1.02 | 실측 | [[gpqa-diamond]] 62.0%×0.4 |
 | 추론 | 72.1 | +1.47 | 실측 | [[gpqa-diamond]] 62.0%×1.0 |
 | 코딩 | 66.9 | +1.13 | 추정 | (추정) |
-| 에이전트 | 66.4 | +1.09 | 추정 | (추정) |
-| 신뢰성 | 60.2 | +0.68 | 추정 | (추정) |
+| 에이전트 | 66.5 | +1.1 | 추정 | (추정) |
+| 신뢰성 | 60.1 | +0.67 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 66.4 | +1.09 | 추정 | (추정) |
-| 지시 따르기 | 61.6 | +0.78 | 추정 | (추정) |
+| 지시 따르기 | 62.0 | +0.8 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

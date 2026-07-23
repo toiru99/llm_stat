@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 28.0
 price_blended_usd_1m: None
-output_speed_tps: 97.0
+output_speed_tps: 88.0
 context_window: 1050000
 status: past
 size_class: Unknown
@@ -13,10 +13,10 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 56.9, z: 0.78, r: 61.7, estimated: false }  # 전문 지식
-  reasoning: { s: 33.2, z: -0.03, r: 49.6, estimated: false }  # 추론
-  coding: { s: 71.4, z: 1.05, r: 65.7, estimated: false }  # 코딩
+  reasoning: { s: 33.2, z: -0.02, r: 49.6, estimated: false }  # 추론
+  coding: { s: 71.4, z: 1.05, r: 65.8, estimated: false }  # 코딩
   agentic: { s: 46.5, z: 0.39, r: 55.9, estimated: false }  # 에이전트
-  trust: { s: 18.8, z: -0.42, r: 43.6, estimated: false }  # 신뢰성
+  trust: { s: 18.4, z: -0.42, r: 43.6, estimated: false }  # 신뢰성
   multimodal: { s: 81.2, z: 0.44, r: 56.6, estimated: false }  # 멀티모달
   long_context: { s: 61.8, z: 0.38, r: 55.7, estimated: false }  # 긴문맥
   instruction: { s: 50.7, z: -0.09, r: 48.7, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.4 (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-22
-timestamp: 2026-07-22T00:00:00Z
+updated: 2026-07-23
+timestamp: 2026-07-23T00:00:00Z
 ---
 
 # GPT-5.4 (Non-reasoning)
@@ -37,15 +37,15 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **28.0** · 
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $2.5 · 출력 $15.0 · 혼합 $None/1M · 97.0 t/s · TTFT 0.75s · 1M ctx`
+`입력 $2.5 · 출력 $15.0 · 혼합 $None/1M · 88.0 t/s · TTFT 0.76s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 61.7 | +0.78 | 실측 | [[aa-omniscience]] 37.0%×1.0, [[gpqa-diamond]] 75.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
-| 추론 | 49.6 | -0.03 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 75.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
-| 코딩 | 65.7 | +1.05 | 실측 | [[scicode]] 47.0%×1.0, [[terminal-bench]] 38.0%×0.5 |
+| 추론 | 49.6 | -0.02 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 75.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
+| 코딩 | 65.8 | +1.05 | 실측 | [[scicode]] 47.0%×1.0, [[terminal-bench]] 38.0%×0.5 |
 | 에이전트 | 55.9 | +0.39 | 실측 | [[tau2-bench]] 35.0%×1.0, [[terminal-bench]] 38.0%×1.0 |
 | 신뢰성 | 43.6 | -0.42 | 실측 | [[aa-omniscience]] 17.0%×1.0 |
 | 멀티모달 | 56.6 | +0.44 | 실측 | [[mmmu-pro]] 71.0%×1.0 |

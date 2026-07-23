@@ -5,18 +5,18 @@ creator: Alibaba
 license: Open
 intelligence_index: 17.0
 price_blended_usd_1m: None
-output_speed_tps: 181.0
+output_speed_tps: 178.0
 context_window: 262000
 status: current
-size_class: Medium
-params_b: 80
-is_reasoning: true
+size_class: Unknown
+params_b: null
+is_reasoning: false
 radar:
   knowledge: { s: 37.9, z: -0.13, r: 48.0, estimated: false }  # 전문 지식
   reasoning: { s: 33.2, z: -0.03, r: 49.6, estimated: false }  # 추론
   coding: { s: 48.4, z: 0.08, r: 51.2, estimated: false }  # 코딩
   agentic: { s: 18.9, z: -0.67, r: 39.9, estimated: false }  # 에이전트
-  trust: { s: 20.0, z: -0.37, r: 44.5, estimated: false }  # 신뢰성
+  trust: { s: 19.5, z: -0.37, r: 44.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 78.9, z: 0.89, r: 63.3, estimated: false }  # 긴문맥
   instruction: { s: 69.0, z: 0.67, r: 60.1, estimated: false }  # 지시 따르기
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Next 80B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-22
-timestamp: 2026-07-22T00:00:00Z
+updated: 2026-07-23
+timestamp: 2026-07-23T00:00:00Z
 ---
 
 # Qwen3 Next 80B A3B
 
-Alibaba · Open · Medium(80B) · 컨텍스트 262k · 종합지능 **17.0**
+Alibaba · Open · Unknown · 컨텍스트 262k · 종합지능 **17.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 지시 따르기
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $0.5 · 출력 $6.0 · 혼합 $None/1M · 181.0 t/s · TTFT 2.13s · 262k ctx`
+`입력 $0.5 · 출력 $6.0 · 혼합 $None/1M · 178.0 t/s · TTFT 2.1s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

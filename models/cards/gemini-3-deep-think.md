@@ -13,10 +13,10 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 85.6, z: 2.16, r: 82.4, estimated: true }  # 전문 지식
-  reasoning: { s: 81.2, z: 2.48, r: 87.2, estimated: false }  # 추론
-  coding: { s: 93.2, z: 1.96, r: 79.5, estimated: true }  # 코딩
-  agentic: { s: 82.4, z: 1.78, r: 76.7, estimated: true }  # 에이전트
-  trust: { s: 25.9, z: -0.09, r: 48.6, estimated: true }  # 신뢰성
+  reasoning: { s: 81.2, z: 2.49, r: 87.3, estimated: false }  # 추론
+  coding: { s: 93.2, z: 1.97, r: 79.5, estimated: true }  # 코딩
+  agentic: { s: 82.4, z: 1.79, r: 76.8, estimated: true }  # 에이전트
+  trust: { s: 25.3, z: -0.1, r: 48.6, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 94.5, z: 1.35, r: 70.3, estimated: true }  # 긴문맥
   instruction: { s: 82.5, z: 1.23, r: 68.5, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3 Deep Think
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-22
-timestamp: 2026-07-22T00:00:00Z
+updated: 2026-07-23
+timestamp: 2026-07-23T00:00:00Z
 ---
 
 # Gemini 3 Deep Think
@@ -44,10 +44,10 @@ Google · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 82.4 | +2.16 | 추정 | (추정) |
-| 추론 | 87.2 | +2.48 | 실측 | [[critpt]] 26.0%×1.0 |
-| 코딩 | 79.5 | +1.96 | 추정 | (추정) |
-| 에이전트 | 76.7 | +1.78 | 추정 | (추정) |
-| 신뢰성 | 48.6 | -0.09 | 추정 | (추정) |
+| 추론 | 87.3 | +2.49 | 실측 | [[critpt]] 26.0%×1.0 |
+| 코딩 | 79.5 | +1.97 | 추정 | (추정) |
+| 에이전트 | 76.8 | +1.79 | 추정 | (추정) |
+| 신뢰성 | 48.6 | -0.1 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 70.3 | +1.35 | 추정 | (추정) |
 | 지시 따르기 | 68.5 | +1.23 | 추정 | (추정) |
