@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 8189
 status: past
-size_class: Unknown
-params_b: null
+size_class: Small
+params_b: 14
 is_reasoning: false
 radar:
   knowledge: { s: null, z: null, r: null, estimated: false }  # 전문 지식
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen Chat 14B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-23
-timestamp: 2026-07-23T00:00:00Z
+updated: 2026-07-24
+timestamp: 2026-07-24T00:00:00Z
 ---
 
 # Qwen Chat 14B
 
-Alibaba · Open · Unknown · 컨텍스트 8k · 종합지능 **2.0** · ⚠️ past(구세대)
+Alibaba · Open · Small(14B) · 컨텍스트 8k · 종합지능 **2.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: —

@@ -15,8 +15,8 @@ radar:
   knowledge: { s: 44.4, z: 0.18, r: 52.7, estimated: false }  # 전문 지식
   reasoning: { s: 26.0, z: -0.41, r: 43.9, estimated: false }  # 추론
   coding: { s: 46.7, z: 0.01, r: 50.1, estimated: false }  # 코딩
-  agentic: { s: 33.1, z: -0.12, r: 48.1, estimated: false }  # 에이전트
-  trust: { s: 16.1, z: -0.53, r: 42.0, estimated: false }  # 신뢰성
+  agentic: { s: 33.1, z: -0.12, r: 48.2, estimated: false }  # 에이전트
+  trust: { s: 16.1, z: -0.55, r: 41.8, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 72.4, z: 0.69, r: 60.4, estimated: false }  # 긴문맥
   instruction: { s: 49.3, z: -0.15, r: 47.8, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-23
-timestamp: 2026-07-23T00:00:00Z
+updated: 2026-07-24
+timestamp: 2026-07-24T00:00:00Z
 ---
 
 # Grok 3
@@ -46,8 +46,8 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **18.0** �
 | 전문 지식 | 52.7 | +0.18 | 실측 | [[aa-omniscience]] 28.0%×1.0, [[gpqa-diamond]] 69.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 43.9 | -0.41 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 69.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 50.1 | +0.01 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 11.0%×0.5 |
-| 에이전트 | 48.1 | -0.12 | 실측 | [[tau2-bench]] 49.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
-| 신뢰성 | 42.0 | -0.53 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
+| 에이전트 | 48.2 | -0.12 | 실측 | [[tau2-bench]] 49.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
+| 신뢰성 | 41.8 | -0.55 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 60.4 | +0.69 | 실측 | [[aa-lcr]] 55.0%×1.0 |
 | 지시 따르기 | 47.8 | -0.15 | 실측 | [[ifbench]] 47.0%×1.0 |

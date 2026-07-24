@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 89.3, z: 2.34, r: 85.1, estimated: false }  # 전문 지식
-  reasoning: { s: 89.3, z: 2.91, r: 93.6, estimated: false }  # 추론
-  coding: { s: 93.4, z: 1.98, r: 79.6, estimated: true }  # 코딩
-  agentic: { s: 89.9, z: 2.08, r: 81.2, estimated: true }  # 에이전트
-  trust: { s: 13.4, z: -0.66, r: 40.1, estimated: true }  # 신뢰성
+  reasoning: { s: 89.3, z: 2.9, r: 93.5, estimated: false }  # 추론
+  coding: { s: 93.4, z: 1.97, r: 79.6, estimated: true }  # 코딩
+  agentic: { s: 90.1, z: 2.09, r: 81.3, estimated: true }  # 에이전트
+  trust: { s: 13.4, z: -0.67, r: 39.9, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 94.2, z: 1.34, r: 70.2, estimated: true }  # 긴문맥
-  instruction: { s: 84.6, z: 1.32, r: 69.7, estimated: true }  # 지시 따르기
+  long_context: { s: 94.2, z: 1.34, r: 70.1, estimated: true }  # 긴문맥
+  instruction: { s: 84.6, z: 1.31, r: 69.7, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — o3-pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-23
-timestamp: 2026-07-23T00:00:00Z
+updated: 2026-07-24
+timestamp: 2026-07-24T00:00:00Z
 ---
 
 # o3-pro
@@ -44,13 +44,13 @@ OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **33.0** �
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 85.1 | +2.34 | 실측 | [[gpqa-diamond]] 85.0%×0.4 |
-| 추론 | 93.6 | +2.91 | 실측 | [[gpqa-diamond]] 85.0%×1.0 |
-| 코딩 | 79.6 | +1.98 | 추정 | (추정) |
-| 에이전트 | 81.2 | +2.08 | 추정 | (추정) |
-| 신뢰성 | 40.1 | -0.66 | 추정 | (추정) |
+| 추론 | 93.5 | +2.9 | 실측 | [[gpqa-diamond]] 85.0%×1.0 |
+| 코딩 | 79.6 | +1.97 | 추정 | (추정) |
+| 에이전트 | 81.3 | +2.09 | 추정 | (추정) |
+| 신뢰성 | 39.9 | -0.67 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 70.2 | +1.34 | 추정 | (추정) |
-| 지시 따르기 | 69.7 | +1.32 | 추정 | (추정) |
+| 긴문맥 | 70.1 | +1.34 | 추정 | (추정) |
+| 지시 따르기 | 69.7 | +1.31 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

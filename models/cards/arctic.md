@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 4000
 status: past
-size_class: Unknown
-params_b: null
+size_class: Large
+params_b: 480
 is_reasoning: false
 radar:
   knowledge: { s: null, z: null, r: null, estimated: false }  # 전문 지식
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Arctic
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-23
-timestamp: 2026-07-23T00:00:00Z
+updated: 2026-07-24
+timestamp: 2026-07-24T00:00:00Z
 ---
 
 # Arctic
 
-Snowflake · Open · Unknown · 컨텍스트 4k · 종합지능 **3.0** · ⚠️ past(구세대)
+Snowflake · Open · Large(480B) · 컨텍스트 4k · 종합지능 **3.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: —

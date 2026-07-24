@@ -8,8 +8,8 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 33800
 status: past
-size_class: Unknown
-params_b: null
+size_class: Medium
+params_b: 72
 is_reasoning: false
 radar:
   knowledge: { s: null, z: null, r: null, estimated: false }  # 전문 지식
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen Chat 72B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-23
-timestamp: 2026-07-23T00:00:00Z
+updated: 2026-07-24
+timestamp: 2026-07-24T00:00:00Z
 ---
 
 # Qwen Chat 72B
 
-Alibaba · Open · Unknown · 컨텍스트 33k · 종합지능 **3.0** · ⚠️ past(구세대)
+Alibaba · Open · Medium(72B) · 컨텍스트 33k · 종합지능 **3.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: —

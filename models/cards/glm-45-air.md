@@ -5,18 +5,18 @@ creator: Z AI
 license: Open
 intelligence_index: 17.0
 price_blended_usd_1m: None
-output_speed_tps: 66.0
+output_speed_tps: 80.0
 context_window: 128000
 status: past
-size_class: Unknown
-params_b: null
+size_class: Medium
+params_b: 106
 is_reasoning: true
 radar:
   knowledge: { s: 34.4, z: -0.3, r: 45.5, estimated: false }  # 전문 지식
-  reasoning: { s: 28.8, z: -0.26, r: 46.2, estimated: false }  # 추론
+  reasoning: { s: 28.8, z: -0.26, r: 46.1, estimated: false }  # 추론
   coding: { s: 44.5, z: -0.08, r: 48.8, estimated: false }  # 코딩
   agentic: { s: 38.4, z: 0.08, r: 51.2, estimated: false }  # 에이전트
-  trust: { s: 8.0, z: -0.92, r: 36.3, estimated: false }  # 신뢰성
+  trust: { s: 8.0, z: -0.93, r: 36.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 57.9, z: 0.26, r: 53.9, estimated: false }  # 긴문맥
   instruction: { s: 36.6, z: -0.67, r: 39.9, estimated: false }  # 지시 따르기
@@ -24,30 +24,30 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.5-Air
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-23
-timestamp: 2026-07-23T00:00:00Z
+updated: 2026-07-24
+timestamp: 2026-07-24T00:00:00Z
 ---
 
 # GLM-4.5-Air
 
-Z AI · Open · Unknown · 컨텍스트 128k · 종합지능 **17.0** · ⚠️ past(구세대)
+Z AI · Open · Medium(106B) · 컨텍스트 128k · 종합지능 **17.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 에이전트
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $0.17 · 출력 $0.98 · 혼합 $None/1M · 66.0 t/s · TTFT 2.74s · 128k ctx`
+`입력 $0.17 · 출력 $0.98 · 혼합 $None/1M · 80.0 t/s · TTFT 2.76s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 45.5 | -0.3 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
-| 추론 | 46.2 | -0.26 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
+| 추론 | 46.1 | -0.26 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
 | 코딩 | 48.8 | -0.08 | 실측 | [[scicode]] 31.0%×1.0, [[terminal-bench]] 20.0%×0.5 |
 | 에이전트 | 51.2 | +0.08 | 실측 | [[tau2-bench]] 46.0%×1.0, [[terminal-bench]] 20.0%×1.0 |
-| 신뢰성 | 36.3 | -0.92 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
+| 신뢰성 | 36.1 | -0.93 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 53.9 | +0.26 | 실측 | [[aa-lcr]] 44.0%×1.0 |
 | 지시 따르기 | 39.9 | -0.67 | 실측 | [[ifbench]] 38.0%×1.0 |

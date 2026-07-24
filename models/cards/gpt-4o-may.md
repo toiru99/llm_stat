@@ -5,27 +5,27 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 9.0
 price_blended_usd_1m: None
-output_speed_tps: 96.0
+output_speed_tps: 92.0
 context_window: 128000
 status: past
 size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 30.9, z: -0.47, r: 43.0, estimated: false }  # 전문 지식
-  reasoning: { s: 27.5, z: -0.32, r: 45.1, estimated: false }  # 추론
+  knowledge: { s: 30.9, z: -0.47, r: 42.9, estimated: false }  # 전문 지식
+  reasoning: { s: 27.5, z: -0.33, r: 45.1, estimated: false }  # 추론
   coding: { s: 51.7, z: 0.22, r: 53.3, estimated: false }  # 코딩
   agentic: { s: 37.5, z: 0.05, r: 50.7, estimated: true }  # 에이전트
-  trust: { s: 38.6, z: 0.54, r: 58.1, estimated: true }  # 신뢰성
+  trust: { s: 38.6, z: 0.52, r: 57.8, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 31.8, z: -0.52, r: 42.2, estimated: true }  # 긴문맥
-  instruction: { s: 46.5, z: -0.26, r: 46.1, estimated: true }  # 지시 따르기
+  long_context: { s: 31.8, z: -0.51, r: 42.3, estimated: true }  # 긴문맥
+  instruction: { s: 46.5, z: -0.26, r: 46.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4o (May)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-23
-timestamp: 2026-07-23T00:00:00Z
+updated: 2026-07-24
+timestamp: 2026-07-24T00:00:00Z
 ---
 
 # GPT-4o (May)
@@ -37,20 +37,20 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **9.0** ·
 - **약점**: 전문 지식, 긴문맥
 
 ## 실용 지표
-`입력 $5.0 · 출력 $15.0 · 혼합 $None/1M · 96.0 t/s · TTFT 1.18s · 128k ctx`
+`입력 $5.0 · 출력 $15.0 · 혼합 $None/1M · 92.0 t/s · TTFT 1.12s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 43.0 | -0.47 | 실측 | [[gpqa-diamond]] 53.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
-| 추론 | 45.1 | -0.32 | 실측 | [[gpqa-diamond]] 53.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
+| 전문 지식 | 42.9 | -0.47 | 실측 | [[gpqa-diamond]] 53.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
+| 추론 | 45.1 | -0.33 | 실측 | [[gpqa-diamond]] 53.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 53.3 | +0.22 | 실측 | [[scicode]] 31.0%×1.0 |
 | 에이전트 | 50.7 | +0.05 | 추정 | (추정) |
-| 신뢰성 | 58.1 | +0.54 | 추정 | (추정) |
+| 신뢰성 | 57.8 | +0.52 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 42.2 | -0.52 | 추정 | (추정) |
-| 지시 따르기 | 46.1 | -0.26 | 추정 | (추정) |
+| 긴문맥 | 42.3 | -0.51 | 추정 | (추정) |
+| 지시 따르기 | 46.0 | -0.26 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

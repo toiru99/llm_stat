@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 88.8, z: 2.32, r: 84.8, estimated: false }  # 전문 지식
-  reasoning: { s: 64.6, z: 1.62, r: 74.2, estimated: false }  # 추론
-  coding: { s: 83.4, z: 1.56, r: 73.4, estimated: false }  # 코딩
+  knowledge: { s: 88.8, z: 2.32, r: 84.7, estimated: false }  # 전문 지식
+  reasoning: { s: 64.6, z: 1.61, r: 74.2, estimated: false }  # 추론
+  coding: { s: 83.4, z: 1.56, r: 73.3, estimated: false }  # 코딩
   agentic: { s: 75.8, z: 1.53, r: 73.0, estimated: false }  # 에이전트
-  trust: { s: 9.2, z: -0.86, r: 37.1, estimated: false }  # 신뢰성
+  trust: { s: 9.2, z: -0.87, r: 36.9, estimated: false }  # 신뢰성
   multimodal: { s: 94.2, z: 1.07, r: 66.0, estimated: false }  # 멀티모달
   long_context: { s: 93.4, z: 1.32, r: 69.8, estimated: false }  # 긴문맥
-  instruction: { s: 81.7, z: 1.2, r: 68.0, estimated: false }  # 지시 따르기
+  instruction: { s: 81.7, z: 1.19, r: 67.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3 Pro Preview (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-23
-timestamp: 2026-07-23T00:00:00Z
+updated: 2026-07-24
+timestamp: 2026-07-24T00:00:00Z
 ---
 
 # Gemini 3 Pro Preview (high)
@@ -43,14 +43,14 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **40.0** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 84.8 | +2.32 | 실측 | [[aa-omniscience]] 56.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 37.0%×0.3 |
-| 추론 | 74.2 | +1.62 | 실측 | [[critpt]] 9.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 37.0%×1.0 |
-| 코딩 | 73.4 | +1.56 | 실측 | [[scicode]] 56.0%×1.0, [[terminal-bench]] 42.0%×0.5 |
+| 전문 지식 | 84.7 | +2.32 | 실측 | [[aa-omniscience]] 56.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 37.0%×0.3 |
+| 추론 | 74.2 | +1.61 | 실측 | [[critpt]] 9.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 37.0%×1.0 |
+| 코딩 | 73.3 | +1.56 | 실측 | [[scicode]] 56.0%×1.0, [[terminal-bench]] 42.0%×0.5 |
 | 에이전트 | 73.0 | +1.53 | 실측 | [[tau2-bench]] 87.0%×1.0, [[terminal-bench]] 42.0%×1.0 |
-| 신뢰성 | 37.1 | -0.86 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 신뢰성 | 36.9 | -0.87 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | 66.0 | +1.07 | 실측 | [[mmmu-pro]] 80.0%×1.0 |
 | 긴문맥 | 69.8 | +1.32 | 실측 | [[aa-lcr]] 71.0%×1.0 |
-| 지시 따르기 | 68.0 | +1.2 | 실측 | [[ifbench]] 70.0%×1.0 |
+| 지시 따르기 | 67.9 | +1.19 | 실측 | [[ifbench]] 70.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
