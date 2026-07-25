@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 22.9, z: -0.86, r: 37.2, estimated: false }  # 전문 지식
-  reasoning: { s: 20.7, z: -0.68, r: 39.8, estimated: false }  # 추론
-  coding: { s: 38.3, z: -0.34, r: 44.9, estimated: false }  # 코딩
-  agentic: { s: 15.9, z: -0.79, r: 38.2, estimated: true }  # 에이전트
-  trust: { s: 25.0, z: -0.12, r: 48.1, estimated: true }  # 신뢰성
+  knowledge: { s: 22.9, z: -0.86, r: 37.1, estimated: false }  # 전문 지식
+  reasoning: { s: 20.7, z: -0.68, r: 39.7, estimated: false }  # 추론
+  coding: { s: 38.3, z: -0.36, r: 44.7, estimated: false }  # 코딩
+  agentic: { s: 15.8, z: -0.8, r: 38.1, estimated: true }  # 에이전트
+  trust: { s: 25.0, z: -0.15, r: 47.8, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 19.6, z: -0.87, r: 36.9, estimated: true }  # 긴문맥
-  instruction: { s: 28.2, z: -1.02, r: 34.7, estimated: true }  # 지시 따르기
+  long_context: { s: 19.6, z: -0.88, r: 36.7, estimated: true }  # 긴문맥
+  instruction: { s: 28.2, z: -1.03, r: 34.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 3 Sonnet
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-24
-timestamp: 2026-07-24T00:00:00Z
+updated: 2026-07-25
+timestamp: 2026-07-25T00:00:00Z
 ---
 
 # Claude 3 Sonnet
@@ -43,14 +43,14 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **5.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 37.2 | -0.86 | 실측 | [[gpqa-diamond]] 40.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 39.8 | -0.68 | 실측 | [[gpqa-diamond]] 40.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 44.9 | -0.34 | 실측 | [[scicode]] 23.0%×1.0 |
-| 에이전트 | 38.2 | -0.79 | 추정 | (추정) |
-| 신뢰성 | 48.1 | -0.12 | 추정 | (추정) |
+| 전문 지식 | 37.1 | -0.86 | 실측 | [[gpqa-diamond]] 40.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 39.7 | -0.68 | 실측 | [[gpqa-diamond]] 40.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 44.7 | -0.36 | 실측 | [[scicode]] 23.0%×1.0 |
+| 에이전트 | 38.1 | -0.8 | 추정 | (추정) |
+| 신뢰성 | 47.8 | -0.15 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 36.9 | -0.87 | 추정 | (추정) |
-| 지시 따르기 | 34.7 | -1.02 | 추정 | (추정) |
+| 긴문맥 | 36.7 | -0.88 | 추정 | (추정) |
+| 지시 따르기 | 34.6 | -1.03 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

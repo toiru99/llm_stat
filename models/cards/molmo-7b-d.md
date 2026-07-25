@@ -12,20 +12,20 @@ size_class: Small
 params_b: 8.02
 is_reasoning: false
 radar:
-  knowledge: { s: 12.8, z: -1.34, r: 29.9, estimated: false }  # 전문 지식
-  reasoning: { s: 12.2, z: -1.13, r: 33.1, estimated: false }  # 추론
-  coding: { s: 4.4, z: -1.77, r: 23.5, estimated: false }  # 코딩
+  knowledge: { s: 12.8, z: -1.33, r: 30.0, estimated: false }  # 전문 지식
+  reasoning: { s: 12.2, z: -1.11, r: 33.3, estimated: false }  # 추론
+  coding: { s: 4.4, z: -1.77, r: 23.4, estimated: false }  # 코딩
   agentic: { s: 0.0, z: -1.41, r: 28.9, estimated: false }  # 에이전트
-  trust: { s: 11.3, z: -0.77, r: 38.4, estimated: true }  # 신뢰성
-  multimodal: { s: 14.5, z: -2.74, r: 8.9, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.46, r: 28.2, estimated: false }  # 긴문맥
-  instruction: { s: 11.3, z: -1.72, r: 24.2, estimated: false }  # 지시 따르기
+  trust: { s: 11.3, z: -0.79, r: 38.1, estimated: true }  # 신뢰성
+  multimodal: { s: 14.3, z: -2.76, r: 8.7, estimated: false }  # 멀티모달
+  long_context: { s: 0.0, z: -1.47, r: 28.0, estimated: false }  # 긴문맥
+  instruction: { s: 11.3, z: -1.73, r: 24.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Molmo 7B-D
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-24
-timestamp: 2026-07-24T00:00:00Z
+updated: 2026-07-25
+timestamp: 2026-07-25T00:00:00Z
 ---
 
 # Molmo 7B-D
@@ -43,14 +43,14 @@ Allen Institute for AI · Open · Small(8.02B) · 컨텍스트 4k · 종합지�
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 29.9 | -1.34 | 실측 | [[gpqa-diamond]] 24.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 33.1 | -1.13 | 실측 | [[gpqa-diamond]] 24.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 23.5 | -1.77 | 실측 | [[scicode]] 4.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
+| 전문 지식 | 30.0 | -1.33 | 실측 | [[gpqa-diamond]] 24.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 추론 | 33.3 | -1.11 | 실측 | [[gpqa-diamond]] 24.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 23.4 | -1.77 | 실측 | [[scicode]] 4.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 28.9 | -1.41 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 38.4 | -0.77 | 추정 | (추정) |
-| 멀티모달 | 8.9 | -2.74 | 실측 | [[mmmu-pro]] 25.0%×1.0 |
-| 긴문맥 | 28.2 | -1.46 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 24.2 | -1.72 | 실측 | [[ifbench]] 20.0%×1.0 |
+| 신뢰성 | 38.1 | -0.79 | 추정 | (추정) |
+| 멀티모달 | 8.7 | -2.76 | 실측 | [[mmmu-pro]] 25.0%×1.0 |
+| 긴문맥 | 28.0 | -1.47 | 실측 | [[aa-lcr]] 0.0%×1.0 |
+| 지시 따르기 | 24.1 | -1.73 | 실측 | [[ifbench]] 20.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

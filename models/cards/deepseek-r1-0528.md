@@ -12,20 +12,20 @@ size_class: Large
 params_b: 685
 is_reasoning: true
 radar:
-  knowledge: { s: 54.1, z: 0.64, r: 59.6, estimated: false }  # 전문 지식
-  reasoning: { s: 38.2, z: 0.23, r: 53.5, estimated: false }  # 추론
-  coding: { s: 52.5, z: 0.25, r: 53.8, estimated: false }  # 코딩
-  agentic: { s: 30.8, z: -0.21, r: 46.8, estimated: false }  # 에이전트
-  trust: { s: 17.2, z: -0.49, r: 42.6, estimated: false }  # 신뢰성
+  knowledge: { s: 54.1, z: 0.61, r: 59.1, estimated: false }  # 전문 지식
+  reasoning: { s: 38.2, z: 0.19, r: 52.9, estimated: false }  # 추론
+  coding: { s: 52.5, z: 0.24, r: 53.5, estimated: false }  # 코딩
+  agentic: { s: 30.8, z: -0.22, r: 46.8, estimated: false }  # 에이전트
+  trust: { s: 17.2, z: -0.51, r: 42.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 72.4, z: 0.69, r: 60.4, estimated: false }  # 긴문맥
-  instruction: { s: 39.4, z: -0.56, r: 41.7, estimated: false }  # 지시 따르기
+  long_context: { s: 72.4, z: 0.68, r: 60.2, estimated: false }  # 긴문맥
+  instruction: { s: 39.4, z: -0.56, r: 41.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek R1 0528
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-24
-timestamp: 2026-07-24T00:00:00Z
+updated: 2026-07-25
+timestamp: 2026-07-25T00:00:00Z
 ---
 
 # DeepSeek R1 0528
@@ -43,14 +43,14 @@ DeepSeek · Open · Large(685B) · 컨텍스트 128k · 종합지능 **20.0** ·
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 59.6 | +0.64 | 실측 | [[aa-omniscience]] 31.0%×1.0, [[gpqa-diamond]] 81.0%×0.4, [[humanitys-last-exam]] 15.0%×0.3 |
-| 추론 | 53.5 | +0.23 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 81.0%×1.0, [[humanitys-last-exam]] 15.0%×1.0 |
-| 코딩 | 53.8 | +0.25 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 16.0%×0.5 |
-| 에이전트 | 46.8 | -0.21 | 실측 | [[tau2-bench]] 37.0%×1.0, [[terminal-bench]] 16.0%×1.0 |
-| 신뢰성 | 42.6 | -0.49 | 실측 | [[aa-omniscience]] 16.0%×1.0 |
+| 전문 지식 | 59.1 | +0.61 | 실측 | [[aa-omniscience]] 31.0%×1.0, [[gpqa-diamond]] 81.0%×0.4, [[humanitys-last-exam]] 15.0%×0.3 |
+| 추론 | 52.9 | +0.19 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 81.0%×1.0, [[humanitys-last-exam]] 15.0%×1.0 |
+| 코딩 | 53.5 | +0.24 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 16.0%×0.5 |
+| 에이전트 | 46.8 | -0.22 | 실측 | [[tau2-bench]] 37.0%×1.0, [[terminal-bench]] 16.0%×1.0 |
+| 신뢰성 | 42.3 | -0.51 | 실측 | [[aa-omniscience]] 16.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 60.4 | +0.69 | 실측 | [[aa-lcr]] 55.0%×1.0 |
-| 지시 따르기 | 41.7 | -0.56 | 실측 | [[ifbench]] 40.0%×1.0 |
+| 긴문맥 | 60.2 | +0.68 | 실측 | [[aa-lcr]] 55.0%×1.0 |
+| 지시 따르기 | 41.5 | -0.56 | 실측 | [[ifbench]] 40.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

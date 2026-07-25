@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 46.7, z: 0.29, r: 54.3, estimated: false }  # 전문 지식
-  reasoning: { s: 39.4, z: 0.29, r: 54.4, estimated: false }  # 추론
-  coding: { s: 67.0, z: 0.86, r: 62.9, estimated: false }  # 코딩
-  agentic: { s: 53.6, z: 0.68, r: 60.1, estimated: false }  # 에이전트
-  trust: { s: 49.4, z: 1.03, r: 65.5, estimated: false }  # 신뢰성
+  knowledge: { s: 46.7, z: 0.26, r: 53.9, estimated: false }  # 전문 지식
+  reasoning: { s: 39.4, z: 0.25, r: 53.8, estimated: false }  # 추론
+  coding: { s: 67.0, z: 0.84, r: 62.6, estimated: false }  # 코딩
+  agentic: { s: 52.9, z: 0.64, r: 59.6, estimated: false }  # 에이전트
+  trust: { s: 49.4, z: 1.0, r: 65.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 86.8, z: 1.12, r: 66.8, estimated: false }  # 긴문맥
-  instruction: { s: 77.5, z: 1.02, r: 65.3, estimated: false }  # 지시 따르기
+  long_context: { s: 86.8, z: 1.11, r: 66.7, estimated: false }  # 긴문맥
+  instruction: { s: 77.5, z: 1.01, r: 65.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — KAT-Coder-Pro V2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-24
-timestamp: 2026-07-24T00:00:00Z
+updated: 2026-07-25
+timestamp: 2026-07-25T00:00:00Z
 ---
 
 # KAT-Coder-Pro V2
@@ -33,24 +33,24 @@ timestamp: 2026-07-24T00:00:00Z
 KwaiKAT · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **34.0**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 긴문맥, 신뢰성
+- **강점**: 긴문맥, 지시 따르기
 - **약점**: 전문 지식, 추론
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $None/1M · 98.0 t/s · TTFT 1.61s · 256k ctx`
+`입력 $0.3 · 출력 $1.2 · 혼합 $None/1M · 98.0 t/s · TTFT 1.54s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 54.3 | +0.29 | 실측 | [[aa-omniscience]] 22.0%×1.0, [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 16.0%×0.3 |
-| 추론 | 54.4 | +0.29 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 16.0%×1.0 |
-| 코딩 | 62.9 | +0.86 | 실측 | [[scicode]] 38.0%×1.0, [[terminal-bench]] 49.0%×0.5 |
-| 에이전트 | 60.1 | +0.68 | 실측 | [[gdpval]] 20.0%×1.0, [[tau2-bench]] 89.0%×1.0, [[tau3-banking]] 6.0%×1.0, [[terminal-bench]] 49.0%×1.0 |
-| 신뢰성 | 65.5 | +1.03 | 실측 | [[aa-omniscience]] 44.0%×1.0 |
+| 전문 지식 | 53.9 | +0.26 | 실측 | [[aa-omniscience]] 22.0%×1.0, [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 16.0%×0.3 |
+| 추론 | 53.8 | +0.25 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 16.0%×1.0 |
+| 코딩 | 62.6 | +0.84 | 실측 | [[scicode]] 38.0%×1.0, [[terminal-bench]] 49.0%×0.5 |
+| 에이전트 | 59.6 | +0.64 | 실측 | [[gdpval]] 20.0%×1.0, [[tau2-bench]] 89.0%×1.0, [[tau3-banking]] 6.0%×1.0, [[terminal-bench]] 49.0%×1.0 |
+| 신뢰성 | 65.0 | +1.0 | 실측 | [[aa-omniscience]] 44.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 66.8 | +1.12 | 실측 | [[aa-lcr]] 66.0%×1.0 |
-| 지시 따르기 | 65.3 | +1.02 | 실측 | [[ifbench]] 67.0%×1.0 |
+| 긴문맥 | 66.7 | +1.11 | 실측 | [[aa-lcr]] 66.0%×1.0 |
+| 지시 따르기 | 65.1 | +1.01 | 실측 | [[ifbench]] 67.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

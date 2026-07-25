@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 15.5, z: -1.21, r: 31.9, estimated: false }  # 전문 지식
-  reasoning: { s: 14.6, z: -1.0, r: 34.9, estimated: false }  # 추론
-  coding: { s: 20.0, z: -1.12, r: 33.3, estimated: false }  # 코딩
-  agentic: { s: 9.5, z: -1.04, r: 34.5, estimated: true }  # 에이전트
-  trust: { s: 28.4, z: 0.04, r: 50.6, estimated: true }  # 신뢰성
+  reasoning: { s: 14.6, z: -0.99, r: 35.1, estimated: false }  # 추론
+  coding: { s: 20.0, z: -1.12, r: 33.2, estimated: false }  # 코딩
+  agentic: { s: 9.5, z: -1.04, r: 34.4, estimated: true }  # 에이전트
+  trust: { s: 28.4, z: 0.01, r: 50.2, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 7.7, z: -1.23, r: 31.6, estimated: true }  # 긴문맥
-  instruction: { s: 27.5, z: -1.05, r: 34.3, estimated: true }  # 지시 따르기
+  long_context: { s: 7.7, z: -1.24, r: 31.5, estimated: true }  # 긴문맥
+  instruction: { s: 27.5, z: -1.06, r: 34.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 1.0 Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-24
-timestamp: 2026-07-24T00:00:00Z
+updated: 2026-07-25
+timestamp: 2026-07-25T00:00:00Z
 ---
 
 # Gemini 1.0 Pro
@@ -44,13 +44,13 @@ Google · Proprietary · Unknown · 컨텍스트 32k · 종합지능 **3.0** · 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 31.9 | -1.21 | 실측 | [[gpqa-diamond]] 28.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 34.9 | -1.0 | 실측 | [[gpqa-diamond]] 28.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 33.3 | -1.12 | 실측 | [[scicode]] 12.0%×1.0 |
-| 에이전트 | 34.5 | -1.04 | 추정 | (추정) |
-| 신뢰성 | 50.6 | +0.04 | 추정 | (추정) |
+| 추론 | 35.1 | -0.99 | 실측 | [[gpqa-diamond]] 28.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 33.2 | -1.12 | 실측 | [[scicode]] 12.0%×1.0 |
+| 에이전트 | 34.4 | -1.04 | 추정 | (추정) |
+| 신뢰성 | 50.2 | +0.01 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 31.6 | -1.23 | 추정 | (추정) |
-| 지시 따르기 | 34.3 | -1.05 | 추정 | (추정) |
+| 긴문맥 | 31.5 | -1.24 | 추정 | (추정) |
+| 지시 따르기 | 34.1 | -1.06 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

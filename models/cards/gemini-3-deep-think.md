@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 85.6, z: 2.16, r: 82.4, estimated: true }  # 전문 지식
-  reasoning: { s: 81.2, z: 2.48, r: 87.2, estimated: false }  # 추론
-  coding: { s: 93.2, z: 1.97, r: 79.5, estimated: true }  # 코딩
-  agentic: { s: 82.4, z: 1.79, r: 76.9, estimated: true }  # 에이전트
-  trust: { s: 25.3, z: -0.11, r: 48.3, estimated: true }  # 신뢰성
+  knowledge: { s: 87.0, z: 2.16, r: 82.3, estimated: true }  # 전문 지식
+  reasoning: { s: 81.2, z: 2.36, r: 85.4, estimated: false }  # 추론
+  coding: { s: 89.5, z: 1.78, r: 76.7, estimated: true }  # 코딩
+  agentic: { s: 79.1, z: 1.66, r: 74.8, estimated: true }  # 에이전트
+  trust: { s: 25.3, z: -0.13, r: 48.0, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 94.5, z: 1.35, r: 70.2, estimated: true }  # 긴문맥
-  instruction: { s: 82.5, z: 1.23, r: 68.4, estimated: true }  # 지시 따르기
+  long_context: { s: 95.3, z: 1.36, r: 70.4, estimated: true }  # 긴문맥
+  instruction: { s: 85.1, z: 1.32, r: 69.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3 Deep Think
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-24
-timestamp: 2026-07-24T00:00:00Z
+updated: 2026-07-25
+timestamp: 2026-07-25T00:00:00Z
 ---
 
 # Gemini 3 Deep Think
@@ -43,14 +43,14 @@ Google · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 82.4 | +2.16 | 추정 | (추정) |
-| 추론 | 87.2 | +2.48 | 실측 | [[critpt]] 26.0%×1.0 |
-| 코딩 | 79.5 | +1.97 | 추정 | (추정) |
-| 에이전트 | 76.9 | +1.79 | 추정 | (추정) |
-| 신뢰성 | 48.3 | -0.11 | 추정 | (추정) |
+| 전문 지식 | 82.3 | +2.16 | 추정 | (추정) |
+| 추론 | 85.4 | +2.36 | 실측 | [[critpt]] 26.0%×1.0 |
+| 코딩 | 76.7 | +1.78 | 추정 | (추정) |
+| 에이전트 | 74.8 | +1.66 | 추정 | (추정) |
+| 신뢰성 | 48.0 | -0.13 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 70.2 | +1.35 | 추정 | (추정) |
-| 지시 따르기 | 68.4 | +1.23 | 추정 | (추정) |
+| 긴문맥 | 70.4 | +1.36 | 추정 | (추정) |
+| 지시 따르기 | 69.8 | +1.32 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

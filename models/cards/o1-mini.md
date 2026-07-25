@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 37.3, z: -0.16, r: 47.6, estimated: false }  # 전문 지식
-  reasoning: { s: 33.6, z: -0.01, r: 49.9, estimated: false }  # 추론
-  coding: { s: 53.3, z: 0.29, r: 54.3, estimated: false }  # 코딩
-  agentic: { s: 36.8, z: 0.02, r: 50.3, estimated: true }  # 에이전트
-  trust: { s: 18.4, z: -0.44, r: 43.4, estimated: true }  # 신뢰성
+  knowledge: { s: 37.3, z: -0.18, r: 47.3, estimated: false }  # 전문 지식
+  reasoning: { s: 33.6, z: -0.04, r: 49.4, estimated: false }  # 추론
+  coding: { s: 53.3, z: 0.27, r: 54.1, estimated: false }  # 코딩
+  agentic: { s: 36.7, z: 0.01, r: 50.2, estimated: true }  # 에이전트
+  trust: { s: 18.4, z: -0.46, r: 43.1, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 55.6, z: 0.19, r: 52.9, estimated: true }  # 긴문맥
-  instruction: { s: 56.5, z: 0.15, r: 52.3, estimated: true }  # 지시 따르기
+  long_context: { s: 55.6, z: 0.18, r: 52.7, estimated: true }  # 긴문맥
+  instruction: { s: 55.2, z: 0.09, r: 51.3, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — o1-mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-24
-timestamp: 2026-07-24T00:00:00Z
+updated: 2026-07-25
+timestamp: 2026-07-25T00:00:00Z
 ---
 
 # o1-mini
@@ -43,14 +43,14 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **14.0** �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 47.6 | -0.16 | 실측 | [[gpqa-diamond]] 60.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 49.9 | -0.01 | 실측 | [[gpqa-diamond]] 60.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 54.3 | +0.29 | 실측 | [[scicode]] 32.0%×1.0 |
-| 에이전트 | 50.3 | +0.02 | 추정 | (추정) |
-| 신뢰성 | 43.4 | -0.44 | 추정 | (추정) |
+| 전문 지식 | 47.3 | -0.18 | 실측 | [[gpqa-diamond]] 60.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 추론 | 49.4 | -0.04 | 실측 | [[gpqa-diamond]] 60.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 54.1 | +0.27 | 실측 | [[scicode]] 32.0%×1.0 |
+| 에이전트 | 50.2 | +0.01 | 추정 | (추정) |
+| 신뢰성 | 43.1 | -0.46 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 52.9 | +0.19 | 추정 | (추정) |
-| 지시 따르기 | 52.3 | +0.15 | 추정 | (추정) |
+| 긴문맥 | 52.7 | +0.18 | 추정 | (추정) |
+| 지시 따르기 | 51.3 | +0.09 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

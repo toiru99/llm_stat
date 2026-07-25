@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 42.7, z: 0.1, r: 51.5, estimated: false }  # 전문 지식
-  reasoning: { s: 32.8, z: -0.05, r: 49.2, estimated: false }  # 추론
-  coding: { s: 60.1, z: 0.57, r: 58.6, estimated: false }  # 코딩
-  agentic: { s: 46.4, z: 0.39, r: 55.9, estimated: false }  # 에이전트
-  trust: { s: 80.5, z: 2.5, r: 87.5, estimated: false }  # 신뢰성
-  multimodal: { s: 68.1, z: -0.18, r: 47.3, estimated: false }  # 멀티모달
-  long_context: { s: 85.5, z: 1.08, r: 66.2, estimated: false }  # 긴문맥
-  instruction: { s: 60.6, z: 0.32, r: 54.8, estimated: false }  # 지시 따르기
+  knowledge: { s: 42.7, z: 0.07, r: 51.1, estimated: false }  # 전문 지식
+  reasoning: { s: 32.8, z: -0.08, r: 48.8, estimated: false }  # 추론
+  coding: { s: 60.1, z: 0.55, r: 58.3, estimated: false }  # 코딩
+  agentic: { s: 45.7, z: 0.36, r: 55.4, estimated: false }  # 에이전트
+  trust: { s: 80.5, z: 2.46, r: 86.9, estimated: false }  # 신뢰성
+  multimodal: { s: 67.1, z: -0.21, r: 46.8, estimated: false }  # 멀티모달
+  long_context: { s: 85.5, z: 1.07, r: 66.1, estimated: false }  # 긴문맥
+  instruction: { s: 60.6, z: 0.31, r: 54.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 4 Sonnet
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-24
-timestamp: 2026-07-24T00:00:00Z
+updated: 2026-07-25
+timestamp: 2026-07-25T00:00:00Z
 ---
 
 # Claude 4 Sonnet
@@ -43,14 +43,14 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **29.0** 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 51.5 | +0.1 | 실측 | [[aa-omniscience]] 22.0%×1.0, [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
-| 추론 | 49.2 | -0.05 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
-| 코딩 | 58.6 | +0.57 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 31.0%×0.5 |
-| 에이전트 | 55.9 | +0.39 | 실측 | [[gdpval]] 19.0%×1.0, [[tau2-bench]] 65.0%×1.0, [[tau3-banking]] 14.0%×1.0, [[terminal-bench]] 31.0%×1.0 |
-| 신뢰성 | 87.5 | +2.5 | 실측 | [[aa-omniscience]] 71.0%×1.0 |
-| 멀티모달 | 47.3 | -0.18 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
-| 긴문맥 | 66.2 | +1.08 | 실측 | [[aa-lcr]] 65.0%×1.0 |
-| 지시 따르기 | 54.8 | +0.32 | 실측 | [[ifbench]] 55.0%×1.0 |
+| 전문 지식 | 51.1 | +0.07 | 실측 | [[aa-omniscience]] 22.0%×1.0, [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
+| 추론 | 48.8 | -0.08 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
+| 코딩 | 58.3 | +0.55 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 31.0%×0.5 |
+| 에이전트 | 55.4 | +0.36 | 실측 | [[gdpval]] 19.0%×1.0, [[tau2-bench]] 65.0%×1.0, [[tau3-banking]] 14.0%×1.0, [[terminal-bench]] 31.0%×1.0 |
+| 신뢰성 | 86.9 | +2.46 | 실측 | [[aa-omniscience]] 71.0%×1.0 |
+| 멀티모달 | 46.8 | -0.21 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
+| 긴문맥 | 66.1 | +1.07 | 실측 | [[aa-lcr]] 65.0%×1.0 |
+| 지시 따르기 | 54.6 | +0.31 | 실측 | [[ifbench]] 55.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

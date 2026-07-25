@@ -12,20 +12,20 @@ size_class: Small
 params_b: 35
 is_reasoning: false
 radar:
-  knowledge: { s: 45.7, z: 0.24, r: 53.6, estimated: false }  # 전문 지식
-  reasoning: { s: 32.2, z: -0.08, r: 48.7, estimated: false }  # 추론
-  coding: { s: 46.9, z: 0.02, r: 50.2, estimated: false }  # 코딩
-  agentic: { s: 72.0, z: 1.39, r: 70.8, estimated: false }  # 에이전트
-  trust: { s: 41.4, z: 0.65, r: 59.8, estimated: false }  # 신뢰성
+  knowledge: { s: 45.7, z: 0.21, r: 53.2, estimated: false }  # 전문 지식
+  reasoning: { s: 32.2, z: -0.11, r: 48.4, estimated: false }  # 추론
+  coding: { s: 46.9, z: 0.0, r: 50.0, estimated: false }  # 코딩
+  agentic: { s: 72.0, z: 1.38, r: 70.7, estimated: false }  # 에이전트
+  trust: { s: 41.4, z: 0.62, r: 59.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 72.4, z: 0.69, r: 60.4, estimated: false }  # 긴문맥
-  instruction: { s: 42.3, z: -0.44, r: 43.4, estimated: false }  # 지시 따르기
+  long_context: { s: 72.4, z: 0.68, r: 60.2, estimated: false }  # 긴문맥
+  instruction: { s: 42.3, z: -0.45, r: 43.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — JT-35B-Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-24
-timestamp: 2026-07-24T00:00:00Z
+updated: 2026-07-25
+timestamp: 2026-07-25T00:00:00Z
 ---
 
 # JT-35B-Flash
@@ -43,14 +43,14 @@ China Mobile · Proprietary · Small(35B) · 컨텍스트 256k · 종합지능 *
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 53.6 | +0.24 | 실측 | [[aa-omniscience]] 25.0%×1.0, [[gpqa-diamond]] 83.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
-| 추론 | 48.7 | -0.08 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 83.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 50.2 | +0.02 | 실측 | [[scicode]] 29.0%×1.0, [[terminal-bench]] 29.0%×0.5 |
-| 에이전트 | 70.8 | +1.39 | 실측 | [[tau2-bench]] 99.0%×1.0, [[terminal-bench]] 29.0%×1.0 |
-| 신뢰성 | 59.8 | +0.65 | 실측 | [[aa-omniscience]] 37.0%×1.0 |
+| 전문 지식 | 53.2 | +0.21 | 실측 | [[aa-omniscience]] 25.0%×1.0, [[gpqa-diamond]] 83.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 추론 | 48.4 | -0.11 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 83.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
+| 코딩 | 50.0 | +0.0 | 실측 | [[scicode]] 29.0%×1.0, [[terminal-bench]] 29.0%×0.5 |
+| 에이전트 | 70.7 | +1.38 | 실측 | [[tau2-bench]] 99.0%×1.0, [[terminal-bench]] 29.0%×1.0 |
+| 신뢰성 | 59.4 | +0.62 | 실측 | [[aa-omniscience]] 37.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 60.4 | +0.69 | 실측 | [[aa-lcr]] 55.0%×1.0 |
-| 지시 따르기 | 43.4 | -0.44 | 실측 | [[ifbench]] 42.0%×1.0 |
+| 긴문맥 | 60.2 | +0.68 | 실측 | [[aa-lcr]] 55.0%×1.0 |
+| 지시 따르기 | 43.3 | -0.45 | 실측 | [[ifbench]] 42.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
