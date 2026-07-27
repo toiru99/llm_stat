@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: 17.0
 price_blended_usd_1m: None
-output_speed_tps: 27.0
+output_speed_tps: 28.0
 context_window: 256000
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Devstral Small 2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-25
-timestamp: 2026-07-25T00:00:00Z
+updated: 2026-07-27
+timestamp: 2026-07-27T00:00:00Z
 ---
 
 # Devstral Small 2
@@ -37,7 +37,7 @@ Mistral · Open · Small(24B) · 컨텍스트 256k · 종합지능 **17.0**
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $None/1M · 27.0 t/s · TTFT 1.35s · 256k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $None/1M · 28.0 t/s · TTFT 1.35s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: Z AI
 license: Open
 intelligence_index: 51.0
 price_blended_usd_1m: None
-output_speed_tps: 170.0
+output_speed_tps: 217.0
 context_window: 1000000
 status: current
 size_class: Large
@@ -19,13 +19,13 @@ radar:
   trust: { s: 81.6, z: 2.52, r: 87.8, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 93.4, z: 1.31, r: 69.6, estimated: false }  # 긴문맥
-  instruction: { s: 85.9, z: 1.36, r: 70.3, estimated: false }  # 지시 따르기
+  instruction: { s: 85.9, z: 1.36, r: 70.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5.2 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-25
-timestamp: 2026-07-25T00:00:00Z
+updated: 2026-07-27
+timestamp: 2026-07-27T00:00:00Z
 ---
 
 # GLM-5.2 (max)
@@ -37,7 +37,7 @@ Z AI · Open · Large(753B) · 컨텍스트 1M · 종합지능 **51.0**
 - **약점**: 긴문맥, 전문 지식
 
 ## 실용 지표
-`입력 $1.4 · 출력 $4.4 · 혼합 $None/1M · 170.0 t/s · TTFT 1.39s · 1M ctx`
+`입력 $1.4 · 출력 $4.4 · 혼합 $None/1M · 217.0 t/s · TTFT 1.32s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Z AI · Open · Large(753B) · 컨텍스트 1M · 종합지능 **51.0**
 | 신뢰성 | 87.8 | +2.52 | 실측 | [[aa-omniscience]] 72.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 69.6 | +1.31 | 실측 | [[aa-lcr]] 71.0%×1.0 |
-| 지시 따르기 | 70.3 | +1.36 | 실측 | [[ifbench]] 73.0%×1.0 |
+| 지시 따르기 | 70.4 | +1.36 | 실측 | [[ifbench]] 73.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -19,13 +19,13 @@ radar:
   trust: { s: 42.5, z: 0.68, r: 60.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 80.3, z: 0.91, r: 63.7, estimated: false }  # 긴문맥
-  instruction: { s: 85.9, z: 1.36, r: 70.3, estimated: false }  # 지시 따르기
+  instruction: { s: 85.9, z: 1.36, r: 70.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5-Turbo
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-25
-timestamp: 2026-07-25T00:00:00Z
+updated: 2026-07-27
+timestamp: 2026-07-27T00:00:00Z
 ---
 
 # GLM-5-Turbo
@@ -50,7 +50,7 @@ Z AI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **38.0** · 
 | 신뢰성 | 60.2 | +0.68 | 실측 | [[aa-omniscience]] 38.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 63.7 | +0.91 | 실측 | [[aa-lcr]] 61.0%×1.0 |
-| 지시 따르기 | 70.3 | +1.36 | 실측 | [[ifbench]] 73.0%×1.0 |
+| 지시 따르기 | 70.4 | +1.36 | 실측 | [[ifbench]] 73.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: 14.0
 price_blended_usd_1m: None
-output_speed_tps: 112.0
+output_speed_tps: 135.0
 context_window: 1000000
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — NVIDIA Nemotron 3 Nano
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-25
-timestamp: 2026-07-25T00:00:00Z
+updated: 2026-07-27
+timestamp: 2026-07-27T00:00:00Z
 ---
 
 # NVIDIA Nemotron 3 Nano
@@ -37,7 +37,7 @@ NVIDIA · Open · Small(31.6B) · 컨텍스트 1M · 종합지능 **14.0**
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.2 · 혼합 $None/1M · 112.0 t/s · TTFT 1.4s · 1M ctx`
+`입력 $0.05 · 출력 $0.2 · 혼합 $None/1M · 135.0 t/s · TTFT 1.44s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

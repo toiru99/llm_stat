@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 14.0
 price_blended_usd_1m: None
-output_speed_tps: 88.0
+output_speed_tps: 93.0
 context_window: 262000
 status: past
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Coder 30B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-25
-timestamp: 2026-07-25T00:00:00Z
+updated: 2026-07-27
+timestamp: 2026-07-27T00:00:00Z
 ---
 
 # Qwen3 Coder 30B A3B
@@ -37,7 +37,7 @@ Alibaba · Open · Small(30.5B) · 컨텍스트 262k · 종합지능 **14.0** ·
 - **약점**: 추론, 지시 따르기
 
 ## 실용 지표
-`입력 $0.45 · 출력 $2.25 · 혼합 $None/1M · 88.0 t/s · TTFT 2.55s · 262k ctx`
+`입력 $0.45 · 출력 $2.25 · 혼합 $None/1M · 93.0 t/s · TTFT 2.59s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

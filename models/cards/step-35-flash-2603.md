@@ -5,7 +5,7 @@ creator: StepFun
 license: Proprietary
 intelligence_index: 26.0
 price_blended_usd_1m: None
-output_speed_tps: 296.0
+output_speed_tps: 278.0
 context_window: 256000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Step 3.5 Flash 2603
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-25
-timestamp: 2026-07-25T00:00:00Z
+updated: 2026-07-27
+timestamp: 2026-07-27T00:00:00Z
 ---
 
 # Step 3.5 Flash 2603
@@ -37,7 +37,7 @@ StepFun · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **26.0**
 - **약점**: 전문 지식, 신뢰성
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.3 · 혼합 $None/1M · 296.0 t/s · TTFT 1.1s · 256k ctx`
+`입력 $0.1 · 출력 $0.3 · 혼합 $None/1M · 278.0 t/s · TTFT 1.17s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

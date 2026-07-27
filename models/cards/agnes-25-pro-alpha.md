@@ -5,7 +5,7 @@ creator: Sapiens AI
 license: Proprietary
 intelligence_index: 39.0
 price_blended_usd_1m: None
-output_speed_tps: 132.0
+output_speed_tps: 128.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Agnes 2.5 Pro Alpha
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-25
-timestamp: 2026-07-25T00:00:00Z
+updated: 2026-07-27
+timestamp: 2026-07-27T00:00:00Z
 ---
 
 # Agnes 2.5 Pro Alpha
@@ -37,7 +37,7 @@ Sapiens AI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **39.0**
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.45 · 출력 $0.9 · 혼합 $None/1M · 132.0 t/s · TTFT 2.23s · 1M ctx`
+`입력 $0.45 · 출력 $0.9 · 혼합 $None/1M · 128.0 t/s · TTFT 2.0s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

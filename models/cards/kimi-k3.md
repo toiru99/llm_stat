@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-25
-timestamp: 2026-07-25T00:00:00Z
+updated: 2026-07-27
+timestamp: 2026-07-27T00:00:00Z
 ---
 
 # Kimi K3
@@ -37,7 +37,7 @@ Kimi · Proprietary · Large(2800B) · 컨텍스트 1M · 종합지능 **57.0**
 - **약점**: 멀티모달, 지시 따르기
 
 ## 실용 지표
-`입력 $3.0 · 출력 $15.0 · 혼합 $None/1M · 32.0 t/s · TTFT 161.17s · 1M ctx`
+`입력 $3.0 · 출력 $15.0 · 혼합 $None/1M · 32.0 t/s · TTFT 164.55s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

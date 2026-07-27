@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 26.9, z: -0.38, r: 44.4, estimated: true }  # 추론
   coding: { s: 43.5, z: -0.14, r: 47.9, estimated: true }  # 코딩
   agentic: { s: 20.2, z: -0.63, r: 40.6, estimated: false }  # 에이전트
-  trust: { s: 17.2, z: -0.52, r: 42.3, estimated: true }  # 신뢰성
+  trust: { s: 17.2, z: -0.52, r: 42.2, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 48.3, z: -0.03, r: 49.5, estimated: true }  # 긴문맥
   instruction: { s: 47.3, z: -0.24, r: 46.4, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-25
-timestamp: 2026-07-25T00:00:00Z
+updated: 2026-07-27
+timestamp: 2026-07-27T00:00:00Z
 ---
 
 # Solar Mini
@@ -47,7 +47,7 @@ Upstage · Open · Small(10.7B) · 컨텍스트 4k · 종합지능 **6.0** · �
 | 추론 | 44.4 | -0.38 | 추정 | (추정) |
 | 코딩 | 47.9 | -0.14 | 추정 | (추정) |
 | 에이전트 | 40.6 | -0.63 | 실측 | [[tau2-bench]] 20.0%×1.0 |
-| 신뢰성 | 42.3 | -0.52 | 추정 | (추정) |
+| 신뢰성 | 42.2 | -0.52 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 49.5 | -0.03 | 추정 | (추정) |
 | 지시 따르기 | 46.4 | -0.24 | 추정 | (추정) |

@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Seed-OSS-36B-Instruct
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-25
-timestamp: 2026-07-25T00:00:00Z
+updated: 2026-07-27
+timestamp: 2026-07-27T00:00:00Z
 ---
 
 # Seed-OSS-36B-Instruct
@@ -37,7 +37,7 @@ ByteDance Seed · Open · Small(36.2B) · 컨텍스트 512k · 종합지능 **18
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $0.21 · 출력 $0.57 · 혼합 $None/1M · 32.0 t/s · TTFT 3.11s · 512k ctx`
+`입력 $0.21 · 출력 $0.57 · 혼합 $None/1M · 32.0 t/s · TTFT 3.01s · 512k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

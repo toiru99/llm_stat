@@ -5,7 +5,7 @@ creator: AI21 Labs
 license: Open
 intelligence_index: 5.0
 price_blended_usd_1m: None
-output_speed_tps: 58.0
+output_speed_tps: 54.0
 context_window: 256000
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba 1.7 Large
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-25
-timestamp: 2026-07-25T00:00:00Z
+updated: 2026-07-27
+timestamp: 2026-07-27T00:00:00Z
 ---
 
 # Jamba 1.7 Large
@@ -37,7 +37,7 @@ AI21 Labs · Open · Large(398B) · 컨텍스트 256k · 종합지능 **5.0**
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $2.0 · 출력 $8.0 · 혼합 $None/1M · 58.0 t/s · TTFT 1.36s · 256k ctx`
+`입력 $2.0 · 출력 $8.0 · 혼합 $None/1M · 54.0 t/s · TTFT 1.39s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

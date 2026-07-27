@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Trinity Large Thinking
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-25
-timestamp: 2026-07-25T00:00:00Z
+updated: 2026-07-27
+timestamp: 2026-07-27T00:00:00Z
 ---
 
 # Trinity Large Thinking
@@ -37,7 +37,7 @@ Arcee AI · Open · Large(399B) · 컨텍스트 512k · 종합지능 **18.0**
 - **약점**: 긴문맥, 신뢰성
 
 ## 실용 지표
-`입력 $0.23 · 출력 $0.88 · 혼합 $None/1M · 173.0 t/s · TTFT 0.92s · 512k ctx`
+`입력 $0.23 · 출력 $0.88 · 혼합 $None/1M · 173.0 t/s · TTFT 0.89s · 512k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

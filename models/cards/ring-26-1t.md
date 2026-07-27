@@ -5,7 +5,7 @@ creator: InclusionAI
 license: Open
 intelligence_index: 31.0
 price_blended_usd_1m: None
-output_speed_tps: 122.0
+output_speed_tps: 121.0
 context_window: 262000
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ring-2.6-1T
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-25
-timestamp: 2026-07-25T00:00:00Z
+updated: 2026-07-27
+timestamp: 2026-07-27T00:00:00Z
 ---
 
 # Ring-2.6-1T
@@ -37,7 +37,7 @@ InclusionAI · Open · Large(1000B) · 컨텍스트 262k · 종합지능 **31.0*
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $0.3 · 출력 $2.5 · 혼합 $None/1M · 122.0 t/s · TTFT 3.19s · 262k ctx`
+`입력 $0.3 · 출력 $2.5 · 혼합 $None/1M · 121.0 t/s · TTFT 3.31s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Luna (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-25
-timestamp: 2026-07-25T00:00:00Z
+updated: 2026-07-27
+timestamp: 2026-07-27T00:00:00Z
 ---
 
 # GPT-5.6 Luna (max)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **51.0**
 - **약점**: 멀티모달, 신뢰성
 
 ## 실용 지표
-`입력 $1.0 · 출력 $6.0 · 혼합 $None/1M · 188.0 t/s · TTFT 139.35s · 1M ctx`
+`입력 $1.0 · 출력 $6.0 · 혼합 $None/1M · 188.0 t/s · TTFT 116.79s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

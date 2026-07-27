@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova 2.0 Lite (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-25
-timestamp: 2026-07-25T00:00:00Z
+updated: 2026-07-27
+timestamp: 2026-07-27T00:00:00Z
 ---
 
 # Nova 2.0 Lite (medium)
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **19.0**
 - **약점**: 멀티모달, 신뢰성
 
 ## 실용 지표
-`입력 $0.3 · 출력 $2.5 · 혼합 $None/1M · 153.0 t/s · TTFT 18.2s · 1M ctx`
+`입력 $0.3 · 출력 $2.5 · 혼합 $None/1M · 153.0 t/s · TTFT 18.72s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

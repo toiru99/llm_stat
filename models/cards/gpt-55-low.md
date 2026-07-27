@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.5 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-25
-timestamp: 2026-07-25T00:00:00Z
+updated: 2026-07-27
+timestamp: 2026-07-27T00:00:00Z
 ---
 
 # GPT-5.5 (low)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 922k · 종합지능 **43.0** �
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $5.0 · 출력 $30.0 · 혼합 $None/1M · 66.0 t/s · TTFT 1.85s · 922k ctx`
+`입력 $5.0 · 출력 $30.0 · 혼합 $None/1M · 66.0 t/s · TTFT 1.82s · 922k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

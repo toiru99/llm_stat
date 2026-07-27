@@ -5,7 +5,7 @@ creator: InclusionAI
 license: Open
 intelligence_index: 10.0
 price_blended_usd_1m: None
-output_speed_tps: 52.0
+output_speed_tps: 68.0
 context_window: 128000
 status: past
 size_class: Medium
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling-flash-2.0
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-25
-timestamp: 2026-07-25T00:00:00Z
+updated: 2026-07-27
+timestamp: 2026-07-27T00:00:00Z
 ---
 
 # Ling-flash-2.0
@@ -37,7 +37,7 @@ InclusionAI · Open · Medium(103B) · 컨텍스트 128k · 종합지능 **10.0*
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.14 · 출력 $0.57 · 혼합 $None/1M · 52.0 t/s · TTFT 2.16s · 128k ctx`
+`입력 $0.14 · 출력 $0.57 · 혼합 $None/1M · 68.0 t/s · TTFT 2.23s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

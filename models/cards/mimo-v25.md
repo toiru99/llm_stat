@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-25
-timestamp: 2026-07-25T00:00:00Z
+updated: 2026-07-27
+timestamp: 2026-07-27T00:00:00Z
 ---
 
 # MiMo-V2.5
@@ -37,7 +37,7 @@ Xiaomi · Open · Large(310B) · 컨텍스트 1M · 종합지능 **37.0**
 - **약점**: 멀티모달, 전문 지식
 
 ## 실용 지표
-`입력 $0.14 · 출력 $0.28 · 혼합 $None/1M · 67.0 t/s · TTFT 3.11s · 1M ctx`
+`입력 $0.14 · 출력 $0.28 · 혼합 $None/1M · 67.0 t/s · TTFT 4.37s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
