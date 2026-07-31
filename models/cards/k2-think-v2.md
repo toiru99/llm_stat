@@ -12,11 +12,11 @@ size_class: Medium
 params_b: 70
 is_reasoning: true
 radar:
-  knowledge: { s: 34.5, z: -0.31, r: 45.3, estimated: false }  # 전문 지식
-  reasoning: { s: 29.3, z: -0.25, r: 46.2, estimated: false }  # 추론
+  knowledge: { s: 34.5, z: -0.32, r: 45.2, estimated: false }  # 전문 지식
+  reasoning: { s: 29.3, z: -0.26, r: 46.1, estimated: false }  # 추론
   coding: { s: 40.2, z: -0.28, r: 45.8, estimated: false }  # 코딩
-  agentic: { s: 12.8, z: -0.91, r: 36.3, estimated: false }  # 에이전트
-  trust: { s: 46.0, z: 0.84, r: 62.6, estimated: false }  # 신뢰성
+  agentic: { s: 12.6, z: -0.93, r: 36.1, estimated: false }  # 에이전트
+  trust: { s: 46.0, z: 0.84, r: 62.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 69.7, z: 0.6, r: 59.0, estimated: false }  # 긴문맥
   instruction: { s: 71.8, z: 0.77, r: 61.6, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — K2 Think V2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-27
-timestamp: 2026-07-27T00:00:00Z
+updated: 2026-07-31
+timestamp: 2026-07-31T00:00:00Z
 ---
 
 # K2 Think V2
@@ -43,11 +43,11 @@ MBZUAI Institute of Foundation Models · Open · Medium(70B) · 컨텍스트 262
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 45.3 | -0.31 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 71.0%×0.4, [[humanitys-last-exam]] 9.0%×0.3 |
-| 추론 | 46.2 | -0.25 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 71.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
+| 전문 지식 | 45.2 | -0.32 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 71.0%×0.4, [[humanitys-last-exam]] 9.0%×0.3 |
+| 추론 | 46.1 | -0.26 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 71.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
 | 코딩 | 45.8 | -0.28 | 실측 | [[scicode]] 33.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
-| 에이전트 | 36.3 | -0.91 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 25.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
-| 신뢰성 | 62.6 | +0.84 | 실측 | [[aa-omniscience]] 41.0%×1.0 |
+| 에이전트 | 36.1 | -0.93 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 25.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
+| 신뢰성 | 62.7 | +0.84 | 실측 | [[aa-omniscience]] 41.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 59.0 | +0.6 | 실측 | [[aa-lcr]] 53.0%×1.0 |
 | 지시 따르기 | 61.6 | +0.77 | 실측 | [[ifbench]] 63.0%×1.0 |

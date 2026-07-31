@@ -5,18 +5,18 @@ creator: IBM
 license: Open
 intelligence_index: 2.0
 price_blended_usd_1m: None
-output_speed_tps: 359.0
+output_speed_tps: 368.0
 context_window: 128000
 status: past
 size_class: Small
 params_b: 8.17
 is_reasoning: false
 radar:
-  knowledge: { s: 15.6, z: -1.2, r: 31.9, estimated: false }  # 전문 지식
-  reasoning: { s: 11.4, z: -1.15, r: 32.7, estimated: false }  # 추론
+  knowledge: { s: 15.6, z: -1.21, r: 31.9, estimated: false }  # 전문 지식
+  reasoning: { s: 11.4, z: -1.16, r: 32.6, estimated: false }  # 추론
   coding: { s: 11.1, z: -1.49, r: 27.6, estimated: false }  # 코딩
-  agentic: { s: 5.6, z: -1.19, r: 32.1, estimated: false }  # 에이전트
-  trust: { s: 6.9, z: -1.0, r: 35.0, estimated: false }  # 신뢰성
+  agentic: { s: 5.6, z: -1.2, r: 32.0, estimated: false }  # 에이전트
+  trust: { s: 6.9, z: -1.01, r: 34.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 5.3, z: -1.31, r: 30.4, estimated: false }  # 긴문맥
   instruction: { s: 14.1, z: -1.61, r: 25.8, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 3.3 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-27
-timestamp: 2026-07-27T00:00:00Z
+updated: 2026-07-31
+timestamp: 2026-07-31T00:00:00Z
 ---
 
 # Granite 3.3 8B
@@ -37,17 +37,17 @@ IBM · Open · Small(8.17B) · 컨텍스트 128k · 종합지능 **2.0** · ⚠�
 - **약점**: 코딩, 지시 따르기
 
 ## 실용 지표
-`입력 $0.03 · 출력 $0.25 · 혼합 $None/1M · 359.0 t/s · TTFT 27.64s · 128k ctx`
+`입력 $0.03 · 출력 $0.25 · 혼합 $None/1M · 368.0 t/s · TTFT 26.33s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 31.9 | -1.2 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 34.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 32.7 | -1.15 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 34.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 전문 지식 | 31.9 | -1.21 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 34.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 32.6 | -1.16 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 34.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 27.6 | -1.49 | 실측 | [[scicode]] 10.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 32.1 | -1.19 | 실측 | [[tau2-bench]] 11.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 35.0 | -1.0 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
+| 에이전트 | 32.0 | -1.2 | 실측 | [[tau2-bench]] 11.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 신뢰성 | 34.9 | -1.01 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 30.4 | -1.31 | 실측 | [[aa-lcr]] 4.0%×1.0 |
 | 지시 따르기 | 25.8 | -1.61 | 실측 | [[ifbench]] 22.0%×1.0 |

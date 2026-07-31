@@ -5,17 +5,17 @@ creator: Microsoft
 license: Open
 intelligence_index: 6.0
 price_blended_usd_1m: None
-output_speed_tps: 45.0
+output_speed_tps: 44.0
 context_window: 128000
 status: current
 size_class: Tiny
 params_b: 3.84
 is_reasoning: false
 radar:
-  knowledge: { s: 14.3, z: -1.26, r: 31.1, estimated: false }  # 전문 지식
-  reasoning: { s: 11.1, z: -1.17, r: 32.4, estimated: false }  # 추론
+  knowledge: { s: 14.3, z: -1.27, r: 31.0, estimated: false }  # 전문 지식
+  reasoning: { s: 11.1, z: -1.18, r: 32.3, estimated: false }  # 추론
   coding: { s: 12.2, z: -1.45, r: 28.3, estimated: false }  # 코딩
-  agentic: { s: 2.8, z: -1.3, r: 30.5, estimated: false }  # 에이전트
+  agentic: { s: 2.8, z: -1.31, r: 30.3, estimated: false }  # 에이전트
   trust: { s: 26.4, z: -0.08, r: 48.8, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 18.4, z: -0.92, r: 36.2, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Phi-4 Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-27
-timestamp: 2026-07-27T00:00:00Z
+updated: 2026-07-31
+timestamp: 2026-07-31T00:00:00Z
 ---
 
 # Phi-4 Mini
@@ -37,16 +37,16 @@ Microsoft · Open · Tiny(3.84B) · 컨텍스트 128k · 종합지능 **6.0**
 - **약점**: 코딩, 지시 따르기
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $None/1M · 45.0 t/s · TTFT 0.82s · 128k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $None/1M · 44.0 t/s · TTFT 0.83s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 31.1 | -1.26 | 실측 | [[aa-omniscience]] 8.0%×1.0, [[gpqa-diamond]] 33.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 32.4 | -1.17 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 전문 지식 | 31.0 | -1.27 | 실측 | [[aa-omniscience]] 8.0%×1.0, [[gpqa-diamond]] 33.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 32.3 | -1.18 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 28.3 | -1.45 | 실측 | [[scicode]] 11.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 30.5 | -1.3 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 8.0%×1.0, [[tau3-banking]] 1.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 에이전트 | 30.3 | -1.31 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 8.0%×1.0, [[tau3-banking]] 1.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | 48.8 | -0.08 | 실측 | [[aa-omniscience]] 24.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 36.2 | -0.92 | 실측 | [[aa-lcr]] 14.0%×1.0 |

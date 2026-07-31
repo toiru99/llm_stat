@@ -12,11 +12,11 @@ size_class: Small
 params_b: 23.6
 is_reasoning: false
 radar:
-  knowledge: { s: 25.0, z: -0.76, r: 38.6, estimated: false }  # 전문 지식
-  reasoning: { s: 15.0, z: -0.97, r: 35.4, estimated: false }  # 추론
+  knowledge: { s: 25.0, z: -0.77, r: 38.5, estimated: false }  # 전문 지식
+  reasoning: { s: 15.0, z: -0.98, r: 35.3, estimated: false }  # 추론
   coding: { s: 30.8, z: -0.67, r: 39.9, estimated: false }  # 코딩
-  agentic: { s: 23.7, z: -0.49, r: 42.7, estimated: false }  # 에이전트
-  trust: { s: 13.8, z: -0.68, r: 39.9, estimated: false }  # 신뢰성
+  agentic: { s: 23.7, z: -0.49, r: 42.6, estimated: false }  # 에이전트
+  trust: { s: 13.8, z: -0.68, r: 39.8, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 35.5, z: -0.41, r: 43.8, estimated: false }  # 긴문맥
   instruction: { s: 28.2, z: -1.03, r: 34.5, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Devstral Small (May)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-27
-timestamp: 2026-07-27T00:00:00Z
+updated: 2026-07-31
+timestamp: 2026-07-31T00:00:00Z
 ---
 
 # Devstral Small (May)
@@ -43,11 +43,11 @@ Mistral · Open · Small(23.6B) · 컨텍스트 256k · 종합지능 **12.0** ·
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 38.6 | -0.76 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 35.4 | -0.97 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 전문 지식 | 38.5 | -0.77 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 35.3 | -0.98 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 39.9 | -0.67 | 실측 | [[scicode]] 25.0%×1.0, [[terminal-bench]] 6.0%×0.5 |
-| 에이전트 | 42.7 | -0.49 | 실측 | [[tau2-bench]] 38.0%×1.0, [[terminal-bench]] 6.0%×1.0 |
-| 신뢰성 | 39.9 | -0.68 | 실측 | [[aa-omniscience]] 13.0%×1.0 |
+| 에이전트 | 42.6 | -0.49 | 실측 | [[tau2-bench]] 38.0%×1.0, [[terminal-bench]] 6.0%×1.0 |
+| 신뢰성 | 39.8 | -0.68 | 실측 | [[aa-omniscience]] 13.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 43.8 | -0.41 | 실측 | [[aa-lcr]] 27.0%×1.0 |
 | 지시 따르기 | 34.5 | -1.03 | 실측 | [[ifbench]] 32.0%×1.0 |

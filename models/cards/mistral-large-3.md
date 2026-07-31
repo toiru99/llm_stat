@@ -5,27 +5,27 @@ creator: Mistral
 license: Open
 intelligence_index: 16.0
 price_blended_usd_1m: None
-output_speed_tps: 49.0
+output_speed_tps: 47.0
 context_window: 256000
 status: current
 size_class: Large
 params_b: 675
 is_reasoning: false
 radar:
-  knowledge: { s: 39.8, z: -0.06, r: 49.1, estimated: false }  # 전문 지식
-  reasoning: { s: 24.9, z: -0.47, r: 42.9, estimated: false }  # 추론
-  coding: { s: 48.1, z: 0.05, r: 50.8, estimated: false }  # 코딩
-  agentic: { s: 19.5, z: -0.65, r: 40.2, estimated: false }  # 에이전트
-  trust: { s: 17.2, z: -0.51, r: 42.3, estimated: false }  # 신뢰성
-  multimodal: { s: 58.6, z: -0.62, r: 40.6, estimated: false }  # 멀티모달
+  knowledge: { s: 39.8, z: -0.07, r: 49.0, estimated: false }  # 전문 지식
+  reasoning: { s: 24.9, z: -0.48, r: 42.8, estimated: false }  # 추론
+  coding: { s: 48.1, z: 0.05, r: 50.7, estimated: false }  # 코딩
+  agentic: { s: 19.4, z: -0.66, r: 40.0, estimated: false }  # 에이전트
+  trust: { s: 17.2, z: -0.52, r: 42.2, estimated: false }  # 신뢰성
+  multimodal: { s: 58.6, z: -0.63, r: 40.5, estimated: false }  # 멀티모달
   long_context: { s: 46.1, z: -0.1, r: 48.5, estimated: false }  # 긴문맥
   instruction: { s: 33.8, z: -0.8, r: 38.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Large 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-27
-timestamp: 2026-07-27T00:00:00Z
+updated: 2026-07-31
+timestamp: 2026-07-31T00:00:00Z
 ---
 
 # Mistral Large 3
@@ -37,18 +37,18 @@ Mistral · Open · Large(675B) · 컨텍스트 256k · 종합지능 **16.0**
 - **약점**: 에이전트, 지시 따르기
 
 ## 실용 지표
-`입력 $0.5 · 출력 $1.5 · 혼합 $None/1M · 49.0 t/s · TTFT 1.14s · 256k ctx`
+`입력 $0.5 · 출력 $1.5 · 혼합 $None/1M · 47.0 t/s · TTFT 1.1s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 49.1 | -0.06 | 실측 | [[aa-omniscience]] 24.0%×1.0, [[gpqa-diamond]] 68.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 42.9 | -0.47 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 68.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 50.8 | +0.05 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 16.0%×0.5 |
-| 에이전트 | 40.2 | -0.65 | 실측 | [[gdpval]] 7.0%×1.0, [[tau2-bench]] 25.0%×1.0, [[tau3-banking]] 6.0%×1.0, [[terminal-bench]] 16.0%×1.0 |
-| 신뢰성 | 42.3 | -0.51 | 실측 | [[aa-omniscience]] 16.0%×1.0 |
-| 멀티모달 | 40.6 | -0.62 | 실측 | [[mmmu-pro]] 56.0%×1.0 |
+| 전문 지식 | 49.0 | -0.07 | 실측 | [[aa-omniscience]] 24.0%×1.0, [[gpqa-diamond]] 68.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 42.8 | -0.48 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 68.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 50.7 | +0.05 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 16.0%×0.5 |
+| 에이전트 | 40.0 | -0.66 | 실측 | [[gdpval]] 7.0%×1.0, [[tau2-bench]] 25.0%×1.0, [[tau3-banking]] 6.0%×1.0, [[terminal-bench]] 16.0%×1.0 |
+| 신뢰성 | 42.2 | -0.52 | 실측 | [[aa-omniscience]] 16.0%×1.0 |
+| 멀티모달 | 40.5 | -0.63 | 실측 | [[mmmu-pro]] 56.0%×1.0 |
 | 긴문맥 | 48.5 | -0.1 | 실측 | [[aa-lcr]] 35.0%×1.0 |
 | 지시 따르기 | 38.0 | -0.8 | 실측 | [[ifbench]] 36.0%×1.0 |
 

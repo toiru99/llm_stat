@@ -12,11 +12,11 @@ size_class: Large
 params_b: 405
 is_reasoning: false
 radar:
-  knowledge: { s: 33.4, z: -0.37, r: 44.5, estimated: false }  # 전문 지식
-  reasoning: { s: 18.6, z: -0.79, r: 38.1, estimated: false }  # 추론
+  knowledge: { s: 33.4, z: -0.37, r: 44.4, estimated: false }  # 전문 지식
+  reasoning: { s: 18.6, z: -0.8, r: 38.0, estimated: false }  # 추론
   coding: { s: 36.9, z: -0.42, r: 43.7, estimated: false }  # 코딩
-  agentic: { s: 14.9, z: -0.83, r: 37.5, estimated: false }  # 에이전트
-  trust: { s: 55.2, z: 1.27, r: 69.1, estimated: false }  # 신뢰성
+  agentic: { s: 14.9, z: -0.84, r: 37.4, estimated: false }  # 에이전트
+  trust: { s: 55.2, z: 1.28, r: 69.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 31.6, z: -0.53, r: 42.1, estimated: false }  # 긴문맥
   instruction: { s: 38.0, z: -0.62, r: 40.7, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.1 405B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-27
-timestamp: 2026-07-27T00:00:00Z
+updated: 2026-07-31
+timestamp: 2026-07-31T00:00:00Z
 ---
 
 # Llama 3.1 405B
@@ -43,11 +43,11 @@ Meta · Open · Large(405B) · 컨텍스트 128k · 종합지능 **9.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 44.5 | -0.37 | 실측 | [[aa-omniscience]] 22.0%×1.0, [[gpqa-diamond]] 52.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 38.1 | -0.79 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 52.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 전문 지식 | 44.4 | -0.37 | 실측 | [[aa-omniscience]] 22.0%×1.0, [[gpqa-diamond]] 52.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 38.0 | -0.8 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 52.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 43.7 | -0.42 | 실측 | [[scicode]] 30.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
-| 에이전트 | 37.5 | -0.83 | 실측 | [[tau2-bench]] 19.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
-| 신뢰성 | 69.1 | +1.27 | 실측 | [[aa-omniscience]] 49.0%×1.0 |
+| 에이전트 | 37.4 | -0.84 | 실측 | [[tau2-bench]] 19.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
+| 신뢰성 | 69.2 | +1.28 | 실측 | [[aa-omniscience]] 49.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 42.1 | -0.53 | 실측 | [[aa-lcr]] 24.0%×1.0 |
 | 지시 따르기 | 40.7 | -0.62 | 실측 | [[ifbench]] 39.0%×1.0 |

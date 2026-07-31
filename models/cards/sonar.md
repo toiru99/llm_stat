@@ -12,11 +12,11 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 30.1, z: -0.52, r: 42.2, estimated: false }  # 전문 지식
-  reasoning: { s: 27.8, z: -0.33, r: 45.1, estimated: false }  # 추론
-  coding: { s: 38.3, z: -0.36, r: 44.7, estimated: false }  # 코딩
+  knowledge: { s: 30.1, z: -0.53, r: 42.1, estimated: false }  # 전문 지식
+  reasoning: { s: 27.8, z: -0.34, r: 45.0, estimated: false }  # 추론
+  coding: { s: 38.3, z: -0.36, r: 44.6, estimated: false }  # 코딩
   agentic: { s: 31.1, z: -0.21, r: 46.9, estimated: true }  # 에이전트
-  trust: { s: 23.8, z: -0.2, r: 46.9, estimated: true }  # 신뢰성
+  trust: { s: 23.8, z: -0.21, r: 46.9, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 45.1, z: -0.13, r: 48.1, estimated: true }  # 긴문맥
   instruction: { s: 48.8, z: -0.18, r: 47.3, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Sonar
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-27
-timestamp: 2026-07-27T00:00:00Z
+updated: 2026-07-31
+timestamp: 2026-07-31T00:00:00Z
 ---
 
 # Sonar
@@ -43,11 +43,11 @@ Perplexity · Proprietary · Unknown · 컨텍스트 127k · 종합지능 **10.0
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 42.2 | -0.52 | 실측 | [[gpqa-diamond]] 47.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
-| 추론 | 45.1 | -0.33 | 실측 | [[gpqa-diamond]] 47.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
-| 코딩 | 44.7 | -0.36 | 실측 | [[scicode]] 23.0%×1.0 |
+| 전문 지식 | 42.1 | -0.53 | 실측 | [[gpqa-diamond]] 47.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
+| 추론 | 45.0 | -0.34 | 실측 | [[gpqa-diamond]] 47.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
+| 코딩 | 44.6 | -0.36 | 실측 | [[scicode]] 23.0%×1.0 |
 | 에이전트 | 46.9 | -0.21 | 추정 | (추정) |
-| 신뢰성 | 46.9 | -0.2 | 추정 | (추정) |
+| 신뢰성 | 46.9 | -0.21 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 48.1 | -0.13 | 추정 | (추정) |
 | 지시 따르기 | 47.3 | -0.18 | 추정 | (추정) |

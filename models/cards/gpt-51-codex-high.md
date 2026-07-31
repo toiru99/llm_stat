@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 66.0, z: 1.17, r: 67.6, estimated: false }  # 전문 지식
-  reasoning: { s: 50.5, z: 0.81, r: 62.2, estimated: false }  # 추론
-  coding: { s: 62.1, z: 0.64, r: 59.6, estimated: false }  # 코딩
-  agentic: { s: 68.4, z: 1.24, r: 68.6, estimated: false }  # 에이전트
+  knowledge: { s: 66.0, z: 1.17, r: 67.5, estimated: false }  # 전문 지식
+  reasoning: { s: 50.5, z: 0.81, r: 62.1, estimated: false }  # 추론
+  coding: { s: 62.1, z: 0.63, r: 59.5, estimated: false }  # 코딩
+  agentic: { s: 68.4, z: 1.25, r: 68.7, estimated: false }  # 에이전트
   trust: { s: 28.7, z: 0.03, r: 50.4, estimated: false }  # 신뢰성
-  multimodal: { s: 81.4, z: 0.48, r: 57.2, estimated: false }  # 멀티모달
+  multimodal: { s: 81.4, z: 0.47, r: 57.0, estimated: false }  # 멀티모달
   long_context: { s: 88.2, z: 1.15, r: 67.2, estimated: false }  # 긴문맥
   instruction: { s: 81.7, z: 1.18, r: 67.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.1 Codex (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-27
-timestamp: 2026-07-27T00:00:00Z
+updated: 2026-07-31
+timestamp: 2026-07-31T00:00:00Z
 ---
 
 # GPT-5.1 Codex (high)
@@ -43,12 +43,12 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **35.0** �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 67.6 | +1.17 | 실측 | [[aa-omniscience]] 39.0%×1.0, [[gpqa-diamond]] 86.0%×0.4, [[humanitys-last-exam]] 23.0%×0.3 |
-| 추론 | 62.2 | +0.81 | 실측 | [[critpt]] 6.0%×1.0, [[gpqa-diamond]] 86.0%×1.0, [[humanitys-last-exam]] 23.0%×1.0 |
-| 코딩 | 59.6 | +0.64 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 35.0%×0.5 |
-| 에이전트 | 68.6 | +1.24 | 실측 | [[tau2-bench]] 83.0%×1.0, [[terminal-bench]] 35.0%×1.0 |
+| 전문 지식 | 67.5 | +1.17 | 실측 | [[aa-omniscience]] 39.0%×1.0, [[gpqa-diamond]] 86.0%×0.4, [[humanitys-last-exam]] 23.0%×0.3 |
+| 추론 | 62.1 | +0.81 | 실측 | [[critpt]] 6.0%×1.0, [[gpqa-diamond]] 86.0%×1.0, [[humanitys-last-exam]] 23.0%×1.0 |
+| 코딩 | 59.5 | +0.63 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 35.0%×0.5 |
+| 에이전트 | 68.7 | +1.25 | 실측 | [[tau2-bench]] 83.0%×1.0, [[terminal-bench]] 35.0%×1.0 |
 | 신뢰성 | 50.4 | +0.03 | 실측 | [[aa-omniscience]] 26.0%×1.0 |
-| 멀티모달 | 57.2 | +0.48 | 실측 | [[mmmu-pro]] 72.0%×1.0 |
+| 멀티모달 | 57.0 | +0.47 | 실측 | [[mmmu-pro]] 72.0%×1.0 |
 | 긴문맥 | 67.2 | +1.15 | 실측 | [[aa-lcr]] 67.0%×1.0 |
 | 지시 따르기 | 67.7 | +1.18 | 실측 | [[ifbench]] 70.0%×1.0 |
 

@@ -5,27 +5,27 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 8.0
 price_blended_usd_1m: None
-output_speed_tps: 172.0
+output_speed_tps: 154.0
 context_window: 400000
 status: past
 size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 20.1, z: -0.99, r: 35.1, estimated: false }  # 전문 지식
-  reasoning: { s: 15.0, z: -0.97, r: 35.4, estimated: false }  # 추론
-  coding: { s: 35.8, z: -0.46, r: 43.0, estimated: false }  # 코딩
-  agentic: { s: 18.4, z: -0.69, r: 39.6, estimated: false }  # 에이전트
-  trust: { s: 17.2, z: -0.51, r: 42.3, estimated: false }  # 신뢰성
-  multimodal: { s: 24.3, z: -2.27, r: 15.9, estimated: false }  # 멀티모달
+  knowledge: { s: 20.1, z: -1.0, r: 35.0, estimated: false }  # 전문 지식
+  reasoning: { s: 15.0, z: -0.98, r: 35.3, estimated: false }  # 추론
+  coding: { s: 35.8, z: -0.47, r: 43.0, estimated: false }  # 코딩
+  agentic: { s: 18.4, z: -0.7, r: 39.5, estimated: false }  # 에이전트
+  trust: { s: 17.2, z: -0.52, r: 42.2, estimated: false }  # 신뢰성
+  multimodal: { s: 24.3, z: -2.29, r: 15.7, estimated: false }  # 멀티모달
   long_context: { s: 26.3, z: -0.68, r: 39.7, estimated: false }  # 긴문맥
   instruction: { s: 29.6, z: -0.97, r: 35.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5 nano (minimal)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-27
-timestamp: 2026-07-27T00:00:00Z
+updated: 2026-07-31
+timestamp: 2026-07-31T00:00:00Z
 ---
 
 # GPT-5 nano (minimal)
@@ -37,18 +37,18 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **8.0** ·
 - **약점**: 전문 지식, 멀티모달
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.4 · 혼합 $None/1M · 172.0 t/s · TTFT 0.75s · 400k ctx`
+`입력 $0.05 · 출력 $0.4 · 혼합 $None/1M · 154.0 t/s · TTFT 0.75s · 400k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 35.1 | -0.99 | 실측 | [[aa-omniscience]] 11.0%×1.0, [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 35.4 | -0.97 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 43.0 | -0.46 | 실측 | [[scicode]] 29.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
-| 에이전트 | 39.6 | -0.69 | 실측 | [[tau2-bench]] 26.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
-| 신뢰성 | 42.3 | -0.51 | 실측 | [[aa-omniscience]] 16.0%×1.0 |
-| 멀티모달 | 15.9 | -2.27 | 실측 | [[mmmu-pro]] 32.0%×1.0 |
+| 전문 지식 | 35.0 | -1.0 | 실측 | [[aa-omniscience]] 11.0%×1.0, [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 35.3 | -0.98 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 43.0 | -0.47 | 실측 | [[scicode]] 29.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
+| 에이전트 | 39.5 | -0.7 | 실측 | [[tau2-bench]] 26.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
+| 신뢰성 | 42.2 | -0.52 | 실측 | [[aa-omniscience]] 16.0%×1.0 |
+| 멀티모달 | 15.7 | -2.29 | 실측 | [[mmmu-pro]] 32.0%×1.0 |
 | 긴문맥 | 39.7 | -0.68 | 실측 | [[aa-lcr]] 20.0%×1.0 |
 | 지시 따르기 | 35.4 | -0.97 | 실측 | [[ifbench]] 33.0%×1.0 |
 

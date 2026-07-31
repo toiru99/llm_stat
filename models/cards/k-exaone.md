@@ -13,10 +13,10 @@ params_b: 236
 is_reasoning: false
 radar:
   knowledge: { s: 37.8, z: -0.16, r: 47.6, estimated: false }  # 전문 지식
-  reasoning: { s: 35.7, z: 0.07, r: 51.0, estimated: false }  # 추론
-  coding: { s: 51.6, z: 0.2, r: 53.0, estimated: false }  # 코딩
-  agentic: { s: 39.8, z: 0.13, r: 52.0, estimated: false }  # 에이전트
-  trust: { s: 11.5, z: -0.78, r: 38.2, estimated: false }  # 신뢰성
+  reasoning: { s: 35.7, z: 0.06, r: 51.0, estimated: false }  # 추론
+  coding: { s: 51.6, z: 0.19, r: 52.9, estimated: false }  # 코딩
+  agentic: { s: 39.5, z: 0.12, r: 51.8, estimated: false }  # 에이전트
+  trust: { s: 11.5, z: -0.79, r: 38.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 73.7, z: 0.72, r: 60.8, estimated: false }  # 긴문맥
   instruction: { s: 74.6, z: 0.89, r: 63.4, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — K-EXAONE
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-27
-timestamp: 2026-07-27T00:00:00Z
+updated: 2026-07-31
+timestamp: 2026-07-31T00:00:00Z
 ---
 
 # K-EXAONE
@@ -44,10 +44,10 @@ LG AI Research · Open · Large(236B) · 컨텍스트 256k · 종합지능 **22.
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 47.6 | -0.16 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
-| 추론 | 51.0 | +0.07 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
-| 코딩 | 53.0 | +0.2 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 23.0%×0.5 |
-| 에이전트 | 52.0 | +0.13 | 실측 | [[gdpval]] 5.0%×1.0, [[tau2-bench]] 74.0%×1.0, [[tau3-banking]] 14.0%×1.0, [[terminal-bench]] 23.0%×1.0 |
-| 신뢰성 | 38.2 | -0.78 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
+| 추론 | 51.0 | +0.06 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
+| 코딩 | 52.9 | +0.19 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 23.0%×0.5 |
+| 에이전트 | 51.8 | +0.12 | 실측 | [[gdpval]] 5.0%×1.0, [[tau2-bench]] 74.0%×1.0, [[tau3-banking]] 14.0%×1.0, [[terminal-bench]] 23.0%×1.0 |
+| 신뢰성 | 38.2 | -0.79 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 60.8 | +0.72 | 실측 | [[aa-lcr]] 56.0%×1.0 |
 | 지시 따르기 | 63.4 | +0.89 | 실측 | [[ifbench]] 65.0%×1.0 |

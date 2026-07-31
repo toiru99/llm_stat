@@ -5,17 +5,17 @@ creator: AI21 Labs
 license: Open
 intelligence_index: 5.0
 price_blended_usd_1m: None
-output_speed_tps: 55.0
+output_speed_tps: 59.0
 context_window: 256000
 status: past
 size_class: Large
 params_b: 398
 is_reasoning: false
 radar:
-  knowledge: { s: 22.2, z: -0.89, r: 36.6, estimated: false }  # 전문 지식
-  reasoning: { s: 20.1, z: -0.71, r: 39.3, estimated: false }  # 추론
-  coding: { s: 30.0, z: -0.7, r: 39.4, estimated: false }  # 코딩
-  agentic: { s: 8.7, z: -1.07, r: 33.9, estimated: true }  # 에이전트
+  knowledge: { s: 22.2, z: -0.9, r: 36.5, estimated: false }  # 전문 지식
+  reasoning: { s: 20.1, z: -0.72, r: 39.2, estimated: false }  # 추론
+  coding: { s: 30.0, z: -0.71, r: 39.4, estimated: false }  # 코딩
+  agentic: { s: 8.6, z: -1.08, r: 33.7, estimated: true }  # 에이전트
   trust: { s: 29.7, z: 0.07, r: 51.1, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 22.1, z: -0.81, r: 37.9, estimated: true }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba 1.6 Large
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-27
-timestamp: 2026-07-27T00:00:00Z
+updated: 2026-07-31
+timestamp: 2026-07-31T00:00:00Z
 ---
 
 # Jamba 1.6 Large
@@ -37,16 +37,16 @@ AI21 Labs · Open · Large(398B) · 컨텍스트 256k · 종합지능 **5.0** ·
 - **약점**: 전문 지식, 에이전트
 
 ## 실용 지표
-`입력 $2.0 · 출력 $8.0 · 혼합 $None/1M · 55.0 t/s · TTFT 1.34s · 256k ctx`
+`입력 $2.0 · 출력 $8.0 · 혼합 $None/1M · 59.0 t/s · TTFT 1.44s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 36.6 | -0.89 | 실측 | [[gpqa-diamond]] 39.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 39.3 | -0.71 | 실측 | [[gpqa-diamond]] 39.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 39.4 | -0.7 | 실측 | [[scicode]] 18.0%×1.0 |
-| 에이전트 | 33.9 | -1.07 | 추정 | (추정) |
+| 전문 지식 | 36.5 | -0.9 | 실측 | [[gpqa-diamond]] 39.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 39.2 | -0.72 | 실측 | [[gpqa-diamond]] 39.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 39.4 | -0.71 | 실측 | [[scicode]] 18.0%×1.0 |
+| 에이전트 | 33.7 | -1.08 | 추정 | (추정) |
 | 신뢰성 | 51.1 | +0.07 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 37.9 | -0.81 | 추정 | (추정) |

@@ -12,11 +12,11 @@ size_class: Tiny
 params_b: 3
 is_reasoning: false
 radar:
-  knowledge: { s: 14.4, z: -1.26, r: 31.1, estimated: false }  # 전문 지식
-  reasoning: { s: 9.6, z: -1.24, r: 31.4, estimated: false }  # 추론
+  knowledge: { s: 14.4, z: -1.27, r: 31.0, estimated: false }  # 전문 지식
+  reasoning: { s: 9.6, z: -1.25, r: 31.2, estimated: false }  # 추론
   coding: { s: 14.3, z: -1.36, r: 29.6, estimated: false }  # 코딩
-  agentic: { s: 6.6, z: -1.15, r: 32.7, estimated: false }  # 에이전트
-  trust: { s: 4.6, z: -1.11, r: 33.4, estimated: false }  # 신뢰성
+  agentic: { s: 6.5, z: -1.16, r: 32.6, estimated: false }  # 에이전트
+  trust: { s: 4.6, z: -1.12, r: 33.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 3.9, z: -1.35, r: 29.8, estimated: false }  # 긴문맥
   instruction: { s: 31.0, z: -0.91, r: 36.3, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.1 3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-27
-timestamp: 2026-07-27T00:00:00Z
+updated: 2026-07-31
+timestamp: 2026-07-31T00:00:00Z
 ---
 
 # Granite 4.1 3B
@@ -43,11 +43,11 @@ IBM · Open · Tiny(3B) · 컨텍스트 131k · 종합지능 **5.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 31.1 | -1.26 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 31.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
-| 추론 | 31.4 | -1.24 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 31.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
+| 전문 지식 | 31.0 | -1.27 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 31.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
+| 추론 | 31.2 | -1.25 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 31.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 29.6 | -1.36 | 실측 | [[scicode]] 12.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 32.7 | -1.15 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 20.0%×1.0, [[tau3-banking]] 1.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 33.4 | -1.11 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
+| 에이전트 | 32.6 | -1.16 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 20.0%×1.0, [[tau3-banking]] 1.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 신뢰성 | 33.3 | -1.12 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 29.8 | -1.35 | 실측 | [[aa-lcr]] 3.0%×1.0 |
 | 지시 따르기 | 36.3 | -0.91 | 실측 | [[ifbench]] 34.0%×1.0 |

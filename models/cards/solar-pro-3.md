@@ -5,18 +5,18 @@ creator: Upstage
 license: Proprietary
 intelligence_index: 14.0
 price_blended_usd_1m: None
-output_speed_tps: None
+output_speed_tps: 80.0
 context_window: 128000
 status: current
 size_class: Medium
 params_b: 102
 is_reasoning: true
 radar:
-  knowledge: { s: 37.1, z: -0.19, r: 47.1, estimated: false }  # 전문 지식
-  reasoning: { s: 30.4, z: -0.2, r: 47.0, estimated: false }  # 추론
-  coding: { s: 31.8, z: -0.63, r: 40.6, estimated: false }  # 코딩
-  agentic: { s: 30.8, z: -0.22, r: 46.8, estimated: false }  # 에이전트
-  trust: { s: 12.6, z: -0.73, r: 39.1, estimated: false }  # 신뢰성
+  knowledge: { s: 37.1, z: -0.2, r: 47.0, estimated: false }  # 전문 지식
+  reasoning: { s: 30.4, z: -0.21, r: 46.9, estimated: false }  # 추론
+  coding: { s: 31.8, z: -0.63, r: 40.5, estimated: false }  # 코딩
+  agentic: { s: 30.6, z: -0.22, r: 46.6, estimated: false }  # 에이전트
+  trust: { s: 12.6, z: -0.73, r: 39.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 35.5, z: -0.41, r: 43.8, estimated: false }  # 긴문맥
   instruction: { s: 83.1, z: 1.24, r: 68.6, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Pro 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-27
-timestamp: 2026-07-27T00:00:00Z
+updated: 2026-07-31
+timestamp: 2026-07-31T00:00:00Z
 ---
 
 # Solar Pro 3
@@ -37,17 +37,17 @@ Upstage · Proprietary · Medium(102B) · 컨텍스트 128k · 종합지능 **14
 - **약점**: 코딩, 신뢰성
 
 ## 실용 지표
-`입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 128k ctx`
+`입력 $0.15 · 출력 $0.6 · 혼합 $None/1M · 80.0 t/s · TTFT 2.46s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 47.1 | -0.19 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 72.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
-| 추론 | 47.0 | -0.2 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 72.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
-| 코딩 | 40.6 | -0.63 | 실측 | [[scicode]] 25.0%×1.0, [[terminal-bench]] 8.0%×0.5 |
-| 에이전트 | 46.8 | -0.22 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 86.0%×1.0, [[tau3-banking]] 8.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
-| 신뢰성 | 39.1 | -0.73 | 실측 | [[aa-omniscience]] 12.0%×1.0 |
+| 전문 지식 | 47.0 | -0.2 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 72.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
+| 추론 | 46.9 | -0.21 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 72.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
+| 코딩 | 40.5 | -0.63 | 실측 | [[scicode]] 25.0%×1.0, [[terminal-bench]] 8.0%×0.5 |
+| 에이전트 | 46.6 | -0.22 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 86.0%×1.0, [[tau3-banking]] 8.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
+| 신뢰성 | 39.0 | -0.73 | 실측 | [[aa-omniscience]] 12.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 43.8 | -0.41 | 실측 | [[aa-lcr]] 27.0%×1.0 |
 | 지시 따르기 | 68.6 | +1.24 | 실측 | [[ifbench]] 71.0%×1.0 |

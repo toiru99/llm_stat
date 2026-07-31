@@ -7,16 +7,16 @@ intelligence_index: 14.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 32000
-status: current
+status: past
 size_class: Small
 params_b: 21
 is_reasoning: true
 radar:
-  knowledge: { s: 21.9, z: -0.91, r: 36.4, estimated: false }  # 전문 지식
-  reasoning: { s: 20.7, z: -0.69, r: 39.7, estimated: false }  # 추론
+  knowledge: { s: 21.9, z: -0.91, r: 36.3, estimated: false }  # 전문 지식
+  reasoning: { s: 20.7, z: -0.69, r: 39.6, estimated: false }  # 추론
   coding: { s: 21.0, z: -1.08, r: 33.8, estimated: false }  # 코딩
-  agentic: { s: 48.5, z: 0.47, r: 57.0, estimated: false }  # 에이전트
-  trust: { s: 33.3, z: 0.24, r: 53.7, estimated: false }  # 신뢰성
+  agentic: { s: 48.5, z: 0.47, r: 57.1, estimated: false }  # 에이전트
+  trust: { s: 33.3, z: 0.25, r: 53.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 19.7, z: -0.88, r: 36.8, estimated: false }  # 긴문맥
   instruction: { s: 49.3, z: -0.16, r: 47.6, estimated: false }  # 지시 따르기
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Tri-21B-think Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-27
-timestamp: 2026-07-27T00:00:00Z
+updated: 2026-07-31
+timestamp: 2026-07-31T00:00:00Z
 ---
 
 # Tri-21B-think Preview
 
-Trillion Labs · Open · Small(21B) · 컨텍스트 32k · 종합지능 **14.0**
+Trillion Labs · Open · Small(21B) · 컨텍스트 32k · 종합지능 **14.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 신뢰성
@@ -43,11 +43,11 @@ Trillion Labs · Open · Small(21B) · 컨텍스트 32k · 종합지능 **14.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 36.4 | -0.91 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 54.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
-| 추론 | 39.7 | -0.69 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 54.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
+| 전문 지식 | 36.3 | -0.91 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 54.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 추론 | 39.6 | -0.69 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 54.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 33.8 | -1.08 | 실측 | [[scicode]] 18.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 57.0 | +0.47 | 실측 | [[tau2-bench]] 93.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 53.7 | +0.24 | 실측 | [[aa-omniscience]] 30.0%×1.0 |
+| 에이전트 | 57.1 | +0.47 | 실측 | [[tau2-bench]] 93.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 신뢰성 | 53.7 | +0.25 | 실측 | [[aa-omniscience]] 30.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 36.8 | -0.88 | 실측 | [[aa-lcr]] 15.0%×1.0 |
 | 지시 따르기 | 47.6 | -0.16 | 실측 | [[ifbench]] 47.0%×1.0 |

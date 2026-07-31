@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 21.1, z: -0.94, r: 35.9, estimated: false }  # 전문 지식
-  reasoning: { s: 13.6, z: -1.04, r: 34.3, estimated: false }  # 추론
-  coding: { s: 31.0, z: -0.66, r: 40.1, estimated: false }  # 코딩
-  agentic: { s: 11.6, z: -0.96, r: 35.6, estimated: false }  # 에이전트
-  trust: { s: 65.5, z: 1.76, r: 76.4, estimated: false }  # 신뢰성
-  multimodal: { s: 44.3, z: -1.31, r: 30.3, estimated: false }  # 멀티모달
+  knowledge: { s: 21.1, z: -0.95, r: 35.8, estimated: false }  # 전문 지식
+  reasoning: { s: 13.6, z: -1.05, r: 34.2, estimated: false }  # 추론
+  coding: { s: 31.0, z: -0.67, r: 40.0, estimated: false }  # 코딩
+  agentic: { s: 11.5, z: -0.97, r: 35.4, estimated: false }  # 에이전트
+  trust: { s: 65.5, z: 1.77, r: 76.5, estimated: false }  # 신뢰성
+  multimodal: { s: 44.3, z: -1.32, r: 30.2, estimated: false }  # 멀티모달
   long_context: { s: 30.3, z: -0.57, r: 41.5, estimated: false }  # 긴문맥
   instruction: { s: 43.7, z: -0.39, r: 44.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 3.5 Haiku
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-27
-timestamp: 2026-07-27T00:00:00Z
+updated: 2026-07-31
+timestamp: 2026-07-31T00:00:00Z
 ---
 
 # Claude 3.5 Haiku
@@ -43,12 +43,12 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **12.0*
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 35.9 | -0.94 | 실측 | [[aa-omniscience]] 13.0%×1.0, [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
-| 추론 | 34.3 | -1.04 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
-| 코딩 | 40.1 | -0.66 | 실측 | [[scicode]] 27.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 35.6 | -0.96 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 25.0%×1.0, [[tau3-banking]] 6.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 76.4 | +1.76 | 실측 | [[aa-omniscience]] 58.0%×1.0 |
-| 멀티모달 | 30.3 | -1.31 | 실측 | [[mmmu-pro]] 46.0%×1.0 |
+| 전문 지식 | 35.8 | -0.95 | 실측 | [[aa-omniscience]] 13.0%×1.0, [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
+| 추론 | 34.2 | -1.05 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
+| 코딩 | 40.0 | -0.67 | 실측 | [[scicode]] 27.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
+| 에이전트 | 35.4 | -0.97 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 25.0%×1.0, [[tau3-banking]] 6.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 신뢰성 | 76.5 | +1.77 | 실측 | [[aa-omniscience]] 58.0%×1.0 |
+| 멀티모달 | 30.2 | -1.32 | 실측 | [[mmmu-pro]] 46.0%×1.0 |
 | 긴문맥 | 41.5 | -0.57 | 실측 | [[aa-lcr]] 23.0%×1.0 |
 | 지시 따르기 | 44.2 | -0.39 | 실측 | [[ifbench]] 43.0%×1.0 |
 
