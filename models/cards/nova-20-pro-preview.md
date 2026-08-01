@@ -5,7 +5,7 @@ creator: Amazon
 license: Proprietary
 intelligence_index: 14.0
 price_blended_usd_1m: None
-output_speed_tps: 93.0
+output_speed_tps: 98.0
 context_window: 256000
 status: current
 size_class: Unknown
@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 30.9, z: -0.49, r: 42.6, estimated: false }  # 전문 지식
   reasoning: { s: 23.4, z: -0.56, r: 41.6, estimated: false }  # 추론
-  coding: { s: 39.7, z: -0.3, r: 45.4, estimated: false }  # 코딩
+  coding: { s: 39.7, z: -0.31, r: 45.4, estimated: false }  # 코딩
   agentic: { s: 30.9, z: -0.22, r: 46.8, estimated: false }  # 에이전트
-  trust: { s: 25.3, z: -0.14, r: 48.0, estimated: false }  # 신뢰성
+  trust: { s: 25.3, z: -0.13, r: 48.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 36.8, z: -0.37, r: 44.4, estimated: false }  # 긴문맥
   instruction: { s: 56.3, z: 0.13, r: 52.0, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova 2.0 Pro Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-31
-timestamp: 2026-07-31T00:00:00Z
+updated: 2026-08-01
+timestamp: 2026-08-01T00:00:00Z
 ---
 
 # Nova 2.0 Pro Preview
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **14.0**
 - **약점**: 전문 지식, 추론
 
 ## 실용 지표
-`입력 $1.25 · 출력 $10.0 · 혼합 $None/1M · 93.0 t/s · TTFT 1.07s · 256k ctx`
+`입력 $1.25 · 출력 $10.0 · 혼합 $None/1M · 98.0 t/s · TTFT 1.08s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ Amazon · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **14.0**
 |---|---|---|---|---|
 | 전문 지식 | 42.6 | -0.49 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 64.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 41.6 | -0.56 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 64.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 45.4 | -0.3 | 실측 | [[scicode]] 28.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
+| 코딩 | 45.4 | -0.31 | 실측 | [[scicode]] 28.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
 | 에이전트 | 46.8 | -0.22 | 실측 | [[gdpval]] 3.0%×1.0, [[tau2-bench]] 72.0%×1.0, [[tau3-banking]] 7.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
-| 신뢰성 | 48.0 | -0.14 | 실측 | [[aa-omniscience]] 23.0%×1.0 |
+| 신뢰성 | 48.0 | -0.13 | 실측 | [[aa-omniscience]] 23.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 44.4 | -0.37 | 실측 | [[aa-lcr]] 28.0%×1.0 |
 | 지시 따르기 | 52.0 | +0.13 | 실측 | [[ifbench]] 52.0%×1.0 |

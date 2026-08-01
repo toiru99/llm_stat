@@ -12,11 +12,11 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 60.5, z: 0.91, r: 63.6, estimated: false }  # 전문 지식
-  reasoning: { s: 56.3, z: 1.1, r: 66.5, estimated: false }  # 추론
-  coding: { s: 70.0, z: 0.96, r: 64.4, estimated: false }  # 코딩
-  agentic: { s: 63.0, z: 1.04, r: 65.6, estimated: true }  # 에이전트
-  trust: { s: 37.1, z: 0.42, r: 56.3, estimated: true }  # 신뢰성
+  knowledge: { s: 60.5, z: 0.9, r: 63.6, estimated: false }  # 전문 지식
+  reasoning: { s: 56.3, z: 1.1, r: 66.4, estimated: false }  # 추론
+  coding: { s: 70.0, z: 0.96, r: 64.3, estimated: false }  # 코딩
+  agentic: { s: 63.0, z: 1.03, r: 65.5, estimated: true }  # 에이전트
+  trust: { s: 37.1, z: 0.43, r: 56.4, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 77.6, z: 0.83, r: 62.5, estimated: true }  # 긴문맥
   instruction: { s: 76.7, z: 0.97, r: 64.6, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.5 Pro (May)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-31
-timestamp: 2026-07-31T00:00:00Z
+updated: 2026-08-01
+timestamp: 2026-08-01T00:00:00Z
 ---
 
 # Gemini 2.5 Pro (May)
@@ -43,11 +43,11 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **22.0** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 63.6 | +0.91 | 실측 | [[gpqa-diamond]] 82.0%×0.4, [[humanitys-last-exam]] 15.0%×0.3 |
-| 추론 | 66.5 | +1.1 | 실측 | [[gpqa-diamond]] 82.0%×1.0, [[humanitys-last-exam]] 15.0%×1.0 |
-| 코딩 | 64.4 | +0.96 | 실측 | [[scicode]] 42.0%×1.0 |
-| 에이전트 | 65.6 | +1.04 | 추정 | (추정) |
-| 신뢰성 | 56.3 | +0.42 | 추정 | (추정) |
+| 전문 지식 | 63.6 | +0.9 | 실측 | [[gpqa-diamond]] 82.0%×0.4, [[humanitys-last-exam]] 15.0%×0.3 |
+| 추론 | 66.4 | +1.1 | 실측 | [[gpqa-diamond]] 82.0%×1.0, [[humanitys-last-exam]] 15.0%×1.0 |
+| 코딩 | 64.3 | +0.96 | 실측 | [[scicode]] 42.0%×1.0 |
+| 에이전트 | 65.5 | +1.03 | 추정 | (추정) |
+| 신뢰성 | 56.4 | +0.43 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 62.5 | +0.83 | 추정 | (추정) |
 | 지시 따르기 | 64.6 | +0.97 | 추정 | (추정) |

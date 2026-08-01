@@ -14,9 +14,9 @@ is_reasoning: true
 radar:
   knowledge: { s: 44.1, z: 0.13, r: 52.0, estimated: false }  # 전문 지식
   reasoning: { s: 43.0, z: 0.43, r: 56.4, estimated: false }  # 추론
-  coding: { s: 61.5, z: 0.6, r: 59.1, estimated: false }  # 코딩
-  agentic: { s: 71.7, z: 1.38, r: 70.6, estimated: false }  # 에이전트
-  trust: { s: 67.8, z: 1.88, r: 78.2, estimated: false }  # 신뢰성
+  coding: { s: 61.5, z: 0.6, r: 59.0, estimated: false }  # 코딩
+  agentic: { s: 71.7, z: 1.37, r: 70.6, estimated: false }  # 에이전트
+  trust: { s: 67.8, z: 1.88, r: 78.3, estimated: false }  # 신뢰성
   multimodal: { s: 84.3, z: 0.61, r: 59.1, estimated: false }  # 멀티모달
   long_context: { s: 84.2, z: 1.03, r: 65.4, estimated: false }  # 긴문맥
   instruction: { s: 77.5, z: 1.01, r: 65.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2-Omni-0327
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-31
-timestamp: 2026-07-31T00:00:00Z
+updated: 2026-08-01
+timestamp: 2026-08-01T00:00:00Z
 ---
 
 # MiMo-V2-Omni-0327
@@ -45,9 +45,9 @@ Xiaomi · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **36.0**
 |---|---|---|---|---|
 | 전문 지식 | 52.0 | +0.13 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 20.0%×0.3 |
 | 추론 | 56.4 | +0.43 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 20.0%×1.0 |
-| 코딩 | 59.1 | +0.6 | 실측 | [[scicode]] 39.0%×1.0, [[terminal-bench]] 36.0%×0.5 |
-| 에이전트 | 70.6 | +1.38 | 실측 | [[tau2-bench]] 88.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
-| 신뢰성 | 78.2 | +1.88 | 실측 | [[aa-omniscience]] 60.0%×1.0 |
+| 코딩 | 59.0 | +0.6 | 실측 | [[scicode]] 39.0%×1.0, [[terminal-bench]] 36.0%×0.5 |
+| 에이전트 | 70.6 | +1.37 | 실측 | [[tau2-bench]] 88.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
+| 신뢰성 | 78.3 | +1.88 | 실측 | [[aa-omniscience]] 60.0%×1.0 |
 | 멀티모달 | 59.1 | +0.61 | 실측 | [[mmmu-pro]] 74.0%×1.0 |
 | 긴문맥 | 65.4 | +1.03 | 실측 | [[aa-lcr]] 64.0%×1.0 |
 | 지시 따르기 | 65.1 | +1.01 | 실측 | [[ifbench]] 67.0%×1.0 |

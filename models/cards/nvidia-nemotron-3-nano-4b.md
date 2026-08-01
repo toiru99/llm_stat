@@ -12,11 +12,11 @@ size_class: Tiny
 params_b: 3.97
 is_reasoning: true
 radar:
-  knowledge: { s: 20.7, z: -0.97, r: 35.5, estimated: false }  # 전문 지식
+  knowledge: { s: 20.7, z: -0.97, r: 35.4, estimated: false }  # 전문 지식
   reasoning: { s: 18.8, z: -0.79, r: 38.2, estimated: false }  # 추론
-  coding: { s: 21.3, z: -1.07, r: 34.0, estimated: false }  # 코딩
+  coding: { s: 21.3, z: -1.07, r: 33.9, estimated: false }  # 코딩
   agentic: { s: 14.9, z: -0.84, r: 37.4, estimated: false }  # 에이전트
-  trust: { s: 11.5, z: -0.79, r: 38.2, estimated: false }  # 신뢰성
+  trust: { s: 11.5, z: -0.78, r: 38.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 22.4, z: -0.8, r: 38.0, estimated: false }  # 긴문맥
   instruction: { s: 64.8, z: 0.48, r: 57.2, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — NVIDIA Nemotron 3 Nano 4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-31
-timestamp: 2026-07-31T00:00:00Z
+updated: 2026-08-01
+timestamp: 2026-08-01T00:00:00Z
 ---
 
 # NVIDIA Nemotron 3 Nano 4B
@@ -33,7 +33,7 @@ timestamp: 2026-07-31T00:00:00Z
 NVIDIA · Open · Tiny(3.97B) · 컨텍스트 262k · 종합지능 **9.0**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 지시 따르기, 추론
+- **강점**: 지시 따르기, 신뢰성
 - **약점**: 전문 지식, 코딩
 
 ## 실용 지표
@@ -43,11 +43,11 @@ NVIDIA · Open · Tiny(3.97B) · 컨텍스트 262k · 종합지능 **9.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 35.5 | -0.97 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 51.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 전문 지식 | 35.4 | -0.97 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 51.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 38.2 | -0.79 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 51.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 34.0 | -1.07 | 실측 | [[scicode]] 16.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
+| 코딩 | 33.9 | -1.07 | 실측 | [[scicode]] 16.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
 | 에이전트 | 37.4 | -0.84 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 28.0%×1.0, [[tau3-banking]] 7.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
-| 신뢰성 | 38.2 | -0.79 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
+| 신뢰성 | 38.2 | -0.78 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 38.0 | -0.8 | 실측 | [[aa-lcr]] 17.0%×1.0 |
 | 지시 따르기 | 57.2 | +0.48 | 실측 | [[ifbench]] 58.0%×1.0 |

@@ -12,11 +12,11 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 23.8, z: -0.82, r: 37.7, estimated: false }  # 전문 지식
-  reasoning: { s: 23.8, z: -0.54, r: 42.0, estimated: false }  # 추론
-  coding: { s: 33.3, z: -0.57, r: 41.5, estimated: true }  # 코딩
-  agentic: { s: 11.5, z: -0.97, r: 35.4, estimated: true }  # 에이전트
-  trust: { s: 29.8, z: 0.08, r: 51.2, estimated: true }  # 신뢰성
+  knowledge: { s: 23.8, z: -0.82, r: 37.6, estimated: false }  # 전문 지식
+  reasoning: { s: 23.8, z: -0.54, r: 41.9, estimated: false }  # 추론
+  coding: { s: 33.3, z: -0.57, r: 41.4, estimated: true }  # 코딩
+  agentic: { s: 10.4, z: -1.01, r: 34.8, estimated: true }  # 에이전트
+  trust: { s: 26.6, z: -0.07, r: 49.0, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 20.5, z: -0.86, r: 37.1, estimated: true }  # 긴문맥
   instruction: { s: 33.2, z: -0.82, r: 37.7, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-3.5 Turbo
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-31
-timestamp: 2026-07-31T00:00:00Z
+updated: 2026-08-01
+timestamp: 2026-08-01T00:00:00Z
 ---
 
 # GPT-3.5 Turbo
@@ -43,11 +43,11 @@ OpenAI · Proprietary · Unknown · 컨텍스트 4k · 종합지능 **4.0** · �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 37.7 | -0.82 | 실측 | [[gpqa-diamond]] 30.0%×0.4 |
-| 추론 | 42.0 | -0.54 | 실측 | [[gpqa-diamond]] 30.0%×1.0 |
-| 코딩 | 41.5 | -0.57 | 추정 | (추정) |
-| 에이전트 | 35.4 | -0.97 | 추정 | (추정) |
-| 신뢰성 | 51.2 | +0.08 | 추정 | (추정) |
+| 전문 지식 | 37.6 | -0.82 | 실측 | [[gpqa-diamond]] 30.0%×0.4 |
+| 추론 | 41.9 | -0.54 | 실측 | [[gpqa-diamond]] 30.0%×1.0 |
+| 코딩 | 41.4 | -0.57 | 추정 | (추정) |
+| 에이전트 | 34.8 | -1.01 | 추정 | (추정) |
+| 신뢰성 | 49.0 | -0.07 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 37.1 | -0.86 | 추정 | (추정) |
 | 지시 따르기 | 37.7 | -0.82 | 추정 | (추정) |

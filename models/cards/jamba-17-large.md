@@ -5,17 +5,17 @@ creator: AI21 Labs
 license: Open
 intelligence_index: 5.0
 price_blended_usd_1m: None
-output_speed_tps: 58.0
+output_speed_tps: 59.0
 context_window: 256000
 status: current
 size_class: Large
 params_b: 398
 is_reasoning: false
 radar:
-  knowledge: { s: 27.8, z: -0.64, r: 40.5, estimated: false }  # 전문 지식
+  knowledge: { s: 27.8, z: -0.64, r: 40.4, estimated: false }  # 전문 지식
   reasoning: { s: 13.4, z: -1.06, r: 34.1, estimated: false }  # 추론
-  coding: { s: 22.1, z: -1.04, r: 34.5, estimated: false }  # 코딩
-  agentic: { s: 8.1, z: -1.1, r: 33.4, estimated: false }  # 에이전트
+  coding: { s: 22.1, z: -1.04, r: 34.4, estimated: false }  # 코딩
+  agentic: { s: 8.1, z: -1.1, r: 33.5, estimated: false }  # 에이전트
   trust: { s: 5.7, z: -1.06, r: 34.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 22.4, z: -0.8, r: 38.0, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba 1.7 Large
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-31
-timestamp: 2026-07-31T00:00:00Z
+updated: 2026-08-01
+timestamp: 2026-08-01T00:00:00Z
 ---
 
 # Jamba 1.7 Large
@@ -37,16 +37,16 @@ AI21 Labs · Open · Large(398B) · 컨텍스트 256k · 종합지능 **5.0**
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $2.0 · 출력 $8.0 · 혼합 $None/1M · 58.0 t/s · TTFT 1.46s · 256k ctx`
+`입력 $2.0 · 출력 $8.0 · 혼합 $None/1M · 59.0 t/s · TTFT 1.46s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 40.5 | -0.64 | 실측 | [[aa-omniscience]] 20.0%×1.0, [[gpqa-diamond]] 39.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 전문 지식 | 40.4 | -0.64 | 실측 | [[aa-omniscience]] 20.0%×1.0, [[gpqa-diamond]] 39.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 34.1 | -1.06 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 39.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 34.5 | -1.04 | 실측 | [[scicode]] 19.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 33.4 | -1.1 | 실측 | [[tau2-bench]] 13.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 코딩 | 34.4 | -1.04 | 실측 | [[scicode]] 19.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
+| 에이전트 | 33.5 | -1.1 | 실측 | [[tau2-bench]] 13.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | 34.1 | -1.06 | 실측 | [[aa-omniscience]] 6.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 38.0 | -0.8 | 실측 | [[aa-lcr]] 17.0%×1.0 |

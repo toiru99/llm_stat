@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 36.0
 price_blended_usd_1m: None
-output_speed_tps: 42.0
+output_speed_tps: 43.0
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -13,10 +13,10 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 60.0, z: 0.88, r: 63.2, estimated: false }  # 전문 지식
-  reasoning: { s: 36.5, z: 0.1, r: 51.6, estimated: false }  # 추론
-  coding: { s: 75.5, z: 1.19, r: 67.8, estimated: false }  # 코딩
-  agentic: { s: 75.3, z: 1.51, r: 72.7, estimated: false }  # 에이전트
-  trust: { s: 37.9, z: 0.46, r: 56.9, estimated: false }  # 신뢰성
+  reasoning: { s: 36.5, z: 0.1, r: 51.5, estimated: false }  # 추론
+  coding: { s: 75.5, z: 1.18, r: 67.7, estimated: false }  # 코딩
+  agentic: { s: 75.3, z: 1.51, r: 72.6, estimated: false }  # 에이전트
+  trust: { s: 37.9, z: 0.47, r: 57.0, estimated: false }  # 신뢰성
   multimodal: { s: 80.0, z: 0.4, r: 56.0, estimated: false }  # 멀티모달
   long_context: { s: 76.3, z: 0.79, r: 61.9, estimated: false }  # 긴문맥
   instruction: { s: 40.8, z: -0.51, r: 42.4, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 4.6 (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-31
-timestamp: 2026-07-31T00:00:00Z
+updated: 2026-08-01
+timestamp: 2026-08-01T00:00:00Z
 ---
 
 # Claude Sonnet 4.6 (Non-reasoning)
@@ -37,17 +37,17 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **36.0** 
 - **약점**: 추론, 지시 따르기
 
 ## 실용 지표
-`입력 $3.0 · 출력 $15.0 · 혼합 $None/1M · 42.0 t/s · TTFT 1.38s · 1M ctx`
+`입력 $3.0 · 출력 $15.0 · 혼합 $None/1M · 43.0 t/s · TTFT 1.38s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 63.2 | +0.88 | 실측 | [[aa-omniscience]] 38.0%×1.0, [[gpqa-diamond]] 80.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
-| 추론 | 51.6 | +0.1 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 80.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
-| 코딩 | 67.8 | +1.19 | 실측 | [[scicode]] 47.0%×1.0, [[terminal-bench]] 46.0%×0.5 |
-| 에이전트 | 72.7 | +1.51 | 실측 | [[tau2-bench]] 80.0%×1.0, [[terminal-bench]] 46.0%×1.0 |
-| 신뢰성 | 56.9 | +0.46 | 실측 | [[aa-omniscience]] 34.0%×1.0 |
+| 추론 | 51.5 | +0.1 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 80.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
+| 코딩 | 67.7 | +1.18 | 실측 | [[scicode]] 47.0%×1.0, [[terminal-bench]] 46.0%×0.5 |
+| 에이전트 | 72.6 | +1.51 | 실측 | [[tau2-bench]] 80.0%×1.0, [[terminal-bench]] 46.0%×1.0 |
+| 신뢰성 | 57.0 | +0.47 | 실측 | [[aa-omniscience]] 34.0%×1.0 |
 | 멀티모달 | 56.0 | +0.4 | 실측 | [[mmmu-pro]] 71.0%×1.0 |
 | 긴문맥 | 61.9 | +0.79 | 실측 | [[aa-lcr]] 58.0%×1.0 |
 | 지시 따르기 | 42.4 | -0.51 | 실측 | [[ifbench]] 41.0%×1.0 |

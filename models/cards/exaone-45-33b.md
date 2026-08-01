@@ -12,11 +12,11 @@ size_class: Small
 params_b: 34.4
 is_reasoning: true
 radar:
-  knowledge: { s: 37.8, z: -0.16, r: 47.5, estimated: false }  # 전문 지식
-  reasoning: { s: 34.4, z: -0.0, r: 50.0, estimated: false }  # 추론
+  knowledge: { s: 37.8, z: -0.17, r: 47.5, estimated: false }  # 전문 지식
+  reasoning: { s: 34.4, z: -0.0, r: 49.9, estimated: false }  # 추론
   coding: { s: 41.2, z: -0.24, r: 46.4, estimated: false }  # 코딩
   agentic: { s: 38.7, z: 0.09, r: 51.3, estimated: false }  # 에이전트
-  trust: { s: 20.7, z: -0.35, r: 44.7, estimated: false }  # 신뢰성
+  trust: { s: 20.7, z: -0.35, r: 44.8, estimated: false }  # 신뢰성
   multimodal: { s: 74.3, z: 0.13, r: 51.9, estimated: false }  # 멀티모달
   long_context: { s: 64.5, z: 0.44, r: 56.7, estimated: false }  # 긴문맥
   instruction: { s: 64.8, z: 0.48, r: 57.2, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — EXAONE 4.5 33B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-31
-timestamp: 2026-07-31T00:00:00Z
+updated: 2026-08-01
+timestamp: 2026-08-01T00:00:00Z
 ---
 
 # EXAONE 4.5 33B
@@ -43,11 +43,11 @@ LG AI Research · Open · Small(34.4B) · 컨텍스트 262k · 종합지능 **20
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 47.5 | -0.16 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 79.0%×0.4, [[humanitys-last-exam]] 12.0%×0.3 |
-| 추론 | 50.0 | +-0.0 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 79.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
+| 전문 지식 | 47.5 | -0.17 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 79.0%×0.4, [[humanitys-last-exam]] 12.0%×0.3 |
+| 추론 | 49.9 | +-0.0 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 79.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
 | 코딩 | 46.4 | -0.24 | 실측 | [[scicode]] 28.0%×1.0, [[terminal-bench]] 20.0%×0.5 |
 | 에이전트 | 51.3 | +0.09 | 실측 | [[gdpval]] 9.0%×1.0, [[tau2-bench]] 78.0%×1.0, [[tau3-banking]] 11.0%×1.0, [[terminal-bench]] 20.0%×1.0 |
-| 신뢰성 | 44.7 | -0.35 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
+| 신뢰성 | 44.8 | -0.35 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
 | 멀티모달 | 51.9 | +0.13 | 실측 | [[mmmu-pro]] 67.0%×1.0 |
 | 긴문맥 | 56.7 | +0.44 | 실측 | [[aa-lcr]] 49.0%×1.0 |
 | 지시 따르기 | 57.2 | +0.48 | 실측 | [[ifbench]] 58.0%×1.0 |

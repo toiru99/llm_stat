@@ -13,10 +13,10 @@ params_b: 12.7
 is_reasoning: true
 radar:
   knowledge: { s: 32.6, z: -0.41, r: 43.9, estimated: false }  # 전문 지식
-  reasoning: { s: 27.9, z: -0.33, r: 45.1, estimated: false }  # 추론
+  reasoning: { s: 27.9, z: -0.33, r: 45.0, estimated: false }  # 추론
   coding: { s: 33.1, z: -0.58, r: 41.3, estimated: false }  # 코딩
-  agentic: { s: 26.3, z: -0.39, r: 44.1, estimated: false }  # 에이전트
-  trust: { s: 10.3, z: -0.84, r: 37.3, estimated: false }  # 신뢰성
+  agentic: { s: 26.3, z: -0.4, r: 44.1, estimated: false }  # 에이전트
+  trust: { s: 10.3, z: -0.84, r: 37.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 17.1, z: -0.96, r: 35.6, estimated: false }  # 긴문맥
   instruction: { s: 63.4, z: 0.42, r: 56.4, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Motif-2-12.7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-31
-timestamp: 2026-07-31T00:00:00Z
+updated: 2026-08-01
+timestamp: 2026-08-01T00:00:00Z
 ---
 
 # Motif-2-12.7B
@@ -44,10 +44,10 @@ Motif Technologies · Proprietary · Small(12.7B) · 컨텍스트 128k · 종합
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 43.9 | -0.41 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 69.0%×0.4, [[humanitys-last-exam]] 8.0%×0.3 |
-| 추론 | 45.1 | -0.33 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 69.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
+| 추론 | 45.0 | -0.33 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 69.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
 | 코딩 | 41.3 | -0.58 | 실측 | [[scicode]] 28.0%×1.0, [[terminal-bench]] 4.0%×0.5 |
-| 에이전트 | 44.1 | -0.39 | 실측 | [[tau2-bench]] 46.0%×1.0, [[terminal-bench]] 4.0%×1.0 |
-| 신뢰성 | 37.3 | -0.84 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
+| 에이전트 | 44.1 | -0.4 | 실측 | [[tau2-bench]] 46.0%×1.0, [[terminal-bench]] 4.0%×1.0 |
+| 신뢰성 | 37.4 | -0.84 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 35.6 | -0.96 | 실측 | [[aa-lcr]] 13.0%×1.0 |
 | 지시 따르기 | 56.4 | +0.42 | 실측 | [[ifbench]] 57.0%×1.0 |

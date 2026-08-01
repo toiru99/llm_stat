@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 22.1, z: -0.9, r: 36.4, estimated: false }  # 전문 지식
   reasoning: { s: 20.8, z: -0.69, r: 39.7, estimated: false }  # 추론
-  coding: { s: 16.1, z: -1.29, r: 30.7, estimated: false }  # 코딩
+  coding: { s: 16.1, z: -1.29, r: 30.6, estimated: false }  # 코딩
   agentic: { s: 7.3, z: -1.13, r: 33.0, estimated: false }  # 에이전트
   trust: { s: 3.4, z: -1.17, r: 32.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling-mini-2.0
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-31
-timestamp: 2026-07-31T00:00:00Z
+updated: 2026-08-01
+timestamp: 2026-08-01T00:00:00Z
 ---
 
 # Ling-mini-2.0
@@ -45,7 +45,7 @@ InclusionAI · Open · Small(16.3B) · 컨텍스트 131k · 종합지능 **4.0**
 |---|---|---|---|---|
 | 전문 지식 | 36.4 | -0.9 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 56.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 39.7 | -0.69 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 56.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 30.7 | -1.29 | 실측 | [[scicode]] 14.0%×1.0, [[terminal-bench]] 1.0%×0.5 |
+| 코딩 | 30.6 | -1.29 | 실측 | [[scicode]] 14.0%×1.0, [[terminal-bench]] 1.0%×0.5 |
 | 에이전트 | 33.0 | -1.13 | 실측 | [[tau2-bench]] 13.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
 | 신뢰성 | 32.5 | -1.17 | 실측 | [[aa-omniscience]] 4.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

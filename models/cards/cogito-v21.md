@@ -13,10 +13,10 @@ params_b: 671
 is_reasoning: true
 radar:
   knowledge: { s: 50.6, z: 0.44, r: 56.6, estimated: false }  # 전문 지식
-  reasoning: { s: 33.0, z: -0.07, r: 48.9, estimated: false }  # 추론
-  coding: { s: 54.1, z: 0.3, r: 54.5, estimated: false }  # 코딩
+  reasoning: { s: 33.0, z: -0.08, r: 48.9, estimated: false }  # 추론
+  coding: { s: 54.1, z: 0.3, r: 54.4, estimated: false }  # 코딩
   agentic: { s: 25.8, z: -0.41, r: 43.8, estimated: false }  # 에이전트
-  trust: { s: 23.0, z: -0.24, r: 46.3, estimated: false }  # 신뢰성
+  trust: { s: 23.0, z: -0.24, r: 46.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 28.9, z: -0.61, r: 40.9, estimated: false }  # 긴문맥
   instruction: { s: 47.9, z: -0.22, r: 46.8, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Cogito v2.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-31
-timestamp: 2026-07-31T00:00:00Z
+updated: 2026-08-01
+timestamp: 2026-08-01T00:00:00Z
 ---
 
 # Cogito v2.1
@@ -44,10 +44,10 @@ Deep Cogito · Open · Large(671B) · 컨텍스트 128k · 종합지능 **None**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 56.6 | +0.44 | 실측 | [[aa-omniscience]] 30.0%×1.0, [[gpqa-diamond]] 77.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
-| 추론 | 48.9 | -0.07 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 77.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
-| 코딩 | 54.5 | +0.3 | 실측 | [[scicode]] 41.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
+| 추론 | 48.9 | -0.08 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 77.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
+| 코딩 | 54.4 | +0.3 | 실측 | [[scicode]] 41.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
 | 에이전트 | 43.8 | -0.41 | 실측 | [[terminal-bench]] 17.0%×1.0 |
-| 신뢰성 | 46.3 | -0.24 | 실측 | [[aa-omniscience]] 21.0%×1.0 |
+| 신뢰성 | 46.4 | -0.24 | 실측 | [[aa-omniscience]] 21.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 40.9 | -0.61 | 실측 | [[aa-lcr]] 22.0%×1.0 |
 | 지시 따르기 | 46.8 | -0.22 | 실측 | [[ifbench]] 46.0%×1.0 |

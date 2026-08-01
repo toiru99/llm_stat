@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 16.8, z: -0.89, r: 36.7, estimated: false }  # 추론
   coding: { s: 35.0, z: -0.5, r: 42.5, estimated: false }  # 코딩
   agentic: { s: 17.8, z: -0.72, r: 39.2, estimated: true }  # 에이전트
-  trust: { s: 36.5, z: 0.39, r: 55.9, estimated: true }  # 신뢰성
+  trust: { s: 36.5, z: 0.4, r: 56.0, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 14.9, z: -1.02, r: 34.7, estimated: true }  # 긴문맥
-  instruction: { s: 30.0, z: -0.95, r: 35.7, estimated: true }  # 지시 따르기
+  long_context: { s: 16.1, z: -0.99, r: 35.2, estimated: true }  # 긴문맥
+  instruction: { s: 29.9, z: -0.96, r: 35.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Large (Feb)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-31
-timestamp: 2026-07-31T00:00:00Z
+updated: 2026-08-01
+timestamp: 2026-08-01T00:00:00Z
 ---
 
 # Mistral Large (Feb)
@@ -47,10 +47,10 @@ Mistral · Proprietary · Unknown · 컨텍스트 32k · 종합지능 **4.0** ·
 | 추론 | 36.7 | -0.89 | 실측 | [[gpqa-diamond]] 35.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 42.5 | -0.5 | 실측 | [[scicode]] 21.0%×1.0 |
 | 에이전트 | 39.2 | -0.72 | 추정 | (추정) |
-| 신뢰성 | 55.9 | +0.39 | 추정 | (추정) |
+| 신뢰성 | 56.0 | +0.4 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 34.7 | -1.02 | 추정 | (추정) |
-| 지시 따르기 | 35.7 | -0.95 | 추정 | (추정) |
+| 긴문맥 | 35.2 | -0.99 | 추정 | (추정) |
+| 지시 따르기 | 35.6 | -0.96 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

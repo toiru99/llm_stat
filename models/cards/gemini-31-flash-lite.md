@@ -14,9 +14,9 @@ is_reasoning: true
 radar:
   knowledge: { s: 59.6, z: 0.86, r: 62.9, estimated: false }  # 전문 지식
   reasoning: { s: 39.2, z: 0.24, r: 53.6, estimated: false }  # 추론
-  coding: { s: 58.8, z: 0.49, r: 57.4, estimated: false }  # 코딩
+  coding: { s: 58.8, z: 0.49, r: 57.3, estimated: false }  # 코딩
   agentic: { s: 25.7, z: -0.42, r: 43.7, estimated: false }  # 에이전트
-  trust: { s: 19.5, z: -0.41, r: 43.9, estimated: false }  # 신뢰성
+  trust: { s: 19.5, z: -0.4, r: 43.9, estimated: false }  # 신뢰성
   multimodal: { s: 87.1, z: 0.75, r: 61.2, estimated: false }  # 멀티모달
   long_context: { s: 85.5, z: 1.07, r: 66.0, estimated: false }  # 긴문맥
   instruction: { s: 91.5, z: 1.59, r: 73.8, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.1 Flash-Lite
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-31
-timestamp: 2026-07-31T00:00:00Z
+updated: 2026-08-01
+timestamp: 2026-08-01T00:00:00Z
 ---
 
 # Gemini 3.1 Flash-Lite
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **25.0**
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $0.25 · 출력 $1.5 · 혼합 $None/1M · 288.0 t/s · TTFT 5.78s · 1M ctx`
+`입력 $0.25 · 출력 $1.5 · 혼합 $None/1M · 288.0 t/s · TTFT 5.84s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **25.0**
 |---|---|---|---|---|
 | 전문 지식 | 62.9 | +0.86 | 실측 | [[aa-omniscience]] 36.0%×1.0, [[gpqa-diamond]] 82.0%×0.4, [[humanitys-last-exam]] 16.0%×0.3 |
 | 추론 | 53.6 | +0.24 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 82.0%×1.0, [[humanitys-last-exam]] 16.0%×1.0 |
-| 코딩 | 57.4 | +0.49 | 실측 | [[scicode]] 42.0%×1.0, [[terminal-bench]] 24.0%×0.5 |
+| 코딩 | 57.3 | +0.49 | 실측 | [[scicode]] 42.0%×1.0, [[terminal-bench]] 24.0%×0.5 |
 | 에이전트 | 43.7 | -0.42 | 실측 | [[apex-agents]] 12.0%×1.0, [[gdpval]] 7.0%×1.0, [[tau2-bench]] 31.0%×1.0, [[tau3-banking]] 9.0%×1.0, [[terminal-bench]] 24.0%×1.0 |
-| 신뢰성 | 43.9 | -0.41 | 실측 | [[aa-omniscience]] 18.0%×1.0 |
+| 신뢰성 | 43.9 | -0.4 | 실측 | [[aa-omniscience]] 18.0%×1.0 |
 | 멀티모달 | 61.2 | +0.75 | 실측 | [[mmmu-pro]] 76.0%×1.0 |
 | 긴문맥 | 66.0 | +1.07 | 실측 | [[aa-lcr]] 65.0%×1.0 |
 | 지시 따르기 | 73.8 | +1.59 | 실측 | [[ifbench]] 77.0%×1.0 |

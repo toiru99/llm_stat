@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: 25.0
 price_blended_usd_1m: None
-output_speed_tps: 153.0
+output_speed_tps: 165.0
 context_window: 1000000
 status: current
 size_class: Medium
@@ -14,9 +14,9 @@ is_reasoning: true
 radar:
   knowledge: { s: 48.3, z: 0.33, r: 54.9, estimated: false }  # 전문 지식
   reasoning: { s: 42.4, z: 0.4, r: 56.0, estimated: false }  # 추론
-  coding: { s: 54.6, z: 0.32, r: 54.8, estimated: false }  # 코딩
+  coding: { s: 54.6, z: 0.32, r: 54.7, estimated: false }  # 코딩
   agentic: { s: 26.5, z: -0.39, r: 44.2, estimated: false }  # 에이전트
-  trust: { s: 13.8, z: -0.68, r: 39.8, estimated: false }  # 신뢰성
+  trust: { s: 13.8, z: -0.68, r: 39.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 78.9, z: 0.87, r: 63.1, estimated: false }  # 긴문맥
   instruction: { s: 83.1, z: 1.24, r: 68.6, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — NVIDIA Nemotron 3 Super
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-31
-timestamp: 2026-07-31T00:00:00Z
+updated: 2026-08-01
+timestamp: 2026-08-01T00:00:00Z
 ---
 
 # NVIDIA Nemotron 3 Super
@@ -37,7 +37,7 @@ NVIDIA · Open · Medium(120.6B) · 컨텍스트 1M · 종합지능 **25.0**
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.8 · 혼합 $None/1M · 153.0 t/s · TTFT 1.7s · 1M ctx`
+`입력 $0.2 · 출력 $0.8 · 혼합 $None/1M · 165.0 t/s · TTFT 1.7s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ NVIDIA · Open · Medium(120.6B) · 컨텍스트 1M · 종합지능 **25.0**
 |---|---|---|---|---|
 | 전문 지식 | 54.9 | +0.33 | 실측 | [[aa-omniscience]] 24.0%×1.0, [[gpqa-diamond]] 80.0%×0.4, [[humanitys-last-exam]] 19.0%×0.3 |
 | 추론 | 56.0 | +0.4 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 80.0%×1.0, [[humanitys-last-exam]] 19.0%×1.0 |
-| 코딩 | 54.8 | +0.32 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 29.0%×0.5 |
+| 코딩 | 54.7 | +0.32 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 29.0%×0.5 |
 | 에이전트 | 44.2 | -0.39 | 실측 | [[apex-agents]] 2.0%×1.0, [[gdpval]] 10.0%×1.0, [[itbench]] 1.0%×1.0, [[tau2-bench]] 68.0%×1.0, [[tau3-banking]] 10.0%×1.0, [[terminal-bench]] 29.0%×1.0 |
-| 신뢰성 | 39.8 | -0.68 | 실측 | [[aa-omniscience]] 13.0%×1.0 |
+| 신뢰성 | 39.9 | -0.68 | 실측 | [[aa-omniscience]] 13.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 63.1 | +0.87 | 실측 | [[aa-lcr]] 60.0%×1.0 |
 | 지시 따르기 | 68.6 | +1.24 | 실측 | [[ifbench]] 71.0%×1.0 |

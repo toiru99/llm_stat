@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 27.3, z: -0.36, r: 44.6, estimated: false }  # 추론
   coding: { s: 55.0, z: 0.33, r: 55.0, estimated: false }  # 코딩
   agentic: { s: 43.8, z: 0.29, r: 54.3, estimated: true }  # 에이전트
-  trust: { s: 27.8, z: -0.02, r: 49.8, estimated: true }  # 신뢰성
+  trust: { s: 27.8, z: -0.01, r: 49.8, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 69.7, z: 0.6, r: 59.0, estimated: false }  # 긴문맥
   instruction: { s: 49.7, z: -0.14, r: 47.9, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4o (ChatGPT)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-31
-timestamp: 2026-07-31T00:00:00Z
+updated: 2026-08-01
+timestamp: 2026-08-01T00:00:00Z
 ---
 
 # GPT-4o (ChatGPT)
@@ -47,7 +47,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **8.0** ·
 | 추론 | 44.6 | -0.36 | 실측 | [[gpqa-diamond]] 51.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 55.0 | +0.33 | 실측 | [[scicode]] 33.0%×1.0 |
 | 에이전트 | 54.3 | +0.29 | 추정 | (추정) |
-| 신뢰성 | 49.8 | -0.02 | 추정 | (추정) |
+| 신뢰성 | 49.8 | -0.01 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 59.0 | +0.6 | 실측 | [[aa-lcr]] 53.0%×1.0 |
 | 지시 따르기 | 47.9 | -0.14 | 추정 | (추정) |

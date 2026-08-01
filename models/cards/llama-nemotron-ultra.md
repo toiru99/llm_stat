@@ -13,10 +13,10 @@ params_b: 253
 is_reasoning: true
 radar:
   knowledge: { s: 38.7, z: -0.12, r: 48.1, estimated: false }  # 전문 지식
-  reasoning: { s: 29.5, z: -0.25, r: 46.3, estimated: false }  # 추론
-  coding: { s: 39.9, z: -0.3, r: 45.6, estimated: false }  # 코딩
+  reasoning: { s: 29.5, z: -0.25, r: 46.2, estimated: false }  # 추론
+  coding: { s: 39.9, z: -0.3, r: 45.5, estimated: false }  # 코딩
   agentic: { s: 7.1, z: -1.14, r: 32.9, estimated: false }  # 에이전트
-  trust: { s: 19.5, z: -0.41, r: 43.9, estimated: false }  # 신뢰성
+  trust: { s: 19.5, z: -0.4, r: 43.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 9.2, z: -1.19, r: 32.1, estimated: false }  # 긴문맥
   instruction: { s: 36.6, z: -0.68, r: 39.8, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama Nemotron Ultra
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-31
-timestamp: 2026-07-31T00:00:00Z
+updated: 2026-08-01
+timestamp: 2026-08-01T00:00:00Z
 ---
 
 # Llama Nemotron Ultra
@@ -37,17 +37,17 @@ NVIDIA · Open · Large(253B) · 컨텍스트 128k · 종합지능 **9.0**
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.6 · 출력 $1.8 · 혼합 $None/1M · 51.0 t/s · TTFT 2.37s · 128k ctx`
+`입력 $0.6 · 출력 $1.8 · 혼합 $None/1M · 51.0 t/s · TTFT 2.39s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 48.1 | -0.12 | 실측 | [[aa-omniscience]] 20.0%×1.0, [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 8.0%×0.3 |
-| 추론 | 46.3 | -0.25 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
-| 코딩 | 45.6 | -0.3 | 실측 | [[scicode]] 35.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
+| 추론 | 46.2 | -0.25 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
+| 코딩 | 45.5 | -0.3 | 실측 | [[scicode]] 35.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 32.9 | -1.14 | 실측 | [[tau2-bench]] 11.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 43.9 | -0.41 | 실측 | [[aa-omniscience]] 18.0%×1.0 |
+| 신뢰성 | 43.9 | -0.4 | 실측 | [[aa-omniscience]] 18.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 32.1 | -1.19 | 실측 | [[aa-lcr]] 7.0%×1.0 |
 | 지시 따르기 | 39.8 | -0.68 | 실측 | [[ifbench]] 38.0%×1.0 |

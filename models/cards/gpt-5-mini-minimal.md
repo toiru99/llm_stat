@@ -5,14 +5,14 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 14.0
 price_blended_usd_1m: None
-output_speed_tps: 79.0
+output_speed_tps: 89.0
 context_window: 400000
 status: past
 size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 34.6, z: -0.32, r: 45.3, estimated: false }  # 전문 지식
+  knowledge: { s: 34.6, z: -0.32, r: 45.2, estimated: false }  # 전문 지식
   reasoning: { s: 26.0, z: -0.43, r: 43.6, estimated: false }  # 추론
   coding: { s: 48.2, z: 0.05, r: 50.7, estimated: false }  # 코딩
   agentic: { s: 26.8, z: -0.38, r: 44.4, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5 mini (minimal)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-31
-timestamp: 2026-07-31T00:00:00Z
+updated: 2026-08-01
+timestamp: 2026-08-01T00:00:00Z
 ---
 
 # GPT-5 mini (minimal)
@@ -37,13 +37,13 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **14.0** �
 - **약점**: 멀티모달, 신뢰성
 
 ## 실용 지표
-`입력 $0.25 · 출력 $2.0 · 혼합 $None/1M · 79.0 t/s · TTFT 0.87s · 400k ctx`
+`입력 $0.25 · 출력 $2.0 · 혼합 $None/1M · 89.0 t/s · TTFT 1.0s · 400k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 45.3 | -0.32 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 69.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 전문 지식 | 45.2 | -0.32 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 69.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 43.6 | -0.43 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 69.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 50.7 | +0.05 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 14.0%×0.5 |
 | 에이전트 | 44.4 | -0.38 | 실측 | [[tau2-bench]] 32.0%×1.0, [[terminal-bench]] 14.0%×1.0 |

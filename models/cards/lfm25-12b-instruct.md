@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 13.0, z: -1.08, r: 33.8, estimated: false }  # 추론
   coding: { s: 2.2, z: -1.87, r: 22.0, estimated: false }  # 코딩
   agentic: { s: 5.6, z: -1.2, r: 32.0, estimated: false }  # 에이전트
-  trust: { s: 16.1, z: -0.57, r: 41.4, estimated: false }  # 신뢰성
+  trust: { s: 16.1, z: -0.57, r: 41.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.46, r: 28.1, estimated: false }  # 긴문맥
+  long_context: { s: 0.0, z: -1.47, r: 28.0, estimated: false }  # 긴문맥
   instruction: { s: 45.1, z: -0.33, r: 45.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — LFM2.5-1.2B-Instruct
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-31
-timestamp: 2026-07-31T00:00:00Z
+updated: 2026-08-01
+timestamp: 2026-08-01T00:00:00Z
 ---
 
 # LFM2.5-1.2B-Instruct
@@ -47,9 +47,9 @@ Liquid AI · Open · Tiny(1.17B) · 컨텍스트 32k · 종합지능 **3.0**
 | 추론 | 33.8 | -1.08 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
 | 코딩 | 22.0 | -1.87 | 실측 | [[scicode]] 2.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 32.0 | -1.2 | 실측 | [[tau2-bench]] 11.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 41.4 | -0.57 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
+| 신뢰성 | 41.5 | -0.57 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 28.1 | -1.46 | 실측 | [[aa-lcr]] 0.0%×1.0 |
+| 긴문맥 | 28.0 | -1.47 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 45.0 | -0.33 | 실측 | [[ifbench]] 44.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

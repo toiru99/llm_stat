@@ -13,10 +13,10 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 40.7, z: -0.03, r: 49.6, estimated: false }  # 전문 지식
-  reasoning: { s: 36.6, z: 0.11, r: 51.6, estimated: false }  # 추론
-  coding: { s: 61.7, z: 0.61, r: 59.2, estimated: false }  # 코딩
-  agentic: { s: 44.6, z: 0.32, r: 54.8, estimated: true }  # 에이전트
-  trust: { s: 32.0, z: 0.18, r: 52.8, estimated: true }  # 신뢰성
+  reasoning: { s: 36.6, z: 0.1, r: 51.6, estimated: false }  # 추론
+  coding: { s: 61.7, z: 0.61, r: 59.1, estimated: false }  # 코딩
+  agentic: { s: 44.6, z: 0.32, r: 54.7, estimated: true }  # 에이전트
+  trust: { s: 32.0, z: 0.19, r: 52.8, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 63.1, z: 0.4, r: 56.0, estimated: true }  # 긴문맥
   instruction: { s: 54.4, z: 0.05, r: 50.8, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4o (Mar)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-31
-timestamp: 2026-07-31T00:00:00Z
+updated: 2026-08-01
+timestamp: 2026-08-01T00:00:00Z
 ---
 
 # GPT-4o (Mar)
@@ -44,10 +44,10 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **12.0** �
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 49.6 | -0.03 | 실측 | [[gpqa-diamond]] 65.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 51.6 | +0.11 | 실측 | [[gpqa-diamond]] 65.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 59.2 | +0.61 | 실측 | [[scicode]] 37.0%×1.0 |
-| 에이전트 | 54.8 | +0.32 | 추정 | (추정) |
-| 신뢰성 | 52.8 | +0.18 | 추정 | (추정) |
+| 추론 | 51.6 | +0.1 | 실측 | [[gpqa-diamond]] 65.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 59.1 | +0.61 | 실측 | [[scicode]] 37.0%×1.0 |
+| 에이전트 | 54.7 | +0.32 | 추정 | (추정) |
+| 신뢰성 | 52.8 | +0.19 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 56.0 | +0.4 | 추정 | (추정) |
 | 지시 따르기 | 50.8 | +0.05 | 추정 | (추정) |

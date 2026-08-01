@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 50.0, z: 0.78, r: 61.7, estimated: false }  # 추론
   coding: { s: 58.3, z: 0.47, r: 57.1, estimated: false }  # 코딩
   agentic: { s: 38.2, z: 0.07, r: 51.1, estimated: false }  # 에이전트
-  trust: { s: 27.6, z: -0.03, r: 49.6, estimated: false }  # 신뢰성
+  trust: { s: 27.6, z: -0.02, r: 49.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 76.3, z: 0.79, r: 61.9, estimated: false }  # 긴문맥
   instruction: { s: 58.6, z: 0.23, r: 53.4, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — LongCat 2.0
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-07-31
-timestamp: 2026-07-31T00:00:00Z
+updated: 2026-08-01
+timestamp: 2026-08-01T00:00:00Z
 ---
 
 # LongCat 2.0
@@ -47,7 +47,7 @@ LongCat · Open · Large(1600B) · 컨텍스트 1M · 종합지능 **33.0**
 | 추론 | 61.7 | +0.78 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 32.0%×1.0 |
 | 코딩 | 57.1 | +0.47 | 실측 | [[scicode]] 35.0%×1.0 |
 | 에이전트 | 51.1 | +0.07 | 실측 | [[gdpval]] 26.0%×1.0, [[tau3-banking]] 13.0%×1.0 |
-| 신뢰성 | 49.6 | -0.03 | 실측 | [[aa-omniscience]] 25.0%×1.0 |
+| 신뢰성 | 49.7 | -0.02 | 실측 | [[aa-omniscience]] 25.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 61.9 | +0.79 | 실측 | [[aa-lcr]] 58.0%×1.0 |
 | 지시 따르기 | 53.4 | +0.23 | 추정 | (추정) |
