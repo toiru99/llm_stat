@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Flash 0731 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-01
-timestamp: 2026-08-01T00:00:00Z
+updated: 2026-08-02
+timestamp: 2026-08-02T00:00:00Z
 ---
 
 # DeepSeek V4 Flash 0731 (max)

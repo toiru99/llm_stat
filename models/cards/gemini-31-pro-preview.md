@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 46.0
 price_blended_usd_1m: None
-output_speed_tps: 122.0
+output_speed_tps: 124.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.1 Pro Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-01
-timestamp: 2026-08-01T00:00:00Z
+updated: 2026-08-02
+timestamp: 2026-08-02T00:00:00Z
 ---
 
 # Gemini 3.1 Pro Preview
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **46.0**
 - **약점**: 멀티모달, 에이전트
 
 ## 실용 지표
-`입력 $2.0 · 출력 $12.0 · 혼합 $None/1M · 122.0 t/s · TTFT 24.79s · 1M ctx`
+`입력 $2.0 · 출력 $12.0 · 혼합 $None/1M · 124.0 t/s · TTFT 22.05s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

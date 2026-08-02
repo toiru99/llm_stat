@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Large 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-01
-timestamp: 2026-08-01T00:00:00Z
+updated: 2026-08-02
+timestamp: 2026-08-02T00:00:00Z
 ---
 
 # Mistral Large 3
@@ -37,7 +37,7 @@ Mistral · Open · Large(675B) · 컨텍스트 256k · 종합지능 **16.0**
 - **약점**: 에이전트, 지시 따르기
 
 ## 실용 지표
-`입력 $0.5 · 출력 $1.5 · 혼합 $None/1M · 53.0 t/s · TTFT 1.09s · 256k ctx`
+`입력 $0.5 · 출력 $1.5 · 혼합 $None/1M · 53.0 t/s · TTFT 1.08s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

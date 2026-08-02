@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.3 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-01
-timestamp: 2026-08-01T00:00:00Z
+updated: 2026-08-02
+timestamp: 2026-08-02T00:00:00Z
 ---
 
 # Grok 4.3 (low)
@@ -37,7 +37,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **35.0**
 - **약점**: 전문 지식, 추론
 
 ## 실용 지표
-`입력 $1.25 · 출력 $2.5 · 혼합 $None/1M · 135.0 t/s · TTFT 4.69s · 1M ctx`
+`입력 $1.25 · 출력 $2.5 · 혼합 $None/1M · 135.0 t/s · TTFT 4.45s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

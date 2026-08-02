@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Celeris-1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-01
-timestamp: 2026-08-01T00:00:00Z
+updated: 2026-08-02
+timestamp: 2026-08-02T00:00:00Z
 ---
 
 # Celeris-1
@@ -37,7 +37,7 @@ Celeris · Proprietary · Unknown · 컨텍스트 131k · 종합지능 **12.0**
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $2.0 · 출력 $6.0 · 혼합 $None/1M · 2.0 t/s · TTFT 0.65s · 131k ctx`
+`입력 $2.0 · 출력 $6.0 · 혼합 $None/1M · 2.0 t/s · TTFT 0.63s · 131k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

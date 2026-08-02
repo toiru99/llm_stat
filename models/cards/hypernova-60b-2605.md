@@ -5,7 +5,7 @@ creator: Multiverse Computing
 license: Open
 intelligence_index: 18.0
 price_blended_usd_1m: None
-output_speed_tps: 384.0
+output_speed_tps: 405.0
 context_window: 131000
 status: current
 size_class: Medium
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — HyperNova 60B 2605
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-01
-timestamp: 2026-08-01T00:00:00Z
+updated: 2026-08-02
+timestamp: 2026-08-02T00:00:00Z
 ---
 
 # HyperNova 60B 2605
@@ -37,7 +37,7 @@ Multiverse Computing · Open · Medium(58.7B) · 컨텍스트 131k · 종합지�
 - **약점**: 전문 지식, 신뢰성
 
 ## 실용 지표
-`입력 $0.04 · 출력 $0.14 · 혼합 $None/1M · 384.0 t/s · TTFT 0.61s · 131k ctx`
+`입력 $0.04 · 출력 $0.14 · 혼합 $None/1M · 405.0 t/s · TTFT 0.6s · 131k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

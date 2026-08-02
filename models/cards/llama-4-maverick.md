@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 4 Maverick
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-01
-timestamp: 2026-08-01T00:00:00Z
+updated: 2026-08-02
+timestamp: 2026-08-02T00:00:00Z
 ---
 
 # Llama 4 Maverick
@@ -37,7 +37,7 @@ Meta · Open · Large(402B) · 컨텍스트 1M · 종합지능 **14.0**
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $0.27 · 출력 $0.85 · 혼합 $None/1M · 106.0 t/s · TTFT 0.95s · 1M ctx`
+`입력 $0.27 · 출력 $0.85 · 혼합 $None/1M · 106.0 t/s · TTFT 0.93s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

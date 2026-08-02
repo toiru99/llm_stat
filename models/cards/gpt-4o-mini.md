@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 7.0
 price_blended_usd_1m: None
-output_speed_tps: 82.0
+output_speed_tps: 94.0
 context_window: 128000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4o mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-01
-timestamp: 2026-08-01T00:00:00Z
+updated: 2026-08-02
+timestamp: 2026-08-02T00:00:00Z
 ---
 
 # GPT-4o mini
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **7.0** ·
 - **약점**: 에이전트, 멀티모달
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.6 · 혼합 $None/1M · 82.0 t/s · TTFT 1.27s · 128k ctx`
+`입력 $0.15 · 출력 $0.6 · 혼합 $None/1M · 94.0 t/s · TTFT 1.0s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

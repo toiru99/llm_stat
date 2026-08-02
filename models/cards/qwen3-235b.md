@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 235B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-01
-timestamp: 2026-08-01T00:00:00Z
+updated: 2026-08-02
+timestamp: 2026-08-02T00:00:00Z
 ---
 
 # Qwen3 235B
@@ -37,7 +37,7 @@ Alibaba · Open · Large(235B) · 컨텍스트 32k · 종합지능 **13.0** · �
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.7 · 출력 $8.4 · 혼합 $None/1M · 61.0 t/s · TTFT 2.78s · 32k ctx`
+`입력 $0.7 · 출력 $8.4 · 혼합 $None/1M · 61.0 t/s · TTFT 2.82s · 32k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

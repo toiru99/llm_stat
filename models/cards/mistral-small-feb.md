@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Small (Feb)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-01
-timestamp: 2026-08-01T00:00:00Z
+updated: 2026-08-02
+timestamp: 2026-08-02T00:00:00Z
 ---
 
 # Mistral Small (Feb)
@@ -37,7 +37,7 @@ Mistral · Proprietary · Unknown · 컨텍스트 32k · 종합지능 **4.0** ·
 - **약점**: 전문 지식, 긴문맥
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.6 · 혼합 $None/1M · 143.0 t/s · TTFT 0.78s · 32k ctx`
+`입력 $0.15 · 출력 $0.6 · 혼합 $None/1M · 143.0 t/s · TTFT 0.76s · 32k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

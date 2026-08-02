@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.5 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-01
-timestamp: 2026-08-01T00:00:00Z
+updated: 2026-08-02
+timestamp: 2026-08-02T00:00:00Z
 ---
 
 # Grok 4.5 (high)
@@ -37,7 +37,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **54.0**
 - **약점**: 멀티모달, 지시 따르기
 
 ## 실용 지표
-`입력 $2.0 · 출력 $6.0 · 혼합 $None/1M · 56.0 t/s · TTFT 8.01s · 500k ctx`
+`입력 $2.0 · 출력 $6.0 · 혼합 $None/1M · 56.0 t/s · TTFT 7.85s · 500k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

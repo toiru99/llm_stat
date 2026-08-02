@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba 1.7 Large
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-01
-timestamp: 2026-08-01T00:00:00Z
+updated: 2026-08-02
+timestamp: 2026-08-02T00:00:00Z
 ---
 
 # Jamba 1.7 Large
@@ -37,7 +37,7 @@ AI21 Labs · Open · Large(398B) · 컨텍스트 256k · 종합지능 **5.0**
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $2.0 · 출력 $8.0 · 혼합 $None/1M · 59.0 t/s · TTFT 1.46s · 256k ctx`
+`입력 $2.0 · 출력 $8.0 · 혼합 $None/1M · 59.0 t/s · TTFT 1.33s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.7
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-01
-timestamp: 2026-08-01T00:00:00Z
+updated: 2026-08-02
+timestamp: 2026-08-02T00:00:00Z
 ---
 
 # GLM-4.7
@@ -37,7 +37,7 @@ Z AI · Open · Large(357B) · 컨텍스트 200k · 종합지능 **34.0** · ⚠
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $0.6 · 출력 $2.2 · 혼합 $None/1M · 102.0 t/s · TTFT 1.01s · 200k ctx`
+`입력 $0.6 · 출력 $2.2 · 혼합 $None/1M · 102.0 t/s · TTFT 1.07s · 200k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

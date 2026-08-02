@@ -5,7 +5,7 @@ creator: Reka AI
 license: Proprietary
 intelligence_index: 6.0
 price_blended_usd_1m: None
-output_speed_tps: 56.0
+output_speed_tps: 57.0
 context_window: 128000
 status: past
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Reka Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-01
-timestamp: 2026-08-01T00:00:00Z
+updated: 2026-08-02
+timestamp: 2026-08-02T00:00:00Z
 ---
 
 # Reka Flash
@@ -37,7 +37,7 @@ Reka AI · Proprietary · Small(21B) · 컨텍스트 128k · 종합지능 **6.0*
 - **약점**: —
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.8 · 혼합 $None/1M · 56.0 t/s · TTFT 2.49s · 128k ctx`
+`입력 $0.2 · 출력 $0.8 · 혼합 $None/1M · 57.0 t/s · TTFT 2.49s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

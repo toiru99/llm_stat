@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.6V
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-01
-timestamp: 2026-08-01T00:00:00Z
+updated: 2026-08-02
+timestamp: 2026-08-02T00:00:00Z
 ---
 
 # GLM-4.6V
@@ -37,7 +37,7 @@ Z AI · Open · Medium(108B) · 컨텍스트 128k · 종합지능 **17.0** · �
 - **약점**: 멀티모달, 지시 따르기
 
 ## 실용 지표
-`입력 $0.3 · 출력 $0.9 · 혼합 $None/1M · 71.0 t/s · TTFT 3.81s · 128k ctx`
+`입력 $0.3 · 출력 $0.9 · 혼합 $None/1M · 71.0 t/s · TTFT 3.74s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

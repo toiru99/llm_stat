@@ -5,7 +5,7 @@ creator: KwaiKAT
 license: Proprietary
 intelligence_index: 34.0
 price_blended_usd_1m: None
-output_speed_tps: 104.0
+output_speed_tps: 103.0
 context_window: 256000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — KAT-Coder-Pro V2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-01
-timestamp: 2026-08-01T00:00:00Z
+updated: 2026-08-02
+timestamp: 2026-08-02T00:00:00Z
 ---
 
 # KAT-Coder-Pro V2
@@ -37,7 +37,7 @@ KwaiKAT · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **34.0**
 - **약점**: 전문 지식, 추론
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $None/1M · 104.0 t/s · TTFT 1.57s · 256k ctx`
+`입력 $0.3 · 출력 $1.2 · 혼합 $None/1M · 103.0 t/s · TTFT 1.48s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
