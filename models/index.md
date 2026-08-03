@@ -1,6 +1,6 @@
 # 모델 (Models)
 
-`scripts/build_cards.py` 자동 생성 · 데이터 2026-08-02 · 제작사 57곳 · current 230 + past 278 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
+`scripts/build_cards.py` 자동 생성 · 데이터 2026-08-03 · 제작사 57곳 · current 230 + past 278 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
 
 - 레이더 축·방법론: [radar-spec.md](radar-spec.md) · 설정: [../config.toml](../config.toml)
 
@@ -54,8 +54,8 @@
 * [GPT-5.5 (low)](cards/gpt-55-low.md) - 종합지능 43.0 · past
 * [Muse Spark](cards/muse-spark.md) - 종합지능 43.0
 * [GPT-5.2 (xhigh)](cards/gpt-52-xhigh.md) - 종합지능 42.0 · past
-* [MiMo-V2.5-Pro](cards/mimo-v25-pro.md) - 종합지능 42.0
 * [Kimi K2.7 Code](cards/kimi-k27-code.md) - 종합지능 42.0
+* [MiMo-V2.5-Pro](cards/mimo-v25-pro.md) - 종합지능 42.0
 * [Claude Sonnet 5 (Non-reasoning)](cards/claude-sonnet-5-non-reasoning.md) - 종합지능 42.0
 * [Hy3](cards/hy3.md) - 종합지능 41.0
 * [Inkling](cards/inkling.md) - 종합지능 41.0
@@ -67,21 +67,21 @@
 * [GLM-5.1](cards/glm-51.md) - 종합지능 40.0 · past
 * [DeepSeek V4 Flash (max)](cards/deepseek-v4-flash-max.md) - 종합지능 40.0 · past
 * [Qwen3.6 Max Preview](cards/qwen36-max-preview.md) - 종합지능 40.0 · past
-* [Inkling Small](cards/inkling-small.md) - 종합지능 40.0
 * [Grok Build 0.1 0616](cards/grok-build-01-0616.md) - 종합지능 40.0 · past
+* [Inkling Small](cards/inkling-small.md) - 종합지능 40.0
 * [GPT-5.4 mini (xhigh)](cards/gpt-54-mini-xhigh.md) - 종합지능 40.0 · past
 * [GPT-5.6 Terra (low)](cards/gpt-56-terra-low.md) - 종합지능 40.0
 * [GPT-5.2 Codex (xhigh)](cards/gpt-52-codex-xhigh.md) - 종합지능 40.0 · past
 * [MiMo-V2-Pro](cards/mimo-v2-pro.md) - 종합지능 40.0 · past
 * [Gemini 3 Pro Preview (high)](cards/gemini-3-pro-preview-high.md) - 종합지능 40.0 · past
-* [Qwen3.7 Plus](cards/qwen37-plus.md) - 종합지능 39.0
 * [Agnes 2.5 Pro Alpha](cards/agnes-25-pro-alpha.md) - 종합지능 39.0
+* [Qwen3.7 Plus](cards/qwen37-plus.md) - 종합지능 39.0
 * [GPT-5.4 (low)](cards/gpt-54-low.md) - 종합지능 39.0 · past
 * [JT-4.1 Flash 236B A21B](cards/jt-41-flash-236b-a21b.md) - 종합지능 39.0
 * [MiniMax-M2.7](cards/minimax-m27.md) - 종합지능 38.0 · past
 * [Grok 4.3 (high)](cards/grok-43-high.md) - 종합지능 38.0 · past
-* [Claude Opus 4.6 (high)](cards/claude-opus-46-high.md) - 종합지능 38.0 · past
 * [Nemotron 3 Ultra](cards/nemotron-3-ultra.md) - 종합지능 38.0
+* [Claude Opus 4.6 (high)](cards/claude-opus-46-high.md) - 종합지능 38.0 · past
 * [Gemini 3 Flash](cards/gemini-3-flash.md) - 종합지능 38.0 · past
 * [GPT-5.4 nano (xhigh)](cards/gpt-54-nano-xhigh.md) - 종합지능 38.0 · past
 * [GPT-5.6 Luna (medium)](cards/gpt-56-luna-medium.md) - 종합지능 38.0
@@ -99,8 +99,8 @@
 * [Gemini 3.5 Flash-Lite](cards/gemini-35-flash-lite.md) - 종합지능 36.0
 * [MiMo-V2-Omni-0327](cards/mimo-v2-omni-0327.md) - 종합지능 36.0
 * [GPT-5 Codex (high)](cards/gpt-5-codex-high.md) - 종합지능 36.0 · past
-* [Kimi K2.5](cards/kimi-k25.md) - 종합지능 35.0 · past
 * [GPT-5 (high)](cards/gpt-5-high.md) - 종합지능 35.0 · past
+* [Kimi K2.5](cards/kimi-k25.md) - 종합지능 35.0 · past
 * [GPT-5.5 (Non-reasoning)](cards/gpt-55-non-reasoning.md) - 종합지능 35.0 · past
 * [Grok 4.3 (low)](cards/grok-43-low.md) - 종합지능 35.0
 * [Gemini 3.5 Flash (minimal)](cards/gemini-35-flash-minimal.md) - 종합지능 35.0
@@ -144,8 +144,8 @@
 * [Claude 4.5 Haiku](cards/claude-45-haiku.md) - 종합지능 30.0
 * [GPT-5.4 mini (medium)](cards/gpt-54-mini-medium.md) - 종합지능 30.0 · past
 * [o3](cards/o3.md) - 종합지능 30.0
-* [Step 3.7 Flash](cards/step-37-flash.md) - 종합지능 30.0
 * [GPT-5.4 nano](cards/gpt-54-nano.md) - 종합지능 30.0 · past
+* [Step 3.7 Flash](cards/step-37-flash.md) - 종합지능 30.0
 * [DeepSeek V3.1 Terminus](cards/deepseek-v31-terminus.md) - 종합지능 30.0 · past
 * [Gemma 4 31B](cards/gemma-4-31b.md) - 종합지능 29.0
 * [GLM-4.6](cards/glm-46.md) - 종합지능 29.0 · past
@@ -160,8 +160,8 @@
 * [GPT-5.6 Luna (Non-reasoning)](cards/gpt-56-luna-non-reasoning.md) - 종합지능 27.0
 * [Claude 3.7 Sonnet](cards/claude-37-sonnet.md) - 종합지능 27.0 · past
 * [Grok 4 Fast](cards/grok-4-fast.md) - 종합지능 27.0 · past
-* [o4-mini (high)](cards/o4-mini-high.md) - 종합지능 26.0 · past
 * [Gemini 2.5 Pro](cards/gemini-25-pro.md) - 종합지능 26.0
+* [o4-mini (high)](cards/o4-mini-high.md) - 종합지능 26.0 · past
 * [Step 3.5 Flash 2603](cards/step-35-flash-2603.md) - 종합지능 26.0 · past
 * [Step 3.5 Flash](cards/step-35-flash.md) - 종합지능 26.0 · past
 * [Gemma 4 26B A4B](cards/gemma-4-26b-a4b.md) - 종합지능 26.0
@@ -222,8 +222,8 @@
 * [o1-pro](cards/o1-pro.md) - 종합지능 19.0 · past
 * [Seed-OSS-36B-Instruct](cards/seed-oss-36b-instruct.md) - 종합지능 18.0 · past
 * [Magistral Medium 1.2](cards/magistral-medium-12.md) - 종합지능 18.0
-* [Nova 2.0 Lite (high)](cards/nova-20-lite-high.md) - 종합지능 18.0
 * [Qwen3 VL 32B](cards/qwen3-vl-32b.md) - 종합지능 18.0 · past
+* [Nova 2.0 Lite (high)](cards/nova-20-lite-high.md) - 종합지능 18.0
 * [Nova 2.0 Lite (low)](cards/nova-20-lite-low.md) - 종합지능 18.0
 * [Trinity Large Thinking](cards/trinity-large-thinking.md) - 종합지능 18.0
 * [Qwen3 235B 2507](cards/qwen3-235b-2507.md) - 종합지능 18.0 · past
@@ -233,8 +233,8 @@
 * [Grok 3](cards/grok-3.md) - 종합지능 18.0 · past
 * [Nemotron Cascade 2 30B A3B](cards/nemotron-cascade-2-30b-a3b.md) - 종합지능 18.0
 * [MiniMax M1 80k](cards/minimax-m1-80k.md) - 종합지능 18.0 · past
-* [GLM-4.6V](cards/glm-46v.md) - 종합지능 17.0 · past
 * [GLM-4.5-Air](cards/glm-45-air.md) - 종합지능 17.0 · past
+* [GLM-4.6V](cards/glm-46v.md) - 종합지능 17.0 · past
 * [Qwen3 Next 80B A3B](cards/qwen3-next-80b-a3b.md) - 종합지능 17.0
 * [Devstral Small 2](cards/devstral-small-2.md) - 종합지능 17.0
 * [GPT-5 (minimal)](cards/gpt-5-minimal.md) - 종합지능 17.0 · past
@@ -266,9 +266,9 @@
 * [gpt-oss-20b (low)](cards/gpt-oss-20b-low.md) - 종합지능 14.0
 * [NVIDIA Nemotron 3 Nano](cards/nvidia-nemotron-3-nano.md) - 종합지능 14.0
 * [Qwen3 Coder 30B A3B](cards/qwen3-coder-30b-a3b.md) - 종합지능 14.0 · past
-* [GPT-5 mini (minimal)](cards/gpt-5-mini-minimal.md) - 종합지능 14.0 · past
 * [Ling 2.6 Flash](cards/ling-26-flash.md) - 종합지능 14.0
 * [Nova 2.0 Pro Preview](cards/nova-20-pro-preview.md) - 종합지능 14.0
+* [GPT-5 mini (minimal)](cards/gpt-5-mini-minimal.md) - 종합지능 14.0 · past
 * [Llama 4 Maverick](cards/llama-4-maverick.md) - 종합지능 14.0
 * [MiniMax M1 40k](cards/minimax-m1-40k.md) - 종합지능 14.0 · past
 * [DeepSeek V3 (Dec)](cards/deepseek-v3-dec.md) - 종합지능 14.0 · past
@@ -287,9 +287,9 @@
 * [Magistral Medium 1](cards/magistral-medium-1.md) - 종합지능 13.0 · past
 * [Motif-2-12.7B](cards/motif-2-127b.md) - 종합지능 13.0
 * [DiffusionGemma 26B A4B](cards/diffusiongemma-26b-a4b.md) - 종합지능 13.0
-* [Llama Nemotron Super 49B v1.5](cards/llama-nemotron-super-49b-v15.md) - 종합지능 12.0
 * [Gemma 4 E4B](cards/gemma-4-e4b.md) - 종합지능 12.0
 * [Qwen3 32B](cards/qwen3-32b.md) - 종합지능 12.0 · past
+* [Llama Nemotron Super 49B v1.5](cards/llama-nemotron-super-49b-v15.md) - 종합지능 12.0
 * [Mistral Medium 3](cards/mistral-medium-3.md) - 종합지능 12.0 · past
 * [Nova 2.0 Lite](cards/nova-20-lite.md) - 종합지능 12.0
 * [Celeris-1](cards/celeris-1.md) - 종합지능 12.0
@@ -307,12 +307,12 @@
 * [Gemini 2.0 Pro Experimental](cards/gemini-20-pro-experimental.md) - 종합지능 12.0 · past
 * [Devstral Small (May)](cards/devstral-small-may.md) - 종합지능 12.0 · past
 * [K2-V2 (medium)](cards/k2-v2-medium.md) - 종합지능 12.0
-* [Magistral Small 1.2](cards/magistral-small-12.md) - 종합지능 11.0
-* [Gemini 2.5 Flash-Lite](cards/gemini-25-flash-lite.md) - 종합지능 11.0 · past
 * [Qwen3 VL 8B](cards/qwen3-vl-8b.md) - 종합지능 11.0 · past
+* [Gemini 2.5 Flash-Lite](cards/gemini-25-flash-lite.md) - 종합지능 11.0 · past
+* [Magistral Small 1.2](cards/magistral-small-12.md) - 종합지능 11.0
 * [Ministral 3 14B](cards/ministral-3-14b.md) - 종합지능 11.0
-* [GPT-4o (Nov)](cards/gpt-4o-nov.md) - 종합지능 11.0 · past
 * [Mistral Small 3.2](cards/mistral-small-32.md) - 종합지능 11.0 · past
+* [GPT-4o (Nov)](cards/gpt-4o-nov.md) - 종합지능 11.0 · past
 * [Magistral Small 1](cards/magistral-small-1.md) - 종합지능 11.0 · past
 * [Nova 2.0 Omni](cards/nova-20-omni.md) - 종합지능 11.0
 * [EXAONE 4.0 32B](cards/exaone-40-32b.md) - 종합지능 11.0
@@ -338,8 +338,8 @@
 * [Falcon-H1R-7B](cards/falcon-h1r-7b.md) - 종합지능 10.0
 * [Hermes 4 405B](cards/hermes-4-405b.md) - 종합지능 9.0
 * [Llama Nemotron Ultra](cards/llama-nemotron-ultra.md) - 종합지능 9.0
-* [NVIDIA Nemotron Nano 12B v2 VL](cards/nvidia-nemotron-nano-12b-v2-vl.md) - 종합지능 9.0
 * [GLM-4.5V](cards/glm-45v.md) - 종합지능 9.0 · past
+* [NVIDIA Nemotron Nano 12B v2 VL](cards/nvidia-nemotron-nano-12b-v2-vl.md) - 종합지능 9.0
 * [Qwen3 30B](cards/qwen3-30b.md) - 종합지능 9.0 · past
 * [NVIDIA Nemotron Nano 9B V2](cards/nvidia-nemotron-nano-9b-v2.md) - 종합지능 9.0
 * [Llama 3.3 70B](cards/llama-33-70b.md) - 종합지능 9.0
@@ -381,8 +381,8 @@
 * [Llama 3.1 70B](cards/llama-31-70b.md) - 종합지능 7.0 · past
 * [GPT-4o mini](cards/gpt-4o-mini.md) - 종합지능 7.0 · past
 * [Granite 4.1 8B](cards/granite-41-8b.md) - 종합지능 7.0
-* [Nova Lite](cards/nova-lite.md) - 종합지능 7.0 · past
 * [Mistral Small 3](cards/mistral-small-3.md) - 종합지능 7.0 · past
+* [Nova Lite](cards/nova-lite.md) - 종합지능 7.0 · past
 * [Ministral 3 3B](cards/ministral-3-3b.md) - 종합지능 7.0
 * [Qwen2.5 Coder 32B](cards/qwen25-coder-32b.md) - 종합지능 7.0 · past
 * [Mistral Large 2 (Jul)](cards/mistral-large-2-jul.md) - 종합지능 7.0 · past

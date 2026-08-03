@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek R1 Distill Llama 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-02
-timestamp: 2026-08-02T00:00:00Z
+updated: 2026-08-03
+timestamp: 2026-08-03T00:00:00Z
 ---
 
 # DeepSeek R1 Distill Llama 70B
@@ -37,7 +37,7 @@ DeepSeek · Open · Medium(70B) · 컨텍스트 128k · 종합지능 **10.0** ·
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.7 · 출력 $1.05 · 혼합 $None/1M · 28.0 t/s · TTFT 0.91s · 128k ctx`
+`입력 $0.7 · 출력 $1.05 · 혼합 $None/1M · 28.0 t/s · TTFT 0.87s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 5 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-02
-timestamp: 2026-08-02T00:00:00Z
+updated: 2026-08-03
+timestamp: 2026-08-03T00:00:00Z
 ---
 
 # Claude Opus 5 (low)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **51.0**
 - **약점**: 신뢰성, 멀티모달
 
 ## 실용 지표
-`입력 $5.0 · 출력 $25.0 · 혼합 $None/1M · 51.0 t/s · TTFT 3.3s · 1M ctx`
+`입력 $5.0 · 출력 $25.0 · 혼합 $None/1M · 51.0 t/s · TTFT 2.8s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

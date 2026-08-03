@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Small 3.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-02
-timestamp: 2026-08-02T00:00:00Z
+updated: 2026-08-03
+timestamp: 2026-08-03T00:00:00Z
 ---
 
 # Mistral Small 3.1
@@ -37,7 +37,7 @@ Mistral · Open · Small(24B) · 컨텍스트 128k · 종합지능 **15.0** · �
 - **약점**: 추론, 지시 따르기
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.3 · 혼합 $None/1M · 147.0 t/s · TTFT 0.83s · 128k ctx`
+`입력 $0.1 · 출력 $0.3 · 혼합 $None/1M · 147.0 t/s · TTFT 0.81s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

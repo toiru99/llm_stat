@@ -5,7 +5,7 @@ creator: Nex AGI
 license: Open
 intelligence_index: 41.0
 price_blended_usd_1m: None
-output_speed_tps: 128.0
+output_speed_tps: 130.0
 context_window: 262000
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nex-N2-Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-02
-timestamp: 2026-08-02T00:00:00Z
+updated: 2026-08-03
+timestamp: 2026-08-03T00:00:00Z
 ---
 
 # Nex-N2-Pro
@@ -37,7 +37,7 @@ Nex AGI · Open · Large(397B) · 컨텍스트 262k · 종합지능 **41.0**
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $0.5 · 출력 $2.5 · 혼합 $None/1M · 128.0 t/s · TTFT 1.48s · 262k ctx`
+`입력 $0.5 · 출력 $2.5 · 혼합 $None/1M · 130.0 t/s · TTFT 1.4s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

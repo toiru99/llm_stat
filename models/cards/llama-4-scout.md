@@ -5,7 +5,7 @@ creator: Meta
 license: Open
 intelligence_index: 10.0
 price_blended_usd_1m: None
-output_speed_tps: 107.0
+output_speed_tps: 130.0
 context_window: 10000000
 status: current
 size_class: Medium
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 4 Scout
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-02
-timestamp: 2026-08-02T00:00:00Z
+updated: 2026-08-03
+timestamp: 2026-08-03T00:00:00Z
 ---
 
 # Llama 4 Scout
@@ -37,7 +37,7 @@ Meta · Open · Medium(109B) · 컨텍스트 10M · 종합지능 **10.0**
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.18 · 출력 $0.66 · 혼합 $None/1M · 107.0 t/s · TTFT 0.82s · 10M ctx`
+`입력 $0.18 · 출력 $0.66 · 혼합 $None/1M · 130.0 t/s · TTFT 0.83s · 10M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

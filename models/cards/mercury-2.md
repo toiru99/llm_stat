@@ -5,7 +5,7 @@ creator: Inception
 license: Proprietary
 intelligence_index: 21.0
 price_blended_usd_1m: None
-output_speed_tps: 778.0
+output_speed_tps: 729.0
 context_window: 128000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mercury 2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-02
-timestamp: 2026-08-02T00:00:00Z
+updated: 2026-08-03
+timestamp: 2026-08-03T00:00:00Z
 ---
 
 # Mercury 2
@@ -37,7 +37,7 @@ Inception · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **21.0*
 - **약점**: 긴문맥, 신뢰성
 
 ## 실용 지표
-`입력 $0.25 · 출력 $0.75 · 혼합 $None/1M · 778.0 t/s · TTFT 3.47s · 128k ctx`
+`입력 $0.25 · 출력 $0.75 · 혼합 $None/1M · 729.0 t/s · TTFT 3.49s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

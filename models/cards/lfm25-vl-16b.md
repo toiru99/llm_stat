@@ -5,7 +5,7 @@ creator: Liquid AI
 license: Open
 intelligence_index: 1.0
 price_blended_usd_1m: None
-output_speed_tps: 397.0
+output_speed_tps: 395.0
 context_window: 32000
 status: current
 size_class: Tiny
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — LFM2.5-VL-1.6B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-02
-timestamp: 2026-08-02T00:00:00Z
+updated: 2026-08-03
+timestamp: 2026-08-03T00:00:00Z
 ---
 
 # LFM2.5-VL-1.6B
@@ -37,7 +37,7 @@ Liquid AI · Open · Tiny(1.6B) · 컨텍스트 32k · 종합지능 **1.0**
 - **약점**: 코딩, 멀티모달
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $None/1M · 397.0 t/s · TTFT 1.36s · 32k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $None/1M · 395.0 t/s · TTFT 1.52s · 32k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

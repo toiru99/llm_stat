@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 12B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-02
-timestamp: 2026-08-02T00:00:00Z
+updated: 2026-08-03
+timestamp: 2026-08-03T00:00:00Z
 ---
 
 # Gemma 4 12B
@@ -37,7 +37,7 @@ Google · Open · Small(12B) · 컨텍스트 256k · 종합지능 **22.0**
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.3 · 혼합 $None/1M · 108.0 t/s · TTFT 2.38s · 256k ctx`
+`입력 $0.1 · 출력 $0.3 · 혼합 $None/1M · 108.0 t/s · TTFT 2.36s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

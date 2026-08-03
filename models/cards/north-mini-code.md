@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — North Mini Code
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-02
-timestamp: 2026-08-02T00:00:00Z
+updated: 2026-08-03
+timestamp: 2026-08-03T00:00:00Z
 ---
 
 # North Mini Code
@@ -37,7 +37,7 @@ Cohere · Open · Small(30B) · 컨텍스트 256k · 종합지능 **20.0**
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $None/1M · 23.0 t/s · TTFT 0.65s · 256k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $None/1M · 23.0 t/s · TTFT 0.63s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
