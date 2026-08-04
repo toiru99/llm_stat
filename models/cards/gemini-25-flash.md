@@ -4,8 +4,8 @@ title: Gemini 2.5 Flash
 creator: Google
 license: Proprietary
 intelligence_index: 20.0
-price_blended_usd_1m: None
-output_speed_tps: 232.0
+price_blended_usd_1m: 0.331
+output_speed_tps: 234.0
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 34.8, z: 0.02, r: 50.2, estimated: false }  # 추론
   coding: { s: 50.4, z: 0.14, r: 52.1, estimated: false }  # 코딩
   agentic: { s: 26.8, z: -0.38, r: 44.4, estimated: false }  # 에이전트
-  trust: { s: 32.2, z: 0.2, r: 52.9, estimated: false }  # 신뢰성
+  trust: { s: 32.2, z: 0.18, r: 52.7, estimated: false }  # 신뢰성
   multimodal: { s: 77.1, z: 0.26, r: 53.9, estimated: false }  # 멀티모달
   long_context: { s: 81.6, z: 0.95, r: 64.2, estimated: false }  # 긴문맥
   instruction: { s: 53.5, z: 0.02, r: 50.2, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.5 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Gemini 2.5 Flash
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **20.0** · 
 - **약점**: 지시 따르기, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $2.5 · 혼합 $None/1M · 232.0 t/s · TTFT 14.65s · 1M ctx`
+`입력 $0.3 · 출력 $2.5 · 혼합 $0.331/1M · 234.0 t/s · TTFT 14.69s · 1M ctx` · 가성비 60.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **20.0** · 
 | 추론 | 50.2 | +0.02 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 79.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
 | 코딩 | 52.1 | +0.14 | 실측 | [[scicode]] 39.0%×1.0, [[terminal-bench]] 14.0%×0.5 |
 | 에이전트 | 44.4 | -0.38 | 실측 | [[tau2-bench]] 32.0%×1.0, [[terminal-bench]] 14.0%×1.0 |
-| 신뢰성 | 52.9 | +0.2 | 실측 | [[aa-omniscience]] 29.0%×1.0 |
+| 신뢰성 | 52.7 | +0.18 | 실측 | [[aa-omniscience]] 29.0%×1.0 |
 | 멀티모달 | 53.9 | +0.26 | 실측 | [[mmmu-pro]] 69.0%×1.0 |
 | 긴문맥 | 64.2 | +0.95 | 실측 | [[aa-lcr]] 62.0%×1.0 |
 | 지시 따르기 | 50.2 | +0.02 | 실측 | [[ifbench]] 50.0%×1.0 |

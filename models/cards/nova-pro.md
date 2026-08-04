@@ -4,7 +4,7 @@ title: Nova Pro
 creator: Amazon
 license: Proprietary
 intelligence_index: 8.0
-price_blended_usd_1m: None
+price_blended_usd_1m: 0.62
 output_speed_tps: None
 context_window: 300000
 status: past
@@ -15,8 +15,8 @@ radar:
   knowledge: { s: 27.6, z: -0.65, r: 40.3, estimated: false }  # 전문 지식
   reasoning: { s: 17.2, z: -0.87, r: 36.9, estimated: false }  # 추론
   coding: { s: 26.4, z: -0.86, r: 37.1, estimated: false }  # 코딩
-  agentic: { s: 11.6, z: -0.96, r: 35.5, estimated: false }  # 에이전트
-  trust: { s: 24.1, z: -0.19, r: 47.2, estimated: false }  # 신뢰성
+  agentic: { s: 11.6, z: -0.97, r: 35.5, estimated: false }  # 에이전트
+  trust: { s: 24.1, z: -0.2, r: 47.0, estimated: false }  # 신뢰성
   multimodal: { s: 41.4, z: -1.46, r: 28.1, estimated: false }  # 멀티모달
   long_context: { s: 25.0, z: -0.73, r: 39.1, estimated: false }  # 긴문맥
   instruction: { s: 36.6, z: -0.68, r: 39.8, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Nova Pro
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 300k · 종합지능 **8.0** ·
 - **약점**: 에이전트, 멀티모달
 
 ## 실용 지표
-`입력 $0.8 · 출력 $3.2 · 혼합 $None/1M · None t/s · TTFT Nones · 300k ctx`
+`입력 $0.8 · 출력 $3.2 · 혼합 $0.62/1M · None t/s · TTFT Nones · 300k ctx` · 가성비 12.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,8 +46,8 @@ Amazon · Proprietary · Unknown · 컨텍스트 300k · 종합지능 **8.0** ·
 | 전문 지식 | 40.3 | -0.65 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 50.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
 | 추론 | 36.9 | -0.87 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 50.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 37.1 | -0.86 | 실측 | [[scicode]] 21.0%×1.0, [[terminal-bench]] 6.0%×0.5 |
-| 에이전트 | 35.5 | -0.96 | 실측 | [[tau2-bench]] 14.0%×1.0, [[terminal-bench]] 6.0%×1.0 |
-| 신뢰성 | 47.2 | -0.19 | 실측 | [[aa-omniscience]] 22.0%×1.0 |
+| 에이전트 | 35.5 | -0.97 | 실측 | [[tau2-bench]] 14.0%×1.0, [[terminal-bench]] 6.0%×1.0 |
+| 신뢰성 | 47.0 | -0.2 | 실측 | [[aa-omniscience]] 22.0%×1.0 |
 | 멀티모달 | 28.1 | -1.46 | 실측 | [[mmmu-pro]] 44.0%×1.0 |
 | 긴문맥 | 39.1 | -0.73 | 실측 | [[aa-lcr]] 19.0%×1.0 |
 | 지시 따르기 | 39.8 | -0.68 | 실측 | [[ifbench]] 38.0%×1.0 |

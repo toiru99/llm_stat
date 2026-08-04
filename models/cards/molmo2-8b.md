@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 20.1, z: -1.0, r: 35.0, estimated: false }  # 전문 지식
   reasoning: { s: 15.0, z: -0.98, r: 35.3, estimated: false }  # 추론
   coding: { s: 14.4, z: -1.36, r: 29.6, estimated: false }  # 코딩
-  agentic: { s: 0.0, z: -1.42, r: 28.8, estimated: false }  # 에이전트
+  agentic: { s: 0.0, z: -1.42, r: 28.7, estimated: false }  # 에이전트
   trust: { s: 9.2, z: -0.89, r: 36.6, estimated: false }  # 신뢰성
   multimodal: { s: 31.4, z: -1.94, r: 20.9, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.47, r: 28.0, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Molmo2-8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Molmo2-8B
@@ -46,7 +46,7 @@ Allen Institute for AI · Open · Small(8.66B) · 컨텍스트 36k · 종합지�
 | 전문 지식 | 35.0 | -1.0 | 실측 | [[aa-omniscience]] 11.0%×1.0, [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 35.3 | -0.98 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 29.6 | -1.36 | 실측 | [[scicode]] 13.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 28.8 | -1.42 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 에이전트 | 28.7 | -1.42 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | 36.6 | -0.89 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | 20.9 | -1.94 | 실측 | [[mmmu-pro]] 37.0%×1.0 |
 | 긴문맥 | 28.0 | -1.47 | 실측 | [[aa-lcr]] 0.0%×1.0 |

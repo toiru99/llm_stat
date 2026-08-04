@@ -4,8 +4,8 @@ title: GPT-4.1
 creator: OpenAI
 license: Proprietary
 intelligence_index: 19.0
-price_blended_usd_1m: None
-output_speed_tps: 146.0
+price_blended_usd_1m: 1.55
+output_speed_tps: 158.0
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 25.2, z: -0.47, r: 43.0, estimated: false }  # 추론
   coding: { s: 49.3, z: 0.09, r: 51.4, estimated: false }  # 코딩
   agentic: { s: 34.3, z: -0.08, r: 48.8, estimated: false }  # 에이전트
-  trust: { s: 21.8, z: -0.29, r: 45.6, estimated: false }  # 신뢰성
+  trust: { s: 21.8, z: -0.31, r: 45.4, estimated: false }  # 신뢰성
   multimodal: { s: 65.7, z: -0.29, r: 45.7, estimated: false }  # 멀티모달
   long_context: { s: 80.3, z: 0.91, r: 63.7, estimated: false }  # 긴문맥
   instruction: { s: 43.7, z: -0.39, r: 44.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # GPT-4.1
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **19.0** · 
 - **약점**: 지시 따르기, 추론
 
 ## 실용 지표
-`입력 $2.0 · 출력 $8.0 · 혼합 $None/1M · 146.0 t/s · TTFT 0.95s · 1M ctx`
+`입력 $2.0 · 출력 $8.0 · 혼합 $1.55/1M · 158.0 t/s · TTFT 0.97s · 1M ctx` · 가성비 12.3
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **19.0** · 
 | 추론 | 43.0 | -0.47 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 67.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 51.4 | +0.09 | 실측 | [[scicode]] 38.0%×1.0, [[terminal-bench]] 14.0%×0.5 |
 | 에이전트 | 48.8 | -0.08 | 실측 | [[tau2-bench]] 47.0%×1.0, [[terminal-bench]] 14.0%×1.0 |
-| 신뢰성 | 45.6 | -0.29 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
+| 신뢰성 | 45.4 | -0.31 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
 | 멀티모달 | 45.7 | -0.29 | 실측 | [[mmmu-pro]] 61.0%×1.0 |
 | 긴문맥 | 63.7 | +0.91 | 실측 | [[aa-lcr]] 61.0%×1.0 |
 | 지시 따르기 | 44.1 | -0.39 | 실측 | [[ifbench]] 43.0%×1.0 |

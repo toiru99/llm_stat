@@ -17,9 +17,13 @@ AX_ORDER = ["knowledge", "reasoning", "coding", "agentic", "trust", "multimodal"
 AX_LABEL = {"knowledge": "전문 지식", "reasoning": "추론", "coding": "코딩", "agentic": "에이전트",
             "trust": "신뢰성", "multimodal": "멀티모달", "long_context": "긴문맥", "instruction": "지시 따르기"}
 
-H_INTEL, H_PRICE, H_SPEED, H_CTX = (
-    "Artificial Analysis Intelligence Index", "Blended USD/1M Tokens", "Median Tokens/s", "Context Window")
+H_INTEL, H_SPEED, H_CTX = (
+    "Artificial Analysis Intelligence Index", "Median Tokens/s", "Context Window")
 H_PIN, H_POUT, H_TTFT, H_TOTAL = ("Input Price", "Output Price", "Latency First Chunk", "Total Response")
+# 캐시 히트가 열 이름: AA가 2026-07-21 "Cache Read" → "Cache Hit Price"로 개명.
+# 과거 스냅샷을 다시 빌드할 수 있도록 둘 다 본다 ("Cache Write"와 섞이지 않게 구체적으로).
+H_CACHE = (("Cache Hit",), ("Cache Read",))
+# 혼합가는 더 이상 표에 없다 — 임베드(blendedPrice)에서 조인하고, 없으면 위 열들로 재계산한다.
 
 
 # ---------- 파싱 헬퍼 ----------
@@ -27,6 +31,13 @@ def col(row, *needles):
     for k in row:
         if all(n in k for n in needles):
             return row[k]
+    return None
+
+def cache_hit_price(row):
+    """캐시 히트가 — 열 이름이 개명돼 신·구 표기를 모두 시도한다."""
+    for needles in H_CACHE:
+        v = col(row, *needles)
+        if v is not None: return money(v)
     return None
 
 def pct(v):
@@ -52,10 +63,38 @@ def size_bucket(param_class):
     """AA Size 필터 버킷: Tiny(<4.5B)/Small(4.5-40B)/Medium(40-150B)/Large(>150B). 비공개는 Unknown."""
     return {"tiny": "Tiny", "small": "Small", "medium": "Medium", "large": "Large"}.get(param_class or "", "Unknown")
 
-def price_bucket(blended):
-    """AA Price 필터 버킷: Low(<$0.15) / Medium($0.15~1) / High(>$1). Blended 기준."""
+def price_bucket(blended, price_class=None):
+    """AA Price 필터 버킷: Low(<$0.15) / Medium($0.15~1) / High(>$1).
+
+    AA가 임베드로 주는 priceClass가 있으면 그대로 따른다(AA가 구간을 바꿔도 자동 추종).
+    조인이 비었을 때만 혼합가 임계값으로 계산한다.
+    """
+    aa = {"low": "Low", "medium": "Medium", "high": "High"}.get(price_class or "")
+    if aa: return aa
     if blended is None: return None
     return "Low" if blended < 0.15 else "Medium" if blended <= 1.0 else "High"
+
+
+def blended_from_columns(cache_hit, price_in, price_out):
+    """AA 혼합가 재계산: (7×캐시히트 + 2×입력 + 1×출력) / 10.
+
+    AA가 2026-07-21 표에서 'Blended USD/1M Tokens' 열을 내렸을 때 역산한 가중치다.
+    캐시히트가 없는 모델은 AA가 입력가를 그대로 쓴다.
+    표 값은 소수 둘째 자리 반올림이라 재계산 오차가 ±0.01 생길 수 있다 — 임베드 값이 우선.
+    """
+    if price_in is None or price_out is None: return None
+    cache = price_in if cache_hit is None else cache_hit
+    return (7 * cache + 2 * price_in + price_out) / 10
+
+
+def resolve_price(embedded, cache_hit, price_in, price_out):
+    """혼합가 결정: 임베드 원본값 우선, 없으면 표 컬럼으로 재계산.
+
+    임베드는 부동소수 원본(0.7020000000000001)이라 4자리로 정리한다.
+    표시용 2자리보다 여유를 두는 이유: 1M당 1센트 미만 모델이 전부 $0.00으로 뭉개진다.
+    """
+    v = embedded if embedded is not None else blended_from_columns(cache_hit, price_in, price_out)
+    return None if v is None else round(v, 4)
 
 def status_of(deprecated):
     """AA Status: deprecated=True → past, 그 외(false/결측) → current."""
@@ -150,7 +189,10 @@ def main():
             comps[ax] = parts
         recs.append({
             "name": col(m, "Model"), "creator": col(m, "Creator"), "license": col(m, "License"),
-            "intel": pct(col(m, H_INTEL)), "price": money(col(m, H_PRICE)),
+            "intel": pct(col(m, H_INTEL)),
+            "price": resolve_price(m.get("blendedPrice"), cache_hit_price(m),
+                                   money(col(m, H_PIN)), money(col(m, H_POUT))),
+            "priceClass": m.get("priceClass"),
             "price_in": money(col(m, H_PIN)), "price_out": money(col(m, H_POUT)),
             "ttft": pct(col(m, H_TTFT)), "total_resp": pct(col(m, H_TOTAL)),
             "speed": pct(col(m, H_SPEED)), "ctx": ctx(col(m, H_CTX)),
@@ -265,7 +307,7 @@ def main():
             "intel": m["intel"], "price": m["price"], "price_in": m["price_in"], "price_out": m["price_out"],
             "ttft": m["ttft"], "total_resp": m["total_resp"], "speed": m["speed"], "ctx": m["ctx"], "value": value,
             "size": m["size"], "params": m["params"], "reasoning": m["reasoning"],
-            "status": m["status"], "priceBucket": price_bucket(m["price"]),
+            "status": m["status"], "priceBucket": price_bucket(m["price"], m["priceClass"]),
             "radar": {ax: {"r": z[ax][1], "z": z[ax][0], "estimated": m["est"][ax],
                            "measured": m["s"][ax] is not None} for ax in AX_ORDER},
         })

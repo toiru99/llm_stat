@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 28.6, z: -0.3, r: 45.5, estimated: false }  # 추론
   coding: { s: 31.7, z: -0.64, r: 40.4, estimated: false }  # 코딩
   agentic: { s: 23.9, z: -0.49, r: 42.7, estimated: true }  # 에이전트
-  trust: { s: 16.7, z: -0.54, r: 41.9, estimated: true }  # 신뢰성
+  trust: { s: 16.7, z: -0.55, r: 41.8, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 34.6, z: -0.44, r: 43.4, estimated: true }  # 긴문맥
-  instruction: { s: 56.3, z: 0.13, r: 52.0, estimated: true }  # 지시 따르기
+  long_context: { s: 34.6, z: -0.44, r: 43.3, estimated: true }  # 긴문맥
+  instruction: { s: 55.9, z: 0.11, r: 51.7, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 2.0
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Claude 2.0
@@ -47,10 +47,10 @@ Anthropic · Proprietary · Unknown · 컨텍스트 100k · 종합지능 **4.0**
 | 추론 | 45.5 | -0.3 | 실측 | [[gpqa-diamond]] 34.0%×1.0 |
 | 코딩 | 40.4 | -0.64 | 실측 | [[scicode]] 19.0%×1.0 |
 | 에이전트 | 42.7 | -0.49 | 추정 | (추정) |
-| 신뢰성 | 41.9 | -0.54 | 추정 | (추정) |
+| 신뢰성 | 41.8 | -0.55 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 43.4 | -0.44 | 추정 | (추정) |
-| 지시 따르기 | 52.0 | +0.13 | 추정 | (추정) |
+| 긴문맥 | 43.3 | -0.44 | 추정 | (추정) |
+| 지시 따르기 | 51.7 | +0.11 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

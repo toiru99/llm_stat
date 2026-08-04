@@ -4,8 +4,8 @@ title: Solar Pro 3
 creator: Upstage
 license: Proprietary
 intelligence_index: 14.0
-price_blended_usd_1m: None
-output_speed_tps: 122.0
+price_blended_usd_1m: 0.1005
+output_speed_tps: 128.0
 context_window: 128000
 status: current
 size_class: Medium
@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 37.1, z: -0.2, r: 47.0, estimated: false }  # 전문 지식
   reasoning: { s: 30.4, z: -0.21, r: 46.9, estimated: false }  # 추론
-  coding: { s: 31.8, z: -0.63, r: 40.5, estimated: false }  # 코딩
+  coding: { s: 31.8, z: -0.64, r: 40.5, estimated: false }  # 코딩
   agentic: { s: 30.6, z: -0.23, r: 46.6, estimated: false }  # 에이전트
   trust: { s: 12.6, z: -0.73, r: 39.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Pro 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Solar Pro 3
@@ -37,7 +37,7 @@ Upstage · Proprietary · Medium(102B) · 컨텍스트 128k · 종합지능 **14
 - **약점**: 코딩, 신뢰성
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.6 · 혼합 $None/1M · 122.0 t/s · TTFT 2.42s · 128k ctx`
+`입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · 128.0 t/s · TTFT 2.37s · 128k ctx` · 가성비 139.3
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ Upstage · Proprietary · Medium(102B) · 컨텍스트 128k · 종합지능 **14
 |---|---|---|---|---|
 | 전문 지식 | 47.0 | -0.2 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 72.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
 | 추론 | 46.9 | -0.21 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 72.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
-| 코딩 | 40.5 | -0.63 | 실측 | [[scicode]] 25.0%×1.0, [[terminal-bench]] 8.0%×0.5 |
+| 코딩 | 40.5 | -0.64 | 실측 | [[scicode]] 25.0%×1.0, [[terminal-bench]] 8.0%×0.5 |
 | 에이전트 | 46.6 | -0.23 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 86.0%×1.0, [[tau3-banking]] 8.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
 | 신뢰성 | 39.0 | -0.73 | 실측 | [[aa-omniscience]] 12.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

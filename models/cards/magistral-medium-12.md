@@ -4,8 +4,8 @@ title: Magistral Medium 1.2
 creator: Mistral
 license: Proprietary
 intelligence_index: 18.0
-price_blended_usd_1m: None
-output_speed_tps: 62.0
+price_blended_usd_1m: 2.3
+output_speed_tps: 114.0
 context_window: 128000
 status: current
 size_class: Unknown
@@ -15,8 +15,8 @@ radar:
   knowledge: { s: 40.6, z: -0.03, r: 49.5, estimated: false }  # 전문 지식
   reasoning: { s: 31.2, z: -0.17, r: 47.5, estimated: false }  # 추론
   coding: { s: 49.9, z: 0.12, r: 51.8, estimated: false }  # 코딩
-  agentic: { s: 22.5, z: -0.54, r: 41.9, estimated: false }  # 에이전트
-  trust: { s: 46.0, z: 0.85, r: 62.7, estimated: false }  # 신뢰성
+  agentic: { s: 22.5, z: -0.54, r: 41.8, estimated: false }  # 에이전트
+  trust: { s: 46.0, z: 0.82, r: 62.3, estimated: false }  # 신뢰성
   multimodal: { s: 64.3, z: -0.36, r: 44.6, estimated: false }  # 멀티모달
   long_context: { s: 67.1, z: 0.52, r: 57.8, estimated: false }  # 긴문맥
   instruction: { s: 43.7, z: -0.39, r: 44.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Magistral Medium 1.2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Magistral Medium 1.2
@@ -37,7 +37,7 @@ Mistral · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **18.0**
 - **약점**: 지시 따르기, 에이전트
 
 ## 실용 지표
-`입력 $2.0 · 출력 $5.0 · 혼합 $None/1M · 62.0 t/s · TTFT 2.16s · 128k ctx`
+`입력 $2.0 · 출력 $5.0 · 혼합 $2.3/1M · 114.0 t/s · TTFT 2.15s · 128k ctx` · 가성비 7.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,8 +46,8 @@ Mistral · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **18.0**
 | 전문 지식 | 49.5 | -0.03 | 실측 | [[aa-omniscience]] 21.0%×1.0, [[gpqa-diamond]] 74.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
 | 추론 | 47.5 | -0.17 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 74.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
 | 코딩 | 51.8 | +0.12 | 실측 | [[scicode]] 39.0%×1.0, [[terminal-bench]] 13.0%×0.5 |
-| 에이전트 | 41.9 | -0.54 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 52.0%×1.0, [[tau3-banking]] 6.0%×1.0, [[terminal-bench]] 13.0%×1.0 |
-| 신뢰성 | 62.7 | +0.85 | 실측 | [[aa-omniscience]] 41.0%×1.0 |
+| 에이전트 | 41.8 | -0.54 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 52.0%×1.0, [[tau3-banking]] 6.0%×1.0, [[terminal-bench]] 13.0%×1.0 |
+| 신뢰성 | 62.3 | +0.82 | 실측 | [[aa-omniscience]] 41.0%×1.0 |
 | 멀티모달 | 44.6 | -0.36 | 실측 | [[mmmu-pro]] 60.0%×1.0 |
 | 긴문맥 | 57.8 | +0.52 | 실측 | [[aa-lcr]] 51.0%×1.0 |
 | 지시 따르기 | 44.1 | -0.39 | 실측 | [[ifbench]] 43.0%×1.0 |

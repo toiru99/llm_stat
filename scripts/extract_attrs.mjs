@@ -23,6 +23,11 @@ export function parseBalanced(text, start) {
   return null;
 }
 
+// 같은 모델이 소형(nav)·상세 두 형태로 여러 번 등장한다. 정보량이 많은 쪽을 남긴다.
+// paramClass 만으로 판정하면 파라미터 비공개(null) 독점 모델이 가격까지 잃는다.
+const detail = (a) =>
+  [a.paramClass, a.totalParameters, a.blendedPrice, a.priceClass].filter((v) => v != null).length;
+
 export function extractModelAttrs(text) {
   const byName = new Map();   // 정확한 name 키 (우선)
   const byShort = new Map();  // shortName 키 (보조 — 테이블 표기)
@@ -43,14 +48,15 @@ export function extractModelAttrs(text) {
       totalParameters: o.totalParameters ?? null,
       isReasoning: typeof o.isReasoning === 'boolean' ? o.isReasoning : null,
       deprecated: o.deprecated,
+      // 표에서 사라진 "Blended USD/1M Tokens"(= 캐시7:입력2:출력1 가중) 원본값
+      blendedPrice: typeof o.price1mBlended7To2To1 === 'number' ? o.price1mBlended7To2To1 : null,
+      priceClass: typeof o.priceClass === 'string' ? o.priceClass : null,
     };
     const prev = byName.get(o.name);
-    if (!(prev && prev.paramClass != null && attrs.paramClass == null)) // 상세 유지
-      byName.set(o.name, attrs);
+    if (!prev || detail(attrs) >= detail(prev)) byName.set(o.name, attrs);  // 상세 유지
     if (typeof o.shortName === 'string' && o.shortName !== o.name) {
       const prevS = byShort.get(o.shortName);
-      if (!(prevS && prevS.paramClass != null && attrs.paramClass == null))
-        byShort.set(o.shortName, attrs);
+      if (!prevS || detail(attrs) >= detail(prevS)) byShort.set(o.shortName, attrs);
     }
   }
   // 병합: shortName 항목을 먼저 깔고 정확 name 항목으로 덮어씀 (name 우선)

@@ -4,8 +4,8 @@ title: o3-mini
 creator: OpenAI
 license: Proprietary
 intelligence_index: 19.0
-price_blended_usd_1m: None
-output_speed_tps: 234.0
+price_blended_usd_1m: 1.045
+output_speed_tps: 223.0
 context_window: 200000
 status: past
 size_class: Unknown
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 46.4, z: 0.6, r: 59.0, estimated: false }  # 추론
   coding: { s: 48.0, z: 0.04, r: 50.6, estimated: false }  # 코딩
   agentic: { s: 19.9, z: -0.64, r: 40.4, estimated: false }  # 에이전트
-  trust: { s: 16.8, z: -0.53, r: 42.0, estimated: true }  # 신뢰성
+  trust: { s: 16.8, z: -0.54, r: 41.9, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 78.4, z: 0.86, r: 62.8, estimated: true }  # 긴문맥
   instruction: { s: 53.0, z: -0.01, r: 49.9, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — o3-mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # o3-mini
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **19.0** �
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $1.1 · 출력 $4.4 · 혼합 $None/1M · 234.0 t/s · TTFT 6.05s · 200k ctx`
+`입력 $1.1 · 출력 $4.4 · 혼합 $1.045/1M · 223.0 t/s · TTFT 5.81s · 200k ctx` · 가성비 18.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **19.0** �
 | 추론 | 59.0 | +0.6 | 실측 | [[gpqa-diamond]] 75.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
 | 코딩 | 50.6 | +0.04 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
 | 에이전트 | 40.4 | -0.64 | 실측 | [[tau2-bench]] 29.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
-| 신뢰성 | 42.0 | -0.53 | 추정 | (추정) |
+| 신뢰성 | 41.9 | -0.54 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 62.8 | +0.86 | 추정 | (추정) |
 | 지시 따르기 | 49.9 | -0.01 | 추정 | (추정) |

@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 36.8, z: -0.21, r: 46.8, estimated: false }  # 전문 지식
   reasoning: { s: 33.4, z: -0.06, r: 49.1, estimated: false }  # 추론
-  coding: { s: 26.7, z: -0.85, r: 37.3, estimated: false }  # 코딩
+  coding: { s: 26.7, z: -0.85, r: 37.2, estimated: false }  # 코딩
   agentic: { s: 23.1, z: -0.52, r: 42.2, estimated: true }  # 에이전트
   trust: { s: 9.7, z: -0.87, r: 36.9, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Pro 2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Solar Pro 2
@@ -45,7 +45,7 @@ Upstage · Proprietary · Small(30.9B) · 컨텍스트 64k · 종합지능 **13.
 |---|---|---|---|---|
 | 전문 지식 | 46.8 | -0.21 | 실측 | [[gpqa-diamond]] 58.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 49.1 | -0.06 | 실측 | [[gpqa-diamond]] 58.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 37.3 | -0.85 | 실측 | [[scicode]] 16.0%×1.0 |
+| 코딩 | 37.2 | -0.85 | 실측 | [[scicode]] 16.0%×1.0 |
 | 에이전트 | 42.2 | -0.52 | 추정 | (추정) |
 | 신뢰성 | 36.9 | -0.87 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |

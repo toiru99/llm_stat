@@ -4,7 +4,7 @@ title: Qwen2.5 72B
 creator: Alibaba
 license: Open
 intelligence_index: 10.0
-price_blended_usd_1m: None
+price_blended_usd_1m: 0.393
 output_speed_tps: None
 context_window: 131000
 status: past
@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 28.6, z: -0.6, r: 41.0, estimated: false }  # 전문 지식
   reasoning: { s: 17.4, z: -0.86, r: 37.1, estimated: false }  # 추론
-  coding: { s: 32.5, z: -0.6, r: 40.9, estimated: false }  # 코딩
+  coding: { s: 32.5, z: -0.61, r: 40.9, estimated: false }  # 코딩
   agentic: { s: 21.5, z: -0.58, r: 41.3, estimated: false }  # 에이전트
-  trust: { s: 16.1, z: -0.57, r: 41.5, estimated: false }  # 신뢰성
+  trust: { s: 16.1, z: -0.57, r: 41.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 26.3, z: -0.69, r: 39.7, estimated: false }  # 긴문맥
   instruction: { s: 35.2, z: -0.74, r: 38.9, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen2.5 72B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Qwen2.5 72B
@@ -37,7 +37,7 @@ Alibaba · Open · Medium(72B) · 컨텍스트 131k · 종합지능 **10.0** · 
 - **약점**: 지시 따르기, 추론
 
 ## 실용 지표
-`입력 $0.47 · 출력 $0.49 · 혼합 $None/1M · None t/s · TTFT Nones · 131k ctx`
+`입력 $0.47 · 출력 $0.49 · 혼합 $0.393/1M · None t/s · TTFT Nones · 131k ctx` · 가성비 25.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ Alibaba · Open · Medium(72B) · 컨텍스트 131k · 종합지능 **10.0** · 
 |---|---|---|---|---|
 | 전문 지식 | 41.0 | -0.6 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 49.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 37.1 | -0.86 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 49.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 40.9 | -0.6 | 실측 | [[scicode]] 27.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
+| 코딩 | 40.9 | -0.61 | 실측 | [[scicode]] 27.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
 | 에이전트 | 41.3 | -0.58 | 실측 | [[tau2-bench]] 35.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
-| 신뢰성 | 41.5 | -0.57 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
+| 신뢰성 | 41.4 | -0.57 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 39.7 | -0.69 | 실측 | [[aa-lcr]] 20.0%×1.0 |
 | 지시 따르기 | 38.9 | -0.74 | 실측 | [[ifbench]] 37.0%×1.0 |

@@ -4,8 +4,8 @@ title: Nova 2.0 Lite (medium)
 creator: Amazon
 license: Proprietary
 intelligence_index: 19.0
-price_blended_usd_1m: None
-output_speed_tps: 160.0
+price_blended_usd_1m: 0.52
+output_speed_tps: 162.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 38.1, z: -0.15, r: 47.8, estimated: false }  # 전문 지식
   reasoning: { s: 31.7, z: -0.14, r: 47.9, estimated: false }  # 추론
-  coding: { s: 49.7, z: 0.11, r: 51.7, estimated: false }  # 코딩
+  coding: { s: 49.7, z: 0.11, r: 51.6, estimated: false }  # 코딩
   agentic: { s: 51.3, z: 0.58, r: 58.6, estimated: false }  # 에이전트
   trust: { s: 10.3, z: -0.84, r: 37.4, estimated: false }  # 신뢰성
   multimodal: { s: 68.6, z: -0.15, r: 47.7, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova 2.0 Lite (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Nova 2.0 Lite (medium)
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **19.0**
 - **약점**: 멀티모달, 신뢰성
 
 ## 실용 지표
-`입력 $0.3 · 출력 $2.5 · 혼합 $None/1M · 160.0 t/s · TTFT 15.84s · 1M ctx`
+`입력 $0.3 · 출력 $2.5 · 혼합 $0.52/1M · 162.0 t/s · TTFT 16.35s · 1M ctx` · 가성비 36.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **19.0**
 |---|---|---|---|---|
 | 전문 지식 | 47.8 | -0.15 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 77.0%×0.4, [[humanitys-last-exam]] 9.0%×0.3 |
 | 추론 | 47.9 | -0.14 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 77.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
-| 코딩 | 51.7 | +0.11 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
+| 코딩 | 51.6 | +0.11 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
 | 에이전트 | 58.6 | +0.58 | 실측 | [[tau2-bench]] 76.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
 | 신뢰성 | 37.4 | -0.84 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
 | 멀티모달 | 47.7 | -0.15 | 실측 | [[mmmu-pro]] 63.0%×1.0 |

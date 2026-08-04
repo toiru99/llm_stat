@@ -4,7 +4,7 @@ title: Grok 3
 creator: SpaceXAI
 license: Proprietary
 intelligence_index: 18.0
-price_blended_usd_1m: None
+price_blended_usd_1m: 3.8763
 output_speed_tps: None
 context_window: 1000000
 status: past
@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 44.4, z: 0.14, r: 52.2, estimated: false }  # 전문 지식
   reasoning: { s: 26.0, z: -0.43, r: 43.6, estimated: false }  # 추론
-  coding: { s: 46.7, z: -0.02, r: 49.8, estimated: false }  # 코딩
+  coding: { s: 46.7, z: -0.02, r: 49.7, estimated: false }  # 코딩
   agentic: { s: 33.1, z: -0.13, r: 48.0, estimated: false }  # 에이전트
-  trust: { s: 16.1, z: -0.57, r: 41.5, estimated: false }  # 신뢰성
+  trust: { s: 16.1, z: -0.57, r: 41.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 72.4, z: 0.68, r: 60.2, estimated: false }  # 긴문맥
   instruction: { s: 49.3, z: -0.16, r: 47.6, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Grok 3
@@ -37,7 +37,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **18.0** �
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $4.0 · 출력 $20.0 · 혼합 $None/1M · None t/s · TTFT Nones · 1M ctx`
+`입력 $4.0 · 출력 $20.0 · 혼합 $3.8763/1M · None t/s · TTFT Nones · 1M ctx` · 가성비 4.6
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **18.0** �
 |---|---|---|---|---|
 | 전문 지식 | 52.2 | +0.14 | 실측 | [[aa-omniscience]] 28.0%×1.0, [[gpqa-diamond]] 69.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 43.6 | -0.43 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 69.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 49.8 | -0.02 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 11.0%×0.5 |
+| 코딩 | 49.7 | -0.02 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 11.0%×0.5 |
 | 에이전트 | 48.0 | -0.13 | 실측 | [[tau2-bench]] 49.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
-| 신뢰성 | 41.5 | -0.57 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
+| 신뢰성 | 41.4 | -0.57 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 60.2 | +0.68 | 실측 | [[aa-lcr]] 55.0%×1.0 |
 | 지시 따르기 | 47.6 | -0.16 | 실측 | [[ifbench]] 47.0%×1.0 |

@@ -4,8 +4,8 @@ title: GPT-5.2 (xhigh)
 creator: OpenAI
 license: Proprietary
 intelligence_index: 42.0
-price_blended_usd_1m: None
-output_speed_tps: 79.0
+price_blended_usd_1m: 1.8725
+output_speed_tps: 90.0
 context_window: 400000
 status: past
 size_class: Unknown
@@ -13,10 +13,10 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 76.1, z: 1.64, r: 74.6, estimated: false }  # 전문 지식
-  reasoning: { s: 66.0, z: 1.58, r: 73.8, estimated: false }  # 추론
-  coding: { s: 81.5, z: 1.44, r: 71.5, estimated: false }  # 코딩
+  reasoning: { s: 66.0, z: 1.59, r: 73.8, estimated: false }  # 추론
+  coding: { s: 81.5, z: 1.43, r: 71.5, estimated: false }  # 코딩
   agentic: { s: 78.5, z: 1.64, r: 74.5, estimated: false }  # 에이전트
-  trust: { s: 21.8, z: -0.29, r: 45.6, estimated: false }  # 신뢰성
+  trust: { s: 21.8, z: -0.31, r: 45.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 96.1, z: 1.38, r: 70.7, estimated: false }  # 긴문맥
   instruction: { s: 88.7, z: 1.47, r: 72.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.2 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # GPT-5.2 (xhigh)
@@ -37,17 +37,17 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **42.0** �
 - **약점**: 긴문맥, 신뢰성
 
 ## 실용 지표
-`입력 $1.75 · 출력 $14.0 · 혼합 $None/1M · 79.0 t/s · TTFT 136.61s · 400k ctx`
+`입력 $1.75 · 출력 $14.0 · 혼합 $1.8725/1M · 90.0 t/s · TTFT 156.31s · 400k ctx` · 가성비 22.4
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 74.6 | +1.64 | 실측 | [[aa-omniscience]] 44.0%×1.0, [[gpqa-diamond]] 90.0%×0.4, [[humanitys-last-exam]] 35.0%×0.3 |
-| 추론 | 73.8 | +1.58 | 실측 | [[critpt]] 12.0%×1.0, [[gpqa-diamond]] 90.0%×1.0, [[humanitys-last-exam]] 35.0%×1.0 |
-| 코딩 | 71.5 | +1.44 | 실측 | [[scicode]] 52.0%×1.0, [[terminal-bench]] 47.0%×0.5 |
+| 추론 | 73.8 | +1.59 | 실측 | [[critpt]] 12.0%×1.0, [[gpqa-diamond]] 90.0%×1.0, [[humanitys-last-exam]] 35.0%×1.0 |
+| 코딩 | 71.5 | +1.43 | 실측 | [[scicode]] 52.0%×1.0, [[terminal-bench]] 47.0%×0.5 |
 | 에이전트 | 74.5 | +1.64 | 실측 | [[tau2-bench]] 85.0%×1.0, [[terminal-bench]] 47.0%×1.0 |
-| 신뢰성 | 45.6 | -0.29 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
+| 신뢰성 | 45.4 | -0.31 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 70.7 | +1.38 | 실측 | [[aa-lcr]] 73.0%×1.0 |
 | 지시 따르기 | 72.1 | +1.47 | 실측 | [[ifbench]] 75.0%×1.0 |

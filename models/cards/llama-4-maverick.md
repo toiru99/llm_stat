@@ -4,7 +4,7 @@ title: Llama 4 Maverick
 creator: Meta
 license: Open
 intelligence_index: 14.0
-price_blended_usd_1m: None
+price_blended_usd_1m: 0.327
 output_speed_tps: 111.0
 context_window: 1000000
 status: current
@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 39.9, z: -0.07, r: 49.0, estimated: false }  # 전문 지식
   reasoning: { s: 25.2, z: -0.47, r: 43.0, estimated: false }  # 추론
-  coding: { s: 40.2, z: -0.28, r: 45.7, estimated: false }  # 코딩
+  coding: { s: 40.2, z: -0.29, r: 45.7, estimated: false }  # 코딩
   agentic: { s: 10.1, z: -1.02, r: 34.7, estimated: false }  # 에이전트
-  trust: { s: 13.8, z: -0.68, r: 39.9, estimated: false }  # 신뢰성
+  trust: { s: 13.8, z: -0.68, r: 39.8, estimated: false }  # 신뢰성
   multimodal: { s: 67.1, z: -0.22, r: 46.7, estimated: false }  # 멀티모달
   long_context: { s: 60.5, z: 0.33, r: 54.9, estimated: false }  # 긴문맥
   instruction: { s: 43.7, z: -0.39, r: 44.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 4 Maverick
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Llama 4 Maverick
@@ -37,7 +37,7 @@ Meta · Open · Large(402B) · 컨텍스트 1M · 종합지능 **14.0**
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $0.27 · 출력 $0.85 · 혼합 $None/1M · 111.0 t/s · TTFT 0.93s · 1M ctx`
+`입력 $0.27 · 출력 $0.91 · 혼합 $0.327/1M · 111.0 t/s · TTFT 0.93s · 1M ctx` · 가성비 42.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ Meta · Open · Large(402B) · 컨텍스트 1M · 종합지능 **14.0**
 |---|---|---|---|---|
 | 전문 지식 | 49.0 | -0.07 | 실측 | [[aa-omniscience]] 24.0%×1.0, [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 43.0 | -0.47 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 67.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 45.7 | -0.28 | 실측 | [[scicode]] 33.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
+| 코딩 | 45.7 | -0.29 | 실측 | [[scicode]] 33.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
 | 에이전트 | 34.7 | -1.02 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 18.0%×1.0, [[tau3-banking]] 4.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
-| 신뢰성 | 39.9 | -0.68 | 실측 | [[aa-omniscience]] 13.0%×1.0 |
+| 신뢰성 | 39.8 | -0.68 | 실측 | [[aa-omniscience]] 13.0%×1.0 |
 | 멀티모달 | 46.7 | -0.22 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
 | 긴문맥 | 54.9 | +0.33 | 실측 | [[aa-lcr]] 46.0%×1.0 |
 | 지시 따르기 | 44.1 | -0.39 | 실측 | [[ifbench]] 43.0%×1.0 |

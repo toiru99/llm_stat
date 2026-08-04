@@ -4,7 +4,7 @@ title: Qwen3 14B
 creator: Alibaba
 license: Open
 intelligence_index: 10.0
-price_blended_usd_1m: None
+price_blended_usd_1m: 0.455
 output_speed_tps: 47.0
 context_window: 32800
 status: past
@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 28.7, z: -0.59, r: 41.1, estimated: false }  # 전문 지식
   reasoning: { s: 21.8, z: -0.64, r: 40.4, estimated: false }  # 추론
-  coding: { s: 37.6, z: -0.39, r: 44.1, estimated: false }  # 코딩
+  coding: { s: 37.6, z: -0.4, r: 44.1, estimated: false }  # 코딩
   agentic: { s: 14.0, z: -0.87, r: 36.9, estimated: false }  # 에이전트
-  trust: { s: 27.6, z: -0.02, r: 49.7, estimated: false }  # 신뢰성
+  trust: { s: 27.6, z: -0.04, r: 49.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.47, r: 28.0, estimated: false }  # 긴문맥
   instruction: { s: 40.8, z: -0.51, r: 42.4, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 14B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Qwen3 14B
@@ -37,7 +37,7 @@ Alibaba · Open · Small(14.8B) · 컨텍스트 32k · 종합지능 **10.0** · 
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.35 · 출력 $4.2 · 혼합 $None/1M · 47.0 t/s · TTFT 3.61s · 32k ctx`
+`입력 $0.35 · 출력 $4.2 · 혼합 $0.455/1M · 47.0 t/s · TTFT 14.54s · 32k ctx` · 가성비 22.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ Alibaba · Open · Small(14.8B) · 컨텍스트 32k · 종합지능 **10.0** · 
 |---|---|---|---|---|
 | 전문 지식 | 41.1 | -0.59 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 60.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 40.4 | -0.64 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 60.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 44.1 | -0.39 | 실측 | [[scicode]] 32.0%×1.0, [[terminal-bench]] 4.0%×0.5 |
+| 코딩 | 44.1 | -0.4 | 실측 | [[scicode]] 32.0%×1.0, [[terminal-bench]] 4.0%×0.5 |
 | 에이전트 | 36.9 | -0.87 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 35.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 4.0%×1.0 |
-| 신뢰성 | 49.7 | -0.02 | 실측 | [[aa-omniscience]] 25.0%×1.0 |
+| 신뢰성 | 49.4 | -0.04 | 실측 | [[aa-omniscience]] 25.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.0 | -1.47 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 42.4 | -0.51 | 실측 | [[ifbench]] 41.0%×1.0 |

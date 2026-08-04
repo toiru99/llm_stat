@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 46.7, z: 0.61, r: 59.2, estimated: false }  # 추론
   coding: { s: 45.7, z: -0.06, r: 49.1, estimated: false }  # 코딩
   agentic: { s: 44.3, z: 0.31, r: 54.6, estimated: false }  # 에이전트
-  trust: { s: 36.8, z: 0.41, r: 56.2, estimated: false }  # 신뢰성
+  trust: { s: 36.8, z: 0.39, r: 55.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 97.4, z: 1.42, r: 71.3, estimated: false }  # 긴문맥
-  instruction: { s: 78.9, z: 1.06, r: 66.0, estimated: false }  # 지시 따르기
+  instruction: { s: 78.9, z: 1.06, r: 65.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — KAT-Coder-Pro V1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # KAT-Coder-Pro V1
@@ -47,10 +47,10 @@ KwaiKAT · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **28.0**
 | 추론 | 59.2 | +0.61 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 33.0%×1.0 |
 | 코딩 | 49.1 | -0.06 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 9.0%×0.5 |
 | 에이전트 | 54.6 | +0.31 | 실측 | [[gdpval]] 20.0%×1.0, [[tau2-bench]] 89.0%×1.0, [[terminal-bench]] 9.0%×1.0 |
-| 신뢰성 | 56.2 | +0.41 | 실측 | [[aa-omniscience]] 33.0%×1.0 |
+| 신뢰성 | 55.9 | +0.39 | 실측 | [[aa-omniscience]] 33.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 71.3 | +1.42 | 실측 | [[aa-lcr]] 74.0%×1.0 |
-| 지시 따르기 | 66.0 | +1.06 | 실측 | [[ifbench]] 68.0%×1.0 |
+| 지시 따르기 | 65.9 | +1.06 | 실측 | [[ifbench]] 68.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

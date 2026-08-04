@@ -12,11 +12,11 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 50.9, z: 0.45, r: 56.7, estimated: false }  # 전문 지식
+  knowledge: { s: 50.9, z: 0.45, r: 56.8, estimated: false }  # 전문 지식
   reasoning: { s: 35.1, z: 0.03, r: 50.4, estimated: false }  # 추론
-  coding: { s: 54.1, z: 0.3, r: 54.4, estimated: false }  # 코딩
+  coding: { s: 54.1, z: 0.29, r: 54.4, estimated: false }  # 코딩
   agentic: { s: 36.1, z: -0.01, r: 49.8, estimated: false }  # 에이전트
-  trust: { s: 11.5, z: -0.78, r: 38.2, estimated: false }  # 신뢰성
+  trust: { s: 11.5, z: -0.79, r: 38.2, estimated: false }  # 신뢰성
   multimodal: { s: 82.9, z: 0.54, r: 58.1, estimated: false }  # 멀티모달
   long_context: { s: 84.2, z: 1.03, r: 65.4, estimated: false }  # 긴문맥
   instruction: { s: 56.3, z: 0.13, r: 52.0, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.5 Flash (Sep)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Gemini 2.5 Flash (Sep)
@@ -43,11 +43,11 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **24.0** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 56.7 | +0.45 | 실측 | [[aa-omniscience]] 29.0%×1.0, [[gpqa-diamond]] 79.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
+| 전문 지식 | 56.8 | +0.45 | 실측 | [[aa-omniscience]] 29.0%×1.0, [[gpqa-diamond]] 79.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
 | 추론 | 50.4 | +0.03 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 79.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
-| 코딩 | 54.4 | +0.3 | 실측 | [[scicode]] 41.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
+| 코딩 | 54.4 | +0.29 | 실측 | [[scicode]] 41.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
 | 에이전트 | 49.8 | -0.01 | 실측 | [[tau2-bench]] 46.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
-| 신뢰성 | 38.2 | -0.78 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
+| 신뢰성 | 38.2 | -0.79 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | 58.1 | +0.54 | 실측 | [[mmmu-pro]] 73.0%×1.0 |
 | 긴문맥 | 65.4 | +1.03 | 실측 | [[aa-lcr]] 64.0%×1.0 |
 | 지시 따르기 | 52.0 | +0.13 | 실측 | [[ifbench]] 52.0%×1.0 |

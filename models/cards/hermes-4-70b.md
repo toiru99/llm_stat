@@ -4,8 +4,8 @@ title: Hermes 4 70B
 creator: Nous Research
 license: Open
 intelligence_index: 10.0
-price_blended_usd_1m: None
-output_speed_tps: 83.0
+price_blended_usd_1m: 0.157
+output_speed_tps: 90.0
 context_window: 128000
 status: current
 size_class: Medium
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 28.3, z: -0.31, r: 45.3, estimated: false }  # 추론
   coding: { s: 40.3, z: -0.28, r: 45.8, estimated: false }  # 코딩
   agentic: { s: 15.4, z: -0.82, r: 37.7, estimated: false }  # 에이전트
-  trust: { s: 4.6, z: -1.11, r: 33.3, estimated: false }  # 신뢰성
+  trust: { s: 4.6, z: -1.11, r: 33.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 9.2, z: -1.19, r: 32.1, estimated: false }  # 긴문맥
   instruction: { s: 26.8, z: -1.09, r: 33.7, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hermes 4 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Hermes 4 70B
@@ -37,7 +37,7 @@ Nous Research · Open · Medium(70.6B) · 컨텍스트 128k · 종합지능 **10
 - **약점**: 신뢰성, 긴문맥
 
 ## 실용 지표
-`입력 $0.13 · 출력 $0.4 · 혼합 $None/1M · 83.0 t/s · TTFT 1.37s · 128k ctx`
+`입력 $0.13 · 출력 $0.4 · 혼합 $0.157/1M · 90.0 t/s · TTFT 1.37s · 128k ctx` · 가성비 63.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Nous Research · Open · Medium(70.6B) · 컨텍스트 128k · 종합지능 **10
 | 추론 | 45.3 | -0.31 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 70.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
 | 코딩 | 45.8 | -0.28 | 실측 | [[scicode]] 34.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
 | 에이전트 | 37.7 | -0.82 | 실측 | [[tau2-bench]] 23.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
-| 신뢰성 | 33.3 | -1.11 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
+| 신뢰성 | 33.4 | -1.11 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 32.1 | -1.19 | 실측 | [[aa-lcr]] 7.0%×1.0 |
 | 지시 따르기 | 33.7 | -1.09 | 실측 | [[ifbench]] 31.0%×1.0 |

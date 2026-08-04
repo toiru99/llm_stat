@@ -4,7 +4,7 @@ title: o1-preview
 creator: OpenAI
 license: Proprietary
 intelligence_index: 17.0
-price_blended_usd_1m: None
+price_blended_usd_1m: 15.675
 output_speed_tps: None
 context_window: 128000
 status: past
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — o1-preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # o1-preview
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **17.0** �
 - **약점**: —
 
 ## 실용 지표
-`입력 $16.5 · 출력 $66.0 · 혼합 $None/1M · None t/s · TTFT Nones · 128k ctx`
+`입력 $16.5 · 출력 $66.0 · 혼합 $15.675/1M · None t/s · TTFT Nones · 128k ctx` · 가성비 1.1
 
 ## 레이더 8축 (평균=50 기준선)
 

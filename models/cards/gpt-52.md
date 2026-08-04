@@ -4,8 +4,8 @@ title: GPT-5.2
 creator: OpenAI
 license: Proprietary
 intelligence_index: 26.0
-price_blended_usd_1m: None
-output_speed_tps: 67.0
+price_blended_usd_1m: 1.8725
+output_speed_tps: 73.0
 context_window: 400000
 status: past
 size_class: Unknown
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 29.1, z: -0.27, r: 45.9, estimated: false }  # 추론
   coding: { s: 60.6, z: 0.56, r: 58.5, estimated: false }  # 코딩
   agentic: { s: 43.4, z: 0.27, r: 54.1, estimated: false }  # 에이전트
-  trust: { s: 43.7, z: 0.74, r: 61.1, estimated: false }  # 신뢰성
+  trust: { s: 43.7, z: 0.71, r: 60.7, estimated: false }  # 신뢰성
   multimodal: { s: 72.9, z: 0.06, r: 50.8, estimated: false }  # 멀티모달
   long_context: { s: 50.0, z: 0.01, r: 50.2, estimated: false }  # 긴문맥
   instruction: { s: 49.3, z: -0.16, r: 47.6, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # GPT-5.2
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **26.0** �
 - **약점**: 지시 따르기, 추론
 
 ## 실용 지표
-`입력 $1.75 · 출력 $14.0 · 혼합 $None/1M · 67.0 t/s · TTFT 0.91s · 400k ctx`
+`입력 $1.75 · 출력 $14.0 · 혼합 $1.8725/1M · 73.0 t/s · TTFT 0.88s · 400k ctx` · 가성비 13.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **26.0** �
 | 추론 | 45.9 | -0.27 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 71.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
 | 코딩 | 58.5 | +0.56 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 32.0%×0.5 |
 | 에이전트 | 54.1 | +0.27 | 실측 | [[tau2-bench]] 46.0%×1.0, [[tau3-banking]] 12.0%×1.0, [[terminal-bench]] 32.0%×1.0 |
-| 신뢰성 | 61.1 | +0.74 | 실측 | [[aa-omniscience]] 39.0%×1.0 |
+| 신뢰성 | 60.7 | +0.71 | 실측 | [[aa-omniscience]] 39.0%×1.0 |
 | 멀티모달 | 50.8 | +0.06 | 실측 | [[mmmu-pro]] 66.0%×1.0 |
 | 긴문맥 | 50.2 | +0.01 | 실측 | [[aa-lcr]] 38.0%×1.0 |
 | 지시 따르기 | 47.6 | -0.16 | 실측 | [[ifbench]] 47.0%×1.0 |

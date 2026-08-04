@@ -4,7 +4,7 @@ title: Mixtral 8x7B
 creator: Mistral
 license: Open
 intelligence_index: 2.0
-price_blended_usd_1m: None
+price_blended_usd_1m: 0.475
 output_speed_tps: None
 context_window: 32800
 status: past
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 15.2, z: -0.97, r: 35.4, estimated: false }  # 추론
   coding: { s: 5.0, z: -1.75, r: 23.7, estimated: false }  # 코딩
   agentic: { s: 10.7, z: -1.0, r: 35.0, estimated: true }  # 에이전트
-  trust: { s: 14.5, z: -0.64, r: 40.4, estimated: true }  # 신뢰성
+  trust: { s: 14.5, z: -0.65, r: 40.3, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 1.8, z: -1.41, r: 28.8, estimated: true }  # 긴문맥
   instruction: { s: 32.1, z: -0.87, r: 37.0, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mixtral 8x7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Mixtral 8x7B
@@ -37,7 +37,7 @@ Mistral · Open · Medium(46.7B) · 컨텍스트 32k · 종합지능 **2.0** · 
 - **약점**: 긴문맥, 코딩
 
 ## 실용 지표
-`입력 $0.45 · 출력 $0.7 · 혼합 $None/1M · None t/s · TTFT Nones · 32k ctx`
+`입력 $0.45 · 출력 $0.7 · 혼합 $0.475/1M · None t/s · TTFT Nones · 32k ctx` · 가성비 4.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Mistral · Open · Medium(46.7B) · 컨텍스트 32k · 종합지능 **2.0** · 
 | 추론 | 35.4 | -0.97 | 실측 | [[gpqa-diamond]] 29.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 23.7 | -1.75 | 실측 | [[scicode]] 3.0%×1.0 |
 | 에이전트 | 35.0 | -1.0 | 추정 | (추정) |
-| 신뢰성 | 40.4 | -0.64 | 추정 | (추정) |
+| 신뢰성 | 40.3 | -0.65 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.8 | -1.41 | 추정 | (추정) |
 | 지시 따르기 | 37.0 | -0.87 | 추정 | (추정) |

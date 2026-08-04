@@ -4,8 +4,8 @@ title: MiMo-V2.5-Pro
 creator: Xiaomi
 license: Open
 intelligence_index: 42.0
-price_blended_usd_1m: None
-output_speed_tps: 39.0
+price_blended_usd_1m: 0.1765
+output_speed_tps: 47.0
 context_window: 1000000
 status: current
 size_class: Large
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 55.9, z: 1.07, r: 66.1, estimated: false }  # 추론
   coding: { s: 77.3, z: 1.26, r: 68.9, estimated: false }  # 코딩
   agentic: { s: 52.0, z: 0.6, r: 59.1, estimated: false }  # 에이전트
-  trust: { s: 85.1, z: 2.7, r: 90.5, estimated: false }  # 신뢰성
+  trust: { s: 85.1, z: 2.64, r: 89.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 96.1, z: 1.38, r: 70.7, estimated: false }  # 긴문맥
   instruction: { s: 95.8, z: 1.76, r: 76.4, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2.5-Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # MiMo-V2.5-Pro
@@ -37,7 +37,7 @@ Xiaomi · Open · Large(1023B) · 컨텍스트 1M · 종합지능 **42.0**
 - **약점**: 전문 지식, 에이전트
 
 ## 실용 지표
-`입력 $0.43 · 출력 $0.87 · 혼합 $None/1M · 39.0 t/s · TTFT 2.6s · 1M ctx`
+`입력 $0.43 · 출력 $0.87 · 혼합 $0.1765/1M · 47.0 t/s · TTFT 2.54s · 1M ctx` · 가성비 238.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Xiaomi · Open · Large(1023B) · 컨텍스트 1M · 종합지능 **42.0**
 | 추론 | 66.1 | +1.07 | 실측 | [[critpt]] 4.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 34.0%×1.0 |
 | 코딩 | 68.9 | +1.26 | 실측 | [[scicode]] 50.0%×1.0, [[terminal-bench]] 43.0%×0.5 |
 | 에이전트 | 59.1 | +0.6 | 실측 | [[apex-agents]] 2.0%×1.0, [[gdpval]] 38.0%×1.0, [[itbench]] 38.0%×1.0, [[tau2-bench]] 94.0%×1.0, [[tau3-banking]] 9.0%×1.0, [[terminal-bench]] 43.0%×1.0 |
-| 신뢰성 | 90.5 | +2.7 | 실측 | [[aa-omniscience]] 75.0%×1.0 |
+| 신뢰성 | 89.6 | +2.64 | 실측 | [[aa-omniscience]] 75.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 70.7 | +1.38 | 실측 | [[aa-lcr]] 73.0%×1.0 |
 | 지시 따르기 | 76.4 | +1.76 | 실측 | [[ifbench]] 80.0%×1.0 |

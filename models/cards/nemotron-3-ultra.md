@@ -4,19 +4,19 @@ title: Nemotron 3 Ultra
 creator: NVIDIA
 license: Open
 intelligence_index: 38.0
-price_blended_usd_1m: None
-output_speed_tps: 156.0
+price_blended_usd_1m: 0.535
+output_speed_tps: 131.0
 context_window: 262000
 status: current
 size_class: Large
 params_b: 550
 is_reasoning: true
 radar:
-  knowledge: { s: 51.0, z: 0.46, r: 56.8, estimated: false }  # 전문 지식
+  knowledge: { s: 51.0, z: 0.46, r: 56.9, estimated: false }  # 전문 지식
   reasoning: { s: 50.3, z: 0.8, r: 61.9, estimated: false }  # 추론
   coding: { s: 62.6, z: 0.65, r: 59.7, estimated: false }  # 코딩
   agentic: { s: 57.0, z: 0.8, r: 62.0, estimated: false }  # 에이전트
-  trust: { s: 80.5, z: 2.48, r: 87.2, estimated: false }  # 신뢰성
+  trust: { s: 80.5, z: 2.43, r: 86.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 88.2, z: 1.14, r: 67.2, estimated: false }  # 긴문맥
   instruction: { s: 97.2, z: 1.82, r: 77.3, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3 Ultra
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Nemotron 3 Ultra
@@ -37,17 +37,17 @@ NVIDIA · Open · Large(550B) · 컨텍스트 262k · 종합지능 **38.0**
 - **약점**: 코딩, 전문 지식
 
 ## 실용 지표
-`입력 $0.68 · 출력 $2.67 · 혼합 $None/1M · 156.0 t/s · TTFT 1.7s · 262k ctx`
+`입력 $0.6 · 출력 $2.75 · 혼합 $0.535/1M · 131.0 t/s · TTFT 1.71s · 262k ctx` · 가성비 71.0
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 56.8 | +0.46 | 실측 | [[aa-omniscience]] 22.0%×1.0, [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 27.0%×0.3 |
+| 전문 지식 | 56.9 | +0.46 | 실측 | [[aa-omniscience]] 22.0%×1.0, [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 27.0%×0.3 |
 | 추론 | 61.9 | +0.8 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 27.0%×1.0 |
 | 코딩 | 59.7 | +0.65 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 36.0%×0.5 |
 | 에이전트 | 62.0 | +0.8 | 실측 | [[gdpval]] 33.0%×1.0, [[tau2-bench]] 83.0%×1.0, [[tau3-banking]] 14.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
-| 신뢰성 | 87.2 | +2.48 | 실측 | [[aa-omniscience]] 71.0%×1.0 |
+| 신뢰성 | 86.4 | +2.43 | 실측 | [[aa-omniscience]] 71.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 67.2 | +1.14 | 실측 | [[aa-lcr]] 67.0%×1.0 |
 | 지시 따르기 | 77.3 | +1.82 | 실측 | [[ifbench]] 81.0%×1.0 |

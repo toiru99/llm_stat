@@ -4,7 +4,7 @@ title: Nova 2.0 Omni (medium)
 creator: Amazon
 license: Proprietary
 intelligence_index: 21.0
-price_blended_usd_1m: None
+price_blended_usd_1m: 0.52
 output_speed_tps: None
 context_window: 1000000
 status: current
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova 2.0 Omni (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Nova 2.0 Omni (medium)
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **21.0**
 - **약점**: 멀티모달, 신뢰성
 
 ## 실용 지표
-`입력 $0.3 · 출력 $2.5 · 혼합 $None/1M · None t/s · TTFT Nones · 1M ctx`
+`입력 $0.3 · 출력 $2.5 · 혼합 $0.52/1M · None t/s · TTFT Nones · 1M ctx` · 가성비 40.4
 
 ## 레이더 8축 (평균=50 기준선)
 

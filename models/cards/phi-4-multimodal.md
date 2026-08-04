@@ -4,7 +4,7 @@ title: Phi-4 Multimodal
 creator: Microsoft
 license: Open
 intelligence_index: 5.0
-price_blended_usd_1m: None
+price_blended_usd_1m: 0
 output_speed_tps: 18.0
 context_window: 128000
 status: current
@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 17.4, z: -1.12, r: 33.1, estimated: false }  # 전문 지식
   reasoning: { s: 16.0, z: -0.93, r: 36.0, estimated: false }  # 추론
-  coding: { s: 18.3, z: -1.2, r: 32.1, estimated: false }  # 코딩
+  coding: { s: 18.3, z: -1.2, r: 32.0, estimated: false }  # 코딩
   agentic: { s: 15.7, z: -0.81, r: 37.9, estimated: true }  # 에이전트
-  trust: { s: 24.4, z: -0.17, r: 47.4, estimated: true }  # 신뢰성
+  trust: { s: 24.4, z: -0.19, r: 47.2, estimated: true }  # 신뢰성
   multimodal: { s: 0.0, z: -3.46, r: 0, estimated: false }  # 멀티모달
   long_context: { s: 7.6, z: -1.24, r: 31.4, estimated: true }  # 긴문맥
   instruction: { s: 24.8, z: -1.17, r: 32.4, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Phi-4 Multimodal
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Phi-4 Multimodal
@@ -37,7 +37,7 @@ Microsoft · Open · Small(5.6B) · 컨텍스트 128k · 종합지능 **5.0**
 - **약점**: 긴문맥, 멀티모달
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $None/1M · 18.0 t/s · TTFT 0.81s · 128k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 18.0 t/s · TTFT 0.81s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ Microsoft · Open · Small(5.6B) · 컨텍스트 128k · 종합지능 **5.0**
 |---|---|---|---|---|
 | 전문 지식 | 33.1 | -1.12 | 실측 | [[gpqa-diamond]] 32.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 36.0 | -0.93 | 실측 | [[gpqa-diamond]] 32.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 32.1 | -1.2 | 실측 | [[scicode]] 11.0%×1.0 |
+| 코딩 | 32.0 | -1.2 | 실측 | [[scicode]] 11.0%×1.0 |
 | 에이전트 | 37.9 | -0.81 | 추정 | (추정) |
-| 신뢰성 | 47.4 | -0.17 | 추정 | (추정) |
+| 신뢰성 | 47.2 | -0.19 | 추정 | (추정) |
 | 멀티모달 | 0 | -3.46 | 실측 | [[mmmu-pro]] 15.0%×1.0 |
 | 긴문맥 | 31.4 | -1.24 | 추정 | (추정) |
 | 지시 따르기 | 32.4 | -1.17 | 추정 | (추정) |

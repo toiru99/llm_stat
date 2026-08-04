@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 34.0, z: -0.02, r: 49.6, estimated: false }  # 추론
   coding: { s: 50.0, z: 0.12, r: 51.8, estimated: false }  # 코딩
   agentic: { s: 38.4, z: 0.08, r: 51.1, estimated: false }  # 에이전트
-  trust: { s: 36.8, z: 0.41, r: 56.2, estimated: false }  # 신뢰성
+  trust: { s: 36.8, z: 0.39, r: 55.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 63.2, z: 0.4, r: 56.1, estimated: false }  # 긴문맥
   instruction: { s: 45.1, z: -0.33, r: 45.0, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # GLM-4.5
@@ -33,7 +33,7 @@ timestamp: 2026-08-03T00:00:00Z
 Z AI · Open · Large(355B) · 컨텍스트 128k · 종합지능 **19.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 신뢰성, 긴문맥
+- **강점**: 긴문맥, 신뢰성
 - **약점**: 추론, 지시 따르기
 
 ## 실용 지표
@@ -47,7 +47,7 @@ Z AI · Open · Large(355B) · 컨텍스트 128k · 종합지능 **19.0** · ⚠
 | 추론 | 49.6 | -0.02 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
 | 코딩 | 51.8 | +0.12 | 실측 | [[scicode]] 35.0%×1.0, [[terminal-bench]] 22.0%×0.5 |
 | 에이전트 | 51.1 | +0.08 | 실측 | [[tau2-bench]] 43.0%×1.0, [[terminal-bench]] 22.0%×1.0 |
-| 신뢰성 | 56.2 | +0.41 | 실측 | [[aa-omniscience]] 33.0%×1.0 |
+| 신뢰성 | 55.9 | +0.39 | 실측 | [[aa-omniscience]] 33.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 56.1 | +0.4 | 실측 | [[aa-lcr]] 48.0%×1.0 |
 | 지시 따르기 | 45.0 | -0.33 | 실측 | [[ifbench]] 44.0%×1.0 |

@@ -4,8 +4,8 @@ title: GLM-5.2 (max)
 creator: Z AI
 license: Open
 intelligence_index: 51.0
-price_blended_usd_1m: None
-output_speed_tps: 172.0
+price_blended_usd_1m: 0.8602
+output_speed_tps: 196.0
 context_window: 1000000
 status: current
 size_class: Large
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 78.2, z: 2.2, r: 83.0, estimated: false }  # 추론
   coding: { s: 81.3, z: 1.43, r: 71.4, estimated: false }  # 코딩
   agentic: { s: 79.7, z: 1.68, r: 75.2, estimated: false }  # 에이전트
-  trust: { s: 81.6, z: 2.54, r: 88.1, estimated: false }  # 신뢰성
+  trust: { s: 81.6, z: 2.48, r: 87.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 93.4, z: 1.3, r: 69.5, estimated: false }  # 긴문맥
   instruction: { s: 85.9, z: 1.35, r: 70.3, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5.2 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # GLM-5.2 (max)
@@ -37,7 +37,7 @@ Z AI · Open · Large(753B) · 컨텍스트 1M · 종합지능 **51.0**
 - **약점**: 긴문맥, 전문 지식
 
 ## 실용 지표
-`입력 $1.4 · 출력 $4.4 · 혼합 $None/1M · 172.0 t/s · TTFT 1.53s · 1M ctx`
+`입력 $1.35 · 출력 $4.29 · 혼합 $0.8602/1M · 196.0 t/s · TTFT 1.57s · 1M ctx` · 가성비 59.3
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Z AI · Open · Large(753B) · 컨텍스트 1M · 종합지능 **51.0**
 | 추론 | 83.0 | +2.2 | 실측 | [[critpt]] 21.0%×1.0, [[gpqa-diamond]] 89.0%×1.0, [[humanitys-last-exam]] 40.0%×1.0 |
 | 코딩 | 71.4 | +1.43 | 실측 | [[scicode]] 50.0%×1.0, [[terminal-bench]] 51.0%×0.5 |
 | 에이전트 | 75.2 | +1.68 | 실측 | [[apex-agents]] 34.0%×1.0, [[gdpval]] 50.0%×1.0, [[itbench]] 43.0%×1.0, [[tau2-bench]] 99.0%×1.0, [[tau3-banking]] 27.0%×1.0, [[terminal-bench]] 51.0%×1.0 |
-| 신뢰성 | 88.1 | +2.54 | 실측 | [[aa-omniscience]] 72.0%×1.0 |
+| 신뢰성 | 87.2 | +2.48 | 실측 | [[aa-omniscience]] 72.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 69.5 | +1.3 | 실측 | [[aa-lcr]] 71.0%×1.0 |
 | 지시 따르기 | 70.3 | +1.35 | 실측 | [[ifbench]] 73.0%×1.0 |

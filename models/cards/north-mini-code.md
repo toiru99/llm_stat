@@ -4,8 +4,8 @@ title: North Mini Code
 creator: Cohere
 license: Open
 intelligence_index: 20.0
-price_blended_usd_1m: None
-output_speed_tps: 23.0
+price_blended_usd_1m: 0
+output_speed_tps: 24.0
 context_window: 256000
 status: current
 size_class: Small
@@ -14,9 +14,9 @@ is_reasoning: true
 radar:
   knowledge: { s: 39.2, z: -0.1, r: 48.5, estimated: false }  # 전문 지식
   reasoning: { s: 32.0, z: -0.13, r: 48.1, estimated: false }  # 추론
-  coding: { s: 57.9, z: 0.45, r: 56.8, estimated: false }  # 코딩
-  agentic: { s: 26.2, z: -0.4, r: 44.1, estimated: false }  # 에이전트
-  trust: { s: 18.4, z: -0.46, r: 43.1, estimated: false }  # 신뢰성
+  coding: { s: 57.9, z: 0.45, r: 56.7, estimated: false }  # 코딩
+  agentic: { s: 26.2, z: -0.4, r: 44.0, estimated: false }  # 에이전트
+  trust: { s: 18.4, z: -0.47, r: 43.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 42.1, z: -0.22, r: 46.7, estimated: false }  # 긴문맥
   instruction: { s: 64.8, z: 0.48, r: 57.2, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — North Mini Code
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # North Mini Code
@@ -37,7 +37,7 @@ Cohere · Open · Small(30B) · 컨텍스트 256k · 종합지능 **20.0**
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $None/1M · 23.0 t/s · TTFT 0.63s · 256k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 24.0 t/s · TTFT 0.59s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ Cohere · Open · Small(30B) · 컨텍스트 256k · 종합지능 **20.0**
 |---|---|---|---|---|
 | 전문 지식 | 48.5 | -0.1 | 실측 | [[aa-omniscience]] 19.0%×1.0, [[gpqa-diamond]] 76.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
 | 추론 | 48.1 | -0.13 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
-| 코딩 | 56.8 | +0.45 | 실측 | [[scicode]] 38.0%×1.0, [[terminal-bench]] 31.0%×0.5 |
-| 에이전트 | 44.1 | -0.4 | 실측 | [[gdpval]] 2.0%×1.0, [[tau2-bench]] 37.0%×1.0, [[tau3-banking]] 6.0%×1.0, [[terminal-bench]] 31.0%×1.0 |
-| 신뢰성 | 43.1 | -0.46 | 실측 | [[aa-omniscience]] 17.0%×1.0 |
+| 코딩 | 56.7 | +0.45 | 실측 | [[scicode]] 38.0%×1.0, [[terminal-bench]] 31.0%×0.5 |
+| 에이전트 | 44.0 | -0.4 | 실측 | [[gdpval]] 2.0%×1.0, [[tau2-bench]] 37.0%×1.0, [[tau3-banking]] 6.0%×1.0, [[terminal-bench]] 31.0%×1.0 |
+| 신뢰성 | 43.0 | -0.47 | 실측 | [[aa-omniscience]] 17.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 46.7 | -0.22 | 실측 | [[aa-lcr]] 32.0%×1.0 |
 | 지시 따르기 | 57.2 | +0.48 | 실측 | [[ifbench]] 58.0%×1.0 |

@@ -4,7 +4,7 @@ title: Phi-4
 creator: Microsoft
 license: Open
 intelligence_index: 5.0
-price_blended_usd_1m: None
+price_blended_usd_1m: 0.1625
 output_speed_tps: None
 context_window: 16000
 status: current
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 20.6, z: -0.7, r: 39.5, estimated: false }  # 추론
   coding: { s: 30.9, z: -0.67, r: 39.9, estimated: false }  # 코딩
   agentic: { s: 3.0, z: -1.3, r: 30.5, estimated: false }  # 에이전트
-  trust: { s: 20.7, z: -0.35, r: 44.8, estimated: false }  # 신뢰성
+  trust: { s: 20.7, z: -0.36, r: 44.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.47, r: 28.0, estimated: false }  # 긴문맥
   instruction: { s: 16.9, z: -1.5, r: 27.6, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Phi-4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Phi-4
@@ -37,7 +37,7 @@ Microsoft · Open · Small(14B) · 컨텍스트 16k · 종합지능 **5.0**
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.13 · 출력 $0.5 · 혼합 $None/1M · None t/s · TTFT Nones · 16k ctx`
+`입력 $0.13 · 출력 $0.5 · 혼합 $0.1625/1M · None t/s · TTFT Nones · 16k ctx` · 가성비 30.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Microsoft · Open · Small(14B) · 컨텍스트 16k · 종합지능 **5.0**
 | 추론 | 39.5 | -0.7 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 57.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 39.9 | -0.67 | 실측 | [[scicode]] 26.0%×1.0, [[terminal-bench]] 4.0%×0.5 |
 | 에이전트 | 30.5 | -1.3 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 4.0%×1.0 |
-| 신뢰성 | 44.8 | -0.35 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
+| 신뢰성 | 44.6 | -0.36 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.0 | -1.47 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 27.6 | -1.5 | 실측 | [[ifbench]] 24.0%×1.0 |

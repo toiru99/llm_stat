@@ -78,11 +78,18 @@ axes:
 | 배지 | 리더보드 열 | 표기 |
 |---|---|---|
 | 종합지능 | `Artificial Analysis Intelligence Index` | 정수 |
-| 비용 | `Blended USD/1M Tokens` | `$X/1M` |
+| 비용 | 혼합가 (아래 주석) | `$X/1M` |
 | 속도 | `Median Tokens/s` | `X t/s` |
 | 컨텍스트 | `Context Window` | `Xk/M` |
 | 제작사 / 라이선스 | `Creator` / `License` | 텍스트 |
 | 가성비(파생) | 종합지능 ÷ 비용 | 별도 |
+
+> **혼합가 출처**: AA가 2026-07-21 표에서 `Blended USD/1M Tokens` 열을 내리고 `Cost per Task USD`로
+> 교체했다. 같은 값이 페이지 임베드의 `price1mBlended7To2To1` 에 남아 있어 스크래퍼가 이를 조인한다
+> (`scripts/extract_attrs.mjs`). 가중치는 **캐시히트 7 : 입력 2 : 출력 1** — 캐시히트가 없는 모델은
+> 입력가로 대체한다. 임베드 조인이 실패하면 표의 캐시히트·입력·출력 열로 같은 식을 재계산한다
+> (`blended_from_columns`, 표 값이 소수 둘째 자리 반올림이라 ±0.01 오차).
+> 가격 버킷(Low/Medium/High)은 임베드 `priceClass`(AA Price 필터 원본)를 그대로 쓴다.
 
 # 출처 표기 의무
 

@@ -4,7 +4,7 @@ title: GPT-5.4 nano
 creator: OpenAI
 license: Proprietary
 intelligence_index: 30.0
-price_blended_usd_1m: None
+price_blended_usd_1m: 0.179
 output_speed_tps: 165.0
 context_window: 400000
 status: past
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 40.4, z: 0.29, r: 54.4, estimated: false }  # 추론
   coding: { s: 58.9, z: 0.49, r: 57.4, estimated: false }  # 코딩
   agentic: { s: 51.8, z: 0.6, r: 58.9, estimated: false }  # 에이전트
-  trust: { s: 56.3, z: 1.34, r: 70.1, estimated: false }  # 신뢰성
+  trust: { s: 56.3, z: 1.3, r: 69.5, estimated: false }  # 신뢰성
   multimodal: { s: 64.3, z: -0.36, r: 44.6, estimated: false }  # 멀티모달
   long_context: { s: 75.0, z: 0.75, r: 61.3, estimated: false }  # 긴문맥
   instruction: { s: 73.2, z: 0.83, r: 62.5, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.4 nano
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # GPT-5.4 nano
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **30.0** �
 - **약점**: 전문 지식, 멀티모달
 
 ## 실용 지표
-`입력 $0.2 · 출력 $1.25 · 혼합 $None/1M · 165.0 t/s · TTFT 4.68s · 400k ctx`
+`입력 $0.2 · 출력 $1.25 · 혼합 $0.179/1M · 165.0 t/s · TTFT 6.01s · 400k ctx` · 가성비 167.6
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **30.0** �
 | 추론 | 54.4 | +0.29 | 실측 | [[critpt]] 5.0%×1.0, [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 15.0%×1.0 |
 | 코딩 | 57.4 | +0.49 | 실측 | [[scicode]] 38.0%×1.0, [[terminal-bench]] 33.0%×0.5 |
 | 에이전트 | 58.9 | +0.6 | 실측 | [[tau2-bench]] 53.0%×1.0, [[terminal-bench]] 33.0%×1.0 |
-| 신뢰성 | 70.1 | +1.34 | 실측 | [[aa-omniscience]] 50.0%×1.0 |
+| 신뢰성 | 69.5 | +1.3 | 실측 | [[aa-omniscience]] 50.0%×1.0 |
 | 멀티모달 | 44.6 | -0.36 | 실측 | [[mmmu-pro]] 60.0%×1.0 |
 | 긴문맥 | 61.3 | +0.75 | 실측 | [[aa-lcr]] 57.0%×1.0 |
 | 지시 따르기 | 62.5 | +0.83 | 실측 | [[ifbench]] 64.0%×1.0 |

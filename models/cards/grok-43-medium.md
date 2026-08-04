@@ -4,8 +4,8 @@ title: Grok 4.3 (medium)
 creator: SpaceXAI
 license: Proprietary
 intelligence_index: 36.0
-price_blended_usd_1m: None
-output_speed_tps: 139.0
+price_blended_usd_1m: 0.64
+output_speed_tps: 138.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 53.9, z: 0.97, r: 64.6, estimated: false }  # 추론
   coding: { s: 65.2, z: 0.75, r: 61.3, estimated: false }  # 코딩
   agentic: { s: 68.7, z: 1.25, r: 68.8, estimated: false }  # 에이전트
-  trust: { s: 95.4, z: 3.19, r: 97.9, estimated: false }  # 신뢰성
+  trust: { s: 95.4, z: 3.12, r: 96.8, estimated: false }  # 신뢰성
   multimodal: { s: 87.1, z: 0.75, r: 61.2, estimated: false }  # 멀티모달
   long_context: { s: 85.5, z: 1.07, r: 66.0, estimated: false }  # 긴문맥
   instruction: { s: 100.0, z: 1.94, r: 79.0, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.3 (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Grok 4.3 (medium)
@@ -37,7 +37,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **36.0**
 - **약점**: 코딩, 멀티모달
 
 ## 실용 지표
-`입력 $1.25 · 출력 $2.5 · 혼합 $None/1M · 139.0 t/s · TTFT 9.71s · 1M ctx`
+`입력 $1.25 · 출력 $2.5 · 혼합 $0.64/1M · 138.0 t/s · TTFT 10.27s · 1M ctx` · 가성비 56.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **36.0**
 | 추론 | 64.6 | +0.97 | 실측 | [[critpt]] 5.0%×1.0, [[gpqa-diamond]] 89.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
 | 코딩 | 61.3 | +0.75 | 실측 | [[scicode]] 45.0%×1.0, [[terminal-bench]] 30.0%×0.5 |
 | 에이전트 | 68.8 | +1.25 | 실측 | [[tau2-bench]] 91.0%×1.0, [[terminal-bench]] 30.0%×1.0 |
-| 신뢰성 | 97.9 | +3.19 | 실측 | [[aa-omniscience]] 84.0%×1.0 |
+| 신뢰성 | 96.8 | +3.12 | 실측 | [[aa-omniscience]] 84.0%×1.0 |
 | 멀티모달 | 61.2 | +0.75 | 실측 | [[mmmu-pro]] 76.0%×1.0 |
 | 긴문맥 | 66.0 | +1.07 | 실측 | [[aa-lcr]] 65.0%×1.0 |
 | 지시 따르기 | 79.0 | +1.94 | 실측 | [[ifbench]] 83.0%×1.0 |

@@ -4,7 +4,7 @@ title: Gemini 3 Pro Preview (low)
 creator: Google
 license: Proprietary
 intelligence_index: 33.0
-price_blended_usd_1m: None
+price_blended_usd_1m: 1.74
 output_speed_tps: None
 context_window: 1000000
 status: past
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 48.7, z: 0.71, r: 60.7, estimated: false }  # 추론
   coding: { s: 72.7, z: 1.07, r: 66.0, estimated: false }  # 코딩
   agentic: { s: 60.1, z: 0.92, r: 63.8, estimated: false }  # 에이전트
-  trust: { s: 16.1, z: -0.57, r: 41.5, estimated: false }  # 신뢰성
+  trust: { s: 16.1, z: -0.57, r: 41.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 88.2, z: 1.14, r: 67.2, estimated: false }  # 긴문맥
   instruction: { s: 53.5, z: 0.02, r: 50.2, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3 Pro Preview (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Gemini 3 Pro Preview (low)
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **33.0** · 
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $2.0 · 출력 $12.0 · 혼합 $None/1M · None t/s · TTFT Nones · 1M ctx`
+`입력 $2.0 · 출력 $12.0 · 혼합 $1.74/1M · None t/s · TTFT Nones · 1M ctx` · 가성비 19.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **33.0** · 
 | 추론 | 60.7 | +0.71 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 89.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
 | 코딩 | 66.0 | +1.07 | 실측 | [[scicode]] 50.0%×1.0, [[terminal-bench]] 34.0%×0.5 |
 | 에이전트 | 63.8 | +0.92 | 실측 | [[tau2-bench]] 68.0%×1.0, [[terminal-bench]] 34.0%×1.0 |
-| 신뢰성 | 41.5 | -0.57 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
+| 신뢰성 | 41.4 | -0.57 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 67.2 | +1.14 | 실측 | [[aa-lcr]] 67.0%×1.0 |
 | 지시 따르기 | 50.2 | +0.02 | 실측 | [[ifbench]] 50.0%×1.0 |

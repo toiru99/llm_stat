@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 10.9, z: -1.19, r: 32.2, estimated: false }  # 추론
   coding: { s: 2.2, z: -1.87, r: 22.0, estimated: false }  # 코딩
   agentic: { s: 25.2, z: -0.44, r: 43.4, estimated: false }  # 에이전트
-  trust: { s: 2.3, z: -1.22, r: 31.7, estimated: false }  # 신뢰성
+  trust: { s: 2.3, z: -1.22, r: 31.8, estimated: false }  # 신뢰성
   multimodal: { s: 32.9, z: -1.87, r: 21.9, estimated: false }  # 멀티모달
   long_context: { s: 7.9, z: -1.23, r: 31.5, estimated: false }  # 긴문맥
   instruction: { s: 21.1, z: -1.32, r: 30.2, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniCPM-V 4.6 1.3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # MiniCPM-V 4.6 1.3B
@@ -47,7 +47,7 @@ OpenBMB · Open · Tiny(1.3B) · 컨텍스트 262k · 종합지능 **4.0**
 | 추론 | 32.2 | -1.19 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 31.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 22.0 | -1.87 | 실측 | [[scicode]] 2.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 43.4 | -0.44 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 88.0%×1.0, [[tau3-banking]] 4.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 31.7 | -1.22 | 실측 | [[aa-omniscience]] 3.0%×1.0 |
+| 신뢰성 | 31.8 | -1.22 | 실측 | [[aa-omniscience]] 3.0%×1.0 |
 | 멀티모달 | 21.9 | -1.87 | 실측 | [[mmmu-pro]] 38.0%×1.0 |
 | 긴문맥 | 31.5 | -1.23 | 실측 | [[aa-lcr]] 6.0%×1.0 |
 | 지시 따르기 | 30.2 | -1.32 | 실측 | [[ifbench]] 27.0%×1.0 |

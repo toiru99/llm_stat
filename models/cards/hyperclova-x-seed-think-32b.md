@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 23.2, z: -0.57, r: 41.5, estimated: false }  # 추론
   coding: { s: 37.2, z: -0.41, r: 43.8, estimated: false }  # 코딩
   agentic: { s: 53.0, z: 0.64, r: 59.7, estimated: false }  # 에이전트
-  trust: { s: 23.0, z: -0.24, r: 46.4, estimated: false }  # 신뢰성
+  trust: { s: 23.0, z: -0.25, r: 46.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 15.8, z: -1.0, r: 35.0, estimated: false }  # 긴문맥
   instruction: { s: 36.6, z: -0.68, r: 39.8, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — HyperCLOVA X SEED Think (32B)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # HyperCLOVA X SEED Think (32B)
@@ -47,7 +47,7 @@ Naver · Open · Small(32B) · 컨텍스트 128k · 종합지능 **17.0**
 | 추론 | 41.5 | -0.57 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 62.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 43.8 | -0.41 | 실측 | [[scicode]] 28.0%×1.0, [[terminal-bench]] 12.0%×0.5 |
 | 에이전트 | 59.7 | +0.64 | 실측 | [[tau2-bench]] 87.0%×1.0, [[terminal-bench]] 12.0%×1.0 |
-| 신뢰성 | 46.4 | -0.24 | 실측 | [[aa-omniscience]] 21.0%×1.0 |
+| 신뢰성 | 46.2 | -0.25 | 실측 | [[aa-omniscience]] 21.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 35.0 | -1.0 | 실측 | [[aa-lcr]] 12.0%×1.0 |
 | 지시 따르기 | 39.8 | -0.68 | 실측 | [[ifbench]] 38.0%×1.0 |

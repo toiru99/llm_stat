@@ -4,7 +4,7 @@ title: Gemini 3 Pro Preview (high)
 creator: Google
 license: Proprietary
 intelligence_index: 40.0
-price_blended_usd_1m: None
+price_blended_usd_1m: 1.7575
 output_speed_tps: None
 context_window: 1000000
 status: past
@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 88.8, z: 2.24, r: 83.6, estimated: false }  # 전문 지식
   reasoning: { s: 64.6, z: 1.51, r: 72.7, estimated: false }  # 추론
-  coding: { s: 83.4, z: 1.52, r: 72.7, estimated: false }  # 코딩
+  coding: { s: 83.4, z: 1.51, r: 72.7, estimated: false }  # 코딩
   agentic: { s: 75.8, z: 1.53, r: 72.9, estimated: false }  # 에이전트
   trust: { s: 9.2, z: -0.89, r: 36.6, estimated: false }  # 신뢰성
   multimodal: { s: 92.9, z: 1.02, r: 65.3, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3 Pro Preview (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Gemini 3 Pro Preview (high)
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **40.0** · 
 - **약점**: 멀티모달, 신뢰성
 
 ## 실용 지표
-`입력 $2.0 · 출력 $12.0 · 혼합 $None/1M · None t/s · TTFT Nones · 1M ctx`
+`입력 $2.0 · 출력 $12.0 · 혼합 $1.7575/1M · None t/s · TTFT Nones · 1M ctx` · 가성비 22.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **40.0** · 
 |---|---|---|---|---|
 | 전문 지식 | 83.6 | +2.24 | 실측 | [[aa-omniscience]] 56.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 37.0%×0.3 |
 | 추론 | 72.7 | +1.51 | 실측 | [[critpt]] 9.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 37.0%×1.0 |
-| 코딩 | 72.7 | +1.52 | 실측 | [[scicode]] 56.0%×1.0, [[terminal-bench]] 42.0%×0.5 |
+| 코딩 | 72.7 | +1.51 | 실측 | [[scicode]] 56.0%×1.0, [[terminal-bench]] 42.0%×0.5 |
 | 에이전트 | 72.9 | +1.53 | 실측 | [[tau2-bench]] 87.0%×1.0, [[terminal-bench]] 42.0%×1.0 |
 | 신뢰성 | 36.6 | -0.89 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | 65.3 | +1.02 | 실측 | [[mmmu-pro]] 80.0%×1.0 |

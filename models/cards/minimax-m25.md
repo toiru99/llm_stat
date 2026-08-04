@@ -4,8 +4,8 @@ title: MiniMax-M2.5
 creator: MiniMax
 license: Open
 intelligence_index: 34.0
-price_blended_usd_1m: None
-output_speed_tps: 76.0
+price_blended_usd_1m: 0.201
+output_speed_tps: None
 context_window: 205000
 status: past
 size_class: Large
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 42.3, z: 0.39, r: 55.9, estimated: false }  # 추론
   coding: { s: 65.5, z: 0.77, r: 61.5, estimated: false }  # 코딩
   agentic: { s: 74.5, z: 1.48, r: 72.2, estimated: false }  # 에이전트
-  trust: { s: 11.5, z: -0.78, r: 38.2, estimated: false }  # 신뢰성
+  trust: { s: 11.5, z: -0.79, r: 38.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 86.8, z: 1.11, r: 66.6, estimated: false }  # 긴문맥
   instruction: { s: 84.5, z: 1.3, r: 69.4, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax-M2.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # MiniMax-M2.5
@@ -37,7 +37,7 @@ MiniMax · Open · Large(230B) · 컨텍스트 205k · 종합지능 **34.0** · 
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $None/1M · 76.0 t/s · TTFT 1.67s · 205k ctx`
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.201/1M · None t/s · TTFT Nones · 205k ctx` · 가성비 169.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ MiniMax · Open · Large(230B) · 컨텍스트 205k · 종합지능 **34.0** · 
 | 추론 | 55.9 | +0.39 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 19.0%×1.0 |
 | 코딩 | 61.5 | +0.77 | 실측 | [[scicode]] 43.0%×1.0, [[terminal-bench]] 35.0%×0.5 |
 | 에이전트 | 72.2 | +1.48 | 실측 | [[tau2-bench]] 95.0%×1.0, [[terminal-bench]] 35.0%×1.0 |
-| 신뢰성 | 38.2 | -0.78 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
+| 신뢰성 | 38.2 | -0.79 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 66.6 | +1.11 | 실측 | [[aa-lcr]] 66.0%×1.0 |
 | 지시 따르기 | 69.4 | +1.3 | 실측 | [[ifbench]] 72.0%×1.0 |

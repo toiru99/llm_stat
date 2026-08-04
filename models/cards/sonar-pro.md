@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 38.4, z: -0.14, r: 48.0, estimated: false }  # 전문 지식
   reasoning: { s: 35.3, z: 0.04, r: 50.6, estimated: false }  # 추론
-  coding: { s: 38.3, z: -0.36, r: 44.6, estimated: false }  # 코딩
+  coding: { s: 38.3, z: -0.36, r: 44.5, estimated: false }  # 코딩
   agentic: { s: 22.9, z: -0.53, r: 42.1, estimated: true }  # 에이전트
-  trust: { s: 28.5, z: 0.02, r: 50.3, estimated: true }  # 신뢰성
+  trust: { s: 28.5, z: 0.01, r: 50.1, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 40.5, z: -0.27, r: 46.0, estimated: true }  # 긴문맥
   instruction: { s: 57.7, z: 0.19, r: 52.9, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Sonar Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Sonar Pro
@@ -45,9 +45,9 @@ Perplexity · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **9.0*
 |---|---|---|---|---|
 | 전문 지식 | 48.0 | -0.14 | 실측 | [[gpqa-diamond]] 58.0%×0.4, [[humanitys-last-exam]] 8.0%×0.3 |
 | 추론 | 50.6 | +0.04 | 실측 | [[gpqa-diamond]] 58.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
-| 코딩 | 44.6 | -0.36 | 실측 | [[scicode]] 23.0%×1.0 |
+| 코딩 | 44.5 | -0.36 | 실측 | [[scicode]] 23.0%×1.0 |
 | 에이전트 | 42.1 | -0.53 | 추정 | (추정) |
-| 신뢰성 | 50.3 | +0.02 | 추정 | (추정) |
+| 신뢰성 | 50.1 | +0.01 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 46.0 | -0.27 | 추정 | (추정) |
 | 지시 따르기 | 52.9 | +0.19 | 추정 | (추정) |

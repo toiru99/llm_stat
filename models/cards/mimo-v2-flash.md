@@ -4,7 +4,7 @@ title: MiMo-V2-Flash
 creator: Xiaomi
 license: Open
 intelligence_index: 31.0
-price_blended_usd_1m: None
+price_blended_usd_1m: 0.12
 output_speed_tps: None
 context_window: 256000
 status: past
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2-Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # MiMo-V2-Flash
@@ -37,7 +37,7 @@ Xiaomi · Open · Large(309B) · 컨텍스트 256k · 종합지능 **31.0** · �
 - **약점**: 코딩, 신뢰성
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.3 · 혼합 $None/1M · None t/s · TTFT Nones · 256k ctx`
+`입력 $0.1 · 출력 $0.3 · 혼합 $0.12/1M · None t/s · TTFT Nones · 256k ctx` · 가성비 258.3
 
 ## 레이더 8축 (평균=50 기준선)
 

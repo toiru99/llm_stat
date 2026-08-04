@@ -4,8 +4,8 @@ title: Gemini 3.1 Pro Preview
 creator: Google
 license: Proprietary
 intelligence_index: 46.0
-price_blended_usd_1m: None
-output_speed_tps: 128.0
+price_blended_usd_1m: 1.74
+output_speed_tps: 132.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 80.3, z: 2.3, r: 84.5, estimated: false }  # 추론
   coding: { s: 92.8, z: 1.91, r: 78.6, estimated: false }  # 코딩
   agentic: { s: 63.3, z: 1.04, r: 65.7, estimated: false }  # 에이전트
-  trust: { s: 56.3, z: 1.34, r: 70.1, estimated: false }  # 신뢰성
+  trust: { s: 56.3, z: 1.3, r: 69.5, estimated: false }  # 신뢰성
   multimodal: { s: 95.7, z: 1.16, r: 67.4, estimated: false }  # 멀티모달
   long_context: { s: 96.1, z: 1.38, r: 70.7, estimated: false }  # 긴문맥
   instruction: { s: 91.5, z: 1.59, r: 73.8, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.1 Pro Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Gemini 3.1 Pro Preview
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **46.0**
 - **약점**: 멀티모달, 에이전트
 
 ## 실용 지표
-`입력 $2.0 · 출력 $12.0 · 혼합 $None/1M · 128.0 t/s · TTFT 25.53s · 1M ctx`
+`입력 $2.0 · 출력 $12.0 · 혼합 $1.74/1M · 132.0 t/s · TTFT 28.94s · 1M ctx` · 가성비 26.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **46.0**
 | 추론 | 84.5 | +2.3 | 실측 | [[critpt]] 18.0%×1.0, [[gpqa-diamond]] 94.0%×1.0, [[humanitys-last-exam]] 45.0%×1.0 |
 | 코딩 | 78.6 | +1.91 | 실측 | [[scicode]] 59.0%×1.0, [[terminal-bench]] 54.0%×0.5 |
 | 에이전트 | 65.7 | +1.04 | 실측 | [[apex-agents]] 32.0%×1.0, [[gdpval]] 23.0%×1.0, [[itbench]] 30.0%×1.0, [[tau2-bench]] 96.0%×1.0, [[tau3-banking]] 16.0%×1.0, [[terminal-bench]] 54.0%×1.0 |
-| 신뢰성 | 70.1 | +1.34 | 실측 | [[aa-omniscience]] 50.0%×1.0 |
+| 신뢰성 | 69.5 | +1.3 | 실측 | [[aa-omniscience]] 50.0%×1.0 |
 | 멀티모달 | 67.4 | +1.16 | 실측 | [[mmmu-pro]] 82.0%×1.0 |
 | 긴문맥 | 70.7 | +1.38 | 실측 | [[aa-lcr]] 73.0%×1.0 |
 | 지시 따르기 | 73.8 | +1.59 | 실측 | [[ifbench]] 77.0%×1.0 |

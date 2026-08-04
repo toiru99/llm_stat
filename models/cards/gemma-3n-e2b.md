@@ -4,7 +4,7 @@ title: Gemma 3n E2B
 creator: Google
 license: Open
 intelligence_index: 1.0
-price_blended_usd_1m: None
+price_blended_usd_1m: 0
 output_speed_tps: None
 context_window: 32000
 status: past
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 3n E2B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Gemma 3n E2B
@@ -37,7 +37,7 @@ Google · Open · Small(5.98B) · 컨텍스트 32k · 종합지능 **1.0** · �
 - **약점**: 지시 따르기, 코딩
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $None/1M · None t/s · TTFT Nones · 32k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · None t/s · TTFT Nones · 32k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -4,8 +4,8 @@ title: Claude Sonnet 5 (medium)
 creator: Anthropic
 license: Proprietary
 intelligence_index: None
-price_blended_usd_1m: None
-output_speed_tps: 63.0
+price_blended_usd_1m: 1.54
+output_speed_tps: 65.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 47.7, z: 0.66, r: 59.9, estimated: true }  # 추론
   coding: { s: 62.4, z: 0.64, r: 59.6, estimated: true }  # 코딩
   agentic: { s: 58.8, z: 0.87, r: 63.0, estimated: false }  # 에이전트
-  trust: { s: 40.7, z: 0.6, r: 59.0, estimated: true }  # 신뢰성
+  trust: { s: 40.7, z: 0.57, r: 58.6, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 76.8, z: 0.81, r: 62.1, estimated: true }  # 긴문맥
   instruction: { s: 71.5, z: 0.76, r: 61.4, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5 (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Claude Sonnet 5 (medium)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None**
 - **약점**: 신뢰성, 전문 지식
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $None/1M · 63.0 t/s · TTFT 2.2s · 1M ctx`
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 65.0 t/s · TTFT 2.51s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None**
 | 추론 | 59.9 | +0.66 | 추정 | (추정) |
 | 코딩 | 59.6 | +0.64 | 추정 | (추정) |
 | 에이전트 | 63.0 | +0.87 | 실측 | [[gdpval]] 40.0%×1.0 |
-| 신뢰성 | 59.0 | +0.6 | 추정 | (추정) |
+| 신뢰성 | 58.6 | +0.57 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 62.1 | +0.81 | 추정 | (추정) |
 | 지시 따르기 | 61.4 | +0.76 | 추정 | (추정) |

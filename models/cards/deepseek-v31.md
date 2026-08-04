@@ -4,7 +4,7 @@ title: DeepSeek V3.1
 creator: DeepSeek
 license: Open
 intelligence_index: 21.0
-price_blended_usd_1m: None
+price_blended_usd_1m: 0.672
 output_speed_tps: None
 context_window: 128000
 status: past
@@ -12,11 +12,11 @@ size_class: Large
 params_b: 685
 is_reasoning: false
 radar:
-  knowledge: { s: 50.6, z: 0.44, r: 56.5, estimated: false }  # 전문 지식
+  knowledge: { s: 50.6, z: 0.44, r: 56.6, estimated: false }  # 전문 지식
   reasoning: { s: 36.8, z: 0.11, r: 51.7, estimated: false }  # 추론
-  coding: { s: 56.0, z: 0.37, r: 55.6, estimated: false }  # 코딩
+  coding: { s: 56.0, z: 0.37, r: 55.5, estimated: false }  # 코딩
   agentic: { s: 37.6, z: 0.05, r: 50.7, estimated: false }  # 에이전트
-  trust: { s: 21.8, z: -0.29, r: 45.6, estimated: false }  # 신뢰성
+  trust: { s: 21.8, z: -0.31, r: 45.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 69.7, z: 0.6, r: 59.0, estimated: false }  # 긴문맥
   instruction: { s: 40.8, z: -0.51, r: 42.4, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V3.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # DeepSeek V3.1
@@ -37,17 +37,17 @@ DeepSeek · Open · Large(685B) · 컨텍스트 128k · 종합지능 **21.0** ·
 - **약점**: 신뢰성, 지시 따르기
 
 ## 실용 지표
-`입력 $0.59 · 출력 $1.69 · 혼합 $None/1M · None t/s · TTFT Nones · 128k ctx`
+`입력 $0.59 · 출력 $1.69 · 혼합 $0.672/1M · None t/s · TTFT Nones · 128k ctx` · 가성비 31.2
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 56.5 | +0.44 | 실측 | [[aa-omniscience]] 29.0%×1.0, [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
+| 전문 지식 | 56.6 | +0.44 | 실측 | [[aa-omniscience]] 29.0%×1.0, [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
 | 추론 | 51.7 | +0.11 | 실측 | [[critpt]] 2.0%×1.0, [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
-| 코딩 | 55.6 | +0.37 | 실측 | [[scicode]] 39.0%×1.0, [[terminal-bench]] 25.0%×0.5 |
+| 코딩 | 55.5 | +0.37 | 실측 | [[scicode]] 39.0%×1.0, [[terminal-bench]] 25.0%×0.5 |
 | 에이전트 | 50.7 | +0.05 | 실측 | [[tau2-bench]] 37.0%×1.0, [[terminal-bench]] 25.0%×1.0 |
-| 신뢰성 | 45.6 | -0.29 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
+| 신뢰성 | 45.4 | -0.31 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 59.0 | +0.6 | 실측 | [[aa-lcr]] 53.0%×1.0 |
 | 지시 따르기 | 42.4 | -0.51 | 실측 | [[ifbench]] 41.0%×1.0 |

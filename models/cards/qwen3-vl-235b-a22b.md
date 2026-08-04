@@ -4,8 +4,8 @@ title: Qwen3 VL 235B A22B
 creator: Alibaba
 license: Open
 intelligence_index: 21.0
-price_blended_usd_1m: None
-output_speed_tps: 57.0
+price_blended_usd_1m: 0.91
+output_speed_tps: 58.0
 context_window: 262000
 status: past
 size_class: Large
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 32.4, z: -0.11, r: 48.4, estimated: false }  # 추론
   coding: { s: 50.0, z: 0.12, r: 51.8, estimated: false }  # 코딩
   agentic: { s: 35.6, z: -0.03, r: 49.5, estimated: false }  # 에이전트
-  trust: { s: 18.4, z: -0.46, r: 43.1, estimated: false }  # 신뢰성
+  trust: { s: 18.4, z: -0.47, r: 43.0, estimated: false }  # 신뢰성
   multimodal: { s: 77.1, z: 0.26, r: 53.9, estimated: false }  # 멀티모달
   long_context: { s: 77.6, z: 0.83, r: 62.5, estimated: false }  # 긴문맥
   instruction: { s: 62.0, z: 0.37, r: 55.5, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 VL 235B A22B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Qwen3 VL 235B A22B
@@ -37,7 +37,7 @@ Alibaba · Open · Large(235B) · 컨텍스트 262k · 종합지능 **21.0** · 
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $0.7 · 출력 $8.4 · 혼합 $None/1M · 57.0 t/s · TTFT 2.91s · 262k ctx`
+`입력 $0.7 · 출력 $8.4 · 혼합 $0.91/1M · 58.0 t/s · TTFT 2.9s · 262k ctx` · 가성비 23.1
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Alibaba · Open · Large(235B) · 컨텍스트 262k · 종합지능 **21.0** · 
 | 추론 | 48.4 | -0.11 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 77.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
 | 코딩 | 51.8 | +0.12 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 11.0%×0.5 |
 | 에이전트 | 49.5 | -0.03 | 실측 | [[tau2-bench]] 54.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
-| 신뢰성 | 43.1 | -0.46 | 실측 | [[aa-omniscience]] 17.0%×1.0 |
+| 신뢰성 | 43.0 | -0.47 | 실측 | [[aa-omniscience]] 17.0%×1.0 |
 | 멀티모달 | 53.9 | +0.26 | 실측 | [[mmmu-pro]] 69.0%×1.0 |
 | 긴문맥 | 62.5 | +0.83 | 실측 | [[aa-lcr]] 59.0%×1.0 |
 | 지시 따르기 | 55.5 | +0.37 | 실측 | [[ifbench]] 56.0%×1.0 |

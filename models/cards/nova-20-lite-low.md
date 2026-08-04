@@ -4,8 +4,8 @@ title: Nova 2.0 Lite (low)
 creator: Amazon
 license: Proprietary
 intelligence_index: 18.0
-price_blended_usd_1m: None
-output_speed_tps: 157.0
+price_blended_usd_1m: 0.52
+output_speed_tps: 160.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -15,8 +15,8 @@ radar:
   knowledge: { s: 32.5, z: -0.41, r: 43.8, estimated: false }  # 전문 지식
   reasoning: { s: 25.7, z: -0.44, r: 43.4, estimated: false }  # 추론
   coding: { s: 38.7, z: -0.35, r: 44.8, estimated: false }  # 코딩
-  agentic: { s: 39.4, z: 0.12, r: 51.7, estimated: false }  # 에이전트
-  trust: { s: 21.8, z: -0.29, r: 45.6, estimated: false }  # 신뢰성
+  agentic: { s: 39.4, z: 0.11, r: 51.7, estimated: false }  # 에이전트
+  trust: { s: 21.8, z: -0.31, r: 45.4, estimated: false }  # 신뢰성
   multimodal: { s: 61.4, z: -0.49, r: 42.6, estimated: false }  # 멀티모달
   long_context: { s: 68.4, z: 0.56, r: 58.4, estimated: false }  # 긴문맥
   instruction: { s: 69.0, z: 0.66, r: 59.8, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova 2.0 Lite (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Nova 2.0 Lite (low)
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **18.0**
 - **약점**: 추론, 멀티모달
 
 ## 실용 지표
-`입력 $0.3 · 출력 $2.5 · 혼합 $None/1M · 157.0 t/s · TTFT 12.52s · 1M ctx`
+`입력 $0.3 · 출력 $2.5 · 혼합 $0.52/1M · 160.0 t/s · TTFT 10.84s · 1M ctx` · 가성비 34.6
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,8 +46,8 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **18.0**
 | 전문 지식 | 43.8 | -0.41 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 70.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 43.4 | -0.44 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 70.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 44.8 | -0.35 | 실측 | [[scicode]] 33.0%×1.0, [[terminal-bench]] 4.0%×0.5 |
-| 에이전트 | 51.7 | +0.12 | 실측 | [[tau2-bench]] 72.0%×1.0, [[terminal-bench]] 4.0%×1.0 |
-| 신뢰성 | 45.6 | -0.29 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
+| 에이전트 | 51.7 | +0.11 | 실측 | [[tau2-bench]] 72.0%×1.0, [[terminal-bench]] 4.0%×1.0 |
+| 신뢰성 | 45.4 | -0.31 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
 | 멀티모달 | 42.6 | -0.49 | 실측 | [[mmmu-pro]] 58.0%×1.0 |
 | 긴문맥 | 58.4 | +0.56 | 실측 | [[aa-lcr]] 52.0%×1.0 |
 | 지시 따르기 | 59.8 | +0.66 | 실측 | [[ifbench]] 61.0%×1.0 |

@@ -4,7 +4,7 @@ title: Sarvam M
 creator: Sarvam
 license: Open
 intelligence_index: 3.0
-price_blended_usd_1m: None
+price_blended_usd_1m: 0
 output_speed_tps: None
 context_window: 32800
 status: past
@@ -14,8 +14,8 @@ is_reasoning: true
 radar:
   knowledge: { s: 23.4, z: -0.84, r: 37.3, estimated: false }  # 전문 지식
   reasoning: { s: 14.0, z: -1.03, r: 34.5, estimated: false }  # 추론
-  coding: { s: 21.0, z: -1.08, r: 33.7, estimated: false }  # 코딩
-  agentic: { s: 1.5, z: -1.36, r: 29.7, estimated: false }  # 에이전트
+  coding: { s: 21.0, z: -1.09, r: 33.7, estimated: false }  # 코딩
+  agentic: { s: 1.5, z: -1.36, r: 29.6, estimated: false }  # 에이전트
   trust: { s: 9.2, z: -0.89, r: 36.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.47, r: 28.0, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Sarvam M
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Sarvam M
@@ -37,7 +37,7 @@ Sarvam · Open · Small(23.6B) · 컨텍스트 32k · 종합지능 **3.0** · �
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $None/1M · None t/s · TTFT Nones · 32k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · None t/s · TTFT Nones · 32k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,8 +45,8 @@ Sarvam · Open · Small(23.6B) · 컨텍스트 32k · 종합지능 **3.0** · �
 |---|---|---|---|---|
 | 전문 지식 | 37.3 | -0.84 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 42.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
 | 추론 | 34.5 | -1.03 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 42.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
-| 코딩 | 33.7 | -1.08 | 실측 | [[scicode]] 18.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 29.7 | -1.36 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 코딩 | 33.7 | -1.09 | 실측 | [[scicode]] 18.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
+| 에이전트 | 29.6 | -1.36 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | 36.6 | -0.89 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.0 | -1.47 | 실측 | [[aa-lcr]] 0.0%×1.0 |

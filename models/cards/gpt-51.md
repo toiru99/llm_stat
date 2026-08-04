@@ -4,8 +4,8 @@ title: GPT-5.1
 creator: OpenAI
 license: Proprietary
 intelligence_index: 20.0
-price_blended_usd_1m: None
-output_speed_tps: 98.0
+price_blended_usd_1m: 1.3375
+output_speed_tps: 102.0
 context_window: 400000
 status: past
 size_class: Unknown
@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 43.9, z: 0.12, r: 51.9, estimated: false }  # 전문 지식
   reasoning: { s: 24.0, z: -0.53, r: 42.1, estimated: false }  # 추론
-  coding: { s: 51.6, z: 0.19, r: 52.9, estimated: false }  # 코딩
+  coding: { s: 51.6, z: 0.19, r: 52.8, estimated: false }  # 코딩
   agentic: { s: 40.7, z: 0.16, r: 52.5, estimated: false }  # 에이전트
   trust: { s: 10.3, z: -0.84, r: 37.4, estimated: false }  # 신뢰성
   multimodal: { s: 67.1, z: -0.22, r: 46.7, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # GPT-5.1
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **20.0** �
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $1.25 · 출력 $10.0 · 혼합 $None/1M · 98.0 t/s · TTFT 1.04s · 400k ctx`
+`입력 $1.25 · 출력 $10.0 · 혼합 $1.3375/1M · 102.0 t/s · TTFT 1.07s · 400k ctx` · 가성비 15.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **20.0** �
 |---|---|---|---|---|
 | 전문 지식 | 51.9 | +0.12 | 실측 | [[aa-omniscience]] 29.0%×1.0, [[gpqa-diamond]] 64.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 42.1 | -0.53 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 64.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 52.9 | +0.19 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 23.0%×0.5 |
+| 코딩 | 52.8 | +0.19 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 23.0%×0.5 |
 | 에이전트 | 52.5 | +0.16 | 실측 | [[tau2-bench]] 46.0%×1.0, [[terminal-bench]] 23.0%×1.0 |
 | 신뢰성 | 37.4 | -0.84 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
 | 멀티모달 | 46.7 | -0.22 | 실측 | [[mmmu-pro]] 62.0%×1.0 |

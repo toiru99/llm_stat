@@ -15,8 +15,8 @@ radar:
   knowledge: { s: 31.3, z: -0.47, r: 43.0, estimated: false }  # 전문 지식
   reasoning: { s: 29.2, z: -0.27, r: 46.0, estimated: false }  # 추론
   coding: { s: 37.0, z: -0.42, r: 43.7, estimated: false }  # 코딩
-  agentic: { s: 11.9, z: -0.95, r: 35.7, estimated: false }  # 에이전트
-  trust: { s: 19.5, z: -0.4, r: 43.9, estimated: false }  # 신뢰성
+  agentic: { s: 11.9, z: -0.96, r: 35.7, estimated: false }  # 에이전트
+  trust: { s: 19.5, z: -0.41, r: 43.8, estimated: false }  # 신뢰성
   multimodal: { s: 70.0, z: -0.08, r: 48.8, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.47, r: 28.0, estimated: false }  # 긴문맥
   instruction: { s: 53.5, z: 0.02, r: 50.2, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Step3 VL 10B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Step3 VL 10B
@@ -46,8 +46,8 @@ StepFun · Open · Small(10.2B) · 컨텍스트 65k · 종합지능 **9.0**
 | 전문 지식 | 43.0 | -0.47 | 실측 | [[aa-omniscience]] 13.0%×1.0, [[gpqa-diamond]] 69.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
 | 추론 | 46.0 | -0.27 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 69.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
 | 코딩 | 43.7 | -0.42 | 실측 | [[scicode]] 31.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
-| 에이전트 | 35.7 | -0.95 | 실측 | [[tau2-bench]] 16.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
-| 신뢰성 | 43.9 | -0.4 | 실측 | [[aa-omniscience]] 18.0%×1.0 |
+| 에이전트 | 35.7 | -0.96 | 실측 | [[tau2-bench]] 16.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
+| 신뢰성 | 43.8 | -0.41 | 실측 | [[aa-omniscience]] 18.0%×1.0 |
 | 멀티모달 | 48.8 | -0.08 | 실측 | [[mmmu-pro]] 64.0%×1.0 |
 | 긴문맥 | 28.0 | -1.47 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 50.2 | +0.02 | 실측 | [[ifbench]] 50.0%×1.0 |

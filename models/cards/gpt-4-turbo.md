@@ -4,7 +4,7 @@ title: GPT-4 Turbo
 creator: OpenAI
 license: Proprietary
 intelligence_index: 8.0
-price_blended_usd_1m: None
+price_blended_usd_1m: 12
 output_speed_tps: 33.0
 context_window: 128000
 status: past
@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 3.8, z: -1.76, r: 23.5, estimated: false }  # 전문 지식
   reasoning: { s: 3.8, z: -1.54, r: 26.9, estimated: false }  # 추론
   coding: { s: 53.3, z: 0.26, r: 53.9, estimated: false }  # 코딩
-  agentic: { s: 18.5, z: -0.7, r: 39.5, estimated: true }  # 에이전트
-  trust: { s: 43.4, z: 0.73, r: 60.9, estimated: true }  # 신뢰성
+  agentic: { s: 18.4, z: -0.7, r: 39.5, estimated: true }  # 에이전트
+  trust: { s: 43.4, z: 0.7, r: 60.5, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 30.8, z: -0.55, r: 41.7, estimated: true }  # 긴문맥
+  long_context: { s: 30.8, z: -0.56, r: 41.7, estimated: true }  # 긴문맥
   instruction: { s: 32.4, z: -0.86, r: 37.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4 Turbo
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # GPT-4 Turbo
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **8.0** ·
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $10.0 · 출력 $30.0 · 혼합 $None/1M · 33.0 t/s · TTFT 2.52s · 128k ctx`
+`입력 $10.0 · 출력 $30.0 · 혼합 $12/1M · 33.0 t/s · TTFT 3.01s · 128k ctx` · 가성비 0.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,9 +47,9 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **8.0** ·
 | 추론 | 26.9 | -1.54 | 실측 | [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 53.9 | +0.26 | 실측 | [[scicode]] 32.0%×1.0 |
 | 에이전트 | 39.5 | -0.7 | 추정 | (추정) |
-| 신뢰성 | 60.9 | +0.73 | 추정 | (추정) |
+| 신뢰성 | 60.5 | +0.7 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 41.7 | -0.55 | 추정 | (추정) |
+| 긴문맥 | 41.7 | -0.56 | 추정 | (추정) |
 | 지시 따르기 | 37.2 | -0.86 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

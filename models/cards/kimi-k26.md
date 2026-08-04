@@ -4,8 +4,8 @@ title: Kimi K2.6
 creator: Kimi
 license: Open
 intelligence_index: 44.0
-price_blended_usd_1m: None
-output_speed_tps: 39.0
+price_blended_usd_1m: 0.702
+output_speed_tps: 38.0
 context_window: 256000
 status: past
 size_class: Large
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 62.9, z: 1.43, r: 71.4, estimated: false }  # 추론
   coding: { s: 81.1, z: 1.42, r: 71.3, estimated: false }  # 코딩
   agentic: { s: 64.8, z: 1.1, r: 66.5, estimated: false }  # 에이전트
-  trust: { s: 69.0, z: 1.94, r: 79.1, estimated: false }  # 신뢰성
+  trust: { s: 69.0, z: 1.89, r: 78.3, estimated: false }  # 신뢰성
   multimodal: { s: 91.4, z: 0.95, r: 64.3, estimated: false }  # 멀티모달
   long_context: { s: 92.1, z: 1.26, r: 68.9, estimated: false }  # 긴문맥
   instruction: { s: 90.1, z: 1.53, r: 72.9, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2.6
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Kimi K2.6
@@ -37,7 +37,7 @@ Kimi · Open · Large(1000B) · 컨텍스트 256k · 종합지능 **44.0** · �
 - **약점**: 에이전트, 멀티모달
 
 ## 실용 지표
-`입력 $0.95 · 출력 $4.0 · 혼합 $None/1M · 39.0 t/s · TTFT 2.87s · 256k ctx`
+`입력 $0.95 · 출력 $4.0 · 혼합 $0.702/1M · 38.0 t/s · TTFT 2.79s · 256k ctx` · 가성비 62.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Kimi · Open · Large(1000B) · 컨텍스트 256k · 종합지능 **44.0** · �
 | 추론 | 71.4 | +1.43 | 실측 | [[critpt]] 8.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 36.0%×1.0 |
 | 코딩 | 71.3 | +1.42 | 실측 | [[scicode]] 53.0%×1.0, [[terminal-bench]] 44.0%×0.5 |
 | 에이전트 | 66.5 | +1.1 | 실측 | [[apex-agents]] 28.0%×1.0, [[gdpval]] 34.0%×1.0, [[itbench]] 31.0%×1.0, [[tau2-bench]] 96.0%×1.0, [[tau3-banking]] 21.0%×1.0, [[terminal-bench]] 44.0%×1.0 |
-| 신뢰성 | 79.1 | +1.94 | 실측 | [[aa-omniscience]] 61.0%×1.0 |
+| 신뢰성 | 78.3 | +1.89 | 실측 | [[aa-omniscience]] 61.0%×1.0 |
 | 멀티모달 | 64.3 | +0.95 | 실측 | [[mmmu-pro]] 79.0%×1.0 |
 | 긴문맥 | 68.9 | +1.26 | 실측 | [[aa-lcr]] 70.0%×1.0 |
 | 지시 따르기 | 72.9 | +1.53 | 실측 | [[ifbench]] 76.0%×1.0 |

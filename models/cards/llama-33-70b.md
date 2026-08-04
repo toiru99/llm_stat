@@ -4,8 +4,8 @@ title: Llama 3.3 70B
 creator: Meta
 license: Open
 intelligence_index: 9.0
-price_blended_usd_1m: None
-output_speed_tps: 84.0
+price_blended_usd_1m: 0.612
+output_speed_tps: 86.0
 context_window: 128000
 status: current
 size_class: Medium
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 17.8, z: -0.84, r: 37.4, estimated: false }  # 추론
   coding: { s: 30.4, z: -0.69, r: 39.6, estimated: false }  # 코딩
   agentic: { s: 7.0, z: -1.15, r: 32.8, estimated: false }  # 에이전트
-  trust: { s: 16.1, z: -0.57, r: 41.5, estimated: false }  # 신뢰성
+  trust: { s: 16.1, z: -0.57, r: 41.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 19.7, z: -0.88, r: 36.8, estimated: false }  # 긴문맥
   instruction: { s: 49.3, z: -0.16, r: 47.6, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.3 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Llama 3.3 70B
@@ -37,7 +37,7 @@ Meta · Open · Medium(70B) · 컨텍스트 128k · 종합지능 **9.0**
 - **약점**: 긴문맥, 에이전트
 
 ## 실용 지표
-`입력 $0.6 · 출력 $0.72 · 혼합 $None/1M · 84.0 t/s · TTFT 1.61s · 128k ctx`
+`입력 $0.6 · 출력 $0.72 · 혼합 $0.612/1M · 86.0 t/s · TTFT 1.48s · 128k ctx` · 가성비 14.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Meta · Open · Medium(70B) · 컨텍스트 128k · 종합지능 **9.0**
 | 추론 | 37.4 | -0.84 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 50.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 39.6 | -0.69 | 실측 | [[scicode]] 26.0%×1.0, [[terminal-bench]] 3.0%×0.5 |
 | 에이전트 | 32.8 | -1.15 | 실측 | [[gdpval]] 0.0%×1.0, [[itbench]] 1.0%×1.0, [[tau2-bench]] 27.0%×1.0, [[tau3-banking]] 1.0%×1.0, [[terminal-bench]] 3.0%×1.0 |
-| 신뢰성 | 41.5 | -0.57 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
+| 신뢰성 | 41.4 | -0.57 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 36.8 | -0.88 | 실측 | [[aa-lcr]] 15.0%×1.0 |
 | 지시 따르기 | 47.6 | -0.16 | 실측 | [[ifbench]] 47.0%×1.0 |

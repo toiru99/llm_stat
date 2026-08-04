@@ -4,8 +4,8 @@ title: GPT-5.6 Terra (Non-reasoning)
 creator: OpenAI
 license: Proprietary
 intelligence_index: 34.0
-price_blended_usd_1m: None
-output_speed_tps: 103.0
+price_blended_usd_1m: 1.74
+output_speed_tps: 112.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 55.9, z: 0.69, r: 60.3, estimated: false }  # 전문 지식
   reasoning: { s: 34.3, z: -0.01, r: 49.8, estimated: false }  # 추론
-  coding: { s: 75.0, z: 1.16, r: 67.5, estimated: false }  # 코딩
+  coding: { s: 75.0, z: 1.16, r: 67.4, estimated: false }  # 코딩
   agentic: { s: 46.3, z: 0.38, r: 55.8, estimated: false }  # 에이전트
-  trust: { s: 5.7, z: -1.06, r: 34.1, estimated: false }  # 신뢰성
+  trust: { s: 5.7, z: -1.05, r: 34.2, estimated: false }  # 신뢰성
   multimodal: { s: 74.3, z: 0.13, r: 51.9, estimated: false }  # 멀티모달
   long_context: { s: 65.8, z: 0.48, r: 57.2, estimated: false }  # 긴문맥
   instruction: { s: 66.7, z: 0.56, r: 58.4, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Terra (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # GPT-5.6 Terra (Non-reasoning)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **34.0**
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $2.0 · 출력 $12.0 · 혼합 $None/1M · 103.0 t/s · TTFT 0.74s · 1M ctx`
+`입력 $2.0 · 출력 $12.0 · 혼합 $1.74/1M · 112.0 t/s · TTFT 0.75s · 1M ctx` · 가성비 19.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **34.0**
 |---|---|---|---|---|
 | 전문 지식 | 60.3 | +0.69 | 실측 | [[aa-omniscience]] 36.0%×1.0, [[gpqa-diamond]] 75.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
 | 추론 | 49.8 | -0.01 | 실측 | [[critpt]] 2.0%×1.0, [[gpqa-diamond]] 75.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
-| 코딩 | 67.5 | +1.16 | 실측 | [[scicode]] 45.0%×1.0 |
+| 코딩 | 67.4 | +1.16 | 실측 | [[scicode]] 45.0%×1.0 |
 | 에이전트 | 55.8 | +0.38 | 실측 | [[gdpval]] 37.0%×1.0, [[tau3-banking]] 13.0%×1.0 |
-| 신뢰성 | 34.1 | -1.06 | 실측 | [[aa-omniscience]] 6.0%×1.0 |
+| 신뢰성 | 34.2 | -1.05 | 실측 | [[aa-omniscience]] 6.0%×1.0 |
 | 멀티모달 | 51.9 | +0.13 | 실측 | [[mmmu-pro]] 67.0%×1.0 |
 | 긴문맥 | 57.2 | +0.48 | 실측 | [[aa-lcr]] 50.0%×1.0 |
 | 지시 따르기 | 58.4 | +0.56 | 추정 | (추정) |

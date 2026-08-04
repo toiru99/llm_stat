@@ -4,8 +4,8 @@ title: GPT-5 mini (medium)
 creator: OpenAI
 license: Proprietary
 intelligence_index: 31.0
-price_blended_usd_1m: None
-output_speed_tps: 106.0
+price_blended_usd_1m: 0.2675
+output_speed_tps: 96.0
 context_window: 400000
 status: past
 size_class: Unknown
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 37.8, z: 0.17, r: 52.5, estimated: false }  # 추론
   coding: { s: 60.2, z: 0.55, r: 58.2, estimated: false }  # 코딩
   agentic: { s: 57.8, z: 0.83, r: 62.5, estimated: false }  # 에이전트
-  trust: { s: 65.5, z: 1.77, r: 76.6, estimated: false }  # 신뢰성
+  trust: { s: 65.5, z: 1.73, r: 75.9, estimated: false }  # 신뢰성
   multimodal: { s: 77.1, z: 0.26, r: 53.9, estimated: false }  # 멀티모달
   long_context: { s: 86.8, z: 1.11, r: 66.6, estimated: false }  # 긴문맥
   instruction: { s: 83.1, z: 1.24, r: 68.6, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5 mini (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # GPT-5 mini (medium)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **31.0** �
 - **약점**: 전문 지식, 추론
 
 ## 실용 지표
-`입력 $0.25 · 출력 $2.0 · 혼합 $None/1M · 106.0 t/s · TTFT 13.89s · 400k ctx`
+`입력 $0.25 · 출력 $2.0 · 혼합 $0.2675/1M · 96.0 t/s · TTFT 14.93s · 400k ctx` · 가성비 115.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **31.0** �
 | 추론 | 52.5 | +0.17 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 80.0%×1.0, [[humanitys-last-exam]] 15.0%×1.0 |
 | 코딩 | 58.2 | +0.55 | 실측 | [[scicode]] 41.0%×1.0, [[terminal-bench]] 29.0%×0.5 |
 | 에이전트 | 62.5 | +0.83 | 실측 | [[tau2-bench]] 71.0%×1.0, [[terminal-bench]] 29.0%×1.0 |
-| 신뢰성 | 76.6 | +1.77 | 실측 | [[aa-omniscience]] 58.0%×1.0 |
+| 신뢰성 | 75.9 | +1.73 | 실측 | [[aa-omniscience]] 58.0%×1.0 |
 | 멀티모달 | 53.9 | +0.26 | 실측 | [[mmmu-pro]] 69.0%×1.0 |
 | 긴문맥 | 66.6 | +1.11 | 실측 | [[aa-lcr]] 66.0%×1.0 |
 | 지시 따르기 | 68.6 | +1.24 | 실측 | [[ifbench]] 71.0%×1.0 |

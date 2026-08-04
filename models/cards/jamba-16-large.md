@@ -4,7 +4,7 @@ title: Jamba 1.6 Large
 creator: AI21 Labs
 license: Open
 intelligence_index: 5.0
-price_blended_usd_1m: None
+price_blended_usd_1m: 2.6
 output_speed_tps: 56.0
 context_window: 256000
 status: past
@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 22.2, z: -0.9, r: 36.5, estimated: false }  # 전문 지식
   reasoning: { s: 20.1, z: -0.72, r: 39.2, estimated: false }  # 추론
-  coding: { s: 30.0, z: -0.71, r: 39.4, estimated: false }  # 코딩
+  coding: { s: 30.0, z: -0.71, r: 39.3, estimated: false }  # 코딩
   agentic: { s: 8.6, z: -1.08, r: 33.8, estimated: true }  # 에이전트
-  trust: { s: 29.7, z: 0.08, r: 51.1, estimated: true }  # 신뢰성
+  trust: { s: 29.7, z: 0.06, r: 50.9, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 22.1, z: -0.81, r: 37.8, estimated: true }  # 긴문맥
   instruction: { s: 33.8, z: -0.8, r: 38.0, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba 1.6 Large
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Jamba 1.6 Large
@@ -37,7 +37,7 @@ AI21 Labs · Open · Large(398B) · 컨텍스트 256k · 종합지능 **5.0** ·
 - **약점**: 전문 지식, 에이전트
 
 ## 실용 지표
-`입력 $2.0 · 출력 $8.0 · 혼합 $None/1M · 56.0 t/s · TTFT 1.38s · 256k ctx`
+`입력 $2.0 · 출력 $8.0 · 혼합 $2.6/1M · 56.0 t/s · TTFT 1.37s · 256k ctx` · 가성비 1.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ AI21 Labs · Open · Large(398B) · 컨텍스트 256k · 종합지능 **5.0** ·
 |---|---|---|---|---|
 | 전문 지식 | 36.5 | -0.9 | 실측 | [[gpqa-diamond]] 39.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 39.2 | -0.72 | 실측 | [[gpqa-diamond]] 39.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 39.4 | -0.71 | 실측 | [[scicode]] 18.0%×1.0 |
+| 코딩 | 39.3 | -0.71 | 실측 | [[scicode]] 18.0%×1.0 |
 | 에이전트 | 33.8 | -1.08 | 추정 | (추정) |
-| 신뢰성 | 51.1 | +0.08 | 추정 | (추정) |
+| 신뢰성 | 50.9 | +0.06 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 37.8 | -0.81 | 추정 | (추정) |
 | 지시 따르기 | 38.0 | -0.8 | 추정 | (추정) |

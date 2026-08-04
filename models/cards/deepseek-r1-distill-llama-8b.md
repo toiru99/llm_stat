@@ -19,13 +19,13 @@ radar:
   trust: { s: 7.6, z: -0.97, r: 35.5, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.47, r: 28.0, estimated: false }  # 긴문맥
-  instruction: { s: 8.5, z: -1.84, r: 22.3, estimated: false }  # 지시 따르기
+  instruction: { s: 8.5, z: -1.85, r: 22.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek R1 Distill Llama 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # DeepSeek R1 Distill Llama 8B
@@ -50,7 +50,7 @@ DeepSeek · Open · Small(8B) · 컨텍스트 128k · 종합지능 **6.0** · �
 | 신뢰성 | 35.5 | -0.97 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.0 | -1.47 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 22.3 | -1.84 | 실측 | [[ifbench]] 18.0%×1.0 |
+| 지시 따르기 | 22.3 | -1.85 | 실측 | [[ifbench]] 18.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

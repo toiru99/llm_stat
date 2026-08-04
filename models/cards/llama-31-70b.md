@@ -4,7 +4,7 @@ title: Llama 3.1 70B
 creator: Meta
 license: Open
 intelligence_index: 7.0
-price_blended_usd_1m: None
+price_blended_usd_1m: 0.56
 output_speed_tps: 63.0
 context_window: 128000
 status: past
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 14.9, z: -0.99, r: 35.2, estimated: false }  # 추론
   coding: { s: 31.5, z: -0.65, r: 40.3, estimated: false }  # 코딩
   agentic: { s: 9.8, z: -1.03, r: 34.5, estimated: false }  # 에이전트
-  trust: { s: 27.6, z: -0.02, r: 49.7, estimated: false }  # 신뢰성
+  trust: { s: 27.6, z: -0.04, r: 49.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 7.9, z: -1.23, r: 31.5, estimated: false }  # 긴문맥
   instruction: { s: 31.0, z: -0.91, r: 36.3, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.1 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Llama 3.1 70B
@@ -37,7 +37,7 @@ Meta · Open · Medium(70B) · 컨텍스트 128k · 종합지능 **7.0** · ⚠�
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.56 · 출력 $0.56 · 혼합 $None/1M · 63.0 t/s · TTFT 1.36s · 128k ctx`
+`입력 $0.56 · 출력 $0.56 · 혼합 $0.56/1M · 63.0 t/s · TTFT 1.35s · 128k ctx` · 가성비 12.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Meta · Open · Medium(70B) · 컨텍스트 128k · 종합지능 **7.0** · ⚠�
 | 추론 | 35.2 | -0.99 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 40.3 | -0.65 | 실측 | [[scicode]] 27.0%×1.0, [[terminal-bench]] 3.0%×0.5 |
 | 에이전트 | 34.5 | -1.03 | 실측 | [[tau2-bench]] 15.0%×1.0, [[terminal-bench]] 3.0%×1.0 |
-| 신뢰성 | 49.7 | -0.02 | 실측 | [[aa-omniscience]] 25.0%×1.0 |
+| 신뢰성 | 49.4 | -0.04 | 실측 | [[aa-omniscience]] 25.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 31.5 | -1.23 | 실측 | [[aa-lcr]] 6.0%×1.0 |
 | 지시 따르기 | 36.3 | -0.91 | 실측 | [[ifbench]] 34.0%×1.0 |

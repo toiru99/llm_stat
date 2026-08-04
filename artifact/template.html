@@ -345,7 +345,7 @@ function panelHTML(){
         <div class="badge"><div class="k">가성비 (지능÷혼합$)</div><div class="v">${m.value??'—'}</div></div>
         <div class="badge"><div class="k">입력가</div><div class="v">$${m.price_in??'—'}<small>/1M</small></div></div>
         <div class="badge"><div class="k">출력가</div><div class="v">$${m.price_out??'—'}<small>/1M</small></div></div>
-        <div class="badge"><div class="k">혼합가 (3:1)</div><div class="v">$${m.price??'—'}<small>/1M</small></div></div>
+        <div class="badge" title="AA 혼합가 — 캐시히트 7 : 입력 2 : 출력 1 가중. 가성비 계산의 분모"><div class="k">혼합가</div><div class="v">$${m.price??'—'}<small>/1M</small></div></div>
         <div class="badge"><div class="k">컨텍스트</div><div class="v">${fmtCtx(m.ctx)}</div></div>
         <div class="badge"><div class="k">속도</div><div class="v">${m.speed??'—'}<small> t/s</small></div></div>
         <div class="badge" title="첫 토큰까지 지연. 추론 모델은 사고시간 포함이라 큼"><div class="k">TTFT</div><div class="v">${m.ttft??'—'}<small> s</small></div></div>

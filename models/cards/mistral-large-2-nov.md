@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 17.4, z: -0.86, r: 37.1, estimated: false }  # 추론
   coding: { s: 35.3, z: -0.49, r: 42.6, estimated: false }  # 코딩
   agentic: { s: 20.2, z: -0.63, r: 40.5, estimated: false }  # 에이전트
-  trust: { s: 35.6, z: 0.36, r: 55.4, estimated: false }  # 신뢰성
+  trust: { s: 35.6, z: 0.34, r: 55.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 6.6, z: -1.27, r: 30.9, estimated: false }  # 긴문맥
   instruction: { s: 26.8, z: -1.09, r: 33.7, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Large 2 (Nov)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Mistral Large 2 (Nov)
@@ -47,7 +47,7 @@ Mistral · Open · Medium(123B) · 컨텍스트 128k · 종합지능 **9.0** · 
 | 추론 | 37.1 | -0.86 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 49.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 42.6 | -0.49 | 실측 | [[scicode]] 29.0%×1.0, [[terminal-bench]] 6.0%×0.5 |
 | 에이전트 | 40.5 | -0.63 | 실측 | [[tau2-bench]] 31.0%×1.0, [[terminal-bench]] 6.0%×1.0 |
-| 신뢰성 | 55.4 | +0.36 | 실측 | [[aa-omniscience]] 32.0%×1.0 |
+| 신뢰성 | 55.1 | +0.34 | 실측 | [[aa-omniscience]] 32.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 30.9 | -1.27 | 실측 | [[aa-lcr]] 5.0%×1.0 |
 | 지시 따르기 | 33.7 | -1.09 | 실측 | [[ifbench]] 31.0%×1.0 |

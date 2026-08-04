@@ -4,7 +4,7 @@ title: Ring-flash-2.0
 creator: InclusionAI
 license: Open
 intelligence_index: 8.0
-price_blended_usd_1m: None
+price_blended_usd_1m: 0.183
 output_speed_tps: None
 context_window: 128000
 status: current
@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 35.1, z: -0.29, r: 45.6, estimated: false }  # 전문 지식
   reasoning: { s: 30.1, z: -0.22, r: 46.7, estimated: false }  # 추론
-  coding: { s: 22.9, z: -1.0, r: 34.9, estimated: false }  # 코딩
+  coding: { s: 22.9, z: -1.01, r: 34.9, estimated: false }  # 코딩
   agentic: { s: 6.1, z: -1.18, r: 32.3, estimated: false }  # 에이전트
   trust: { s: 10.3, z: -0.84, r: 37.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ring-flash-2.0
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Ring-flash-2.0
@@ -37,7 +37,7 @@ InclusionAI · Open · Medium(103B) · 컨텍스트 128k · 종합지능 **8.0**
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.14 · 출력 $0.57 · 혼합 $None/1M · None t/s · TTFT Nones · 128k ctx`
+`입력 $0.14 · 출력 $0.57 · 혼합 $0.183/1M · None t/s · TTFT Nones · 128k ctx` · 가성비 43.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ InclusionAI · Open · Medium(103B) · 컨텍스트 128k · 종합지능 **8.0**
 |---|---|---|---|---|
 | 전문 지식 | 45.6 | -0.29 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 9.0%×0.3 |
 | 추론 | 46.7 | -0.22 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
-| 코딩 | 34.9 | -1.0 | 실측 | [[scicode]] 17.0%×1.0, [[terminal-bench]] 8.0%×0.5 |
+| 코딩 | 34.9 | -1.01 | 실측 | [[scicode]] 17.0%×1.0, [[terminal-bench]] 8.0%×0.5 |
 | 에이전트 | 32.3 | -1.18 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
 | 신뢰성 | 37.4 | -0.84 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

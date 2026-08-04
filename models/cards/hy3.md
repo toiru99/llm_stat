@@ -4,8 +4,8 @@ title: Hy3
 creator: Tencent
 license: Open
 intelligence_index: 41.0
-price_blended_usd_1m: None
-output_speed_tps: 71.0
+price_blended_usd_1m: 0.1067
+output_speed_tps: 70.0
 context_window: 256000
 status: current
 size_class: Large
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 56.8, z: 1.12, r: 66.8, estimated: false }  # 추론
   coding: { s: 80.0, z: 1.37, r: 70.6, estimated: false }  # 코딩
   agentic: { s: 57.4, z: 0.81, r: 62.2, estimated: false }  # 에이전트
-  trust: { s: 29.9, z: 0.09, r: 51.3, estimated: false }  # 신뢰성
+  trust: { s: 29.9, z: 0.07, r: 51.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 88.2, z: 1.14, r: 67.2, estimated: false }  # 긴문맥
   instruction: { s: 74.1, z: 0.87, r: 63.0, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hy3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-03
-timestamp: 2026-08-03T00:00:00Z
+updated: 2026-08-04
+timestamp: 2026-08-04T00:00:00Z
 ---
 
 # Hy3
@@ -37,7 +37,7 @@ Tencent · Open · Large(299B) · 컨텍스트 256k · 종합지능 **41.0**
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.14 · 출력 $0.56 · 혼합 $None/1M · 71.0 t/s · TTFT 2.74s · 256k ctx`
+`입력 $0.14 · 출력 $0.56 · 혼합 $0.1067/1M · 70.0 t/s · TTFT 2.7s · 256k ctx` · 가성비 384.3
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Tencent · Open · Large(299B) · 컨텍스트 256k · 종합지능 **41.0**
 | 추론 | 66.8 | +1.12 | 실측 | [[critpt]] 5.0%×1.0, [[gpqa-diamond]] 90.0%×1.0, [[humanitys-last-exam]] 32.0%×1.0 |
 | 코딩 | 70.6 | +1.37 | 실측 | [[scicode]] 48.0%×1.0 |
 | 에이전트 | 62.2 | +0.81 | 실측 | [[gdpval]] 36.0%×1.0, [[tau3-banking]] 21.0%×1.0 |
-| 신뢰성 | 51.3 | +0.09 | 실측 | [[aa-omniscience]] 27.0%×1.0 |
+| 신뢰성 | 51.0 | +0.07 | 실측 | [[aa-omniscience]] 27.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 67.2 | +1.14 | 실측 | [[aa-lcr]] 67.0%×1.0 |
 | 지시 따르기 | 63.0 | +0.87 | 추정 | (추정) |
