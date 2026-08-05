@@ -114,6 +114,12 @@
   .cmp-tbl td small{font-size:9.5px;color:var(--muted);font-weight:400}
   .cmp-tbl td.best{color:var(--good);font-weight:700}
   .cmp-tbl td.na{color:var(--base)}
+  .cmp-axes{border-top:1px solid var(--line-soft)}
+  .cmp-axes summary{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--muted);padding:10px 14px;cursor:pointer;user-select:none}
+  .cmp-axes summary:hover{color:var(--ink)}
+  .cmp-axes .cmp-wrap{padding-top:0}
+  .axnote{font-family:var(--mono);font-size:9.5px;color:var(--muted);padding:0 14px 10px;margin:0}
 
   .empty{padding:30px 16px;text-align:center;color:var(--muted);font-family:var(--mono);font-size:12px}
 
@@ -176,7 +182,7 @@ const $=s=>document.querySelector(s), el=(t,c)=>{const e=document.createElement(
 const fmtCtx=n=>!n?"—":n>=1e6?(n/1e6)+"M":Math.round(n/1e3)+"k";
 const SERIES=["--series-0","--series-1","--series-2"];
 
-let state={view:"radar",selected:[(MODELS.find(m=>m.status==="current")||MODELS[0]).slug],q:"",creators:new Set(PAYLOAD.defaultCreators||[]),lic:new Set(),maxPrice:Infinity,minCtx:0,sizes:new Set(),reasoning:new Set(),curOnly:true};
+let state={view:"radar",selected:[(MODELS.find(m=>m.status==="current")||MODELS[0]).slug],q:"",creators:new Set(PAYLOAD.defaultCreators||[]),lic:new Set(),maxPrice:Infinity,minCtx:0,sizes:new Set(),reasoning:new Set(),curOnly:true,axesOpen:false};
 
 // ---------- filters ----------
 function buildFilters(){
@@ -392,6 +398,23 @@ function bestIdx(mt,sel){
   return new Set(nums.map((v,i)=>v===best?i:-1).filter(i=>i>=0));
 }
 
+// 레이더 8축을 숫자로. 차트가 이미 겹쳐 보여주므로 기본은 접어 둔다.
+function axesHTML(sel){
+  const rows=AX.map(ax=>{
+    const ds=sel.map(m=>m.radar[ax]);
+    const nums=ds.filter(d=>d.measured).map(d=>d.r);
+    const best=nums.length>=2?Math.max(...nums):null;   // 8축은 전부 클수록 좋음
+    const tds=ds.map(d=>d.measured
+      ? `<td class="${best!=null&&d.r===best?"best":""}">${d.r}${d.estimated?"<small>*</small>":""}</td>`
+      : `<td class="na">미측정</td>`).join("");
+    return `<tr><th>${LAB[ax]}</th>${tds}</tr>`;
+  }).join("");
+  return `<details class="cmp-axes"${state.axesOpen?" open":""}>`
+    +`<summary>8축 점수 (평균=50 기준선)</summary>`
+    +`<div class="cmp-wrap"><table class="cmp-tbl"><tbody>${rows}</tbody></table></div>`
+    +`<p class="axnote">r=50이 추적 모델 평균. * = kNN 추정값.</p></details>`;
+}
+
 function badgeView(m){
   const badges=METRICS.map(mt=>{
     const c=cellOf(mt,m);
@@ -419,12 +442,20 @@ function compareView(sel){
     }).join("");
     return `<tr><th${mt.tip?` title="${mt.tip}"`:""}>${mt.k}</th>${tds}</tr>`;
   }).join("");
-  return `<div class="cmp-wrap"><table class="cmp-tbl">`
-    +`<thead><tr><th></th>${head}</tr></thead><tbody>${rows}</tbody></table></div>`;
+  // cmp-main = 실용 지표 본표. 8축 표와 구분해야 스타일·조회가 섞이지 않는다.
+  return `<div class="cmp-wrap"><table class="cmp-tbl cmp-main">`
+    +`<thead><tr><th></th>${head}</tr></thead><tbody>${rows}</tbody></table></div>`
+    +axesHTML(sel);
 }
 
 function panelHTML(){
   const p=$("#panel");
+  // render() 가 패널을 innerHTML 로 덮어쓰므로 펼침 상태를 밖에 보관해야
+  // 슬라이더만 건드려도 다시 접히는 일이 없다.
+  // toggle 이벤트는 비동기라 클릭과 같은 틱에 리렌더가 걸리면 놓친다 —
+  // 이벤트에 기대지 말고 덮어쓰기 직전에 실제 DOM 상태를 읽는다.
+  const cur=p.querySelector(".cmp-axes");
+  if(cur) state.axesOpen=cur.open;
   const sel=state.selected.map(s=>MODELS.find(x=>x.slug===s)).filter(Boolean);
   if(!sel.length){p.innerHTML='<div class="empty">모델을 선택하세요</div>';return;}
   p.innerHTML = sel.length===1 ? badgeView(sel[0]) : compareView(sel);
