@@ -107,6 +107,22 @@
   .badge .v{font-family:var(--mono);font-size:15px;font-weight:600;margin-top:1px}
   .badge .v small{font-size:10px;color:var(--muted);font-weight:400}
 
+  /* compare table (2~3개 선택 시) */
+  .cmp-wrap{overflow-x:auto;padding:12px 10px 4px}
+  .cmp-tbl{width:100%;border-collapse:collapse;font-family:var(--mono)}
+  .cmp-tbl th,.cmp-tbl td{padding:6px 7px;text-align:right;font-size:12.5px;
+    border-bottom:1px solid var(--line-soft);white-space:nowrap}
+  .cmp-tbl tbody th{text-align:left;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--muted);font-weight:400;white-space:normal}
+  .cmp-tbl thead th{vertical-align:bottom;font-size:10.5px;font-weight:600;line-height:1.25;
+    white-space:normal;border-bottom:1px solid var(--line);padding-bottom:8px}
+  .cmp-tbl thead .sw{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:4px}
+  .cmp-tbl thead .nm{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .cmp-tbl thead .cr{display:block;font-size:9px;font-weight:400;color:var(--muted);
+    text-transform:uppercase;letter-spacing:.06em;margin-top:2px}
+  .cmp-tbl td small{font-size:9.5px;color:var(--muted);font-weight:400}
+  .cmp-tbl td.na{color:var(--base)}
+
   .empty{padding:30px 16px;text-align:center;color:var(--muted);font-family:var(--mono);font-size:12px}
 
   .foot{margin-top:26px;font-family:var(--mono);font-size:10.5px;color:var(--muted);
@@ -36008,29 +36024,73 @@ function scatterSVG(){
 }
 
 // ---------- right panel ----------
+const DASH="—";
+const usd=v=>v==null?DASH:"$"+v;
+const licLab=l=>l==='Open'?'오픈':l==='Proprietary'?'독점':l||'';
+
+// 배지 뷰와 비교표가 함께 읽는 단일 지표 목록.
+// dir: +1 클수록 좋음 / -1 작을수록 좋음 / 0 강조 안 함(범주형)
+const METRICS=[
+  {k:"종합지능",    g:m=>m.intel,      dir:+1},
+  {k:"가성비",      g:m=>m.value,      dir:+1, tip:"종합지능 ÷ 혼합가"},
+  {k:"혼합가",      g:m=>m.price,      dir:-1, fmt:usd, unit:"/1M",
+   tip:"AA 혼합가 — 캐시히트 7 : 입력 2 : 출력 1 가중. 가성비 계산의 분모"},
+  {k:"입력가",      g:m=>m.price_in,   dir:-1, fmt:usd, unit:"/1M"},
+  {k:"출력가",      g:m=>m.price_out,  dir:-1, fmt:usd, unit:"/1M"},
+  {k:"컨텍스트",    g:m=>m.ctx,        dir:+1, fmt:fmtCtx},
+  {k:"속도",        g:m=>m.speed,      dir:+1, unit:" t/s"},
+  {k:"TTFT",        g:m=>m.ttft,       dir:-1, unit:" s",
+   tip:"첫 토큰까지 지연. 추론 모델은 사고시간 포함이라 큼"},
+  {k:"총 응답시간", g:m=>m.total_resp, dir:-1, unit:" s"},
+  {k:"멀티모달",    g:m=>m.radar.multimodal.measured?"측정":"미측정", dir:0},
+  {k:"크기",        g:m=>m.size==="Unknown"?"비공개":m.size, dir:0,
+   sub:m=>m.params!=null?` ${m.params}B`:""},
+  {k:"추론 / 상태", g:m=>m.reasoning===true?"추론":m.reasoning===false?"비추론":DASH, dir:0,
+   sub:m=>` · ${m.status}`},
+];
+
+function cellOf(mt,m){
+  const raw=mt.g(m);
+  const body=mt.fmt?mt.fmt(raw):(raw==null?DASH:String(raw));
+  const sub=mt.sub?mt.sub(m):(raw==null?"":(mt.unit||""));
+  return {raw,body,sub};
+}
+
+function badgeView(m){
+  const badges=METRICS.map(mt=>{
+    const c=cellOf(mt,m);
+    return `<div class="badge"${mt.tip?` title="${mt.tip}"`:""}>`
+      +`<div class="k">${mt.k}</div>`
+      +`<div class="v">${c.body}${c.sub?`<small>${c.sub}</small>`:""}</div></div>`;
+  }).join("");
+  return `<div class="ph">
+      <div class="creator">${m.creator} · ${licLab(m.license)}</div>
+      <h2>${m.name}</h2>
+      <div class="badges">${badges}</div>
+    </div>`;
+}
+
+function compareView(sel){
+  const head=sel.map((m,i)=>
+    `<th><span class="sw" style="background:var(${SERIES[i]})"></span>`
+    +`<span class="nm" title="${m.name}">${m.name}</span>`
+    +`<span class="cr">${m.creator} · ${licLab(m.license)}</span></th>`).join("");
+  const rows=METRICS.map(mt=>{
+    const tds=sel.map(m=>{
+      const c=cellOf(mt,m);
+      return `<td>${c.body}${c.sub?`<small>${c.sub}</small>`:""}</td>`;
+    }).join("");
+    return `<tr><th${mt.tip?` title="${mt.tip}"`:""}>${mt.k}</th>${tds}</tr>`;
+  }).join("");
+  return `<div class="cmp-wrap"><table class="cmp-tbl">`
+    +`<thead><tr><th></th>${head}</tr></thead><tbody>${rows}</tbody></table></div>`;
+}
+
 function panelHTML(){
   const p=$("#panel");
-  const m=MODELS.find(x=>x.slug===state.selected[0]);
-  if(!m){p.innerHTML='<div class="empty">모델을 선택하세요</div>';return;}
-  p.innerHTML=`
-    <div class="ph">
-      <div class="creator">${m.creator} · ${m.license==='Open'?'오픈':m.license==='Proprietary'?'독점':m.license||''}</div>
-      <h2>${m.name}</h2>
-      <div class="badges">
-        <div class="badge"><div class="k">종합지능</div><div class="v">${m.intel??'—'}</div></div>
-        <div class="badge"><div class="k">가성비 (지능÷혼합$)</div><div class="v">${m.value??'—'}</div></div>
-        <div class="badge"><div class="k">입력가</div><div class="v">$${m.price_in??'—'}<small>/1M</small></div></div>
-        <div class="badge"><div class="k">출력가</div><div class="v">$${m.price_out??'—'}<small>/1M</small></div></div>
-        <div class="badge" title="AA 혼합가 — 캐시히트 7 : 입력 2 : 출력 1 가중. 가성비 계산의 분모"><div class="k">혼합가</div><div class="v">$${m.price??'—'}<small>/1M</small></div></div>
-        <div class="badge"><div class="k">컨텍스트</div><div class="v">${fmtCtx(m.ctx)}</div></div>
-        <div class="badge"><div class="k">속도</div><div class="v">${m.speed??'—'}<small> t/s</small></div></div>
-        <div class="badge" title="첫 토큰까지 지연. 추론 모델은 사고시간 포함이라 큼"><div class="k">TTFT</div><div class="v">${m.ttft??'—'}<small> s</small></div></div>
-        <div class="badge"><div class="k">총 응답시간</div><div class="v">${m.total_resp??'—'}<small> s</small></div></div>
-        <div class="badge"><div class="k">멀티모달</div><div class="v">${m.radar.multimodal.measured?'측정':'미측정'}</div></div>
-        <div class="badge"><div class="k">크기</div><div class="v">${m.size==="Unknown"?"비공개":m.size}${m.params!=null?`<small> ${m.params}B</small>`:""}</div></div>
-        <div class="badge"><div class="k">추론 / 상태</div><div class="v">${m.reasoning===true?"추론":m.reasoning===false?"비추론":"—"}<small> · ${m.status}</small></div></div>
-      </div>
-    </div>`;
+  const sel=state.selected.map(s=>MODELS.find(x=>x.slug===s)).filter(Boolean);
+  if(!sel.length){p.innerHTML='<div class="empty">모델을 선택하세요</div>';return;}
+  p.innerHTML = sel.length===1 ? badgeView(sel[0]) : compareView(sel);
 }
 
 // ---------- legend ----------
