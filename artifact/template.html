@@ -29,6 +29,9 @@
 
   /* layout */
   .grid{display:grid;grid-template-columns:248px minmax(0,1fr) 320px;gap:18px;align-items:start}
+  /* 비교 중일 때만 패널을 넓힌다. 1200px 미만에서 넓히면 스테이지가 380px 아래로 눌려
+     레이더가 읽히지 않는다 — 그 구간은 320px 유지하고 표를 가로 스크롤시킨다. */
+  @media(min-width:1200px){.grid.cmp{grid-template-columns:248px minmax(0,1fr) 420px}}
   @media(max-width:1080px){.grid{grid-template-columns:220px minmax(0,1fr)}.panel{grid-column:1/-1}}
   @media(max-width:760px){.grid{grid-template-columns:1fr}.rail{order:2}}
 
@@ -103,8 +106,9 @@
   .cmp-tbl{width:100%;border-collapse:collapse;font-family:var(--mono)}
   .cmp-tbl th,.cmp-tbl td{padding:6px 7px;text-align:right;font-size:12.5px;
     border-bottom:1px solid var(--line-soft);white-space:nowrap}
+  /* keep-all 이 없으면 한글이 "종합지 / 능" 처럼 단어 중간에서 끊긴다 */
   .cmp-tbl tbody th{text-align:left;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;
-    color:var(--muted);font-weight:400;white-space:normal}
+    color:var(--muted);font-weight:400;white-space:normal;word-break:keep-all;width:1%}
   .cmp-tbl thead th{vertical-align:bottom;font-size:10.5px;font-weight:600;line-height:1.25;
     white-space:normal;border-bottom:1px solid var(--line);padding-bottom:8px}
   .cmp-tbl thead .sw{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:4px}
@@ -389,24 +393,30 @@ function cellOf(mt,m){
 
 // 행 안에서 '더 좋은' 값의 열 인덱스. 동점은 모두 포함한다 —
 // 하나만 고르면 값이 같은데 우열이 있는 것처럼 읽힌다.
+// 비교가 성립하지 않는 행(유효값 1개 이하, 전원 동점)은 아예 강조하지 않는다.
+// 전부 녹색인 행은 정보를 주지 않고 눈만 어지럽힌다.
 function bestIdx(mt,sel){
   if(!mt.dir) return new Set();
   const nums=sel.map(m=>{const v=mt.g(m);return typeof v==="number"?v:null;});
   const cand=nums.filter(v=>v!=null);
-  if(cand.length<2) return new Set();      // 유효값 1개 이하면 비교 자체가 성립 안 함
+  if(cand.length<2) return new Set();
   const best=mt.dir>0?Math.max(...cand):Math.min(...cand);
-  return new Set(nums.map((v,i)=>v===best?i:-1).filter(i=>i>=0));
+  const hits=nums.map((v,i)=>v===best?i:-1).filter(i=>i>=0);
+  return hits.length===nums.length ? new Set() : new Set(hits);
 }
 
 // 레이더 8축을 숫자로. 차트가 이미 겹쳐 보여주므로 기본은 접어 둔다.
 function axesHTML(sel){
   const rows=AX.map(ax=>{
-    const ds=sel.map(m=>m.radar[ax]);
-    const nums=ds.filter(d=>d.measured).map(d=>d.r);
-    const best=nums.length>=2?Math.max(...nums):null;   // 8축은 전부 클수록 좋음
-    const tds=ds.map(d=>d.measured
-      ? `<td class="${best!=null&&d.r===best?"best":""}">${d.r}${d.estimated?"<small>*</small>":""}</td>`
-      : `<td class="na">미측정</td>`).join("");
+    // 본표와 같은 강조 규칙을 쓴다 (동점 모두 / 전원 동점·유효값 1개는 강조 없음).
+    // r 은 평균 대비 반경이라 8축 모두 클수록 좋음. 미측정은 null 로 넘겨 후보에서 빠진다.
+    const best=bestIdx({g:m=>m.radar[ax].measured?m.radar[ax].r:null, dir:+1}, sel);
+    const tds=sel.map((m,i)=>{
+      const d=m.radar[ax];
+      return d.measured
+        ? `<td class="${best.has(i)?"best":""}">${d.r}${d.estimated?"<small>*</small>":""}</td>`
+        : `<td class="na">미측정</td>`;
+    }).join("");
     return `<tr><th>${LAB[ax]}</th>${tds}</tr>`;
   }).join("");
   return `<details class="cmp-axes"${state.axesOpen?" open":""}>`
@@ -476,6 +486,7 @@ function legendHTML(){
 
 // ---------- render ----------
 function render(){
+  document.querySelector(".grid").classList.toggle("cmp", state.selected.length>1);
   buildList();panelHTML();legendHTML();
   $("#viewwrap").innerHTML = state.view==="radar"?radarSVG():scatterSVG();
   if(state.view==="scatter"){

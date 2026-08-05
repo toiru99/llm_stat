@@ -121,6 +121,20 @@ test('bestIdx: 유효값이 1개뿐이면 강조하지 않는다', async () => {
   assert.deepEqual(idx, []);
 });
 
+test('bestIdx: 전원 동점이면 강조하지 않는다 (우열이 없으므로)', async () => {
+  const idx = await page.evaluate(() =>
+    [...bestIdx({ g: m => m.x, dir: 1 }, [{ x: 1 }, { x: 1 }, { x: 1 }])]);
+  assert.deepEqual(idx, []);
+});
+
+test('행 라벨은 한글 단어 중간에서 줄바꿈되지 않는다', async () => {
+  await select(3);
+  const lines = await page.locator('#panel .cmp-main tbody th', { hasText: '종합지능' }).first()
+    .evaluate((el) => { const r = document.createRange(); r.selectNodeContents(el);
+      return r.getClientRects().length; });
+  assert.equal(lines, 1, '"종합지능"이 여러 줄로 쪼개짐');
+});
+
 test('bestIdx: dir 0 은 항상 빈 집합', async () => {
   const idx = await page.evaluate(() =>
     [...bestIdx({ g: m => m.x, dir: 0 }, [{ x: 1 }, { x: 2 }])]);
@@ -161,6 +175,35 @@ test('8축 미측정 축은 미측정으로 표기되고 강조되지 않는다'
   // 뒷정리: panelHTML 이 렌더 직전 DOM 을 읽으므로 state 만 되돌리면 무효다
   await page.evaluate(() => { const d = document.querySelector('.cmp-axes');
     if (d) d.open = false; state.axesOpen = false; });
+});
+
+const panelWidth = () => page.locator('#panel')
+  .evaluate((el) => Math.round(el.getBoundingClientRect().width));
+
+test('1440px에서 비교 중이면 패널이 420px로 넓어진다', async () => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await select(1);
+  assert.equal(await page.locator('.grid').evaluate((el) => el.classList.contains('cmp')), false);
+  assert.equal(await panelWidth(), 320);
+  await select(3);
+  assert.equal(await page.locator('.grid').evaluate((el) => el.classList.contains('cmp')), true);
+  assert.equal(await panelWidth(), 420);
+});
+
+test('1100px에서는 비교 중이어도 320px 유지 (차트가 눌리지 않게)', async () => {
+  await page.setViewportSize({ width: 1100, height: 900 });
+  await select(3);
+  assert.equal(await panelWidth(), 320);
+  await page.setViewportSize({ width: 1440, height: 900 });
+});
+
+test('700px에서 비교표는 가로 스크롤이 가능하다', async () => {
+  await page.setViewportSize({ width: 700, height: 900 });
+  await select(3);
+  const ov = await page.locator('#panel .cmp-wrap').first()
+    .evaluate((el) => getComputedStyle(el).overflowX);
+  assert.equal(ov, 'auto');
+  await page.setViewportSize({ width: 1440, height: 900 });
 });
 
 test('페이지 JS 오류 없음', () => {
