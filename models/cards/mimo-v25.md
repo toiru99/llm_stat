@@ -5,7 +5,7 @@ creator: Xiaomi
 license: Open
 intelligence_index: 37.0
 price_blended_usd_1m: 0.058
-output_speed_tps: 80.0
+output_speed_tps: 83.0
 context_window: 1000000
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-04
-timestamp: 2026-08-04T00:00:00Z
+updated: 2026-08-05
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # MiMo-V2.5
@@ -37,7 +37,7 @@ Xiaomi · Open · Large(310B) · 컨텍스트 1M · 종합지능 **37.0**
 - **약점**: 멀티모달, 전문 지식
 
 ## 실용 지표
-`입력 $0.14 · 출력 $0.28 · 혼합 $0.058/1M · 80.0 t/s · TTFT 2.83s · 1M ctx` · 가성비 637.9
+`입력 $0.14 · 출력 $0.28 · 혼합 $0.058/1M · 83.0 t/s · TTFT 2.77s · 1M ctx` · 가성비 637.9
 
 ## 레이더 8축 (평균=50 기준선)
 

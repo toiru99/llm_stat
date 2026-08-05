@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 20.0
 price_blended_usd_1m: 1.3375
-output_speed_tps: 102.0
+output_speed_tps: 103.0
 context_window: 400000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-04
-timestamp: 2026-08-04T00:00:00Z
+updated: 2026-08-05
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # GPT-5.1
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **20.0** �
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $1.25 · 출력 $10.0 · 혼합 $1.3375/1M · 102.0 t/s · TTFT 1.07s · 400k ctx` · 가성비 15.0
+`입력 $1.25 · 출력 $10.0 · 혼합 $1.3375/1M · 103.0 t/s · TTFT 1.02s · 400k ctx` · 가성비 15.0
 
 ## 레이더 8축 (평균=50 기준선)
 

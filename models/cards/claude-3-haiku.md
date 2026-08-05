@@ -18,14 +18,14 @@ radar:
   agentic: { s: 11.4, z: -0.98, r: 35.4, estimated: false }  # 에이전트
   trust: { s: 24.1, z: -0.2, r: 47.0, estimated: false }  # 신뢰성
   multimodal: { s: 22.9, z: -2.36, r: 14.7, estimated: false }  # 멀티모달
-  long_context: { s: 27.6, z: -0.65, r: 40.3, estimated: false }  # 긴문맥
+  long_context: { s: 27.6, z: -0.65, r: 40.2, estimated: false }  # 긴문맥
   instruction: { s: 33.8, z: -0.8, r: 38.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 3 Haiku
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-04
-timestamp: 2026-08-04T00:00:00Z
+updated: 2026-08-05
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # Claude 3 Haiku
@@ -49,7 +49,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **4.0**
 | 에이전트 | 35.4 | -0.98 | 실측 | [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
 | 신뢰성 | 47.0 | -0.2 | 실측 | [[aa-omniscience]] 22.0%×1.0 |
 | 멀티모달 | 14.7 | -2.36 | 실측 | [[mmmu-pro]] 31.0%×1.0 |
-| 긴문맥 | 40.3 | -0.65 | 실측 | [[aa-lcr]] 21.0%×1.0 |
+| 긴문맥 | 40.2 | -0.65 | 실측 | [[aa-lcr]] 21.0%×1.0 |
 | 지시 따르기 | 38.0 | -0.8 | 실측 | [[ifbench]] 36.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

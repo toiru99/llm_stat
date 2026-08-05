@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 35.0
 price_blended_usd_1m: 1.305
-output_speed_tps: 172.0
+output_speed_tps: 170.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -18,14 +18,14 @@ radar:
   agentic: { s: 64.6, z: 1.1, r: 66.4, estimated: false }  # 에이전트
   trust: { s: 29.9, z: 0.07, r: 51.0, estimated: false }  # 신뢰성
   multimodal: { s: 92.9, z: 1.02, r: 65.3, estimated: false }  # 멀티모달
-  long_context: { s: 69.7, z: 0.6, r: 59.0, estimated: false }  # 긴문맥
+  long_context: { s: 69.7, z: 0.6, r: 58.9, estimated: false }  # 긴문맥
   instruction: { s: 49.3, z: -0.16, r: 47.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.5 Flash (minimal)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-04
-timestamp: 2026-08-04T00:00:00Z
+updated: 2026-08-05
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # Gemini 3.5 Flash (minimal)
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **35.0**
 - **약점**: 신뢰성, 지시 따르기
 
 ## 실용 지표
-`입력 $1.5 · 출력 $9.0 · 혼합 $1.305/1M · 172.0 t/s · TTFT 1.01s · 1M ctx` · 가성비 26.8
+`입력 $1.5 · 출력 $9.0 · 혼합 $1.305/1M · 170.0 t/s · TTFT 1.05s · 1M ctx` · 가성비 26.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **35.0**
 | 에이전트 | 66.4 | +1.1 | 실측 | [[tau2-bench]] 59.0%×1.0, [[terminal-bench]] 46.0%×1.0 |
 | 신뢰성 | 51.0 | +0.07 | 실측 | [[aa-omniscience]] 27.0%×1.0 |
 | 멀티모달 | 65.3 | +1.02 | 실측 | [[mmmu-pro]] 80.0%×1.0 |
-| 긴문맥 | 59.0 | +0.6 | 실측 | [[aa-lcr]] 53.0%×1.0 |
+| 긴문맥 | 58.9 | +0.6 | 실측 | [[aa-lcr]] 53.0%×1.0 |
 | 지시 따르기 | 47.6 | -0.16 | 실측 | [[ifbench]] 47.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

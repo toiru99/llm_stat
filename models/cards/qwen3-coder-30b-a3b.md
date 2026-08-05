@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 14.0
 price_blended_usd_1m: 0.63
-output_speed_tps: 94.0
+output_speed_tps: 93.0
 context_window: 262000
 status: past
 size_class: Small
@@ -19,13 +19,13 @@ radar:
   trust: { s: 23.0, z: -0.25, r: 46.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 38.2, z: -0.34, r: 44.9, estimated: false }  # 긴문맥
-  instruction: { s: 29.6, z: -0.97, r: 35.4, estimated: false }  # 지시 따르기
+  instruction: { s: 29.6, z: -0.98, r: 35.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Coder 30B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-04
-timestamp: 2026-08-04T00:00:00Z
+updated: 2026-08-05
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # Qwen3 Coder 30B A3B
@@ -37,7 +37,7 @@ Alibaba · Open · Small(30.5B) · 컨텍스트 262k · 종합지능 **14.0** ·
 - **약점**: 추론, 지시 따르기
 
 ## 실용 지표
-`입력 $0.45 · 출력 $2.25 · 혼합 $0.63/1M · 94.0 t/s · TTFT 2.6s · 262k ctx` · 가성비 22.2
+`입력 $0.45 · 출력 $2.25 · 혼합 $0.63/1M · 93.0 t/s · TTFT 2.61s · 262k ctx` · 가성비 22.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Alibaba · Open · Small(30.5B) · 컨텍스트 262k · 종합지능 **14.0** ·
 | 신뢰성 | 46.2 | -0.25 | 실측 | [[aa-omniscience]] 21.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 44.9 | -0.34 | 실측 | [[aa-lcr]] 29.0%×1.0 |
-| 지시 따르기 | 35.4 | -0.97 | 실측 | [[ifbench]] 33.0%×1.0 |
+| 지시 따르기 | 35.4 | -0.98 | 실측 | [[ifbench]] 33.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

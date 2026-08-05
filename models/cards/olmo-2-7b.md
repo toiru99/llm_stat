@@ -19,13 +19,13 @@ radar:
   trust: { s: 9.8, z: -0.87, r: 37.0, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.47, r: 28.0, estimated: false }  # 긴문맥
-  instruction: { s: 16.9, z: -1.5, r: 27.6, estimated: false }  # 지시 따르기
+  instruction: { s: 16.9, z: -1.5, r: 27.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — OLMo 2 7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-04
-timestamp: 2026-08-04T00:00:00Z
+updated: 2026-08-05
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # OLMo 2 7B
@@ -50,7 +50,7 @@ Allen Institute for AI · Open · Small(7.3B) · 컨텍스트 4k · 종합지능
 | 신뢰성 | 37.0 | -0.87 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.0 | -1.47 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 27.6 | -1.5 | 실측 | [[ifbench]] 24.0%×1.0 |
+| 지시 따르기 | 27.5 | -1.5 | 실측 | [[ifbench]] 24.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

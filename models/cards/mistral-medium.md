@@ -5,7 +5,7 @@ creator: Mistral
 license: Proprietary
 intelligence_index: 4.0
 price_blended_usd_1m: 2.1
-output_speed_tps: 123.0
+output_speed_tps: 138.0
 context_window: 32800
 status: past
 size_class: Unknown
@@ -18,14 +18,14 @@ radar:
   agentic: { s: 10.7, z: -1.0, r: 35.0, estimated: true }  # 에이전트
   trust: { s: 33.6, z: 0.24, r: 53.6, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 1.5, z: -1.42, r: 28.7, estimated: true }  # 긴문맥
+  long_context: { s: 1.5, z: -1.42, r: 28.6, estimated: true }  # 긴문맥
   instruction: { s: 27.8, z: -1.05, r: 34.3, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Medium
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-04
-timestamp: 2026-08-04T00:00:00Z
+updated: 2026-08-05
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # Mistral Medium
@@ -37,7 +37,7 @@ Mistral · Proprietary · Unknown · 컨텍스트 32k · 종합지능 **4.0** ·
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
-`입력 $1.5 · 출력 $7.5 · 혼합 $2.1/1M · 123.0 t/s · TTFT 1.6s · 32k ctx` · 가성비 1.9
+`입력 $1.5 · 출력 $7.5 · 혼합 $2.1/1M · 138.0 t/s · TTFT 1.57s · 32k ctx` · 가성비 1.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ Mistral · Proprietary · Unknown · 컨텍스트 32k · 종합지능 **4.0** ·
 | 에이전트 | 35.0 | -1.0 | 추정 | (추정) |
 | 신뢰성 | 53.6 | +0.24 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 28.7 | -1.42 | 추정 | (추정) |
+| 긴문맥 | 28.6 | -1.42 | 추정 | (추정) |
 | 지시 따르기 | 34.3 | -1.05 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

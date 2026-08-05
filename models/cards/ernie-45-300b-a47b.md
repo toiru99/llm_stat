@@ -18,14 +18,14 @@ radar:
   agentic: { s: 4.5, z: -1.24, r: 31.4, estimated: false }  # 에이전트
   trust: { s: 36.8, z: 0.39, r: 55.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 2.6, z: -1.39, r: 29.2, estimated: false }  # 긴문맥
-  instruction: { s: 38.0, z: -0.62, r: 40.6, estimated: false }  # 지시 따르기
+  long_context: { s: 2.6, z: -1.39, r: 29.1, estimated: false }  # 긴문맥
+  instruction: { s: 38.0, z: -0.63, r: 40.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — ERNIE 4.5 300B A47B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-04
-timestamp: 2026-08-04T00:00:00Z
+updated: 2026-08-05
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # ERNIE 4.5 300B A47B
@@ -49,8 +49,8 @@ Baidu · Open · Large(300B) · 컨텍스트 131k · 종합지능 **9.0**
 | 에이전트 | 31.4 | -1.24 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 6.0%×1.0 |
 | 신뢰성 | 55.9 | +0.39 | 실측 | [[aa-omniscience]] 33.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 29.2 | -1.39 | 실측 | [[aa-lcr]] 2.0%×1.0 |
-| 지시 따르기 | 40.6 | -0.62 | 실측 | [[ifbench]] 39.0%×1.0 |
+| 긴문맥 | 29.1 | -1.39 | 실측 | [[aa-lcr]] 2.0%×1.0 |
+| 지시 따르기 | 40.6 | -0.63 | 실측 | [[ifbench]] 39.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

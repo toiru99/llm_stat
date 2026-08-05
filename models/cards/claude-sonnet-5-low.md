@@ -18,14 +18,14 @@ radar:
   agentic: { s: 52.9, z: 0.64, r: 59.6, estimated: false }  # 에이전트
   trust: { s: 41.4, z: 0.6, r: 59.1, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 74.3, z: 0.73, r: 61.0, estimated: true }  # 긴문맥
-  instruction: { s: 71.8, z: 0.77, r: 61.5, estimated: true }  # 지시 따르기
+  long_context: { s: 70.4, z: 0.61, r: 59.2, estimated: true }  # 긴문맥
+  instruction: { s: 64.7, z: 0.48, r: 57.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-04
-timestamp: 2026-08-04T00:00:00Z
+updated: 2026-08-05
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # Claude Sonnet 5 (low)
@@ -33,11 +33,11 @@ timestamp: 2026-08-04T00:00:00Z
 Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 지시 따르기, 긴문맥
+- **강점**: 에이전트, 긴문맥
 - **약점**: 전문 지식, 추론
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 64.0 t/s · TTFT 1.32s · 1M ctx`
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 64.0 t/s · TTFT 1.66s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,8 +49,8 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None**
 | 에이전트 | 59.6 | +0.64 | 실측 | [[gdpval]] 36.0%×1.0 |
 | 신뢰성 | 59.1 | +0.6 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 61.0 | +0.73 | 추정 | (추정) |
-| 지시 따르기 | 61.5 | +0.77 | 추정 | (추정) |
+| 긴문맥 | 59.2 | +0.61 | 추정 | (추정) |
+| 지시 따르기 | 57.2 | +0.48 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

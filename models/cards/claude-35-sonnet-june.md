@@ -19,13 +19,13 @@ radar:
   trust: { s: 36.4, z: 0.37, r: 55.6, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 35.4, z: -0.42, r: 43.7, estimated: true }  # 긴문맥
-  instruction: { s: 46.7, z: -0.27, r: 46.0, estimated: true }  # 지시 따르기
+  instruction: { s: 45.8, z: -0.31, r: 45.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 3.5 Sonnet (June)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-04
-timestamp: 2026-08-04T00:00:00Z
+updated: 2026-08-05
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # Claude 3.5 Sonnet (June)
@@ -50,7 +50,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **8.0**
 | 신뢰성 | 55.6 | +0.37 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 43.7 | -0.42 | 추정 | (추정) |
-| 지시 따르기 | 46.0 | -0.27 | 추정 | (추정) |
+| 지시 따르기 | 45.4 | -0.31 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -19,13 +19,13 @@ radar:
   trust: { s: 35.6, z: 0.34, r: 55.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 6.6, z: -1.27, r: 30.9, estimated: false }  # 긴문맥
-  instruction: { s: 26.8, z: -1.09, r: 33.7, estimated: false }  # 지시 따르기
+  instruction: { s: 26.8, z: -1.09, r: 33.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Large 2 (Nov)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-04
-timestamp: 2026-08-04T00:00:00Z
+updated: 2026-08-05
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # Mistral Large 2 (Nov)
@@ -50,7 +50,7 @@ Mistral · Open · Medium(123B) · 컨텍스트 128k · 종합지능 **9.0** · 
 | 신뢰성 | 55.1 | +0.34 | 실측 | [[aa-omniscience]] 32.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 30.9 | -1.27 | 실측 | [[aa-lcr]] 5.0%×1.0 |
-| 지시 따르기 | 33.7 | -1.09 | 실측 | [[ifbench]] 31.0%×1.0 |
+| 지시 따르기 | 33.6 | -1.09 | 실측 | [[ifbench]] 31.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

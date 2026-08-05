@@ -18,14 +18,14 @@ radar:
   agentic: { s: 12.5, z: -0.93, r: 36.0, estimated: false }  # 에이전트
   trust: { s: 9.2, z: -0.89, r: 36.6, estimated: false }  # 신뢰성
   multimodal: { s: 74.3, z: 0.13, r: 51.9, estimated: false }  # 멀티모달
-  long_context: { s: 18.4, z: -0.92, r: 36.2, estimated: false }  # 긴문맥
+  long_context: { s: 18.4, z: -0.92, r: 36.1, estimated: false }  # 긴문맥
   instruction: { s: 66.2, z: 0.54, r: 58.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DiffusionGemma 26B A4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-04
-timestamp: 2026-08-04T00:00:00Z
+updated: 2026-08-05
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # DiffusionGemma 26B A4B
@@ -49,7 +49,7 @@ Google · Open · Small(25.2B) · 컨텍스트 256k · 종합지능 **13.0**
 | 에이전트 | 36.0 | -0.93 | 실측 | [[gdpval]] 3.0%×1.0, [[tau3-banking]] 7.0%×1.0 |
 | 신뢰성 | 36.6 | -0.89 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | 51.9 | +0.13 | 실측 | [[mmmu-pro]] 67.0%×1.0 |
-| 긴문맥 | 36.2 | -0.92 | 실측 | [[aa-lcr]] 14.0%×1.0 |
+| 긴문맥 | 36.1 | -0.92 | 실측 | [[aa-lcr]] 14.0%×1.0 |
 | 지시 따르기 | 58.1 | +0.54 | 실측 | [[ifbench]] 59.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: 17.0
 price_blended_usd_1m: 0
-output_speed_tps: 87.0
+output_speed_tps: 74.0
 context_window: 256000
 status: current
 size_class: Small
@@ -19,13 +19,13 @@ radar:
   trust: { s: 16.1, z: -0.57, r: 41.4, estimated: false }  # 신뢰성
   multimodal: { s: 42.9, z: -1.39, r: 29.1, estimated: false }  # 멀티모달
   long_context: { s: 31.6, z: -0.53, r: 42.0, estimated: false }  # 긴문맥
-  instruction: { s: 26.8, z: -1.09, r: 33.7, estimated: false }  # 지시 따르기
+  instruction: { s: 26.8, z: -1.09, r: 33.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Devstral Small 2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-04
-timestamp: 2026-08-04T00:00:00Z
+updated: 2026-08-05
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # Devstral Small 2
@@ -37,7 +37,7 @@ Mistral · Open · Small(24B) · 컨텍스트 256k · 종합지능 **17.0**
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 87.0 t/s · TTFT 1.97s · 256k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 74.0 t/s · TTFT 1.93s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Mistral · Open · Small(24B) · 컨텍스트 256k · 종합지능 **17.0**
 | 신뢰성 | 41.4 | -0.57 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
 | 멀티모달 | 29.1 | -1.39 | 실측 | [[mmmu-pro]] 45.0%×1.0 |
 | 긴문맥 | 42.0 | -0.53 | 실측 | [[aa-lcr]] 24.0%×1.0 |
-| 지시 따르기 | 33.7 | -1.09 | 실측 | [[ifbench]] 31.0%×1.0 |
+| 지시 따르기 | 33.6 | -1.09 | 실측 | [[ifbench]] 31.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

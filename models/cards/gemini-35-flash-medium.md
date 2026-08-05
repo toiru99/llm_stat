@@ -19,13 +19,13 @@ radar:
   trust: { s: 44.8, z: 0.77, r: 61.5, estimated: false }  # 신뢰성
   multimodal: { s: 98.6, z: 1.3, r: 69.5, estimated: false }  # 멀티모달
   long_context: { s: 93.4, z: 1.3, r: 69.5, estimated: false }  # 긴문맥
-  instruction: { s: 88.7, z: 1.47, r: 72.1, estimated: false }  # 지시 따르기
+  instruction: { s: 88.7, z: 1.47, r: 72.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.5 Flash (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-04
-timestamp: 2026-08-04T00:00:00Z
+updated: 2026-08-05
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # Gemini 3.5 Flash (medium)
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **45.0**
 - **약점**: 긴문맥, 신뢰성
 
 ## 실용 지표
-`입력 $1.5 · 출력 $9.0 · 혼합 $1.305/1M · 180.0 t/s · TTFT 15.78s · 1M ctx` · 가성비 34.5
+`입력 $1.5 · 출력 $9.0 · 혼합 $1.305/1M · 180.0 t/s · TTFT 16.24s · 1M ctx` · 가성비 34.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **45.0**
 | 신뢰성 | 61.5 | +0.77 | 실측 | [[aa-omniscience]] 40.0%×1.0 |
 | 멀티모달 | 69.5 | +1.3 | 실측 | [[mmmu-pro]] 84.0%×1.0 |
 | 긴문맥 | 69.5 | +1.3 | 실측 | [[aa-lcr]] 71.0%×1.0 |
-| 지시 따르기 | 72.1 | +1.47 | 실측 | [[ifbench]] 75.0%×1.0 |
+| 지시 따르기 | 72.0 | +1.47 | 실측 | [[ifbench]] 75.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 33.0
 price_blended_usd_1m: 0.174
-output_speed_tps: 153.0
+output_speed_tps: 147.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -18,14 +18,14 @@ radar:
   agentic: { s: 41.9, z: 0.21, r: 53.2, estimated: false }  # 에이전트
   trust: { s: 12.6, z: -0.73, r: 39.0, estimated: false }  # 신뢰성
   multimodal: { s: 84.3, z: 0.61, r: 59.1, estimated: false }  # 멀티모달
-  long_context: { s: 77.6, z: 0.83, r: 62.5, estimated: false }  # 긴문맥
-  instruction: { s: 71.8, z: 0.77, r: 61.5, estimated: true }  # 지시 따르기
+  long_context: { s: 77.6, z: 0.83, r: 62.4, estimated: false }  # 긴문맥
+  instruction: { s: 71.4, z: 0.75, r: 61.3, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Luna (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-04
-timestamp: 2026-08-04T00:00:00Z
+updated: 2026-08-05
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # GPT-5.6 Luna (low)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **33.0**
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.2 · 출력 $1.2 · 혼합 $0.174/1M · 153.0 t/s · TTFT 1.76s · 1M ctx` · 가성비 189.7
+`입력 $0.2 · 출력 $1.2 · 혼합 $0.174/1M · 147.0 t/s · TTFT 2.0s · 1M ctx` · 가성비 189.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,8 +49,8 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **33.0**
 | 에이전트 | 53.2 | +0.21 | 실측 | [[gdpval]] 33.0%×1.0, [[tau3-banking]] 12.0%×1.0 |
 | 신뢰성 | 39.0 | -0.73 | 실측 | [[aa-omniscience]] 12.0%×1.0 |
 | 멀티모달 | 59.1 | +0.61 | 실측 | [[mmmu-pro]] 74.0%×1.0 |
-| 긴문맥 | 62.5 | +0.83 | 실측 | [[aa-lcr]] 59.0%×1.0 |
-| 지시 따르기 | 61.5 | +0.77 | 추정 | (추정) |
+| 긴문맥 | 62.4 | +0.83 | 실측 | [[aa-lcr]] 59.0%×1.0 |
+| 지시 따르기 | 61.3 | +0.75 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

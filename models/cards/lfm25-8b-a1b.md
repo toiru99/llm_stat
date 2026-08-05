@@ -5,7 +5,7 @@ creator: Liquid AI
 license: Open
 intelligence_index: 8.0
 price_blended_usd_1m: 0
-output_speed_tps: 337.0
+output_speed_tps: 338.0
 context_window: 32800
 status: current
 size_class: Small
@@ -19,13 +19,13 @@ radar:
   trust: { s: 59.8, z: 1.46, r: 71.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.47, r: 28.0, estimated: false }  # 긴문맥
-  instruction: { s: 62.0, z: 0.37, r: 55.5, estimated: false }  # 지시 따르기
+  instruction: { s: 62.0, z: 0.36, r: 55.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — LFM2.5-8B-A1B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-04
-timestamp: 2026-08-04T00:00:00Z
+updated: 2026-08-05
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # LFM2.5-8B-A1B
@@ -37,7 +37,7 @@ Liquid AI · Open · Small(8.3B) · 컨텍스트 32k · 종합지능 **8.0**
 - **약점**: 긴문맥, 코딩
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 337.0 t/s · TTFT 2.54s · 32k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 338.0 t/s · TTFT 1.59s · 32k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Liquid AI · Open · Small(8.3B) · 컨텍스트 32k · 종합지능 **8.0**
 | 신뢰성 | 71.9 | +1.46 | 실측 | [[aa-omniscience]] 53.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.0 | -1.47 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 55.5 | +0.37 | 실측 | [[ifbench]] 56.0%×1.0 |
+| 지시 따르기 | 55.4 | +0.36 | 실측 | [[ifbench]] 56.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

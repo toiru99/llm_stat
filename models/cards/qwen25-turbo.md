@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen2.5 Turbo
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-04
-timestamp: 2026-08-04T00:00:00Z
+updated: 2026-08-05
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # Qwen2.5 Turbo
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **6.0** · 
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.2 · 혼합 $0.065/1M · 107.0 t/s · TTFT 2.15s · 1M ctx` · 가성비 92.3
+`입력 $0.05 · 출력 $0.2 · 혼합 $0.065/1M · 107.0 t/s · TTFT 2.19s · 1M ctx` · 가성비 92.3
 
 ## 레이더 8축 (평균=50 기준선)
 

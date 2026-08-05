@@ -5,7 +5,7 @@ creator: Z AI
 license: Open
 intelligence_index: 17.0
 price_blended_usd_1m: 0.36
-output_speed_tps: 79.0
+output_speed_tps: 76.0
 context_window: 128000
 status: past
 size_class: Medium
@@ -18,14 +18,14 @@ radar:
   agentic: { s: 26.8, z: -0.38, r: 44.4, estimated: false }  # 에이전트
   trust: { s: 56.3, z: 1.3, r: 69.5, estimated: false }  # 신뢰성
   multimodal: { s: 48.6, z: -1.12, r: 33.3, estimated: false }  # 멀티모달
-  long_context: { s: 52.6, z: 0.09, r: 51.4, estimated: false }  # 긴문맥
-  instruction: { s: 25.4, z: -1.15, r: 32.8, estimated: false }  # 지시 따르기
+  long_context: { s: 52.6, z: 0.09, r: 51.3, estimated: false }  # 긴문맥
+  instruction: { s: 25.4, z: -1.15, r: 32.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.6V
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-04
-timestamp: 2026-08-04T00:00:00Z
+updated: 2026-08-05
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # GLM-4.6V
@@ -37,7 +37,7 @@ Z AI · Open · Medium(108B) · 컨텍스트 128k · 종합지능 **17.0** · �
 - **약점**: 멀티모달, 지시 따르기
 
 ## 실용 지표
-`입력 $0.3 · 출력 $0.9 · 혼합 $0.36/1M · 79.0 t/s · TTFT 3.66s · 128k ctx` · 가성비 47.2
+`입력 $0.3 · 출력 $0.9 · 혼합 $0.36/1M · 76.0 t/s · TTFT 4.65s · 128k ctx` · 가성비 47.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,8 +49,8 @@ Z AI · Open · Medium(108B) · 컨텍스트 128k · 종합지능 **17.0** · �
 | 에이전트 | 44.4 | -0.38 | 실측 | [[tau2-bench]] 32.0%×1.0, [[terminal-bench]] 14.0%×1.0 |
 | 신뢰성 | 69.5 | +1.3 | 실측 | [[aa-omniscience]] 50.0%×1.0 |
 | 멀티모달 | 33.3 | -1.12 | 실측 | [[mmmu-pro]] 49.0%×1.0 |
-| 긴문맥 | 51.4 | +0.09 | 실측 | [[aa-lcr]] 40.0%×1.0 |
-| 지시 따르기 | 32.8 | -1.15 | 실측 | [[ifbench]] 30.0%×1.0 |
+| 긴문맥 | 51.3 | +0.09 | 실측 | [[aa-lcr]] 40.0%×1.0 |
+| 지시 따르기 | 32.7 | -1.15 | 실측 | [[ifbench]] 30.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

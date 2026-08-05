@@ -18,14 +18,14 @@ radar:
   agentic: { s: 8.3, z: -1.09, r: 33.6, estimated: false }  # 에이전트
   trust: { s: 18.6, z: -0.46, r: 43.2, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 34.2, z: -0.45, r: 43.2, estimated: false }  # 긴문맥
-  instruction: { s: 22.5, z: -1.26, r: 31.0, estimated: false }  # 지시 따르기
+  long_context: { s: 34.2, z: -0.46, r: 43.2, estimated: false }  # 긴문맥
+  instruction: { s: 22.5, z: -1.27, r: 31.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi Linear 48B A3B Instruct
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-04
-timestamp: 2026-08-04T00:00:00Z
+updated: 2026-08-05
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # Kimi Linear 48B A3B Instruct
@@ -33,7 +33,7 @@ timestamp: 2026-08-04T00:00:00Z
 Kimi · Open · Medium(49.1B) · 컨텍스트 1M · 종합지능 **9.0**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 긴문맥, 신뢰성
+- **강점**: 신뢰성, 긴문맥
 - **약점**: 에이전트, 지시 따르기
 
 ## 실용 지표
@@ -49,8 +49,8 @@ Kimi · Open · Medium(49.1B) · 컨텍스트 1M · 종합지능 **9.0**
 | 에이전트 | 33.6 | -1.09 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
 | 신뢰성 | 43.2 | -0.46 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 43.2 | -0.45 | 실측 | [[aa-lcr]] 26.0%×1.0 |
-| 지시 따르기 | 31.0 | -1.26 | 실측 | [[ifbench]] 28.0%×1.0 |
+| 긴문맥 | 43.2 | -0.46 | 실측 | [[aa-lcr]] 26.0%×1.0 |
+| 지시 따르기 | 31.0 | -1.27 | 실측 | [[ifbench]] 28.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

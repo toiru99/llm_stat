@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Motif-2-12.7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-04
-timestamp: 2026-08-04T00:00:00Z
+updated: 2026-08-05
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # Motif-2-12.7B

@@ -18,14 +18,14 @@ radar:
   agentic: { s: 28.7, z: -0.3, r: 45.5, estimated: false }  # 에이전트
   trust: { s: 16.1, z: -0.57, r: 41.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 44.7, z: -0.14, r: 47.9, estimated: false }  # 긴문맥
+  long_context: { s: 44.7, z: -0.14, r: 47.8, estimated: false }  # 긴문맥
   instruction: { s: 95.8, z: 1.76, r: 76.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron Cascade 2 30B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-04
-timestamp: 2026-08-04T00:00:00Z
+updated: 2026-08-05
+timestamp: 2026-08-05T00:00:00Z
 ---
 
 # Nemotron Cascade 2 30B A3B
@@ -49,7 +49,7 @@ NVIDIA · Open · Small(31.6B) · 컨텍스트 1M · 종합지능 **18.0**
 | 에이전트 | 45.5 | -0.3 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 53.0%×1.0, [[tau3-banking]] 10.0%×1.0, [[terminal-bench]] 21.0%×1.0 |
 | 신뢰성 | 41.4 | -0.57 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 47.9 | -0.14 | 실측 | [[aa-lcr]] 34.0%×1.0 |
+| 긴문맥 | 47.8 | -0.14 | 실측 | [[aa-lcr]] 34.0%×1.0 |
 | 지시 따르기 | 76.4 | +1.76 | 실측 | [[ifbench]] 80.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
