@@ -121,6 +121,7 @@
   .cmp-tbl thead .cr{display:block;font-size:9px;font-weight:400;color:var(--muted);
     text-transform:uppercase;letter-spacing:.06em;margin-top:2px}
   .cmp-tbl td small{font-size:9.5px;color:var(--muted);font-weight:400}
+  .cmp-tbl td.best{color:var(--good);font-weight:700}
   .cmp-tbl td.na{color:var(--base)}
 
   .empty{padding:30px 16px;text-align:center;color:var(--muted);font-family:var(--mono);font-size:12px}
@@ -36056,6 +36057,17 @@ function cellOf(mt,m){
   return {raw,body,sub};
 }
 
+// 행 안에서 '더 좋은' 값의 열 인덱스. 동점은 모두 포함한다 —
+// 하나만 고르면 값이 같은데 우열이 있는 것처럼 읽힌다.
+function bestIdx(mt,sel){
+  if(!mt.dir) return new Set();
+  const nums=sel.map(m=>{const v=mt.g(m);return typeof v==="number"?v:null;});
+  const cand=nums.filter(v=>v!=null);
+  if(cand.length<2) return new Set();      // 유효값 1개 이하면 비교 자체가 성립 안 함
+  const best=mt.dir>0?Math.max(...cand):Math.min(...cand);
+  return new Set(nums.map((v,i)=>v===best?i:-1).filter(i=>i>=0));
+}
+
 function badgeView(m){
   const badges=METRICS.map(mt=>{
     const c=cellOf(mt,m);
@@ -36076,9 +36088,10 @@ function compareView(sel){
     +`<span class="nm" title="${m.name}">${m.name}</span>`
     +`<span class="cr">${m.creator} · ${licLab(m.license)}</span></th>`).join("");
   const rows=METRICS.map(mt=>{
-    const tds=sel.map(m=>{
+    const best=bestIdx(mt,sel);
+    const tds=sel.map((m,i)=>{
       const c=cellOf(mt,m);
-      return `<td>${c.body}${c.sub?`<small>${c.sub}</small>`:""}</td>`;
+      return `<td class="${best.has(i)?"best":""}">${c.body}${c.sub?`<small>${c.sub}</small>`:""}</td>`;
     }).join("");
     return `<tr><th${mt.tip?` title="${mt.tip}"`:""}>${mt.k}</th>${tds}</tr>`;
   }).join("");

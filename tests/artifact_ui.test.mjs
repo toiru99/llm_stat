@@ -63,6 +63,70 @@ test('지표 행 수가 METRICS 개수와 일치', async () => {
   assert.equal(n, 12);
 });
 
+// 표에 실제로 그려진 숫자를 읽어 최소/최대를 독립적으로 구한 뒤,
+// .best 가 그 칸에만 붙었는지 본다 (구현식을 그대로 되풀이하지 않는다)
+const rowCells = async (label) => {
+  const tr = page.locator('#panel .cmp-tbl tbody tr', { has: page.locator(`th:text-is("${label}")`) });
+  const tds = tr.locator('td');
+  const n = await tds.count();
+  const out = [];
+  for (let i = 0; i < n; i++) {
+    const txt = (await tds.nth(i).innerText()).trim();
+    const num = parseFloat(txt.replace(/[$,]/g, ''));
+    out.push({ txt, num: Number.isNaN(num) ? null : num,
+               best: (await tds.nth(i).getAttribute('class') || '').includes('best') });
+  }
+  return out;
+};
+
+test('혼합가 행은 가장 싼 칸이 강조된다 (작을수록 좋음)', async () => {
+  await select(3);
+  const cells = await rowCells('혼합가');
+  const nums = cells.map(c => c.num).filter(v => v != null);
+  const min = Math.min(...nums);
+  cells.forEach(c => assert.equal(c.best, c.num === min, `혼합가 ${c.txt}`));
+});
+
+test('종합지능 행은 가장 높은 칸이 강조된다 (클수록 좋음)', async () => {
+  await select(3);
+  const cells = await rowCells('종합지능');
+  const nums = cells.map(c => c.num).filter(v => v != null);
+  const max = Math.max(...nums);
+  cells.forEach(c => assert.equal(c.best, c.num === max, `종합지능 ${c.txt}`));
+});
+
+test('범주형 행(크기·추론/상태·멀티모달)은 강조하지 않는다', async () => {
+  await select(3);
+  for (const label of ['크기', '추론 / 상태', '멀티모달']) {
+    const cells = await rowCells(label);
+    assert.ok(cells.every(c => !c.best), `${label} 행에 강조가 붙음`);
+  }
+});
+
+test('bestIdx: 동점이면 동점자를 모두 강조', async () => {
+  const idx = await page.evaluate(() =>
+    [...bestIdx({ g: m => m.x, dir: 1 }, [{ x: 1 }, { x: 2 }, { x: 2 }])]);
+  assert.deepEqual(idx.sort(), [1, 2]);
+});
+
+test('bestIdx: 결측(null)은 후보에서 제외', async () => {
+  const idx = await page.evaluate(() =>
+    [...bestIdx({ g: m => m.x, dir: -1 }, [{ x: null }, { x: 5 }, { x: 9 }])]);
+  assert.deepEqual(idx, [1]);
+});
+
+test('bestIdx: 유효값이 1개뿐이면 강조하지 않는다', async () => {
+  const idx = await page.evaluate(() =>
+    [...bestIdx({ g: m => m.x, dir: 1 }, [{ x: null }, { x: 7 }, { x: null }])]);
+  assert.deepEqual(idx, []);
+});
+
+test('bestIdx: dir 0 은 항상 빈 집합', async () => {
+  const idx = await page.evaluate(() =>
+    [...bestIdx({ g: m => m.x, dir: 0 }, [{ x: 1 }, { x: 2 }])]);
+  assert.deepEqual(idx, []);
+});
+
 test('페이지 JS 오류 없음', () => {
   assert.deepEqual(jsErrors, []);
 });
