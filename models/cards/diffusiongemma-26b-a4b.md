@@ -12,20 +12,20 @@ size_class: Small
 params_b: 25.2
 is_reasoning: true
 radar:
-  knowledge: { s: 34.7, z: -0.31, r: 45.3, estimated: false }  # 전문 지식
-  reasoning: { s: 28.4, z: -0.31, r: 45.4, estimated: false }  # 추론
-  coding: { s: 56.7, z: 0.4, r: 56.0, estimated: false }  # 코딩
-  agentic: { s: 12.5, z: -0.93, r: 36.0, estimated: false }  # 에이전트
+  knowledge: { s: 34.7, z: -0.32, r: 45.3, estimated: false }  # 전문 지식
+  reasoning: { s: 28.4, z: -0.32, r: 45.3, estimated: false }  # 추론
+  coding: { s: 56.7, z: 0.39, r: 55.8, estimated: false }  # 코딩
+  agentic: { s: 10.5, z: -1.01, r: 34.9, estimated: false }  # 에이전트
   trust: { s: 9.2, z: -0.89, r: 36.6, estimated: false }  # 신뢰성
-  multimodal: { s: 74.3, z: 0.13, r: 51.9, estimated: false }  # 멀티모달
-  long_context: { s: 18.4, z: -0.92, r: 36.1, estimated: false }  # 긴문맥
-  instruction: { s: 66.2, z: 0.54, r: 58.1, estimated: false }  # 지시 따르기
+  multimodal: { s: 74.3, z: 0.12, r: 51.8, estimated: false }  # 멀티모달
+  long_context: { s: 18.4, z: -0.93, r: 36.0, estimated: false }  # 긴문맥
+  instruction: { s: 66.2, z: 0.53, r: 58.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DiffusionGemma 26B A4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-05
-timestamp: 2026-08-05T00:00:00Z
+updated: 2026-08-06
+timestamp: 2026-08-06T00:00:00Z
 ---
 
 # DiffusionGemma 26B A4B
@@ -43,14 +43,14 @@ Google · Open · Small(25.2B) · 컨텍스트 256k · 종합지능 **13.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 45.3 | -0.31 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
-| 추론 | 45.4 | -0.31 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 67.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
-| 코딩 | 56.0 | +0.4 | 실측 | [[scicode]] 34.0%×1.0 |
-| 에이전트 | 36.0 | -0.93 | 실측 | [[gdpval]] 3.0%×1.0, [[tau3-banking]] 7.0%×1.0 |
+| 전문 지식 | 45.3 | -0.32 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
+| 추론 | 45.3 | -0.32 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 67.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
+| 코딩 | 55.8 | +0.39 | 실측 | [[scicode]] 34.0%×1.0 |
+| 에이전트 | 34.9 | -1.01 | 실측 | [[gdpval]] 3.0%×1.0, [[tau3-banking]] 7.0%×1.0 |
 | 신뢰성 | 36.6 | -0.89 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
-| 멀티모달 | 51.9 | +0.13 | 실측 | [[mmmu-pro]] 67.0%×1.0 |
-| 긴문맥 | 36.1 | -0.92 | 실측 | [[aa-lcr]] 14.0%×1.0 |
-| 지시 따르기 | 58.1 | +0.54 | 실측 | [[ifbench]] 59.0%×1.0 |
+| 멀티모달 | 51.8 | +0.12 | 실측 | [[mmmu-pro]] 67.0%×1.0 |
+| 긴문맥 | 36.0 | -0.93 | 실측 | [[aa-lcr]] 14.0%×1.0 |
+| 지시 따르기 | 58.0 | +0.53 | 실측 | [[ifbench]] 59.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

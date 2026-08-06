@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.0 Flash Thinking exp. (Dec)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-05
-timestamp: 2026-08-05T00:00:00Z
+updated: 2026-08-06
+timestamp: 2026-08-06T00:00:00Z
 ---
 
 # Gemini 2.0 Flash Thinking exp. (Dec)
