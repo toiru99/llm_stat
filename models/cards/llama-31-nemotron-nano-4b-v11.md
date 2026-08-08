@@ -3,7 +3,7 @@ type: Model
 title: Llama 3.1 Nemotron Nano 4B v1.1
 creator: NVIDIA
 license: Open
-intelligence_index: 9.0
+intelligence_index: 8.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
@@ -12,28 +12,28 @@ size_class: Small
 params_b: 4.51
 is_reasoning: true
 radar:
-  knowledge: { s: 24.4, z: -0.8, r: 38.0, estimated: false }  # 전문 지식
-  reasoning: { s: 22.3, z: -0.62, r: 40.7, estimated: false }  # 추론
+  knowledge: { s: 24.3, z: -0.79, r: 38.2, estimated: false }  # 전문 지식
+  reasoning: { s: 22.2, z: -0.63, r: 40.6, estimated: false }  # 추론
   coding: { s: 16.7, z: -1.27, r: 30.9, estimated: false }  # 코딩
-  agentic: { s: 12.1, z: -0.95, r: 35.8, estimated: false }  # 에이전트
-  trust: { s: 16.7, z: -0.55, r: 41.7, estimated: true }  # 신뢰성
+  agentic: { s: 12.1, z: -0.94, r: 35.9, estimated: false }  # 에이전트
+  trust: { s: 8.7, z: -0.81, r: 37.9, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.48, r: 27.8, estimated: false }  # 긴문맥
-  instruction: { s: 19.7, z: -1.38, r: 29.2, estimated: false }  # 지시 따르기
+  long_context: { s: 0.0, z: -1.49, r: 27.6, estimated: false }  # 긴문맥
+  instruction: { s: 19.7, z: -1.4, r: 29.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.1 Nemotron Nano 4B v1.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-06
-timestamp: 2026-08-06T00:00:00Z
+updated: 2026-08-08
+timestamp: 2026-08-08T00:00:00Z
 ---
 
 # Llama 3.1 Nemotron Nano 4B v1.1
 
-NVIDIA · Open · Small(4.51B) · 컨텍스트 128k · 종합지능 **9.0** · ⚠️ past(구세대)
+NVIDIA · Open · Small(4.51B) · 컨텍스트 128k · 종합지능 **8.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 신뢰성, 추론
+- **강점**: 추론, 전문 지식
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
@@ -43,14 +43,14 @@ NVIDIA · Open · Small(4.51B) · 컨텍스트 128k · 종합지능 **9.0** · �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 38.0 | -0.8 | 실측 | [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 40.7 | -0.62 | 실측 | [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 전문 지식 | 38.2 | -0.79 | 실측 | [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 추론 | 40.6 | -0.63 | 실측 | [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 30.9 | -1.27 | 실측 | [[scicode]] 10.0%×1.0 |
-| 에이전트 | 35.8 | -0.95 | 실측 | [[tau2-bench]] 12.0%×1.0 |
-| 신뢰성 | 41.7 | -0.55 | 추정 | (추정) |
+| 에이전트 | 35.9 | -0.94 | 실측 | [[tau2-bench]] 12.0%×1.0 |
+| 신뢰성 | 37.9 | -0.81 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 27.8 | -1.48 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 29.2 | -1.38 | 실측 | [[ifbench]] 26.0%×1.0 |
+| 긴문맥 | 27.6 | -1.49 | 실측 | [[aa-lcr]] 0.0%×1.0 |
+| 지시 따르기 | 29.0 | -1.4 | 실측 | [[ifbench]] 26.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

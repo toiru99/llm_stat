@@ -3,7 +3,7 @@ type: Model
 title: Mi:dm K 2.5 Pro
 creator: Korea Telecom
 license: Proprietary
-intelligence_index: 16.0
+intelligence_index: 17.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
@@ -12,25 +12,25 @@ size_class: Small
 params_b: 32
 is_reasoning: true
 radar:
-  knowledge: { s: 34.9, z: -0.31, r: 45.4, estimated: false }  # 전문 지식
-  reasoning: { s: 28.3, z: -0.32, r: 45.2, estimated: false }  # 추론
+  knowledge: { s: 34.7, z: -0.29, r: 45.7, estimated: false }  # 전문 지식
+  reasoning: { s: 28.1, z: -0.33, r: 45.0, estimated: false }  # 추론
   coding: { s: 37.7, z: -0.4, r: 44.0, estimated: false }  # 코딩
   agentic: { s: 45.5, z: 0.39, r: 55.8, estimated: false }  # 에이전트
-  trust: { s: 11.5, z: -0.79, r: 38.2, estimated: false }  # 신뢰성
+  trust: { s: 4.7, z: -0.99, r: 35.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 11.8, z: -1.13, r: 33.1, estimated: false }  # 긴문맥
-  instruction: { s: 52.1, z: -0.05, r: 49.3, estimated: false }  # 지시 따르기
+  long_context: { s: 12.0, z: -1.13, r: 33.1, estimated: false }  # 긴문맥
+  instruction: { s: 52.1, z: -0.06, r: 49.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Mi:dm K 2.5 Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-06
-timestamp: 2026-08-06T00:00:00Z
+updated: 2026-08-08
+timestamp: 2026-08-08T00:00:00Z
 ---
 
 # Mi:dm K 2.5 Pro
 
-Korea Telecom · Proprietary · Small(32B) · 컨텍스트 128k · 종합지능 **16.0**
+Korea Telecom · Proprietary · Small(32B) · 컨텍스트 128k · 종합지능 **17.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 지시 따르기
@@ -43,14 +43,14 @@ Korea Telecom · Proprietary · Small(32B) · 컨텍스트 128k · 종합지능 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 45.4 | -0.31 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 70.0%×0.4, [[humanitys-last-exam]] 8.0%×0.3 |
-| 추론 | 45.2 | -0.32 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 70.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
+| 전문 지식 | 45.7 | -0.29 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 70.0%×0.4, [[humanitys-last-exam]] 8.0%×0.3 |
+| 추론 | 45.0 | -0.33 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 70.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
 | 코딩 | 44.0 | -0.4 | 실측 | [[scicode]] 33.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 55.8 | +0.39 | 실측 | [[tau2-bench]] 87.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 38.2 | -0.79 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
+| 신뢰성 | 35.1 | -0.99 | 실측 | [[aa-omniscience]] 6.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 33.1 | -1.13 | 실측 | [[aa-lcr]] 9.0%×1.0 |
-| 지시 따르기 | 49.3 | -0.05 | 실측 | [[ifbench]] 49.0%×1.0 |
+| 긴문맥 | 33.1 | -1.13 | 실측 | [[aa-lcr]] 10.0%×1.0 |
+| 지시 따르기 | 49.1 | -0.06 | 실측 | [[ifbench]] 49.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

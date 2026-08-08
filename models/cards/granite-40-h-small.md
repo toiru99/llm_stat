@@ -5,27 +5,27 @@ creator: IBM
 license: Open
 intelligence_index: 5.0
 price_blended_usd_1m: 0.079
-output_speed_tps: 47.0
+output_speed_tps: 48.0
 context_window: 128000
 status: current
 size_class: Small
 params_b: 32
 is_reasoning: false
 radar:
-  knowledge: { s: 22.7, z: -0.88, r: 36.8, estimated: false }  # 전문 지식
+  knowledge: { s: 21.9, z: -0.9, r: 36.5, estimated: false }  # 전문 지식
   reasoning: { s: 14.6, z: -1.0, r: 35.0, estimated: false }  # 추론
   coding: { s: 24.3, z: -0.95, r: 35.7, estimated: false }  # 코딩
-  agentic: { s: 10.1, z: -1.03, r: 34.6, estimated: false }  # 에이전트
-  trust: { s: 12.6, z: -0.74, r: 38.9, estimated: false }  # 신뢰성
+  agentic: { s: 10.1, z: -1.02, r: 34.7, estimated: false }  # 에이전트
+  trust: { s: 11.6, z: -0.67, r: 39.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 11.8, z: -1.13, r: 33.1, estimated: false }  # 긴문맥
-  instruction: { s: 26.8, z: -1.09, r: 33.6, estimated: false }  # 지시 따르기
+  long_context: { s: 13.3, z: -1.09, r: 33.6, estimated: false }  # 긴문맥
+  instruction: { s: 26.8, z: -1.11, r: 33.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.0 H Small
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-06
-timestamp: 2026-08-06T00:00:00Z
+updated: 2026-08-08
+timestamp: 2026-08-08T00:00:00Z
 ---
 
 # Granite 4.0 H Small
@@ -34,23 +34,23 @@ IBM · Open · Small(32B) · 컨텍스트 128k · 종합지능 **5.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 전문 지식
-- **약점**: 지시 따르기, 긴문맥
+- **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.25 · 혼합 $0.079/1M · 47.0 t/s · TTFT 10.4s · 128k ctx` · 가성비 63.3
+`입력 $0.06 · 출력 $0.25 · 혼합 $0.079/1M · 48.0 t/s · TTFT 10.31s · 128k ctx` · 가성비 63.3
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 36.8 | -0.88 | 실측 | [[aa-omniscience]] 14.0%×1.0, [[gpqa-diamond]] 42.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 전문 지식 | 36.5 | -0.9 | 실측 | [[aa-omniscience]] 14.0%×1.0, [[gpqa-diamond]] 42.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 35.0 | -1.0 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 42.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 35.7 | -0.95 | 실측 | [[scicode]] 21.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 34.6 | -1.03 | 실측 | [[tau2-bench]] 17.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 38.9 | -0.74 | 실측 | [[aa-omniscience]] 12.0%×1.0 |
+| 에이전트 | 34.7 | -1.02 | 실측 | [[tau2-bench]] 17.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 신뢰성 | 39.9 | -0.67 | 실측 | [[aa-omniscience]] 12.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 33.1 | -1.13 | 실측 | [[aa-lcr]] 9.0%×1.0 |
-| 지시 따르기 | 33.6 | -1.09 | 실측 | [[ifbench]] 31.0%×1.0 |
+| 긴문맥 | 33.6 | -1.09 | 실측 | [[aa-lcr]] 11.0%×1.0 |
+| 지시 따르기 | 33.4 | -1.11 | 실측 | [[ifbench]] 31.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

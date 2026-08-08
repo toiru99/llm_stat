@@ -12,20 +12,20 @@ size_class: Medium
 params_b: 90
 is_reasoning: false
 radar:
-  knowledge: { s: 25.7, z: -0.74, r: 38.9, estimated: false }  # 전문 지식
-  reasoning: { s: 23.5, z: -0.56, r: 41.6, estimated: false }  # 추론
+  knowledge: { s: 24.8, z: -0.76, r: 38.6, estimated: false }  # 전문 지식
+  reasoning: { s: 22.4, z: -0.61, r: 40.8, estimated: false }  # 추론
   coding: { s: 40.0, z: -0.3, r: 45.4, estimated: false }  # 코딩
-  agentic: { s: 26.1, z: -0.39, r: 44.2, estimated: true }  # 에이전트
-  trust: { s: 22.6, z: -0.28, r: 45.8, estimated: true }  # 신뢰성
+  agentic: { s: 24.3, z: -0.45, r: 43.2, estimated: true }  # 에이전트
+  trust: { s: 22.6, z: -0.17, r: 47.5, estimated: true }  # 신뢰성
   multimodal: { s: 34.3, z: -1.81, r: 22.9, estimated: false }  # 멀티모달
-  long_context: { s: 28.8, z: -0.62, r: 40.7, estimated: true }  # 긴문맥
-  instruction: { s: 34.0, z: -0.8, r: 38.1, estimated: true }  # 지시 따르기
+  long_context: { s: 24.8, z: -0.74, r: 38.9, estimated: true }  # 긴문맥
+  instruction: { s: 33.5, z: -0.83, r: 37.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.2 90B (Vision)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-06
-timestamp: 2026-08-06T00:00:00Z
+updated: 2026-08-08
+timestamp: 2026-08-08T00:00:00Z
 ---
 
 # Llama 3.2 90B (Vision)
@@ -43,14 +43,14 @@ Meta · Open · Medium(90B) · 컨텍스트 128k · 종합지능 **6.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 38.9 | -0.74 | 실측 | [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 41.6 | -0.56 | 실측 | [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 전문 지식 | 38.6 | -0.76 | 실측 | [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 40.8 | -0.61 | 실측 | [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 45.4 | -0.3 | 실측 | [[scicode]] 24.0%×1.0 |
-| 에이전트 | 44.2 | -0.39 | 추정 | (추정) |
-| 신뢰성 | 45.8 | -0.28 | 추정 | (추정) |
+| 에이전트 | 43.2 | -0.45 | 추정 | (추정) |
+| 신뢰성 | 47.5 | -0.17 | 추정 | (추정) |
 | 멀티모달 | 22.9 | -1.81 | 실측 | [[mmmu-pro]] 39.0%×1.0 |
-| 긴문맥 | 40.7 | -0.62 | 추정 | (추정) |
-| 지시 따르기 | 38.1 | -0.8 | 추정 | (추정) |
+| 긴문맥 | 38.9 | -0.74 | 추정 | (추정) |
+| 지시 따르기 | 37.5 | -0.83 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
