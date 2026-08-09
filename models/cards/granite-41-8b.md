@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.1 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-08
-timestamp: 2026-08-08T00:00:00Z
+updated: 2026-08-09
+timestamp: 2026-08-09T00:00:00Z
 ---
 
 # Granite 4.1 8B
@@ -37,7 +37,7 @@ IBM · Open · Small(8B) · 컨텍스트 131k · 종합지능 **6.0**
 - **약점**: 추론, 긴문맥
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.1 · 혼합 $0.055/1M · 102.0 t/s · TTFT 0.8s · 131k ctx` · 가성비 109.1
+`입력 $0.05 · 출력 $0.1 · 혼합 $0.055/1M · 102.0 t/s · TTFT 0.81s · 131k ctx` · 가성비 109.1
 
 ## 레이더 8축 (평균=50 기준선)
 

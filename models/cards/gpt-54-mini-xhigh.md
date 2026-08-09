@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.4 mini (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-08
-timestamp: 2026-08-08T00:00:00Z
+updated: 2026-08-09
+timestamp: 2026-08-09T00:00:00Z
 ---
 
 # GPT-5.4 mini (xhigh)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **41.0** �
 - **약점**: 멀티모달, 신뢰성
 
 ## 실용 지표
-`입력 $0.75 · 출력 $4.5 · 혼합 $0.6525/1M · 178.0 t/s · TTFT 7.94s · 400k ctx` · 가성비 62.8
+`입력 $0.75 · 출력 $4.5 · 혼합 $0.6525/1M · 178.0 t/s · TTFT 4.92s · 400k ctx` · 가성비 62.8
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling 2.6 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-08
-timestamp: 2026-08-08T00:00:00Z
+updated: 2026-08-09
+timestamp: 2026-08-09T00:00:00Z
 ---
 
 # Ling 2.6 Flash
@@ -37,7 +37,7 @@ InclusionAI · Open · Medium(107B) · 컨텍스트 262k · 종합지능 **14.0*
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.3 · 혼합 $0.064/1M · 96.0 t/s · TTFT 1.13s · 262k ctx` · 가성비 218.8
+`입력 $0.1 · 출력 $0.3 · 혼합 $0.064/1M · 96.0 t/s · TTFT 1.14s · 262k ctx` · 가성비 218.8
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.5-Air
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-08
-timestamp: 2026-08-08T00:00:00Z
+updated: 2026-08-09
+timestamp: 2026-08-09T00:00:00Z
 ---
 
 # GLM-4.5-Air
@@ -37,7 +37,7 @@ Z AI · Open · Medium(106B) · 컨텍스트 128k · 종합지능 **17.0** · �
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $0.17 · 출력 $0.98 · 혼합 $0.251/1M · 84.0 t/s · TTFT 2.71s · 128k ctx` · 가성비 67.7
+`입력 $0.17 · 출력 $0.98 · 혼합 $0.251/1M · 84.0 t/s · TTFT 2.72s · 128k ctx` · 가성비 67.7
 
 ## 레이더 8축 (평균=50 기준선)
 

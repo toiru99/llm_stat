@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 26.0
 price_blended_usd_1m: 1.3375
-output_speed_tps: 141.0
+output_speed_tps: 144.0
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.5 Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-08
-timestamp: 2026-08-08T00:00:00Z
+updated: 2026-08-09
+timestamp: 2026-08-09T00:00:00Z
 ---
 
 # Gemini 2.5 Pro
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **26.0** · 
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $1.25 · 출력 $10.0 · 혼합 $1.3375/1M · 141.0 t/s · TTFT 22.49s · 1M ctx` · 가성비 19.4
+`입력 $1.25 · 출력 $10.0 · 혼합 $1.3375/1M · 144.0 t/s · TTFT 21.99s · 1M ctx` · 가성비 19.4
 
 ## 레이더 8축 (평균=50 기준선)
 

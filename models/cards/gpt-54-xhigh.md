@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.4 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-08
-timestamp: 2026-08-08T00:00:00Z
+updated: 2026-08-09
+timestamp: 2026-08-09T00:00:00Z
 ---
 
 # GPT-5.4 (xhigh)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **53.0** · 
 - **약점**: 멀티모달, 신뢰성
 
 ## 실용 지표
-`입력 $2.5 · 출력 $15.0 · 혼합 $2.175/1M · 124.0 t/s · TTFT 110.65s · 1M ctx` · 가성비 24.4
+`입력 $2.5 · 출력 $15.0 · 혼합 $2.175/1M · 124.0 t/s · TTFT 102.64s · 1M ctx` · 가성비 24.4
 
 ## 레이더 8축 (평균=50 기준선)
 

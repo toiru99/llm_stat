@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4o (Nov)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-08
-timestamp: 2026-08-08T00:00:00Z
+updated: 2026-08-09
+timestamp: 2026-08-09T00:00:00Z
 ---
 
 # GPT-4o (Nov)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **11.0** �
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
-`입력 $2.5 · 출력 $10.0 · 혼합 $2.55/1M · 125.0 t/s · TTFT 0.83s · 128k ctx` · 가성비 4.3
+`입력 $2.5 · 출력 $10.0 · 혼합 $2.55/1M · 125.0 t/s · TTFT 0.86s · 128k ctx` · 가성비 4.3
 
 ## 레이더 8축 (평균=50 기준선)
 

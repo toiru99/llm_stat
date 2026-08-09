@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — gpt-oss-120b (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-08
-timestamp: 2026-08-08T00:00:00Z
+updated: 2026-08-09
+timestamp: 2026-08-09T00:00:00Z
 ---
 
 # gpt-oss-120b (high)
@@ -37,7 +37,7 @@ OpenAI · Open · Medium(117B) · 컨텍스트 131k · 종합지능 **24.0**
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.59 · 혼합 $0.159/1M · 165.0 t/s · TTFT 0.91s · 131k ctx` · 가성비 150.9
+`입력 $0.15 · 출력 $0.59 · 혼합 $0.159/1M · 165.0 t/s · TTFT 0.9s · 131k ctx` · 가성비 150.9
 
 ## 레이더 8축 (평균=50 기준선)
 

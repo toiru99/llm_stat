@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — KAT-Coder-Pro V2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-08
-timestamp: 2026-08-08T00:00:00Z
+updated: 2026-08-09
+timestamp: 2026-08-09T00:00:00Z
 ---
 
 # KAT-Coder-Pro V2
@@ -37,7 +37,7 @@ KwaiKAT · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **34.0**
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 107.0 t/s · TTFT 1.83s · 256k ctx` · 가성비 153.2
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 107.0 t/s · TTFT 1.72s · 256k ctx` · 가성비 153.2
 
 ## 레이더 8축 (평균=50 기준선)
 

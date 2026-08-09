@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — QwQ-32B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-08
-timestamp: 2026-08-08T00:00:00Z
+updated: 2026-08-09
+timestamp: 2026-08-09T00:00:00Z
 ---
 
 # QwQ-32B
@@ -37,7 +37,7 @@ Alibaba · Open · Small(32.8B) · 컨텍스트 131k · 종합지능 **13.0** ·
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.66 · 출력 $1.0 · 혼합 $0.694/1M · 32.0 t/s · TTFT 2.13s · 131k ctx` · 가성비 18.7
+`입력 $0.66 · 출력 $1.0 · 혼합 $0.694/1M · 32.0 t/s · TTFT 2.11s · 131k ctx` · 가성비 18.7
 
 ## 레이더 8축 (평균=50 기준선)
 

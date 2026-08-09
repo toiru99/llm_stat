@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Terra (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-08
-timestamp: 2026-08-08T00:00:00Z
+updated: 2026-08-09
+timestamp: 2026-08-09T00:00:00Z
 ---
 
 # GPT-5.6 Terra (Non-reasoning)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **35.0**
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $2.0 · 출력 $12.0 · 혼합 $1.74/1M · 111.0 t/s · TTFT 0.78s · 1M ctx` · 가성비 20.1
+`입력 $2.0 · 출력 $12.0 · 혼합 $1.74/1M · 111.0 t/s · TTFT 0.77s · 1M ctx` · 가성비 20.1
 
 ## 레이더 8축 (평균=50 기준선)
 

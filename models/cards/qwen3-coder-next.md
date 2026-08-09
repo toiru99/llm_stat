@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Coder Next
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-08
-timestamp: 2026-08-08T00:00:00Z
+updated: 2026-08-09
+timestamp: 2026-08-09T00:00:00Z
 ---
 
 # Qwen3 Coder Next
@@ -37,7 +37,7 @@ Alibaba · Open · Medium(79.7B) · 컨텍스트 256k · 종합지능 **21.0**
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $0.35 · 출력 $1.2 · 혼합 $0.435/1M · 148.0 t/s · TTFT 1.56s · 256k ctx` · 가성비 48.3
+`입력 $0.35 · 출력 $1.2 · 혼합 $0.435/1M · 148.0 t/s · TTFT 1.36s · 256k ctx` · 가성비 48.3
 
 ## 레이더 8축 (평균=50 기준선)
 

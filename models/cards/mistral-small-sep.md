@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Small (Sep)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-08
-timestamp: 2026-08-08T00:00:00Z
+updated: 2026-08-09
+timestamp: 2026-08-09T00:00:00Z
 ---
 
 # Mistral Small (Sep)
@@ -37,7 +37,7 @@ Mistral · Open · Small(22B) · 컨텍스트 32k · 종합지능 **4.0** · ⚠
 - **약점**: 전문 지식, 에이전트
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.6 · 혼합 $0.24/1M · 140.0 t/s · TTFT 0.82s · 32k ctx` · 가성비 16.7
+`입력 $0.2 · 출력 $0.6 · 혼합 $0.24/1M · 140.0 t/s · TTFT 0.83s · 32k ctx` · 가성비 16.7
 
 ## 레이더 8축 (평균=50 기준선)
 

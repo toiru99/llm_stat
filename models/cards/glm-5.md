@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-08
-timestamp: 2026-08-08T00:00:00Z
+updated: 2026-08-09
+timestamp: 2026-08-09T00:00:00Z
 ---
 
 # GLM-5
@@ -37,7 +37,7 @@ Z AI · Open · Large(744B) · 컨텍스트 200k · 종합지능 **41.0** · ⚠
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $1.0 · 출력 $3.2 · 혼합 $0.66/1M · 40.0 t/s · TTFT 1.28s · 200k ctx` · 가성비 62.1
+`입력 $1.0 · 출력 $3.2 · 혼합 $0.66/1M · 40.0 t/s · TTFT 1.32s · 200k ctx` · 가성비 62.1
 
 ## 레이더 8축 (평균=50 기준선)
 

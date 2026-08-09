@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-08
-timestamp: 2026-08-08T00:00:00Z
+updated: 2026-08-09
+timestamp: 2026-08-09T00:00:00Z
 ---
 
 # Gemini 3 Flash
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **39.0** · 
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.5 · 출력 $3.0 · 혼합 $0.435/1M · 190.0 t/s · TTFT 7.44s · 1M ctx` · 가성비 89.7
+`입력 $0.5 · 출력 $3.0 · 혼합 $0.435/1M · 190.0 t/s · TTFT 7.01s · 1M ctx` · 가성비 89.7
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2.5-Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-08
-timestamp: 2026-08-08T00:00:00Z
+updated: 2026-08-09
+timestamp: 2026-08-09T00:00:00Z
 ---
 
 # MiMo-V2.5-Pro
@@ -37,7 +37,7 @@ Xiaomi · Open · Large(1023B) · 컨텍스트 1M · 종합지능 **43.0**
 - **약점**: 에이전트, 전문 지식
 
 ## 실용 지표
-`입력 $0.43 · 출력 $0.87 · 혼합 $0.1765/1M · 74.0 t/s · TTFT 2.8s · 1M ctx` · 가성비 243.6
+`입력 $0.43 · 출력 $0.87 · 혼합 $0.1765/1M · 74.0 t/s · TTFT 2.87s · 1M ctx` · 가성비 243.6
 
 ## 레이더 8축 (평균=50 기준선)
 
