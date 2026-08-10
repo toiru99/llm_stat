@@ -18,14 +18,14 @@ radar:
   agentic: { s: 33.3, z: -0.1, r: 48.5, estimated: true }  # 에이전트
   trust: { s: 17.0, z: -0.43, r: 43.6, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 31.3, z: -0.54, r: 41.8, estimated: false }  # 긴문맥
+  long_context: { s: 31.3, z: -0.54, r: 41.9, estimated: false }  # 긴문맥
   instruction: { s: 38.0, z: -0.64, r: 40.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — QwQ-32B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-09
-timestamp: 2026-08-09T00:00:00Z
+updated: 2026-08-10
+timestamp: 2026-08-10T00:00:00Z
 ---
 
 # QwQ-32B
@@ -37,7 +37,7 @@ Alibaba · Open · Small(32.8B) · 컨텍스트 131k · 종합지능 **13.0** ·
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.66 · 출력 $1.0 · 혼합 $0.694/1M · 32.0 t/s · TTFT 2.11s · 131k ctx` · 가성비 18.7
+`입력 $0.66 · 출력 $1.0 · 혼합 $0.694/1M · 32.0 t/s · TTFT 2.08s · 131k ctx` · 가성비 18.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ Alibaba · Open · Small(32.8B) · 컨텍스트 131k · 종합지능 **13.0** ·
 | 에이전트 | 48.5 | -0.1 | 추정 | (추정) |
 | 신뢰성 | 43.6 | -0.43 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 41.8 | -0.54 | 실측 | [[aa-lcr]] 26.0%×1.0 |
+| 긴문맥 | 41.9 | -0.54 | 실측 | [[aa-lcr]] 26.0%×1.0 |
 | 지시 따르기 | 40.4 | -0.64 | 실측 | [[ifbench]] 39.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

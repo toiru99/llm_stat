@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Inkling
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-09
-timestamp: 2026-08-09T00:00:00Z
+updated: 2026-08-10
+timestamp: 2026-08-10T00:00:00Z
 ---
 
 # Inkling
@@ -37,7 +37,7 @@ Thinking Machines · Open · Large(975B) · 컨텍스트 1M · 종합지능 **42
 - **약점**: 멀티모달, 신뢰성
 
 ## 실용 지표
-`입력 $1.0 · 출력 $4.05 · 혼합 $0.724/1M · 77.0 t/s · TTFT 1.83s · 1M ctx` · 가성비 58.0
+`입력 $1.0 · 출력 $4.05 · 혼합 $0.724/1M · 77.0 t/s · TTFT 1.8s · 1M ctx` · 가성비 58.0
 
 ## 레이더 8축 (평균=50 기준선)
 

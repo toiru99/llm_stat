@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 61.1, z: 1.3, r: 69.5, estimated: false }  # 추론
   coding: { s: 70.0, z: 0.94, r: 64.1, estimated: false }  # 코딩
   agentic: { s: 57.1, z: 0.85, r: 62.8, estimated: false }  # 에이전트
-  trust: { s: 3.5, z: -1.05, r: 34.3, estimated: false }  # 신뢰성
+  trust: { s: 3.5, z: -1.04, r: 34.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 91.6, z: 1.28, r: 69.2, estimated: false }  # 긴문맥
   instruction: { s: 76.1, z: 0.92, r: 63.9, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nex-N2-Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-09
-timestamp: 2026-08-09T00:00:00Z
+updated: 2026-08-10
+timestamp: 2026-08-10T00:00:00Z
 ---
 
 # Nex-N2-Pro
@@ -37,7 +37,7 @@ Nex AGI · Open · Large(397B) · 컨텍스트 262k · 종합지능 **42.0**
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.5 · 출력 $2.5 · 혼합 $0.525/1M · 130.0 t/s · TTFT 1.62s · 262k ctx` · 가성비 80.0
+`입력 $0.5 · 출력 $2.5 · 혼합 $0.525/1M · 130.0 t/s · TTFT 1.61s · 262k ctx` · 가성비 80.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Nex AGI · Open · Large(397B) · 컨텍스트 262k · 종합지능 **42.0**
 | 추론 | 69.5 | +1.3 | 실측 | [[critpt]] 9.0%×1.0, [[gpqa-diamond]] 89.0%×1.0, [[humanitys-last-exam]] 34.0%×1.0 |
 | 코딩 | 64.1 | +0.94 | 실측 | [[scicode]] 42.0%×1.0 |
 | 에이전트 | 62.8 | +0.85 | 실측 | [[gdpval]] 37.0%×1.0, [[tau2-bench]] 82.0%×1.0, [[tau3-banking]] 17.0%×1.0 |
-| 신뢰성 | 34.3 | -1.05 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
+| 신뢰성 | 34.3 | -1.04 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 69.2 | +1.28 | 실측 | [[aa-lcr]] 76.0%×1.0 |
 | 지시 따르기 | 63.9 | +0.92 | 실측 | [[ifbench]] 66.0%×1.0 |

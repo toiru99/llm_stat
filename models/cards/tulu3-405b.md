@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 26.9, z: -0.39, r: 44.1, estimated: false }  # 추론
   coding: { s: 50.0, z: 0.11, r: 51.7, estimated: false }  # 코딩
   agentic: { s: 45.9, z: 0.41, r: 56.1, estimated: true }  # 에이전트
-  trust: { s: 31.2, z: 0.22, r: 53.3, estimated: true }  # 신뢰성
+  trust: { s: 31.2, z: 0.22, r: 53.4, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 43.8, z: -0.17, r: 47.5, estimated: true }  # 긴문맥
   instruction: { s: 55.3, z: 0.07, r: 51.1, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Tulu3 405B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-09
-timestamp: 2026-08-09T00:00:00Z
+updated: 2026-08-10
+timestamp: 2026-08-10T00:00:00Z
 ---
 
 # Tulu3 405B
@@ -47,7 +47,7 @@ Allen Institute for AI · Open · Large(405B) · 컨텍스트 128k · 종합지�
 | 추론 | 44.1 | -0.39 | 실측 | [[gpqa-diamond]] 52.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 51.7 | +0.11 | 실측 | [[scicode]] 30.0%×1.0 |
 | 에이전트 | 56.1 | +0.41 | 추정 | (추정) |
-| 신뢰성 | 53.3 | +0.22 | 추정 | (추정) |
+| 신뢰성 | 53.4 | +0.22 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 47.5 | -0.17 | 추정 | (추정) |
 | 지시 따르기 | 51.1 | +0.07 | 추정 | (추정) |

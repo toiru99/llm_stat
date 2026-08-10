@@ -5,7 +5,7 @@ creator: StepFun
 license: Open
 intelligence_index: 26.0
 price_blended_usd_1m: 0.12
-output_speed_tps: 179.0
+output_speed_tps: 190.0
 context_window: 256000
 status: past
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Step 3.5 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-09
-timestamp: 2026-08-09T00:00:00Z
+updated: 2026-08-10
+timestamp: 2026-08-10T00:00:00Z
 ---
 
 # Step 3.5 Flash
@@ -37,7 +37,7 @@ StepFun · Open · Large(196B) · 컨텍스트 256k · 종합지능 **26.0** · 
 - **약점**: 긴문맥, 신뢰성
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.3 · 혼합 $0.12/1M · 179.0 t/s · TTFT 1.09s · 256k ctx` · 가성비 216.7
+`입력 $0.1 · 출력 $0.3 · 혼합 $0.12/1M · 190.0 t/s · TTFT 1.09s · 256k ctx` · 가성비 216.7
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -18,14 +18,14 @@ radar:
   agentic: { s: 5.6, z: -1.2, r: 32.0, estimated: false }  # 에이전트
   trust: { s: 7.0, z: -0.89, r: 36.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 1.2, z: -1.46, r: 28.2, estimated: false }  # 긴문맥
-  instruction: { s: 19.7, z: -1.4, r: 29.0, estimated: false }  # 지시 따르기
+  long_context: { s: 1.2, z: -1.45, r: 28.2, estimated: false }  # 긴문맥
+  instruction: { s: 19.7, z: -1.4, r: 29.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — LFM2 8B A1B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-09
-timestamp: 2026-08-09T00:00:00Z
+updated: 2026-08-10
+timestamp: 2026-08-10T00:00:00Z
 ---
 
 # LFM2 8B A1B
@@ -49,8 +49,8 @@ Liquid AI · Open · Small(8.34B) · 컨텍스트 32k · 종합지능 **1.0**
 | 에이전트 | 32.0 | -1.2 | 실측 | [[tau2-bench]] 11.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | 36.7 | -0.89 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 28.2 | -1.46 | 실측 | [[aa-lcr]] 1.0%×1.0 |
-| 지시 따르기 | 29.0 | -1.4 | 실측 | [[ifbench]] 26.0%×1.0 |
+| 긴문맥 | 28.2 | -1.45 | 실측 | [[aa-lcr]] 1.0%×1.0 |
+| 지시 따르기 | 29.1 | -1.4 | 실측 | [[ifbench]] 26.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

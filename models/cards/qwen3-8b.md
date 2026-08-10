@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 8.0
 price_blended_usd_1m: 0.232
-output_speed_tps: 37.0
+output_speed_tps: 38.0
 context_window: 131000
 status: past
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-09
-timestamp: 2026-08-09T00:00:00Z
+updated: 2026-08-10
+timestamp: 2026-08-10T00:00:00Z
 ---
 
 # Qwen3 8B
@@ -37,7 +37,7 @@ Alibaba · Open · Small(8.19B) · 컨텍스트 131k · 종합지능 **8.0** · 
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.18 · 출력 $2.1 · 혼합 $0.232/1M · 37.0 t/s · TTFT 3.73s · 131k ctx` · 가성비 34.5
+`입력 $0.18 · 출력 $2.1 · 혼합 $0.232/1M · 38.0 t/s · TTFT 3.76s · 131k ctx` · 가성비 34.5
 
 ## 레이더 8축 (평균=50 기준선)
 

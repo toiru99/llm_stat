@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3 Super
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-09
-timestamp: 2026-08-09T00:00:00Z
+updated: 2026-08-10
+timestamp: 2026-08-10T00:00:00Z
 ---
 
 # Nemotron 3 Super
@@ -37,7 +37,7 @@ NVIDIA · Open · Medium(120.6B) · 컨텍스트 1M · 종합지능 **26.0**
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.8 · 혼합 $0.26/1M · 138.0 t/s · TTFT 1.79s · 1M ctx` · 가성비 100.0
+`입력 $0.2 · 출력 $0.8 · 혼합 $0.26/1M · 138.0 t/s · TTFT 1.84s · 1M ctx` · 가성비 100.0
 
 ## 레이더 8축 (평균=50 기준선)
 

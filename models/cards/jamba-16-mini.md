@@ -5,7 +5,7 @@ creator: AI21 Labs
 license: Open
 intelligence_index: 2.0
 price_blended_usd_1m: 0.22
-output_speed_tps: 184.0
+output_speed_tps: 180.0
 context_window: 256000
 status: past
 size_class: Medium
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba 1.6 Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-09
-timestamp: 2026-08-09T00:00:00Z
+updated: 2026-08-10
+timestamp: 2026-08-10T00:00:00Z
 ---
 
 # Jamba 1.6 Mini
@@ -37,7 +37,7 @@ AI21 Labs · Open · Medium(52B) · 컨텍스트 256k · 종합지능 **2.0** ·
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.4 · 혼합 $0.22/1M · 184.0 t/s · TTFT 0.77s · 256k ctx` · 가성비 9.1
+`입력 $0.2 · 출력 $0.4 · 혼합 $0.22/1M · 180.0 t/s · TTFT 0.77s · 256k ctx` · 가성비 9.1
 
 ## 레이더 8축 (평균=50 기준선)
 

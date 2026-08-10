@@ -5,7 +5,7 @@ creator: Liquid AI
 license: Open
 intelligence_index: 8.0
 price_blended_usd_1m: 0
-output_speed_tps: 337.0
+output_speed_tps: 333.0
 context_window: 32800
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — LFM2.5-8B-A1B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-09
-timestamp: 2026-08-09T00:00:00Z
+updated: 2026-08-10
+timestamp: 2026-08-10T00:00:00Z
 ---
 
 # LFM2.5-8B-A1B
@@ -37,7 +37,7 @@ Liquid AI · Open · Small(8.3B) · 컨텍스트 32k · 종합지능 **8.0**
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 337.0 t/s · TTFT 1.63s · 32k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 333.0 t/s · TTFT 1.92s · 32k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

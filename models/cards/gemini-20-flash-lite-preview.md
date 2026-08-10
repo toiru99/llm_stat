@@ -18,14 +18,14 @@ radar:
   agentic: { s: 17.3, z: -0.73, r: 39.0, estimated: true }  # 에이전트
   trust: { s: 19.8, z: -0.3, r: 45.5, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 19.0, z: -0.92, r: 36.3, estimated: true }  # 긴문맥
+  long_context: { s: 19.0, z: -0.91, r: 36.3, estimated: true }  # 긴문맥
   instruction: { s: 35.9, z: -0.73, r: 39.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.0 Flash-Lite (Preview)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-09
-timestamp: 2026-08-09T00:00:00Z
+updated: 2026-08-10
+timestamp: 2026-08-10T00:00:00Z
 ---
 
 # Gemini 2.0 Flash-Lite (Preview)
@@ -49,7 +49,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **8.0** · �
 | 에이전트 | 39.0 | -0.73 | 추정 | (추정) |
 | 신뢰성 | 45.5 | -0.3 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 36.3 | -0.92 | 추정 | (추정) |
+| 긴문맥 | 36.3 | -0.91 | 추정 | (추정) |
 | 지시 따르기 | 39.0 | -0.73 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

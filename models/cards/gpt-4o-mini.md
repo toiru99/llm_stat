@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 7.0
 price_blended_usd_1m: 0.1425
-output_speed_tps: 86.0
+output_speed_tps: 101.0
 context_window: 128000
 status: past
 size_class: Unknown
@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 24.8, z: -0.76, r: 38.6, estimated: false }  # 전문 지식
   reasoning: { s: 22.4, z: -0.61, r: 40.8, estimated: false }  # 추론
   coding: { s: 38.3, z: -0.37, r: 44.4, estimated: false }  # 코딩
-  agentic: { s: 2.9, z: -1.3, r: 30.5, estimated: false }  # 에이전트
+  agentic: { s: 2.9, z: -1.3, r: 30.4, estimated: false }  # 에이전트
   trust: { s: 15.1, z: -0.51, r: 42.3, estimated: true }  # 신뢰성
   multimodal: { s: 38.6, z: -1.6, r: 26.0, estimated: false }  # 멀티모달
-  long_context: { s: 15.7, z: -1.02, r: 34.7, estimated: true }  # 긴문맥
+  long_context: { s: 17.9, z: -0.95, r: 35.8, estimated: true }  # 긴문맥
   instruction: { s: 26.8, z: -1.11, r: 33.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4o mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-09
-timestamp: 2026-08-09T00:00:00Z
+updated: 2026-08-10
+timestamp: 2026-08-10T00:00:00Z
 ---
 
 # GPT-4o mini
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **7.0** ·
 - **약점**: 에이전트, 멀티모달
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.6 · 혼합 $0.1425/1M · 86.0 t/s · TTFT 1.25s · 128k ctx` · 가성비 49.1
+`입력 $0.15 · 출력 $0.6 · 혼합 $0.1425/1M · 101.0 t/s · TTFT 1.03s · 128k ctx` · 가성비 49.1
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,10 +46,10 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **7.0** ·
 | 전문 지식 | 38.6 | -0.76 | 실측 | [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 40.8 | -0.61 | 실측 | [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 44.4 | -0.37 | 실측 | [[scicode]] 23.0%×1.0 |
-| 에이전트 | 30.5 | -1.3 | 실측 | [[gdpval]] 0.0%×1.0, [[tau3-banking]] 3.0%×1.0 |
+| 에이전트 | 30.4 | -1.3 | 실측 | [[gdpval]] 0.0%×1.0, [[tau3-banking]] 3.0%×1.0 |
 | 신뢰성 | 42.3 | -0.51 | 추정 | (추정) |
 | 멀티모달 | 26.0 | -1.6 | 실측 | [[mmmu-pro]] 42.0%×1.0 |
-| 긴문맥 | 34.7 | -1.02 | 추정 | (추정) |
+| 긴문맥 | 35.8 | -0.95 | 추정 | (추정) |
 | 지시 따르기 | 33.4 | -1.11 | 실측 | [[ifbench]] 31.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
