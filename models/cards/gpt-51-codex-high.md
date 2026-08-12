@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 65.3, z: 1.18, r: 67.7, estimated: false }  # 전문 지식
   reasoning: { s: 51.8, z: 0.84, r: 62.6, estimated: false }  # 추론
   coding: { s: 62.1, z: 0.61, r: 59.2, estimated: false }  # 코딩
-  agentic: { s: 68.4, z: 1.3, r: 69.5, estimated: false }  # 에이전트
-  trust: { s: 24.4, z: -0.09, r: 48.7, estimated: false }  # 신뢰성
-  multimodal: { s: 81.4, z: 0.46, r: 57.0, estimated: false }  # 멀티모달
-  long_context: { s: 83.1, z: 1.03, r: 65.4, estimated: false }  # 긴문맥
-  instruction: { s: 81.7, z: 1.16, r: 67.3, estimated: false }  # 지시 따르기
+  agentic: { s: 68.4, z: 1.29, r: 69.4, estimated: false }  # 에이전트
+  trust: { s: 24.4, z: -0.08, r: 48.8, estimated: false }  # 신뢰성
+  multimodal: { s: 81.4, z: 0.46, r: 56.9, estimated: false }  # 멀티모달
+  long_context: { s: 83.1, z: 1.02, r: 65.3, estimated: false }  # 긴문맥
+  instruction: { s: 81.7, z: 1.15, r: 67.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.1 Codex (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-10
-timestamp: 2026-08-10T00:00:00Z
+updated: 2026-08-12
+timestamp: 2026-08-12T00:00:00Z
 ---
 
 # GPT-5.1 Codex (high)
@@ -46,11 +46,11 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **36.0** �
 | 전문 지식 | 67.7 | +1.18 | 실측 | [[aa-omniscience]] 40.0%×1.0, [[gpqa-diamond]] 86.0%×0.4, [[humanitys-last-exam]] 26.0%×0.3 |
 | 추론 | 62.6 | +0.84 | 실측 | [[critpt]] 6.0%×1.0, [[gpqa-diamond]] 86.0%×1.0, [[humanitys-last-exam]] 26.0%×1.0 |
 | 코딩 | 59.2 | +0.61 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 35.0%×0.5 |
-| 에이전트 | 69.5 | +1.3 | 실측 | [[tau2-bench]] 83.0%×1.0, [[terminal-bench]] 35.0%×1.0 |
-| 신뢰성 | 48.7 | -0.09 | 실측 | [[aa-omniscience]] 23.0%×1.0 |
-| 멀티모달 | 57.0 | +0.46 | 실측 | [[mmmu-pro]] 72.0%×1.0 |
-| 긴문맥 | 65.4 | +1.03 | 실측 | [[aa-lcr]] 69.0%×1.0 |
-| 지시 따르기 | 67.3 | +1.16 | 실측 | [[ifbench]] 70.0%×1.0 |
+| 에이전트 | 69.4 | +1.29 | 실측 | [[tau2-bench]] 83.0%×1.0, [[terminal-bench]] 35.0%×1.0 |
+| 신뢰성 | 48.8 | -0.08 | 실측 | [[aa-omniscience]] 23.0%×1.0 |
+| 멀티모달 | 56.9 | +0.46 | 실측 | [[mmmu-pro]] 72.0%×1.0 |
+| 긴문맥 | 65.3 | +1.02 | 실측 | [[aa-lcr]] 69.0%×1.0 |
+| 지시 따르기 | 67.3 | +1.15 | 실측 | [[ifbench]] 70.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

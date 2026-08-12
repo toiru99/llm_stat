@@ -12,20 +12,20 @@ size_class: Tiny
 params_b: 0.873
 is_reasoning: true
 radar:
-  knowledge: { s: 3.0, z: -1.81, r: 22.9, estimated: false }  # 전문 지식
-  reasoning: { s: 0.4, z: -1.7, r: 24.5, estimated: false }  # 추론
-  coding: { s: 0.0, z: -1.96, r: 20.5, estimated: false }  # 코딩
-  agentic: { s: 12.1, z: -0.94, r: 35.9, estimated: false }  # 에이전트
-  trust: { s: 43.0, z: 0.77, r: 61.5, estimated: false }  # 신뢰성
-  multimodal: { s: 15.7, z: -2.7, r: 9.4, estimated: false }  # 멀티모달
-  long_context: { s: 13.3, z: -1.09, r: 33.6, estimated: false }  # 긴문맥
+  knowledge: { s: 3.0, z: -1.82, r: 22.8, estimated: false }  # 전문 지식
+  reasoning: { s: 0.4, z: -1.71, r: 24.3, estimated: false }  # 추론
+  coding: { s: 0.0, z: -1.97, r: 20.5, estimated: false }  # 코딩
+  agentic: { s: 16.2, z: -0.79, r: 38.2, estimated: false }  # 에이전트
+  trust: { s: 43.0, z: 0.77, r: 61.6, estimated: false }  # 신뢰성
+  multimodal: { s: 15.7, z: -2.71, r: 9.3, estimated: false }  # 멀티모달
+  long_context: { s: 13.3, z: -1.1, r: 33.5, estimated: false }  # 긴문맥
   instruction: { s: 12.7, z: -1.69, r: 24.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 0.8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-10
-timestamp: 2026-08-10T00:00:00Z
+updated: 2026-08-12
+timestamp: 2026-08-12T00:00:00Z
 ---
 
 # Qwen3.5 0.8B
@@ -43,13 +43,13 @@ Alibaba · Open · Tiny(0.873B) · 컨텍스트 262k · 종합지능 **5.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 22.9 | -1.81 | 실측 | [[aa-omniscience]] 4.0%×1.0, [[gpqa-diamond]] 11.0%×0.4, [[humanitys-last-exam]] 1.0%×0.3 |
-| 추론 | 24.5 | -1.7 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 11.0%×1.0, [[humanitys-last-exam]] 1.0%×1.0 |
-| 코딩 | 20.5 | -1.96 | 실측 | [[scicode]] 0.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 35.9 | -0.94 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 48.0%×1.0, [[tau3-banking]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 61.5 | +0.77 | 실측 | [[aa-omniscience]] 39.0%×1.0 |
-| 멀티모달 | 9.4 | -2.7 | 실측 | [[mmmu-pro]] 26.0%×1.0 |
-| 긴문맥 | 33.6 | -1.09 | 실측 | [[aa-lcr]] 11.0%×1.0 |
+| 전문 지식 | 22.8 | -1.82 | 실측 | [[aa-omniscience]] 4.0%×1.0, [[gpqa-diamond]] 11.0%×0.4, [[humanitys-last-exam]] 1.0%×0.3 |
+| 추론 | 24.3 | -1.71 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 11.0%×1.0, [[humanitys-last-exam]] 1.0%×1.0 |
+| 코딩 | 20.5 | -1.97 | 실측 | [[scicode]] 0.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
+| 에이전트 | 38.2 | -0.79 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 48.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 신뢰성 | 61.6 | +0.77 | 실측 | [[aa-omniscience]] 39.0%×1.0 |
+| 멀티모달 | 9.3 | -2.71 | 실측 | [[mmmu-pro]] 26.0%×1.0 |
+| 긴문맥 | 33.5 | -1.1 | 실측 | [[aa-lcr]] 11.0%×1.0 |
 | 지시 따르기 | 24.7 | -1.69 | 실측 | [[ifbench]] 21.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

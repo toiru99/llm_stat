@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 64.1, z: 1.12, r: 66.8, estimated: false }  # 전문 지식
   reasoning: { s: 60.4, z: 1.27, r: 69.0, estimated: false }  # 추론
   coding: { s: 70.0, z: 0.94, r: 64.1, estimated: false }  # 코딩
-  agentic: { s: 60.1, z: 0.97, r: 64.6, estimated: true }  # 에이전트
-  trust: { s: 26.0, z: -0.01, r: 49.8, estimated: true }  # 신뢰성
+  agentic: { s: 58.0, z: 0.88, r: 63.2, estimated: true }  # 에이전트
+  trust: { s: 45.6, z: 0.89, r: 63.3, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 88.3, z: 1.18, r: 67.8, estimated: true }  # 긴문맥
-  instruction: { s: 80.6, z: 1.11, r: 66.7, estimated: true }  # 지시 따르기
+  long_context: { s: 87.6, z: 1.16, r: 67.4, estimated: true }  # 긴문맥
+  instruction: { s: 78.1, z: 1.0, r: 65.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.5 Pro (May)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-10
-timestamp: 2026-08-10T00:00:00Z
+updated: 2026-08-12
+timestamp: 2026-08-12T00:00:00Z
 ---
 
 # Gemini 2.5 Pro (May)
@@ -34,7 +34,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **23.0** · 
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 긴문맥
-- **약점**: 코딩, 신뢰성
+- **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
 `입력 $1.25 · 출력 $10.0 · 혼합 $1.3375/1M · None t/s · TTFT Nones · 1M ctx` · 가성비 17.2
@@ -46,11 +46,11 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **23.0** · 
 | 전문 지식 | 66.8 | +1.12 | 실측 | [[gpqa-diamond]] 82.0%×0.4, [[humanitys-last-exam]] 20.0%×0.3 |
 | 추론 | 69.0 | +1.27 | 실측 | [[gpqa-diamond]] 82.0%×1.0, [[humanitys-last-exam]] 20.0%×1.0 |
 | 코딩 | 64.1 | +0.94 | 실측 | [[scicode]] 42.0%×1.0 |
-| 에이전트 | 64.6 | +0.97 | 추정 | (추정) |
-| 신뢰성 | 49.8 | -0.01 | 추정 | (추정) |
+| 에이전트 | 63.2 | +0.88 | 추정 | (추정) |
+| 신뢰성 | 63.3 | +0.89 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 67.8 | +1.18 | 추정 | (추정) |
-| 지시 따르기 | 66.7 | +1.11 | 추정 | (추정) |
+| 긴문맥 | 67.4 | +1.16 | 추정 | (추정) |
+| 지시 따르기 | 65.1 | +1.0 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

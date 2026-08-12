@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 92.8, z: 2.49, r: 87.4, estimated: true }  # 전문 지식
-  reasoning: { s: 93.8, z: 2.91, r: 93.7, estimated: false }  # 추론
+  knowledge: { s: 92.8, z: 2.5, r: 87.5, estimated: true }  # 전문 지식
+  reasoning: { s: 93.8, z: 2.92, r: 93.8, estimated: false }  # 추론
   coding: { s: 91.1, z: 1.81, r: 77.2, estimated: true }  # 코딩
-  agentic: { s: 90.2, z: 2.16, r: 82.5, estimated: true }  # 에이전트
+  agentic: { s: 90.2, z: 2.16, r: 82.4, estimated: true }  # 에이전트
   trust: { s: 28.8, z: 0.12, r: 51.8, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 92.5, z: 1.31, r: 69.7, estimated: true }  # 긴문맥
-  instruction: { s: 77.3, z: 0.97, r: 64.6, estimated: true }  # 지시 따르기
+  long_context: { s: 92.5, z: 1.31, r: 69.6, estimated: true }  # 긴문맥
+  instruction: { s: 78.6, z: 1.03, r: 65.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.4 Pro (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-10
-timestamp: 2026-08-10T00:00:00Z
+updated: 2026-08-12
+timestamp: 2026-08-12T00:00:00Z
 ---
 
 # GPT-5.4 Pro (xhigh)
@@ -43,14 +43,14 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 87.4 | +2.49 | 추정 | (추정) |
-| 추론 | 93.7 | +2.91 | 실측 | [[critpt]] 30.0%×1.0 |
+| 전문 지식 | 87.5 | +2.5 | 추정 | (추정) |
+| 추론 | 93.8 | +2.92 | 실측 | [[critpt]] 30.0%×1.0 |
 | 코딩 | 77.2 | +1.81 | 추정 | (추정) |
-| 에이전트 | 82.5 | +2.16 | 추정 | (추정) |
+| 에이전트 | 82.4 | +2.16 | 추정 | (추정) |
 | 신뢰성 | 51.8 | +0.12 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 69.7 | +1.31 | 추정 | (추정) |
-| 지시 따르기 | 64.6 | +0.97 | 추정 | (추정) |
+| 긴문맥 | 69.6 | +1.31 | 추정 | (추정) |
+| 지시 따르기 | 65.4 | +1.03 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

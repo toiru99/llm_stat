@@ -15,8 +15,8 @@ radar:
   knowledge: { s: 43.8, z: 0.15, r: 52.2, estimated: false }  # 전문 지식
   reasoning: { s: 44.4, z: 0.47, r: 57.1, estimated: false }  # 추론
   coding: { s: 61.5, z: 0.59, r: 58.8, estimated: false }  # 코딩
-  agentic: { s: 71.7, z: 1.43, r: 71.5, estimated: false }  # 에이전트
-  trust: { s: 67.4, z: 1.89, r: 78.3, estimated: false }  # 신뢰성
+  agentic: { s: 71.7, z: 1.42, r: 71.4, estimated: false }  # 에이전트
+  trust: { s: 67.4, z: 1.89, r: 78.4, estimated: false }  # 신뢰성
   multimodal: { s: 84.3, z: 0.6, r: 59.0, estimated: false }  # 멀티모달
   long_context: { s: 84.3, z: 1.06, r: 65.9, estimated: false }  # 긴문맥
   instruction: { s: 77.5, z: 0.98, r: 64.7, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2-Omni-0327
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-10
-timestamp: 2026-08-10T00:00:00Z
+updated: 2026-08-12
+timestamp: 2026-08-12T00:00:00Z
 ---
 
 # MiMo-V2-Omni-0327
@@ -46,8 +46,8 @@ Xiaomi · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **37.0**
 | 전문 지식 | 52.2 | +0.15 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 23.0%×0.3 |
 | 추론 | 57.1 | +0.47 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 23.0%×1.0 |
 | 코딩 | 58.8 | +0.59 | 실측 | [[scicode]] 39.0%×1.0, [[terminal-bench]] 36.0%×0.5 |
-| 에이전트 | 71.5 | +1.43 | 실측 | [[tau2-bench]] 88.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
-| 신뢰성 | 78.3 | +1.89 | 실측 | [[aa-omniscience]] 60.0%×1.0 |
+| 에이전트 | 71.4 | +1.42 | 실측 | [[tau2-bench]] 88.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
+| 신뢰성 | 78.4 | +1.89 | 실측 | [[aa-omniscience]] 60.0%×1.0 |
 | 멀티모달 | 59.0 | +0.6 | 실측 | [[mmmu-pro]] 74.0%×1.0 |
 | 긴문맥 | 65.9 | +1.06 | 실측 | [[aa-lcr]] 70.0%×1.0 |
 | 지시 따르기 | 64.7 | +0.98 | 실측 | [[ifbench]] 67.0%×1.0 |

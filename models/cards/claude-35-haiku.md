@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 20.7, z: -0.96, r: 35.6, estimated: false }  # 전문 지식
-  reasoning: { s: 14.2, z: -1.02, r: 34.7, estimated: false }  # 추론
+  knowledge: { s: 20.7, z: -0.97, r: 35.5, estimated: false }  # 전문 지식
+  reasoning: { s: 14.2, z: -1.03, r: 34.5, estimated: false }  # 추론
   coding: { s: 31.0, z: -0.68, r: 39.8, estimated: false }  # 코딩
-  agentic: { s: 10.0, z: -1.02, r: 34.7, estimated: false }  # 에이전트
-  trust: { s: 66.3, z: 1.83, r: 77.5, estimated: false }  # 신뢰성
-  multimodal: { s: 44.3, z: -1.33, r: 30.1, estimated: false }  # 멀티모달
-  long_context: { s: 30.1, z: -0.58, r: 41.3, estimated: false }  # 긴문맥
+  agentic: { s: 9.4, z: -1.06, r: 34.2, estimated: false }  # 에이전트
+  trust: { s: 66.3, z: 1.84, r: 77.6, estimated: false }  # 신뢰성
+  multimodal: { s: 44.3, z: -1.33, r: 30.0, estimated: false }  # 멀티모달
+  long_context: { s: 30.1, z: -0.59, r: 41.2, estimated: false }  # 긴문맥
   instruction: { s: 43.7, z: -0.41, r: 43.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 3.5 Haiku
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-10
-timestamp: 2026-08-10T00:00:00Z
+updated: 2026-08-12
+timestamp: 2026-08-12T00:00:00Z
 ---
 
 # Claude 3.5 Haiku
@@ -43,13 +43,13 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **12.0*
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 35.6 | -0.96 | 실측 | [[aa-omniscience]] 13.0%×1.0, [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 34.7 | -1.02 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 전문 지식 | 35.5 | -0.97 | 실측 | [[aa-omniscience]] 13.0%×1.0, [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 34.5 | -1.03 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 39.8 | -0.68 | 실측 | [[scicode]] 27.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 34.7 | -1.02 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 25.0%×1.0, [[tau3-banking]] 6.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 77.5 | +1.83 | 실측 | [[aa-omniscience]] 59.0%×1.0 |
-| 멀티모달 | 30.1 | -1.33 | 실측 | [[mmmu-pro]] 46.0%×1.0 |
-| 긴문맥 | 41.3 | -0.58 | 실측 | [[aa-lcr]] 25.0%×1.0 |
+| 에이전트 | 34.2 | -1.06 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 25.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 신뢰성 | 77.6 | +1.84 | 실측 | [[aa-omniscience]] 59.0%×1.0 |
+| 멀티모달 | 30.0 | -1.33 | 실측 | [[mmmu-pro]] 46.0%×1.0 |
+| 긴문맥 | 41.2 | -0.59 | 실측 | [[aa-lcr]] 25.0%×1.0 |
 | 지시 따르기 | 43.8 | -0.41 | 실측 | [[ifbench]] 43.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 32.9, z: -0.38, r: 44.4, estimated: false }  # 전문 지식
-  reasoning: { s: 29.2, z: -0.28, r: 45.9, estimated: false }  # 추론
+  knowledge: { s: 32.9, z: -0.38, r: 44.3, estimated: false }  # 전문 지식
+  reasoning: { s: 29.2, z: -0.28, r: 45.8, estimated: false }  # 추론
   coding: { s: 53.3, z: 0.25, r: 53.7, estimated: false }  # 코딩
-  agentic: { s: 35.0, z: -0.03, r: 49.6, estimated: true }  # 에이전트
-  trust: { s: 50.7, z: 1.12, r: 66.8, estimated: true }  # 신뢰성
+  agentic: { s: 28.4, z: -0.3, r: 45.5, estimated: true }  # 에이전트
+  trust: { s: 28.0, z: 0.08, r: 51.2, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 45.3, z: -0.12, r: 48.2, estimated: true }  # 긴문맥
-  instruction: { s: 62.6, z: 0.37, r: 55.6, estimated: true }  # 지시 따르기
+  long_context: { s: 43.7, z: -0.18, r: 47.4, estimated: true }  # 긴문맥
+  instruction: { s: 70.3, z: 0.69, r: 60.3, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 3.5 Sonnet (June)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-10
-timestamp: 2026-08-10T00:00:00Z
+updated: 2026-08-12
+timestamp: 2026-08-12T00:00:00Z
 ---
 
 # Claude 3.5 Sonnet (June)
@@ -33,8 +33,8 @@ timestamp: 2026-08-10T00:00:00Z
 Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **8.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 신뢰성, 지시 따르기
-- **약점**: 추론, 전문 지식
+- **강점**: 지시 따르기, 코딩
+- **약점**: 에이전트, 전문 지식
 
 ## 실용 지표
 `입력 $3.0 · 출력 $15.0 · 혼합 $2.31/1M · None t/s · TTFT Nones · 200k ctx` · 가성비 3.5
@@ -43,14 +43,14 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **8.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 44.4 | -0.38 | 실측 | [[gpqa-diamond]] 56.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
-| 추론 | 45.9 | -0.28 | 실측 | [[gpqa-diamond]] 56.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
+| 전문 지식 | 44.3 | -0.38 | 실측 | [[gpqa-diamond]] 56.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
+| 추론 | 45.8 | -0.28 | 실측 | [[gpqa-diamond]] 56.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 53.7 | +0.25 | 실측 | [[scicode]] 32.0%×1.0 |
-| 에이전트 | 49.6 | -0.03 | 추정 | (추정) |
-| 신뢰성 | 66.8 | +1.12 | 추정 | (추정) |
+| 에이전트 | 45.5 | -0.3 | 추정 | (추정) |
+| 신뢰성 | 51.2 | +0.08 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 48.2 | -0.12 | 추정 | (추정) |
-| 지시 따르기 | 55.6 | +0.37 | 추정 | (추정) |
+| 긴문맥 | 47.4 | -0.18 | 추정 | (추정) |
+| 지시 따르기 | 60.3 | +0.69 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

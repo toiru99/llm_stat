@@ -5,27 +5,27 @@ creator: Google
 license: Proprietary
 intelligence_index: 52.0
 price_blended_usd_1m: 1.155
-output_speed_tps: 232.0
+output_speed_tps: 230.0
 context_window: 1000000
 status: current
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 81.4, z: 1.95, r: 79.2, estimated: false }  # 전문 지식
-  reasoning: { s: 69.1, z: 1.69, r: 75.4, estimated: false }  # 추론
+  knowledge: { s: 81.4, z: 1.95, r: 79.3, estimated: false }  # 전문 지식
+  reasoning: { s: 69.1, z: 1.7, r: 75.5, estimated: false }  # 추론
   coding: { s: 88.3, z: 1.7, r: 75.5, estimated: false }  # 코딩
-  agentic: { s: 63.7, z: 1.11, r: 66.7, estimated: false }  # 에이전트
-  trust: { s: 48.8, z: 1.03, r: 65.5, estimated: false }  # 신뢰성
+  agentic: { s: 63.7, z: 1.11, r: 66.6, estimated: false }  # 에이전트
+  trust: { s: 48.8, z: 1.04, r: 65.6, estimated: false }  # 신뢰성
   multimodal: { s: 97.1, z: 1.22, r: 68.3, estimated: false }  # 멀티모달
-  long_context: { s: 95.2, z: 1.39, r: 70.9, estimated: false }  # 긴문맥
+  long_context: { s: 95.2, z: 1.39, r: 70.8, estimated: false }  # 긴문맥
   instruction: { s: 78.9, z: 1.04, r: 65.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.6 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-10
-timestamp: 2026-08-10T00:00:00Z
+updated: 2026-08-12
+timestamp: 2026-08-12T00:00:00Z
 ---
 
 # Gemini 3.6 Flash
@@ -33,23 +33,23 @@ timestamp: 2026-08-10T00:00:00Z
 Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **52.0**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 전문 지식, 코딩
-- **약점**: 지시 따르기, 신뢰성
+- **강점**: 전문 지식, 추론
+- **약점**: 신뢰성, 지시 따르기
 
 ## 실용 지표
-`입력 $1.5 · 출력 $7.5 · 혼합 $1.155/1M · 232.0 t/s · TTFT 24.13s · 1M ctx` · 가성비 45.0
+`입력 $1.5 · 출력 $7.5 · 혼합 $1.155/1M · 230.0 t/s · TTFT 17.21s · 1M ctx` · 가성비 45.0
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 79.2 | +1.95 | 실측 | [[aa-omniscience]] 50.0%×1.0, [[gpqa-diamond]] 93.0%×0.4, [[humanitys-last-exam]] 41.0%×0.3 |
-| 추론 | 75.4 | +1.69 | 실측 | [[critpt]] 11.0%×1.0, [[gpqa-diamond]] 93.0%×1.0, [[humanitys-last-exam]] 41.0%×1.0 |
+| 전문 지식 | 79.3 | +1.95 | 실측 | [[aa-omniscience]] 50.0%×1.0, [[gpqa-diamond]] 93.0%×0.4, [[humanitys-last-exam]] 41.0%×0.3 |
+| 추론 | 75.5 | +1.7 | 실측 | [[critpt]] 11.0%×1.0, [[gpqa-diamond]] 93.0%×1.0, [[humanitys-last-exam]] 41.0%×1.0 |
 | 코딩 | 75.5 | +1.7 | 실측 | [[scicode]] 53.0%×1.0 |
-| 에이전트 | 66.7 | +1.11 | 실측 | [[gdpval]] 46.0%×1.0, [[tau3-banking]] 30.0%×1.0 |
-| 신뢰성 | 65.5 | +1.03 | 실측 | [[aa-omniscience]] 44.0%×1.0 |
+| 에이전트 | 66.6 | +1.11 | 실측 | [[gdpval]] 46.0%×1.0, [[tau3-banking]] 30.0%×1.0 |
+| 신뢰성 | 65.6 | +1.04 | 실측 | [[aa-omniscience]] 44.0%×1.0 |
 | 멀티모달 | 68.3 | +1.22 | 실측 | [[mmmu-pro]] 83.0%×1.0 |
-| 긴문맥 | 70.9 | +1.39 | 실측 | [[aa-lcr]] 79.0%×1.0 |
+| 긴문맥 | 70.8 | +1.39 | 실측 | [[aa-lcr]] 79.0%×1.0 |
 | 지시 따르기 | 65.6 | +1.04 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

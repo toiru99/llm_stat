@@ -13,10 +13,10 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 56.8, z: 0.77, r: 61.5, estimated: false }  # 전문 지식
-  reasoning: { s: 48.9, z: 0.7, r: 60.5, estimated: false }  # 추론
+  reasoning: { s: 48.9, z: 0.7, r: 60.4, estimated: false }  # 추론
   coding: { s: 59.9, z: 0.52, r: 57.8, estimated: false }  # 코딩
-  agentic: { s: 60.6, z: 0.99, r: 64.8, estimated: false }  # 에이전트
-  trust: { s: 3.5, z: -1.04, r: 34.3, estimated: false }  # 신뢰성
+  agentic: { s: 60.6, z: 0.98, r: 64.7, estimated: false }  # 에이전트
+  trust: { s: 3.5, z: -1.04, r: 34.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 84.3, z: 1.06, r: 65.9, estimated: false }  # 긴문맥
   instruction: { s: 83.1, z: 1.21, r: 68.2, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Max Thinking
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-10
-timestamp: 2026-08-10T00:00:00Z
+updated: 2026-08-12
+timestamp: 2026-08-12T00:00:00Z
 ---
 
 # Qwen3 Max Thinking
@@ -44,10 +44,10 @@ Alibaba · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **32.0** 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 61.5 | +0.77 | 실측 | [[aa-omniscience]] 30.0%×1.0, [[gpqa-diamond]] 86.0%×0.4, [[humanitys-last-exam]] 28.0%×0.3 |
-| 추론 | 60.5 | +0.7 | 실측 | [[critpt]] 2.0%×1.0, [[gpqa-diamond]] 86.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
+| 추론 | 60.4 | +0.7 | 실측 | [[critpt]] 2.0%×1.0, [[gpqa-diamond]] 86.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
 | 코딩 | 57.8 | +0.52 | 실측 | [[scicode]] 43.0%×1.0, [[terminal-bench]] 24.0%×0.5 |
-| 에이전트 | 64.8 | +0.99 | 실측 | [[tau2-bench]] 84.0%×1.0, [[terminal-bench]] 24.0%×1.0 |
-| 신뢰성 | 34.3 | -1.04 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
+| 에이전트 | 64.7 | +0.98 | 실측 | [[tau2-bench]] 84.0%×1.0, [[terminal-bench]] 24.0%×1.0 |
+| 신뢰성 | 34.4 | -1.04 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 65.9 | +1.06 | 실측 | [[aa-lcr]] 70.0%×1.0 |
 | 지시 따르기 | 68.2 | +1.21 | 실측 | [[ifbench]] 71.0%×1.0 |

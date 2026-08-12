@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — o1-pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-10
-timestamp: 2026-08-10T00:00:00Z
+updated: 2026-08-12
+timestamp: 2026-08-12T00:00:00Z
 ---
 
 # o1-pro
