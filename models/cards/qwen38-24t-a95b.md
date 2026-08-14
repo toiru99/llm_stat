@@ -1,0 +1,58 @@
+---
+type: Model
+title: Qwen3.8 2.4T A95B
+creator: Alibaba
+license: Open
+intelligence_index: 58.0
+price_blended_usd_1m: 1.175
+output_speed_tps: 51.0
+context_window: 984000
+status: current
+size_class: Large
+params_b: 2400
+is_reasoning: true
+radar:
+  knowledge: { s: 64.2, z: 1.09, r: 66.4, estimated: false }  # 전문 지식
+  reasoning: { s: 79.1, z: 2.14, r: 82.1, estimated: false }  # 추론
+  coding: { s: 86.7, z: 1.58, r: 73.6, estimated: false }  # 코딩
+  agentic: { s: 93.6, z: 2.23, r: 83.5, estimated: false }  # 에이전트
+  trust: { s: 68.6, z: 1.85, r: 77.7, estimated: false }  # 신뢰성
+  multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
+  long_context: { s: 90.4, z: 1.21, r: 68.2, estimated: false }  # 긴문맥
+  instruction: { s: 76.2, z: 0.9, r: 63.4, estimated: true }  # 지시 따르기
+sources:
+  - type: leaderboard
+    title: Artificial Analysis — Qwen3.8 2.4T A95B
+    url: https://artificialanalysis.ai/leaderboards/models
+updated: 2026-08-14
+timestamp: 2026-08-14T00:00:00Z
+---
+
+# Qwen3.8 2.4T A95B
+
+Alibaba · Open · Large(2400B) · 컨텍스트 984k · 종합지능 **58.0**
+
+## 강점 / 약점 (평균 대비)
+- **강점**: 에이전트, 추론
+- **약점**: 전문 지식, 지시 따르기
+
+## 실용 지표
+`입력 $2.0 · 출력 $6.0 · 혼합 $1.175/1M · 51.0 t/s · TTFT 2.78s · 984k ctx` · 가성비 49.4
+
+## 레이더 8축 (평균=50 기준선)
+
+| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
+|---|---|---|---|---|
+| 전문 지식 | 66.4 | +1.09 | 실측 | [[aa-omniscience]] 31.0%×1.0, [[gpqa-diamond]] 94.0%×0.4, [[humanitys-last-exam]] 42.0%×0.3 |
+| 추론 | 82.1 | +2.14 | 실측 | [[critpt]] 20.0%×1.0, [[gpqa-diamond]] 94.0%×1.0, [[humanitys-last-exam]] 42.0%×1.0 |
+| 코딩 | 73.6 | +1.58 | 실측 | [[scicode]] 52.0%×1.0 |
+| 에이전트 | 83.5 | +2.23 | 실측 | [[gdpval]] 61.0%×1.0, [[tau3-banking]] 49.0%×1.0 |
+| 신뢰성 | 77.7 | +1.85 | 실측 | [[aa-omniscience]] 61.0%×1.0 |
+| 멀티모달 | — | — | 측정 안 됨 | — |
+| 긴문맥 | 68.2 | +1.21 | 실측 | [[aa-lcr]] 75.0%×1.0 |
+| 지시 따르기 | 63.4 | +0.9 | 추정 | (추정) |
+
+> r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
+
+## 출처
+출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)

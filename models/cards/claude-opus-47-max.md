@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 80.2, z: 1.89, r: 78.4, estimated: false }  # 전문 지식
-  reasoning: { s: 70.0, z: 1.74, r: 76.1, estimated: false }  # 추론
-  coding: { s: 87.4, z: 1.66, r: 74.9, estimated: false }  # 코딩
-  agentic: { s: 78.8, z: 1.71, r: 75.6, estimated: false }  # 에이전트
-  trust: { s: 65.1, z: 1.78, r: 76.8, estimated: false }  # 신뢰성
-  multimodal: { s: 91.4, z: 0.94, r: 64.2, estimated: false }  # 멀티모달
-  long_context: { s: 90.4, z: 1.24, r: 68.6, estimated: false }  # 긴문맥
-  instruction: { s: 66.2, z: 0.52, r: 57.7, estimated: false }  # 지시 따르기
+  knowledge: { s: 79.9, z: 1.84, r: 77.6, estimated: false }  # 전문 지식
+  reasoning: { s: 69.6, z: 1.68, r: 75.1, estimated: false }  # 추론
+  coding: { s: 87.4, z: 1.6, r: 74.1, estimated: false }  # 코딩
+  agentic: { s: 78.8, z: 1.66, r: 74.8, estimated: false }  # 에이전트
+  trust: { s: 65.1, z: 1.69, r: 75.4, estimated: false }  # 신뢰성
+  multimodal: { s: 91.4, z: 0.92, r: 63.8, estimated: false }  # 멀티모달
+  long_context: { s: 90.4, z: 1.21, r: 68.2, estimated: false }  # 긴문맥
+  instruction: { s: 66.2, z: 0.49, r: 57.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 4.7 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-12
-timestamp: 2026-08-12T00:00:00Z
+updated: 2026-08-14
+timestamp: 2026-08-14T00:00:00Z
 ---
 
 # Claude Opus 4.7 (max)
@@ -37,20 +37,20 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **55.0** 
 - **약점**: 멀티모달, 지시 따르기
 
 ## 실용 지표
-`입력 $5.0 · 출력 $25.0 · 혼합 $3.85/1M · 46.0 t/s · TTFT 13.64s · 1M ctx` · 가성비 14.3
+`입력 $5.0 · 출력 $25.0 · 혼합 $3.85/1M · 46.0 t/s · TTFT 15.36s · 1M ctx` · 가성비 14.3
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 78.4 | +1.89 | 실측 | [[aa-omniscience]] 49.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 42.0%×0.3 |
-| 추론 | 76.1 | +1.74 | 실측 | [[critpt]] 12.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 42.0%×1.0 |
-| 코딩 | 74.9 | +1.66 | 실측 | [[scicode]] 55.0%×1.0, [[terminal-bench]] 52.0%×0.5 |
-| 에이전트 | 75.6 | +1.71 | 실측 | [[gdpval]] 49.0%×1.0, [[itbench]] 47.0%×1.0, [[tau2-bench]] 89.0%×1.0, [[tau3-banking]] 35.0%×1.0, [[terminal-bench]] 52.0%×1.0 |
-| 신뢰성 | 76.8 | +1.78 | 실측 | [[aa-omniscience]] 58.0%×1.0 |
-| 멀티모달 | 64.2 | +0.94 | 실측 | [[mmmu-pro]] 79.0%×1.0 |
-| 긴문맥 | 68.6 | +1.24 | 실측 | [[aa-lcr]] 75.0%×1.0 |
-| 지시 따르기 | 57.7 | +0.52 | 실측 | [[ifbench]] 59.0%×1.0 |
+| 전문 지식 | 77.6 | +1.84 | 실측 | [[aa-omniscience]] 49.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 42.0%×0.3 |
+| 추론 | 75.1 | +1.68 | 실측 | [[critpt]] 12.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 42.0%×1.0 |
+| 코딩 | 74.1 | +1.6 | 실측 | [[scicode]] 55.0%×1.0, [[terminal-bench]] 52.0%×0.5 |
+| 에이전트 | 74.8 | +1.66 | 실측 | [[gdpval]] 49.0%×1.0, [[itbench]] 47.0%×1.0, [[tau2-bench]] 89.0%×1.0, [[tau3-banking]] 35.0%×1.0, [[terminal-bench]] 52.0%×1.0 |
+| 신뢰성 | 75.4 | +1.69 | 실측 | [[aa-omniscience]] 58.0%×1.0 |
+| 멀티모달 | 63.8 | +0.92 | 실측 | [[mmmu-pro]] 79.0%×1.0 |
+| 긴문맥 | 68.2 | +1.21 | 실측 | [[aa-lcr]] 75.0%×1.0 |
+| 지시 따르기 | 57.3 | +0.49 | 실측 | [[ifbench]] 59.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

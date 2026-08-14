@@ -12,20 +12,20 @@ size_class: Medium
 params_b: 123
 is_reasoning: false
 radar:
-  knowledge: { s: 29.0, z: -0.57, r: 41.5, estimated: false }  # 전문 지식
-  reasoning: { s: 16.7, z: -0.9, r: 36.5, estimated: false }  # 추론
-  coding: { s: 35.3, z: -0.5, r: 42.4, estimated: false }  # 코딩
-  agentic: { s: 20.2, z: -0.63, r: 40.6, estimated: false }  # 에이전트
-  trust: { s: 34.9, z: 0.4, r: 56.0, estimated: false }  # 신뢰성
+  knowledge: { s: 28.9, z: -0.58, r: 41.2, estimated: false }  # 전문 지식
+  reasoning: { s: 16.5, z: -0.92, r: 36.2, estimated: false }  # 추론
+  coding: { s: 35.3, z: -0.53, r: 42.0, estimated: false }  # 코딩
+  agentic: { s: 20.2, z: -0.65, r: 40.3, estimated: false }  # 에이전트
+  trust: { s: 34.9, z: 0.35, r: 55.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 6.0, z: -1.32, r: 30.2, estimated: false }  # 긴문맥
-  instruction: { s: 26.8, z: -1.11, r: 33.4, estimated: false }  # 지시 따르기
+  long_context: { s: 6.0, z: -1.34, r: 29.9, estimated: false }  # 긴문맥
+  instruction: { s: 26.8, z: -1.12, r: 33.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Large 2 (Nov)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-12
-timestamp: 2026-08-12T00:00:00Z
+updated: 2026-08-14
+timestamp: 2026-08-14T00:00:00Z
 ---
 
 # Mistral Large 2 (Nov)
@@ -43,14 +43,14 @@ Mistral · Open · Medium(123B) · 컨텍스트 128k · 종합지능 **9.0** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 41.5 | -0.57 | 실측 | [[aa-omniscience]] 20.0%×1.0, [[gpqa-diamond]] 49.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
-| 추론 | 36.5 | -0.9 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 49.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
-| 코딩 | 42.4 | -0.5 | 실측 | [[scicode]] 29.0%×1.0, [[terminal-bench]] 6.0%×0.5 |
-| 에이전트 | 40.6 | -0.63 | 실측 | [[tau2-bench]] 31.0%×1.0, [[terminal-bench]] 6.0%×1.0 |
-| 신뢰성 | 56.0 | +0.4 | 실측 | [[aa-omniscience]] 32.0%×1.0 |
+| 전문 지식 | 41.2 | -0.58 | 실측 | [[aa-omniscience]] 20.0%×1.0, [[gpqa-diamond]] 49.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
+| 추론 | 36.2 | -0.92 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 49.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
+| 코딩 | 42.0 | -0.53 | 실측 | [[scicode]] 29.0%×1.0, [[terminal-bench]] 6.0%×0.5 |
+| 에이전트 | 40.3 | -0.65 | 실측 | [[tau2-bench]] 31.0%×1.0, [[terminal-bench]] 6.0%×1.0 |
+| 신뢰성 | 55.3 | +0.35 | 실측 | [[aa-omniscience]] 32.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 30.2 | -1.32 | 실측 | [[aa-lcr]] 5.0%×1.0 |
-| 지시 따르기 | 33.4 | -1.11 | 실측 | [[ifbench]] 31.0%×1.0 |
+| 긴문맥 | 29.9 | -1.34 | 실측 | [[aa-lcr]] 5.0%×1.0 |
+| 지시 따르기 | 33.2 | -1.12 | 실측 | [[ifbench]] 31.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
