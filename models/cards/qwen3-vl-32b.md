@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 30.3, z: -0.25, r: 46.3, estimated: false }  # 추론
   coding: { s: 35.2, z: -0.53, r: 42.0, estimated: false }  # 코딩
   agentic: { s: 29.3, z: -0.29, r: 45.7, estimated: false }  # 에이전트
-  trust: { s: 16.3, z: -0.48, r: 42.9, estimated: false }  # 신뢰성
+  trust: { s: 16.3, z: -0.48, r: 42.8, estimated: false }  # 신뢰성
   multimodal: { s: 68.6, z: -0.18, r: 47.3, estimated: false }  # 멀티모달
   long_context: { s: 68.7, z: 0.55, r: 58.3, estimated: false }  # 긴문맥
   instruction: { s: 66.2, z: 0.49, r: 57.3, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 VL 32B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # Qwen3 VL 32B
@@ -37,7 +37,7 @@ Alibaba · Open · Small(33.4B) · 컨텍스트 256k · 종합지능 **18.0** ·
 - **약점**: 신뢰성, 코딩
 
 ## 실용 지표
-`입력 $0.7 · 출력 $8.4 · 혼합 $1.47/1M · 89.0 t/s · TTFT 2.6s · 256k ctx` · 가성비 12.2
+`입력 $0.7 · 출력 $8.4 · 혼합 $1.47/1M · 89.0 t/s · TTFT 2.56s · 256k ctx` · 가성비 12.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Alibaba · Open · Small(33.4B) · 컨텍스트 256k · 종합지능 **18.0** ·
 | 추론 | 46.3 | -0.25 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
 | 코딩 | 42.0 | -0.53 | 실측 | [[scicode]] 28.0%×1.0, [[terminal-bench]] 8.0%×0.5 |
 | 에이전트 | 45.7 | -0.29 | 실측 | [[tau2-bench]] 46.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
-| 신뢰성 | 42.9 | -0.48 | 실측 | [[aa-omniscience]] 16.0%×1.0 |
+| 신뢰성 | 42.8 | -0.48 | 실측 | [[aa-omniscience]] 16.0%×1.0 |
 | 멀티모달 | 47.3 | -0.18 | 실측 | [[mmmu-pro]] 63.0%×1.0 |
 | 긴문맥 | 58.3 | +0.55 | 실측 | [[aa-lcr]] 57.0%×1.0 |
 | 지시 따르기 | 57.3 | +0.49 | 실측 | [[ifbench]] 59.0%×1.0 |

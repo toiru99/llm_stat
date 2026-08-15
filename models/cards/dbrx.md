@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 15.4, z: -0.98, r: 35.3, estimated: false }  # 추론
   coding: { s: 20.0, z: -1.16, r: 32.7, estimated: false }  # 코딩
   agentic: { s: 12.3, z: -0.96, r: 35.6, estimated: true }  # 에이전트
-  trust: { s: 25.7, z: -0.06, r: 49.2, estimated: true }  # 신뢰성
+  trust: { s: 25.7, z: -0.06, r: 49.1, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 10.4, z: -1.21, r: 31.9, estimated: true }  # 긴문맥
   instruction: { s: 26.2, z: -1.14, r: 32.9, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DBRX
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # DBRX
@@ -47,7 +47,7 @@ Databricks · Open · Medium(132B) · 컨텍스트 32k · 종합지능 **3.0** �
 | 추론 | 35.3 | -0.98 | 실측 | [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 32.7 | -1.16 | 실측 | [[scicode]] 12.0%×1.0 |
 | 에이전트 | 35.6 | -0.96 | 추정 | (추정) |
-| 신뢰성 | 49.2 | -0.06 | 추정 | (추정) |
+| 신뢰성 | 49.1 | -0.06 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 31.9 | -1.21 | 추정 | (추정) |
 | 지시 따르기 | 32.9 | -1.14 | 추정 | (추정) |

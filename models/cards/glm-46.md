@@ -19,13 +19,13 @@ radar:
   trust: { s: 4.7, z: -0.99, r: 35.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 66.3, z: 0.48, r: 57.2, estimated: false }  # 긴문맥
-  instruction: { s: 43.7, z: -0.43, r: 43.5, estimated: false }  # 지시 따르기
+  instruction: { s: 43.7, z: -0.43, r: 43.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.6
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # GLM-4.6
@@ -37,7 +37,7 @@ Z AI · Open · Large(357B) · 컨텍스트 200k · 종합지능 **29.0** · ⚠
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $0.55 · 출력 $2.2 · 혼합 $0.7375/1M · 53.0 t/s · TTFT 2.44s · 200k ctx` · 가성비 39.3
+`입력 $0.55 · 출력 $2.2 · 혼합 $0.7375/1M · 53.0 t/s · TTFT 2.38s · 200k ctx` · 가성비 39.3
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Z AI · Open · Large(357B) · 컨텍스트 200k · 종합지능 **29.0** · ⚠
 | 신뢰성 | 35.1 | -0.99 | 실측 | [[aa-omniscience]] 6.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 57.2 | +0.48 | 실측 | [[aa-lcr]] 55.0%×1.0 |
-| 지시 따르기 | 43.5 | -0.43 | 실측 | [[ifbench]] 43.0%×1.0 |
+| 지시 따르기 | 43.6 | -0.43 | 실측 | [[ifbench]] 43.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

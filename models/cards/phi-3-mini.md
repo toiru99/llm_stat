@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 16.6, z: -0.92, r: 36.3, estimated: false }  # 추론
   coding: { s: 10.0, z: -1.57, r: 26.5, estimated: false }  # 코딩
   agentic: { s: 0.0, z: -1.44, r: 28.4, estimated: false }  # 에이전트
-  trust: { s: 6.5, z: -0.91, r: 36.4, estimated: true }  # 신뢰성
+  trust: { s: 6.5, z: -0.91, r: 36.3, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 3.6, z: -1.41, r: 28.8, estimated: false }  # 긴문맥
   instruction: { s: 16.9, z: -1.52, r: 27.2, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Phi-3 Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # Phi-3 Mini
@@ -47,7 +47,7 @@ Microsoft · Open · Tiny(3.8B) · 컨텍스트 4k · 종합지능 **4.0** · �
 | 추론 | 36.3 | -0.92 | 실측 | [[gpqa-diamond]] 32.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 26.5 | -1.57 | 실측 | [[scicode]] 9.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 28.4 | -1.44 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 36.4 | -0.91 | 추정 | (추정) |
+| 신뢰성 | 36.3 | -0.91 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.8 | -1.41 | 실측 | [[aa-lcr]] 3.0%×1.0 |
 | 지시 따르기 | 27.2 | -1.52 | 실측 | [[ifbench]] 24.0%×1.0 |

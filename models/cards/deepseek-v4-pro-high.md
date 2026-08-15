@@ -5,7 +5,7 @@ creator: DeepSeek
 license: Open
 intelligence_index: 44.0
 price_blended_usd_1m: 0.1765
-output_speed_tps: 68.0
+output_speed_tps: 75.0
 context_window: 1000000
 status: current
 size_class: Large
@@ -15,8 +15,8 @@ radar:
   knowledge: { s: 70.3, z: 1.38, r: 70.7, estimated: false }  # 전문 지식
   reasoning: { s: 63.2, z: 1.36, r: 70.4, estimated: false }  # 추론
   coding: { s: 72.3, z: 0.99, r: 64.8, estimated: false }  # 코딩
-  agentic: { s: 67.3, z: 1.2, r: 68.1, estimated: false }  # 에이전트
-  trust: { s: 10.5, z: -0.73, r: 39.0, estimated: false }  # 신뢰성
+  agentic: { s: 67.3, z: 1.21, r: 68.1, estimated: false }  # 에이전트
+  trust: { s: 10.5, z: -0.74, r: 39.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 80.7, z: 0.92, r: 63.8, estimated: false }  # 긴문맥
   instruction: { s: 83.1, z: 1.18, r: 67.6, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Pro (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # DeepSeek V4 Pro (high)
@@ -37,7 +37,7 @@ DeepSeek · Open · Large(1600B) · 컨텍스트 1M · 종합지능 **44.0**
 - **약점**: 긴문맥, 신뢰성
 
 ## 실용 지표
-`입력 $0.43 · 출력 $0.87 · 혼합 $0.1765/1M · 68.0 t/s · TTFT 1.75s · 1M ctx` · 가성비 249.3
+`입력 $0.43 · 출력 $0.87 · 혼합 $0.1765/1M · 75.0 t/s · TTFT 1.78s · 1M ctx` · 가성비 249.3
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,8 +46,8 @@ DeepSeek · Open · Large(1600B) · 컨텍스트 1M · 종합지능 **44.0**
 | 전문 지식 | 70.7 | +1.38 | 실측 | [[aa-omniscience]] 41.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 35.0%×0.3 |
 | 추론 | 70.4 | +1.36 | 실측 | [[critpt]] 10.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 35.0%×1.0 |
 | 코딩 | 64.8 | +0.99 | 실측 | [[scicode]] 46.0%×1.0, [[terminal-bench]] 42.0%×0.5 |
-| 에이전트 | 68.1 | +1.2 | 실측 | [[gdpval]] 40.0%×1.0, [[tau2-bench]] 94.0%×1.0, [[tau3-banking]] 26.0%×1.0, [[terminal-bench]] 42.0%×1.0 |
-| 신뢰성 | 39.0 | -0.73 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
+| 에이전트 | 68.1 | +1.21 | 실측 | [[gdpval]] 40.0%×1.0, [[tau2-bench]] 94.0%×1.0, [[tau3-banking]] 26.0%×1.0, [[terminal-bench]] 42.0%×1.0 |
+| 신뢰성 | 39.0 | -0.74 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 63.8 | +0.92 | 실측 | [[aa-lcr]] 67.0%×1.0 |
 | 지시 따르기 | 67.6 | +1.18 | 실측 | [[ifbench]] 71.0%×1.0 |

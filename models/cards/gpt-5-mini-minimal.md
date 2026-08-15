@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 14.0
 price_blended_usd_1m: 0.2675
-output_speed_tps: 90.0
+output_speed_tps: 94.0
 context_window: 400000
 status: past
 size_class: Unknown
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 25.6, z: -0.48, r: 42.9, estimated: false }  # 추론
   coding: { s: 48.2, z: -0.0, r: 50.0, estimated: false }  # 코딩
   agentic: { s: 26.8, z: -0.39, r: 44.2, estimated: false }  # 에이전트
-  trust: { s: 10.5, z: -0.73, r: 39.0, estimated: false }  # 신뢰성
+  trust: { s: 10.5, z: -0.74, r: 39.0, estimated: false }  # 신뢰성
   multimodal: { s: 61.4, z: -0.52, r: 42.2, estimated: false }  # 멀티모달
   long_context: { s: 44.6, z: -0.17, r: 47.4, estimated: false }  # 긴문맥
   instruction: { s: 47.9, z: -0.26, r: 46.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5 mini (minimal)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # GPT-5 mini (minimal)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **14.0** �
 - **약점**: 멀티모달, 신뢰성
 
 ## 실용 지표
-`입력 $0.25 · 출력 $2.0 · 혼합 $0.2675/1M · 90.0 t/s · TTFT 0.91s · 400k ctx` · 가성비 52.3
+`입력 $0.25 · 출력 $2.0 · 혼합 $0.2675/1M · 94.0 t/s · TTFT 0.91s · 400k ctx` · 가성비 52.3
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **14.0** �
 | 추론 | 42.9 | -0.48 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 69.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 50.0 | +-0.0 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 14.0%×0.5 |
 | 에이전트 | 44.2 | -0.39 | 실측 | [[tau2-bench]] 32.0%×1.0, [[terminal-bench]] 14.0%×1.0 |
-| 신뢰성 | 39.0 | -0.73 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
+| 신뢰성 | 39.0 | -0.74 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | 42.2 | -0.52 | 실측 | [[mmmu-pro]] 58.0%×1.0 |
 | 긴문맥 | 47.4 | -0.17 | 실측 | [[aa-lcr]] 37.0%×1.0 |
 | 지시 따르기 | 46.1 | -0.26 | 실측 | [[ifbench]] 46.0%×1.0 |

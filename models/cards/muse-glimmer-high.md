@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 45.1, z: 0.48, r: 57.2, estimated: false }  # 추론
   coding: { s: 73.3, z: 1.03, r: 65.4, estimated: false }  # 코딩
   agentic: { s: 40.7, z: 0.16, r: 52.4, estimated: false }  # 에이전트
-  trust: { s: 18.6, z: -0.37, r: 44.4, estimated: false }  # 신뢰성
+  trust: { s: 18.6, z: -0.38, r: 44.4, estimated: false }  # 신뢰성
   multimodal: { s: 84.3, z: 0.58, r: 58.6, estimated: false }  # 멀티모달
   long_context: { s: 96.4, z: 1.39, r: 70.9, estimated: false }  # 긴문맥
   instruction: { s: 82.3, z: 1.14, r: 67.1, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Glimmer (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # Muse Glimmer (high)
@@ -37,7 +37,7 @@ Meta · Open · Small(30B) · 컨텍스트 131k · 종합지능 **35.0**
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.32 · 출력 $1.35 · 혼합 $0.228/1M · 100.0 t/s · TTFT 0.82s · 131k ctx` · 가성비 153.5
+`입력 $0.32 · 출력 $1.35 · 혼합 $0.228/1M · 100.0 t/s · TTFT 0.83s · 131k ctx` · 가성비 153.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Meta · Open · Small(30B) · 컨텍스트 131k · 종합지능 **35.0**
 | 추론 | 57.2 | +0.48 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 84.0%×1.0, [[humanitys-last-exam]] 22.0%×1.0 |
 | 코딩 | 65.4 | +1.03 | 실측 | [[scicode]] 44.0%×1.0 |
 | 에이전트 | 52.4 | +0.16 | 실측 | [[gdpval]] 23.0%×1.0, [[tau3-banking]] 24.0%×1.0 |
-| 신뢰성 | 44.4 | -0.37 | 실측 | [[aa-omniscience]] 18.0%×1.0 |
+| 신뢰성 | 44.4 | -0.38 | 실측 | [[aa-omniscience]] 18.0%×1.0 |
 | 멀티모달 | 58.6 | +0.58 | 실측 | [[mmmu-pro]] 74.0%×1.0 |
 | 긴문맥 | 70.9 | +1.39 | 실측 | [[aa-lcr]] 80.0%×1.0 |
 | 지시 따르기 | 67.1 | +1.14 | 추정 | (추정) |

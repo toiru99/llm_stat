@@ -15,8 +15,8 @@ radar:
   knowledge: { s: 58.6, z: 0.83, r: 62.4, estimated: false }  # 전문 지식
   reasoning: { s: 58.1, z: 1.12, r: 66.7, estimated: false }  # 추론
   coding: { s: 68.3, z: 0.82, r: 62.4, estimated: false }  # 코딩
-  agentic: { s: 63.4, z: 1.05, r: 65.8, estimated: false }  # 에이전트
-  trust: { s: 81.4, z: 2.41, r: 86.2, estimated: false }  # 신뢰성
+  agentic: { s: 63.4, z: 1.06, r: 65.8, estimated: false }  # 에이전트
+  trust: { s: 81.4, z: 2.4, r: 86.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 86.7, z: 1.1, r: 66.5, estimated: false }  # 긴문맥
   instruction: { s: 93.8, z: 1.61, r: 74.2, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Motif 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # Motif 3
@@ -46,8 +46,8 @@ Motif Technologies · Open · Large(314B) · 컨텍스트 262k · 종합지능 *
 | 전문 지식 | 62.4 | +0.83 | 실측 | [[aa-omniscience]] 30.0%×1.0, [[gpqa-diamond]] 83.0%×0.4, [[humanitys-last-exam]] 37.0%×0.3 |
 | 추론 | 66.7 | +1.12 | 실측 | [[critpt]] 7.0%×1.0, [[gpqa-diamond]] 83.0%×1.0, [[humanitys-last-exam]] 37.0%×1.0 |
 | 코딩 | 62.4 | +0.82 | 실측 | [[scicode]] 41.0%×1.0 |
-| 에이전트 | 65.8 | +1.05 | 실측 | [[gdpval]] 39.0%×1.0, [[tau3-banking]] 35.0%×1.0 |
-| 신뢰성 | 86.2 | +2.41 | 실측 | [[aa-omniscience]] 72.0%×1.0 |
+| 에이전트 | 65.8 | +1.06 | 실측 | [[gdpval]] 39.0%×1.0, [[tau3-banking]] 35.0%×1.0 |
+| 신뢰성 | 86.0 | +2.4 | 실측 | [[aa-omniscience]] 72.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 66.5 | +1.1 | 실측 | [[aa-lcr]] 72.0%×1.0 |
 | 지시 따르기 | 74.2 | +1.61 | 추정 | (추정) |

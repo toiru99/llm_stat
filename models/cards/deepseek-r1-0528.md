@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 38.1, z: 0.14, r: 52.1, estimated: false }  # 추론
   coding: { s: 52.5, z: 0.18, r: 52.7, estimated: false }  # 코딩
   agentic: { s: 30.8, z: -0.23, r: 46.6, estimated: false }  # 에이전트
-  trust: { s: 17.4, z: -0.42, r: 43.6, estimated: false }  # 신뢰성
+  trust: { s: 17.4, z: -0.43, r: 43.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 68.7, z: 0.55, r: 58.3, estimated: false }  # 긴문맥
   instruction: { s: 39.4, z: -0.6, r: 41.0, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek R1 0528
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # DeepSeek R1 0528
@@ -47,7 +47,7 @@ DeepSeek · Open · Large(685B) · 컨텍스트 128k · 종합지능 **20.0** ·
 | 추론 | 52.1 | +0.14 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 81.0%×1.0, [[humanitys-last-exam]] 16.0%×1.0 |
 | 코딩 | 52.7 | +0.18 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 16.0%×0.5 |
 | 에이전트 | 46.6 | -0.23 | 실측 | [[tau2-bench]] 37.0%×1.0, [[terminal-bench]] 16.0%×1.0 |
-| 신뢰성 | 43.6 | -0.42 | 실측 | [[aa-omniscience]] 17.0%×1.0 |
+| 신뢰성 | 43.6 | -0.43 | 실측 | [[aa-omniscience]] 17.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 58.3 | +0.55 | 실측 | [[aa-lcr]] 57.0%×1.0 |
 | 지시 따르기 | 41.0 | -0.6 | 실측 | [[ifbench]] 40.0%×1.0 |

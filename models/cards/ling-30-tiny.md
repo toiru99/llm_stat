@@ -5,7 +5,7 @@ creator: InclusionAI
 license: Open
 intelligence_index: 25.0
 price_blended_usd_1m: 0
-output_speed_tps: 203.0
+output_speed_tps: 197.0
 context_window: 262000
 status: current
 size_class: Small
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 29.6, z: -0.28, r: 45.8, estimated: false }  # 추론
   coding: { s: 40.0, z: -0.34, r: 45.0, estimated: false }  # 코딩
   agentic: { s: 31.0, z: -0.22, r: 46.7, estimated: false }  # 에이전트
-  trust: { s: 79.1, z: 2.31, r: 84.7, estimated: false }  # 신뢰성
+  trust: { s: 79.1, z: 2.3, r: 84.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 71.1, z: 0.63, r: 59.4, estimated: false }  # 긴문맥
   instruction: { s: 55.5, z: 0.05, r: 50.8, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling 3.0 Tiny
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # Ling 3.0 Tiny
@@ -37,7 +37,7 @@ InclusionAI · Open · Small(7.9B) · 컨텍스트 262k · 종합지능 **25.0**
 - **약점**: 코딩, 전문 지식
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 203.0 t/s · TTFT 2.45s · 262k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 197.0 t/s · TTFT 2.48s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ InclusionAI · Open · Small(7.9B) · 컨텍스트 262k · 종합지능 **25.0**
 | 추론 | 45.8 | -0.28 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
 | 코딩 | 45.0 | -0.34 | 실측 | [[scicode]] 24.0%×1.0 |
 | 에이전트 | 46.7 | -0.22 | 실측 | [[gdpval]] 14.0%×1.0, [[tau3-banking]] 21.0%×1.0 |
-| 신뢰성 | 84.7 | +2.31 | 실측 | [[aa-omniscience]] 70.0%×1.0 |
+| 신뢰성 | 84.5 | +2.3 | 실측 | [[aa-omniscience]] 70.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 59.4 | +0.63 | 실측 | [[aa-lcr]] 59.0%×1.0 |
 | 지시 따르기 | 50.8 | +0.05 | 추정 | (추정) |

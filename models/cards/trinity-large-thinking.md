@@ -3,7 +3,7 @@ type: Model
 title: Trinity Large Thinking
 creator: Arcee AI
 license: Open
-intelligence_index: 18.0
+intelligence_index: 19.0
 price_blended_usd_1m: 0.243
 output_speed_tps: 203.0
 context_window: 512000
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 43.1, z: 0.09, r: 51.4, estimated: false }  # 전문 지식
   reasoning: { s: 35.8, z: 0.02, r: 50.3, estimated: false }  # 추론
   coding: { s: 51.6, z: 0.14, r: 52.1, estimated: false }  # 코딩
-  agentic: { s: 43.4, z: 0.27, r: 54.0, estimated: false }  # 에이전트
+  agentic: { s: 35.5, z: -0.04, r: 49.4, estimated: false }  # 에이전트
   trust: { s: 14.0, z: -0.58, r: 41.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 45.8, z: -0.14, r: 47.9, estimated: false }  # 긴문맥
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Trinity Large Thinking
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # Trinity Large Thinking
 
-Arcee AI · Open · Large(399B) · 컨텍스트 512k · 종합지능 **18.0**
+Arcee AI · Open · Large(399B) · 컨텍스트 512k · 종합지능 **19.0**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 지시 따르기, 에이전트
+- **강점**: 지시 따르기, 코딩
 - **약점**: 긴문맥, 신뢰성
 
 ## 실용 지표
-`입력 $0.23 · 출력 $0.88 · 혼합 $0.243/1M · 203.0 t/s · TTFT 1.23s · 512k ctx` · 가성비 74.1
+`입력 $0.23 · 출력 $0.88 · 혼합 $0.243/1M · 203.0 t/s · TTFT 1.23s · 512k ctx` · 가성비 78.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Arcee AI · Open · Large(399B) · 컨텍스트 512k · 종합지능 **18.0**
 | 전문 지식 | 51.4 | +0.09 | 실측 | [[aa-omniscience]] 23.0%×1.0, [[gpqa-diamond]] 75.0%×0.4, [[humanitys-last-exam]] 16.0%×0.3 |
 | 추론 | 50.3 | +0.02 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 75.0%×1.0, [[humanitys-last-exam]] 16.0%×1.0 |
 | 코딩 | 52.1 | +0.14 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 23.0%×0.5 |
-| 에이전트 | 54.0 | +0.27 | 실측 | [[gdpval]] 3.0%×1.0, [[tau2-bench]] 90.0%×1.0, [[terminal-bench]] 23.0%×1.0 |
+| 에이전트 | 49.4 | -0.04 | 실측 | [[gdpval]] 3.0%×1.0, [[tau2-bench]] 90.0%×1.0, [[tau3-banking]] 6.0%×1.0, [[terminal-bench]] 23.0%×1.0 |
 | 신뢰성 | 41.3 | -0.58 | 실측 | [[aa-omniscience]] 14.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 47.9 | -0.14 | 실측 | [[aa-lcr]] 38.0%×1.0 |

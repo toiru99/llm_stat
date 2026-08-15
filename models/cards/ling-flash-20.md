@@ -5,7 +5,7 @@ creator: InclusionAI
 license: Open
 intelligence_index: 10.0
 price_blended_usd_1m: 0.183
-output_speed_tps: 89.0
+output_speed_tps: 92.0
 context_window: 128000
 status: past
 size_class: Medium
@@ -15,8 +15,8 @@ radar:
   knowledge: { s: 29.1, z: -0.58, r: 41.4, estimated: false }  # 전문 지식
   reasoning: { s: 25.0, z: -0.5, r: 42.4, estimated: false }  # 추론
   coding: { s: 37.8, z: -0.43, r: 43.6, estimated: false }  # 코딩
-  agentic: { s: 18.9, z: -0.7, r: 39.6, estimated: false }  # 에이전트
-  trust: { s: 10.5, z: -0.73, r: 39.0, estimated: false }  # 신뢰성
+  agentic: { s: 18.9, z: -0.69, r: 39.6, estimated: false }  # 에이전트
+  trust: { s: 10.5, z: -0.74, r: 39.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 19.3, z: -0.94, r: 35.9, estimated: false }  # 긴문맥
   instruction: { s: 31.0, z: -0.95, r: 35.8, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling-flash-2.0
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # Ling-flash-2.0
@@ -37,7 +37,7 @@ InclusionAI · Open · Medium(103B) · 컨텍스트 128k · 종합지능 **10.0*
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.14 · 출력 $0.57 · 혼합 $0.183/1M · 89.0 t/s · TTFT 2.23s · 128k ctx` · 가성비 54.6
+`입력 $0.14 · 출력 $0.57 · 혼합 $0.183/1M · 92.0 t/s · TTFT 2.24s · 128k ctx` · 가성비 54.6
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,8 +46,8 @@ InclusionAI · Open · Medium(103B) · 컨텍스트 128k · 종합지능 **10.0*
 | 전문 지식 | 41.4 | -0.58 | 실측 | [[aa-omniscience]] 14.0%×1.0, [[gpqa-diamond]] 66.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 42.4 | -0.5 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 66.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 43.6 | -0.43 | 실측 | [[scicode]] 29.0%×1.0, [[terminal-bench]] 11.0%×0.5 |
-| 에이전트 | 39.6 | -0.7 | 실측 | [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
-| 신뢰성 | 39.0 | -0.73 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
+| 에이전트 | 39.6 | -0.69 | 실측 | [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
+| 신뢰성 | 39.0 | -0.74 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 35.9 | -0.94 | 실측 | [[aa-lcr]] 16.0%×1.0 |
 | 지시 따르기 | 35.8 | -0.95 | 실측 | [[ifbench]] 34.0%×1.0 |

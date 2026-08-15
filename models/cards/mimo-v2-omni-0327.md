@@ -14,9 +14,9 @@ is_reasoning: true
 radar:
   knowledge: { s: 43.6, z: 0.11, r: 51.7, estimated: false }  # 전문 지식
   reasoning: { s: 44.0, z: 0.43, r: 56.4, estimated: false }  # 추론
-  coding: { s: 61.5, z: 0.54, r: 58.2, estimated: false }  # 코딩
-  agentic: { s: 71.7, z: 1.38, r: 70.6, estimated: false }  # 에이전트
-  trust: { s: 67.4, z: 1.8, r: 76.9, estimated: false }  # 신뢰성
+  coding: { s: 61.5, z: 0.55, r: 58.2, estimated: false }  # 코딩
+  agentic: { s: 71.7, z: 1.38, r: 70.7, estimated: false }  # 에이전트
+  trust: { s: 67.4, z: 1.78, r: 76.7, estimated: false }  # 신뢰성
   multimodal: { s: 84.3, z: 0.58, r: 58.6, estimated: false }  # 멀티모달
   long_context: { s: 84.3, z: 1.03, r: 65.4, estimated: false }  # 긴문맥
   instruction: { s: 77.5, z: 0.95, r: 64.2, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2-Omni-0327
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # MiMo-V2-Omni-0327
@@ -45,9 +45,9 @@ Xiaomi · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **37.0**
 |---|---|---|---|---|
 | 전문 지식 | 51.7 | +0.11 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 23.0%×0.3 |
 | 추론 | 56.4 | +0.43 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 23.0%×1.0 |
-| 코딩 | 58.2 | +0.54 | 실측 | [[scicode]] 39.0%×1.0, [[terminal-bench]] 36.0%×0.5 |
-| 에이전트 | 70.6 | +1.38 | 실측 | [[tau2-bench]] 88.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
-| 신뢰성 | 76.9 | +1.8 | 실측 | [[aa-omniscience]] 60.0%×1.0 |
+| 코딩 | 58.2 | +0.55 | 실측 | [[scicode]] 39.0%×1.0, [[terminal-bench]] 36.0%×0.5 |
+| 에이전트 | 70.7 | +1.38 | 실측 | [[tau2-bench]] 88.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
+| 신뢰성 | 76.7 | +1.78 | 실측 | [[aa-omniscience]] 60.0%×1.0 |
 | 멀티모달 | 58.6 | +0.58 | 실측 | [[mmmu-pro]] 74.0%×1.0 |
 | 긴문맥 | 65.4 | +1.03 | 실측 | [[aa-lcr]] 70.0%×1.0 |
 | 지시 따르기 | 64.2 | +0.95 | 실측 | [[ifbench]] 67.0%×1.0 |

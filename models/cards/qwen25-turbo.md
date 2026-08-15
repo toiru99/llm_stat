@@ -5,7 +5,7 @@ creator: Alibaba
 license: Proprietary
 intelligence_index: 6.0
 price_blended_usd_1m: 0.065
-output_speed_tps: 107.0
+output_speed_tps: 108.0
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 23.2, z: -0.85, r: 37.2, estimated: false }  # 전문 지식
   reasoning: { s: 21.0, z: -0.7, r: 39.5, estimated: false }  # 추론
   coding: { s: 25.0, z: -0.95, r: 35.7, estimated: false }  # 코딩
-  agentic: { s: 6.7, z: -1.18, r: 32.4, estimated: true }  # 에이전트
+  agentic: { s: 6.7, z: -1.18, r: 32.3, estimated: true }  # 에이전트
   trust: { s: 15.3, z: -0.52, r: 42.2, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 17.3, z: -1.0, r: 35.0, estimated: true }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen2.5 Turbo
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # Qwen2.5 Turbo
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **6.0** · 
 - **약점**: 긴문맥, 에이전트
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.2 · 혼합 $0.065/1M · 107.0 t/s · TTFT 2.29s · 1M ctx` · 가성비 92.3
+`입력 $0.05 · 출력 $0.2 · 혼합 $0.065/1M · 108.0 t/s · TTFT 2.24s · 1M ctx` · 가성비 92.3
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **6.0** · 
 | 전문 지식 | 37.2 | -0.85 | 실측 | [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 39.5 | -0.7 | 실측 | [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 35.7 | -0.95 | 실측 | [[scicode]] 15.0%×1.0 |
-| 에이전트 | 32.4 | -1.18 | 추정 | (추정) |
+| 에이전트 | 32.3 | -1.18 | 추정 | (추정) |
 | 신뢰성 | 42.2 | -0.52 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 35.0 | -1.0 | 추정 | (추정) |

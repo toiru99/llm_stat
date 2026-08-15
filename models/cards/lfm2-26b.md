@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 10.7, z: -1.21, r: 31.9, estimated: false }  # 추론
   coding: { s: 3.8, z: -1.82, r: 22.7, estimated: false }  # 코딩
   agentic: { s: 7.3, z: -1.15, r: 32.7, estimated: false }  # 에이전트
-  trust: { s: 40.7, z: 0.61, r: 59.1, estimated: false }  # 신뢰성
+  trust: { s: 40.7, z: 0.6, r: 59.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.52, r: 27.2, estimated: false }  # 긴문맥
   instruction: { s: 11.3, z: -1.75, r: 23.8, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — LFM2 2.6B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # LFM2 2.6B
@@ -47,7 +47,7 @@ Liquid AI · Open · Tiny(2.57B) · 컨텍스트 32k · 종합지능 **2.0**
 | 추론 | 31.9 | -1.21 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 31.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 22.7 | -1.82 | 실측 | [[scicode]] 3.0%×1.0, [[terminal-bench]] 1.0%×0.5 |
 | 에이전트 | 32.7 | -1.15 | 실측 | [[tau2-bench]] 13.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
-| 신뢰성 | 59.1 | +0.61 | 실측 | [[aa-omniscience]] 37.0%×1.0 |
+| 신뢰성 | 59.0 | +0.6 | 실측 | [[aa-omniscience]] 37.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 27.2 | -1.52 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 23.8 | -1.75 | 실측 | [[ifbench]] 20.0%×1.0 |

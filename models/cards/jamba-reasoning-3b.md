@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 10.9, z: -1.2, r: 32.0, estimated: false }  # 추론
   coding: { s: 7.2, z: -1.68, r: 24.8, estimated: false }  # 코딩
   agentic: { s: 8.8, z: -1.09, r: 33.6, estimated: false }  # 에이전트
-  trust: { s: 33.7, z: 0.3, r: 54.5, estimated: false }  # 신뢰성
+  trust: { s: 33.7, z: 0.29, r: 54.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 9.6, z: -1.23, r: 31.5, estimated: false }  # 긴문맥
   instruction: { s: 56.3, z: 0.09, r: 51.3, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba Reasoning 3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # Jamba Reasoning 3B
@@ -47,7 +47,7 @@ AI21 Labs · Open · Tiny(3B) · 컨텍스트 262k · 종합지능 **4.0**
 | 추론 | 32.0 | -1.2 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 24.8 | -1.68 | 실측 | [[scicode]] 6.0%×1.0, [[terminal-bench]] 1.0%×0.5 |
 | 에이전트 | 33.6 | -1.09 | 실측 | [[tau2-bench]] 16.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
-| 신뢰성 | 54.5 | +0.3 | 실측 | [[aa-omniscience]] 31.0%×1.0 |
+| 신뢰성 | 54.4 | +0.29 | 실측 | [[aa-omniscience]] 31.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 31.5 | -1.23 | 실측 | [[aa-lcr]] 8.0%×1.0 |
 | 지시 따르기 | 51.3 | +0.09 | 실측 | [[ifbench]] 52.0%×1.0 |

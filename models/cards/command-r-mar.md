@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 14.3, z: -1.03, r: 34.5, estimated: false }  # 추론
   coding: { s: 10.0, z: -1.57, r: 26.5, estimated: false }  # 코딩
   agentic: { s: 9.5, z: -1.07, r: 34.0, estimated: true }  # 에이전트
-  trust: { s: 23.5, z: -0.16, r: 47.7, estimated: true }  # 신뢰성
+  trust: { s: 23.5, z: -0.16, r: 47.6, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 14.2, z: -1.09, r: 33.6, estimated: true }  # 긴문맥
   instruction: { s: 21.6, z: -1.33, r: 30.1, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Command-R (Mar)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # Command-R (Mar)
@@ -47,7 +47,7 @@ Cohere · Open · Small(35B) · 컨텍스트 128k · 종합지능 **2.0** · ⚠
 | 추론 | 34.5 | -1.03 | 실측 | [[gpqa-diamond]] 28.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 26.5 | -1.57 | 실측 | [[scicode]] 6.0%×1.0 |
 | 에이전트 | 34.0 | -1.07 | 추정 | (추정) |
-| 신뢰성 | 47.7 | -0.16 | 추정 | (추정) |
+| 신뢰성 | 47.6 | -0.16 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 33.6 | -1.09 | 추정 | (추정) |
 | 지시 따르기 | 30.1 | -1.33 | 추정 | (추정) |

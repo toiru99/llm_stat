@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: 7.0
 price_blended_usd_1m: 0.1
-output_speed_tps: 195.0
+output_speed_tps: 205.0
 context_window: 256000
 status: current
 size_class: Tiny
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 12.7, z: -1.11, r: 33.4, estimated: false }  # 추론
   coding: { s: 15.6, z: -1.34, r: 29.9, estimated: false }  # 코딩
   agentic: { s: 8.8, z: -1.1, r: 33.6, estimated: false }  # 에이전트
-  trust: { s: 20.9, z: -0.27, r: 46.0, estimated: false }  # 신뢰성
+  trust: { s: 20.9, z: -0.27, r: 45.9, estimated: false }  # 신뢰성
   multimodal: { s: 32.9, z: -1.89, r: 21.6, estimated: false }  # 멀티모달
   long_context: { s: 19.3, z: -0.94, r: 35.9, estimated: false }  # 긴문맥
   instruction: { s: 21.1, z: -1.35, r: 29.8, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ministral 3 3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # Ministral 3 3B
@@ -37,7 +37,7 @@ Mistral · Open · Tiny(3B) · 컨텍스트 256k · 종합지능 **7.0**
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.1 · 혼합 $0.1/1M · 195.0 t/s · TTFT 0.65s · 256k ctx` · 가성비 70.0
+`입력 $0.1 · 출력 $0.1 · 혼합 $0.1/1M · 205.0 t/s · TTFT 0.65s · 256k ctx` · 가성비 70.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Mistral · Open · Tiny(3B) · 컨텍스트 256k · 종합지능 **7.0**
 | 추론 | 33.4 | -1.11 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 36.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 29.9 | -1.34 | 실측 | [[scicode]] 14.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 33.6 | -1.1 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 25.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 46.0 | -0.27 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
+| 신뢰성 | 45.9 | -0.27 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
 | 멀티모달 | 21.6 | -1.89 | 실측 | [[mmmu-pro]] 38.0%×1.0 |
 | 긴문맥 | 35.9 | -0.94 | 실측 | [[aa-lcr]] 16.0%×1.0 |
 | 지시 따르기 | 29.8 | -1.35 | 실측 | [[ifbench]] 27.0%×1.0 |

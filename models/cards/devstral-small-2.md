@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: 18.0
 price_blended_usd_1m: 0
-output_speed_tps: 108.0
+output_speed_tps: 123.0
 context_window: 256000
 status: current
 size_class: Small
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 26.3, z: -0.71, r: 39.4, estimated: false }  # 전문 지식
   reasoning: { s: 18.1, z: -0.84, r: 37.3, estimated: false }  # 추론
   coding: { s: 40.8, z: -0.3, r: 45.5, estimated: false }  # 코딩
-  agentic: { s: 22.1, z: -0.57, r: 41.4, estimated: false }  # 에이전트
+  agentic: { s: 22.1, z: -0.57, r: 41.5, estimated: false }  # 에이전트
   trust: { s: 12.8, z: -0.63, r: 40.5, estimated: false }  # 신뢰성
   multimodal: { s: 42.9, z: -1.41, r: 28.8, estimated: false }  # 멀티모달
   long_context: { s: 32.5, z: -0.54, r: 41.9, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Devstral Small 2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # Devstral Small 2
@@ -37,7 +37,7 @@ Mistral · Open · Small(24B) · 컨텍스트 256k · 종합지능 **18.0**
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 108.0 t/s · TTFT 2.33s · 256k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 123.0 t/s · TTFT 2.22s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Mistral · Open · Small(24B) · 컨텍스트 256k · 종합지능 **18.0**
 | 전문 지식 | 39.4 | -0.71 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 53.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
 | 추론 | 37.3 | -0.84 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 53.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 45.5 | -0.3 | 실측 | [[scicode]] 29.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
-| 에이전트 | 41.4 | -0.57 | 실측 | [[gdpval]] 12.0%×1.0, [[tau2-bench]] 23.0%×1.0, [[tau3-banking]] 11.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
+| 에이전트 | 41.5 | -0.57 | 실측 | [[gdpval]] 12.0%×1.0, [[tau2-bench]] 23.0%×1.0, [[tau3-banking]] 11.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
 | 신뢰성 | 40.5 | -0.63 | 실측 | [[aa-omniscience]] 13.0%×1.0 |
 | 멀티모달 | 28.8 | -1.41 | 실측 | [[mmmu-pro]] 45.0%×1.0 |
 | 긴문맥 | 41.9 | -0.54 | 실측 | [[aa-lcr]] 27.0%×1.0 |

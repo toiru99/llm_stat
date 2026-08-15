@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 52.1, z: 0.52, r: 57.7, estimated: false }  # 전문 지식
   reasoning: { s: 47.6, z: 0.6, r: 59.0, estimated: false }  # 추론
   coding: { s: 72.8, z: 1.01, r: 65.1, estimated: false }  # 코딩
-  agentic: { s: 64.1, z: 1.08, r: 66.2, estimated: false }  # 에이전트
-  trust: { s: 73.3, z: 2.05, r: 80.8, estimated: false }  # 신뢰성
+  agentic: { s: 64.1, z: 1.08, r: 66.3, estimated: false }  # 에이전트
+  trust: { s: 73.3, z: 2.04, r: 80.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 85.5, z: 1.06, r: 66.0, estimated: false }  # 긴문맥
+  long_context: { s: 85.5, z: 1.06, r: 65.9, estimated: false }  # 긴문맥
   instruction: { s: 84.5, z: 1.23, r: 68.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # GLM-5
@@ -46,10 +46,10 @@ Z AI · Open · Large(744B) · 컨텍스트 200k · 종합지능 **41.0** · ⚠
 | 전문 지식 | 57.7 | +0.52 | 실측 | [[aa-omniscience]] 26.0%×1.0, [[gpqa-diamond]] 82.0%×0.4, [[humanitys-last-exam]] 29.0%×0.3 |
 | 추론 | 59.0 | +0.6 | 실측 | [[critpt]] 2.0%×1.0, [[gpqa-diamond]] 82.0%×1.0, [[humanitys-last-exam]] 29.0%×1.0 |
 | 코딩 | 65.1 | +1.01 | 실측 | [[scicode]] 46.0%×1.0, [[terminal-bench]] 43.0%×0.5 |
-| 에이전트 | 66.2 | +1.08 | 실측 | [[apex-agents]] 14.0%×1.0, [[tau2-bench]] 98.0%×1.0, [[terminal-bench]] 43.0%×1.0 |
-| 신뢰성 | 80.8 | +2.05 | 실측 | [[aa-omniscience]] 65.0%×1.0 |
+| 에이전트 | 66.3 | +1.08 | 실측 | [[apex-agents]] 14.0%×1.0, [[tau2-bench]] 98.0%×1.0, [[terminal-bench]] 43.0%×1.0 |
+| 신뢰성 | 80.6 | +2.04 | 실측 | [[aa-omniscience]] 65.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 66.0 | +1.06 | 실측 | [[aa-lcr]] 71.0%×1.0 |
+| 긴문맥 | 65.9 | +1.06 | 실측 | [[aa-lcr]] 71.0%×1.0 |
 | 지시 따르기 | 68.5 | +1.23 | 실측 | [[ifbench]] 72.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

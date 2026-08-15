@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Arctic
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # Arctic

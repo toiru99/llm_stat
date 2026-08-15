@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 18.0, z: -1.1, r: 33.4, estimated: false }  # 전문 지식
   reasoning: { s: 16.6, z: -0.92, r: 36.3, estimated: false }  # 추론
   coding: { s: 23.3, z: -1.02, r: 34.7, estimated: false }  # 코딩
-  agentic: { s: 13.4, z: -0.92, r: 36.3, estimated: true }  # 에이전트
+  agentic: { s: 13.4, z: -0.91, r: 36.3, estimated: true }  # 에이전트
   trust: { s: 23.2, z: -0.17, r: 47.4, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 13.7, z: -1.11, r: 33.4, estimated: true }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek Coder V2 Lite
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # DeepSeek Coder V2 Lite
@@ -33,7 +33,7 @@ timestamp: 2026-08-14T00:00:00Z
 DeepSeek · Open · Small(16B) · 컨텍스트 128k · 종합지능 **3.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 신뢰성, 추론
+- **강점**: 신뢰성, 에이전트
 - **약점**: 전문 지식, 긴문맥
 
 ## 실용 지표
@@ -46,7 +46,7 @@ DeepSeek · Open · Small(16B) · 컨텍스트 128k · 종합지능 **3.0** · �
 | 전문 지식 | 33.4 | -1.1 | 실측 | [[gpqa-diamond]] 32.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 36.3 | -0.92 | 실측 | [[gpqa-diamond]] 32.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 34.7 | -1.02 | 실측 | [[scicode]] 14.0%×1.0 |
-| 에이전트 | 36.3 | -0.92 | 추정 | (추정) |
+| 에이전트 | 36.3 | -0.91 | 추정 | (추정) |
 | 신뢰성 | 47.4 | -0.17 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 33.4 | -1.11 | 추정 | (추정) |

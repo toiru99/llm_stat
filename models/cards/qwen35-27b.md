@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 35.0
 price_blended_usd_1m: 0.51
-output_speed_tps: 77.0
+output_speed_tps: 78.0
 context_window: 262000
 status: past
 size_class: Small
@@ -15,8 +15,8 @@ radar:
   knowledge: { s: 46.9, z: 0.27, r: 54.1, estimated: false }  # 전문 지식
   reasoning: { s: 45.0, z: 0.48, r: 57.1, estimated: false }  # 추론
   coding: { s: 60.0, z: 0.48, r: 57.2, estimated: false }  # 코딩
-  agentic: { s: 68.9, z: 1.27, r: 69.0, estimated: false }  # 에이전트
-  trust: { s: 19.8, z: -0.32, r: 45.2, estimated: false }  # 신뢰성
+  agentic: { s: 68.9, z: 1.27, r: 69.1, estimated: false }  # 에이전트
+  trust: { s: 19.8, z: -0.32, r: 45.1, estimated: false }  # 신뢰성
   multimodal: { s: 85.7, z: 0.64, r: 59.7, estimated: false }  # 멀티모달
   long_context: { s: 86.7, z: 1.1, r: 66.5, estimated: false }  # 긴문맥
   instruction: { s: 90.1, z: 1.46, r: 71.9, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 27B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # Qwen3.5 27B
@@ -37,7 +37,7 @@ Alibaba · Open · Small(27.8B) · 컨텍스트 262k · 종합지능 **35.0** ·
 - **약점**: 전문 지식, 신뢰성
 
 ## 실용 지표
-`입력 $0.3 · 출력 $2.4 · 혼합 $0.51/1M · 77.0 t/s · TTFT 5.64s · 262k ctx` · 가성비 68.6
+`입력 $0.3 · 출력 $2.4 · 혼합 $0.51/1M · 78.0 t/s · TTFT 5.65s · 262k ctx` · 가성비 68.6
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,8 +46,8 @@ Alibaba · Open · Small(27.8B) · 컨텍스트 262k · 종합지능 **35.0** ·
 | 전문 지식 | 54.1 | +0.27 | 실측 | [[aa-omniscience]] 21.0%×1.0, [[gpqa-diamond]] 86.0%×0.4, [[humanitys-last-exam]] 24.0%×0.3 |
 | 추론 | 57.1 | +0.48 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 86.0%×1.0, [[humanitys-last-exam]] 24.0%×1.0 |
 | 코딩 | 57.2 | +0.48 | 실측 | [[scicode]] 39.0%×1.0, [[terminal-bench]] 33.0%×0.5 |
-| 에이전트 | 69.0 | +1.27 | 실측 | [[itbench]] 35.0%×1.0, [[tau2-bench]] 94.0%×1.0, [[terminal-bench]] 33.0%×1.0 |
-| 신뢰성 | 45.2 | -0.32 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
+| 에이전트 | 69.1 | +1.27 | 실측 | [[itbench]] 35.0%×1.0, [[tau2-bench]] 94.0%×1.0, [[terminal-bench]] 33.0%×1.0 |
+| 신뢰성 | 45.1 | -0.32 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
 | 멀티모달 | 59.7 | +0.64 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
 | 긴문맥 | 66.5 | +1.1 | 실측 | [[aa-lcr]] 72.0%×1.0 |
 | 지시 따르기 | 71.9 | +1.46 | 실측 | [[ifbench]] 76.0%×1.0 |

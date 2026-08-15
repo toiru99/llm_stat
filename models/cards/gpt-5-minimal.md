@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 17.0
 price_blended_usd_1m: 1.3375
-output_speed_tps: 74.0
+output_speed_tps: 77.0
 context_window: 400000
 status: past
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 44.1, z: 0.14, r: 52.0, estimated: false }  # 전문 지식
   reasoning: { s: 25.4, z: -0.48, r: 42.7, estimated: false }  # 추론
   coding: { s: 52.4, z: 0.17, r: 52.6, estimated: false }  # 코딩
-  agentic: { s: 47.5, z: 0.42, r: 56.4, estimated: false }  # 에이전트
+  agentic: { s: 47.5, z: 0.43, r: 56.4, estimated: false }  # 에이전트
   trust: { s: 9.3, z: -0.79, r: 38.2, estimated: false }  # 신뢰성
   multimodal: { s: 67.1, z: -0.25, r: 46.3, estimated: false }  # 멀티모달
   long_context: { s: 32.5, z: -0.54, r: 41.9, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5 (minimal)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # GPT-5 (minimal)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **17.0** �
 - **약점**: 긴문맥, 신뢰성
 
 ## 실용 지표
-`입력 $1.25 · 출력 $10.0 · 혼합 $1.3375/1M · 74.0 t/s · TTFT 1.29s · 400k ctx` · 가성비 12.7
+`입력 $1.25 · 출력 $10.0 · 혼합 $1.3375/1M · 77.0 t/s · TTFT 1.27s · 400k ctx` · 가성비 12.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **17.0** �
 | 전문 지식 | 52.0 | +0.14 | 실측 | [[aa-omniscience]] 30.0%×1.0, [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 42.7 | -0.48 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 67.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 52.6 | +0.17 | 실측 | [[scicode]] 39.0%×1.0, [[terminal-bench]] 18.0%×0.5 |
-| 에이전트 | 56.4 | +0.42 | 실측 | [[tau2-bench]] 67.0%×1.0, [[terminal-bench]] 18.0%×1.0 |
+| 에이전트 | 56.4 | +0.43 | 실측 | [[tau2-bench]] 67.0%×1.0, [[terminal-bench]] 18.0%×1.0 |
 | 신뢰성 | 38.2 | -0.79 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
 | 멀티모달 | 46.3 | -0.25 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
 | 긴문맥 | 41.9 | -0.54 | 실측 | [[aa-lcr]] 27.0%×1.0 |

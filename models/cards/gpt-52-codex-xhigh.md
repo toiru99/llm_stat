@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 70.3, z: 1.38, r: 70.8, estimated: false }  # 전문 지식
   reasoning: { s: 62.4, z: 1.32, r: 69.8, estimated: false }  # 추론
   coding: { s: 79.8, z: 1.29, r: 69.4, estimated: false }  # 코딩
-  agentic: { s: 74.5, z: 1.49, r: 72.3, estimated: false }  # 에이전트
-  trust: { s: 29.1, z: 0.09, r: 51.4, estimated: false }  # 신뢰성
+  agentic: { s: 74.5, z: 1.49, r: 72.4, estimated: false }  # 에이전트
+  trust: { s: 29.1, z: 0.09, r: 51.3, estimated: false }  # 신뢰성
   multimodal: { s: 87.1, z: 0.71, r: 60.7, estimated: false }  # 멀티모달
-  long_context: { s: 95.2, z: 1.36, r: 70.3, estimated: false }  # 긴문맥
+  long_context: { s: 95.2, z: 1.35, r: 70.3, estimated: false }  # 긴문맥
   instruction: { s: 93.0, z: 1.58, r: 73.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.2 Codex (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # GPT-5.2 Codex (xhigh)
@@ -46,10 +46,10 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **41.0** �
 | 전문 지식 | 70.8 | +1.38 | 실측 | [[aa-omniscience]] 41.0%×1.0, [[gpqa-diamond]] 90.0%×0.4, [[humanitys-last-exam]] 36.0%×0.3 |
 | 추론 | 69.8 | +1.32 | 실측 | [[critpt]] 9.0%×1.0, [[gpqa-diamond]] 90.0%×1.0, [[humanitys-last-exam]] 36.0%×1.0 |
 | 코딩 | 69.4 | +1.29 | 실측 | [[scicode]] 55.0%×1.0, [[terminal-bench]] 37.0%×0.5 |
-| 에이전트 | 72.3 | +1.49 | 실측 | [[tau2-bench]] 92.0%×1.0, [[terminal-bench]] 37.0%×1.0 |
-| 신뢰성 | 51.4 | +0.09 | 실측 | [[aa-omniscience]] 27.0%×1.0 |
+| 에이전트 | 72.4 | +1.49 | 실측 | [[tau2-bench]] 92.0%×1.0, [[terminal-bench]] 37.0%×1.0 |
+| 신뢰성 | 51.3 | +0.09 | 실측 | [[aa-omniscience]] 27.0%×1.0 |
 | 멀티모달 | 60.7 | +0.71 | 실측 | [[mmmu-pro]] 76.0%×1.0 |
-| 긴문맥 | 70.3 | +1.36 | 실측 | [[aa-lcr]] 79.0%×1.0 |
+| 긴문맥 | 70.3 | +1.35 | 실측 | [[aa-lcr]] 79.0%×1.0 |
 | 지시 따르기 | 73.7 | +1.58 | 실측 | [[ifbench]] 78.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

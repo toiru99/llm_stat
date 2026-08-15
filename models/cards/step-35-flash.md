@@ -5,7 +5,7 @@ creator: StepFun
 license: Open
 intelligence_index: 26.0
 price_blended_usd_1m: 0.12
-output_speed_tps: 192.0
+output_speed_tps: 210.0
 context_window: 256000
 status: past
 size_class: Large
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 47.9, z: 0.32, r: 54.8, estimated: false }  # 전문 지식
   reasoning: { s: 43.1, z: 0.38, r: 55.7, estimated: false }  # 추론
   coding: { s: 58.1, z: 0.4, r: 56.1, estimated: false }  # 코딩
-  agentic: { s: 67.9, z: 1.23, r: 68.4, estimated: false }  # 에이전트
+  agentic: { s: 67.9, z: 1.23, r: 68.5, estimated: false }  # 에이전트
   trust: { s: 14.0, z: -0.58, r: 41.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 57.8, z: 0.23, r: 53.4, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Step 3.5 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # Step 3.5 Flash
@@ -37,7 +37,7 @@ StepFun · Open · Large(196B) · 컨텍스트 256k · 종합지능 **26.0** · 
 - **약점**: 긴문맥, 신뢰성
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.3 · 혼합 $0.12/1M · 192.0 t/s · TTFT 1.06s · 256k ctx` · 가성비 216.7
+`입력 $0.1 · 출력 $0.3 · 혼합 $0.12/1M · 210.0 t/s · TTFT 1.08s · 256k ctx` · 가성비 216.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ StepFun · Open · Large(196B) · 컨텍스트 256k · 종합지능 **26.0** · 
 | 전문 지식 | 54.8 | +0.32 | 실측 | [[aa-omniscience]] 24.0%×1.0, [[gpqa-diamond]] 83.0%×0.4, [[humanitys-last-exam]] 21.0%×0.3 |
 | 추론 | 55.7 | +0.38 | 실측 | [[critpt]] 2.0%×1.0, [[gpqa-diamond]] 83.0%×1.0, [[humanitys-last-exam]] 21.0%×1.0 |
 | 코딩 | 56.1 | +0.4 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 27.0%×0.5 |
-| 에이전트 | 68.4 | +1.23 | 실측 | [[tau2-bench]] 94.0%×1.0, [[terminal-bench]] 27.0%×1.0 |
+| 에이전트 | 68.5 | +1.23 | 실측 | [[tau2-bench]] 94.0%×1.0, [[terminal-bench]] 27.0%×1.0 |
 | 신뢰성 | 41.3 | -0.58 | 실측 | [[aa-omniscience]] 14.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 53.4 | +0.23 | 실측 | [[aa-lcr]] 48.0%×1.0 |

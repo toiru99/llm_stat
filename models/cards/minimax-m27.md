@@ -5,7 +5,7 @@ creator: MiniMax
 license: Open
 intelligence_index: 39.0
 price_blended_usd_1m: 0.222
-output_speed_tps: 66.0
+output_speed_tps: 68.0
 context_window: 205000
 status: past
 size_class: Large
@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 54.7, z: 0.64, r: 59.6, estimated: false }  # 전문 지식
   reasoning: { s: 49.1, z: 0.68, r: 60.1, estimated: false }  # 추론
   coding: { s: 71.9, z: 0.97, r: 64.6, estimated: false }  # 코딩
-  agentic: { s: 46.8, z: 0.4, r: 56.0, estimated: false }  # 에이전트
-  trust: { s: 72.1, z: 2.0, r: 80.0, estimated: false }  # 신뢰성
+  agentic: { s: 46.8, z: 0.4, r: 56.1, estimated: false }  # 에이전트
+  trust: { s: 72.1, z: 1.99, r: 79.8, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 90.4, z: 1.21, r: 68.2, estimated: false }  # 긴문맥
+  long_context: { s: 90.4, z: 1.21, r: 68.1, estimated: false }  # 긴문맥
   instruction: { s: 90.1, z: 1.46, r: 71.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax-M2.7
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # MiniMax-M2.7
@@ -37,7 +37,7 @@ MiniMax · Open · Large(230B) · 컨텍스트 205k · 종합지능 **39.0** · 
 - **약점**: 전문 지식, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 66.0 t/s · TTFT 1.76s · 205k ctx` · 가성비 175.7
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 68.0 t/s · TTFT 1.75s · 205k ctx` · 가성비 175.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,10 +46,10 @@ MiniMax · Open · Large(230B) · 컨텍스트 205k · 종합지능 **39.0** · 
 | 전문 지식 | 59.6 | +0.64 | 실측 | [[aa-omniscience]] 27.0%×1.0, [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 30.0%×0.3 |
 | 추론 | 60.1 | +0.68 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 30.0%×1.0 |
 | 코딩 | 64.6 | +0.97 | 실측 | [[scicode]] 47.0%×1.0, [[terminal-bench]] 39.0%×0.5 |
-| 에이전트 | 56.0 | +0.4 | 실측 | [[apex-agents]] 11.0%×1.0, [[gdpval]] 33.0%×1.0, [[itbench]] 26.0%×1.0, [[tau2-bench]] 85.0%×1.0, [[tau3-banking]] 10.0%×1.0, [[terminal-bench]] 39.0%×1.0 |
-| 신뢰성 | 80.0 | +2.0 | 실측 | [[aa-omniscience]] 64.0%×1.0 |
+| 에이전트 | 56.1 | +0.4 | 실측 | [[apex-agents]] 11.0%×1.0, [[gdpval]] 33.0%×1.0, [[itbench]] 26.0%×1.0, [[tau2-bench]] 85.0%×1.0, [[tau3-banking]] 10.0%×1.0, [[terminal-bench]] 39.0%×1.0 |
+| 신뢰성 | 79.8 | +1.99 | 실측 | [[aa-omniscience]] 64.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 68.2 | +1.21 | 실측 | [[aa-lcr]] 75.0%×1.0 |
+| 긴문맥 | 68.1 | +1.21 | 실측 | [[aa-lcr]] 75.0%×1.0 |
 | 지시 따르기 | 71.9 | +1.46 | 실측 | [[ifbench]] 76.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

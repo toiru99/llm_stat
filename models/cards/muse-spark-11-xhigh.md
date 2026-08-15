@@ -5,7 +5,7 @@ creator: Meta
 license: Proprietary
 intelligence_index: 53.0
 price_blended_usd_1m: 0.78
-output_speed_tps: 230.0
+output_speed_tps: 232.0
 context_window: 1050000
 status: past
 size_class: Unknown
@@ -14,9 +14,9 @@ is_reasoning: true
 radar:
   knowledge: { s: 83.7, z: 2.02, r: 80.3, estimated: false }  # 전문 지식
   reasoning: { s: 74.8, z: 1.93, r: 79.0, estimated: false }  # 추론
-  coding: { s: 96.7, z: 1.98, r: 79.8, estimated: false }  # 코딩
-  agentic: { s: 64.2, z: 1.08, r: 66.2, estimated: false }  # 에이전트
-  trust: { s: 55.8, z: 1.28, r: 69.2, estimated: false }  # 신뢰성
+  coding: { s: 96.7, z: 1.99, r: 79.8, estimated: false }  # 코딩
+  agentic: { s: 64.2, z: 1.09, r: 66.3, estimated: false }  # 에이전트
+  trust: { s: 55.8, z: 1.27, r: 69.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 97.6, z: 1.43, r: 71.4, estimated: false }  # 긴문맥
   instruction: { s: 79.7, z: 1.04, r: 65.6, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Spark 1.1 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # Muse Spark 1.1 (xhigh)
@@ -37,7 +37,7 @@ Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **53.0** · �
 - **약점**: 에이전트, 지시 따르기
 
 ## 실용 지표
-`입력 $1.25 · 출력 $4.25 · 혼합 $0.78/1M · 230.0 t/s · TTFT 1.69s · 1M ctx` · 가성비 67.9
+`입력 $1.25 · 출력 $4.25 · 혼합 $0.78/1M · 232.0 t/s · TTFT 1.69s · 1M ctx` · 가성비 67.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **53.0** · �
 |---|---|---|---|---|
 | 전문 지식 | 80.3 | +2.02 | 실측 | [[aa-omniscience]] 52.0%×1.0, [[gpqa-diamond]] 90.0%×0.4, [[humanitys-last-exam]] 46.0%×0.3 |
 | 추론 | 79.0 | +1.93 | 실측 | [[critpt]] 15.0%×1.0, [[gpqa-diamond]] 90.0%×1.0, [[humanitys-last-exam]] 46.0%×1.0 |
-| 코딩 | 79.8 | +1.98 | 실측 | [[scicode]] 58.0%×1.0 |
-| 에이전트 | 66.2 | +1.08 | 실측 | [[gdpval]] 44.0%×1.0, [[tau3-banking]] 32.0%×1.0 |
-| 신뢰성 | 69.2 | +1.28 | 실측 | [[aa-omniscience]] 50.0%×1.0 |
+| 코딩 | 79.8 | +1.99 | 실측 | [[scicode]] 58.0%×1.0 |
+| 에이전트 | 66.3 | +1.09 | 실측 | [[gdpval]] 44.0%×1.0, [[tau3-banking]] 32.0%×1.0 |
+| 신뢰성 | 69.0 | +1.27 | 실측 | [[aa-omniscience]] 50.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 71.4 | +1.43 | 실측 | [[aa-lcr]] 81.0%×1.0 |
 | 지시 따르기 | 65.6 | +1.04 | 추정 | (추정) |

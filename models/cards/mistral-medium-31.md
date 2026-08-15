@@ -5,7 +5,7 @@ creator: Mistral
 license: Proprietary
 intelligence_index: 15.0
 price_blended_usd_1m: 0.56
-output_speed_tps: 91.0
+output_speed_tps: 106.0
 context_window: 128000
 status: past
 size_class: Unknown
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 21.7, z: -0.67, r: 40.0, estimated: false }  # 추론
   coding: { s: 43.3, z: -0.2, r: 47.0, estimated: false }  # 코딩
   agentic: { s: 20.7, z: -0.63, r: 40.6, estimated: false }  # 에이전트
-  trust: { s: 15.1, z: -0.53, r: 42.1, estimated: false }  # 신뢰성
+  trust: { s: 15.1, z: -0.53, r: 42.0, estimated: false }  # 신뢰성
   multimodal: { s: 55.7, z: -0.8, r: 38.1, estimated: false }  # 멀티모달
   long_context: { s: 25.3, z: -0.76, r: 38.6, estimated: false }  # 긴문맥
   instruction: { s: 39.4, z: -0.6, r: 41.0, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Medium 3.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # Mistral Medium 3.1
@@ -37,7 +37,7 @@ Mistral · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **15.0** 
 - **약점**: 긴문맥, 멀티모달
 
 ## 실용 지표
-`입력 $0.4 · 출력 $2.0 · 혼합 $0.56/1M · 91.0 t/s · TTFT 1.51s · 128k ctx` · 가성비 26.8
+`입력 $0.4 · 출력 $2.0 · 혼합 $0.56/1M · 106.0 t/s · TTFT 1.49s · 128k ctx` · 가성비 26.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Mistral · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **15.0** 
 | 추론 | 40.0 | -0.67 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 59.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 47.0 | -0.2 | 실측 | [[scicode]] 34.0%×1.0, [[terminal-bench]] 11.0%×0.5 |
 | 에이전트 | 40.6 | -0.63 | 실측 | [[gdpval]] 6.0%×1.0, [[tau2-bench]] 41.0%×1.0, [[tau3-banking]] 8.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
-| 신뢰성 | 42.1 | -0.53 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
+| 신뢰성 | 42.0 | -0.53 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
 | 멀티모달 | 38.1 | -0.8 | 실측 | [[mmmu-pro]] 54.0%×1.0 |
 | 긴문맥 | 38.6 | -0.76 | 실측 | [[aa-lcr]] 21.0%×1.0 |
 | 지시 따르기 | 41.0 | -0.6 | 실측 | [[ifbench]] 40.0%×1.0 |

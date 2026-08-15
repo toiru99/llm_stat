@@ -14,9 +14,9 @@ is_reasoning: true
 radar:
   knowledge: { s: 83.8, z: 2.03, r: 80.4, estimated: false }  # 전문 지식
   reasoning: { s: 65.0, z: 1.45, r: 71.8, estimated: false }  # 추론
-  coding: { s: 96.7, z: 1.98, r: 79.8, estimated: false }  # 코딩
-  agentic: { s: 71.6, z: 1.37, r: 70.6, estimated: false }  # 에이전트
-  trust: { s: 37.2, z: 0.45, r: 56.8, estimated: false }  # 신뢰성
+  coding: { s: 96.7, z: 1.99, r: 79.8, estimated: false }  # 코딩
+  agentic: { s: 71.6, z: 1.38, r: 70.7, estimated: false }  # 에이전트
+  trust: { s: 37.2, z: 0.45, r: 56.7, estimated: false }  # 신뢰성
   multimodal: { s: 100.0, z: 1.33, r: 69.9, estimated: false }  # 멀티모달
   long_context: { s: 97.6, z: 1.43, r: 71.4, estimated: false }  # 긴문맥
   instruction: { s: 83.7, z: 1.2, r: 68.0, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.7 Flash (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # Gemini 3.7 Flash (medium)
@@ -45,9 +45,9 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **53.0**
 |---|---|---|---|---|
 | 전문 지식 | 80.4 | +2.03 | 실측 | [[aa-omniscience]] 54.0%×1.0, [[gpqa-diamond]] 92.0%×0.4, [[humanitys-last-exam]] 39.0%×0.3 |
 | 추론 | 71.8 | +1.45 | 실측 | [[critpt]] 9.0%×1.0, [[gpqa-diamond]] 92.0%×1.0, [[humanitys-last-exam]] 39.0%×1.0 |
-| 코딩 | 79.8 | +1.98 | 실측 | [[scicode]] 58.0%×1.0 |
-| 에이전트 | 70.6 | +1.37 | 실측 | [[gdpval]] 50.0%×1.0, [[tau3-banking]] 35.0%×1.0 |
-| 신뢰성 | 56.8 | +0.45 | 실측 | [[aa-omniscience]] 34.0%×1.0 |
+| 코딩 | 79.8 | +1.99 | 실측 | [[scicode]] 58.0%×1.0 |
+| 에이전트 | 70.7 | +1.38 | 실측 | [[gdpval]] 50.0%×1.0, [[tau3-banking]] 35.0%×1.0 |
+| 신뢰성 | 56.7 | +0.45 | 실측 | [[aa-omniscience]] 34.0%×1.0 |
 | 멀티모달 | 69.9 | +1.33 | 실측 | [[mmmu-pro]] 85.0%×1.0 |
 | 긴문맥 | 71.4 | +1.43 | 실측 | [[aa-lcr]] 81.0%×1.0 |
 | 지시 따르기 | 68.0 | +1.2 | 추정 | (추정) |

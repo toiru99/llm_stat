@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 35.0
 price_blended_usd_1m: 1.3375
-output_speed_tps: 72.0
+output_speed_tps: 79.0
 context_window: 400000
 status: past
 size_class: Unknown
@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 63.3, z: 1.05, r: 65.7, estimated: false }  # 전문 지식
   reasoning: { s: 43.8, z: 0.42, r: 56.2, estimated: false }  # 추론
   coding: { s: 64.7, z: 0.68, r: 60.2, estimated: false }  # 코딩
-  agentic: { s: 72.7, z: 1.42, r: 71.2, estimated: false }  # 에이전트
-  trust: { s: 17.4, z: -0.42, r: 43.6, estimated: false }  # 신뢰성
+  agentic: { s: 72.7, z: 1.42, r: 71.3, estimated: false }  # 에이전트
+  trust: { s: 17.4, z: -0.43, r: 43.6, estimated: false }  # 신뢰성
   multimodal: { s: 84.3, z: 0.58, r: 58.6, estimated: false }  # 멀티모달
-  long_context: { s: 91.6, z: 1.25, r: 68.7, estimated: false }  # 긴문맥
+  long_context: { s: 91.6, z: 1.24, r: 68.7, estimated: false }  # 긴문맥
   instruction: { s: 83.1, z: 1.18, r: 67.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5 (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # GPT-5 (medium)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **35.0** �
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $1.25 · 출력 $10.0 · 혼합 $1.3375/1M · 72.0 t/s · TTFT 35.0s · 400k ctx` · 가성비 26.2
+`입력 $1.25 · 출력 $10.0 · 혼합 $1.3375/1M · 79.0 t/s · TTFT 37.42s · 400k ctx` · 가성비 26.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,10 +46,10 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **35.0** �
 | 전문 지식 | 65.7 | +1.05 | 실측 | [[aa-omniscience]] 39.0%×1.0, [[gpqa-diamond]] 84.0%×0.4, [[humanitys-last-exam]] 25.0%×0.3 |
 | 추론 | 56.2 | +0.42 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 84.0%×1.0, [[humanitys-last-exam]] 25.0%×1.0 |
 | 코딩 | 60.2 | +0.68 | 실측 | [[scicode]] 41.0%×1.0, [[terminal-bench]] 38.0%×0.5 |
-| 에이전트 | 71.2 | +1.42 | 실측 | [[tau2-bench]] 87.0%×1.0, [[terminal-bench]] 38.0%×1.0 |
-| 신뢰성 | 43.6 | -0.42 | 실측 | [[aa-omniscience]] 17.0%×1.0 |
+| 에이전트 | 71.3 | +1.42 | 실측 | [[tau2-bench]] 87.0%×1.0, [[terminal-bench]] 38.0%×1.0 |
+| 신뢰성 | 43.6 | -0.43 | 실측 | [[aa-omniscience]] 17.0%×1.0 |
 | 멀티모달 | 58.6 | +0.58 | 실측 | [[mmmu-pro]] 74.0%×1.0 |
-| 긴문맥 | 68.7 | +1.25 | 실측 | [[aa-lcr]] 76.0%×1.0 |
+| 긴문맥 | 68.7 | +1.24 | 실측 | [[aa-lcr]] 76.0%×1.0 |
 | 지시 따르기 | 67.6 | +1.18 | 실측 | [[ifbench]] 71.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

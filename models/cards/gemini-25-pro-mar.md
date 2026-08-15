@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 63.2, z: 1.05, r: 65.7, estimated: false }  # 전문 지식
   reasoning: { s: 59.3, z: 1.17, r: 67.6, estimated: false }  # 추론
   coding: { s: 65.0, z: 0.69, r: 60.3, estimated: false }  # 코딩
-  agentic: { s: 56.2, z: 0.77, r: 61.5, estimated: true }  # 에이전트
-  trust: { s: 37.7, z: 0.48, r: 57.2, estimated: true }  # 신뢰성
+  agentic: { s: 53.3, z: 0.66, r: 59.9, estimated: true }  # 에이전트
+  trust: { s: 40.1, z: 0.58, r: 58.6, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 85.3, z: 1.06, r: 65.9, estimated: true }  # 긴문맥
-  instruction: { s: 73.9, z: 0.8, r: 62.0, estimated: true }  # 지시 따르기
+  long_context: { s: 88.6, z: 1.15, r: 67.3, estimated: true }  # 긴문맥
+  instruction: { s: 80.0, z: 1.05, r: 65.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.5 Pro (Mar)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # Gemini 2.5 Pro (Mar)
@@ -34,7 +34,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **23.0** · 
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 긴문맥
-- **약점**: 코딩, 신뢰성
+- **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 1M ctx`
@@ -46,11 +46,11 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **23.0** · 
 | 전문 지식 | 65.7 | +1.05 | 실측 | [[gpqa-diamond]] 84.0%×0.4, [[humanitys-last-exam]] 18.0%×0.3 |
 | 추론 | 67.6 | +1.17 | 실측 | [[gpqa-diamond]] 84.0%×1.0, [[humanitys-last-exam]] 18.0%×1.0 |
 | 코딩 | 60.3 | +0.69 | 실측 | [[scicode]] 39.0%×1.0 |
-| 에이전트 | 61.5 | +0.77 | 추정 | (추정) |
-| 신뢰성 | 57.2 | +0.48 | 추정 | (추정) |
+| 에이전트 | 59.9 | +0.66 | 추정 | (추정) |
+| 신뢰성 | 58.6 | +0.58 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 65.9 | +1.06 | 추정 | (추정) |
-| 지시 따르기 | 62.0 | +0.8 | 추정 | (추정) |
+| 긴문맥 | 67.3 | +1.15 | 추정 | (추정) |
+| 지시 따르기 | 65.8 | +1.05 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

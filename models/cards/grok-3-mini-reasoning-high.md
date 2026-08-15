@@ -5,7 +5,7 @@ creator: SpaceXAI
 license: Proprietary
 intelligence_index: 23.0
 price_blended_usd_1m: 0.1625
-output_speed_tps: 74.0
+output_speed_tps: 77.0
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -15,8 +15,8 @@ radar:
   knowledge: { s: 35.2, z: -0.28, r: 45.8, estimated: false }  # 전문 지식
   reasoning: { s: 34.3, z: -0.05, r: 49.2, estimated: false }  # 추론
   coding: { s: 54.1, z: 0.24, r: 53.6, estimated: false }  # 코딩
-  agentic: { s: 58.3, z: 0.85, r: 62.8, estimated: false }  # 에이전트
-  trust: { s: 83.7, z: 2.52, r: 87.8, estimated: false }  # 신뢰성
+  agentic: { s: 58.3, z: 0.86, r: 62.8, estimated: false }  # 에이전트
+  trust: { s: 83.7, z: 2.5, r: 87.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 63.9, z: 0.41, r: 56.1, estimated: false }  # 긴문맥
   instruction: { s: 47.9, z: -0.26, r: 46.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 3 mini Reasoning (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # Grok 3 mini Reasoning (high)
@@ -37,7 +37,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **23.0** �
 - **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
-`입력 $0.3 · 출력 $0.5 · 혼합 $0.1625/1M · 74.0 t/s · TTFT 0.79s · 1M ctx` · 가성비 141.5
+`입력 $0.3 · 출력 $0.5 · 혼합 $0.1625/1M · 77.0 t/s · TTFT 0.78s · 1M ctx` · 가성비 141.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,8 +46,8 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **23.0** �
 | 전문 지식 | 45.8 | -0.28 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 79.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
 | 추론 | 49.2 | -0.05 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 79.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
 | 코딩 | 53.6 | +0.24 | 실측 | [[scicode]] 41.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
-| 에이전트 | 62.8 | +0.85 | 실측 | [[tau2-bench]] 90.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
-| 신뢰성 | 87.8 | +2.52 | 실측 | [[aa-omniscience]] 74.0%×1.0 |
+| 에이전트 | 62.8 | +0.86 | 실측 | [[tau2-bench]] 90.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
+| 신뢰성 | 87.5 | +2.5 | 실측 | [[aa-omniscience]] 74.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 56.1 | +0.41 | 실측 | [[aa-lcr]] 53.0%×1.0 |
 | 지시 따르기 | 46.1 | -0.26 | 실측 | [[ifbench]] 46.0%×1.0 |

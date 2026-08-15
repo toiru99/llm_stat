@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 28.5, z: -0.34, r: 45.0, estimated: false }  # 추론
   coding: { s: 42.6, z: -0.23, r: 46.6, estimated: false }  # 코딩
   agentic: { s: 19.4, z: -0.68, r: 39.9, estimated: false }  # 에이전트
-  trust: { s: 7.0, z: -0.89, r: 36.7, estimated: false }  # 신뢰성
+  trust: { s: 7.0, z: -0.89, r: 36.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 68.7, z: 0.55, r: 58.3, estimated: false }  # 긴문맥
   instruction: { s: 42.3, z: -0.49, r: 42.7, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax M1 80k
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # MiniMax M1 80k
@@ -47,7 +47,7 @@ MiniMax · Open · Large(456B) · 컨텍스트 1M · 종합지능 **18.0** · �
 | 추론 | 45.0 | -0.34 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 70.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
 | 코딩 | 46.6 | -0.23 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 3.0%×0.5 |
 | 에이전트 | 39.9 | -0.68 | 실측 | [[tau2-bench]] 34.0%×1.0, [[terminal-bench]] 3.0%×1.0 |
-| 신뢰성 | 36.7 | -0.89 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
+| 신뢰성 | 36.6 | -0.89 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 58.3 | +0.55 | 실측 | [[aa-lcr]] 57.0%×1.0 |
 | 지시 따르기 | 42.7 | -0.49 | 실측 | [[ifbench]] 42.0%×1.0 |

@@ -5,7 +5,7 @@ creator: Nous Research
 license: Open
 intelligence_index: 9.0
 price_blended_usd_1m: 1.2
-output_speed_tps: 29.0
+output_speed_tps: 32.0
 context_window: 128000
 status: current
 size_class: Large
@@ -19,13 +19,13 @@ radar:
   trust: { s: 3.5, z: -1.04, r: 34.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 27.7, z: -0.68, r: 39.7, estimated: false }  # 긴문맥
-  instruction: { s: 29.6, z: -1.0, r: 34.9, estimated: false }  # 지시 따르기
+  instruction: { s: 29.6, z: -1.0, r: 35.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Hermes 4 405B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # Hermes 4 405B
@@ -37,7 +37,7 @@ Nous Research · Open · Large(406B) · 컨텍스트 128k · 종합지능 **9.0*
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $1.0 · 출력 $3.0 · 혼합 $1.2/1M · 29.0 t/s · TTFT 2.56s · 128k ctx` · 가성비 7.5
+`입력 $1.0 · 출력 $3.0 · 혼합 $1.2/1M · 32.0 t/s · TTFT 2.55s · 128k ctx` · 가성비 7.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Nous Research · Open · Large(406B) · 컨텍스트 128k · 종합지능 **9.0*
 | 신뢰성 | 34.3 | -1.04 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 39.7 | -0.68 | 실측 | [[aa-lcr]] 23.0%×1.0 |
-| 지시 따르기 | 34.9 | -1.0 | 실측 | [[ifbench]] 33.0%×1.0 |
+| 지시 따르기 | 35.0 | -1.0 | 실측 | [[ifbench]] 33.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

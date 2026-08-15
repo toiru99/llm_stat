@@ -5,7 +5,7 @@ creator: Amazon
 license: Proprietary
 intelligence_index: 20.0
 price_blended_usd_1m: 2.125
-output_speed_tps: 111.0
+output_speed_tps: 116.0
 context_window: 256000
 status: current
 size_class: Unknown
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 28.0, z: -0.36, r: 44.6, estimated: false }  # 추론
   coding: { s: 51.9, z: 0.15, r: 52.3, estimated: false }  # 코딩
   agentic: { s: 43.2, z: 0.26, r: 53.9, estimated: false }  # 에이전트
-  trust: { s: 32.6, z: 0.25, r: 53.7, estimated: false }  # 신뢰성
+  trust: { s: 32.6, z: 0.24, r: 53.6, estimated: false }  # 신뢰성
   multimodal: { s: 68.6, z: -0.18, r: 47.3, estimated: false }  # 멀티모달
   long_context: { s: 75.9, z: 0.77, r: 61.6, estimated: false }  # 긴문맥
   instruction: { s: 95.8, z: 1.69, r: 75.4, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova 2.0 Pro Preview (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-14
-timestamp: 2026-08-14T00:00:00Z
+updated: 2026-08-15
+timestamp: 2026-08-15T00:00:00Z
 ---
 
 # Nova 2.0 Pro Preview (low)
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **20.0**
 - **약점**: 전문 지식, 추론
 
 ## 실용 지표
-`입력 $1.25 · 출력 $10.0 · 혼합 $2.125/1M · 111.0 t/s · TTFT 10.91s · 256k ctx` · 가성비 9.4
+`입력 $1.25 · 출력 $10.0 · 혼합 $2.125/1M · 116.0 t/s · TTFT 11.31s · 256k ctx` · 가성비 9.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **20.0**
 | 추론 | 44.6 | -0.36 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 75.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 52.3 | +0.15 | 실측 | [[scicode]] 39.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
 | 에이전트 | 53.9 | +0.26 | 실측 | [[gdpval]] 8.0%×1.0, [[tau2-bench]] 91.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
-| 신뢰성 | 53.7 | +0.25 | 실측 | [[aa-omniscience]] 30.0%×1.0 |
+| 신뢰성 | 53.6 | +0.24 | 실측 | [[aa-omniscience]] 30.0%×1.0 |
 | 멀티모달 | 47.3 | -0.18 | 실측 | [[mmmu-pro]] 63.0%×1.0 |
 | 긴문맥 | 61.6 | +0.77 | 실측 | [[aa-lcr]] 63.0%×1.0 |
 | 지시 따르기 | 75.4 | +1.69 | 실측 | [[ifbench]] 80.0%×1.0 |
