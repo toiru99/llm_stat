@@ -5,7 +5,7 @@ creator: StepFun
 license: Open
 intelligence_index: 31.0
 price_blended_usd_1m: 0.183
-output_speed_tps: 380.0
+output_speed_tps: 173.0
 context_window: 262000
 status: current
 size_class: Large
@@ -19,13 +19,13 @@ radar:
   trust: { s: 15.1, z: -0.53, r: 42.0, estimated: false }  # 신뢰성
   multimodal: { s: 85.7, z: 0.64, r: 59.7, estimated: false }  # 멀티모달
   long_context: { s: 84.3, z: 1.03, r: 65.4, estimated: false }  # 긴문맥
-  instruction: { s: 77.5, z: 0.95, r: 64.2, estimated: false }  # 지시 따르기
+  instruction: { s: 77.5, z: 0.94, r: 64.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Step 3.7 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-15
-timestamp: 2026-08-15T00:00:00Z
+updated: 2026-08-16
+timestamp: 2026-08-16T00:00:00Z
 ---
 
 # Step 3.7 Flash
@@ -37,7 +37,7 @@ StepFun · Open · Large(198B) · 컨텍스트 262k · 종합지능 **31.0**
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $0.2 · 출력 $1.15 · 혼합 $0.183/1M · 380.0 t/s · TTFT 0.87s · 262k ctx` · 가성비 169.4
+`입력 $0.2 · 출력 $1.15 · 혼합 $0.183/1M · 173.0 t/s · TTFT 2.35s · 262k ctx` · 가성비 169.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ StepFun · Open · Large(198B) · 컨텍스트 262k · 종합지능 **31.0**
 | 신뢰성 | 42.0 | -0.53 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
 | 멀티모달 | 59.7 | +0.64 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
 | 긴문맥 | 65.4 | +1.03 | 실측 | [[aa-lcr]] 70.0%×1.0 |
-| 지시 따르기 | 64.2 | +0.95 | 실측 | [[ifbench]] 67.0%×1.0 |
+| 지시 따르기 | 64.2 | +0.94 | 실측 | [[ifbench]] 67.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -19,13 +19,13 @@ radar:
   trust: { s: 9.6, z: -0.77, r: 38.4, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 3.6, z: -1.41, r: 28.8, estimated: false }  # 긴문맥
-  instruction: { s: 19.7, z: -1.4, r: 28.9, estimated: false }  # 지시 따르기
+  instruction: { s: 19.7, z: -1.4, r: 29.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.2 3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-15
-timestamp: 2026-08-15T00:00:00Z
+updated: 2026-08-16
+timestamp: 2026-08-16T00:00:00Z
 ---
 
 # Llama 3.2 3B
@@ -50,7 +50,7 @@ Meta · Open · Tiny(3B) · 컨텍스트 128k · 종합지능 **4.0** · ⚠️ 
 | 신뢰성 | 38.4 | -0.77 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.8 | -1.41 | 실측 | [[aa-lcr]] 3.0%×1.0 |
-| 지시 따르기 | 28.9 | -1.4 | 실측 | [[ifbench]] 26.0%×1.0 |
+| 지시 따르기 | 29.0 | -1.4 | 실측 | [[ifbench]] 26.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

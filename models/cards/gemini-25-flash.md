@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 20.0
 price_blended_usd_1m: 0.331
-output_speed_tps: 227.0
+output_speed_tps: 242.0
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.5 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-15
-timestamp: 2026-08-15T00:00:00Z
+updated: 2026-08-16
+timestamp: 2026-08-16T00:00:00Z
 ---
 
 # Gemini 2.5 Flash
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **20.0** · 
 - **약점**: 지시 따르기, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $2.5 · 혼합 $0.331/1M · 227.0 t/s · TTFT 24.14s · 1M ctx` · 가성비 60.4
+`입력 $0.3 · 출력 $2.5 · 혼합 $0.331/1M · 242.0 t/s · TTFT 22.1s · 1M ctx` · 가성비 60.4
 
 ## 레이더 8축 (평균=50 기준선)
 

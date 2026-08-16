@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — gpt-oss-20b (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-15
-timestamp: 2026-08-15T00:00:00Z
+updated: 2026-08-16
+timestamp: 2026-08-16T00:00:00Z
 ---
 
 # gpt-oss-20b (high)
@@ -37,7 +37,7 @@ OpenAI · Open · Small(21B) · 컨텍스트 131k · 종합지능 **15.0**
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.19 · 혼합 $0.073/1M · 132.0 t/s · TTFT 1.07s · 131k ctx` · 가성비 205.5
+`입력 $0.06 · 출력 $0.19 · 혼합 $0.073/1M · 132.0 t/s · TTFT 0.99s · 131k ctx` · 가성비 205.5
 
 ## 레이더 8축 (평균=50 기준선)
 

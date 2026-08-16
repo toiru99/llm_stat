@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-15",
+  "scraped_at": "2026-08-16",
   "axes": [
     "knowledge",
     "reasoning",
@@ -43,9 +43,9 @@
       "price": 3.85,
       "price_in": 5.0,
       "price_out": 25.0,
-      "ttft": 48.7,
-      "total_resp": 57.39,
-      "speed": 58.0,
+      "ttft": 43.62,
+      "total_resp": 52.83,
+      "speed": 54.0,
       "ctx": 1000000,
       "value": 16.4,
       "size": "Unknown",
@@ -113,9 +113,9 @@
       "price": 3.85,
       "price_in": 5.0,
       "price_out": 25.0,
-      "ttft": 32.56,
-      "total_resp": 41.28,
-      "speed": 57.0,
+      "ttft": 21.5,
+      "total_resp": 30.41,
+      "speed": 56.0,
       "ctx": 1000000,
       "value": 16.4,
       "size": "Unknown",
@@ -167,7 +167,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 64.4,
+          "r": 64.3,
           "z": 0.96,
           "estimated": true,
           "measured": true
@@ -183,8 +183,8 @@
       "price": 7.7,
       "price_in": 10.0,
       "price_out": 50.0,
-      "ttft": 95.78,
-      "total_resp": 103.18,
+      "ttft": 92.45,
+      "total_resp": 99.78,
       "speed": 68.0,
       "ctx": 1000000,
       "value": 8.1,
@@ -237,7 +237,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 60.8,
+          "r": 60.7,
           "z": 0.72,
           "estimated": false,
           "measured": true
@@ -254,8 +254,8 @@
       "price_in": 5.0,
       "price_out": 30.0,
       "ttft": 142.43,
-      "total_resp": 150.05,
-      "speed": 66.0,
+      "total_resp": 149.18,
+      "speed": 74.0,
       "ctx": 1000000,
       "value": 14.0,
       "size": "Unknown",
@@ -307,7 +307,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 69.4,
+          "r": 69.3,
           "z": 1.29,
           "estimated": false,
           "measured": true
@@ -323,9 +323,9 @@
       "price": 1.35,
       "price_in": 2.0,
       "price_out": 6.0,
-      "ttft": 36.22,
-      "total_resp": 43.18,
-      "speed": 72.0,
+      "ttft": 36.42,
+      "total_resp": 44.58,
+      "speed": 61.0,
       "ctx": 500000,
       "value": 45.2,
       "size": "Unknown",
@@ -393,9 +393,9 @@
       "price": 3.85,
       "price_in": 5.0,
       "price_out": 25.0,
-      "ttft": 18.43,
-      "total_resp": 27.07,
-      "speed": 58.0,
+      "ttft": 16.13,
+      "total_resp": 25.08,
+      "speed": 56.0,
       "ctx": 1000000,
       "value": 15.8,
       "size": "Unknown",
@@ -448,7 +448,7 @@
         },
         "instruction": {
           "r": 65.2,
-          "z": 1.02,
+          "z": 1.01,
           "estimated": true,
           "measured": true
         }
@@ -463,8 +463,8 @@
       "price": 2.31,
       "price_in": 3.0,
       "price_out": 15.0,
-      "ttft": 3.66,
-      "total_resp": 67.01,
+      "ttft": 3.35,
+      "total_resp": 66.73,
       "speed": 39.0,
       "ctx": 1050000,
       "value": 26.0,
@@ -533,9 +533,9 @@
       "price": 4.35,
       "price_in": 5.0,
       "price_out": 30.0,
-      "ttft": 42.36,
-      "total_resp": 50.33,
-      "speed": 63.0,
+      "ttft": 38.41,
+      "total_resp": 45.66,
+      "speed": 69.0,
       "ctx": 1000000,
       "value": 13.6,
       "size": "Unknown",
@@ -588,7 +588,7 @@
         },
         "instruction": {
           "r": 67.6,
-          "z": 1.18,
+          "z": 1.17,
           "estimated": false,
           "measured": true
         }
@@ -603,8 +603,8 @@
       "price": 3.85,
       "price_in": 5.0,
       "price_out": 25.0,
-      "ttft": 5.55,
-      "total_resp": 14.43,
+      "ttft": 4.94,
+      "total_resp": 13.81,
       "speed": 56.0,
       "ctx": 1000000,
       "value": 15.3,
@@ -657,7 +657,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 64.5,
+          "r": 64.4,
           "z": 0.96,
           "estimated": true,
           "measured": true
@@ -743,8 +743,8 @@
       "price": 1.175,
       "price_in": 2.0,
       "price_out": 6.0,
-      "ttft": 2.69,
-      "total_resp": 54.01,
+      "ttft": 2.75,
+      "total_resp": 54.1,
       "speed": 49.0,
       "ctx": 984000,
       "value": 49.4,
@@ -813,9 +813,9 @@
       "price": 1.74,
       "price_in": 2.0,
       "price_out": 12.0,
-      "ttft": 192.72,
-      "total_resp": 196.92,
-      "speed": 119.0,
+      "ttft": 202.6,
+      "total_resp": 206.75,
+      "speed": 120.0,
       "ctx": 1000000,
       "value": 32.8,
       "size": "Unknown",
@@ -868,7 +868,7 @@
         },
         "instruction": {
           "r": 67.6,
-          "z": 1.18,
+          "z": 1.17,
           "estimated": false,
           "measured": true
         }
@@ -883,8 +883,8 @@
       "price": 3.85,
       "price_in": 5.0,
       "price_out": 25.0,
-      "ttft": 25.83,
-      "total_resp": 34.14,
+      "ttft": 22.47,
+      "total_resp": 30.77,
       "speed": 60.0,
       "ctx": 1000000,
       "value": 14.8,
@@ -953,9 +953,9 @@
       "price": 4.35,
       "price_in": 5.0,
       "price_out": 30.0,
-      "ttft": 15.82,
-      "total_resp": 23.1,
-      "speed": 69.0,
+      "ttft": 10.51,
+      "total_resp": 17.61,
+      "speed": 70.0,
       "ctx": 1000000,
       "value": 13.1,
       "size": "Unknown",
@@ -1078,7 +1078,7 @@
         },
         "instruction": {
           "r": 62.4,
-          "z": 0.83,
+          "z": 0.82,
           "estimated": true,
           "measured": true
         }
@@ -1093,9 +1093,9 @@
       "price": 4.35,
       "price_in": 5.0,
       "price_out": 30.0,
-      "ttft": 69.29,
-      "total_resp": 75.55,
-      "speed": 80.0,
+      "ttft": 38.07,
+      "total_resp": 43.78,
+      "speed": 88.0,
       "ctx": 922000,
       "value": 12.9,
       "size": "Unknown",
@@ -1163,9 +1163,9 @@
       "price": 1.21,
       "price_in": 2.0,
       "price_out": 6.0,
-      "ttft": 9.64,
-      "total_resp": 17.13,
-      "speed": 67.0,
+      "ttft": 8.25,
+      "total_resp": 16.06,
+      "speed": 64.0,
       "ctx": 500000,
       "value": 46.3,
       "size": "Unknown",
@@ -1225,76 +1225,6 @@
       }
     },
     {
-      "slug": "gemini-37-flash-high",
-      "name": "Gemini 3.7 Flash (high)",
-      "creator": "Google",
-      "license": "Proprietary",
-      "intel": 56.0,
-      "price": 0.5775,
-      "price_in": 0.75,
-      "price_out": 3.75,
-      "ttft": 9.83,
-      "total_resp": 11.3,
-      "speed": 340.0,
-      "ctx": 1000000,
-      "value": 97.0,
-      "size": "Unknown",
-      "params": null,
-      "reasoning": true,
-      "status": "current",
-      "priceBucket": "Medium",
-      "radar": {
-        "knowledge": {
-          "r": 83.7,
-          "z": 2.25,
-          "estimated": false,
-          "measured": true
-        },
-        "reasoning": {
-          "r": 80.5,
-          "z": 2.04,
-          "estimated": false,
-          "measured": true
-        },
-        "coding": {
-          "r": 78.8,
-          "z": 1.92,
-          "estimated": false,
-          "measured": true
-        },
-        "agentic": {
-          "r": 70.0,
-          "z": 1.33,
-          "estimated": false,
-          "measured": true
-        },
-        "trust": {
-          "r": 57.5,
-          "z": 0.5,
-          "estimated": false,
-          "measured": true
-        },
-        "multimodal": {
-          "r": 69.9,
-          "z": 1.33,
-          "estimated": false,
-          "measured": true
-        },
-        "long_context": {
-          "r": 70.9,
-          "z": 1.39,
-          "estimated": false,
-          "measured": true
-        },
-        "instruction": {
-          "r": 68.5,
-          "z": 1.23,
-          "estimated": true,
-          "measured": true
-        }
-      }
-    },
-    {
       "slug": "gpt-56-sol-medium",
       "name": "GPT-5.6 Sol (medium)",
       "creator": "OpenAI",
@@ -1303,9 +1233,9 @@
       "price": 4.35,
       "price_in": 5.0,
       "price_out": 30.0,
-      "ttft": 3.74,
-      "total_resp": 10.95,
-      "speed": 69.0,
+      "ttft": 3.48,
+      "total_resp": 10.93,
+      "speed": 67.0,
       "ctx": 1000000,
       "value": 12.9,
       "size": "Unknown",
@@ -1365,6 +1295,76 @@
       }
     },
     {
+      "slug": "gemini-37-flash-high",
+      "name": "Gemini 3.7 Flash (high)",
+      "creator": "Google",
+      "license": "Proprietary",
+      "intel": 56.0,
+      "price": 0.5775,
+      "price_in": 0.75,
+      "price_out": 3.75,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
+      "ctx": 1000000,
+      "value": 97.0,
+      "size": "Unknown",
+      "params": null,
+      "reasoning": true,
+      "status": "current",
+      "priceBucket": "Medium",
+      "radar": {
+        "knowledge": {
+          "r": 83.7,
+          "z": 2.25,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 80.5,
+          "z": 2.04,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 78.8,
+          "z": 1.92,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 70.0,
+          "z": 1.33,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 57.5,
+          "z": 0.5,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 69.9,
+          "z": 1.33,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 70.9,
+          "z": 1.39,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 69.3,
+          "z": 1.29,
+          "estimated": true,
+          "measured": true
+        }
+      }
+    },
+    {
       "slug": "claude-sonnet-5-max",
       "name": "Claude Sonnet 5 (max)",
       "creator": "Anthropic",
@@ -1373,8 +1373,8 @@
       "price": 1.54,
       "price_in": 2.0,
       "price_out": 10.0,
-      "ttft": 142.69,
-      "total_resp": 150.12,
+      "ttft": 135.14,
+      "total_resp": 142.64,
       "speed": 67.0,
       "ctx": 1000000,
       "value": 35.7,
@@ -1427,7 +1427,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 67.0,
+          "r": 66.9,
           "z": 1.13,
           "estimated": true,
           "measured": true
@@ -1443,9 +1443,9 @@
       "price": 4.35,
       "price_in": 5.0,
       "price_out": 30.0,
-      "ttft": 22.25,
-      "total_resp": 28.4,
-      "speed": 81.0,
+      "ttft": 22.86,
+      "total_resp": 28.83,
+      "speed": 84.0,
       "ctx": 922000,
       "value": 12.6,
       "size": "Unknown",
@@ -1513,9 +1513,9 @@
       "price": 3.85,
       "price_in": 5.0,
       "price_out": 25.0,
-      "ttft": 15.36,
-      "total_resp": 24.8,
-      "speed": 53.0,
+      "ttft": 12.63,
+      "total_resp": 21.93,
+      "speed": 54.0,
       "ctx": 1000000,
       "value": 14.3,
       "size": "Unknown",
@@ -1583,9 +1583,9 @@
       "price": 2.175,
       "price_in": 2.5,
       "price_out": 15.0,
-      "ttft": 143.38,
-      "total_resp": 147.35,
-      "speed": 126.0,
+      "ttft": 120.32,
+      "total_resp": 123.86,
+      "speed": 141.0,
       "ctx": 1050000,
       "value": 24.4,
       "size": "Unknown",
@@ -1653,9 +1653,9 @@
       "price": 0.6908,
       "price_in": 1.32,
       "price_out": 3.96,
-      "ttft": 1.84,
-      "total_resp": 30.5,
-      "speed": 87.0,
+      "ttft": 1.79,
+      "total_resp": 29.53,
+      "speed": 90.0,
       "ctx": 1000000,
       "value": 76.7,
       "size": "Large",
@@ -1715,6 +1715,76 @@
       }
     },
     {
+      "slug": "glm-52-max",
+      "name": "GLM-5.2 (max)",
+      "creator": "Z AI",
+      "license": "Open",
+      "intel": 53.0,
+      "price": 0.8845,
+      "price_in": 1.4,
+      "price_out": 4.4,
+      "ttft": 1.39,
+      "total_resp": 21.06,
+      "speed": 127.0,
+      "ctx": 1000000,
+      "value": 59.9,
+      "size": "Large",
+      "params": 753,
+      "reasoning": true,
+      "status": "current",
+      "priceBucket": "Medium",
+      "radar": {
+        "knowledge": {
+          "r": 60.6,
+          "z": 0.71,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 81.0,
+          "z": 2.07,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 70.3,
+          "z": 1.36,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 74.5,
+          "z": 1.63,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 87.5,
+          "z": 2.5,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 69.2,
+          "z": 1.28,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 69.3,
+          "z": 1.29,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
       "slug": "gpt-56-terra-xhigh",
       "name": "GPT-5.6 Terra (xhigh)",
       "creator": "OpenAI",
@@ -1723,9 +1793,9 @@
       "price": 1.74,
       "price_in": 2.0,
       "price_out": 12.0,
-      "ttft": 21.66,
-      "total_resp": 25.97,
-      "speed": 116.0,
+      "ttft": 16.81,
+      "total_resp": 20.95,
+      "speed": 121.0,
       "ctx": 1000000,
       "value": 30.5,
       "size": "Unknown",
@@ -1785,76 +1855,6 @@
       }
     },
     {
-      "slug": "glm-52-max",
-      "name": "GLM-5.2 (max)",
-      "creator": "Z AI",
-      "license": "Open",
-      "intel": 53.0,
-      "price": 0.8845,
-      "price_in": 1.4,
-      "price_out": 4.4,
-      "ttft": 1.38,
-      "total_resp": 24.19,
-      "speed": 110.0,
-      "ctx": 1000000,
-      "value": 59.9,
-      "size": "Large",
-      "params": 753,
-      "reasoning": true,
-      "status": "current",
-      "priceBucket": "Medium",
-      "radar": {
-        "knowledge": {
-          "r": 60.6,
-          "z": 0.71,
-          "estimated": false,
-          "measured": true
-        },
-        "reasoning": {
-          "r": 81.0,
-          "z": 2.07,
-          "estimated": false,
-          "measured": true
-        },
-        "coding": {
-          "r": 70.3,
-          "z": 1.36,
-          "estimated": false,
-          "measured": true
-        },
-        "agentic": {
-          "r": 74.5,
-          "z": 1.63,
-          "estimated": false,
-          "measured": true
-        },
-        "trust": {
-          "r": 87.5,
-          "z": 2.5,
-          "estimated": false,
-          "measured": true
-        },
-        "multimodal": {
-          "r": null,
-          "z": null,
-          "estimated": false,
-          "measured": false
-        },
-        "long_context": {
-          "r": 69.2,
-          "z": 1.28,
-          "estimated": false,
-          "measured": true
-        },
-        "instruction": {
-          "r": 69.4,
-          "z": 1.29,
-          "estimated": false,
-          "measured": true
-        }
-      }
-    },
-    {
       "slug": "muse-spark-11-xhigh",
       "name": "Muse Spark 1.1 (xhigh)",
       "creator": "Meta",
@@ -1863,9 +1863,9 @@
       "price": 0.78,
       "price_in": 1.25,
       "price_out": 4.25,
-      "ttft": 1.69,
-      "total_resp": 12.44,
-      "speed": 232.0,
+      "ttft": 1.51,
+      "total_resp": 11.08,
+      "speed": 261.0,
       "ctx": 1050000,
       "value": 67.9,
       "size": "Unknown",
@@ -1917,7 +1917,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 65.6,
+          "r": 65.5,
           "z": 1.04,
           "estimated": true,
           "measured": true
@@ -1933,9 +1933,9 @@
       "price": 0.5775,
       "price_in": 0.75,
       "price_out": 3.75,
-      "ttft": 4.22,
-      "total_resp": 6.05,
-      "speed": 274.0,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
       "ctx": 1000000,
       "value": 91.8,
       "size": "Unknown",
@@ -1987,8 +1987,8 @@
           "measured": true
         },
         "instruction": {
-          "r": 68.0,
-          "z": 1.2,
+          "r": 69.2,
+          "z": 1.28,
           "estimated": true,
           "measured": true
         }
@@ -2003,9 +2003,9 @@
       "price": 0.174,
       "price_in": 0.2,
       "price_out": 1.2,
-      "ttft": 137.24,
-      "total_resp": 140.3,
-      "speed": 164.0,
+      "ttft": 135.36,
+      "total_resp": 138.01,
+      "speed": 189.0,
       "ctx": 1000000,
       "value": 298.9,
       "size": "Unknown",
@@ -2073,9 +2073,9 @@
       "price": 1.305,
       "price_in": 1.5,
       "price_out": 9.0,
-      "ttft": 23.81,
-      "total_resp": 26.65,
-      "speed": 176.0,
+      "ttft": 25.03,
+      "total_resp": 27.75,
+      "speed": 183.0,
       "ctx": 1000000,
       "value": 39.8,
       "size": "Unknown",
@@ -2143,8 +2143,8 @@
       "price": 0.2298,
       "price_in": 0.44,
       "price_out": 1.32,
-      "ttft": 1.45,
-      "total_resp": 22.1,
+      "ttft": 1.43,
+      "total_resp": 22.15,
       "speed": 121.0,
       "ctx": 1000000,
       "value": 226.3,
@@ -2213,9 +2213,9 @@
       "price": 1.155,
       "price_in": 1.5,
       "price_out": 7.5,
-      "ttft": 19.71,
-      "total_resp": 21.89,
-      "speed": 229.0,
+      "ttft": 16.97,
+      "total_resp": 19.11,
+      "speed": 235.0,
       "ctx": 1000000,
       "value": 45.0,
       "size": "Unknown",
@@ -2267,7 +2267,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 65.1,
+          "r": 65.0,
           "z": 1.0,
           "estimated": true,
           "measured": true
@@ -2283,8 +2283,8 @@
       "price": 3.85,
       "price_in": 5.0,
       "price_out": 25.0,
-      "ttft": 3.55,
-      "total_resp": 12.65,
+      "ttft": 3.41,
+      "total_resp": 12.51,
       "speed": 55.0,
       "ctx": 1000000,
       "value": 13.5,
@@ -2337,7 +2337,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 69.1,
+          "r": 69.0,
           "z": 1.27,
           "estimated": true,
           "measured": true
@@ -2353,9 +2353,9 @@
       "price": 4.35,
       "price_in": 5.0,
       "price_out": 30.0,
-      "ttft": 6.91,
-      "total_resp": 13.17,
-      "speed": 80.0,
+      "ttft": 6.92,
+      "total_resp": 12.71,
+      "speed": 86.0,
       "ctx": 922000,
       "value": 11.7,
       "size": "Unknown",
@@ -2408,7 +2408,7 @@
         },
         "instruction": {
           "r": 67.6,
-          "z": 1.18,
+          "z": 1.17,
           "estimated": false,
           "measured": true
         }
@@ -2423,9 +2423,9 @@
       "price": 4.35,
       "price_in": 5.0,
       "price_out": 30.0,
-      "ttft": 3.48,
-      "total_resp": 11.5,
-      "speed": 62.0,
+      "ttft": 3.41,
+      "total_resp": 11.18,
+      "speed": 64.0,
       "ctx": 1000000,
       "value": 11.7,
       "size": "Unknown",
@@ -2478,7 +2478,7 @@
         },
         "instruction": {
           "r": 64.2,
-          "z": 0.95,
+          "z": 0.94,
           "estimated": false,
           "measured": true
         }
@@ -2493,9 +2493,9 @@
       "price": 0.5775,
       "price_in": 0.75,
       "price_out": 3.75,
-      "ttft": 0.74,
-      "total_resp": 2.71,
-      "speed": 253.0,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
       "ctx": 1000000,
       "value": 88.3,
       "size": "Unknown",
@@ -2547,8 +2547,8 @@
           "measured": true
         },
         "instruction": {
-          "r": 68.9,
-          "z": 1.26,
+          "r": 68.6,
+          "z": 1.24,
           "estimated": true,
           "measured": true
         }
@@ -2563,9 +2563,9 @@
       "price": 0.174,
       "price_in": 0.2,
       "price_out": 1.2,
-      "ttft": 40.72,
-      "total_resp": 43.69,
-      "speed": 168.0,
+      "ttft": 32.69,
+      "total_resp": 35.49,
+      "speed": 178.0,
       "ctx": 1000000,
       "value": 287.4,
       "size": "Unknown",
@@ -2618,7 +2618,7 @@
         },
         "instruction": {
           "r": 66.4,
-          "z": 1.1,
+          "z": 1.09,
           "estimated": true,
           "measured": true
         }
@@ -2633,9 +2633,9 @@
       "price": 1.74,
       "price_in": 2.0,
       "price_out": 12.0,
-      "ttft": 3.56,
-      "total_resp": 7.87,
-      "speed": 116.0,
+      "ttft": 2.34,
+      "total_resp": 6.55,
+      "speed": 119.0,
       "ctx": 1000000,
       "value": 28.7,
       "size": "Unknown",
@@ -2703,8 +2703,8 @@
       "price": 2.31,
       "price_in": 3.0,
       "price_out": 15.0,
-      "ttft": 111.85,
-      "total_resp": 121.12,
+      "ttft": 122.6,
+      "total_resp": 131.79,
       "speed": 54.0,
       "ctx": 1000000,
       "value": 20.8,
@@ -2773,8 +2773,8 @@
       "price": 2.31,
       "price_in": 3.0,
       "price_out": 15.0,
-      "ttft": 3.05,
-      "total_resp": 68.96,
+      "ttft": 2.92,
+      "total_resp": 68.01,
       "speed": 38.0,
       "ctx": 1050000,
       "value": 20.8,
@@ -2843,9 +2843,9 @@
       "price": 1.74,
       "price_in": 2.0,
       "price_out": 12.0,
-      "ttft": 33.91,
-      "total_resp": 38.25,
-      "speed": 115.0,
+      "ttft": 31.89,
+      "total_resp": 36.15,
+      "speed": 117.0,
       "ctx": 1000000,
       "value": 27.6,
       "size": "Unknown",
@@ -2913,9 +2913,9 @@
       "price": 1.305,
       "price_in": 1.5,
       "price_out": 9.0,
-      "ttft": 21.94,
-      "total_resp": 24.61,
-      "speed": 187.0,
+      "ttft": 21.5,
+      "total_resp": 24.14,
+      "speed": 190.0,
       "ctx": 1000000,
       "value": 36.0,
       "size": "Unknown",
@@ -2967,79 +2967,9 @@
           "measured": true
         },
         "instruction": {
-          "r": 71.1,
-          "z": 1.41,
+          "r": 71.0,
+          "z": 1.4,
           "estimated": false,
-          "measured": true
-        }
-      }
-    },
-    {
-      "slug": "gpt-56-luna-high",
-      "name": "GPT-5.6 Luna (high)",
-      "creator": "OpenAI",
-      "license": "Proprietary",
-      "intel": 47.0,
-      "price": 0.174,
-      "price_in": 0.2,
-      "price_out": 1.2,
-      "ttft": 15.33,
-      "total_resp": 18.38,
-      "speed": 164.0,
-      "ctx": 1000000,
-      "value": 270.1,
-      "size": "Unknown",
-      "params": null,
-      "reasoning": true,
-      "status": "current",
-      "priceBucket": "Medium",
-      "radar": {
-        "knowledge": {
-          "r": 70.5,
-          "z": 1.37,
-          "estimated": false,
-          "measured": true
-        },
-        "reasoning": {
-          "r": 74.3,
-          "z": 1.62,
-          "estimated": false,
-          "measured": true
-        },
-        "coding": {
-          "r": 72.6,
-          "z": 1.51,
-          "estimated": false,
-          "measured": true
-        },
-        "agentic": {
-          "r": 64.0,
-          "z": 0.93,
-          "estimated": false,
-          "measured": true
-        },
-        "trust": {
-          "r": 36.6,
-          "z": -0.89,
-          "estimated": false,
-          "measured": true
-        },
-        "multimodal": {
-          "r": 62.7,
-          "z": 0.85,
-          "estimated": false,
-          "measured": true
-        },
-        "long_context": {
-          "r": 67.6,
-          "z": 1.17,
-          "estimated": false,
-          "measured": true
-        },
-        "instruction": {
-          "r": 68.3,
-          "z": 1.22,
-          "estimated": true,
           "measured": true
         }
       }
@@ -3053,9 +2983,9 @@
       "price": 1.6,
       "price_in": 2.5,
       "price_out": 7.5,
-      "ttft": 2.26,
-      "total_resp": 15.95,
-      "speed": 212.0,
+      "ttft": 2.28,
+      "total_resp": 15.92,
+      "speed": 213.0,
       "ctx": 1000000,
       "value": 29.4,
       "size": "Unknown",
@@ -3115,6 +3045,76 @@
       }
     },
     {
+      "slug": "gpt-56-luna-high",
+      "name": "GPT-5.6 Luna (high)",
+      "creator": "OpenAI",
+      "license": "Proprietary",
+      "intel": 47.0,
+      "price": 0.174,
+      "price_in": 0.2,
+      "price_out": 1.2,
+      "ttft": 12.23,
+      "total_resp": 15.06,
+      "speed": 177.0,
+      "ctx": 1000000,
+      "value": 270.1,
+      "size": "Unknown",
+      "params": null,
+      "reasoning": true,
+      "status": "current",
+      "priceBucket": "Medium",
+      "radar": {
+        "knowledge": {
+          "r": 70.5,
+          "z": 1.37,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 74.3,
+          "z": 1.62,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 72.6,
+          "z": 1.51,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 64.0,
+          "z": 0.93,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 36.6,
+          "z": -0.89,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 62.7,
+          "z": 0.85,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 67.6,
+          "z": 1.17,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 68.2,
+          "z": 1.22,
+          "estimated": true,
+          "measured": true
+        }
+      }
+    },
+    {
       "slug": "gpt-56-terra-medium",
       "name": "GPT-5.6 Terra (medium)",
       "creator": "OpenAI",
@@ -3123,9 +3123,9 @@
       "price": 1.74,
       "price_in": 2.0,
       "price_out": 12.0,
-      "ttft": 1.78,
-      "total_resp": 6.51,
-      "speed": 106.0,
+      "ttft": 1.58,
+      "total_resp": 6.05,
+      "speed": 112.0,
       "ctx": 1000000,
       "value": 27.0,
       "size": "Unknown",
@@ -3247,7 +3247,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 74.2,
+          "r": 74.1,
           "z": 1.61,
           "estimated": true,
           "measured": true
@@ -3263,9 +3263,9 @@
       "price": 1.8725,
       "price_in": 1.75,
       "price_out": 14.0,
-      "ttft": 77.85,
-      "total_resp": 81.73,
-      "speed": 129.0,
+      "ttft": 68.1,
+      "total_resp": 71.49,
+      "speed": 147.0,
       "ctx": 400000,
       "value": 24.6,
       "size": "Unknown",
@@ -3317,8 +3317,8 @@
           "measured": true
         },
         "instruction": {
-          "r": 71.1,
-          "z": 1.41,
+          "r": 71.0,
+          "z": 1.4,
           "estimated": false,
           "measured": true
         }
@@ -3333,9 +3333,9 @@
       "price": 0.702,
       "price_in": 0.95,
       "price_out": 4.0,
-      "ttft": 2.85,
-      "total_resp": 108.52,
-      "speed": 47.0,
+      "ttft": 2.77,
+      "total_resp": 109.75,
+      "speed": 46.0,
       "ctx": 256000,
       "value": 64.1,
       "size": "Large",
@@ -3403,9 +3403,9 @@
       "price": 0.1765,
       "price_in": 0.43,
       "price_out": 0.87,
-      "ttft": 1.78,
-      "total_resp": 64.12,
-      "speed": 78.0,
+      "ttft": 1.73,
+      "total_resp": 58.16,
+      "speed": 86.0,
       "ctx": 1000000,
       "value": 255.0,
       "size": "Large",
@@ -3473,8 +3473,8 @@
       "price": 3.85,
       "price_in": 5.0,
       "price_out": 25.0,
-      "ttft": 18.65,
-      "total_resp": 30.45,
+      "ttft": 14.99,
+      "total_resp": 26.76,
       "speed": 42.0,
       "ctx": 1000000,
       "value": 11.7,
@@ -3527,7 +3527,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 52.2,
+          "r": 52.1,
           "z": 0.14,
           "estimated": false,
           "measured": true
@@ -3543,9 +3543,9 @@
       "price": 0.222,
       "price_in": 0.3,
       "price_out": 1.2,
-      "ttft": 1.49,
-      "total_resp": 24.85,
-      "speed": 107.0,
+      "ttft": 1.44,
+      "total_resp": 25.71,
+      "speed": 103.0,
       "ctx": 1000000,
       "value": 202.7,
       "size": "Large",
@@ -3597,7 +3597,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 78.0,
+          "r": 77.9,
           "z": 1.86,
           "estimated": false,
           "measured": true
@@ -3667,8 +3667,8 @@
           "measured": true
         },
         "instruction": {
-          "r": 67.0,
-          "z": 1.13,
+          "r": 67.1,
+          "z": 1.14,
           "estimated": true,
           "measured": true
         }
@@ -3683,9 +3683,9 @@
       "price": 0.1765,
       "price_in": 0.43,
       "price_out": 0.87,
-      "ttft": 1.78,
-      "total_resp": 34.91,
-      "speed": 75.0,
+      "ttft": 1.71,
+      "total_resp": 31.58,
+      "speed": 83.0,
       "ctx": 1000000,
       "value": 249.3,
       "size": "Large",
@@ -3738,7 +3738,7 @@
         },
         "instruction": {
           "r": 67.6,
-          "z": 1.18,
+          "z": 1.17,
           "estimated": false,
           "measured": true
         }
@@ -3753,8 +3753,8 @@
       "price": 3.85,
       "price_in": 5.0,
       "price_out": 25.0,
-      "ttft": 1.23,
-      "total_resp": 11.4,
+      "ttft": 1.35,
+      "total_resp": 11.53,
       "speed": 49.0,
       "ctx": 1000000,
       "value": 11.4,
@@ -3823,9 +3823,9 @@
       "price": 4.35,
       "price_in": 5.0,
       "price_out": 30.0,
-      "ttft": 1.93,
-      "total_resp": 8.78,
-      "speed": 73.0,
+      "ttft": 1.61,
+      "total_resp": 7.86,
+      "speed": 80.0,
       "ctx": 922000,
       "value": 10.1,
       "size": "Unknown",
@@ -3963,9 +3963,9 @@
       "price": 1.8725,
       "price_in": 1.75,
       "price_out": 14.0,
-      "ttft": 144.78,
-      "total_resp": 150.91,
-      "speed": 82.0,
+      "ttft": 134.24,
+      "total_resp": 140.18,
+      "speed": 84.0,
       "ctx": 400000,
       "value": 23.0,
       "size": "Unknown",
@@ -4017,8 +4017,8 @@
           "measured": true
         },
         "instruction": {
-          "r": 71.1,
-          "z": 1.41,
+          "r": 71.0,
+          "z": 1.4,
           "estimated": false,
           "measured": true
         }
@@ -4033,9 +4033,9 @@
       "price": 0.723,
       "price_in": 0.95,
       "price_out": 4.0,
-      "ttft": 2.88,
-      "total_resp": 76.19,
-      "speed": 37.0,
+      "ttft": 2.87,
+      "total_resp": 70.32,
+      "speed": 40.0,
       "ctx": 256000,
       "value": 59.5,
       "size": "Large",
@@ -4087,7 +4087,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 60.8,
+          "r": 60.7,
           "z": 0.72,
           "estimated": false,
           "measured": true
@@ -4103,9 +4103,9 @@
       "price": 0.1765,
       "price_in": 0.43,
       "price_out": 0.87,
-      "ttft": 3.32,
-      "total_resp": 56.2,
-      "speed": 47.0,
+      "ttft": 3.35,
+      "total_resp": 50.5,
+      "speed": 53.0,
       "ctx": 1000000,
       "value": 243.6,
       "size": "Large",
@@ -4157,7 +4157,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 75.4,
+          "r": 75.3,
           "z": 1.69,
           "estimated": false,
           "measured": true
@@ -4173,8 +4173,8 @@
       "price": 1.54,
       "price_in": 2.0,
       "price_out": 10.0,
-      "ttft": 1.69,
-      "total_resp": 8.95,
+      "ttft": 1.19,
+      "total_resp": 8.43,
       "speed": 69.0,
       "ctx": 1000000,
       "value": 27.9,
@@ -4227,7 +4227,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 65.1,
+          "r": 65.0,
           "z": 1.0,
           "estimated": true,
           "measured": true
@@ -4243,8 +4243,8 @@
       "price": 0.222,
       "price_in": 0.3,
       "price_out": 1.2,
-      "ttft": 2.29,
-      "total_resp": 45.4,
+      "ttft": 2.33,
+      "total_resp": 45.43,
       "speed": 58.0,
       "ctx": 512000,
       "value": 189.2,
@@ -4298,7 +4298,7 @@
         },
         "instruction": {
           "r": 72.3,
-          "z": 1.49,
+          "z": 1.48,
           "estimated": true,
           "measured": true
         }
@@ -4314,8 +4314,8 @@
       "price_in": 0.14,
       "price_out": 0.56,
       "ttft": 2.89,
-      "total_resp": 40.35,
-      "speed": 67.0,
+      "total_resp": 37.95,
+      "speed": 71.0,
       "ctx": 256000,
       "value": 393.6,
       "size": "Large",
@@ -4367,8 +4367,8 @@
           "measured": true
         },
         "instruction": {
-          "r": 65.4,
-          "z": 1.03,
+          "r": 67.3,
+          "z": 1.15,
           "estimated": true,
           "measured": true
         }
@@ -4383,9 +4383,9 @@
       "price": 0.724,
       "price_in": 1.0,
       "price_out": 4.05,
-      "ttft": 1.84,
-      "total_resp": 34.16,
-      "speed": 77.0,
+      "ttft": 1.78,
+      "total_resp": 33.54,
+      "speed": 79.0,
       "ctx": 1000000,
       "value": 58.0,
       "size": "Large",
@@ -4437,8 +4437,8 @@
           "measured": true
         },
         "instruction": {
-          "r": 63.1,
-          "z": 0.87,
+          "r": 64.4,
+          "z": 0.96,
           "estimated": true,
           "measured": true
         }
@@ -4453,9 +4453,9 @@
       "price": 3.85,
       "price_in": 5.0,
       "price_out": 25.0,
-      "ttft": 11.2,
-      "total_resp": 21.13,
-      "speed": 50.0,
+      "ttft": 10.77,
+      "total_resp": 20.93,
+      "speed": 49.0,
       "ctx": 200000,
       "value": 10.9,
       "size": "Unknown",
@@ -4507,7 +4507,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 56.5,
+          "r": 56.4,
           "z": 0.43,
           "estimated": false,
           "measured": true
@@ -4523,8 +4523,8 @@
       "price": 0.525,
       "price_in": 0.5,
       "price_out": 2.5,
-      "ttft": 1.72,
-      "total_resp": 20.95,
+      "ttft": 1.68,
+      "total_resp": 20.91,
       "speed": 130.0,
       "ctx": 262000,
       "value": 80.0,
@@ -4593,8 +4593,8 @@
       "price": 4.35,
       "price_in": 5.0,
       "price_out": 30.0,
-      "ttft": 1.28,
-      "total_resp": 9.25,
+      "ttft": 1.32,
+      "total_resp": 9.31,
       "speed": 63.0,
       "ctx": 1000000,
       "value": 9.7,
@@ -4733,9 +4733,9 @@
       "price": 0.66,
       "price_in": 1.0,
       "price_out": 3.2,
-      "ttft": 1.7,
-      "total_resp": 92.26,
-      "speed": 40.0,
+      "ttft": 1.54,
+      "total_resp": 88.7,
+      "speed": 41.0,
       "ctx": 200000,
       "value": 62.1,
       "size": "Large",
@@ -4803,9 +4803,9 @@
       "price": 0.898,
       "price_in": 1.38,
       "price_out": 4.4,
-      "ttft": 1.52,
-      "total_resp": 62.9,
-      "speed": 70.0,
+      "ttft": 1.4,
+      "total_resp": 55.88,
+      "speed": 79.0,
       "ctx": 200000,
       "value": 45.7,
       "size": "Large",
@@ -4873,9 +4873,9 @@
       "price": 1.131,
       "price_in": 1.3,
       "price_out": 7.8,
-      "ttft": 4.23,
-      "total_resp": 44.76,
-      "speed": 62.0,
+      "ttft": 3.21,
+      "total_resp": 41.31,
+      "speed": 66.0,
       "ctx": 256000,
       "value": 36.3,
       "size": "Unknown",
@@ -4935,6 +4935,76 @@
       }
     },
     {
+      "slug": "inkling-small",
+      "name": "Inkling Small",
+      "creator": "Thinking Machines",
+      "license": "Open",
+      "intel": 41.0,
+      "price": 0.222,
+      "price_in": 0.3,
+      "price_out": 1.2,
+      "ttft": 1.8,
+      "total_resp": 39.18,
+      "speed": 67.0,
+      "ctx": 1000000,
+      "value": 184.7,
+      "size": "Large",
+      "params": 266,
+      "reasoning": true,
+      "status": "current",
+      "priceBucket": "Medium",
+      "radar": {
+        "knowledge": {
+          "r": 64.6,
+          "z": 0.98,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 67.4,
+          "z": 1.16,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 70.6,
+          "z": 1.37,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 56.1,
+          "z": 0.41,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 59.0,
+          "z": 0.6,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 58.6,
+          "z": 0.58,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 64.8,
+          "z": 0.99,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 67.6,
+          "z": 1.17,
+          "estimated": true,
+          "measured": true
+        }
+      }
+    },
+    {
       "slug": "grok-build-01-0616",
       "name": "Grok Build 0.1 0616",
       "creator": "SpaceXAI",
@@ -4943,9 +5013,9 @@
       "price": 0.54,
       "price_in": 1.0,
       "price_out": 2.0,
-      "ttft": 0.54,
-      "total_resp": 31.94,
-      "speed": 80.0,
+      "ttft": 0.52,
+      "total_resp": 32.44,
+      "speed": 78.0,
       "ctx": 256000,
       "value": 75.9,
       "size": "Unknown",
@@ -4998,77 +5068,7 @@
         },
         "instruction": {
           "r": 60.6,
-          "z": 0.71,
-          "estimated": true,
-          "measured": true
-        }
-      }
-    },
-    {
-      "slug": "inkling-small",
-      "name": "Inkling Small",
-      "creator": "Thinking Machines",
-      "license": "Open",
-      "intel": 41.0,
-      "price": 0.222,
-      "price_in": 0.3,
-      "price_out": 1.2,
-      "ttft": 1.83,
-      "total_resp": 24.98,
-      "speed": 108.0,
-      "ctx": 1000000,
-      "value": 184.7,
-      "size": "Large",
-      "params": 266,
-      "reasoning": true,
-      "status": "current",
-      "priceBucket": "Medium",
-      "radar": {
-        "knowledge": {
-          "r": 64.6,
-          "z": 0.98,
-          "estimated": false,
-          "measured": true
-        },
-        "reasoning": {
-          "r": 67.4,
-          "z": 1.16,
-          "estimated": false,
-          "measured": true
-        },
-        "coding": {
-          "r": 70.6,
-          "z": 1.37,
-          "estimated": false,
-          "measured": true
-        },
-        "agentic": {
-          "r": 56.1,
-          "z": 0.41,
-          "estimated": false,
-          "measured": true
-        },
-        "trust": {
-          "r": 59.0,
-          "z": 0.6,
-          "estimated": false,
-          "measured": true
-        },
-        "multimodal": {
-          "r": 58.6,
-          "z": 0.58,
-          "estimated": false,
-          "measured": true
-        },
-        "long_context": {
-          "r": 64.8,
-          "z": 0.99,
-          "estimated": false,
-          "measured": true
-        },
-        "instruction": {
-          "r": 66.5,
-          "z": 1.1,
+          "z": 0.7,
           "estimated": true,
           "measured": true
         }
@@ -5083,9 +5083,9 @@
       "price": 0.6525,
       "price_in": 0.75,
       "price_out": 4.5,
-      "ttft": 10.57,
-      "total_resp": 13.24,
-      "speed": 188.0,
+      "ttft": 6.27,
+      "total_resp": 8.91,
+      "speed": 190.0,
       "ctx": 400000,
       "value": 62.8,
       "size": "Unknown",
@@ -5137,7 +5137,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 69.4,
+          "r": 69.3,
           "z": 1.29,
           "estimated": false,
           "measured": true
@@ -5153,9 +5153,9 @@
       "price": 1.74,
       "price_in": 2.0,
       "price_out": 12.0,
-      "ttft": 1.68,
-      "total_resp": 6.39,
-      "speed": 106.0,
+      "ttft": 1.49,
+      "total_resp": 5.83,
+      "speed": 115.0,
       "ctx": 1000000,
       "value": 23.6,
       "size": "Unknown",
@@ -5208,7 +5208,7 @@
         },
         "instruction": {
           "r": 58.2,
-          "z": 0.55,
+          "z": 0.54,
           "estimated": false,
           "measured": true
         }
@@ -5277,8 +5277,8 @@
           "measured": true
         },
         "instruction": {
-          "r": 73.7,
-          "z": 1.58,
+          "r": 73.6,
+          "z": 1.57,
           "estimated": false,
           "measured": true
         }
@@ -5433,8 +5433,8 @@
       "price": 0.435,
       "price_in": 0.5,
       "price_out": 3.0,
-      "ttft": 2.1,
-      "total_resp": 110.11,
+      "ttft": 2.18,
+      "total_resp": 109.98,
       "speed": 56.0,
       "ctx": 1000000,
       "value": 92.0,
@@ -5487,8 +5487,8 @@
           "measured": true
         },
         "instruction": {
-          "r": 71.1,
-          "z": 1.41,
+          "r": 71.0,
+          "z": 1.4,
           "estimated": false,
           "measured": true
         }
@@ -5503,9 +5503,9 @@
       "price": 0.1827,
       "price_in": 0.45,
       "price_out": 0.9,
-      "ttft": 2.21,
-      "total_resp": 21.23,
-      "speed": 131.0,
+      "ttft": 2.05,
+      "total_resp": 20.88,
+      "speed": 133.0,
       "ctx": 1000000,
       "value": 218.9,
       "size": "Unknown",
@@ -5573,9 +5573,9 @@
       "price": 0.179,
       "price_in": 0.2,
       "price_out": 1.25,
-      "ttft": 6.99,
-      "total_resp": 9.84,
-      "speed": 176.0,
+      "ttft": 4.21,
+      "total_resp": 7.11,
+      "speed": 173.0,
       "ctx": 400000,
       "value": 223.5,
       "size": "Unknown",
@@ -5643,9 +5643,9 @@
       "price": 2.175,
       "price_in": 2.5,
       "price_out": 15.0,
-      "ttft": 1.47,
-      "total_resp": 6.57,
-      "speed": 98.0,
+      "ttft": 1.41,
+      "total_resp": 6.26,
+      "speed": 103.0,
       "ctx": 1050000,
       "value": 18.4,
       "size": "Unknown",
@@ -5767,8 +5767,8 @@
           "measured": true
         },
         "instruction": {
-          "r": 62.8,
-          "z": 0.86,
+          "r": 60.7,
+          "z": 0.72,
           "estimated": true,
           "measured": true
         }
@@ -5784,7 +5784,7 @@
       "price_in": 0.4,
       "price_out": 1.6,
       "ttft": 2.21,
-      "total_resp": 47.21,
+      "total_resp": 47.01,
       "speed": 56.0,
       "ctx": 1000000,
       "value": 145.5,
@@ -5837,8 +5837,8 @@
           "measured": true
         },
         "instruction": {
-          "r": 73.7,
-          "z": 1.58,
+          "r": 73.6,
+          "z": 1.57,
           "estimated": false,
           "measured": true
         }
@@ -5853,9 +5853,9 @@
       "price": 0.222,
       "price_in": 0.3,
       "price_out": 1.2,
-      "ttft": 1.75,
-      "total_resp": 45.29,
-      "speed": 68.0,
+      "ttft": 1.65,
+      "total_resp": 42.42,
+      "speed": 73.0,
       "ctx": 205000,
       "value": 175.7,
       "size": "Large",
@@ -5923,9 +5923,9 @@
       "price": 3.85,
       "price_in": 5.0,
       "price_out": 25.0,
-      "ttft": 2.26,
-      "total_resp": 13.81,
-      "speed": 43.0,
+      "ttft": 2.29,
+      "total_resp": 14.2,
+      "speed": 42.0,
       "ctx": 1000000,
       "value": 10.1,
       "size": "Unknown",
@@ -5978,7 +5978,7 @@
         },
         "instruction": {
           "r": 45.3,
-          "z": -0.31,
+          "z": -0.32,
           "estimated": false,
           "measured": true
         }
@@ -5993,9 +5993,9 @@
       "price": 0.435,
       "price_in": 0.5,
       "price_out": 3.0,
-      "ttft": 7.06,
-      "total_resp": 9.79,
-      "speed": 183.0,
+      "ttft": 6.8,
+      "total_resp": 9.43,
+      "speed": 190.0,
       "ctx": 1000000,
       "value": 89.7,
       "size": "Unknown",
@@ -6047,8 +6047,8 @@
           "measured": true
         },
         "instruction": {
-          "r": 73.7,
-          "z": 1.58,
+          "r": 73.6,
+          "z": 1.57,
           "estimated": false,
           "measured": true
         }
@@ -6063,9 +6063,9 @@
       "price": 0.174,
       "price_in": 0.2,
       "price_out": 1.2,
-      "ttft": 2.1,
-      "total_resp": 5.16,
-      "speed": 163.0,
+      "ttft": 2.06,
+      "total_resp": 4.87,
+      "speed": 178.0,
       "ctx": 1000000,
       "value": 224.1,
       "size": "Unknown",
@@ -6187,7 +6187,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 69.4,
+          "r": 69.3,
           "z": 1.29,
           "estimated": false,
           "measured": true
@@ -6327,7 +6327,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 69.4,
+          "r": 69.3,
           "z": 1.29,
           "estimated": false,
           "measured": true
@@ -6344,8 +6344,8 @@
       "price_in": 0.6,
       "price_out": 3.6,
       "ttft": 3.7,
-      "total_resp": 110.35,
-      "speed": 58.0,
+      "total_resp": 105.22,
+      "speed": 61.0,
       "ctx": 262000,
       "value": 42.2,
       "size": "Small",
@@ -6397,78 +6397,8 @@
           "measured": true
         },
         "instruction": {
-          "r": 65.1,
+          "r": 65.0,
           "z": 1.0,
-          "estimated": false,
-          "measured": true
-        }
-      }
-    },
-    {
-      "slug": "grok-420-0309-v2",
-      "name": "Grok 4.20 0309 v2",
-      "creator": "SpaceXAI",
-      "license": "Proprietary",
-      "intel": 38.0,
-      "price": 0.64,
-      "price_in": 1.25,
-      "price_out": 2.5,
-      "ttft": 25.4,
-      "total_resp": 30.08,
-      "speed": 107.0,
-      "ctx": 2000000,
-      "value": 59.4,
-      "size": "Unknown",
-      "params": null,
-      "reasoning": true,
-      "status": "past",
-      "priceBucket": "Medium",
-      "radar": {
-        "knowledge": {
-          "r": 61.6,
-          "z": 0.77,
-          "estimated": false,
-          "measured": true
-        },
-        "reasoning": {
-          "r": 68.1,
-          "z": 1.21,
-          "estimated": false,
-          "measured": true
-        },
-        "coding": {
-          "r": 63.6,
-          "z": 0.91,
-          "estimated": false,
-          "measured": true
-        },
-        "agentic": {
-          "r": 73.1,
-          "z": 1.54,
-          "estimated": false,
-          "measured": true
-        },
-        "trust": {
-          "r": 94.5,
-          "z": 2.97,
-          "estimated": false,
-          "measured": true
-        },
-        "multimodal": {
-          "r": 59.7,
-          "z": 0.64,
-          "estimated": false,
-          "measured": true
-        },
-        "long_context": {
-          "r": 61.0,
-          "z": 0.74,
-          "estimated": false,
-          "measured": true
-        },
-        "instruction": {
-          "r": 76.2,
-          "z": 1.75,
           "estimated": false,
           "measured": true
         }
@@ -6483,9 +6413,9 @@
       "price": 0.64,
       "price_in": 1.25,
       "price_out": 2.5,
-      "ttft": 25.74,
-      "total_resp": 29.56,
-      "speed": 131.0,
+      "ttft": 26.32,
+      "total_resp": 30.31,
+      "speed": 125.0,
       "ctx": 1000000,
       "value": 59.4,
       "size": "Unknown",
@@ -6553,9 +6483,9 @@
       "price": 0.058,
       "price_in": 0.14,
       "price_out": 0.28,
-      "ttft": 1.93,
-      "total_resp": 25.86,
-      "speed": 104.0,
+      "ttft": 2.19,
+      "total_resp": 29.78,
+      "speed": 91.0,
       "ctx": 1000000,
       "value": 655.2,
       "size": "Large",
@@ -6608,7 +6538,77 @@
         },
         "instruction": {
           "r": 64.2,
-          "z": 0.95,
+          "z": 0.94,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "grok-420-0309-v2",
+      "name": "Grok 4.20 0309 v2",
+      "creator": "SpaceXAI",
+      "license": "Proprietary",
+      "intel": 38.0,
+      "price": 0.64,
+      "price_in": 1.25,
+      "price_out": 2.5,
+      "ttft": 22.5,
+      "total_resp": 27.33,
+      "speed": 103.0,
+      "ctx": 2000000,
+      "value": 59.4,
+      "size": "Unknown",
+      "params": null,
+      "reasoning": true,
+      "status": "past",
+      "priceBucket": "Medium",
+      "radar": {
+        "knowledge": {
+          "r": 61.6,
+          "z": 0.77,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 68.1,
+          "z": 1.21,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 63.6,
+          "z": 0.91,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 73.1,
+          "z": 1.54,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 94.5,
+          "z": 2.97,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 59.7,
+          "z": 0.64,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 61.0,
+          "z": 0.74,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 76.2,
+          "z": 1.75,
           "estimated": false,
           "measured": true
         }
@@ -6623,9 +6623,9 @@
       "price": 0.535,
       "price_in": 0.6,
       "price_out": 2.75,
-      "ttft": 2.28,
-      "total_resp": 20.54,
-      "speed": 152.0,
+      "ttft": 2.15,
+      "total_resp": 20.1,
+      "speed": 155.0,
       "ctx": 262000,
       "value": 71.0,
       "size": "Large",
@@ -6693,9 +6693,9 @@
       "price": 0.0475,
       "price_in": 0.07,
       "price_out": 0.22,
-      "ttft": 1.76,
-      "total_resp": 8.4,
-      "speed": 377.0,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
       "ctx": 262000,
       "value": 800.0,
       "size": "Medium",
@@ -6747,8 +6747,8 @@
           "measured": true
         },
         "instruction": {
-          "r": 64.2,
-          "z": 0.95,
+          "r": 63.3,
+          "z": 0.89,
           "estimated": true,
           "measured": true
         }
@@ -6764,8 +6764,8 @@
       "price_in": 1.25,
       "price_out": 10.0,
       "ttft": 41.06,
-      "total_resp": 46.35,
-      "speed": 95.0,
+      "total_resp": 46.03,
+      "speed": 101.0,
       "ctx": 272000,
       "value": 27.7,
       "size": "Unknown",
@@ -6817,7 +6817,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 69.4,
+          "r": 69.3,
           "z": 1.29,
           "estimated": false,
           "measured": true
@@ -6833,9 +6833,9 @@
       "price": 2.31,
       "price_in": 3.0,
       "price_out": 15.0,
-      "ttft": 11.86,
-      "total_resp": 23.52,
-      "speed": 43.0,
+      "ttft": 12.19,
+      "total_resp": 24.26,
+      "speed": 41.0,
       "ctx": 1000000,
       "value": 16.0,
       "size": "Unknown",
@@ -6903,9 +6903,9 @@
       "price": 0.64,
       "price_in": 1.25,
       "price_out": 2.5,
-      "ttft": 15.09,
-      "total_resp": 19.24,
-      "speed": 121.0,
+      "ttft": 13.47,
+      "total_resp": 17.76,
+      "speed": 117.0,
       "ctx": 1000000,
       "value": 57.8,
       "size": "Unknown",
@@ -6957,7 +6957,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 78.0,
+          "r": 77.9,
           "z": 1.86,
           "estimated": false,
           "measured": true
@@ -6973,9 +6973,9 @@
       "price": 2.31,
       "price_in": 3.0,
       "price_out": 15.0,
-      "ttft": 1.58,
-      "total_resp": 12.32,
-      "speed": 47.0,
+      "ttft": 1.5,
+      "total_resp": 12.72,
+      "speed": 45.0,
       "ctx": 1000000,
       "value": 16.0,
       "size": "Unknown",
@@ -7043,9 +7043,9 @@
       "price": 0.331,
       "price_in": 0.3,
       "price_out": 2.5,
-      "ttft": 10.09,
-      "total_resp": 11.43,
-      "speed": 371.0,
+      "ttft": 9.11,
+      "total_resp": 10.38,
+      "speed": 395.0,
       "ctx": 1000000,
       "value": 111.8,
       "size": "Unknown",
@@ -7167,7 +7167,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 78.0,
+          "r": 77.9,
           "z": 1.86,
           "estimated": false,
           "measured": true
@@ -7238,7 +7238,7 @@
         },
         "instruction": {
           "r": 64.2,
-          "z": 0.95,
+          "z": 0.94,
           "estimated": false,
           "measured": true
         }
@@ -7393,9 +7393,9 @@
       "price": 0.49,
       "price_in": 0.6,
       "price_out": 3.0,
-      "ttft": 3.04,
-      "total_resp": 79.01,
-      "speed": 46.0,
+      "ttft": 2.9,
+      "total_resp": 74.44,
+      "speed": 48.0,
       "ctx": 256000,
       "value": 73.5,
       "size": "Large",
@@ -7463,9 +7463,9 @@
       "price": 0.64,
       "price_in": 1.25,
       "price_out": 2.5,
-      "ttft": 8.72,
-      "total_resp": 12.9,
-      "speed": 119.0,
+      "ttft": 7.45,
+      "total_resp": 11.52,
+      "speed": 123.0,
       "ctx": 1000000,
       "value": 56.2,
       "size": "Unknown",
@@ -7533,9 +7533,9 @@
       "price": 4.35,
       "price_in": 5.0,
       "price_out": 30.0,
-      "ttft": 1.01,
-      "total_resp": 8.31,
-      "speed": 69.0,
+      "ttft": 1.03,
+      "total_resp": 7.66,
+      "speed": 75.0,
       "ctx": 922000,
       "value": 8.3,
       "size": "Unknown",
@@ -7603,9 +7603,9 @@
       "price": 1.305,
       "price_in": 1.5,
       "price_out": 9.0,
-      "ttft": 0.9,
-      "total_resp": 3.85,
-      "speed": 169.0,
+      "ttft": 0.88,
+      "total_resp": 3.73,
+      "speed": 175.0,
       "ctx": 1000000,
       "value": 27.6,
       "size": "Unknown",
@@ -7813,9 +7813,9 @@
       "price": 1.3375,
       "price_in": 1.25,
       "price_out": 10.0,
-      "ttft": 111.83,
-      "total_resp": 117.57,
-      "speed": 87.0,
+      "ttft": 98.5,
+      "total_resp": 104.08,
+      "speed": 90.0,
       "ctx": 400000,
       "value": 26.2,
       "size": "Unknown",
@@ -7867,7 +7867,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 69.4,
+          "r": 69.3,
           "z": 1.29,
           "estimated": false,
           "measured": true
@@ -7884,8 +7884,8 @@
       "price_in": 1.25,
       "price_out": 10.0,
       "ttft": 37.42,
-      "total_resp": 43.76,
-      "speed": 79.0,
+      "total_resp": 44.08,
+      "speed": 75.0,
       "ctx": 400000,
       "value": 26.2,
       "size": "Unknown",
@@ -7938,7 +7938,7 @@
         },
         "instruction": {
           "r": 67.6,
-          "z": 1.18,
+          "z": 1.17,
           "estimated": false,
           "measured": true
         }
@@ -7953,9 +7953,9 @@
       "price": 0.51,
       "price_in": 0.3,
       "price_out": 2.4,
-      "ttft": 5.65,
-      "total_resp": 37.56,
-      "speed": 78.0,
+      "ttft": 5.61,
+      "total_resp": 36.81,
+      "speed": 80.0,
       "ctx": 262000,
       "value": 68.6,
       "size": "Small",
@@ -8023,9 +8023,9 @@
       "price": 0.228,
       "price_in": 0.32,
       "price_out": 1.35,
-      "ttft": 0.83,
-      "total_resp": 25.85,
-      "speed": 100.0,
+      "ttft": 0.89,
+      "total_resp": 25.45,
+      "speed": 102.0,
       "ctx": 131000,
       "value": 153.5,
       "size": "Small",
@@ -8093,9 +8093,9 @@
       "price": 2.31,
       "price_in": 3.0,
       "price_out": 15.0,
-      "ttft": 1.9,
-      "total_resp": 12.76,
-      "speed": 46.0,
+      "ttft": 1.54,
+      "total_resp": 12.68,
+      "speed": 45.0,
       "ctx": 1000000,
       "value": 15.2,
       "size": "Unknown",
@@ -8163,9 +8163,9 @@
       "price": 0.902,
       "price_in": 1.4,
       "price_out": 4.4,
-      "ttft": 1.93,
+      "ttft": 2.02,
       "total_resp": 5.62,
-      "speed": 136.0,
+      "speed": 139.0,
       "ctx": 1000000,
       "value": 38.8,
       "size": "Large",
@@ -8233,9 +8233,9 @@
       "price": 1.74,
       "price_in": 2.0,
       "price_out": 12.0,
-      "ttft": 0.81,
-      "total_resp": 5.15,
-      "speed": 115.0,
+      "ttft": 0.77,
+      "total_resp": 5.02,
+      "speed": 118.0,
       "ctx": 1000000,
       "value": 20.1,
       "size": "Unknown",
@@ -8428,7 +8428,7 @@
         },
         "instruction": {
           "r": 71.2,
-          "z": 1.42,
+          "z": 1.41,
           "estimated": true,
           "measured": true
         }
@@ -8513,9 +8513,9 @@
       "price": 0.4555,
       "price_in": 0.75,
       "price_out": 2.95,
-      "ttft": 2.82,
-      "total_resp": 62.08,
-      "speed": 42.0,
+      "ttft": 2.77,
+      "total_resp": 60.22,
+      "speed": 44.0,
       "ctx": 1000000,
       "value": 74.6,
       "size": "Large",
@@ -8583,9 +8583,9 @@
       "price": 0.9,
       "price_in": 0.6,
       "price_out": 3.6,
-      "ttft": 2.23,
-      "total_resp": 43.34,
-      "speed": 90.0,
+      "ttft": 2.25,
+      "total_resp": 41.11,
+      "speed": 95.0,
       "ctx": 262000,
       "value": 37.8,
       "size": "Large",
@@ -8653,9 +8653,9 @@
       "price": 0.201,
       "price_in": 0.3,
       "price_out": 1.2,
-      "ttft": 1.59,
-      "total_resp": 25.44,
-      "speed": 105.0,
+      "ttft": 1.69,
+      "total_resp": 25.09,
+      "speed": 107.0,
       "ctx": 205000,
       "value": 169.2,
       "size": "Large",
@@ -8723,9 +8723,9 @@
       "price": 0.76,
       "price_in": 0.6,
       "price_out": 2.2,
-      "ttft": 1.06,
-      "total_resp": 23.89,
-      "speed": 110.0,
+      "ttft": 1.05,
+      "total_resp": 22.57,
+      "speed": 116.0,
       "ctx": 200000,
       "value": 44.7,
       "size": "Large",
@@ -8777,7 +8777,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 65.1,
+          "r": 65.0,
           "z": 1.0,
           "estimated": false,
           "measured": true
@@ -8793,9 +8793,9 @@
       "price": 0.222,
       "price_in": 0.3,
       "price_out": 1.2,
-      "ttft": 1.46,
-      "total_resp": 6.26,
-      "speed": 104.0,
+      "ttft": 1.51,
+      "total_resp": 6.19,
+      "speed": 107.0,
       "ctx": 256000,
       "value": 153.2,
       "size": "Unknown",
@@ -8848,7 +8848,7 @@
         },
         "instruction": {
           "r": 64.2,
-          "z": 0.95,
+          "z": 0.94,
           "estimated": false,
           "measured": true
         }
@@ -8863,9 +8863,9 @@
       "price": 0.174,
       "price_in": 0.2,
       "price_out": 1.2,
-      "ttft": 1.85,
-      "total_resp": 4.91,
-      "speed": 163.0,
+      "ttft": 1.56,
+      "total_resp": 4.54,
+      "speed": 168.0,
       "ctx": 1000000,
       "value": 195.4,
       "size": "Unknown",
@@ -8917,7 +8917,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 57.7,
+          "r": 57.6,
           "z": 0.51,
           "estimated": true,
           "measured": true
@@ -9127,7 +9127,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 60.8,
+          "r": 60.7,
           "z": 0.72,
           "estimated": false,
           "measured": true
@@ -9268,7 +9268,7 @@
         },
         "instruction": {
           "r": 67.6,
-          "z": 1.18,
+          "z": 1.17,
           "estimated": false,
           "measured": true
         }
@@ -9283,9 +9283,9 @@
       "price": 0.79,
       "price_in": 0.6,
       "price_out": 2.5,
-      "ttft": 1.31,
-      "total_resp": 22.25,
-      "speed": 119.0,
+      "ttft": 1.32,
+      "total_resp": 21.98,
+      "speed": 121.0,
       "ctx": 256000,
       "value": 41.8,
       "size": "Large",
@@ -9337,7 +9337,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 65.1,
+          "r": 65.0,
           "z": 1.0,
           "estimated": false,
           "measured": true
@@ -9353,9 +9353,9 @@
       "price": 0.68,
       "price_in": 0.4,
       "price_out": 3.2,
-      "ttft": 2.35,
-      "total_resp": 20.41,
-      "speed": 138.0,
+      "ttft": 2.33,
+      "total_resp": 19.84,
+      "speed": 143.0,
       "ctx": 262000,
       "value": 48.5,
       "size": "Medium",
@@ -9547,7 +9547,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 68.2,
+          "r": 68.1,
           "z": 1.21,
           "estimated": true,
           "measured": true
@@ -9563,9 +9563,9 @@
       "price": 0.5625,
       "price_in": 0.38,
       "price_out": 2.25,
-      "ttft": 2.16,
-      "total_resp": 43.71,
-      "speed": 142.0,
+      "ttft": 2.06,
+      "total_resp": 46.4,
+      "speed": 133.0,
       "ctx": 262000,
       "value": 56.9,
       "size": "Small",
@@ -9633,9 +9633,9 @@
       "price": 0.39,
       "price_in": 0.3,
       "price_out": 1.2,
-      "ttft": 1.79,
-      "total_resp": 26.32,
-      "speed": 102.0,
+      "ttft": 1.74,
+      "total_resp": 25.41,
+      "speed": 106.0,
       "ctx": 205000,
       "value": 82.1,
       "size": "Large",
@@ -9695,76 +9695,6 @@
       }
     },
     {
-      "slug": "ring-26-1t",
-      "name": "Ring-2.6-1T",
-      "creator": "InclusionAI",
-      "license": "Open",
-      "intel": 32.0,
-      "price": 0.52,
-      "price_in": 0.3,
-      "price_out": 2.5,
-      "ttft": 2.99,
-      "total_resp": 22.83,
-      "speed": 126.0,
-      "ctx": 262000,
-      "value": 61.5,
-      "size": "Large",
-      "params": 1000,
-      "reasoning": true,
-      "status": "current",
-      "priceBucket": "Medium",
-      "radar": {
-        "knowledge": {
-          "r": 56.9,
-          "z": 0.46,
-          "estimated": false,
-          "measured": true
-        },
-        "reasoning": {
-          "r": 58.5,
-          "z": 0.57,
-          "estimated": false,
-          "measured": true
-        },
-        "coding": {
-          "r": 58.1,
-          "z": 0.54,
-          "estimated": false,
-          "measured": true
-        },
-        "agentic": {
-          "r": 58.4,
-          "z": 0.56,
-          "estimated": false,
-          "measured": true
-        },
-        "trust": {
-          "r": 42.0,
-          "z": -0.53,
-          "estimated": false,
-          "measured": true
-        },
-        "multimodal": {
-          "r": null,
-          "z": null,
-          "estimated": false,
-          "measured": false
-        },
-        "long_context": {
-          "r": 63.8,
-          "z": 0.92,
-          "estimated": false,
-          "measured": true
-        },
-        "instruction": {
-          "r": 45.3,
-          "z": -0.31,
-          "estimated": false,
-          "measured": true
-        }
-      }
-    },
-    {
       "slug": "gpt-5-low",
       "name": "GPT-5 (low)",
       "creator": "OpenAI",
@@ -9773,9 +9703,9 @@
       "price": 1.3375,
       "price_in": 1.25,
       "price_out": 10.0,
-      "ttft": 10.34,
-      "total_resp": 17.82,
-      "speed": 67.0,
+      "ttft": 10.13,
+      "total_resp": 18.1,
+      "speed": 63.0,
       "ctx": 400000,
       "value": 23.9,
       "size": "Unknown",
@@ -9828,7 +9758,7 @@
         },
         "instruction": {
           "r": 64.2,
-          "z": 0.95,
+          "z": 0.94,
           "estimated": false,
           "measured": true
         }
@@ -9843,9 +9773,9 @@
       "price": 0.2675,
       "price_in": 0.25,
       "price_out": 2.0,
-      "ttft": 11.92,
-      "total_resp": 17.22,
-      "speed": 94.0,
+      "ttft": 11.39,
+      "total_resp": 16.47,
+      "speed": 98.0,
       "ctx": 400000,
       "value": 119.6,
       "size": "Unknown",
@@ -9898,7 +9828,7 @@
         },
         "instruction": {
           "r": 67.6,
-          "z": 1.18,
+          "z": 1.17,
           "estimated": false,
           "measured": true
         }
@@ -9913,9 +9843,9 @@
       "price": 0.1765,
       "price_in": 0.43,
       "price_out": 0.87,
-      "ttft": 1.74,
-      "total_resp": 7.86,
-      "speed": 82.0,
+      "ttft": 1.69,
+      "total_resp": 7.62,
+      "speed": 84.0,
       "ctx": 1000000,
       "value": 181.3,
       "size": "Large",
@@ -10108,7 +10038,7 @@
         },
         "instruction": {
           "r": 67.6,
-          "z": 1.18,
+          "z": 1.17,
           "estimated": false,
           "measured": true
         }
@@ -10248,8 +10178,148 @@
         },
         "instruction": {
           "r": 60.0,
-          "z": 0.67,
+          "z": 0.66,
           "estimated": true,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "ring-26-1t",
+      "name": "Ring-2.6-1T",
+      "creator": "InclusionAI",
+      "license": "Open",
+      "intel": 32.0,
+      "price": 0.52,
+      "price_in": 0.3,
+      "price_out": 2.5,
+      "ttft": null,
+      "total_resp": null,
+      "speed": null,
+      "ctx": 262000,
+      "value": 61.5,
+      "size": "Large",
+      "params": 1000,
+      "reasoning": true,
+      "status": "current",
+      "priceBucket": "Medium",
+      "radar": {
+        "knowledge": {
+          "r": 56.9,
+          "z": 0.46,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 58.5,
+          "z": 0.57,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 58.1,
+          "z": 0.54,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 58.4,
+          "z": 0.56,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 42.0,
+          "z": -0.53,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 63.8,
+          "z": 0.92,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 45.3,
+          "z": -0.32,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
+      "slug": "step-37-flash",
+      "name": "Step 3.7 Flash",
+      "creator": "StepFun",
+      "license": "Open",
+      "intel": 31.0,
+      "price": 0.183,
+      "price_in": 0.2,
+      "price_out": 1.15,
+      "ttft": 2.35,
+      "total_resp": 16.82,
+      "speed": 173.0,
+      "ctx": 262000,
+      "value": 169.4,
+      "size": "Large",
+      "params": 198,
+      "reasoning": true,
+      "status": "current",
+      "priceBucket": "Medium",
+      "radar": {
+        "knowledge": {
+          "r": 55.7,
+          "z": 0.38,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 55.1,
+          "z": 0.34,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 58.9,
+          "z": 0.59,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 57.9,
+          "z": 0.53,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 42.0,
+          "z": -0.53,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 59.7,
+          "z": 0.64,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 65.4,
+          "z": 1.03,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 64.2,
+          "z": 0.94,
+          "estimated": false,
           "measured": true
         }
       }
@@ -10264,8 +10334,8 @@
       "price_in": 0.4,
       "price_out": 4.8,
       "ttft": 2.5,
-      "total_resp": 12.42,
-      "speed": 50.0,
+      "total_resp": 11.89,
+      "speed": 53.0,
       "ctx": 256000,
       "value": 36.9,
       "size": "Unknown",
@@ -10333,9 +10403,9 @@
       "price": 1.55,
       "price_in": 2.0,
       "price_out": 8.0,
-      "ttft": 7.27,
-      "total_resp": 11.06,
-      "speed": 132.0,
+      "ttft": 6.29,
+      "total_resp": 9.84,
+      "speed": 141.0,
       "ctx": 200000,
       "value": 20.0,
       "size": "Unknown",
@@ -10388,77 +10458,7 @@
         },
         "instruction": {
           "r": 67.6,
-          "z": 1.18,
-          "estimated": false,
-          "measured": true
-        }
-      }
-    },
-    {
-      "slug": "step-37-flash",
-      "name": "Step 3.7 Flash",
-      "creator": "StepFun",
-      "license": "Open",
-      "intel": 31.0,
-      "price": 0.183,
-      "price_in": 0.2,
-      "price_out": 1.15,
-      "ttft": 0.87,
-      "total_resp": 7.44,
-      "speed": 380.0,
-      "ctx": 262000,
-      "value": 169.4,
-      "size": "Large",
-      "params": 198,
-      "reasoning": true,
-      "status": "current",
-      "priceBucket": "Medium",
-      "radar": {
-        "knowledge": {
-          "r": 55.7,
-          "z": 0.38,
-          "estimated": false,
-          "measured": true
-        },
-        "reasoning": {
-          "r": 55.1,
-          "z": 0.34,
-          "estimated": false,
-          "measured": true
-        },
-        "coding": {
-          "r": 58.9,
-          "z": 0.59,
-          "estimated": false,
-          "measured": true
-        },
-        "agentic": {
-          "r": 57.9,
-          "z": 0.53,
-          "estimated": false,
-          "measured": true
-        },
-        "trust": {
-          "r": 42.0,
-          "z": -0.53,
-          "estimated": false,
-          "measured": true
-        },
-        "multimodal": {
-          "r": 59.7,
-          "z": 0.64,
-          "estimated": false,
-          "measured": true
-        },
-        "long_context": {
-          "r": 65.4,
-          "z": 1.03,
-          "estimated": false,
-          "measured": true
-        },
-        "instruction": {
-          "r": 64.2,
-          "z": 0.95,
+          "z": 1.17,
           "estimated": false,
           "measured": true
         }
@@ -10473,9 +10473,9 @@
       "price": 0.179,
       "price_in": 0.2,
       "price_out": 1.25,
-      "ttft": 4.12,
-      "total_resp": 6.96,
-      "speed": 176.0,
+      "ttft": 3.41,
+      "total_resp": 6.1,
+      "speed": 186.0,
       "ctx": 400000,
       "value": 173.2,
       "size": "Unknown",
@@ -10737,7 +10737,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 52.2,
+          "r": 52.1,
           "z": 0.14,
           "estimated": false,
           "measured": true
@@ -10807,7 +10807,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 65.1,
+          "r": 65.0,
           "z": 1.0,
           "estimated": false,
           "measured": true
@@ -10823,8 +10823,8 @@
       "price": 0.167,
       "price_in": 0.0,
       "price_out": 0.0,
-      "ttft": 1.11,
-      "total_resp": 64.46,
+      "ttft": 1.1,
+      "total_resp": 64.19,
       "speed": 35.0,
       "ctx": 256000,
       "value": 179.6,
@@ -10885,76 +10885,6 @@
       }
     },
     {
-      "slug": "mistral-medium-35",
-      "name": "Mistral Medium 3.5",
-      "creator": "Mistral",
-      "license": "Open",
-      "intel": 30.0,
-      "price": 1.155,
-      "price_in": 1.5,
-      "price_out": 7.5,
-      "ttft": 2.29,
-      "total_resp": 39.01,
-      "speed": 68.0,
-      "ctx": 256000,
-      "value": 26.0,
-      "size": "Medium",
-      "params": 128,
-      "reasoning": true,
-      "status": "current",
-      "priceBucket": "High",
-      "radar": {
-        "knowledge": {
-          "r": 52.2,
-          "z": 0.15,
-          "estimated": false,
-          "measured": true
-        },
-        "reasoning": {
-          "r": 48.7,
-          "z": -0.09,
-          "estimated": false,
-          "measured": true
-        },
-        "coding": {
-          "r": 57.9,
-          "z": 0.53,
-          "estimated": false,
-          "measured": true
-        },
-        "agentic": {
-          "r": 59.0,
-          "z": 0.6,
-          "estimated": false,
-          "measured": true
-        },
-        "trust": {
-          "r": 44.4,
-          "z": -0.38,
-          "estimated": false,
-          "measured": true
-        },
-        "multimodal": {
-          "r": 49.4,
-          "z": -0.04,
-          "estimated": false,
-          "measured": true
-        },
-        "long_context": {
-          "r": 62.7,
-          "z": 0.84,
-          "estimated": false,
-          "measured": true
-        },
-        "instruction": {
-          "r": 65.9,
-          "z": 1.06,
-          "estimated": false,
-          "measured": true
-        }
-      }
-    },
-    {
       "slug": "claude-45-haiku",
       "name": "Claude 4.5 Haiku",
       "creator": "Anthropic",
@@ -10963,9 +10893,9 @@
       "price": 0.77,
       "price_in": 1.0,
       "price_out": 5.0,
-      "ttft": 15.77,
-      "total_resp": 20.93,
-      "speed": 97.0,
+      "ttft": 16.38,
+      "total_resp": 21.77,
+      "speed": 93.0,
       "ctx": 200000,
       "value": 39.0,
       "size": "Unknown",
@@ -11025,6 +10955,76 @@
       }
     },
     {
+      "slug": "mistral-medium-35",
+      "name": "Mistral Medium 3.5",
+      "creator": "Mistral",
+      "license": "Open",
+      "intel": 30.0,
+      "price": 1.155,
+      "price_in": 1.5,
+      "price_out": 7.5,
+      "ttft": 2.25,
+      "total_resp": 19.52,
+      "speed": 145.0,
+      "ctx": 256000,
+      "value": 26.0,
+      "size": "Medium",
+      "params": 128,
+      "reasoning": true,
+      "status": "current",
+      "priceBucket": "High",
+      "radar": {
+        "knowledge": {
+          "r": 52.2,
+          "z": 0.15,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 48.7,
+          "z": -0.09,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 57.9,
+          "z": 0.53,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 59.0,
+          "z": 0.6,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 44.4,
+          "z": -0.38,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 49.4,
+          "z": -0.04,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 62.7,
+          "z": 0.84,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 65.9,
+          "z": 1.06,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
       "slug": "qwen35-35b-a3b",
       "name": "Qwen3.5 35B A3B",
       "creator": "Alibaba",
@@ -11033,9 +11033,9 @@
       "price": 0.425,
       "price_in": 0.25,
       "price_out": 2.0,
-      "ttft": 2.09,
-      "total_resp": 18.13,
-      "speed": 156.0,
+      "ttft": 2.12,
+      "total_resp": 18.39,
+      "speed": 154.0,
       "ctx": 262000,
       "value": 70.6,
       "size": "Small",
@@ -11087,7 +11087,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 69.4,
+          "r": 69.3,
           "z": 1.29,
           "estimated": false,
           "measured": true
@@ -11103,9 +11103,9 @@
       "price": 0.6525,
       "price_in": 0.75,
       "price_out": 4.5,
-      "ttft": 9.06,
-      "total_resp": 11.86,
-      "speed": 178.0,
+      "ttft": 8.73,
+      "total_resp": 11.43,
+      "speed": 186.0,
       "ctx": 400000,
       "value": 46.0,
       "size": "Unknown",
@@ -11243,8 +11243,8 @@
       "price": 0.7375,
       "price_in": 0.55,
       "price_out": 2.2,
-      "ttft": 2.38,
-      "total_resp": 49.31,
+      "ttft": 2.39,
+      "total_resp": 49.32,
       "speed": 53.0,
       "ctx": 200000,
       "value": 39.3,
@@ -11313,9 +11313,9 @@
       "price": 0.39,
       "price_in": 0.3,
       "price_out": 1.2,
-      "ttft": 1.76,
-      "total_resp": 26.42,
-      "speed": 101.0,
+      "ttft": 1.74,
+      "total_resp": 26.02,
+      "speed": 103.0,
       "ctx": 205000,
       "value": 74.4,
       "size": "Large",
@@ -11383,9 +11383,9 @@
       "price": 4.35,
       "price_in": 5.0,
       "price_out": 30.0,
-      "ttft": 1.08,
-      "total_resp": 16.83,
-      "speed": 159.0,
+      "ttft": 1.04,
+      "total_resp": 16.97,
+      "speed": 157.0,
       "ctx": 400000,
       "value": 6.7,
       "size": "Unknown",
@@ -11647,7 +11647,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 65.1,
+          "r": 65.0,
           "z": 1.0,
           "estimated": false,
           "measured": true
@@ -11663,9 +11663,9 @@
       "price": 2.175,
       "price_in": 2.5,
       "price_out": 15.0,
-      "ttft": 0.9,
-      "total_resp": 5.6,
-      "speed": 107.0,
+      "ttft": 0.85,
+      "total_resp": 5.42,
+      "speed": 109.0,
       "ctx": 1050000,
       "value": 12.9,
       "size": "Unknown",
@@ -11874,8 +11874,8 @@
       "price_in": 0.1,
       "price_out": 0.3,
       "ttft": 1.09,
-      "total_resp": 13.33,
-      "speed": 204.0,
+      "total_resp": 13.05,
+      "speed": 209.0,
       "ctx": 256000,
       "value": 421.9,
       "size": "Unknown",
@@ -11928,7 +11928,7 @@
         },
         "instruction": {
           "r": 64.2,
-          "z": 0.95,
+          "z": 0.94,
           "estimated": false,
           "measured": true
         }
@@ -11943,8 +11943,8 @@
       "price": 1.8725,
       "price_in": 1.75,
       "price_out": 14.0,
-      "ttft": 1.04,
-      "total_resp": 8.04,
+      "ttft": 1.01,
+      "total_resp": 8.01,
       "speed": 71.0,
       "ctx": 400000,
       "value": 14.4,
@@ -12013,9 +12013,9 @@
       "price": 0.174,
       "price_in": 0.2,
       "price_out": 1.2,
-      "ttft": 0.78,
-      "total_resp": 3.7,
-      "speed": 171.0,
+      "ttft": 0.79,
+      "total_resp": 3.61,
+      "speed": 177.0,
       "ctx": 1000000,
       "value": 155.2,
       "size": "Unknown",
@@ -12153,9 +12153,9 @@
       "price": 0.2675,
       "price_in": 0.25,
       "price_out": 2.0,
-      "ttft": 84.01,
-      "total_resp": 89.22,
-      "speed": 96.0,
+      "ttft": 72.91,
+      "total_resp": 78.2,
+      "speed": 95.0,
       "ctx": 400000,
       "value": 97.2,
       "size": "Unknown",
@@ -12207,8 +12207,8 @@
           "measured": true
         },
         "instruction": {
-          "r": 71.1,
-          "z": 1.41,
+          "r": 71.0,
+          "z": 1.4,
           "estimated": false,
           "measured": true
         }
@@ -12223,8 +12223,8 @@
       "price": 1.68,
       "price_in": 1.2,
       "price_out": 6.0,
-      "ttft": 4.08,
-      "total_resp": 44.53,
+      "ttft": 4.0,
+      "total_resp": 44.27,
       "speed": 62.0,
       "ctx": 262000,
       "value": 15.5,
@@ -12293,9 +12293,9 @@
       "price": 0.8525,
       "price_in": 1.1,
       "price_out": 4.4,
-      "ttft": 26.71,
-      "total_resp": 30.02,
-      "speed": 151.0,
+      "ttft": 24.03,
+      "total_resp": 27.31,
+      "speed": 152.0,
       "ctx": 200000,
       "value": 30.5,
       "size": "Unknown",
@@ -12363,9 +12363,9 @@
       "price": 1.3375,
       "price_in": 1.25,
       "price_out": 10.0,
-      "ttft": 21.78,
-      "total_resp": 25.38,
-      "speed": 139.0,
+      "ttft": 21.05,
+      "total_resp": 24.43,
+      "speed": 148.0,
       "ctx": 1000000,
       "value": 19.4,
       "size": "Unknown",
@@ -12433,9 +12433,9 @@
       "price": 0.26,
       "price_in": 0.2,
       "price_out": 0.8,
-      "ttft": 1.89,
-      "total_resp": 19.33,
-      "speed": 143.0,
+      "ttft": 1.86,
+      "total_resp": 19.41,
+      "speed": 142.0,
       "ctx": 1000000,
       "value": 100.0,
       "size": "Medium",
@@ -12488,7 +12488,7 @@
         },
         "instruction": {
           "r": 67.6,
-          "z": 1.18,
+          "z": 1.17,
           "estimated": false,
           "measured": true
         }
@@ -12503,9 +12503,9 @@
       "price": 0.12,
       "price_in": 0.1,
       "price_out": 0.3,
-      "ttft": 1.08,
-      "total_resp": 13.0,
-      "speed": 210.0,
+      "ttft": 1.06,
+      "total_resp": 12.29,
+      "speed": 223.0,
       "ctx": 256000,
       "value": 216.7,
       "size": "Large",
@@ -12643,9 +12643,9 @@
       "price": 0.2175,
       "price_in": 0.25,
       "price_out": 1.5,
-      "ttft": 5.7,
-      "total_resp": 7.13,
-      "speed": 350.0,
+      "ttft": 5.42,
+      "total_resp": 6.84,
+      "speed": 353.0,
       "ctx": 1000000,
       "value": 119.5,
       "size": "Unknown",
@@ -12853,9 +12853,9 @@
       "price": 0,
       "price_in": 0.0,
       "price_out": 0.0,
-      "ttft": 2.48,
-      "total_resp": 15.14,
-      "speed": 197.0,
+      "ttft": 2.46,
+      "total_resp": 17.36,
+      "speed": 168.0,
       "ctx": 262000,
       "value": null,
       "size": "Small",
@@ -12923,9 +12923,9 @@
       "price": 0.64,
       "price_in": 1.25,
       "price_out": 2.5,
-      "ttft": 0.8,
-      "total_resp": 5.4,
-      "speed": 109.0,
+      "ttft": 0.76,
+      "total_resp": 5.12,
+      "speed": 115.0,
       "ctx": 1000000,
       "value": 39.1,
       "size": "Unknown",
@@ -12993,9 +12993,9 @@
       "price": 0.195,
       "price_in": 0.15,
       "price_out": 0.6,
-      "ttft": 0.92,
-      "total_resp": 15.34,
-      "speed": 173.0,
+      "ttft": 0.86,
+      "total_resp": 14.58,
+      "speed": 182.0,
       "ctx": 131000,
       "value": 123.1,
       "size": "Medium",
@@ -13064,7 +13064,7 @@
       "price_in": 0.6,
       "price_out": 2.5,
       "ttft": 1.15,
-      "total_resp": 14.0,
+      "total_resp": 13.93,
       "speed": 39.0,
       "ctx": 256000,
       "value": 30.4,
@@ -13133,9 +13133,9 @@
       "price": 1.68,
       "price_in": 1.2,
       "price_out": 6.0,
-      "ttft": 2.36,
-      "total_resp": 9.66,
-      "speed": 69.0,
+      "ttft": 2.52,
+      "total_resp": 10.61,
+      "speed": 62.0,
       "ctx": 262000,
       "value": 14.3,
       "size": "Unknown",
@@ -13204,8 +13204,8 @@
       "price_in": 0.05,
       "price_out": 0.2,
       "ttft": 1.05,
-      "total_resp": 9.39,
-      "speed": 300.0,
+      "total_resp": 9.35,
+      "speed": 301.0,
       "ctx": 1000000,
       "value": 369.2,
       "size": "Small",
@@ -13413,9 +13413,9 @@
       "price": 0.1625,
       "price_in": 0.3,
       "price_out": 0.5,
-      "ttft": 0.78,
-      "total_resp": 33.06,
-      "speed": 77.0,
+      "ttft": 0.73,
+      "total_resp": 32.18,
+      "speed": 79.0,
       "ctx": 1000000,
       "value": 141.5,
       "size": "Unknown",
@@ -13483,9 +13483,9 @@
       "price": 0.103,
       "price_in": 0.07,
       "price_out": 0.4,
-      "ttft": 1.31,
-      "total_resp": 26.96,
-      "speed": 97.0,
+      "ttft": 1.14,
+      "total_resp": 26.58,
+      "speed": 98.0,
       "ctx": 200000,
       "value": 223.3,
       "size": "Small",
@@ -13553,9 +13553,9 @@
       "price": 0,
       "price_in": 0.0,
       "price_out": 0.0,
-      "ttft": 0.4,
-      "total_resp": 13.18,
-      "speed": 196.0,
+      "ttft": 0.41,
+      "total_resp": 12.83,
+      "speed": 201.0,
       "ctx": 192000,
       "value": null,
       "size": "Large",
@@ -13677,8 +13677,8 @@
           "measured": true
         },
         "instruction": {
-          "r": 66.7,
-          "z": 1.11,
+          "r": 67.0,
+          "z": 1.13,
           "estimated": true,
           "measured": true
         }
@@ -13817,8 +13817,8 @@
           "measured": true
         },
         "instruction": {
-          "r": 65.8,
-          "z": 1.05,
+          "r": 66.1,
+          "z": 1.08,
           "estimated": true,
           "measured": true
         }
@@ -13833,9 +13833,9 @@
       "price": 1.4684,
       "price_in": 1.25,
       "price_out": 10.0,
-      "ttft": 16.13,
-      "total_resp": 37.42,
-      "speed": 117.0,
+      "ttft": 14.84,
+      "total_resp": 35.9,
+      "speed": 119.0,
       "ctx": 256000,
       "value": 15.0,
       "size": "Unknown",
@@ -13903,8 +13903,8 @@
       "price": 0.1415,
       "price_in": 0.14,
       "price_out": 0.2,
-      "ttft": 1.64,
-      "total_resp": 31.93,
+      "ttft": 1.81,
+      "total_resp": 32.09,
       "speed": 83.0,
       "ctx": 262000,
       "value": 155.5,
@@ -13958,7 +13958,7 @@
         },
         "instruction": {
           "r": 64.2,
-          "z": 0.95,
+          "z": 0.94,
           "estimated": false,
           "measured": true
         }
@@ -13973,9 +13973,9 @@
       "price": 0.12,
       "price_in": 0.1,
       "price_out": 0.3,
-      "ttft": 2.34,
-      "total_resp": 24.56,
-      "speed": 112.0,
+      "ttft": 2.25,
+      "total_resp": 23.96,
+      "speed": 115.0,
       "ctx": 256000,
       "value": 183.3,
       "size": "Small",
@@ -14043,9 +14043,9 @@
       "price": 0.1425,
       "price_in": 0.25,
       "price_out": 0.75,
-      "ttft": 3.82,
-      "total_resp": 4.27,
-      "speed": 1.0,
+      "ttft": 3.98,
+      "total_resp": 4.5,
+      "speed": 947.0,
       "ctx": 128000,
       "value": 154.4,
       "size": "Unknown",
@@ -14393,9 +14393,9 @@
       "price": 0.91,
       "price_in": 0.7,
       "price_out": 8.4,
-      "ttft": 3.2,
-      "total_resp": 49.06,
-      "speed": 55.0,
+      "ttft": 2.99,
+      "total_resp": 49.14,
+      "speed": 54.0,
       "ctx": 262000,
       "value": 23.1,
       "size": "Large",
@@ -14448,7 +14448,7 @@
         },
         "instruction": {
           "r": 54.7,
-          "z": 0.32,
+          "z": 0.31,
           "estimated": false,
           "measured": true
         }
@@ -14463,8 +14463,8 @@
       "price": 0.52,
       "price_in": 0.3,
       "price_out": 2.5,
-      "ttft": 21.82,
-      "total_resp": 37.61,
+      "ttft": 20.02,
+      "total_resp": 35.8,
       "speed": 158.0,
       "ctx": 1000000,
       "value": 40.4,
@@ -14518,7 +14518,7 @@
         },
         "instruction": {
           "r": 67.6,
-          "z": 1.18,
+          "z": 1.17,
           "estimated": false,
           "measured": true
         }
@@ -14533,9 +14533,9 @@
       "price": 1.3375,
       "price_in": 1.25,
       "price_out": 10.0,
-      "ttft": 1.04,
-      "total_resp": 6.11,
-      "speed": 99.0,
+      "ttft": 1.05,
+      "total_resp": 5.56,
+      "speed": 111.0,
       "ctx": 400000,
       "value": 15.7,
       "size": "Unknown",
@@ -14603,9 +14603,9 @@
       "price": 0.435,
       "price_in": 0.35,
       "price_out": 1.2,
-      "ttft": 1.54,
-      "total_resp": 5.59,
-      "speed": 123.0,
+      "ttft": 1.52,
+      "total_resp": 5.03,
+      "speed": 142.0,
       "ctx": 256000,
       "value": 48.3,
       "size": "Medium",
@@ -14867,7 +14867,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 56.5,
+          "r": 56.4,
           "z": 0.43,
           "estimated": false,
           "measured": true
@@ -14953,8 +14953,8 @@
       "price": 0.0535,
       "price_in": 0.05,
       "price_out": 0.4,
-      "ttft": 94.31,
-      "total_resp": 97.65,
+      "ttft": 95.56,
+      "total_resp": 98.89,
       "speed": 150.0,
       "ctx": 400000,
       "value": 373.8,
@@ -15007,7 +15007,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 65.1,
+          "r": 65.0,
           "z": 1.0,
           "estimated": false,
           "measured": true
@@ -15023,8 +15023,8 @@
       "price": 0,
       "price_in": 0.0,
       "price_out": 0.0,
-      "ttft": 0.54,
-      "total_resp": 93.87,
+      "ttft": 0.5,
+      "total_resp": 94.23,
       "speed": 27.0,
       "ctx": 256000,
       "value": null,
@@ -15077,7 +15077,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 56.5,
+          "r": 56.4,
           "z": 0.43,
           "estimated": false,
           "measured": true
@@ -15093,9 +15093,9 @@
       "price": 0.042,
       "price_in": 0.03,
       "price_out": 0.15,
-      "ttft": 0.71,
-      "total_resp": 77.07,
-      "speed": 33.0,
+      "ttft": 0.69,
+      "total_resp": 65.36,
+      "speed": 39.0,
       "ctx": 262000,
       "value": 476.2,
       "size": "Small",
@@ -15163,9 +15163,9 @@
       "price": 1.47,
       "price_in": 0.7,
       "price_out": 8.4,
-      "ttft": 2.92,
-      "total_resp": 45.34,
-      "speed": 59.0,
+      "ttft": 2.87,
+      "total_resp": 44.44,
+      "speed": 60.0,
       "ctx": 256000,
       "value": 13.6,
       "size": "Large",
@@ -15233,8 +15233,8 @@
       "price": 2.125,
       "price_in": 1.25,
       "price_out": 10.0,
-      "ttft": 11.31,
-      "total_resp": 32.87,
+      "ttft": 9.02,
+      "total_resp": 30.5,
       "speed": 116.0,
       "ctx": 256000,
       "value": 9.4,
@@ -15287,7 +15287,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 75.4,
+          "r": 75.3,
           "z": 1.69,
           "estimated": false,
           "measured": true
@@ -15303,9 +15303,9 @@
       "price": 0.331,
       "price_in": 0.3,
       "price_out": 2.5,
-      "ttft": 24.14,
-      "total_resp": 26.35,
-      "speed": 227.0,
+      "ttft": 22.1,
+      "total_resp": 24.17,
+      "speed": 242.0,
       "ctx": 1000000,
       "value": 60.4,
       "size": "Unknown",
@@ -15373,9 +15373,9 @@
       "price": 0.195,
       "price_in": 0.15,
       "price_out": 0.6,
-      "ttft": 0.86,
-      "total_resp": 15.04,
-      "speed": 176.0,
+      "ttft": 0.79,
+      "total_resp": 15.68,
+      "speed": 168.0,
       "ctx": 256000,
       "value": 102.6,
       "size": "Medium",
@@ -15444,8 +15444,8 @@
       "price_in": 0.57,
       "price_out": 2.3,
       "ttft": 1.3,
-      "total_resp": 14.4,
-      "speed": 38.0,
+      "total_resp": 13.9,
+      "speed": 40.0,
       "ctx": 128000,
       "value": 26.9,
       "size": "Large",
@@ -15513,9 +15513,9 @@
       "price": 1.55,
       "price_in": 2.0,
       "price_out": 8.0,
-      "ttft": 0.98,
-      "total_resp": 5.85,
-      "speed": 103.0,
+      "ttft": 0.92,
+      "total_resp": 4.9,
+      "speed": 126.0,
       "ctx": 1000000,
       "value": 12.9,
       "size": "Unknown",
@@ -15723,9 +15723,9 @@
       "price": 0.246,
       "price_in": 0.21,
       "price_out": 0.57,
-      "ttft": 2.99,
-      "total_resp": 87.24,
-      "speed": 30.0,
+      "ttft": 2.95,
+      "total_resp": 100.51,
+      "speed": 26.0,
       "ctx": 512000,
       "value": 77.2,
       "size": "Small",
@@ -15793,9 +15793,9 @@
       "price": 0.0535,
       "price_in": 0.05,
       "price_out": 0.4,
-      "ttft": 49.76,
-      "total_resp": 53.29,
-      "speed": 142.0,
+      "ttft": 49.95,
+      "total_resp": 53.22,
+      "speed": 153.0,
       "ctx": 400000,
       "value": 355.1,
       "size": "Unknown",
@@ -15863,9 +15863,9 @@
       "price": 0.52,
       "price_in": 0.3,
       "price_out": 2.5,
-      "ttft": 20.79,
-      "total_resp": 36.02,
-      "speed": 164.0,
+      "ttft": 18.83,
+      "total_resp": 35.4,
+      "speed": 151.0,
       "ctx": 1000000,
       "value": 36.5,
       "size": "Unknown",
@@ -15933,9 +15933,9 @@
       "price": 0.243,
       "price_in": 0.23,
       "price_out": 0.88,
-      "ttft": 1.23,
-      "total_resp": 13.53,
-      "speed": 203.0,
+      "ttft": 1.2,
+      "total_resp": 13.79,
+      "speed": 199.0,
       "ctx": 512000,
       "value": 78.2,
       "size": "Large",
@@ -15988,77 +15988,7 @@
         },
         "instruction": {
           "r": 54.7,
-          "z": 0.32,
-          "estimated": false,
-          "measured": true
-        }
-      }
-    },
-    {
-      "slug": "devstral-2",
-      "name": "Devstral 2",
-      "creator": "Mistral",
-      "license": "Open",
-      "intel": 19.0,
-      "price": 0,
-      "price_in": 0.0,
-      "price_out": 0.0,
-      "ttft": 1.48,
-      "total_resp": 12.28,
-      "speed": 46.0,
-      "ctx": 256000,
-      "value": null,
-      "size": "Medium",
-      "params": 125,
-      "reasoning": false,
-      "status": "current",
-      "priceBucket": "Low",
-      "radar": {
-        "knowledge": {
-          "r": 44.1,
-          "z": -0.39,
-          "estimated": false,
-          "measured": true
-        },
-        "reasoning": {
-          "r": 39.5,
-          "z": -0.7,
-          "estimated": false,
-          "measured": true
-        },
-        "coding": {
-          "r": 48.8,
-          "z": -0.08,
-          "estimated": false,
-          "measured": true
-        },
-        "agentic": {
-          "r": 42.2,
-          "z": -0.52,
-          "estimated": false,
-          "measured": true
-        },
-        "trust": {
-          "r": 42.0,
-          "z": -0.53,
-          "estimated": false,
-          "measured": true
-        },
-        "multimodal": {
-          "r": null,
-          "z": null,
-          "estimated": false,
-          "measured": false
-        },
-        "long_context": {
-          "r": 44.1,
-          "z": -0.39,
-          "estimated": false,
-          "measured": true
-        },
-        "instruction": {
-          "r": 39.3,
-          "z": -0.72,
+          "z": 0.31,
           "estimated": false,
           "measured": true
         }
@@ -16073,9 +16003,9 @@
       "price": 1.68,
       "price_in": 1.2,
       "price_out": 6.0,
-      "ttft": 4.12,
-      "total_resp": 12.1,
-      "speed": 63.0,
+      "ttft": 4.15,
+      "total_resp": 12.43,
+      "speed": 60.0,
       "ctx": 262000,
       "value": 11.3,
       "size": "Unknown",
@@ -16135,6 +16065,76 @@
       }
     },
     {
+      "slug": "devstral-2",
+      "name": "Devstral 2",
+      "creator": "Mistral",
+      "license": "Open",
+      "intel": 19.0,
+      "price": 0,
+      "price_in": 0.0,
+      "price_out": 0.0,
+      "ttft": 1.48,
+      "total_resp": 12.18,
+      "speed": 47.0,
+      "ctx": 256000,
+      "value": null,
+      "size": "Medium",
+      "params": 125,
+      "reasoning": false,
+      "status": "current",
+      "priceBucket": "Low",
+      "radar": {
+        "knowledge": {
+          "r": 44.1,
+          "z": -0.39,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 39.5,
+          "z": -0.7,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 48.8,
+          "z": -0.08,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 42.2,
+          "z": -0.52,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 42.0,
+          "z": -0.53,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 44.1,
+          "z": -0.39,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 39.3,
+          "z": -0.72,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
       "slug": "o3-mini",
       "name": "o3-mini",
       "creator": "OpenAI",
@@ -16143,9 +16143,9 @@
       "price": 1.045,
       "price_in": 1.1,
       "price_out": 4.4,
-      "ttft": 4.92,
-      "total_resp": 7.32,
-      "speed": 209.0,
+      "ttft": 4.94,
+      "total_resp": 7.25,
+      "speed": 217.0,
       "ctx": 200000,
       "value": 18.2,
       "size": "Unknown",
@@ -16213,9 +16213,9 @@
       "price": 0.17,
       "price_in": 0.1,
       "price_out": 0.8,
-      "ttft": 1.83,
-      "total_resp": 3.73,
-      "speed": 263.0,
+      "ttft": 1.84,
+      "total_resp": 3.69,
+      "speed": 270.0,
       "ctx": 256000,
       "value": 111.8,
       "size": "Unknown",
@@ -16563,8 +16563,8 @@
       "price": 1.47,
       "price_in": 0.7,
       "price_out": 8.4,
-      "ttft": 2.56,
-      "total_resp": 30.65,
+      "ttft": 2.54,
+      "total_resp": 30.57,
       "speed": 89.0,
       "ctx": 256000,
       "value": 12.2,
@@ -16633,9 +16633,9 @@
       "price": 0.52,
       "price_in": 0.3,
       "price_out": 2.5,
-      "ttft": 10.53,
-      "total_resp": 26.52,
-      "speed": 156.0,
+      "ttft": 9.45,
+      "total_resp": 24.75,
+      "speed": 163.0,
       "ctx": 1000000,
       "value": 34.6,
       "size": "Unknown",
@@ -16703,9 +16703,9 @@
       "price": 2.3,
       "price_in": 2.0,
       "price_out": 5.0,
-      "ttft": 2.24,
-      "total_resp": 24.5,
-      "speed": 112.0,
+      "ttft": 2.18,
+      "total_resp": 21.33,
+      "speed": 131.0,
       "ctx": 128000,
       "value": 7.8,
       "size": "Unknown",
@@ -16765,76 +16765,6 @@
       }
     },
     {
-      "slug": "qwen3-235b-2507",
-      "name": "Qwen3 235B 2507",
-      "creator": "Alibaba",
-      "license": "Open",
-      "intel": 18.0,
-      "price": 0.91,
-      "price_in": 0.7,
-      "price_out": 2.8,
-      "ttft": 2.36,
-      "total_resp": 10.32,
-      "speed": 63.0,
-      "ctx": 256000,
-      "value": 19.8,
-      "size": "Large",
-      "params": 235,
-      "reasoning": false,
-      "status": "past",
-      "priceBucket": "Medium",
-      "radar": {
-        "knowledge": {
-          "r": 47.6,
-          "z": -0.16,
-          "estimated": false,
-          "measured": true
-        },
-        "reasoning": {
-          "r": 47.3,
-          "z": -0.18,
-          "estimated": false,
-          "measured": true
-        },
-        "coding": {
-          "r": 49.6,
-          "z": -0.03,
-          "estimated": false,
-          "measured": true
-        },
-        "agentic": {
-          "r": 44.9,
-          "z": -0.34,
-          "estimated": false,
-          "measured": true
-        },
-        "trust": {
-          "r": 48.2,
-          "z": -0.12,
-          "estimated": false,
-          "measured": true
-        },
-        "multimodal": {
-          "r": null,
-          "z": null,
-          "estimated": false,
-          "measured": false
-        },
-        "long_context": {
-          "r": 45.2,
-          "z": -0.32,
-          "estimated": false,
-          "measured": true
-        },
-        "instruction": {
-          "r": 46.1,
-          "z": -0.26,
-          "estimated": false,
-          "measured": true
-        }
-      }
-    },
-    {
       "slug": "qwen3-coder-480b",
       "name": "Qwen3 Coder 480B",
       "creator": "Alibaba",
@@ -16844,8 +16774,8 @@
       "price_in": 1.5,
       "price_out": 7.5,
       "ttft": 2.98,
-      "total_resp": 10.07,
-      "speed": 71.0,
+      "total_resp": 10.48,
+      "speed": 67.0,
       "ctx": 262000,
       "value": 8.6,
       "size": "Large",
@@ -16905,6 +16835,76 @@
       }
     },
     {
+      "slug": "qwen3-235b-2507",
+      "name": "Qwen3 235B 2507",
+      "creator": "Alibaba",
+      "license": "Open",
+      "intel": 18.0,
+      "price": 0.91,
+      "price_in": 0.7,
+      "price_out": 2.8,
+      "ttft": 2.32,
+      "total_resp": 10.43,
+      "speed": 62.0,
+      "ctx": 256000,
+      "value": 19.8,
+      "size": "Large",
+      "params": 235,
+      "reasoning": false,
+      "status": "past",
+      "priceBucket": "Medium",
+      "radar": {
+        "knowledge": {
+          "r": 47.6,
+          "z": -0.16,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 47.3,
+          "z": -0.18,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 49.6,
+          "z": -0.03,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 44.9,
+          "z": -0.34,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 48.2,
+          "z": -0.12,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 45.2,
+          "z": -0.32,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 46.1,
+          "z": -0.26,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
       "slug": "devstral-small-2",
       "name": "Devstral Small 2",
       "creator": "Mistral",
@@ -16913,9 +16913,9 @@
       "price": 0,
       "price_in": 0.0,
       "price_out": 0.0,
-      "ttft": 2.22,
-      "total_resp": 6.29,
-      "speed": 123.0,
+      "ttft": 2.24,
+      "total_resp": 6.09,
+      "speed": 130.0,
       "ctx": 256000,
       "value": null,
       "size": "Small",
@@ -17177,7 +17177,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 75.4,
+          "r": 75.3,
           "z": 1.69,
           "estimated": false,
           "measured": true
@@ -17263,9 +17263,9 @@
       "price": 0.36,
       "price_in": 0.3,
       "price_out": 0.9,
-      "ttft": 3.85,
-      "total_resp": 39.35,
-      "speed": 70.0,
+      "ttft": 4.68,
+      "total_resp": 43.39,
+      "speed": 65.0,
       "ctx": 128000,
       "value": 47.2,
       "size": "Medium",
@@ -17333,9 +17333,9 @@
       "price": 0.251,
       "price_in": 0.17,
       "price_out": 0.98,
-      "ttft": 2.75,
-      "total_resp": 37.48,
-      "speed": 72.0,
+      "ttft": 2.65,
+      "total_resp": 36.52,
+      "speed": 74.0,
       "ctx": 128000,
       "value": 67.7,
       "size": "Medium",
@@ -17403,9 +17403,9 @@
       "price": 1.05,
       "price_in": 0.5,
       "price_out": 6.0,
-      "ttft": 2.31,
-      "total_resp": 14.59,
-      "speed": 204.0,
+      "ttft": 2.26,
+      "total_resp": 14.57,
+      "speed": 203.0,
       "ctx": 262000,
       "value": 16.2,
       "size": "Medium",
@@ -17473,9 +17473,9 @@
       "price": 1.3375,
       "price_in": 1.25,
       "price_out": 10.0,
-      "ttft": 1.27,
-      "total_resp": 7.78,
-      "speed": 77.0,
+      "ttft": 1.23,
+      "total_resp": 7.44,
+      "speed": 81.0,
       "ctx": 400000,
       "value": 12.7,
       "size": "Unknown",
@@ -17543,9 +17543,9 @@
       "price": 0.6525,
       "price_in": 0.75,
       "price_out": 4.5,
-      "ttft": 0.65,
-      "total_resp": 3.36,
-      "speed": 185.0,
+      "ttft": 0.7,
+      "total_resp": 3.38,
+      "speed": 186.0,
       "ctx": 400000,
       "value": 26.1,
       "size": "Unknown",
@@ -17667,8 +17667,8 @@
           "measured": true
         },
         "instruction": {
-          "r": 66.9,
-          "z": 1.13,
+          "r": 68.0,
+          "z": 1.2,
           "estimated": true,
           "measured": true
         }
@@ -17807,7 +17807,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 60.8,
+          "r": 60.7,
           "z": 0.72,
           "estimated": false,
           "measured": true
@@ -18033,9 +18033,9 @@
       "price": 1.045,
       "price_in": 1.1,
       "price_out": 4.4,
-      "ttft": 22.72,
-      "total_resp": 24.93,
-      "speed": 226.0,
+      "ttft": 24.15,
+      "total_resp": 26.46,
+      "speed": 216.0,
       "ctx": 200000,
       "value": 15.3,
       "size": "Unknown",
@@ -18088,7 +18088,7 @@
         },
         "instruction": {
           "r": 64.2,
-          "z": 0.95,
+          "z": 0.94,
           "estimated": false,
           "measured": true
         }
@@ -18103,9 +18103,9 @@
       "price": 0.6,
       "price_in": 0.5,
       "price_out": 1.5,
-      "ttft": 1.19,
-      "total_resp": 11.5,
-      "speed": 49.0,
+      "ttft": 1.15,
+      "total_resp": 11.05,
+      "speed": 51.0,
       "ctx": 256000,
       "value": 26.7,
       "size": "Large",
@@ -18368,7 +18368,7 @@
         },
         "instruction": {
           "r": 45.3,
-          "z": -0.31,
+          "z": -0.32,
           "estimated": false,
           "measured": true
         }
@@ -18383,8 +18383,8 @@
       "price": 0.073,
       "price_in": 0.06,
       "price_out": 0.19,
-      "ttft": 1.07,
-      "total_resp": 19.97,
+      "ttft": 0.99,
+      "total_resp": 19.9,
       "speed": 132.0,
       "ctx": 131000,
       "value": 205.5,
@@ -18453,9 +18453,9 @@
       "price": 0.26,
       "price_in": 0.2,
       "price_out": 2.4,
-      "ttft": 2.5,
-      "total_resp": 18.56,
-      "speed": 156.0,
+      "ttft": 2.41,
+      "total_resp": 19.23,
+      "speed": 149.0,
       "ctx": 262000,
       "value": 57.7,
       "size": "Small",
@@ -18523,9 +18523,9 @@
       "price": 0.1945,
       "price_in": 0.15,
       "price_out": 0.59,
-      "ttft": 0.98,
-      "total_resp": 12.07,
-      "speed": 225.0,
+      "ttft": 0.93,
+      "total_resp": 11.91,
+      "speed": 228.0,
       "ctx": 131000,
       "value": 77.1,
       "size": "Medium",
@@ -18577,7 +18577,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 56.5,
+          "r": 56.4,
           "z": 0.43,
           "estimated": false,
           "measured": true
@@ -18593,9 +18593,9 @@
       "price": 0.065,
       "price_in": 0.05,
       "price_out": 0.2,
-      "ttft": 1.11,
-      "total_resp": 10.0,
-      "speed": 281.0,
+      "ttft": 1.16,
+      "total_resp": 11.0,
+      "speed": 254.0,
       "ctx": 1000000,
       "value": 230.8,
       "size": "Small",
@@ -18648,7 +18648,7 @@
         },
         "instruction": {
           "r": 67.6,
-          "z": 1.18,
+          "z": 1.17,
           "estimated": false,
           "measured": true
         }
@@ -18663,9 +18663,9 @@
       "price": 0.0975,
       "price_in": 0.07,
       "price_out": 0.3,
-      "ttft": 1.04,
-      "total_resp": 8.71,
-      "speed": 326.0,
+      "ttft": 1.05,
+      "total_resp": 8.67,
+      "speed": 328.0,
       "ctx": 256000,
       "value": 153.8,
       "size": "Small",
@@ -18717,7 +18717,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 60.8,
+          "r": 60.7,
           "z": 0.72,
           "estimated": false,
           "measured": true
@@ -18734,8 +18734,8 @@
       "price_in": 0.4,
       "price_out": 1.6,
       "ttft": 0.82,
-      "total_resp": 7.6,
-      "speed": 74.0,
+      "total_resp": 6.77,
+      "speed": 84.0,
       "ctx": 1000000,
       "value": 48.4,
       "size": "Unknown",
@@ -18804,8 +18804,8 @@
       "price_in": 0.4,
       "price_out": 2.0,
       "ttft": 1.49,
-      "total_resp": 6.22,
-      "speed": 106.0,
+      "total_resp": 6.03,
+      "speed": 110.0,
       "ctx": 128000,
       "value": 26.8,
       "size": "Unknown",
@@ -18873,9 +18873,9 @@
       "price": 0.12,
       "price_in": 0.1,
       "price_out": 0.3,
-      "ttft": 0.84,
-      "total_resp": 4.18,
-      "speed": 150.0,
+      "ttft": 0.77,
+      "total_resp": 4.07,
+      "speed": 152.0,
       "ctx": 128000,
       "value": 125.0,
       "size": "Small",
@@ -18997,7 +18997,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 56.5,
+          "r": 56.4,
           "z": 0.43,
           "estimated": false,
           "measured": true
@@ -19067,7 +19067,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 52.2,
+          "r": 52.1,
           "z": 0.14,
           "estimated": false,
           "measured": true
@@ -19208,7 +19208,7 @@
         },
         "instruction": {
           "r": 45.3,
-          "z": -0.31,
+          "z": -0.32,
           "estimated": false,
           "measured": true
         }
@@ -19293,9 +19293,9 @@
       "price": 0.1005,
       "price_in": 0.15,
       "price_out": 0.6,
-      "ttft": 2.32,
-      "total_resp": 20.28,
-      "speed": 139.0,
+      "ttft": 2.33,
+      "total_resp": 19.55,
+      "speed": 145.0,
       "ctx": 128000,
       "value": 139.3,
       "size": "Medium",
@@ -19348,7 +19348,7 @@
         },
         "instruction": {
           "r": 67.6,
-          "z": 1.18,
+          "z": 1.17,
           "estimated": false,
           "measured": true
         }
@@ -19363,9 +19363,9 @@
       "price": 0.083,
       "price_in": 0.07,
       "price_out": 0.2,
-      "ttft": 1.06,
-      "total_resp": 15.97,
-      "speed": 168.0,
+      "ttft": 1.09,
+      "total_resp": 15.83,
+      "speed": 170.0,
       "ctx": 131000,
       "value": 168.7,
       "size": "Small",
@@ -19417,7 +19417,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 56.5,
+          "r": 56.4,
           "z": 0.43,
           "estimated": false,
           "measured": true
@@ -19434,8 +19434,8 @@
       "price_in": 0.45,
       "price_out": 2.25,
       "ttft": 2.68,
-      "total_resp": 7.93,
-      "speed": 95.0,
+      "total_resp": 8.0,
+      "speed": 94.0,
       "ctx": 262000,
       "value": 22.2,
       "size": "Small",
@@ -19503,8 +19503,8 @@
       "price": 0.2675,
       "price_in": 0.25,
       "price_out": 2.0,
-      "ttft": 0.91,
-      "total_resp": 6.25,
+      "ttft": 0.9,
+      "total_resp": 6.24,
       "speed": 94.0,
       "ctx": 400000,
       "value": 52.3,
@@ -19565,6 +19565,76 @@
       }
     },
     {
+      "slug": "ling-26-flash",
+      "name": "Ling 2.6 Flash",
+      "creator": "InclusionAI",
+      "license": "Open",
+      "intel": 14.0,
+      "price": 0.064,
+      "price_in": 0.1,
+      "price_out": 0.3,
+      "ttft": 1.21,
+      "total_resp": 5.8,
+      "speed": 109.0,
+      "ctx": 262000,
+      "value": 218.8,
+      "size": "Medium",
+      "params": 107,
+      "reasoning": false,
+      "status": "past",
+      "priceBucket": "Low",
+      "radar": {
+        "knowledge": {
+          "r": 41.3,
+          "z": -0.58,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 40.4,
+          "z": -0.64,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 45.3,
+          "z": -0.31,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 47.2,
+          "z": -0.19,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 32.8,
+          "z": -1.15,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 42.5,
+          "z": -0.5,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 55.6,
+          "z": 0.37,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
       "slug": "nova-20-pro-preview",
       "name": "Nova 2.0 Pro Preview",
       "creator": "Amazon",
@@ -19573,9 +19643,9 @@
       "price": 2.125,
       "price_in": 1.25,
       "price_out": 10.0,
-      "ttft": 1.11,
-      "total_resp": 6.1,
-      "speed": 100.0,
+      "ttft": 1.05,
+      "total_resp": 5.78,
+      "speed": 106.0,
       "ctx": 256000,
       "value": 6.6,
       "size": "Unknown",
@@ -19643,9 +19713,9 @@
       "price": 0.314,
       "price_in": 0.27,
       "price_out": 0.85,
-      "ttft": 0.96,
+      "ttft": 0.94,
       "total_resp": 5.4,
-      "speed": 113.0,
+      "speed": 112.0,
       "ctx": 1000000,
       "value": 44.6,
       "size": "Large",
@@ -19699,76 +19769,6 @@
         "instruction": {
           "r": 43.6,
           "z": -0.43,
-          "estimated": false,
-          "measured": true
-        }
-      }
-    },
-    {
-      "slug": "ling-26-flash",
-      "name": "Ling 2.6 Flash",
-      "creator": "InclusionAI",
-      "license": "Open",
-      "intel": 14.0,
-      "price": 0.064,
-      "price_in": 0.1,
-      "price_out": 0.3,
-      "ttft": 1.16,
-      "total_resp": 5.17,
-      "speed": 124.0,
-      "ctx": 262000,
-      "value": 218.8,
-      "size": "Medium",
-      "params": 107,
-      "reasoning": false,
-      "status": "past",
-      "priceBucket": "Low",
-      "radar": {
-        "knowledge": {
-          "r": 41.3,
-          "z": -0.58,
-          "estimated": false,
-          "measured": true
-        },
-        "reasoning": {
-          "r": 40.4,
-          "z": -0.64,
-          "estimated": false,
-          "measured": true
-        },
-        "coding": {
-          "r": 45.3,
-          "z": -0.31,
-          "estimated": false,
-          "measured": true
-        },
-        "agentic": {
-          "r": 47.2,
-          "z": -0.19,
-          "estimated": false,
-          "measured": true
-        },
-        "trust": {
-          "r": 32.8,
-          "z": -1.15,
-          "estimated": false,
-          "measured": true
-        },
-        "multimodal": {
-          "r": null,
-          "z": null,
-          "estimated": false,
-          "measured": false
-        },
-        "long_context": {
-          "r": 42.5,
-          "z": -0.5,
-          "estimated": false,
-          "measured": true
-        },
-        "instruction": {
-          "r": 55.6,
-          "z": 0.37,
           "estimated": false,
           "measured": true
         }
@@ -20118,7 +20118,7 @@
         },
         "instruction": {
           "r": 58.2,
-          "z": 0.55,
+          "z": 0.54,
           "estimated": false,
           "measured": true
         }
@@ -20203,9 +20203,9 @@
       "price": 1.47,
       "price_in": 0.7,
       "price_out": 8.4,
-      "ttft": 2.75,
-      "total_resp": 44.6,
-      "speed": 60.0,
+      "ttft": 2.74,
+      "total_resp": 45.69,
+      "speed": 58.0,
       "ctx": 32800,
       "value": 8.8,
       "size": "Large",
@@ -20273,8 +20273,8 @@
       "price": 0.42,
       "price_in": 0.2,
       "price_out": 2.4,
-      "ttft": 2.31,
-      "total_resp": 24.74,
+      "ttft": 2.4,
+      "total_resp": 24.82,
       "speed": 111.0,
       "ctx": 256000,
       "value": 31.0,
@@ -20328,7 +20328,7 @@
         },
         "instruction": {
           "r": 45.3,
-          "z": -0.31,
+          "z": -0.32,
           "estimated": false,
           "measured": true
         }
@@ -20343,9 +20343,9 @@
       "price": 2.1875,
       "price_in": 2.5,
       "price_out": 12.5,
-      "ttft": 2.85,
-      "total_resp": 18.51,
-      "speed": 32.0,
+      "ttft": 2.84,
+      "total_resp": 18.13,
+      "speed": 33.0,
       "ctx": 1000000,
       "value": 5.9,
       "size": "Unknown",
@@ -20413,9 +20413,9 @@
       "price": 0.12,
       "price_in": 0.1,
       "price_out": 0.3,
-      "ttft": 2.41,
-      "total_resp": 6.75,
-      "speed": 115.0,
+      "ttft": 2.25,
+      "total_resp": 6.46,
+      "speed": 119.0,
       "ctx": 262000,
       "value": 108.3,
       "size": "Small",
@@ -20468,7 +20468,7 @@
         },
         "instruction": {
           "r": 45.3,
-          "z": -0.31,
+          "z": -0.32,
           "estimated": false,
           "measured": true
         }
@@ -20903,9 +20903,9 @@
       "price": 0.028,
       "price_in": 0.02,
       "price_out": 0.1,
-      "ttft": 0.91,
-      "total_resp": 41.1,
-      "speed": 62.0,
+      "ttft": 1.05,
+      "total_resp": 51.49,
+      "speed": 50.0,
       "ctx": 128000,
       "value": 428.6,
       "size": "Small",
@@ -20973,9 +20973,9 @@
       "price": 0.4,
       "price_in": 0.4,
       "price_out": 0.4,
-      "ttft": 4.93,
-      "total_resp": 26.7,
-      "speed": 115.0,
+      "ttft": 4.19,
+      "total_resp": 22.85,
+      "speed": 134.0,
       "ctx": 128000,
       "value": 30.0,
       "size": "Medium",
@@ -21043,9 +21043,9 @@
       "price": 0.56,
       "price_in": 0.4,
       "price_out": 2.0,
-      "ttft": 1.59,
-      "total_resp": 11.01,
-      "speed": 53.0,
+      "ttft": 1.49,
+      "total_resp": 10.22,
+      "speed": 57.0,
       "ctx": 128000,
       "value": 21.4,
       "size": "Unknown",
@@ -21113,9 +21113,9 @@
       "price": 0.52,
       "price_in": 0.3,
       "price_out": 2.5,
-      "ttft": 1.2,
-      "total_resp": 4.43,
-      "speed": 155.0,
+      "ttft": 1.15,
+      "total_resp": 4.59,
+      "speed": 145.0,
       "ctx": 1000000,
       "value": 23.1,
       "size": "Unknown",
@@ -21377,8 +21377,8 @@
           "measured": true
         },
         "instruction": {
-          "r": 67.8,
-          "z": 1.18,
+          "r": 68.0,
+          "z": 1.2,
           "estimated": true,
           "measured": true
         }
@@ -21657,7 +21657,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 47.8,
+          "r": 47.7,
           "z": -0.15,
           "estimated": true,
           "measured": true
@@ -22147,7 +22147,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 58.9,
+          "r": 58.8,
           "z": 0.59,
           "estimated": true,
           "measured": true
@@ -22295,76 +22295,6 @@
       }
     },
     {
-      "slug": "gemini-25-flash-lite",
-      "name": "Gemini 2.5 Flash-Lite",
-      "creator": "Google",
-      "license": "Proprietary",
-      "intel": 11.0,
-      "price": 0.067,
-      "price_in": 0.1,
-      "price_out": 0.4,
-      "ttft": 26.39,
-      "total_resp": 27.78,
-      "speed": 358.0,
-      "ctx": 1000000,
-      "value": 164.2,
-      "size": "Unknown",
-      "params": null,
-      "reasoning": true,
-      "status": "past",
-      "priceBucket": "Low",
-      "radar": {
-        "knowledge": {
-          "r": 43.6,
-          "z": -0.42,
-          "estimated": false,
-          "measured": true
-        },
-        "reasoning": {
-          "r": 42.0,
-          "z": -0.53,
-          "estimated": false,
-          "measured": true
-        },
-        "coding": {
-          "r": 34.9,
-          "z": -1.01,
-          "estimated": false,
-          "measured": true
-        },
-        "agentic": {
-          "r": 36.0,
-          "z": -0.93,
-          "estimated": false,
-          "measured": true
-        },
-        "trust": {
-          "r": 48.2,
-          "z": -0.12,
-          "estimated": false,
-          "measured": true
-        },
-        "multimodal": {
-          "r": 42.2,
-          "z": -0.52,
-          "estimated": false,
-          "measured": true
-        },
-        "long_context": {
-          "r": 57.7,
-          "z": 0.52,
-          "estimated": false,
-          "measured": true
-        },
-        "instruction": {
-          "r": 49.6,
-          "z": -0.03,
-          "estimated": false,
-          "measured": true
-        }
-      }
-    },
-    {
       "slug": "qwen3-32b",
       "name": "Qwen3 32B",
       "creator": "Alibaba",
@@ -22374,8 +22304,8 @@
       "price_in": 0.7,
       "price_out": 8.4,
       "ttft": 2.48,
-      "total_resp": 26.67,
-      "speed": 103.0,
+      "total_resp": 26.6,
+      "speed": 104.0,
       "ctx": 32800,
       "value": 12.1,
       "size": "Small",
@@ -22435,6 +22365,76 @@
       }
     },
     {
+      "slug": "gemini-25-flash-lite",
+      "name": "Gemini 2.5 Flash-Lite",
+      "creator": "Google",
+      "license": "Proprietary",
+      "intel": 11.0,
+      "price": 0.067,
+      "price_in": 0.1,
+      "price_out": 0.4,
+      "ttft": 21.93,
+      "total_resp": 23.39,
+      "speed": 343.0,
+      "ctx": 1000000,
+      "value": 164.2,
+      "size": "Unknown",
+      "params": null,
+      "reasoning": true,
+      "status": "past",
+      "priceBucket": "Low",
+      "radar": {
+        "knowledge": {
+          "r": 43.6,
+          "z": -0.42,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 42.0,
+          "z": -0.53,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 34.9,
+          "z": -1.01,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 36.0,
+          "z": -0.93,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 48.2,
+          "z": -0.12,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 42.2,
+          "z": -0.52,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 57.7,
+          "z": 0.52,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 49.6,
+          "z": -0.03,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
       "slug": "magistral-small-12",
       "name": "Magistral Small 1.2",
       "creator": "Mistral",
@@ -22443,9 +22443,9 @@
       "price": 0.6,
       "price_in": 0.5,
       "price_out": 1.5,
-      "ttft": 0.83,
-      "total_resp": 16.88,
-      "speed": 156.0,
+      "ttft": 0.82,
+      "total_resp": 17.21,
+      "speed": 152.0,
       "ctx": 128000,
       "value": 18.3,
       "size": "Small",
@@ -22514,8 +22514,8 @@
       "price_in": 0.2,
       "price_out": 0.2,
       "ttft": 0.84,
-      "total_resp": 6.27,
-      "speed": 92.0,
+      "total_resp": 6.04,
+      "speed": 96.0,
       "ctx": 256000,
       "value": 55.0,
       "size": "Small",
@@ -22583,9 +22583,9 @@
       "price": 2.55,
       "price_in": 2.5,
       "price_out": 10.0,
-      "ttft": 0.8,
-      "total_resp": 4.33,
-      "speed": 141.0,
+      "ttft": 0.86,
+      "total_resp": 4.52,
+      "speed": 137.0,
       "ctx": 128000,
       "value": 4.3,
       "size": "Unknown",
@@ -22653,9 +22653,9 @@
       "price": 0.12,
       "price_in": 0.1,
       "price_out": 0.3,
-      "ttft": 0.78,
-      "total_resp": 4.12,
-      "speed": 150.0,
+      "ttft": 0.77,
+      "total_resp": 4.18,
+      "speed": 147.0,
       "ctx": 128000,
       "value": 91.7,
       "size": "Small",
@@ -23073,8 +23073,8 @@
       "price": 0.74,
       "price_in": 0.7,
       "price_out": 1.1,
-      "ttft": 0.69,
-      "total_resp": 90.01,
+      "ttft": 0.74,
+      "total_resp": 88.81,
       "speed": 28.0,
       "ctx": 128000,
       "value": 13.5,
@@ -23143,8 +23143,8 @@
       "price": 0.455,
       "price_in": 0.35,
       "price_out": 4.2,
-      "ttft": 2.74,
-      "total_resp": 43.44,
+      "ttft": 2.72,
+      "total_resp": 43.77,
       "speed": 61.0,
       "ctx": 32800,
       "value": 22.0,
@@ -23214,7 +23214,7 @@
       "price_in": 0.13,
       "price_out": 0.4,
       "ttft": 1.38,
-      "total_resp": 31.26,
+      "total_resp": 31.15,
       "speed": 84.0,
       "ctx": 128000,
       "value": 63.7,
@@ -23284,8 +23284,8 @@
       "price_in": 0.25,
       "price_out": 0.97,
       "ttft": 1.9,
-      "total_resp": 27.21,
-      "speed": 99.0,
+      "total_resp": 27.47,
+      "speed": 98.0,
       "ctx": 65500,
       "value": 31.1,
       "size": "Small",
@@ -23353,9 +23353,9 @@
       "price": 0.372,
       "price_in": 0.18,
       "price_out": 2.1,
-      "ttft": 2.35,
-      "total_resp": 25.33,
-      "speed": 109.0,
+      "ttft": 2.4,
+      "total_resp": 25.19,
+      "speed": 110.0,
       "ctx": 256000,
       "value": 26.9,
       "size": "Small",
@@ -23423,9 +23423,9 @@
       "price": 0.183,
       "price_in": 0.14,
       "price_out": 0.57,
-      "ttft": 2.24,
-      "total_resp": 7.65,
-      "speed": 92.0,
+      "ttft": 2.25,
+      "total_resp": 7.57,
+      "speed": 94.0,
       "ctx": 128000,
       "value": 54.6,
       "size": "Medium",
@@ -23493,9 +23493,9 @@
       "price": 0.228,
       "price_in": 0.18,
       "price_out": 0.66,
-      "ttft": 0.82,
-      "total_resp": 4.75,
-      "speed": 127.0,
+      "ttft": 0.78,
+      "total_resp": 4.54,
+      "speed": 133.0,
       "ctx": 10000000,
       "value": 43.9,
       "size": "Medium",
@@ -23563,9 +23563,9 @@
       "price": 0.0775,
       "price_in": 0.1,
       "price_out": 0.4,
-      "ttft": 0.63,
-      "total_resp": 4.13,
-      "speed": 143.0,
+      "ttft": 0.66,
+      "total_resp": 3.77,
+      "speed": 161.0,
       "ctx": 1000000,
       "value": 129.0,
       "size": "Unknown",
@@ -24193,9 +24193,9 @@
       "price": 1.2,
       "price_in": 1.0,
       "price_out": 3.0,
-      "ttft": 2.55,
-      "total_resp": 80.38,
-      "speed": 32.0,
+      "ttft": 2.51,
+      "total_resp": 79.03,
+      "speed": 33.0,
       "ctx": 128000,
       "value": 7.5,
       "size": "Large",
@@ -24263,8 +24263,8 @@
       "price": 0.72,
       "price_in": 0.6,
       "price_out": 1.8,
-      "ttft": 2.35,
-      "total_resp": 50.02,
+      "ttft": 2.36,
+      "total_resp": 50.06,
       "speed": 52.0,
       "ctx": 128000,
       "value": 12.5,
@@ -24333,9 +24333,9 @@
       "price": 0.72,
       "price_in": 0.6,
       "price_out": 1.8,
-      "ttft": 1.81,
-      "total_resp": 38.82,
-      "speed": 68.0,
+      "ttft": 1.72,
+      "total_resp": 32.85,
+      "speed": 80.0,
       "ctx": 64000,
       "value": 12.5,
       "size": "Medium",
@@ -24395,76 +24395,6 @@
       }
     },
     {
-      "slug": "nvidia-nemotron-nano-12b-v2-vl",
-      "name": "NVIDIA Nemotron Nano 12B v2 VL",
-      "creator": "NVIDIA",
-      "license": "Open",
-      "intel": 9.0,
-      "price": 0.24,
-      "price_in": 0.2,
-      "price_out": 0.6,
-      "ttft": 4.33,
-      "total_resp": 30.77,
-      "speed": 95.0,
-      "ctx": 128000,
-      "value": 37.5,
-      "size": "Small",
-      "params": 13.2,
-      "reasoning": false,
-      "status": "current",
-      "priceBucket": "Medium",
-      "radar": {
-        "knowledge": {
-          "r": 40.2,
-          "z": -0.65,
-          "estimated": false,
-          "measured": true
-        },
-        "reasoning": {
-          "r": 39.9,
-          "z": -0.68,
-          "estimated": false,
-          "measured": true
-        },
-        "coding": {
-          "r": 39.7,
-          "z": -0.69,
-          "estimated": false,
-          "measured": true
-        },
-        "agentic": {
-          "r": 36.9,
-          "z": -0.87,
-          "estimated": false,
-          "measured": true
-        },
-        "trust": {
-          "r": 36.6,
-          "z": -0.89,
-          "estimated": false,
-          "measured": true
-        },
-        "multimodal": {
-          "r": 37.0,
-          "z": -0.86,
-          "estimated": false,
-          "measured": true
-        },
-        "long_context": {
-          "r": 50.1,
-          "z": 0.01,
-          "estimated": false,
-          "measured": true
-        },
-        "instruction": {
-          "r": 34.1,
-          "z": -1.06,
-          "estimated": false,
-          "measured": true
-        }
-      }
-    },
-    {
       "slug": "qwen3-30b",
       "name": "Qwen3 30B",
       "creator": "Alibaba",
@@ -24473,9 +24403,9 @@
       "price": 0.26,
       "price_in": 0.2,
       "price_out": 2.4,
-      "ttft": 2.19,
-      "total_resp": 25.43,
-      "speed": 108.0,
+      "ttft": 2.18,
+      "total_resp": 25.84,
+      "speed": 106.0,
       "ctx": 32800,
       "value": 34.6,
       "size": "Small",
@@ -24535,6 +24465,76 @@
       }
     },
     {
+      "slug": "nvidia-nemotron-nano-12b-v2-vl",
+      "name": "NVIDIA Nemotron Nano 12B v2 VL",
+      "creator": "NVIDIA",
+      "license": "Open",
+      "intel": 9.0,
+      "price": 0.24,
+      "price_in": 0.2,
+      "price_out": 0.6,
+      "ttft": 3.75,
+      "total_resp": 22.16,
+      "speed": 136.0,
+      "ctx": 128000,
+      "value": 37.5,
+      "size": "Small",
+      "params": 13.2,
+      "reasoning": false,
+      "status": "current",
+      "priceBucket": "Medium",
+      "radar": {
+        "knowledge": {
+          "r": 40.2,
+          "z": -0.65,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 39.9,
+          "z": -0.68,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 39.7,
+          "z": -0.69,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 36.9,
+          "z": -0.87,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 36.6,
+          "z": -0.89,
+          "estimated": false,
+          "measured": true
+        },
+        "multimodal": {
+          "r": 37.0,
+          "z": -0.86,
+          "estimated": false,
+          "measured": true
+        },
+        "long_context": {
+          "r": 50.1,
+          "z": 0.01,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 34.1,
+          "z": -1.06,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
       "slug": "nvidia-nemotron-nano-9b-v2",
       "name": "NVIDIA Nemotron Nano 9B V2",
       "creator": "NVIDIA",
@@ -24543,9 +24543,9 @@
       "price": 0.052,
       "price_in": 0.04,
       "price_out": 0.16,
-      "ttft": 3.78,
-      "total_resp": 17.53,
-      "speed": 182.0,
+      "ttft": 4.1,
+      "total_resp": 18.06,
+      "speed": 179.0,
       "ctx": 131000,
       "value": 173.1,
       "size": "Small",
@@ -24613,9 +24613,9 @@
       "price": 0.6615,
       "price_in": 0.66,
       "price_out": 0.72,
-      "ttft": 1.75,
-      "total_resp": 7.82,
-      "speed": 82.0,
+      "ttft": 1.66,
+      "total_resp": 7.64,
+      "speed": 84.0,
       "ctx": 128000,
       "value": 13.6,
       "size": "Medium",
@@ -24683,9 +24683,9 @@
       "price": 2.375,
       "price_in": 2.5,
       "price_out": 10.0,
-      "ttft": 1.01,
-      "total_resp": 5.59,
-      "speed": 109.0,
+      "ttft": 0.92,
+      "total_resp": 4.96,
+      "speed": 124.0,
       "ctx": 128000,
       "value": 3.8,
       "size": "Unknown",
@@ -24753,9 +24753,9 @@
       "price": 0.15,
       "price_in": 0.15,
       "price_out": 0.15,
-      "ttft": 0.75,
-      "total_resp": 5.3,
-      "speed": 110.0,
+      "ttft": 0.72,
+      "total_resp": 4.64,
+      "speed": 128.0,
       "ctx": 256000,
       "value": 60.0,
       "size": "Small",
@@ -25297,7 +25297,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 56.5,
+          "r": 56.4,
           "z": 0.43,
           "estimated": false,
           "measured": true
@@ -25593,8 +25593,8 @@
       "price": 0.232,
       "price_in": 0.18,
       "price_out": 2.1,
-      "ttft": 3.79,
-      "total_resp": 67.43,
+      "ttft": 3.7,
+      "total_resp": 68.34,
       "speed": 39.0,
       "ctx": 131000,
       "value": 34.5,
@@ -25663,8 +25663,8 @@
       "price": 12,
       "price_in": 10.0,
       "price_out": 30.0,
-      "ttft": 3.17,
-      "total_resp": 18.95,
+      "ttft": 3.11,
+      "total_resp": 18.86,
       "speed": 32.0,
       "ctx": 128000,
       "value": 0.7,
@@ -25733,9 +25733,9 @@
       "price": 0,
       "price_in": 0.0,
       "price_out": 0.0,
-      "ttft": 2.02,
-      "total_resp": 9.36,
-      "speed": 341.0,
+      "ttft": 1.93,
+      "total_resp": 9.33,
+      "speed": 338.0,
       "ctx": 32800,
       "value": null,
       "size": "Small",
@@ -25788,7 +25788,7 @@
         },
         "instruction": {
           "r": 54.7,
-          "z": 0.32,
+          "z": 0.31,
           "estimated": false,
           "measured": true
         }
@@ -25803,9 +25803,9 @@
       "price": 6,
       "price_in": 5.0,
       "price_out": 15.0,
-      "ttft": 0.99,
-      "total_resp": 5.86,
-      "speed": 103.0,
+      "ttft": 0.87,
+      "total_resp": 5.09,
+      "speed": 119.0,
       "ctx": 128000,
       "value": 1.3,
       "size": "Unknown",
@@ -25873,9 +25873,9 @@
       "price": 0.0535,
       "price_in": 0.05,
       "price_out": 0.4,
-      "ttft": 0.83,
-      "total_resp": 4.4,
-      "speed": 140.0,
+      "ttft": 0.81,
+      "total_resp": 4.3,
+      "speed": 143.0,
       "ctx": 400000,
       "value": 149.5,
       "size": "Unknown",
@@ -26557,7 +26557,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 59.8,
+          "r": 59.7,
           "z": 0.65,
           "estimated": true,
           "measured": true
@@ -26627,7 +26627,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 28.9,
+          "r": 29.0,
           "z": -1.4,
           "estimated": false,
           "measured": true
@@ -26993,9 +26993,9 @@
       "price": 0.56,
       "price_in": 0.56,
       "price_out": 0.56,
-      "ttft": 1.46,
-      "total_resp": 11.36,
-      "speed": 50.0,
+      "ttft": 1.43,
+      "total_resp": 10.76,
+      "speed": 54.0,
       "ctx": 128000,
       "value": 12.5,
       "size": "Medium",
@@ -27063,9 +27063,9 @@
       "price": 3.25,
       "price_in": 2.5,
       "price_out": 10.0,
-      "ttft": 1.91,
-      "total_resp": 10.54,
-      "speed": 58.0,
+      "ttft": 1.64,
+      "total_resp": 9.8,
+      "speed": 61.0,
       "ctx": 256000,
       "value": 2.2,
       "size": "Medium",
@@ -27133,9 +27133,9 @@
       "price": 1.2,
       "price_in": 1.2,
       "price_out": 1.2,
-      "ttft": 5.59,
-      "total_resp": 10.02,
-      "speed": 113.0,
+      "ttft": 3.73,
+      "total_resp": 7.38,
+      "speed": 137.0,
       "ctx": 128000,
       "value": 5.8,
       "size": "Medium",
@@ -27203,8 +27203,8 @@
       "price": 0.1425,
       "price_in": 0.15,
       "price_out": 0.6,
-      "ttft": 1.02,
-      "total_resp": 6.69,
+      "ttft": 0.95,
+      "total_resp": 6.6,
       "speed": 88.0,
       "ctx": 128000,
       "value": 49.1,
@@ -27274,8 +27274,8 @@
       "price_in": 0.02,
       "price_out": 0.05,
       "ttft": 0.96,
-      "total_resp": 4.74,
-      "speed": 132.0,
+      "total_resp": 4.77,
+      "speed": 131.0,
       "ctx": 128000,
       "value": 304.3,
       "size": "Small",
@@ -27335,76 +27335,6 @@
       }
     },
     {
-      "slug": "mistral-small-3",
-      "name": "Mistral Small 3",
-      "creator": "Mistral",
-      "license": "Open",
-      "intel": 7.0,
-      "price": 0.12,
-      "price_in": 0.1,
-      "price_out": 0.3,
-      "ttft": 0.92,
-      "total_resp": 4.22,
-      "speed": 151.0,
-      "ctx": 32000,
-      "value": 58.3,
-      "size": "Small",
-      "params": 24,
-      "reasoning": false,
-      "status": "past",
-      "priceBucket": "Low",
-      "radar": {
-        "knowledge": {
-          "r": 39.6,
-          "z": -0.69,
-          "estimated": false,
-          "measured": true
-        },
-        "reasoning": {
-          "r": 41.6,
-          "z": -0.56,
-          "estimated": false,
-          "measured": true
-        },
-        "coding": {
-          "r": 45.0,
-          "z": -0.34,
-          "estimated": false,
-          "measured": true
-        },
-        "agentic": {
-          "r": 40.3,
-          "z": -0.65,
-          "estimated": false,
-          "measured": true
-        },
-        "trust": {
-          "r": 57.9,
-          "z": 0.53,
-          "estimated": true,
-          "measured": true
-        },
-        "multimodal": {
-          "r": null,
-          "z": null,
-          "estimated": false,
-          "measured": false
-        },
-        "long_context": {
-          "r": 27.2,
-          "z": -1.52,
-          "estimated": false,
-          "measured": true
-        },
-        "instruction": {
-          "r": 28.9,
-          "z": -1.4,
-          "estimated": false,
-          "measured": true
-        }
-      }
-    },
-    {
       "slug": "nova-lite",
       "name": "Nova Lite",
       "creator": "Amazon",
@@ -27413,9 +27343,9 @@
       "price": 0.0465,
       "price_in": 0.06,
       "price_out": 0.24,
-      "ttft": 0.98,
-      "total_resp": 4.16,
-      "speed": 157.0,
+      "ttft": 0.97,
+      "total_resp": 4.14,
+      "speed": 158.0,
       "ctx": 300000,
       "value": 150.5,
       "size": "Unknown",
@@ -27475,6 +27405,76 @@
       }
     },
     {
+      "slug": "mistral-small-3",
+      "name": "Mistral Small 3",
+      "creator": "Mistral",
+      "license": "Open",
+      "intel": 7.0,
+      "price": 0.12,
+      "price_in": 0.1,
+      "price_out": 0.3,
+      "ttft": 0.86,
+      "total_resp": 4.05,
+      "speed": 157.0,
+      "ctx": 32000,
+      "value": 58.3,
+      "size": "Small",
+      "params": 24,
+      "reasoning": false,
+      "status": "past",
+      "priceBucket": "Low",
+      "radar": {
+        "knowledge": {
+          "r": 39.6,
+          "z": -0.69,
+          "estimated": false,
+          "measured": true
+        },
+        "reasoning": {
+          "r": 41.6,
+          "z": -0.56,
+          "estimated": false,
+          "measured": true
+        },
+        "coding": {
+          "r": 45.0,
+          "z": -0.34,
+          "estimated": false,
+          "measured": true
+        },
+        "agentic": {
+          "r": 40.3,
+          "z": -0.65,
+          "estimated": false,
+          "measured": true
+        },
+        "trust": {
+          "r": 57.9,
+          "z": 0.53,
+          "estimated": true,
+          "measured": true
+        },
+        "multimodal": {
+          "r": null,
+          "z": null,
+          "estimated": false,
+          "measured": false
+        },
+        "long_context": {
+          "r": 27.2,
+          "z": -1.52,
+          "estimated": false,
+          "measured": true
+        },
+        "instruction": {
+          "r": 29.0,
+          "z": -1.4,
+          "estimated": false,
+          "measured": true
+        }
+      }
+    },
+    {
       "slug": "ministral-3-3b",
       "name": "Ministral 3 3B",
       "creator": "Mistral",
@@ -27484,8 +27484,8 @@
       "price_in": 0.1,
       "price_out": 0.1,
       "ttft": 0.65,
-      "total_resp": 3.09,
-      "speed": 205.0,
+      "total_resp": 3.12,
+      "speed": 202.0,
       "ctx": 256000,
       "value": 70.0,
       "size": "Tiny",
@@ -28183,9 +28183,9 @@
       "price": 0,
       "price_in": 0.0,
       "price_out": 0.0,
-      "ttft": 0.84,
-      "total_resp": 12.31,
-      "speed": 44.0,
+      "ttft": 0.87,
+      "total_resp": 12.37,
+      "speed": 43.0,
       "ctx": 128000,
       "value": null,
       "size": "Tiny",
@@ -28237,7 +28237,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 24.6,
+          "r": 24.7,
           "z": -1.69,
           "estimated": false,
           "measured": true
@@ -28253,9 +28253,9 @@
       "price": 0.26,
       "price_in": 0.2,
       "price_out": 0.8,
-      "ttft": 2.35,
-      "total_resp": 11.18,
-      "speed": 57.0,
+      "ttft": 2.36,
+      "total_resp": 11.25,
+      "speed": 56.0,
       "ctx": 128000,
       "value": 23.1,
       "size": "Small",
@@ -28323,9 +28323,9 @@
       "price": 0.065,
       "price_in": 0.05,
       "price_out": 0.2,
-      "ttft": 2.24,
-      "total_resp": 6.86,
-      "speed": 108.0,
+      "ttft": 2.16,
+      "total_resp": 6.87,
+      "speed": 106.0,
       "ctx": 1000000,
       "value": 92.3,
       "size": "Unknown",
@@ -28393,9 +28393,9 @@
       "price": 0.055,
       "price_in": 0.05,
       "price_out": 0.1,
-      "ttft": 0.76,
-      "total_resp": 5.17,
-      "speed": 113.0,
+      "ttft": 0.75,
+      "total_resp": 5.02,
+      "speed": 117.0,
       "ctx": 131000,
       "value": 109.1,
       "size": "Small",
@@ -28797,7 +28797,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 28.9,
+          "r": 29.0,
           "z": -1.4,
           "estimated": false,
           "measured": true
@@ -29443,9 +29443,9 @@
       "price": 0.079,
       "price_in": 0.06,
       "price_out": 0.25,
-      "ttft": 18.87,
-      "total_resp": 37.55,
-      "speed": 27.0,
+      "ttft": 39.41,
+      "total_resp": 77.98,
+      "speed": 13.0,
       "ctx": 128000,
       "value": 63.3,
       "size": "Small",
@@ -29513,9 +29513,9 @@
       "price": 0.1625,
       "price_in": 0.13,
       "price_out": 0.5,
-      "ttft": 2.61,
-      "total_resp": 19.58,
-      "speed": 29.0,
+      "ttft": 3.31,
+      "total_resp": 24.26,
+      "speed": 24.0,
       "ctx": 16000,
       "value": 30.8,
       "size": "Small",
@@ -29583,9 +29583,9 @@
       "price": 0.7,
       "price_in": 0.7,
       "price_out": 0.7,
-      "ttft": 2.01,
-      "total_resp": 16.73,
-      "speed": 34.0,
+      "ttft": 2.0,
+      "total_resp": 17.42,
+      "speed": 32.0,
       "ctx": 128000,
       "value": 7.1,
       "size": "Medium",
@@ -29707,7 +29707,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 24.6,
+          "r": 24.7,
           "z": -1.69,
           "estimated": false,
           "measured": true
@@ -30353,9 +30353,9 @@
       "price": 0,
       "price_in": 0.0,
       "price_out": 0.0,
-      "ttft": 0.85,
-      "total_resp": 29.37,
-      "speed": 18.0,
+      "ttft": 0.83,
+      "total_resp": 29.73,
+      "speed": 17.0,
       "ctx": 128000,
       "value": null,
       "size": "Small",
@@ -30423,9 +30423,9 @@
       "price": 0.24,
       "price_in": 0.2,
       "price_out": 0.6,
-      "ttft": 0.9,
-      "total_resp": 4.14,
-      "speed": 154.0,
+      "ttft": 0.74,
+      "total_resp": 3.97,
+      "speed": 155.0,
       "ctx": 32800,
       "value": 16.7,
       "size": "Small",
@@ -30494,8 +30494,8 @@
       "price_in": 0.04,
       "price_out": 0.14,
       "ttft": 0.87,
-      "total_resp": 2.54,
-      "speed": 299.0,
+      "total_resp": 2.6,
+      "speed": 289.0,
       "ctx": 130000,
       "value": 147.6,
       "size": "Unknown",
@@ -30897,7 +30897,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 28.9,
+          "r": 29.0,
           "z": -1.4,
           "estimated": false,
           "measured": true
@@ -31683,9 +31683,9 @@
       "price": 0.345,
       "price_in": 0.34,
       "price_out": 0.34,
-      "ttft": 1.41,
-      "total_resp": 26.21,
-      "speed": 20.0,
+      "ttft": 1.13,
+      "total_resp": 12.48,
+      "speed": 44.0,
       "ctx": 128000,
       "value": 8.7,
       "size": "Small",
@@ -31753,9 +31753,9 @@
       "price": 2.1,
       "price_in": 1.5,
       "price_out": 7.5,
-      "ttft": 2.16,
-      "total_resp": 6.13,
-      "speed": 126.0,
+      "ttft": 2.15,
+      "total_resp": 5.76,
+      "speed": 138.0,
       "ctx": 32800,
       "value": 1.4,
       "size": "Unknown",
@@ -31823,9 +31823,9 @@
       "price": 0.195,
       "price_in": 0.15,
       "price_out": 0.6,
-      "ttft": 0.82,
-      "total_resp": 4.11,
-      "speed": 152.0,
+      "ttft": 0.76,
+      "total_resp": 4.09,
+      "speed": 150.0,
       "ctx": 32800,
       "value": 15.4,
       "size": "Unknown",
@@ -33348,7 +33348,7 @@
         },
         "instruction": {
           "r": 56.2,
-          "z": 0.42,
+          "z": 0.41,
           "estimated": true,
           "measured": true
         }
@@ -33503,9 +33503,9 @@
       "price": 0.25,
       "price_in": 0.25,
       "price_out": 0.25,
-      "ttft": 0.78,
-      "total_resp": 4.67,
-      "speed": 129.0,
+      "ttft": 0.79,
+      "total_resp": 4.57,
+      "speed": 132.0,
       "ctx": 8189,
       "value": 8.0,
       "size": "Small",
@@ -34047,7 +34047,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 28.9,
+          "r": 29.0,
           "z": -1.4,
           "estimated": false,
           "measured": true
@@ -34327,7 +34327,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 33.7,
+          "r": 33.8,
           "z": -1.08,
           "estimated": true,
           "measured": true
@@ -34467,7 +34467,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 24.6,
+          "r": 24.7,
           "z": -1.69,
           "estimated": false,
           "measured": true
@@ -34817,7 +34817,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 28.9,
+          "r": 29.0,
           "z": -1.4,
           "estimated": false,
           "measured": true
@@ -34973,9 +34973,9 @@
       "price": 0.052,
       "price_in": 0.03,
       "price_out": 0.25,
-      "ttft": 27.82,
-      "total_resp": 61.98,
-      "speed": 15.0,
+      "ttft": 27.69,
+      "total_resp": 58.99,
+      "speed": 16.0,
       "ctx": 128000,
       "value": 19.2,
       "size": "Small",
@@ -35043,9 +35043,9 @@
       "price": 0.066,
       "price_in": 0.06,
       "price_out": 0.12,
-      "ttft": 1.22,
-      "total_resp": 10.4,
-      "speed": 54.0,
+      "ttft": 1.23,
+      "total_resp": 10.3,
+      "speed": 55.0,
       "ctx": 32000,
       "value": 15.2,
       "size": "Small",
@@ -35114,8 +35114,8 @@
       "price_in": 0.0,
       "price_out": 0.0,
       "ttft": 1.06,
-      "total_resp": 2.49,
-      "speed": 349.0,
+      "total_resp": 2.47,
+      "speed": 354.0,
       "ctx": 32000,
       "value": null,
       "size": "Tiny",
@@ -35447,7 +35447,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 20.3,
+          "r": 20.4,
           "z": -1.98,
           "estimated": false,
           "measured": true
@@ -35517,7 +35517,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 28.9,
+          "r": 29.0,
           "z": -1.4,
           "estimated": false,
           "measured": true
@@ -36023,8 +36023,8 @@
       "price": 1.54,
       "price_in": 2.0,
       "price_out": 10.0,
-      "ttft": 25.57,
-      "total_resp": 32.01,
+      "ttft": 33.41,
+      "total_resp": 39.85,
       "speed": 78.0,
       "ctx": 1000000,
       "value": null,
@@ -36093,8 +36093,8 @@
       "price": 1.54,
       "price_in": 2.0,
       "price_out": 10.0,
-      "ttft": 8.29,
-      "total_resp": 15.54,
+      "ttft": 7.98,
+      "total_resp": 15.21,
       "speed": 69.0,
       "ctx": 1000000,
       "value": null,
@@ -36147,7 +36147,7 @@
           "measured": true
         },
         "instruction": {
-          "r": 68.2,
+          "r": 68.1,
           "z": 1.21,
           "estimated": true,
           "measured": true
@@ -36163,8 +36163,8 @@
       "price": 1.54,
       "price_in": 2.0,
       "price_out": 10.0,
-      "ttft": 2.56,
-      "total_resp": 10.16,
+      "ttft": 2.19,
+      "total_resp": 9.79,
       "speed": 66.0,
       "ctx": 1000000,
       "value": null,
@@ -36217,8 +36217,8 @@
           "measured": true
         },
         "instruction": {
-          "r": 62.9,
-          "z": 0.86,
+          "r": 63.2,
+          "z": 0.88,
           "estimated": true,
           "measured": true
         }
@@ -36233,9 +36233,9 @@
       "price": 1.54,
       "price_in": 2.0,
       "price_out": 10.0,
-      "ttft": 2.83,
-      "total_resp": 10.07,
-      "speed": 69.0,
+      "ttft": 1.94,
+      "total_resp": 9.5,
+      "speed": 66.0,
       "ctx": 1000000,
       "value": null,
       "size": "Unknown",
@@ -36567,8 +36567,8 @@
           "measured": true
         },
         "instruction": {
-          "r": 67.5,
-          "z": 1.17,
+          "r": 67.7,
+          "z": 1.18,
           "estimated": true,
           "measured": true
         }

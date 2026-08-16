@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4o mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-15
-timestamp: 2026-08-15T00:00:00Z
+updated: 2026-08-16
+timestamp: 2026-08-16T00:00:00Z
 ---
 
 # GPT-4o mini
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **7.0** ·
 - **약점**: 에이전트, 멀티모달
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.6 · 혼합 $0.1425/1M · 88.0 t/s · TTFT 1.02s · 128k ctx` · 가성비 49.1
+`입력 $0.15 · 출력 $0.6 · 혼합 $0.1425/1M · 88.0 t/s · TTFT 0.95s · 128k ctx` · 가성비 49.1
 
 ## 레이더 8축 (평균=50 기준선)
 

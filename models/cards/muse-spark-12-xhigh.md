@@ -19,13 +19,13 @@ radar:
   trust: { s: 75.6, z: 2.14, r: 82.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 100.0, z: 1.5, r: 72.5, estimated: false }  # 긴문맥
-  instruction: { s: 74.5, z: 0.83, r: 62.4, estimated: true }  # 지시 따르기
+  instruction: { s: 74.5, z: 0.82, r: 62.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Spark 1.2 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-15
-timestamp: 2026-08-15T00:00:00Z
+updated: 2026-08-16
+timestamp: 2026-08-16T00:00:00Z
 ---
 
 # Muse Spark 1.2 (xhigh)
@@ -50,7 +50,7 @@ Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **57.0**
 | 신뢰성 | 82.1 | +2.14 | 실측 | [[aa-omniscience]] 67.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 72.5 | +1.5 | 실측 | [[aa-lcr]] 83.0%×1.0 |
-| 지시 따르기 | 62.4 | +0.83 | 추정 | (추정) |
+| 지시 따르기 | 62.4 | +0.82 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

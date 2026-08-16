@@ -19,13 +19,13 @@ radar:
   trust: { s: 55.8, z: 1.27, r: 69.0, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 56.9, z: 0.2, r: 52.9, estimated: true }  # 긴문맥
-  instruction: { s: 50.5, z: -0.15, r: 47.8, estimated: true }  # 지시 따르기
+  instruction: { s: 50.5, z: -0.15, r: 47.7, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4o (Mar)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-15
-timestamp: 2026-08-15T00:00:00Z
+updated: 2026-08-16
+timestamp: 2026-08-16T00:00:00Z
 ---
 
 # GPT-4o (Mar)
@@ -50,7 +50,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **12.0** �
 | 신뢰성 | 69.0 | +1.27 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 52.9 | +0.2 | 추정 | (추정) |
-| 지시 따르기 | 47.8 | -0.15 | 추정 | (추정) |
+| 지시 따르기 | 47.7 | -0.15 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -19,13 +19,13 @@ radar:
   trust: { s: 20.9, z: -0.27, r: 45.9, estimated: false }  # 신뢰성
   multimodal: { s: 74.3, z: 0.1, r: 51.4, estimated: false }  # 멀티모달
   long_context: { s: 62.7, z: 0.37, r: 55.6, estimated: false }  # 긴문맥
-  instruction: { s: 64.8, z: 0.43, r: 56.5, estimated: false }  # 지시 따르기
+  instruction: { s: 64.8, z: 0.43, r: 56.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — EXAONE 4.5 33B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-15
-timestamp: 2026-08-15T00:00:00Z
+updated: 2026-08-16
+timestamp: 2026-08-16T00:00:00Z
 ---
 
 # EXAONE 4.5 33B
@@ -50,7 +50,7 @@ LG AI Research · Open · Small(34.4B) · 컨텍스트 262k · 종합지능 **21
 | 신뢰성 | 45.9 | -0.27 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
 | 멀티모달 | 51.4 | +0.1 | 실측 | [[mmmu-pro]] 67.0%×1.0 |
 | 긴문맥 | 55.6 | +0.37 | 실측 | [[aa-lcr]] 52.0%×1.0 |
-| 지시 따르기 | 56.5 | +0.43 | 실측 | [[ifbench]] 58.0%×1.0 |
+| 지시 따르기 | 56.4 | +0.43 | 실측 | [[ifbench]] 58.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

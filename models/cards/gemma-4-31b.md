@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 31B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-15
-timestamp: 2026-08-15T00:00:00Z
+updated: 2026-08-16
+timestamp: 2026-08-16T00:00:00Z
 ---
 
 # Gemma 4 31B
@@ -37,7 +37,7 @@ Google · Open · Small(30.7B) · 컨텍스트 256k · 종합지능 **30.0**
 - **약점**: 전문 지식, 신뢰성
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0.167/1M · 35.0 t/s · TTFT 1.11s · 256k ctx` · 가성비 179.6
+`입력 $0.0 · 출력 $0.0 · 혼합 $0.167/1M · 35.0 t/s · TTFT 1.1s · 256k ctx` · 가성비 179.6
 
 ## 레이더 8축 (평균=50 기준선)
 

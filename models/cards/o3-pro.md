@@ -19,13 +19,13 @@ radar:
   trust: { s: 8.8, z: -0.81, r: 37.9, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 92.3, z: 1.27, r: 69.0, estimated: true }  # 긴문맥
-  instruction: { s: 83.9, z: 1.21, r: 68.2, estimated: true }  # 지시 따르기
+  instruction: { s: 83.9, z: 1.21, r: 68.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — o3-pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-15
-timestamp: 2026-08-15T00:00:00Z
+updated: 2026-08-16
+timestamp: 2026-08-16T00:00:00Z
 ---
 
 # o3-pro
@@ -50,7 +50,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **33.0** �
 | 신뢰성 | 37.9 | -0.81 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 69.0 | +1.27 | 추정 | (추정) |
-| 지시 따르기 | 68.2 | +1.21 | 추정 | (추정) |
+| 지시 따르기 | 68.1 | +1.21 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

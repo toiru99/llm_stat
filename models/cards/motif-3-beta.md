@@ -19,13 +19,13 @@ radar:
   trust: { s: 57.0, z: 1.32, r: 69.8, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 85.5, z: 1.06, r: 65.9, estimated: false }  # 긴문맥
-  instruction: { s: 82.0, z: 1.13, r: 67.0, estimated: true }  # 지시 따르기
+  instruction: { s: 82.3, z: 1.14, r: 67.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Motif 3 (Beta)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-15
-timestamp: 2026-08-15T00:00:00Z
+updated: 2026-08-16
+timestamp: 2026-08-16T00:00:00Z
 ---
 
 # Motif 3 (Beta)
@@ -50,7 +50,7 @@ Motif Technologies · Proprietary · Large(314B) · 컨텍스트 262k · 종합�
 | 신뢰성 | 69.8 | +1.32 | 실측 | [[aa-omniscience]] 51.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 65.9 | +1.06 | 실측 | [[aa-lcr]] 71.0%×1.0 |
-| 지시 따르기 | 67.0 | +1.13 | 추정 | (추정) |
+| 지시 따르기 | 67.1 | +1.14 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
