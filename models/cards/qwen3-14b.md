@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 14B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-16
-timestamp: 2026-08-16T00:00:00Z
+updated: 2026-08-17
+timestamp: 2026-08-17T00:00:00Z
 ---
 
 # Qwen3 14B
@@ -37,7 +37,7 @@ Alibaba · Open · Small(14.8B) · 컨텍스트 32k · 종합지능 **10.0** · 
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.35 · 출력 $4.2 · 혼합 $0.455/1M · 61.0 t/s · TTFT 2.72s · 32k ctx` · 가성비 22.0
+`입력 $0.35 · 출력 $4.2 · 혼합 $0.455/1M · 61.0 t/s · TTFT 2.7s · 32k ctx` · 가성비 22.0
 
 ## 레이더 8축 (평균=50 기준선)
 

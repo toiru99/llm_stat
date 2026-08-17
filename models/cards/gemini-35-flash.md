@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.5 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-16
-timestamp: 2026-08-16T00:00:00Z
+updated: 2026-08-17
+timestamp: 2026-08-17T00:00:00Z
 ---
 
 # Gemini 3.5 Flash
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **52.0** · 
 - **약점**: 멀티모달, 신뢰성
 
 ## 실용 지표
-`입력 $1.5 · 출력 $9.0 · 혼합 $1.305/1M · 183.0 t/s · TTFT 25.03s · 1M ctx` · 가성비 39.8
+`입력 $1.5 · 출력 $9.0 · 혼합 $1.305/1M · 183.0 t/s · TTFT 24.28s · 1M ctx` · 가성비 39.8
 
 ## 레이더 8축 (평균=50 기준선)
 

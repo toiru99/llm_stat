@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 16.0
 price_blended_usd_1m: 1.045
-output_speed_tps: 216.0
+output_speed_tps: 233.0
 context_window: 200000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — o3-mini (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-16
-timestamp: 2026-08-16T00:00:00Z
+updated: 2026-08-17
+timestamp: 2026-08-17T00:00:00Z
 ---
 
 # o3-mini (high)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **16.0** �
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $1.1 · 출력 $4.4 · 혼합 $1.045/1M · 216.0 t/s · TTFT 24.15s · 200k ctx` · 가성비 15.3
+`입력 $1.1 · 출력 $4.4 · 혼합 $1.045/1M · 233.0 t/s · TTFT 20.69s · 200k ctx` · 가성비 15.3
 
 ## 레이더 8축 (평균=50 기준선)
 

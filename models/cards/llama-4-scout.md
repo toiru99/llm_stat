@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 4 Scout
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-16
-timestamp: 2026-08-16T00:00:00Z
+updated: 2026-08-17
+timestamp: 2026-08-17T00:00:00Z
 ---
 
 # Llama 4 Scout
@@ -37,7 +37,7 @@ Meta · Open · Medium(109B) · 컨텍스트 10M · 종합지능 **10.0**
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.18 · 출력 $0.66 · 혼합 $0.228/1M · 133.0 t/s · TTFT 0.78s · 10M ctx` · 가성비 43.9
+`입력 $0.18 · 출력 $0.66 · 혼합 $0.228/1M · 133.0 t/s · TTFT 0.76s · 10M ctx` · 가성비 43.9
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: Amazon
 license: Proprietary
 intelligence_index: 13.0
 price_blended_usd_1m: 2.1875
-output_speed_tps: 33.0
+output_speed_tps: 34.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova Premier
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-16
-timestamp: 2026-08-16T00:00:00Z
+updated: 2026-08-17
+timestamp: 2026-08-17T00:00:00Z
 ---
 
 # Nova Premier
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **13.0**
 - **약점**: 추론, 지시 따르기
 
 ## 실용 지표
-`입력 $2.5 · 출력 $12.5 · 혼합 $2.1875/1M · 33.0 t/s · TTFT 2.84s · 1M ctx` · 가성비 5.9
+`입력 $2.5 · 출력 $12.5 · 혼합 $2.1875/1M · 34.0 t/s · TTFT 2.82s · 1M ctx` · 가성비 5.9
 
 ## 레이더 8축 (평균=50 기준선)
 

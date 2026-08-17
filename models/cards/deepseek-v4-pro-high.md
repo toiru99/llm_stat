@@ -5,7 +5,7 @@ creator: DeepSeek
 license: Open
 intelligence_index: 44.0
 price_blended_usd_1m: 0.1765
-output_speed_tps: 83.0
+output_speed_tps: 80.0
 context_window: 1000000
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Pro (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-16
-timestamp: 2026-08-16T00:00:00Z
+updated: 2026-08-17
+timestamp: 2026-08-17T00:00:00Z
 ---
 
 # DeepSeek V4 Pro (high)
@@ -37,7 +37,7 @@ DeepSeek · Open · Large(1600B) · 컨텍스트 1M · 종합지능 **44.0**
 - **약점**: 긴문맥, 신뢰성
 
 ## 실용 지표
-`입력 $0.43 · 출력 $0.87 · 혼합 $0.1765/1M · 83.0 t/s · TTFT 1.71s · 1M ctx` · 가성비 249.3
+`입력 $0.43 · 출력 $0.87 · 혼합 $0.1765/1M · 80.0 t/s · TTFT 1.7s · 1M ctx` · 가성비 249.3
 
 ## 레이더 8축 (평균=50 기준선)
 

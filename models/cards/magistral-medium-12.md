@@ -5,7 +5,7 @@ creator: Mistral
 license: Proprietary
 intelligence_index: 18.0
 price_blended_usd_1m: 2.3
-output_speed_tps: 131.0
+output_speed_tps: 141.0
 context_window: 128000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Magistral Medium 1.2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-16
-timestamp: 2026-08-16T00:00:00Z
+updated: 2026-08-17
+timestamp: 2026-08-17T00:00:00Z
 ---
 
 # Magistral Medium 1.2
@@ -37,7 +37,7 @@ Mistral · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **18.0**
 - **약점**: 지시 따르기, 에이전트
 
 ## 실용 지표
-`입력 $2.0 · 출력 $5.0 · 혼합 $2.3/1M · 131.0 t/s · TTFT 2.18s · 128k ctx` · 가성비 7.8
+`입력 $2.0 · 출력 $5.0 · 혼합 $2.3/1M · 141.0 t/s · TTFT 2.2s · 128k ctx` · 가성비 7.8
 
 ## 레이더 8축 (평균=50 기준선)
 

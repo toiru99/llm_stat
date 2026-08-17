@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: 24.0
 price_blended_usd_1m: 0.065
-output_speed_tps: 301.0
+output_speed_tps: 300.0
 context_window: 1000000
 status: current
 size_class: Small
@@ -19,13 +19,13 @@ radar:
   trust: { s: 69.8, z: 1.89, r: 78.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 66.3, z: 0.48, r: 57.2, estimated: false }  # 긴문맥
-  instruction: { s: 41.5, z: -0.52, r: 42.3, estimated: true }  # 지시 따르기
+  instruction: { s: 41.5, z: -0.52, r: 42.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3.5 Lightning
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-16
-timestamp: 2026-08-16T00:00:00Z
+updated: 2026-08-17
+timestamp: 2026-08-17T00:00:00Z
 ---
 
 # Nemotron 3.5 Lightning
@@ -37,7 +37,7 @@ NVIDIA · Open · Small(31.6B) · 컨텍스트 1M · 종합지능 **24.0**
 - **약점**: 지시 따르기, 에이전트
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.2 · 혼합 $0.065/1M · 301.0 t/s · TTFT 1.05s · 1M ctx` · 가성비 369.2
+`입력 $0.05 · 출력 $0.2 · 혼합 $0.065/1M · 300.0 t/s · TTFT 1.07s · 1M ctx` · 가성비 369.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ NVIDIA · Open · Small(31.6B) · 컨텍스트 1M · 종합지능 **24.0**
 | 신뢰성 | 78.3 | +1.89 | 실측 | [[aa-omniscience]] 62.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 57.2 | +0.48 | 실측 | [[aa-lcr]] 55.0%×1.0 |
-| 지시 따르기 | 42.3 | -0.52 | 추정 | (추정) |
+| 지시 따르기 | 42.2 | -0.52 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

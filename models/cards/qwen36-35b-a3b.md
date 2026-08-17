@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 32.0
 price_blended_usd_1m: 0.5625
-output_speed_tps: 133.0
+output_speed_tps: 129.0
 context_window: 262000
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.6 35B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-16
-timestamp: 2026-08-16T00:00:00Z
+updated: 2026-08-17
+timestamp: 2026-08-17T00:00:00Z
 ---
 
 # Qwen3.6 35B A3B
@@ -37,7 +37,7 @@ Alibaba · Open · Small(36B) · 컨텍스트 262k · 종합지능 **32.0**
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.38 · 출력 $2.25 · 혼합 $0.5625/1M · 133.0 t/s · TTFT 2.06s · 262k ctx` · 가성비 56.9
+`입력 $0.38 · 출력 $2.25 · 혼합 $0.5625/1M · 129.0 t/s · TTFT 2.04s · 262k ctx` · 가성비 56.9
 
 ## 레이더 8축 (평균=50 기준선)
 

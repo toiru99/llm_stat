@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-16
-timestamp: 2026-08-16T00:00:00Z
+updated: 2026-08-17
+timestamp: 2026-08-17T00:00:00Z
 ---
 
 # GPT-5.2
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **27.0** �
 - **약점**: 지시 따르기, 추론
 
 ## 실용 지표
-`입력 $1.75 · 출력 $14.0 · 혼합 $1.8725/1M · 71.0 t/s · TTFT 1.01s · 400k ctx` · 가성비 14.4
+`입력 $1.75 · 출력 $14.0 · 혼합 $1.8725/1M · 71.0 t/s · TTFT 0.95s · 400k ctx` · 가성비 14.4
 
 ## 레이더 8축 (평균=50 기준선)
 

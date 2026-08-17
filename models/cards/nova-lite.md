@@ -5,7 +5,7 @@ creator: Amazon
 license: Proprietary
 intelligence_index: 7.0
 price_blended_usd_1m: 0.0465
-output_speed_tps: 158.0
+output_speed_tps: 163.0
 context_window: 300000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova Lite
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-16
-timestamp: 2026-08-16T00:00:00Z
+updated: 2026-08-17
+timestamp: 2026-08-17T00:00:00Z
 ---
 
 # Nova Lite
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 300k · 종합지능 **7.0** ·
 - **약점**: 코딩, 멀티모달
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.24 · 혼합 $0.0465/1M · 158.0 t/s · TTFT 0.97s · 300k ctx` · 가성비 150.5
+`입력 $0.06 · 출력 $0.24 · 혼합 $0.0465/1M · 163.0 t/s · TTFT 0.95s · 300k ctx` · 가성비 150.5
 
 ## 레이더 8축 (평균=50 기준선)
 

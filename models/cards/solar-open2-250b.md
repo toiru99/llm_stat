@@ -19,13 +19,13 @@ radar:
   trust: { s: 84.9, z: 2.55, r: 88.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 81.9, z: 0.95, r: 64.3, estimated: false }  # 긴문맥
-  instruction: { s: 89.4, z: 1.43, r: 71.5, estimated: true }  # 지시 따르기
+  instruction: { s: 89.4, z: 1.43, r: 71.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Open2 250B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-16
-timestamp: 2026-08-16T00:00:00Z
+updated: 2026-08-17
+timestamp: 2026-08-17T00:00:00Z
 ---
 
 # Solar Open2 250B
@@ -50,7 +50,7 @@ Upstage · Open · Large(250B) · 컨텍스트 1M · 종합지능 **37.0**
 | 신뢰성 | 88.3 | +2.55 | 실측 | [[aa-omniscience]] 75.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 64.3 | +0.95 | 실측 | [[aa-lcr]] 68.0%×1.0 |
-| 지시 따르기 | 71.5 | +1.43 | 추정 | (추정) |
+| 지시 따르기 | 71.4 | +1.43 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
