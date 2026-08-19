@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 88.2, z: 2.23, r: 83.5, estimated: false }  # 전문 지식
-  reasoning: { s: 88.2, z: 2.59, r: 88.8, estimated: false }  # 추론
-  coding: { s: 91.6, z: 1.78, r: 76.7, estimated: true }  # 코딩
-  agentic: { s: 83.2, z: 1.84, r: 77.5, estimated: true }  # 에이전트
+  knowledge: { s: 88.2, z: 2.24, r: 83.5, estimated: false }  # 전문 지식
+  reasoning: { s: 88.2, z: 2.58, r: 88.7, estimated: false }  # 추론
+  coding: { s: 91.6, z: 1.77, r: 76.6, estimated: true }  # 코딩
+  agentic: { s: 83.2, z: 1.82, r: 77.3, estimated: true }  # 에이전트
   trust: { s: 8.8, z: -0.81, r: 37.9, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 92.3, z: 1.27, r: 69.0, estimated: true }  # 긴문맥
-  instruction: { s: 83.9, z: 1.21, r: 68.1, estimated: true }  # 지시 따르기
+  long_context: { s: 92.3, z: 1.26, r: 68.9, estimated: true }  # 긴문맥
+  instruction: { s: 83.9, z: 1.2, r: 68.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — o3-pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-17
-timestamp: 2026-08-17T00:00:00Z
+updated: 2026-08-19
+timestamp: 2026-08-19T00:00:00Z
 ---
 
 # o3-pro
@@ -43,14 +43,14 @@ OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **33.0** �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 83.5 | +2.23 | 실측 | [[gpqa-diamond]] 85.0%×0.4 |
-| 추론 | 88.8 | +2.59 | 실측 | [[gpqa-diamond]] 85.0%×1.0 |
-| 코딩 | 76.7 | +1.78 | 추정 | (추정) |
-| 에이전트 | 77.5 | +1.84 | 추정 | (추정) |
+| 전문 지식 | 83.5 | +2.24 | 실측 | [[gpqa-diamond]] 85.0%×0.4 |
+| 추론 | 88.7 | +2.58 | 실측 | [[gpqa-diamond]] 85.0%×1.0 |
+| 코딩 | 76.6 | +1.77 | 추정 | (추정) |
+| 에이전트 | 77.3 | +1.82 | 추정 | (추정) |
 | 신뢰성 | 37.9 | -0.81 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 69.0 | +1.27 | 추정 | (추정) |
-| 지시 따르기 | 68.1 | +1.21 | 추정 | (추정) |
+| 긴문맥 | 68.9 | +1.26 | 추정 | (추정) |
+| 지시 따르기 | 68.0 | +1.2 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

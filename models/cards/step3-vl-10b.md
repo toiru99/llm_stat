@@ -12,20 +12,20 @@ size_class: Small
 params_b: 10.2
 is_reasoning: true
 radar:
-  knowledge: { s: 30.6, z: -0.5, r: 42.5, estimated: false }  # 전문 지식
-  reasoning: { s: 29.3, z: -0.3, r: 45.6, estimated: false }  # 추론
-  coding: { s: 37.0, z: -0.46, r: 43.1, estimated: false }  # 코딩
-  agentic: { s: 11.9, z: -0.97, r: 35.4, estimated: false }  # 에이전트
-  trust: { s: 17.4, z: -0.43, r: 43.6, estimated: false }  # 신뢰성
+  knowledge: { s: 30.6, z: -0.51, r: 42.4, estimated: false }  # 전문 지식
+  reasoning: { s: 29.3, z: -0.3, r: 45.5, estimated: false }  # 추론
+  coding: { s: 37.0, z: -0.47, r: 43.0, estimated: false }  # 코딩
+  agentic: { s: 11.9, z: -0.98, r: 35.4, estimated: false }  # 에이전트
+  trust: { s: 17.4, z: -0.43, r: 43.5, estimated: false }  # 신뢰성
   multimodal: { s: 70.0, z: -0.11, r: 48.3, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.52, r: 27.2, estimated: false }  # 긴문맥
-  instruction: { s: 53.5, z: -0.03, r: 49.6, estimated: false }  # 지시 따르기
+  long_context: { s: 0.0, z: -1.53, r: 27.1, estimated: false }  # 긴문맥
+  instruction: { s: 53.5, z: -0.03, r: 49.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Step3 VL 10B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-17
-timestamp: 2026-08-17T00:00:00Z
+updated: 2026-08-19
+timestamp: 2026-08-19T00:00:00Z
 ---
 
 # Step3 VL 10B
@@ -43,14 +43,14 @@ StepFun · Open · Small(10.2B) · 컨텍스트 65k · 종합지능 **9.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 42.5 | -0.5 | 실측 | [[aa-omniscience]] 13.0%×1.0, [[gpqa-diamond]] 69.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
-| 추론 | 45.6 | -0.3 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 69.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
-| 코딩 | 43.1 | -0.46 | 실측 | [[scicode]] 31.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
-| 에이전트 | 35.4 | -0.97 | 실측 | [[tau2-bench]] 16.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
-| 신뢰성 | 43.6 | -0.43 | 실측 | [[aa-omniscience]] 17.0%×1.0 |
+| 전문 지식 | 42.4 | -0.51 | 실측 | [[aa-omniscience]] 13.0%×1.0, [[gpqa-diamond]] 69.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
+| 추론 | 45.5 | -0.3 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 69.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
+| 코딩 | 43.0 | -0.47 | 실측 | [[scicode]] 31.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
+| 에이전트 | 35.4 | -0.98 | 실측 | [[tau2-bench]] 16.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
+| 신뢰성 | 43.5 | -0.43 | 실측 | [[aa-omniscience]] 17.0%×1.0 |
 | 멀티모달 | 48.3 | -0.11 | 실측 | [[mmmu-pro]] 64.0%×1.0 |
-| 긴문맥 | 27.2 | -1.52 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 49.6 | -0.03 | 실측 | [[ifbench]] 50.0%×1.0 |
+| 긴문맥 | 27.1 | -1.53 | 실측 | [[aa-lcr]] 0.0%×1.0 |
+| 지시 따르기 | 49.5 | -0.03 | 실측 | [[ifbench]] 50.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -12,20 +12,20 @@ size_class: Small
 params_b: 32.2
 is_reasoning: false
 radar:
-  knowledge: { s: 17.8, z: -1.11, r: 33.4, estimated: false }  # 전문 지식
-  reasoning: { s: 16.3, z: -0.93, r: 36.0, estimated: false }  # 추론
+  knowledge: { s: 17.8, z: -1.11, r: 33.3, estimated: false }  # 전문 지식
+  reasoning: { s: 16.3, z: -0.94, r: 36.0, estimated: false }  # 추론
   coding: { s: 8.9, z: -1.61, r: 25.8, estimated: false }  # 코딩
   agentic: { s: 0.0, z: -1.44, r: 28.4, estimated: false }  # 에이전트
-  trust: { s: 12.8, z: -0.63, r: 40.5, estimated: true }  # 신뢰성
+  trust: { s: 12.8, z: -0.64, r: 40.5, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.52, r: 27.2, estimated: false }  # 긴문맥
-  instruction: { s: 36.6, z: -0.72, r: 39.3, estimated: false }  # 지시 따르기
+  long_context: { s: 0.0, z: -1.53, r: 27.1, estimated: false }  # 긴문맥
+  instruction: { s: 36.6, z: -0.72, r: 39.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — OLMo 2 32B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-17
-timestamp: 2026-08-17T00:00:00Z
+updated: 2026-08-19
+timestamp: 2026-08-19T00:00:00Z
 ---
 
 # OLMo 2 32B
@@ -43,14 +43,14 @@ Allen Institute for AI · Open · Small(32.2B) · 컨텍스트 4k · 종합지�
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 33.4 | -1.11 | 실측 | [[gpqa-diamond]] 33.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 36.0 | -0.93 | 실측 | [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 전문 지식 | 33.3 | -1.11 | 실측 | [[gpqa-diamond]] 33.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 36.0 | -0.94 | 실측 | [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 25.8 | -1.61 | 실측 | [[scicode]] 8.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 28.4 | -1.44 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 40.5 | -0.63 | 추정 | (추정) |
+| 신뢰성 | 40.5 | -0.64 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 27.2 | -1.52 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 39.3 | -0.72 | 실측 | [[ifbench]] 38.0%×1.0 |
+| 긴문맥 | 27.1 | -1.53 | 실측 | [[aa-lcr]] 0.0%×1.0 |
+| 지시 따르기 | 39.2 | -0.72 | 실측 | [[ifbench]] 38.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
