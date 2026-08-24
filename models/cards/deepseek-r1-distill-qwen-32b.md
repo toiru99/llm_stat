@@ -12,20 +12,20 @@ size_class: Small
 params_b: 32
 is_reasoning: true
 radar:
-  knowledge: { s: 38.1, z: -0.15, r: 47.8, estimated: false }  # 전문 지식
-  reasoning: { s: 34.3, z: -0.06, r: 49.1, estimated: false }  # 추론
-  coding: { s: 63.3, z: 0.61, r: 59.2, estimated: false }  # 코딩
-  agentic: { s: 28.8, z: -0.31, r: 45.3, estimated: true }  # 에이전트
-  trust: { s: 30.7, z: 0.15, r: 52.3, estimated: true }  # 신뢰성
+  knowledge: { s: 38.1, z: -0.15, r: 47.7, estimated: false }  # 전문 지식
+  reasoning: { s: 34.3, z: -0.07, r: 49.0, estimated: false }  # 추론
+  coding: { s: 63.3, z: 0.6, r: 59.0, estimated: false }  # 코딩
+  agentic: { s: 28.8, z: -0.33, r: 45.1, estimated: true }  # 에이전트
+  trust: { s: 30.7, z: 0.11, r: 51.7, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 9.6, z: -1.24, r: 31.5, estimated: false }  # 긴문맥
-  instruction: { s: 15.5, z: -1.58, r: 26.3, estimated: false }  # 지시 따르기
+  instruction: { s: 15.5, z: -1.58, r: 26.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek R1 Distill Qwen 32B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-19
-timestamp: 2026-08-19T00:00:00Z
+updated: 2026-08-24
+timestamp: 2026-08-24T00:00:00Z
 ---
 
 # DeepSeek R1 Distill Qwen 32B
@@ -43,14 +43,14 @@ DeepSeek · Open · Small(32B) · 컨텍스트 128k · 종합지능 **11.0** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 47.8 | -0.15 | 실측 | [[gpqa-diamond]] 62.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 49.1 | -0.06 | 실측 | [[gpqa-diamond]] 62.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 59.2 | +0.61 | 실측 | [[scicode]] 38.0%×1.0 |
-| 에이전트 | 45.3 | -0.31 | 추정 | (추정) |
-| 신뢰성 | 52.3 | +0.15 | 추정 | (추정) |
+| 전문 지식 | 47.7 | -0.15 | 실측 | [[gpqa-diamond]] 62.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 추론 | 49.0 | -0.07 | 실측 | [[gpqa-diamond]] 62.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 59.0 | +0.6 | 실측 | [[scicode]] 38.0%×1.0 |
+| 에이전트 | 45.1 | -0.33 | 추정 | (추정) |
+| 신뢰성 | 51.7 | +0.11 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 31.5 | -1.24 | 실측 | [[aa-lcr]] 8.0%×1.0 |
-| 지시 따르기 | 26.3 | -1.58 | 실측 | [[ifbench]] 23.0%×1.0 |
+| 지시 따르기 | 26.2 | -1.58 | 실측 | [[ifbench]] 23.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -13,10 +13,10 @@ params_b: 7
 is_reasoning: true
 radar:
   knowledge: { s: 31.6, z: -0.46, r: 43.1, estimated: false }  # 전문 지식
-  reasoning: { s: 28.1, z: -0.36, r: 44.6, estimated: false }  # 추론
-  coding: { s: 28.8, z: -0.8, r: 38.0, estimated: false }  # 코딩
-  agentic: { s: 15.7, z: -0.83, r: 37.6, estimated: false }  # 에이전트
-  trust: { s: 10.5, z: -0.74, r: 38.9, estimated: false }  # 신뢰성
+  reasoning: { s: 28.1, z: -0.37, r: 44.5, estimated: false }  # 추론
+  coding: { s: 28.8, z: -0.81, r: 37.9, estimated: false }  # 코딩
+  agentic: { s: 15.7, z: -0.83, r: 37.5, estimated: false }  # 에이전트
+  trust: { s: 10.5, z: -0.75, r: 38.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 13.3, z: -1.13, r: 33.1, estimated: false }  # 긴문맥
   instruction: { s: 59.2, z: 0.19, r: 52.9, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Falcon-H1R-7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-19
-timestamp: 2026-08-19T00:00:00Z
+updated: 2026-08-24
+timestamp: 2026-08-24T00:00:00Z
 ---
 
 # Falcon-H1R-7B
@@ -44,10 +44,10 @@ TII UAE · Open · Small(7B) · 컨텍스트 256k · 종합지능 **10.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 43.1 | -0.46 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 66.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
-| 추론 | 44.6 | -0.36 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 66.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
-| 코딩 | 38.0 | -0.8 | 실측 | [[scicode]] 25.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 37.6 | -0.83 | 실측 | [[tau2-bench]] 28.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 38.9 | -0.74 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
+| 추론 | 44.5 | -0.37 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 66.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
+| 코딩 | 37.9 | -0.81 | 실측 | [[scicode]] 25.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
+| 에이전트 | 37.5 | -0.83 | 실측 | [[tau2-bench]] 28.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 신뢰성 | 38.7 | -0.75 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 33.1 | -1.13 | 실측 | [[aa-lcr]] 11.0%×1.0 |
 | 지시 따르기 | 52.9 | +0.19 | 실측 | [[ifbench]] 54.0%×1.0 |

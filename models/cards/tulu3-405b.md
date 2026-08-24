@@ -12,11 +12,11 @@ size_class: Large
 params_b: 405
 is_reasoning: false
 radar:
-  knowledge: { s: 29.8, z: -0.54, r: 41.8, estimated: false }  # 전문 지식
-  reasoning: { s: 26.6, z: -0.44, r: 43.5, estimated: false }  # 추론
-  coding: { s: 50.0, z: 0.07, r: 51.0, estimated: false }  # 코딩
-  agentic: { s: 43.6, z: 0.27, r: 54.0, estimated: true }  # 에이전트
-  trust: { s: 39.0, z: 0.51, r: 57.7, estimated: true }  # 신뢰성
+  knowledge: { s: 29.8, z: -0.55, r: 41.8, estimated: false }  # 전문 지식
+  reasoning: { s: 26.6, z: -0.44, r: 43.4, estimated: false }  # 추론
+  coding: { s: 50.0, z: 0.06, r: 50.9, estimated: false }  # 코딩
+  agentic: { s: 43.6, z: 0.25, r: 53.7, estimated: true }  # 에이전트
+  trust: { s: 39.0, z: 0.47, r: 57.0, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 46.7, z: -0.12, r: 48.2, estimated: true }  # 긴문맥
   instruction: { s: 59.6, z: 0.21, r: 53.2, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Tulu3 405B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-19
-timestamp: 2026-08-19T00:00:00Z
+updated: 2026-08-24
+timestamp: 2026-08-24T00:00:00Z
 ---
 
 # Tulu3 405B
@@ -43,11 +43,11 @@ Allen Institute for AI · Open · Large(405B) · 컨텍스트 128k · 종합지�
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 41.8 | -0.54 | 실측 | [[gpqa-diamond]] 52.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
-| 추론 | 43.5 | -0.44 | 실측 | [[gpqa-diamond]] 52.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
-| 코딩 | 51.0 | +0.07 | 실측 | [[scicode]] 30.0%×1.0 |
-| 에이전트 | 54.0 | +0.27 | 추정 | (추정) |
-| 신뢰성 | 57.7 | +0.51 | 추정 | (추정) |
+| 전문 지식 | 41.8 | -0.55 | 실측 | [[gpqa-diamond]] 52.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
+| 추론 | 43.4 | -0.44 | 실측 | [[gpqa-diamond]] 52.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
+| 코딩 | 50.9 | +0.06 | 실측 | [[scicode]] 30.0%×1.0 |
+| 에이전트 | 53.7 | +0.25 | 추정 | (추정) |
+| 신뢰성 | 57.0 | +0.47 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 48.2 | -0.12 | 추정 | (추정) |
 | 지시 따르기 | 53.2 | +0.21 | 추정 | (추정) |

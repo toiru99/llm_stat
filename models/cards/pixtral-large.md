@@ -12,20 +12,20 @@ size_class: Medium
 params_b: 124
 is_reasoning: false
 radar:
-  knowledge: { s: 29.2, z: -0.58, r: 41.4, estimated: false }  # 전문 지식
-  reasoning: { s: 26.0, z: -0.46, r: 43.0, estimated: false }  # 추론
-  coding: { s: 48.3, z: -0.0, r: 50.0, estimated: false }  # 코딩
-  agentic: { s: 37.4, z: 0.02, r: 50.3, estimated: false }  # 에이전트
-  trust: { s: 35.0, z: 0.34, r: 55.1, estimated: true }  # 신뢰성
-  multimodal: { s: 51.4, z: -1.01, r: 34.9, estimated: false }  # 멀티모달
+  knowledge: { s: 29.2, z: -0.58, r: 41.3, estimated: false }  # 전문 지식
+  reasoning: { s: 26.0, z: -0.47, r: 42.9, estimated: false }  # 추론
+  coding: { s: 48.3, z: -0.01, r: 49.8, estimated: false }  # 코딩
+  agentic: { s: 37.4, z: 0.01, r: 50.1, estimated: false }  # 에이전트
+  trust: { s: 35.0, z: 0.3, r: 54.5, estimated: true }  # 신뢰성
+  multimodal: { s: 51.4, z: -1.02, r: 34.8, estimated: false }  # 멀티모달
   long_context: { s: 14.5, z: -1.09, r: 33.6, estimated: false }  # 긴문맥
   instruction: { s: 31.0, z: -0.95, r: 35.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Pixtral Large
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-19
-timestamp: 2026-08-19T00:00:00Z
+updated: 2026-08-24
+timestamp: 2026-08-24T00:00:00Z
 ---
 
 # Pixtral Large
@@ -43,12 +43,12 @@ Mistral · Open · Medium(124B) · 컨텍스트 128k · 종합지능 **8.0** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 41.4 | -0.58 | 실측 | [[gpqa-diamond]] 51.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
-| 추론 | 43.0 | -0.46 | 실측 | [[gpqa-diamond]] 51.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
-| 코딩 | 50.0 | +-0.0 | 실측 | [[scicode]] 29.0%×1.0 |
-| 에이전트 | 50.3 | +0.02 | 실측 | [[tau2-bench]] 37.0%×1.0 |
-| 신뢰성 | 55.1 | +0.34 | 추정 | (추정) |
-| 멀티모달 | 34.9 | -1.01 | 실측 | [[mmmu-pro]] 51.0%×1.0 |
+| 전문 지식 | 41.3 | -0.58 | 실측 | [[gpqa-diamond]] 51.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
+| 추론 | 42.9 | -0.47 | 실측 | [[gpqa-diamond]] 51.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
+| 코딩 | 49.8 | -0.01 | 실측 | [[scicode]] 29.0%×1.0 |
+| 에이전트 | 50.1 | +0.01 | 실측 | [[tau2-bench]] 37.0%×1.0 |
+| 신뢰성 | 54.5 | +0.3 | 추정 | (추정) |
+| 멀티모달 | 34.8 | -1.02 | 실측 | [[mmmu-pro]] 51.0%×1.0 |
 | 긴문맥 | 33.6 | -1.09 | 실측 | [[aa-lcr]] 12.0%×1.0 |
 | 지시 따르기 | 35.7 | -0.95 | 실측 | [[ifbench]] 34.0%×1.0 |
 

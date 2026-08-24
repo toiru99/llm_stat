@@ -12,11 +12,11 @@ size_class: Small
 params_b: 30.9
 is_reasoning: true
 radar:
-  knowledge: { s: 36.2, z: -0.24, r: 46.4, estimated: false }  # 전문 지식
-  reasoning: { s: 32.9, z: -0.13, r: 48.1, estimated: false }  # 추론
-  coding: { s: 26.7, z: -0.89, r: 36.7, estimated: false }  # 코딩
-  agentic: { s: 22.5, z: -0.56, r: 41.6, estimated: true }  # 에이전트
-  trust: { s: 12.6, z: -0.65, r: 40.3, estimated: true }  # 신뢰성
+  knowledge: { s: 36.2, z: -0.24, r: 46.3, estimated: false }  # 전문 지식
+  reasoning: { s: 32.9, z: -0.14, r: 48.0, estimated: false }  # 추론
+  coding: { s: 26.7, z: -0.89, r: 36.6, estimated: false }  # 코딩
+  agentic: { s: 22.5, z: -0.57, r: 41.5, estimated: true }  # 에이전트
+  trust: { s: 12.6, z: -0.67, r: 40.0, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 19.0, z: -0.95, r: 35.7, estimated: true }  # 긴문맥
   instruction: { s: 47.6, z: -0.28, r: 45.9, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Pro 2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-19
-timestamp: 2026-08-19T00:00:00Z
+updated: 2026-08-24
+timestamp: 2026-08-24T00:00:00Z
 ---
 
 # Solar Pro 2
@@ -43,11 +43,11 @@ Upstage · Proprietary · Small(30.9B) · 컨텍스트 64k · 종합지능 **13.
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 46.4 | -0.24 | 실측 | [[gpqa-diamond]] 58.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
-| 추론 | 48.1 | -0.13 | 실측 | [[gpqa-diamond]] 58.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 36.7 | -0.89 | 실측 | [[scicode]] 16.0%×1.0 |
-| 에이전트 | 41.6 | -0.56 | 추정 | (추정) |
-| 신뢰성 | 40.3 | -0.65 | 추정 | (추정) |
+| 전문 지식 | 46.3 | -0.24 | 실측 | [[gpqa-diamond]] 58.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 추론 | 48.0 | -0.14 | 실측 | [[gpqa-diamond]] 58.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
+| 코딩 | 36.6 | -0.89 | 실측 | [[scicode]] 16.0%×1.0 |
+| 에이전트 | 41.5 | -0.57 | 추정 | (추정) |
+| 신뢰성 | 40.0 | -0.67 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 35.7 | -0.95 | 추정 | (추정) |
 | 지시 따르기 | 45.9 | -0.28 | 추정 | (추정) |

@@ -13,19 +13,19 @@ params_b: 25.2
 is_reasoning: true
 radar:
   knowledge: { s: 33.8, z: -0.36, r: 44.6, estimated: false }  # 전문 지식
-  reasoning: { s: 28.5, z: -0.34, r: 44.9, estimated: false }  # 추론
-  coding: { s: 56.7, z: 0.34, r: 55.1, estimated: false }  # 코딩
-  agentic: { s: 4.5, z: -1.26, r: 31.0, estimated: false }  # 에이전트
-  trust: { s: 8.1, z: -0.84, r: 37.4, estimated: false }  # 신뢰성
-  multimodal: { s: 74.3, z: 0.09, r: 51.4, estimated: false }  # 멀티모달
+  reasoning: { s: 28.5, z: -0.35, r: 44.8, estimated: false }  # 추론
+  coding: { s: 56.7, z: 0.33, r: 54.9, estimated: false }  # 코딩
+  agentic: { s: 4.5, z: -1.27, r: 31.0, estimated: false }  # 에이전트
+  trust: { s: 8.1, z: -0.85, r: 37.2, estimated: false }  # 신뢰성
+  multimodal: { s: 74.3, z: 0.09, r: 51.3, estimated: false }  # 멀티모달
   long_context: { s: 21.7, z: -0.87, r: 36.9, estimated: false }  # 긴문맥
   instruction: { s: 66.2, z: 0.48, r: 57.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DiffusionGemma 26B A4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-19
-timestamp: 2026-08-19T00:00:00Z
+updated: 2026-08-24
+timestamp: 2026-08-24T00:00:00Z
 ---
 
 # DiffusionGemma 26B A4B
@@ -44,11 +44,11 @@ Google · Open · Small(25.2B) · 컨텍스트 256k · 종합지능 **13.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 44.6 | -0.36 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
-| 추론 | 44.9 | -0.34 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 67.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
-| 코딩 | 55.1 | +0.34 | 실측 | [[scicode]] 34.0%×1.0 |
-| 에이전트 | 31.0 | -1.26 | 실측 | [[gdpval]] 3.0%×1.0 |
-| 신뢰성 | 37.4 | -0.84 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
-| 멀티모달 | 51.4 | +0.09 | 실측 | [[mmmu-pro]] 67.0%×1.0 |
+| 추론 | 44.8 | -0.35 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 67.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
+| 코딩 | 54.9 | +0.33 | 실측 | [[scicode]] 34.0%×1.0 |
+| 에이전트 | 31.0 | -1.27 | 실측 | [[gdpval]] 3.0%×1.0 |
+| 신뢰성 | 37.2 | -0.85 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 멀티모달 | 51.3 | +0.09 | 실측 | [[mmmu-pro]] 67.0%×1.0 |
 | 긴문맥 | 36.9 | -0.87 | 실측 | [[aa-lcr]] 18.0%×1.0 |
 | 지시 따르기 | 57.2 | +0.48 | 실측 | [[ifbench]] 59.0%×1.0 |
 

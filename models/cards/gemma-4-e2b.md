@@ -12,20 +12,20 @@ size_class: Small
 params_b: 5.1
 is_reasoning: true
 radar:
-  knowledge: { s: 16.0, z: -1.2, r: 32.0, estimated: false }  # 전문 지식
-  reasoning: { s: 15.4, z: -0.98, r: 35.3, estimated: false }  # 추론
-  coding: { s: 24.8, z: -0.96, r: 35.6, estimated: false }  # 코딩
-  agentic: { s: 8.6, z: -1.1, r: 33.4, estimated: false }  # 에이전트
-  trust: { s: 76.7, z: 2.17, r: 82.6, estimated: false }  # 신뢰성
-  multimodal: { s: 42.9, z: -1.42, r: 28.7, estimated: false }  # 멀티모달
+  knowledge: { s: 16.0, z: -1.21, r: 31.9, estimated: false }  # 전문 지식
+  reasoning: { s: 15.4, z: -0.99, r: 35.2, estimated: false }  # 추론
+  coding: { s: 24.8, z: -0.97, r: 35.5, estimated: false }  # 코딩
+  agentic: { s: 8.6, z: -1.11, r: 33.4, estimated: false }  # 에이전트
+  trust: { s: 76.7, z: 2.09, r: 81.3, estimated: false }  # 신뢰성
+  multimodal: { s: 42.9, z: -1.43, r: 28.6, estimated: false }  # 멀티모달
   long_context: { s: 20.5, z: -0.91, r: 36.4, estimated: false }  # 긴문맥
   instruction: { s: 36.6, z: -0.72, r: 39.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 E2B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-19
-timestamp: 2026-08-19T00:00:00Z
+updated: 2026-08-24
+timestamp: 2026-08-24T00:00:00Z
 ---
 
 # Gemma 4 E2B
@@ -43,12 +43,12 @@ Google · Open · Small(5.1B) · 컨텍스트 128k · 종합지능 **10.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 32.0 | -1.2 | 실측 | [[aa-omniscience]] 7.0%×1.0, [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 35.3 | -0.98 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 35.6 | -0.96 | 실측 | [[scicode]] 21.0%×1.0, [[terminal-bench]] 3.0%×0.5 |
-| 에이전트 | 33.4 | -1.1 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 3.0%×1.0 |
-| 신뢰성 | 82.6 | +2.17 | 실측 | [[aa-omniscience]] 68.0%×1.0 |
-| 멀티모달 | 28.7 | -1.42 | 실측 | [[mmmu-pro]] 45.0%×1.0 |
+| 전문 지식 | 31.9 | -1.21 | 실측 | [[aa-omniscience]] 7.0%×1.0, [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 추론 | 35.2 | -0.99 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 35.5 | -0.97 | 실측 | [[scicode]] 21.0%×1.0, [[terminal-bench]] 3.0%×0.5 |
+| 에이전트 | 33.4 | -1.11 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 3.0%×1.0 |
+| 신뢰성 | 81.3 | +2.09 | 실측 | [[aa-omniscience]] 68.0%×1.0 |
+| 멀티모달 | 28.6 | -1.43 | 실측 | [[mmmu-pro]] 45.0%×1.0 |
 | 긴문맥 | 36.4 | -0.91 | 실측 | [[aa-lcr]] 17.0%×1.0 |
 | 지시 따르기 | 39.2 | -0.72 | 실측 | [[ifbench]] 38.0%×1.0 |
 

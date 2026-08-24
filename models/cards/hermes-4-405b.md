@@ -5,27 +5,27 @@ creator: Nous Research
 license: Open
 intelligence_index: 9.0
 price_blended_usd_1m: 1.2
-output_speed_tps: 27.0
+output_speed_tps: 35.0
 context_window: 128000
 status: current
 size_class: Large
 params_b: 406
 is_reasoning: false
 radar:
-  knowledge: { s: 47.4, z: 0.29, r: 54.4, estimated: false }  # 전문 지식
-  reasoning: { s: 30.9, z: -0.22, r: 46.6, estimated: false }  # 추론
-  coding: { s: 33.3, z: -0.61, r: 40.8, estimated: false }  # 코딩
-  agentic: { s: 19.4, z: -0.68, r: 39.8, estimated: false }  # 에이전트
-  trust: { s: 3.5, z: -1.04, r: 34.3, estimated: false }  # 신뢰성
+  knowledge: { s: 47.4, z: 0.28, r: 54.3, estimated: false }  # 전문 지식
+  reasoning: { s: 30.9, z: -0.23, r: 46.5, estimated: false }  # 추론
+  coding: { s: 33.3, z: -0.62, r: 40.7, estimated: false }  # 코딩
+  agentic: { s: 19.4, z: -0.69, r: 39.7, estimated: false }  # 에이전트
+  trust: { s: 3.5, z: -1.05, r: 34.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 27.7, z: -0.69, r: 39.7, estimated: false }  # 긴문맥
+  long_context: { s: 27.7, z: -0.69, r: 39.6, estimated: false }  # 긴문맥
   instruction: { s: 29.6, z: -1.01, r: 34.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Hermes 4 405B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-19
-timestamp: 2026-08-19T00:00:00Z
+updated: 2026-08-24
+timestamp: 2026-08-24T00:00:00Z
 ---
 
 # Hermes 4 405B
@@ -37,19 +37,19 @@ Nous Research · Open · Large(406B) · 컨텍스트 128k · 종합지능 **9.0*
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $1.0 · 출력 $3.0 · 혼합 $1.2/1M · 27.0 t/s · TTFT 2.81s · 128k ctx` · 가성비 7.5
+`입력 $1.0 · 출력 $3.0 · 혼합 $1.2/1M · 35.0 t/s · TTFT 2.7s · 128k ctx` · 가성비 7.5
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 54.4 | +0.29 | 실측 | [[aa-omniscience]] 30.0%×1.0, [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
-| 추론 | 46.6 | -0.22 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
-| 코딩 | 40.8 | -0.61 | 실측 | [[scicode]] 25.0%×1.0, [[terminal-bench]] 11.0%×0.5 |
-| 에이전트 | 39.8 | -0.68 | 실측 | [[tau2-bench]] 22.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
-| 신뢰성 | 34.3 | -1.04 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
+| 전문 지식 | 54.3 | +0.28 | 실측 | [[aa-omniscience]] 30.0%×1.0, [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
+| 추론 | 46.5 | -0.23 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
+| 코딩 | 40.7 | -0.62 | 실측 | [[scicode]] 25.0%×1.0, [[terminal-bench]] 11.0%×0.5 |
+| 에이전트 | 39.7 | -0.69 | 실측 | [[tau2-bench]] 22.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
+| 신뢰성 | 34.2 | -1.05 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 39.7 | -0.69 | 실측 | [[aa-lcr]] 23.0%×1.0 |
+| 긴문맥 | 39.6 | -0.69 | 실측 | [[aa-lcr]] 23.0%×1.0 |
 | 지시 따르기 | 34.9 | -1.01 | 실측 | [[ifbench]] 33.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

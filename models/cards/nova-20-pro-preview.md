@@ -5,18 +5,18 @@ creator: Amazon
 license: Proprietary
 intelligence_index: 14.0
 price_blended_usd_1m: 2.125
-output_speed_tps: 100.0
+output_speed_tps: 112.0
 context_window: 256000
 status: current
 size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 30.6, z: -0.51, r: 42.4, estimated: false }  # 전문 지식
-  reasoning: { s: 23.0, z: -0.61, r: 40.9, estimated: false }  # 추론
-  coding: { s: 39.7, z: -0.35, r: 44.7, estimated: false }  # 코딩
-  agentic: { s: 34.3, z: -0.1, r: 48.5, estimated: false }  # 에이전트
-  trust: { s: 20.9, z: -0.28, r: 45.8, estimated: false }  # 신뢰성
+  knowledge: { s: 30.6, z: -0.51, r: 42.3, estimated: false }  # 전문 지식
+  reasoning: { s: 23.0, z: -0.61, r: 40.8, estimated: false }  # 추론
+  coding: { s: 39.7, z: -0.36, r: 44.6, estimated: false }  # 코딩
+  agentic: { s: 34.3, z: -0.11, r: 48.3, estimated: false }  # 에이전트
+  trust: { s: 20.9, z: -0.31, r: 45.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 37.3, z: -0.4, r: 44.0, estimated: false }  # 긴문맥
   instruction: { s: 56.3, z: 0.08, r: 51.2, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova 2.0 Pro Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-19
-timestamp: 2026-08-19T00:00:00Z
+updated: 2026-08-24
+timestamp: 2026-08-24T00:00:00Z
 ---
 
 # Nova 2.0 Pro Preview
@@ -37,17 +37,17 @@ Amazon · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **14.0**
 - **약점**: 전문 지식, 추론
 
 ## 실용 지표
-`입력 $1.25 · 출력 $10.0 · 혼합 $2.125/1M · 100.0 t/s · TTFT 1.06s · 256k ctx` · 가성비 6.6
+`입력 $1.25 · 출력 $10.0 · 혼합 $2.125/1M · 112.0 t/s · TTFT 1.04s · 256k ctx` · 가성비 6.6
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 42.4 | -0.51 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 64.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 40.9 | -0.61 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 64.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 44.7 | -0.35 | 실측 | [[scicode]] 28.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
-| 에이전트 | 48.5 | -0.1 | 실측 | [[gdpval]] 3.0%×1.0, [[tau2-bench]] 72.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
-| 신뢰성 | 45.8 | -0.28 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
+| 전문 지식 | 42.3 | -0.51 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 64.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 40.8 | -0.61 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 64.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 44.6 | -0.36 | 실측 | [[scicode]] 28.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
+| 에이전트 | 48.3 | -0.11 | 실측 | [[gdpval]] 3.0%×1.0, [[tau2-bench]] 72.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
+| 신뢰성 | 45.4 | -0.31 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 44.0 | -0.4 | 실측 | [[aa-lcr]] 31.0%×1.0 |
 | 지시 따르기 | 51.2 | +0.08 | 실측 | [[ifbench]] 52.0%×1.0 |

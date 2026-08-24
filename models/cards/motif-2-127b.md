@@ -12,11 +12,11 @@ size_class: Small
 params_b: 12.7
 is_reasoning: true
 radar:
-  knowledge: { s: 31.8, z: -0.45, r: 43.3, estimated: false }  # 전문 지식
-  reasoning: { s: 28.1, z: -0.36, r: 44.6, estimated: false }  # 추론
-  coding: { s: 33.1, z: -0.62, r: 40.7, estimated: false }  # 코딩
-  agentic: { s: 26.3, z: -0.41, r: 43.8, estimated: false }  # 에이전트
-  trust: { s: 8.1, z: -0.84, r: 37.4, estimated: false }  # 신뢰성
+  knowledge: { s: 31.8, z: -0.45, r: 43.2, estimated: false }  # 전문 지식
+  reasoning: { s: 28.1, z: -0.37, r: 44.5, estimated: false }  # 추론
+  coding: { s: 33.1, z: -0.63, r: 40.5, estimated: false }  # 코딩
+  agentic: { s: 26.3, z: -0.42, r: 43.6, estimated: false }  # 에이전트
+  trust: { s: 8.1, z: -0.85, r: 37.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 15.7, z: -1.05, r: 34.2, estimated: false }  # 긴문맥
   instruction: { s: 63.4, z: 0.37, r: 55.5, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Motif-2-12.7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-19
-timestamp: 2026-08-19T00:00:00Z
+updated: 2026-08-24
+timestamp: 2026-08-24T00:00:00Z
 ---
 
 # Motif-2-12.7B
@@ -43,11 +43,11 @@ Motif Technologies · Proprietary · Small(12.7B) · 컨텍스트 128k · 종합
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 43.3 | -0.45 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 69.0%×0.4, [[humanitys-last-exam]] 9.0%×0.3 |
-| 추론 | 44.6 | -0.36 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 69.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
-| 코딩 | 40.7 | -0.62 | 실측 | [[scicode]] 28.0%×1.0, [[terminal-bench]] 4.0%×0.5 |
-| 에이전트 | 43.8 | -0.41 | 실측 | [[tau2-bench]] 46.0%×1.0, [[terminal-bench]] 4.0%×1.0 |
-| 신뢰성 | 37.4 | -0.84 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 전문 지식 | 43.2 | -0.45 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 69.0%×0.4, [[humanitys-last-exam]] 9.0%×0.3 |
+| 추론 | 44.5 | -0.37 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 69.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
+| 코딩 | 40.5 | -0.63 | 실측 | [[scicode]] 28.0%×1.0, [[terminal-bench]] 4.0%×0.5 |
+| 에이전트 | 43.6 | -0.42 | 실측 | [[tau2-bench]] 46.0%×1.0, [[terminal-bench]] 4.0%×1.0 |
+| 신뢰성 | 37.2 | -0.85 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 34.2 | -1.05 | 실측 | [[aa-lcr]] 13.0%×1.0 |
 | 지시 따르기 | 55.5 | +0.37 | 실측 | [[ifbench]] 57.0%×1.0 |
