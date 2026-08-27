@@ -12,20 +12,20 @@ size_class: Small
 params_b: 8
 is_reasoning: false
 radar:
-  knowledge: { s: 15.1, z: -1.25, r: 31.3, estimated: false }  # 전문 지식
-  reasoning: { s: 10.3, z: -1.23, r: 31.5, estimated: false }  # 추론
-  coding: { s: 13.3, z: -1.44, r: 28.4, estimated: false }  # 코딩
-  agentic: { s: 0.0, z: -1.44, r: 28.4, estimated: false }  # 에이전트
-  trust: { s: 9.3, z: -0.8, r: 37.9, estimated: false }  # 신뢰성
+  knowledge: { s: 15.1, z: -1.25, r: 31.2, estimated: false }  # 전문 지식
+  reasoning: { s: 10.3, z: -1.24, r: 31.4, estimated: false }  # 추론
+  coding: { s: 13.3, z: -1.45, r: 28.3, estimated: false }  # 코딩
+  agentic: { s: 0.0, z: -1.43, r: 28.5, estimated: false }  # 에이전트
+  trust: { s: 9.3, z: -0.82, r: 37.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.53, r: 27.1, estimated: false }  # 긴문맥
-  instruction: { s: 18.3, z: -1.47, r: 28.0, estimated: false }  # 지시 따르기
+  instruction: { s: 18.3, z: -1.47, r: 27.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-24
-timestamp: 2026-08-24T00:00:00Z
+updated: 2026-08-27
+timestamp: 2026-08-27T00:00:00Z
 ---
 
 # Llama 3 8B
@@ -43,14 +43,14 @@ Meta · Open · Small(8B) · 컨텍스트 8k · 종합지능 **1.0** · ⚠️ p
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 31.3 | -1.25 | 실측 | [[aa-omniscience]] 10.0%×1.0, [[gpqa-diamond]] 30.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 31.5 | -1.23 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 30.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 28.4 | -1.44 | 실측 | [[scicode]] 12.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 28.4 | -1.44 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 37.9 | -0.8 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
+| 전문 지식 | 31.2 | -1.25 | 실측 | [[aa-omniscience]] 10.0%×1.0, [[gpqa-diamond]] 30.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 추론 | 31.4 | -1.24 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 30.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 28.3 | -1.45 | 실측 | [[scicode]] 12.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
+| 에이전트 | 28.5 | -1.43 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 신뢰성 | 37.7 | -0.82 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 27.1 | -1.53 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 28.0 | -1.47 | 실측 | [[ifbench]] 25.0%×1.0 |
+| 지시 따르기 | 27.9 | -1.47 | 실측 | [[ifbench]] 25.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

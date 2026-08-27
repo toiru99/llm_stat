@@ -13,10 +13,10 @@ params_b: 32
 is_reasoning: true
 radar:
   knowledge: { s: 34.5, z: -0.33, r: 45.1, estimated: false }  # 전문 지식
-  reasoning: { s: 27.9, z: -0.38, r: 44.3, estimated: false }  # 추론
-  coding: { s: 37.7, z: -0.44, r: 43.3, estimated: false }  # 코딩
-  agentic: { s: 45.5, z: 0.32, r: 54.8, estimated: false }  # 에이전트
-  trust: { s: 4.7, z: -1.0, r: 34.9, estimated: false }  # 신뢰성
+  reasoning: { s: 27.9, z: -0.39, r: 44.2, estimated: false }  # 추론
+  coding: { s: 37.7, z: -0.45, r: 43.2, estimated: false }  # 코딩
+  agentic: { s: 45.5, z: 0.32, r: 54.7, estimated: false }  # 에이전트
+  trust: { s: 4.7, z: -1.01, r: 34.8, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 12.0, z: -1.16, r: 32.5, estimated: false }  # 긴문맥
   instruction: { s: 52.1, z: -0.09, r: 48.6, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mi:dm K 2.5 Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-24
-timestamp: 2026-08-24T00:00:00Z
+updated: 2026-08-27
+timestamp: 2026-08-27T00:00:00Z
 ---
 
 # Mi:dm K 2.5 Pro
@@ -44,10 +44,10 @@ Korea Telecom · Proprietary · Small(32B) · 컨텍스트 128k · 종합지능 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 45.1 | -0.33 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 70.0%×0.4, [[humanitys-last-exam]] 8.0%×0.3 |
-| 추론 | 44.3 | -0.38 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 70.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
-| 코딩 | 43.3 | -0.44 | 실측 | [[scicode]] 33.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 54.8 | +0.32 | 실측 | [[tau2-bench]] 87.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 34.9 | -1.0 | 실측 | [[aa-omniscience]] 6.0%×1.0 |
+| 추론 | 44.2 | -0.39 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 70.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
+| 코딩 | 43.2 | -0.45 | 실측 | [[scicode]] 33.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
+| 에이전트 | 54.7 | +0.32 | 실측 | [[tau2-bench]] 87.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 신뢰성 | 34.8 | -1.01 | 실측 | [[aa-omniscience]] 6.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 32.5 | -1.16 | 실측 | [[aa-lcr]] 10.0%×1.0 |
 | 지시 따르기 | 48.6 | -0.09 | 실측 | [[ifbench]] 49.0%×1.0 |

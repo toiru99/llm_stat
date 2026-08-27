@@ -13,10 +13,10 @@ params_b: 398
 is_reasoning: false
 radar:
   knowledge: { s: 24.6, z: -0.8, r: 38.0, estimated: false }  # 전문 지식
-  reasoning: { s: 22.2, z: -0.66, r: 40.2, estimated: false }  # 추론
-  coding: { s: 26.7, z: -0.89, r: 36.6, estimated: false }  # 코딩
-  agentic: { s: 10.5, z: -1.04, r: 34.5, estimated: true }  # 에이전트
-  trust: { s: 24.7, z: -0.15, r: 47.8, estimated: true }  # 신뢰성
+  reasoning: { s: 22.2, z: -0.66, r: 40.1, estimated: false }  # 추론
+  coding: { s: 26.7, z: -0.9, r: 36.4, estimated: false }  # 코딩
+  agentic: { s: 10.5, z: -1.03, r: 34.5, estimated: true }  # 에이전트
+  trust: { s: 24.7, z: -0.17, r: 47.4, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 21.4, z: -0.88, r: 36.8, estimated: true }  # 긴문맥
   instruction: { s: 34.9, z: -0.79, r: 38.1, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba 1.5 Large
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-24
-timestamp: 2026-08-24T00:00:00Z
+updated: 2026-08-27
+timestamp: 2026-08-27T00:00:00Z
 ---
 
 # Jamba 1.5 Large
@@ -44,10 +44,10 @@ AI21 Labs · Open · Large(398B) · 컨텍스트 256k · 종합지능 **5.0** ·
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 38.0 | -0.8 | 실측 | [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 40.2 | -0.66 | 실측 | [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 36.6 | -0.89 | 실측 | [[scicode]] 16.0%×1.0 |
-| 에이전트 | 34.5 | -1.04 | 추정 | (추정) |
-| 신뢰성 | 47.8 | -0.15 | 추정 | (추정) |
+| 추론 | 40.1 | -0.66 | 실측 | [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 36.4 | -0.9 | 실측 | [[scicode]] 16.0%×1.0 |
+| 에이전트 | 34.5 | -1.03 | 추정 | (추정) |
+| 신뢰성 | 47.4 | -0.17 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 36.8 | -0.88 | 추정 | (추정) |
 | 지시 따르기 | 38.1 | -0.79 | 추정 | (추정) |

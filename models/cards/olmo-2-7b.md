@@ -12,11 +12,11 @@ size_class: Small
 params_b: 7.3
 is_reasoning: false
 radar:
-  knowledge: { s: 15.9, z: -1.21, r: 31.9, estimated: false }  # 전문 지식
-  reasoning: { s: 14.9, z: -1.01, r: 34.8, estimated: false }  # 추론
-  coding: { s: 4.4, z: -1.8, r: 23.0, estimated: false }  # 코딩
-  agentic: { s: 0.0, z: -1.44, r: 28.4, estimated: false }  # 에이전트
-  trust: { s: 6.5, z: -0.93, r: 36.1, estimated: true }  # 신뢰성
+  knowledge: { s: 15.9, z: -1.21, r: 31.8, estimated: false }  # 전문 지식
+  reasoning: { s: 14.9, z: -1.02, r: 34.8, estimated: false }  # 추론
+  coding: { s: 4.4, z: -1.81, r: 22.8, estimated: false }  # 코딩
+  agentic: { s: 0.0, z: -1.43, r: 28.5, estimated: false }  # 에이전트
+  trust: { s: 6.5, z: -0.94, r: 35.9, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.53, r: 27.1, estimated: false }  # 긴문맥
   instruction: { s: 16.9, z: -1.53, r: 27.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — OLMo 2 7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-24
-timestamp: 2026-08-24T00:00:00Z
+updated: 2026-08-27
+timestamp: 2026-08-27T00:00:00Z
 ---
 
 # OLMo 2 7B
@@ -43,11 +43,11 @@ Allen Institute for AI · Open · Small(7.3B) · 컨텍스트 4k · 종합지능
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 31.9 | -1.21 | 실측 | [[gpqa-diamond]] 29.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 34.8 | -1.01 | 실측 | [[gpqa-diamond]] 29.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 23.0 | -1.8 | 실측 | [[scicode]] 4.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 28.4 | -1.44 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 36.1 | -0.93 | 추정 | (추정) |
+| 전문 지식 | 31.8 | -1.21 | 실측 | [[gpqa-diamond]] 29.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 추론 | 34.8 | -1.02 | 실측 | [[gpqa-diamond]] 29.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 22.8 | -1.81 | 실측 | [[scicode]] 4.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
+| 에이전트 | 28.5 | -1.43 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 신뢰성 | 35.9 | -0.94 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 27.1 | -1.53 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 27.1 | -1.53 | 실측 | [[ifbench]] 24.0%×1.0 |

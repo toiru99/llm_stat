@@ -12,11 +12,11 @@ size_class: Large
 params_b: 300
 is_reasoning: false
 radar:
-  knowledge: { s: 36.9, z: -0.22, r: 46.8, estimated: false }  # 전문 지식
-  reasoning: { s: 29.1, z: -0.32, r: 45.2, estimated: false }  # 추론
-  coding: { s: 37.5, z: -0.45, r: 43.2, estimated: false }  # 코딩
-  agentic: { s: 4.5, z: -1.26, r: 31.0, estimated: false }  # 에이전트
-  trust: { s: 36.0, z: 0.34, r: 55.1, estimated: false }  # 신뢰성
+  knowledge: { s: 36.9, z: -0.22, r: 46.7, estimated: false }  # 전문 지식
+  reasoning: { s: 29.1, z: -0.33, r: 45.1, estimated: false }  # 추론
+  coding: { s: 37.5, z: -0.46, r: 43.1, estimated: false }  # 코딩
+  agentic: { s: 4.5, z: -1.26, r: 31.1, estimated: false }  # 에이전트
+  trust: { s: 36.0, z: 0.3, r: 54.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 4.8, z: -1.38, r: 29.3, estimated: false }  # 긴문맥
   instruction: { s: 38.0, z: -0.67, r: 40.0, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — ERNIE 4.5 300B A47B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-24
-timestamp: 2026-08-24T00:00:00Z
+updated: 2026-08-27
+timestamp: 2026-08-27T00:00:00Z
 ---
 
 # ERNIE 4.5 300B A47B
@@ -43,11 +43,11 @@ Baidu · Open · Large(300B) · 컨텍스트 131k · 종합지능 **9.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 46.8 | -0.22 | 실측 | [[aa-omniscience]] 19.0%×1.0, [[gpqa-diamond]] 81.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
-| 추론 | 45.2 | -0.32 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 81.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
-| 코딩 | 43.2 | -0.45 | 실측 | [[scicode]] 31.0%×1.0, [[terminal-bench]] 6.0%×0.5 |
-| 에이전트 | 31.0 | -1.26 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 6.0%×1.0 |
-| 신뢰성 | 55.1 | +0.34 | 실측 | [[aa-omniscience]] 33.0%×1.0 |
+| 전문 지식 | 46.7 | -0.22 | 실측 | [[aa-omniscience]] 19.0%×1.0, [[gpqa-diamond]] 81.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
+| 추론 | 45.1 | -0.33 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 81.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
+| 코딩 | 43.1 | -0.46 | 실측 | [[scicode]] 31.0%×1.0, [[terminal-bench]] 6.0%×0.5 |
+| 에이전트 | 31.1 | -1.26 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 6.0%×1.0 |
+| 신뢰성 | 54.6 | +0.3 | 실측 | [[aa-omniscience]] 33.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 29.3 | -1.38 | 실측 | [[aa-lcr]] 4.0%×1.0 |
 | 지시 따르기 | 40.0 | -0.67 | 실측 | [[ifbench]] 39.0%×1.0 |

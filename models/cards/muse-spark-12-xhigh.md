@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 77.0, z: 1.69, r: 75.3, estimated: false }  # 전문 지식
-  reasoning: { s: 77.3, z: 2.02, r: 80.4, estimated: false }  # 추론
-  coding: { s: 93.3, z: 1.83, r: 77.4, estimated: false }  # 코딩
-  agentic: { s: 76.1, z: 1.51, r: 72.6, estimated: false }  # 에이전트
-  trust: { s: 75.6, z: 2.04, r: 80.6, estimated: false }  # 신뢰성
+  knowledge: { s: 77.0, z: 1.69, r: 75.4, estimated: false }  # 전문 지식
+  reasoning: { s: 77.3, z: 2.01, r: 80.2, estimated: false }  # 추론
+  coding: { s: 93.3, z: 1.82, r: 77.3, estimated: false }  # 코딩
+  agentic: { s: 76.1, z: 1.49, r: 72.4, estimated: false }  # 에이전트
+  trust: { s: 75.6, z: 1.97, r: 79.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 100.0, z: 1.48, r: 72.2, estimated: false }  # 긴문맥
-  instruction: { s: 74.0, z: 0.8, r: 62.0, estimated: true }  # 지시 따르기
+  long_context: { s: 100.0, z: 1.47, r: 72.1, estimated: false }  # 긴문맥
+  instruction: { s: 74.1, z: 0.8, r: 62.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Spark 1.2 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-24
-timestamp: 2026-08-24T00:00:00Z
+updated: 2026-08-27
+timestamp: 2026-08-27T00:00:00Z
 ---
 
 # Muse Spark 1.2 (xhigh)
@@ -33,7 +33,7 @@ timestamp: 2026-08-24T00:00:00Z
 Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **57.0**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 신뢰성, 추론
+- **강점**: 추론, 신뢰성
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
@@ -43,13 +43,13 @@ Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **57.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 75.3 | +1.69 | 실측 | [[aa-omniscience]] 45.0%×1.0, [[gpqa-diamond]] 90.0%×0.4, [[humanitys-last-exam]] 45.0%×0.3 |
-| 추론 | 80.4 | +2.02 | 실측 | [[critpt]] 18.0%×1.0, [[gpqa-diamond]] 90.0%×1.0, [[humanitys-last-exam]] 45.0%×1.0 |
-| 코딩 | 77.4 | +1.83 | 실측 | [[scicode]] 56.0%×1.0 |
-| 에이전트 | 72.6 | +1.51 | 실측 | [[gdpval]] 56.0%×1.0, [[tau3-banking]] 35.0%×1.0 |
-| 신뢰성 | 80.6 | +2.04 | 실측 | [[aa-omniscience]] 67.0%×1.0 |
+| 전문 지식 | 75.4 | +1.69 | 실측 | [[aa-omniscience]] 45.0%×1.0, [[gpqa-diamond]] 90.0%×0.4, [[humanitys-last-exam]] 45.0%×0.3 |
+| 추론 | 80.2 | +2.01 | 실측 | [[critpt]] 18.0%×1.0, [[gpqa-diamond]] 90.0%×1.0, [[humanitys-last-exam]] 45.0%×1.0 |
+| 코딩 | 77.3 | +1.82 | 실측 | [[scicode]] 56.0%×1.0 |
+| 에이전트 | 72.4 | +1.49 | 실측 | [[gdpval]] 56.0%×1.0, [[tau3-banking]] 35.0%×1.0 |
+| 신뢰성 | 79.5 | +1.97 | 실측 | [[aa-omniscience]] 67.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 72.2 | +1.48 | 실측 | [[aa-lcr]] 83.0%×1.0 |
+| 긴문맥 | 72.1 | +1.47 | 실측 | [[aa-lcr]] 83.0%×1.0 |
 | 지시 따르기 | 62.0 | +0.8 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

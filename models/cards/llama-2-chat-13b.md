@@ -13,10 +13,10 @@ params_b: 13
 is_reasoning: false
 radar:
   knowledge: { s: 18.0, z: -1.11, r: 33.3, estimated: false }  # 전문 지식
-  reasoning: { s: 16.6, z: -0.93, r: 36.1, estimated: false }  # 추론
-  coding: { s: 20.0, z: -1.17, r: 32.5, estimated: false }  # 코딩
-  agentic: { s: 14.8, z: -0.87, r: 37.0, estimated: true }  # 에이전트
-  trust: { s: 23.3, z: -0.2, r: 47.0, estimated: true }  # 신뢰성
+  reasoning: { s: 16.6, z: -0.93, r: 36.0, estimated: false }  # 추론
+  coding: { s: 20.0, z: -1.18, r: 32.4, estimated: false }  # 코딩
+  agentic: { s: 14.8, z: -0.86, r: 37.1, estimated: true }  # 에이전트
+  trust: { s: 23.3, z: -0.23, r: 46.6, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 15.8, z: -1.05, r: 34.2, estimated: true }  # 긴문맥
   instruction: { s: 27.2, z: -1.11, r: 33.4, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 2 Chat 13B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-24
-timestamp: 2026-08-24T00:00:00Z
+updated: 2026-08-27
+timestamp: 2026-08-27T00:00:00Z
 ---
 
 # Llama 2 Chat 13B
@@ -44,10 +44,10 @@ Meta · Open · Small(13B) · 컨텍스트 4k · 종합지능 **3.0** · ⚠️ 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 33.3 | -1.11 | 실측 | [[gpqa-diamond]] 32.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 36.1 | -0.93 | 실측 | [[gpqa-diamond]] 32.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 32.5 | -1.17 | 실측 | [[scicode]] 12.0%×1.0 |
-| 에이전트 | 37.0 | -0.87 | 추정 | (추정) |
-| 신뢰성 | 47.0 | -0.2 | 추정 | (추정) |
+| 추론 | 36.0 | -0.93 | 실측 | [[gpqa-diamond]] 32.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 32.4 | -1.18 | 실측 | [[scicode]] 12.0%×1.0 |
+| 에이전트 | 37.1 | -0.86 | 추정 | (추정) |
+| 신뢰성 | 46.6 | -0.23 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 34.2 | -1.05 | 추정 | (추정) |
 | 지시 따르기 | 33.4 | -1.11 | 추정 | (추정) |

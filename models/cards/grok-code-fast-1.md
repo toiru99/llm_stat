@@ -12,11 +12,11 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 40.9, z: -0.02, r: 49.6, estimated: false }  # 전문 지식
-  reasoning: { s: 29.0, z: -0.32, r: 45.2, estimated: false }  # 추론
-  coding: { s: 48.6, z: 0.0, r: 50.0, estimated: false }  # 코딩
-  agentic: { s: 51.3, z: 0.54, r: 58.2, estimated: false }  # 에이전트
-  trust: { s: 22.1, z: -0.26, r: 46.2, estimated: false }  # 신뢰성
+  knowledge: { s: 40.9, z: -0.03, r: 49.6, estimated: false }  # 전문 지식
+  reasoning: { s: 29.0, z: -0.33, r: 45.1, estimated: false }  # 추론
+  coding: { s: 48.6, z: -0.01, r: 49.9, estimated: false }  # 코딩
+  agentic: { s: 51.3, z: 0.54, r: 58.1, estimated: false }  # 에이전트
+  trust: { s: 22.1, z: -0.28, r: 45.8, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 61.4, z: 0.32, r: 54.8, estimated: false }  # 긴문맥
   instruction: { s: 40.8, z: -0.55, r: 41.7, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok Code Fast 1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-24
-timestamp: 2026-08-24T00:00:00Z
+updated: 2026-08-27
+timestamp: 2026-08-27T00:00:00Z
 ---
 
 # Grok Code Fast 1
@@ -43,11 +43,11 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **22.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 49.6 | -0.02 | 실측 | [[aa-omniscience]] 24.0%×1.0, [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 8.0%×0.3 |
-| 추론 | 45.2 | -0.32 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
-| 코딩 | 50.0 | +0.0 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
-| 에이전트 | 58.2 | +0.54 | 실측 | [[tau2-bench]] 76.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
-| 신뢰성 | 46.2 | -0.26 | 실측 | [[aa-omniscience]] 21.0%×1.0 |
+| 전문 지식 | 49.6 | -0.03 | 실측 | [[aa-omniscience]] 24.0%×1.0, [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 8.0%×0.3 |
+| 추론 | 45.1 | -0.33 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
+| 코딩 | 49.9 | -0.01 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
+| 에이전트 | 58.1 | +0.54 | 실측 | [[tau2-bench]] 76.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
+| 신뢰성 | 45.8 | -0.28 | 실측 | [[aa-omniscience]] 21.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 54.8 | +0.32 | 실측 | [[aa-lcr]] 51.0%×1.0 |
 | 지시 따르기 | 41.7 | -0.55 | 실측 | [[ifbench]] 41.0%×1.0 |

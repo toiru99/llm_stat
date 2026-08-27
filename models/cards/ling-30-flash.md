@@ -5,7 +5,7 @@ creator: InclusionAI
 license: Open
 intelligence_index: 38.0
 price_blended_usd_1m: 0.0475
-output_speed_tps: 399.0
+output_speed_tps: 388.0
 context_window: 262000
 status: current
 size_class: Medium
@@ -13,19 +13,19 @@ params_b: 124
 is_reasoning: true
 radar:
   knowledge: { s: 43.9, z: 0.12, r: 51.8, estimated: false }  # 전문 지식
-  reasoning: { s: 45.7, z: 0.49, r: 57.3, estimated: false }  # 추론
-  coding: { s: 68.3, z: 0.81, r: 62.1, estimated: false }  # 코딩
-  agentic: { s: 48.9, z: 0.45, r: 56.8, estimated: false }  # 에이전트
-  trust: { s: 62.8, z: 1.49, r: 72.3, estimated: false }  # 신뢰성
+  reasoning: { s: 45.7, z: 0.48, r: 57.2, estimated: false }  # 추론
+  coding: { s: 68.3, z: 0.8, r: 62.0, estimated: false }  # 코딩
+  agentic: { s: 48.9, z: 0.45, r: 56.7, estimated: false }  # 에이전트
+  trust: { s: 62.8, z: 1.43, r: 71.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 80.7, z: 0.9, r: 63.5, estimated: false }  # 긴문맥
+  long_context: { s: 80.7, z: 0.89, r: 63.4, estimated: false }  # 긴문맥
   instruction: { s: 77.5, z: 0.94, r: 64.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Ling 3.0 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-24
-timestamp: 2026-08-24T00:00:00Z
+updated: 2026-08-27
+timestamp: 2026-08-27T00:00:00Z
 ---
 
 # Ling 3.0 Flash
@@ -37,19 +37,19 @@ InclusionAI · Open · Medium(124B) · 컨텍스트 262k · 종합지능 **38.0*
 - **약점**: 에이전트, 전문 지식
 
 ## 실용 지표
-`입력 $0.07 · 출력 $0.22 · 혼합 $0.0475/1M · 399.0 t/s · TTFT 2.67s · 262k ctx` · 가성비 800.0
+`입력 $0.07 · 출력 $0.22 · 혼합 $0.0475/1M · 388.0 t/s · TTFT 2.5s · 262k ctx` · 가성비 800.0
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 51.8 | +0.12 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 24.0%×0.3 |
-| 추론 | 57.3 | +0.49 | 실측 | [[critpt]] 2.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 24.0%×1.0 |
-| 코딩 | 62.1 | +0.81 | 실측 | [[scicode]] 41.0%×1.0 |
-| 에이전트 | 56.8 | +0.45 | 실측 | [[gdpval]] 30.0%×1.0, [[tau3-banking]] 27.0%×1.0 |
-| 신뢰성 | 72.3 | +1.49 | 실측 | [[aa-omniscience]] 56.0%×1.0 |
+| 추론 | 57.2 | +0.48 | 실측 | [[critpt]] 2.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 24.0%×1.0 |
+| 코딩 | 62.0 | +0.8 | 실측 | [[scicode]] 41.0%×1.0 |
+| 에이전트 | 56.7 | +0.45 | 실측 | [[gdpval]] 30.0%×1.0, [[tau3-banking]] 27.0%×1.0 |
+| 신뢰성 | 71.4 | +1.43 | 실측 | [[aa-omniscience]] 56.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 63.5 | +0.9 | 실측 | [[aa-lcr]] 67.0%×1.0 |
+| 긴문맥 | 63.4 | +0.89 | 실측 | [[aa-lcr]] 67.0%×1.0 |
 | 지시 따르기 | 64.1 | +0.94 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

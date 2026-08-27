@@ -13,10 +13,10 @@ params_b: 35
 is_reasoning: false
 radar:
   knowledge: { s: 15.3, z: -1.24, r: 31.4, estimated: false }  # 전문 지식
-  reasoning: { s: 14.3, z: -1.04, r: 34.4, estimated: false }  # 추론
-  coding: { s: 10.0, z: -1.57, r: 26.4, estimated: false }  # 코딩
-  agentic: { s: 9.5, z: -1.07, r: 33.9, estimated: true }  # 에이전트
-  trust: { s: 23.5, z: -0.2, r: 47.1, estimated: true }  # 신뢰성
+  reasoning: { s: 14.3, z: -1.04, r: 34.3, estimated: false }  # 추론
+  coding: { s: 10.0, z: -1.58, r: 26.2, estimated: false }  # 코딩
+  agentic: { s: 9.5, z: -1.07, r: 34.0, estimated: true }  # 에이전트
+  trust: { s: 23.5, z: -0.22, r: 46.7, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 14.2, z: -1.1, r: 33.5, estimated: true }  # 긴문맥
   instruction: { s: 22.0, z: -1.32, r: 30.2, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Command-R (Mar)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-24
-timestamp: 2026-08-24T00:00:00Z
+updated: 2026-08-27
+timestamp: 2026-08-27T00:00:00Z
 ---
 
 # Command-R (Mar)
@@ -44,10 +44,10 @@ Cohere · Open · Small(35B) · 컨텍스트 128k · 종합지능 **2.0** · ⚠
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 31.4 | -1.24 | 실측 | [[gpqa-diamond]] 28.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 34.4 | -1.04 | 실측 | [[gpqa-diamond]] 28.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 26.4 | -1.57 | 실측 | [[scicode]] 6.0%×1.0 |
-| 에이전트 | 33.9 | -1.07 | 추정 | (추정) |
-| 신뢰성 | 47.1 | -0.2 | 추정 | (추정) |
+| 추론 | 34.3 | -1.04 | 실측 | [[gpqa-diamond]] 28.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 26.2 | -1.58 | 실측 | [[scicode]] 6.0%×1.0 |
+| 에이전트 | 34.0 | -1.07 | 추정 | (추정) |
+| 신뢰성 | 46.7 | -0.22 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 33.5 | -1.1 | 추정 | (추정) |
 | 지시 따르기 | 30.2 | -1.32 | 추정 | (추정) |

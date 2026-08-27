@@ -12,11 +12,11 @@ size_class: Tiny
 params_b: 3
 is_reasoning: false
 radar:
-  knowledge: { s: 13.8, z: -1.31, r: 30.4, estimated: false }  # 전문 지식
-  reasoning: { s: 9.5, z: -1.27, r: 30.9, estimated: false }  # 추론
-  coding: { s: 14.3, z: -1.4, r: 29.1, estimated: false }  # 코딩
-  agentic: { s: 7.7, z: -1.14, r: 32.9, estimated: false }  # 에이전트
-  trust: { s: 3.5, z: -1.05, r: 34.2, estimated: false }  # 신뢰성
+  knowledge: { s: 13.8, z: -1.31, r: 30.3, estimated: false }  # 전문 지식
+  reasoning: { s: 9.5, z: -1.28, r: 30.8, estimated: false }  # 추론
+  coding: { s: 14.3, z: -1.41, r: 28.9, estimated: false }  # 코딩
+  agentic: { s: 7.7, z: -1.14, r: 33.0, estimated: false }  # 에이전트
+  trust: { s: 3.5, z: -1.06, r: 34.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 3.6, z: -1.42, r: 28.7, estimated: false }  # 긴문맥
   instruction: { s: 31.0, z: -0.95, r: 35.7, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.1 3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-24
-timestamp: 2026-08-24T00:00:00Z
+updated: 2026-08-27
+timestamp: 2026-08-27T00:00:00Z
 ---
 
 # Granite 4.1 3B
@@ -43,11 +43,11 @@ IBM · Open · Tiny(3B) · 컨텍스트 131k · 종합지능 **4.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 30.4 | -1.31 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 31.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
-| 추론 | 30.9 | -1.27 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 31.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
-| 코딩 | 29.1 | -1.4 | 실측 | [[scicode]] 12.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 32.9 | -1.14 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 20.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 34.2 | -1.05 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
+| 전문 지식 | 30.3 | -1.31 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 31.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
+| 추론 | 30.8 | -1.28 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 31.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
+| 코딩 | 28.9 | -1.41 | 실측 | [[scicode]] 12.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
+| 에이전트 | 33.0 | -1.14 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 20.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 신뢰성 | 34.1 | -1.06 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.7 | -1.42 | 실측 | [[aa-lcr]] 3.0%×1.0 |
 | 지시 따르기 | 35.7 | -0.95 | 실측 | [[ifbench]] 34.0%×1.0 |

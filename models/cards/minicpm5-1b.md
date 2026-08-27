@@ -12,11 +12,11 @@ size_class: Tiny
 params_b: 1
 is_reasoning: false
 radar:
-  knowledge: { s: 7.5, z: -1.61, r: 25.9, estimated: false }  # 전문 지식
-  reasoning: { s: 10.1, z: -1.24, r: 31.4, estimated: false }  # 추론
-  coding: { s: 4.4, z: -1.8, r: 23.0, estimated: false }  # 코딩
+  knowledge: { s: 7.5, z: -1.61, r: 25.8, estimated: false }  # 전문 지식
+  reasoning: { s: 10.1, z: -1.25, r: 31.3, estimated: false }  # 추론
+  coding: { s: 4.4, z: -1.81, r: 22.8, estimated: false }  # 코딩
   agentic: { s: 40.9, z: 0.14, r: 52.1, estimated: false }  # 에이전트
-  trust: { s: 94.2, z: 2.84, r: 92.6, estimated: false }  # 신뢰성
+  trust: { s: 94.2, z: 2.75, r: 91.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 6.0, z: -1.34, r: 29.8, estimated: false }  # 긴문맥
   instruction: { s: 52.1, z: -0.09, r: 48.6, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniCPM5-1B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-24
-timestamp: 2026-08-24T00:00:00Z
+updated: 2026-08-27
+timestamp: 2026-08-27T00:00:00Z
 ---
 
 # MiniCPM5-1B
@@ -43,11 +43,11 @@ OpenBMB · Open · Tiny(1B) · 컨텍스트 128k · 종합지능 **12.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 25.9 | -1.61 | 실측 | [[aa-omniscience]] 2.0%×1.0, [[gpqa-diamond]] 28.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
-| 추론 | 31.4 | -1.24 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 28.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 23.0 | -1.8 | 실측 | [[scicode]] 4.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
+| 전문 지식 | 25.8 | -1.61 | 실측 | [[aa-omniscience]] 2.0%×1.0, [[gpqa-diamond]] 28.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 추론 | 31.3 | -1.25 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 28.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
+| 코딩 | 22.8 | -1.81 | 실측 | [[scicode]] 4.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 52.1 | +0.14 | 실측 | [[tau2-bench]] 81.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 92.6 | +2.84 | 실측 | [[aa-omniscience]] 83.0%×1.0 |
+| 신뢰성 | 91.2 | +2.75 | 실측 | [[aa-omniscience]] 83.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 29.8 | -1.34 | 실측 | [[aa-lcr]] 5.0%×1.0 |
 | 지시 따르기 | 48.6 | -0.09 | 실측 | [[ifbench]] 49.0%×1.0 |

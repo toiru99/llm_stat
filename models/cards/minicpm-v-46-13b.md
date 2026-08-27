@@ -12,20 +12,20 @@ size_class: Tiny
 params_b: 1.3
 is_reasoning: false
 radar:
-  knowledge: { s: 12.6, z: -1.36, r: 29.5, estimated: false }  # 전문 지식
-  reasoning: { s: 10.7, z: -1.21, r: 31.8, estimated: false }  # 추론
-  coding: { s: 2.2, z: -1.89, r: 21.6, estimated: false }  # 코딩
+  knowledge: { s: 12.6, z: -1.37, r: 29.5, estimated: false }  # 전문 지식
+  reasoning: { s: 10.7, z: -1.22, r: 31.7, estimated: false }  # 추론
+  coding: { s: 2.2, z: -1.9, r: 21.5, estimated: false }  # 코딩
   agentic: { s: 29.6, z: -0.29, r: 45.6, estimated: false }  # 에이전트
-  trust: { s: 2.3, z: -1.1, r: 33.4, estimated: false }  # 신뢰성
-  multimodal: { s: 32.9, z: -1.91, r: 21.3, estimated: false }  # 멀티모달
+  trust: { s: 2.3, z: -1.11, r: 33.3, estimated: false }  # 신뢰성
+  multimodal: { s: 32.9, z: -1.93, r: 21.1, estimated: false }  # 멀티모달
   long_context: { s: 8.4, z: -1.27, r: 30.9, estimated: false }  # 긴문맥
-  instruction: { s: 21.1, z: -1.35, r: 29.7, estimated: false }  # 지시 따르기
+  instruction: { s: 21.1, z: -1.36, r: 29.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiniCPM-V 4.6 1.3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-24
-timestamp: 2026-08-24T00:00:00Z
+updated: 2026-08-27
+timestamp: 2026-08-27T00:00:00Z
 ---
 
 # MiniCPM-V 4.6 1.3B
@@ -43,14 +43,14 @@ OpenBMB · Open · Tiny(1.3B) · 컨텍스트 262k · 종합지능 **4.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 29.5 | -1.36 | 실측 | [[aa-omniscience]] 7.0%×1.0, [[gpqa-diamond]] 31.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 31.8 | -1.21 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 31.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 21.6 | -1.89 | 실측 | [[scicode]] 2.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
+| 전문 지식 | 29.5 | -1.37 | 실측 | [[aa-omniscience]] 7.0%×1.0, [[gpqa-diamond]] 31.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 추론 | 31.7 | -1.22 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 31.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 21.5 | -1.9 | 실측 | [[scicode]] 2.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 45.6 | -0.29 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 88.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 33.4 | -1.1 | 실측 | [[aa-omniscience]] 4.0%×1.0 |
-| 멀티모달 | 21.3 | -1.91 | 실측 | [[mmmu-pro]] 38.0%×1.0 |
+| 신뢰성 | 33.3 | -1.11 | 실측 | [[aa-omniscience]] 4.0%×1.0 |
+| 멀티모달 | 21.1 | -1.93 | 실측 | [[mmmu-pro]] 38.0%×1.0 |
 | 긴문맥 | 30.9 | -1.27 | 실측 | [[aa-lcr]] 7.0%×1.0 |
-| 지시 따르기 | 29.7 | -1.35 | 실측 | [[ifbench]] 27.0%×1.0 |
+| 지시 따르기 | 29.7 | -1.36 | 실측 | [[ifbench]] 27.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

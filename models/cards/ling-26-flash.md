@@ -4,19 +4,19 @@ title: Ling 2.6 Flash
 creator: InclusionAI
 license: Open
 intelligence_index: 14.0
-price_blended_usd_1m: 0.064
-output_speed_tps: 104.0
+price_blended_usd_1m: None
+output_speed_tps: None
 context_window: 262000
 status: past
 size_class: Medium
 params_b: 107
 is_reasoning: false
 radar:
-  knowledge: { s: 29.0, z: -0.59, r: 41.2, estimated: false }  # 전문 지식
-  reasoning: { s: 22.3, z: -0.65, r: 40.3, estimated: false }  # 추론
-  coding: { s: 40.6, z: -0.33, r: 45.1, estimated: false }  # 코딩
+  knowledge: { s: 29.0, z: -0.59, r: 41.1, estimated: false }  # 전문 지식
+  reasoning: { s: 22.3, z: -0.66, r: 40.2, estimated: false }  # 추론
+  coding: { s: 40.6, z: -0.33, r: 45.0, estimated: false }  # 코딩
   agentic: { s: 31.9, z: -0.21, r: 46.9, estimated: false }  # 에이전트
-  trust: { s: 1.2, z: -1.15, r: 32.7, estimated: false }  # 신뢰성
+  trust: { s: 1.2, z: -1.16, r: 32.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 33.7, z: -0.51, r: 42.3, estimated: false }  # 긴문맥
   instruction: { s: 63.4, z: 0.37, r: 55.5, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling 2.6 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-24
-timestamp: 2026-08-24T00:00:00Z
+updated: 2026-08-27
+timestamp: 2026-08-27T00:00:00Z
 ---
 
 # Ling 2.6 Flash
@@ -37,17 +37,17 @@ InclusionAI · Open · Medium(107B) · 컨텍스트 262k · 종합지능 **14.0*
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.3 · 혼합 $0.064/1M · 104.0 t/s · TTFT 1.13s · 262k ctx` · 가성비 218.8
+`입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 41.2 | -0.59 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 59.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
-| 추론 | 40.3 | -0.65 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 59.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 45.1 | -0.33 | 실측 | [[scicode]] 27.0%×1.0, [[terminal-bench]] 21.0%×0.5 |
+| 전문 지식 | 41.1 | -0.59 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 59.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 추론 | 40.2 | -0.66 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 59.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
+| 코딩 | 45.0 | -0.33 | 실측 | [[scicode]] 27.0%×1.0, [[terminal-bench]] 21.0%×0.5 |
 | 에이전트 | 46.9 | -0.21 | 실측 | [[gdpval]] 2.0%×1.0, [[tau2-bench]] 86.0%×1.0, [[tau3-banking]] 3.0%×1.0, [[terminal-bench]] 21.0%×1.0 |
-| 신뢰성 | 32.7 | -1.15 | 실측 | [[aa-omniscience]] 3.0%×1.0 |
+| 신뢰성 | 32.6 | -1.16 | 실측 | [[aa-omniscience]] 3.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 42.3 | -0.51 | 실측 | [[aa-lcr]] 28.0%×1.0 |
 | 지시 따르기 | 55.5 | +0.37 | 실측 | [[ifbench]] 57.0%×1.0 |

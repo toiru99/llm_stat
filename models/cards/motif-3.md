@@ -13,19 +13,19 @@ params_b: 314
 is_reasoning: true
 radar:
   knowledge: { s: 58.6, z: 0.82, r: 62.3, estimated: false }  # 전문 지식
-  reasoning: { s: 58.1, z: 1.09, r: 66.4, estimated: false }  # 추론
-  coding: { s: 68.3, z: 0.81, r: 62.1, estimated: false }  # 코딩
-  agentic: { s: 63.4, z: 1.01, r: 65.2, estimated: false }  # 에이전트
-  trust: { s: 81.4, z: 2.29, r: 84.3, estimated: false }  # 신뢰성
+  reasoning: { s: 58.1, z: 1.08, r: 66.3, estimated: false }  # 추론
+  coding: { s: 68.3, z: 0.8, r: 62.0, estimated: false }  # 코딩
+  agentic: { s: 63.4, z: 1.01, r: 65.1, estimated: false }  # 에이전트
+  trust: { s: 81.4, z: 2.21, r: 83.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 86.7, z: 1.08, r: 66.2, estimated: false }  # 긴문맥
+  long_context: { s: 86.7, z: 1.08, r: 66.1, estimated: false }  # 긴문맥
   instruction: { s: 93.8, z: 1.61, r: 74.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Motif 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-24
-timestamp: 2026-08-24T00:00:00Z
+updated: 2026-08-27
+timestamp: 2026-08-27T00:00:00Z
 ---
 
 # Motif 3
@@ -44,12 +44,12 @@ Motif Technologies · Open · Large(314B) · 컨텍스트 262k · 종합지능 *
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 62.3 | +0.82 | 실측 | [[aa-omniscience]] 30.0%×1.0, [[gpqa-diamond]] 83.0%×0.4, [[humanitys-last-exam]] 37.0%×0.3 |
-| 추론 | 66.4 | +1.09 | 실측 | [[critpt]] 7.0%×1.0, [[gpqa-diamond]] 83.0%×1.0, [[humanitys-last-exam]] 37.0%×1.0 |
-| 코딩 | 62.1 | +0.81 | 실측 | [[scicode]] 41.0%×1.0 |
-| 에이전트 | 65.2 | +1.01 | 실측 | [[gdpval]] 39.0%×1.0, [[tau3-banking]] 35.0%×1.0 |
-| 신뢰성 | 84.3 | +2.29 | 실측 | [[aa-omniscience]] 72.0%×1.0 |
+| 추론 | 66.3 | +1.08 | 실측 | [[critpt]] 7.0%×1.0, [[gpqa-diamond]] 83.0%×1.0, [[humanitys-last-exam]] 37.0%×1.0 |
+| 코딩 | 62.0 | +0.8 | 실측 | [[scicode]] 41.0%×1.0 |
+| 에이전트 | 65.1 | +1.01 | 실측 | [[gdpval]] 39.0%×1.0, [[tau3-banking]] 35.0%×1.0 |
+| 신뢰성 | 83.1 | +2.21 | 실측 | [[aa-omniscience]] 72.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 66.2 | +1.08 | 실측 | [[aa-lcr]] 72.0%×1.0 |
+| 긴문맥 | 66.1 | +1.08 | 실측 | [[aa-lcr]] 72.0%×1.0 |
 | 지시 따르기 | 74.1 | +1.61 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
