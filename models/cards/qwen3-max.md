@@ -12,10 +12,10 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 43.0, z: 0.08, r: 51.1, estimated: false }  # 전문 지식
-  reasoning: { s: 32.7, z: -0.15, r: 47.7, estimated: false }  # 추론
-  coding: { s: 52.3, z: 0.14, r: 52.2, estimated: false }  # 코딩
-  agentic: { s: 52.5, z: 0.59, r: 58.8, estimated: false }  # 에이전트
+  knowledge: { s: 43.0, z: 0.07, r: 51.1, estimated: false }  # 전문 지식
+  reasoning: { s: 32.7, z: -0.16, r: 47.7, estimated: false }  # 추론
+  coding: { s: 52.3, z: 0.14, r: 52.1, estimated: false }  # 코딩
+  agentic: { s: 52.5, z: 0.58, r: 58.7, estimated: false }  # 에이전트
   trust: { s: 9.3, z: -0.82, r: 37.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 57.8, z: 0.21, r: 53.1, estimated: false }  # 긴문맥
@@ -37,16 +37,16 @@ Alibaba · Proprietary · Unknown · 컨텍스트 262k · 종합지능 **24.0** 
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $1.2 · 출력 $6.0 · 혼합 $1.68/1M · 40.0 t/s · TTFT 2.44s · 262k ctx` · 가성비 14.3
+`입력 $1.2 · 출력 $6.0 · 혼합 $1.68/1M · 40.0 t/s · TTFT 2.41s · 262k ctx` · 가성비 14.3
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 51.1 | +0.08 | 실측 | [[aa-omniscience]] 24.0%×1.0, [[gpqa-diamond]] 76.0%×0.4, [[humanitys-last-exam]] 12.0%×0.3 |
-| 추론 | 47.7 | -0.15 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
-| 코딩 | 52.2 | +0.14 | 실측 | [[scicode]] 38.0%×1.0, [[terminal-bench]] 20.0%×0.5 |
-| 에이전트 | 58.8 | +0.59 | 실측 | [[tau2-bench]] 74.0%×1.0, [[terminal-bench]] 20.0%×1.0 |
+| 전문 지식 | 51.1 | +0.07 | 실측 | [[aa-omniscience]] 24.0%×1.0, [[gpqa-diamond]] 76.0%×0.4, [[humanitys-last-exam]] 12.0%×0.3 |
+| 추론 | 47.7 | -0.16 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
+| 코딩 | 52.1 | +0.14 | 실측 | [[scicode]] 38.0%×1.0, [[terminal-bench]] 20.0%×0.5 |
+| 에이전트 | 58.7 | +0.58 | 실측 | [[tau2-bench]] 74.0%×1.0, [[terminal-bench]] 20.0%×1.0 |
 | 신뢰성 | 37.7 | -0.82 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 53.1 | +0.21 | 실측 | [[aa-lcr]] 48.0%×1.0 |

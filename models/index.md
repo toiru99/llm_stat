@@ -1,10 +1,10 @@
 # 모델 (Models)
 
-`scripts/build_cards.py` 자동 생성 · 데이터 2026-08-27 · 제작사 58곳 · current 249 + past 291 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
+`scripts/build_cards.py` 자동 생성 · 데이터 2026-08-27 · 제작사 58곳 · current 250 + past 291 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
 
 - 레이더 축·방법론: [radar-spec.md](radar-spec.md) · 설정: [../config.toml](../config.toml)
 
-## 모델 목록 (종합지능 내림차순, 540개)
+## 모델 목록 (종합지능 내림차순, 541개)
 
 * [Claude Opus 5 (max)](cards/claude-opus-5-max.md) - 종합지능 63.0
 * [Claude Opus 5 (xhigh)](cards/claude-opus-5-xhigh.md) - 종합지능 63.0
@@ -26,6 +26,7 @@
 * [GPT-5.6 Sol (high)](cards/gpt-56-sol-high.md) - 종합지능 57.0
 * [Muse Spark 1.2 (xhigh)](cards/muse-spark-12-xhigh.md) - 종합지능 57.0
 * [GPT-5.5 (xhigh)](cards/gpt-55-xhigh.md) - 종합지능 56.0 · past
+* [Qwen3.8-Flash-Next](cards/qwen38-flash-next.md) - 종합지능 56.0
 * [Grok 4.5 (high)](cards/grok-45-high.md) - 종합지능 56.0
 * [Gemini 3.7 Flash (high)](cards/gemini-37-flash-high.md) - 종합지능 56.0
 * [GPT-5.6 Sol (medium)](cards/gpt-56-sol-medium.md) - 종합지능 56.0
@@ -72,8 +73,8 @@
 * [GPT-5.5 (low)](cards/gpt-55-low.md) - 종합지능 44.0 · past
 * [Muse Spark](cards/muse-spark.md) - 종합지능 44.0 · past
 * [GPT-5.2 (xhigh)](cards/gpt-52-xhigh.md) - 종합지능 43.0 · past
-* [Kimi K2.7 Code](cards/kimi-k27-code.md) - 종합지능 43.0
 * [MiMo-V2.5-Pro](cards/mimo-v25-pro.md) - 종합지능 43.0
+* [Kimi K2.7 Code](cards/kimi-k27-code.md) - 종합지능 43.0
 * [Qwen3.8 27B (low)](cards/qwen38-27b-low.md) - 종합지능 43.0
 * [Claude Sonnet 5 (Non-reasoning)](cards/claude-sonnet-5-non-reasoning.md) - 종합지능 43.0
 * [Inkling](cards/inkling.md) - 종합지능 42.0
@@ -83,8 +84,8 @@
 * [Nex-N2-Pro](cards/nex-n2-pro.md) - 종합지능 42.0
 * [GPT-5.6 Sol (Non-reasoning)](cards/gpt-56-sol-non-reasoning.md) - 종합지능 42.0
 * [DeepSeek V4 Flash (max)](cards/deepseek-v4-flash-max.md) - 종합지능 42.0 · past
-* [Qwen3.6 Max Preview](cards/qwen36-max-preview.md) - 종합지능 41.0 · past
 * [GLM-5.1](cards/glm-51.md) - 종합지능 41.0 · past
+* [Qwen3.6 Max Preview](cards/qwen36-max-preview.md) - 종합지능 41.0 · past
 * [GLM-5](cards/glm-5.md) - 종합지능 41.0 · past
 * [Grok Build 0.1 0616](cards/grok-build-01-0616.md) - 종합지능 41.0 · past
 * [Inkling Small](cards/inkling-small.md) - 종합지능 41.0

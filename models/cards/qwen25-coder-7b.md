@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 17.8, z: -0.87, r: 36.9, estimated: false }  # 추론
   coding: { s: 25.0, z: -0.97, r: 35.4, estimated: false }  # 코딩
   agentic: { s: 10.2, z: -1.04, r: 34.4, estimated: true }  # 에이전트
-  trust: { s: 17.9, z: -0.46, r: 43.2, estimated: true }  # 신뢰성
+  trust: { s: 17.9, z: -0.46, r: 43.1, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 17.8, z: -0.99, r: 35.1, estimated: true }  # 긴문맥
   instruction: { s: 29.9, z: -1.0, r: 35.0, estimated: true }  # 지시 따르기
@@ -47,7 +47,7 @@ Alibaba · Open · Unknown · 컨텍스트 131k · 종합지능 **4.0**
 | 추론 | 36.9 | -0.87 | 실측 | [[gpqa-diamond]] 34.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 35.4 | -0.97 | 실측 | [[scicode]] 15.0%×1.0 |
 | 에이전트 | 34.4 | -1.04 | 추정 | (추정) |
-| 신뢰성 | 43.2 | -0.46 | 추정 | (추정) |
+| 신뢰성 | 43.1 | -0.46 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 35.1 | -0.99 | 추정 | (추정) |
 | 지시 따르기 | 35.0 | -1.0 | 추정 | (추정) |

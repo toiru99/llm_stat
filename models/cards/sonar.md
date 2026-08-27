@@ -12,13 +12,13 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 28.0, z: -0.64, r: 40.5, estimated: false }  # 전문 지식
-  reasoning: { s: 25.5, z: -0.5, r: 42.5, estimated: false }  # 추론
+  knowledge: { s: 28.0, z: -0.64, r: 40.4, estimated: false }  # 전문 지식
+  reasoning: { s: 25.5, z: -0.5, r: 42.4, estimated: false }  # 추론
   coding: { s: 38.3, z: -0.43, r: 43.6, estimated: false }  # 코딩
-  agentic: { s: 37.2, z: -0.0, r: 50.0, estimated: true }  # 에이전트
-  trust: { s: 29.0, z: 0.01, r: 50.1, estimated: true }  # 신뢰성
+  agentic: { s: 37.2, z: -0.01, r: 49.9, estimated: true }  # 에이전트
+  trust: { s: 29.0, z: 0.0, r: 50.1, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 23.7, z: -0.82, r: 37.8, estimated: true }  # 긴문맥
+  long_context: { s: 23.7, z: -0.82, r: 37.7, estimated: true }  # 긴문맥
   instruction: { s: 42.0, z: -0.51, r: 42.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
@@ -43,13 +43,13 @@ Perplexity · Proprietary · Unknown · 컨텍스트 127k · 종합지능 **9.0*
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 40.5 | -0.64 | 실측 | [[gpqa-diamond]] 47.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 42.5 | -0.5 | 실측 | [[gpqa-diamond]] 47.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 전문 지식 | 40.4 | -0.64 | 실측 | [[gpqa-diamond]] 47.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 추론 | 42.4 | -0.5 | 실측 | [[gpqa-diamond]] 47.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 43.6 | -0.43 | 실측 | [[scicode]] 23.0%×1.0 |
-| 에이전트 | 50.0 | +-0.0 | 추정 | (추정) |
-| 신뢰성 | 50.1 | +0.01 | 추정 | (추정) |
+| 에이전트 | 49.9 | -0.01 | 추정 | (추정) |
+| 신뢰성 | 50.1 | +0.0 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 37.8 | -0.82 | 추정 | (추정) |
+| 긴문맥 | 37.7 | -0.82 | 추정 | (추정) |
 | 지시 따르기 | 42.4 | -0.51 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

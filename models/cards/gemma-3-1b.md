@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 8.0, z: -1.35, r: 29.7, estimated: false }  # 추론
   coding: { s: 1.1, z: -1.95, r: 20.8, estimated: false }  # 코딩
   agentic: { s: 5.6, z: -1.22, r: 31.7, estimated: false }  # 에이전트
-  trust: { s: 18.6, z: -0.43, r: 43.6, estimated: false }  # 신뢰성
+  trust: { s: 18.6, z: -0.43, r: 43.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.53, r: 27.1, estimated: false }  # 긴문맥
   instruction: { s: 11.3, z: -1.76, r: 23.6, estimated: false }  # 지시 따르기
@@ -47,7 +47,7 @@ Google · Open · Tiny(1B) · 컨텍스트 32k · 종합지능 **1.0** · ⚠️
 | 추론 | 29.7 | -1.35 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 24.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 20.8 | -1.95 | 실측 | [[scicode]] 1.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 31.7 | -1.22 | 실측 | [[tau2-bench]] 11.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 43.6 | -0.43 | 실측 | [[aa-omniscience]] 18.0%×1.0 |
+| 신뢰성 | 43.5 | -0.43 | 실측 | [[aa-omniscience]] 18.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 27.1 | -1.53 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 23.6 | -1.76 | 실측 | [[ifbench]] 20.0%×1.0 |

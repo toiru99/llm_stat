@@ -12,9 +12,9 @@ size_class: Small
 params_b: 32.8
 is_reasoning: true
 radar:
-  knowledge: { s: 37.7, z: -0.18, r: 47.4, estimated: false }  # 전문 지식
-  reasoning: { s: 34.4, z: -0.07, r: 49.0, estimated: false }  # 추론
-  coding: { s: 60.0, z: 0.46, r: 56.9, estimated: false }  # 코딩
+  knowledge: { s: 37.7, z: -0.18, r: 47.3, estimated: false }  # 전문 지식
+  reasoning: { s: 34.4, z: -0.07, r: 48.9, estimated: false }  # 추론
+  coding: { s: 60.0, z: 0.46, r: 56.8, estimated: false }  # 코딩
   agentic: { s: 34.7, z: -0.1, r: 48.5, estimated: true }  # 에이전트
   trust: { s: 26.7, z: -0.09, r: 48.7, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -43,9 +43,9 @@ Alibaba · Open · Small(32.8B) · 컨텍스트 131k · 종합지능 **13.0** ·
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 47.4 | -0.18 | 실측 | [[gpqa-diamond]] 59.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
-| 추론 | 49.0 | -0.07 | 실측 | [[gpqa-diamond]] 59.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
-| 코딩 | 56.9 | +0.46 | 실측 | [[scicode]] 36.0%×1.0 |
+| 전문 지식 | 47.3 | -0.18 | 실측 | [[gpqa-diamond]] 59.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
+| 추론 | 48.9 | -0.07 | 실측 | [[gpqa-diamond]] 59.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
+| 코딩 | 56.8 | +0.46 | 실측 | [[scicode]] 36.0%×1.0 |
 | 에이전트 | 48.5 | -0.1 | 추정 | (추정) |
 | 신뢰성 | 48.7 | -0.09 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |

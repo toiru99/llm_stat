@@ -12,8 +12,8 @@ size_class: Small
 params_b: 8.19
 is_reasoning: false
 radar:
-  knowledge: { s: 26.5, z: -0.71, r: 39.4, estimated: false }  # 전문 지식
-  reasoning: { s: 21.1, z: -0.72, r: 39.3, estimated: false }  # 추론
+  knowledge: { s: 26.5, z: -0.71, r: 39.3, estimated: false }  # 전문 지식
+  reasoning: { s: 21.1, z: -0.72, r: 39.2, estimated: false }  # 추론
   coding: { s: 26.6, z: -0.91, r: 36.4, estimated: false }  # 코딩
   agentic: { s: 10.3, z: -1.04, r: 34.4, estimated: false }  # 에이전트
   trust: { s: 8.1, z: -0.87, r: 37.0, estimated: false }  # 신뢰성
@@ -37,14 +37,14 @@ Alibaba · Open · Small(8.19B) · 컨텍스트 131k · 종합지능 **8.0** · 
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.18 · 출력 $2.1 · 혼합 $0.232/1M · 38.0 t/s · TTFT 3.73s · 131k ctx` · 가성비 34.5
+`입력 $0.18 · 출력 $2.1 · 혼합 $0.232/1M · 38.0 t/s · TTFT 3.67s · 131k ctx` · 가성비 34.5
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 39.4 | -0.71 | 실측 | [[aa-omniscience]] 14.0%×1.0, [[gpqa-diamond]] 59.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 39.3 | -0.72 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 59.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 전문 지식 | 39.3 | -0.71 | 실측 | [[aa-omniscience]] 14.0%×1.0, [[gpqa-diamond]] 59.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 39.2 | -0.72 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 59.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 36.4 | -0.91 | 실측 | [[scicode]] 23.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 34.4 | -1.04 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 28.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | 37.0 | -0.87 | 실측 | [[aa-omniscience]] 9.0%×1.0 |

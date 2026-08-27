@@ -13,10 +13,10 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 23.5, z: -0.85, r: 37.2, estimated: false }  # 전문 지식
-  reasoning: { s: 23.5, z: -0.6, r: 41.1, estimated: false }  # 추론
-  coding: { s: 28.3, z: -0.84, r: 37.5, estimated: true }  # 코딩
+  reasoning: { s: 23.5, z: -0.6, r: 41.0, estimated: false }  # 추론
+  coding: { s: 28.3, z: -0.84, r: 37.4, estimated: true }  # 코딩
   agentic: { s: 10.6, z: -1.03, r: 34.6, estimated: true }  # 에이전트
-  trust: { s: 33.5, z: 0.2, r: 53.0, estimated: true }  # 신뢰성
+  trust: { s: 33.5, z: 0.2, r: 52.9, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 19.5, z: -0.94, r: 35.9, estimated: true }  # 긴문맥
   instruction: { s: 33.9, z: -0.84, r: 37.4, estimated: true }  # 지시 따르기
@@ -44,10 +44,10 @@ OpenAI · Proprietary · Unknown · 컨텍스트 4k · 종합지능 **3.0** · �
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 37.2 | -0.85 | 실측 | [[gpqa-diamond]] 30.0%×0.4 |
-| 추론 | 41.1 | -0.6 | 실측 | [[gpqa-diamond]] 30.0%×1.0 |
-| 코딩 | 37.5 | -0.84 | 추정 | (추정) |
+| 추론 | 41.0 | -0.6 | 실측 | [[gpqa-diamond]] 30.0%×1.0 |
+| 코딩 | 37.4 | -0.84 | 추정 | (추정) |
 | 에이전트 | 34.6 | -1.03 | 추정 | (추정) |
-| 신뢰성 | 53.0 | +0.2 | 추정 | (추정) |
+| 신뢰성 | 52.9 | +0.2 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 35.9 | -0.94 | 추정 | (추정) |
 | 지시 따르기 | 37.4 | -0.84 | 추정 | (추정) |

@@ -16,8 +16,8 @@ radar:
   reasoning: { s: 11.9, z: -1.16, r: 32.6, estimated: false }  # 추론
   coding: { s: 4.4, z: -1.81, r: 22.8, estimated: false }  # 코딩
   agentic: { s: 0.0, z: -1.43, r: 28.5, estimated: false }  # 에이전트
-  trust: { s: 14.2, z: -0.61, r: 40.8, estimated: true }  # 신뢰성
-  multimodal: { s: 14.3, z: -2.83, r: 7.6, estimated: false }  # 멀티모달
+  trust: { s: 14.2, z: -0.62, r: 40.8, estimated: true }  # 신뢰성
+  multimodal: { s: 14.3, z: -2.83, r: 7.5, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.53, r: 27.1, estimated: false }  # 긴문맥
   instruction: { s: 11.3, z: -1.76, r: 23.6, estimated: false }  # 지시 따르기
 sources:
@@ -47,8 +47,8 @@ Allen Institute for AI · Open · Small(8.02B) · 컨텍스트 4k · 종합지�
 | 추론 | 32.6 | -1.16 | 실측 | [[gpqa-diamond]] 24.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 22.8 | -1.81 | 실측 | [[scicode]] 4.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 28.5 | -1.43 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 40.8 | -0.61 | 추정 | (추정) |
-| 멀티모달 | 7.6 | -2.83 | 실측 | [[mmmu-pro]] 25.0%×1.0 |
+| 신뢰성 | 40.8 | -0.62 | 추정 | (추정) |
+| 멀티모달 | 7.5 | -2.83 | 실측 | [[mmmu-pro]] 25.0%×1.0 |
 | 긴문맥 | 27.1 | -1.53 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 23.6 | -1.76 | 실측 | [[ifbench]] 20.0%×1.0 |
 

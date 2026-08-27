@@ -16,10 +16,10 @@ radar:
   reasoning: { s: 9.5, z: -1.28, r: 30.8, estimated: false }  # 추론
   coding: { s: 14.3, z: -1.41, r: 28.9, estimated: false }  # 코딩
   agentic: { s: 7.7, z: -1.14, r: 33.0, estimated: false }  # 에이전트
-  trust: { s: 3.5, z: -1.06, r: 34.1, estimated: false }  # 신뢰성
+  trust: { s: 3.5, z: -1.06, r: 34.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 3.6, z: -1.42, r: 28.7, estimated: false }  # 긴문맥
-  instruction: { s: 31.0, z: -0.95, r: 35.7, estimated: false }  # 지시 따르기
+  instruction: { s: 31.0, z: -0.96, r: 35.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.1 3B
@@ -47,10 +47,10 @@ IBM · Open · Tiny(3B) · 컨텍스트 131k · 종합지능 **4.0**
 | 추론 | 30.8 | -1.28 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 31.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 28.9 | -1.41 | 실측 | [[scicode]] 12.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 33.0 | -1.14 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 20.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 34.1 | -1.06 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
+| 신뢰성 | 34.0 | -1.06 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.7 | -1.42 | 실측 | [[aa-lcr]] 3.0%×1.0 |
-| 지시 따르기 | 35.7 | -0.95 | 실측 | [[ifbench]] 34.0%×1.0 |
+| 지시 따르기 | 35.7 | -0.96 | 실측 | [[ifbench]] 34.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -13,8 +13,8 @@ params_b: 32.2
 is_reasoning: true
 radar:
   knowledge: { s: 27.1, z: -0.68, r: 39.8, estimated: false }  # 전문 지식
-  reasoning: { s: 22.3, z: -0.66, r: 40.2, estimated: false }  # 추론
-  coding: { s: 32.2, z: -0.68, r: 39.9, estimated: false }  # 코딩
+  reasoning: { s: 22.3, z: -0.66, r: 40.1, estimated: false }  # 추론
+  coding: { s: 32.2, z: -0.68, r: 39.8, estimated: false }  # 코딩
   agentic: { s: 0.0, z: -1.43, r: 28.5, estimated: false }  # 에이전트
   trust: { s: 37.2, z: 0.35, r: 55.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -44,8 +44,8 @@ Allen Institute for AI · Open · Small(32.2B) · 컨텍스트 65k · 종합지�
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 39.8 | -0.68 | 실측 | [[aa-omniscience]] 14.0%×1.0, [[gpqa-diamond]] 59.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
-| 추론 | 40.2 | -0.66 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 59.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 39.9 | -0.68 | 실측 | [[scicode]] 29.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
+| 추론 | 40.1 | -0.66 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 59.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
+| 코딩 | 39.8 | -0.68 | 실측 | [[scicode]] 29.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 28.5 | -1.43 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | 55.3 | +0.35 | 실측 | [[aa-omniscience]] 34.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

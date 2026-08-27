@@ -12,14 +12,14 @@ size_class: Large
 params_b: 284
 is_reasoning: true
 radar:
-  knowledge: { s: 68.1, z: 1.27, r: 69.1, estimated: false }  # 전문 지식
-  reasoning: { s: 63.6, z: 1.35, r: 70.2, estimated: false }  # 추론
-  coding: { s: 78.3, z: 1.21, r: 68.1, estimated: false }  # 코딩
-  agentic: { s: 83.5, z: 1.78, r: 76.7, estimated: false }  # 에이전트
+  knowledge: { s: 68.1, z: 1.27, r: 69.0, estimated: false }  # 전문 지식
+  reasoning: { s: 63.6, z: 1.34, r: 70.2, estimated: false }  # 추론
+  coding: { s: 78.3, z: 1.2, r: 68.1, estimated: false }  # 코딩
+  agentic: { s: 83.5, z: 1.77, r: 76.5, estimated: false }  # 에이전트
   trust: { s: 8.1, z: -0.87, r: 37.0, estimated: false }  # 신뢰성
-  multimodal: { s: 85.7, z: 0.63, r: 59.5, estimated: false }  # 멀티모달
-  long_context: { s: 94.0, z: 1.29, r: 69.4, estimated: false }  # 긴문맥
-  instruction: { s: 81.7, z: 1.11, r: 66.7, estimated: true }  # 지시 따르기
+  multimodal: { s: 85.7, z: 0.63, r: 59.4, estimated: false }  # 멀티모달
+  long_context: { s: 94.0, z: 1.29, r: 69.3, estimated: false }  # 긴문맥
+  instruction: { s: 81.7, z: 1.11, r: 66.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Flash Vision (max)
@@ -43,14 +43,14 @@ DeepSeek · Proprietary · Large(284B) · 컨텍스트 1M · 종합지능 **51.0
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 69.1 | +1.27 | 실측 | [[aa-omniscience]] 39.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 34.0%×0.3 |
-| 추론 | 70.2 | +1.35 | 실측 | [[critpt]] 11.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 34.0%×1.0 |
-| 코딩 | 68.1 | +1.21 | 실측 | [[scicode]] 47.0%×1.0 |
-| 에이전트 | 76.7 | +1.78 | 실측 | [[gdpval]] 58.0%×1.0, [[tau3-banking]] 41.0%×1.0 |
+| 전문 지식 | 69.0 | +1.27 | 실측 | [[aa-omniscience]] 39.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 34.0%×0.3 |
+| 추론 | 70.2 | +1.34 | 실측 | [[critpt]] 11.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 34.0%×1.0 |
+| 코딩 | 68.1 | +1.2 | 실측 | [[scicode]] 47.0%×1.0 |
+| 에이전트 | 76.5 | +1.77 | 실측 | [[gdpval]] 58.0%×1.0, [[tau3-banking]] 41.0%×1.0 |
 | 신뢰성 | 37.0 | -0.87 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
-| 멀티모달 | 59.5 | +0.63 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
-| 긴문맥 | 69.4 | +1.29 | 실측 | [[aa-lcr]] 78.0%×1.0 |
-| 지시 따르기 | 66.7 | +1.11 | 추정 | (추정) |
+| 멀티모달 | 59.4 | +0.63 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
+| 긴문맥 | 69.3 | +1.29 | 실측 | [[aa-lcr]] 78.0%×1.0 |
+| 지시 따르기 | 66.6 | +1.11 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

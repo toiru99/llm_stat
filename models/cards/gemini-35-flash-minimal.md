@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 36.0
 price_blended_usd_1m: 1.305
-output_speed_tps: 183.0
+output_speed_tps: 184.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -13,13 +13,13 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 66.3, z: 1.18, r: 67.8, estimated: false }  # 전문 지식
-  reasoning: { s: 43.9, z: 0.39, r: 55.9, estimated: false }  # 추론
+  reasoning: { s: 43.9, z: 0.39, r: 55.8, estimated: false }  # 추론
   coding: { s: 77.7, z: 1.18, r: 67.7, estimated: false }  # 코딩
-  agentic: { s: 64.6, z: 1.05, r: 65.8, estimated: false }  # 에이전트
+  agentic: { s: 64.6, z: 1.05, r: 65.7, estimated: false }  # 에이전트
   trust: { s: 27.9, z: -0.04, r: 49.4, estimated: false }  # 신뢰성
-  multimodal: { s: 92.9, z: 0.98, r: 64.7, estimated: false }  # 멀티모달
+  multimodal: { s: 92.9, z: 0.97, r: 64.6, estimated: false }  # 멀티모달
   long_context: { s: 69.9, z: 0.57, r: 58.5, estimated: false }  # 긴문맥
-  instruction: { s: 49.3, z: -0.21, r: 46.9, estimated: false }  # 지시 따르기
+  instruction: { s: 49.3, z: -0.21, r: 46.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.5 Flash (minimal)
@@ -37,20 +37,20 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **36.0**
 - **약점**: 신뢰성, 지시 따르기
 
 ## 실용 지표
-`입력 $1.5 · 출력 $9.0 · 혼합 $1.305/1M · 183.0 t/s · TTFT 0.83s · 1M ctx` · 가성비 27.6
+`입력 $1.5 · 출력 $9.0 · 혼합 $1.305/1M · 184.0 t/s · TTFT 0.85s · 1M ctx` · 가성비 27.6
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 67.8 | +1.18 | 실측 | [[aa-omniscience]] 43.0%×1.0, [[gpqa-diamond]] 83.0%×0.4, [[humanitys-last-exam]] 24.0%×0.3 |
-| 추론 | 55.9 | +0.39 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 83.0%×1.0, [[humanitys-last-exam]] 24.0%×1.0 |
+| 추론 | 55.8 | +0.39 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 83.0%×1.0, [[humanitys-last-exam]] 24.0%×1.0 |
 | 코딩 | 67.7 | +1.18 | 실측 | [[scicode]] 49.0%×1.0, [[terminal-bench]] 46.0%×0.5 |
-| 에이전트 | 65.8 | +1.05 | 실측 | [[tau2-bench]] 59.0%×1.0, [[terminal-bench]] 46.0%×1.0 |
+| 에이전트 | 65.7 | +1.05 | 실측 | [[tau2-bench]] 59.0%×1.0, [[terminal-bench]] 46.0%×1.0 |
 | 신뢰성 | 49.4 | -0.04 | 실측 | [[aa-omniscience]] 26.0%×1.0 |
-| 멀티모달 | 64.7 | +0.98 | 실측 | [[mmmu-pro]] 80.0%×1.0 |
+| 멀티모달 | 64.6 | +0.97 | 실측 | [[mmmu-pro]] 80.0%×1.0 |
 | 긴문맥 | 58.5 | +0.57 | 실측 | [[aa-lcr]] 58.0%×1.0 |
-| 지시 따르기 | 46.9 | -0.21 | 실측 | [[ifbench]] 47.0%×1.0 |
+| 지시 따르기 | 46.8 | -0.21 | 실측 | [[ifbench]] 47.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

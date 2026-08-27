@@ -15,11 +15,11 @@ radar:
   knowledge: { s: 7.5, z: -1.61, r: 25.8, estimated: false }  # 전문 지식
   reasoning: { s: 10.1, z: -1.25, r: 31.3, estimated: false }  # 추론
   coding: { s: 4.4, z: -1.81, r: 22.8, estimated: false }  # 코딩
-  agentic: { s: 40.9, z: 0.14, r: 52.1, estimated: false }  # 에이전트
-  trust: { s: 94.2, z: 2.75, r: 91.2, estimated: false }  # 신뢰성
+  agentic: { s: 40.9, z: 0.14, r: 52.0, estimated: false }  # 에이전트
+  trust: { s: 94.2, z: 2.74, r: 91.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 6.0, z: -1.34, r: 29.8, estimated: false }  # 긴문맥
-  instruction: { s: 52.1, z: -0.09, r: 48.6, estimated: false }  # 지시 따르기
+  long_context: { s: 6.0, z: -1.35, r: 29.8, estimated: false }  # 긴문맥
+  instruction: { s: 52.1, z: -0.1, r: 48.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiniCPM5-1B
@@ -46,11 +46,11 @@ OpenBMB · Open · Tiny(1B) · 컨텍스트 128k · 종합지능 **12.0**
 | 전문 지식 | 25.8 | -1.61 | 실측 | [[aa-omniscience]] 2.0%×1.0, [[gpqa-diamond]] 28.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 31.3 | -1.25 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 28.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 22.8 | -1.81 | 실측 | [[scicode]] 4.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 52.1 | +0.14 | 실측 | [[tau2-bench]] 81.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 91.2 | +2.75 | 실측 | [[aa-omniscience]] 83.0%×1.0 |
+| 에이전트 | 52.0 | +0.14 | 실측 | [[tau2-bench]] 81.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 신뢰성 | 91.1 | +2.74 | 실측 | [[aa-omniscience]] 83.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 29.8 | -1.34 | 실측 | [[aa-lcr]] 5.0%×1.0 |
-| 지시 따르기 | 48.6 | -0.09 | 실측 | [[ifbench]] 49.0%×1.0 |
+| 긴문맥 | 29.8 | -1.35 | 실측 | [[aa-lcr]] 5.0%×1.0 |
+| 지시 따르기 | 48.6 | -0.1 | 실측 | [[ifbench]] 49.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

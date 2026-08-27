@@ -12,13 +12,13 @@ size_class: Large
 params_b: 550
 is_reasoning: true
 radar:
-  knowledge: { s: 50.4, z: 0.43, r: 56.4, estimated: false }  # 전문 지식
-  reasoning: { s: 50.0, z: 0.69, r: 60.3, estimated: false }  # 추론
-  coding: { s: 62.6, z: 0.57, r: 58.5, estimated: false }  # 코딩
-  agentic: { s: 53.8, z: 0.64, r: 59.5, estimated: false }  # 에이전트
-  trust: { s: 79.1, z: 2.11, r: 81.7, estimated: false }  # 신뢰성
+  knowledge: { s: 50.4, z: 0.42, r: 56.4, estimated: false }  # 전문 지식
+  reasoning: { s: 50.0, z: 0.68, r: 60.3, estimated: false }  # 추론
+  coding: { s: 62.6, z: 0.56, r: 58.4, estimated: false }  # 코딩
+  agentic: { s: 53.8, z: 0.63, r: 59.4, estimated: false }  # 에이전트
+  trust: { s: 79.1, z: 2.11, r: 81.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 85.5, z: 1.04, r: 65.6, estimated: false }  # 긴문맥
+  long_context: { s: 85.5, z: 1.04, r: 65.5, estimated: false }  # 긴문맥
   instruction: { s: 97.2, z: 1.74, r: 76.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
@@ -37,19 +37,19 @@ NVIDIA · Open · Large(550B) · 컨텍스트 262k · 종합지능 **38.0**
 - **약점**: 코딩, 전문 지식
 
 ## 실용 지표
-`입력 $0.6 · 출력 $2.75 · 혼합 $0.535/1M · 176.0 t/s · TTFT 2.09s · 262k ctx` · 가성비 71.0
+`입력 $0.6 · 출력 $2.75 · 혼합 $0.535/1M · 176.0 t/s · TTFT 2.13s · 262k ctx` · 가성비 71.0
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 56.4 | +0.43 | 실측 | [[aa-omniscience]] 23.0%×1.0, [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 28.0%×0.3 |
-| 추론 | 60.3 | +0.69 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
-| 코딩 | 58.5 | +0.57 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 36.0%×0.5 |
-| 에이전트 | 59.5 | +0.64 | 실측 | [[gdpval]] 33.0%×1.0, [[tau2-bench]] 83.0%×1.0, [[tau3-banking]] 14.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
-| 신뢰성 | 81.7 | +2.11 | 실측 | [[aa-omniscience]] 70.0%×1.0 |
+| 전문 지식 | 56.4 | +0.42 | 실측 | [[aa-omniscience]] 23.0%×1.0, [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 28.0%×0.3 |
+| 추론 | 60.3 | +0.68 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
+| 코딩 | 58.4 | +0.56 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 36.0%×0.5 |
+| 에이전트 | 59.4 | +0.63 | 실측 | [[gdpval]] 33.0%×1.0, [[tau2-bench]] 83.0%×1.0, [[tau3-banking]] 14.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
+| 신뢰성 | 81.6 | +2.11 | 실측 | [[aa-omniscience]] 70.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 65.6 | +1.04 | 실측 | [[aa-lcr]] 71.0%×1.0 |
+| 긴문맥 | 65.5 | +1.04 | 실측 | [[aa-lcr]] 71.0%×1.0 |
 | 지시 따르기 | 76.1 | +1.74 | 실측 | [[ifbench]] 81.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

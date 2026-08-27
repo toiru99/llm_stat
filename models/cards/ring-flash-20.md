@@ -13,8 +13,8 @@ params_b: 103
 is_reasoning: true
 radar:
   knowledge: { s: 35.1, z: -0.3, r: 45.5, estimated: false }  # 전문 지식
-  reasoning: { s: 30.3, z: -0.27, r: 46.0, estimated: false }  # 추론
-  coding: { s: 22.9, z: -1.06, r: 34.2, estimated: false }  # 코딩
+  reasoning: { s: 30.3, z: -0.27, r: 45.9, estimated: false }  # 추론
+  coding: { s: 22.9, z: -1.06, r: 34.1, estimated: false }  # 코딩
   agentic: { s: 6.1, z: -1.2, r: 32.0, estimated: false }  # 에이전트
   trust: { s: 9.3, z: -0.82, r: 37.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -44,8 +44,8 @@ InclusionAI · Open · Medium(103B) · 컨텍스트 128k · 종합지능 **8.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 45.5 | -0.3 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
-| 추론 | 46.0 | -0.27 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
-| 코딩 | 34.2 | -1.06 | 실측 | [[scicode]] 17.0%×1.0, [[terminal-bench]] 8.0%×0.5 |
+| 추론 | 45.9 | -0.27 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
+| 코딩 | 34.1 | -1.06 | 실측 | [[scicode]] 17.0%×1.0, [[terminal-bench]] 8.0%×0.5 |
 | 에이전트 | 32.0 | -1.2 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
 | 신뢰성 | 37.7 | -0.82 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

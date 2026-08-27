@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 35.0
 price_blended_usd_1m: 1.3375
-output_speed_tps: 89.0
+output_speed_tps: 95.0
 context_window: 400000
 status: past
 size_class: Unknown
@@ -14,10 +14,10 @@ is_reasoning: true
 radar:
   knowledge: { s: 63.3, z: 1.04, r: 65.6, estimated: false }  # 전문 지식
   reasoning: { s: 43.8, z: 0.39, r: 55.8, estimated: false }  # 추론
-  coding: { s: 64.7, z: 0.65, r: 59.8, estimated: false }  # 코딩
-  agentic: { s: 72.7, z: 1.36, r: 70.5, estimated: false }  # 에이전트
-  trust: { s: 17.4, z: -0.48, r: 42.9, estimated: false }  # 신뢰성
-  multimodal: { s: 84.3, z: 0.56, r: 58.5, estimated: false }  # 멀티모달
+  coding: { s: 64.7, z: 0.65, r: 59.7, estimated: false }  # 코딩
+  agentic: { s: 72.7, z: 1.36, r: 70.4, estimated: false }  # 에이전트
+  trust: { s: 17.4, z: -0.48, r: 42.8, estimated: false }  # 신뢰성
+  multimodal: { s: 84.3, z: 0.56, r: 58.4, estimated: false }  # 멀티모달
   long_context: { s: 91.6, z: 1.22, r: 68.3, estimated: false }  # 긴문맥
   instruction: { s: 83.1, z: 1.17, r: 67.5, estimated: false }  # 지시 따르기
 sources:
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **35.0** �
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $1.25 · 출력 $10.0 · 혼합 $1.3375/1M · 89.0 t/s · TTFT 40.15s · 400k ctx` · 가성비 26.2
+`입력 $1.25 · 출력 $10.0 · 혼합 $1.3375/1M · 95.0 t/s · TTFT 36.92s · 400k ctx` · 가성비 26.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,10 +45,10 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **35.0** �
 |---|---|---|---|---|
 | 전문 지식 | 65.6 | +1.04 | 실측 | [[aa-omniscience]] 39.0%×1.0, [[gpqa-diamond]] 84.0%×0.4, [[humanitys-last-exam]] 25.0%×0.3 |
 | 추론 | 55.8 | +0.39 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 84.0%×1.0, [[humanitys-last-exam]] 25.0%×1.0 |
-| 코딩 | 59.8 | +0.65 | 실측 | [[scicode]] 41.0%×1.0, [[terminal-bench]] 38.0%×0.5 |
-| 에이전트 | 70.5 | +1.36 | 실측 | [[tau2-bench]] 87.0%×1.0, [[terminal-bench]] 38.0%×1.0 |
-| 신뢰성 | 42.9 | -0.48 | 실측 | [[aa-omniscience]] 17.0%×1.0 |
-| 멀티모달 | 58.5 | +0.56 | 실측 | [[mmmu-pro]] 74.0%×1.0 |
+| 코딩 | 59.7 | +0.65 | 실측 | [[scicode]] 41.0%×1.0, [[terminal-bench]] 38.0%×0.5 |
+| 에이전트 | 70.4 | +1.36 | 실측 | [[tau2-bench]] 87.0%×1.0, [[terminal-bench]] 38.0%×1.0 |
+| 신뢰성 | 42.8 | -0.48 | 실측 | [[aa-omniscience]] 17.0%×1.0 |
+| 멀티모달 | 58.4 | +0.56 | 실측 | [[mmmu-pro]] 74.0%×1.0 |
 | 긴문맥 | 68.3 | +1.22 | 실측 | [[aa-lcr]] 76.0%×1.0 |
 | 지시 따르기 | 67.5 | +1.17 | 실측 | [[ifbench]] 71.0%×1.0 |
 

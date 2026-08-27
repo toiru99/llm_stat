@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 26.2, z: -0.73, r: 39.1, estimated: false }  # 전문 지식
   reasoning: { s: 14.2, z: -1.05, r: 34.3, estimated: false }  # 추론
-  coding: { s: 35.5, z: -0.54, r: 41.8, estimated: false }  # 코딩
+  coding: { s: 35.5, z: -0.55, r: 41.8, estimated: false }  # 코딩
   agentic: { s: 12.6, z: -0.95, r: 35.8, estimated: false }  # 에이전트
   trust: { s: 19.8, z: -0.38, r: 44.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -37,7 +37,7 @@ DeepSeek · Open · Medium(70B) · 컨텍스트 128k · 종합지능 **10.0** ·
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.7 · 출력 $1.1 · 혼합 $0.74/1M · 29.0 t/s · TTFT 0.8s · 128k ctx` · 가성비 13.5
+`입력 $0.7 · 출력 $1.1 · 혼합 $0.74/1M · 29.0 t/s · TTFT 0.83s · 128k ctx` · 가성비 13.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ DeepSeek · Open · Medium(70B) · 컨텍스트 128k · 종합지능 **10.0** ·
 |---|---|---|---|---|
 | 전문 지식 | 39.1 | -0.73 | 실측 | [[aa-omniscience]] 19.0%×1.0, [[gpqa-diamond]] 40.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 34.3 | -1.05 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 40.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 41.8 | -0.54 | 실측 | [[scicode]] 31.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
+| 코딩 | 41.8 | -0.55 | 실측 | [[scicode]] 31.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 35.8 | -0.95 | 실측 | [[tau2-bench]] 22.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | 44.3 | -0.38 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

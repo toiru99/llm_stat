@@ -13,9 +13,9 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 46.6, z: 0.25, r: 53.7, estimated: false }  # 전문 지식
-  reasoning: { s: 34.1, z: -0.08, r: 48.7, estimated: false }  # 추론
+  reasoning: { s: 34.1, z: -0.09, r: 48.7, estimated: false }  # 추론
   coding: { s: 51.9, z: 0.13, r: 51.9, estimated: false }  # 코딩
-  agentic: { s: 55.3, z: 0.69, r: 60.4, estimated: false }  # 에이전트
+  agentic: { s: 55.3, z: 0.69, r: 60.3, estimated: false }  # 에이전트
   trust: { s: 8.1, z: -0.87, r: 37.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 72.3, z: 0.64, r: 59.6, estimated: false }  # 긴문맥
@@ -37,16 +37,16 @@ Alibaba · Proprietary · Unknown · 컨텍스트 262k · 종합지능 **26.0** 
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $1.2 · 출력 $6.0 · 혼합 $1.68/1M · 58.0 t/s · TTFT 4.14s · 262k ctx` · 가성비 15.5
+`입력 $1.2 · 출력 $6.0 · 혼합 $1.68/1M · 58.0 t/s · TTFT 4.08s · 262k ctx` · 가성비 15.5
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 53.7 | +0.25 | 실측 | [[aa-omniscience]] 27.0%×1.0, [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
-| 추론 | 48.7 | -0.08 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
+| 추론 | 48.7 | -0.09 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
 | 코딩 | 51.9 | +0.13 | 실측 | [[scicode]] 39.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
-| 에이전트 | 60.4 | +0.69 | 실측 | [[tau2-bench]] 84.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
+| 에이전트 | 60.3 | +0.69 | 실측 | [[tau2-bench]] 84.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
 | 신뢰성 | 37.0 | -0.87 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 59.6 | +0.64 | 실측 | [[aa-lcr]] 60.0%×1.0 |

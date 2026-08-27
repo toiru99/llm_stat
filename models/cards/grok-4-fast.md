@@ -14,11 +14,11 @@ is_reasoning: true
 radar:
   knowledge: { s: 46.9, z: 0.26, r: 53.9, estimated: false }  # 전문 지식
   reasoning: { s: 43.6, z: 0.38, r: 55.7, estimated: false }  # 추론
-  coding: { s: 58.5, z: 0.4, r: 55.9, estimated: false }  # 코딩
+  coding: { s: 58.5, z: 0.39, r: 55.9, estimated: false }  # 코딩
   agentic: { s: 47.7, z: 0.4, r: 56.0, estimated: false }  # 에이전트
-  trust: { s: 34.9, z: 0.26, r: 53.8, estimated: false }  # 신뢰성
-  multimodal: { s: 67.1, z: -0.27, r: 46.0, estimated: false }  # 멀티모달
-  long_context: { s: 85.5, z: 1.04, r: 65.6, estimated: false }  # 긴문맥
+  trust: { s: 34.9, z: 0.25, r: 53.8, estimated: false }  # 신뢰성
+  multimodal: { s: 67.1, z: -0.27, r: 45.9, estimated: false }  # 멀티모달
+  long_context: { s: 85.5, z: 1.04, r: 65.5, estimated: false }  # 긴문맥
   instruction: { s: 54.9, z: 0.02, r: 50.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
@@ -33,7 +33,7 @@ timestamp: 2026-08-27T00:00:00Z
 SpaceXAI · Proprietary · Unknown · 컨텍스트 2M · 종합지능 **28.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 긴문맥, 코딩
+- **강점**: 긴문맥, 에이전트
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
@@ -45,11 +45,11 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 2M · 종합지능 **28.0** �
 |---|---|---|---|---|
 | 전문 지식 | 53.9 | +0.26 | 실측 | [[aa-omniscience]] 23.0%×1.0, [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 19.0%×0.3 |
 | 추론 | 55.7 | +0.38 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 19.0%×1.0 |
-| 코딩 | 55.9 | +0.4 | 실측 | [[scicode]] 44.0%×1.0, [[terminal-bench]] 19.0%×0.5 |
+| 코딩 | 55.9 | +0.39 | 실측 | [[scicode]] 44.0%×1.0, [[terminal-bench]] 19.0%×0.5 |
 | 에이전트 | 56.0 | +0.4 | 실측 | [[tau2-bench]] 66.0%×1.0, [[terminal-bench]] 19.0%×1.0 |
-| 신뢰성 | 53.8 | +0.26 | 실측 | [[aa-omniscience]] 32.0%×1.0 |
-| 멀티모달 | 46.0 | -0.27 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
-| 긴문맥 | 65.6 | +1.04 | 실측 | [[aa-lcr]] 71.0%×1.0 |
+| 신뢰성 | 53.8 | +0.25 | 실측 | [[aa-omniscience]] 32.0%×1.0 |
+| 멀티모달 | 45.9 | -0.27 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
+| 긴문맥 | 65.5 | +1.04 | 실측 | [[aa-lcr]] 71.0%×1.0 |
 | 지시 따르기 | 50.3 | +0.02 | 실측 | [[ifbench]] 51.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

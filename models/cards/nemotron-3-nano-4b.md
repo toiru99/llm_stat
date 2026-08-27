@@ -12,11 +12,11 @@ size_class: Tiny
 params_b: 3.97
 is_reasoning: true
 radar:
-  knowledge: { s: 20.9, z: -0.97, r: 35.4, estimated: false }  # 전문 지식
+  knowledge: { s: 20.9, z: -0.98, r: 35.4, estimated: false }  # 전문 지식
   reasoning: { s: 18.5, z: -0.84, r: 37.4, estimated: false }  # 추론
-  coding: { s: 21.3, z: -1.12, r: 33.2, estimated: false }  # 코딩
-  agentic: { s: 13.0, z: -0.93, r: 36.0, estimated: false }  # 에이전트
-  trust: { s: 10.5, z: -0.77, r: 38.5, estimated: false }  # 신뢰성
+  coding: { s: 21.3, z: -1.12, r: 33.1, estimated: false }  # 코딩
+  agentic: { s: 13.0, z: -0.94, r: 36.0, estimated: false }  # 에이전트
+  trust: { s: 10.5, z: -0.77, r: 38.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 20.5, z: -0.91, r: 36.3, estimated: false }  # 긴문맥
   instruction: { s: 64.8, z: 0.42, r: 56.3, estimated: false }  # 지시 따르기
@@ -43,11 +43,11 @@ NVIDIA · Open · Tiny(3.97B) · 컨텍스트 262k · 종합지능 **9.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 35.4 | -0.97 | 실측 | [[aa-omniscience]] 10.0%×1.0, [[gpqa-diamond]] 51.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 전문 지식 | 35.4 | -0.98 | 실측 | [[aa-omniscience]] 10.0%×1.0, [[gpqa-diamond]] 51.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 37.4 | -0.84 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 51.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 33.2 | -1.12 | 실측 | [[scicode]] 16.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
-| 에이전트 | 36.0 | -0.93 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 28.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
-| 신뢰성 | 38.5 | -0.77 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
+| 코딩 | 33.1 | -1.12 | 실측 | [[scicode]] 16.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
+| 에이전트 | 36.0 | -0.94 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 28.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
+| 신뢰성 | 38.4 | -0.77 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 36.3 | -0.91 | 실측 | [[aa-lcr]] 17.0%×1.0 |
 | 지시 따르기 | 56.3 | +0.42 | 실측 | [[ifbench]] 58.0%×1.0 |

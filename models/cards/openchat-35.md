@@ -12,9 +12,9 @@ size_class: Small
 params_b: 7
 is_reasoning: false
 radar:
-  knowledge: { s: 11.9, z: -1.4, r: 29.0, estimated: false }  # 전문 지식
+  knowledge: { s: 11.9, z: -1.4, r: 28.9, estimated: false }  # 전문 지식
   reasoning: { s: 11.4, z: -1.19, r: 32.2, estimated: false }  # 추론
-  coding: { s: 3.7, z: -1.84, r: 22.3, estimated: true }  # 코딩
+  coding: { s: 3.7, z: -1.85, r: 22.3, estimated: true }  # 코딩
   agentic: { s: 8.2, z: -1.12, r: 33.2, estimated: true }  # 에이전트
   trust: { s: 21.2, z: -0.32, r: 45.2, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -43,9 +43,9 @@ OpenChat · Open · Small(7B) · 컨텍스트 8k · 종합지능 **3.0** · ⚠�
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 29.0 | -1.4 | 실측 | [[gpqa-diamond]] 23.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 전문 지식 | 28.9 | -1.4 | 실측 | [[gpqa-diamond]] 23.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 32.2 | -1.19 | 실측 | [[gpqa-diamond]] 23.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 22.3 | -1.84 | 추정 | (추정) |
+| 코딩 | 22.3 | -1.85 | 추정 | (추정) |
 | 에이전트 | 33.2 | -1.12 | 추정 | (추정) |
 | 신뢰성 | 45.2 | -0.32 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |

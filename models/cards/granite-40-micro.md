@@ -18,7 +18,7 @@ radar:
   agentic: { s: 8.1, z: -1.12, r: 33.2, estimated: false }  # 에이전트
   trust: { s: 2.3, z: -1.11, r: 33.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 7.2, z: -1.31, r: 30.4, estimated: false }  # 긴문맥
+  long_context: { s: 7.2, z: -1.31, r: 30.3, estimated: false }  # 긴문맥
   instruction: { s: 18.3, z: -1.47, r: 27.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
@@ -49,7 +49,7 @@ IBM · Open · Tiny(3B) · 컨텍스트 128k · 종합지능 **2.0**
 | 에이전트 | 33.2 | -1.12 | 실측 | [[tau2-bench]] 13.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | 33.3 | -1.11 | 실측 | [[aa-omniscience]] 4.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 30.4 | -1.31 | 실측 | [[aa-lcr]] 6.0%×1.0 |
+| 긴문맥 | 30.3 | -1.31 | 실측 | [[aa-lcr]] 6.0%×1.0 |
 | 지시 따르기 | 27.9 | -1.47 | 실측 | [[ifbench]] 25.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

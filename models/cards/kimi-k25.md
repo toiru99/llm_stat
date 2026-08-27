@@ -13,13 +13,13 @@ params_b: 1000
 is_reasoning: false
 radar:
   knowledge: { s: 62.6, z: 1.01, r: 65.1, estimated: false }  # 전문 지식
-  reasoning: { s: 52.2, z: 0.8, r: 62.0, estimated: false }  # 추론
+  reasoning: { s: 52.2, z: 0.79, r: 61.9, estimated: false }  # 추론
   coding: { s: 72.1, z: 0.95, r: 64.3, estimated: false }  # 코딩
-  agentic: { s: 47.7, z: 0.4, r: 56.1, estimated: false }  # 에이전트
+  agentic: { s: 47.7, z: 0.4, r: 56.0, estimated: false }  # 에이전트
   trust: { s: 37.2, z: 0.35, r: 55.3, estimated: false }  # 신뢰성
-  multimodal: { s: 85.7, z: 0.63, r: 59.5, estimated: false }  # 멀티모달
-  long_context: { s: 88.0, z: 1.11, r: 66.7, estimated: false }  # 긴문맥
-  instruction: { s: 81.7, z: 1.11, r: 66.7, estimated: false }  # 지시 따르기
+  multimodal: { s: 85.7, z: 0.63, r: 59.4, estimated: false }  # 멀티모달
+  long_context: { s: 88.0, z: 1.11, r: 66.6, estimated: false }  # 긴문맥
+  instruction: { s: 81.7, z: 1.11, r: 66.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2.5
@@ -37,20 +37,20 @@ Kimi · Open · Large(1000B) · 컨텍스트 256k · 종합지능 **36.0** · �
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.6 · 출력 $3.0 · 혼합 $0.49/1M · 64.0 t/s · TTFT 2.8s · 256k ctx` · 가성비 73.5
+`입력 $0.6 · 출력 $3.0 · 혼합 $0.49/1M · 64.0 t/s · TTFT 2.79s · 256k ctx` · 가성비 73.5
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 65.1 | +1.01 | 실측 | [[aa-omniscience]] 35.0%×1.0, [[gpqa-diamond]] 88.0%×0.4, [[humanitys-last-exam]] 31.0%×0.3 |
-| 추론 | 62.0 | +0.8 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 88.0%×1.0, [[humanitys-last-exam]] 31.0%×1.0 |
+| 추론 | 61.9 | +0.79 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 88.0%×1.0, [[humanitys-last-exam]] 31.0%×1.0 |
 | 코딩 | 64.3 | +0.95 | 실측 | [[scicode]] 49.0%×1.0, [[terminal-bench]] 35.0%×0.5 |
-| 에이전트 | 56.1 | +0.4 | 실측 | [[apex-agents]] 12.0%×1.0, [[gdpval]] 25.0%×1.0, [[tau2-bench]] 96.0%×1.0, [[tau3-banking]] 14.0%×1.0, [[terminal-bench]] 35.0%×1.0 |
+| 에이전트 | 56.0 | +0.4 | 실측 | [[apex-agents]] 12.0%×1.0, [[gdpval]] 25.0%×1.0, [[tau2-bench]] 96.0%×1.0, [[tau3-banking]] 14.0%×1.0, [[terminal-bench]] 35.0%×1.0 |
 | 신뢰성 | 55.3 | +0.35 | 실측 | [[aa-omniscience]] 34.0%×1.0 |
-| 멀티모달 | 59.5 | +0.63 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
-| 긴문맥 | 66.7 | +1.11 | 실측 | [[aa-lcr]] 73.0%×1.0 |
-| 지시 따르기 | 66.7 | +1.11 | 실측 | [[ifbench]] 70.0%×1.0 |
+| 멀티모달 | 59.4 | +0.63 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
+| 긴문맥 | 66.6 | +1.11 | 실측 | [[aa-lcr]] 73.0%×1.0 |
+| 지시 따르기 | 66.6 | +1.11 | 실측 | [[ifbench]] 70.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -14,8 +14,8 @@ is_reasoning: false
 radar:
   knowledge: { s: 16.6, z: -1.18, r: 32.3, estimated: false }  # 전문 지식
   reasoning: { s: 15.5, z: -0.99, r: 35.2, estimated: false }  # 추론
-  coding: { s: 13.3, z: -1.45, r: 28.3, estimated: false }  # 코딩
-  agentic: { s: 5.4, z: -1.22, r: 31.6, estimated: true }  # 에이전트
+  coding: { s: 13.3, z: -1.45, r: 28.2, estimated: false }  # 코딩
+  agentic: { s: 5.4, z: -1.23, r: 31.6, estimated: true }  # 에이전트
   trust: { s: 13.1, z: -0.66, r: 40.1, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 2.5, z: -1.45, r: 28.2, estimated: true }  # 긴문맥
@@ -45,8 +45,8 @@ AI21 Labs · Open · Medium(52B) · 컨텍스트 256k · 종합지능 **2.0** ·
 |---|---|---|---|---|
 | 전문 지식 | 32.3 | -1.18 | 실측 | [[gpqa-diamond]] 30.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 35.2 | -0.99 | 실측 | [[gpqa-diamond]] 30.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 28.3 | -1.45 | 실측 | [[scicode]] 8.0%×1.0 |
-| 에이전트 | 31.6 | -1.22 | 추정 | (추정) |
+| 코딩 | 28.2 | -1.45 | 실측 | [[scicode]] 8.0%×1.0 |
+| 에이전트 | 31.6 | -1.23 | 추정 | (추정) |
 | 신뢰성 | 40.1 | -0.66 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.2 | -1.45 | 추정 | (추정) |

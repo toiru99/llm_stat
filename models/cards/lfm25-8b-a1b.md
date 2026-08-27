@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 20.7, z: -0.99, r: 35.2, estimated: false }  # 전문 지식
   reasoning: { s: 19.8, z: -0.78, r: 38.3, estimated: false }  # 추론
   coding: { s: 11.4, z: -1.53, r: 27.1, estimated: false }  # 코딩
-  agentic: { s: 11.9, z: -0.98, r: 35.4, estimated: false }  # 에이전트
+  agentic: { s: 11.9, z: -0.98, r: 35.3, estimated: false }  # 에이전트
   trust: { s: 59.3, z: 1.28, r: 69.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.53, r: 27.1, estimated: false }  # 긴문맥
@@ -37,7 +37,7 @@ Liquid AI · Open · Small(8.3B) · 컨텍스트 32k · 종합지능 **8.0**
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 338.0 t/s · TTFT 1.43s · 32k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 338.0 t/s · TTFT 1.46s · 32k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Liquid AI · Open · Small(8.3B) · 컨텍스트 32k · 종합지능 **8.0**
 | 전문 지식 | 35.2 | -0.99 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 51.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
 | 추론 | 38.3 | -0.78 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 51.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
 | 코딩 | 27.1 | -1.53 | 실측 | [[scicode]] 8.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
-| 에이전트 | 35.4 | -0.98 | 실측 | [[tau2-bench]] 16.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
+| 에이전트 | 35.3 | -0.98 | 실측 | [[tau2-bench]] 16.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
 | 신뢰성 | 69.2 | +1.28 | 실측 | [[aa-omniscience]] 53.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 27.1 | -1.53 | 실측 | [[aa-lcr]] 0.0%×1.0 |

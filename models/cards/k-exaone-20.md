@@ -12,11 +12,11 @@ size_class: Large
 params_b: 750
 is_reasoning: true
 radar:
-  knowledge: { s: 37.1, z: -0.2, r: 46.9, estimated: false }  # 전문 지식
+  knowledge: { s: 37.1, z: -0.21, r: 46.9, estimated: false }  # 전문 지식
   reasoning: { s: 40.8, z: 0.24, r: 53.6, estimated: false }  # 추론
-  coding: { s: 68.3, z: 0.8, r: 62.0, estimated: false }  # 코딩
+  coding: { s: 68.3, z: 0.8, r: 61.9, estimated: false }  # 코딩
   agentic: { s: 29.7, z: -0.29, r: 45.6, estimated: false }  # 에이전트
-  trust: { s: 87.2, z: 2.45, r: 86.8, estimated: false }  # 신뢰성
+  trust: { s: 87.2, z: 2.45, r: 86.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 69.9, z: 0.57, r: 58.5, estimated: false }  # 긴문맥
   instruction: { s: 63.5, z: 0.37, r: 55.5, estimated: true }  # 지시 따르기
@@ -43,11 +43,11 @@ LG AI Research · Open · Large(750B) · 컨텍스트 262k · 종합지능 **31.
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 46.9 | -0.2 | 실측 | [[aa-omniscience]] 13.0%×1.0, [[gpqa-diamond]] 83.0%×0.4, [[humanitys-last-exam]] 19.0%×0.3 |
+| 전문 지식 | 46.9 | -0.21 | 실측 | [[aa-omniscience]] 13.0%×1.0, [[gpqa-diamond]] 83.0%×0.4, [[humanitys-last-exam]] 19.0%×0.3 |
 | 추론 | 53.6 | +0.24 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 83.0%×1.0, [[humanitys-last-exam]] 19.0%×1.0 |
-| 코딩 | 62.0 | +0.8 | 실측 | [[scicode]] 41.0%×1.0 |
+| 코딩 | 61.9 | +0.8 | 실측 | [[scicode]] 41.0%×1.0 |
 | 에이전트 | 45.6 | -0.29 | 실측 | [[gdpval]] 24.0%×1.0, [[tau3-banking]] 12.0%×1.0 |
-| 신뢰성 | 86.8 | +2.45 | 실측 | [[aa-omniscience]] 77.0%×1.0 |
+| 신뢰성 | 86.7 | +2.45 | 실측 | [[aa-omniscience]] 77.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 58.5 | +0.57 | 실측 | [[aa-lcr]] 58.0%×1.0 |
 | 지시 따르기 | 55.5 | +0.37 | 추정 | (추정) |

@@ -13,9 +13,9 @@ params_b: 120.6
 is_reasoning: true
 radar:
   knowledge: { s: 47.1, z: 0.27, r: 54.0, estimated: false }  # 전문 지식
-  reasoning: { s: 42.9, z: 0.35, r: 55.2, estimated: false }  # 추론
+  reasoning: { s: 42.9, z: 0.34, r: 55.1, estimated: false }  # 추론
   coding: { s: 54.6, z: 0.24, r: 53.6, estimated: false }  # 코딩
-  agentic: { s: 24.9, z: -0.48, r: 42.9, estimated: false }  # 에이전트
+  agentic: { s: 24.9, z: -0.48, r: 42.8, estimated: false }  # 에이전트
   trust: { s: 12.8, z: -0.67, r: 39.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 72.3, z: 0.64, r: 59.6, estimated: false }  # 긴문맥
@@ -44,9 +44,9 @@ NVIDIA · Open · Medium(120.6B) · 컨텍스트 1M · 종합지능 **26.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 54.0 | +0.27 | 실측 | [[aa-omniscience]] 24.0%×1.0, [[gpqa-diamond]] 80.0%×0.4, [[humanitys-last-exam]] 21.0%×0.3 |
-| 추론 | 55.2 | +0.35 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 80.0%×1.0, [[humanitys-last-exam]] 21.0%×1.0 |
+| 추론 | 55.1 | +0.34 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 80.0%×1.0, [[humanitys-last-exam]] 21.0%×1.0 |
 | 코딩 | 53.6 | +0.24 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 29.0%×0.5 |
-| 에이전트 | 42.9 | -0.48 | 실측 | [[apex-agents]] 2.0%×1.0, [[gdpval]] 10.0%×1.0, [[itbench]] 1.0%×1.0, [[tau2-bench]] 68.0%×1.0, [[tau3-banking]] 10.0%×1.0, [[terminal-bench]] 29.0%×1.0 |
+| 에이전트 | 42.8 | -0.48 | 실측 | [[apex-agents]] 2.0%×1.0, [[gdpval]] 10.0%×1.0, [[itbench]] 1.0%×1.0, [[tau2-bench]] 68.0%×1.0, [[tau3-banking]] 10.0%×1.0, [[terminal-bench]] 29.0%×1.0 |
 | 신뢰성 | 39.9 | -0.67 | 실측 | [[aa-omniscience]] 13.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 59.6 | +0.64 | 실측 | [[aa-lcr]] 60.0%×1.0 |

@@ -13,11 +13,11 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 91.3, z: 2.37, r: 85.6, estimated: false }  # 전문 지식
-  reasoning: { s: 91.2, z: 2.69, r: 90.3, estimated: false }  # 추론
-  coding: { s: 93.0, z: 1.81, r: 77.1, estimated: false }  # 코딩
-  agentic: { s: 85.2, z: 1.85, r: 77.7, estimated: false }  # 에이전트
-  trust: { s: 7.0, z: -0.92, r: 36.3, estimated: false }  # 신뢰성
-  multimodal: { s: 97.1, z: 1.19, r: 67.8, estimated: false }  # 멀티모달
+  reasoning: { s: 91.2, z: 2.68, r: 90.2, estimated: false }  # 추론
+  coding: { s: 93.0, z: 1.8, r: 77.1, estimated: false }  # 코딩
+  agentic: { s: 85.2, z: 1.84, r: 77.5, estimated: false }  # 에이전트
+  trust: { s: 7.0, z: -0.92, r: 36.2, estimated: false }  # 신뢰성
+  multimodal: { s: 97.1, z: 1.18, r: 67.7, estimated: false }  # 멀티모달
   long_context: { s: 91.6, z: 1.22, r: 68.3, estimated: false }  # 긴문맥
   instruction: { s: 83.1, z: 1.17, r: 67.5, estimated: false }  # 지시 따르기
 sources:
@@ -37,18 +37,18 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **59.0**
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $4.0 · 출력 $20.0 · 혼합 $3.08/1M · 72.0 t/s · TTFT 50.12s · 1M ctx` · 가성비 19.2
+`입력 $4.0 · 출력 $20.0 · 혼합 $3.08/1M · 72.0 t/s · TTFT 47.51s · 1M ctx` · 가성비 19.2
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 85.6 | +2.37 | 실측 | [[aa-omniscience]] 59.0%×1.0, [[gpqa-diamond]] 93.0%×0.4, [[humanitys-last-exam]] 47.0%×0.3 |
-| 추론 | 90.3 | +2.69 | 실측 | [[critpt]] 29.0%×1.0, [[gpqa-diamond]] 93.0%×1.0, [[humanitys-last-exam]] 47.0%×1.0 |
-| 코딩 | 77.1 | +1.81 | 실측 | [[scicode]] 56.0%×1.0, [[terminal-bench]] 61.0%×0.5 |
-| 에이전트 | 77.7 | +1.85 | 실측 | [[gdpval]] 59.0%×1.0, [[tau2-bench]] 85.0%×1.0, [[tau3-banking]] 38.0%×1.0, [[terminal-bench]] 61.0%×1.0 |
-| 신뢰성 | 36.3 | -0.92 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
-| 멀티모달 | 67.8 | +1.19 | 실측 | [[mmmu-pro]] 83.0%×1.0 |
+| 추론 | 90.2 | +2.68 | 실측 | [[critpt]] 29.0%×1.0, [[gpqa-diamond]] 93.0%×1.0, [[humanitys-last-exam]] 47.0%×1.0 |
+| 코딩 | 77.1 | +1.8 | 실측 | [[scicode]] 56.0%×1.0, [[terminal-bench]] 61.0%×0.5 |
+| 에이전트 | 77.5 | +1.84 | 실측 | [[gdpval]] 59.0%×1.0, [[tau2-bench]] 85.0%×1.0, [[tau3-banking]] 38.0%×1.0, [[terminal-bench]] 61.0%×1.0 |
+| 신뢰성 | 36.2 | -0.92 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
+| 멀티모달 | 67.7 | +1.18 | 실측 | [[mmmu-pro]] 83.0%×1.0 |
 | 긴문맥 | 68.3 | +1.22 | 실측 | [[aa-lcr]] 76.0%×1.0 |
 | 지시 따르기 | 67.5 | +1.17 | 실측 | [[ifbench]] 71.0%×1.0 |
 

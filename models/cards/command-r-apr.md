@@ -12,11 +12,11 @@ size_class: Medium
 params_b: 104
 is_reasoning: false
 radar:
-  knowledge: { s: 18.0, z: -1.11, r: 33.3, estimated: false }  # 전문 지식
+  knowledge: { s: 18.0, z: -1.12, r: 33.2, estimated: false }  # 전문 지식
   reasoning: { s: 16.6, z: -0.93, r: 36.0, estimated: false }  # 추론
-  coding: { s: 20.0, z: -1.18, r: 32.4, estimated: false }  # 코딩
-  agentic: { s: 15.3, z: -0.84, r: 37.3, estimated: true }  # 에이전트
-  trust: { s: 24.0, z: -0.2, r: 47.0, estimated: true }  # 신뢰성
+  coding: { s: 20.0, z: -1.18, r: 32.3, estimated: false }  # 코딩
+  agentic: { s: 15.3, z: -0.85, r: 37.3, estimated: true }  # 에이전트
+  trust: { s: 24.0, z: -0.2, r: 46.9, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 12.9, z: -1.14, r: 32.9, estimated: true }  # 긴문맥
   instruction: { s: 28.5, z: -1.06, r: 34.1, estimated: true }  # 지시 따르기
@@ -43,11 +43,11 @@ Cohere · Open · Medium(104B) · 컨텍스트 128k · 종합지능 **3.0** · �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 33.3 | -1.11 | 실측 | [[gpqa-diamond]] 32.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 전문 지식 | 33.2 | -1.12 | 실측 | [[gpqa-diamond]] 32.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 36.0 | -0.93 | 실측 | [[gpqa-diamond]] 32.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 32.4 | -1.18 | 실측 | [[scicode]] 12.0%×1.0 |
-| 에이전트 | 37.3 | -0.84 | 추정 | (추정) |
-| 신뢰성 | 47.0 | -0.2 | 추정 | (추정) |
+| 코딩 | 32.3 | -1.18 | 실측 | [[scicode]] 12.0%×1.0 |
+| 에이전트 | 37.3 | -0.85 | 추정 | (추정) |
+| 신뢰성 | 46.9 | -0.2 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 32.9 | -1.14 | 추정 | (추정) |
 | 지시 따르기 | 34.1 | -1.06 | 추정 | (추정) |

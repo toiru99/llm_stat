@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 13.0
 price_blended_usd_1m: 1.47
-output_speed_tps: 58.0
+output_speed_tps: 57.0
 context_window: 32800
 status: past
 size_class: Large
@@ -13,8 +13,8 @@ params_b: 235
 is_reasoning: true
 radar:
   knowledge: { s: 36.4, z: -0.24, r: 46.4, estimated: false }  # 전문 지식
-  reasoning: { s: 29.7, z: -0.3, r: 45.6, estimated: false }  # 추론
-  coding: { s: 47.5, z: -0.05, r: 49.2, estimated: false }  # 코딩
+  reasoning: { s: 29.7, z: -0.3, r: 45.5, estimated: false }  # 추론
+  coding: { s: 47.5, z: -0.06, r: 49.2, estimated: false }  # 코딩
   agentic: { s: 16.7, z: -0.79, r: 38.1, estimated: false }  # 에이전트
   trust: { s: 23.3, z: -0.23, r: 46.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -37,15 +37,15 @@ Alibaba · Open · Large(235B) · 컨텍스트 32k · 종합지능 **13.0** · �
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.7 · 출력 $8.4 · 혼합 $1.47/1M · 58.0 t/s · TTFT 2.71s · 32k ctx` · 가성비 8.8
+`입력 $0.7 · 출력 $8.4 · 혼합 $1.47/1M · 57.0 t/s · TTFT 2.71s · 32k ctx` · 가성비 8.8
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 46.4 | -0.24 | 실측 | [[aa-omniscience]] 19.0%×1.0, [[gpqa-diamond]] 70.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
-| 추론 | 45.6 | -0.3 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 70.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
-| 코딩 | 49.2 | -0.05 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 6.0%×0.5 |
+| 추론 | 45.5 | -0.3 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 70.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
+| 코딩 | 49.2 | -0.06 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 6.0%×0.5 |
 | 에이전트 | 38.1 | -0.79 | 실측 | [[tau2-bench]] 24.0%×1.0, [[terminal-bench]] 6.0%×1.0 |
 | 신뢰성 | 46.5 | -0.23 | 실측 | [[aa-omniscience]] 22.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

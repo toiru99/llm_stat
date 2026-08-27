@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 15.1, z: -1.25, r: 31.2, estimated: false }  # 전문 지식
   reasoning: { s: 10.3, z: -1.24, r: 31.4, estimated: false }  # 추론
-  coding: { s: 13.3, z: -1.45, r: 28.3, estimated: false }  # 코딩
+  coding: { s: 13.3, z: -1.45, r: 28.2, estimated: false }  # 코딩
   agentic: { s: 0.0, z: -1.43, r: 28.5, estimated: false }  # 에이전트
   trust: { s: 9.3, z: -0.82, r: 37.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -45,7 +45,7 @@ Meta · Open · Small(8B) · 컨텍스트 8k · 종합지능 **1.0** · ⚠️ p
 |---|---|---|---|---|
 | 전문 지식 | 31.2 | -1.25 | 실측 | [[aa-omniscience]] 10.0%×1.0, [[gpqa-diamond]] 30.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 31.4 | -1.24 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 30.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 28.3 | -1.45 | 실측 | [[scicode]] 12.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
+| 코딩 | 28.2 | -1.45 | 실측 | [[scicode]] 12.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 28.5 | -1.43 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | 37.7 | -0.82 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

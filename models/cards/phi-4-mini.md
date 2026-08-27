@@ -5,7 +5,7 @@ creator: Microsoft
 license: Open
 intelligence_index: 6.0
 price_blended_usd_1m: 0
-output_speed_tps: 43.0
+output_speed_tps: 44.0
 context_window: 128000
 status: current
 size_class: Tiny
@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 15.6, z: -1.23, r: 31.6, estimated: false }  # 전문 지식
   reasoning: { s: 10.9, z: -1.21, r: 31.8, estimated: false }  # 추론
-  coding: { s: 12.2, z: -1.49, r: 27.6, estimated: false }  # 코딩
+  coding: { s: 12.2, z: -1.5, r: 27.6, estimated: false }  # 코딩
   agentic: { s: 2.7, z: -1.33, r: 30.1, estimated: false }  # 에이전트
   trust: { s: 23.3, z: -0.23, r: 46.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -37,7 +37,7 @@ Microsoft · Open · Tiny(3.84B) · 컨텍스트 128k · 종합지능 **6.0**
 - **약점**: 코딩, 지시 따르기
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 43.0 t/s · TTFT 0.88s · 128k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 44.0 t/s · TTFT 0.88s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ Microsoft · Open · Tiny(3.84B) · 컨텍스트 128k · 종합지능 **6.0**
 |---|---|---|---|---|
 | 전문 지식 | 31.6 | -1.23 | 실측 | [[aa-omniscience]] 10.0%×1.0, [[gpqa-diamond]] 33.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 31.8 | -1.21 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 27.6 | -1.49 | 실측 | [[scicode]] 11.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
+| 코딩 | 27.6 | -1.5 | 실측 | [[scicode]] 11.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 30.1 | -1.33 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 8.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | 46.5 | -0.23 | 실측 | [[aa-omniscience]] 22.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

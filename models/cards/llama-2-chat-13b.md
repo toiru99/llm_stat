@@ -12,11 +12,11 @@ size_class: Small
 params_b: 13
 is_reasoning: false
 radar:
-  knowledge: { s: 18.0, z: -1.11, r: 33.3, estimated: false }  # 전문 지식
+  knowledge: { s: 18.0, z: -1.12, r: 33.2, estimated: false }  # 전문 지식
   reasoning: { s: 16.6, z: -0.93, r: 36.0, estimated: false }  # 추론
-  coding: { s: 20.0, z: -1.18, r: 32.4, estimated: false }  # 코딩
-  agentic: { s: 14.8, z: -0.86, r: 37.1, estimated: true }  # 에이전트
-  trust: { s: 23.3, z: -0.23, r: 46.6, estimated: true }  # 신뢰성
+  coding: { s: 20.0, z: -1.18, r: 32.3, estimated: false }  # 코딩
+  agentic: { s: 14.8, z: -0.86, r: 37.0, estimated: true }  # 에이전트
+  trust: { s: 23.3, z: -0.23, r: 46.5, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 15.8, z: -1.05, r: 34.2, estimated: true }  # 긴문맥
   instruction: { s: 27.2, z: -1.11, r: 33.4, estimated: true }  # 지시 따르기
@@ -34,7 +34,7 @@ Meta · Open · Small(13B) · 컨텍스트 4k · 종합지능 **3.0** · ⚠️ 
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 에이전트
-- **약점**: 지시 따르기, 코딩
+- **약점**: 전문 지식, 코딩
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 4k ctx`
@@ -43,11 +43,11 @@ Meta · Open · Small(13B) · 컨텍스트 4k · 종합지능 **3.0** · ⚠️ 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 33.3 | -1.11 | 실측 | [[gpqa-diamond]] 32.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 전문 지식 | 33.2 | -1.12 | 실측 | [[gpqa-diamond]] 32.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 36.0 | -0.93 | 실측 | [[gpqa-diamond]] 32.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 32.4 | -1.18 | 실측 | [[scicode]] 12.0%×1.0 |
-| 에이전트 | 37.1 | -0.86 | 추정 | (추정) |
-| 신뢰성 | 46.6 | -0.23 | 추정 | (추정) |
+| 코딩 | 32.3 | -1.18 | 실측 | [[scicode]] 12.0%×1.0 |
+| 에이전트 | 37.0 | -0.86 | 추정 | (추정) |
+| 신뢰성 | 46.5 | -0.23 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 34.2 | -1.05 | 추정 | (추정) |
 | 지시 따르기 | 33.4 | -1.11 | 추정 | (추정) |

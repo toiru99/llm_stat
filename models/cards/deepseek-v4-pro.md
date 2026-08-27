@@ -5,7 +5,7 @@ creator: DeepSeek
 license: Open
 intelligence_index: 32.0
 price_blended_usd_1m: 0.1765
-output_speed_tps: 70.0
+output_speed_tps: 71.0
 context_window: 1000000
 status: current
 size_class: Large
@@ -14,8 +14,8 @@ is_reasoning: false
 radar:
   knowledge: { s: 47.0, z: 0.27, r: 54.0, estimated: false }  # 전문 지식
   reasoning: { s: 29.7, z: -0.3, r: 45.5, estimated: false }  # 추론
-  coding: { s: 64.8, z: 0.66, r: 59.8, estimated: false }  # 코딩
-  agentic: { s: 73.2, z: 1.38, r: 70.8, estimated: false }  # 에이전트
+  coding: { s: 64.8, z: 0.65, r: 59.8, estimated: false }  # 코딩
+  agentic: { s: 73.2, z: 1.38, r: 70.6, estimated: false }  # 에이전트
   trust: { s: 11.6, z: -0.72, r: 39.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 60.2, z: 0.28, r: 54.2, estimated: false }  # 긴문맥
@@ -37,7 +37,7 @@ DeepSeek · Open · Large(1600B) · 컨텍스트 1M · 종합지능 **32.0**
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $0.43 · 출력 $0.87 · 혼합 $0.1765/1M · 70.0 t/s · TTFT 1.63s · 1M ctx` · 가성비 181.3
+`입력 $0.43 · 출력 $0.87 · 혼합 $0.1765/1M · 71.0 t/s · TTFT 1.63s · 1M ctx` · 가성비 181.3
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,8 +45,8 @@ DeepSeek · Open · Large(1600B) · 컨텍스트 1M · 종합지능 **32.0**
 |---|---|---|---|---|
 | 전문 지식 | 54.0 | +0.27 | 실측 | [[aa-omniscience]] 31.0%×1.0, [[gpqa-diamond]] 72.0%×0.4, [[humanitys-last-exam]] 8.0%×0.3 |
 | 추론 | 45.5 | -0.3 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 72.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
-| 코딩 | 59.8 | +0.66 | 실측 | [[scicode]] 42.0%×1.0, [[terminal-bench]] 36.0%×0.5 |
-| 에이전트 | 70.8 | +1.38 | 실측 | [[tau2-bench]] 91.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
+| 코딩 | 59.8 | +0.65 | 실측 | [[scicode]] 42.0%×1.0, [[terminal-bench]] 36.0%×0.5 |
+| 에이전트 | 70.6 | +1.38 | 실측 | [[tau2-bench]] 91.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
 | 신뢰성 | 39.2 | -0.72 | 실측 | [[aa-omniscience]] 12.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 54.2 | +0.28 | 실측 | [[aa-lcr]] 50.0%×1.0 |

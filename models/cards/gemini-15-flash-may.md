@@ -13,9 +13,9 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 17.2, z: -1.15, r: 32.7, estimated: false }  # 전문 지식
-  reasoning: { s: 15.7, z: -0.98, r: 35.4, estimated: false }  # 추론
+  reasoning: { s: 15.7, z: -0.98, r: 35.3, estimated: false }  # 추론
   coding: { s: 30.0, z: -0.77, r: 38.5, estimated: false }  # 코딩
-  agentic: { s: 15.9, z: -0.82, r: 37.7, estimated: true }  # 에이전트
+  agentic: { s: 15.9, z: -0.82, r: 37.6, estimated: true }  # 에이전트
   trust: { s: 13.7, z: -0.63, r: 40.5, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 27.8, z: -0.69, r: 39.6, estimated: true }  # 긴문맥
@@ -44,9 +44,9 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **5.0** · �
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 32.7 | -1.15 | 실측 | [[gpqa-diamond]] 32.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 35.4 | -0.98 | 실측 | [[gpqa-diamond]] 32.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 추론 | 35.3 | -0.98 | 실측 | [[gpqa-diamond]] 32.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 38.5 | -0.77 | 실측 | [[scicode]] 18.0%×1.0 |
-| 에이전트 | 37.7 | -0.82 | 추정 | (추정) |
+| 에이전트 | 37.6 | -0.82 | 추정 | (추정) |
 | 신뢰성 | 40.5 | -0.63 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 39.6 | -0.69 | 추정 | (추정) |

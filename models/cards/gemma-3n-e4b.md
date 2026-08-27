@@ -12,12 +12,12 @@ size_class: Small
 params_b: 8.39
 is_reasoning: false
 radar:
-  knowledge: { s: 13.0, z: -1.35, r: 29.7, estimated: false }  # 전문 지식
+  knowledge: { s: 13.0, z: -1.36, r: 29.7, estimated: false }  # 전문 지식
   reasoning: { s: 9.7, z: -1.27, r: 31.0, estimated: false }  # 추론
-  coding: { s: 9.9, z: -1.59, r: 26.2, estimated: false }  # 코딩
+  coding: { s: 9.9, z: -1.59, r: 26.1, estimated: false }  # 코딩
   agentic: { s: 2.7, z: -1.33, r: 30.1, estimated: false }  # 에이전트
   trust: { s: 1.2, z: -1.16, r: 32.6, estimated: false }  # 신뢰성
-  multimodal: { s: 15.7, z: -2.76, r: 8.6, estimated: false }  # 멀티모달
+  multimodal: { s: 15.7, z: -2.76, r: 8.5, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.53, r: 27.1, estimated: false }  # 긴문맥
   instruction: { s: 22.5, z: -1.3, r: 30.5, estimated: false }  # 지시 따르기
 sources:
@@ -43,12 +43,12 @@ Google · Open · Small(8.39B) · 컨텍스트 32k · 종합지능 **1.0** · �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 29.7 | -1.35 | 실측 | [[aa-omniscience]] 8.0%×1.0, [[gpqa-diamond]] 30.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 전문 지식 | 29.7 | -1.36 | 실측 | [[aa-omniscience]] 8.0%×1.0, [[gpqa-diamond]] 30.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 31.0 | -1.27 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 30.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 26.2 | -1.59 | 실측 | [[scicode]] 8.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
+| 코딩 | 26.1 | -1.59 | 실측 | [[scicode]] 8.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 30.1 | -1.33 | 실측 | [[tau2-bench]] 5.0%×1.0, [[tau3-banking]] 0.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | 32.6 | -1.16 | 실측 | [[aa-omniscience]] 3.0%×1.0 |
-| 멀티모달 | 8.6 | -2.76 | 실측 | [[mmmu-pro]] 26.0%×1.0 |
+| 멀티모달 | 8.5 | -2.76 | 실측 | [[mmmu-pro]] 26.0%×1.0 |
 | 긴문맥 | 27.1 | -1.53 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 30.5 | -1.3 | 실측 | [[ifbench]] 28.0%×1.0 |
 

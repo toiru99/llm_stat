@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 17.0
 price_blended_usd_1m: 0.6525
-output_speed_tps: 163.0
+output_speed_tps: 165.0
 context_window: 400000
 status: past
 size_class: Unknown
@@ -18,7 +18,7 @@ radar:
   agentic: { s: 26.4, z: -0.42, r: 43.7, estimated: false }  # 에이전트
   trust: { s: 2.3, z: -1.11, r: 33.3, estimated: false }  # 신뢰성
   multimodal: { s: 64.3, z: -0.41, r: 43.9, estimated: false }  # 멀티모달
-  long_context: { s: 42.2, z: -0.26, r: 46.1, estimated: false }  # 긴문맥
+  long_context: { s: 42.2, z: -0.26, r: 46.0, estimated: false }  # 긴문맥
   instruction: { s: 38.0, z: -0.67, r: 40.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **17.0** �
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $0.75 · 출력 $4.5 · 혼합 $0.6525/1M · 163.0 t/s · TTFT 0.74s · 400k ctx` · 가성비 26.1
+`입력 $0.75 · 출력 $4.5 · 혼합 $0.6525/1M · 165.0 t/s · TTFT 0.74s · 400k ctx` · 가성비 26.1
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **17.0** �
 | 에이전트 | 43.7 | -0.42 | 실측 | [[gdpval]] 15.0%×1.0, [[itbench]] 19.0%×1.0, [[tau2-bench]] 23.0%×1.0, [[terminal-bench]] 18.0%×1.0 |
 | 신뢰성 | 33.3 | -1.11 | 실측 | [[aa-omniscience]] 4.0%×1.0 |
 | 멀티모달 | 43.9 | -0.41 | 실측 | [[mmmu-pro]] 60.0%×1.0 |
-| 긴문맥 | 46.1 | -0.26 | 실측 | [[aa-lcr]] 35.0%×1.0 |
+| 긴문맥 | 46.0 | -0.26 | 실측 | [[aa-lcr]] 35.0%×1.0 |
 | 지시 따르기 | 40.0 | -0.67 | 실측 | [[ifbench]] 39.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

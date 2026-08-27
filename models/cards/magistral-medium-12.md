@@ -14,9 +14,9 @@ is_reasoning: true
 radar:
   knowledge: { s: 39.0, z: -0.11, r: 48.3, estimated: false }  # 전문 지식
   reasoning: { s: 30.7, z: -0.25, r: 46.2, estimated: false }  # 추론
-  coding: { s: 49.9, z: 0.05, r: 50.7, estimated: false }  # 코딩
+  coding: { s: 49.9, z: 0.04, r: 50.6, estimated: false }  # 코딩
   agentic: { s: 21.0, z: -0.63, r: 40.6, estimated: false }  # 에이전트
-  trust: { s: 44.2, z: 0.65, r: 59.7, estimated: false }  # 신뢰성
+  trust: { s: 44.2, z: 0.64, r: 59.7, estimated: false }  # 신뢰성
   multimodal: { s: 64.3, z: -0.41, r: 43.9, estimated: false }  # 멀티모달
   long_context: { s: 63.9, z: 0.39, r: 55.8, estimated: false }  # 긴문맥
   instruction: { s: 43.7, z: -0.44, r: 43.4, estimated: false }  # 지시 따르기
@@ -45,9 +45,9 @@ Mistral · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **18.0**
 |---|---|---|---|---|
 | 전문 지식 | 48.3 | -0.11 | 실측 | [[aa-omniscience]] 21.0%×1.0, [[gpqa-diamond]] 74.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
 | 추론 | 46.2 | -0.25 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 74.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
-| 코딩 | 50.7 | +0.05 | 실측 | [[scicode]] 39.0%×1.0, [[terminal-bench]] 13.0%×0.5 |
+| 코딩 | 50.6 | +0.04 | 실측 | [[scicode]] 39.0%×1.0, [[terminal-bench]] 13.0%×0.5 |
 | 에이전트 | 40.6 | -0.63 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 52.0%×1.0, [[tau3-banking]] 6.0%×1.0, [[terminal-bench]] 13.0%×1.0 |
-| 신뢰성 | 59.7 | +0.65 | 실측 | [[aa-omniscience]] 40.0%×1.0 |
+| 신뢰성 | 59.7 | +0.64 | 실측 | [[aa-omniscience]] 40.0%×1.0 |
 | 멀티모달 | 43.9 | -0.41 | 실측 | [[mmmu-pro]] 60.0%×1.0 |
 | 긴문맥 | 55.8 | +0.39 | 실측 | [[aa-lcr]] 53.0%×1.0 |
 | 지시 따르기 | 43.4 | -0.44 | 실측 | [[ifbench]] 43.0%×1.0 |

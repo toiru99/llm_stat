@@ -12,10 +12,10 @@ size_class: Medium
 params_b: 68.5
 is_reasoning: false
 radar:
-  knowledge: { s: 27.6, z: -0.66, r: 40.2, estimated: false }  # 전문 지식
+  knowledge: { s: 27.6, z: -0.66, r: 40.1, estimated: false }  # 전문 지식
   reasoning: { s: 24.3, z: -0.56, r: 41.6, estimated: false }  # 추론
-  coding: { s: 36.7, z: -0.5, r: 42.6, estimated: false }  # 코딩
-  agentic: { s: 48.7, z: 0.44, r: 56.6, estimated: false }  # 에이전트
+  coding: { s: 36.7, z: -0.5, r: 42.5, estimated: false }  # 코딩
+  agentic: { s: 48.7, z: 0.44, r: 56.5, estimated: false }  # 에이전트
   trust: { s: 2.3, z: -1.11, r: 33.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 34.9, z: -0.48, r: 42.8, estimated: false }  # 긴문맥
@@ -43,10 +43,10 @@ LongCat · Open · Medium(68.5B) · 컨텍스트 256k · 종합지능 **17.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 40.2 | -0.66 | 실측 | [[aa-omniscience]] 13.0%×1.0, [[gpqa-diamond]] 64.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 전문 지식 | 40.1 | -0.66 | 실측 | [[aa-omniscience]] 13.0%×1.0, [[gpqa-diamond]] 64.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 41.6 | -0.56 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 64.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 42.6 | -0.5 | 실측 | [[scicode]] 28.0%×1.0, [[terminal-bench]] 11.0%×0.5 |
-| 에이전트 | 56.6 | +0.44 | 실측 | [[tau2-bench]] 80.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
+| 코딩 | 42.5 | -0.5 | 실측 | [[scicode]] 28.0%×1.0, [[terminal-bench]] 11.0%×0.5 |
+| 에이전트 | 56.5 | +0.44 | 실측 | [[tau2-bench]] 80.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
 | 신뢰성 | 33.3 | -1.11 | 실측 | [[aa-omniscience]] 4.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 42.8 | -0.48 | 실측 | [[aa-lcr]] 29.0%×1.0 |

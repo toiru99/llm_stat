@@ -14,10 +14,10 @@ is_reasoning: true
 radar:
   knowledge: { s: 17.1, z: -1.16, r: 32.6, estimated: false }  # 전문 지식
   reasoning: { s: 15.4, z: -0.99, r: 35.1, estimated: false }  # 추론
-  coding: { s: 5.4, z: -1.77, r: 23.4, estimated: false }  # 코딩
-  agentic: { s: 25.3, z: -0.46, r: 43.1, estimated: false }  # 에이전트
+  coding: { s: 5.4, z: -1.78, r: 23.4, estimated: false }  # 코딩
+  agentic: { s: 25.3, z: -0.46, r: 43.0, estimated: false }  # 에이전트
   trust: { s: 27.9, z: -0.04, r: 49.4, estimated: false }  # 신뢰성
-  multimodal: { s: 40.0, z: -1.58, r: 26.3, estimated: false }  # 멀티모달
+  multimodal: { s: 40.0, z: -1.59, r: 26.2, estimated: false }  # 멀티모달
   long_context: { s: 34.9, z: -0.48, r: 42.8, estimated: false }  # 긴문맥
   instruction: { s: 26.8, z: -1.13, r: 33.1, estimated: false }  # 지시 따르기
 sources:
@@ -45,10 +45,10 @@ Alibaba · Open · Tiny(2.27B) · 컨텍스트 262k · 종합지능 **7.0**
 |---|---|---|---|---|
 | 전문 지식 | 32.6 | -1.16 | 실측 | [[aa-omniscience]] 8.0%×1.0, [[gpqa-diamond]] 46.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
 | 추론 | 35.1 | -0.99 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 46.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
-| 코딩 | 23.4 | -1.77 | 실측 | [[scicode]] 3.0%×1.0, [[terminal-bench]] 4.0%×0.5 |
-| 에이전트 | 43.1 | -0.46 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 69.0%×1.0, [[terminal-bench]] 4.0%×1.0 |
+| 코딩 | 23.4 | -1.78 | 실측 | [[scicode]] 3.0%×1.0, [[terminal-bench]] 4.0%×0.5 |
+| 에이전트 | 43.0 | -0.46 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 69.0%×1.0, [[terminal-bench]] 4.0%×1.0 |
 | 신뢰성 | 49.4 | -0.04 | 실측 | [[aa-omniscience]] 26.0%×1.0 |
-| 멀티모달 | 26.3 | -1.58 | 실측 | [[mmmu-pro]] 43.0%×1.0 |
+| 멀티모달 | 26.2 | -1.59 | 실측 | [[mmmu-pro]] 43.0%×1.0 |
 | 긴문맥 | 42.8 | -0.48 | 실측 | [[aa-lcr]] 29.0%×1.0 |
 | 지시 따르기 | 33.1 | -1.13 | 실측 | [[ifbench]] 31.0%×1.0 |
 

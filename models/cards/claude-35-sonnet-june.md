@@ -12,11 +12,11 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 32.5, z: -0.42, r: 43.7, estimated: false }  # 전문 지식
-  reasoning: { s: 28.9, z: -0.33, r: 45.0, estimated: false }  # 추론
-  coding: { s: 53.3, z: 0.19, r: 52.8, estimated: false }  # 코딩
-  agentic: { s: 27.3, z: -0.38, r: 44.3, estimated: true }  # 에이전트
-  trust: { s: 39.2, z: 0.44, r: 56.5, estimated: true }  # 신뢰성
+  knowledge: { s: 32.5, z: -0.42, r: 43.6, estimated: false }  # 전문 지식
+  reasoning: { s: 28.9, z: -0.34, r: 44.9, estimated: false }  # 추론
+  coding: { s: 53.3, z: 0.18, r: 52.8, estimated: false }  # 코딩
+  agentic: { s: 27.3, z: -0.38, r: 44.2, estimated: true }  # 에이전트
+  trust: { s: 39.2, z: 0.43, r: 56.5, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 55.7, z: 0.14, r: 52.1, estimated: true }  # 긴문맥
   instruction: { s: 58.9, z: 0.18, r: 52.7, estimated: true }  # 지시 따르기
@@ -43,11 +43,11 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **8.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 43.7 | -0.42 | 실측 | [[gpqa-diamond]] 56.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
-| 추론 | 45.0 | -0.33 | 실측 | [[gpqa-diamond]] 56.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
-| 코딩 | 52.8 | +0.19 | 실측 | [[scicode]] 32.0%×1.0 |
-| 에이전트 | 44.3 | -0.38 | 추정 | (추정) |
-| 신뢰성 | 56.5 | +0.44 | 추정 | (추정) |
+| 전문 지식 | 43.6 | -0.42 | 실측 | [[gpqa-diamond]] 56.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
+| 추론 | 44.9 | -0.34 | 실측 | [[gpqa-diamond]] 56.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
+| 코딩 | 52.8 | +0.18 | 실측 | [[scicode]] 32.0%×1.0 |
+| 에이전트 | 44.2 | -0.38 | 추정 | (추정) |
+| 신뢰성 | 56.5 | +0.43 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 52.1 | +0.14 | 추정 | (추정) |
 | 지시 따르기 | 52.7 | +0.18 | 추정 | (추정) |

@@ -12,7 +12,7 @@ size_class: Small
 params_b: 7
 is_reasoning: false
 radar:
-  knowledge: { s: 15.5, z: -1.23, r: 31.5, estimated: false }  # 전문 지식
+  knowledge: { s: 15.5, z: -1.24, r: 31.5, estimated: false }  # 전문 지식
   reasoning: { s: 14.9, z: -1.02, r: 34.7, estimated: false }  # 추론
   coding: { s: 11.1, z: -1.54, r: 26.9, estimated: false }  # 코딩
   agentic: { s: 6.6, z: -1.18, r: 32.3, estimated: false }  # 에이전트
@@ -43,7 +43,7 @@ Allen Institute for AI · Open · Small(7B) · 컨텍스트 65k · 종합지능 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 31.5 | -1.23 | 실측 | [[aa-omniscience]] 7.0%×1.0, [[gpqa-diamond]] 40.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 전문 지식 | 31.5 | -1.24 | 실측 | [[aa-omniscience]] 7.0%×1.0, [[gpqa-diamond]] 40.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 34.7 | -1.02 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 40.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 26.9 | -1.54 | 실측 | [[scicode]] 10.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 32.3 | -1.18 | 실측 | [[tau2-bench]] 13.0%×1.0, [[terminal-bench]] 0.0%×1.0 |

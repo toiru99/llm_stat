@@ -14,11 +14,11 @@ is_reasoning: true
 radar:
   knowledge: { s: 35.4, z: -0.29, r: 45.7, estimated: false }  # 전문 지식
   reasoning: { s: 30.9, z: -0.24, r: 46.4, estimated: false }  # 추론
-  coding: { s: 48.2, z: -0.02, r: 49.6, estimated: false }  # 코딩
-  agentic: { s: 45.5, z: 0.32, r: 54.7, estimated: false }  # 에이전트
-  trust: { s: 7.0, z: -0.92, r: 36.3, estimated: false }  # 신뢰성
+  coding: { s: 48.2, z: -0.03, r: 49.6, estimated: false }  # 코딩
+  agentic: { s: 45.5, z: 0.31, r: 54.7, estimated: false }  # 에이전트
+  trust: { s: 7.0, z: -0.92, r: 36.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 61.4, z: 0.32, r: 54.8, estimated: true }  # 긴문맥
+  long_context: { s: 61.4, z: 0.31, r: 54.7, estimated: true }  # 긴문맥
   instruction: { s: 80.3, z: 1.05, r: 65.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
@@ -45,11 +45,11 @@ ServiceNow · Open · Small(15B) · 컨텍스트 128k · 종합지능 **21.0**
 |---|---|---|---|---|
 | 전문 지식 | 45.7 | -0.29 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
 | 추론 | 46.4 | -0.24 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
-| 코딩 | 49.6 | -0.02 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 14.0%×0.5 |
-| 에이전트 | 54.7 | +0.32 | 실측 | [[tau2-bench]] 69.0%×1.0, [[terminal-bench]] 14.0%×1.0 |
-| 신뢰성 | 36.3 | -0.92 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
+| 코딩 | 49.6 | -0.03 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 14.0%×0.5 |
+| 에이전트 | 54.7 | +0.31 | 실측 | [[tau2-bench]] 69.0%×1.0, [[terminal-bench]] 14.0%×1.0 |
+| 신뢰성 | 36.2 | -0.92 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 54.8 | +0.32 | 추정 | (추정) |
+| 긴문맥 | 54.7 | +0.31 | 추정 | (추정) |
 | 지시 따르기 | 65.8 | +1.05 | 실측 | [[ifbench]] 69.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

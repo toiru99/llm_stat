@@ -13,10 +13,10 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 48.3, z: 0.33, r: 54.9, estimated: true }  # 전문 지식
-  reasoning: { s: 44.6, z: 0.43, r: 56.4, estimated: true }  # 추론
+  reasoning: { s: 44.6, z: 0.42, r: 56.4, estimated: true }  # 추론
   coding: { s: 60.8, z: 0.49, r: 57.4, estimated: true }  # 코딩
-  agentic: { s: 53.7, z: 0.63, r: 59.5, estimated: false }  # 에이전트
-  trust: { s: 35.8, z: 0.3, r: 54.4, estimated: true }  # 신뢰성
+  agentic: { s: 53.7, z: 0.63, r: 59.4, estimated: false }  # 에이전트
+  trust: { s: 35.8, z: 0.29, r: 54.4, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 75.7, z: 0.74, r: 61.1, estimated: true }  # 긴문맥
   instruction: { s: 72.1, z: 0.72, r: 60.8, estimated: true }  # 지시 따르기
@@ -37,17 +37,17 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None**
 - **약점**: 전문 지식, 신뢰성
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 64.0 t/s · TTFT 2.09s · 1M ctx`
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 64.0 t/s · TTFT 2.18s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 54.9 | +0.33 | 추정 | (추정) |
-| 추론 | 56.4 | +0.43 | 추정 | (추정) |
+| 추론 | 56.4 | +0.42 | 추정 | (추정) |
 | 코딩 | 57.4 | +0.49 | 추정 | (추정) |
-| 에이전트 | 59.5 | +0.63 | 실측 | [[gdpval]] 36.0%×1.0 |
-| 신뢰성 | 54.4 | +0.3 | 추정 | (추정) |
+| 에이전트 | 59.4 | +0.63 | 실측 | [[gdpval]] 36.0%×1.0 |
+| 신뢰성 | 54.4 | +0.29 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 61.1 | +0.74 | 추정 | (추정) |
 | 지시 따르기 | 60.8 | +0.72 | 추정 | (추정) |

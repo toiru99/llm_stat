@@ -13,7 +13,7 @@ params_b: 33.4
 is_reasoning: true
 radar:
   knowledge: { s: 35.1, z: -0.3, r: 45.5, estimated: false }  # 전문 지식
-  reasoning: { s: 30.3, z: -0.27, r: 46.0, estimated: false }  # 추론
+  reasoning: { s: 30.3, z: -0.27, r: 45.9, estimated: false }  # 추론
   coding: { s: 35.2, z: -0.56, r: 41.6, estimated: false }  # 코딩
   agentic: { s: 29.3, z: -0.31, r: 45.4, estimated: false }  # 에이전트
   trust: { s: 16.3, z: -0.53, r: 42.1, estimated: false }  # 신뢰성
@@ -44,7 +44,7 @@ Alibaba · Open · Small(33.4B) · 컨텍스트 256k · 종합지능 **18.0** ·
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 45.5 | -0.3 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
-| 추론 | 46.0 | -0.27 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
+| 추론 | 45.9 | -0.27 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
 | 코딩 | 41.6 | -0.56 | 실측 | [[scicode]] 28.0%×1.0, [[terminal-bench]] 8.0%×0.5 |
 | 에이전트 | 45.4 | -0.31 | 실측 | [[tau2-bench]] 46.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
 | 신뢰성 | 42.1 | -0.53 | 실측 | [[aa-omniscience]] 16.0%×1.0 |

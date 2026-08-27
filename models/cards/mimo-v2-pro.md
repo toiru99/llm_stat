@@ -13,12 +13,12 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 54.7, z: 0.63, r: 59.5, estimated: false }  # 전문 지식
-  reasoning: { s: 48.1, z: 0.6, r: 58.9, estimated: false }  # 추론
+  reasoning: { s: 48.1, z: 0.59, r: 58.9, estimated: false }  # 추론
   coding: { s: 67.4, z: 0.76, r: 61.4, estimated: false }  # 코딩
-  agentic: { s: 79.0, z: 1.61, r: 74.1, estimated: false }  # 에이전트
-  trust: { s: 79.1, z: 2.11, r: 81.7, estimated: false }  # 신뢰성
+  agentic: { s: 79.0, z: 1.6, r: 74.0, estimated: false }  # 에이전트
+  trust: { s: 79.1, z: 2.11, r: 81.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 79.5, z: 0.86, r: 62.9, estimated: false }  # 긴문맥
+  long_context: { s: 79.5, z: 0.86, r: 62.8, estimated: false }  # 긴문맥
   instruction: { s: 80.3, z: 1.05, r: 65.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
@@ -44,12 +44,12 @@ Xiaomi · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **41.0** · 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 59.5 | +0.63 | 실측 | [[aa-omniscience]] 27.0%×1.0, [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 30.0%×0.3 |
-| 추론 | 58.9 | +0.6 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 30.0%×1.0 |
+| 추론 | 58.9 | +0.59 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 30.0%×1.0 |
 | 코딩 | 61.4 | +0.76 | 실측 | [[scicode]] 42.0%×1.0, [[terminal-bench]] 41.0%×0.5 |
-| 에이전트 | 74.1 | +1.61 | 실측 | [[tau2-bench]] 95.0%×1.0, [[terminal-bench]] 41.0%×1.0 |
-| 신뢰성 | 81.7 | +2.11 | 실측 | [[aa-omniscience]] 70.0%×1.0 |
+| 에이전트 | 74.0 | +1.6 | 실측 | [[tau2-bench]] 95.0%×1.0, [[terminal-bench]] 41.0%×1.0 |
+| 신뢰성 | 81.6 | +2.11 | 실측 | [[aa-omniscience]] 70.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 62.9 | +0.86 | 실측 | [[aa-lcr]] 66.0%×1.0 |
+| 긴문맥 | 62.8 | +0.86 | 실측 | [[aa-lcr]] 66.0%×1.0 |
 | 지시 따르기 | 65.8 | +1.05 | 실측 | [[ifbench]] 69.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

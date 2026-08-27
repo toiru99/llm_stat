@@ -12,11 +12,11 @@ size_class: Tiny
 params_b: 0.35
 is_reasoning: false
 radar:
-  knowledge: { s: 8.8, z: -1.55, r: 26.8, estimated: false }  # 전문 지식
-  reasoning: { s: 9.4, z: -1.28, r: 30.7, estimated: false }  # 추론
+  knowledge: { s: 8.8, z: -1.55, r: 26.7, estimated: false }  # 전문 지식
+  reasoning: { s: 9.4, z: -1.29, r: 30.7, estimated: false }  # 추론
   coding: { s: 1.1, z: -1.95, r: 20.8, estimated: false }  # 코딩
   agentic: { s: 6.6, z: -1.18, r: 32.3, estimated: false }  # 에이전트
-  trust: { s: 25.6, z: -0.13, r: 48.0, estimated: false }  # 신뢰성
+  trust: { s: 25.6, z: -0.14, r: 47.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.53, r: 27.1, estimated: false }  # 긴문맥
   instruction: { s: 5.6, z: -1.99, r: 20.2, estimated: false }  # 지시 따르기
@@ -43,11 +43,11 @@ IBM · Open · Tiny(0.35B) · 컨텍스트 32k · 종합지능 **1.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 26.8 | -1.55 | 실측 | [[aa-omniscience]] 4.0%×1.0, [[gpqa-diamond]] 26.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
-| 추론 | 30.7 | -1.28 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 26.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
+| 전문 지식 | 26.7 | -1.55 | 실측 | [[aa-omniscience]] 4.0%×1.0, [[gpqa-diamond]] 26.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 추론 | 30.7 | -1.29 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 26.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 20.8 | -1.95 | 실측 | [[scicode]] 1.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 32.3 | -1.18 | 실측 | [[tau2-bench]] 13.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 48.0 | -0.13 | 실측 | [[aa-omniscience]] 24.0%×1.0 |
+| 신뢰성 | 47.9 | -0.14 | 실측 | [[aa-omniscience]] 24.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 27.1 | -1.53 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 20.2 | -1.99 | 실측 | [[ifbench]] 16.0%×1.0 |

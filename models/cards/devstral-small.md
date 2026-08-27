@@ -12,11 +12,11 @@ size_class: Small
 params_b: 24
 is_reasoning: false
 radar:
-  knowledge: { s: 22.4, z: -0.9, r: 36.5, estimated: false }  # 전문 지식
+  knowledge: { s: 22.4, z: -0.9, r: 36.4, estimated: false }  # 전문 지식
   reasoning: { s: 14.0, z: -1.06, r: 34.1, estimated: false }  # 추론
   coding: { s: 29.7, z: -0.78, r: 38.3, estimated: false }  # 코딩
-  agentic: { s: 18.7, z: -0.71, r: 39.3, estimated: false }  # 에이전트
-  trust: { s: 24.4, z: -0.18, r: 47.2, estimated: false }  # 신뢰성
+  agentic: { s: 18.7, z: -0.72, r: 39.3, estimated: false }  # 에이전트
+  trust: { s: 24.4, z: -0.19, r: 47.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 22.9, z: -0.84, r: 37.4, estimated: false }  # 긴문맥
   instruction: { s: 32.4, z: -0.9, r: 36.5, estimated: false }  # 지시 따르기
@@ -43,11 +43,11 @@ Mistral · Open · Small(24B) · 컨텍스트 256k · 종합지능 **9.0** · �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 36.5 | -0.9 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 전문 지식 | 36.4 | -0.9 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 34.1 | -1.06 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 38.3 | -0.78 | 실측 | [[scicode]] 24.0%×1.0, [[terminal-bench]] 6.0%×0.5 |
-| 에이전트 | 39.3 | -0.71 | 실측 | [[tau2-bench]] 28.0%×1.0, [[terminal-bench]] 6.0%×1.0 |
-| 신뢰성 | 47.2 | -0.18 | 실측 | [[aa-omniscience]] 23.0%×1.0 |
+| 에이전트 | 39.3 | -0.72 | 실측 | [[tau2-bench]] 28.0%×1.0, [[terminal-bench]] 6.0%×1.0 |
+| 신뢰성 | 47.2 | -0.19 | 실측 | [[aa-omniscience]] 23.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 37.4 | -0.84 | 실측 | [[aa-lcr]] 19.0%×1.0 |
 | 지시 따르기 | 36.5 | -0.9 | 실측 | [[ifbench]] 35.0%×1.0 |

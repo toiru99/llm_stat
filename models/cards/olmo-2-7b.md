@@ -13,7 +13,7 @@ params_b: 7.3
 is_reasoning: false
 radar:
   knowledge: { s: 15.9, z: -1.21, r: 31.8, estimated: false }  # 전문 지식
-  reasoning: { s: 14.9, z: -1.02, r: 34.8, estimated: false }  # 추론
+  reasoning: { s: 14.9, z: -1.02, r: 34.7, estimated: false }  # 추론
   coding: { s: 4.4, z: -1.81, r: 22.8, estimated: false }  # 코딩
   agentic: { s: 0.0, z: -1.43, r: 28.5, estimated: false }  # 에이전트
   trust: { s: 6.5, z: -0.94, r: 35.9, estimated: true }  # 신뢰성
@@ -44,7 +44,7 @@ Allen Institute for AI · Open · Small(7.3B) · 컨텍스트 4k · 종합지능
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 31.8 | -1.21 | 실측 | [[gpqa-diamond]] 29.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 34.8 | -1.02 | 실측 | [[gpqa-diamond]] 29.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 추론 | 34.7 | -1.02 | 실측 | [[gpqa-diamond]] 29.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 22.8 | -1.81 | 실측 | [[scicode]] 4.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 28.5 | -1.43 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | 35.9 | -0.94 | 추정 | (추정) |

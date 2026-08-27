@@ -13,10 +13,10 @@ params_b: 24
 is_reasoning: false
 radar:
   knowledge: { s: 23.9, z: -0.83, r: 37.5, estimated: false }  # 전문 지식
-  reasoning: { s: 21.6, z: -0.69, r: 39.7, estimated: false }  # 추론
+  reasoning: { s: 21.6, z: -0.69, r: 39.6, estimated: false }  # 추론
   coding: { s: 40.0, z: -0.36, r: 44.6, estimated: false }  # 코딩
-  agentic: { s: 15.0, z: -0.86, r: 37.2, estimated: true }  # 에이전트
-  trust: { s: 29.7, z: 0.04, r: 50.6, estimated: true }  # 신뢰성
+  agentic: { s: 15.0, z: -0.86, r: 37.1, estimated: true }  # 에이전트
+  trust: { s: 29.7, z: 0.04, r: 50.5, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 10.8, z: -1.2, r: 32.0, estimated: true }  # 긴문맥
   instruction: { s: 26.5, z: -1.14, r: 32.9, estimated: true }  # 지시 따르기
@@ -44,10 +44,10 @@ Mistral · Proprietary · Small(24B) · 컨텍스트 32k · 종합지능 **6.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 37.5 | -0.83 | 실측 | [[gpqa-diamond]] 42.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 39.7 | -0.69 | 실측 | [[gpqa-diamond]] 42.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 추론 | 39.6 | -0.69 | 실측 | [[gpqa-diamond]] 42.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 44.6 | -0.36 | 실측 | [[scicode]] 24.0%×1.0 |
-| 에이전트 | 37.2 | -0.86 | 추정 | (추정) |
-| 신뢰성 | 50.6 | +0.04 | 추정 | (추정) |
+| 에이전트 | 37.1 | -0.86 | 추정 | (추정) |
+| 신뢰성 | 50.5 | +0.04 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 32.0 | -1.2 | 추정 | (추정) |
 | 지시 따르기 | 32.9 | -1.14 | 추정 | (추정) |

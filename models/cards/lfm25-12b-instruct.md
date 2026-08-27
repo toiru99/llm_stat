@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 13.8, z: -1.31, r: 30.3, estimated: false }  # 전문 지식
   reasoning: { s: 12.7, z: -1.12, r: 33.2, estimated: false }  # 추론
-  coding: { s: 2.2, z: -1.9, r: 21.5, estimated: false }  # 코딩
+  coding: { s: 2.2, z: -1.9, r: 21.4, estimated: false }  # 코딩
   agentic: { s: 5.6, z: -1.22, r: 31.7, estimated: false }  # 에이전트
-  trust: { s: 15.1, z: -0.57, r: 41.4, estimated: false }  # 신뢰성
+  trust: { s: 15.1, z: -0.58, r: 41.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.53, r: 27.1, estimated: false }  # 긴문맥
   instruction: { s: 45.1, z: -0.38, r: 44.3, estimated: false }  # 지시 따르기
@@ -45,9 +45,9 @@ Liquid AI · Open · Tiny(1.17B) · 컨텍스트 32k · 종합지능 **2.0**
 |---|---|---|---|---|
 | 전문 지식 | 30.3 | -1.31 | 실측 | [[aa-omniscience]] 7.0%×1.0, [[gpqa-diamond]] 33.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
 | 추론 | 33.2 | -1.12 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
-| 코딩 | 21.5 | -1.9 | 실측 | [[scicode]] 2.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
+| 코딩 | 21.4 | -1.9 | 실측 | [[scicode]] 2.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 31.7 | -1.22 | 실측 | [[tau2-bench]] 11.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 41.4 | -0.57 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
+| 신뢰성 | 41.4 | -0.58 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 27.1 | -1.53 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 44.3 | -0.38 | 실측 | [[ifbench]] 44.0%×1.0 |

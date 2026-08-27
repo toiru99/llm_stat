@@ -13,9 +13,9 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 61.2, z: 0.94, r: 64.1, estimated: false }  # 전문 지식
-  reasoning: { s: 61.2, z: 1.23, r: 68.5, estimated: false }  # 추론
+  reasoning: { s: 61.2, z: 1.23, r: 68.4, estimated: false }  # 추론
   coding: { s: 74.6, z: 1.05, r: 65.8, estimated: true }  # 코딩
-  agentic: { s: 54.8, z: 0.67, r: 60.1, estimated: true }  # 에이전트
+  agentic: { s: 54.8, z: 0.67, r: 60.0, estimated: true }  # 에이전트
   trust: { s: 46.9, z: 0.76, r: 61.4, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 86.6, z: 1.07, r: 66.0, estimated: true }  # 긴문맥
@@ -44,9 +44,9 @@ Perplexity · Proprietary · Unknown · 컨텍스트 127k · 종합지능 **12.0
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 64.1 | +0.94 | 실측 | [[gpqa-diamond]] 62.0%×0.4 |
-| 추론 | 68.5 | +1.23 | 실측 | [[gpqa-diamond]] 62.0%×1.0 |
+| 추론 | 68.4 | +1.23 | 실측 | [[gpqa-diamond]] 62.0%×1.0 |
 | 코딩 | 65.8 | +1.05 | 추정 | (추정) |
-| 에이전트 | 60.1 | +0.67 | 추정 | (추정) |
+| 에이전트 | 60.0 | +0.67 | 추정 | (추정) |
 | 신뢰성 | 61.4 | +0.76 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 66.0 | +1.07 | 추정 | (추정) |

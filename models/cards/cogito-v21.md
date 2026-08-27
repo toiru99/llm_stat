@@ -12,10 +12,10 @@ size_class: Large
 params_b: 671
 is_reasoning: true
 radar:
-  knowledge: { s: 48.8, z: 0.35, r: 55.3, estimated: false }  # 전문 지식
-  reasoning: { s: 33.1, z: -0.13, r: 48.0, estimated: false }  # 추론
-  coding: { s: 54.1, z: 0.22, r: 53.3, estimated: false }  # 코딩
-  agentic: { s: 25.8, z: -0.44, r: 43.4, estimated: false }  # 에이전트
+  knowledge: { s: 48.8, z: 0.35, r: 55.2, estimated: false }  # 전문 지식
+  reasoning: { s: 33.1, z: -0.14, r: 48.0, estimated: false }  # 추론
+  coding: { s: 54.1, z: 0.22, r: 53.2, estimated: false }  # 코딩
+  agentic: { s: 25.8, z: -0.44, r: 43.3, estimated: false }  # 에이전트
   trust: { s: 20.9, z: -0.33, r: 45.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 26.5, z: -0.73, r: 39.0, estimated: false }  # 긴문맥
@@ -43,10 +43,10 @@ Deep Cogito · Open · Large(671B) · 컨텍스트 128k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 55.3 | +0.35 | 실측 | [[aa-omniscience]] 30.0%×1.0, [[gpqa-diamond]] 77.0%×0.4, [[humanitys-last-exam]] 12.0%×0.3 |
-| 추론 | 48.0 | -0.13 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 77.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
-| 코딩 | 53.3 | +0.22 | 실측 | [[scicode]] 41.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
-| 에이전트 | 43.4 | -0.44 | 실측 | [[terminal-bench]] 17.0%×1.0 |
+| 전문 지식 | 55.2 | +0.35 | 실측 | [[aa-omniscience]] 30.0%×1.0, [[gpqa-diamond]] 77.0%×0.4, [[humanitys-last-exam]] 12.0%×0.3 |
+| 추론 | 48.0 | -0.14 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 77.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
+| 코딩 | 53.2 | +0.22 | 실측 | [[scicode]] 41.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
+| 에이전트 | 43.3 | -0.44 | 실측 | [[terminal-bench]] 17.0%×1.0 |
 | 신뢰성 | 45.0 | -0.33 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 39.0 | -0.73 | 실측 | [[aa-lcr]] 22.0%×1.0 |

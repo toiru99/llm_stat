@@ -15,11 +15,11 @@ radar:
   knowledge: { s: 34.3, z: -0.34, r: 44.9, estimated: false }  # 전문 지식
   reasoning: { s: 31.8, z: -0.2, r: 47.0, estimated: false }  # 추론
   coding: { s: 44.4, z: -0.18, r: 47.3, estimated: false }  # 코딩
-  agentic: { s: 42.7, z: 0.21, r: 53.1, estimated: false }  # 에이전트
-  trust: { s: 15.1, z: -0.57, r: 41.4, estimated: false }  # 신뢰성
-  multimodal: { s: 60.0, z: -0.61, r: 40.8, estimated: false }  # 멀티모달
+  agentic: { s: 42.7, z: 0.2, r: 53.1, estimated: false }  # 에이전트
+  trust: { s: 15.1, z: -0.58, r: 41.4, estimated: false }  # 신뢰성
+  multimodal: { s: 60.0, z: -0.62, r: 40.7, estimated: false }  # 멀티모달
   long_context: { s: 25.3, z: -0.77, r: 38.5, estimated: false }  # 긴문맥
-  instruction: { s: 70.4, z: 0.65, r: 59.8, estimated: false }  # 지시 따르기
+  instruction: { s: 70.4, z: 0.65, r: 59.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Apriel-v1.5-15B-Thinker
@@ -46,11 +46,11 @@ ServiceNow · Open · Small(15B) · 컨텍스트 128k · 종합지능 **22.0** �
 | 전문 지식 | 44.9 | -0.34 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 71.0%×0.4, [[humanitys-last-exam]] 12.0%×0.3 |
 | 추론 | 47.0 | -0.2 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 71.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
 | 코딩 | 47.3 | -0.18 | 실측 | [[scicode]] 35.0%×1.0, [[terminal-bench]] 11.0%×0.5 |
-| 에이전트 | 53.1 | +0.21 | 실측 | [[tau2-bench]] 68.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
-| 신뢰성 | 41.4 | -0.57 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
-| 멀티모달 | 40.8 | -0.61 | 실측 | [[mmmu-pro]] 57.0%×1.0 |
+| 에이전트 | 53.1 | +0.2 | 실측 | [[tau2-bench]] 68.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
+| 신뢰성 | 41.4 | -0.58 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
+| 멀티모달 | 40.7 | -0.62 | 실측 | [[mmmu-pro]] 57.0%×1.0 |
 | 긴문맥 | 38.5 | -0.77 | 실측 | [[aa-lcr]] 21.0%×1.0 |
-| 지시 따르기 | 59.8 | +0.65 | 실측 | [[ifbench]] 62.0%×1.0 |
+| 지시 따르기 | 59.7 | +0.65 | 실측 | [[ifbench]] 62.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -12,11 +12,11 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 35.2, z: -0.29, r: 45.6, estimated: false }  # 전문 지식
-  reasoning: { s: 34.3, z: -0.07, r: 48.9, estimated: false }  # 추론
-  coding: { s: 54.1, z: 0.22, r: 53.3, estimated: false }  # 코딩
-  agentic: { s: 58.3, z: 0.81, r: 62.2, estimated: false }  # 에이전트
-  trust: { s: 83.7, z: 2.31, r: 84.6, estimated: false }  # 신뢰성
+  knowledge: { s: 35.2, z: -0.3, r: 45.6, estimated: false }  # 전문 지식
+  reasoning: { s: 34.3, z: -0.08, r: 48.8, estimated: false }  # 추론
+  coding: { s: 54.1, z: 0.22, r: 53.2, estimated: false }  # 코딩
+  agentic: { s: 58.3, z: 0.8, r: 62.1, estimated: false }  # 에이전트
+  trust: { s: 83.7, z: 2.3, r: 84.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 63.9, z: 0.39, r: 55.8, estimated: false }  # 긴문맥
   instruction: { s: 47.9, z: -0.27, r: 46.0, estimated: false }  # 지시 따르기
@@ -43,11 +43,11 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **23.0** �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 45.6 | -0.29 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 79.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
-| 추론 | 48.9 | -0.07 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 79.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
-| 코딩 | 53.3 | +0.22 | 실측 | [[scicode]] 41.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
-| 에이전트 | 62.2 | +0.81 | 실측 | [[tau2-bench]] 90.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
-| 신뢰성 | 84.6 | +2.31 | 실측 | [[aa-omniscience]] 74.0%×1.0 |
+| 전문 지식 | 45.6 | -0.3 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 79.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
+| 추론 | 48.8 | -0.08 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 79.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
+| 코딩 | 53.2 | +0.22 | 실측 | [[scicode]] 41.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
+| 에이전트 | 62.1 | +0.8 | 실측 | [[tau2-bench]] 90.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
+| 신뢰성 | 84.5 | +2.3 | 실측 | [[aa-omniscience]] 74.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 55.8 | +0.39 | 실측 | [[aa-lcr]] 53.0%×1.0 |
 | 지시 따르기 | 46.0 | -0.27 | 실측 | [[ifbench]] 46.0%×1.0 |

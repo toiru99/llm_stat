@@ -12,9 +12,9 @@ size_class: Tiny
 params_b: 1.28
 is_reasoning: true
 radar:
-  knowledge: { s: 18.8, z: -1.08, r: 33.9, estimated: false }  # 전문 지식
-  reasoning: { s: 19.6, z: -0.79, r: 38.2, estimated: false }  # 추론
-  coding: { s: 10.0, z: -1.58, r: 26.2, estimated: false }  # 코딩
+  knowledge: { s: 18.8, z: -1.08, r: 33.8, estimated: false }  # 전문 지식
+  reasoning: { s: 19.6, z: -0.79, r: 38.1, estimated: false }  # 추론
+  coding: { s: 10.0, z: -1.59, r: 26.2, estimated: false }  # 코딩
   agentic: { s: 8.1, z: -1.12, r: 33.2, estimated: false }  # 에이전트
   trust: { s: 5.8, z: -0.97, r: 35.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -43,9 +43,9 @@ LG AI Research · Open · Tiny(1.28B) · 컨텍스트 64k · 종합지능 **3.0*
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 33.9 | -1.08 | 실측 | [[aa-omniscience]] 7.0%×1.0, [[gpqa-diamond]] 52.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
-| 추론 | 38.2 | -0.79 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 52.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 26.2 | -1.58 | 실측 | [[scicode]] 9.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
+| 전문 지식 | 33.8 | -1.08 | 실측 | [[aa-omniscience]] 7.0%×1.0, [[gpqa-diamond]] 52.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 추론 | 38.1 | -0.79 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 52.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
+| 코딩 | 26.2 | -1.59 | 실측 | [[scicode]] 9.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 33.2 | -1.12 | 실측 | [[tau2-bench]] 16.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | 35.5 | -0.97 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

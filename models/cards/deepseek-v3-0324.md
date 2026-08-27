@@ -14,11 +14,11 @@ is_reasoning: false
 radar:
   knowledge: { s: 37.7, z: -0.18, r: 47.3, estimated: false }  # 전문 지식
   reasoning: { s: 24.0, z: -0.57, r: 41.4, estimated: false }  # 추론
-  coding: { s: 47.6, z: -0.05, r: 49.3, estimated: false }  # 코딩
-  agentic: { s: 20.0, z: -0.66, r: 40.0, estimated: false }  # 에이전트
-  trust: { s: 14.0, z: -0.62, r: 40.7, estimated: false }  # 신뢰성
+  coding: { s: 47.6, z: -0.05, r: 49.2, estimated: false }  # 코딩
+  agentic: { s: 20.0, z: -0.67, r: 40.0, estimated: false }  # 에이전트
+  trust: { s: 14.0, z: -0.63, r: 40.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 49.4, z: -0.04, r: 49.3, estimated: false }  # 긴문맥
+  long_context: { s: 49.4, z: -0.05, r: 49.3, estimated: false }  # 긴문맥
   instruction: { s: 40.8, z: -0.55, r: 41.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
@@ -33,7 +33,7 @@ timestamp: 2026-08-27T00:00:00Z
 DeepSeek · Open · Large(671B) · 컨텍스트 128k · 종합지능 **15.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 긴문맥, 코딩
+- **강점**: 코딩, 긴문맥
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
@@ -45,11 +45,11 @@ DeepSeek · Open · Large(671B) · 컨텍스트 128k · 종합지능 **15.0** ·
 |---|---|---|---|---|
 | 전문 지식 | 47.3 | -0.18 | 실측 | [[aa-omniscience]] 24.0%×1.0, [[gpqa-diamond]] 65.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 41.4 | -0.57 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 65.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 49.3 | -0.05 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 15.0%×0.5 |
-| 에이전트 | 40.0 | -0.66 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 47.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 15.0%×1.0 |
-| 신뢰성 | 40.7 | -0.62 | 실측 | [[aa-omniscience]] 14.0%×1.0 |
+| 코딩 | 49.2 | -0.05 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 15.0%×0.5 |
+| 에이전트 | 40.0 | -0.67 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 47.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 15.0%×1.0 |
+| 신뢰성 | 40.6 | -0.63 | 실측 | [[aa-omniscience]] 14.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 49.3 | -0.04 | 실측 | [[aa-lcr]] 41.0%×1.0 |
+| 긴문맥 | 49.3 | -0.05 | 실측 | [[aa-lcr]] 41.0%×1.0 |
 | 지시 따르기 | 41.7 | -0.55 | 실측 | [[ifbench]] 41.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

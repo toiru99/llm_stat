@@ -5,14 +5,14 @@ creator: Mistral
 license: Proprietary
 intelligence_index: 3.0
 price_blended_usd_1m: 0.195
-output_speed_tps: 151.0
+output_speed_tps: 149.0
 context_window: 32800
 status: past
 size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 15.8, z: -1.22, r: 31.8, estimated: false }  # 전문 지식
+  knowledge: { s: 15.8, z: -1.22, r: 31.7, estimated: false }  # 전문 지식
   reasoning: { s: 14.5, z: -1.03, r: 34.5, estimated: false }  # 추론
   coding: { s: 21.7, z: -1.11, r: 33.4, estimated: false }  # 코딩
   agentic: { s: 12.4, z: -0.96, r: 35.6, estimated: true }  # 에이전트
@@ -37,13 +37,13 @@ Mistral · Proprietary · Unknown · 컨텍스트 32k · 종합지능 **3.0** ·
 - **약점**: 긴문맥, 전문 지식
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.6 · 혼합 $0.195/1M · 151.0 t/s · TTFT 0.87s · 32k ctx` · 가성비 15.4
+`입력 $0.15 · 출력 $0.6 · 혼합 $0.195/1M · 149.0 t/s · TTFT 0.88s · 32k ctx` · 가성비 15.4
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 31.8 | -1.22 | 실측 | [[gpqa-diamond]] 30.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 전문 지식 | 31.7 | -1.22 | 실측 | [[gpqa-diamond]] 30.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 34.5 | -1.03 | 실측 | [[gpqa-diamond]] 30.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 33.4 | -1.11 | 실측 | [[scicode]] 13.0%×1.0 |
 | 에이전트 | 35.6 | -0.96 | 추정 | (추정) |
