@@ -5,27 +5,27 @@ creator: SpaceXAI
 license: Proprietary
 intelligence_index: 61.0
 price_blended_usd_1m: 1.35
-output_speed_tps: 57.0
+output_speed_tps: 58.0
 context_window: 500000
 status: current
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 80.5, z: 1.86, r: 77.8, estimated: false }  # 전문 지식
-  reasoning: { s: 77.0, z: 1.99, r: 79.9, estimated: false }  # 추론
-  coding: { s: 90.0, z: 1.68, r: 75.2, estimated: false }  # 코딩
-  agentic: { s: 96.3, z: 2.26, r: 83.9, estimated: false }  # 에이전트
-  trust: { s: 74.4, z: 1.91, r: 78.7, estimated: false }  # 신뢰성
+  knowledge: { s: 80.7, z: 1.99, r: 79.8, estimated: false }  # 전문 지식
+  reasoning: { s: 77.0, z: 2.15, r: 82.3, estimated: false }  # 추론
+  coding: { s: 90.0, z: 1.78, r: 76.7, estimated: false }  # 코딩
+  agentic: { s: 96.2, z: 2.33, r: 84.9, estimated: false }  # 에이전트
+  trust: { s: 66.0, z: 1.98, r: 79.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 90.4, z: 1.18, r: 67.7, estimated: false }  # 긴문맥
-  instruction: { s: 72.7, z: 0.74, r: 61.1, estimated: true }  # 지시 따르기
+  long_context: { s: 90.4, z: 1.26, r: 68.9, estimated: false }  # 긴문맥
+  instruction: { s: 72.7, z: 0.86, r: 62.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.6 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-27
-timestamp: 2026-08-27T00:00:00Z
+updated: 2026-08-28
+timestamp: 2026-08-28T00:00:00Z
 ---
 
 # Grok 4.6 (high)
@@ -37,20 +37,20 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **61.0**
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $2.0 · 출력 $6.0 · 혼합 $1.35/1M · 57.0 t/s · TTFT 42.98s · 500k ctx` · 가성비 45.2
+`입력 $2.0 · 출력 $6.0 · 혼합 $1.35/1M · 58.0 t/s · TTFT 42.98s · 500k ctx` · 가성비 45.2
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 77.8 | +1.86 | 실측 | [[aa-omniscience]] 48.0%×1.0, [[gpqa-diamond]] 95.0%×0.4, [[humanitys-last-exam]] 43.0%×0.3 |
-| 추론 | 79.9 | +1.99 | 실측 | [[critpt]] 17.0%×1.0, [[gpqa-diamond]] 95.0%×1.0, [[humanitys-last-exam]] 43.0%×1.0 |
-| 코딩 | 75.2 | +1.68 | 실측 | [[scicode]] 54.0%×1.0 |
-| 에이전트 | 83.9 | +2.26 | 실측 | [[gdpval]] 62.0%×1.0, [[tau3-banking]] 51.0%×1.0 |
-| 신뢰성 | 78.7 | +1.91 | 실측 | [[aa-omniscience]] 66.0%×1.0 |
+| 전문 지식 | 79.8 | +1.99 | 실측 | [[aa-omniscience]] 48.0%×1.0, [[gpqa-diamond]] 95.0%×0.4, [[humanitys-last-exam]] 43.0%×0.3 |
+| 추론 | 82.3 | +2.15 | 실측 | [[critpt]] 17.0%×1.0, [[gpqa-diamond]] 95.0%×1.0, [[humanitys-last-exam]] 43.0%×1.0 |
+| 코딩 | 76.7 | +1.78 | 실측 | [[scicode]] 54.0%×1.0 |
+| 에이전트 | 84.9 | +2.33 | 실측 | [[gdpval]] 61.0%×1.0, [[tau3-banking]] 51.0%×1.0 |
+| 신뢰성 | 79.7 | +1.98 | 실측 | [[aa-omniscience]] 66.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 67.7 | +1.18 | 실측 | [[aa-lcr]] 75.0%×1.0 |
-| 지시 따르기 | 61.1 | +0.74 | 추정 | (추정) |
+| 긴문맥 | 68.9 | +1.26 | 실측 | [[aa-lcr]] 75.0%×1.0 |
+| 지시 따르기 | 62.9 | +0.86 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

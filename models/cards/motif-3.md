@@ -12,20 +12,20 @@ size_class: Large
 params_b: 314
 is_reasoning: true
 radar:
-  knowledge: { s: 58.6, z: 0.82, r: 62.3, estimated: false }  # 전문 지식
-  reasoning: { s: 58.1, z: 1.08, r: 66.2, estimated: false }  # 추론
-  coding: { s: 68.3, z: 0.8, r: 61.9, estimated: false }  # 코딩
-  agentic: { s: 63.4, z: 1.0, r: 65.0, estimated: false }  # 에이전트
-  trust: { s: 81.4, z: 2.21, r: 83.1, estimated: false }  # 신뢰성
+  knowledge: { s: 59.1, z: 0.92, r: 63.7, estimated: false }  # 전문 지식
+  reasoning: { s: 58.1, z: 1.2, r: 68.0, estimated: false }  # 추론
+  coding: { s: 68.3, z: 0.87, r: 63.0, estimated: false }  # 코딩
+  agentic: { s: 63.9, z: 1.06, r: 65.9, estimated: false }  # 에이전트
+  trust: { s: 72.2, z: 2.27, r: 84.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 86.7, z: 1.07, r: 66.1, estimated: false }  # 긴문맥
-  instruction: { s: 93.8, z: 1.6, r: 74.0, estimated: true }  # 지시 따르기
+  long_context: { s: 86.7, z: 1.15, r: 67.2, estimated: false }  # 긴문맥
+  instruction: { s: 91.3, z: 1.64, r: 74.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Motif 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-27
-timestamp: 2026-08-27T00:00:00Z
+updated: 2026-08-28
+timestamp: 2026-08-28T00:00:00Z
 ---
 
 # Motif 3
@@ -43,14 +43,14 @@ Motif Technologies · Open · Large(314B) · 컨텍스트 262k · 종합지능 *
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 62.3 | +0.82 | 실측 | [[aa-omniscience]] 30.0%×1.0, [[gpqa-diamond]] 83.0%×0.4, [[humanitys-last-exam]] 37.0%×0.3 |
-| 추론 | 66.2 | +1.08 | 실측 | [[critpt]] 7.0%×1.0, [[gpqa-diamond]] 83.0%×1.0, [[humanitys-last-exam]] 37.0%×1.0 |
-| 코딩 | 61.9 | +0.8 | 실측 | [[scicode]] 41.0%×1.0 |
-| 에이전트 | 65.0 | +1.0 | 실측 | [[gdpval]] 39.0%×1.0, [[tau3-banking]] 35.0%×1.0 |
-| 신뢰성 | 83.1 | +2.21 | 실측 | [[aa-omniscience]] 72.0%×1.0 |
+| 전문 지식 | 63.7 | +0.92 | 실측 | [[aa-omniscience]] 30.0%×1.0, [[gpqa-diamond]] 83.0%×0.4, [[humanitys-last-exam]] 37.0%×0.3 |
+| 추론 | 68.0 | +1.2 | 실측 | [[critpt]] 7.0%×1.0, [[gpqa-diamond]] 83.0%×1.0, [[humanitys-last-exam]] 37.0%×1.0 |
+| 코딩 | 63.0 | +0.87 | 실측 | [[scicode]] 41.0%×1.0 |
+| 에이전트 | 65.9 | +1.06 | 실측 | [[gdpval]] 39.0%×1.0, [[tau3-banking]] 35.0%×1.0 |
+| 신뢰성 | 84.1 | +2.27 | 실측 | [[aa-omniscience]] 72.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 66.1 | +1.07 | 실측 | [[aa-lcr]] 72.0%×1.0 |
-| 지시 따르기 | 74.0 | +1.6 | 추정 | (추정) |
+| 긴문맥 | 67.2 | +1.15 | 실측 | [[aa-lcr]] 72.0%×1.0 |
+| 지시 따르기 | 74.6 | +1.64 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

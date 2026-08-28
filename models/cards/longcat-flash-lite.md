@@ -12,20 +12,20 @@ size_class: Medium
 params_b: 68.5
 is_reasoning: false
 radar:
-  knowledge: { s: 27.6, z: -0.66, r: 40.1, estimated: false }  # 전문 지식
-  reasoning: { s: 24.3, z: -0.56, r: 41.6, estimated: false }  # 추론
-  coding: { s: 36.7, z: -0.5, r: 42.5, estimated: false }  # 코딩
-  agentic: { s: 48.7, z: 0.44, r: 56.5, estimated: false }  # 에이전트
-  trust: { s: 2.3, z: -1.11, r: 33.3, estimated: false }  # 신뢰성
+  knowledge: { s: 28.3, z: -0.61, r: 40.8, estimated: false }  # 전문 지식
+  reasoning: { s: 24.3, z: -0.52, r: 42.2, estimated: false }  # 추론
+  coding: { s: 36.7, z: -0.46, r: 43.2, estimated: false }  # 코딩
+  agentic: { s: 48.7, z: 0.47, r: 57.0, estimated: false }  # 에이전트
+  trust: { s: 2.1, z: -1.04, r: 34.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 34.9, z: -0.48, r: 42.8, estimated: false }  # 긴문맥
-  instruction: { s: 43.7, z: -0.44, r: 43.4, estimated: false }  # 지시 따르기
+  long_context: { s: 34.9, z: -0.44, r: 43.4, estimated: false }  # 긴문맥
+  instruction: { s: 43.7, z: -0.36, r: 44.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — LongCat Flash Lite
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-27
-timestamp: 2026-08-27T00:00:00Z
+updated: 2026-08-28
+timestamp: 2026-08-28T00:00:00Z
 ---
 
 # LongCat Flash Lite
@@ -43,14 +43,14 @@ LongCat · Open · Medium(68.5B) · 컨텍스트 256k · 종합지능 **17.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 40.1 | -0.66 | 실측 | [[aa-omniscience]] 13.0%×1.0, [[gpqa-diamond]] 64.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
-| 추론 | 41.6 | -0.56 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 64.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 42.5 | -0.5 | 실측 | [[scicode]] 28.0%×1.0, [[terminal-bench]] 11.0%×0.5 |
-| 에이전트 | 56.5 | +0.44 | 실측 | [[tau2-bench]] 80.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
-| 신뢰성 | 33.3 | -1.11 | 실측 | [[aa-omniscience]] 4.0%×1.0 |
+| 전문 지식 | 40.8 | -0.61 | 실측 | [[aa-omniscience]] 13.0%×1.0, [[gpqa-diamond]] 64.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 추론 | 42.2 | -0.52 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 64.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
+| 코딩 | 43.2 | -0.46 | 실측 | [[scicode]] 28.0%×1.0, [[terminal-bench]] 11.0%×0.5 |
+| 에이전트 | 57.0 | +0.47 | 실측 | [[tau2-bench]] 80.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
+| 신뢰성 | 34.3 | -1.04 | 실측 | [[aa-omniscience]] 4.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 42.8 | -0.48 | 실측 | [[aa-lcr]] 29.0%×1.0 |
-| 지시 따르기 | 43.4 | -0.44 | 실측 | [[ifbench]] 43.0%×1.0 |
+| 긴문맥 | 43.4 | -0.44 | 실측 | [[aa-lcr]] 29.0%×1.0 |
+| 지시 따르기 | 44.6 | -0.36 | 실측 | [[ifbench]] 43.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

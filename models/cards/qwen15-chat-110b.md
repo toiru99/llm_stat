@@ -12,20 +12,20 @@ size_class: Medium
 params_b: 110
 is_reasoning: false
 radar:
-  knowledge: { s: 22.4, z: -0.91, r: 36.4, estimated: false }  # 전문 지식
-  reasoning: { s: 22.4, z: -0.66, r: 40.2, estimated: false }  # 추론
-  coding: { s: 29.1, z: -0.8, r: 37.9, estimated: true }  # 코딩
-  agentic: { s: 9.5, z: -1.07, r: 34.0, estimated: true }  # 에이전트
-  trust: { s: 38.1, z: 0.39, r: 55.8, estimated: true }  # 신뢰성
+  knowledge: { s: 22.4, z: -0.91, r: 36.3, estimated: false }  # 전문 지식
+  reasoning: { s: 22.4, z: -0.61, r: 40.8, estimated: false }  # 추론
+  coding: { s: 29.1, z: -0.77, r: 38.4, estimated: true }  # 코딩
+  agentic: { s: 9.7, z: -1.06, r: 34.1, estimated: true }  # 에이전트
+  trust: { s: 34.4, z: 0.49, r: 57.3, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 18.3, z: -0.98, r: 35.3, estimated: true }  # 긴문맥
-  instruction: { s: 30.5, z: -0.98, r: 35.4, estimated: true }  # 지시 따르기
+  long_context: { s: 24.4, z: -0.76, r: 38.6, estimated: true }  # 긴문맥
+  instruction: { s: 29.8, z: -0.95, r: 35.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen1.5 Chat 110B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-27
-timestamp: 2026-08-27T00:00:00Z
+updated: 2026-08-28
+timestamp: 2026-08-28T00:00:00Z
 ---
 
 # Qwen1.5 Chat 110B
@@ -43,14 +43,14 @@ Alibaba · Open · Medium(110B) · 컨텍스트 32k · 종합지능 **4.0** · �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 36.4 | -0.91 | 실측 | [[gpqa-diamond]] 29.0%×0.4 |
-| 추론 | 40.2 | -0.66 | 실측 | [[gpqa-diamond]] 29.0%×1.0 |
-| 코딩 | 37.9 | -0.8 | 추정 | (추정) |
-| 에이전트 | 34.0 | -1.07 | 추정 | (추정) |
-| 신뢰성 | 55.8 | +0.39 | 추정 | (추정) |
+| 전문 지식 | 36.3 | -0.91 | 실측 | [[gpqa-diamond]] 29.0%×0.4 |
+| 추론 | 40.8 | -0.61 | 실측 | [[gpqa-diamond]] 29.0%×1.0 |
+| 코딩 | 38.4 | -0.77 | 추정 | (추정) |
+| 에이전트 | 34.1 | -1.06 | 추정 | (추정) |
+| 신뢰성 | 57.3 | +0.49 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 35.3 | -0.98 | 추정 | (추정) |
-| 지시 따르기 | 35.4 | -0.98 | 추정 | (추정) |
+| 긴문맥 | 38.6 | -0.76 | 추정 | (추정) |
+| 지시 따르기 | 35.8 | -0.95 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
