@@ -5,7 +5,7 @@ creator: Amazon
 license: Proprietary
 intelligence_index: 13.0
 price_blended_usd_1m: 2.1875
-output_speed_tps: 31.0
+output_speed_tps: 32.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 20.3, z: -0.72, r: 39.2, estimated: false }  # 추론
   coding: { s: 34.6, z: -0.54, r: 41.9, estimated: false }  # 코딩
   agentic: { s: 24.5, z: -0.48, r: 42.7, estimated: false }  # 에이전트
-  trust: { s: 26.8, z: 0.13, r: 51.9, estimated: false }  # 신뢰성
+  trust: { s: 26.8, z: 0.13, r: 52.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 37.3, z: -0.37, r: 44.5, estimated: false }  # 긴문맥
   instruction: { s: 33.8, z: -0.78, r: 38.3, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova Premier
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Nova Premier
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **13.0**
 - **약점**: 추론, 지시 따르기
 
 ## 실용 지표
-`입력 $2.5 · 출력 $12.5 · 혼합 $2.1875/1M · 31.0 t/s · TTFT 2.8s · 1M ctx` · 가성비 5.9
+`입력 $2.5 · 출력 $12.5 · 혼합 $2.1875/1M · 32.0 t/s · TTFT 2.82s · 1M ctx` · 가성비 5.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **13.0**
 | 추론 | 39.2 | -0.72 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 57.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 41.9 | -0.54 | 실측 | [[scicode]] 28.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
 | 에이전트 | 42.7 | -0.48 | 실측 | [[tau2-bench]] 38.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
-| 신뢰성 | 51.9 | +0.13 | 실측 | [[aa-omniscience]] 28.0%×1.0 |
+| 신뢰성 | 52.0 | +0.13 | 실측 | [[aa-omniscience]] 28.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 44.5 | -0.37 | 실측 | [[aa-lcr]] 31.0%×1.0 |
 | 지시 따르기 | 38.3 | -0.78 | 실측 | [[ifbench]] 36.0%×1.0 |

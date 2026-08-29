@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 16.6, z: -0.9, r: 36.5, estimated: false }  # 추론
   coding: { s: 23.3, z: -1.01, r: 34.8, estimated: false }  # 코딩
   agentic: { s: 11.6, z: -0.99, r: 35.1, estimated: true }  # 에이전트
-  trust: { s: 12.8, z: -0.53, r: 42.0, estimated: true }  # 신뢰성
+  trust: { s: 12.8, z: -0.53, r: 42.1, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 13.9, z: -1.09, r: 33.7, estimated: true }  # 긴문맥
   instruction: { s: 35.0, z: -0.73, r: 39.1, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek Coder V2 Lite
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # DeepSeek Coder V2 Lite
@@ -47,7 +47,7 @@ DeepSeek · Open · Small(16B) · 컨텍스트 128k · 종합지능 **3.0** · �
 | 추론 | 36.5 | -0.9 | 실측 | [[gpqa-diamond]] 32.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 34.8 | -1.01 | 실측 | [[scicode]] 14.0%×1.0 |
 | 에이전트 | 35.1 | -0.99 | 추정 | (추정) |
-| 신뢰성 | 42.0 | -0.53 | 추정 | (추정) |
+| 신뢰성 | 42.1 | -0.53 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 33.7 | -1.09 | 추정 | (추정) |
 | 지시 따르기 | 39.1 | -0.73 | 추정 | (추정) |

@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 28.5, z: -0.3, r: 45.4, estimated: false }  # 추론
   coding: { s: 40.3, z: -0.3, r: 45.4, estimated: false }  # 코딩
   agentic: { s: 15.4, z: -0.84, r: 37.4, estimated: false }  # 에이전트
-  trust: { s: 3.1, z: -1.0, r: 35.1, estimated: false }  # 신뢰성
+  trust: { s: 3.1, z: -0.99, r: 35.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 9.6, z: -1.22, r: 31.7, estimated: false }  # 긴문맥
   instruction: { s: 26.8, z: -1.07, r: 33.9, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hermes 4 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Hermes 4 70B
@@ -37,7 +37,7 @@ Nous Research · Open · Medium(70.6B) · 컨텍스트 128k · 종합지능 **10
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
-`입력 $0.13 · 출력 $0.4 · 혼합 $0.157/1M · 85.0 t/s · TTFT 1.46s · 128k ctx` · 가성비 63.7
+`입력 $0.13 · 출력 $0.4 · 혼합 $0.157/1M · 85.0 t/s · TTFT 1.49s · 128k ctx` · 가성비 63.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Nous Research · Open · Medium(70.6B) · 컨텍스트 128k · 종합지능 **10
 | 추론 | 45.4 | -0.3 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 70.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
 | 코딩 | 45.4 | -0.3 | 실측 | [[scicode]] 34.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
 | 에이전트 | 37.4 | -0.84 | 실측 | [[tau2-bench]] 23.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
-| 신뢰성 | 35.1 | -1.0 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
+| 신뢰성 | 35.1 | -0.99 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 31.7 | -1.22 | 실측 | [[aa-lcr]] 8.0%×1.0 |
 | 지시 따르기 | 33.9 | -1.07 | 실측 | [[ifbench]] 31.0%×1.0 |

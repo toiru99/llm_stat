@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 18.7, z: -0.8, r: 38.0, estimated: false }  # 추론
   coding: { s: 30.0, z: -0.74, r: 39.0, estimated: false }  # 코딩
   agentic: { s: 0.0, z: -1.44, r: 28.4, estimated: false }  # 에이전트
-  trust: { s: 7.2, z: -0.8, r: 38.0, estimated: false }  # 신뢰성
+  trust: { s: 7.2, z: -0.8, r: 38.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.51, r: 27.3, estimated: false }  # 긴문맥
   instruction: { s: 25.4, z: -1.13, r: 33.0, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Reka Flash 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Reka Flash 3
@@ -47,7 +47,7 @@ Reka AI · Open · Small(21B) · 컨텍스트 128k · 종합지능 **4.0**
 | 추론 | 38.0 | -0.8 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 53.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 39.0 | -0.74 | 실측 | [[scicode]] 27.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 28.4 | -1.44 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 38.0 | -0.8 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 신뢰성 | 38.1 | -0.8 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 27.3 | -1.51 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 33.0 | -1.13 | 실측 | [[ifbench]] 30.0%×1.0 |

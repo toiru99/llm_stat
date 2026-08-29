@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 40.8, z: 0.32, r: 54.8, estimated: false }  # 추론
   coding: { s: 68.3, z: 0.87, r: 63.0, estimated: false }  # 코딩
   agentic: { s: 29.9, z: -0.27, r: 46.0, estimated: false }  # 에이전트
-  trust: { s: 77.3, z: 2.52, r: 87.7, estimated: false }  # 신뢰성
+  trust: { s: 77.3, z: 2.53, r: 87.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 69.9, z: 0.63, r: 59.5, estimated: false }  # 긴문맥
-  instruction: { s: 60.8, z: 0.36, r: 55.4, estimated: true }  # 지시 따르기
+  long_context: { s: 69.9, z: 0.63, r: 59.4, estimated: false }  # 긴문맥
+  instruction: { s: 60.8, z: 0.36, r: 55.3, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — K-EXAONE 2.0
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # K-EXAONE 2.0
@@ -47,10 +47,10 @@ LG AI Research · Open · Large(750B) · 컨텍스트 262k · 종합지능 **31.
 | 추론 | 54.8 | +0.32 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 83.0%×1.0, [[humanitys-last-exam]] 19.0%×1.0 |
 | 코딩 | 63.0 | +0.87 | 실측 | [[scicode]] 41.0%×1.0 |
 | 에이전트 | 46.0 | -0.27 | 실측 | [[gdpval]] 24.0%×1.0, [[tau3-banking]] 12.0%×1.0 |
-| 신뢰성 | 87.7 | +2.52 | 실측 | [[aa-omniscience]] 77.0%×1.0 |
+| 신뢰성 | 87.9 | +2.53 | 실측 | [[aa-omniscience]] 77.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 59.5 | +0.63 | 실측 | [[aa-lcr]] 58.0%×1.0 |
-| 지시 따르기 | 55.4 | +0.36 | 추정 | (추정) |
+| 긴문맥 | 59.4 | +0.63 | 실측 | [[aa-lcr]] 58.0%×1.0 |
+| 지시 따르기 | 55.3 | +0.36 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

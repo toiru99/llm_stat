@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 15.9, z: -1.23, r: 31.6, estimated: false }  # 전문 지식
   reasoning: { s: 14.9, z: -0.99, r: 35.1, estimated: false }  # 추론
-  coding: { s: 4.4, z: -1.81, r: 22.9, estimated: false }  # 코딩
+  coding: { s: 4.4, z: -1.8, r: 22.9, estimated: false }  # 코딩
   agentic: { s: 0.0, z: -1.44, r: 28.4, estimated: false }  # 에이전트
-  trust: { s: 5.7, z: -0.87, r: 36.9, estimated: true }  # 신뢰성
+  trust: { s: 5.7, z: -0.87, r: 37.0, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.51, r: 27.3, estimated: false }  # 긴문맥
   instruction: { s: 16.9, z: -1.49, r: 27.7, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — OLMo 2 7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # OLMo 2 7B
@@ -45,9 +45,9 @@ Allen Institute for AI · Open · Small(7.3B) · 컨텍스트 4k · 종합지능
 |---|---|---|---|---|
 | 전문 지식 | 31.6 | -1.23 | 실측 | [[gpqa-diamond]] 29.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 35.1 | -0.99 | 실측 | [[gpqa-diamond]] 29.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 22.9 | -1.81 | 실측 | [[scicode]] 4.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
+| 코딩 | 22.9 | -1.8 | 실측 | [[scicode]] 4.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 28.4 | -1.44 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 36.9 | -0.87 | 추정 | (추정) |
+| 신뢰성 | 37.0 | -0.87 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 27.3 | -1.51 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 27.7 | -1.49 | 실측 | [[ifbench]] 24.0%×1.0 |

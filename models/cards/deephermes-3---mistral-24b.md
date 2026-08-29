@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 19.2, z: -0.77, r: 38.4, estimated: false }  # 추론
   coding: { s: 38.3, z: -0.39, r: 44.2, estimated: false }  # 코딩
   agentic: { s: 14.9, z: -0.86, r: 37.1, estimated: true }  # 에이전트
-  trust: { s: 14.2, z: -0.47, r: 43.0, estimated: true }  # 신뢰성
+  trust: { s: 14.2, z: -0.46, r: 43.0, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 18.4, z: -0.95, r: 35.7, estimated: true }  # 긴문맥
+  long_context: { s: 18.4, z: -0.95, r: 35.8, estimated: true }  # 긴문맥
   instruction: { s: 29.9, z: -0.94, r: 35.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepHermes 3 - Mistral 24B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # DeepHermes 3 - Mistral 24B
@@ -47,9 +47,9 @@ Nous Research · Open · Small(24B) · 컨텍스트 32k · 종합지능 **5.0**
 | 추론 | 38.4 | -0.77 | 실측 | [[gpqa-diamond]] 38.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 44.2 | -0.39 | 실측 | [[scicode]] 23.0%×1.0 |
 | 에이전트 | 37.1 | -0.86 | 추정 | (추정) |
-| 신뢰성 | 43.0 | -0.47 | 추정 | (추정) |
+| 신뢰성 | 43.0 | -0.46 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 35.7 | -0.95 | 추정 | (추정) |
+| 긴문맥 | 35.8 | -0.95 | 추정 | (추정) |
 | 지시 따르기 | 35.9 | -0.94 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

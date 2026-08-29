@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 6.0, z: -1.72, r: 24.2, estimated: false }  # 전문 지식
   reasoning: { s: 9.1, z: -1.28, r: 30.8, estimated: false }  # 추론
-  coding: { s: 1.1, z: -1.95, r: 20.8, estimated: false }  # 코딩
+  coding: { s: 1.1, z: -1.94, r: 20.8, estimated: false }  # 코딩
   agentic: { s: 41.4, z: 0.18, r: 52.7, estimated: false }  # 에이전트
-  trust: { s: 100.0, z: 3.59, r: 100, estimated: false }  # 신뢰성
+  trust: { s: 100.0, z: 3.6, r: 100, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 6.0, z: -1.33, r: 30.1, estimated: false }  # 긴문맥
   instruction: { s: 32.4, z: -0.84, r: 37.4, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniCPM5-1B (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # MiniCPM5-1B (Non-reasoning)
@@ -45,9 +45,9 @@ OpenBMB · Open · Tiny(1B) · 컨텍스트 128k · 종합지능 **12.0**
 |---|---|---|---|---|
 | 전문 지식 | 24.2 | -1.72 | 실측 | [[aa-omniscience]] 0.0%×1.0, [[gpqa-diamond]] 27.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 30.8 | -1.28 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 27.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 20.8 | -1.95 | 실측 | [[scicode]] 1.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
+| 코딩 | 20.8 | -1.94 | 실측 | [[scicode]] 1.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 52.7 | +0.18 | 실측 | [[tau2-bench]] 82.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 100 | +3.59 | 실측 | [[aa-omniscience]] 99.0%×1.0 |
+| 신뢰성 | 100 | +3.6 | 실측 | [[aa-omniscience]] 99.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 30.1 | -1.33 | 실측 | [[aa-lcr]] 5.0%×1.0 |
 | 지시 따르기 | 37.4 | -0.84 | 실측 | [[ifbench]] 35.0%×1.0 |

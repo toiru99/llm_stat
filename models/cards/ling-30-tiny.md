@@ -5,7 +5,7 @@ creator: InclusionAI
 license: Open
 intelligence_index: 25.0
 price_blended_usd_1m: 0
-output_speed_tps: 154.0
+output_speed_tps: 155.0
 context_window: 262000
 status: current
 size_class: Small
@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 28.2, z: -0.62, r: 40.7, estimated: false }  # 전문 지식
   reasoning: { s: 29.6, z: -0.24, r: 46.3, estimated: false }  # 추론
-  coding: { s: 40.0, z: -0.32, r: 45.3, estimated: false }  # 코딩
+  coding: { s: 40.0, z: -0.32, r: 45.2, estimated: false }  # 코딩
   agentic: { s: 31.2, z: -0.22, r: 46.7, estimated: false }  # 에이전트
-  trust: { s: 70.1, z: 2.17, r: 82.6, estimated: false }  # 신뢰성
+  trust: { s: 70.1, z: 2.19, r: 82.8, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 71.1, z: 0.67, r: 60.0, estimated: false }  # 긴문맥
-  instruction: { s: 52.3, z: 0.0, r: 50.0, estimated: true }  # 지시 따르기
+  instruction: { s: 52.3, z: -0.0, r: 50.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Ling 3.0 Tiny
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Ling 3.0 Tiny
@@ -37,7 +37,7 @@ InclusionAI · Open · Small(7.9B) · 컨텍스트 262k · 종합지능 **25.0**
 - **약점**: 코딩, 전문 지식
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 154.0 t/s · TTFT 2.66s · 262k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 155.0 t/s · TTFT 2.64s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,12 +45,12 @@ InclusionAI · Open · Small(7.9B) · 컨텍스트 262k · 종합지능 **25.0**
 |---|---|---|---|---|
 | 전문 지식 | 40.7 | -0.62 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 9.0%×0.3 |
 | 추론 | 46.3 | -0.24 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
-| 코딩 | 45.3 | -0.32 | 실측 | [[scicode]] 24.0%×1.0 |
+| 코딩 | 45.2 | -0.32 | 실측 | [[scicode]] 24.0%×1.0 |
 | 에이전트 | 46.7 | -0.22 | 실측 | [[gdpval]] 14.0%×1.0, [[tau3-banking]] 21.0%×1.0 |
-| 신뢰성 | 82.6 | +2.17 | 실측 | [[aa-omniscience]] 70.0%×1.0 |
+| 신뢰성 | 82.8 | +2.19 | 실측 | [[aa-omniscience]] 70.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 60.0 | +0.67 | 실측 | [[aa-lcr]] 59.0%×1.0 |
-| 지시 따르기 | 50.0 | +0.0 | 추정 | (추정) |
+| 지시 따르기 | 50.0 | +-0.0 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

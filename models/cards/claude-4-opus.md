@@ -12,11 +12,11 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 55.8, z: 0.75, r: 61.3, estimated: false }  # 전문 지식
-  reasoning: { s: 51.4, z: 0.86, r: 62.8, estimated: false }  # 추론
-  coding: { s: 60.1, z: 0.53, r: 57.9, estimated: false }  # 코딩
+  knowledge: { s: 55.8, z: 0.75, r: 61.2, estimated: false }  # 전문 지식
+  reasoning: { s: 51.4, z: 0.85, r: 62.8, estimated: false }  # 추론
+  coding: { s: 60.1, z: 0.52, r: 57.9, estimated: false }  # 코딩
   agentic: { s: 60.4, z: 0.92, r: 63.8, estimated: false }  # 에이전트
-  trust: { s: 16.4, z: -0.37, r: 44.5, estimated: true }  # 신뢰성
+  trust: { s: 16.4, z: -0.36, r: 44.6, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 43.4, z: -0.18, r: 47.3, estimated: false }  # 긴문맥
   instruction: { s: 59.2, z: 0.29, r: 54.3, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 4 Opus
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Claude 4 Opus
@@ -43,11 +43,11 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **32.0*
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 61.3 | +0.75 | 실측 | [[gpqa-diamond]] 80.0%×0.4, [[humanitys-last-exam]] 12.0%×0.3 |
-| 추론 | 62.8 | +0.86 | 실측 | [[gpqa-diamond]] 80.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
-| 코딩 | 57.9 | +0.53 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 31.0%×0.5 |
+| 전문 지식 | 61.2 | +0.75 | 실측 | [[gpqa-diamond]] 80.0%×0.4, [[humanitys-last-exam]] 12.0%×0.3 |
+| 추론 | 62.8 | +0.85 | 실측 | [[gpqa-diamond]] 80.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
+| 코딩 | 57.9 | +0.52 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 31.0%×0.5 |
 | 에이전트 | 63.8 | +0.92 | 실측 | [[tau2-bench]] 73.0%×1.0, [[terminal-bench]] 31.0%×1.0 |
-| 신뢰성 | 44.5 | -0.37 | 추정 | (추정) |
+| 신뢰성 | 44.6 | -0.36 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 47.3 | -0.18 | 실측 | [[aa-lcr]] 36.0%×1.0 |
 | 지시 따르기 | 54.3 | +0.29 | 실측 | [[ifbench]] 54.0%×1.0 |

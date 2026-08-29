@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 35.6, z: 0.06, r: 50.8, estimated: false }  # 추론
   coding: { s: 30.0, z: -0.74, r: 39.0, estimated: false }  # 코딩
   agentic: { s: 7.4, z: -1.15, r: 32.7, estimated: false }  # 에이전트
-  trust: { s: 41.2, z: 0.81, r: 62.1, estimated: false }  # 신뢰성
+  trust: { s: 41.2, z: 0.82, r: 62.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.51, r: 27.3, estimated: false }  # 긴문맥
   instruction: { s: 32.4, z: -0.84, r: 37.4, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nanbeige4.1-3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Nanbeige4.1-3B
@@ -47,7 +47,7 @@ Nanbeige · Open · Tiny(3.93B) · 컨텍스트 256k · 종합지능 **11.0**
 | 추론 | 50.8 | +0.06 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
 | 코딩 | 39.0 | -0.74 | 실측 | [[scicode]] 27.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 32.7 | -1.15 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 22.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 62.1 | +0.81 | 실측 | [[aa-omniscience]] 42.0%×1.0 |
+| 신뢰성 | 62.3 | +0.82 | 실측 | [[aa-omniscience]] 42.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 27.3 | -1.51 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 37.4 | -0.84 | 실측 | [[ifbench]] 35.0%×1.0 |

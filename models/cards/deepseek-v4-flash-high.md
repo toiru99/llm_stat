@@ -18,14 +18,14 @@ radar:
   agentic: { s: 64.3, z: 1.07, r: 66.1, estimated: false }  # 에이전트
   trust: { s: 9.3, z: -0.7, r: 39.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 83.1, z: 1.04, r: 65.6, estimated: false }  # 긴문맥
-  instruction: { s: 85.9, z: 1.41, r: 71.2, estimated: false }  # 지시 따르기
+  long_context: { s: 83.1, z: 1.04, r: 65.5, estimated: false }  # 긴문맥
+  instruction: { s: 85.9, z: 1.41, r: 71.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Flash (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # DeepSeek V4 Flash (high)
@@ -49,8 +49,8 @@ DeepSeek · Open · Large(284B) · 컨텍스트 1M · 종합지능 **39.0** · �
 | 에이전트 | 66.1 | +1.07 | 실측 | [[gdpval]] 33.0%×1.0, [[tau2-bench]] 96.0%×1.0, [[tau3-banking]] 26.0%×1.0, [[terminal-bench]] 39.0%×1.0 |
 | 신뢰성 | 39.5 | -0.7 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 65.6 | +1.04 | 실측 | [[aa-lcr]] 69.0%×1.0 |
-| 지시 따르기 | 71.2 | +1.41 | 실측 | [[ifbench]] 73.0%×1.0 |
+| 긴문맥 | 65.5 | +1.04 | 실측 | [[aa-lcr]] 69.0%×1.0 |
+| 지시 따르기 | 71.1 | +1.41 | 실측 | [[ifbench]] 73.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -5,7 +5,7 @@ creator: MiniMax
 license: Open
 intelligence_index: 39.0
 price_blended_usd_1m: 0.222
-output_speed_tps: 61.0
+output_speed_tps: 63.0
 context_window: 205000
 status: past
 size_class: Large
@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 49.1, z: 0.74, r: 61.1, estimated: false }  # 추론
   coding: { s: 71.9, z: 1.02, r: 65.3, estimated: false }  # 코딩
   agentic: { s: 47.0, z: 0.4, r: 55.9, estimated: false }  # 에이전트
-  trust: { s: 63.9, z: 1.88, r: 78.2, estimated: false }  # 신뢰성
+  trust: { s: 63.9, z: 1.89, r: 78.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 90.4, z: 1.26, r: 68.9, estimated: false }  # 긴문맥
-  instruction: { s: 90.1, z: 1.59, r: 73.9, estimated: false }  # 지시 따르기
+  instruction: { s: 90.1, z: 1.59, r: 73.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax-M2.7
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # MiniMax-M2.7
@@ -37,7 +37,7 @@ MiniMax · Open · Large(230B) · 컨텍스트 205k · 종합지능 **39.0** · 
 - **약점**: 전문 지식, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 61.0 t/s · TTFT 1.59s · 205k ctx` · 가성비 175.7
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 63.0 t/s · TTFT 1.53s · 205k ctx` · 가성비 175.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,10 +47,10 @@ MiniMax · Open · Large(230B) · 컨텍스트 205k · 종합지능 **39.0** · 
 | 추론 | 61.1 | +0.74 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 30.0%×1.0 |
 | 코딩 | 65.3 | +1.02 | 실측 | [[scicode]] 47.0%×1.0, [[terminal-bench]] 39.0%×0.5 |
 | 에이전트 | 55.9 | +0.4 | 실측 | [[apex-agents]] 11.0%×1.0, [[gdpval]] 33.0%×1.0, [[itbench]] 26.0%×1.0, [[tau2-bench]] 85.0%×1.0, [[tau3-banking]] 10.0%×1.0, [[terminal-bench]] 39.0%×1.0 |
-| 신뢰성 | 78.2 | +1.88 | 실측 | [[aa-omniscience]] 64.0%×1.0 |
+| 신뢰성 | 78.4 | +1.89 | 실측 | [[aa-omniscience]] 64.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 68.9 | +1.26 | 실측 | [[aa-lcr]] 75.0%×1.0 |
-| 지시 따르기 | 73.9 | +1.59 | 실측 | [[ifbench]] 76.0%×1.0 |
+| 지시 따르기 | 73.8 | +1.59 | 실측 | [[ifbench]] 76.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

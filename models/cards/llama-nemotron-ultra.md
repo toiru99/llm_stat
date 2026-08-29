@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 28.4, z: -0.31, r: 45.4, estimated: false }  # 추론
   coding: { s: 39.9, z: -0.32, r: 45.2, estimated: false }  # 코딩
   agentic: { s: 7.1, z: -1.17, r: 32.5, estimated: false }  # 에이전트
-  trust: { s: 17.5, z: -0.31, r: 45.3, estimated: false }  # 신뢰성
+  trust: { s: 17.5, z: -0.31, r: 45.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 9.6, z: -1.22, r: 31.7, estimated: false }  # 긴문맥
   instruction: { s: 36.6, z: -0.66, r: 40.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama Nemotron Ultra
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Llama Nemotron Ultra
@@ -37,7 +37,7 @@ NVIDIA · Open · Large(253B) · 컨텍스트 128k · 종합지능 **9.0**
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.6 · 출력 $1.8 · 혼합 $0.72/1M · 52.0 t/s · TTFT 2.38s · 128k ctx` · 가성비 12.5
+`입력 $0.6 · 출력 $1.8 · 혼합 $0.72/1M · 52.0 t/s · TTFT 2.39s · 128k ctx` · 가성비 12.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ NVIDIA · Open · Large(253B) · 컨텍스트 128k · 종합지능 **9.0**
 | 추론 | 45.4 | -0.31 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
 | 코딩 | 45.2 | -0.32 | 실측 | [[scicode]] 35.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 32.5 | -1.17 | 실측 | [[tau2-bench]] 11.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 45.3 | -0.31 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
+| 신뢰성 | 45.4 | -0.31 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 31.7 | -1.22 | 실측 | [[aa-lcr]] 8.0%×1.0 |
 | 지시 따르기 | 40.1 | -0.66 | 실측 | [[ifbench]] 38.0%×1.0 |

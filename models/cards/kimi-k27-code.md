@@ -13,10 +13,10 @@ params_b: 1000
 is_reasoning: true
 radar:
   knowledge: { s: 69.5, z: 1.43, r: 71.4, estimated: false }  # 전문 지식
-  reasoning: { s: 62.8, z: 1.43, r: 71.5, estimated: false }  # 추론
+  reasoning: { s: 62.8, z: 1.43, r: 71.4, estimated: false }  # 추론
   coding: { s: 74.9, z: 1.15, r: 67.2, estimated: false }  # 코딩
   agentic: { s: 62.5, z: 1.0, r: 65.1, estimated: false }  # 에이전트
-  trust: { s: 16.5, z: -0.36, r: 44.6, estimated: false }  # 신뢰성
+  trust: { s: 16.5, z: -0.36, r: 44.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 90.4, z: 1.26, r: 68.9, estimated: false }  # 긴문맥
   instruction: { s: 71.8, z: 0.82, r: 62.3, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2.7 Code
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Kimi K2.7 Code
@@ -37,17 +37,17 @@ Kimi · Open · Large(1000B) · 컨텍스트 256k · 종합지능 **43.0**
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $0.95 · 출력 $4.0 · 혼합 $0.723/1M · 45.0 t/s · TTFT 2.82s · 256k ctx` · 가성비 59.5
+`입력 $0.95 · 출력 $4.0 · 혼합 $0.723/1M · 45.0 t/s · TTFT 2.83s · 256k ctx` · 가성비 59.5
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 71.4 | +1.43 | 실측 | [[aa-omniscience]] 40.0%×1.0, [[gpqa-diamond]] 90.0%×0.4, [[humanitys-last-exam]] 35.0%×0.3 |
-| 추론 | 71.5 | +1.43 | 실측 | [[critpt]] 10.0%×1.0, [[gpqa-diamond]] 90.0%×1.0, [[humanitys-last-exam]] 35.0%×1.0 |
+| 추론 | 71.4 | +1.43 | 실측 | [[critpt]] 10.0%×1.0, [[gpqa-diamond]] 90.0%×1.0, [[humanitys-last-exam]] 35.0%×1.0 |
 | 코딩 | 67.2 | +1.15 | 실측 | [[scicode]] 47.0%×1.0, [[terminal-bench]] 45.0%×0.5 |
 | 에이전트 | 65.1 | +1.0 | 실측 | [[gdpval]] 34.0%×1.0, [[tau2-bench]] 90.0%×1.0, [[tau3-banking]] 20.0%×1.0, [[terminal-bench]] 45.0%×1.0 |
-| 신뢰성 | 44.6 | -0.36 | 실측 | [[aa-omniscience]] 18.0%×1.0 |
+| 신뢰성 | 44.7 | -0.36 | 실측 | [[aa-omniscience]] 18.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 68.9 | +1.26 | 실측 | [[aa-lcr]] 75.0%×1.0 |
 | 지시 따르기 | 62.3 | +0.82 | 실측 | [[ifbench]] 63.0%×1.0 |

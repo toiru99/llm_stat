@@ -5,7 +5,7 @@ creator: OpenAI
 license: Open
 intelligence_index: 15.0
 price_blended_usd_1m: 0.073
-output_speed_tps: 119.0
+output_speed_tps: 124.0
 context_window: 131000
 status: current
 size_class: Small
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 30.4, z: -0.21, r: 46.9, estimated: false }  # 추론
   coding: { s: 43.3, z: -0.18, r: 47.3, estimated: false }  # 코딩
   agentic: { s: 19.1, z: -0.69, r: 39.6, estimated: false }  # 에이전트
-  trust: { s: 4.1, z: -0.95, r: 35.8, estimated: false }  # 신뢰성
+  trust: { s: 4.1, z: -0.94, r: 35.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 39.8, z: -0.29, r: 45.6, estimated: false }  # 긴문맥
   instruction: { s: 74.6, z: 0.94, r: 64.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — gpt-oss-20b (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # gpt-oss-20b (high)
@@ -37,7 +37,7 @@ OpenAI · Open · Small(21B) · 컨텍스트 131k · 종합지능 **15.0**
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.19 · 혼합 $0.073/1M · 119.0 t/s · TTFT 1.1s · 131k ctx` · 가성비 205.5
+`입력 $0.06 · 출력 $0.19 · 혼합 $0.073/1M · 124.0 t/s · TTFT 1.04s · 131k ctx` · 가성비 205.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ OpenAI · Open · Small(21B) · 컨텍스트 131k · 종합지능 **15.0**
 | 추론 | 46.9 | -0.21 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 69.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
 | 코딩 | 47.3 | -0.18 | 실측 | [[scicode]] 34.0%×1.0, [[terminal-bench]] 11.0%×0.5 |
 | 에이전트 | 39.6 | -0.69 | 실측 | [[apex-agents]] 1.0%×1.0, [[gdpval]] 3.0%×1.0, [[tau2-bench]] 60.0%×1.0, [[tau3-banking]] 7.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
-| 신뢰성 | 35.8 | -0.95 | 실측 | [[aa-omniscience]] 6.0%×1.0 |
+| 신뢰성 | 35.9 | -0.94 | 실측 | [[aa-omniscience]] 6.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 45.6 | -0.29 | 실측 | [[aa-lcr]] 33.0%×1.0 |
 | 지시 따르기 | 64.1 | +0.94 | 실측 | [[ifbench]] 65.0%×1.0 |

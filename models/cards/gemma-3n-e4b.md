@@ -5,7 +5,7 @@ creator: Google
 license: Open
 intelligence_index: 1.0
 price_blended_usd_1m: 0.066
-output_speed_tps: 56.0
+output_speed_tps: None
 context_window: 32000
 status: past
 size_class: Small
@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 13.8, z: -1.34, r: 29.9, estimated: false }  # 전문 지식
   reasoning: { s: 9.7, z: -1.25, r: 31.2, estimated: false }  # 추론
-  coding: { s: 9.9, z: -1.58, r: 26.3, estimated: false }  # 코딩
+  coding: { s: 9.9, z: -1.58, r: 26.4, estimated: false }  # 코딩
   agentic: { s: 2.7, z: -1.34, r: 29.9, estimated: false }  # 에이전트
-  trust: { s: 1.0, z: -1.09, r: 33.6, estimated: false }  # 신뢰성
+  trust: { s: 1.0, z: -1.09, r: 33.7, estimated: false }  # 신뢰성
   multimodal: { s: 15.7, z: -2.71, r: 9.4, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.51, r: 27.3, estimated: false }  # 긴문맥
   instruction: { s: 22.5, z: -1.25, r: 31.2, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 3n E4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Gemma 3n E4B
@@ -37,7 +37,7 @@ Google · Open · Small(8.39B) · 컨텍스트 32k · 종합지능 **1.0** · �
 - **약점**: 코딩, 멀티모달
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.12 · 혼합 $0.066/1M · 56.0 t/s · TTFT 1.58s · 32k ctx` · 가성비 15.2
+`입력 $0.06 · 출력 $0.12 · 혼합 $0.066/1M · None t/s · TTFT Nones · 32k ctx` · 가성비 15.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ Google · Open · Small(8.39B) · 컨텍스트 32k · 종합지능 **1.0** · �
 |---|---|---|---|---|
 | 전문 지식 | 29.9 | -1.34 | 실측 | [[aa-omniscience]] 8.0%×1.0, [[gpqa-diamond]] 30.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 31.2 | -1.25 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 30.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 26.3 | -1.58 | 실측 | [[scicode]] 8.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
+| 코딩 | 26.4 | -1.58 | 실측 | [[scicode]] 8.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 29.9 | -1.34 | 실측 | [[tau2-bench]] 5.0%×1.0, [[tau3-banking]] 0.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 33.6 | -1.09 | 실측 | [[aa-omniscience]] 3.0%×1.0 |
+| 신뢰성 | 33.7 | -1.09 | 실측 | [[aa-omniscience]] 3.0%×1.0 |
 | 멀티모달 | 9.4 | -2.71 | 실측 | [[mmmu-pro]] 26.0%×1.0 |
 | 긴문맥 | 27.3 | -1.51 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 31.2 | -1.25 | 실측 | [[ifbench]] 28.0%×1.0 |

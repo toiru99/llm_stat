@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 29.7, z: -0.24, r: 46.4, estimated: false }  # 추론
   coding: { s: 47.5, z: -0.0, r: 49.9, estimated: false }  # 코딩
   agentic: { s: 16.7, z: -0.79, r: 38.1, estimated: false }  # 에이전트
-  trust: { s: 20.6, z: -0.17, r: 47.5, estimated: false }  # 신뢰성
+  trust: { s: 20.6, z: -0.16, r: 47.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.51, r: 27.3, estimated: false }  # 긴문맥
   instruction: { s: 38.0, z: -0.6, r: 41.0, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 235B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Qwen3 235B
@@ -37,7 +37,7 @@ Alibaba · Open · Large(235B) · 컨텍스트 32k · 종합지능 **13.0** · �
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.7 · 출력 $8.4 · 혼합 $1.47/1M · 59.0 t/s · TTFT 2.71s · 32k ctx` · 가성비 8.8
+`입력 $0.7 · 출력 $8.4 · 혼합 $1.47/1M · 59.0 t/s · TTFT 2.75s · 32k ctx` · 가성비 8.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Alibaba · Open · Large(235B) · 컨텍스트 32k · 종합지능 **13.0** · �
 | 추론 | 46.4 | -0.24 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 70.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
 | 코딩 | 49.9 | +-0.0 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 6.0%×0.5 |
 | 에이전트 | 38.1 | -0.79 | 실측 | [[tau2-bench]] 24.0%×1.0, [[terminal-bench]] 6.0%×1.0 |
-| 신뢰성 | 47.5 | -0.17 | 실측 | [[aa-omniscience]] 22.0%×1.0 |
+| 신뢰성 | 47.6 | -0.16 | 실측 | [[aa-omniscience]] 22.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 27.3 | -1.51 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 41.0 | -0.6 | 실측 | [[ifbench]] 39.0%×1.0 |

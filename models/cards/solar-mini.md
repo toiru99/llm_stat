@@ -18,14 +18,14 @@ radar:
   agentic: { s: 20.2, z: -0.65, r: 40.2, estimated: false }  # 에이전트
   trust: { s: 16.9, z: -0.34, r: 44.9, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 41.0, z: -0.26, r: 46.2, estimated: true }  # 긴문맥
-  instruction: { s: 46.2, z: -0.26, r: 46.2, estimated: true }  # 지시 따르기
+  long_context: { s: 41.0, z: -0.26, r: 46.1, estimated: true }  # 긴문맥
+  instruction: { s: 46.2, z: -0.26, r: 46.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Solar Mini
@@ -49,8 +49,8 @@ Upstage · Open · Small(10.7B) · 컨텍스트 4k · 종합지능 **6.0** · �
 | 에이전트 | 40.2 | -0.65 | 실측 | [[tau2-bench]] 20.0%×1.0 |
 | 신뢰성 | 44.9 | -0.34 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 46.2 | -0.26 | 추정 | (추정) |
-| 지시 따르기 | 46.2 | -0.26 | 추정 | (추정) |
+| 긴문맥 | 46.1 | -0.26 | 추정 | (추정) |
+| 지시 따르기 | 46.1 | -0.26 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

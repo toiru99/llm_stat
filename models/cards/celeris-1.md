@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 24.5, z: -0.51, r: 42.4, estimated: false }  # 추론
   coding: { s: 35.0, z: -0.53, r: 42.1, estimated: false }  # 코딩
   agentic: { s: 5.4, z: -1.23, r: 31.5, estimated: false }  # 에이전트
-  trust: { s: 5.2, z: -0.9, r: 36.5, estimated: false }  # 신뢰성
+  trust: { s: 5.2, z: -0.89, r: 36.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 44.6, z: -0.15, r: 47.8, estimated: false }  # 긴문맥
   instruction: { s: 40.0, z: -0.52, r: 42.2, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Celeris-1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Celeris-1
@@ -47,7 +47,7 @@ Celeris · Proprietary · Unknown · 컨텍스트 131k · 종합지능 **12.0**
 | 추론 | 42.4 | -0.51 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 63.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
 | 코딩 | 42.1 | -0.53 | 실측 | [[scicode]] 21.0%×1.0 |
 | 에이전트 | 31.5 | -1.23 | 실측 | [[gdpval]] 2.0%×1.0, [[tau3-banking]] 4.0%×1.0 |
-| 신뢰성 | 36.5 | -0.9 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
+| 신뢰성 | 36.6 | -0.89 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 47.8 | -0.15 | 실측 | [[aa-lcr]] 37.0%×1.0 |
 | 지시 따르기 | 42.2 | -0.52 | 추정 | (추정) |

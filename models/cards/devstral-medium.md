@@ -13,10 +13,10 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 29.0, z: -0.58, r: 41.3, estimated: false }  # 전문 지식
-  reasoning: { s: 17.1, z: -0.88, r: 36.8, estimated: false }  # 추론
+  reasoning: { s: 17.1, z: -0.88, r: 36.9, estimated: false }  # 추론
   coding: { s: 36.8, z: -0.45, r: 43.2, estimated: false }  # 코딩
   agentic: { s: 16.9, z: -0.78, r: 38.3, estimated: false }  # 에이전트
-  trust: { s: 37.1, z: 0.61, r: 59.2, estimated: false }  # 신뢰성
+  trust: { s: 37.1, z: 0.62, r: 59.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 38.6, z: -0.33, r: 45.0, estimated: false }  # 긴문맥
   instruction: { s: 25.4, z: -1.13, r: 33.0, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Devstral Medium
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Devstral Medium
@@ -44,10 +44,10 @@ Mistral · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **12.0** 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 41.3 | -0.58 | 실측 | [[aa-omniscience]] 19.0%×1.0, [[gpqa-diamond]] 49.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 36.8 | -0.88 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 49.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 추론 | 36.9 | -0.88 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 49.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 43.2 | -0.45 | 실측 | [[scicode]] 29.0%×1.0, [[terminal-bench]] 9.0%×0.5 |
 | 에이전트 | 38.3 | -0.78 | 실측 | [[tau2-bench]] 20.0%×1.0, [[terminal-bench]] 9.0%×1.0 |
-| 신뢰성 | 59.2 | +0.61 | 실측 | [[aa-omniscience]] 38.0%×1.0 |
+| 신뢰성 | 59.3 | +0.62 | 실측 | [[aa-omniscience]] 38.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 45.0 | -0.33 | 실측 | [[aa-lcr]] 32.0%×1.0 |
 | 지시 따르기 | 33.0 | -1.13 | 실측 | [[ifbench]] 30.0%×1.0 |

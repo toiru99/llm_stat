@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: 4.0
 price_blended_usd_1m: 0.24
-output_speed_tps: 162.0
+output_speed_tps: 156.0
 context_window: 128000
 status: current
 size_class: Small
@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 15.2, z: -0.98, r: 35.4, estimated: false }  # 추론
   coding: { s: 20.0, z: -1.15, r: 32.7, estimated: false }  # 코딩
   agentic: { s: 9.6, z: -1.07, r: 34.0, estimated: false }  # 에이전트
-  trust: { s: 2.1, z: -1.04, r: 34.3, estimated: false }  # 신뢰성
+  trust: { s: 2.1, z: -1.04, r: 34.4, estimated: false }  # 신뢰성
   multimodal: { s: 42.9, z: -1.38, r: 29.3, estimated: false }  # 멀티모달
   long_context: { s: 24.1, z: -0.77, r: 38.4, estimated: false }  # 긴문맥
-  instruction: { s: 19.7, z: -1.37, r: 29.4, estimated: false }  # 지시 따르기
+  instruction: { s: 19.7, z: -1.37, r: 29.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — NVIDIA Nemotron Nano 12B v2 VL (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # NVIDIA Nemotron Nano 12B v2 VL (Non-reasoning)
@@ -37,7 +37,7 @@ NVIDIA · Open · Small(13.2B) · 컨텍스트 128k · 종합지능 **4.0**
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.6 · 혼합 $0.24/1M · 162.0 t/s · TTFT 1.8s · 128k ctx` · 가성비 16.7
+`입력 $0.2 · 출력 $0.6 · 혼합 $0.24/1M · 156.0 t/s · TTFT 2.03s · 128k ctx` · 가성비 16.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,10 +47,10 @@ NVIDIA · Open · Small(13.2B) · 컨텍스트 128k · 종합지능 **4.0**
 | 추론 | 35.4 | -0.98 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 44.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 32.7 | -1.15 | 실측 | [[scicode]] 18.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 34.0 | -1.07 | 실측 | [[tau2-bench]] 19.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 34.3 | -1.04 | 실측 | [[aa-omniscience]] 4.0%×1.0 |
+| 신뢰성 | 34.4 | -1.04 | 실측 | [[aa-omniscience]] 4.0%×1.0 |
 | 멀티모달 | 29.3 | -1.38 | 실측 | [[mmmu-pro]] 45.0%×1.0 |
 | 긴문맥 | 38.4 | -0.77 | 실측 | [[aa-lcr]] 20.0%×1.0 |
-| 지시 따르기 | 29.4 | -1.37 | 실측 | [[ifbench]] 26.0%×1.0 |
+| 지시 따르기 | 29.5 | -1.37 | 실측 | [[ifbench]] 26.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

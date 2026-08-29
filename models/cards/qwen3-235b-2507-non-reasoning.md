@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 18.0
 price_blended_usd_1m: 0.299
-output_speed_tps: 64.0
+output_speed_tps: 63.0
 context_window: 256000
 status: past
 size_class: Large
@@ -15,8 +15,8 @@ radar:
   knowledge: { s: 38.5, z: -0.11, r: 48.3, estimated: false }  # 전문 지식
   reasoning: { s: 31.7, z: -0.14, r: 47.9, estimated: false }  # 추론
   coding: { s: 47.6, z: 0.0, r: 50.0, estimated: false }  # 코딩
-  agentic: { s: 28.0, z: -0.34, r: 44.8, estimated: false }  # 에이전트
-  trust: { s: 21.6, z: -0.12, r: 48.2, estimated: false }  # 신뢰성
+  agentic: { s: 28.0, z: -0.35, r: 44.8, estimated: false }  # 에이전트
+  trust: { s: 21.6, z: -0.11, r: 48.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 39.8, z: -0.29, r: 45.6, estimated: false }  # 긴문맥
   instruction: { s: 47.9, z: -0.19, r: 47.2, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 235B 2507 (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Qwen3 235B 2507 (Non-reasoning)
@@ -37,7 +37,7 @@ Alibaba · Open · Large(235B) · 컨텍스트 256k · 종합지능 **18.0** · 
 - **약점**: 긴문맥, 에이전트
 
 ## 실용 지표
-`입력 $0.23 · 출력 $0.92 · 혼합 $0.299/1M · 64.0 t/s · TTFT 2.32s · 256k ctx` · 가성비 60.2
+`입력 $0.23 · 출력 $0.92 · 혼합 $0.299/1M · 63.0 t/s · TTFT 2.37s · 256k ctx` · 가성비 60.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,8 +46,8 @@ Alibaba · Open · Large(235B) · 컨텍스트 256k · 종합지능 **18.0** · 
 | 전문 지식 | 48.3 | -0.11 | 실측 | [[aa-omniscience]] 19.0%×1.0, [[gpqa-diamond]] 75.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
 | 추론 | 47.9 | -0.14 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 75.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
 | 코딩 | 50.0 | +0.0 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 15.0%×0.5 |
-| 에이전트 | 44.8 | -0.34 | 실측 | [[tau2-bench]] 33.0%×1.0, [[terminal-bench]] 15.0%×1.0 |
-| 신뢰성 | 48.2 | -0.12 | 실측 | [[aa-omniscience]] 23.0%×1.0 |
+| 에이전트 | 44.8 | -0.35 | 실측 | [[tau2-bench]] 33.0%×1.0, [[terminal-bench]] 15.0%×1.0 |
+| 신뢰성 | 48.3 | -0.11 | 실측 | [[aa-omniscience]] 23.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 45.6 | -0.29 | 실측 | [[aa-lcr]] 33.0%×1.0 |
 | 지시 따르기 | 47.2 | -0.19 | 실측 | [[ifbench]] 46.0%×1.0 |

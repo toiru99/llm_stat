@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 8.0
 price_blended_usd_1m: 0.232
-output_speed_tps: 111.0
+output_speed_tps: 107.0
 context_window: 256000
 status: past
 size_class: Small
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 14.2, z: -1.03, r: 34.6, estimated: false }  # 추론
   coding: { s: 19.9, z: -1.16, r: 32.6, estimated: false }  # 코딩
   agentic: { s: 16.2, z: -0.81, r: 37.8, estimated: false }  # 에이전트
-  trust: { s: 7.2, z: -0.8, r: 38.0, estimated: false }  # 신뢰성
+  trust: { s: 7.2, z: -0.8, r: 38.1, estimated: false }  # 신뢰성
   multimodal: { s: 45.7, z: -1.24, r: 31.4, estimated: false }  # 멀티모달
   long_context: { s: 20.5, z: -0.89, r: 36.7, estimated: false }  # 긴문맥
   instruction: { s: 28.2, z: -1.01, r: 34.8, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 VL 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Qwen3 VL 8B
@@ -37,7 +37,7 @@ Alibaba · Open · Small(8.77B) · 컨텍스트 256k · 종합지능 **8.0** · 
 - **약점**: 코딩, 멀티모달
 
 ## 실용 지표
-`입력 $0.18 · 출력 $0.7 · 혼합 $0.232/1M · 111.0 t/s · TTFT 2.2s · 256k ctx` · 가성비 34.5
+`입력 $0.18 · 출력 $0.7 · 혼합 $0.232/1M · 107.0 t/s · TTFT 2.22s · 256k ctx` · 가성비 34.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Alibaba · Open · Small(8.77B) · 컨텍스트 256k · 종합지능 **8.0** · 
 | 추론 | 34.6 | -1.03 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 32.6 | -1.16 | 실측 | [[scicode]] 17.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 37.8 | -0.81 | 실측 | [[tau2-bench]] 29.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 38.0 | -0.8 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 신뢰성 | 38.1 | -0.8 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | 31.4 | -1.24 | 실측 | [[mmmu-pro]] 47.0%×1.0 |
 | 긴문맥 | 36.7 | -0.89 | 실측 | [[aa-lcr]] 17.0%×1.0 |
 | 지시 따르기 | 34.8 | -1.01 | 실측 | [[ifbench]] 32.0%×1.0 |

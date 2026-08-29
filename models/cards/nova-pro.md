@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 16.9, z: -0.89, r: 36.7, estimated: false }  # 추론
   coding: { s: 26.4, z: -0.89, r: 36.7, estimated: false }  # 코딩
   agentic: { s: 11.6, z: -0.99, r: 35.2, estimated: false }  # 에이전트
-  trust: { s: 20.6, z: -0.17, r: 47.5, estimated: false }  # 신뢰성
+  trust: { s: 20.6, z: -0.16, r: 47.6, estimated: false }  # 신뢰성
   multimodal: { s: 41.4, z: -1.45, r: 28.3, estimated: false }  # 멀티모달
   long_context: { s: 26.5, z: -0.7, r: 39.5, estimated: false }  # 긴문맥
   instruction: { s: 36.6, z: -0.66, r: 40.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Nova Pro
@@ -47,7 +47,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 300k · 종합지능 **7.0** ·
 | 추론 | 36.7 | -0.89 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 50.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 36.7 | -0.89 | 실측 | [[scicode]] 21.0%×1.0, [[terminal-bench]] 6.0%×0.5 |
 | 에이전트 | 35.2 | -0.99 | 실측 | [[tau2-bench]] 14.0%×1.0, [[terminal-bench]] 6.0%×1.0 |
-| 신뢰성 | 47.5 | -0.17 | 실측 | [[aa-omniscience]] 22.0%×1.0 |
+| 신뢰성 | 47.6 | -0.16 | 실측 | [[aa-omniscience]] 22.0%×1.0 |
 | 멀티모달 | 28.3 | -1.45 | 실측 | [[mmmu-pro]] 44.0%×1.0 |
 | 긴문맥 | 39.5 | -0.7 | 실측 | [[aa-lcr]] 22.0%×1.0 |
 | 지시 따르기 | 40.1 | -0.66 | 실측 | [[ifbench]] 38.0%×1.0 |

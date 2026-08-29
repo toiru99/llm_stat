@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 38.3, z: 0.19, r: 52.9, estimated: false }  # 추론
   coding: { s: 51.7, z: 0.17, r: 52.6, estimated: false }  # 코딩
   agentic: { s: 47.8, z: 0.43, r: 56.5, estimated: false }  # 에이전트
-  trust: { s: 14.4, z: -0.46, r: 43.1, estimated: false }  # 신뢰성
+  trust: { s: 14.4, z: -0.45, r: 43.2, estimated: false }  # 신뢰성
   multimodal: { s: 81.4, z: 0.51, r: 57.7, estimated: false }  # 멀티모달
   long_context: { s: 77.1, z: 0.85, r: 62.8, estimated: false }  # 긴문맥
   instruction: { s: 47.9, z: -0.19, r: 47.2, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.6 27B (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Qwen3.6 27B (Non-reasoning)
@@ -37,7 +37,7 @@ Alibaba · Open · Small(27.8B) · 컨텍스트 262k · 종합지능 **31.0**
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $0.6 · 출력 $3.6 · 혼합 $0.9/1M · 54.0 t/s · TTFT 3.74s · 262k ctx` · 가성비 34.4
+`입력 $0.6 · 출력 $3.6 · 혼합 $0.9/1M · 54.0 t/s · TTFT 3.79s · 262k ctx` · 가성비 34.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Alibaba · Open · Small(27.8B) · 컨텍스트 262k · 종합지능 **31.0**
 | 추론 | 52.9 | +0.19 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 83.0%×1.0, [[humanitys-last-exam]] 15.0%×1.0 |
 | 코딩 | 52.6 | +0.17 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 21.0%×0.5 |
 | 에이전트 | 56.5 | +0.43 | 실측 | [[gdpval]] 31.0%×1.0, [[tau2-bench]] 94.0%×1.0, [[tau3-banking]] 9.0%×1.0, [[terminal-bench]] 21.0%×1.0 |
-| 신뢰성 | 43.1 | -0.46 | 실측 | [[aa-omniscience]] 16.0%×1.0 |
+| 신뢰성 | 43.2 | -0.45 | 실측 | [[aa-omniscience]] 16.0%×1.0 |
 | 멀티모달 | 57.7 | +0.51 | 실측 | [[mmmu-pro]] 72.0%×1.0 |
 | 긴문맥 | 62.8 | +0.85 | 실측 | [[aa-lcr]] 64.0%×1.0 |
 | 지시 따르기 | 47.2 | -0.19 | 실측 | [[ifbench]] 46.0%×1.0 |

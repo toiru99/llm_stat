@@ -5,7 +5,7 @@ creator: SpaceXAI
 license: Proprietary
 intelligence_index: 25.0
 price_blended_usd_1m: 0.64
-output_speed_tps: 112.0
+output_speed_tps: 108.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 25.7, z: -0.45, r: 43.3, estimated: false }  # 추론
   coding: { s: 50.7, z: 0.13, r: 52.0, estimated: false }  # 코딩
   agentic: { s: 39.1, z: 0.09, r: 51.4, estimated: false }  # 에이전트
-  trust: { s: 24.7, z: 0.03, r: 50.4, estimated: false }  # 신뢰성
+  trust: { s: 24.7, z: 0.03, r: 50.5, estimated: false }  # 신뢰성
   multimodal: { s: 71.4, z: 0.02, r: 50.3, estimated: false }  # 멀티모달
   long_context: { s: 33.7, z: -0.48, r: 42.8, estimated: false }  # 긴문맥
   instruction: { s: 50.7, z: -0.07, r: 49.0, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.3 (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Grok 4.3 (Non-reasoning)
@@ -37,7 +37,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **25.0**
 - **약점**: 추론, 긴문맥
 
 ## 실용 지표
-`입력 $1.25 · 출력 $2.5 · 혼합 $0.64/1M · 112.0 t/s · TTFT 0.74s · 1M ctx` · 가성비 39.1
+`입력 $1.25 · 출력 $2.5 · 혼합 $0.64/1M · 108.0 t/s · TTFT 0.76s · 1M ctx` · 가성비 39.1
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **25.0**
 | 추론 | 43.3 | -0.45 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 66.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
 | 코딩 | 52.0 | +0.13 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 19.0%×0.5 |
 | 에이전트 | 51.4 | +0.09 | 실측 | [[gdpval]] 30.0%×1.0, [[tau2-bench]] 66.0%×1.0, [[tau3-banking]] 8.0%×1.0, [[terminal-bench]] 19.0%×1.0 |
-| 신뢰성 | 50.4 | +0.03 | 실측 | [[aa-omniscience]] 26.0%×1.0 |
+| 신뢰성 | 50.5 | +0.03 | 실측 | [[aa-omniscience]] 26.0%×1.0 |
 | 멀티모달 | 50.3 | +0.02 | 실측 | [[mmmu-pro]] 65.0%×1.0 |
 | 긴문맥 | 42.8 | -0.48 | 실측 | [[aa-lcr]] 28.0%×1.0 |
 | 지시 따르기 | 49.0 | -0.07 | 실측 | [[ifbench]] 48.0%×1.0 |

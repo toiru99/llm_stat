@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 45.7, z: 0.57, r: 58.5, estimated: false }  # 추론
   coding: { s: 61.4, z: 0.58, r: 58.7, estimated: false }  # 코딩
   agentic: { s: 32.2, z: -0.18, r: 47.3, estimated: false }  # 에이전트
-  trust: { s: 7.2, z: -0.8, r: 38.0, estimated: false }  # 신뢰성
+  trust: { s: 7.2, z: -0.8, r: 38.1, estimated: false }  # 신뢰성
   multimodal: { s: 85.7, z: 0.72, r: 60.8, estimated: false }  # 멀티모달
   long_context: { s: 79.5, z: 0.93, r: 63.9, estimated: false }  # 긴문맥
   instruction: { s: 52.1, z: -0.01, r: 49.9, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.5 Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Gemini 2.5 Pro
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **26.0** · 
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $1.25 · 출력 $10.0 · 혼합 $1.3375/1M · 124.0 t/s · TTFT 23.09s · 1M ctx` · 가성비 19.4
+`입력 $1.25 · 출력 $10.0 · 혼합 $1.3375/1M · 124.0 t/s · TTFT 21.66s · 1M ctx` · 가성비 19.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **26.0** · 
 | 추론 | 58.5 | +0.57 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 84.0%×1.0, [[humanitys-last-exam]] 23.0%×1.0 |
 | 코딩 | 58.7 | +0.58 | 실측 | [[scicode]] 43.0%×1.0, [[terminal-bench]] 27.0%×0.5 |
 | 에이전트 | 47.3 | -0.18 | 실측 | [[gdpval]] 9.0%×1.0, [[tau2-bench]] 54.0%×1.0, [[tau3-banking]] 10.0%×1.0, [[terminal-bench]] 27.0%×1.0 |
-| 신뢰성 | 38.0 | -0.8 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 신뢰성 | 38.1 | -0.8 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | 60.8 | +0.72 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
 | 긴문맥 | 63.9 | +0.93 | 실측 | [[aa-lcr]] 66.0%×1.0 |
 | 지시 따르기 | 49.9 | -0.01 | 실측 | [[ifbench]] 49.0%×1.0 |

@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 25.8, z: -0.44, r: 43.4, estimated: false }  # 추론
   coding: { s: 39.1, z: -0.35, r: 44.7, estimated: false }  # 코딩
   agentic: { s: 60.6, z: 0.93, r: 64.0, estimated: false }  # 에이전트
-  trust: { s: 7.2, z: -0.8, r: 38.0, estimated: false }  # 신뢰성
+  trust: { s: 7.2, z: -0.8, r: 38.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 15.7, z: -1.03, r: 34.5, estimated: false }  # 긴문맥
   instruction: { s: 35.2, z: -0.72, r: 39.2, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — JT-MINI
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # JT-MINI
@@ -47,7 +47,7 @@ China Mobile · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **19
 | 추론 | 43.4 | -0.44 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 68.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 44.7 | -0.35 | 실측 | [[scicode]] 27.0%×1.0, [[terminal-bench]] 18.0%×0.5 |
 | 에이전트 | 64.0 | +0.93 | 실측 | [[tau2-bench]] 93.0%×1.0, [[terminal-bench]] 18.0%×1.0 |
-| 신뢰성 | 38.0 | -0.8 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 신뢰성 | 38.1 | -0.8 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 34.5 | -1.03 | 실측 | [[aa-lcr]] 13.0%×1.0 |
 | 지시 따르기 | 39.2 | -0.72 | 실측 | [[ifbench]] 37.0%×1.0 |

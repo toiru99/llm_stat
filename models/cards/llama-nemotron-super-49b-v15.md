@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: 12.0
 price_blended_usd_1m: 0.4
-output_speed_tps: 80.0
+output_speed_tps: 62.0
 context_window: 128000
 status: current
 size_class: Medium
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 29.2, z: -0.27, r: 46.0, estimated: false }  # 추론
   coding: { s: 41.4, z: -0.26, r: 46.1, estimated: false }  # 코딩
   agentic: { s: 17.9, z: -0.74, r: 38.9, estimated: false }  # 에이전트
-  trust: { s: 20.6, z: -0.17, r: 47.5, estimated: false }  # 신뢰성
+  trust: { s: 20.6, z: -0.16, r: 47.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 42.2, z: -0.22, r: 46.7, estimated: false }  # 긴문맥
   instruction: { s: 35.2, z: -0.72, r: 39.2, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama Nemotron Super 49B v1.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Llama Nemotron Super 49B v1.5
@@ -37,7 +37,7 @@ NVIDIA · Open · Medium(49B) · 컨텍스트 128k · 종합지능 **12.0**
 - **약점**: 지시 따르기, 에이전트
 
 ## 실용 지표
-`입력 $0.4 · 출력 $0.4 · 혼합 $0.4/1M · 80.0 t/s · TTFT 8.91s · 128k ctx` · 가성비 30.0
+`입력 $0.4 · 출력 $0.4 · 혼합 $0.4/1M · 62.0 t/s · TTFT 12.65s · 128k ctx` · 가성비 30.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ NVIDIA · Open · Medium(49B) · 컨텍스트 128k · 종합지능 **12.0**
 | 추론 | 46.0 | -0.27 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 75.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
 | 코딩 | 46.1 | -0.26 | 실측 | [[scicode]] 35.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
 | 에이전트 | 38.9 | -0.74 | 실측 | [[tau2-bench]] 28.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
-| 신뢰성 | 47.5 | -0.17 | 실측 | [[aa-omniscience]] 22.0%×1.0 |
+| 신뢰성 | 47.6 | -0.16 | 실측 | [[aa-omniscience]] 22.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 46.7 | -0.22 | 실측 | [[aa-lcr]] 35.0%×1.0 |
 | 지시 따르기 | 39.2 | -0.72 | 실측 | [[ifbench]] 37.0%×1.0 |

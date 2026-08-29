@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 31.3, z: -0.16, r: 47.6, estimated: false }  # 추론
   coding: { s: 29.9, z: -0.74, r: 38.9, estimated: false }  # 코딩
   agentic: { s: 25.3, z: -0.45, r: 43.2, estimated: false }  # 에이전트
-  trust: { s: 5.2, z: -0.9, r: 36.5, estimated: false }  # 신뢰성
+  trust: { s: 5.2, z: -0.89, r: 36.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.51, r: 27.3, estimated: false }  # 긴문맥
   instruction: { s: 31.0, z: -0.9, r: 36.6, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Sarvam 105B (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Sarvam 105B (high)
@@ -47,7 +47,7 @@ Sarvam · Open · Medium(106B) · 컨텍스트 128k · 종합지능 **12.0**
 | 추론 | 47.6 | -0.16 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 74.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
 | 코딩 | 38.9 | -0.74 | 실측 | [[scicode]] 26.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 43.2 | -0.45 | 실측 | [[tau2-bench]] 47.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 36.5 | -0.9 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
+| 신뢰성 | 36.6 | -0.89 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 27.3 | -1.51 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 36.6 | -0.9 | 실측 | [[ifbench]] 34.0%×1.0 |

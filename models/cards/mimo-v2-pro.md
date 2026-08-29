@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 48.1, z: 0.69, r: 60.3, estimated: false }  # 추론
   coding: { s: 67.4, z: 0.83, r: 62.4, estimated: false }  # 코딩
   agentic: { s: 79.0, z: 1.65, r: 74.8, estimated: false }  # 에이전트
-  trust: { s: 70.1, z: 2.17, r: 82.6, estimated: false }  # 신뢰성
+  trust: { s: 70.1, z: 2.19, r: 82.8, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 79.5, z: 0.93, r: 63.9, estimated: false }  # 긴문맥
-  instruction: { s: 80.3, z: 1.18, r: 67.7, estimated: false }  # 지시 따르기
+  instruction: { s: 80.3, z: 1.17, r: 67.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2-Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # MiMo-V2-Pro
@@ -47,10 +47,10 @@ Xiaomi · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **41.0** · 
 | 추론 | 60.3 | +0.69 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 30.0%×1.0 |
 | 코딩 | 62.4 | +0.83 | 실측 | [[scicode]] 42.0%×1.0, [[terminal-bench]] 41.0%×0.5 |
 | 에이전트 | 74.8 | +1.65 | 실측 | [[tau2-bench]] 95.0%×1.0, [[terminal-bench]] 41.0%×1.0 |
-| 신뢰성 | 82.6 | +2.17 | 실측 | [[aa-omniscience]] 70.0%×1.0 |
+| 신뢰성 | 82.8 | +2.19 | 실측 | [[aa-omniscience]] 70.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 63.9 | +0.93 | 실측 | [[aa-lcr]] 66.0%×1.0 |
-| 지시 따르기 | 67.7 | +1.18 | 실측 | [[ifbench]] 69.0%×1.0 |
+| 지시 따르기 | 67.6 | +1.17 | 실측 | [[ifbench]] 69.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

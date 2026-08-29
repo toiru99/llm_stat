@@ -5,7 +5,7 @@ creator: Alibaba
 license: Proprietary
 intelligence_index: 19.0
 price_blended_usd_1m: 0.17
-output_speed_tps: 250.0
+output_speed_tps: 245.0
 context_window: 256000
 status: current
 size_class: Unknown
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 29.4, z: -0.26, r: 46.2, estimated: false }  # 추론
   coding: { s: 31.8, z: -0.66, r: 40.1, estimated: false }  # 코딩
   agentic: { s: 49.0, z: 0.48, r: 57.1, estimated: false }  # 에이전트
-  trust: { s: 5.2, z: -0.9, r: 36.5, estimated: false }  # 신뢰성
+  trust: { s: 5.2, z: -0.89, r: 36.6, estimated: false }  # 신뢰성
   multimodal: { s: 71.4, z: 0.02, r: 50.3, estimated: false }  # 멀티모달
   long_context: { s: 59.0, z: 0.3, r: 54.5, estimated: false }  # 긴문맥
   instruction: { s: 36.6, z: -0.66, r: 40.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 Omni Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Qwen3.5 Omni Flash
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **19.0**
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.8 · 혼합 $0.17/1M · 250.0 t/s · TTFT 1.84s · 256k ctx` · 가성비 111.8
+`입력 $0.1 · 출력 $0.8 · 혼합 $0.17/1M · 245.0 t/s · TTFT 1.86s · 256k ctx` · 가성비 111.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **19.0**
 | 추론 | 46.2 | -0.26 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 74.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
 | 코딩 | 40.1 | -0.66 | 실측 | [[scicode]] 25.0%×1.0, [[terminal-bench]] 8.0%×0.5 |
 | 에이전트 | 57.1 | +0.48 | 실측 | [[tau2-bench]] 85.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
-| 신뢰성 | 36.5 | -0.9 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
+| 신뢰성 | 36.6 | -0.89 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
 | 멀티모달 | 50.3 | +0.02 | 실측 | [[mmmu-pro]] 65.0%×1.0 |
 | 긴문맥 | 54.5 | +0.3 | 실측 | [[aa-lcr]] 49.0%×1.0 |
 | 지시 따르기 | 40.1 | -0.66 | 실측 | [[ifbench]] 38.0%×1.0 |

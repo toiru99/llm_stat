@@ -14,9 +14,9 @@ is_reasoning: true
 radar:
   knowledge: { s: 49.3, z: 0.43, r: 56.4, estimated: false }  # 전문 지식
   reasoning: { s: 33.1, z: -0.07, r: 48.9, estimated: false }  # 추론
-  coding: { s: 54.1, z: 0.28, r: 54.1, estimated: false }  # 코딩
+  coding: { s: 54.1, z: 0.27, r: 54.1, estimated: false }  # 코딩
   agentic: { s: 25.8, z: -0.43, r: 43.5, estimated: false }  # 에이전트
-  trust: { s: 18.6, z: -0.26, r: 46.0, estimated: false }  # 신뢰성
+  trust: { s: 18.6, z: -0.26, r: 46.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 26.5, z: -0.7, r: 39.5, estimated: false }  # 긴문맥
   instruction: { s: 47.9, z: -0.19, r: 47.2, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Cogito v2.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Cogito v2.1
@@ -45,9 +45,9 @@ Deep Cogito · Open · Large(671B) · 컨텍스트 128k · 종합지능 **None**
 |---|---|---|---|---|
 | 전문 지식 | 56.4 | +0.43 | 실측 | [[aa-omniscience]] 30.0%×1.0, [[gpqa-diamond]] 77.0%×0.4, [[humanitys-last-exam]] 12.0%×0.3 |
 | 추론 | 48.9 | -0.07 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 77.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
-| 코딩 | 54.1 | +0.28 | 실측 | [[scicode]] 41.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
+| 코딩 | 54.1 | +0.27 | 실측 | [[scicode]] 41.0%×1.0, [[terminal-bench]] 17.0%×0.5 |
 | 에이전트 | 43.5 | -0.43 | 실측 | [[terminal-bench]] 17.0%×1.0 |
-| 신뢰성 | 46.0 | -0.26 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
+| 신뢰성 | 46.1 | -0.26 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 39.5 | -0.7 | 실측 | [[aa-lcr]] 22.0%×1.0 |
 | 지시 따르기 | 47.2 | -0.19 | 실측 | [[ifbench]] 46.0%×1.0 |

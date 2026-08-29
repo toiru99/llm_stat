@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 17.2, z: -0.87, r: 36.9, estimated: false }  # 추론
   coding: { s: 11.7, z: -1.5, r: 27.5, estimated: false }  # 코딩
   agentic: { s: 8.7, z: -1.1, r: 33.4, estimated: true }  # 에이전트
-  trust: { s: 25.8, z: 0.08, r: 51.2, estimated: true }  # 신뢰성
+  trust: { s: 25.8, z: 0.08, r: 51.3, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 7.2, z: -1.29, r: 30.6, estimated: true }  # 긴문맥
   instruction: { s: 36.6, z: -0.66, r: 40.1, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — LFM 40B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # LFM 40B
@@ -47,7 +47,7 @@ Liquid AI · Proprietary · Medium(40.3B) · 컨텍스트 32k · 종합지능 **
 | 추론 | 36.9 | -0.87 | 실측 | [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 27.5 | -1.5 | 실측 | [[scicode]] 7.0%×1.0 |
 | 에이전트 | 33.4 | -1.1 | 추정 | (추정) |
-| 신뢰성 | 51.2 | +0.08 | 추정 | (추정) |
+| 신뢰성 | 51.3 | +0.08 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 30.6 | -1.29 | 추정 | (추정) |
 | 지시 따르기 | 40.1 | -0.66 | 추정 | (추정) |

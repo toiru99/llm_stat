@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 26.0, z: -0.43, r: 43.5, estimated: false }  # 추론
   coding: { s: 48.3, z: 0.03, r: 50.5, estimated: false }  # 코딩
   agentic: { s: 37.4, z: 0.02, r: 50.3, estimated: false }  # 에이전트
-  trust: { s: 27.9, z: 0.18, r: 52.7, estimated: true }  # 신뢰성
+  trust: { s: 27.9, z: 0.19, r: 52.8, estimated: true }  # 신뢰성
   multimodal: { s: 51.4, z: -0.96, r: 35.6, estimated: false }  # 멀티모달
   long_context: { s: 14.5, z: -1.07, r: 34.0, estimated: false }  # 긴문맥
   instruction: { s: 31.0, z: -0.9, r: 36.6, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Pixtral Large
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Pixtral Large
@@ -47,7 +47,7 @@ Mistral · Open · Medium(124B) · 컨텍스트 128k · 종합지능 **8.0** · 
 | 추론 | 43.5 | -0.43 | 실측 | [[gpqa-diamond]] 51.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 50.5 | +0.03 | 실측 | [[scicode]] 29.0%×1.0 |
 | 에이전트 | 50.3 | +0.02 | 실측 | [[tau2-bench]] 37.0%×1.0 |
-| 신뢰성 | 52.7 | +0.18 | 추정 | (추정) |
+| 신뢰성 | 52.8 | +0.19 | 추정 | (추정) |
 | 멀티모달 | 35.6 | -0.96 | 실측 | [[mmmu-pro]] 51.0%×1.0 |
 | 긴문맥 | 34.0 | -1.07 | 실측 | [[aa-lcr]] 12.0%×1.0 |
 | 지시 따르기 | 36.6 | -0.9 | 실측 | [[ifbench]] 34.0%×1.0 |

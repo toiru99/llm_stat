@@ -13,10 +13,10 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 58.4, z: 0.88, r: 63.2, estimated: false }  # 전문 지식
-  reasoning: { s: 42.5, z: 0.41, r: 56.1, estimated: false }  # 추론
+  reasoning: { s: 42.5, z: 0.4, r: 56.0, estimated: false }  # 추론
   coding: { s: 66.1, z: 0.77, r: 61.6, estimated: false }  # 코딩
   agentic: { s: 44.4, z: 0.3, r: 54.5, estimated: false }  # 에이전트
-  trust: { s: 8.2, z: -0.75, r: 38.7, estimated: false }  # 신뢰성
+  trust: { s: 8.2, z: -0.75, r: 38.8, estimated: false }  # 신뢰성
   multimodal: { s: 80.0, z: 0.44, r: 56.6, estimated: false }  # 멀티모달
   long_context: { s: 74.7, z: 0.78, r: 61.7, estimated: false }  # 긴문맥
   instruction: { s: 74.6, z: 0.94, r: 64.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.4 mini (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # GPT-5.4 mini (medium)
@@ -37,17 +37,17 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **30.0** �
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.75 · 출력 $4.5 · 혼합 $0.6525/1M · 176.0 t/s · TTFT 8.45s · 400k ctx` · 가성비 46.0
+`입력 $0.75 · 출력 $4.5 · 혼합 $0.6525/1M · 176.0 t/s · TTFT 11.82s · 400k ctx` · 가성비 46.0
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 63.2 | +0.88 | 실측 | [[aa-omniscience]] 36.0%×1.0, [[gpqa-diamond]] 82.0%×0.4, [[humanitys-last-exam]] 19.0%×0.3 |
-| 추론 | 56.1 | +0.41 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 82.0%×1.0, [[humanitys-last-exam]] 19.0%×1.0 |
+| 추론 | 56.0 | +0.4 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 82.0%×1.0, [[humanitys-last-exam]] 19.0%×1.0 |
 | 코딩 | 61.6 | +0.77 | 실측 | [[scicode]] 44.0%×1.0, [[terminal-bench]] 34.0%×0.5 |
 | 에이전트 | 54.5 | +0.3 | 실측 | [[tau2-bench]] 37.0%×1.0, [[terminal-bench]] 34.0%×1.0 |
-| 신뢰성 | 38.7 | -0.75 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
+| 신뢰성 | 38.8 | -0.75 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
 | 멀티모달 | 56.6 | +0.44 | 실측 | [[mmmu-pro]] 71.0%×1.0 |
 | 긴문맥 | 61.7 | +0.78 | 실측 | [[aa-lcr]] 62.0%×1.0 |
 | 지시 따르기 | 64.1 | +0.94 | 실측 | [[ifbench]] 65.0%×1.0 |

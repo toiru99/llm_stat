@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 1.54
-output_speed_tps: 66.0
+output_speed_tps: 64.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -14,9 +14,9 @@ is_reasoning: true
 radar:
   knowledge: { s: 43.7, z: 0.15, r: 52.2, estimated: true }  # 전문 지식
   reasoning: { s: 37.7, z: 0.16, r: 52.4, estimated: true }  # 추론
-  coding: { s: 58.9, z: 0.48, r: 57.1, estimated: true }  # 코딩
+  coding: { s: 58.9, z: 0.47, r: 57.1, estimated: true }  # 코딩
   agentic: { s: 60.6, z: 0.93, r: 64.0, estimated: false }  # 에이전트
-  trust: { s: 28.9, z: 0.22, r: 53.4, estimated: true }  # 신뢰성
+  trust: { s: 28.9, z: 0.23, r: 53.5, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 55.7, z: 0.19, r: 52.9, estimated: true }  # 긴문맥
   instruction: { s: 50.4, z: -0.08, r: 48.8, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5 (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Claude Sonnet 5 (medium)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None**
 - **약점**: 전문 지식, 지시 따르기
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 66.0 t/s · TTFT 2.89s · 1M ctx`
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 64.0 t/s · TTFT 2.4s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None**
 |---|---|---|---|---|
 | 전문 지식 | 52.2 | +0.15 | 추정 | (추정) |
 | 추론 | 52.4 | +0.16 | 추정 | (추정) |
-| 코딩 | 57.1 | +0.48 | 추정 | (추정) |
+| 코딩 | 57.1 | +0.47 | 추정 | (추정) |
 | 에이전트 | 64.0 | +0.93 | 실측 | [[gdpval]] 40.0%×1.0 |
-| 신뢰성 | 53.4 | +0.22 | 추정 | (추정) |
+| 신뢰성 | 53.5 | +0.23 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 52.9 | +0.19 | 추정 | (추정) |
 | 지시 따르기 | 48.8 | -0.08 | 추정 | (추정) |

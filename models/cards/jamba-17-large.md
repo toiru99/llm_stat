@@ -13,10 +13,10 @@ params_b: 398
 is_reasoning: false
 radar:
   knowledge: { s: 28.0, z: -0.63, r: 40.6, estimated: false }  # 전문 지식
-  reasoning: { s: 13.2, z: -1.08, r: 33.9, estimated: false }  # 추론
-  coding: { s: 22.1, z: -1.07, r: 34.0, estimated: false }  # 코딩
+  reasoning: { s: 13.2, z: -1.07, r: 33.9, estimated: false }  # 추론
+  coding: { s: 22.1, z: -1.06, r: 34.0, estimated: false }  # 코딩
   agentic: { s: 8.1, z: -1.13, r: 33.1, estimated: false }  # 에이전트
-  trust: { s: 3.1, z: -1.0, r: 35.1, estimated: false }  # 신뢰성
+  trust: { s: 3.1, z: -0.99, r: 35.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 21.7, z: -0.85, r: 37.3, estimated: false }  # 긴문맥
   instruction: { s: 32.4, z: -0.84, r: 37.4, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba 1.7 Large
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Jamba 1.7 Large
@@ -44,10 +44,10 @@ AI21 Labs · Open · Large(398B) · 컨텍스트 256k · 종합지능 **5.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 40.6 | -0.63 | 실측 | [[aa-omniscience]] 21.0%×1.0, [[gpqa-diamond]] 39.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 33.9 | -1.08 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 39.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 34.0 | -1.07 | 실측 | [[scicode]] 19.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
+| 추론 | 33.9 | -1.07 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 39.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 34.0 | -1.06 | 실측 | [[scicode]] 19.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 33.1 | -1.13 | 실측 | [[tau2-bench]] 13.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 35.1 | -1.0 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
+| 신뢰성 | 35.1 | -0.99 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 37.3 | -0.85 | 실측 | [[aa-lcr]] 18.0%×1.0 |
 | 지시 따르기 | 37.4 | -0.84 | 실측 | [[ifbench]] 35.0%×1.0 |

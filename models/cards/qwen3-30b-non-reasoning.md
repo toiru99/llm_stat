@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 30B (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Qwen3 30B (Non-reasoning)
@@ -37,7 +37,7 @@ Alibaba · Open · Small(30.5B) · 컨텍스트 32k · 종합지능 **7.0** · �
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.8 · 혼합 $0.26/1M · 104.0 t/s · TTFT 2.17s · 32k ctx` · 가성비 26.9
+`입력 $0.2 · 출력 $0.8 · 혼합 $0.26/1M · 104.0 t/s · TTFT 2.19s · 32k ctx` · 가성비 26.9
 
 ## 레이더 8축 (평균=50 기준선)
 

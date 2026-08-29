@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 25.0, z: -0.48, r: 42.8, estimated: false }  # 추론
   coding: { s: 41.4, z: -0.26, r: 46.1, estimated: false }  # 코딩
   agentic: { s: 11.4, z: -1.0, r: 35.1, estimated: false }  # 에이전트
-  trust: { s: 7.2, z: -0.8, r: 38.0, estimated: false }  # 신뢰성
+  trust: { s: 7.2, z: -0.8, r: 38.1, estimated: false }  # 신뢰성
   multimodal: { s: 57.1, z: -0.68, r: 39.8, estimated: false }  # 멀티모달
   long_context: { s: 21.7, z: -0.85, r: 37.3, estimated: false }  # 긴문맥
-  instruction: { s: 45.1, z: -0.3, r: 45.4, estimated: false }  # 지시 따르기
+  instruction: { s: 45.1, z: -0.31, r: 45.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Magistral Small 1.2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Magistral Small 1.2
@@ -47,10 +47,10 @@ Mistral · Open · Small(24B) · 컨텍스트 128k · 종합지능 **11.0**
 | 추론 | 42.8 | -0.48 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 66.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 46.1 | -0.26 | 실측 | [[scicode]] 35.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
 | 에이전트 | 35.1 | -1.0 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 28.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
-| 신뢰성 | 38.0 | -0.8 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 신뢰성 | 38.1 | -0.8 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | 39.8 | -0.68 | 실측 | [[mmmu-pro]] 55.0%×1.0 |
 | 긴문맥 | 37.3 | -0.85 | 실측 | [[aa-lcr]] 18.0%×1.0 |
-| 지시 따르기 | 45.4 | -0.3 | 실측 | [[ifbench]] 44.0%×1.0 |
+| 지시 따르기 | 45.4 | -0.31 | 실측 | [[ifbench]] 44.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

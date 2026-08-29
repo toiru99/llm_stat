@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 19.1, z: -0.78, r: 38.3, estimated: false }  # 추론
   coding: { s: 27.0, z: -0.86, r: 37.1, estimated: false }  # 코딩
   agentic: { s: 14.4, z: -0.88, r: 36.8, estimated: false }  # 에이전트
-  trust: { s: 22.7, z: -0.07, r: 49.0, estimated: false }  # 신뢰성
+  trust: { s: 22.7, z: -0.06, r: 49.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 24.1, z: -0.77, r: 38.4, estimated: false }  # 긴문맥
   instruction: { s: 40.8, z: -0.48, r: 42.8, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — K2-V2 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # K2-V2 (low)
@@ -47,7 +47,7 @@ MBZUAI Institute of Foundation Models · Open · Medium(70B) · 컨텍스트 512
 | 추론 | 38.3 | -0.78 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 54.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 37.1 | -0.86 | 실측 | [[scicode]] 22.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
 | 에이전트 | 36.8 | -0.88 | 실측 | [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
-| 신뢰성 | 49.0 | -0.07 | 실측 | [[aa-omniscience]] 24.0%×1.0 |
+| 신뢰성 | 49.1 | -0.06 | 실측 | [[aa-omniscience]] 24.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 38.4 | -0.77 | 실측 | [[aa-lcr]] 20.0%×1.0 |
 | 지시 따르기 | 42.8 | -0.48 | 실측 | [[ifbench]] 41.0%×1.0 |

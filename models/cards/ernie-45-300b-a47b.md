@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 29.1, z: -0.27, r: 45.9, estimated: false }  # 추론
   coding: { s: 37.5, z: -0.42, r: 43.7, estimated: false }  # 코딩
   agentic: { s: 4.5, z: -1.27, r: 31.0, estimated: false }  # 에이전트
-  trust: { s: 32.0, z: 0.37, r: 55.5, estimated: false }  # 신뢰성
+  trust: { s: 32.0, z: 0.38, r: 55.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 4.8, z: -1.37, r: 29.5, estimated: false }  # 긴문맥
   instruction: { s: 38.0, z: -0.6, r: 41.0, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — ERNIE 4.5 300B A47B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # ERNIE 4.5 300B A47B
@@ -47,7 +47,7 @@ Baidu · Open · Large(300B) · 컨텍스트 131k · 종합지능 **9.0**
 | 추론 | 45.9 | -0.27 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 81.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 43.7 | -0.42 | 실측 | [[scicode]] 31.0%×1.0, [[terminal-bench]] 6.0%×0.5 |
 | 에이전트 | 31.0 | -1.27 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 6.0%×1.0 |
-| 신뢰성 | 55.5 | +0.37 | 실측 | [[aa-omniscience]] 33.0%×1.0 |
+| 신뢰성 | 55.7 | +0.38 | 실측 | [[aa-omniscience]] 33.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 29.5 | -1.37 | 실측 | [[aa-lcr]] 4.0%×1.0 |
 | 지시 따르기 | 41.0 | -0.6 | 실측 | [[ifbench]] 39.0%×1.0 |

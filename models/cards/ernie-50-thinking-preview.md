@@ -14,9 +14,9 @@ is_reasoning: true
 radar:
   knowledge: { s: 42.7, z: 0.1, r: 51.5, estimated: false }  # 전문 지식
   reasoning: { s: 35.1, z: 0.03, r: 50.5, estimated: false }  # 추론
-  coding: { s: 54.8, z: 0.31, r: 54.6, estimated: false }  # 코딩
+  coding: { s: 54.8, z: 0.3, r: 54.6, estimated: false }  # 코딩
   agentic: { s: 61.4, z: 0.96, r: 64.4, estimated: false }  # 에이전트
-  trust: { s: 11.3, z: -0.61, r: 40.9, estimated: false }  # 신뢰성
+  trust: { s: 11.3, z: -0.6, r: 41.0, estimated: false }  # 신뢰성
   multimodal: { s: 71.4, z: 0.02, r: 50.3, estimated: false }  # 멀티모달
   long_context: { s: 8.4, z: -1.25, r: 31.2, estimated: false }  # 긴문맥
   instruction: { s: 40.8, z: -0.48, r: 42.8, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — ERNIE 5.0 Thinking Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # ERNIE 5.0 Thinking Preview
@@ -45,9 +45,9 @@ Baidu · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **22.0**
 |---|---|---|---|---|
 | 전문 지식 | 51.5 | +0.1 | 실측 | [[aa-omniscience]] 22.0%×1.0, [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
 | 추론 | 50.5 | +0.03 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
-| 코딩 | 54.6 | +0.31 | 실측 | [[scicode]] 38.0%×1.0, [[terminal-bench]] 25.0%×0.5 |
+| 코딩 | 54.6 | +0.3 | 실측 | [[scicode]] 38.0%×1.0, [[terminal-bench]] 25.0%×0.5 |
 | 에이전트 | 64.4 | +0.96 | 실측 | [[tau2-bench]] 84.0%×1.0, [[terminal-bench]] 25.0%×1.0 |
-| 신뢰성 | 40.9 | -0.61 | 실측 | [[aa-omniscience]] 13.0%×1.0 |
+| 신뢰성 | 41.0 | -0.6 | 실측 | [[aa-omniscience]] 13.0%×1.0 |
 | 멀티모달 | 50.3 | +0.02 | 실측 | [[mmmu-pro]] 65.0%×1.0 |
 | 긴문맥 | 31.2 | -1.25 | 실측 | [[aa-lcr]] 7.0%×1.0 |
 | 지시 따르기 | 42.8 | -0.48 | 실측 | [[ifbench]] 41.0%×1.0 |

@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 26.3, z: -0.41, r: 43.8, estimated: false }  # 추론
   coding: { s: 50.0, z: 0.1, r: 51.5, estimated: false }  # 코딩
   agentic: { s: 15.4, z: -0.84, r: 37.4, estimated: false }  # 에이전트
-  trust: { s: 68.0, z: 2.08, r: 81.2, estimated: false }  # 신뢰성
+  trust: { s: 68.0, z: 2.09, r: 81.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 51.8, z: 0.08, r: 51.1, estimated: false }  # 긴문맥
   instruction: { s: 41.1, z: -0.47, r: 42.9, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.2 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Granite 4.2 8B
@@ -47,7 +47,7 @@ IBM · Open · Small(8B) · 컨텍스트 131k · 종합지능 **20.0**
 | 추론 | 43.8 | -0.41 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 63.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
 | 코딩 | 51.5 | +0.1 | 실측 | [[scicode]] 30.0%×1.0 |
 | 에이전트 | 37.4 | -0.84 | 실측 | [[gdpval]] 10.0%×1.0, [[tau3-banking]] 8.0%×1.0 |
-| 신뢰성 | 81.2 | +2.08 | 실측 | [[aa-omniscience]] 68.0%×1.0 |
+| 신뢰성 | 81.3 | +2.09 | 실측 | [[aa-omniscience]] 68.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 51.1 | +0.08 | 실측 | [[aa-lcr]] 43.0%×1.0 |
 | 지시 따르기 | 42.9 | -0.47 | 추정 | (추정) |

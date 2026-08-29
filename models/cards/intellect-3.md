@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 33.3, z: -0.06, r: 49.1, estimated: false }  # 추론
   coding: { s: 47.9, z: 0.01, r: 50.2, estimated: false }  # 코딩
   agentic: { s: 20.5, z: -0.64, r: 40.4, estimated: false }  # 에이전트
-  trust: { s: 10.3, z: -0.65, r: 40.2, estimated: false }  # 신뢰성
+  trust: { s: 10.3, z: -0.65, r: 40.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 43.4, z: -0.18, r: 47.3, estimated: false }  # 긴문맥
   instruction: { s: 31.0, z: -0.9, r: 36.6, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — INTELLECT-3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # INTELLECT-3
@@ -47,7 +47,7 @@ Prime Intellect · Open · Medium(107B) · 컨텍스트 131k · 종합지능 **1
 | 추론 | 49.1 | -0.06 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
 | 코딩 | 50.2 | +0.01 | 실측 | [[scicode]] 39.0%×1.0, [[terminal-bench]] 9.0%×0.5 |
 | 에이전트 | 40.4 | -0.64 | 실측 | [[tau2-bench]] 27.0%×1.0, [[terminal-bench]] 9.0%×1.0 |
-| 신뢰성 | 40.2 | -0.65 | 실측 | [[aa-omniscience]] 12.0%×1.0 |
+| 신뢰성 | 40.3 | -0.65 | 실측 | [[aa-omniscience]] 12.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 47.3 | -0.18 | 실측 | [[aa-lcr]] 36.0%×1.0 |
 | 지시 따르기 | 36.6 | -0.9 | 실측 | [[ifbench]] 34.0%×1.0 |

@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 18.3, z: -0.82, r: 37.7, estimated: false }  # 추론
   coding: { s: 25.6, z: -0.92, r: 36.2, estimated: false }  # 코딩
   agentic: { s: 0.0, z: -1.44, r: 28.4, estimated: false }  # 에이전트
-  trust: { s: 24.7, z: 0.03, r: 50.4, estimated: false }  # 신뢰성
+  trust: { s: 24.7, z: 0.03, r: 50.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 15.7, z: -1.03, r: 34.5, estimated: false }  # 긴문맥
   instruction: { s: 38.0, z: -0.6, r: 41.0, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.3 Nemotron Super 49B (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Llama 3.3 Nemotron Super 49B (Non-reasoning)
@@ -47,7 +47,7 @@ NVIDIA · Open · Medium(49B) · 컨텍스트 128k · 종합지능 **8.0** · �
 | 추론 | 37.7 | -0.82 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 52.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 36.2 | -0.92 | 실측 | [[scicode]] 23.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 28.4 | -1.44 | 실측 | [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 50.4 | +0.03 | 실측 | [[aa-omniscience]] 26.0%×1.0 |
+| 신뢰성 | 50.5 | +0.03 | 실측 | [[aa-omniscience]] 26.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 34.5 | -1.03 | 실측 | [[aa-lcr]] 13.0%×1.0 |
 | 지시 따르기 | 41.0 | -0.6 | 실측 | [[ifbench]] 39.0%×1.0 |

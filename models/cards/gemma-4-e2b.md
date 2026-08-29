@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 15.4, z: -0.96, r: 35.5, estimated: false }  # 추론
   coding: { s: 24.8, z: -0.95, r: 35.7, estimated: false }  # 코딩
   agentic: { s: 8.6, z: -1.11, r: 33.4, estimated: false }  # 에이전트
-  trust: { s: 68.0, z: 2.08, r: 81.2, estimated: false }  # 신뢰성
+  trust: { s: 68.0, z: 2.09, r: 81.3, estimated: false }  # 신뢰성
   multimodal: { s: 42.9, z: -1.38, r: 29.3, estimated: false }  # 멀티모달
   long_context: { s: 20.5, z: -0.89, r: 36.7, estimated: false }  # 긴문맥
   instruction: { s: 36.6, z: -0.66, r: 40.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 E2B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-28
-timestamp: 2026-08-28T00:00:00Z
+updated: 2026-08-29
+timestamp: 2026-08-29T00:00:00Z
 ---
 
 # Gemma 4 E2B
@@ -47,7 +47,7 @@ Google · Open · Small(5.1B) · 컨텍스트 128k · 종합지능 **10.0**
 | 추론 | 35.5 | -0.96 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 35.7 | -0.95 | 실측 | [[scicode]] 21.0%×1.0, [[terminal-bench]] 3.0%×0.5 |
 | 에이전트 | 33.4 | -1.11 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 3.0%×1.0 |
-| 신뢰성 | 81.2 | +2.08 | 실측 | [[aa-omniscience]] 68.0%×1.0 |
+| 신뢰성 | 81.3 | +2.09 | 실측 | [[aa-omniscience]] 68.0%×1.0 |
 | 멀티모달 | 29.3 | -1.38 | 실측 | [[mmmu-pro]] 45.0%×1.0 |
 | 긴문맥 | 36.7 | -0.89 | 실측 | [[aa-lcr]] 17.0%×1.0 |
 | 지시 따르기 | 40.1 | -0.66 | 실측 | [[ifbench]] 38.0%×1.0 |
