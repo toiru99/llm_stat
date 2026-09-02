@@ -12,20 +12,20 @@ size_class: Small
 params_b: 8
 is_reasoning: false
 radar:
-  knowledge: { s: 14.8, z: -1.29, r: 30.7, estimated: false }  # 전문 지식
-  reasoning: { s: 8.7, z: -1.3, r: 30.5, estimated: false }  # 추론
-  coding: { s: 4.4, z: -1.8, r: 22.9, estimated: false }  # 코딩
-  agentic: { s: 5.6, z: -1.23, r: 31.6, estimated: false }  # 에이전트
-  trust: { s: 2.1, z: -1.04, r: 34.4, estimated: false }  # 신뢰성
+  knowledge: { s: 14.4, z: -1.29, r: 30.7, estimated: false }  # 전문 지식
+  reasoning: { s: 8.6, z: -1.3, r: 30.5, estimated: false }  # 추론
+  coding: { s: 4.3, z: -1.8, r: 23.0, estimated: false }  # 코딩
+  agentic: { s: 5.6, z: -1.23, r: 31.5, estimated: false }  # 에이전트
+  trust: { s: 2.1, z: -1.06, r: 34.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.51, r: 27.3, estimated: false }  # 긴문맥
-  instruction: { s: 14.1, z: -1.61, r: 25.9, estimated: false }  # 지시 따르기
+  long_context: { s: 0.0, z: -1.52, r: 27.1, estimated: false }  # 긴문맥
+  instruction: { s: 14.1, z: -1.62, r: 25.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Apertus 8B Instruct
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-29
-timestamp: 2026-08-29T00:00:00Z
+updated: 2026-09-02
+timestamp: 2026-09-02T00:00:00Z
 ---
 
 # Apertus 8B Instruct
@@ -45,12 +45,12 @@ Swiss AI Initiative · Open · Small(8B) · 컨텍스트 65k · 종합지능 **1
 |---|---|---|---|---|
 | 전문 지식 | 30.7 | -1.29 | 실측 | [[aa-omniscience]] 10.0%×1.0, [[gpqa-diamond]] 26.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 30.5 | -1.3 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 26.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 22.9 | -1.8 | 실측 | [[scicode]] 4.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 31.6 | -1.23 | 실측 | [[tau2-bench]] 11.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 34.4 | -1.04 | 실측 | [[aa-omniscience]] 4.0%×1.0 |
+| 코딩 | 23.0 | -1.8 | 실측 | [[scicode]] 4.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
+| 에이전트 | 31.5 | -1.23 | 실측 | [[tau2-bench]] 11.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 신뢰성 | 34.1 | -1.06 | 실측 | [[aa-omniscience]] 4.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 27.3 | -1.51 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 25.9 | -1.61 | 실측 | [[ifbench]] 22.0%×1.0 |
+| 긴문맥 | 27.1 | -1.52 | 실측 | [[aa-lcr]] 0.0%×1.0 |
+| 지시 따르기 | 25.7 | -1.62 | 실측 | [[ifbench]] 22.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

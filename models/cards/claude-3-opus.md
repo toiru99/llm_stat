@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 27.8, z: -0.64, r: 40.4, estimated: false }  # 전문 지식
-  reasoning: { s: 24.8, z: -0.49, r: 42.6, estimated: false }  # 추론
-  coding: { s: 38.3, z: -0.39, r: 44.2, estimated: false }  # 코딩
-  agentic: { s: 32.5, z: -0.17, r: 47.4, estimated: true }  # 에이전트
-  trust: { s: 13.4, z: -0.5, r: 42.5, estimated: true }  # 신뢰성
+  knowledge: { s: 27.7, z: -0.63, r: 40.6, estimated: false }  # 전문 지식
+  reasoning: { s: 24.7, z: -0.49, r: 42.6, estimated: false }  # 추론
+  coding: { s: 37.1, z: -0.41, r: 43.9, estimated: false }  # 코딩
+  agentic: { s: 32.5, z: -0.18, r: 47.3, estimated: true }  # 에이전트
+  trust: { s: 13.4, z: -0.52, r: 42.2, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 30.0, z: -0.59, r: 41.1, estimated: true }  # 긴문맥
-  instruction: { s: 46.4, z: -0.25, r: 46.2, estimated: true }  # 지시 따르기
+  long_context: { s: 30.0, z: -0.61, r: 40.9, estimated: true }  # 긴문맥
+  instruction: { s: 46.4, z: -0.27, r: 46.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 3 Opus
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-29
-timestamp: 2026-08-29T00:00:00Z
+updated: 2026-09-02
+timestamp: 2026-09-02T00:00:00Z
 ---
 
 # Claude 3 Opus
@@ -43,14 +43,14 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **12.0*
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 40.4 | -0.64 | 실측 | [[gpqa-diamond]] 49.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
+| 전문 지식 | 40.6 | -0.63 | 실측 | [[gpqa-diamond]] 49.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
 | 추론 | 42.6 | -0.49 | 실측 | [[gpqa-diamond]] 49.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
-| 코딩 | 44.2 | -0.39 | 실측 | [[scicode]] 23.0%×1.0 |
-| 에이전트 | 47.4 | -0.17 | 추정 | (추정) |
-| 신뢰성 | 42.5 | -0.5 | 추정 | (추정) |
+| 코딩 | 43.9 | -0.41 | 실측 | [[scicode]] 23.0%×1.0 |
+| 에이전트 | 47.3 | -0.18 | 추정 | (추정) |
+| 신뢰성 | 42.2 | -0.52 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 41.1 | -0.59 | 추정 | (추정) |
-| 지시 따르기 | 46.2 | -0.25 | 추정 | (추정) |
+| 긴문맥 | 40.9 | -0.61 | 추정 | (추정) |
+| 지시 따르기 | 46.0 | -0.27 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

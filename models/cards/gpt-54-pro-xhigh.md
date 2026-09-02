@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 95.2, z: 2.71, r: 90.6, estimated: true }  # 전문 지식
-  reasoning: { s: 93.8, z: 2.99, r: 94.9, estimated: false }  # 추론
-  coding: { s: 92.7, z: 1.89, r: 78.3, estimated: true }  # 코딩
-  agentic: { s: 90.3, z: 2.09, r: 81.4, estimated: true }  # 에이전트
-  trust: { s: 25.6, z: 0.07, r: 51.1, estimated: true }  # 신뢰성
+  knowledge: { s: 93.5, z: 2.65, r: 89.7, estimated: true }  # 전문 지식
+  reasoning: { s: 93.8, z: 2.97, r: 94.6, estimated: false }  # 추론
+  coding: { s: 91.5, z: 1.9, r: 78.5, estimated: true }  # 코딩
+  agentic: { s: 88.5, z: 2.0, r: 80.1, estimated: true }  # 에이전트
+  trust: { s: 30.3, z: 0.29, r: 54.3, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 92.5, z: 1.32, r: 69.9, estimated: true }  # 긴문맥
-  instruction: { s: 77.0, z: 1.04, r: 65.5, estimated: true }  # 지시 따르기
+  long_context: { s: 92.8, z: 1.31, r: 69.7, estimated: true }  # 긴문맥
+  instruction: { s: 77.8, z: 1.05, r: 65.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.4 Pro (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-08-29
-timestamp: 2026-08-29T00:00:00Z
+updated: 2026-09-02
+timestamp: 2026-09-02T00:00:00Z
 ---
 
 # GPT-5.4 Pro (xhigh)
@@ -43,14 +43,14 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 90.6 | +2.71 | 추정 | (추정) |
-| 추론 | 94.9 | +2.99 | 실측 | [[critpt]] 30.0%×1.0 |
-| 코딩 | 78.3 | +1.89 | 추정 | (추정) |
-| 에이전트 | 81.4 | +2.09 | 추정 | (추정) |
-| 신뢰성 | 51.1 | +0.07 | 추정 | (추정) |
+| 전문 지식 | 89.7 | +2.65 | 추정 | (추정) |
+| 추론 | 94.6 | +2.97 | 실측 | [[critpt]] 30.0%×1.0 |
+| 코딩 | 78.5 | +1.9 | 추정 | (추정) |
+| 에이전트 | 80.1 | +2.0 | 추정 | (추정) |
+| 신뢰성 | 54.3 | +0.29 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 69.9 | +1.32 | 추정 | (추정) |
-| 지시 따르기 | 65.5 | +1.04 | 추정 | (추정) |
+| 긴문맥 | 69.7 | +1.31 | 추정 | (추정) |
+| 지시 따르기 | 65.8 | +1.05 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
