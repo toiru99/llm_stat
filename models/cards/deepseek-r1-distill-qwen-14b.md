@@ -12,20 +12,20 @@ size_class: Small
 params_b: 14
 is_reasoning: true
 radar:
-  knowledge: { s: 27.8, z: -0.62, r: 40.6, estimated: false }  # 전문 지식
-  reasoning: { s: 24.9, z: -0.48, r: 42.8, estimated: false }  # 추론
-  coding: { s: 38.7, z: -0.34, r: 44.9, estimated: false }  # 코딩
-  agentic: { s: 18.8, z: -0.72, r: 39.2, estimated: true }  # 에이전트
-  trust: { s: 28.0, z: 0.18, r: 52.6, estimated: true }  # 신뢰성
+  knowledge: { s: 27.8, z: -0.63, r: 40.5, estimated: false }  # 전문 지식
+  reasoning: { s: 24.9, z: -0.49, r: 42.7, estimated: false }  # 추론
+  coding: { s: 38.7, z: -0.35, r: 44.7, estimated: false }  # 코딩
+  agentic: { s: 17.5, z: -0.77, r: 38.4, estimated: true }  # 에이전트
+  trust: { s: 27.3, z: 0.13, r: 51.9, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 8.4, z: -1.27, r: 31.0, estimated: false }  # 긴문맥
-  instruction: { s: 14.1, z: -1.62, r: 25.7, estimated: false }  # 지시 따르기
+  long_context: { s: 8.4, z: -1.27, r: 30.9, estimated: false }  # 긴문맥
+  instruction: { s: 14.1, z: -1.62, r: 25.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek R1 Distill Qwen 14B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-02
-timestamp: 2026-09-02T00:00:00Z
+updated: 2026-09-03
+timestamp: 2026-09-03T00:00:00Z
 ---
 
 # DeepSeek R1 Distill Qwen 14B
@@ -43,14 +43,14 @@ DeepSeek · Open · Small(14B) · 컨텍스트 128k · 종합지능 **10.0** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 40.6 | -0.62 | 실측 | [[gpqa-diamond]] 48.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 42.8 | -0.48 | 실측 | [[gpqa-diamond]] 48.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 44.9 | -0.34 | 실측 | [[scicode]] 24.0%×1.0 |
-| 에이전트 | 39.2 | -0.72 | 추정 | (추정) |
-| 신뢰성 | 52.6 | +0.18 | 추정 | (추정) |
+| 전문 지식 | 40.5 | -0.63 | 실측 | [[gpqa-diamond]] 48.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 42.7 | -0.49 | 실측 | [[gpqa-diamond]] 48.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 44.7 | -0.35 | 실측 | [[scicode]] 24.0%×1.0 |
+| 에이전트 | 38.4 | -0.77 | 추정 | (추정) |
+| 신뢰성 | 51.9 | +0.13 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 31.0 | -1.27 | 실측 | [[aa-lcr]] 7.0%×1.0 |
-| 지시 따르기 | 25.7 | -1.62 | 실측 | [[ifbench]] 22.0%×1.0 |
+| 긴문맥 | 30.9 | -1.27 | 실측 | [[aa-lcr]] 7.0%×1.0 |
+| 지시 따르기 | 25.6 | -1.62 | 실측 | [[ifbench]] 22.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

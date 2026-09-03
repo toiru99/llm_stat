@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 17.7, z: -1.13, r: 33.1, estimated: false }  # 전문 지식
   reasoning: { s: 16.1, z: -0.92, r: 36.2, estimated: false }  # 추론
-  coding: { s: 30.6, z: -0.68, r: 39.8, estimated: false }  # 코딩
-  agentic: { s: 19.1, z: -0.7, r: 39.4, estimated: true }  # 에이전트
-  trust: { s: 14.0, z: -0.49, r: 42.6, estimated: true }  # 신뢰성
+  coding: { s: 30.6, z: -0.69, r: 39.7, estimated: false }  # 코딩
+  agentic: { s: 19.1, z: -0.71, r: 39.3, estimated: true }  # 에이전트
+  trust: { s: 14.0, z: -0.5, r: 42.4, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 29.4, z: -0.62, r: 40.6, estimated: true }  # 긴문맥
-  instruction: { s: 29.4, z: -0.98, r: 35.3, estimated: true }  # 지시 따르기
+  long_context: { s: 29.4, z: -0.63, r: 40.5, estimated: true }  # 긴문맥
+  instruction: { s: 29.4, z: -0.98, r: 35.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Mixtral 8x22B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-02
-timestamp: 2026-09-02T00:00:00Z
+updated: 2026-09-03
+timestamp: 2026-09-03T00:00:00Z
 ---
 
 # Mixtral 8x22B
@@ -45,12 +45,12 @@ Mistral · Open · Medium(141B) · 컨텍스트 65k · 종합지능 **4.0** · �
 |---|---|---|---|---|
 | 전문 지식 | 33.1 | -1.13 | 실측 | [[gpqa-diamond]] 33.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 36.2 | -0.92 | 실측 | [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 39.8 | -0.68 | 실측 | [[scicode]] 19.0%×1.0 |
-| 에이전트 | 39.4 | -0.7 | 추정 | (추정) |
-| 신뢰성 | 42.6 | -0.49 | 추정 | (추정) |
+| 코딩 | 39.7 | -0.69 | 실측 | [[scicode]] 19.0%×1.0 |
+| 에이전트 | 39.3 | -0.71 | 추정 | (추정) |
+| 신뢰성 | 42.4 | -0.5 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 40.6 | -0.62 | 추정 | (추정) |
-| 지시 따르기 | 35.3 | -0.98 | 추정 | (추정) |
+| 긴문맥 | 40.5 | -0.63 | 추정 | (추정) |
+| 지시 따르기 | 35.2 | -0.98 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

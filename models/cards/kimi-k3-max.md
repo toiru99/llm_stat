@@ -12,20 +12,20 @@ size_class: Large
 params_b: 2800
 is_reasoning: true
 radar:
-  knowledge: { s: 79.4, z: 1.95, r: 79.2, estimated: false }  # 전문 지식
-  reasoning: { s: 83.3, z: 2.45, r: 86.8, estimated: false }  # 추론
-  coding: { s: 95.2, z: 2.05, r: 80.8, estimated: false }  # 코딩
-  agentic: { s: 87.0, z: 1.94, r: 79.1, estimated: false }  # 에이전트
-  trust: { s: 46.4, z: 1.05, r: 65.8, estimated: false }  # 신뢰성
-  multimodal: { s: 94.3, z: 1.14, r: 67.1, estimated: false }  # 멀티모달
-  long_context: { s: 100.0, z: 1.53, r: 73.0, estimated: false }  # 긴문맥
-  instruction: { s: 74.0, z: 0.89, r: 63.4, estimated: true }  # 지시 따르기
+  knowledge: { s: 79.4, z: 1.91, r: 78.6, estimated: false }  # 전문 지식
+  reasoning: { s: 83.3, z: 2.4, r: 86.0, estimated: false }  # 추론
+  coding: { s: 95.2, z: 2.02, r: 80.3, estimated: false }  # 코딩
+  agentic: { s: 86.5, z: 1.9, r: 78.6, estimated: false }  # 에이전트
+  trust: { s: 46.4, z: 1.03, r: 65.4, estimated: false }  # 신뢰성
+  multimodal: { s: 93.0, z: 1.11, r: 66.6, estimated: false }  # 멀티모달
+  long_context: { s: 100.0, z: 1.52, r: 72.8, estimated: false }  # 긴문맥
+  instruction: { s: 74.0, z: 0.88, r: 63.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K3 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-02
-timestamp: 2026-09-02T00:00:00Z
+updated: 2026-09-03
+timestamp: 2026-09-03T00:00:00Z
 ---
 
 # Kimi K3 (max)
@@ -37,20 +37,20 @@ Kimi · Open · Large(2800B) · 컨텍스트 1M · 종합지능 **60.0**
 - **약점**: 신뢰성, 지시 따르기
 
 ## 실용 지표
-`입력 $3.0 · 출력 $15.0 · 혼합 $2.31/1M · 38.0 t/s · TTFT 4.29s · 1M ctx` · 가성비 26.0
+`입력 $3.0 · 출력 $15.0 · 혼합 $2.31/1M · 38.0 t/s · TTFT 5.01s · 1M ctx` · 가성비 26.0
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 79.2 | +1.95 | 실측 | [[aa-omniscience]] 48.0%×1.0, [[gpqa-diamond]] 94.0%×0.4, [[humanitys-last-exam]] 47.0%×0.3 |
-| 추론 | 86.8 | +2.45 | 실측 | [[critpt]] 23.0%×1.0, [[gpqa-diamond]] 94.0%×1.0, [[humanitys-last-exam]] 47.0%×1.0 |
-| 코딩 | 80.8 | +2.05 | 실측 | [[scicode]] 59.0%×1.0 |
-| 에이전트 | 79.1 | +1.94 | 실측 | [[apex-agents]] 41.0%×1.0, [[gdpval]] 58.0%×1.0, [[itbench]] 48.0%×1.0, [[tau3-banking]] 46.0%×1.0 |
-| 신뢰성 | 65.8 | +1.05 | 실측 | [[aa-omniscience]] 47.0%×1.0 |
-| 멀티모달 | 67.1 | +1.14 | 실측 | [[mmmu-pro]] 81.0%×1.0 |
-| 긴문맥 | 73.0 | +1.53 | 실측 | [[aa-lcr]] 83.0%×1.0 |
-| 지시 따르기 | 63.4 | +0.89 | 추정 | (추정) |
+| 전문 지식 | 78.6 | +1.91 | 실측 | [[aa-omniscience]] 48.0%×1.0, [[gpqa-diamond]] 94.0%×0.4, [[humanitys-last-exam]] 47.0%×0.3 |
+| 추론 | 86.0 | +2.4 | 실측 | [[critpt]] 23.0%×1.0, [[gpqa-diamond]] 94.0%×1.0, [[humanitys-last-exam]] 47.0%×1.0 |
+| 코딩 | 80.3 | +2.02 | 실측 | [[scicode]] 59.0%×1.0 |
+| 에이전트 | 78.6 | +1.9 | 실측 | [[apex-agents]] 41.0%×1.0, [[gdpval]] 58.0%×1.0, [[itbench]] 48.0%×1.0, [[tau3-banking]] 46.0%×1.0 |
+| 신뢰성 | 65.4 | +1.03 | 실측 | [[aa-omniscience]] 47.0%×1.0 |
+| 멀티모달 | 66.6 | +1.11 | 실측 | [[mmmu-pro]] 81.0%×1.0 |
+| 긴문맥 | 72.8 | +1.52 | 실측 | [[aa-lcr]] 83.0%×1.0 |
+| 지시 따르기 | 63.2 | +0.88 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

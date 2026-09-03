@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 11.7, z: -1.42, r: 28.6, estimated: false }  # 전문 지식
   reasoning: { s: 11.1, z: -1.17, r: 32.4, estimated: false }  # 추론
   coding: { s: 3.1, z: -1.85, r: 22.3, estimated: true }  # 코딩
-  agentic: { s: 8.2, z: -1.13, r: 33.1, estimated: true }  # 에이전트
-  trust: { s: 16.1, z: -0.39, r: 44.1, estimated: true }  # 신뢰성
+  agentic: { s: 8.2, z: -1.13, r: 33.0, estimated: true }  # 에이전트
+  trust: { s: 16.1, z: -0.4, r: 43.9, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 1.4, z: -1.48, r: 27.8, estimated: true }  # 긴문맥
-  instruction: { s: 19.7, z: -1.38, r: 29.2, estimated: true }  # 지시 따르기
+  long_context: { s: 1.4, z: -1.49, r: 27.7, estimated: true }  # 긴문맥
+  instruction: { s: 19.7, z: -1.39, r: 29.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — OpenChat 3.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-02
-timestamp: 2026-09-02T00:00:00Z
+updated: 2026-09-03
+timestamp: 2026-09-03T00:00:00Z
 ---
 
 # OpenChat 3.5
@@ -46,11 +46,11 @@ OpenChat · Open · Small(7B) · 컨텍스트 8k · 종합지능 **3.0** · ⚠�
 | 전문 지식 | 28.6 | -1.42 | 실측 | [[gpqa-diamond]] 23.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 32.4 | -1.17 | 실측 | [[gpqa-diamond]] 23.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 22.3 | -1.85 | 추정 | (추정) |
-| 에이전트 | 33.1 | -1.13 | 추정 | (추정) |
-| 신뢰성 | 44.1 | -0.39 | 추정 | (추정) |
+| 에이전트 | 33.0 | -1.13 | 추정 | (추정) |
+| 신뢰성 | 43.9 | -0.4 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 27.8 | -1.48 | 추정 | (추정) |
-| 지시 따르기 | 29.2 | -1.38 | 추정 | (추정) |
+| 긴문맥 | 27.7 | -1.49 | 추정 | (추정) |
+| 지시 따르기 | 29.2 | -1.39 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

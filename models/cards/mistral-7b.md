@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: 2.0
 price_blended_usd_1m: 0.25
-output_speed_tps: 124.0
+output_speed_tps: 113.0
 context_window: 8189
 status: past
 size_class: Small
@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 11.3, z: -1.44, r: 28.4, estimated: false }  # 전문 지식
   reasoning: { s: 5.4, z: -1.45, r: 28.2, estimated: false }  # 추론
   coding: { s: 3.2, z: -1.84, r: 22.4, estimated: false }  # 코딩
-  agentic: { s: 0.0, z: -1.45, r: 28.3, estimated: false }  # 에이전트
-  trust: { s: 17.5, z: -0.32, r: 45.1, estimated: false }  # 신뢰성
+  agentic: { s: 0.0, z: -1.45, r: 28.2, estimated: false }  # 에이전트
+  trust: { s: 17.5, z: -0.34, r: 45.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.52, r: 27.1, estimated: false }  # 긴문맥
+  long_context: { s: 0.0, z: -1.53, r: 27.1, estimated: false }  # 긴문맥
   instruction: { s: 11.3, z: -1.74, r: 23.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral 7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-02
-timestamp: 2026-09-02T00:00:00Z
+updated: 2026-09-03
+timestamp: 2026-09-03T00:00:00Z
 ---
 
 # Mistral 7B
@@ -37,7 +37,7 @@ Mistral · Open · Small(7B) · 컨텍스트 8k · 종합지능 **2.0** · ⚠�
 - **약점**: 지시 따르기, 코딩
 
 ## 실용 지표
-`입력 $0.25 · 출력 $0.25 · 혼합 $0.25/1M · 124.0 t/s · TTFT 0.74s · 8k ctx` · 가성비 8.0
+`입력 $0.25 · 출력 $0.25 · 혼합 $0.25/1M · 113.0 t/s · TTFT 0.73s · 8k ctx` · 가성비 8.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,10 +46,10 @@ Mistral · Open · Small(7B) · 컨텍스트 8k · 종합지능 **2.0** · ⚠�
 | 전문 지식 | 28.4 | -1.44 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 18.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 28.2 | -1.45 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 18.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 22.4 | -1.84 | 실측 | [[scicode]] 2.0%×1.0 |
-| 에이전트 | 28.3 | -1.45 | 실측 | [[tau2-bench]] 0.0%×1.0 |
-| 신뢰성 | 45.1 | -0.32 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
+| 에이전트 | 28.2 | -1.45 | 실측 | [[tau2-bench]] 0.0%×1.0 |
+| 신뢰성 | 45.0 | -0.34 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 27.1 | -1.52 | 실측 | [[aa-lcr]] 0.0%×1.0 |
+| 긴문맥 | 27.1 | -1.53 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 23.9 | -1.74 | 실측 | [[ifbench]] 20.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

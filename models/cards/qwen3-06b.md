@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 10.7, z: -1.48, r: 27.9, estimated: false }  # 전문 지식
   reasoning: { s: 8.4, z: -1.31, r: 30.4, estimated: false }  # 추론
   coding: { s: 3.2, z: -1.84, r: 22.4, estimated: false }  # 코딩
-  agentic: { s: 10.6, z: -1.04, r: 34.5, estimated: false }  # 에이전트
-  trust: { s: 7.2, z: -0.81, r: 37.8, estimated: false }  # 신뢰성
+  agentic: { s: 10.6, z: -1.04, r: 34.4, estimated: false }  # 에이전트
+  trust: { s: 7.2, z: -0.82, r: 37.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.52, r: 27.1, estimated: false }  # 긴문맥
-  instruction: { s: 15.5, z: -1.56, r: 26.6, estimated: false }  # 지시 따르기
+  long_context: { s: 0.0, z: -1.53, r: 27.1, estimated: false }  # 긴문맥
+  instruction: { s: 15.5, z: -1.56, r: 26.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 0.6B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-02
-timestamp: 2026-09-02T00:00:00Z
+updated: 2026-09-03
+timestamp: 2026-09-03T00:00:00Z
 ---
 
 # Qwen3 0.6B
@@ -46,11 +46,11 @@ Alibaba · Open · Tiny(0.752B) · 컨텍스트 32k · 종합지능 **1.0** · �
 | 전문 지식 | 27.9 | -1.48 | 실측 | [[aa-omniscience]] 6.0%×1.0, [[gpqa-diamond]] 24.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 30.4 | -1.31 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 24.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 22.4 | -1.84 | 실측 | [[scicode]] 3.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 34.5 | -1.04 | 실측 | [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 37.8 | -0.81 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 에이전트 | 34.4 | -1.04 | 실측 | [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 신뢰성 | 37.6 | -0.82 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 27.1 | -1.52 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 26.6 | -1.56 | 실측 | [[ifbench]] 23.0%×1.0 |
+| 긴문맥 | 27.1 | -1.53 | 실측 | [[aa-lcr]] 0.0%×1.0 |
+| 지시 따르기 | 26.5 | -1.56 | 실측 | [[ifbench]] 23.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
