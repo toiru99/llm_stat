@@ -3,54 +3,54 @@ type: Model
 title: GPT-5.6 Luna (max)
 creator: OpenAI
 license: Proprietary
-intelligence_index: 52.0
+intelligence_index: 43.0
 price_blended_usd_1m: 0.174
-output_speed_tps: 123.0
+output_speed_tps: 135.0
 context_window: 1000000
 status: current
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 71.7, z: 1.53, r: 73.0, estimated: false }  # 전문 지식
-  reasoning: { s: 75.5, z: 2.01, r: 80.2, estimated: false }  # 추론
-  coding: { s: 85.5, z: 1.61, r: 74.2, estimated: false }  # 코딩
-  agentic: { s: 71.1, z: 1.31, r: 69.6, estimated: false }  # 에이전트
-  trust: { s: 5.2, z: -0.92, r: 36.2, estimated: false }  # 신뢰성
-  multimodal: { s: 90.1, z: 0.97, r: 64.5, estimated: false }  # 멀티모달
-  long_context: { s: 94.0, z: 1.33, r: 70.0, estimated: false }  # 긴문맥
-  instruction: { s: 79.4, z: 1.11, r: 66.6, estimated: true }  # 지시 따르기
+  knowledge: { s: 71.5, z: 1.47, r: 72.1, estimated: false }  # 전문 지식
+  reasoning: { s: 75.1, z: 1.93, r: 78.9, estimated: false }  # 추론
+  coding: { s: 81.6, z: 1.74, r: 76.1, estimated: false }  # 코딩
+  agentic: { s: 71.5, z: 1.3, r: 69.5, estimated: false }  # 에이전트
+  trust: { s: 5.2, z: -0.91, r: 36.3, estimated: false }  # 신뢰성
+  multimodal: { s: 88.9, z: 0.93, r: 63.9, estimated: false }  # 멀티모달
+  long_context: { s: 94.4, z: 1.39, r: 70.9, estimated: false }  # 긴문맥
+  instruction: { s: 81.7, z: 1.22, r: 68.3, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Luna (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-03
-timestamp: 2026-09-03T00:00:00Z
+updated: 2026-09-05
+timestamp: 2026-09-05T00:00:00Z
 ---
 
 # GPT-5.6 Luna (max)
 
-OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **52.0**
+OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **43.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 코딩
 - **약점**: 멀티모달, 신뢰성
 
 ## 실용 지표
-`입력 $0.2 · 출력 $1.2 · 혼합 $0.174/1M · 123.0 t/s · TTFT 175.13s · 1M ctx` · 가성비 298.9
+`입력 $0.2 · 출력 $1.2 · 혼합 $0.174/1M · 135.0 t/s · TTFT 173.24s · 1M ctx` · 가성비 247.1
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 73.0 | +1.53 | 실측 | [[aa-omniscience]] 43.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 39.0%×0.3 |
-| 추론 | 80.2 | +2.01 | 실측 | [[critpt]] 21.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 39.0%×1.0 |
-| 코딩 | 74.2 | +1.61 | 실측 | [[scicode]] 53.0%×1.0 |
-| 에이전트 | 69.6 | +1.31 | 실측 | [[apex-agents]] 36.0%×1.0, [[gdpval]] 53.0%×1.0, [[itbench]] 40.0%×1.0, [[tau3-banking]] 31.0%×1.0 |
-| 신뢰성 | 36.2 | -0.92 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
-| 멀티모달 | 64.5 | +0.97 | 실측 | [[mmmu-pro]] 79.0%×1.0 |
-| 긴문맥 | 70.0 | +1.33 | 실측 | [[aa-lcr]] 78.0%×1.0 |
-| 지시 따르기 | 66.6 | +1.11 | 추정 | (추정) |
+| 전문 지식 | 72.1 | +1.47 | 실측 | [[aa-omniscience]] 43.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 39.0%×0.3 |
+| 추론 | 78.9 | +1.93 | 실측 | [[critpt]] 21.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 39.0%×1.0 |
+| 코딩 | 76.1 | +1.74 | 실측 | [[scicode]] 54.0%×1.0 |
+| 에이전트 | 69.5 | +1.3 | 실측 | [[apex-agents]] 36.0%×1.0, [[gdpval]] 50.0%×1.0, [[itbench]] 40.0%×1.0, [[tau3-banking]] 31.0%×1.0 |
+| 신뢰성 | 36.3 | -0.91 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
+| 멀티모달 | 63.9 | +0.93 | 실측 | [[mmmu-pro]] 79.0%×1.0 |
+| 긴문맥 | 70.9 | +1.39 | 실측 | [[aa-lcr]] 84.0%×1.0 |
+| 지시 따르기 | 68.3 | +1.22 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

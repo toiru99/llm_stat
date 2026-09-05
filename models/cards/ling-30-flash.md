@@ -3,54 +3,54 @@ type: Model
 title: Ling 3.0 Flash
 creator: InclusionAI
 license: Open
-intelligence_index: 38.0
+intelligence_index: 27.0
 price_blended_usd_1m: 0.0475
-output_speed_tps: 345.0
+output_speed_tps: 321.0
 context_window: 262000
 status: current
 size_class: Medium
 params_b: 124
 is_reasoning: true
 radar:
-  knowledge: { s: 43.6, z: 0.14, r: 52.2, estimated: false }  # 전문 지식
-  reasoning: { s: 44.7, z: 0.49, r: 57.4, estimated: false }  # 추론
-  coding: { s: 66.1, z: 0.8, r: 62.0, estimated: false }  # 코딩
-  agentic: { s: 48.0, z: 0.41, r: 56.2, estimated: false }  # 에이전트
-  trust: { s: 55.7, z: 1.47, r: 72.0, estimated: false }  # 신뢰성
+  knowledge: { s: 43.3, z: 0.12, r: 51.7, estimated: false }  # 전문 지식
+  reasoning: { s: 44.4, z: 0.45, r: 56.7, estimated: false }  # 추론
+  coding: { s: 57.1, z: 0.88, r: 63.2, estimated: false }  # 코딩
+  agentic: { s: 47.4, z: 0.38, r: 55.7, estimated: false }  # 에이전트
+  trust: { s: 55.7, z: 1.48, r: 72.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 80.7, z: 0.93, r: 63.9, estimated: false }  # 긴문맥
-  instruction: { s: 76.3, z: 0.98, r: 64.6, estimated: true }  # 지시 따르기
+  long_context: { s: 82.0, z: 1.01, r: 65.2, estimated: false }  # 긴문맥
+  instruction: { s: 71.8, z: 0.81, r: 62.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Ling 3.0 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-03
-timestamp: 2026-09-03T00:00:00Z
+updated: 2026-09-05
+timestamp: 2026-09-05T00:00:00Z
 ---
 
 # Ling 3.0 Flash
 
-InclusionAI · Open · Medium(124B) · 컨텍스트 262k · 종합지능 **38.0**
+InclusionAI · Open · Medium(124B) · 컨텍스트 262k · 종합지능 **27.0**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 신뢰성, 지시 따르기
+- **강점**: 신뢰성, 긴문맥
 - **약점**: 에이전트, 전문 지식
 
 ## 실용 지표
-`입력 $0.07 · 출력 $0.22 · 혼합 $0.0475/1M · 345.0 t/s · TTFT 2.63s · 262k ctx` · 가성비 800.0
+`입력 $0.07 · 출력 $0.22 · 혼합 $0.0475/1M · 321.0 t/s · TTFT 2.59s · 262k ctx` · 가성비 568.4
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 52.2 | +0.14 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 24.0%×0.3 |
-| 추론 | 57.4 | +0.49 | 실측 | [[critpt]] 2.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 24.0%×1.0 |
-| 코딩 | 62.0 | +0.8 | 실측 | [[scicode]] 41.0%×1.0 |
-| 에이전트 | 56.2 | +0.41 | 실측 | [[gdpval]] 30.0%×1.0, [[tau3-banking]] 27.0%×1.0 |
-| 신뢰성 | 72.0 | +1.47 | 실측 | [[aa-omniscience]] 56.0%×1.0 |
+| 전문 지식 | 51.7 | +0.12 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 24.0%×0.3 |
+| 추론 | 56.7 | +0.45 | 실측 | [[critpt]] 2.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 24.0%×1.0 |
+| 코딩 | 63.2 | +0.88 | 실측 | [[scicode]] 42.0%×1.0 |
+| 에이전트 | 55.7 | +0.38 | 실측 | [[gdpval]] 27.0%×1.0, [[tau3-banking]] 27.0%×1.0 |
+| 신뢰성 | 72.2 | +1.48 | 실측 | [[aa-omniscience]] 56.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 63.9 | +0.93 | 실측 | [[aa-lcr]] 67.0%×1.0 |
-| 지시 따르기 | 64.6 | +0.98 | 추정 | (추정) |
+| 긴문맥 | 65.2 | +1.01 | 실측 | [[aa-lcr]] 73.0%×1.0 |
+| 지시 따르기 | 62.1 | +0.81 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

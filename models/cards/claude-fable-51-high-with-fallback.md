@@ -3,54 +3,54 @@ type: Model
 title: Claude Fable 5.1 (high with fallback)
 creator: Anthropic
 license: Proprietary
-intelligence_index: 62.0
+intelligence_index: 52.0
 price_blended_usd_1m: 7.175
-output_speed_tps: 55.0
+output_speed_tps: 57.0
 context_window: 1000000
 status: current
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 96.2, z: 2.74, r: 91.1, estimated: false }  # 전문 지식
-  reasoning: { s: 94.6, z: 2.96, r: 94.4, estimated: false }  # 추론
-  coding: { s: 93.5, z: 1.95, r: 79.3, estimated: false }  # 코딩
-  agentic: { s: 86.9, z: 1.92, r: 78.8, estimated: false }  # 에이전트
-  trust: { s: 29.9, z: 0.25, r: 53.7, estimated: false }  # 신뢰성
+  knowledge: { s: 96.0, z: 2.65, r: 89.8, estimated: false }  # 전문 지식
+  reasoning: { s: 94.3, z: 2.85, r: 92.7, estimated: false }  # 추론
+  coding: { s: 91.8, z: 2.1, r: 81.5, estimated: false }  # 코딩
+  agentic: { s: 87.4, z: 1.91, r: 78.6, estimated: false }  # 에이전트
+  trust: { s: 29.9, z: 0.26, r: 53.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 92.8, z: 1.3, r: 69.4, estimated: false }  # 긴문맥
-  instruction: { s: 81.3, z: 1.18, r: 67.7, estimated: true }  # 지시 따르기
+  long_context: { s: 94.4, z: 1.39, r: 70.9, estimated: false }  # 긴문맥
+  instruction: { s: 77.7, z: 1.05, r: 65.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Fable 5.1 (high with fallback)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-03
-timestamp: 2026-09-03T00:00:00Z
+updated: 2026-09-05
+timestamp: 2026-09-05T00:00:00Z
 ---
 
 # Claude Fable 5.1 (high with fallback)
 
-Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **62.0**
+Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **52.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 전문 지식
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $10.0 · 출력 $50.0 · 혼합 $7.175/1M · 55.0 t/s · TTFT 34.57s · 1M ctx` · 가성비 8.6
+`입력 $10.0 · 출력 $50.0 · 혼합 $7.175/1M · 57.0 t/s · TTFT 31.09s · 1M ctx` · 가성비 7.2
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 91.1 | +2.74 | 실측 | [[aa-omniscience]] 65.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 56.0%×0.3 |
-| 추론 | 94.4 | +2.96 | 실측 | [[critpt]] 30.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 56.0%×1.0 |
-| 코딩 | 79.3 | +1.95 | 실측 | [[scicode]] 58.0%×1.0 |
-| 에이전트 | 78.8 | +1.92 | 실측 | [[gdpval]] 62.0%×1.0, [[tau3-banking]] 43.0%×1.0 |
-| 신뢰성 | 53.7 | +0.25 | 실측 | [[aa-omniscience]] 31.0%×1.0 |
+| 전문 지식 | 89.8 | +2.65 | 실측 | [[aa-omniscience]] 65.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 56.0%×0.3 |
+| 추론 | 92.7 | +2.85 | 실측 | [[critpt]] 30.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 56.0%×1.0 |
+| 코딩 | 81.5 | +2.1 | 실측 | [[scicode]] 59.0%×1.0 |
+| 에이전트 | 78.6 | +1.91 | 실측 | [[gdpval]] 58.0%×1.0, [[tau3-banking]] 43.0%×1.0 |
+| 신뢰성 | 53.9 | +0.26 | 실측 | [[aa-omniscience]] 31.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 69.4 | +1.3 | 실측 | [[aa-lcr]] 77.0%×1.0 |
-| 지시 따르기 | 67.7 | +1.18 | 추정 | (추정) |
+| 긴문맥 | 70.9 | +1.39 | 실측 | [[aa-lcr]] 84.0%×1.0 |
+| 지시 따르기 | 65.8 | +1.05 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

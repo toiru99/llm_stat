@@ -3,7 +3,7 @@ type: Model
 title: PALM-2
 creator: Google
 license: Proprietary
-intelligence_index: 3.0
+intelligence_index: 1.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 8000
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — PALM-2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-03
-timestamp: 2026-09-03T00:00:00Z
+updated: 2026-09-05
+timestamp: 2026-09-05T00:00:00Z
 ---
 
 # PALM-2
 
-Google · Proprietary · Unknown · 컨텍스트 8k · 종합지능 **3.0** · ⚠️ past(구세대)
+Google · Proprietary · Unknown · 컨텍스트 8k · 종합지능 **1.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: —

@@ -3,7 +3,7 @@ type: Model
 title: Phi-3 Mini
 creator: Microsoft
 license: Open
-intelligence_index: 4.0
+intelligence_index: 1.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 4100
@@ -12,29 +12,29 @@ size_class: Tiny
 params_b: 3.8
 is_reasoning: false
 radar:
-  knowledge: { s: 17.7, z: -1.13, r: 33.1, estimated: false }  # 전문 지식
-  reasoning: { s: 16.4, z: -0.91, r: 36.4, estimated: false }  # 추론
-  coding: { s: 9.7, z: -1.57, r: 26.5, estimated: false }  # 코딩
-  agentic: { s: 0.0, z: -1.45, r: 28.2, estimated: false }  # 에이전트
-  trust: { s: 5.8, z: -0.89, r: 36.6, estimated: true }  # 신뢰성
+  knowledge: { s: 17.6, z: -1.12, r: 33.1, estimated: false }  # 전문 지식
+  reasoning: { s: 16.2, z: -0.91, r: 36.4, estimated: false }  # 추론
+  coding: { s: 0.0, z: -1.12, r: 33.2, estimated: false }  # 코딩
+  agentic: { s: 0.0, z: -1.43, r: 28.5, estimated: false }  # 에이전트
+  trust: { s: 8.9, z: -0.74, r: 39.0, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 3.6, z: -1.42, r: 28.7, estimated: false }  # 긴문맥
-  instruction: { s: 16.9, z: -1.51, r: 27.4, estimated: false }  # 지시 따르기
+  long_context: { s: 0.4, z: -1.5, r: 27.5, estimated: true }  # 긴문맥
+  instruction: { s: 16.9, z: -1.49, r: 27.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Phi-3 Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-03
-timestamp: 2026-09-03T00:00:00Z
+updated: 2026-09-05
+timestamp: 2026-09-05T00:00:00Z
 ---
 
 # Phi-3 Mini
 
-Microsoft · Open · Tiny(3.8B) · 컨텍스트 4k · 종합지능 **4.0** · ⚠️ past(구세대)
+Microsoft · Open · Tiny(3.8B) · 컨텍스트 4k · 종합지능 **1.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 추론
-- **약점**: 지시 따르기, 코딩
+- **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 4k ctx`
@@ -43,14 +43,14 @@ Microsoft · Open · Tiny(3.8B) · 컨텍스트 4k · 종합지능 **4.0** · �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 33.1 | -1.13 | 실측 | [[gpqa-diamond]] 32.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 전문 지식 | 33.1 | -1.12 | 실측 | [[gpqa-diamond]] 32.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 36.4 | -0.91 | 실측 | [[gpqa-diamond]] 32.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 26.5 | -1.57 | 실측 | [[scicode]] 9.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 28.2 | -1.45 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 36.6 | -0.89 | 추정 | (추정) |
+| 코딩 | 33.2 | -1.12 | 실측 | [[terminal-bench]] 0.0%×0.5 |
+| 에이전트 | 28.5 | -1.43 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 신뢰성 | 39.0 | -0.74 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 28.7 | -1.42 | 실측 | [[aa-lcr]] 3.0%×1.0 |
-| 지시 따르기 | 27.4 | -1.51 | 실측 | [[ifbench]] 24.0%×1.0 |
+| 긴문맥 | 27.5 | -1.5 | 추정 | (추정) |
+| 지시 따르기 | 27.6 | -1.49 | 실측 | [[ifbench]] 24.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

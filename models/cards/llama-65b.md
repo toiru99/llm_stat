@@ -3,7 +3,7 @@ type: Model
 title: Llama 65B
 creator: Meta
 license: Open
-intelligence_index: 2.0
+intelligence_index: 1.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 2050
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 65B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-03
-timestamp: 2026-09-03T00:00:00Z
+updated: 2026-09-05
+timestamp: 2026-09-05T00:00:00Z
 ---
 
 # Llama 65B
 
-Meta · Open · Medium(65B) · 컨텍스트 2k · 종합지능 **2.0** · ⚠️ past(구세대)
+Meta · Open · Medium(65B) · 컨텍스트 2k · 종합지능 **1.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: —

@@ -3,7 +3,7 @@ type: Model
 title: Qwen3 VL 4B
 creator: Alibaba
 license: Open
-intelligence_index: 4.0
+intelligence_index: 1.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 256000
@@ -12,28 +12,28 @@ size_class: Tiny
 params_b: 4.44
 is_reasoning: false
 radar:
-  knowledge: { s: 18.0, z: -1.11, r: 33.3, estimated: false }  # 전문 지식
-  reasoning: { s: 12.3, z: -1.11, r: 33.3, estimated: false }  # 추론
-  coding: { s: 15.1, z: -1.34, r: 29.8, estimated: false }  # 코딩
-  agentic: { s: 11.6, z: -1.0, r: 35.0, estimated: false }  # 에이전트
-  trust: { s: 1.0, z: -1.12, r: 33.3, estimated: false }  # 신뢰성
-  multimodal: { s: 40.8, z: -1.46, r: 28.1, estimated: false }  # 멀티모달
-  long_context: { s: 16.9, z: -1.02, r: 34.8, estimated: false }  # 긴문맥
-  instruction: { s: 28.2, z: -1.04, r: 34.5, estimated: false }  # 지시 따르기
+  knowledge: { s: 18.0, z: -1.11, r: 33.4, estimated: false }  # 전문 지식
+  reasoning: { s: 12.2, z: -1.1, r: 33.5, estimated: false }  # 추론
+  coding: { s: 0.0, z: -1.12, r: 33.2, estimated: false }  # 코딩
+  agentic: { s: 11.6, z: -0.99, r: 35.1, estimated: false }  # 에이전트
+  trust: { s: 1.0, z: -1.11, r: 33.4, estimated: false }  # 신뢰성
+  multimodal: { s: 40.3, z: -1.48, r: 27.8, estimated: false }  # 멀티모달
+  long_context: { s: 15.7, z: -1.03, r: 34.6, estimated: false }  # 긴문맥
+  instruction: { s: 28.2, z: -1.02, r: 34.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 VL 4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-03
-timestamp: 2026-09-03T00:00:00Z
+updated: 2026-09-05
+timestamp: 2026-09-05T00:00:00Z
 ---
 
 # Qwen3 VL 4B
 
-Alibaba · Open · Tiny(4.44B) · 컨텍스트 256k · 종합지능 **4.0** · ⚠️ past(구세대)
+Alibaba · Open · Tiny(4.44B) · 컨텍스트 256k · 종합지능 **1.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 에이전트, 긴문맥
+- **강점**: 에이전트, 지시 따르기
 - **약점**: 코딩, 멀티모달
 
 ## 실용 지표
@@ -43,14 +43,14 @@ Alibaba · Open · Tiny(4.44B) · 컨텍스트 256k · 종합지능 **4.0** · �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 33.3 | -1.11 | 실측 | [[aa-omniscience]] 11.0%×1.0, [[gpqa-diamond]] 37.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 33.3 | -1.11 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 37.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 29.8 | -1.34 | 실측 | [[scicode]] 14.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 35.0 | -1.0 | 실측 | [[tau2-bench]] 23.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 33.3 | -1.12 | 실측 | [[aa-omniscience]] 3.0%×1.0 |
-| 멀티모달 | 28.1 | -1.46 | 실측 | [[mmmu-pro]] 44.0%×1.0 |
-| 긴문맥 | 34.8 | -1.02 | 실측 | [[aa-lcr]] 14.0%×1.0 |
-| 지시 따르기 | 34.5 | -1.04 | 실측 | [[ifbench]] 32.0%×1.0 |
+| 전문 지식 | 33.4 | -1.11 | 실측 | [[aa-omniscience]] 11.0%×1.0, [[gpqa-diamond]] 37.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 33.5 | -1.1 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 37.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 33.2 | -1.12 | 실측 | [[terminal-bench]] 0.0%×0.5 |
+| 에이전트 | 35.1 | -0.99 | 실측 | [[tau2-bench]] 23.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 신뢰성 | 33.4 | -1.11 | 실측 | [[aa-omniscience]] 3.0%×1.0 |
+| 멀티모달 | 27.8 | -1.48 | 실측 | [[mmmu-pro]] 44.0%×1.0 |
+| 긴문맥 | 34.6 | -1.03 | 실측 | [[aa-lcr]] 14.0%×1.0 |
+| 지시 따르기 | 34.7 | -1.02 | 실측 | [[ifbench]] 32.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

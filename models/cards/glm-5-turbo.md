@@ -3,7 +3,7 @@ type: Model
 title: GLM-5-Turbo
 creator: Z AI
 license: Proprietary
-intelligence_index: 39.0
+intelligence_index: 31.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 200000
@@ -12,25 +12,25 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 53.6, z: 0.64, r: 59.6, estimated: false }  # 전문 지식
-  reasoning: { s: 44.9, z: 0.5, r: 57.5, estimated: false }  # 추론
-  coding: { s: 64.0, z: 0.71, r: 60.7, estimated: false }  # 코딩
-  agentic: { s: 75.0, z: 1.46, r: 71.9, estimated: false }  # 에이전트
-  trust: { s: 36.1, z: 0.54, r: 58.1, estimated: false }  # 신뢰성
+  knowledge: { s: 53.3, z: 0.6, r: 59.0, estimated: false }  # 전문 지식
+  reasoning: { s: 44.6, z: 0.46, r: 56.9, estimated: false }  # 추론
+  coding: { s: 50.0, z: 0.63, r: 59.5, estimated: false }  # 코딩
+  agentic: { s: 75.0, z: 1.44, r: 71.5, estimated: false }  # 에이전트
+  trust: { s: 36.1, z: 0.55, r: 58.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 80.7, z: 0.93, r: 63.9, estimated: false }  # 긴문맥
-  instruction: { s: 85.9, z: 1.38, r: 70.6, estimated: false }  # 지시 따르기
+  long_context: { s: 80.9, z: 0.98, r: 64.7, estimated: false }  # 긴문맥
+  instruction: { s: 85.9, z: 1.4, r: 70.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5-Turbo
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-03
-timestamp: 2026-09-03T00:00:00Z
+updated: 2026-09-05
+timestamp: 2026-09-05T00:00:00Z
 ---
 
 # GLM-5-Turbo
 
-Z AI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **39.0** · ⚠️ past(구세대)
+Z AI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **31.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 지시 따르기
@@ -43,14 +43,14 @@ Z AI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **39.0** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 59.6 | +0.64 | 실측 | [[aa-omniscience]] 28.0%×1.0, [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 28.0%×0.3 |
-| 추론 | 57.5 | +0.5 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
-| 코딩 | 60.7 | +0.71 | 실측 | [[scicode]] 44.0%×1.0, [[terminal-bench]] 33.0%×0.5 |
-| 에이전트 | 71.9 | +1.46 | 실측 | [[tau2-bench]] 99.0%×1.0, [[terminal-bench]] 33.0%×1.0 |
-| 신뢰성 | 58.1 | +0.54 | 실측 | [[aa-omniscience]] 37.0%×1.0 |
+| 전문 지식 | 59.0 | +0.6 | 실측 | [[aa-omniscience]] 28.0%×1.0, [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 28.0%×0.3 |
+| 추론 | 56.9 | +0.46 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
+| 코딩 | 59.5 | +0.63 | 실측 | [[terminal-bench]] 33.0%×0.5 |
+| 에이전트 | 71.5 | +1.44 | 실측 | [[tau2-bench]] 99.0%×1.0, [[terminal-bench]] 33.0%×1.0 |
+| 신뢰성 | 58.3 | +0.55 | 실측 | [[aa-omniscience]] 37.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 63.9 | +0.93 | 실측 | [[aa-lcr]] 67.0%×1.0 |
-| 지시 따르기 | 70.6 | +1.38 | 실측 | [[ifbench]] 73.0%×1.0 |
+| 긴문맥 | 64.7 | +0.98 | 실측 | [[aa-lcr]] 72.0%×1.0 |
+| 지시 따르기 | 70.9 | +1.4 | 실측 | [[ifbench]] 73.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

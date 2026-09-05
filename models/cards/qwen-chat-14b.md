@@ -3,7 +3,7 @@ type: Model
 title: Qwen Chat 14B
 creator: Alibaba
 license: Open
-intelligence_index: 2.0
+intelligence_index: 1.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 8189
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen Chat 14B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-03
-timestamp: 2026-09-03T00:00:00Z
+updated: 2026-09-05
+timestamp: 2026-09-05T00:00:00Z
 ---
 
 # Qwen Chat 14B
 
-Alibaba · Open · Small(14B) · 컨텍스트 8k · 종합지능 **2.0** · ⚠️ past(구세대)
+Alibaba · Open · Small(14B) · 컨텍스트 8k · 종합지능 **1.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: —

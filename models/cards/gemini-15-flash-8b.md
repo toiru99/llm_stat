@@ -3,7 +3,7 @@ type: Model
 title: Gemini 1.5 Flash-8B
 creator: Google
 license: Proprietary
-intelligence_index: 5.0
+intelligence_index: 1.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 1050000
@@ -12,29 +12,29 @@ size_class: Small
 params_b: 8
 is_reasoning: false
 radar:
-  knowledge: { s: 20.4, z: -0.99, r: 35.1, estimated: false }  # 전문 지식
-  reasoning: { s: 18.7, z: -0.79, r: 38.1, estimated: false }  # 추론
-  coding: { s: 37.1, z: -0.42, r: 43.7, estimated: false }  # 코딩
-  agentic: { s: 13.3, z: -0.94, r: 36.0, estimated: true }  # 에이전트
-  trust: { s: 16.4, z: -0.39, r: 44.2, estimated: true }  # 신뢰성
-  multimodal: { s: 31.0, z: -1.95, r: 20.8, estimated: false }  # 멀티모달
-  long_context: { s: 19.3, z: -0.94, r: 35.9, estimated: true }  # 긴문맥
-  instruction: { s: 29.3, z: -0.99, r: 35.2, estimated: true }  # 지시 따르기
+  knowledge: { s: 20.2, z: -1.0, r: 35.0, estimated: false }  # 전문 지식
+  reasoning: { s: 18.6, z: -0.79, r: 38.1, estimated: false }  # 추론
+  coding: { s: 10.5, z: -0.75, r: 38.7, estimated: true }  # 코딩
+  agentic: { s: 14.2, z: -0.89, r: 36.6, estimated: true }  # 에이전트
+  trust: { s: 17.4, z: -0.33, r: 45.0, estimated: true }  # 신뢰성
+  multimodal: { s: 30.6, z: -1.96, r: 20.6, estimated: false }  # 멀티모달
+  long_context: { s: 12.5, z: -1.13, r: 33.1, estimated: true }  # 긴문맥
+  instruction: { s: 28.4, z: -1.01, r: 34.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 1.5 Flash-8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-03
-timestamp: 2026-09-03T00:00:00Z
+updated: 2026-09-05
+timestamp: 2026-09-05T00:00:00Z
 ---
 
 # Gemini 1.5 Flash-8B
 
-Google · Proprietary · Small(8B) · 컨텍스트 1M · 종합지능 **5.0** · ⚠️ past(구세대)
+Google · Proprietary · Small(8B) · 컨텍스트 1M · 종합지능 **1.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 코딩
-- **약점**: 지시 따르기, 멀티모달
+- **약점**: 긴문맥, 멀티모달
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 1M ctx`
@@ -43,14 +43,14 @@ Google · Proprietary · Small(8B) · 컨텍스트 1M · 종합지능 **5.0** ·
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 35.1 | -0.99 | 실측 | [[gpqa-diamond]] 36.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 전문 지식 | 35.0 | -1.0 | 실측 | [[gpqa-diamond]] 36.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 38.1 | -0.79 | 실측 | [[gpqa-diamond]] 36.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 43.7 | -0.42 | 실측 | [[scicode]] 23.0%×1.0 |
-| 에이전트 | 36.0 | -0.94 | 추정 | (추정) |
-| 신뢰성 | 44.2 | -0.39 | 추정 | (추정) |
-| 멀티모달 | 20.8 | -1.95 | 실측 | [[mmmu-pro]] 37.0%×1.0 |
-| 긴문맥 | 35.9 | -0.94 | 추정 | (추정) |
-| 지시 따르기 | 35.2 | -0.99 | 추정 | (추정) |
+| 코딩 | 38.7 | -0.75 | 추정 | (추정) |
+| 에이전트 | 36.6 | -0.89 | 추정 | (추정) |
+| 신뢰성 | 45.0 | -0.33 | 추정 | (추정) |
+| 멀티모달 | 20.6 | -1.96 | 실측 | [[mmmu-pro]] 37.0%×1.0 |
+| 긴문맥 | 33.1 | -1.13 | 추정 | (추정) |
+| 지시 따르기 | 34.9 | -1.01 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

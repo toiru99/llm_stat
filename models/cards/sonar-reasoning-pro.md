@@ -3,7 +3,7 @@ type: Model
 title: Sonar Reasoning Pro
 creator: Perplexity
 license: Proprietary
-intelligence_index: 18.0
+intelligence_index: 12.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 127000
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Sonar Reasoning Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-03
-timestamp: 2026-09-03T00:00:00Z
+updated: 2026-09-05
+timestamp: 2026-09-05T00:00:00Z
 ---
 
 # Sonar Reasoning Pro
 
-Perplexity · Proprietary · Unknown · 컨텍스트 127k · 종합지능 **18.0** · ⚠️ past(구세대)
+Perplexity · Proprietary · Unknown · 컨텍스트 127k · 종합지능 **12.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: —

@@ -3,7 +3,7 @@ type: Model
 title: o1-pro
 creator: OpenAI
 license: Proprietary
-intelligence_index: 19.0
+intelligence_index: 13.0
 price_blended_usd_1m: 195
 output_speed_tps: None
 context_window: 200000
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — o1-pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-03
-timestamp: 2026-09-03T00:00:00Z
+updated: 2026-09-05
+timestamp: 2026-09-05T00:00:00Z
 ---
 
 # o1-pro
 
-OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **19.0** · ⚠️ past(구세대)
+OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **13.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: —

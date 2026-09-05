@@ -3,7 +3,7 @@ type: Model
 title: Olmo 3 32B Think
 creator: Allen Institute for AI
 license: Open
-intelligence_index: 6.0
+intelligence_index: 1.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 65500
@@ -12,28 +12,28 @@ size_class: Small
 params_b: 32.2
 is_reasoning: true
 radar:
-  knowledge: { s: 28.8, z: -0.58, r: 41.3, estimated: false }  # 전문 지식
-  reasoning: { s: 22.9, z: -0.59, r: 41.2, estimated: false }  # 추론
-  coding: { s: 32.2, z: -0.62, r: 40.6, estimated: false }  # 코딩
-  agentic: { s: 1.5, z: -1.39, r: 29.1, estimated: false }  # 에이전트
-  trust: { s: 12.4, z: -0.58, r: 41.3, estimated: false }  # 신뢰성
+  knowledge: { s: 28.6, z: -0.59, r: 41.1, estimated: false }  # 전문 지식
+  reasoning: { s: 22.6, z: -0.6, r: 41.0, estimated: false }  # 추론
+  coding: { s: 3.0, z: -1.02, r: 34.8, estimated: false }  # 코딩
+  agentic: { s: 1.5, z: -1.38, r: 29.3, estimated: false }  # 에이전트
+  trust: { s: 12.4, z: -0.57, r: 41.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.53, r: 27.1, estimated: false }  # 긴문맥
-  instruction: { s: 52.1, z: -0.04, r: 49.5, estimated: false }  # 지시 따르기
+  long_context: { s: 0.0, z: -1.51, r: 27.3, estimated: false }  # 긴문맥
+  instruction: { s: 52.1, z: -0.02, r: 49.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Olmo 3 32B Think
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-03
-timestamp: 2026-09-03T00:00:00Z
+updated: 2026-09-05
+timestamp: 2026-09-05T00:00:00Z
 ---
 
 # Olmo 3 32B Think
 
-Allen Institute for AI · Open · Small(32.2B) · 컨텍스트 65k · 종합지능 **6.0** · ⚠️ past(구세대)
+Allen Institute for AI · Open · Small(32.2B) · 컨텍스트 65k · 종합지능 **1.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 지시 따르기, 전문 지식
+- **강점**: 지시 따르기, 신뢰성
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
@@ -43,14 +43,14 @@ Allen Institute for AI · Open · Small(32.2B) · 컨텍스트 65k · 종합지�
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 41.3 | -0.58 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 61.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
-| 추론 | 41.2 | -0.59 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 61.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 40.6 | -0.62 | 실측 | [[scicode]] 29.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 29.1 | -1.39 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 41.3 | -0.58 | 실측 | [[aa-omniscience]] 14.0%×1.0 |
+| 전문 지식 | 41.1 | -0.59 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 61.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 추론 | 41.0 | -0.6 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 61.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
+| 코딩 | 34.8 | -1.02 | 실측 | [[terminal-bench]] 2.0%×0.5 |
+| 에이전트 | 29.3 | -1.38 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 신뢰성 | 41.4 | -0.57 | 실측 | [[aa-omniscience]] 14.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 27.1 | -1.53 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 49.5 | -0.04 | 실측 | [[ifbench]] 49.0%×1.0 |
+| 긴문맥 | 27.3 | -1.51 | 실측 | [[aa-lcr]] 0.0%×1.0 |
+| 지시 따르기 | 49.7 | -0.02 | 실측 | [[ifbench]] 49.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

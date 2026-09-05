@@ -3,7 +3,7 @@ type: Model
 title: K-EXAONE
 creator: LG AI Research
 license: Open
-intelligence_index: 22.0
+intelligence_index: 16.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 256000
@@ -12,25 +12,25 @@ size_class: Large
 params_b: 236
 is_reasoning: true
 radar:
-  knowledge: { s: 36.8, z: -0.19, r: 47.2, estimated: false }  # 전문 지식
-  reasoning: { s: 35.2, z: 0.02, r: 50.3, estimated: false }  # 추론
-  coding: { s: 50.3, z: 0.14, r: 52.1, estimated: false }  # 코딩
-  agentic: { s: 39.0, z: 0.06, r: 50.9, estimated: false }  # 에이전트
-  trust: { s: 9.3, z: -0.73, r: 39.1, estimated: false }  # 신뢰성
+  knowledge: { s: 36.6, z: -0.21, r: 46.9, estimated: false }  # 전문 지식
+  reasoning: { s: 34.9, z: -0.01, r: 49.9, estimated: false }  # 추론
+  coding: { s: 34.8, z: 0.1, r: 51.5, estimated: false }  # 코딩
+  agentic: { s: 37.6, z: 0.0, r: 50.1, estimated: false }  # 에이전트
+  trust: { s: 9.3, z: -0.72, r: 39.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 71.1, z: 0.64, r: 59.5, estimated: false }  # 긴문맥
-  instruction: { s: 74.6, z: 0.91, r: 63.6, estimated: false }  # 지시 따르기
+  long_context: { s: 68.5, z: 0.6, r: 59.0, estimated: false }  # 긴문맥
+  instruction: { s: 74.6, z: 0.92, r: 63.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — K-EXAONE
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-03
-timestamp: 2026-09-03T00:00:00Z
+updated: 2026-09-05
+timestamp: 2026-09-05T00:00:00Z
 ---
 
 # K-EXAONE
 
-LG AI Research · Open · Large(236B) · 컨텍스트 256k · 종합지능 **22.0**
+LG AI Research · Open · Large(236B) · 컨텍스트 256k · 종합지능 **16.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 긴문맥
@@ -43,14 +43,14 @@ LG AI Research · Open · Large(236B) · 컨텍스트 256k · 종합지능 **22.
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 47.2 | -0.19 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 14.0%×0.3 |
-| 추론 | 50.3 | +0.02 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 14.0%×1.0 |
-| 코딩 | 52.1 | +0.14 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 23.0%×0.5 |
-| 에이전트 | 50.9 | +0.06 | 실측 | [[gdpval]] 5.0%×1.0, [[tau2-bench]] 74.0%×1.0, [[terminal-bench]] 23.0%×1.0 |
-| 신뢰성 | 39.1 | -0.73 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
+| 전문 지식 | 46.9 | -0.21 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 14.0%×0.3 |
+| 추론 | 49.9 | -0.01 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 14.0%×1.0 |
+| 코딩 | 51.5 | +0.1 | 실측 | [[terminal-bench]] 23.0%×0.5 |
+| 에이전트 | 50.1 | +0.0 | 실측 | [[gdpval]] 2.0%×1.0, [[tau2-bench]] 74.0%×1.0, [[terminal-bench]] 23.0%×1.0 |
+| 신뢰성 | 39.3 | -0.72 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 59.5 | +0.64 | 실측 | [[aa-lcr]] 59.0%×1.0 |
-| 지시 따르기 | 63.6 | +0.91 | 실측 | [[ifbench]] 65.0%×1.0 |
+| 긴문맥 | 59.0 | +0.6 | 실측 | [[aa-lcr]] 61.0%×1.0 |
+| 지시 따르기 | 63.9 | +0.92 | 실측 | [[ifbench]] 65.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

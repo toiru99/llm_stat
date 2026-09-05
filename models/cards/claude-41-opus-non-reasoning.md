@@ -3,7 +3,7 @@ type: Model
 title: Claude 4.1 Opus (Non-reasoning)
 creator: Anthropic
 license: Proprietary
-intelligence_index: 29.0
+intelligence_index: 22.0
 price_blended_usd_1m: 11.55
 output_speed_tps: None
 context_window: 200000
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 4.1 Opus (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-03
-timestamp: 2026-09-03T00:00:00Z
+updated: 2026-09-05
+timestamp: 2026-09-05T00:00:00Z
 ---
 
 # Claude 4.1 Opus (Non-reasoning)
 
-Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **29.0** · ⚠️ past(구세대)
+Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **22.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: —
 - **약점**: —
 
 ## 실용 지표
-`입력 $15.0 · 출력 $75.0 · 혼합 $11.55/1M · None t/s · TTFT Nones · 200k ctx` · 가성비 2.5
+`입력 $15.0 · 출력 $75.0 · 혼합 $11.55/1M · None t/s · TTFT Nones · 200k ctx` · 가성비 1.9
 
 ## 레이더 8축 (평균=50 기준선)
 
