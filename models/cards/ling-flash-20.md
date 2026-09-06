@@ -5,7 +5,7 @@ creator: InclusionAI
 license: Open
 intelligence_index: 4.0
 price_blended_usd_1m: 0.183
-output_speed_tps: 6.0
+output_speed_tps: 4.0
 context_window: 128000
 status: past
 size_class: Medium
@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 24.6, z: -0.5, r: 42.4, estimated: false }  # 추론
   coding: { s: 16.7, z: -0.54, r: 41.9, estimated: false }  # 코딩
   agentic: { s: 18.9, z: -0.71, r: 39.4, estimated: false }  # 에이전트
-  trust: { s: 9.3, z: -0.72, r: 39.3, estimated: false }  # 신뢰성
+  trust: { s: 9.3, z: -0.72, r: 39.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 20.2, z: -0.89, r: 36.7, estimated: false }  # 긴문맥
-  instruction: { s: 31.0, z: -0.9, r: 36.5, estimated: false }  # 지시 따르기
+  instruction: { s: 31.0, z: -0.91, r: 36.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Ling-flash-2.0
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # Ling-flash-2.0
@@ -37,7 +37,7 @@ InclusionAI · Open · Medium(103B) · 컨텍스트 128k · 종합지능 **4.0**
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.14 · 출력 $0.57 · 혼합 $0.183/1M · 6.0 t/s · TTFT 2.67s · 128k ctx` · 가성비 21.9
+`입력 $0.14 · 출력 $0.57 · 혼합 $0.183/1M · 4.0 t/s · TTFT 2.66s · 128k ctx` · 가성비 21.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,10 +47,10 @@ InclusionAI · Open · Medium(103B) · 컨텍스트 128k · 종합지능 **4.0**
 | 추론 | 42.4 | -0.5 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 66.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 41.9 | -0.54 | 실측 | [[terminal-bench]] 11.0%×0.5 |
 | 에이전트 | 39.4 | -0.71 | 실측 | [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
-| 신뢰성 | 39.3 | -0.72 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
+| 신뢰성 | 39.2 | -0.72 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 36.7 | -0.89 | 실측 | [[aa-lcr]] 18.0%×1.0 |
-| 지시 따르기 | 36.5 | -0.9 | 실측 | [[ifbench]] 34.0%×1.0 |
+| 지시 따르기 | 36.4 | -0.91 | 실측 | [[ifbench]] 34.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

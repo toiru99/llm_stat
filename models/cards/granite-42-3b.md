@@ -5,7 +5,7 @@ creator: IBM
 license: Open
 intelligence_index: 11.0
 price_blended_usd_1m: 0.0232
-output_speed_tps: 211.0
+output_speed_tps: 210.0
 context_window: 131000
 status: current
 size_class: Tiny
@@ -14,9 +14,9 @@ is_reasoning: true
 radar:
   knowledge: { s: 22.3, z: -0.9, r: 36.6, estimated: false }  # 전문 지식
   reasoning: { s: 21.3, z: -0.66, r: 40.1, estimated: false }  # 추론
-  coding: { s: 22.4, z: -0.34, r: 45.0, estimated: false }  # 코딩
+  coding: { s: 22.4, z: -0.34, r: 44.9, estimated: false }  # 코딩
   agentic: { s: 5.8, z: -1.21, r: 31.8, estimated: false }  # 에이전트
-  trust: { s: 74.2, z: 2.35, r: 85.3, estimated: false }  # 신뢰성
+  trust: { s: 74.2, z: 2.35, r: 85.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 27.0, z: -0.68, r: 39.8, estimated: false }  # 긴문맥
   instruction: { s: 29.0, z: -0.99, r: 35.2, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.2 3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # Granite 4.2 3B
@@ -37,7 +37,7 @@ IBM · Open · Tiny(3B) · 컨텍스트 131k · 종합지능 **11.0**
 - **약점**: 지시 따르기, 에이전트
 
 ## 실용 지표
-`입력 $0.03 · 출력 $0.12 · 혼합 $0.0232/1M · 211.0 t/s · TTFT 0.44s · 131k ctx` · 가성비 474.1
+`입력 $0.03 · 출력 $0.12 · 혼합 $0.0232/1M · 210.0 t/s · TTFT 0.43s · 131k ctx` · 가성비 474.1
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ IBM · Open · Tiny(3B) · 컨텍스트 131k · 종합지능 **11.0**
 |---|---|---|---|---|
 | 전문 지식 | 36.6 | -0.9 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 56.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
 | 추론 | 40.1 | -0.66 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 56.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
-| 코딩 | 45.0 | -0.34 | 실측 | [[scicode]] 25.0%×1.0 |
+| 코딩 | 44.9 | -0.34 | 실측 | [[scicode]] 25.0%×1.0 |
 | 에이전트 | 31.8 | -1.21 | 실측 | [[gdpval]] 0.0%×1.0, [[tau3-banking]] 6.0%×1.0 |
-| 신뢰성 | 85.3 | +2.35 | 실측 | [[aa-omniscience]] 74.0%×1.0 |
+| 신뢰성 | 85.2 | +2.35 | 실측 | [[aa-omniscience]] 74.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 39.8 | -0.68 | 실측 | [[aa-lcr]] 24.0%×1.0 |
 | 지시 따르기 | 35.2 | -0.99 | 추정 | (추정) |

@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 15.6, z: -1.22, r: 31.7, estimated: false }  # 전문 지식
   reasoning: { s: 14.5, z: -0.99, r: 35.2, estimated: false }  # 추론
-  coding: { s: 7.8, z: -0.85, r: 37.3, estimated: true }  # 코딩
+  coding: { s: 7.8, z: -0.85, r: 37.2, estimated: true }  # 코딩
   agentic: { s: 21.0, z: -0.63, r: 40.5, estimated: true }  # 에이전트
-  trust: { s: 19.9, z: -0.21, r: 46.8, estimated: true }  # 신뢰성
+  trust: { s: 19.9, z: -0.22, r: 46.7, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 15.6, z: -1.03, r: 34.6, estimated: true }  # 긴문맥
   instruction: { s: 30.6, z: -0.92, r: 36.2, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mixtral 8x7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # Mixtral 8x7B
@@ -45,9 +45,9 @@ Mistral · Open · Medium(46.7B) · 컨텍스트 32k · 종합지능 **1.0** · 
 |---|---|---|---|---|
 | 전문 지식 | 31.7 | -1.22 | 실측 | [[gpqa-diamond]] 29.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 35.2 | -0.99 | 실측 | [[gpqa-diamond]] 29.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 37.3 | -0.85 | 추정 | (추정) |
+| 코딩 | 37.2 | -0.85 | 추정 | (추정) |
 | 에이전트 | 40.5 | -0.63 | 추정 | (추정) |
-| 신뢰성 | 46.8 | -0.21 | 추정 | (추정) |
+| 신뢰성 | 46.7 | -0.22 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 34.6 | -1.03 | 추정 | (추정) |
 | 지시 따르기 | 36.2 | -0.92 | 추정 | (추정) |

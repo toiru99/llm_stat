@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 23.3, z: -0.85, r: 37.2, estimated: false }  # 전문 지식
   reasoning: { s: 23.3, z: -0.57, r: 41.5, estimated: false }  # 추론
-  coding: { s: 9.7, z: -0.78, r: 38.3, estimated: true }  # 코딩
+  coding: { s: 9.7, z: -0.78, r: 38.2, estimated: true }  # 코딩
   agentic: { s: 14.7, z: -0.87, r: 36.9, estimated: true }  # 에이전트
-  trust: { s: 25.7, z: 0.06, r: 50.9, estimated: true }  # 신뢰성
+  trust: { s: 25.7, z: 0.05, r: 50.8, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 10.5, z: -1.19, r: 32.2, estimated: true }  # 긴문맥
-  instruction: { s: 25.9, z: -1.11, r: 33.3, estimated: true }  # 지시 따르기
+  instruction: { s: 25.9, z: -1.12, r: 33.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-3.5 Turbo
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # GPT-3.5 Turbo
@@ -45,12 +45,12 @@ OpenAI · Proprietary · Unknown · 컨텍스트 4k · 종합지능 **1.0** · �
 |---|---|---|---|---|
 | 전문 지식 | 37.2 | -0.85 | 실측 | [[gpqa-diamond]] 30.0%×0.4 |
 | 추론 | 41.5 | -0.57 | 실측 | [[gpqa-diamond]] 30.0%×1.0 |
-| 코딩 | 38.3 | -0.78 | 추정 | (추정) |
+| 코딩 | 38.2 | -0.78 | 추정 | (추정) |
 | 에이전트 | 36.9 | -0.87 | 추정 | (추정) |
-| 신뢰성 | 50.9 | +0.06 | 추정 | (추정) |
+| 신뢰성 | 50.8 | +0.05 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 32.2 | -1.19 | 추정 | (추정) |
-| 지시 따르기 | 33.3 | -1.11 | 추정 | (추정) |
+| 지시 따르기 | 33.2 | -1.12 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

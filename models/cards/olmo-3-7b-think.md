@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 22.7, z: -0.88, r: 36.8, estimated: false }  # 전문 지식
   reasoning: { s: 19.2, z: -0.77, r: 38.5, estimated: false }  # 추론
-  coding: { s: 1.5, z: -1.07, r: 34.0, estimated: false }  # 코딩
+  coding: { s: 1.5, z: -1.07, r: 33.9, estimated: false }  # 코딩
   agentic: { s: 0.8, z: -1.41, r: 28.9, estimated: false }  # 에이전트
   trust: { s: 5.2, z: -0.91, r: 36.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.51, r: 27.3, estimated: false }  # 긴문맥
-  instruction: { s: 40.8, z: -0.49, r: 42.6, estimated: false }  # 지시 따르기
+  instruction: { s: 40.8, z: -0.5, r: 42.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Olmo 3 7B Think
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # Olmo 3 7B Think
@@ -45,12 +45,12 @@ Allen Institute for AI · Open · Small(7B) · 컨텍스트 65k · 종합지능 
 |---|---|---|---|---|
 | 전문 지식 | 36.8 | -0.88 | 실측 | [[aa-omniscience]] 11.0%×1.0, [[gpqa-diamond]] 52.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 38.5 | -0.77 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 52.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 34.0 | -1.07 | 실측 | [[terminal-bench]] 1.0%×0.5 |
+| 코딩 | 33.9 | -1.07 | 실측 | [[terminal-bench]] 1.0%×0.5 |
 | 에이전트 | 28.9 | -1.41 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
 | 신뢰성 | 36.3 | -0.91 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 27.3 | -1.51 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 42.6 | -0.49 | 실측 | [[ifbench]] 41.0%×1.0 |
+| 지시 따르기 | 42.6 | -0.5 | 실측 | [[ifbench]] 41.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

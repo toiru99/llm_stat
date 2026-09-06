@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 11.6, z: -1.13, r: 33.1, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.12, r: 33.2, estimated: false }  # 코딩
   agentic: { s: 0.0, z: -1.43, r: 28.5, estimated: false }  # 에이전트
-  trust: { s: 5.8, z: -0.88, r: 36.8, estimated: true }  # 신뢰성
+  trust: { s: 5.8, z: -0.88, r: 36.7, estimated: true }  # 신뢰성
   multimodal: { s: 13.9, z: -2.79, r: 8.2, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.51, r: 27.3, estimated: false }  # 긴문맥
   instruction: { s: 11.3, z: -1.73, r: 24.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Molmo 7B-D
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # Molmo 7B-D
@@ -47,7 +47,7 @@ Allen Institute for AI · Open · Small(8.02B) · 컨텍스트 4k · 종합지�
 | 추론 | 33.1 | -1.13 | 실측 | [[gpqa-diamond]] 24.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 33.2 | -1.12 | 실측 | [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 28.5 | -1.43 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 36.8 | -0.88 | 추정 | (추정) |
+| 신뢰성 | 36.7 | -0.88 | 추정 | (추정) |
 | 멀티모달 | 8.2 | -2.79 | 실측 | [[mmmu-pro]] 25.0%×1.0 |
 | 긴문맥 | 27.3 | -1.51 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 24.1 | -1.73 | 실측 | [[ifbench]] 20.0%×1.0 |

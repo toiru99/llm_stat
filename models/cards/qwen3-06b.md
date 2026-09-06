@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 8.3, z: -1.29, r: 30.7, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.12, r: 33.2, estimated: false }  # 코딩
   agentic: { s: 10.6, z: -1.03, r: 34.6, estimated: false }  # 에이전트
-  trust: { s: 7.2, z: -0.81, r: 37.8, estimated: false }  # 신뢰성
+  trust: { s: 7.2, z: -0.82, r: 37.8, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.51, r: 27.3, estimated: false }  # 긴문맥
   instruction: { s: 15.5, z: -1.55, r: 26.7, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 0.6B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # Qwen3 0.6B
@@ -47,7 +47,7 @@ Alibaba · Open · Tiny(0.752B) · 컨텍스트 32k · 종합지능 **1.0** · �
 | 추론 | 30.7 | -1.29 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 24.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 33.2 | -1.12 | 실측 | [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 34.6 | -1.03 | 실측 | [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 37.8 | -0.81 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 신뢰성 | 37.8 | -0.82 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 27.3 | -1.51 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 26.7 | -1.55 | 실측 | [[ifbench]] 23.0%×1.0 |

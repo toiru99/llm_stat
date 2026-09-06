@@ -19,13 +19,13 @@ radar:
   trust: { s: 27.8, z: 0.16, r: 52.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 64.0, z: 0.46, r: 56.9, estimated: false }  # 긴문맥
-  instruction: { s: 71.8, z: 0.81, r: 62.1, estimated: false }  # 지시 따르기
+  instruction: { s: 71.8, z: 0.8, r: 62.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — K2 Think V2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # K2 Think V2
@@ -50,7 +50,7 @@ MBZUAI Institute of Foundation Models · Open · Medium(70B) · 컨텍스트 262
 | 신뢰성 | 52.4 | +0.16 | 실측 | [[aa-omniscience]] 29.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 56.9 | +0.46 | 실측 | [[aa-lcr]] 57.0%×1.0 |
-| 지시 따르기 | 62.1 | +0.81 | 실측 | [[ifbench]] 63.0%×1.0 |
+| 지시 따르기 | 62.0 | +0.8 | 실측 | [[ifbench]] 63.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

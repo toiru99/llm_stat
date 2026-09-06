@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: 6.0
 price_blended_usd_1m: 0.2
-output_speed_tps: 90.0
+output_speed_tps: 92.0
 context_window: 256000
 status: current
 size_class: Small
@@ -19,13 +19,13 @@ radar:
   trust: { s: 5.2, z: -0.91, r: 36.3, estimated: false }  # 신뢰성
   multimodal: { s: 48.6, z: -1.07, r: 34.0, estimated: false }  # 멀티모달
   long_context: { s: 29.2, z: -0.61, r: 40.8, estimated: false }  # 긴문맥
-  instruction: { s: 28.2, z: -1.02, r: 34.7, estimated: false }  # 지시 따르기
+  instruction: { s: 28.2, z: -1.02, r: 34.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Ministral 3 14B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # Ministral 3 14B
@@ -37,7 +37,7 @@ Mistral · Open · Small(14B) · 컨텍스트 256k · 종합지능 **6.0**
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.2 · 혼합 $0.2/1M · 90.0 t/s · TTFT 0.93s · 256k ctx` · 가성비 30.0
+`입력 $0.2 · 출력 $0.2 · 혼합 $0.2/1M · 92.0 t/s · TTFT 0.91s · 256k ctx` · 가성비 30.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Mistral · Open · Small(14B) · 컨텍스트 256k · 종합지능 **6.0**
 | 신뢰성 | 36.3 | -0.91 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
 | 멀티모달 | 34.0 | -1.07 | 실측 | [[mmmu-pro]] 50.0%×1.0 |
 | 긴문맥 | 40.8 | -0.61 | 실측 | [[aa-lcr]] 26.0%×1.0 |
-| 지시 따르기 | 34.7 | -1.02 | 실측 | [[ifbench]] 32.0%×1.0 |
+| 지시 따르기 | 34.6 | -1.02 | 실측 | [[ifbench]] 32.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

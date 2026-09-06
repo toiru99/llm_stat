@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 22.1, z: -0.62, r: 40.6, estimated: false }  # 추론
   coding: { s: 10.7, z: -0.75, r: 38.8, estimated: true }  # 코딩
   agentic: { s: 13.1, z: -0.93, r: 36.0, estimated: true }  # 에이전트
-  trust: { s: 31.6, z: 0.34, r: 55.1, estimated: true }  # 신뢰성
+  trust: { s: 31.6, z: 0.33, r: 55.0, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 14.4, z: -1.07, r: 34.0, estimated: true }  # 긴문맥
-  instruction: { s: 25.5, z: -1.13, r: 33.0, estimated: true }  # 지시 따르기
+  instruction: { s: 25.5, z: -1.14, r: 33.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen1.5 Chat 110B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # Qwen1.5 Chat 110B
@@ -47,10 +47,10 @@ Alibaba · Open · Medium(110B) · 컨텍스트 32k · 종합지능 **1.0** · �
 | 추론 | 40.6 | -0.62 | 실측 | [[gpqa-diamond]] 29.0%×1.0 |
 | 코딩 | 38.8 | -0.75 | 추정 | (추정) |
 | 에이전트 | 36.0 | -0.93 | 추정 | (추정) |
-| 신뢰성 | 55.1 | +0.34 | 추정 | (추정) |
+| 신뢰성 | 55.0 | +0.33 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 34.0 | -1.07 | 추정 | (추정) |
-| 지시 따르기 | 33.0 | -1.13 | 추정 | (추정) |
+| 지시 따르기 | 33.0 | -1.14 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

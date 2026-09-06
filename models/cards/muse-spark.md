@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 77.4, z: 1.76, r: 76.4, estimated: false }  # 전문 지식
   reasoning: { s: 64.7, z: 1.43, r: 71.4, estimated: false }  # 추론
-  coding: { s: 68.2, z: 1.27, r: 69.0, estimated: false }  # 코딩
+  coding: { s: 68.2, z: 1.26, r: 68.8, estimated: false }  # 코딩
   agentic: { s: 69.0, z: 1.21, r: 68.1, estimated: false }  # 에이전트
-  trust: { s: 14.4, z: -0.47, r: 42.9, estimated: false }  # 신뢰성
+  trust: { s: 14.4, z: -0.48, r: 42.9, estimated: false }  # 신뢰성
   multimodal: { s: 91.7, z: 1.06, r: 66.0, estimated: false }  # 멀티모달
   long_context: { s: 87.6, z: 1.19, r: 67.8, estimated: false }  # 긴문맥
-  instruction: { s: 90.1, z: 1.57, r: 73.6, estimated: false }  # 지시 따르기
+  instruction: { s: 90.1, z: 1.56, r: 73.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Spark
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # Muse Spark
@@ -45,12 +45,12 @@ Meta · Proprietary · Unknown · 컨텍스트 262k · 종합지능 **36.0** · 
 |---|---|---|---|---|
 | 전문 지식 | 76.4 | +1.76 | 실측 | [[aa-omniscience]] 50.0%×1.0, [[gpqa-diamond]] 88.0%×0.4, [[humanitys-last-exam]] 41.0%×0.3 |
 | 추론 | 71.4 | +1.43 | 실측 | [[critpt]] 11.0%×1.0, [[gpqa-diamond]] 88.0%×1.0, [[humanitys-last-exam]] 41.0%×1.0 |
-| 코딩 | 69.0 | +1.27 | 실측 | [[terminal-bench]] 45.0%×0.5 |
+| 코딩 | 68.8 | +1.26 | 실측 | [[terminal-bench]] 45.0%×0.5 |
 | 에이전트 | 68.1 | +1.21 | 실측 | [[gdpval]] 29.0%×1.0, [[tau2-bench]] 92.0%×1.0, [[terminal-bench]] 45.0%×1.0 |
-| 신뢰성 | 42.9 | -0.47 | 실측 | [[aa-omniscience]] 16.0%×1.0 |
+| 신뢰성 | 42.9 | -0.48 | 실측 | [[aa-omniscience]] 16.0%×1.0 |
 | 멀티모달 | 66.0 | +1.06 | 실측 | [[mmmu-pro]] 81.0%×1.0 |
 | 긴문맥 | 67.8 | +1.19 | 실측 | [[aa-lcr]] 78.0%×1.0 |
-| 지시 따르기 | 73.6 | +1.57 | 실측 | [[ifbench]] 76.0%×1.0 |
+| 지시 따르기 | 73.4 | +1.56 | 실측 | [[ifbench]] 76.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

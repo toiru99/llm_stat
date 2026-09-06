@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: 3.0
 price_blended_usd_1m: 0.052
-output_speed_tps: 76.0
+output_speed_tps: 87.0
 context_window: 131000
 status: current
 size_class: Small
@@ -14,9 +14,9 @@ is_reasoning: true
 radar:
   knowledge: { s: 24.6, z: -0.79, r: 38.2, estimated: false }  # 전문 지식
   reasoning: { s: 20.5, z: -0.7, r: 39.5, estimated: false }  # 추론
-  coding: { s: 3.0, z: -1.02, r: 34.8, estimated: false }  # 코딩
+  coding: { s: 3.0, z: -1.02, r: 34.7, estimated: false }  # 코딩
   agentic: { s: 12.6, z: -0.95, r: 35.7, estimated: false }  # 에이전트
-  trust: { s: 39.2, z: 0.7, r: 60.5, estimated: false }  # 신뢰성
+  trust: { s: 39.2, z: 0.69, r: 60.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 25.8, z: -0.72, r: 39.3, estimated: false }  # 긴문맥
   instruction: { s: 22.5, z: -1.26, r: 31.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — NVIDIA Nemotron Nano 9B V2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # NVIDIA Nemotron Nano 9B V2
@@ -37,7 +37,7 @@ NVIDIA · Open · Small(9B) · 컨텍스트 131k · 종합지능 **3.0**
 - **약점**: 코딩, 지시 따르기
 
 ## 실용 지표
-`입력 $0.04 · 출력 $0.16 · 혼합 $0.052/1M · 76.0 t/s · TTFT 9.67s · 131k ctx` · 가성비 57.7
+`입력 $0.04 · 출력 $0.16 · 혼합 $0.052/1M · 87.0 t/s · TTFT 8.85s · 131k ctx` · 가성비 57.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ NVIDIA · Open · Small(9B) · 컨텍스트 131k · 종합지능 **3.0**
 |---|---|---|---|---|
 | 전문 지식 | 38.2 | -0.79 | 실측 | [[aa-omniscience]] 12.0%×1.0, [[gpqa-diamond]] 57.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 39.5 | -0.7 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 57.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 34.8 | -1.02 | 실측 | [[terminal-bench]] 2.0%×0.5 |
+| 코딩 | 34.7 | -1.02 | 실측 | [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 35.7 | -0.95 | 실측 | [[tau2-bench]] 22.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 60.5 | +0.7 | 실측 | [[aa-omniscience]] 40.0%×1.0 |
+| 신뢰성 | 60.4 | +0.69 | 실측 | [[aa-omniscience]] 40.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 39.3 | -0.72 | 실측 | [[aa-lcr]] 23.0%×1.0 |
 | 지시 따르기 | 31.1 | -1.26 | 실측 | [[ifbench]] 28.0%×1.0 |

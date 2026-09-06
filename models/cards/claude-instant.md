@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 16.0, z: -0.92, r: 36.2, estimated: false }  # 추론
   coding: { s: 0.2, z: -1.12, r: 33.2, estimated: true }  # 코딩
   agentic: { s: 2.7, z: -1.33, r: 30.0, estimated: true }  # 에이전트
-  trust: { s: 24.5, z: 0.01, r: 50.1, estimated: true }  # 신뢰성
+  trust: { s: 24.5, z: 0.0, r: 50.0, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 3.1, z: -1.42, r: 28.8, estimated: true }  # 긴문맥
   instruction: { s: 27.2, z: -1.06, r: 34.1, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Instant
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # Claude Instant
@@ -47,7 +47,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 100k · 종합지능 **1.0**
 | 추론 | 36.2 | -0.92 | 실측 | [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 33.2 | -1.12 | 추정 | (추정) |
 | 에이전트 | 30.0 | -1.33 | 추정 | (추정) |
-| 신뢰성 | 50.1 | +0.01 | 추정 | (추정) |
+| 신뢰성 | 50.0 | +0.0 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.8 | -1.42 | 추정 | (추정) |
 | 지시 따르기 | 34.1 | -1.06 | 추정 | (추정) |

@@ -5,7 +5,7 @@ creator: Kimi
 license: Open
 intelligence_index: 26.0
 price_blended_usd_1m: 0.79
-output_speed_tps: 106.0
+output_speed_tps: 96.0
 context_window: 256000
 status: past
 size_class: Large
@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 54.5, z: 0.65, r: 59.8, estimated: false }  # 전문 지식
   reasoning: { s: 45.0, z: 0.48, r: 57.2, estimated: false }  # 추론
-  coding: { s: 47.0, z: 0.52, r: 57.9, estimated: false }  # 코딩
+  coding: { s: 47.0, z: 0.52, r: 57.7, estimated: false }  # 코딩
   agentic: { s: 70.5, z: 1.26, r: 68.9, estimated: false }  # 에이전트
-  trust: { s: 22.7, z: -0.08, r: 48.8, estimated: false }  # 신뢰성
+  trust: { s: 22.7, z: -0.09, r: 48.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 80.9, z: 0.98, r: 64.7, estimated: false }  # 긴문맥
-  instruction: { s: 78.9, z: 1.1, r: 66.5, estimated: false }  # 지시 따르기
+  instruction: { s: 78.9, z: 1.09, r: 66.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2 Thinking
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # Kimi K2 Thinking
@@ -37,7 +37,7 @@ Kimi · Open · Large(1000B) · 컨텍스트 256k · 종합지능 **26.0** · �
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $0.6 · 출력 $2.5 · 혼합 $0.79/1M · 106.0 t/s · TTFT 1.37s · 256k ctx` · 가성비 32.9
+`입력 $0.6 · 출력 $2.5 · 혼합 $0.79/1M · 96.0 t/s · TTFT 1.38s · 256k ctx` · 가성비 32.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,12 +45,12 @@ Kimi · Open · Large(1000B) · 컨텍스트 256k · 종합지능 **26.0** · �
 |---|---|---|---|---|
 | 전문 지식 | 59.8 | +0.65 | 실측 | [[aa-omniscience]] 31.0%×1.0, [[gpqa-diamond]] 84.0%×0.4, [[humanitys-last-exam]] 24.0%×0.3 |
 | 추론 | 57.2 | +0.48 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 84.0%×1.0, [[humanitys-last-exam]] 24.0%×1.0 |
-| 코딩 | 57.9 | +0.52 | 실측 | [[terminal-bench]] 31.0%×0.5 |
+| 코딩 | 57.7 | +0.52 | 실측 | [[terminal-bench]] 31.0%×0.5 |
 | 에이전트 | 68.9 | +1.26 | 실측 | [[tau2-bench]] 93.0%×1.0, [[terminal-bench]] 31.0%×1.0 |
-| 신뢰성 | 48.8 | -0.08 | 실측 | [[aa-omniscience]] 24.0%×1.0 |
+| 신뢰성 | 48.7 | -0.09 | 실측 | [[aa-omniscience]] 24.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 64.7 | +0.98 | 실측 | [[aa-lcr]] 72.0%×1.0 |
-| 지시 따르기 | 66.5 | +1.1 | 실측 | [[ifbench]] 68.0%×1.0 |
+| 지시 따르기 | 66.4 | +1.09 | 실측 | [[ifbench]] 68.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 43.9, z: 0.14, r: 52.2, estimated: false }  # 전문 지식
   reasoning: { s: 44.5, z: 0.46, r: 56.9, estimated: false }  # 추론
-  coding: { s: 13.6, z: -0.64, r: 40.3, estimated: false }  # 코딩
+  coding: { s: 13.6, z: -0.65, r: 40.3, estimated: false }  # 코딩
   agentic: { s: 43.5, z: 0.23, r: 53.5, estimated: false }  # 에이전트
-  trust: { s: 32.0, z: 0.36, r: 55.3, estimated: false }  # 신뢰성
+  trust: { s: 32.0, z: 0.35, r: 55.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 43.8, z: -0.16, r: 47.6, estimated: false }  # 긴문맥
-  instruction: { s: 78.9, z: 1.1, r: 66.5, estimated: false }  # 지시 따르기
+  instruction: { s: 78.9, z: 1.09, r: 66.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — KAT-Coder-Pro V1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # KAT-Coder-Pro V1
@@ -45,12 +45,12 @@ KwaiKAT · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **22.0** 
 |---|---|---|---|---|
 | 전문 지식 | 52.2 | +0.14 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 76.0%×0.4, [[humanitys-last-exam]] 34.0%×0.3 |
 | 추론 | 56.9 | +0.46 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 34.0%×1.0 |
-| 코딩 | 40.3 | -0.64 | 실측 | [[terminal-bench]] 9.0%×0.5 |
+| 코딩 | 40.3 | -0.65 | 실측 | [[terminal-bench]] 9.0%×0.5 |
 | 에이전트 | 53.5 | +0.23 | 실측 | [[gdpval]] 17.0%×1.0, [[tau2-bench]] 89.0%×1.0, [[terminal-bench]] 9.0%×1.0 |
-| 신뢰성 | 55.3 | +0.36 | 실측 | [[aa-omniscience]] 33.0%×1.0 |
+| 신뢰성 | 55.3 | +0.35 | 실측 | [[aa-omniscience]] 33.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 47.6 | -0.16 | 실측 | [[aa-lcr]] 39.0%×1.0 |
-| 지시 따르기 | 66.5 | +1.1 | 실측 | [[ifbench]] 68.0%×1.0 |
+| 지시 따르기 | 66.4 | +1.09 | 실측 | [[ifbench]] 68.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -19,13 +19,13 @@ radar:
   trust: { s: 1.0, z: -1.11, r: 33.4, estimated: false }  # 신뢰성
   multimodal: { s: 40.3, z: -1.48, r: 27.8, estimated: false }  # 멀티모달
   long_context: { s: 15.7, z: -1.03, r: 34.6, estimated: false }  # 긴문맥
-  instruction: { s: 28.2, z: -1.02, r: 34.7, estimated: false }  # 지시 따르기
+  instruction: { s: 28.2, z: -1.02, r: 34.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 VL 4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # Qwen3 VL 4B
@@ -50,7 +50,7 @@ Alibaba · Open · Tiny(4.44B) · 컨텍스트 256k · 종합지능 **1.0** · �
 | 신뢰성 | 33.4 | -1.11 | 실측 | [[aa-omniscience]] 3.0%×1.0 |
 | 멀티모달 | 27.8 | -1.48 | 실측 | [[mmmu-pro]] 44.0%×1.0 |
 | 긴문맥 | 34.6 | -1.03 | 실측 | [[aa-lcr]] 14.0%×1.0 |
-| 지시 따르기 | 34.7 | -1.02 | 실측 | [[ifbench]] 32.0%×1.0 |
+| 지시 따르기 | 34.6 | -1.02 | 실측 | [[ifbench]] 32.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

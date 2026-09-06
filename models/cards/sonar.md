@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 25.0, z: -0.49, r: 42.7, estimated: false }  # 추론
   coding: { s: 13.0, z: -0.67, r: 40.0, estimated: true }  # 코딩
   agentic: { s: 26.8, z: -0.41, r: 43.9, estimated: true }  # 에이전트
-  trust: { s: 26.4, z: 0.09, r: 51.4, estimated: true }  # 신뢰성
+  trust: { s: 26.4, z: 0.09, r: 51.3, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 38.9, z: -0.31, r: 45.3, estimated: true }  # 긴문맥
-  instruction: { s: 39.1, z: -0.56, r: 41.6, estimated: true }  # 지시 따르기
+  instruction: { s: 41.6, z: -0.46, r: 43.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Sonar
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # Sonar
@@ -47,10 +47,10 @@ Perplexity · Proprietary · Unknown · 컨텍스트 127k · 종합지능 **4.0*
 | 추론 | 42.7 | -0.49 | 실측 | [[gpqa-diamond]] 47.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 40.0 | -0.67 | 추정 | (추정) |
 | 에이전트 | 43.9 | -0.41 | 추정 | (추정) |
-| 신뢰성 | 51.4 | +0.09 | 추정 | (추정) |
+| 신뢰성 | 51.3 | +0.09 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 45.3 | -0.31 | 추정 | (추정) |
-| 지시 따르기 | 41.6 | -0.56 | 추정 | (추정) |
+| 지시 따르기 | 43.1 | -0.46 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -18,14 +18,14 @@ radar:
   agentic: { s: 3.4, z: -1.3, r: 30.4, estimated: true }  # 에이전트
   trust: { s: 24.6, z: 0.01, r: 50.1, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 3.9, z: -1.39, r: 29.2, estimated: true }  # 긴문맥
+  long_context: { s: 3.9, z: -1.39, r: 29.1, estimated: true }  # 긴문맥
   instruction: { s: 26.6, z: -1.09, r: 33.7, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 2 Chat 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # Llama 2 Chat 70B
@@ -49,7 +49,7 @@ Meta · Open · Medium(70B) · 컨텍스트 4k · 종합지능 **1.0** · ⚠️
 | 에이전트 | 30.4 | -1.3 | 추정 | (추정) |
 | 신뢰성 | 50.1 | +0.01 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 29.2 | -1.39 | 추정 | (추정) |
+| 긴문맥 | 29.1 | -1.39 | 추정 | (추정) |
 | 지시 따르기 | 33.7 | -1.09 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

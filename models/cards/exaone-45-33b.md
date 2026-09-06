@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 36.6, z: -0.21, r: 46.9, estimated: false }  # 전문 지식
   reasoning: { s: 33.6, z: -0.07, r: 49.0, estimated: false }  # 추론
-  coding: { s: 30.3, z: -0.06, r: 49.1, estimated: false }  # 코딩
-  agentic: { s: 40.1, z: 0.1, r: 51.5, estimated: false }  # 에이전트
+  coding: { s: 30.3, z: -0.07, r: 49.0, estimated: false }  # 코딩
+  agentic: { s: 39.5, z: 0.08, r: 51.2, estimated: false }  # 에이전트
   trust: { s: 18.6, z: -0.28, r: 45.8, estimated: false }  # 신뢰성
   multimodal: { s: 72.2, z: 0.1, r: 51.5, estimated: false }  # 멀티모달
   long_context: { s: 61.8, z: 0.39, r: 55.9, estimated: false }  # 긴문맥
-  instruction: { s: 64.8, z: 0.51, r: 57.7, estimated: false }  # 지시 따르기
+  instruction: { s: 64.8, z: 0.5, r: 57.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — EXAONE 4.5 33B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # EXAONE 4.5 33B
@@ -45,12 +45,12 @@ LG AI Research · Open · Small(34.4B) · 컨텍스트 262k · 종합지능 **14
 |---|---|---|---|---|
 | 전문 지식 | 46.9 | -0.21 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 79.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
 | 추론 | 49.0 | -0.07 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 79.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
-| 코딩 | 49.1 | -0.06 | 실측 | [[terminal-bench]] 20.0%×0.5 |
-| 에이전트 | 51.5 | +0.1 | 실측 | [[gdpval]] 7.0%×1.0, [[tau2-bench]] 78.0%×1.0, [[terminal-bench]] 20.0%×1.0 |
+| 코딩 | 49.0 | -0.07 | 실측 | [[terminal-bench]] 20.0%×0.5 |
+| 에이전트 | 51.2 | +0.08 | 실측 | [[gdpval]] 6.0%×1.0, [[tau2-bench]] 78.0%×1.0, [[terminal-bench]] 20.0%×1.0 |
 | 신뢰성 | 45.8 | -0.28 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
 | 멀티모달 | 51.5 | +0.1 | 실측 | [[mmmu-pro]] 67.0%×1.0 |
 | 긴문맥 | 55.9 | +0.39 | 실측 | [[aa-lcr]] 55.0%×1.0 |
-| 지시 따르기 | 57.7 | +0.51 | 실측 | [[ifbench]] 58.0%×1.0 |
+| 지시 따르기 | 57.6 | +0.5 | 실측 | [[ifbench]] 58.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 11.0, z: -1.16, r: 32.6, estimated: false }  # 추론
   coding: { s: 0.4, z: -1.11, r: 33.3, estimated: true }  # 코딩
   agentic: { s: 3.9, z: -1.29, r: 30.7, estimated: true }  # 에이전트
-  trust: { s: 13.2, z: -0.53, r: 42.0, estimated: true }  # 신뢰성
+  trust: { s: 13.2, z: -0.54, r: 42.0, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 1.3, z: -1.47, r: 28.0, estimated: true }  # 긴문맥
   instruction: { s: 23.1, z: -1.23, r: 31.5, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 2 Chat 7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # Llama 2 Chat 7B
@@ -47,7 +47,7 @@ Meta · Open · Small(7B) · 컨텍스트 4k · 종합지능 **1.0** · ⚠️ p
 | 추론 | 32.6 | -1.16 | 실측 | [[gpqa-diamond]] 23.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 33.3 | -1.11 | 추정 | (추정) |
 | 에이전트 | 30.7 | -1.29 | 추정 | (추정) |
-| 신뢰성 | 42.0 | -0.53 | 추정 | (추정) |
+| 신뢰성 | 42.0 | -0.54 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.0 | -1.47 | 추정 | (추정) |
 | 지시 따르기 | 31.5 | -1.23 | 추정 | (추정) |

@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 31.0, z: -0.19, r: 47.1, estimated: false }  # 추론
   coding: { s: 16.7, z: -0.54, r: 41.9, estimated: false }  # 코딩
   agentic: { s: 42.7, z: 0.2, r: 53.0, estimated: false }  # 에이전트
-  trust: { s: 13.4, z: -0.52, r: 42.2, estimated: false }  # 신뢰성
+  trust: { s: 13.4, z: -0.52, r: 42.1, estimated: false }  # 신뢰성
   multimodal: { s: 58.3, z: -0.59, r: 41.2, estimated: false }  # 멀티모달
   long_context: { s: 23.6, z: -0.78, r: 38.2, estimated: false }  # 긴문맥
-  instruction: { s: 70.4, z: 0.75, r: 61.2, estimated: false }  # 지시 따르기
+  instruction: { s: 70.4, z: 0.74, r: 61.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Apriel-v1.5-15B-Thinker
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # Apriel-v1.5-15B-Thinker
@@ -47,10 +47,10 @@ ServiceNow · Open · Small(15B) · 컨텍스트 128k · 종합지능 **15.0** �
 | 추론 | 47.1 | -0.19 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 71.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
 | 코딩 | 41.9 | -0.54 | 실측 | [[terminal-bench]] 11.0%×0.5 |
 | 에이전트 | 53.0 | +0.2 | 실측 | [[tau2-bench]] 68.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
-| 신뢰성 | 42.2 | -0.52 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
+| 신뢰성 | 42.1 | -0.52 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
 | 멀티모달 | 41.2 | -0.59 | 실측 | [[mmmu-pro]] 57.0%×1.0 |
 | 긴문맥 | 38.2 | -0.78 | 실측 | [[aa-lcr]] 21.0%×1.0 |
-| 지시 따르기 | 61.2 | +0.75 | 실측 | [[ifbench]] 62.0%×1.0 |
+| 지시 따르기 | 61.1 | +0.74 | 실측 | [[ifbench]] 62.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

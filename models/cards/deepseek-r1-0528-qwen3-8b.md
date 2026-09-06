@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 26.0, z: -0.72, r: 39.2, estimated: false }  # 전문 지식
   reasoning: { s: 22.6, z: -0.6, r: 41.0, estimated: false }  # 추론
-  coding: { s: 3.0, z: -1.02, r: 34.8, estimated: false }  # 코딩
+  coding: { s: 3.0, z: -1.02, r: 34.7, estimated: false }  # 코딩
   agentic: { s: 1.5, z: -1.38, r: 29.3, estimated: false }  # 에이전트
   trust: { s: 12.4, z: -0.57, r: 41.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek R1 0528 Qwen3 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # DeepSeek R1 0528 Qwen3 8B
@@ -45,7 +45,7 @@ DeepSeek · Open · Small(8.19B) · 컨텍스트 32k · 종합지능 **5.0** · 
 |---|---|---|---|---|
 | 전문 지식 | 39.2 | -0.72 | 실측 | [[aa-omniscience]] 12.0%×1.0, [[gpqa-diamond]] 61.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 41.0 | -0.6 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 61.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 34.8 | -1.02 | 실측 | [[terminal-bench]] 2.0%×0.5 |
+| 코딩 | 34.7 | -1.02 | 실측 | [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 29.3 | -1.38 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | 41.4 | -0.57 | 실측 | [[aa-omniscience]] 14.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

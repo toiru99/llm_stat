@@ -5,7 +5,7 @@ creator: Cohere
 license: Open
 intelligence_index: 2.0
 price_blended_usd_1m: 3.25
-output_speed_tps: 59.0
+output_speed_tps: 64.0
 context_window: 256000
 status: current
 size_class: Medium
@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 26.7, z: -0.68, r: 39.7, estimated: false }  # 전문 지식
   reasoning: { s: 18.4, z: -0.8, r: 38.0, estimated: false }  # 추론
-  coding: { s: 1.5, z: -1.07, r: 34.0, estimated: false }  # 코딩
+  coding: { s: 1.5, z: -1.07, r: 33.9, estimated: false }  # 코딩
   agentic: { s: 8.3, z: -1.12, r: 33.3, estimated: false }  # 에이전트
   trust: { s: 21.6, z: -0.13, r: 48.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Command A
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # Command A
@@ -37,7 +37,7 @@ Cohere · Open · Medium(111B) · 컨텍스트 256k · 종합지능 **2.0**
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $2.5 · 출력 $10.0 · 혼합 $3.25/1M · 59.0 t/s · TTFT 1.62s · 256k ctx` · 가성비 0.6
+`입력 $2.5 · 출력 $10.0 · 혼합 $3.25/1M · 64.0 t/s · TTFT 1.59s · 256k ctx` · 가성비 0.6
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ Cohere · Open · Medium(111B) · 컨텍스트 256k · 종합지능 **2.0**
 |---|---|---|---|---|
 | 전문 지식 | 39.7 | -0.68 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 53.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 38.0 | -0.8 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 53.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 34.0 | -1.07 | 실측 | [[terminal-bench]] 1.0%×0.5 |
+| 코딩 | 33.9 | -1.07 | 실측 | [[terminal-bench]] 1.0%×0.5 |
 | 에이전트 | 33.3 | -1.12 | 실측 | [[tau2-bench]] 15.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
 | 신뢰성 | 48.0 | -0.13 | 실측 | [[aa-omniscience]] 23.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

@@ -5,7 +5,7 @@ creator: DeepSeek
 license: Open
 intelligence_index: 4.0
 price_blended_usd_1m: 0.74
-output_speed_tps: 24.0
+output_speed_tps: 20.0
 context_window: 128000
 status: past
 size_class: Medium
@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 26.1, z: -0.71, r: 39.3, estimated: false }  # 전문 지식
   reasoning: { s: 13.9, z: -1.02, r: 34.7, estimated: false }  # 추론
-  coding: { s: 3.0, z: -1.02, r: 34.8, estimated: false }  # 코딩
+  coding: { s: 3.0, z: -1.02, r: 34.7, estimated: false }  # 코딩
   agentic: { s: 12.6, z: -0.95, r: 35.7, estimated: false }  # 에이전트
   trust: { s: 17.5, z: -0.33, r: 45.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek R1 Distill Llama 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # DeepSeek R1 Distill Llama 70B
@@ -37,7 +37,7 @@ DeepSeek · Open · Medium(70B) · 컨텍스트 128k · 종합지능 **4.0** · 
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.7 · 출력 $1.1 · 혼합 $0.74/1M · 24.0 t/s · TTFT 1.23s · 128k ctx` · 가성비 5.4
+`입력 $0.7 · 출력 $1.1 · 혼합 $0.74/1M · 20.0 t/s · TTFT 1.51s · 128k ctx` · 가성비 5.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ DeepSeek · Open · Medium(70B) · 컨텍스트 128k · 종합지능 **4.0** · 
 |---|---|---|---|---|
 | 전문 지식 | 39.3 | -0.71 | 실측 | [[aa-omniscience]] 19.0%×1.0, [[gpqa-diamond]] 40.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 34.7 | -1.02 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 40.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 34.8 | -1.02 | 실측 | [[terminal-bench]] 2.0%×0.5 |
+| 코딩 | 34.7 | -1.02 | 실측 | [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 35.7 | -0.95 | 실측 | [[tau2-bench]] 22.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | 45.1 | -0.33 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

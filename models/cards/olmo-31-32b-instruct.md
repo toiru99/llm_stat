@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 19.4, z: -0.76, r: 38.7, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.12, r: 33.2, estimated: false }  # 코딩
   agentic: { s: 10.6, z: -1.03, r: 34.6, estimated: false }  # 에이전트
-  trust: { s: 25.8, z: 0.06, r: 51.0, estimated: false }  # 신뢰성
+  trust: { s: 25.8, z: 0.06, r: 50.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.51, r: 27.3, estimated: false }  # 긴문맥
-  instruction: { s: 38.0, z: -0.61, r: 40.9, estimated: false }  # 지시 따르기
+  instruction: { s: 38.0, z: -0.61, r: 40.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Olmo 3.1 32B Instruct
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # Olmo 3.1 32B Instruct
@@ -47,10 +47,10 @@ Allen Institute for AI · Open · Small(32.2B) · 컨텍스트 65k · 종합지�
 | 추론 | 38.7 | -0.76 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 54.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 33.2 | -1.12 | 실측 | [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 34.6 | -1.03 | 실측 | [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 51.0 | +0.06 | 실측 | [[aa-omniscience]] 27.0%×1.0 |
+| 신뢰성 | 50.9 | +0.06 | 실측 | [[aa-omniscience]] 27.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 27.3 | -1.51 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 40.9 | -0.61 | 실측 | [[ifbench]] 39.0%×1.0 |
+| 지시 따르기 | 40.8 | -0.61 | 실측 | [[ifbench]] 39.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -13,7 +13,7 @@ params_b: 3.35
 is_reasoning: false
 radar:
   knowledge: { s: 12.2, z: -1.38, r: 29.3, estimated: false }  # 전문 지식
-  reasoning: { s: 10.4, z: -1.19, r: 32.2, estimated: false }  # 추론
+  reasoning: { s: 10.4, z: -1.18, r: 32.2, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.12, r: 33.2, estimated: false }  # 코딩
   agentic: { s: 0.0, z: -1.43, r: 28.5, estimated: false }  # 에이전트
   trust: { s: 2.1, z: -1.06, r: 34.1, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Tiny Aya Global
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # Tiny Aya Global
@@ -44,7 +44,7 @@ Cohere · Open · Tiny(3.35B) · 컨텍스트 8k · 종합지능 **1.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 29.3 | -1.38 | 실측 | [[aa-omniscience]] 6.0%×1.0, [[gpqa-diamond]] 31.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 32.2 | -1.19 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 31.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 추론 | 32.2 | -1.18 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 31.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 33.2 | -1.12 | 실측 | [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 28.5 | -1.43 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | 34.1 | -1.06 | 실측 | [[aa-omniscience]] 4.0%×1.0 |

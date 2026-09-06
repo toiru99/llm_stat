@@ -3,9 +3,9 @@ type: Model
 title: Mistral Large 3
 creator: Mistral
 license: Open
-intelligence_index: 10.0
+intelligence_index: 11.0
 price_blended_usd_1m: 0.6
-output_speed_tps: 76.0
+output_speed_tps: 78.0
 context_window: 256000
 status: current
 size_class: Large
@@ -14,8 +14,8 @@ is_reasoning: false
 radar:
   knowledge: { s: 38.7, z: -0.11, r: 48.4, estimated: false }  # 전문 지식
   reasoning: { s: 24.2, z: -0.52, r: 42.2, estimated: false }  # 추론
-  coding: { s: 39.4, z: 0.26, r: 53.9, estimated: false }  # 코딩
-  agentic: { s: 17.2, z: -0.77, r: 38.4, estimated: false }  # 에이전트
+  coding: { s: 39.4, z: 0.25, r: 53.8, estimated: false }  # 코딩
+  agentic: { s: 16.8, z: -0.79, r: 38.2, estimated: false }  # 에이전트
   trust: { s: 12.4, z: -0.57, r: 41.4, estimated: false }  # 신뢰성
   multimodal: { s: 56.9, z: -0.65, r: 40.2, estimated: false }  # 멀티모달
   long_context: { s: 40.4, z: -0.27, r: 46.0, estimated: false }  # 긴문맥
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Large 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # Mistral Large 3
 
-Mistral · Open · Large(675B) · 컨텍스트 256k · 종합지능 **10.0**
+Mistral · Open · Large(675B) · 컨텍스트 256k · 종합지능 **11.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 코딩, 전문 지식
 - **약점**: 에이전트, 지시 따르기
 
 ## 실용 지표
-`입력 $0.5 · 출력 $1.5 · 혼합 $0.6/1M · 76.0 t/s · TTFT 1.17s · 256k ctx` · 가성비 16.7
+`입력 $0.5 · 출력 $1.5 · 혼합 $0.6/1M · 78.0 t/s · TTFT 1.06s · 256k ctx` · 가성비 18.3
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,8 +45,8 @@ Mistral · Open · Large(675B) · 컨텍스트 256k · 종합지능 **10.0**
 |---|---|---|---|---|
 | 전문 지식 | 48.4 | -0.11 | 실측 | [[aa-omniscience]] 25.0%×1.0, [[gpqa-diamond]] 68.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 42.2 | -0.52 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 68.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 53.9 | +0.26 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 16.0%×0.5 |
-| 에이전트 | 38.4 | -0.77 | 실측 | [[gdpval]] 5.0%×1.0, [[tau2-bench]] 25.0%×1.0, [[tau3-banking]] 6.0%×1.0, [[terminal-bench]] 16.0%×1.0 |
+| 코딩 | 53.8 | +0.25 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 16.0%×0.5 |
+| 에이전트 | 38.2 | -0.79 | 실측 | [[gdpval]] 4.0%×1.0, [[tau2-bench]] 25.0%×1.0, [[tau3-banking]] 6.0%×1.0, [[terminal-bench]] 16.0%×1.0 |
 | 신뢰성 | 41.4 | -0.57 | 실측 | [[aa-omniscience]] 14.0%×1.0 |
 | 멀티모달 | 40.2 | -0.65 | 실측 | [[mmmu-pro]] 56.0%×1.0 |
 | 긴문맥 | 46.0 | -0.27 | 실측 | [[aa-lcr]] 36.0%×1.0 |

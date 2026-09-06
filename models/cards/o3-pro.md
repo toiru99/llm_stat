@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 87.2, z: 2.23, r: 83.5, estimated: false }  # 전문 지식
   reasoning: { s: 87.2, z: 2.51, r: 87.7, estimated: false }  # 추론
-  coding: { s: 87.6, z: 1.95, r: 79.3, estimated: true }  # 코딩
-  agentic: { s: 81.7, z: 1.69, r: 75.4, estimated: true }  # 에이전트
-  trust: { s: 13.0, z: -0.54, r: 41.9, estimated: true }  # 신뢰성
+  coding: { s: 87.6, z: 1.94, r: 79.0, estimated: true }  # 코딩
+  agentic: { s: 81.6, z: 1.69, r: 75.4, estimated: true }  # 에이전트
+  trust: { s: 13.0, z: -0.54, r: 41.8, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 92.6, z: 1.34, r: 70.1, estimated: true }  # 긴문맥
-  instruction: { s: 83.9, z: 1.31, r: 69.7, estimated: true }  # 지시 따르기
+  instruction: { s: 83.9, z: 1.3, r: 69.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — o3-pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-05
-timestamp: 2026-09-05T00:00:00Z
+updated: 2026-09-06
+timestamp: 2026-09-06T00:00:00Z
 ---
 
 # o3-pro
@@ -45,12 +45,12 @@ OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **26.0** �
 |---|---|---|---|---|
 | 전문 지식 | 83.5 | +2.23 | 실측 | [[gpqa-diamond]] 85.0%×0.4 |
 | 추론 | 87.7 | +2.51 | 실측 | [[gpqa-diamond]] 85.0%×1.0 |
-| 코딩 | 79.3 | +1.95 | 추정 | (추정) |
+| 코딩 | 79.0 | +1.94 | 추정 | (추정) |
 | 에이전트 | 75.4 | +1.69 | 추정 | (추정) |
-| 신뢰성 | 41.9 | -0.54 | 추정 | (추정) |
+| 신뢰성 | 41.8 | -0.54 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 70.1 | +1.34 | 추정 | (추정) |
-| 지시 따르기 | 69.7 | +1.31 | 추정 | (추정) |
+| 지시 따르기 | 69.5 | +1.3 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
