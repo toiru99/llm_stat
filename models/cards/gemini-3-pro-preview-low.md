@@ -3,7 +3,7 @@ type: Model
 title: Gemini 3 Pro Preview (low)
 creator: Google
 license: Proprietary
-intelligence_index: 26.0
+intelligence_index: 22.0
 price_blended_usd_1m: 1.74
 output_speed_tps: None
 context_window: 1000000
@@ -14,9 +14,9 @@ is_reasoning: true
 radar:
   knowledge: { s: 72.3, z: 1.51, r: 72.7, estimated: false }  # 전문 지식
   reasoning: { s: 46.7, z: 0.56, r: 58.4, estimated: false }  # 추론
-  coding: { s: 51.5, z: 0.67, r: 60.1, estimated: false }  # 코딩
-  agentic: { s: 60.1, z: 0.87, r: 63.0, estimated: false }  # 에이전트
-  trust: { s: 8.2, z: -0.77, r: 38.5, estimated: false }  # 신뢰성
+  coding: { s: 51.5, z: 0.63, r: 59.5, estimated: false }  # 코딩
+  agentic: { s: 60.1, z: 0.86, r: 62.9, estimated: false }  # 에이전트
+  trust: { s: 8.2, z: -0.78, r: 38.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 83.1, z: 1.05, r: 65.7, estimated: false }  # 긴문맥
   instruction: { s: 53.5, z: 0.03, r: 50.5, estimated: false }  # 지시 따르기
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3 Pro Preview (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-06
-timestamp: 2026-09-06T00:00:00Z
+updated: 2026-09-08
+timestamp: 2026-09-08T00:00:00Z
 ---
 
 # Gemini 3 Pro Preview (low)
 
-Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **26.0** · ⚠️ past(구세대)
+Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **22.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 전문 지식, 긴문맥
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $2.0 · 출력 $12.0 · 혼합 $1.74/1M · None t/s · TTFT Nones · 1M ctx` · 가성비 14.9
+`입력 $2.0 · 출력 $12.0 · 혼합 $1.74/1M · None t/s · TTFT Nones · 1M ctx` · 가성비 12.6
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **26.0** · 
 |---|---|---|---|---|
 | 전문 지식 | 72.7 | +1.51 | 실측 | [[aa-omniscience]] 48.0%×1.0, [[gpqa-diamond]] 89.0%×0.4, [[humanitys-last-exam]] 29.0%×0.3 |
 | 추론 | 58.4 | +0.56 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 89.0%×1.0, [[humanitys-last-exam]] 29.0%×1.0 |
-| 코딩 | 60.1 | +0.67 | 실측 | [[terminal-bench]] 34.0%×0.5 |
-| 에이전트 | 63.0 | +0.87 | 실측 | [[tau2-bench]] 68.0%×1.0, [[terminal-bench]] 34.0%×1.0 |
-| 신뢰성 | 38.5 | -0.77 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
+| 코딩 | 59.5 | +0.63 | 실측 | [[terminal-bench]] 34.0%×0.5 |
+| 에이전트 | 62.9 | +0.86 | 실측 | [[tau2-bench]] 68.0%×1.0, [[terminal-bench]] 34.0%×1.0 |
+| 신뢰성 | 38.3 | -0.78 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 65.7 | +1.05 | 실측 | [[aa-lcr]] 74.0%×1.0 |
 | 지시 따르기 | 50.5 | +0.03 | 실측 | [[ifbench]] 50.0%×1.0 |

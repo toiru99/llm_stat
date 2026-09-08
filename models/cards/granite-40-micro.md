@@ -3,7 +3,7 @@ type: Model
 title: Granite 4.0 Micro
 creator: IBM
 license: Open
-intelligence_index: 1.0
+intelligence_index: 5.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
@@ -14,23 +14,23 @@ is_reasoning: false
 radar:
   knowledge: { s: 15.7, z: -1.22, r: 31.8, estimated: false }  # 전문 지식
   reasoning: { s: 11.6, z: -1.13, r: 33.1, estimated: false }  # 추론
-  coding: { s: 3.0, z: -1.02, r: 34.7, estimated: false }  # 코딩
+  coding: { s: 3.0, z: -1.05, r: 34.3, estimated: false }  # 코딩
   agentic: { s: 8.1, z: -1.13, r: 33.1, estimated: false }  # 에이전트
-  trust: { s: 2.1, z: -1.06, r: 34.1, estimated: false }  # 신뢰성
+  trust: { s: 2.1, z: -1.07, r: 33.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 7.9, z: -1.27, r: 31.0, estimated: false }  # 긴문맥
-  instruction: { s: 18.3, z: -1.44, r: 28.5, estimated: false }  # 지시 따르기
+  long_context: { s: 7.9, z: -1.26, r: 31.0, estimated: false }  # 긴문맥
+  instruction: { s: 18.3, z: -1.43, r: 28.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.0 Micro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-06
-timestamp: 2026-09-06T00:00:00Z
+updated: 2026-09-08
+timestamp: 2026-09-08T00:00:00Z
 ---
 
 # Granite 4.0 Micro
 
-IBM · Open · Tiny(3B) · 컨텍스트 128k · 종합지능 **1.0**
+IBM · Open · Tiny(3B) · 컨텍스트 128k · 종합지능 **5.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 코딩, 신뢰성
@@ -45,12 +45,12 @@ IBM · Open · Tiny(3B) · 컨텍스트 128k · 종합지능 **1.0**
 |---|---|---|---|---|
 | 전문 지식 | 31.8 | -1.22 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 34.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 33.1 | -1.13 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 34.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 34.7 | -1.02 | 실측 | [[terminal-bench]] 2.0%×0.5 |
+| 코딩 | 34.3 | -1.05 | 실측 | [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 33.1 | -1.13 | 실측 | [[tau2-bench]] 13.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 34.1 | -1.06 | 실측 | [[aa-omniscience]] 4.0%×1.0 |
+| 신뢰성 | 33.9 | -1.07 | 실측 | [[aa-omniscience]] 4.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 31.0 | -1.27 | 실측 | [[aa-lcr]] 7.0%×1.0 |
-| 지시 따르기 | 28.5 | -1.44 | 실측 | [[ifbench]] 25.0%×1.0 |
+| 긴문맥 | 31.0 | -1.26 | 실측 | [[aa-lcr]] 7.0%×1.0 |
+| 지시 따르기 | 28.5 | -1.43 | 실측 | [[ifbench]] 25.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

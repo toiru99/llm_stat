@@ -3,7 +3,7 @@ type: Model
 title: DBRX
 creator: Databricks
 license: Open
-intelligence_index: 1.0
+intelligence_index: 5.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 32800
@@ -14,23 +14,23 @@ is_reasoning: false
 radar:
   knowledge: { s: 16.8, z: -1.16, r: 32.5, estimated: false }  # 전문 지식
   reasoning: { s: 15.1, z: -0.96, r: 35.6, estimated: false }  # 추론
-  coding: { s: 3.9, z: -0.99, r: 35.2, estimated: true }  # 코딩
-  agentic: { s: 20.3, z: -0.66, r: 40.1, estimated: true }  # 에이전트
-  trust: { s: 30.2, z: 0.27, r: 54.0, estimated: true }  # 신뢰성
+  coding: { s: 3.9, z: -1.02, r: 34.7, estimated: true }  # 코딩
+  agentic: { s: 20.0, z: -0.67, r: 39.9, estimated: true }  # 에이전트
+  trust: { s: 30.2, z: 0.25, r: 53.8, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 18.3, z: -0.95, r: 35.8, estimated: true }  # 긴문맥
+  long_context: { s: 18.3, z: -0.94, r: 35.8, estimated: true }  # 긴문맥
   instruction: { s: 29.5, z: -0.97, r: 35.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DBRX
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-06
-timestamp: 2026-09-06T00:00:00Z
+updated: 2026-09-08
+timestamp: 2026-09-08T00:00:00Z
 ---
 
 # DBRX
 
-Databricks · Open · Medium(132B) · 컨텍스트 32k · 종합지능 **1.0** · ⚠️ past(구세대)
+Databricks · Open · Medium(132B) · 컨텍스트 32k · 종합지능 **5.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 에이전트
@@ -45,11 +45,11 @@ Databricks · Open · Medium(132B) · 컨텍스트 32k · 종합지능 **1.0** �
 |---|---|---|---|---|
 | 전문 지식 | 32.5 | -1.16 | 실측 | [[gpqa-diamond]] 33.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
 | 추론 | 35.6 | -0.96 | 실측 | [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
-| 코딩 | 35.2 | -0.99 | 추정 | (추정) |
-| 에이전트 | 40.1 | -0.66 | 추정 | (추정) |
-| 신뢰성 | 54.0 | +0.27 | 추정 | (추정) |
+| 코딩 | 34.7 | -1.02 | 추정 | (추정) |
+| 에이전트 | 39.9 | -0.67 | 추정 | (추정) |
+| 신뢰성 | 53.8 | +0.25 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 35.8 | -0.95 | 추정 | (추정) |
+| 긴문맥 | 35.8 | -0.94 | 추정 | (추정) |
 | 지시 따르기 | 35.5 | -0.97 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

@@ -3,7 +3,7 @@ type: Model
 title: GPT-5 (ChatGPT)
 creator: OpenAI
 license: Proprietary
-intelligence_index: 9.0
+intelligence_index: 10.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 43.6, z: 0.13, r: 52.0, estimated: false }  # 전문 지식
   reasoning: { s: 39.5, z: 0.21, r: 53.2, estimated: false }  # 추론
-  coding: { s: 19.7, z: -0.44, r: 43.5, estimated: false }  # 코딩
+  coding: { s: 19.7, z: -0.47, r: 42.9, estimated: false }  # 코딩
   agentic: { s: 9.8, z: -1.06, r: 34.1, estimated: false }  # 에이전트
-  trust: { s: 11.1, z: -0.63, r: 40.5, estimated: true }  # 신뢰성
+  trust: { s: 17.9, z: -0.32, r: 45.2, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 73.0, z: 0.74, r: 61.1, estimated: false }  # 긴문맥
   instruction: { s: 46.5, z: -0.26, r: 46.1, estimated: false }  # 지시 따르기
@@ -24,17 +24,17 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5 (ChatGPT)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-06
-timestamp: 2026-09-06T00:00:00Z
+updated: 2026-09-08
+timestamp: 2026-09-08T00:00:00Z
 ---
 
 # GPT-5 (ChatGPT)
 
-OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **9.0** · ⚠️ past(구세대)
+OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **10.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 추론
-- **약점**: 신뢰성, 에이전트
+- **약점**: 코딩, 에이전트
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 128k ctx`
@@ -45,9 +45,9 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **9.0** ·
 |---|---|---|---|---|
 | 전문 지식 | 52.0 | +0.13 | 실측 | [[gpqa-diamond]] 69.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
 | 추론 | 53.2 | +0.21 | 실측 | [[gpqa-diamond]] 69.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
-| 코딩 | 43.5 | -0.44 | 실측 | [[terminal-bench]] 13.0%×0.5 |
+| 코딩 | 42.9 | -0.47 | 실측 | [[terminal-bench]] 13.0%×0.5 |
 | 에이전트 | 34.1 | -1.06 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 13.0%×1.0 |
-| 신뢰성 | 40.5 | -0.63 | 추정 | (추정) |
+| 신뢰성 | 45.2 | -0.32 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 61.1 | +0.74 | 실측 | [[aa-lcr]] 65.0%×1.0 |
 | 지시 따르기 | 46.1 | -0.26 | 실측 | [[ifbench]] 45.0%×1.0 |

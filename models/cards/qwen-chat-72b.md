@@ -3,7 +3,7 @@ type: Model
 title: Qwen Chat 72B
 creator: Alibaba
 license: Open
-intelligence_index: 1.0
+intelligence_index: 5.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 33800
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen Chat 72B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-06
-timestamp: 2026-09-06T00:00:00Z
+updated: 2026-09-08
+timestamp: 2026-09-08T00:00:00Z
 ---
 
 # Qwen Chat 72B
 
-Alibaba · Open · Medium(72B) · 컨텍스트 33k · 종합지능 **1.0** · ⚠️ past(구세대)
+Alibaba · Open · Medium(72B) · 컨텍스트 33k · 종합지능 **5.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: —

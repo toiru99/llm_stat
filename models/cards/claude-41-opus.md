@@ -3,7 +3,7 @@ type: Model
 title: Claude 4.1 Opus
 creator: Anthropic
 license: Proprietary
-intelligence_index: 27.0
+intelligence_index: 23.0
 price_blended_usd_1m: 11.55
 output_speed_tps: None
 context_window: 200000
@@ -14,9 +14,9 @@ is_reasoning: true
 radar:
   knowledge: { s: 55.3, z: 0.69, r: 60.4, estimated: false }  # 전문 지식
   reasoning: { s: 33.8, z: -0.06, r: 49.1, estimated: false }  # 추론
-  coding: { s: 51.5, z: 0.67, r: 60.1, estimated: false }  # 코딩
-  agentic: { s: 61.6, z: 0.92, r: 63.9, estimated: false }  # 에이전트
-  trust: { s: 46.7, z: 1.05, r: 65.7, estimated: true }  # 신뢰성
+  coding: { s: 51.5, z: 0.63, r: 59.5, estimated: false }  # 코딩
+  agentic: { s: 61.6, z: 0.92, r: 63.8, estimated: false }  # 에이전트
+  trust: { s: 44.3, z: 0.92, r: 63.8, estimated: true }  # 신뢰성
   multimodal: { s: 73.6, z: 0.17, r: 52.6, estimated: false }  # 멀티모달
   long_context: { s: 85.4, z: 1.12, r: 66.8, estimated: false }  # 긴문맥
   instruction: { s: 60.6, z: 0.33, r: 54.9, estimated: false }  # 지시 따르기
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 4.1 Opus
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-06
-timestamp: 2026-09-06T00:00:00Z
+updated: 2026-09-08
+timestamp: 2026-09-08T00:00:00Z
 ---
 
 # Claude 4.1 Opus
 
-Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **27.0** · ⚠️ past(구세대)
+Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **23.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 긴문맥, 신뢰성
+- **강점**: 긴문맥, 에이전트
 - **약점**: 멀티모달, 추론
 
 ## 실용 지표
-`입력 $15.0 · 출력 $75.0 · 혼합 $11.55/1M · None t/s · TTFT Nones · 200k ctx` · 가성비 2.3
+`입력 $15.0 · 출력 $75.0 · 혼합 $11.55/1M · None t/s · TTFT Nones · 200k ctx` · 가성비 2.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **27.0*
 |---|---|---|---|---|
 | 전문 지식 | 60.4 | +0.69 | 실측 | [[gpqa-diamond]] 81.0%×0.4, [[humanitys-last-exam]] 12.0%×0.3 |
 | 추론 | 49.1 | -0.06 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 81.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
-| 코딩 | 60.1 | +0.67 | 실측 | [[terminal-bench]] 34.0%×0.5 |
-| 에이전트 | 63.9 | +0.92 | 실측 | [[tau2-bench]] 71.0%×1.0, [[terminal-bench]] 34.0%×1.0 |
-| 신뢰성 | 65.7 | +1.05 | 추정 | (추정) |
+| 코딩 | 59.5 | +0.63 | 실측 | [[terminal-bench]] 34.0%×0.5 |
+| 에이전트 | 63.8 | +0.92 | 실측 | [[tau2-bench]] 71.0%×1.0, [[terminal-bench]] 34.0%×1.0 |
+| 신뢰성 | 63.8 | +0.92 | 추정 | (추정) |
 | 멀티모달 | 52.6 | +0.17 | 실측 | [[mmmu-pro]] 68.0%×1.0 |
 | 긴문맥 | 66.8 | +1.12 | 실측 | [[aa-lcr]] 76.0%×1.0 |
 | 지시 따르기 | 54.9 | +0.33 | 실측 | [[ifbench]] 55.0%×1.0 |

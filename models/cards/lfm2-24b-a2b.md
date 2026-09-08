@@ -3,7 +3,7 @@ type: Model
 title: LFM2 24B A2B
 creator: Liquid AI
 license: Open
-intelligence_index: 1.0
+intelligence_index: 6.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 32800
@@ -14,23 +14,23 @@ is_reasoning: false
 radar:
   knowledge: { s: 16.3, z: -1.19, r: 32.2, estimated: false }  # 전문 지식
   reasoning: { s: 16.1, z: -0.91, r: 36.3, estimated: false }  # 추론
-  coding: { s: 0.0, z: -1.12, r: 33.2, estimated: false }  # 코딩
+  coding: { s: 0.0, z: -1.15, r: 32.7, estimated: false }  # 코딩
   agentic: { s: 5.6, z: -1.22, r: 31.7, estimated: false }  # 에이전트
-  trust: { s: 29.9, z: 0.25, r: 53.8, estimated: false }  # 신뢰성
+  trust: { s: 29.9, z: 0.24, r: 53.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.51, r: 27.3, estimated: false }  # 긴문맥
+  long_context: { s: 0.0, z: -1.51, r: 27.4, estimated: false }  # 긴문맥
   instruction: { s: 47.9, z: -0.2, r: 47.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — LFM2 24B A2B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-06
-timestamp: 2026-09-06T00:00:00Z
+updated: 2026-09-08
+timestamp: 2026-09-08T00:00:00Z
 ---
 
 # LFM2 24B A2B
 
-Liquid AI · Open · Small(23.8B) · 컨텍스트 32k · 종합지능 **1.0**
+Liquid AI · Open · Small(23.8B) · 컨텍스트 32k · 종합지능 **6.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 지시 따르기
@@ -45,11 +45,11 @@ Liquid AI · Open · Small(23.8B) · 컨텍스트 32k · 종합지능 **1.0**
 |---|---|---|---|---|
 | 전문 지식 | 32.2 | -1.19 | 실측 | [[aa-omniscience]] 6.0%×1.0, [[gpqa-diamond]] 47.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 36.3 | -0.91 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 47.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 33.2 | -1.12 | 실측 | [[terminal-bench]] 0.0%×0.5 |
+| 코딩 | 32.7 | -1.15 | 실측 | [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 31.7 | -1.22 | 실측 | [[tau2-bench]] 11.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 53.8 | +0.25 | 실측 | [[aa-omniscience]] 31.0%×1.0 |
+| 신뢰성 | 53.6 | +0.24 | 실측 | [[aa-omniscience]] 31.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 27.3 | -1.51 | 실측 | [[aa-lcr]] 0.0%×1.0 |
+| 긴문맥 | 27.4 | -1.51 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 47.0 | -0.2 | 실측 | [[ifbench]] 46.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

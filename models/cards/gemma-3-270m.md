@@ -3,7 +3,7 @@ type: Model
 title: Gemma 3 270M
 creator: Google
 license: Open
-intelligence_index: 1.0
+intelligence_index: 5.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 32000
@@ -14,23 +14,23 @@ is_reasoning: false
 radar:
   knowledge: { s: 5.1, z: -1.73, r: 24.1, estimated: false }  # 전문 지식
   reasoning: { s: 6.4, z: -1.38, r: 29.3, estimated: false }  # 추론
-  coding: { s: 0.0, z: -1.12, r: 33.2, estimated: false }  # 코딩
+  coding: { s: 0.0, z: -1.15, r: 32.7, estimated: false }  # 코딩
   agentic: { s: 4.5, z: -1.26, r: 31.1, estimated: false }  # 에이전트
-  trust: { s: 70.1, z: 2.15, r: 82.3, estimated: false }  # 신뢰성
+  trust: { s: 70.1, z: 2.14, r: 82.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.51, r: 27.3, estimated: false }  # 긴문맥
+  long_context: { s: 0.0, z: -1.51, r: 27.4, estimated: false }  # 긴문맥
   instruction: { s: 0.0, z: -2.2, r: 17.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 3 270M
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-06
-timestamp: 2026-09-06T00:00:00Z
+updated: 2026-09-08
+timestamp: 2026-09-08T00:00:00Z
 ---
 
 # Gemma 3 270M
 
-Google · Open · Tiny(0.268B) · 컨텍스트 32k · 종합지능 **1.0**
+Google · Open · Tiny(0.268B) · 컨텍스트 32k · 종합지능 **5.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 코딩
@@ -45,11 +45,11 @@ Google · Open · Tiny(0.268B) · 컨텍스트 32k · 종합지능 **1.0**
 |---|---|---|---|---|
 | 전문 지식 | 24.1 | -1.73 | 실측 | [[aa-omniscience]] 1.0%×1.0, [[gpqa-diamond]] 22.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 29.3 | -1.38 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 22.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 33.2 | -1.12 | 실측 | [[terminal-bench]] 0.0%×0.5 |
+| 코딩 | 32.7 | -1.15 | 실측 | [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 31.1 | -1.26 | 실측 | [[tau2-bench]] 9.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 82.3 | +2.15 | 실측 | [[aa-omniscience]] 70.0%×1.0 |
+| 신뢰성 | 82.0 | +2.14 | 실측 | [[aa-omniscience]] 70.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 27.3 | -1.51 | 실측 | [[aa-lcr]] 0.0%×1.0 |
+| 긴문맥 | 27.4 | -1.51 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 17.0 | -2.2 | 실측 | [[ifbench]] 12.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

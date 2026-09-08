@@ -3,9 +3,9 @@ type: Model
 title: MiniMax-M2.7
 creator: MiniMax
 license: Open
-intelligence_index: 30.0
+intelligence_index: 23.0
 price_blended_usd_1m: 0.222
-output_speed_tps: 69.0
+output_speed_tps: 70.0
 context_window: 205000
 status: past
 size_class: Large
@@ -14,9 +14,9 @@ is_reasoning: true
 radar:
   knowledge: { s: 53.6, z: 0.61, r: 59.2, estimated: false }  # 전문 지식
   reasoning: { s: 47.6, z: 0.6, r: 59.0, estimated: false }  # 추론
-  coding: { s: 59.1, z: 0.94, r: 64.1, estimated: false }  # 코딩
-  agentic: { s: 46.2, z: 0.34, r: 55.0, estimated: false }  # 에이전트
-  trust: { s: 63.9, z: 1.86, r: 77.9, estimated: false }  # 신뢰성
+  coding: { s: 68.7, z: 1.23, r: 68.4, estimated: false }  # 코딩
+  agentic: { s: 46.3, z: 0.33, r: 55.0, estimated: false }  # 에이전트
+  trust: { s: 63.9, z: 1.85, r: 77.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 87.6, z: 1.19, r: 67.8, estimated: false }  # 긴문맥
   instruction: { s: 90.1, z: 1.56, r: 73.4, estimated: false }  # 지시 따르기
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax-M2.7
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-06
-timestamp: 2026-09-06T00:00:00Z
+updated: 2026-09-08
+timestamp: 2026-09-08T00:00:00Z
 ---
 
 # MiniMax-M2.7
 
-MiniMax · Open · Large(230B) · 컨텍스트 205k · 종합지능 **30.0** · ⚠️ past(구세대)
+MiniMax · Open · Large(230B) · 컨텍스트 205k · 종합지능 **23.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 지시 따르기
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 69.0 t/s · TTFT 1.48s · 205k ctx` · 가성비 135.1
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 70.0 t/s · TTFT 1.61s · 205k ctx` · 가성비 103.6
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ MiniMax · Open · Large(230B) · 컨텍스트 205k · 종합지능 **30.0** · 
 |---|---|---|---|---|
 | 전문 지식 | 59.2 | +0.61 | 실측 | [[aa-omniscience]] 27.0%×1.0, [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 30.0%×0.3 |
 | 추론 | 59.0 | +0.6 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 30.0%×1.0 |
-| 코딩 | 64.1 | +0.94 | 실측 | [[terminal-bench]] 39.0%×0.5 |
-| 에이전트 | 55.0 | +0.34 | 실측 | [[apex-agents]] 11.0%×1.0, [[gdpval]] 29.0%×1.0, [[itbench]] 26.0%×1.0, [[tau2-bench]] 85.0%×1.0, [[tau3-banking]] 10.0%×1.0, [[terminal-bench]] 39.0%×1.0 |
-| 신뢰성 | 77.9 | +1.86 | 실측 | [[aa-omniscience]] 64.0%×1.0 |
+| 코딩 | 68.4 | +1.23 | 실측 | [[scicode]] 50.0%×1.0, [[terminal-bench]] 39.0%×0.5 |
+| 에이전트 | 55.0 | +0.33 | 실측 | [[apex-agents]] 11.0%×1.0, [[gdpval]] 29.0%×1.0, [[itbench]] 26.0%×1.0, [[tau2-bench]] 85.0%×1.0, [[tau3-banking]] 10.0%×1.0, [[terminal-bench]] 39.0%×1.0 |
+| 신뢰성 | 77.7 | +1.85 | 실측 | [[aa-omniscience]] 64.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 67.8 | +1.19 | 실측 | [[aa-lcr]] 78.0%×1.0 |
 | 지시 따르기 | 73.4 | +1.56 | 실측 | [[ifbench]] 76.0%×1.0 |

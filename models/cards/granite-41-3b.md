@@ -3,7 +3,7 @@ type: Model
 title: Granite 4.1 3B
 creator: IBM
 license: Open
-intelligence_index: 1.0
+intelligence_index: 6.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 131000
@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 14.3, z: -1.28, r: 30.7, estimated: false }  # 전문 지식
   reasoning: { s: 9.3, z: -1.24, r: 31.4, estimated: false }  # 추론
-  coding: { s: 3.0, z: -1.02, r: 34.7, estimated: false }  # 코딩
+  coding: { s: 3.0, z: -1.05, r: 34.3, estimated: false }  # 코딩
   agentic: { s: 7.7, z: -1.14, r: 32.9, estimated: false }  # 에이전트
-  trust: { s: 3.1, z: -1.01, r: 34.8, estimated: false }  # 신뢰성
+  trust: { s: 3.1, z: -1.02, r: 34.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 6.7, z: -1.3, r: 30.5, estimated: false }  # 긴문맥
   instruction: { s: 31.0, z: -0.91, r: 36.4, estimated: false }  # 지시 따르기
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.1 3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-06
-timestamp: 2026-09-06T00:00:00Z
+updated: 2026-09-08
+timestamp: 2026-09-08T00:00:00Z
 ---
 
 # Granite 4.1 3B
 
-IBM · Open · Tiny(3B) · 컨텍스트 131k · 종합지능 **1.0**
+IBM · Open · Tiny(3B) · 컨텍스트 131k · 종합지능 **6.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 신뢰성
@@ -45,9 +45,9 @@ IBM · Open · Tiny(3B) · 컨텍스트 131k · 종합지능 **1.0**
 |---|---|---|---|---|
 | 전문 지식 | 30.7 | -1.28 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 31.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
 | 추론 | 31.4 | -1.24 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 31.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
-| 코딩 | 34.7 | -1.02 | 실측 | [[terminal-bench]] 2.0%×0.5 |
+| 코딩 | 34.3 | -1.05 | 실측 | [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 32.9 | -1.14 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 20.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 34.8 | -1.01 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
+| 신뢰성 | 34.7 | -1.02 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 30.5 | -1.3 | 실측 | [[aa-lcr]] 6.0%×1.0 |
 | 지시 따르기 | 36.4 | -0.91 | 실측 | [[ifbench]] 34.0%×1.0 |

@@ -3,7 +3,7 @@ type: Model
 title: JT-35B-Flash
 creator: China Mobile
 license: Proprietary
-intelligence_index: 22.0
+intelligence_index: 19.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 256000
@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 42.6, z: 0.08, r: 51.2, estimated: false }  # 전문 지식
   reasoning: { s: 31.2, z: -0.19, r: 47.2, estimated: false }  # 추론
-  coding: { s: 43.9, z: 0.41, r: 56.2, estimated: false }  # 코딩
-  agentic: { s: 72.0, z: 1.32, r: 69.8, estimated: false }  # 에이전트
-  trust: { s: 35.1, z: 0.5, r: 57.5, estimated: false }  # 신뢰성
+  coding: { s: 43.9, z: 0.37, r: 55.6, estimated: false }  # 코딩
+  agentic: { s: 72.0, z: 1.31, r: 69.7, estimated: false }  # 에이전트
+  trust: { s: 35.1, z: 0.48, r: 57.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 74.2, z: 0.77, r: 61.6, estimated: false }  # 긴문맥
   instruction: { s: 42.3, z: -0.44, r: 43.5, estimated: false }  # 지시 따르기
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — JT-35B-Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-06
-timestamp: 2026-09-06T00:00:00Z
+updated: 2026-09-08
+timestamp: 2026-09-08T00:00:00Z
 ---
 
 # JT-35B-Flash
 
-China Mobile · Proprietary · Small(35B) · 컨텍스트 256k · 종합지능 **22.0**
+China Mobile · Proprietary · Small(35B) · 컨텍스트 256k · 종합지능 **19.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 긴문맥
@@ -45,9 +45,9 @@ China Mobile · Proprietary · Small(35B) · 컨텍스트 256k · 종합지능 *
 |---|---|---|---|---|
 | 전문 지식 | 51.2 | +0.08 | 실측 | [[aa-omniscience]] 24.0%×1.0, [[gpqa-diamond]] 83.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 47.2 | -0.19 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 83.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 56.2 | +0.41 | 실측 | [[terminal-bench]] 29.0%×0.5 |
-| 에이전트 | 69.8 | +1.32 | 실측 | [[tau2-bench]] 99.0%×1.0, [[terminal-bench]] 29.0%×1.0 |
-| 신뢰성 | 57.5 | +0.5 | 실측 | [[aa-omniscience]] 36.0%×1.0 |
+| 코딩 | 55.6 | +0.37 | 실측 | [[terminal-bench]] 29.0%×0.5 |
+| 에이전트 | 69.7 | +1.31 | 실측 | [[tau2-bench]] 99.0%×1.0, [[terminal-bench]] 29.0%×1.0 |
+| 신뢰성 | 57.3 | +0.48 | 실측 | [[aa-omniscience]] 36.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 61.6 | +0.77 | 실측 | [[aa-lcr]] 66.0%×1.0 |
 | 지시 따르기 | 43.5 | -0.44 | 실측 | [[ifbench]] 42.0%×1.0 |

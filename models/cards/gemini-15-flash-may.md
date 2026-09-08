@@ -3,7 +3,7 @@ type: Model
 title: Gemini 1.5 Flash (May)
 creator: Google
 license: Proprietary
-intelligence_index: 1.0
+intelligence_index: 6.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 1000000
@@ -14,23 +14,23 @@ is_reasoning: false
 radar:
   knowledge: { s: 16.8, z: -1.16, r: 32.6, estimated: false }  # 전문 지식
   reasoning: { s: 15.4, z: -0.95, r: 35.8, estimated: false }  # 추론
-  coding: { s: 7.1, z: -0.88, r: 36.9, estimated: true }  # 코딩
-  agentic: { s: 21.0, z: -0.63, r: 40.5, estimated: true }  # 에이전트
-  trust: { s: 24.4, z: -0.0, r: 49.9, estimated: true }  # 신뢰성
+  coding: { s: 6.9, z: -0.92, r: 36.3, estimated: true }  # 코딩
+  agentic: { s: 21.1, z: -0.63, r: 40.6, estimated: true }  # 에이전트
+  trust: { s: 24.2, z: -0.03, r: 49.6, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 18.1, z: -0.95, r: 35.7, estimated: true }  # 긴문맥
-  instruction: { s: 29.1, z: -0.98, r: 35.2, estimated: true }  # 지시 따르기
+  instruction: { s: 29.3, z: -0.97, r: 35.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 1.5 Flash (May)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-06
-timestamp: 2026-09-06T00:00:00Z
+updated: 2026-09-08
+timestamp: 2026-09-08T00:00:00Z
 ---
 
 # Gemini 1.5 Flash (May)
 
-Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **1.0** · ⚠️ past(구세대)
+Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **6.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 에이전트
@@ -45,12 +45,12 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **1.0** · �
 |---|---|---|---|---|
 | 전문 지식 | 32.6 | -1.16 | 실측 | [[gpqa-diamond]] 32.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 35.8 | -0.95 | 실측 | [[gpqa-diamond]] 32.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 36.9 | -0.88 | 추정 | (추정) |
-| 에이전트 | 40.5 | -0.63 | 추정 | (추정) |
-| 신뢰성 | 49.9 | +-0.0 | 추정 | (추정) |
+| 코딩 | 36.3 | -0.92 | 추정 | (추정) |
+| 에이전트 | 40.6 | -0.63 | 추정 | (추정) |
+| 신뢰성 | 49.6 | -0.03 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 35.7 | -0.95 | 추정 | (추정) |
-| 지시 따르기 | 35.2 | -0.98 | 추정 | (추정) |
+| 지시 따르기 | 35.4 | -0.97 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

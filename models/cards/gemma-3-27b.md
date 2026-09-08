@@ -3,7 +3,7 @@ type: Model
 title: Gemma 3 27B
 creator: Google
 license: Open
-intelligence_index: 2.0
+intelligence_index: 5.0
 price_blended_usd_1m: 0
 output_speed_tps: None
 context_window: 128000
@@ -14,26 +14,26 @@ is_reasoning: false
 radar:
   knowledge: { s: 21.4, z: -0.94, r: 35.9, estimated: false }  # 전문 지식
   reasoning: { s: 14.5, z: -0.99, r: 35.2, estimated: false }  # 추론
-  coding: { s: 6.1, z: -0.91, r: 36.3, estimated: false }  # 코딩
+  coding: { s: 14.3, z: -0.66, r: 40.1, estimated: false }  # 코딩
   agentic: { s: 4.8, z: -1.25, r: 31.2, estimated: false }  # 에이전트
-  trust: { s: 6.2, z: -0.87, r: 37.0, estimated: false }  # 신뢰성
+  trust: { s: 6.2, z: -0.88, r: 36.9, estimated: false }  # 신뢰성
   multimodal: { s: 45.8, z: -1.2, r: 31.9, estimated: false }  # 멀티모달
-  long_context: { s: 7.9, z: -1.27, r: 31.0, estimated: false }  # 긴문맥
-  instruction: { s: 28.2, z: -1.02, r: 34.6, estimated: false }  # 지시 따르기
+  long_context: { s: 7.9, z: -1.26, r: 31.0, estimated: false }  # 긴문맥
+  instruction: { s: 28.2, z: -1.02, r: 34.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 3 27B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-06
-timestamp: 2026-09-06T00:00:00Z
+updated: 2026-09-08
+timestamp: 2026-09-08T00:00:00Z
 ---
 
 # Gemma 3 27B
 
-Google · Open · Small(27.4B) · 컨텍스트 128k · 종합지능 **2.0** · ⚠️ past(구세대)
+Google · Open · Small(27.4B) · 컨텍스트 128k · 종합지능 **5.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 신뢰성, 코딩
+- **강점**: 코딩, 신뢰성
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
@@ -45,12 +45,12 @@ Google · Open · Small(27.4B) · 컨텍스트 128k · 종합지능 **2.0** · �
 |---|---|---|---|---|
 | 전문 지식 | 35.9 | -0.94 | 실측 | [[aa-omniscience]] 13.0%×1.0, [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 35.2 | -0.99 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 36.3 | -0.91 | 실측 | [[terminal-bench]] 4.0%×0.5 |
+| 코딩 | 40.1 | -0.66 | 실측 | [[scicode]] 23.0%×1.0, [[terminal-bench]] 4.0%×0.5 |
 | 에이전트 | 31.2 | -1.25 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 11.0%×1.0, [[tau3-banking]] 1.0%×1.0, [[terminal-bench]] 4.0%×1.0 |
-| 신뢰성 | 37.0 | -0.87 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
+| 신뢰성 | 36.9 | -0.88 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
 | 멀티모달 | 31.9 | -1.2 | 실측 | [[mmmu-pro]] 48.0%×1.0 |
-| 긴문맥 | 31.0 | -1.27 | 실측 | [[aa-lcr]] 7.0%×1.0 |
-| 지시 따르기 | 34.6 | -1.02 | 실측 | [[ifbench]] 32.0%×1.0 |
+| 긴문맥 | 31.0 | -1.26 | 실측 | [[aa-lcr]] 7.0%×1.0 |
+| 지시 따르기 | 34.7 | -1.02 | 실측 | [[ifbench]] 32.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

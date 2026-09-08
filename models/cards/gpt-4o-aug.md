@@ -3,9 +3,9 @@ type: Model
 title: GPT-4o (Aug)
 creator: OpenAI
 license: Proprietary
-intelligence_index: 4.0
+intelligence_index: 8.0
 price_blended_usd_1m: 2.375
-output_speed_tps: 99.0
+output_speed_tps: 126.0
 context_window: 128000
 status: past
 size_class: Unknown
@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 32.9, z: -0.39, r: 44.2, estimated: false }  # 전문 지식
   reasoning: { s: 16.9, z: -0.88, r: 36.9, estimated: false }  # 추론
-  coding: { s: 12.1, z: -0.7, r: 39.5, estimated: false }  # 코딩
+  coding: { s: 12.1, z: -0.73, r: 39.0, estimated: false }  # 코딩
   agentic: { s: 20.7, z: -0.64, r: 40.4, estimated: false }  # 에이전트
-  trust: { s: 41.2, z: 0.79, r: 61.8, estimated: false }  # 신뢰성
+  trust: { s: 41.2, z: 0.78, r: 61.6, estimated: false }  # 신뢰성
   multimodal: { s: 56.9, z: -0.65, r: 40.2, estimated: false }  # 멀티모달
   long_context: { s: 46.1, z: -0.09, r: 48.6, estimated: false }  # 긴문맥
   instruction: { s: 33.8, z: -0.79, r: 38.2, estimated: false }  # 지시 따르기
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4o (Aug)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-06
-timestamp: 2026-09-06T00:00:00Z
+updated: 2026-09-08
+timestamp: 2026-09-08T00:00:00Z
 ---
 
 # GPT-4o (Aug)
 
-OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **4.0** · ⚠️ past(구세대)
+OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **8.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 긴문맥
 - **약점**: 지시 따르기, 추론
 
 ## 실용 지표
-`입력 $2.5 · 출력 $10.0 · 혼합 $2.375/1M · 99.0 t/s · TTFT 1.01s · 128k ctx` · 가성비 1.7
+`입력 $2.5 · 출력 $10.0 · 혼합 $2.375/1M · 126.0 t/s · TTFT 0.88s · 128k ctx` · 가성비 3.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **4.0** ·
 |---|---|---|---|---|
 | 전문 지식 | 44.2 | -0.39 | 실측 | [[aa-omniscience]] 24.0%×1.0, [[gpqa-diamond]] 52.0%×0.4, [[humanitys-last-exam]] 2.0%×0.3 |
 | 추론 | 36.9 | -0.88 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 52.0%×1.0, [[humanitys-last-exam]] 2.0%×1.0 |
-| 코딩 | 39.5 | -0.7 | 실측 | [[terminal-bench]] 8.0%×0.5 |
+| 코딩 | 39.0 | -0.73 | 실측 | [[terminal-bench]] 8.0%×0.5 |
 | 에이전트 | 40.4 | -0.64 | 실측 | [[tau2-bench]] 29.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
-| 신뢰성 | 61.8 | +0.79 | 실측 | [[aa-omniscience]] 42.0%×1.0 |
+| 신뢰성 | 61.6 | +0.78 | 실측 | [[aa-omniscience]] 42.0%×1.0 |
 | 멀티모달 | 40.2 | -0.65 | 실측 | [[mmmu-pro]] 56.0%×1.0 |
 | 긴문맥 | 48.6 | -0.09 | 실측 | [[aa-lcr]] 41.0%×1.0 |
 | 지시 따르기 | 38.2 | -0.79 | 실측 | [[ifbench]] 36.0%×1.0 |

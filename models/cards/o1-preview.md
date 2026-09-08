@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 76.7, z: 1.73, r: 75.9, estimated: false }  # 전문 지식
-  reasoning: { s: 76.7, z: 2.01, r: 80.1, estimated: false }  # 추론
-  coding: { s: 81.9, z: 1.74, r: 76.0, estimated: true }  # 코딩
-  agentic: { s: 81.8, z: 1.7, r: 75.5, estimated: true }  # 에이전트
-  trust: { s: 40.2, z: 0.74, r: 61.1, estimated: true }  # 신뢰성
+  reasoning: { s: 76.7, z: 2.0, r: 80.1, estimated: false }  # 추론
+  coding: { s: 81.9, z: 1.69, r: 75.3, estimated: true }  # 코딩
+  agentic: { s: 82.2, z: 1.7, r: 75.6, estimated: true }  # 에이전트
+  trust: { s: 31.8, z: 0.33, r: 54.9, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 87.2, z: 1.17, r: 67.6, estimated: true }  # 긴문맥
-  instruction: { s: 75.6, z: 0.95, r: 64.3, estimated: true }  # 지시 따르기
+  long_context: { s: 86.7, z: 1.16, r: 67.4, estimated: true }  # 긴문맥
+  instruction: { s: 75.8, z: 0.96, r: 64.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — o1-preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-06
-timestamp: 2026-09-06T00:00:00Z
+updated: 2026-09-08
+timestamp: 2026-09-08T00:00:00Z
 ---
 
 # o1-preview
@@ -33,7 +33,7 @@ timestamp: 2026-09-06T00:00:00Z
 OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **11.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 추론, 코딩
+- **강점**: 추론, 전문 지식
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
@@ -44,13 +44,13 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **11.0** �
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 75.9 | +1.73 | 실측 | [[gpqa-diamond]] 76.0%×0.4 |
-| 추론 | 80.1 | +2.01 | 실측 | [[gpqa-diamond]] 76.0%×1.0 |
-| 코딩 | 76.0 | +1.74 | 추정 | (추정) |
-| 에이전트 | 75.5 | +1.7 | 추정 | (추정) |
-| 신뢰성 | 61.1 | +0.74 | 추정 | (추정) |
+| 추론 | 80.1 | +2.0 | 실측 | [[gpqa-diamond]] 76.0%×1.0 |
+| 코딩 | 75.3 | +1.69 | 추정 | (추정) |
+| 에이전트 | 75.6 | +1.7 | 추정 | (추정) |
+| 신뢰성 | 54.9 | +0.33 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 67.6 | +1.17 | 추정 | (추정) |
-| 지시 따르기 | 64.3 | +0.95 | 추정 | (추정) |
+| 긴문맥 | 67.4 | +1.16 | 추정 | (추정) |
+| 지시 따르기 | 64.4 | +0.96 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

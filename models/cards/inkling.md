@@ -3,20 +3,20 @@ type: Model
 title: Inkling
 creator: Thinking Machines
 license: Open
-intelligence_index: 32.0
+intelligence_index: 26.0
 price_blended_usd_1m: 0.724
-output_speed_tps: 72.0
+output_speed_tps: 69.0
 context_window: 1000000
 status: current
 size_class: Large
 params_b: 975
 is_reasoning: true
 radar:
-  knowledge: { s: 67.4, z: 1.27, r: 69.1, estimated: false }  # 전문 지식
-  reasoning: { s: 52.9, z: 0.86, r: 62.9, estimated: false }  # 추론
-  coding: { s: 67.3, z: 1.23, r: 68.4, estimated: false }  # 코딩
-  agentic: { s: 54.1, z: 0.64, r: 59.5, estimated: false }  # 에이전트
-  trust: { s: 30.9, z: 0.3, r: 54.5, estimated: false }  # 신뢰성
+  knowledge: { s: 67.4, z: 1.28, r: 69.1, estimated: false }  # 전문 지식
+  reasoning: { s: 52.9, z: 0.86, r: 62.8, estimated: false }  # 추론
+  coding: { s: 67.3, z: 1.18, r: 67.7, estimated: false }  # 코딩
+  agentic: { s: 54.6, z: 0.65, r: 59.8, estimated: false }  # 에이전트
+  trust: { s: 30.9, z: 0.29, r: 54.3, estimated: false }  # 신뢰성
   multimodal: { s: 80.6, z: 0.51, r: 57.7, estimated: false }  # 멀티모달
   long_context: { s: 86.5, z: 1.15, r: 67.3, estimated: false }  # 긴문맥
   instruction: { s: 79.4, z: 1.11, r: 66.7, estimated: true }  # 지시 따르기
@@ -24,30 +24,30 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Inkling
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-06
-timestamp: 2026-09-06T00:00:00Z
+updated: 2026-09-08
+timestamp: 2026-09-08T00:00:00Z
 ---
 
 # Inkling
 
-Thinking Machines · Open · Large(975B) · 컨텍스트 1M · 종합지능 **32.0**
+Thinking Machines · Open · Large(975B) · 컨텍스트 1M · 종합지능 **26.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 전문 지식, 코딩
 - **약점**: 멀티모달, 신뢰성
 
 ## 실용 지표
-`입력 $1.0 · 출력 $4.05 · 혼합 $0.724/1M · 72.0 t/s · TTFT 2.72s · 1M ctx` · 가성비 44.2
+`입력 $1.0 · 출력 $4.05 · 혼합 $0.724/1M · 69.0 t/s · TTFT 2.59s · 1M ctx` · 가성비 35.9
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 69.1 | +1.27 | 실측 | [[aa-omniscience]] 42.0%×1.0, [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 32.0%×0.3 |
-| 추론 | 62.9 | +0.86 | 실측 | [[critpt]] 5.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 32.0%×1.0 |
-| 코딩 | 68.4 | +1.23 | 실측 | [[scicode]] 47.0%×1.0 |
-| 에이전트 | 59.5 | +0.64 | 실측 | [[gdpval]] 33.0%×1.0, [[tau3-banking]] 29.0%×1.0 |
-| 신뢰성 | 54.5 | +0.3 | 실측 | [[aa-omniscience]] 32.0%×1.0 |
+| 전문 지식 | 69.1 | +1.28 | 실측 | [[aa-omniscience]] 42.0%×1.0, [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 32.0%×0.3 |
+| 추론 | 62.8 | +0.86 | 실측 | [[critpt]] 5.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 32.0%×1.0 |
+| 코딩 | 67.7 | +1.18 | 실측 | [[scicode]] 47.0%×1.0 |
+| 에이전트 | 59.8 | +0.65 | 실측 | [[gdpval]] 33.0%×1.0, [[tau3-banking]] 29.0%×1.0 |
+| 신뢰성 | 54.3 | +0.29 | 실측 | [[aa-omniscience]] 32.0%×1.0 |
 | 멀티모달 | 57.7 | +0.51 | 실측 | [[mmmu-pro]] 73.0%×1.0 |
 | 긴문맥 | 67.3 | +1.15 | 실측 | [[aa-lcr]] 77.0%×1.0 |
 | 지시 따르기 | 66.7 | +1.11 | 추정 | (추정) |

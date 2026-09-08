@@ -3,20 +3,20 @@ type: Model
 title: Mercury 2
 creator: Inception
 license: Proprietary
-intelligence_index: 15.0
+intelligence_index: 12.0
 price_blended_usd_1m: 0.1425
-output_speed_tps: 807.0
+output_speed_tps: 657.0
 context_window: 128000
 status: current
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 41.6, z: 0.03, r: 50.5, estimated: false }  # 전문 지식
+  knowledge: { s: 41.6, z: 0.04, r: 50.5, estimated: false }  # 전문 지식
   reasoning: { s: 36.2, z: 0.06, r: 50.8, estimated: false }  # 추론
-  coding: { s: 40.9, z: 0.3, r: 54.6, estimated: false }  # 코딩
+  coding: { s: 46.3, z: 0.45, r: 56.8, estimated: false }  # 코딩
   agentic: { s: 35.3, z: -0.08, r: 48.7, estimated: false }  # 에이전트
-  trust: { s: 7.2, z: -0.82, r: 37.8, estimated: false }  # 신뢰성
+  trust: { s: 7.2, z: -0.83, r: 37.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 49.4, z: 0.01, r: 50.2, estimated: false }  # 긴문맥
   instruction: { s: 81.7, z: 1.21, r: 68.1, estimated: false }  # 지시 따르기
@@ -24,30 +24,30 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mercury 2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-06
-timestamp: 2026-09-06T00:00:00Z
+updated: 2026-09-08
+timestamp: 2026-09-08T00:00:00Z
 ---
 
 # Mercury 2
 
-Inception · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **15.0**
+Inception · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **12.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 코딩
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.25 · 출력 $0.75 · 혼합 $0.1425/1M · 807.0 t/s · TTFT 4.8s · 128k ctx` · 가성비 105.3
+`입력 $0.25 · 출력 $0.75 · 혼합 $0.1425/1M · 657.0 t/s · TTFT 4.17s · 128k ctx` · 가성비 84.2
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 50.5 | +0.03 | 실측 | [[aa-omniscience]] 21.0%×1.0, [[gpqa-diamond]] 77.0%×0.4, [[humanitys-last-exam]] 17.0%×0.3 |
+| 전문 지식 | 50.5 | +0.04 | 실측 | [[aa-omniscience]] 21.0%×1.0, [[gpqa-diamond]] 77.0%×0.4, [[humanitys-last-exam]] 17.0%×0.3 |
 | 추론 | 50.8 | +0.06 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 77.0%×1.0, [[humanitys-last-exam]] 17.0%×1.0 |
-| 코딩 | 54.6 | +0.3 | 실측 | [[terminal-bench]] 27.0%×0.5 |
+| 코딩 | 56.8 | +0.45 | 실측 | [[scicode]] 38.0%×1.0, [[terminal-bench]] 27.0%×0.5 |
 | 에이전트 | 48.7 | -0.08 | 실측 | [[gdpval]] 7.0%×1.0, [[tau2-bench]] 71.0%×1.0, [[tau3-banking]] 9.0%×1.0, [[terminal-bench]] 27.0%×1.0 |
-| 신뢰성 | 37.8 | -0.82 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 신뢰성 | 37.6 | -0.83 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 50.2 | +0.01 | 실측 | [[aa-lcr]] 44.0%×1.0 |
 | 지시 따르기 | 68.1 | +1.21 | 실측 | [[ifbench]] 70.0%×1.0 |

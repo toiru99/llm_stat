@@ -3,7 +3,7 @@ type: Model
 title: DeepSeek V3.2 Exp (Non-reasoning)
 creator: DeepSeek
 license: Open
-intelligence_index: 15.0
+intelligence_index: 14.0
 price_blended_usd_1m: 0.1176
 output_speed_tps: None
 context_window: 128000
@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 40.1, z: -0.04, r: 49.4, estimated: false }  # 전문 지식
   reasoning: { s: 30.4, z: -0.22, r: 46.7, estimated: false }  # 추론
-  coding: { s: 37.9, z: 0.2, r: 53.0, estimated: false }  # 코딩
+  coding: { s: 37.9, z: 0.16, r: 52.4, estimated: false }  # 코딩
   agentic: { s: 36.1, z: -0.05, r: 49.2, estimated: false }  # 에이전트
-  trust: { s: 6.2, z: -0.87, r: 37.0, estimated: false }  # 신뢰성
+  trust: { s: 6.2, z: -0.88, r: 36.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 50.6, z: 0.05, r: 50.7, estimated: false }  # 긴문맥
   instruction: { s: 43.7, z: -0.38, r: 44.3, estimated: false }  # 지시 따르기
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V3.2 Exp (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-06
-timestamp: 2026-09-06T00:00:00Z
+updated: 2026-09-08
+timestamp: 2026-09-08T00:00:00Z
 ---
 
 # DeepSeek V3.2 Exp (Non-reasoning)
 
-DeepSeek · Open · Large(685B) · 컨텍스트 128k · 종합지능 **15.0** · ⚠️ past(구세대)
+DeepSeek · Open · Large(685B) · 컨텍스트 128k · 종합지능 **14.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 코딩, 긴문맥
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $0.28 · 출력 $0.42 · 혼합 $0.1176/1M · None t/s · TTFT Nones · 128k ctx` · 가성비 127.6
+`입력 $0.28 · 출력 $0.42 · 혼합 $0.1176/1M · None t/s · TTFT Nones · 128k ctx` · 가성비 119.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ DeepSeek · Open · Large(685B) · 컨텍스트 128k · 종합지능 **15.0** ·
 |---|---|---|---|---|
 | 전문 지식 | 49.4 | -0.04 | 실측 | [[aa-omniscience]] 23.0%×1.0, [[gpqa-diamond]] 74.0%×0.4, [[humanitys-last-exam]] 9.0%×0.3 |
 | 추론 | 46.7 | -0.22 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 74.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
-| 코딩 | 53.0 | +0.2 | 실측 | [[terminal-bench]] 25.0%×0.5 |
+| 코딩 | 52.4 | +0.16 | 실측 | [[terminal-bench]] 25.0%×0.5 |
 | 에이전트 | 49.2 | -0.05 | 실측 | [[tau2-bench]] 34.0%×1.0, [[terminal-bench]] 25.0%×1.0 |
-| 신뢰성 | 37.0 | -0.87 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
+| 신뢰성 | 36.9 | -0.88 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 50.7 | +0.05 | 실측 | [[aa-lcr]] 45.0%×1.0 |
 | 지시 따르기 | 44.3 | -0.38 | 실측 | [[ifbench]] 43.0%×1.0 |

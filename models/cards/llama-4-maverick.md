@@ -5,18 +5,18 @@ creator: Meta
 license: Open
 intelligence_index: 9.0
 price_blended_usd_1m: 0.3145
-output_speed_tps: 81.0
+output_speed_tps: 94.0
 context_window: 1000000
 status: current
 size_class: Large
 params_b: 402
 is_reasoning: false
 radar:
-  knowledge: { s: 38.8, z: -0.1, r: 48.4, estimated: false }  # 전문 지식
+  knowledge: { s: 38.8, z: -0.1, r: 48.5, estimated: false }  # 전문 지식
   reasoning: { s: 24.4, z: -0.51, r: 42.3, estimated: false }  # 추론
-  coding: { s: 10.6, z: -0.75, r: 38.7, estimated: false }  # 코딩
-  agentic: { s: 9.1, z: -1.09, r: 33.7, estimated: false }  # 에이전트
-  trust: { s: 9.3, z: -0.72, r: 39.2, estimated: false }  # 신뢰성
+  coding: { s: 28.0, z: -0.18, r: 47.3, estimated: false }  # 코딩
+  agentic: { s: 9.2, z: -1.08, r: 33.7, estimated: false }  # 에이전트
+  trust: { s: 9.3, z: -0.73, r: 39.0, estimated: false }  # 신뢰성
   multimodal: { s: 65.3, z: -0.24, r: 46.4, estimated: false }  # 멀티모달
   long_context: { s: 56.2, z: 0.22, r: 53.3, estimated: false }  # 긴문맥
   instruction: { s: 43.7, z: -0.38, r: 44.3, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 4 Maverick
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-06
-timestamp: 2026-09-06T00:00:00Z
+updated: 2026-09-08
+timestamp: 2026-09-08T00:00:00Z
 ---
 
 # Llama 4 Maverick
@@ -34,20 +34,20 @@ Meta · Open · Large(402B) · 컨텍스트 1M · 종합지능 **9.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 전문 지식
-- **약점**: 코딩, 에이전트
+- **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $0.26 · 출력 $0.91 · 혼합 $0.3145/1M · 81.0 t/s · TTFT 0.92s · 1M ctx` · 가성비 28.6
+`입력 $0.26 · 출력 $0.91 · 혼합 $0.3145/1M · 94.0 t/s · TTFT 0.89s · 1M ctx` · 가성비 28.6
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 48.4 | -0.1 | 실측 | [[aa-omniscience]] 25.0%×1.0, [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 전문 지식 | 48.5 | -0.1 | 실측 | [[aa-omniscience]] 25.0%×1.0, [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 42.3 | -0.51 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 67.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 38.7 | -0.75 | 실측 | [[terminal-bench]] 7.0%×0.5 |
-| 에이전트 | 33.7 | -1.09 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 18.0%×1.0, [[tau3-banking]] 4.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
-| 신뢰성 | 39.2 | -0.72 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
+| 코딩 | 47.3 | -0.18 | 실측 | [[scicode]] 32.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
+| 에이전트 | 33.7 | -1.08 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 18.0%×1.0, [[tau3-banking]] 4.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
+| 신뢰성 | 39.0 | -0.73 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | 46.4 | -0.24 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
 | 긴문맥 | 53.3 | +0.22 | 실측 | [[aa-lcr]] 50.0%×1.0 |
 | 지시 따르기 | 44.3 | -0.38 | 실측 | [[ifbench]] 43.0%×1.0 |
