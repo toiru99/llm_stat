@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Pro 2 (Preview) (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-08
-timestamp: 2026-09-08T00:00:00Z
+updated: 2026-09-09
+timestamp: 2026-09-09T00:00:00Z
 ---
 
 # Solar Pro 2 (Preview) (Non-reasoning)

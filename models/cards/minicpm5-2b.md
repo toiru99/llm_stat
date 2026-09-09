@@ -3,7 +3,7 @@ type: Model
 title: MiniCPM5-2B
 creator: OpenBMB
 license: Open
-intelligence_index: 14.0
+intelligence_index: 13.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 131000
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniCPM5-2B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-08
-timestamp: 2026-09-08T00:00:00Z
+updated: 2026-09-09
+timestamp: 2026-09-09T00:00:00Z
 ---
 
 # MiniCPM5-2B
 
-OpenBMB · Open · Tiny(2.6B) · 컨텍스트 131k · 종합지능 **14.0**
+OpenBMB · Open · Tiny(2.6B) · 컨텍스트 131k · 종합지능 **13.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 긴문맥

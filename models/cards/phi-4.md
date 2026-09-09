@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Phi-4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-08
-timestamp: 2026-09-08T00:00:00Z
+updated: 2026-09-09
+timestamp: 2026-09-09T00:00:00Z
 ---
 
 # Phi-4
@@ -37,7 +37,7 @@ Microsoft · Open · Small(14B) · 컨텍스트 16k · 종합지능 **6.0**
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
-`입력 $0.13 · 출력 $0.5 · 혼합 $0.1625/1M · 41.0 t/s · TTFT 2.5s · 16k ctx` · 가성비 36.9
+`입력 $0.13 · 출력 $0.5 · 혼합 $0.1625/1M · 41.0 t/s · TTFT 2.52s · 16k ctx` · 가성비 36.9
 
 ## 레이더 8축 (평균=50 기준선)
 

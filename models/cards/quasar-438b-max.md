@@ -5,7 +5,7 @@ creator: Multiverse Computing
 license: Proprietary
 intelligence_index: 27.0
 price_blended_usd_1m: 0.72
-output_speed_tps: 162.0
+output_speed_tps: 167.0
 context_window: 1000000
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Quasar 438B (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-08
-timestamp: 2026-09-08T00:00:00Z
+updated: 2026-09-09
+timestamp: 2026-09-09T00:00:00Z
 ---
 
 # Quasar 438B (max)
@@ -37,7 +37,7 @@ Multiverse Computing · Proprietary · Large(438B) · 컨텍스트 1M · 종합�
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.6 · 출력 $1.8 · 혼합 $0.72/1M · 162.0 t/s · TTFT 0.89s · 1M ctx` · 가성비 37.5
+`입력 $0.6 · 출력 $1.8 · 혼합 $0.72/1M · 167.0 t/s · TTFT 0.96s · 1M ctx` · 가성비 37.5
 
 ## 레이더 8축 (평균=50 기준선)
 

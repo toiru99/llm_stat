@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Luna (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-08
-timestamp: 2026-09-08T00:00:00Z
+updated: 2026-09-09
+timestamp: 2026-09-09T00:00:00Z
 ---
 
 # GPT-5.6 Luna (low)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **22.0**
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.2 · 출력 $1.2 · 혼합 $0.174/1M · 112.0 t/s · TTFT 1.69s · 1M ctx` · 가성비 126.4
+`입력 $0.2 · 출력 $1.2 · 혼합 $0.174/1M · 112.0 t/s · TTFT 1.81s · 1M ctx` · 가성비 126.4
 
 ## 레이더 8축 (평균=50 기준선)
 

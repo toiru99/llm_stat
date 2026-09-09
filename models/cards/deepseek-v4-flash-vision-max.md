@@ -5,7 +5,7 @@ creator: DeepSeek
 license: Proprietary
 intelligence_index: 35.0
 price_blended_usd_1m: 0.2298
-output_speed_tps: 121.0
+output_speed_tps: 119.0
 context_window: 1000000
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Flash Vision (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-08
-timestamp: 2026-09-08T00:00:00Z
+updated: 2026-09-09
+timestamp: 2026-09-09T00:00:00Z
 ---
 
 # DeepSeek V4 Flash Vision (max)
@@ -37,7 +37,7 @@ DeepSeek · Proprietary · Large(284B) · 컨텍스트 1M · 종합지능 **35.0
 - **약점**: 멀티모달, 신뢰성
 
 ## 실용 지표
-`입력 $0.44 · 출력 $1.32 · 혼합 $0.2298/1M · 121.0 t/s · TTFT 1.01s · 1M ctx` · 가성비 152.3
+`입력 $0.44 · 출력 $1.32 · 혼합 $0.2298/1M · 119.0 t/s · TTFT 0.98s · 1M ctx` · 가성비 152.3
 
 ## 레이더 8축 (평균=50 기준선)
 

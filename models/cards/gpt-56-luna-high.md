@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 33.0
 price_blended_usd_1m: 0.174
-output_speed_tps: 122.0
+output_speed_tps: 113.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Luna (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-08
-timestamp: 2026-09-08T00:00:00Z
+updated: 2026-09-09
+timestamp: 2026-09-09T00:00:00Z
 ---
 
 # GPT-5.6 Luna (high)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **33.0**
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.2 · 출력 $1.2 · 혼합 $0.174/1M · 122.0 t/s · TTFT 9.18s · 1M ctx` · 가성비 189.7
+`입력 $0.2 · 출력 $1.2 · 혼합 $0.174/1M · 113.0 t/s · TTFT 20.56s · 1M ctx` · 가성비 189.7
 
 ## 레이더 8축 (평균=50 기준선)
 

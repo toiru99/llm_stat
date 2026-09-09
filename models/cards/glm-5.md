@@ -5,7 +5,7 @@ creator: Z AI
 license: Open
 intelligence_index: 28.0
 price_blended_usd_1m: 0.66
-output_speed_tps: 75.0
+output_speed_tps: 69.0
 context_window: 200000
 status: past
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-08
-timestamp: 2026-09-08T00:00:00Z
+updated: 2026-09-09
+timestamp: 2026-09-09T00:00:00Z
 ---
 
 # GLM-5
@@ -37,7 +37,7 @@ Z AI · Open · Large(744B) · 컨텍스트 200k · 종합지능 **28.0** · ⚠
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $1.0 · 출력 $3.2 · 혼합 $0.66/1M · 75.0 t/s · TTFT 1.42s · 200k ctx` · 가성비 42.4
+`입력 $1.0 · 출력 $3.2 · 혼합 $0.66/1M · 69.0 t/s · TTFT 1.46s · 200k ctx` · 가성비 42.4
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: IBM
 license: Open
 intelligence_index: 6.0
 price_blended_usd_1m: 0.079
-output_speed_tps: 22.0
+output_speed_tps: 17.0
 context_window: 128000
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.0 H Small
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-08
-timestamp: 2026-09-08T00:00:00Z
+updated: 2026-09-09
+timestamp: 2026-09-09T00:00:00Z
 ---
 
 # Granite 4.0 H Small
@@ -37,7 +37,7 @@ IBM · Open · Small(32B) · 컨텍스트 128k · 종합지능 **6.0**
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.25 · 혼합 $0.079/1M · 22.0 t/s · TTFT 22.59s · 128k ctx` · 가성비 75.9
+`입력 $0.06 · 출력 $0.25 · 혼합 $0.079/1M · 17.0 t/s · TTFT 31.68s · 128k ctx` · 가성비 75.9
 
 ## 레이더 8축 (평균=50 기준선)
 

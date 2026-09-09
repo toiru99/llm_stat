@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hermes 4 405B (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-08
-timestamp: 2026-09-08T00:00:00Z
+updated: 2026-09-09
+timestamp: 2026-09-09T00:00:00Z
 ---
 
 # Hermes 4 405B (Non-reasoning)
@@ -37,7 +37,7 @@ Nous Research · Open · Large(406B) · 컨텍스트 128k · 종합지능 **7.0*
 - **약점**: 추론, 지시 따르기
 
 ## 실용 지표
-`입력 $1.0 · 출력 $3.0 · 혼합 $1.2/1M · 42.0 t/s · TTFT 2.37s · 128k ctx` · 가성비 5.8
+`입력 $1.0 · 출력 $3.0 · 혼합 $1.2/1M · 42.0 t/s · TTFT 2.42s · 128k ctx` · 가성비 5.8
 
 ## 레이더 8축 (평균=50 기준선)
 

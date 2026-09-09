@@ -19,13 +19,13 @@ radar:
   trust: { s: 38.1, z: 0.63, r: 59.5, estimated: false }  # 신뢰성
   multimodal: { s: 93.1, z: 1.13, r: 67.0, estimated: false }  # 멀티모달
   long_context: { s: 88.8, z: 1.22, r: 68.3, estimated: false }  # 긴문맥
-  instruction: { s: 76.6, z: 1.0, r: 65.0, estimated: true }  # 지시 따르기
+  instruction: { s: 76.8, z: 1.0, r: 65.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 5 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-08
-timestamp: 2026-09-08T00:00:00Z
+updated: 2026-09-09
+timestamp: 2026-09-09T00:00:00Z
 ---
 
 # Claude Opus 5 (high)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **48.0**
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $5.0 · 출력 $25.0 · 혼합 $3.85/1M · 51.0 t/s · TTFT 16.62s · 1M ctx` · 가성비 12.5
+`입력 $5.0 · 출력 $25.0 · 혼합 $3.85/1M · 51.0 t/s · TTFT 21.83s · 1M ctx` · 가성비 12.5
 
 ## 레이더 8축 (평균=50 기준선)
 

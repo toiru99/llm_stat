@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nex-N2-Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-08
-timestamp: 2026-09-08T00:00:00Z
+updated: 2026-09-09
+timestamp: 2026-09-09T00:00:00Z
 ---
 
 # Nex-N2-Pro
@@ -37,7 +37,7 @@ Nex AGI · Open · Large(397B) · 컨텍스트 262k · 종합지능 **28.0**
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.5 · 출력 $2.5 · 혼합 $0.525/1M · 117.0 t/s · TTFT 1.65s · 262k ctx` · 가성비 53.3
+`입력 $0.5 · 출력 $2.5 · 혼합 $0.525/1M · 117.0 t/s · TTFT 1.76s · 262k ctx` · 가성비 53.3
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 12.0
 price_blended_usd_1m: 2.1
-output_speed_tps: 59.0
+output_speed_tps: 54.0
 context_window: 262000
 status: past
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Coder 480B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-08
-timestamp: 2026-09-08T00:00:00Z
+updated: 2026-09-09
+timestamp: 2026-09-09T00:00:00Z
 ---
 
 # Qwen3 Coder 480B
@@ -37,7 +37,7 @@ Alibaba · Open · Large(480B) · 컨텍스트 262k · 종합지능 **12.0** · 
 - **약점**: 지시 따르기, 추론
 
 ## 실용 지표
-`입력 $1.5 · 출력 $7.5 · 혼합 $2.1/1M · 59.0 t/s · TTFT 3.01s · 262k ctx` · 가성비 5.7
+`입력 $1.5 · 출력 $7.5 · 혼합 $2.1/1M · 54.0 t/s · TTFT 2.97s · 262k ctx` · 가성비 5.7
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 40.0
 price_blended_usd_1m: 0.5775
-output_speed_tps: 300.0
+output_speed_tps: 282.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -19,13 +19,13 @@ radar:
   trust: { s: 33.0, z: 0.39, r: 55.8, estimated: false }  # 신뢰성
   multimodal: { s: 97.2, z: 1.34, r: 70.1, estimated: false }  # 멀티모달
   long_context: { s: 93.3, z: 1.36, r: 70.4, estimated: false }  # 긴문맥
-  instruction: { s: 79.5, z: 1.12, r: 66.7, estimated: true }  # 지시 따르기
+  instruction: { s: 82.5, z: 1.24, r: 68.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.7 Flash (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-08
-timestamp: 2026-09-08T00:00:00Z
+updated: 2026-09-09
+timestamp: 2026-09-09T00:00:00Z
 ---
 
 # Gemini 3.7 Flash (medium)
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **40.0**
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $0.75 · 출력 $3.75 · 혼합 $0.5775/1M · 300.0 t/s · TTFT 5.19s · 1M ctx` · 가성비 69.3
+`입력 $0.75 · 출력 $3.75 · 혼합 $0.5775/1M · 282.0 t/s · TTFT 5.03s · 1M ctx` · 가성비 69.3
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **40.0**
 | 신뢰성 | 55.8 | +0.39 | 실측 | [[aa-omniscience]] 34.0%×1.0 |
 | 멀티모달 | 70.1 | +1.34 | 실측 | [[mmmu-pro]] 85.0%×1.0 |
 | 긴문맥 | 70.4 | +1.36 | 실측 | [[aa-lcr]] 83.0%×1.0 |
-| 지시 따르기 | 66.7 | +1.12 | 추정 | (추정) |
+| 지시 따르기 | 68.6 | +1.24 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

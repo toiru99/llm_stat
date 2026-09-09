@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.6 Plus
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-08
-timestamp: 2026-09-08T00:00:00Z
+updated: 2026-09-09
+timestamp: 2026-09-09T00:00:00Z
 ---
 
 # Qwen3.6 Plus
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **27.0** ·
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.5 · 출력 $3.0 · 혼합 $0.435/1M · 56.0 t/s · TTFT 2.08s · 1M ctx` · 가성비 62.1
+`입력 $0.5 · 출력 $3.0 · 혼합 $0.435/1M · 56.0 t/s · TTFT 2.13s · 1M ctx` · 가성비 62.1
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 12.0
 price_blended_usd_1m: 0.299
-output_speed_tps: 59.0
+output_speed_tps: 58.0
 context_window: 256000
 status: past
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 235B 2507 (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-08
-timestamp: 2026-09-08T00:00:00Z
+updated: 2026-09-09
+timestamp: 2026-09-09T00:00:00Z
 ---
 
 # Qwen3 235B 2507 (Non-reasoning)
@@ -37,7 +37,7 @@ Alibaba · Open · Large(235B) · 컨텍스트 256k · 종합지능 **12.0** · 
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $0.23 · 출력 $0.92 · 혼합 $0.299/1M · 59.0 t/s · TTFT 2.39s · 256k ctx` · 가성비 40.1
+`입력 $0.23 · 출력 $0.92 · 혼합 $0.299/1M · 58.0 t/s · TTFT 2.38s · 256k ctx` · 가성비 40.1
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 4B (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-08
-timestamp: 2026-09-08T00:00:00Z
+updated: 2026-09-09
+timestamp: 2026-09-09T00:00:00Z
 ---
 
 # Qwen3.5 4B (Non-reasoning)
@@ -37,7 +37,7 @@ Alibaba · Open · Small(4.66B) · 컨텍스트 262k · 종합지능 **11.0**
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $0.03 · 출력 $0.15 · 혼합 $0.042/1M · 22.0 t/s · TTFT 0.73s · 262k ctx` · 가성비 261.9
+`입력 $0.03 · 출력 $0.15 · 혼합 $0.042/1M · 22.0 t/s · TTFT 0.78s · 262k ctx` · 가성비 261.9
 
 ## 레이더 8축 (평균=50 기준선)
 

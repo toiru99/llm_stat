@@ -5,7 +5,7 @@ creator: ByteDance Seed
 license: Open
 intelligence_index: 12.0
 price_blended_usd_1m: 0.246
-output_speed_tps: 33.0
+output_speed_tps: 28.0
 context_window: 512000
 status: past
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Seed-OSS-36B-Instruct
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-08
-timestamp: 2026-09-08T00:00:00Z
+updated: 2026-09-09
+timestamp: 2026-09-09T00:00:00Z
 ---
 
 # Seed-OSS-36B-Instruct
@@ -37,7 +37,7 @@ ByteDance Seed · Open · Small(36.2B) · 컨텍스트 512k · 종합지능 **12
 - **약점**: 신뢰성, 코딩
 
 ## 실용 지표
-`입력 $0.21 · 출력 $0.57 · 혼합 $0.246/1M · 33.0 t/s · TTFT 2.69s · 512k ctx` · 가성비 48.8
+`입력 $0.21 · 출력 $0.57 · 혼합 $0.246/1M · 28.0 t/s · TTFT 2.69s · 512k ctx` · 가성비 48.8
 
 ## 레이더 8축 (평균=50 기준선)
 

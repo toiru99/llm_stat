@@ -5,7 +5,7 @@ creator: Alibaba
 license: Proprietary
 intelligence_index: 6.0
 price_blended_usd_1m: 0.065
-output_speed_tps: 109.0
+output_speed_tps: 105.0
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen2.5 Turbo
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-08
-timestamp: 2026-09-08T00:00:00Z
+updated: 2026-09-09
+timestamp: 2026-09-09T00:00:00Z
 ---
 
 # Qwen2.5 Turbo
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **6.0** · 
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.2 · 혼합 $0.065/1M · 109.0 t/s · TTFT 2.14s · 1M ctx` · 가성비 92.3
+`입력 $0.05 · 출력 $0.2 · 혼합 $0.065/1M · 105.0 t/s · TTFT 2.15s · 1M ctx` · 가성비 92.3
 
 ## 레이더 8축 (평균=50 기준선)
 

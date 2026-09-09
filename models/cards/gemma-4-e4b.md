@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 E4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-08
-timestamp: 2026-09-08T00:00:00Z
+updated: 2026-09-09
+timestamp: 2026-09-09T00:00:00Z
 ---
 
 # Gemma 4 E4B
@@ -37,7 +37,7 @@ Google · Open · Small(8B) · 컨텍스트 128k · 종합지능 **9.0**
 - **약점**: 멀티모달, 에이전트
 
 ## 실용 지표
-`입력 $0.02 · 출력 $0.1 · 혼합 $0.028/1M · 42.0 t/s · TTFT 0.83s · 128k ctx` · 가성비 321.4
+`입력 $0.02 · 출력 $0.1 · 혼합 $0.028/1M · 42.0 t/s · TTFT 0.89s · 128k ctx` · 가성비 321.4
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Fable 5 (with fallback)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-08
-timestamp: 2026-09-08T00:00:00Z
+updated: 2026-09-09
+timestamp: 2026-09-09T00:00:00Z
 ---
 
 # Claude Fable 5 (with fallback)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **50.0**
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $10.0 · 출력 $50.0 · 혼합 $7.7/1M · 63.0 t/s · TTFT 79.61s · 1M ctx` · 가성비 6.5
+`입력 $10.0 · 출력 $50.0 · 혼합 $7.7/1M · 63.0 t/s · TTFT 83.3s · 1M ctx` · 가성비 6.5
 
 ## 레이더 8축 (평균=50 기준선)
 

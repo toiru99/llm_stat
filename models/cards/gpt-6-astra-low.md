@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 46.0
 price_blended_usd_1m: 7.7
-output_speed_tps: 53.0
+output_speed_tps: 47.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -19,13 +19,13 @@ radar:
   trust: { s: 52.6, z: 1.31, r: 69.7, estimated: false }  # 신뢰성
   multimodal: { s: 97.2, z: 1.34, r: 70.1, estimated: false }  # 멀티모달
   long_context: { s: 89.9, z: 1.26, r: 68.9, estimated: false }  # 긴문맥
-  instruction: { s: 79.7, z: 1.13, r: 66.9, estimated: true }  # 지시 따르기
+  instruction: { s: 80.7, z: 1.16, r: 67.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6 Astra (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-08
-timestamp: 2026-09-08T00:00:00Z
+updated: 2026-09-09
+timestamp: 2026-09-09T00:00:00Z
 ---
 
 # GPT-6 Astra (low)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **46.0**
 - **약점**: 에이전트, 지시 따르기
 
 ## 실용 지표
-`입력 $10.0 · 출력 $50.0 · 혼합 $7.7/1M · 53.0 t/s · TTFT 2.55s · 1M ctx` · 가성비 6.0
+`입력 $10.0 · 출력 $50.0 · 혼합 $7.7/1M · 47.0 t/s · TTFT 2.69s · 1M ctx` · 가성비 6.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **46.0**
 | 신뢰성 | 69.7 | +1.31 | 실측 | [[aa-omniscience]] 53.0%×1.0 |
 | 멀티모달 | 70.1 | +1.34 | 실측 | [[mmmu-pro]] 85.0%×1.0 |
 | 긴문맥 | 68.9 | +1.26 | 실측 | [[aa-lcr]] 80.0%×1.0 |
-| 지시 따르기 | 66.9 | +1.13 | 추정 | (추정) |
+| 지시 따르기 | 67.5 | +1.16 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
