@@ -107,3 +107,31 @@ test('parseBalanced: 문자열 내 중괄호·이스케이프 처리', () => {
   const start = s.indexOf('{');
   assert.equal(parseBalanced(s, start), '{"id":"a","t":"br{ace \\" quote","n":{"x":1}}');
 });
+
+// 2026-09: 상세 데이터의 id와 혼합가격 필드가 제거됐다.
+test('slug 기반 모델: 중첩 creator와 키 순서에 관계없이 추출', () => {
+  const m = extractModelAttrs(JSON.stringify({ models: [{
+    slug: 'new-model', name: 'New Model (high)', shortName: 'New Model',
+    creator: { id: 'creator', name: 'Creator' }, deprecated: false,
+    isReasoning: true, paramClass: 'large', priceClass: 'high',
+    cacheHitPrice: 0.2, price1mInputTokens: 2, price1mOutputTokens: 10,
+  }] }));
+  assert.equal(m.get('New Model')?.blendedPrice, 1.54);
+  assert.equal(m.get('New Model (high)')?.paramClass, 'large');
+  assert.equal(m.has('Creator'), false);
+});
+
+for (const [label, prices, expected] of [
+  ['캐시 미제공은 입력가 사용', { cacheHitPrice: null, price1mInputTokens: 0.6, price1mOutputTokens: 1.8 }, 0.72],
+  ['무료 캐시는 0 유지', { cacheHitPrice: 0, price1mInputTokens: 2, price1mOutputTokens: 10 }, 1.4],
+  ['무료 모델', { price1mInputTokens: 0, price1mOutputTokens: 0 }, 0],
+  ['입력가 누락', { cacheHitPrice: 0.2, price1mOutputTokens: 10 }, null],
+  ['출력가 누락', { price1mInputTokens: 2 }, null],
+  ['문자열 가격 거부', { price1mInputTokens: '2', price1mOutputTokens: 10 }, null],
+  ['기존 혼합가 우선', { price1mBlended7To2To1: 3, price1mInputTokens: 2, price1mOutputTokens: 10 }, 3],
+]) {
+  test(`혼합가 복원: ${label}`, () => {
+    const m = extractModelAttrs(JSON.stringify({ id: 'test', name: 'Model', deprecated: false, ...prices }));
+    assert.equal(m.get('Model').blendedPrice, expected);
+  });
+}

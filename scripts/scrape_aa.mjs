@@ -3,7 +3,7 @@
 // 열 그룹을 펼쳐 41열 표를 JSON으로 저장. 임베드 __next_f에서 모델 속성
 // (paramClass/totalParameters/isReasoning/deprecated/혼합가/priceClass)을 추출해 행에 조인한다.
 // 혼합가를 임베드에서 가져오는 이유: AA가 2026-07-21 표에서 "Blended USD/1M Tokens" 열을
-// "Cost per Task USD"로 교체했으나 임베드에는 같은 값이 price1mBlended7To2To1 로 남아 있다.
+// "Cost per Task USD"로 교체했다. 임베드 혼합가가 없으면 입력·출력·캐시 단가로 복원한다.
 // 사용: node scripts/scrape_aa.mjs  (사전: npm i playwright && npx playwright install chromium)
 // 산출물: models/data/aa-leaderboard-<YYYY-MM-DD>.json, models/data/latest.json
 // 출처표기 의무: artificialanalysis.ai

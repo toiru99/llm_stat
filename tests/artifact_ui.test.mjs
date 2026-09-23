@@ -84,7 +84,9 @@ test('혼합가 행은 가장 싼 칸이 강조된다 (작을수록 좋음)', as
   const cells = await rowCells('혼합가');
   const nums = cells.map(c => c.num).filter(v => v != null);
   const min = Math.min(...nums);
-  cells.forEach(c => assert.equal(c.best, c.num === min, `혼합가 ${c.txt}`));
+  // 최신 상위 모델의 가격이 모두 같을 수 있다. 전원 동점은 강조하지 않는다.
+  const hasDifference = new Set(nums).size > 1;
+  cells.forEach(c => assert.equal(c.best, hasDifference && c.num === min, `혼합가 ${c.txt}`));
 });
 
 test('종합지능 행은 가장 높은 칸이 강조된다 (클수록 좋음)', async () => {

@@ -1,6 +1,6 @@
 // AA 페이지 임베드(__next_f 청크 연결 텍스트)에서 모델 필터 속성만 추출.
 // 소형(nav)·상세 두 형태의 모델 오브젝트가 있고 둘 다 "deprecated" 키를 가짐.
-// "deprecated": 등장 지점마다 가장 가까운 {"id":" 를 시작 후보로 균형 파싱 →
+// id·slug·name으로 시작하는 오브젝트를 균형 파싱 →
 // name+deprecated 를 갖춘 오브젝트만 채택. paramClass 보유(상세) 엔트리 우선.
 // 리더보드 테이블은 shortName으로 렌더되므로(실측: "Claude Opus 4.8 (max)" ←
 // name "Claude Opus 4.8 (Adaptive Reasoning, Max Effort)") name·shortName 둘 다
@@ -28,17 +28,21 @@ export function parseBalanced(text, start) {
 const detail = (a) =>
   [a.paramClass, a.totalParameters, a.blendedPrice, a.priceClass].filter((v) => v != null).length;
 
+function blendedPrice(o) {
+  if (Number.isFinite(o.price1mBlended7To2To1)) return o.price1mBlended7To2To1;
+  const input = o.price1mInputTokens, output = o.price1mOutputTokens;
+  if (!Number.isFinite(input) || !Number.isFinite(output)) return null;
+  const cache = o.cacheHitPrice ?? input;
+  if (!Number.isFinite(cache)) return null;
+  return (7 * cache + 2 * input + output) / 10;
+}
+
 export function extractModelAttrs(text) {
   const byName = new Map();   // 정확한 name 키 (우선)
   const byShort = new Map();  // shortName 키 (보조 — 테이블 표기)
-  let i = 0;
-  for (;;) {
-    const k = text.indexOf('"deprecated":', i);
-    if (k < 0) break;
-    i = k + '"deprecated":'.length;
-    const start = text.lastIndexOf('{"id":"', k);
-    if (start < 0) continue;
-    const raw = parseBalanced(text, start);
+  // 모델 id 제거 및 creator 중첩 위치 변경에 영향받지 않도록 후보 자체를 파싱한다.
+  for (const match of text.matchAll(/\{(?=\s*"(?:id|slug|name)"\s*:)/g)) {
+    const raw = parseBalanced(text, match.index);
     if (!raw) continue;
     let o;
     try { o = JSON.parse(raw); } catch { continue; }
@@ -48,8 +52,8 @@ export function extractModelAttrs(text) {
       totalParameters: o.totalParameters ?? null,
       isReasoning: typeof o.isReasoning === 'boolean' ? o.isReasoning : null,
       deprecated: o.deprecated,
-      // 표에서 사라진 "Blended USD/1M Tokens"(= 캐시7:입력2:출력1 가중) 원본값
-      blendedPrice: typeof o.price1mBlended7To2To1 === 'number' ? o.price1mBlended7To2To1 : null,
+      // 기존 혼합가가 없으면 원본 단가로 복원 (캐시 미제공은 입력가 사용).
+      blendedPrice: blendedPrice(o),
       priceClass: typeof o.priceClass === 'string' ? o.priceClass : null,
     };
     const prev = byName.get(o.name);

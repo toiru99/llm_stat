@@ -9,28 +9,28 @@ output_speed_tps: None
 context_window: 131000
 status: current
 size_class: Small
-params_b: 32
+params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 25.4, z: -0.75, r: 38.8, estimated: false }  # 전문 지식
-  reasoning: { s: 22.8, z: -0.59, r: 41.2, estimated: false }  # 추론
-  coding: { s: 3.0, z: -1.05, r: 34.3, estimated: false }  # 코딩
-  agentic: { s: 3.5, z: -1.3, r: 30.5, estimated: false }  # 에이전트
-  trust: { s: 16.5, z: -0.39, r: 44.1, estimated: false }  # 신뢰성
+  knowledge: { s: 25.3, z: -0.77, r: 38.4, estimated: false }  # 전문 지식
+  reasoning: { s: 22.8, z: -0.61, r: 40.9, estimated: false }  # 추론
+  coding: { s: 3.0, z: -1.11, r: 33.4, estimated: false }  # 코딩
+  agentic: { s: 3.5, z: -1.32, r: 30.3, estimated: false }  # 에이전트
+  trust: { s: 16.5, z: -0.43, r: 43.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 28.8, z: -0.62, r: 40.7, estimated: true }  # 긴문맥
-  instruction: { s: 29.6, z: -0.96, r: 35.5, estimated: false }  # 지시 따르기
+  long_context: { s: 22.9, z: -0.84, r: 37.4, estimated: true }  # 긴문맥
+  instruction: { s: 29.6, z: -1.0, r: 35.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — EXAONE 4.0 32B (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-09
-timestamp: 2026-09-09T00:00:00Z
+updated: 2026-09-23
+timestamp: 2026-09-23T00:00:00Z
 ---
 
 # EXAONE 4.0 32B (Non-reasoning)
 
-LG AI Research · Open · Small(32B) · 컨텍스트 131k · 종합지능 **6.0**
+LG AI Research · Open · Small · 컨텍스트 131k · 종합지능 **6.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 추론
@@ -43,14 +43,14 @@ LG AI Research · Open · Small(32B) · 컨텍스트 131k · 종합지능 **6.0*
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 38.8 | -0.75 | 실측 | [[aa-omniscience]] 11.0%×1.0, [[gpqa-diamond]] 63.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 41.2 | -0.59 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 63.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 34.3 | -1.05 | 실측 | [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 30.5 | -1.3 | 실측 | [[tau2-bench]] 4.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 44.1 | -0.39 | 실측 | [[aa-omniscience]] 18.0%×1.0 |
+| 전문 지식 | 38.4 | -0.77 | 실측 | [[aa-omniscience]] 11.0%×1.0, [[gpqa-diamond]] 63.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 추론 | 40.9 | -0.61 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 63.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 33.4 | -1.11 | 실측 | [[terminal-bench]] 2.0%×0.5 |
+| 에이전트 | 30.3 | -1.32 | 실측 | [[tau2-bench]] 4.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 신뢰성 | 43.6 | -0.43 | 실측 | [[aa-omniscience]] 18.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 40.7 | -0.62 | 추정 | (추정) |
-| 지시 따르기 | 35.5 | -0.96 | 실측 | [[ifbench]] 33.0%×1.0 |
+| 긴문맥 | 37.4 | -0.84 | 추정 | (추정) |
+| 지시 따르기 | 35.0 | -1.0 | 실측 | [[ifbench]] 33.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

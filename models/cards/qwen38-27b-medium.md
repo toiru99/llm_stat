@@ -3,54 +3,54 @@ type: Model
 title: Qwen3.8 27B (medium)
 creator: Alibaba
 license: Open
-intelligence_index: 31.0
+intelligence_index: 28.0
 price_blended_usd_1m: 0.435
-output_speed_tps: 52.0
+output_speed_tps: 50.0
 context_window: 256000
 status: current
 size_class: Small
-params_b: 27
+params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 40.3, z: -0.03, r: 49.6, estimated: false }  # 전문 지식
-  reasoning: { s: 36.5, z: 0.07, r: 51.1, estimated: false }  # 추론
-  coding: { s: 51.0, z: 0.62, r: 59.2, estimated: false }  # 코딩
-  agentic: { s: 83.4, z: 1.75, r: 76.3, estimated: false }  # 에이전트
-  trust: { s: 32.0, z: 0.34, r: 55.1, estimated: false }  # 신뢰성
-  multimodal: { s: 81.9, z: 0.58, r: 58.7, estimated: false }  # 멀티모달
-  long_context: { s: 89.9, z: 1.26, r: 68.9, estimated: false }  # 긴문맥
-  instruction: { s: 66.2, z: 0.56, r: 58.4, estimated: true }  # 지시 따르기
+  knowledge: { s: 40.1, z: -0.07, r: 48.9, estimated: false }  # 전문 지식
+  reasoning: { s: 36.3, z: 0.03, r: 50.4, estimated: false }  # 추론
+  coding: { s: 53.3, z: 0.63, r: 59.5, estimated: false }  # 코딩
+  agentic: { s: 78.2, z: 1.55, r: 73.2, estimated: false }  # 에이전트
+  trust: { s: 32.0, z: 0.29, r: 54.4, estimated: false }  # 신뢰성
+  multimodal: { s: 80.8, z: 0.52, r: 57.8, estimated: false }  # 멀티모달
+  long_context: { s: 89.9, z: 1.19, r: 67.9, estimated: false }  # 긴문맥
+  instruction: { s: 69.6, z: 0.66, r: 59.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.8 27B (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-09
-timestamp: 2026-09-09T00:00:00Z
+updated: 2026-09-23
+timestamp: 2026-09-23T00:00:00Z
 ---
 
 # Qwen3.8 27B (medium)
 
-Alibaba · Open · Small(27B) · 컨텍스트 256k · 종합지능 **31.0**
+Alibaba · Open · Small · 컨텍스트 256k · 종합지능 **28.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 긴문맥
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.5 · 출력 $3.0 · 혼합 $0.435/1M · 52.0 t/s · TTFT 4.02s · 256k ctx` · 가성비 71.3
+`입력 $0.5 · 출력 $3.0 · 혼합 $0.435/1M · 50.0 t/s · TTFT 3.85s · 256k ctx` · 가성비 64.4
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 49.6 | -0.03 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 14.0%×0.3 |
-| 추론 | 51.1 | +0.07 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 14.0%×1.0 |
-| 코딩 | 59.2 | +0.62 | 실측 | [[scicode]] 39.0%×1.0 |
-| 에이전트 | 76.3 | +1.75 | 실측 | [[gdpval]] 47.0%×1.0, [[tau3-banking]] 47.0%×1.0 |
-| 신뢰성 | 55.1 | +0.34 | 실측 | [[aa-omniscience]] 33.0%×1.0 |
-| 멀티모달 | 58.7 | +0.58 | 실측 | [[mmmu-pro]] 74.0%×1.0 |
-| 긴문맥 | 68.9 | +1.26 | 실측 | [[aa-lcr]] 80.0%×1.0 |
-| 지시 따르기 | 58.4 | +0.56 | 추정 | (추정) |
+| 전문 지식 | 48.9 | -0.07 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 14.0%×0.3 |
+| 추론 | 50.4 | +0.03 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 14.0%×1.0 |
+| 코딩 | 59.5 | +0.63 | 실측 | [[scicode]] 39.0%×1.0 |
+| 에이전트 | 73.2 | +1.55 | 실측 | [[gdpval]] 43.0%×1.0, [[tau3-banking]] 47.0%×1.0 |
+| 신뢰성 | 54.4 | +0.29 | 실측 | [[aa-omniscience]] 33.0%×1.0 |
+| 멀티모달 | 57.8 | +0.52 | 실측 | [[mmmu-pro]] 74.0%×1.0 |
+| 긴문맥 | 67.9 | +1.19 | 실측 | [[aa-lcr]] 80.0%×1.0 |
+| 지시 따르기 | 59.9 | +0.66 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

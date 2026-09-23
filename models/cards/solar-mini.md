@@ -9,32 +9,32 @@ output_speed_tps: None
 context_window: 4100
 status: past
 size_class: Small
-params_b: 10.7
+params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 29.9, z: -0.53, r: 42.0, estimated: true }  # 전문 지식
-  reasoning: { s: 23.9, z: -0.54, r: 42.0, estimated: true }  # 추론
-  coding: { s: 11.2, z: -0.77, r: 38.5, estimated: true }  # 코딩
-  agentic: { s: 20.2, z: -0.66, r: 40.1, estimated: false }  # 에이전트
-  trust: { s: 17.2, z: -0.36, r: 44.6, estimated: true }  # 신뢰성
+  knowledge: { s: 25.1, z: -0.78, r: 38.2, estimated: true }  # 전문 지식
+  reasoning: { s: 18.8, z: -0.79, r: 38.1, estimated: true }  # 추론
+  coding: { s: 13.7, z: -0.74, r: 38.9, estimated: true }  # 코딩
+  agentic: { s: 20.2, z: -0.68, r: 39.9, estimated: false }  # 에이전트
+  trust: { s: 33.2, z: 0.35, r: 55.2, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 21.4, z: -0.85, r: 37.3, estimated: true }  # 긴문맥
-  instruction: { s: 41.7, z: -0.46, r: 43.1, estimated: true }  # 지시 따르기
+  long_context: { s: 29.3, z: -0.65, r: 40.3, estimated: true }  # 긴문맥
+  instruction: { s: 32.1, z: -0.89, r: 36.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-09
-timestamp: 2026-09-09T00:00:00Z
+updated: 2026-09-23
+timestamp: 2026-09-23T00:00:00Z
 ---
 
 # Solar Mini
 
-Upstage · Open · Small(10.7B) · 컨텍스트 4k · 종합지능 **6.0** · ⚠️ past(구세대)
+Upstage · Open · Small · 컨텍스트 4k · 종합지능 **6.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 신뢰성, 지시 따르기
-- **약점**: 코딩, 긴문맥
+- **강점**: 신뢰성, 긴문맥
+- **약점**: 추론, 지시 따르기
 
 ## 실용 지표
 `입력 $0.15 · 출력 $0.15 · 혼합 $0.15/1M · None t/s · TTFT Nones · 4k ctx` · 가성비 40.0
@@ -43,14 +43,14 @@ Upstage · Open · Small(10.7B) · 컨텍스트 4k · 종합지능 **6.0** · �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 42.0 | -0.53 | 추정 | (추정) |
-| 추론 | 42.0 | -0.54 | 추정 | (추정) |
-| 코딩 | 38.5 | -0.77 | 추정 | (추정) |
-| 에이전트 | 40.1 | -0.66 | 실측 | [[tau2-bench]] 20.0%×1.0 |
-| 신뢰성 | 44.6 | -0.36 | 추정 | (추정) |
+| 전문 지식 | 38.2 | -0.78 | 추정 | (추정) |
+| 추론 | 38.1 | -0.79 | 추정 | (추정) |
+| 코딩 | 38.9 | -0.74 | 추정 | (추정) |
+| 에이전트 | 39.9 | -0.68 | 실측 | [[tau2-bench]] 20.0%×1.0 |
+| 신뢰성 | 55.2 | +0.35 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 37.3 | -0.85 | 추정 | (추정) |
-| 지시 따르기 | 43.1 | -0.46 | 추정 | (추정) |
+| 긴문맥 | 40.3 | -0.65 | 추정 | (추정) |
+| 지시 따르기 | 36.6 | -0.89 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

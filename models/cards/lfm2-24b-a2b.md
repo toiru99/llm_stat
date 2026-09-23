@@ -9,28 +9,28 @@ output_speed_tps: None
 context_window: 32800
 status: current
 size_class: Small
-params_b: 23.8
+params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 16.3, z: -1.19, r: 32.2, estimated: false }  # 전문 지식
-  reasoning: { s: 16.1, z: -0.91, r: 36.3, estimated: false }  # 추론
-  coding: { s: 0.0, z: -1.15, r: 32.7, estimated: false }  # 코딩
-  agentic: { s: 5.6, z: -1.22, r: 31.7, estimated: false }  # 에이전트
-  trust: { s: 29.9, z: 0.24, r: 53.6, estimated: false }  # 신뢰성
+  knowledge: { s: 16.3, z: -1.2, r: 32.0, estimated: false }  # 전문 지식
+  reasoning: { s: 16.0, z: -0.93, r: 36.1, estimated: false }  # 추론
+  coding: { s: 0.0, z: -1.21, r: 31.8, estimated: false }  # 코딩
+  agentic: { s: 5.6, z: -1.24, r: 31.4, estimated: false }  # 에이전트
+  trust: { s: 29.9, z: 0.2, r: 52.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.51, r: 27.4, estimated: false }  # 긴문맥
-  instruction: { s: 47.9, z: -0.2, r: 47.0, estimated: false }  # 지시 따르기
+  long_context: { s: 0.0, z: -1.54, r: 26.9, estimated: false }  # 긴문맥
+  instruction: { s: 47.9, z: -0.24, r: 46.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — LFM2 24B A2B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-09
-timestamp: 2026-09-09T00:00:00Z
+updated: 2026-09-23
+timestamp: 2026-09-23T00:00:00Z
 ---
 
 # LFM2 24B A2B
 
-Liquid AI · Open · Small(23.8B) · 컨텍스트 32k · 종합지능 **6.0**
+Liquid AI · Open · Small · 컨텍스트 32k · 종합지능 **6.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 지시 따르기
@@ -43,14 +43,14 @@ Liquid AI · Open · Small(23.8B) · 컨텍스트 32k · 종합지능 **6.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 32.2 | -1.19 | 실측 | [[aa-omniscience]] 6.0%×1.0, [[gpqa-diamond]] 47.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 36.3 | -0.91 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 47.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 32.7 | -1.15 | 실측 | [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 31.7 | -1.22 | 실측 | [[tau2-bench]] 11.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 53.6 | +0.24 | 실측 | [[aa-omniscience]] 31.0%×1.0 |
+| 전문 지식 | 32.0 | -1.2 | 실측 | [[aa-omniscience]] 6.0%×1.0, [[gpqa-diamond]] 47.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 36.1 | -0.93 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 47.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 31.8 | -1.21 | 실측 | [[terminal-bench]] 0.0%×0.5 |
+| 에이전트 | 31.4 | -1.24 | 실측 | [[tau2-bench]] 11.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 신뢰성 | 52.9 | +0.2 | 실측 | [[aa-omniscience]] 31.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 27.4 | -1.51 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 47.0 | -0.2 | 실측 | [[ifbench]] 46.0%×1.0 |
+| 긴문맥 | 26.9 | -1.54 | 실측 | [[aa-lcr]] 0.0%×1.0 |
+| 지시 따르기 | 46.4 | -0.24 | 실측 | [[ifbench]] 46.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

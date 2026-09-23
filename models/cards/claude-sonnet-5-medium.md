@@ -5,27 +5,27 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 28.0
 price_blended_usd_1m: 1.54
-output_speed_tps: 58.0
+output_speed_tps: 66.0
 context_window: 1000000
 status: current
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 54.0, z: 0.63, r: 59.5, estimated: false }  # 전문 지식
-  reasoning: { s: 39.1, z: 0.19, r: 52.9, estimated: false }  # 추론
-  coding: { s: 77.6, z: 1.54, r: 73.0, estimated: false }  # 코딩
-  agentic: { s: 57.1, z: 0.75, r: 61.2, estimated: false }  # 에이전트
-  trust: { s: 28.9, z: 0.19, r: 52.9, estimated: false }  # 신뢰성
+  knowledge: { s: 53.6, z: 0.56, r: 58.4, estimated: false }  # 전문 지식
+  reasoning: { s: 38.2, z: 0.12, r: 51.7, estimated: false }  # 추론
+  coding: { s: 75.0, z: 1.38, r: 70.7, estimated: false }  # 코딩
+  agentic: { s: 47.8, z: 0.38, r: 55.7, estimated: false }  # 에이전트
+  trust: { s: 28.9, z: 0.15, r: 52.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 83.1, z: 1.05, r: 65.7, estimated: false }  # 긴문맥
-  instruction: { s: 67.1, z: 0.6, r: 59.0, estimated: true }  # 지시 따르기
+  long_context: { s: 83.1, z: 0.99, r: 64.8, estimated: false }  # 긴문맥
+  instruction: { s: 73.3, z: 0.81, r: 62.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5 (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-09
-timestamp: 2026-09-09T00:00:00Z
+updated: 2026-09-23
+timestamp: 2026-09-23T00:00:00Z
 ---
 
 # Claude Sonnet 5 (medium)
@@ -34,23 +34,23 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **28.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 코딩, 긴문맥
-- **약점**: 추론, 신뢰성
+- **약점**: 신뢰성, 추론
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 58.0 t/s · TTFT 1.44s · 1M ctx` · 가성비 18.2
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 66.0 t/s · TTFT 2.18s · 1M ctx` · 가성비 18.2
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 59.5 | +0.63 | 실측 | [[aa-omniscience]] 37.0%×1.0, [[humanitys-last-exam]] 30.0%×0.3 |
-| 추론 | 52.9 | +0.19 | 실측 | [[critpt]] 9.0%×1.0, [[humanitys-last-exam]] 30.0%×1.0 |
-| 코딩 | 73.0 | +1.54 | 실측 | [[scicode]] 52.0%×1.0 |
-| 에이전트 | 61.2 | +0.75 | 실측 | [[gdpval]] 36.0%×1.0 |
-| 신뢰성 | 52.9 | +0.19 | 실측 | [[aa-omniscience]] 30.0%×1.0 |
+| 전문 지식 | 58.4 | +0.56 | 실측 | [[aa-omniscience]] 37.0%×1.0, [[humanitys-last-exam]] 30.0%×0.3 |
+| 추론 | 51.7 | +0.12 | 실측 | [[critpt]] 9.0%×1.0, [[humanitys-last-exam]] 30.0%×1.0 |
+| 코딩 | 70.7 | +1.38 | 실측 | [[scicode]] 52.0%×1.0 |
+| 에이전트 | 55.7 | +0.38 | 실측 | [[gdpval]] 32.0%×1.0 |
+| 신뢰성 | 52.2 | +0.15 | 실측 | [[aa-omniscience]] 30.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 65.7 | +1.05 | 실측 | [[aa-lcr]] 74.0%×1.0 |
-| 지시 따르기 | 59.0 | +0.6 | 추정 | (추정) |
+| 긴문맥 | 64.8 | +0.99 | 실측 | [[aa-lcr]] 74.0%×1.0 |
+| 지시 따르기 | 62.2 | +0.81 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
