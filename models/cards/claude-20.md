@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 27.9, z: -0.65, r: 40.2, estimated: false }  # 전문 지식
-  reasoning: { s: 27.9, z: -0.37, r: 44.5, estimated: false }  # 추론
-  coding: { s: 27.3, z: -0.27, r: 45.9, estimated: true }  # 코딩
-  agentic: { s: 40.0, z: 0.08, r: 51.3, estimated: true }  # 에이전트
-  trust: { s: 40.4, z: 0.68, r: 60.3, estimated: true }  # 신뢰성
+  knowledge: { s: 27.9, z: -0.65, r: 40.3, estimated: false }  # 전문 지식
+  reasoning: { s: 27.9, z: -0.36, r: 44.6, estimated: false }  # 추론
+  coding: { s: 27.3, z: -0.27, r: 46.0, estimated: true }  # 코딩
+  agentic: { s: 40.0, z: 0.09, r: 51.4, estimated: true }  # 에이전트
+  trust: { s: 40.4, z: 0.69, r: 60.4, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 47.0, z: -0.11, r: 48.3, estimated: true }  # 긴문맥
-  instruction: { s: 54.7, z: 0.04, r: 50.7, estimated: true }  # 지시 따르기
+  long_context: { s: 47.0, z: -0.11, r: 48.4, estimated: true }  # 긴문맥
+  instruction: { s: 54.7, z: 0.05, r: 50.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 2.0
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-23
-timestamp: 2026-09-23T00:00:00Z
+updated: 2026-09-24
+timestamp: 2026-09-24T00:00:00Z
 ---
 
 # Claude 2.0
@@ -43,14 +43,14 @@ Anthropic · Proprietary · Unknown · 컨텍스트 100k · 종합지능 **6.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 40.2 | -0.65 | 실측 | [[gpqa-diamond]] 34.0%×0.4 |
-| 추론 | 44.5 | -0.37 | 실측 | [[gpqa-diamond]] 34.0%×1.0 |
-| 코딩 | 45.9 | -0.27 | 추정 | (추정) |
-| 에이전트 | 51.3 | +0.08 | 추정 | (추정) |
-| 신뢰성 | 60.3 | +0.68 | 추정 | (추정) |
+| 전문 지식 | 40.3 | -0.65 | 실측 | [[gpqa-diamond]] 34.0%×0.4 |
+| 추론 | 44.6 | -0.36 | 실측 | [[gpqa-diamond]] 34.0%×1.0 |
+| 코딩 | 46.0 | -0.27 | 추정 | (추정) |
+| 에이전트 | 51.4 | +0.09 | 추정 | (추정) |
+| 신뢰성 | 60.4 | +0.69 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 48.3 | -0.11 | 추정 | (추정) |
-| 지시 따르기 | 50.7 | +0.04 | 추정 | (추정) |
+| 긴문맥 | 48.4 | -0.11 | 추정 | (추정) |
+| 지시 따르기 | 50.8 | +0.05 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen Chat 14B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-23
-timestamp: 2026-09-23T00:00:00Z
+updated: 2026-09-24
+timestamp: 2026-09-24T00:00:00Z
 ---
 
 # Qwen Chat 14B
