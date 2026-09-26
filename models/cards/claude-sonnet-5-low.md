@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 24.0
 price_blended_usd_1m: 1.54
-output_speed_tps: 64.0
+output_speed_tps: 65.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -15,8 +15,8 @@ radar:
   knowledge: { s: 50.6, z: 0.42, r: 56.3, estimated: false }  # 전문 지식
   reasoning: { s: 25.3, z: -0.48, r: 42.8, estimated: false }  # 추론
   coding: { s: 71.7, z: 1.27, r: 69.1, estimated: false }  # 코딩
-  agentic: { s: 41.8, z: 0.16, r: 52.4, estimated: false }  # 에이전트
-  trust: { s: 25.8, z: 0.01, r: 50.1, estimated: false }  # 신뢰성
+  agentic: { s: 41.8, z: 0.16, r: 52.3, estimated: false }  # 에이전트
+  trust: { s: 25.8, z: 0.0, r: 50.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 75.3, z: 0.75, r: 61.3, estimated: false }  # 긴문맥
   instruction: { s: 74.6, z: 0.88, r: 63.2, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # Claude Sonnet 5 (low)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **24.0**
 - **약점**: 신뢰성, 추론
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 64.0 t/s · TTFT 1.82s · 1M ctx` · 가성비 15.6
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 65.0 t/s · TTFT 1.56s · 1M ctx` · 가성비 15.6
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,8 +46,8 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **24.0**
 | 전문 지식 | 56.3 | +0.42 | 실측 | [[aa-omniscience]] 37.0%×1.0, [[humanitys-last-exam]] 22.0%×0.3 |
 | 추론 | 42.8 | -0.48 | 실측 | [[critpt]] 5.0%×1.0, [[humanitys-last-exam]] 22.0%×1.0 |
 | 코딩 | 69.1 | +1.27 | 실측 | [[scicode]] 50.0%×1.0 |
-| 에이전트 | 52.4 | +0.16 | 실측 | [[gdpval]] 28.0%×1.0 |
-| 신뢰성 | 50.1 | +0.01 | 실측 | [[aa-omniscience]] 27.0%×1.0 |
+| 에이전트 | 52.3 | +0.16 | 실측 | [[gdpval]] 28.0%×1.0 |
+| 신뢰성 | 50.1 | +0.0 | 실측 | [[aa-omniscience]] 27.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 61.3 | +0.75 | 실측 | [[aa-lcr]] 67.0%×1.0 |
 | 지시 따르기 | 63.2 | +0.88 | 추정 | (추정) |

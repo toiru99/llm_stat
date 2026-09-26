@@ -14,8 +14,8 @@ is_reasoning: false
 radar:
   knowledge: { s: 32.6, z: -0.43, r: 43.6, estimated: false }  # 전문 지식
   reasoning: { s: 17.9, z: -0.83, r: 37.6, estimated: false }  # 추론
-  coding: { s: 10.6, z: -0.84, r: 37.3, estimated: false }  # 코딩
-  agentic: { s: 14.9, z: -0.88, r: 36.9, estimated: false }  # 에이전트
+  coding: { s: 10.6, z: -0.85, r: 37.3, estimated: false }  # 코딩
+  agentic: { s: 14.9, z: -0.88, r: 36.8, estimated: false }  # 에이전트
   trust: { s: 47.4, z: 1.02, r: 65.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 28.1, z: -0.69, r: 39.7, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.1 405B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # Llama 3.1 405B
@@ -45,8 +45,8 @@ Meta · Open · Large · 컨텍스트 128k · 종합지능 **7.0**
 |---|---|---|---|---|
 | 전문 지식 | 43.6 | -0.43 | 실측 | [[aa-omniscience]] 23.0%×1.0, [[gpqa-diamond]] 52.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 37.6 | -0.83 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 52.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 37.3 | -0.84 | 실측 | [[terminal-bench]] 7.0%×0.5 |
-| 에이전트 | 36.9 | -0.88 | 실측 | [[tau2-bench]] 19.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
+| 코딩 | 37.3 | -0.85 | 실측 | [[terminal-bench]] 7.0%×0.5 |
+| 에이전트 | 36.8 | -0.88 | 실측 | [[tau2-bench]] 19.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
 | 신뢰성 | 65.3 | +1.02 | 실측 | [[aa-omniscience]] 48.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 39.7 | -0.69 | 실측 | [[aa-lcr]] 25.0%×1.0 |

@@ -4,8 +4,8 @@ title: Gemma 4 26B A4B (Non-reasoning)
 creator: Google
 license: Open
 intelligence_index: 13.0
-price_blended_usd_1m: 0.157
-output_speed_tps: 76.0
+price_blended_usd_1m: 0.136
+output_speed_tps: 105.0
 context_window: 256000
 status: current
 size_class: Small
@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 32.8, z: -0.42, r: 43.7, estimated: false }  # 전문 지식
   reasoning: { s: 29.2, z: -0.3, r: 45.5, estimated: false }  # 추론
   coding: { s: 37.9, z: 0.1, r: 51.5, estimated: false }  # 코딩
-  agentic: { s: 39.1, z: 0.06, r: 50.8, estimated: false }  # 에이전트
-  trust: { s: 6.2, z: -0.91, r: 36.4, estimated: false }  # 신뢰성
+  agentic: { s: 39.1, z: 0.05, r: 50.8, estimated: false }  # 에이전트
+  trust: { s: 6.2, z: -0.91, r: 36.3, estimated: false }  # 신뢰성
   multimodal: { s: 71.2, z: 0.04, r: 50.6, estimated: false }  # 멀티모달
-  long_context: { s: 47.2, z: -0.1, r: 48.5, estimated: false }  # 긴문맥
+  long_context: { s: 47.2, z: -0.1, r: 48.4, estimated: false }  # 긴문맥
   instruction: { s: 46.5, z: -0.29, r: 45.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 26B A4B (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # Gemma 4 26B A4B (Non-reasoning)
@@ -37,7 +37,7 @@ Google · Open · Small · 컨텍스트 256k · 종합지능 **13.0**
 - **약점**: 전문 지식, 신뢰성
 
 ## 실용 지표
-`입력 $0.13 · 출력 $0.4 · 혼합 $0.157/1M · 76.0 t/s · TTFT 1.3s · 256k ctx` · 가성비 82.8
+`입력 $0.13 · 출력 $0.4 · 혼합 $0.136/1M · 105.0 t/s · TTFT 1.09s · 256k ctx` · 가성비 95.6
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,10 +46,10 @@ Google · Open · Small · 컨텍스트 256k · 종합지능 **13.0**
 | 전문 지식 | 43.7 | -0.42 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 71.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
 | 추론 | 45.5 | -0.3 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 71.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
 | 코딩 | 51.5 | +0.1 | 실측 | [[terminal-bench]] 25.0%×0.5 |
-| 에이전트 | 50.8 | +0.06 | 실측 | [[tau2-bench]] 40.0%×1.0, [[terminal-bench]] 25.0%×1.0 |
-| 신뢰성 | 36.4 | -0.91 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
+| 에이전트 | 50.8 | +0.05 | 실측 | [[tau2-bench]] 40.0%×1.0, [[terminal-bench]] 25.0%×1.0 |
+| 신뢰성 | 36.3 | -0.91 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
 | 멀티모달 | 50.6 | +0.04 | 실측 | [[mmmu-pro]] 67.0%×1.0 |
-| 긴문맥 | 48.5 | -0.1 | 실측 | [[aa-lcr]] 42.0%×1.0 |
+| 긴문맥 | 48.4 | -0.1 | 실측 | [[aa-lcr]] 42.0%×1.0 |
 | 지시 따르기 | 45.7 | -0.29 | 실측 | [[ifbench]] 45.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

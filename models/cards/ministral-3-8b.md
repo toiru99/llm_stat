@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: 5.0
 price_blended_usd_1m: 0.0555
-output_speed_tps: 90.0
+output_speed_tps: 96.0
 context_window: 256000
 status: current
 size_class: Small
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 16.0, z: -0.92, r: 36.2, estimated: false }  # 추론
   coding: { s: 18.1, z: -0.59, r: 41.2, estimated: false }  # 코딩
   agentic: { s: 10.7, z: -1.04, r: 34.4, estimated: false }  # 에이전트
-  trust: { s: 4.1, z: -1.0, r: 34.9, estimated: false }  # 신뢰성
+  trust: { s: 4.1, z: -1.01, r: 34.9, estimated: false }  # 신뢰성
   multimodal: { s: 42.5, z: -1.4, r: 29.0, estimated: false }  # 멀티모달
   long_context: { s: 29.2, z: -0.65, r: 40.2, estimated: false }  # 긴문맥
   instruction: { s: 23.9, z: -1.22, r: 31.6, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ministral 3 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # Ministral 3 8B
@@ -37,7 +37,7 @@ Mistral · Open · Small · 컨텍스트 256k · 종합지능 **5.0**
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.15 · 혼합 $0.0555/1M · 90.0 t/s · TTFT 0.81s · 256k ctx` · 가성비 90.1
+`입력 $0.15 · 출력 $0.15 · 혼합 $0.0555/1M · 96.0 t/s · TTFT 0.77s · 256k ctx` · 가성비 90.1
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Mistral · Open · Small · 컨텍스트 256k · 종합지능 **5.0**
 | 추론 | 36.2 | -0.92 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 47.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 41.2 | -0.59 | 실측 | [[scicode]] 21.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
 | 에이전트 | 34.4 | -1.04 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 27.0%×1.0, [[tau3-banking]] 4.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
-| 신뢰성 | 34.9 | -1.0 | 실측 | [[aa-omniscience]] 6.0%×1.0 |
+| 신뢰성 | 34.9 | -1.01 | 실측 | [[aa-omniscience]] 6.0%×1.0 |
 | 멀티모달 | 29.0 | -1.4 | 실측 | [[mmmu-pro]] 46.0%×1.0 |
 | 긴문맥 | 40.2 | -0.65 | 실측 | [[aa-lcr]] 26.0%×1.0 |
 | 지시 따르기 | 31.6 | -1.22 | 실측 | [[ifbench]] 29.0%×1.0 |

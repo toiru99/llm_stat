@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 41.8, z: 0.01, r: 50.1, estimated: false }  # 전문 지식
   reasoning: { s: 27.9, z: -0.36, r: 44.6, estimated: false }  # 추론
   coding: { s: 51.5, z: 0.57, r: 58.6, estimated: false }  # 코딩
-  agentic: { s: 73.2, z: 1.36, r: 70.5, estimated: false }  # 에이전트
-  trust: { s: 3.1, z: -1.05, r: 34.2, estimated: false }  # 신뢰성
+  agentic: { s: 73.2, z: 1.37, r: 70.5, estimated: false }  # 에이전트
+  trust: { s: 3.1, z: -1.06, r: 34.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 47.2, z: -0.1, r: 48.5, estimated: false }  # 긴문맥
+  long_context: { s: 47.2, z: -0.1, r: 48.4, estimated: false }  # 긴문맥
   instruction: { s: 49.3, z: -0.17, r: 47.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Flash (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # DeepSeek V4 Flash (Non-reasoning)
@@ -46,10 +46,10 @@ DeepSeek · Open · Large · 컨텍스트 1M · 종합지능 **19.0** · ⚠️ 
 | 전문 지식 | 50.1 | +0.01 | 실측 | [[aa-omniscience]] 26.0%×1.0, [[gpqa-diamond]] 72.0%×0.4, [[humanitys-last-exam]] 8.0%×0.3 |
 | 추론 | 44.6 | -0.36 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 72.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
 | 코딩 | 58.6 | +0.57 | 실측 | [[terminal-bench]] 34.0%×0.5 |
-| 에이전트 | 70.5 | +1.36 | 실측 | [[tau2-bench]] 94.0%×1.0, [[terminal-bench]] 34.0%×1.0 |
-| 신뢰성 | 34.2 | -1.05 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
+| 에이전트 | 70.5 | +1.37 | 실측 | [[tau2-bench]] 94.0%×1.0, [[terminal-bench]] 34.0%×1.0 |
+| 신뢰성 | 34.1 | -1.06 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 48.5 | -0.1 | 실측 | [[aa-lcr]] 42.0%×1.0 |
+| 긴문맥 | 48.4 | -0.1 | 실측 | [[aa-lcr]] 42.0%×1.0 |
 | 지시 따르기 | 47.4 | -0.17 | 실측 | [[ifbench]] 47.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 24.0
 price_blended_usd_1m: 1.305
-output_speed_tps: 196.0
+output_speed_tps: 204.0
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 64.5, z: 1.08, r: 66.2, estimated: false }  # 전문 지식
   reasoning: { s: 42.1, z: 0.31, r: 54.6, estimated: false }  # 추론
   coding: { s: 69.7, z: 1.2, r: 68.0, estimated: false }  # 코딩
-  agentic: { s: 64.6, z: 1.03, r: 65.5, estimated: false }  # 에이전트
-  trust: { s: 24.7, z: -0.04, r: 49.4, estimated: false }  # 신뢰성
-  multimodal: { s: 89.0, z: 0.94, r: 64.0, estimated: false }  # 멀티모달
+  agentic: { s: 64.6, z: 1.04, r: 65.6, estimated: false }  # 에이전트
+  trust: { s: 24.7, z: -0.04, r: 49.3, estimated: false }  # 신뢰성
+  multimodal: { s: 89.0, z: 0.94, r: 64.1, estimated: false }  # 멀티모달
   long_context: { s: 68.5, z: 0.55, r: 58.2, estimated: false }  # 긴문맥
   instruction: { s: 49.3, z: -0.17, r: 47.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.5 Flash (minimal)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # Gemini 3.5 Flash (minimal)
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **24.0** · 
 - **약점**: 신뢰성, 지시 따르기
 
 ## 실용 지표
-`입력 $1.5 · 출력 $9.0 · 혼합 $1.305/1M · 196.0 t/s · TTFT 0.99s · 1M ctx` · 가성비 18.4
+`입력 $1.5 · 출력 $9.0 · 혼합 $1.305/1M · 204.0 t/s · TTFT 0.98s · 1M ctx` · 가성비 18.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,9 +46,9 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **24.0** · 
 | 전문 지식 | 66.2 | +1.08 | 실측 | [[aa-omniscience]] 43.0%×1.0, [[gpqa-diamond]] 83.0%×0.4, [[humanitys-last-exam]] 24.0%×0.3 |
 | 추론 | 54.6 | +0.31 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 83.0%×1.0, [[humanitys-last-exam]] 24.0%×1.0 |
 | 코딩 | 68.0 | +1.2 | 실측 | [[terminal-bench]] 46.0%×0.5 |
-| 에이전트 | 65.5 | +1.03 | 실측 | [[tau2-bench]] 59.0%×1.0, [[terminal-bench]] 46.0%×1.0 |
-| 신뢰성 | 49.4 | -0.04 | 실측 | [[aa-omniscience]] 26.0%×1.0 |
-| 멀티모달 | 64.0 | +0.94 | 실측 | [[mmmu-pro]] 80.0%×1.0 |
+| 에이전트 | 65.6 | +1.04 | 실측 | [[tau2-bench]] 59.0%×1.0, [[terminal-bench]] 46.0%×1.0 |
+| 신뢰성 | 49.3 | -0.04 | 실측 | [[aa-omniscience]] 26.0%×1.0 |
+| 멀티모달 | 64.1 | +0.94 | 실측 | [[mmmu-pro]] 80.0%×1.0 |
 | 긴문맥 | 58.2 | +0.55 | 실측 | [[aa-lcr]] 61.0%×1.0 |
 | 지시 따르기 | 47.4 | -0.17 | 실측 | [[ifbench]] 47.0%×1.0 |
 

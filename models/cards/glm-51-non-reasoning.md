@@ -5,7 +5,7 @@ creator: Z AI
 license: Open
 intelligence_index: 24.0
 price_blended_usd_1m: 0.898
-output_speed_tps: 40.0
+output_speed_tps: 57.0
 context_window: 200000
 status: past
 size_class: Large
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 50.1, z: 0.4, r: 56.0, estimated: false }  # 전문 지식
   reasoning: { s: 43.7, z: 0.38, r: 55.7, estimated: false }  # 추론
   coding: { s: 54.5, z: 0.68, r: 60.2, estimated: false }  # 코딩
-  agentic: { s: 76.3, z: 1.48, r: 72.2, estimated: false }  # 에이전트
+  agentic: { s: 76.3, z: 1.48, r: 72.3, estimated: false }  # 에이전트
   trust: { s: 35.1, z: 0.44, r: 56.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 59.6, z: 0.27, r: 54.1, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5.1 (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # GLM-5.1 (Non-reasoning)
@@ -37,7 +37,7 @@ Z AI · Open · Large · 컨텍스트 200k · 종합지능 **24.0** · ⚠️ pa
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $1.38 · 출력 $4.4 · 혼합 $0.898/1M · 40.0 t/s · TTFT 1.88s · 200k ctx` · 가성비 26.7
+`입력 $1.38 · 출력 $4.4 · 혼합 $0.898/1M · 57.0 t/s · TTFT 1.74s · 200k ctx` · 가성비 26.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Z AI · Open · Large · 컨텍스트 200k · 종합지능 **24.0** · ⚠️ pa
 | 전문 지식 | 56.0 | +0.4 | 실측 | [[aa-omniscience]] 25.0%×1.0, [[gpqa-diamond]] 84.0%×0.4, [[humanitys-last-exam]] 28.0%×0.3 |
 | 추론 | 55.7 | +0.38 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 84.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
 | 코딩 | 60.2 | +0.68 | 실측 | [[terminal-bench]] 36.0%×0.5 |
-| 에이전트 | 72.2 | +1.48 | 실측 | [[tau2-bench]] 97.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
+| 에이전트 | 72.3 | +1.48 | 실측 | [[tau2-bench]] 97.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
 | 신뢰성 | 56.6 | +0.44 | 실측 | [[aa-omniscience]] 36.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 54.1 | +0.27 | 실측 | [[aa-lcr]] 53.0%×1.0 |

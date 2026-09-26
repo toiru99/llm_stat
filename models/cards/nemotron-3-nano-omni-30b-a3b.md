@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: 10.0
 price_blended_usd_1m: 0.285
-output_speed_tps: 275.0
+output_speed_tps: 267.0
 context_window: 256000
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3 Nano Omni 30B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # Nemotron 3 Nano Omni 30B A3B
@@ -37,7 +37,7 @@ NVIDIA · Open · Small · 컨텍스트 256k · 종합지능 **10.0**
 - **약점**: 추론, 멀티모달
 
 ## 실용 지표
-`입력 $0.2 · 출력 $1.09 · 혼합 $0.285/1M · 275.0 t/s · TTFT 0.49s · 256k ctx` · 가성비 35.1
+`입력 $0.2 · 출력 $1.09 · 혼합 $0.285/1M · 267.0 t/s · TTFT 0.48s · 256k ctx` · 가성비 35.1
 
 ## 레이더 8축 (평균=50 기준선)
 

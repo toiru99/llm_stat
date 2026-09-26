@@ -12,11 +12,11 @@ size_class: Large
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 29.5, z: -0.58, r: 41.4, estimated: false }  # 전문 지식
+  knowledge: { s: 29.5, z: -0.58, r: 41.3, estimated: false }  # 전문 지식
   reasoning: { s: 22.4, z: -0.62, r: 40.7, estimated: false }  # 추론
-  coding: { s: 28.8, z: -0.21, r: 46.8, estimated: false }  # 코딩
+  coding: { s: 28.8, z: -0.22, r: 46.8, estimated: false }  # 코딩
   agentic: { s: 36.6, z: -0.04, r: 49.4, estimated: false }  # 에이전트
-  trust: { s: 54.6, z: 1.35, r: 70.3, estimated: false }  # 신뢰성
+  trust: { s: 54.6, z: 1.36, r: 70.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 51.7, z: 0.03, r: 50.5, estimated: false }  # 긴문맥
   instruction: { s: 39.4, z: -0.58, r: 41.3, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Coder 480B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # Qwen3 Coder 480B
@@ -37,17 +37,17 @@ Alibaba · Open · Large · 컨텍스트 262k · 종합지능 **12.0** · ⚠️
 - **약점**: 지시 따르기, 추론
 
 ## 실용 지표
-`입력 $1.5 · 출력 $7.5 · 혼합 $2.1/1M · 56.0 t/s · TTFT 3.05s · 262k ctx` · 가성비 5.7
+`입력 $1.5 · 출력 $7.5 · 혼합 $2.1/1M · 56.0 t/s · TTFT 3.03s · 262k ctx` · 가성비 5.7
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 41.4 | -0.58 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 62.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 전문 지식 | 41.3 | -0.58 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 62.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 40.7 | -0.62 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 62.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 46.8 | -0.21 | 실측 | [[terminal-bench]] 19.0%×0.5 |
+| 코딩 | 46.8 | -0.22 | 실측 | [[terminal-bench]] 19.0%×0.5 |
 | 에이전트 | 49.4 | -0.04 | 실측 | [[tau2-bench]] 44.0%×1.0, [[terminal-bench]] 19.0%×1.0 |
-| 신뢰성 | 70.3 | +1.35 | 실측 | [[aa-omniscience]] 55.0%×1.0 |
+| 신뢰성 | 70.3 | +1.36 | 실측 | [[aa-omniscience]] 55.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 50.5 | +0.03 | 실측 | [[aa-lcr]] 46.0%×1.0 |
 | 지시 따르기 | 41.3 | -0.58 | 실측 | [[ifbench]] 40.0%×1.0 |

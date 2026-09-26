@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 32.0
 price_blended_usd_1m: 1.54
-output_speed_tps: 68.0
+output_speed_tps: 70.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 52.6, z: 0.8, r: 62.0, estimated: false }  # 추론
   coding: { s: 78.3, z: 1.5, r: 72.5, estimated: false }  # 코딩
   agentic: { s: 55.2, z: 0.67, r: 60.1, estimated: false }  # 에이전트
-  trust: { s: 33.0, z: 0.34, r: 55.2, estimated: false }  # 신뢰성
+  trust: { s: 33.0, z: 0.34, r: 55.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 86.5, z: 1.1, r: 66.4, estimated: false }  # 긴문맥
-  instruction: { s: 79.9, z: 1.1, r: 66.4, estimated: true }  # 지시 따르기
+  instruction: { s: 79.9, z: 1.1, r: 66.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # Claude Sonnet 5 (high)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **32.0**
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 68.0 t/s · TTFT 8.49s · 1M ctx` · 가성비 20.8
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 70.0 t/s · TTFT 6.92s · 1M ctx` · 가성비 20.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,10 +47,10 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **32.0**
 | 추론 | 62.0 | +0.8 | 실측 | [[critpt]] 15.0%×1.0, [[humanitys-last-exam]] 36.0%×1.0 |
 | 코딩 | 72.5 | +1.5 | 실측 | [[scicode]] 54.0%×1.0 |
 | 에이전트 | 60.1 | +0.67 | 실측 | [[gdpval]] 37.0%×1.0 |
-| 신뢰성 | 55.2 | +0.34 | 실측 | [[aa-omniscience]] 34.0%×1.0 |
+| 신뢰성 | 55.1 | +0.34 | 실측 | [[aa-omniscience]] 34.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 66.4 | +1.1 | 실측 | [[aa-lcr]] 77.0%×1.0 |
-| 지시 따르기 | 66.4 | +1.1 | 추정 | (추정) |
+| 지시 따르기 | 66.5 | +1.1 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

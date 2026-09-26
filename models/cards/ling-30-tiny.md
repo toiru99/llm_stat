@@ -5,7 +5,7 @@ creator: InclusionAI
 license: Open
 intelligence_index: 15.0
 price_blended_usd_1m: 0
-output_speed_tps: 19.0
+output_speed_tps: 26.0
 context_window: 262000
 status: current
 size_class: Small
@@ -13,8 +13,8 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 27.5, z: -0.67, r: 40.0, estimated: false }  # 전문 지식
-  reasoning: { s: 28.9, z: -0.32, r: 45.3, estimated: false }  # 추론
-  coding: { s: 28.3, z: -0.23, r: 46.6, estimated: false }  # 코딩
+  reasoning: { s: 28.9, z: -0.31, r: 45.3, estimated: false }  # 추론
+  coding: { s: 28.3, z: -0.23, r: 46.5, estimated: false }  # 코딩
   agentic: { s: 41.2, z: 0.13, r: 52.0, estimated: false }  # 에이전트
   trust: { s: 70.1, z: 2.08, r: 81.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling 3.0 Tiny
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # Ling 3.0 Tiny
@@ -37,15 +37,15 @@ InclusionAI · Open · Small · 컨텍스트 262k · 종합지능 **15.0**
 - **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 19.0 t/s · TTFT 3.18s · 262k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 26.0 t/s · TTFT 2.67s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 40.0 | -0.67 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 9.0%×0.3 |
-| 추론 | 45.3 | -0.32 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
-| 코딩 | 46.6 | -0.23 | 실측 | [[scicode]] 24.0%×1.0 |
+| 추론 | 45.3 | -0.31 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
+| 코딩 | 46.5 | -0.23 | 실측 | [[scicode]] 24.0%×1.0 |
 | 에이전트 | 52.0 | +0.13 | 실측 | [[tau3-banking]] 21.0%×1.0 |
 | 신뢰성 | 81.2 | +2.08 | 실측 | [[aa-omniscience]] 70.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

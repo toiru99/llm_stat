@@ -5,7 +5,7 @@ creator: Alibaba
 license: Proprietary
 intelligence_index: 25.0
 price_blended_usd_1m: 0.296
-output_speed_tps: 65.0
+output_speed_tps: 73.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 59.8, z: 1.14, r: 67.1, estimated: false }  # 추론
   coding: { s: 67.1, z: 1.11, r: 66.7, estimated: false }  # 코딩
   agentic: { s: 53.1, z: 0.59, r: 58.9, estimated: false }  # 에이전트
-  trust: { s: 72.2, z: 2.17, r: 82.6, estimated: false }  # 신뢰성
-  multimodal: { s: 89.0, z: 0.94, r: 64.0, estimated: false }  # 멀티모달
+  trust: { s: 72.2, z: 2.18, r: 82.6, estimated: false }  # 신뢰성
+  multimodal: { s: 89.0, z: 0.94, r: 64.1, estimated: false }  # 멀티모달
   long_context: { s: 82.0, z: 0.96, r: 64.4, estimated: false }  # 긴문맥
   instruction: { s: 93.0, z: 1.64, r: 74.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.7 Plus
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # Qwen3.7 Plus
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **25.0**
 - **약점**: 에이전트, 전문 지식
 
 ## 실용 지표
-`입력 $0.4 · 출력 $1.6 · 혼합 $0.296/1M · 65.0 t/s · TTFT 2.21s · 1M ctx` · 가성비 84.5
+`입력 $0.4 · 출력 $1.6 · 혼합 $0.296/1M · 73.0 t/s · TTFT 2.23s · 1M ctx` · 가성비 84.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,8 +47,8 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **25.0**
 | 추론 | 67.1 | +1.14 | 실측 | [[critpt]] 9.0%×1.0, [[gpqa-diamond]] 90.0%×1.0, [[humanitys-last-exam]] 36.0%×1.0 |
 | 코딩 | 66.7 | +1.11 | 실측 | [[scicode]] 46.0%×1.0, [[terminal-bench]] 47.0%×0.5 |
 | 에이전트 | 58.9 | +0.59 | 실측 | [[apex-agents]] 22.0%×1.0, [[gdpval]] 13.0%×1.0, [[tau2-bench]] 93.0%×1.0, [[tau3-banking]] 18.0%×1.0, [[terminal-bench]] 47.0%×1.0 |
-| 신뢰성 | 82.6 | +2.17 | 실측 | [[aa-omniscience]] 72.0%×1.0 |
-| 멀티모달 | 64.0 | +0.94 | 실측 | [[mmmu-pro]] 80.0%×1.0 |
+| 신뢰성 | 82.6 | +2.18 | 실측 | [[aa-omniscience]] 72.0%×1.0 |
+| 멀티모달 | 64.1 | +0.94 | 실측 | [[mmmu-pro]] 80.0%×1.0 |
 | 긴문맥 | 64.4 | +0.96 | 실측 | [[aa-lcr]] 73.0%×1.0 |
 | 지시 따르기 | 74.6 | +1.64 | 실측 | [[ifbench]] 78.0%×1.0 |
 

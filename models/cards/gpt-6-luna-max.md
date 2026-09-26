@@ -5,14 +5,14 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 37.0
 price_blended_usd_1m: 0.077
-output_speed_tps: 141.0
+output_speed_tps: 144.0
 context_window: 1000000
 status: current
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 65.1, z: 1.11, r: 66.6, estimated: false }  # 전문 지식
+  knowledge: { s: 65.1, z: 1.11, r: 66.7, estimated: false }  # 전문 지식
   reasoning: { s: 61.4, z: 1.21, r: 68.2, estimated: false }  # 추론
   coding: { s: 80.0, z: 1.56, r: 73.4, estimated: false }  # 코딩
   agentic: { s: 64.2, z: 1.02, r: 65.3, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6 Luna (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # GPT-6 Luna (max)
@@ -37,13 +37,13 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **37.0**
 - **약점**: 멀티모달, 신뢰성
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.5 · 혼합 $0.077/1M · 141.0 t/s · TTFT 106.86s · 1M ctx` · 가성비 480.5
+`입력 $0.1 · 출력 $0.5 · 혼합 $0.077/1M · 144.0 t/s · TTFT 122.3s · 1M ctx` · 가성비 480.5
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 66.6 | +1.11 | 실측 | [[aa-omniscience]] 44.0%×1.0, [[humanitys-last-exam]] 39.0%×0.3 |
+| 전문 지식 | 66.7 | +1.11 | 실측 | [[aa-omniscience]] 44.0%×1.0, [[humanitys-last-exam]] 39.0%×0.3 |
 | 추론 | 68.2 | +1.21 | 실측 | [[critpt]] 19.0%×1.0, [[humanitys-last-exam]] 39.0%×1.0 |
 | 코딩 | 73.4 | +1.56 | 실측 | [[scicode]] 55.0%×1.0 |
 | 에이전트 | 65.3 | +1.02 | 실측 | [[gdpval]] 43.0%×1.0 |

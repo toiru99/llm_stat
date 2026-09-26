@@ -5,18 +5,18 @@ creator: SpaceXAI
 license: Proprietary
 intelligence_index: 15.0
 price_blended_usd_1m: 0.1625
-output_speed_tps: 73.0
+output_speed_tps: 86.0
 context_window: 1000000
 status: past
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 35.0, z: -0.31, r: 45.3, estimated: false }  # 전문 지식
-  reasoning: { s: 33.3, z: -0.11, r: 48.4, estimated: false }  # 추론
+  knowledge: { s: 35.0, z: -0.32, r: 45.3, estimated: false }  # 전문 지식
+  reasoning: { s: 33.3, z: -0.1, r: 48.4, estimated: false }  # 추론
   coding: { s: 25.8, z: -0.32, r: 45.2, estimated: false }  # 코딩
   agentic: { s: 58.3, z: 0.79, r: 61.9, estimated: false }  # 에이전트
-  trust: { s: 74.2, z: 2.27, r: 84.0, estimated: false }  # 신뢰성
+  trust: { s: 74.2, z: 2.27, r: 84.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 61.8, z: 0.34, r: 55.1, estimated: false }  # 긴문맥
   instruction: { s: 47.9, z: -0.23, r: 46.5, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 3 mini Reasoning (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # Grok 3 mini Reasoning (high)
@@ -37,17 +37,17 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **15.0** �
 - **약점**: 전문 지식, 코딩
 
 ## 실용 지표
-`입력 $0.3 · 출력 $0.5 · 혼합 $0.1625/1M · 73.0 t/s · TTFT 2.38s · 1M ctx` · 가성비 92.3
+`입력 $0.3 · 출력 $0.5 · 혼합 $0.1625/1M · 86.0 t/s · TTFT 2.27s · 1M ctx` · 가성비 92.3
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 45.3 | -0.31 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 79.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
-| 추론 | 48.4 | -0.11 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 79.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
+| 전문 지식 | 45.3 | -0.32 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 79.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
+| 추론 | 48.4 | -0.1 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 79.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
 | 코딩 | 45.2 | -0.32 | 실측 | [[terminal-bench]] 17.0%×0.5 |
 | 에이전트 | 61.9 | +0.79 | 실측 | [[tau2-bench]] 90.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
-| 신뢰성 | 84.0 | +2.27 | 실측 | [[aa-omniscience]] 74.0%×1.0 |
+| 신뢰성 | 84.1 | +2.27 | 실측 | [[aa-omniscience]] 74.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 55.1 | +0.34 | 실측 | [[aa-lcr]] 55.0%×1.0 |
 | 지시 따르기 | 46.5 | -0.23 | 실측 | [[ifbench]] 46.0%×1.0 |

@@ -5,7 +5,7 @@ creator: Google
 license: Open
 intelligence_index: 9.0
 price_blended_usd_1m: 0.028
-output_speed_tps: 49.0
+output_speed_tps: 50.0
 context_window: 128000
 status: current
 size_class: Small
@@ -13,10 +13,10 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 21.9, z: -0.93, r: 36.0, estimated: false }  # 전문 지식
-  reasoning: { s: 21.3, z: -0.67, r: 39.9, estimated: false }  # 추론
+  reasoning: { s: 21.3, z: -0.67, r: 40.0, estimated: false }  # 추론
   coding: { s: 12.1, z: -0.79, r: 38.1, estimated: false }  # 코딩
-  agentic: { s: 11.1, z: -1.02, r: 34.7, estimated: false }  # 에이전트
-  trust: { s: 69.1, z: 2.03, r: 80.4, estimated: false }  # 신뢰성
+  agentic: { s: 11.1, z: -1.03, r: 34.6, estimated: false }  # 에이전트
+  trust: { s: 69.1, z: 2.03, r: 80.5, estimated: false }  # 신뢰성
   multimodal: { s: 49.3, z: -1.06, r: 34.1, estimated: false }  # 멀티모달
   long_context: { s: 36.0, z: -0.45, r: 43.3, estimated: false }  # 긴문맥
   instruction: { s: 45.1, z: -0.35, r: 44.8, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 E4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # Gemma 4 E4B
@@ -37,17 +37,17 @@ Google · Open · Small · 컨텍스트 128k · 종합지능 **9.0**
 - **약점**: 에이전트, 멀티모달
 
 ## 실용 지표
-`입력 $0.02 · 출력 $0.1 · 혼합 $0.028/1M · 49.0 t/s · TTFT 0.91s · 128k ctx` · 가성비 321.4
+`입력 $0.02 · 출력 $0.1 · 혼합 $0.028/1M · 50.0 t/s · TTFT 0.86s · 128k ctx` · 가성비 321.4
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 36.0 | -0.93 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 58.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 39.9 | -0.67 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 58.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 추론 | 40.0 | -0.67 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 58.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 38.1 | -0.79 | 실측 | [[terminal-bench]] 8.0%×0.5 |
-| 에이전트 | 34.7 | -1.02 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
-| 신뢰성 | 80.4 | +2.03 | 실측 | [[aa-omniscience]] 69.0%×1.0 |
+| 에이전트 | 34.6 | -1.03 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
+| 신뢰성 | 80.5 | +2.03 | 실측 | [[aa-omniscience]] 69.0%×1.0 |
 | 멀티모달 | 34.1 | -1.06 | 실측 | [[mmmu-pro]] 51.0%×1.0 |
 | 긴문맥 | 43.3 | -0.45 | 실측 | [[aa-lcr]] 32.0%×1.0 |
 | 지시 따르기 | 44.8 | -0.35 | 실측 | [[ifbench]] 44.0%×1.0 |

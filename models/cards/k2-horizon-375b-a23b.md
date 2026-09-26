@@ -12,11 +12,11 @@ size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 46.0, z: 0.21, r: 53.1, estimated: false }  # 전문 지식
-  reasoning: { s: 52.3, z: 0.78, r: 61.8, estimated: false }  # 추론
+  knowledge: { s: 46.0, z: 0.2, r: 53.1, estimated: false }  # 전문 지식
+  reasoning: { s: 52.3, z: 0.79, r: 61.8, estimated: false }  # 추론
   coding: { s: 60.0, z: 0.87, r: 63.0, estimated: false }  # 코딩
-  agentic: { s: 64.7, z: 1.04, r: 65.5, estimated: false }  # 에이전트
-  trust: { s: 74.2, z: 2.27, r: 84.0, estimated: false }  # 신뢰성
+  agentic: { s: 64.7, z: 1.04, r: 65.6, estimated: false }  # 에이전트
+  trust: { s: 74.2, z: 2.27, r: 84.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 89.9, z: 1.2, r: 68.0, estimated: false }  # 긴문맥
   instruction: { s: 91.1, z: 1.56, r: 73.4, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — K2 Horizon 375B A23B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # K2 Horizon 375B A23B
@@ -43,11 +43,11 @@ Institute of Foundation Models · Open · Large · 컨텍스트 524k · 종합�
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 53.1 | +0.21 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 32.0%×0.3 |
-| 추론 | 61.8 | +0.78 | 실측 | [[critpt]] 5.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 32.0%×1.0 |
+| 전문 지식 | 53.1 | +0.2 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 32.0%×0.3 |
+| 추론 | 61.8 | +0.79 | 실측 | [[critpt]] 5.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 32.0%×1.0 |
 | 코딩 | 63.0 | +0.87 | 실측 | [[scicode]] 43.0%×1.0 |
-| 에이전트 | 65.5 | +1.04 | 실측 | [[gdpval]] 42.0%×1.0, [[tau3-banking]] 34.0%×1.0 |
-| 신뢰성 | 84.0 | +2.27 | 실측 | [[aa-omniscience]] 74.0%×1.0 |
+| 에이전트 | 65.6 | +1.04 | 실측 | [[gdpval]] 42.0%×1.0, [[tau3-banking]] 34.0%×1.0 |
+| 신뢰성 | 84.1 | +2.27 | 실측 | [[aa-omniscience]] 74.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 68.0 | +1.2 | 실측 | [[aa-lcr]] 80.0%×1.0 |
 | 지시 따르기 | 73.4 | +1.56 | 추정 | (추정) |

@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 28.9, z: -0.6, r: 41.0, estimated: false }  # 전문 지식
   reasoning: { s: 21.8, z: -0.65, r: 40.3, estimated: false }  # 추론
-  coding: { s: 31.8, z: -0.11, r: 48.4, estimated: false }  # 코딩
+  coding: { s: 31.8, z: -0.11, r: 48.3, estimated: false }  # 코딩
   agentic: { s: 31.1, z: -0.25, r: 46.2, estimated: false }  # 에이전트
-  trust: { s: 1.0, z: -1.15, r: 32.8, estimated: false }  # 신뢰성
+  trust: { s: 1.0, z: -1.15, r: 32.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 34.8, z: -0.48, r: 42.8, estimated: false }  # 긴문맥
   instruction: { s: 63.4, z: 0.41, r: 56.2, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling 2.6 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # Ling 2.6 Flash
@@ -45,9 +45,9 @@ InclusionAI · Open · Medium · 컨텍스트 262k · 종합지능 **10.0** · �
 |---|---|---|---|---|
 | 전문 지식 | 41.0 | -0.6 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 59.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 40.3 | -0.65 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 59.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 48.4 | -0.11 | 실측 | [[terminal-bench]] 21.0%×0.5 |
+| 코딩 | 48.3 | -0.11 | 실측 | [[terminal-bench]] 21.0%×0.5 |
 | 에이전트 | 46.2 | -0.25 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 86.0%×1.0, [[tau3-banking]] 3.0%×1.0, [[terminal-bench]] 21.0%×1.0 |
-| 신뢰성 | 32.8 | -1.15 | 실측 | [[aa-omniscience]] 3.0%×1.0 |
+| 신뢰성 | 32.7 | -1.15 | 실측 | [[aa-omniscience]] 3.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 42.8 | -0.48 | 실측 | [[aa-lcr]] 31.0%×1.0 |
 | 지시 따르기 | 56.2 | +0.41 | 실측 | [[ifbench]] 57.0%×1.0 |

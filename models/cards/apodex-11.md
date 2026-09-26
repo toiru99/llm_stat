@@ -3,7 +3,7 @@ type: Model
 title: Apodex 1.1
 creator: Apodex
 license: Proprietary
-intelligence_index: 30.0
+intelligence_index: 26.0
 price_blended_usd_1m: 0.381
 output_speed_tps: None
 context_window: 256000
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 53.0, z: 0.82, r: 62.3, estimated: false }  # 추론
   coding: { s: 63.3, z: 0.98, r: 64.7, estimated: false }  # 코딩
   agentic: { s: 55.0, z: 0.66, r: 60.0, estimated: false }  # 에이전트
-  trust: { s: 20.6, z: -0.23, r: 46.5, estimated: false }  # 신뢰성
+  trust: { s: 20.6, z: -0.24, r: 46.4, estimated: false }  # 신뢰성
   multimodal: { s: 87.7, z: 0.87, r: 63.0, estimated: false }  # 멀티모달
   long_context: { s: 88.8, z: 1.16, r: 67.5, estimated: false }  # 긴문맥
   instruction: { s: 80.3, z: 1.11, r: 66.7, estimated: true }  # 지시 따르기
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Apodex 1.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # Apodex 1.1
 
-Apodex · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **30.0**
+Apodex · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **26.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 지시 따르기
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.3 · 출력 $3.0 · 혼합 $0.381/1M · None t/s · TTFT Nones · 256k ctx` · 가성비 78.7
+`입력 $0.3 · 출력 $3.0 · 혼합 $0.381/1M · None t/s · TTFT Nones · 256k ctx` · 가성비 68.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Apodex · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **30.0**
 | 추론 | 62.3 | +0.82 | 실측 | [[critpt]] 5.0%×1.0, [[gpqa-diamond]] 86.0%×1.0, [[humanitys-last-exam]] 34.0%×1.0 |
 | 코딩 | 64.7 | +0.98 | 실측 | [[scicode]] 45.0%×1.0 |
 | 에이전트 | 60.0 | +0.66 | 실측 | [[apex-agents]] 31.0%×1.0, [[gdpval]] 34.0%×1.0, [[tau3-banking]] 25.0%×1.0 |
-| 신뢰성 | 46.5 | -0.23 | 실측 | [[aa-omniscience]] 22.0%×1.0 |
+| 신뢰성 | 46.4 | -0.24 | 실측 | [[aa-omniscience]] 22.0%×1.0 |
 | 멀티모달 | 63.0 | +0.87 | 실측 | [[mmmu-pro]] 79.0%×1.0 |
 | 긴문맥 | 67.5 | +1.16 | 실측 | [[aa-lcr]] 79.0%×1.0 |
 | 지시 따르기 | 66.7 | +1.11 | 추정 | (추정) |

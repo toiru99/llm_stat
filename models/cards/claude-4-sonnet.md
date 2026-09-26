@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 41.7, z: 0.0, r: 50.1, estimated: false }  # 전문 지식
   reasoning: { s: 31.9, z: -0.17, r: 47.4, estimated: false }  # 추론
-  coding: { s: 47.0, z: 0.42, r: 56.2, estimated: false }  # 코딩
+  coding: { s: 47.0, z: 0.41, r: 56.2, estimated: false }  # 코딩
   agentic: { s: 39.8, z: 0.08, r: 51.2, estimated: false }  # 에이전트
   trust: { s: 71.1, z: 2.13, r: 81.9, estimated: false }  # 신뢰성
   multimodal: { s: 64.4, z: -0.3, r: 45.5, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 4 Sonnet
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # Claude 4 Sonnet
@@ -45,7 +45,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **19.0** 
 |---|---|---|---|---|
 | 전문 지식 | 50.1 | +0.0 | 실측 | [[aa-omniscience]] 23.0%×1.0, [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
 | 추론 | 47.4 | -0.17 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
-| 코딩 | 56.2 | +0.42 | 실측 | [[terminal-bench]] 31.0%×0.5 |
+| 코딩 | 56.2 | +0.41 | 실측 | [[terminal-bench]] 31.0%×0.5 |
 | 에이전트 | 51.2 | +0.08 | 실측 | [[gdpval]] 9.0%×1.0, [[tau2-bench]] 65.0%×1.0, [[tau3-banking]] 17.0%×1.0, [[terminal-bench]] 31.0%×1.0 |
 | 신뢰성 | 81.9 | +2.13 | 실측 | [[aa-omniscience]] 71.0%×1.0 |
 | 멀티모달 | 45.5 | -0.3 | 실측 | [[mmmu-pro]] 62.0%×1.0 |

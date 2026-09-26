@@ -5,7 +5,7 @@ creator: MiniMax
 license: Open
 intelligence_index: 23.0
 price_blended_usd_1m: 0.201
-output_speed_tps: 85.0
+output_speed_tps: 102.0
 context_window: 205000
 status: past
 size_class: Large
@@ -14,9 +14,9 @@ is_reasoning: true
 radar:
   knowledge: { s: 49.2, z: 0.36, r: 55.4, estimated: false }  # 전문 지식
   reasoning: { s: 41.2, z: 0.27, r: 54.0, estimated: false }  # 추론
-  coding: { s: 53.0, z: 0.63, r: 59.4, estimated: false }  # 코딩
-  agentic: { s: 74.5, z: 1.41, r: 71.2, estimated: false }  # 에이전트
-  trust: { s: 10.3, z: -0.72, r: 39.3, estimated: false }  # 신뢰성
+  coding: { s: 53.0, z: 0.62, r: 59.4, estimated: false }  # 코딩
+  agentic: { s: 74.5, z: 1.42, r: 71.2, estimated: false }  # 에이전트
+  trust: { s: 10.3, z: -0.72, r: 39.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 82.0, z: 0.96, r: 64.4, estimated: false }  # 긴문맥
   instruction: { s: 84.5, z: 1.29, r: 69.3, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax-M2.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # MiniMax-M2.5
@@ -37,7 +37,7 @@ MiniMax · Open · Large · 컨텍스트 205k · 종합지능 **23.0** · ⚠️
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.201/1M · 85.0 t/s · TTFT 1.58s · 205k ctx` · 가성비 114.4
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.201/1M · 102.0 t/s · TTFT 1.46s · 205k ctx` · 가성비 114.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ MiniMax · Open · Large · 컨텍스트 205k · 종합지능 **23.0** · ⚠️
 |---|---|---|---|---|
 | 전문 지식 | 55.4 | +0.36 | 실측 | [[aa-omniscience]] 26.0%×1.0, [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 21.0%×0.3 |
 | 추론 | 54.0 | +0.27 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 21.0%×1.0 |
-| 코딩 | 59.4 | +0.63 | 실측 | [[terminal-bench]] 35.0%×0.5 |
-| 에이전트 | 71.2 | +1.41 | 실측 | [[tau2-bench]] 95.0%×1.0, [[terminal-bench]] 35.0%×1.0 |
-| 신뢰성 | 39.3 | -0.72 | 실측 | [[aa-omniscience]] 12.0%×1.0 |
+| 코딩 | 59.4 | +0.62 | 실측 | [[terminal-bench]] 35.0%×0.5 |
+| 에이전트 | 71.2 | +1.42 | 실측 | [[tau2-bench]] 95.0%×1.0, [[terminal-bench]] 35.0%×1.0 |
+| 신뢰성 | 39.2 | -0.72 | 실측 | [[aa-omniscience]] 12.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 64.4 | +0.96 | 실측 | [[aa-lcr]] 73.0%×1.0 |
 | 지시 따르기 | 69.3 | +1.29 | 실측 | [[ifbench]] 72.0%×1.0 |

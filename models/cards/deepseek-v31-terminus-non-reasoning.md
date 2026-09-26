@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 29.6, z: -0.28, r: 45.8, estimated: false }  # 추론
   coding: { s: 48.5, z: 0.47, r: 57.0, estimated: false }  # 코딩
   agentic: { s: 42.9, z: 0.2, r: 53.0, estimated: false }  # 에이전트
-  trust: { s: 10.3, z: -0.72, r: 39.3, estimated: false }  # 신뢰성
+  trust: { s: 10.3, z: -0.72, r: 39.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 50.6, z: 0.0, r: 50.0, estimated: false }  # 긴문맥
+  long_context: { s: 50.6, z: -0.0, r: 50.0, estimated: false }  # 긴문맥
   instruction: { s: 40.8, z: -0.52, r: 42.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V3.1 Terminus (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # DeepSeek V3.1 Terminus (Non-reasoning)
@@ -47,9 +47,9 @@ DeepSeek · Open · Large · 컨텍스트 128k · 종합지능 **14.0** · ⚠�
 | 추론 | 45.8 | -0.28 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 75.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
 | 코딩 | 57.0 | +0.47 | 실측 | [[terminal-bench]] 32.0%×0.5 |
 | 에이전트 | 53.0 | +0.2 | 실측 | [[tau2-bench]] 37.0%×1.0, [[terminal-bench]] 32.0%×1.0 |
-| 신뢰성 | 39.3 | -0.72 | 실측 | [[aa-omniscience]] 12.0%×1.0 |
+| 신뢰성 | 39.2 | -0.72 | 실측 | [[aa-omniscience]] 12.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 50.0 | +0.0 | 실측 | [[aa-lcr]] 45.0%×1.0 |
+| 긴문맥 | 50.0 | +-0.0 | 실측 | [[aa-lcr]] 45.0%×1.0 |
 | 지시 따르기 | 42.2 | -0.52 | 실측 | [[ifbench]] 41.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

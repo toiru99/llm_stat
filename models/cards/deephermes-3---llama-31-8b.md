@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 13.4, z: -1.33, r: 30.0, estimated: false }  # 전문 지식
   reasoning: { s: 12.4, z: -1.09, r: 33.7, estimated: false }  # 추론
-  coding: { s: 0.8, z: -1.18, r: 32.2, estimated: true }  # 코딩
-  agentic: { s: 9.4, z: -1.09, r: 33.7, estimated: true }  # 에이전트
+  coding: { s: 0.8, z: -1.19, r: 32.2, estimated: true }  # 코딩
+  agentic: { s: 9.4, z: -1.09, r: 33.6, estimated: true }  # 에이전트
   trust: { s: 11.5, z: -0.66, r: 40.1, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 2.5, z: -1.46, r: 28.0, estimated: true }  # 긴문맥
+  long_context: { s: 2.5, z: -1.47, r: 28.0, estimated: true }  # 긴문맥
   instruction: { s: 24.6, z: -1.2, r: 32.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepHermes 3 - Llama-3.1 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # DeepHermes 3 - Llama-3.1 8B
@@ -45,11 +45,11 @@ Nous Research · Open · Small · 컨텍스트 128k · 종합지능 **5.0**
 |---|---|---|---|---|
 | 전문 지식 | 30.0 | -1.33 | 실측 | [[gpqa-diamond]] 27.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 33.7 | -1.09 | 실측 | [[gpqa-diamond]] 27.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 32.2 | -1.18 | 추정 | (추정) |
-| 에이전트 | 33.7 | -1.09 | 추정 | (추정) |
+| 코딩 | 32.2 | -1.19 | 추정 | (추정) |
+| 에이전트 | 33.6 | -1.09 | 추정 | (추정) |
 | 신뢰성 | 40.1 | -0.66 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 28.0 | -1.46 | 추정 | (추정) |
+| 긴문맥 | 28.0 | -1.47 | 추정 | (추정) |
 | 지시 따르기 | 32.0 | -1.2 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

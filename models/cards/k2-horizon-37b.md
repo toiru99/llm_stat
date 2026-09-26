@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 30.1, z: -0.26, r: 46.1, estimated: false }  # 추론
   coding: { s: 25.0, z: -0.35, r: 44.8, estimated: false }  # 코딩
   agentic: { s: 33.0, z: -0.18, r: 47.3, estimated: false }  # 에이전트
-  trust: { s: 55.7, z: 1.4, r: 71.0, estimated: false }  # 신뢰성
+  trust: { s: 55.7, z: 1.4, r: 71.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 69.7, z: 0.58, r: 58.7, estimated: false }  # 긴문맥
   instruction: { s: 37.7, z: -0.65, r: 40.2, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — K2 Horizon 3.7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # K2 Horizon 3.7B
@@ -47,7 +47,7 @@ Institute of Foundation Models · Open · Tiny · 컨텍스트 524k · 종합지
 | 추론 | 46.1 | -0.26 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 69.0%×1.0, [[humanitys-last-exam]] 14.0%×1.0 |
 | 코딩 | 44.8 | -0.35 | 실측 | [[scicode]] 22.0%×1.0 |
 | 에이전트 | 47.3 | -0.18 | 실측 | [[gdpval]] 18.0%×1.0, [[tau3-banking]] 20.0%×1.0 |
-| 신뢰성 | 71.0 | +1.4 | 실측 | [[aa-omniscience]] 56.0%×1.0 |
+| 신뢰성 | 71.1 | +1.4 | 실측 | [[aa-omniscience]] 56.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 58.7 | +0.58 | 실측 | [[aa-lcr]] 62.0%×1.0 |
 | 지시 따르기 | 40.2 | -0.65 | 추정 | (추정) |

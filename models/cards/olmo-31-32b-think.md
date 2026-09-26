@@ -12,20 +12,20 @@ size_class: Small
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 27.2, z: -0.68, r: 39.7, estimated: false }  # 전문 지식
+  knowledge: { s: 27.2, z: -0.69, r: 39.7, estimated: false }  # 전문 지식
   reasoning: { s: 21.8, z: -0.65, r: 40.3, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.21, r: 31.8, estimated: false }  # 코딩
-  agentic: { s: 0.0, z: -1.45, r: 28.3, estimated: false }  # 에이전트
-  trust: { s: 33.0, z: 0.34, r: 55.2, estimated: false }  # 신뢰성
+  agentic: { s: 0.0, z: -1.45, r: 28.2, estimated: false }  # 에이전트
+  trust: { s: 33.0, z: 0.34, r: 55.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.54, r: 26.9, estimated: false }  # 긴문맥
-  instruction: { s: 76.1, z: 0.94, r: 64.0, estimated: false }  # 지시 따르기
+  long_context: { s: 0.0, z: -1.54, r: 26.8, estimated: false }  # 긴문맥
+  instruction: { s: 76.1, z: 0.94, r: 64.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Olmo 3.1 32B Think
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-24
-timestamp: 2026-09-24T00:00:00Z
+updated: 2026-09-26
+timestamp: 2026-09-26T00:00:00Z
 ---
 
 # Olmo 3.1 32B Think
@@ -43,14 +43,14 @@ Allen Institute for AI · Open · Small · 컨텍스트 65k · 종합지능 **7.
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 39.7 | -0.68 | 실측 | [[aa-omniscience]] 14.0%×1.0, [[gpqa-diamond]] 59.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 전문 지식 | 39.7 | -0.69 | 실측 | [[aa-omniscience]] 14.0%×1.0, [[gpqa-diamond]] 59.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 40.3 | -0.65 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 59.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 31.8 | -1.21 | 실측 | [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 28.3 | -1.45 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 55.2 | +0.34 | 실측 | [[aa-omniscience]] 34.0%×1.0 |
+| 에이전트 | 28.2 | -1.45 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 신뢰성 | 55.1 | +0.34 | 실측 | [[aa-omniscience]] 34.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 26.9 | -1.54 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 64.0 | +0.94 | 실측 | [[ifbench]] 66.0%×1.0 |
+| 긴문맥 | 26.8 | -1.54 | 실측 | [[aa-lcr]] 0.0%×1.0 |
+| 지시 따르기 | 64.1 | +0.94 | 실측 | [[ifbench]] 66.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
