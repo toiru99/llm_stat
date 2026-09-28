@@ -17,15 +17,15 @@ radar:
   coding: { s: 7.6, z: -0.95, r: 35.7, estimated: false }  # 코딩
   agentic: { s: 44.2, z: 0.25, r: 53.7, estimated: false }  # 에이전트
   trust: { s: 5.2, z: -0.96, r: 35.6, estimated: false }  # 신뢰성
-  multimodal: { s: 64.4, z: -0.3, r: 45.5, estimated: false }  # 멀티모달
+  multimodal: { s: 64.4, z: -0.3, r: 45.4, estimated: false }  # 멀티모달
   long_context: { s: 67.4, z: 0.51, r: 57.7, estimated: false }  # 긴문맥
-  instruction: { s: 76.1, z: 0.94, r: 64.1, estimated: false }  # 지시 따르기
+  instruction: { s: 76.1, z: 0.93, r: 64.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nova 2.0 Omni (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-26
-timestamp: 2026-09-26T00:00:00Z
+updated: 2026-09-28
+timestamp: 2026-09-28T00:00:00Z
 ---
 
 # Nova 2.0 Omni (medium)
@@ -48,9 +48,9 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **14.0**
 | 코딩 | 35.7 | -0.95 | 실측 | [[terminal-bench]] 5.0%×0.5 |
 | 에이전트 | 53.7 | +0.25 | 실측 | [[tau2-bench]] 80.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
 | 신뢰성 | 35.6 | -0.96 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
-| 멀티모달 | 45.5 | -0.3 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
+| 멀티모달 | 45.4 | -0.3 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
 | 긴문맥 | 57.7 | +0.51 | 실측 | [[aa-lcr]] 60.0%×1.0 |
-| 지시 따르기 | 64.1 | +0.94 | 실측 | [[ifbench]] 66.0%×1.0 |
+| 지시 따르기 | 64.0 | +0.93 | 실측 | [[ifbench]] 66.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 31.4, z: -0.49, r: 42.7, estimated: false }  # 전문 지식
   reasoning: { s: 28.1, z: -0.35, r: 44.7, estimated: false }  # 추론
-  coding: { s: 6.6, z: -0.98, r: 35.2, estimated: true }  # 코딩
+  coding: { s: 6.6, z: -0.99, r: 35.2, estimated: true }  # 코딩
   agentic: { s: 13.2, z: -0.95, r: 35.8, estimated: true }  # 에이전트
-  trust: { s: 11.1, z: -0.68, r: 39.7, estimated: true }  # 신뢰성
+  trust: { s: 11.1, z: -0.69, r: 39.7, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 17.6, z: -1.01, r: 34.9, estimated: true }  # 긴문맥
-  instruction: { s: 40.8, z: -0.52, r: 42.2, estimated: true }  # 지시 따르기
+  instruction: { s: 40.8, z: -0.53, r: 42.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Pro 2 (Preview) (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-26
-timestamp: 2026-09-26T00:00:00Z
+updated: 2026-09-28
+timestamp: 2026-09-28T00:00:00Z
 ---
 
 # Solar Pro 2 (Preview) (Non-reasoning)
@@ -45,12 +45,12 @@ Upstage · Proprietary · Small · 컨텍스트 64k · 종합지능 **8.0** · �
 |---|---|---|---|---|
 | 전문 지식 | 42.7 | -0.49 | 실측 | [[gpqa-diamond]] 54.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 44.7 | -0.35 | 실측 | [[gpqa-diamond]] 54.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 35.2 | -0.98 | 추정 | (추정) |
+| 코딩 | 35.2 | -0.99 | 추정 | (추정) |
 | 에이전트 | 35.8 | -0.95 | 추정 | (추정) |
-| 신뢰성 | 39.7 | -0.68 | 추정 | (추정) |
+| 신뢰성 | 39.7 | -0.69 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 34.9 | -1.01 | 추정 | (추정) |
-| 지시 따르기 | 42.2 | -0.52 | 추정 | (추정) |
+| 지시 따르기 | 42.1 | -0.53 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

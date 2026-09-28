@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 19.4, z: -1.05, r: 34.2, estimated: false }  # 전문 지식
-  reasoning: { s: 17.4, z: -0.85, r: 37.2, estimated: false }  # 추론
+  reasoning: { s: 17.4, z: -0.86, r: 37.2, estimated: false }  # 추론
   coding: { s: 2.4, z: -1.13, r: 33.0, estimated: true }  # 코딩
   agentic: { s: 6.6, z: -1.2, r: 32.0, estimated: true }  # 에이전트
   trust: { s: 15.3, z: -0.49, r: 42.7, estimated: true }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 1.5 Pro (May)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-26
-timestamp: 2026-09-26T00:00:00Z
+updated: 2026-09-28
+timestamp: 2026-09-28T00:00:00Z
 ---
 
 # Gemini 1.5 Pro (May)
@@ -44,7 +44,7 @@ Google · Proprietary · Unknown · 컨텍스트 2M · 종합지능 **6.0** · �
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 34.2 | -1.05 | 실측 | [[gpqa-diamond]] 37.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
-| 추론 | 37.2 | -0.85 | 실측 | [[gpqa-diamond]] 37.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
+| 추론 | 37.2 | -0.86 | 실측 | [[gpqa-diamond]] 37.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 33.0 | -1.13 | 추정 | (추정) |
 | 에이전트 | 32.0 | -1.2 | 추정 | (추정) |
 | 신뢰성 | 42.7 | -0.49 | 추정 | (추정) |

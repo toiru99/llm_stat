@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 42.8, z: 0.05, r: 50.8, estimated: false }  # 전문 지식
   reasoning: { s: 42.3, z: 0.32, r: 54.8, estimated: false }  # 추론
-  coding: { s: 54.5, z: 0.68, r: 60.2, estimated: false }  # 코딩
-  agentic: { s: 71.7, z: 1.31, r: 69.6, estimated: false }  # 에이전트
+  coding: { s: 54.5, z: 0.67, r: 60.1, estimated: false }  # 코딩
+  agentic: { s: 71.7, z: 1.3, r: 69.6, estimated: false }  # 에이전트
   trust: { s: 59.8, z: 1.6, r: 73.9, estimated: false }  # 신뢰성
   multimodal: { s: 80.8, z: 0.52, r: 57.9, estimated: false }  # 멀티모달
   long_context: { s: 82.0, z: 0.96, r: 64.4, estimated: false }  # 긴문맥
-  instruction: { s: 77.5, z: 1.0, r: 64.9, estimated: false }  # 지시 따르기
+  instruction: { s: 77.5, z: 0.99, r: 64.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2-Omni-0327
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-26
-timestamp: 2026-09-26T00:00:00Z
+updated: 2026-09-28
+timestamp: 2026-09-28T00:00:00Z
 ---
 
 # MiMo-V2-Omni-0327
@@ -45,12 +45,12 @@ Xiaomi · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **25.0** �
 |---|---|---|---|---|
 | 전문 지식 | 50.8 | +0.05 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 23.0%×0.3 |
 | 추론 | 54.8 | +0.32 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 23.0%×1.0 |
-| 코딩 | 60.2 | +0.68 | 실측 | [[terminal-bench]] 36.0%×0.5 |
-| 에이전트 | 69.6 | +1.31 | 실측 | [[tau2-bench]] 88.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
+| 코딩 | 60.1 | +0.67 | 실측 | [[terminal-bench]] 36.0%×0.5 |
+| 에이전트 | 69.6 | +1.3 | 실측 | [[tau2-bench]] 88.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
 | 신뢰성 | 73.9 | +1.6 | 실측 | [[aa-omniscience]] 60.0%×1.0 |
 | 멀티모달 | 57.9 | +0.52 | 실측 | [[mmmu-pro]] 74.0%×1.0 |
 | 긴문맥 | 64.4 | +0.96 | 실측 | [[aa-lcr]] 73.0%×1.0 |
-| 지시 따르기 | 64.9 | +1.0 | 실측 | [[ifbench]] 67.0%×1.0 |
+| 지시 따르기 | 64.8 | +0.99 | 실측 | [[ifbench]] 67.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

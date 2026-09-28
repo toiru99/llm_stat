@@ -8,9 +8,9 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 131000
 status: current
-size_class: Medium
+size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: null
 radar:
   knowledge: { s: 39.1, z: -0.12, r: 48.2, estimated: false }  # 전문 지식
   reasoning: { s: 32.2, z: -0.16, r: 47.7, estimated: false }  # 추론
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — INTELLECT-3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-26
-timestamp: 2026-09-26T00:00:00Z
+updated: 2026-09-28
+timestamp: 2026-09-28T00:00:00Z
 ---
 
 # INTELLECT-3
 
-Prime Intellect · Open · Medium · 컨텍스트 131k · 종합지능 **11.0**
+Prime Intellect · Open · Unknown · 컨텍스트 131k · 종합지능 **11.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 전문 지식, 추론

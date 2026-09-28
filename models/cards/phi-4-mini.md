@@ -13,8 +13,8 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 16.0, z: -1.22, r: 31.8, estimated: false }  # 전문 지식
-  reasoning: { s: 10.6, z: -1.17, r: 32.4, estimated: false }  # 추론
-  coding: { s: 0.0, z: -1.21, r: 31.8, estimated: false }  # 코딩
+  reasoning: { s: 10.6, z: -1.18, r: 32.4, estimated: false }  # 추론
+  coding: { s: 0.0, z: -1.22, r: 31.8, estimated: false }  # 코딩
   agentic: { s: 2.7, z: -1.35, r: 29.7, estimated: false }  # 에이전트
   trust: { s: 20.6, z: -0.24, r: 46.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Phi-4 Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-26
-timestamp: 2026-09-26T00:00:00Z
+updated: 2026-09-28
+timestamp: 2026-09-28T00:00:00Z
 ---
 
 # Phi-4 Mini
@@ -37,15 +37,15 @@ Microsoft · Open · Tiny · 컨텍스트 128k · 종합지능 **6.0**
 - **약점**: 에이전트, 지시 따르기
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 45.0 t/s · TTFT 0.83s · 128k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 45.0 t/s · TTFT 0.81s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 31.8 | -1.22 | 실측 | [[aa-omniscience]] 10.0%×1.0, [[gpqa-diamond]] 33.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 32.4 | -1.17 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 31.8 | -1.21 | 실측 | [[terminal-bench]] 0.0%×0.5 |
+| 추론 | 32.4 | -1.18 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 31.8 | -1.22 | 실측 | [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 29.7 | -1.35 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 8.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | 46.4 | -0.24 | 실측 | [[aa-omniscience]] 22.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

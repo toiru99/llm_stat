@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — PALM-2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-26
-timestamp: 2026-09-26T00:00:00Z
+updated: 2026-09-28
+timestamp: 2026-09-28T00:00:00Z
 ---
 
 # PALM-2

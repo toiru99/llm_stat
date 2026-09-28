@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 48.5, z: 0.32, r: 54.8, estimated: false }  # 전문 지식
   reasoning: { s: 39.7, z: 0.19, r: 52.9, estimated: false }  # 추론
   coding: { s: 33.3, z: -0.06, r: 49.1, estimated: false }  # 코딩
-  agentic: { s: 52.0, z: 0.55, r: 58.3, estimated: false }  # 에이전트
+  agentic: { s: 52.0, z: 0.55, r: 58.2, estimated: false }  # 에이전트
   trust: { s: 5.2, z: -0.96, r: 35.6, estimated: false }  # 신뢰성
-  multimodal: { s: 67.1, z: -0.16, r: 47.5, estimated: false }  # 멀티모달
+  multimodal: { s: 67.1, z: -0.17, r: 47.5, estimated: false }  # 멀티모달
   long_context: { s: 28.1, z: -0.69, r: 39.7, estimated: false }  # 긴문맥
-  instruction: { s: 50.7, z: -0.11, r: 48.3, estimated: false }  # 지시 따르기
+  instruction: { s: 50.7, z: -0.12, r: 48.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.20 0309 (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-26
-timestamp: 2026-09-26T00:00:00Z
+updated: 2026-09-28
+timestamp: 2026-09-28T00:00:00Z
 ---
 
 # Grok 4.20 0309 (Non-reasoning)
@@ -46,11 +46,11 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 2M · 종합지능 **15.0** �
 | 전문 지식 | 54.8 | +0.32 | 실측 | [[aa-omniscience]] 26.0%×1.0, [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 25.0%×0.3 |
 | 추론 | 52.9 | +0.19 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 25.0%×1.0 |
 | 코딩 | 49.1 | -0.06 | 실측 | [[terminal-bench]] 22.0%×0.5 |
-| 에이전트 | 58.3 | +0.55 | 실측 | [[tau2-bench]] 70.0%×1.0, [[terminal-bench]] 22.0%×1.0 |
+| 에이전트 | 58.2 | +0.55 | 실측 | [[tau2-bench]] 70.0%×1.0, [[terminal-bench]] 22.0%×1.0 |
 | 신뢰성 | 35.6 | -0.96 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
-| 멀티모달 | 47.5 | -0.16 | 실측 | [[mmmu-pro]] 64.0%×1.0 |
+| 멀티모달 | 47.5 | -0.17 | 실측 | [[mmmu-pro]] 64.0%×1.0 |
 | 긴문맥 | 39.7 | -0.69 | 실측 | [[aa-lcr]] 25.0%×1.0 |
-| 지시 따르기 | 48.3 | -0.11 | 실측 | [[ifbench]] 48.0%×1.0 |
+| 지시 따르기 | 48.2 | -0.12 | 실측 | [[ifbench]] 48.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

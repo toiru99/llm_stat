@@ -18,14 +18,14 @@ radar:
   agentic: { s: 3.6, z: -1.32, r: 30.2, estimated: true }  # 에이전트
   trust: { s: 33.0, z: 0.34, r: 55.1, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 3.8, z: -1.43, r: 28.6, estimated: true }  # 긴문맥
+  long_context: { s: 3.8, z: -1.43, r: 28.5, estimated: true }  # 긴문맥
   instruction: { s: 30.6, z: -0.95, r: 35.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — LFM 40B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-26
-timestamp: 2026-09-26T00:00:00Z
+updated: 2026-09-28
+timestamp: 2026-09-28T00:00:00Z
 ---
 
 # LFM 40B
@@ -49,7 +49,7 @@ Liquid AI · Proprietary · Medium · 컨텍스트 32k · 종합지능 **5.0** �
 | 에이전트 | 30.2 | -1.32 | 추정 | (추정) |
 | 신뢰성 | 55.1 | +0.34 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 28.6 | -1.43 | 추정 | (추정) |
+| 긴문맥 | 28.5 | -1.43 | 추정 | (추정) |
 | 지시 따르기 | 35.8 | -0.95 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

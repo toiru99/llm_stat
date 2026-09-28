@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 7.0
 price_blended_usd_1m: 0.0535
-output_speed_tps: 158.0
+output_speed_tps: 170.0
 context_window: 400000
 status: past
 size_class: Unknown
@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 21.3, z: -0.96, r: 35.6, estimated: false }  # 전문 지식
   reasoning: { s: 14.5, z: -0.99, r: 35.1, estimated: false }  # 추론
   coding: { s: 10.6, z: -0.85, r: 37.3, estimated: false }  # 코딩
-  agentic: { s: 18.4, z: -0.74, r: 38.8, estimated: false }  # 에이전트
+  agentic: { s: 18.4, z: -0.75, r: 38.8, estimated: false }  # 에이전트
   trust: { s: 9.3, z: -0.77, r: 38.5, estimated: false }  # 신뢰성
-  multimodal: { s: 23.3, z: -2.37, r: 14.5, estimated: false }  # 멀티모달
+  multimodal: { s: 23.3, z: -2.37, r: 14.4, estimated: false }  # 멀티모달
   long_context: { s: 22.5, z: -0.86, r: 37.1, estimated: false }  # 긴문맥
   instruction: { s: 29.6, z: -0.99, r: 35.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5 nano (minimal)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-26
-timestamp: 2026-09-26T00:00:00Z
+updated: 2026-09-28
+timestamp: 2026-09-28T00:00:00Z
 ---
 
 # GPT-5 nano (minimal)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **7.0** ·
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.4 · 혼합 $0.0535/1M · 158.0 t/s · TTFT 0.87s · 400k ctx` · 가성비 130.8
+`입력 $0.05 · 출력 $0.4 · 혼합 $0.0535/1M · 170.0 t/s · TTFT 0.87s · 400k ctx` · 가성비 130.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,9 +46,9 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **7.0** ·
 | 전문 지식 | 35.6 | -0.96 | 실측 | [[aa-omniscience]] 13.0%×1.0, [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 35.1 | -0.99 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 37.3 | -0.85 | 실측 | [[terminal-bench]] 7.0%×0.5 |
-| 에이전트 | 38.8 | -0.74 | 실측 | [[tau2-bench]] 26.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
+| 에이전트 | 38.8 | -0.75 | 실측 | [[tau2-bench]] 26.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
 | 신뢰성 | 38.5 | -0.77 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
-| 멀티모달 | 14.5 | -2.37 | 실측 | [[mmmu-pro]] 32.0%×1.0 |
+| 멀티모달 | 14.4 | -2.37 | 실측 | [[mmmu-pro]] 32.0%×1.0 |
 | 긴문맥 | 37.1 | -0.86 | 실측 | [[aa-lcr]] 20.0%×1.0 |
 | 지시 따르기 | 35.1 | -0.99 | 실측 | [[ifbench]] 33.0%×1.0 |
 

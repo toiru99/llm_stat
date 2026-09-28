@@ -13,10 +13,10 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 29.6, z: -0.57, r: 41.5, estimated: false }  # 전문 지식
-  reasoning: { s: 25.3, z: -0.48, r: 42.7, estimated: false }  # 추론
-  coding: { s: 27.3, z: -0.27, r: 46.0, estimated: false }  # 코딩
+  reasoning: { s: 25.3, z: -0.49, r: 42.7, estimated: false }  # 추론
+  coding: { s: 27.3, z: -0.27, r: 45.9, estimated: false }  # 코딩
   agentic: { s: 60.6, z: 0.88, r: 63.2, estimated: false }  # 에이전트
-  trust: { s: 7.2, z: -0.86, r: 37.0, estimated: false }  # 신뢰성
+  trust: { s: 7.2, z: -0.87, r: 37.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 14.6, z: -1.1, r: 33.5, estimated: false }  # 긴문맥
   instruction: { s: 35.2, z: -0.76, r: 38.6, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — JT-MINI
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-26
-timestamp: 2026-09-26T00:00:00Z
+updated: 2026-09-28
+timestamp: 2026-09-28T00:00:00Z
 ---
 
 # JT-MINI
@@ -44,10 +44,10 @@ China Mobile · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **12
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 41.5 | -0.57 | 실측 | [[aa-omniscience]] 14.0%×1.0, [[gpqa-diamond]] 68.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
-| 추론 | 42.7 | -0.48 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 68.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 46.0 | -0.27 | 실측 | [[terminal-bench]] 18.0%×0.5 |
+| 추론 | 42.7 | -0.49 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 68.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
+| 코딩 | 45.9 | -0.27 | 실측 | [[terminal-bench]] 18.0%×0.5 |
 | 에이전트 | 63.2 | +0.88 | 실측 | [[tau2-bench]] 93.0%×1.0, [[terminal-bench]] 18.0%×1.0 |
-| 신뢰성 | 37.0 | -0.86 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 신뢰성 | 37.0 | -0.87 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 33.5 | -1.1 | 실측 | [[aa-lcr]] 13.0%×1.0 |
 | 지시 따르기 | 38.6 | -0.76 | 실측 | [[ifbench]] 37.0%×1.0 |

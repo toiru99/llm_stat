@@ -5,7 +5,7 @@ creator: Amazon
 license: Proprietary
 intelligence_index: 7.0
 price_blended_usd_1m: 0.0465
-output_speed_tps: 173.0
+output_speed_tps: 174.0
 context_window: 300000
 status: past
 size_class: Unknown
@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 18.7, z: -1.09, r: 33.7, estimated: false }  # 전문 지식
   reasoning: { s: 14.5, z: -0.99, r: 35.1, estimated: false }  # 추론
-  coding: { s: 1.5, z: -1.16, r: 32.6, estimated: false }  # 코딩
-  agentic: { s: 9.8, z: -1.07, r: 33.9, estimated: false }  # 에이전트
+  coding: { s: 1.5, z: -1.16, r: 32.5, estimated: false }  # 코딩
+  agentic: { s: 9.8, z: -1.08, r: 33.9, estimated: false }  # 에이전트
   trust: { s: 41.2, z: 0.73, r: 60.9, estimated: false }  # 신뢰성
-  multimodal: { s: 31.5, z: -1.95, r: 20.7, estimated: false }  # 멀티모달
+  multimodal: { s: 31.5, z: -1.96, r: 20.6, estimated: false }  # 멀티모달
   long_context: { s: 21.3, z: -0.89, r: 36.6, estimated: false }  # 긴문맥
   instruction: { s: 31.0, z: -0.93, r: 36.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nova Lite
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-26
-timestamp: 2026-09-26T00:00:00Z
+updated: 2026-09-28
+timestamp: 2026-09-28T00:00:00Z
 ---
 
 # Nova Lite
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 300k · 종합지능 **7.0** ·
 - **약점**: 코딩, 멀티모달
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.24 · 혼합 $0.0465/1M · 173.0 t/s · TTFT 0.94s · 300k ctx` · 가성비 150.5
+`입력 $0.06 · 출력 $0.24 · 혼합 $0.0465/1M · 174.0 t/s · TTFT 0.91s · 300k ctx` · 가성비 150.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,10 +45,10 @@ Amazon · Proprietary · Unknown · 컨텍스트 300k · 종합지능 **7.0** ·
 |---|---|---|---|---|
 | 전문 지식 | 33.7 | -1.09 | 실측 | [[aa-omniscience]] 10.0%×1.0, [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 35.1 | -0.99 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 32.6 | -1.16 | 실측 | [[terminal-bench]] 1.0%×0.5 |
-| 에이전트 | 33.9 | -1.07 | 실측 | [[tau2-bench]] 18.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
+| 코딩 | 32.5 | -1.16 | 실측 | [[terminal-bench]] 1.0%×0.5 |
+| 에이전트 | 33.9 | -1.08 | 실측 | [[tau2-bench]] 18.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
 | 신뢰성 | 60.9 | +0.73 | 실측 | [[aa-omniscience]] 42.0%×1.0 |
-| 멀티모달 | 20.7 | -1.95 | 실측 | [[mmmu-pro]] 38.0%×1.0 |
+| 멀티모달 | 20.6 | -1.96 | 실측 | [[mmmu-pro]] 38.0%×1.0 |
 | 긴문맥 | 36.6 | -0.89 | 실측 | [[aa-lcr]] 19.0%×1.0 |
 | 지시 따르기 | 36.0 | -0.93 | 실측 | [[ifbench]] 34.0%×1.0 |
 

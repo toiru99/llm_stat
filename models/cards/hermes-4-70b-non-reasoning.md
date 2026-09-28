@@ -12,9 +12,9 @@ size_class: Medium
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 28.2, z: -0.63, r: 40.5, estimated: false }  # 전문 지식
-  reasoning: { s: 16.8, z: -0.88, r: 36.8, estimated: false }  # 추론
-  coding: { s: 0.0, z: -1.21, r: 31.8, estimated: false }  # 코딩
+  knowledge: { s: 28.2, z: -0.64, r: 40.5, estimated: false }  # 전문 지식
+  reasoning: { s: 16.8, z: -0.88, r: 36.7, estimated: false }  # 추론
+  coding: { s: 0.0, z: -1.22, r: 31.8, estimated: false }  # 코딩
   agentic: { s: 11.1, z: -1.03, r: 34.6, estimated: false }  # 에이전트
   trust: { s: 15.5, z: -0.48, r: 42.8, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hermes 4 70B (Non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-26
-timestamp: 2026-09-26T00:00:00Z
+updated: 2026-09-28
+timestamp: 2026-09-28T00:00:00Z
 ---
 
 # Hermes 4 70B (Non-reasoning)
@@ -43,9 +43,9 @@ Nous Research · Open · Medium · 컨텍스트 128k · 종합지능 **7.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 40.5 | -0.63 | 실측 | [[aa-omniscience]] 19.0%×1.0, [[gpqa-diamond]] 49.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 36.8 | -0.88 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 49.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 31.8 | -1.21 | 실측 | [[terminal-bench]] 0.0%×0.5 |
+| 전문 지식 | 40.5 | -0.64 | 실측 | [[aa-omniscience]] 19.0%×1.0, [[gpqa-diamond]] 49.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 36.7 | -0.88 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 49.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 31.8 | -1.22 | 실측 | [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 34.6 | -1.03 | 실측 | [[tau2-bench]] 22.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | 42.8 | -0.48 | 실측 | [[aa-omniscience]] 17.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

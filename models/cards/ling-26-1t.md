@@ -18,14 +18,14 @@ radar:
   agentic: { s: 68.9, z: 1.2, r: 68.0, estimated: false }  # 에이전트
   trust: { s: 5.2, z: -0.96, r: 35.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 47.2, z: -0.1, r: 48.4, estimated: false }  # 긴문맥
-  instruction: { s: 63.4, z: 0.41, r: 56.2, estimated: false }  # 지시 따르기
+  long_context: { s: 47.2, z: -0.11, r: 48.4, estimated: false }  # 긴문맥
+  instruction: { s: 63.4, z: 0.41, r: 56.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Ling-2.6-1T
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-26
-timestamp: 2026-09-26T00:00:00Z
+updated: 2026-09-28
+timestamp: 2026-09-28T00:00:00Z
 ---
 
 # Ling-2.6-1T
@@ -49,8 +49,8 @@ InclusionAI · Open · Large · 컨텍스트 262k · 종합지능 **17.0** · �
 | 에이전트 | 68.0 | +1.2 | 실측 | [[tau2-bench]] 90.0%×1.0, [[terminal-bench]] 31.0%×1.0 |
 | 신뢰성 | 35.6 | -0.96 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 48.4 | -0.1 | 실측 | [[aa-lcr]] 42.0%×1.0 |
-| 지시 따르기 | 56.2 | +0.41 | 실측 | [[ifbench]] 57.0%×1.0 |
+| 긴문맥 | 48.4 | -0.11 | 실측 | [[aa-lcr]] 42.0%×1.0 |
+| 지시 따르기 | 56.1 | +0.41 | 실측 | [[ifbench]] 57.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

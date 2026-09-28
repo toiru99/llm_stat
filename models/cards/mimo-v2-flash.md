@@ -8,29 +8,29 @@ price_blended_usd_1m: 0.12
 output_speed_tps: None
 context_window: 256000
 status: past
-size_class: Large
+size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: null
 radar:
   knowledge: { s: 48.9, z: 0.34, r: 55.2, estimated: false }  # 전문 지식
   reasoning: { s: 45.5, z: 0.46, r: 57.0, estimated: false }  # 추론
-  coding: { s: 42.4, z: 0.26, r: 53.8, estimated: false }  # 코딩
-  agentic: { s: 69.2, z: 1.21, r: 68.2, estimated: false }  # 에이전트
+  coding: { s: 42.4, z: 0.25, r: 53.8, estimated: false }  # 코딩
+  agentic: { s: 69.2, z: 1.21, r: 68.1, estimated: false }  # 에이전트
   trust: { s: 5.2, z: -0.96, r: 35.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 79.8, z: 0.89, r: 63.3, estimated: false }  # 긴문맥
-  instruction: { s: 73.2, z: 0.82, r: 62.3, estimated: false }  # 지시 따르기
+  instruction: { s: 73.2, z: 0.81, r: 62.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2-Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-26
-timestamp: 2026-09-26T00:00:00Z
+updated: 2026-09-28
+timestamp: 2026-09-28T00:00:00Z
 ---
 
 # MiMo-V2-Flash
 
-Xiaomi · Open · Large · 컨텍스트 256k · 종합지능 **21.0** · ⚠️ past(구세대)
+Xiaomi · Open · Unknown · 컨텍스트 256k · 종합지능 **21.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 긴문맥
@@ -45,12 +45,12 @@ Xiaomi · Open · Large · 컨텍스트 256k · 종합지능 **21.0** · ⚠️ 
 |---|---|---|---|---|
 | 전문 지식 | 55.2 | +0.34 | 실측 | [[aa-omniscience]] 25.0%×1.0, [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 23.0%×0.3 |
 | 추론 | 57.0 | +0.46 | 실측 | [[critpt]] 4.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 23.0%×1.0 |
-| 코딩 | 53.8 | +0.26 | 실측 | [[terminal-bench]] 28.0%×0.5 |
-| 에이전트 | 68.2 | +1.21 | 실측 | [[tau2-bench]] 95.0%×1.0, [[terminal-bench]] 28.0%×1.0 |
+| 코딩 | 53.8 | +0.25 | 실측 | [[terminal-bench]] 28.0%×0.5 |
+| 에이전트 | 68.1 | +1.21 | 실측 | [[tau2-bench]] 95.0%×1.0, [[terminal-bench]] 28.0%×1.0 |
 | 신뢰성 | 35.6 | -0.96 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 63.3 | +0.89 | 실측 | [[aa-lcr]] 71.0%×1.0 |
-| 지시 따르기 | 62.3 | +0.82 | 실측 | [[ifbench]] 64.0%×1.0 |
+| 지시 따르기 | 62.2 | +0.81 | 실측 | [[ifbench]] 64.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

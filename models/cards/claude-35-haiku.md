@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 20.8, z: -0.99, r: 35.2, estimated: false }  # 전문 지식
   reasoning: { s: 13.7, z: -1.03, r: 34.6, estimated: false }  # 추론
-  coding: { s: 3.0, z: -1.11, r: 33.4, estimated: false }  # 코딩
+  coding: { s: 3.0, z: -1.11, r: 33.3, estimated: false }  # 코딩
   agentic: { s: 9.4, z: -1.09, r: 33.6, estimated: false }  # 에이전트
   trust: { s: 58.8, z: 1.55, r: 73.2, estimated: false }  # 신뢰성
-  multimodal: { s: 42.5, z: -1.4, r: 29.0, estimated: false }  # 멀티모달
+  multimodal: { s: 42.5, z: -1.41, r: 28.9, estimated: false }  # 멀티모달
   long_context: { s: 30.3, z: -0.62, r: 40.7, estimated: false }  # 긴문맥
   instruction: { s: 43.7, z: -0.41, r: 43.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 3.5 Haiku
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-26
-timestamp: 2026-09-26T00:00:00Z
+updated: 2026-09-28
+timestamp: 2026-09-28T00:00:00Z
 ---
 
 # Claude 3.5 Haiku
@@ -45,10 +45,10 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **9.0**
 |---|---|---|---|---|
 | 전문 지식 | 35.2 | -0.99 | 실측 | [[aa-omniscience]] 13.0%×1.0, [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 34.6 | -1.03 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 33.4 | -1.11 | 실측 | [[terminal-bench]] 2.0%×0.5 |
+| 코딩 | 33.3 | -1.11 | 실측 | [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 33.6 | -1.09 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 25.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | 73.2 | +1.55 | 실측 | [[aa-omniscience]] 59.0%×1.0 |
-| 멀티모달 | 29.0 | -1.4 | 실측 | [[mmmu-pro]] 46.0%×1.0 |
+| 멀티모달 | 28.9 | -1.41 | 실측 | [[mmmu-pro]] 46.0%×1.0 |
 | 긴문맥 | 40.7 | -0.62 | 실측 | [[aa-lcr]] 27.0%×1.0 |
 | 지시 따르기 | 43.9 | -0.41 | 실측 | [[ifbench]] 43.0%×1.0 |
 
