@@ -12,20 +12,20 @@ size_class: Small
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 20.1, z: -1.02, r: 34.7, estimated: false }  # 전문 지식
-  reasoning: { s: 18.4, z: -0.81, r: 37.9, estimated: false }  # 추론
-  coding: { s: 7.3, z: -0.96, r: 35.6, estimated: true }  # 코딩
-  agentic: { s: 14.0, z: -0.91, r: 36.3, estimated: true }  # 에이전트
-  trust: { s: 32.9, z: 0.34, r: 55.0, estimated: true }  # 신뢰성
-  multimodal: { s: 30.1, z: -2.03, r: 19.6, estimated: false }  # 멀티모달
-  long_context: { s: 14.5, z: -1.1, r: 33.5, estimated: true }  # 긴문맥
-  instruction: { s: 24.2, z: -1.21, r: 31.8, estimated: true }  # 지시 따르기
+  knowledge: { s: 20.1, z: -1.03, r: 34.6, estimated: false }  # 전문 지식
+  reasoning: { s: 18.4, z: -0.81, r: 37.8, estimated: false }  # 추론
+  coding: { s: 7.4, z: -0.98, r: 35.3, estimated: true }  # 코딩
+  agentic: { s: 14.0, z: -0.93, r: 36.0, estimated: true }  # 에이전트
+  trust: { s: 32.9, z: 0.31, r: 54.7, estimated: true }  # 신뢰성
+  multimodal: { s: 30.1, z: -2.04, r: 19.4, estimated: false }  # 멀티모달
+  long_context: { s: 14.4, z: -1.13, r: 33.1, estimated: true }  # 긴문맥
+  instruction: { s: 24.6, z: -1.21, r: 31.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 1.5 Flash-8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-28
-timestamp: 2026-09-28T00:00:00Z
+updated: 2026-09-30
+timestamp: 2026-09-30T00:00:00Z
 ---
 
 # Gemini 1.5 Flash-8B
@@ -43,13 +43,13 @@ Google · Proprietary · Small · 컨텍스트 1M · 종합지능 **6.0** · ⚠
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 34.7 | -1.02 | 실측 | [[gpqa-diamond]] 36.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 37.9 | -0.81 | 실측 | [[gpqa-diamond]] 36.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 35.6 | -0.96 | 추정 | (추정) |
-| 에이전트 | 36.3 | -0.91 | 추정 | (추정) |
-| 신뢰성 | 55.0 | +0.34 | 추정 | (추정) |
-| 멀티모달 | 19.6 | -2.03 | 실측 | [[mmmu-pro]] 37.0%×1.0 |
-| 긴문맥 | 33.5 | -1.1 | 추정 | (추정) |
+| 전문 지식 | 34.6 | -1.03 | 실측 | [[gpqa-diamond]] 36.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 추론 | 37.8 | -0.81 | 실측 | [[gpqa-diamond]] 36.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 35.3 | -0.98 | 추정 | (추정) |
+| 에이전트 | 36.0 | -0.93 | 추정 | (추정) |
+| 신뢰성 | 54.7 | +0.31 | 추정 | (추정) |
+| 멀티모달 | 19.4 | -2.04 | 실측 | [[mmmu-pro]] 37.0%×1.0 |
+| 긴문맥 | 33.1 | -1.13 | 추정 | (추정) |
 | 지시 따르기 | 31.8 | -1.21 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
