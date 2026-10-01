@@ -1,34 +1,34 @@
 ---
 type: Model
-title: Mistral Small 4 (Non-reasoning)
+title: Mistral Small 4 (non-reasoning)
 creator: Mistral
 license: Open
 intelligence_index: 9.0
 price_blended_usd_1m: 0.1005
-output_speed_tps: 165.0
+output_speed_tps: 166.0
 context_window: 256000
 status: current
 size_class: Medium
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 28.7, z: -0.63, r: 40.5, estimated: false }  # 전문 지식
-  reasoning: { s: 19.9, z: -0.75, r: 38.8, estimated: false }  # 추론
-  coding: { s: 16.7, z: -0.66, r: 40.1, estimated: false }  # 코딩
-  agentic: { s: 17.4, z: -0.8, r: 38.0, estimated: false }  # 에이전트
-  trust: { s: 20.6, z: -0.26, r: 46.1, estimated: false }  # 신뢰성
-  multimodal: { s: 42.5, z: -1.42, r: 28.7, estimated: false }  # 멀티모달
+  knowledge: { s: 28.7, z: -0.64, r: 40.4, estimated: false }  # 전문 지식
+  reasoning: { s: 19.9, z: -0.75, r: 38.7, estimated: false }  # 추론
+  coding: { s: 16.7, z: -0.67, r: 39.9, estimated: false }  # 코딩
+  agentic: { s: 17.4, z: -0.81, r: 37.8, estimated: false }  # 에이전트
+  trust: { s: 20.6, z: -0.28, r: 45.8, estimated: false }  # 신뢰성
+  multimodal: { s: 42.5, z: -1.44, r: 28.4, estimated: false }  # 멀티모달
   long_context: { s: 31.5, z: -0.61, r: 40.9, estimated: false }  # 긴문맥
-  instruction: { s: 29.6, z: -1.01, r: 34.9, estimated: false }  # 지시 따르기
+  instruction: { s: 29.6, z: -1.02, r: 34.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
-    title: Artificial Analysis — Mistral Small 4 (Non-reasoning)
+    title: Artificial Analysis — Mistral Small 4 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-30
-timestamp: 2026-09-30T00:00:00Z
+updated: 2026-10-01
+timestamp: 2026-10-01T00:00:00Z
 ---
 
-# Mistral Small 4 (Non-reasoning)
+# Mistral Small 4 (non-reasoning)
 
 Mistral · Open · Medium · 컨텍스트 256k · 종합지능 **9.0**
 
@@ -37,20 +37,20 @@ Mistral · Open · Medium · 컨텍스트 256k · 종합지능 **9.0**
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · 165.0 t/s · TTFT 0.77s · 256k ctx` · 가성비 89.6
+`입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · 166.0 t/s · TTFT 0.74s · 256k ctx` · 가성비 89.6
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 40.5 | -0.63 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 57.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 38.8 | -0.75 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 57.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 40.1 | -0.66 | 실측 | [[terminal-bench]] 11.0%×0.5 |
-| 에이전트 | 38.0 | -0.8 | 실측 | [[tau2-bench]] 18.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
-| 신뢰성 | 46.1 | -0.26 | 실측 | [[aa-omniscience]] 22.0%×1.0 |
-| 멀티모달 | 28.7 | -1.42 | 실측 | [[mmmu-pro]] 46.0%×1.0 |
+| 전문 지식 | 40.4 | -0.64 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 57.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 38.7 | -0.75 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 57.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 39.9 | -0.67 | 실측 | [[terminal-bench]] 11.0%×0.5 |
+| 에이전트 | 37.8 | -0.81 | 실측 | [[tau2-bench]] 18.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
+| 신뢰성 | 45.8 | -0.28 | 실측 | [[aa-omniscience]] 22.0%×1.0 |
+| 멀티모달 | 28.4 | -1.44 | 실측 | [[mmmu-pro]] 46.0%×1.0 |
 | 긴문맥 | 40.9 | -0.61 | 실측 | [[aa-lcr]] 28.0%×1.0 |
-| 지시 따르기 | 34.9 | -1.01 | 실측 | [[ifbench]] 33.0%×1.0 |
+| 지시 따르기 | 34.7 | -1.02 | 실측 | [[ifbench]] 33.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

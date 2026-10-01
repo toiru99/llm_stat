@@ -5,27 +5,27 @@ creator: InclusionAI
 license: Open
 intelligence_index: 23.0
 price_blended_usd_1m: 0.0475
-output_speed_tps: 270.0
+output_speed_tps: 303.0
 context_window: 262000
 status: current
 size_class: Medium
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 29.1, z: -0.61, r: 40.8, estimated: false }  # 전문 지식
-  reasoning: { s: 23.0, z: -0.6, r: 40.9, estimated: false }  # 추론
-  coding: { s: 58.3, z: 0.77, r: 61.6, estimated: false }  # 코딩
-  agentic: { s: 59.3, z: 0.8, r: 62.0, estimated: false }  # 에이전트
-  trust: { s: 59.8, z: 1.57, r: 73.5, estimated: false }  # 신뢰성
+  knowledge: { s: 29.1, z: -0.62, r: 40.7, estimated: false }  # 전문 지식
+  reasoning: { s: 23.0, z: -0.61, r: 40.8, estimated: false }  # 추론
+  coding: { s: 58.3, z: 0.75, r: 61.3, estimated: false }  # 코딩
+  agentic: { s: 59.3, z: 0.79, r: 61.8, estimated: false }  # 에이전트
+  trust: { s: 59.8, z: 1.54, r: 73.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 83.1, z: 0.97, r: 64.5, estimated: false }  # 긴문맥
-  instruction: { s: 77.0, z: 0.96, r: 64.4, estimated: true }  # 지시 따르기
+  long_context: { s: 83.1, z: 0.96, r: 64.3, estimated: false }  # 긴문맥
+  instruction: { s: 73.8, z: 0.81, r: 62.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Ling-3.0-flash-Fin
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-30
-timestamp: 2026-09-30T00:00:00Z
+updated: 2026-10-01
+timestamp: 2026-10-01T00:00:00Z
 ---
 
 # Ling-3.0-flash-Fin
@@ -37,20 +37,20 @@ InclusionAI · Open · Medium · 컨텍스트 262k · 종합지능 **23.0**
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.07 · 출력 $0.22 · 혼합 $0.0475/1M · 270.0 t/s · TTFT 1.8s · 262k ctx` · 가성비 484.2
+`입력 $0.07 · 출력 $0.22 · 혼합 $0.0475/1M · 303.0 t/s · TTFT 1.73s · 262k ctx` · 가성비 484.2
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 40.8 | -0.61 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[humanitys-last-exam]] 23.0%×0.3 |
-| 추론 | 40.9 | -0.6 | 실측 | [[critpt]] 3.0%×1.0, [[humanitys-last-exam]] 23.0%×1.0 |
-| 코딩 | 61.6 | +0.77 | 실측 | [[scicode]] 42.0%×1.0 |
-| 에이전트 | 62.0 | +0.8 | 실측 | [[apex-agents]] 27.0%×1.0, [[gdpval]] 30.0%×1.0, [[tau3-banking]] 39.0%×1.0 |
-| 신뢰성 | 73.5 | +1.57 | 실측 | [[aa-omniscience]] 60.0%×1.0 |
+| 전문 지식 | 40.7 | -0.62 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[humanitys-last-exam]] 23.0%×0.3 |
+| 추론 | 40.8 | -0.61 | 실측 | [[critpt]] 3.0%×1.0, [[humanitys-last-exam]] 23.0%×1.0 |
+| 코딩 | 61.3 | +0.75 | 실측 | [[scicode]] 42.0%×1.0 |
+| 에이전트 | 61.8 | +0.79 | 실측 | [[apex-agents]] 27.0%×1.0, [[gdpval]] 30.0%×1.0, [[tau3-banking]] 39.0%×1.0 |
+| 신뢰성 | 73.1 | +1.54 | 실측 | [[aa-omniscience]] 60.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 64.5 | +0.97 | 실측 | [[aa-lcr]] 74.0%×1.0 |
-| 지시 따르기 | 64.4 | +0.96 | 추정 | (추정) |
+| 긴문맥 | 64.3 | +0.96 | 실측 | [[aa-lcr]] 74.0%×1.0 |
+| 지시 따르기 | 62.2 | +0.81 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -1,6 +1,6 @@
 ---
 type: Model
-title: EXAONE 4.5 33B (Non-reasoning)
+title: EXAONE 4.5 33B (non-reasoning)
 creator: LG AI Research
 license: Open
 intelligence_index: None
@@ -22,13 +22,13 @@ radar:
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
-    title: Artificial Analysis — EXAONE 4.5 33B (Non-reasoning)
+    title: Artificial Analysis — EXAONE 4.5 33B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-30
-timestamp: 2026-09-30T00:00:00Z
+updated: 2026-10-01
+timestamp: 2026-10-01T00:00:00Z
 ---
 
-# EXAONE 4.5 33B (Non-reasoning)
+# EXAONE 4.5 33B (non-reasoning)
 
 LG AI Research · Open · Small · 컨텍스트 262k · 종합지능 **None**
 

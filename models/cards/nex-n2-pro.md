@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: null
 radar:
-  knowledge: { s: 62.0, z: 0.92, r: 63.7, estimated: false }  # 전문 지식
-  reasoning: { s: 58.3, z: 1.01, r: 65.1, estimated: false }  # 추론
-  coding: { s: 60.0, z: 0.83, r: 62.4, estimated: false }  # 코딩
-  agentic: { s: 54.3, z: 0.61, r: 59.2, estimated: false }  # 에이전트
-  trust: { s: 3.1, z: -1.08, r: 33.8, estimated: false }  # 신뢰성
+  knowledge: { s: 62.0, z: 0.9, r: 63.6, estimated: false }  # 전문 지식
+  reasoning: { s: 58.3, z: 0.99, r: 64.9, estimated: false }  # 추론
+  coding: { s: 60.0, z: 0.81, r: 62.2, estimated: false }  # 코딩
+  agentic: { s: 54.3, z: 0.6, r: 58.9, estimated: false }  # 에이전트
+  trust: { s: 3.1, z: -1.09, r: 33.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 92.1, z: 1.24, r: 68.6, estimated: false }  # 긴문맥
-  instruction: { s: 76.1, z: 0.92, r: 63.8, estimated: false }  # 지시 따르기
+  long_context: { s: 92.1, z: 1.23, r: 68.4, estimated: false }  # 긴문맥
+  instruction: { s: 76.1, z: 0.9, r: 63.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nex-N2-Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-30
-timestamp: 2026-09-30T00:00:00Z
+updated: 2026-10-01
+timestamp: 2026-10-01T00:00:00Z
 ---
 
 # Nex-N2-Pro
@@ -43,14 +43,14 @@ Nex AGI · Open · Unknown · 컨텍스트 262k · 종합지능 **28.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 63.7 | +0.92 | 실측 | [[aa-omniscience]] 35.0%×1.0, [[gpqa-diamond]] 89.0%×0.4, [[humanitys-last-exam]] 34.0%×0.3 |
-| 추론 | 65.1 | +1.01 | 실측 | [[critpt]] 9.0%×1.0, [[gpqa-diamond]] 89.0%×1.0, [[humanitys-last-exam]] 34.0%×1.0 |
-| 코딩 | 62.4 | +0.83 | 실측 | [[scicode]] 43.0%×1.0 |
-| 에이전트 | 59.2 | +0.61 | 실측 | [[gdpval]] 30.0%×1.0, [[tau2-bench]] 82.0%×1.0, [[tau3-banking]] 18.0%×1.0 |
-| 신뢰성 | 33.8 | -1.08 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
+| 전문 지식 | 63.6 | +0.9 | 실측 | [[aa-omniscience]] 35.0%×1.0, [[gpqa-diamond]] 89.0%×0.4, [[humanitys-last-exam]] 34.0%×0.3 |
+| 추론 | 64.9 | +0.99 | 실측 | [[critpt]] 9.0%×1.0, [[gpqa-diamond]] 89.0%×1.0, [[humanitys-last-exam]] 34.0%×1.0 |
+| 코딩 | 62.2 | +0.81 | 실측 | [[scicode]] 43.0%×1.0 |
+| 에이전트 | 58.9 | +0.6 | 실측 | [[gdpval]] 30.0%×1.0, [[tau2-bench]] 82.0%×1.0, [[tau3-banking]] 18.0%×1.0 |
+| 신뢰성 | 33.6 | -1.09 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 68.6 | +1.24 | 실측 | [[aa-lcr]] 82.0%×1.0 |
-| 지시 따르기 | 63.8 | +0.92 | 실측 | [[ifbench]] 66.0%×1.0 |
+| 긴문맥 | 68.4 | +1.23 | 실측 | [[aa-lcr]] 82.0%×1.0 |
+| 지시 따르기 | 63.6 | +0.9 | 실측 | [[ifbench]] 66.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -1,34 +1,34 @@
 ---
 type: Model
-title: GLM-5 (Non-reasoning)
+title: GLM-5 (non-reasoning)
 creator: Z AI
 license: Open
 intelligence_index: 22.0
 price_blended_usd_1m: 0.66
-output_speed_tps: 68.0
+output_speed_tps: 66.0
 context_window: 200000
 status: past
 size_class: Large
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 37.8, z: -0.21, r: 46.9, estimated: false }  # 전문 지식
-  reasoning: { s: 26.0, z: -0.47, r: 43.0, estimated: false }  # 추론
-  coding: { s: 59.1, z: 0.8, r: 62.0, estimated: false }  # 코딩
-  agentic: { s: 78.5, z: 1.54, r: 73.1, estimated: false }  # 에이전트
-  trust: { s: 54.6, z: 1.33, r: 69.9, estimated: false }  # 신뢰성
+  knowledge: { s: 37.8, z: -0.21, r: 46.8, estimated: false }  # 전문 지식
+  reasoning: { s: 26.0, z: -0.48, r: 42.9, estimated: false }  # 추론
+  coding: { s: 59.1, z: 0.78, r: 61.7, estimated: false }  # 코딩
+  agentic: { s: 78.5, z: 1.52, r: 72.9, estimated: false }  # 에이전트
+  trust: { s: 54.6, z: 1.3, r: 69.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 49.4, z: -0.06, r: 49.1, estimated: false }  # 긴문맥
-  instruction: { s: 60.6, z: 0.28, r: 54.1, estimated: false }  # 지시 따르기
+  long_context: { s: 49.4, z: -0.07, r: 49.0, estimated: false }  # 긴문맥
+  instruction: { s: 60.6, z: 0.26, r: 54.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
-    title: Artificial Analysis — GLM-5 (Non-reasoning)
+    title: Artificial Analysis — GLM-5 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-30
-timestamp: 2026-09-30T00:00:00Z
+updated: 2026-10-01
+timestamp: 2026-10-01T00:00:00Z
 ---
 
-# GLM-5 (Non-reasoning)
+# GLM-5 (non-reasoning)
 
 Z AI · Open · Large · 컨텍스트 200k · 종합지능 **22.0** · ⚠️ past(구세대)
 
@@ -37,20 +37,20 @@ Z AI · Open · Large · 컨텍스트 200k · 종합지능 **22.0** · ⚠️ pa
 - **약점**: 전문 지식, 추론
 
 ## 실용 지표
-`입력 $1.0 · 출력 $3.2 · 혼합 $0.66/1M · 68.0 t/s · TTFT 1.65s · 200k ctx` · 가성비 33.3
+`입력 $1.0 · 출력 $3.2 · 혼합 $0.66/1M · 66.0 t/s · TTFT 1.71s · 200k ctx` · 가성비 33.3
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 46.9 | -0.21 | 실측 | [[aa-omniscience]] 23.0%×1.0, [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 8.0%×0.3 |
-| 추론 | 43.0 | -0.47 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 67.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
-| 코딩 | 62.0 | +0.8 | 실측 | [[terminal-bench]] 39.0%×0.5 |
-| 에이전트 | 73.1 | +1.54 | 실측 | [[tau2-bench]] 97.0%×1.0, [[terminal-bench]] 39.0%×1.0 |
-| 신뢰성 | 69.9 | +1.33 | 실측 | [[aa-omniscience]] 55.0%×1.0 |
+| 전문 지식 | 46.8 | -0.21 | 실측 | [[aa-omniscience]] 23.0%×1.0, [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 8.0%×0.3 |
+| 추론 | 42.9 | -0.48 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 67.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
+| 코딩 | 61.7 | +0.78 | 실측 | [[terminal-bench]] 39.0%×0.5 |
+| 에이전트 | 72.9 | +1.52 | 실측 | [[tau2-bench]] 97.0%×1.0, [[terminal-bench]] 39.0%×1.0 |
+| 신뢰성 | 69.5 | +1.3 | 실측 | [[aa-omniscience]] 55.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 49.1 | -0.06 | 실측 | [[aa-lcr]] 44.0%×1.0 |
-| 지시 따르기 | 54.1 | +0.28 | 실측 | [[ifbench]] 55.0%×1.0 |
+| 긴문맥 | 49.0 | -0.07 | 실측 | [[aa-lcr]] 44.0%×1.0 |
+| 지시 따르기 | 54.0 | +0.26 | 실측 | [[ifbench]] 55.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

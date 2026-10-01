@@ -1,6 +1,6 @@
 ---
 type: Model
-title: Claude 4.1 Opus (Non-reasoning)
+title: Claude 4.1 Opus (non-reasoning)
 creator: Anthropic
 license: Proprietary
 intelligence_index: 19.0
@@ -22,13 +22,13 @@ radar:
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
-    title: Artificial Analysis — Claude 4.1 Opus (Non-reasoning)
+    title: Artificial Analysis — Claude 4.1 Opus (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-09-30
-timestamp: 2026-09-30T00:00:00Z
+updated: 2026-10-01
+timestamp: 2026-10-01T00:00:00Z
 ---
 
-# Claude 4.1 Opus (Non-reasoning)
+# Claude 4.1 Opus (non-reasoning)
 
 Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **19.0** · ⚠️ past(구세대)
 
