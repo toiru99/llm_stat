@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 27.4, z: -0.7, r: 39.6, estimated: false }  # 전문 지식
+  knowledge: { s: 27.4, z: -0.7, r: 39.5, estimated: false }  # 전문 지식
   reasoning: { s: 24.8, z: -0.53, r: 42.1, estimated: false }  # 추론
-  coding: { s: 14.1, z: -0.76, r: 38.6, estimated: true }  # 코딩
-  agentic: { s: 27.8, z: -0.42, r: 43.8, estimated: true }  # 에이전트
-  trust: { s: 23.8, z: -0.13, r: 48.0, estimated: true }  # 신뢰성
+  coding: { s: 14.1, z: -0.77, r: 38.5, estimated: true }  # 코딩
+  agentic: { s: 27.8, z: -0.42, r: 43.7, estimated: true }  # 에이전트
+  trust: { s: 23.8, z: -0.12, r: 48.1, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 34.5, z: -0.52, r: 42.2, estimated: true }  # 긴문맥
-  instruction: { s: 41.5, z: -0.52, r: 42.2, estimated: true }  # 지시 따르기
+  instruction: { s: 41.5, z: -0.53, r: 42.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Sonar
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-01
-timestamp: 2026-10-01T00:00:00Z
+updated: 2026-10-03
+timestamp: 2026-10-03T00:00:00Z
 ---
 
 # Sonar
@@ -43,14 +43,14 @@ Perplexity · Proprietary · Unknown · 컨텍스트 127k · 종합지능 **8.0*
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 39.6 | -0.7 | 실측 | [[gpqa-diamond]] 47.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 전문 지식 | 39.5 | -0.7 | 실측 | [[gpqa-diamond]] 47.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 42.1 | -0.53 | 실측 | [[gpqa-diamond]] 47.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 38.6 | -0.76 | 추정 | (추정) |
-| 에이전트 | 43.8 | -0.42 | 추정 | (추정) |
-| 신뢰성 | 48.0 | -0.13 | 추정 | (추정) |
+| 코딩 | 38.5 | -0.77 | 추정 | (추정) |
+| 에이전트 | 43.7 | -0.42 | 추정 | (추정) |
+| 신뢰성 | 48.1 | -0.12 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 42.2 | -0.52 | 추정 | (추정) |
-| 지시 따르기 | 42.2 | -0.52 | 추정 | (추정) |
+| 지시 따르기 | 42.1 | -0.53 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

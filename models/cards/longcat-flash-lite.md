@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 27.7, z: -0.69, r: 39.7, estimated: false }  # 전문 지식
   reasoning: { s: 23.7, z: -0.58, r: 41.3, estimated: false }  # 추론
-  coding: { s: 16.7, z: -0.67, r: 39.9, estimated: false }  # 코딩
-  agentic: { s: 48.7, z: 0.38, r: 55.8, estimated: false }  # 에이전트
-  trust: { s: 2.1, z: -1.14, r: 32.9, estimated: false }  # 신뢰성
+  coding: { s: 16.7, z: -0.68, r: 39.8, estimated: false }  # 코딩
+  agentic: { s: 48.7, z: 0.38, r: 55.7, estimated: false }  # 에이전트
+  trust: { s: 2.1, z: -1.13, r: 33.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 31.5, z: -0.61, r: 40.9, estimated: false }  # 긴문맥
-  instruction: { s: 43.7, z: -0.44, r: 43.5, estimated: false }  # 지시 따르기
+  long_context: { s: 31.5, z: -0.61, r: 40.8, estimated: false }  # 긴문맥
+  instruction: { s: 43.7, z: -0.44, r: 43.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — LongCat Flash Lite
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-01
-timestamp: 2026-10-01T00:00:00Z
+updated: 2026-10-03
+timestamp: 2026-10-03T00:00:00Z
 ---
 
 # LongCat Flash Lite
@@ -45,12 +45,12 @@ LongCat · Open · Medium · 컨텍스트 256k · 종합지능 **11.0**
 |---|---|---|---|---|
 | 전문 지식 | 39.7 | -0.69 | 실측 | [[aa-omniscience]] 13.0%×1.0, [[gpqa-diamond]] 64.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 41.3 | -0.58 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 64.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 39.9 | -0.67 | 실측 | [[terminal-bench]] 11.0%×0.5 |
-| 에이전트 | 55.8 | +0.38 | 실측 | [[tau2-bench]] 80.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
-| 신뢰성 | 32.9 | -1.14 | 실측 | [[aa-omniscience]] 4.0%×1.0 |
+| 코딩 | 39.8 | -0.68 | 실측 | [[terminal-bench]] 11.0%×0.5 |
+| 에이전트 | 55.7 | +0.38 | 실측 | [[tau2-bench]] 80.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
+| 신뢰성 | 33.0 | -1.13 | 실측 | [[aa-omniscience]] 4.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 40.9 | -0.61 | 실측 | [[aa-lcr]] 28.0%×1.0 |
-| 지시 따르기 | 43.5 | -0.44 | 실측 | [[ifbench]] 43.0%×1.0 |
+| 긴문맥 | 40.8 | -0.61 | 실측 | [[aa-lcr]] 28.0%×1.0 |
+| 지시 따르기 | 43.4 | -0.44 | 실측 | [[ifbench]] 43.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

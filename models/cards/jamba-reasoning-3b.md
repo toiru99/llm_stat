@@ -12,11 +12,11 @@ size_class: Tiny
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 13.3, z: -1.35, r: 29.8, estimated: false }  # 전문 지식
-  reasoning: { s: 10.6, z: -1.17, r: 32.4, estimated: false }  # 추론
-  coding: { s: 1.5, z: -1.19, r: 32.1, estimated: false }  # 코딩
-  agentic: { s: 8.8, z: -1.14, r: 32.9, estimated: false }  # 에이전트
-  trust: { s: 29.9, z: 0.15, r: 52.3, estimated: false }  # 신뢰성
+  knowledge: { s: 13.3, z: -1.35, r: 29.7, estimated: false }  # 전문 지식
+  reasoning: { s: 10.6, z: -1.18, r: 32.3, estimated: false }  # 추론
+  coding: { s: 1.5, z: -1.2, r: 32.1, estimated: false }  # 코딩
+  agentic: { s: 8.8, z: -1.14, r: 32.8, estimated: false }  # 에이전트
+  trust: { s: 29.9, z: 0.16, r: 52.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 6.7, z: -1.36, r: 29.6, estimated: false }  # 긴문맥
   instruction: { s: 56.3, z: 0.09, r: 51.3, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba Reasoning 3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-01
-timestamp: 2026-10-01T00:00:00Z
+updated: 2026-10-03
+timestamp: 2026-10-03T00:00:00Z
 ---
 
 # Jamba Reasoning 3B
@@ -43,11 +43,11 @@ AI21 Labs · Open · Tiny · 컨텍스트 262k · 종합지능 **6.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 29.8 | -1.35 | 실측 | [[aa-omniscience]] 7.0%×1.0, [[gpqa-diamond]] 33.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 32.4 | -1.17 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 32.1 | -1.19 | 실측 | [[terminal-bench]] 1.0%×0.5 |
-| 에이전트 | 32.9 | -1.14 | 실측 | [[tau2-bench]] 16.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
-| 신뢰성 | 52.3 | +0.15 | 실측 | [[aa-omniscience]] 31.0%×1.0 |
+| 전문 지식 | 29.7 | -1.35 | 실측 | [[aa-omniscience]] 7.0%×1.0, [[gpqa-diamond]] 33.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 32.3 | -1.18 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 32.1 | -1.2 | 실측 | [[terminal-bench]] 1.0%×0.5 |
+| 에이전트 | 32.8 | -1.14 | 실측 | [[tau2-bench]] 16.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
+| 신뢰성 | 52.4 | +0.16 | 실측 | [[aa-omniscience]] 31.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 29.6 | -1.36 | 실측 | [[aa-lcr]] 6.0%×1.0 |
 | 지시 따르기 | 51.3 | +0.09 | 실측 | [[ifbench]] 52.0%×1.0 |

@@ -13,8 +13,8 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 20.9, z: -1.0, r: 35.0, estimated: false }  # 전문 지식
-  reasoning: { s: 19.2, z: -0.78, r: 38.3, estimated: false }  # 추론
-  coding: { s: 7.6, z: -0.98, r: 35.2, estimated: false }  # 코딩
+  reasoning: { s: 19.2, z: -0.78, r: 38.2, estimated: false }  # 추론
+  coding: { s: 7.6, z: -0.99, r: 35.2, estimated: false }  # 코딩
   agentic: { s: 11.9, z: -1.03, r: 34.6, estimated: false }  # 에이전트
   trust: { s: 52.6, z: 1.21, r: 68.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — LFM2.5-8B-A1B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-01
-timestamp: 2026-10-01T00:00:00Z
+updated: 2026-10-03
+timestamp: 2026-10-03T00:00:00Z
 ---
 
 # LFM2.5-8B-A1B
@@ -44,8 +44,8 @@ Liquid AI · Open · Small · 컨텍스트 32k · 종합지능 **7.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 35.0 | -1.0 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 51.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
-| 추론 | 38.3 | -0.78 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 51.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
-| 코딩 | 35.2 | -0.98 | 실측 | [[terminal-bench]] 5.0%×0.5 |
+| 추론 | 38.2 | -0.78 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 51.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
+| 코딩 | 35.2 | -0.99 | 실측 | [[terminal-bench]] 5.0%×0.5 |
 | 에이전트 | 34.6 | -1.03 | 실측 | [[tau2-bench]] 16.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
 | 신뢰성 | 68.1 | +1.21 | 실측 | [[aa-omniscience]] 53.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

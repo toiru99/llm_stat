@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 40.8, z: -0.08, r: 48.8, estimated: false }  # 전문 지식
-  reasoning: { s: 23.4, z: -0.59, r: 41.1, estimated: false }  # 추론
-  coding: { s: 31.8, z: -0.15, r: 47.7, estimated: false }  # 코딩
-  agentic: { s: 41.2, z: 0.09, r: 51.4, estimated: false }  # 에이전트
+  reasoning: { s: 23.4, z: -0.6, r: 41.1, estimated: false }  # 추론
+  coding: { s: 31.8, z: -0.16, r: 47.6, estimated: false }  # 코딩
+  agentic: { s: 41.2, z: 0.09, r: 51.3, estimated: false }  # 에이전트
   trust: { s: 46.4, z: 0.92, r: 63.8, estimated: false }  # 신뢰성
-  multimodal: { s: 61.6, z: -0.48, r: 42.7, estimated: false }  # 멀티모달
+  multimodal: { s: 61.6, z: -0.49, r: 42.7, estimated: false }  # 멀티모달
   long_context: { s: 58.4, z: 0.21, r: 53.1, estimated: false }  # 긴문맥
   instruction: { s: 45.1, z: -0.38, r: 44.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 3.7 Sonnet (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-01
-timestamp: 2026-10-01T00:00:00Z
+updated: 2026-10-03
+timestamp: 2026-10-03T00:00:00Z
 ---
 
 # Claude 3.7 Sonnet (non-reasoning)
@@ -44,11 +44,11 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **15.0*
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 48.8 | -0.08 | 실측 | [[aa-omniscience]] 28.0%×1.0, [[gpqa-diamond]] 66.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 41.1 | -0.59 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 66.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 47.7 | -0.15 | 실측 | [[terminal-bench]] 21.0%×0.5 |
-| 에이전트 | 51.4 | +0.09 | 실측 | [[tau2-bench]] 50.0%×1.0, [[terminal-bench]] 21.0%×1.0 |
+| 추론 | 41.1 | -0.6 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 66.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 47.6 | -0.16 | 실측 | [[terminal-bench]] 21.0%×0.5 |
+| 에이전트 | 51.3 | +0.09 | 실측 | [[tau2-bench]] 50.0%×1.0, [[terminal-bench]] 21.0%×1.0 |
 | 신뢰성 | 63.8 | +0.92 | 실측 | [[aa-omniscience]] 47.0%×1.0 |
-| 멀티모달 | 42.7 | -0.48 | 실측 | [[mmmu-pro]] 60.0%×1.0 |
+| 멀티모달 | 42.7 | -0.49 | 실측 | [[mmmu-pro]] 60.0%×1.0 |
 | 긴문맥 | 53.1 | +0.21 | 실측 | [[aa-lcr]] 52.0%×1.0 |
 | 지시 따르기 | 44.3 | -0.38 | 실측 | [[ifbench]] 44.0%×1.0 |
 

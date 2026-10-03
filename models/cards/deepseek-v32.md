@@ -12,11 +12,11 @@ size_class: Unknown
 params_b: null
 is_reasoning: null
 radar:
-  knowledge: { s: 56.3, z: 0.64, r: 59.6, estimated: false }  # 전문 지식
+  knowledge: { s: 56.3, z: 0.63, r: 59.5, estimated: false }  # 전문 지식
   reasoning: { s: 45.1, z: 0.39, r: 55.9, estimated: false }  # 추론
-  coding: { s: 54.5, z: 0.62, r: 59.4, estimated: false }  # 코딩
-  agentic: { s: 47.6, z: 0.34, r: 55.1, estimated: false }  # 에이전트
-  trust: { s: 15.5, z: -0.52, r: 42.2, estimated: false }  # 신뢰성
+  coding: { s: 54.5, z: 0.62, r: 59.3, estimated: false }  # 코딩
+  agentic: { s: 47.6, z: 0.34, r: 55.0, estimated: false }  # 에이전트
+  trust: { s: 15.5, z: -0.51, r: 42.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 82.0, z: 0.92, r: 63.8, estimated: false }  # 긴문맥
   instruction: { s: 69.0, z: 0.61, r: 59.2, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V3.2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-01
-timestamp: 2026-10-01T00:00:00Z
+updated: 2026-10-03
+timestamp: 2026-10-03T00:00:00Z
 ---
 
 # DeepSeek V3.2
@@ -43,11 +43,11 @@ DeepSeek · Open · Unknown · 컨텍스트 128k · 종합지능 **21.0** · ⚠
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 59.6 | +0.64 | 실측 | [[aa-omniscience]] 33.0%×1.0, [[gpqa-diamond]] 84.0%×0.4, [[humanitys-last-exam]] 25.0%×0.3 |
+| 전문 지식 | 59.5 | +0.63 | 실측 | [[aa-omniscience]] 33.0%×1.0, [[gpqa-diamond]] 84.0%×0.4, [[humanitys-last-exam]] 25.0%×0.3 |
 | 추론 | 55.9 | +0.39 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 84.0%×1.0, [[humanitys-last-exam]] 25.0%×1.0 |
-| 코딩 | 59.4 | +0.62 | 실측 | [[terminal-bench]] 36.0%×0.5 |
-| 에이전트 | 55.1 | +0.34 | 실측 | [[apex-agents]] 15.0%×1.0, [[gdpval]] 9.0%×1.0, [[tau2-bench]] 91.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
-| 신뢰성 | 42.2 | -0.52 | 실측 | [[aa-omniscience]] 17.0%×1.0 |
+| 코딩 | 59.3 | +0.62 | 실측 | [[terminal-bench]] 36.0%×0.5 |
+| 에이전트 | 55.0 | +0.34 | 실측 | [[apex-agents]] 15.0%×1.0, [[gdpval]] 9.0%×1.0, [[tau2-bench]] 91.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
+| 신뢰성 | 42.3 | -0.51 | 실측 | [[aa-omniscience]] 17.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 63.8 | +0.92 | 실측 | [[aa-lcr]] 73.0%×1.0 |
 | 지시 따르기 | 59.2 | +0.61 | 실측 | [[ifbench]] 61.0%×1.0 |

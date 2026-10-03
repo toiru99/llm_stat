@@ -13,10 +13,10 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 43.6, z: 0.05, r: 50.7, estimated: false }  # 전문 지식
-  reasoning: { s: 43.9, z: 0.34, r: 55.1, estimated: false }  # 추론
-  coding: { s: 13.6, z: -0.78, r: 38.4, estimated: false }  # 코딩
-  agentic: { s: 40.0, z: 0.05, r: 50.7, estimated: false }  # 에이전트
-  trust: { s: 32.0, z: 0.25, r: 53.7, estimated: false }  # 신뢰성
+  reasoning: { s: 43.9, z: 0.34, r: 55.0, estimated: false }  # 추론
+  coding: { s: 13.6, z: -0.78, r: 38.3, estimated: false }  # 코딩
+  agentic: { s: 40.0, z: 0.04, r: 50.7, estimated: false }  # 에이전트
+  trust: { s: 32.0, z: 0.25, r: 53.8, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 43.8, z: -0.24, r: 46.5, estimated: false }  # 긴문맥
   instruction: { s: 78.9, z: 1.02, r: 65.3, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — KAT-Coder-Pro V1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-01
-timestamp: 2026-10-01T00:00:00Z
+updated: 2026-10-03
+timestamp: 2026-10-03T00:00:00Z
 ---
 
 # KAT-Coder-Pro V1
@@ -44,10 +44,10 @@ KwaiKAT · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **19.0** 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 50.7 | +0.05 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 76.0%×0.4, [[humanitys-last-exam]] 34.0%×0.3 |
-| 추론 | 55.1 | +0.34 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 34.0%×1.0 |
-| 코딩 | 38.4 | -0.78 | 실측 | [[terminal-bench]] 9.0%×0.5 |
-| 에이전트 | 50.7 | +0.05 | 실측 | [[gdpval]] 11.0%×1.0, [[tau2-bench]] 89.0%×1.0, [[terminal-bench]] 9.0%×1.0 |
-| 신뢰성 | 53.7 | +0.25 | 실측 | [[aa-omniscience]] 33.0%×1.0 |
+| 추론 | 55.0 | +0.34 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 34.0%×1.0 |
+| 코딩 | 38.3 | -0.78 | 실측 | [[terminal-bench]] 9.0%×0.5 |
+| 에이전트 | 50.7 | +0.04 | 실측 | [[gdpval]] 11.0%×1.0, [[tau2-bench]] 89.0%×1.0, [[terminal-bench]] 9.0%×1.0 |
+| 신뢰성 | 53.8 | +0.25 | 실측 | [[aa-omniscience]] 33.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 46.5 | -0.24 | 실측 | [[aa-lcr]] 39.0%×1.0 |
 | 지시 따르기 | 65.3 | +1.02 | 실측 | [[ifbench]] 68.0%×1.0 |

@@ -12,11 +12,11 @@ size_class: Unknown
 params_b: null
 is_reasoning: null
 radar:
-  knowledge: { s: 44.1, z: 0.07, r: 51.1, estimated: false }  # 전문 지식
-  reasoning: { s: 33.0, z: -0.16, r: 47.7, estimated: false }  # 추론
-  coding: { s: 33.3, z: -0.1, r: 48.5, estimated: false }  # 코딩
-  agentic: { s: 38.4, z: -0.01, r: 49.8, estimated: false }  # 에이전트
-  trust: { s: 28.9, z: 0.1, r: 51.6, estimated: false }  # 신뢰성
+  knowledge: { s: 44.1, z: 0.07, r: 51.0, estimated: false }  # 전문 지식
+  reasoning: { s: 33.0, z: -0.16, r: 47.6, estimated: false }  # 추론
+  coding: { s: 33.3, z: -0.11, r: 48.4, estimated: false }  # 코딩
+  agentic: { s: 38.4, z: -0.02, r: 49.8, estimated: false }  # 에이전트
+  trust: { s: 28.9, z: 0.11, r: 51.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 59.6, z: 0.24, r: 53.6, estimated: false }  # 긴문맥
   instruction: { s: 45.1, z: -0.38, r: 44.3, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-01
-timestamp: 2026-10-01T00:00:00Z
+updated: 2026-10-03
+timestamp: 2026-10-03T00:00:00Z
 ---
 
 # GLM-4.5
@@ -43,11 +43,11 @@ Z AI · Open · Unknown · 컨텍스트 128k · 종합지능 **13.0** · ⚠️ 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 51.1 | +0.07 | 실측 | [[aa-omniscience]] 25.0%×1.0, [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
-| 추론 | 47.7 | -0.16 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
-| 코딩 | 48.5 | -0.1 | 실측 | [[terminal-bench]] 22.0%×0.5 |
-| 에이전트 | 49.8 | -0.01 | 실측 | [[tau2-bench]] 43.0%×1.0, [[terminal-bench]] 22.0%×1.0 |
-| 신뢰성 | 51.6 | +0.1 | 실측 | [[aa-omniscience]] 30.0%×1.0 |
+| 전문 지식 | 51.0 | +0.07 | 실측 | [[aa-omniscience]] 25.0%×1.0, [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
+| 추론 | 47.6 | -0.16 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
+| 코딩 | 48.4 | -0.11 | 실측 | [[terminal-bench]] 22.0%×0.5 |
+| 에이전트 | 49.8 | -0.02 | 실측 | [[tau2-bench]] 43.0%×1.0, [[terminal-bench]] 22.0%×1.0 |
+| 신뢰성 | 51.6 | +0.11 | 실측 | [[aa-omniscience]] 30.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 53.6 | +0.24 | 실측 | [[aa-lcr]] 53.0%×1.0 |
 | 지시 따르기 | 44.3 | -0.38 | 실측 | [[ifbench]] 44.0%×1.0 |

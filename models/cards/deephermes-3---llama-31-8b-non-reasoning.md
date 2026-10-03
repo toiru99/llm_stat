@@ -12,20 +12,20 @@ size_class: Small
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 13.4, z: -1.34, r: 29.9, estimated: false }  # 전문 지식
-  reasoning: { s: 12.4, z: -1.09, r: 33.6, estimated: false }  # 추론
+  knowledge: { s: 13.4, z: -1.35, r: 29.8, estimated: false }  # 전문 지식
+  reasoning: { s: 12.4, z: -1.1, r: 33.6, estimated: false }  # 추론
   coding: { s: 0.8, z: -1.22, r: 31.7, estimated: true }  # 코딩
   agentic: { s: 9.4, z: -1.12, r: 33.2, estimated: true }  # 에이전트
-  trust: { s: 15.8, z: -0.5, r: 42.5, estimated: true }  # 신뢰성
+  trust: { s: 11.5, z: -0.7, r: 39.6, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 5.7, z: -1.39, r: 29.1, estimated: true }  # 긴문맥
-  instruction: { s: 25.8, z: -1.18, r: 32.4, estimated: true }  # 지시 따르기
+  long_context: { s: 2.5, z: -1.49, r: 27.7, estimated: true }  # 긴문맥
+  instruction: { s: 24.6, z: -1.24, r: 31.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepHermes 3 - Llama-3.1 8B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-01
-timestamp: 2026-10-01T00:00:00Z
+updated: 2026-10-03
+timestamp: 2026-10-03T00:00:00Z
 ---
 
 # DeepHermes 3 - Llama-3.1 8B (non-reasoning)
@@ -43,14 +43,14 @@ Nous Research · Open · Small · 컨텍스트 128k · 종합지능 **5.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 29.9 | -1.34 | 실측 | [[gpqa-diamond]] 27.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 33.6 | -1.09 | 실측 | [[gpqa-diamond]] 27.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 전문 지식 | 29.8 | -1.35 | 실측 | [[gpqa-diamond]] 27.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 33.6 | -1.1 | 실측 | [[gpqa-diamond]] 27.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 31.7 | -1.22 | 추정 | (추정) |
 | 에이전트 | 33.2 | -1.12 | 추정 | (추정) |
-| 신뢰성 | 42.5 | -0.5 | 추정 | (추정) |
+| 신뢰성 | 39.6 | -0.7 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 29.1 | -1.39 | 추정 | (추정) |
-| 지시 따르기 | 32.4 | -1.18 | 추정 | (추정) |
+| 긴문맥 | 27.7 | -1.49 | 추정 | (추정) |
+| 지시 따르기 | 31.5 | -1.24 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

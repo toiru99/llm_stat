@@ -12,11 +12,11 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 43.4, z: 0.04, r: 50.7, estimated: false }  # 전문 지식
-  reasoning: { s: 39.1, z: 0.12, r: 51.8, estimated: false }  # 추론
-  coding: { s: 37.9, z: 0.06, r: 50.8, estimated: true }  # 코딩
-  agentic: { s: 45.8, z: 0.27, r: 54.1, estimated: true }  # 에이전트
-  trust: { s: 20.2, z: -0.3, r: 45.5, estimated: true }  # 신뢰성
+  knowledge: { s: 43.4, z: 0.04, r: 50.6, estimated: false }  # 전문 지식
+  reasoning: { s: 39.1, z: 0.12, r: 51.7, estimated: false }  # 추론
+  coding: { s: 37.9, z: 0.05, r: 50.8, estimated: true }  # 코딩
+  agentic: { s: 45.8, z: 0.27, r: 54.0, estimated: true }  # 에이전트
+  trust: { s: 20.2, z: -0.29, r: 45.6, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 62.2, z: 0.32, r: 54.8, estimated: true }  # 긴문맥
   instruction: { s: 48.5, z: -0.24, r: 46.4, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.0 Flash Thinking exp. (Jan)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-01
-timestamp: 2026-10-01T00:00:00Z
+updated: 2026-10-03
+timestamp: 2026-10-03T00:00:00Z
 ---
 
 # Gemini 2.0 Flash Thinking exp. (Jan)
@@ -43,11 +43,11 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **9.0** · �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 50.7 | +0.04 | 실측 | [[gpqa-diamond]] 70.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
-| 추론 | 51.8 | +0.12 | 실측 | [[gpqa-diamond]] 70.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 50.8 | +0.06 | 추정 | (추정) |
-| 에이전트 | 54.1 | +0.27 | 추정 | (추정) |
-| 신뢰성 | 45.5 | -0.3 | 추정 | (추정) |
+| 전문 지식 | 50.6 | +0.04 | 실측 | [[gpqa-diamond]] 70.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 추론 | 51.7 | +0.12 | 실측 | [[gpqa-diamond]] 70.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
+| 코딩 | 50.8 | +0.05 | 추정 | (추정) |
+| 에이전트 | 54.0 | +0.27 | 추정 | (추정) |
+| 신뢰성 | 45.6 | -0.29 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 54.8 | +0.32 | 추정 | (추정) |
 | 지시 따르기 | 46.4 | -0.24 | 추정 | (추정) |

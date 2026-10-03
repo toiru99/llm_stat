@@ -14,9 +14,9 @@ is_reasoning: null
 radar:
   knowledge: { s: 36.5, z: -0.28, r: 45.8, estimated: false }  # 전문 지식
   reasoning: { s: 33.4, z: -0.14, r: 47.9, estimated: false }  # 추론
-  coding: { s: 30.3, z: -0.21, r: 46.9, estimated: false }  # 코딩
-  agentic: { s: 36.4, z: -0.09, r: 48.7, estimated: false }  # 에이전트
-  trust: { s: 18.6, z: -0.38, r: 44.4, estimated: false }  # 신뢰성
+  coding: { s: 30.3, z: -0.21, r: 46.8, estimated: false }  # 코딩
+  agentic: { s: 36.4, z: -0.09, r: 48.6, estimated: false }  # 에이전트
+  trust: { s: 18.6, z: -0.37, r: 44.5, estimated: false }  # 신뢰성
   multimodal: { s: 71.2, z: -0.01, r: 49.9, estimated: false }  # 멀티모달
   long_context: { s: 61.8, z: 0.31, r: 54.6, estimated: false }  # 긴문맥
   instruction: { s: 64.8, z: 0.44, r: 56.6, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — EXAONE 4.5 33B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-01
-timestamp: 2026-10-01T00:00:00Z
+updated: 2026-10-03
+timestamp: 2026-10-03T00:00:00Z
 ---
 
 # EXAONE 4.5 33B
@@ -45,9 +45,9 @@ LG AI Research · Open · Unknown · 컨텍스트 262k · 종합지능 **13.0**
 |---|---|---|---|---|
 | 전문 지식 | 45.8 | -0.28 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 79.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
 | 추론 | 47.9 | -0.14 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 79.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
-| 코딩 | 46.9 | -0.21 | 실측 | [[terminal-bench]] 20.0%×0.5 |
-| 에이전트 | 48.7 | -0.09 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 78.0%×1.0, [[terminal-bench]] 20.0%×1.0 |
-| 신뢰성 | 44.4 | -0.38 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
+| 코딩 | 46.8 | -0.21 | 실측 | [[terminal-bench]] 20.0%×0.5 |
+| 에이전트 | 48.6 | -0.09 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 78.0%×1.0, [[terminal-bench]] 20.0%×1.0 |
+| 신뢰성 | 44.5 | -0.37 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
 | 멀티모달 | 49.9 | -0.01 | 실측 | [[mmmu-pro]] 67.0%×1.0 |
 | 긴문맥 | 54.6 | +0.31 | 실측 | [[aa-lcr]] 55.0%×1.0 |
 | 지시 따르기 | 56.6 | +0.44 | 실측 | [[ifbench]] 58.0%×1.0 |

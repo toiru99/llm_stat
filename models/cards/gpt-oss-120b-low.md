@@ -5,18 +5,18 @@ creator: OpenAI
 license: Open
 intelligence_index: 10.0
 price_blended_usd_1m: 0.1895
-output_speed_tps: 170.0
+output_speed_tps: 169.0
 context_window: 131000
 status: current
 size_class: Medium
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 34.6, z: -0.36, r: 44.5, estimated: false }  # 전문 지식
+  knowledge: { s: 34.6, z: -0.37, r: 44.5, estimated: false }  # 전문 지식
   reasoning: { s: 24.9, z: -0.53, r: 42.1, estimated: false }  # 추론
-  coding: { s: 7.6, z: -0.98, r: 35.2, estimated: false }  # 코딩
+  coding: { s: 7.6, z: -0.99, r: 35.2, estimated: false }  # 코딩
   agentic: { s: 14.7, z: -0.92, r: 36.2, estimated: false }  # 에이전트
-  trust: { s: 7.2, z: -0.9, r: 36.5, estimated: false }  # 신뢰성
+  trust: { s: 7.2, z: -0.89, r: 36.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 51.7, z: 0.0, r: 50.0, estimated: false }  # 긴문맥
   instruction: { s: 64.8, z: 0.44, r: 56.6, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — gpt-oss-120b (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-01
-timestamp: 2026-10-01T00:00:00Z
+updated: 2026-10-03
+timestamp: 2026-10-03T00:00:00Z
 ---
 
 # gpt-oss-120b (low)
@@ -37,17 +37,17 @@ OpenAI · Open · Medium · 컨텍스트 131k · 종합지능 **10.0**
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.54 · 혼합 $0.1895/1M · 170.0 t/s · TTFT 0.85s · 131k ctx` · 가성비 52.8
+`입력 $0.15 · 출력 $0.54 · 혼합 $0.1895/1M · 169.0 t/s · TTFT 0.83s · 131k ctx` · 가성비 52.8
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 44.5 | -0.36 | 실측 | [[aa-omniscience]] 20.0%×1.0, [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 전문 지식 | 44.5 | -0.37 | 실측 | [[aa-omniscience]] 20.0%×1.0, [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 42.1 | -0.53 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 67.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 35.2 | -0.98 | 실측 | [[terminal-bench]] 5.0%×0.5 |
+| 코딩 | 35.2 | -0.99 | 실측 | [[terminal-bench]] 5.0%×0.5 |
 | 에이전트 | 36.2 | -0.92 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 45.0%×1.0, [[tau3-banking]] 3.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
-| 신뢰성 | 36.5 | -0.9 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 신뢰성 | 36.6 | -0.89 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 50.0 | +0.0 | 실측 | [[aa-lcr]] 46.0%×1.0 |
 | 지시 따르기 | 56.6 | +0.44 | 실측 | [[ifbench]] 58.0%×1.0 |

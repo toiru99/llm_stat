@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 1.4, z: -1.9, r: 21.5, estimated: false }  # 전문 지식
   reasoning: { s: 1.7, z: -1.58, r: 26.3, estimated: false }  # 추론
-  coding: { s: 0.0, z: -1.24, r: 31.4, estimated: true }  # 코딩
+  coding: { s: 0.0, z: -1.25, r: 31.3, estimated: true }  # 코딩
   agentic: { s: 7.9, z: -1.18, r: 32.3, estimated: true }  # 에이전트
-  trust: { s: 26.6, z: -0.0, r: 49.9, estimated: true }  # 신뢰성
+  trust: { s: 26.6, z: 0.0, r: 50.0, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 2.2, z: -1.49, r: 27.6, estimated: false }  # 긴문맥
-  instruction: { s: 1.4, z: -2.18, r: 17.3, estimated: false }  # 지시 따르기
+  instruction: { s: 1.4, z: -2.2, r: 17.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek R1 Distill Qwen 1.5B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-01
-timestamp: 2026-10-01T00:00:00Z
+updated: 2026-10-03
+timestamp: 2026-10-03T00:00:00Z
 ---
 
 # DeepSeek R1 Distill Qwen 1.5B
@@ -45,12 +45,12 @@ DeepSeek · Open · Tiny · 컨텍스트 128k · 종합지능 **6.0** · ⚠️ 
 |---|---|---|---|---|
 | 전문 지식 | 21.5 | -1.9 | 실측 | [[gpqa-diamond]] 10.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
 | 추론 | 26.3 | -1.58 | 실측 | [[gpqa-diamond]] 10.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
-| 코딩 | 31.4 | -1.24 | 추정 | (추정) |
+| 코딩 | 31.3 | -1.25 | 추정 | (추정) |
 | 에이전트 | 32.3 | -1.18 | 추정 | (추정) |
-| 신뢰성 | 49.9 | +-0.0 | 추정 | (추정) |
+| 신뢰성 | 50.0 | +0.0 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 27.6 | -1.49 | 실측 | [[aa-lcr]] 2.0%×1.0 |
-| 지시 따르기 | 17.3 | -2.18 | 실측 | [[ifbench]] 13.0%×1.0 |
+| 지시 따르기 | 17.0 | -2.2 | 실측 | [[ifbench]] 13.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

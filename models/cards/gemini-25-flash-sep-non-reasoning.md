@@ -12,11 +12,11 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 44.4, z: 0.09, r: 51.3, estimated: false }  # 전문 지식
-  reasoning: { s: 30.4, z: -0.27, r: 45.9, estimated: false }  # 추론
+  knowledge: { s: 44.4, z: 0.08, r: 51.3, estimated: false }  # 전문 지식
+  reasoning: { s: 30.4, z: -0.28, r: 45.8, estimated: false }  # 추론
   coding: { s: 21.2, z: -0.52, r: 42.2, estimated: false }  # 코딩
-  agentic: { s: 24.7, z: -0.53, r: 42.0, estimated: false }  # 에이전트
-  trust: { s: 7.2, z: -0.9, r: 36.5, estimated: false }  # 신뢰성
+  agentic: { s: 24.7, z: -0.54, r: 42.0, estimated: false }  # 에이전트
+  trust: { s: 7.2, z: -0.89, r: 36.6, estimated: false }  # 신뢰성
   multimodal: { s: 75.3, z: 0.2, r: 53.0, estimated: false }  # 멀티모달
   long_context: { s: 67.4, z: 0.48, r: 57.2, estimated: false }  # 긴문맥
   instruction: { s: 45.1, z: -0.38, r: 44.3, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.5 Flash (Sep) (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-01
-timestamp: 2026-10-01T00:00:00Z
+updated: 2026-10-03
+timestamp: 2026-10-03T00:00:00Z
 ---
 
 # Gemini 2.5 Flash (Sep) (non-reasoning)
@@ -43,11 +43,11 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **12.0** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 51.3 | +0.09 | 실측 | [[aa-omniscience]] 27.0%×1.0, [[gpqa-diamond]] 77.0%×0.4, [[humanitys-last-exam]] 9.0%×0.3 |
-| 추론 | 45.9 | -0.27 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 77.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
+| 전문 지식 | 51.3 | +0.08 | 실측 | [[aa-omniscience]] 27.0%×1.0, [[gpqa-diamond]] 77.0%×0.4, [[humanitys-last-exam]] 9.0%×0.3 |
+| 추론 | 45.8 | -0.28 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 77.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
 | 코딩 | 42.2 | -0.52 | 실측 | [[terminal-bench]] 14.0%×0.5 |
-| 에이전트 | 42.0 | -0.53 | 실측 | [[tau2-bench]] 28.0%×1.0, [[terminal-bench]] 14.0%×1.0 |
-| 신뢰성 | 36.5 | -0.9 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 에이전트 | 42.0 | -0.54 | 실측 | [[tau2-bench]] 28.0%×1.0, [[terminal-bench]] 14.0%×1.0 |
+| 신뢰성 | 36.6 | -0.89 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | 53.0 | +0.2 | 실측 | [[mmmu-pro]] 70.0%×1.0 |
 | 긴문맥 | 57.2 | +0.48 | 실측 | [[aa-lcr]] 60.0%×1.0 |
 | 지시 따르기 | 44.3 | -0.38 | 실측 | [[ifbench]] 44.0%×1.0 |

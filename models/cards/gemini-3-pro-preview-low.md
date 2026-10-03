@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 72.0, z: 1.36, r: 70.4, estimated: false }  # 전문 지식
   reasoning: { s: 46.2, z: 0.44, r: 56.6, estimated: false }  # 추론
-  coding: { s: 51.5, z: 0.52, r: 57.8, estimated: false }  # 코딩
-  agentic: { s: 60.1, z: 0.82, r: 62.3, estimated: false }  # 에이전트
-  trust: { s: 8.2, z: -0.85, r: 37.2, estimated: false }  # 신뢰성
+  coding: { s: 51.5, z: 0.52, r: 57.7, estimated: false }  # 코딩
+  agentic: { s: 60.1, z: 0.81, r: 62.2, estimated: false }  # 에이전트
+  trust: { s: 8.2, z: -0.85, r: 37.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 83.1, z: 0.96, r: 64.3, estimated: false }  # 긴문맥
-  instruction: { s: 53.5, z: -0.03, r: 49.6, estimated: false }  # 지시 따르기
+  long_context: { s: 83.1, z: 0.95, r: 64.3, estimated: false }  # 긴문맥
+  instruction: { s: 53.5, z: -0.03, r: 49.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3 Pro Preview (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-01
-timestamp: 2026-10-01T00:00:00Z
+updated: 2026-10-03
+timestamp: 2026-10-03T00:00:00Z
 ---
 
 # Gemini 3 Pro Preview (low)
@@ -45,12 +45,12 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **22.0** · 
 |---|---|---|---|---|
 | 전문 지식 | 70.4 | +1.36 | 실측 | [[aa-omniscience]] 48.0%×1.0, [[gpqa-diamond]] 89.0%×0.4, [[humanitys-last-exam]] 29.0%×0.3 |
 | 추론 | 56.6 | +0.44 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 89.0%×1.0, [[humanitys-last-exam]] 29.0%×1.0 |
-| 코딩 | 57.8 | +0.52 | 실측 | [[terminal-bench]] 34.0%×0.5 |
-| 에이전트 | 62.3 | +0.82 | 실측 | [[tau2-bench]] 68.0%×1.0, [[terminal-bench]] 34.0%×1.0 |
-| 신뢰성 | 37.2 | -0.85 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
+| 코딩 | 57.7 | +0.52 | 실측 | [[terminal-bench]] 34.0%×0.5 |
+| 에이전트 | 62.2 | +0.81 | 실측 | [[tau2-bench]] 68.0%×1.0, [[terminal-bench]] 34.0%×1.0 |
+| 신뢰성 | 37.3 | -0.85 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 64.3 | +0.96 | 실측 | [[aa-lcr]] 74.0%×1.0 |
-| 지시 따르기 | 49.6 | -0.03 | 실측 | [[ifbench]] 50.0%×1.0 |
+| 긴문맥 | 64.3 | +0.95 | 실측 | [[aa-lcr]] 74.0%×1.0 |
+| 지시 따르기 | 49.5 | -0.03 | 실측 | [[ifbench]] 50.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

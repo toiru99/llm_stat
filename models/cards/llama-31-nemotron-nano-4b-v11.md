@@ -14,18 +14,18 @@ is_reasoning: null
 radar:
   knowledge: { s: 23.5, z: -0.88, r: 36.8, estimated: false }  # 전문 지식
   reasoning: { s: 21.4, z: -0.69, r: 39.7, estimated: false }  # 추론
-  coding: { s: 7.1, z: -1.0, r: 35.0, estimated: true }  # 코딩
-  agentic: { s: 12.1, z: -1.02, r: 34.8, estimated: false }  # 에이전트
-  trust: { s: 17.4, z: -0.43, r: 43.5, estimated: true }  # 신뢰성
+  coding: { s: 5.8, z: -1.05, r: 34.3, estimated: true }  # 코딩
+  agentic: { s: 12.1, z: -1.02, r: 34.7, estimated: false }  # 에이전트
+  trust: { s: 3.9, z: -1.05, r: 34.3, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.56, r: 26.6, estimated: false }  # 긴문맥
-  instruction: { s: 19.7, z: -1.43, r: 28.6, estimated: false }  # 지시 따르기
+  instruction: { s: 19.7, z: -1.44, r: 28.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.1 Nemotron Nano 4B v1.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-01
-timestamp: 2026-10-01T00:00:00Z
+updated: 2026-10-03
+timestamp: 2026-10-03T00:00:00Z
 ---
 
 # Llama 3.1 Nemotron Nano 4B v1.1
@@ -33,7 +33,7 @@ timestamp: 2026-10-01T00:00:00Z
 NVIDIA · Open · Unknown · 컨텍스트 128k · 종합지능 **7.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 신뢰성, 추론
+- **강점**: 추론, 전문 지식
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
@@ -45,12 +45,12 @@ NVIDIA · Open · Unknown · 컨텍스트 128k · 종합지능 **7.0** · ⚠️
 |---|---|---|---|---|
 | 전문 지식 | 36.8 | -0.88 | 실측 | [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 39.7 | -0.69 | 실측 | [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 35.0 | -1.0 | 추정 | (추정) |
-| 에이전트 | 34.8 | -1.02 | 실측 | [[tau2-bench]] 12.0%×1.0 |
-| 신뢰성 | 43.5 | -0.43 | 추정 | (추정) |
+| 코딩 | 34.3 | -1.05 | 추정 | (추정) |
+| 에이전트 | 34.7 | -1.02 | 실측 | [[tau2-bench]] 12.0%×1.0 |
+| 신뢰성 | 34.3 | -1.05 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 26.6 | -1.56 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 28.6 | -1.43 | 실측 | [[ifbench]] 26.0%×1.0 |
+| 지시 따르기 | 28.4 | -1.44 | 실측 | [[ifbench]] 26.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: null
 radar:
-  knowledge: { s: 72.8, z: 1.4, r: 71.0, estimated: false }  # 전문 지식
-  reasoning: { s: 57.7, z: 0.97, r: 64.5, estimated: false }  # 추론
-  coding: { s: 75.0, z: 1.33, r: 69.9, estimated: false }  # 코딩
-  agentic: { s: 61.2, z: 0.86, r: 62.9, estimated: false }  # 에이전트
-  trust: { s: 42.3, z: 0.73, r: 60.9, estimated: false }  # 신뢰성
+  knowledge: { s: 72.8, z: 1.4, r: 70.9, estimated: false }  # 전문 지식
+  reasoning: { s: 57.7, z: 0.96, r: 64.4, estimated: false }  # 추론
+  coding: { s: 75.0, z: 1.32, r: 69.8, estimated: false }  # 코딩
+  agentic: { s: 61.2, z: 0.85, r: 62.8, estimated: false }  # 에이전트
+  trust: { s: 42.3, z: 0.73, r: 61.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 87.6, z: 1.09, r: 66.4, estimated: false }  # 긴문맥
-  instruction: { s: 75.9, z: 0.9, r: 63.4, estimated: true }  # 지시 따르기
+  long_context: { s: 87.6, z: 1.09, r: 66.3, estimated: false }  # 긴문맥
+  instruction: { s: 75.9, z: 0.9, r: 63.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — JT-4.1 Flash 236B A21B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-01
-timestamp: 2026-10-01T00:00:00Z
+updated: 2026-10-03
+timestamp: 2026-10-03T00:00:00Z
 ---
 
 # JT-4.1 Flash 236B A21B
@@ -43,14 +43,14 @@ China Mobile · Proprietary · Unknown · 컨텍스트 262k · 종합지능 **34
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 71.0 | +1.4 | 실측 | [[aa-omniscience]] 49.0%×1.0, [[humanitys-last-exam]] 44.0%×0.3 |
-| 추론 | 64.5 | +0.97 | 실측 | [[critpt]] 14.0%×1.0, [[humanitys-last-exam]] 44.0%×1.0 |
-| 코딩 | 69.9 | +1.33 | 실측 | [[scicode]] 52.0%×1.0 |
-| 에이전트 | 62.9 | +0.86 | 실측 | [[gdpval]] 41.0%×1.0 |
-| 신뢰성 | 60.9 | +0.73 | 실측 | [[aa-omniscience]] 43.0%×1.0 |
+| 전문 지식 | 70.9 | +1.4 | 실측 | [[aa-omniscience]] 49.0%×1.0, [[humanitys-last-exam]] 44.0%×0.3 |
+| 추론 | 64.4 | +0.96 | 실측 | [[critpt]] 14.0%×1.0, [[humanitys-last-exam]] 44.0%×1.0 |
+| 코딩 | 69.8 | +1.32 | 실측 | [[scicode]] 52.0%×1.0 |
+| 에이전트 | 62.8 | +0.85 | 실측 | [[gdpval]] 41.0%×1.0 |
+| 신뢰성 | 61.0 | +0.73 | 실측 | [[aa-omniscience]] 43.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 66.4 | +1.09 | 실측 | [[aa-lcr]] 78.0%×1.0 |
-| 지시 따르기 | 63.4 | +0.9 | 추정 | (추정) |
+| 긴문맥 | 66.3 | +1.09 | 실측 | [[aa-lcr]] 78.0%×1.0 |
+| 지시 따르기 | 63.5 | +0.9 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
