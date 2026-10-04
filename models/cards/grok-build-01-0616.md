@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok Build 0.1 0616
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-03
-timestamp: 2026-10-03T00:00:00Z
+updated: 2026-10-04
+timestamp: 2026-10-04T00:00:00Z
 ---
 
 # Grok Build 0.1 0616

@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Apriel-v1.6-15B-Thinker
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-03
-timestamp: 2026-10-03T00:00:00Z
+updated: 2026-10-04
+timestamp: 2026-10-04T00:00:00Z
 ---
 
 # Apriel-v1.6-15B-Thinker
