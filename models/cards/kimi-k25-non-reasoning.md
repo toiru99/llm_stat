@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2.5 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-04
-timestamp: 2026-10-04T00:00:00Z
+updated: 2026-10-05
+timestamp: 2026-10-05T00:00:00Z
 ---
 
 # Kimi K2.5 (non-reasoning)

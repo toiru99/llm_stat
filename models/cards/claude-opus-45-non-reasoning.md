@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 4.5 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-04
-timestamp: 2026-10-04T00:00:00Z
+updated: 2026-10-05
+timestamp: 2026-10-05T00:00:00Z
 ---
 
 # Claude Opus 4.5 (non-reasoning)
