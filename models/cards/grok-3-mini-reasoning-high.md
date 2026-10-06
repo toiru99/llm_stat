@@ -5,7 +5,7 @@ creator: SpaceXAI
 license: Proprietary
 intelligence_index: 15.0
 price_blended_usd_1m: 0.1625
-output_speed_tps: 64.0
+output_speed_tps: 83.0
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 3 mini Reasoning (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # Grok 3 mini Reasoning (high)
@@ -37,7 +37,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **15.0** �
 - **약점**: 전문 지식, 코딩
 
 ## 실용 지표
-`입력 $0.3 · 출력 $0.5 · 혼합 $0.1625/1M · 64.0 t/s · TTFT 2.42s · 1M ctx` · 가성비 92.3
+`입력 $0.3 · 출력 $0.5 · 혼합 $0.1625/1M · 83.0 t/s · TTFT 1.79s · 1M ctx` · 가성비 92.3
 
 ## 레이더 8축 (평균=50 기준선)
 

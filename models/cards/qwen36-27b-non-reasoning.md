@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 20.0
 price_blended_usd_1m: 0.9
-output_speed_tps: 56.0
+output_speed_tps: 57.0
 context_window: 262000
 status: past
 size_class: Small
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 39.0, z: -0.16, r: 47.5, estimated: false }  # 전문 지식
   reasoning: { s: 37.1, z: 0.03, r: 50.4, estimated: false }  # 추론
   coding: { s: 31.8, z: -0.16, r: 47.6, estimated: false }  # 코딩
-  agentic: { s: 44.3, z: 0.21, r: 53.2, estimated: false }  # 에이전트
+  agentic: { s: 44.6, z: 0.22, r: 53.3, estimated: false }  # 에이전트
   trust: { s: 14.4, z: -0.56, r: 41.6, estimated: false }  # 신뢰성
   multimodal: { s: 78.1, z: 0.33, r: 55.0, estimated: false }  # 멀티모달
   long_context: { s: 75.3, z: 0.71, r: 60.7, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.6 27B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # Qwen3.6 27B (non-reasoning)
@@ -37,7 +37,7 @@ Alibaba · Open · Small · 컨텍스트 262k · 종합지능 **20.0** · ⚠️
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $0.6 · 출력 $3.6 · 혼합 $0.9/1M · 56.0 t/s · TTFT 3.6s · 262k ctx` · 가성비 22.2
+`입력 $0.6 · 출력 $3.6 · 혼합 $0.9/1M · 57.0 t/s · TTFT 3.67s · 262k ctx` · 가성비 22.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Alibaba · Open · Small · 컨텍스트 262k · 종합지능 **20.0** · ⚠️
 | 전문 지식 | 47.5 | -0.16 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 83.0%×0.4, [[humanitys-last-exam]] 15.0%×0.3 |
 | 추론 | 50.4 | +0.03 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 83.0%×1.0, [[humanitys-last-exam]] 15.0%×1.0 |
 | 코딩 | 47.6 | -0.16 | 실측 | [[terminal-bench]] 21.0%×0.5 |
-| 에이전트 | 53.2 | +0.21 | 실측 | [[gdpval]] 22.0%×1.0, [[tau2-bench]] 94.0%×1.0, [[tau3-banking]] 9.0%×1.0, [[terminal-bench]] 21.0%×1.0 |
+| 에이전트 | 53.3 | +0.22 | 실측 | [[gdpval]] 23.0%×1.0, [[tau2-bench]] 94.0%×1.0, [[tau3-banking]] 9.0%×1.0, [[terminal-bench]] 21.0%×1.0 |
 | 신뢰성 | 41.6 | -0.56 | 실측 | [[aa-omniscience]] 16.0%×1.0 |
 | 멀티모달 | 55.0 | +0.33 | 실측 | [[mmmu-pro]] 72.0%×1.0 |
 | 긴문맥 | 60.7 | +0.71 | 실측 | [[aa-lcr]] 67.0%×1.0 |

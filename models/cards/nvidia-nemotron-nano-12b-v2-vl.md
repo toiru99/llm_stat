@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 21.0, z: -0.7, r: 39.4, estimated: false }  # 추론
   coding: { s: 7.6, z: -0.99, r: 35.2, estimated: false }  # 코딩
   agentic: { s: 14.4, z: -0.93, r: 36.0, estimated: false }  # 에이전트
-  trust: { s: 6.2, z: -0.94, r: 35.9, estimated: false }  # 신뢰성
+  trust: { s: 6.2, z: -0.94, r: 35.8, estimated: false }  # 신뢰성
   multimodal: { s: 52.1, z: -0.97, r: 35.5, estimated: false }  # 멀티모달
   long_context: { s: 46.1, z: -0.17, r: 47.5, estimated: false }  # 긴문맥
   instruction: { s: 28.2, z: -1.09, r: 33.7, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — NVIDIA Nemotron Nano 12B v2 VL
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # NVIDIA Nemotron Nano 12B v2 VL
@@ -47,7 +47,7 @@ NVIDIA · Open · Unknown · 컨텍스트 128k · 종합지능 **7.0**
 | 추론 | 39.4 | -0.7 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 57.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 35.2 | -0.99 | 실측 | [[terminal-bench]] 5.0%×0.5 |
 | 에이전트 | 36.0 | -0.93 | 실측 | [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
-| 신뢰성 | 35.9 | -0.94 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
+| 신뢰성 | 35.8 | -0.94 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
 | 멀티모달 | 35.5 | -0.97 | 실측 | [[mmmu-pro]] 53.0%×1.0 |
 | 긴문맥 | 47.5 | -0.17 | 실측 | [[aa-lcr]] 41.0%×1.0 |
 | 지시 따르기 | 33.7 | -1.09 | 실측 | [[ifbench]] 32.0%×1.0 |

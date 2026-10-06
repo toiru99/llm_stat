@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 50.0
 price_blended_usd_1m: 7.7
-output_speed_tps: 66.0
+output_speed_tps: 65.0
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -14,8 +14,8 @@ is_reasoning: true
 radar:
   knowledge: { s: 95.7, z: 2.45, r: 86.8, estimated: false }  # 전문 지식
   reasoning: { s: 92.4, z: 2.54, r: 88.1, estimated: false }  # 추론
-  coding: { s: 91.8, z: 1.9, r: 78.4, estimated: false }  # 코딩
-  agentic: { s: 88.0, z: 1.88, r: 78.2, estimated: false }  # 에이전트
+  coding: { s: 91.8, z: 1.89, r: 78.4, estimated: false }  # 코딩
+  agentic: { s: 88.1, z: 1.88, r: 78.2, estimated: false }  # 에이전트
   trust: { s: 35.1, z: 0.4, r: 55.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 92.1, z: 1.22, r: 68.4, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Fable 5 (with fallback)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # Claude Fable 5 (with fallback)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **50.0** 
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $10.0 · 출력 $50.0 · 혼합 $7.7/1M · 66.0 t/s · TTFT 97.24s · 1M ctx` · 가성비 6.5
+`입력 $10.0 · 출력 $50.0 · 혼합 $7.7/1M · 65.0 t/s · TTFT 94.23s · 1M ctx` · 가성비 6.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,8 +45,8 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **50.0** 
 |---|---|---|---|---|
 | 전문 지식 | 86.8 | +2.45 | 실측 | [[aa-omniscience]] 65.0%×1.0, [[gpqa-diamond]] 93.0%×0.4, [[humanitys-last-exam]] 55.0%×0.3 |
 | 추론 | 88.1 | +2.54 | 실측 | [[critpt]] 29.0%×1.0, [[gpqa-diamond]] 93.0%×1.0, [[humanitys-last-exam]] 55.0%×1.0 |
-| 코딩 | 78.4 | +1.9 | 실측 | [[scicode]] 61.0%×1.0, [[terminal-bench]] 63.0%×0.5 |
-| 에이전트 | 78.2 | +1.88 | 실측 | [[gdpval]] 55.0%×1.0, [[tau2-bench]] 99.0%×1.0, [[tau3-banking]] 38.0%×1.0, [[terminal-bench]] 63.0%×1.0 |
+| 코딩 | 78.4 | +1.89 | 실측 | [[scicode]] 61.0%×1.0, [[terminal-bench]] 63.0%×0.5 |
+| 에이전트 | 78.2 | +1.88 | 실측 | [[gdpval]] 56.0%×1.0, [[tau2-bench]] 99.0%×1.0, [[tau3-banking]] 38.0%×1.0, [[terminal-bench]] 63.0%×1.0 |
 | 신뢰성 | 55.9 | +0.4 | 실측 | [[aa-omniscience]] 36.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 68.4 | +1.22 | 실측 | [[aa-lcr]] 82.0%×1.0 |

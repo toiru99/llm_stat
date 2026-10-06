@@ -12,11 +12,11 @@ size_class: Unknown
 params_b: null
 is_reasoning: null
 radar:
-  knowledge: { s: 47.9, z: 0.24, r: 53.7, estimated: false }  # 전문 지식
+  knowledge: { s: 47.9, z: 0.25, r: 53.7, estimated: false }  # 전문 지식
   reasoning: { s: 36.0, z: -0.03, r: 49.6, estimated: false }  # 추론
   coding: { s: 47.0, z: 0.36, r: 55.4, estimated: false }  # 코딩
-  agentic: { s: 40.7, z: 0.07, r: 51.1, estimated: false }  # 에이전트
-  trust: { s: 17.5, z: -0.42, r: 43.8, estimated: false }  # 신뢰성
+  agentic: { s: 40.7, z: 0.07, r: 51.0, estimated: false }  # 에이전트
+  trust: { s: 17.5, z: -0.42, r: 43.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 80.9, z: 0.88, r: 63.3, estimated: false }  # 긴문맥
   instruction: { s: 59.2, z: 0.2, r: 53.0, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V3.2 Exp
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # DeepSeek V3.2 Exp
@@ -43,11 +43,11 @@ DeepSeek · Open · Unknown · 컨텍스트 128k · 종합지능 **17.0** · ⚠
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 53.7 | +0.24 | 실측 | [[aa-omniscience]] 28.0%×1.0, [[gpqa-diamond]] 80.0%×0.4, [[humanitys-last-exam]] 15.0%×0.3 |
+| 전문 지식 | 53.7 | +0.25 | 실측 | [[aa-omniscience]] 28.0%×1.0, [[gpqa-diamond]] 80.0%×0.4, [[humanitys-last-exam]] 15.0%×0.3 |
 | 추론 | 49.6 | -0.03 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 80.0%×1.0, [[humanitys-last-exam]] 15.0%×1.0 |
 | 코딩 | 55.4 | +0.36 | 실측 | [[terminal-bench]] 31.0%×0.5 |
-| 에이전트 | 51.1 | +0.07 | 실측 | [[tau2-bench]] 34.0%×1.0, [[terminal-bench]] 31.0%×1.0 |
-| 신뢰성 | 43.8 | -0.42 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
+| 에이전트 | 51.0 | +0.07 | 실측 | [[tau2-bench]] 34.0%×1.0, [[terminal-bench]] 31.0%×1.0 |
+| 신뢰성 | 43.7 | -0.42 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 63.3 | +0.88 | 실측 | [[aa-lcr]] 72.0%×1.0 |
 | 지시 따르기 | 53.0 | +0.2 | 실측 | [[ifbench]] 54.0%×1.0 |

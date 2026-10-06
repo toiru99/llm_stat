@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 29.9, z: -0.58, r: 41.2, estimated: false }  # 전문 지식
   reasoning: { s: 25.6, z: -0.49, r: 42.6, estimated: false }  # 추론
-  coding: { s: 10.6, z: -0.88, r: 36.7, estimated: false }  # 코딩
+  coding: { s: 10.6, z: -0.89, r: 36.7, estimated: false }  # 코딩
   agentic: { s: 35.1, z: -0.14, r: 47.9, estimated: false }  # 에이전트
-  trust: { s: 6.2, z: -0.94, r: 35.9, estimated: false }  # 신뢰성
+  trust: { s: 6.2, z: -0.94, r: 35.8, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 59.6, z: 0.24, r: 53.6, estimated: false }  # 긴문맥
   instruction: { s: 39.4, z: -0.62, r: 40.7, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — K-EXAONE (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # K-EXAONE (non-reasoning)
@@ -45,9 +45,9 @@ LG AI Research · Open · Large · 컨텍스트 256k · 종합지능 **11.0** ·
 |---|---|---|---|---|
 | 전문 지식 | 41.2 | -0.58 | 실측 | [[aa-omniscience]] 14.0%×1.0, [[gpqa-diamond]] 69.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 42.6 | -0.49 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 69.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 36.7 | -0.88 | 실측 | [[terminal-bench]] 7.0%×0.5 |
+| 코딩 | 36.7 | -0.89 | 실측 | [[terminal-bench]] 7.0%×0.5 |
 | 에이전트 | 47.9 | -0.14 | 실측 | [[tau2-bench]] 59.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
-| 신뢰성 | 35.9 | -0.94 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
+| 신뢰성 | 35.8 | -0.94 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 53.6 | +0.24 | 실측 | [[aa-lcr]] 53.0%×1.0 |
 | 지시 따르기 | 40.7 | -0.62 | 실측 | [[ifbench]] 40.0%×1.0 |

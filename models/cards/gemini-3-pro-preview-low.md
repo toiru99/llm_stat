@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 72.0, z: 1.36, r: 70.4, estimated: false }  # 전문 지식
   reasoning: { s: 46.2, z: 0.44, r: 56.6, estimated: false }  # 추론
-  coding: { s: 51.5, z: 0.52, r: 57.7, estimated: false }  # 코딩
+  coding: { s: 51.5, z: 0.51, r: 57.7, estimated: false }  # 코딩
   agentic: { s: 60.1, z: 0.81, r: 62.2, estimated: false }  # 에이전트
   trust: { s: 8.2, z: -0.85, r: 37.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3 Pro Preview (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # Gemini 3 Pro Preview (low)
@@ -45,7 +45,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **22.0** · 
 |---|---|---|---|---|
 | 전문 지식 | 70.4 | +1.36 | 실측 | [[aa-omniscience]] 48.0%×1.0, [[gpqa-diamond]] 89.0%×0.4, [[humanitys-last-exam]] 29.0%×0.3 |
 | 추론 | 56.6 | +0.44 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 89.0%×1.0, [[humanitys-last-exam]] 29.0%×1.0 |
-| 코딩 | 57.7 | +0.52 | 실측 | [[terminal-bench]] 34.0%×0.5 |
+| 코딩 | 57.7 | +0.51 | 실측 | [[terminal-bench]] 34.0%×0.5 |
 | 에이전트 | 62.2 | +0.81 | 실측 | [[tau2-bench]] 68.0%×1.0, [[terminal-bench]] 34.0%×1.0 |
 | 신뢰성 | 37.3 | -0.85 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

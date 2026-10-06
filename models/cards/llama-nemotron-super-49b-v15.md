@@ -19,13 +19,13 @@ radar:
   trust: { s: 20.6, z: -0.27, r: 45.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 8.0, z: -1.32, r: 30.2, estimated: true }  # 긴문맥
-  instruction: { s: 35.2, z: -0.79, r: 38.1, estimated: false }  # 지시 따르기
+  instruction: { s: 35.2, z: -0.8, r: 38.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama Nemotron Super 49B v1.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # Llama Nemotron Super 49B v1.5
@@ -50,7 +50,7 @@ NVIDIA · Open · Unknown · 컨텍스트 128k · 종합지능 **9.0** · ⚠️
 | 신뢰성 | 45.9 | -0.27 | 실측 | [[aa-omniscience]] 22.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 30.2 | -1.32 | 추정 | (추정) |
-| 지시 따르기 | 38.1 | -0.79 | 실측 | [[ifbench]] 37.0%×1.0 |
+| 지시 따르기 | 38.1 | -0.8 | 실측 | [[ifbench]] 37.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

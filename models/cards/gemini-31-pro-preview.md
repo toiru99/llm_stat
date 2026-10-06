@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 30.0
 price_blended_usd_1m: 1.74
-output_speed_tps: 117.0
+output_speed_tps: 125.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 84.8, z: 1.95, r: 79.3, estimated: false }  # 전문 지식
   reasoning: { s: 76.9, z: 1.83, r: 77.5, estimated: false }  # 추론
-  coding: { s: 85.1, z: 1.66, r: 75.0, estimated: false }  # 코딩
-  agentic: { s: 60.2, z: 0.82, r: 62.2, estimated: false }  # 에이전트
+  coding: { s: 85.1, z: 1.66, r: 74.9, estimated: false }  # 코딩
+  agentic: { s: 60.4, z: 0.82, r: 62.3, estimated: false }  # 에이전트
   trust: { s: 48.5, z: 1.02, r: 65.3, estimated: false }  # 신뢰성
   multimodal: { s: 91.8, z: 1.02, r: 65.3, estimated: false }  # 멀티모달
   long_context: { s: 92.1, z: 1.22, r: 68.4, estimated: false }  # 긴문맥
-  instruction: { s: 91.5, z: 1.55, r: 73.3, estimated: false }  # 지시 따르기
+  instruction: { s: 91.5, z: 1.54, r: 73.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.1 Pro Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # Gemini 3.1 Pro Preview
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **30.0**
 - **약점**: 멀티모달, 에이전트
 
 ## 실용 지표
-`입력 $2.0 · 출력 $12.0 · 혼합 $1.74/1M · 117.0 t/s · TTFT 25.15s · 1M ctx` · 가성비 17.2
+`입력 $2.0 · 출력 $12.0 · 혼합 $1.74/1M · 125.0 t/s · TTFT 23.4s · 1M ctx` · 가성비 17.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,12 +45,12 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **30.0**
 |---|---|---|---|---|
 | 전문 지식 | 79.3 | +1.95 | 실측 | [[aa-omniscience]] 55.0%×1.0, [[gpqa-diamond]] 94.0%×0.4, [[humanitys-last-exam]] 47.0%×0.3 |
 | 추론 | 77.5 | +1.83 | 실측 | [[critpt]] 18.0%×1.0, [[gpqa-diamond]] 94.0%×1.0, [[humanitys-last-exam]] 47.0%×1.0 |
-| 코딩 | 75.0 | +1.66 | 실측 | [[scicode]] 59.0%×1.0, [[terminal-bench]] 54.0%×0.5 |
-| 에이전트 | 62.2 | +0.82 | 실측 | [[apex-agents]] 32.0%×1.0, [[gdpval]] 14.0%×1.0, [[itbench]] 30.0%×1.0, [[tau2-bench]] 96.0%×1.0, [[tau3-banking]] 21.0%×1.0, [[terminal-bench]] 54.0%×1.0 |
+| 코딩 | 74.9 | +1.66 | 실측 | [[scicode]] 59.0%×1.0, [[terminal-bench]] 54.0%×0.5 |
+| 에이전트 | 62.3 | +0.82 | 실측 | [[apex-agents]] 32.0%×1.0, [[gdpval]] 15.0%×1.0, [[itbench]] 30.0%×1.0, [[tau2-bench]] 96.0%×1.0, [[tau3-banking]] 21.0%×1.0, [[terminal-bench]] 54.0%×1.0 |
 | 신뢰성 | 65.3 | +1.02 | 실측 | [[aa-omniscience]] 49.0%×1.0 |
 | 멀티모달 | 65.3 | +1.02 | 실측 | [[mmmu-pro]] 82.0%×1.0 |
 | 긴문맥 | 68.4 | +1.22 | 실측 | [[aa-lcr]] 82.0%×1.0 |
-| 지시 따르기 | 73.3 | +1.55 | 실측 | [[ifbench]] 77.0%×1.0 |
+| 지시 따르기 | 73.2 | +1.54 | 실측 | [[ifbench]] 77.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

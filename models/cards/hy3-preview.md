@@ -12,10 +12,10 @@ size_class: Unknown
 params_b: null
 is_reasoning: null
 radar:
-  knowledge: { s: 53.6, z: 0.51, r: 57.6, estimated: false }  # 전문 지식
+  knowledge: { s: 53.6, z: 0.51, r: 57.7, estimated: false }  # 전문 지식
   reasoning: { s: 50.1, z: 0.62, r: 59.2, estimated: false }  # 추론
-  coding: { s: 51.5, z: 0.52, r: 57.7, estimated: false }  # 코딩
-  agentic: { s: 72.7, z: 1.29, r: 69.4, estimated: false }  # 에이전트
+  coding: { s: 51.5, z: 0.51, r: 57.7, estimated: false }  # 코딩
+  agentic: { s: 72.7, z: 1.3, r: 69.4, estimated: false }  # 에이전트
   trust: { s: 11.3, z: -0.7, r: 39.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 73.0, z: 0.65, r: 59.7, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hy3-preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # Hy3-preview
@@ -34,7 +34,7 @@ Tencent · Open · Unknown · 컨텍스트 256k · 종합지능 **23.0** · ⚠�
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 지시 따르기
-- **약점**: 전문 지식, 신뢰성
+- **약점**: 코딩, 신뢰성
 
 ## 실용 지표
 `입력 $0.06 · 출력 $0.21 · 혼합 $0.047/1M · None t/s · TTFT Nones · 256k ctx` · 가성비 489.4
@@ -43,10 +43,10 @@ Tencent · Open · Unknown · 컨텍스트 256k · 종합지능 **23.0** · ⚠�
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 57.6 | +0.51 | 실측 | [[aa-omniscience]] 28.0%×1.0, [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 28.0%×0.3 |
+| 전문 지식 | 57.7 | +0.51 | 실측 | [[aa-omniscience]] 28.0%×1.0, [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 28.0%×0.3 |
 | 추론 | 59.2 | +0.62 | 실측 | [[critpt]] 5.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
-| 코딩 | 57.7 | +0.52 | 실측 | [[terminal-bench]] 34.0%×0.5 |
-| 에이전트 | 69.4 | +1.29 | 실측 | [[tau2-bench]] 93.0%×1.0, [[terminal-bench]] 34.0%×1.0 |
+| 코딩 | 57.7 | +0.51 | 실측 | [[terminal-bench]] 34.0%×0.5 |
+| 에이전트 | 69.4 | +1.3 | 실측 | [[tau2-bench]] 93.0%×1.0, [[terminal-bench]] 34.0%×1.0 |
 | 신뢰성 | 39.4 | -0.7 | 실측 | [[aa-omniscience]] 13.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 59.7 | +0.65 | 실측 | [[aa-lcr]] 65.0%×1.0 |

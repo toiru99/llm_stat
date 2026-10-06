@@ -13,10 +13,10 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 35.5, z: -0.33, r: 45.1, estimated: false }  # 전문 지식
-  reasoning: { s: 28.0, z: -0.38, r: 44.2, estimated: false }  # 추론
-  coding: { s: 15.2, z: -0.73, r: 39.1, estimated: false }  # 코딩
+  reasoning: { s: 28.0, z: -0.39, r: 44.2, estimated: false }  # 추론
+  coding: { s: 15.2, z: -0.73, r: 39.0, estimated: false }  # 코딩
   agentic: { s: 21.7, z: -0.65, r: 40.2, estimated: false }  # 에이전트
-  trust: { s: 7.2, z: -0.89, r: 36.6, estimated: false }  # 신뢰성
+  trust: { s: 7.2, z: -0.9, r: 36.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 39.3, z: -0.37, r: 44.4, estimated: false }  # 긴문맥
   instruction: { s: 67.6, z: 0.55, r: 58.3, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — K2-V2 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # K2-V2 (high)
@@ -44,10 +44,10 @@ Institute of Foundation Models · Open · Medium · 컨텍스트 512k · 종합�
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 45.1 | -0.33 | 실측 | [[aa-omniscience]] 19.0%×1.0, [[gpqa-diamond]] 68.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
-| 추론 | 44.2 | -0.38 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 68.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
-| 코딩 | 39.1 | -0.73 | 실측 | [[terminal-bench]] 10.0%×0.5 |
+| 추론 | 44.2 | -0.39 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 68.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
+| 코딩 | 39.0 | -0.73 | 실측 | [[terminal-bench]] 10.0%×0.5 |
 | 에이전트 | 40.2 | -0.65 | 실측 | [[tau2-bench]] 28.0%×1.0, [[terminal-bench]] 10.0%×1.0 |
-| 신뢰성 | 36.6 | -0.89 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 신뢰성 | 36.6 | -0.9 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 44.4 | -0.37 | 실측 | [[aa-lcr]] 35.0%×1.0 |
 | 지시 따르기 | 58.3 | +0.55 | 실측 | [[ifbench]] 60.0%×1.0 |

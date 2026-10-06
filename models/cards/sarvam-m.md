@@ -14,9 +14,9 @@ is_reasoning: null
 radar:
   knowledge: { s: 22.5, z: -0.93, r: 36.1, estimated: false }  # 전문 지식
   reasoning: { s: 13.5, z: -1.04, r: 34.3, estimated: false }  # 추론
-  coding: { s: 3.0, z: -1.14, r: 32.8, estimated: false }  # 코딩
-  agentic: { s: 1.5, z: -1.42, r: 28.6, estimated: false }  # 에이전트
-  trust: { s: 7.2, z: -0.89, r: 36.6, estimated: false }  # 신뢰성
+  coding: { s: 3.0, z: -1.15, r: 32.8, estimated: false }  # 코딩
+  agentic: { s: 1.5, z: -1.43, r: 28.6, estimated: false }  # 에이전트
+  trust: { s: 7.2, z: -0.9, r: 36.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.56, r: 26.6, estimated: false }  # 긴문맥
   instruction: { s: 28.2, z: -1.09, r: 33.7, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Sarvam M
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # Sarvam M
@@ -45,9 +45,9 @@ Sarvam · Open · Unknown · 컨텍스트 32k · 종합지능 **5.0** · ⚠️ 
 |---|---|---|---|---|
 | 전문 지식 | 36.1 | -0.93 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 42.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
 | 추론 | 34.3 | -1.04 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 42.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
-| 코딩 | 32.8 | -1.14 | 실측 | [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 28.6 | -1.42 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 36.6 | -0.89 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 코딩 | 32.8 | -1.15 | 실측 | [[terminal-bench]] 2.0%×0.5 |
+| 에이전트 | 28.6 | -1.43 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 신뢰성 | 36.6 | -0.9 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 26.6 | -1.56 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 33.7 | -1.09 | 실측 | [[ifbench]] 32.0%×1.0 |

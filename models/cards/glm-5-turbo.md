@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 53.0, z: 0.48, r: 57.3, estimated: false }  # 전문 지식
-  reasoning: { s: 44.1, z: 0.34, r: 55.2, estimated: false }  # 추론
-  coding: { s: 50.0, z: 0.46, r: 57.0, estimated: false }  # 코딩
+  reasoning: { s: 44.1, z: 0.34, r: 55.1, estimated: false }  # 추론
+  coding: { s: 50.0, z: 0.46, r: 56.9, estimated: false }  # 코딩
   agentic: { s: 75.0, z: 1.38, r: 70.7, estimated: false }  # 에이전트
-  trust: { s: 36.1, z: 0.44, r: 56.7, estimated: false }  # 신뢰성
+  trust: { s: 36.1, z: 0.44, r: 56.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 80.9, z: 0.88, r: 63.3, estimated: false }  # 긴문맥
-  instruction: { s: 85.9, z: 1.32, r: 69.7, estimated: false }  # 지시 따르기
+  instruction: { s: 85.9, z: 1.31, r: 69.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5-Turbo
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # GLM-5-Turbo
@@ -44,13 +44,13 @@ Z AI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **27.0** · 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 57.3 | +0.48 | 실측 | [[aa-omniscience]] 28.0%×1.0, [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 28.0%×0.3 |
-| 추론 | 55.2 | +0.34 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
-| 코딩 | 57.0 | +0.46 | 실측 | [[terminal-bench]] 33.0%×0.5 |
+| 추론 | 55.1 | +0.34 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
+| 코딩 | 56.9 | +0.46 | 실측 | [[terminal-bench]] 33.0%×0.5 |
 | 에이전트 | 70.7 | +1.38 | 실측 | [[tau2-bench]] 99.0%×1.0, [[terminal-bench]] 33.0%×1.0 |
-| 신뢰성 | 56.7 | +0.44 | 실측 | [[aa-omniscience]] 37.0%×1.0 |
+| 신뢰성 | 56.6 | +0.44 | 실측 | [[aa-omniscience]] 37.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 63.3 | +0.88 | 실측 | [[aa-lcr]] 72.0%×1.0 |
-| 지시 따르기 | 69.7 | +1.32 | 실측 | [[ifbench]] 73.0%×1.0 |
+| 지시 따르기 | 69.7 | +1.31 | 실측 | [[ifbench]] 73.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

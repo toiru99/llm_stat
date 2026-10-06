@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 78.9, z: 1.68, r: 75.2, estimated: false }  # 전문 지식
   reasoning: { s: 88.9, z: 2.38, r: 85.7, estimated: false }  # 추론
-  coding: { s: 91.7, z: 1.89, r: 78.4, estimated: false }  # 코딩
-  agentic: { s: 83.6, z: 1.71, r: 75.6, estimated: false }  # 에이전트
+  coding: { s: 91.7, z: 1.89, r: 78.3, estimated: false }  # 코딩
+  agentic: { s: 82.4, z: 1.66, r: 75.0, estimated: false }  # 에이전트
   trust: { s: 85.6, z: 2.74, r: 91.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 89.9, z: 1.16, r: 67.4, estimated: false }  # 긴문맥
-  instruction: { s: 75.4, z: 0.88, r: 63.1, estimated: true }  # 지시 따르기
+  long_context: { s: 89.9, z: 1.16, r: 67.3, estimated: false }  # 긴문맥
+  instruction: { s: 77.6, z: 0.96, r: 64.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 4 Argon (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # Gemini 4 Argon (high)
@@ -45,12 +45,12 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **53.0**
 |---|---|---|---|---|
 | 전문 지식 | 75.2 | +1.68 | 실측 | [[aa-omniscience]] 50.0%×1.0, [[humanitys-last-exam]] 57.0%×0.3 |
 | 추론 | 85.7 | +2.38 | 실측 | [[critpt]] 27.0%×1.0, [[humanitys-last-exam]] 57.0%×1.0 |
-| 코딩 | 78.4 | +1.89 | 실측 | [[scicode]] 62.0%×1.0 |
-| 에이전트 | 75.6 | +1.71 | 실측 | [[gdpval]] 56.0%×1.0 |
+| 코딩 | 78.3 | +1.89 | 실측 | [[scicode]] 62.0%×1.0 |
+| 에이전트 | 75.0 | +1.66 | 실측 | [[gdpval]] 56.0%×1.0 |
 | 신뢰성 | 91.1 | +2.74 | 실측 | [[aa-omniscience]] 85.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 67.4 | +1.16 | 실측 | [[aa-lcr]] 80.0%×1.0 |
-| 지시 따르기 | 63.1 | +0.88 | 추정 | (추정) |
+| 긴문맥 | 67.3 | +1.16 | 실측 | [[aa-lcr]] 80.0%×1.0 |
+| 지시 따르기 | 64.5 | +0.96 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 27.3, z: -0.71, r: 39.4, estimated: false }  # 전문 지식
   reasoning: { s: 12.9, z: -1.07, r: 33.9, estimated: false }  # 추론
-  coding: { s: 3.0, z: -1.14, r: 32.8, estimated: false }  # 코딩
-  agentic: { s: 8.1, z: -1.17, r: 32.4, estimated: false }  # 에이전트
+  coding: { s: 3.0, z: -1.15, r: 32.8, estimated: false }  # 코딩
+  agentic: { s: 8.1, z: -1.18, r: 32.4, estimated: false }  # 에이전트
   trust: { s: 3.1, z: -1.09, r: 33.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 21.3, z: -0.92, r: 36.3, estimated: false }  # 긴문맥
+  long_context: { s: 21.3, z: -0.92, r: 36.2, estimated: false }  # 긴문맥
   instruction: { s: 32.4, z: -0.91, r: 36.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba 1.7 Large
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # Jamba 1.7 Large
@@ -45,11 +45,11 @@ AI21 Labs · Open · Large · 컨텍스트 256k · 종합지능 **6.0**
 |---|---|---|---|---|
 | 전문 지식 | 39.4 | -0.71 | 실측 | [[aa-omniscience]] 21.0%×1.0, [[gpqa-diamond]] 39.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 33.9 | -1.07 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 39.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 32.8 | -1.14 | 실측 | [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 32.4 | -1.17 | 실측 | [[tau2-bench]] 13.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 코딩 | 32.8 | -1.15 | 실측 | [[terminal-bench]] 2.0%×0.5 |
+| 에이전트 | 32.4 | -1.18 | 실측 | [[tau2-bench]] 13.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | 33.7 | -1.09 | 실측 | [[aa-omniscience]] 5.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 36.3 | -0.92 | 실측 | [[aa-lcr]] 19.0%×1.0 |
+| 긴문맥 | 36.2 | -0.92 | 실측 | [[aa-lcr]] 19.0%×1.0 |
 | 지시 따르기 | 36.3 | -0.91 | 실측 | [[ifbench]] 35.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

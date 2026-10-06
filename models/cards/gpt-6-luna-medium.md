@@ -12,10 +12,10 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 59.8, z: 0.79, r: 61.9, estimated: false }  # 전문 지식
+  knowledge: { s: 59.8, z: 0.8, r: 61.9, estimated: false }  # 전문 지식
   reasoning: { s: 39.7, z: 0.14, r: 52.2, estimated: false }  # 추론
-  coding: { s: 73.3, z: 1.26, r: 69.0, estimated: false }  # 코딩
-  agentic: { s: 56.7, z: 0.68, r: 60.3, estimated: false }  # 에이전트
+  coding: { s: 73.3, z: 1.26, r: 68.9, estimated: false }  # 코딩
+  agentic: { s: 55.9, z: 0.65, r: 59.8, estimated: false }  # 에이전트
   trust: { s: 13.4, z: -0.61, r: 40.9, estimated: false }  # 신뢰성
   multimodal: { s: 86.3, z: 0.74, r: 61.2, estimated: false }  # 멀티모달
   long_context: { s: 87.6, z: 1.09, r: 66.3, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6 Luna (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # GPT-6 Luna (medium)
@@ -43,10 +43,10 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **30.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 61.9 | +0.79 | 실측 | [[aa-omniscience]] 43.0%×1.0, [[humanitys-last-exam]] 28.0%×0.3 |
+| 전문 지식 | 61.9 | +0.8 | 실측 | [[aa-omniscience]] 43.0%×1.0, [[humanitys-last-exam]] 28.0%×0.3 |
 | 추론 | 52.2 | +0.14 | 실측 | [[critpt]] 11.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
-| 코딩 | 69.0 | +1.26 | 실측 | [[scicode]] 51.0%×1.0 |
-| 에이전트 | 60.3 | +0.68 | 실측 | [[gdpval]] 38.0%×1.0 |
+| 코딩 | 68.9 | +1.26 | 실측 | [[scicode]] 51.0%×1.0 |
+| 에이전트 | 59.8 | +0.65 | 실측 | [[gdpval]] 38.0%×1.0 |
 | 신뢰성 | 40.9 | -0.61 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
 | 멀티모달 | 61.2 | +0.74 | 실측 | [[mmmu-pro]] 78.0%×1.0 |
 | 긴문맥 | 66.3 | +1.09 | 실측 | [[aa-lcr]] 78.0%×1.0 |

@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 18.0
 price_blended_usd_1m: 0.435
-output_speed_tps: 190.0
+output_speed_tps: 201.0
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 36.3, z: -0.01, r: 49.9, estimated: false }  # 추론
   coding: { s: 48.5, z: 0.41, r: 56.2, estimated: false }  # 코딩
   agentic: { s: 46.0, z: 0.27, r: 54.1, estimated: false }  # 에이전트
-  trust: { s: 6.2, z: -0.94, r: 35.9, estimated: false }  # 신뢰성
+  trust: { s: 6.2, z: -0.94, r: 35.8, estimated: false }  # 신뢰성
   multimodal: { s: 87.7, z: 0.81, r: 62.2, estimated: false }  # 멀티모달
   long_context: { s: 61.8, z: 0.31, r: 54.6, estimated: false }  # 긴문맥
   instruction: { s: 60.6, z: 0.26, r: 53.9, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3 Flash (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # Gemini 3 Flash (non-reasoning)
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **18.0** · 
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $0.5 · 출력 $3.0 · 혼합 $0.435/1M · 190.0 t/s · TTFT 0.98s · 1M ctx` · 가성비 41.4
+`입력 $0.5 · 출력 $3.0 · 혼합 $0.435/1M · 201.0 t/s · TTFT 0.84s · 1M ctx` · 가성비 41.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,7 +47,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **18.0** · 
 | 추론 | 49.9 | -0.01 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 81.0%×1.0, [[humanitys-last-exam]] 15.0%×1.0 |
 | 코딩 | 56.2 | +0.41 | 실측 | [[terminal-bench]] 32.0%×0.5 |
 | 에이전트 | 54.1 | +0.27 | 실측 | [[tau2-bench]] 43.0%×1.0, [[terminal-bench]] 32.0%×1.0 |
-| 신뢰성 | 35.9 | -0.94 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
+| 신뢰성 | 35.8 | -0.94 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
 | 멀티모달 | 62.2 | +0.81 | 실측 | [[mmmu-pro]] 79.0%×1.0 |
 | 긴문맥 | 54.6 | +0.31 | 실측 | [[aa-lcr]] 55.0%×1.0 |
 | 지시 따르기 | 53.9 | +0.26 | 실측 | [[ifbench]] 55.0%×1.0 |

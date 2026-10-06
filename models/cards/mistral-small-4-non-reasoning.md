@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 28.7, z: -0.64, r: 40.4, estimated: false }  # 전문 지식
   reasoning: { s: 19.9, z: -0.76, r: 38.7, estimated: false }  # 추론
   coding: { s: 16.7, z: -0.68, r: 39.8, estimated: false }  # 코딩
-  agentic: { s: 17.4, z: -0.82, r: 37.8, estimated: false }  # 에이전트
+  agentic: { s: 17.4, z: -0.82, r: 37.7, estimated: false }  # 에이전트
   trust: { s: 20.6, z: -0.27, r: 45.9, estimated: false }  # 신뢰성
   multimodal: { s: 42.5, z: -1.44, r: 28.3, estimated: false }  # 멀티모달
   long_context: { s: 31.5, z: -0.61, r: 40.8, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Small 4 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # Mistral Small 4 (non-reasoning)
@@ -37,7 +37,7 @@ Mistral · Open · Medium · 컨텍스트 256k · 종합지능 **9.0**
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · 173.0 t/s · TTFT 0.72s · 256k ctx` · 가성비 89.6
+`입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · 173.0 t/s · TTFT 0.76s · 256k ctx` · 가성비 89.6
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Mistral · Open · Medium · 컨텍스트 256k · 종합지능 **9.0**
 | 전문 지식 | 40.4 | -0.64 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 57.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 38.7 | -0.76 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 57.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 39.8 | -0.68 | 실측 | [[terminal-bench]] 11.0%×0.5 |
-| 에이전트 | 37.8 | -0.82 | 실측 | [[tau2-bench]] 18.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
+| 에이전트 | 37.7 | -0.82 | 실측 | [[tau2-bench]] 18.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
 | 신뢰성 | 45.9 | -0.27 | 실측 | [[aa-omniscience]] 22.0%×1.0 |
 | 멀티모달 | 28.3 | -1.44 | 실측 | [[mmmu-pro]] 46.0%×1.0 |
 | 긴문맥 | 40.8 | -0.61 | 실측 | [[aa-lcr]] 28.0%×1.0 |

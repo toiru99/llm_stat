@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 9.0
 price_blended_usd_1m: 0.067
-output_speed_tps: 345.0
+output_speed_tps: 361.0
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 32.1, z: -0.48, r: 42.7, estimated: false }  # 전문 지식
   reasoning: { s: 23.9, z: -0.57, r: 41.4, estimated: false }  # 추론
   coding: { s: 7.6, z: -0.99, r: 35.2, estimated: false }  # 코딩
-  agentic: { s: 12.9, z: -0.99, r: 35.2, estimated: false }  # 에이전트
+  agentic: { s: 12.9, z: -0.99, r: 35.1, estimated: false }  # 에이전트
   trust: { s: 21.6, z: -0.23, r: 46.6, estimated: false }  # 신뢰성
   multimodal: { s: 58.9, z: -0.62, r: 40.6, estimated: false }  # 멀티모달
   long_context: { s: 62.9, z: 0.34, r: 55.1, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.5 Flash-Lite
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # Gemini 2.5 Flash-Lite
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **9.0** · �
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.4 · 혼합 $0.067/1M · 345.0 t/s · TTFT 17.8s · 1M ctx` · 가성비 134.3
+`입력 $0.1 · 출력 $0.4 · 혼합 $0.067/1M · 361.0 t/s · TTFT 18.66s · 1M ctx` · 가성비 134.3
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **9.0** · �
 | 전문 지식 | 42.7 | -0.48 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 63.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
 | 추론 | 41.4 | -0.57 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 63.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
 | 코딩 | 35.2 | -0.99 | 실측 | [[terminal-bench]] 5.0%×0.5 |
-| 에이전트 | 35.2 | -0.99 | 실측 | [[tau2-bench]] 18.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
+| 에이전트 | 35.1 | -0.99 | 실측 | [[tau2-bench]] 18.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
 | 신뢰성 | 46.6 | -0.23 | 실측 | [[aa-omniscience]] 23.0%×1.0 |
 | 멀티모달 | 40.6 | -0.62 | 실측 | [[mmmu-pro]] 58.0%×1.0 |
 | 긴문맥 | 55.1 | +0.34 | 실측 | [[aa-lcr]] 56.0%×1.0 |

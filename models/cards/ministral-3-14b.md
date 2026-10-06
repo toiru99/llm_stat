@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: 6.0
 price_blended_usd_1m: 0.074
-output_speed_tps: 65.0
+output_speed_tps: 89.0
 context_window: 256000
 status: current
 size_class: Small
@@ -13,8 +13,8 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 26.3, z: -0.75, r: 38.8, estimated: false }  # 전문 지식
-  reasoning: { s: 20.4, z: -0.73, r: 39.1, estimated: false }  # 추론
-  coding: { s: 21.4, z: -0.51, r: 42.3, estimated: false }  # 코딩
+  reasoning: { s: 20.4, z: -0.73, r: 39.0, estimated: false }  # 추론
+  coding: { s: 21.4, z: -0.52, r: 42.3, estimated: false }  # 코딩
   agentic: { s: 12.1, z: -1.02, r: 34.7, estimated: false }  # 에이전트
   trust: { s: 5.2, z: -0.99, r: 35.1, estimated: false }  # 신뢰성
   multimodal: { s: 47.9, z: -1.17, r: 32.4, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ministral 3 14B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # Ministral 3 14B
@@ -37,15 +37,15 @@ Mistral · Open · Small · 컨텍스트 256k · 종합지능 **6.0**
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.2 · 혼합 $0.074/1M · 65.0 t/s · TTFT 1.06s · 256k ctx` · 가성비 81.1
+`입력 $0.2 · 출력 $0.2 · 혼합 $0.074/1M · 89.0 t/s · TTFT 1.0s · 256k ctx` · 가성비 81.1
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 38.8 | -0.75 | 실측 | [[aa-omniscience]] 14.0%×1.0, [[gpqa-diamond]] 57.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 39.1 | -0.73 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 57.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 42.3 | -0.51 | 실측 | [[scicode]] 24.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
+| 추론 | 39.0 | -0.73 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 57.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 42.3 | -0.52 | 실측 | [[scicode]] 24.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
 | 에이전트 | 34.7 | -1.02 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 27.0%×1.0, [[tau3-banking]] 7.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
 | 신뢰성 | 35.1 | -0.99 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
 | 멀티모달 | 32.4 | -1.17 | 실측 | [[mmmu-pro]] 50.0%×1.0 |

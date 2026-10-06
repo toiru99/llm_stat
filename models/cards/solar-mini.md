@@ -19,13 +19,13 @@ radar:
   trust: { s: 17.0, z: -0.44, r: 43.4, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 10.6, z: -1.24, r: 31.4, estimated: true }  # 긴문맥
-  instruction: { s: 28.7, z: -1.06, r: 34.1, estimated: true }  # 지시 따르기
+  instruction: { s: 28.7, z: -1.06, r: 34.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # Solar Mini
@@ -50,7 +50,7 @@ Upstage · Open · Small · 컨텍스트 4k · 종합지능 **6.0** · ⚠️ pa
 | 신뢰성 | 43.4 | -0.44 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 31.4 | -1.24 | 추정 | (추정) |
-| 지시 따르기 | 34.1 | -1.06 | 추정 | (추정) |
+| 지시 따르기 | 34.0 | -1.06 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

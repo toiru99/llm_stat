@@ -5,18 +5,18 @@ creator: Kimi
 license: Open
 intelligence_index: 26.0
 price_blended_usd_1m: 0.723
-output_speed_tps: 90.0
+output_speed_tps: 76.0
 context_window: 256000
 status: current
 size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 67.0, z: 1.13, r: 66.9, estimated: false }  # 전문 지식
+  knowledge: { s: 67.0, z: 1.13, r: 67.0, estimated: false }  # 전문 지식
   reasoning: { s: 60.3, z: 1.08, r: 66.2, estimated: false }  # 추론
-  coding: { s: 68.3, z: 1.09, r: 66.4, estimated: false }  # 코딩
-  agentic: { s: 59.3, z: 0.78, r: 61.7, estimated: false }  # 에이전트
-  trust: { s: 16.5, z: -0.46, r: 43.0, estimated: false }  # 신뢰성
+  coding: { s: 68.3, z: 1.09, r: 66.3, estimated: false }  # 코딩
+  agentic: { s: 59.5, z: 0.79, r: 61.9, estimated: false }  # 에이전트
+  trust: { s: 16.5, z: -0.47, r: 43.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 88.8, z: 1.12, r: 66.8, estimated: false }  # 긴문맥
   instruction: { s: 71.8, z: 0.73, r: 60.9, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2.7 Code
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # Kimi K2.7 Code
@@ -37,17 +37,17 @@ Kimi · Open · Large · 컨텍스트 256k · 종합지능 **26.0**
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $0.95 · 출력 $4.0 · 혼합 $0.723/1M · 90.0 t/s · TTFT 2.95s · 256k ctx` · 가성비 36.0
+`입력 $0.95 · 출력 $4.0 · 혼합 $0.723/1M · 76.0 t/s · TTFT 2.8s · 256k ctx` · 가성비 36.0
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 66.9 | +1.13 | 실측 | [[aa-omniscience]] 40.0%×1.0, [[gpqa-diamond]] 90.0%×0.4, [[humanitys-last-exam]] 35.0%×0.3 |
+| 전문 지식 | 67.0 | +1.13 | 실측 | [[aa-omniscience]] 40.0%×1.0, [[gpqa-diamond]] 90.0%×0.4, [[humanitys-last-exam]] 35.0%×0.3 |
 | 추론 | 66.2 | +1.08 | 실측 | [[critpt]] 10.0%×1.0, [[gpqa-diamond]] 90.0%×1.0, [[humanitys-last-exam]] 35.0%×1.0 |
-| 코딩 | 66.4 | +1.09 | 실측 | [[scicode]] 48.0%×1.0, [[terminal-bench]] 45.0%×0.5 |
-| 에이전트 | 61.7 | +0.78 | 실측 | [[gdpval]] 26.0%×1.0, [[tau2-bench]] 90.0%×1.0, [[tau3-banking]] 20.0%×1.0, [[terminal-bench]] 45.0%×1.0 |
-| 신뢰성 | 43.0 | -0.46 | 실측 | [[aa-omniscience]] 18.0%×1.0 |
+| 코딩 | 66.3 | +1.09 | 실측 | [[scicode]] 48.0%×1.0, [[terminal-bench]] 45.0%×0.5 |
+| 에이전트 | 61.9 | +0.79 | 실측 | [[gdpval]] 27.0%×1.0, [[tau2-bench]] 90.0%×1.0, [[tau3-banking]] 20.0%×1.0, [[terminal-bench]] 45.0%×1.0 |
+| 신뢰성 | 43.0 | -0.47 | 실측 | [[aa-omniscience]] 18.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 66.8 | +1.12 | 실측 | [[aa-lcr]] 79.0%×1.0 |
 | 지시 따르기 | 60.9 | +0.73 | 실측 | [[ifbench]] 63.0%×1.0 |

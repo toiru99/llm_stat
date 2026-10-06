@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 36.7, z: -0.27, r: 45.9, estimated: false }  # 전문 지식
   reasoning: { s: 28.6, z: -0.36, r: 44.6, estimated: false }  # 추론
-  coding: { s: 9.1, z: -0.94, r: 36.0, estimated: false }  # 코딩
-  agentic: { s: 4.5, z: -1.31, r: 30.4, estimated: false }  # 에이전트
+  coding: { s: 9.1, z: -0.94, r: 35.9, estimated: false }  # 코딩
+  agentic: { s: 4.5, z: -1.31, r: 30.3, estimated: false }  # 에이전트
   trust: { s: 32.0, z: 0.25, r: 53.8, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 24.3, z: -0.83, r: 37.6, estimated: true }  # 긴문맥
-  instruction: { s: 38.0, z: -0.68, r: 39.9, estimated: false }  # 지시 따르기
+  instruction: { s: 38.0, z: -0.68, r: 39.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — ERNIE 4.5 300B A47B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # ERNIE 4.5 300B A47B
@@ -45,12 +45,12 @@ Baidu · Open · Large · 컨텍스트 131k · 종합지능 **8.0**
 |---|---|---|---|---|
 | 전문 지식 | 45.9 | -0.27 | 실측 | [[aa-omniscience]] 19.0%×1.0, [[gpqa-diamond]] 81.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
 | 추론 | 44.6 | -0.36 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 81.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
-| 코딩 | 36.0 | -0.94 | 실측 | [[terminal-bench]] 6.0%×0.5 |
-| 에이전트 | 30.4 | -1.31 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 6.0%×1.0 |
+| 코딩 | 35.9 | -0.94 | 실측 | [[terminal-bench]] 6.0%×0.5 |
+| 에이전트 | 30.3 | -1.31 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 6.0%×1.0 |
 | 신뢰성 | 53.8 | +0.25 | 실측 | [[aa-omniscience]] 33.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 37.6 | -0.83 | 추정 | (추정) |
-| 지시 따르기 | 39.9 | -0.68 | 실측 | [[ifbench]] 39.0%×1.0 |
+| 지시 따르기 | 39.8 | -0.68 | 실측 | [[ifbench]] 39.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

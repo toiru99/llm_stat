@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 25.3, z: -0.8, r: 38.0, estimated: false }  # 전문 지식
   reasoning: { s: 17.6, z: -0.86, r: 37.1, estimated: false }  # 추론
-  coding: { s: 28.0, z: -0.29, r: 45.7, estimated: false }  # 코딩
+  coding: { s: 28.0, z: -0.29, r: 45.6, estimated: false }  # 코딩
   agentic: { s: 13.2, z: -0.98, r: 35.3, estimated: false }  # 에이전트
   trust: { s: 21.6, z: -0.23, r: 46.6, estimated: false }  # 신뢰성
   multimodal: { s: 45.2, z: -1.31, r: 30.4, estimated: false }  # 멀티모달
-  long_context: { s: 22.5, z: -0.88, r: 36.8, estimated: false }  # 긴문맥
+  long_context: { s: 22.5, z: -0.88, r: 36.7, estimated: false }  # 긴문맥
   instruction: { s: 29.6, z: -1.03, r: 34.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Small 3.2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # Mistral Small 3.2
@@ -45,11 +45,11 @@ Mistral · Open · Small · 컨텍스트 128k · 종합지능 **8.0** · ⚠️ 
 |---|---|---|---|---|
 | 전문 지식 | 38.0 | -0.8 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 51.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 37.1 | -0.86 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 51.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 45.7 | -0.29 | 실측 | [[scicode]] 29.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
+| 코딩 | 45.6 | -0.29 | 실측 | [[scicode]] 29.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
 | 에이전트 | 35.3 | -0.98 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 30.0%×1.0, [[tau3-banking]] 6.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
 | 신뢰성 | 46.6 | -0.23 | 실측 | [[aa-omniscience]] 23.0%×1.0 |
 | 멀티모달 | 30.4 | -1.31 | 실측 | [[mmmu-pro]] 48.0%×1.0 |
-| 긴문맥 | 36.8 | -0.88 | 실측 | [[aa-lcr]] 20.0%×1.0 |
+| 긴문맥 | 36.7 | -0.88 | 실측 | [[aa-lcr]] 20.0%×1.0 |
 | 지시 따르기 | 34.6 | -1.03 | 실측 | [[ifbench]] 33.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

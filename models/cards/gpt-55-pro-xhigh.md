@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 96.3, z: 2.48, r: 87.2, estimated: true }  # 전문 지식
+  knowledge: { s: 96.3, z: 2.49, r: 87.3, estimated: true }  # 전문 지식
   reasoning: { s: 96.9, z: 2.74, r: 91.1, estimated: false }  # 추론
   coding: { s: 90.0, z: 1.83, r: 77.5, estimated: true }  # 코딩
-  agentic: { s: 88.7, z: 1.9, r: 78.6, estimated: true }  # 에이전트
-  trust: { s: 29.9, z: 0.16, r: 52.4, estimated: true }  # 신뢰성
+  agentic: { s: 88.5, z: 1.9, r: 78.5, estimated: true }  # 에이전트
+  trust: { s: 29.9, z: 0.16, r: 52.3, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 93.7, z: 1.27, r: 69.1, estimated: true }  # 긴문맥
-  instruction: { s: 78.4, z: 1.0, r: 65.0, estimated: true }  # 지시 따르기
+  instruction: { s: 78.5, z: 1.0, r: 65.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.5 Pro (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # GPT-5.5 Pro (xhigh)
@@ -43,11 +43,11 @@ OpenAI · Proprietary · Unknown · 컨텍스트 922k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 87.2 | +2.48 | 추정 | (추정) |
+| 전문 지식 | 87.3 | +2.49 | 추정 | (추정) |
 | 추론 | 91.1 | +2.74 | 실측 | [[critpt]] 31.0%×1.0 |
 | 코딩 | 77.5 | +1.83 | 추정 | (추정) |
-| 에이전트 | 78.6 | +1.9 | 추정 | (추정) |
-| 신뢰성 | 52.4 | +0.16 | 추정 | (추정) |
+| 에이전트 | 78.5 | +1.9 | 추정 | (추정) |
+| 신뢰성 | 52.3 | +0.16 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 69.1 | +1.27 | 추정 | (추정) |
 | 지시 따르기 | 65.0 | +1.0 | 추정 | (추정) |

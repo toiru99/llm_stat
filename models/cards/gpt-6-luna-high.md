@@ -12,10 +12,10 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 61.7, z: 0.88, r: 63.2, estimated: false }  # 전문 지식
+  knowledge: { s: 61.7, z: 0.88, r: 63.3, estimated: false }  # 전문 지식
   reasoning: { s: 50.1, z: 0.62, r: 59.3, estimated: false }  # 추론
-  coding: { s: 71.7, z: 1.21, r: 68.1, estimated: false }  # 코딩
-  agentic: { s: 62.7, z: 0.91, r: 63.7, estimated: false }  # 에이전트
+  coding: { s: 71.7, z: 1.2, r: 68.1, estimated: false }  # 코딩
+  agentic: { s: 61.8, z: 0.88, r: 63.1, estimated: false }  # 에이전트
   trust: { s: 14.4, z: -0.56, r: 41.6, estimated: false }  # 신뢰성
   multimodal: { s: 86.3, z: 0.74, r: 61.2, estimated: false }  # 멀티모달
   long_context: { s: 88.8, z: 1.12, r: 66.8, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6 Luna (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # GPT-6 Luna (high)
@@ -37,16 +37,16 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **33.0**
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.5 · 혼합 $0.077/1M · 135.0 t/s · TTFT 12.42s · 1M ctx` · 가성비 428.6
+`입력 $0.1 · 출력 $0.5 · 혼합 $0.077/1M · 135.0 t/s · TTFT 14.42s · 1M ctx` · 가성비 428.6
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 63.2 | +0.88 | 실측 | [[aa-omniscience]] 43.0%×1.0, [[humanitys-last-exam]] 33.0%×0.3 |
+| 전문 지식 | 63.3 | +0.88 | 실측 | [[aa-omniscience]] 43.0%×1.0, [[humanitys-last-exam]] 33.0%×0.3 |
 | 추론 | 59.3 | +0.62 | 실측 | [[critpt]] 15.0%×1.0, [[humanitys-last-exam]] 33.0%×1.0 |
-| 코딩 | 68.1 | +1.21 | 실측 | [[scicode]] 50.0%×1.0 |
-| 에이전트 | 63.7 | +0.91 | 실측 | [[gdpval]] 42.0%×1.0 |
+| 코딩 | 68.1 | +1.2 | 실측 | [[scicode]] 50.0%×1.0 |
+| 에이전트 | 63.1 | +0.88 | 실측 | [[gdpval]] 42.0%×1.0 |
 | 신뢰성 | 41.6 | -0.56 | 실측 | [[aa-omniscience]] 16.0%×1.0 |
 | 멀티모달 | 61.2 | +0.74 | 실측 | [[mmmu-pro]] 78.0%×1.0 |
 | 긴문맥 | 66.8 | +1.12 | 실측 | [[aa-lcr]] 79.0%×1.0 |

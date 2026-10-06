@@ -14,8 +14,8 @@ is_reasoning: true
 radar:
   knowledge: { s: 31.4, z: -0.51, r: 42.3, estimated: false }  # 전문 지식
   reasoning: { s: 27.3, z: -0.42, r: 43.7, estimated: false }  # 추론
-  coding: { s: 3.0, z: -1.14, r: 32.8, estimated: false }  # 코딩
-  agentic: { s: 15.7, z: -0.88, r: 36.7, estimated: false }  # 에이전트
+  coding: { s: 3.0, z: -1.15, r: 32.8, estimated: false }  # 코딩
+  agentic: { s: 15.7, z: -0.89, r: 36.7, estimated: false }  # 에이전트
   trust: { s: 9.3, z: -0.8, r: 38.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 12.4, z: -1.19, r: 32.2, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Falcon-H1R-7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # Falcon-H1R-7B
@@ -45,8 +45,8 @@ TII UAE · Open · Small · 컨텍스트 256k · 종합지능 **8.0**
 |---|---|---|---|---|
 | 전문 지식 | 42.3 | -0.51 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 66.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
 | 추론 | 43.7 | -0.42 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 66.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
-| 코딩 | 32.8 | -1.14 | 실측 | [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 36.7 | -0.88 | 실측 | [[tau2-bench]] 28.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 코딩 | 32.8 | -1.15 | 실측 | [[terminal-bench]] 2.0%×0.5 |
+| 에이전트 | 36.7 | -0.89 | 실측 | [[tau2-bench]] 28.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | 38.0 | -0.8 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 32.2 | -1.19 | 실측 | [[aa-lcr]] 11.0%×1.0 |

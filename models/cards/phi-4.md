@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 19.9, z: -0.76, r: 38.7, estimated: false }  # 추론
   coding: { s: 6.1, z: -1.04, r: 34.4, estimated: false }  # 코딩
   agentic: { s: 3.0, z: -1.37, r: 29.5, estimated: false }  # 에이전트
-  trust: { s: 17.5, z: -0.42, r: 43.8, estimated: false }  # 신뢰성
+  trust: { s: 17.5, z: -0.42, r: 43.7, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.56, r: 26.6, estimated: false }  # 긴문맥
-  instruction: { s: 16.9, z: -1.55, r: 26.7, estimated: false }  # 지시 따르기
+  instruction: { s: 16.9, z: -1.56, r: 26.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Phi-4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # Phi-4
@@ -34,10 +34,10 @@ Microsoft · Open · Small · 컨텍스트 16k · 종합지능 **6.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 전문 지식
-- **약점**: 지시 따르기, 긴문맥
+- **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.13 · 출력 $0.5 · 혼합 $0.1625/1M · 40.0 t/s · TTFT 2.64s · 16k ctx` · 가성비 36.9
+`입력 $0.13 · 출력 $0.5 · 혼합 $0.1625/1M · 40.0 t/s · TTFT 2.58s · 16k ctx` · 가성비 36.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,10 +47,10 @@ Microsoft · Open · Small · 컨텍스트 16k · 종합지능 **6.0**
 | 추론 | 38.7 | -0.76 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 57.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 34.4 | -1.04 | 실측 | [[terminal-bench]] 4.0%×0.5 |
 | 에이전트 | 29.5 | -1.37 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 4.0%×1.0 |
-| 신뢰성 | 43.8 | -0.42 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
+| 신뢰성 | 43.7 | -0.42 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 26.6 | -1.56 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 26.7 | -1.55 | 실측 | [[ifbench]] 24.0%×1.0 |
+| 지시 따르기 | 26.7 | -1.56 | 실측 | [[ifbench]] 24.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: 9.0
 price_blended_usd_1m: 0.285
-output_speed_tps: 79.0
+output_speed_tps: 83.0
 context_window: 256000
 status: current
 size_class: Large
@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 38.7, z: -0.18, r: 47.3, estimated: false }  # 전문 지식
   reasoning: { s: 24.1, z: -0.56, r: 41.6, estimated: false }  # 추론
-  coding: { s: 41.4, z: 0.17, r: 52.6, estimated: false }  # 코딩
+  coding: { s: 41.4, z: 0.17, r: 52.5, estimated: false }  # 코딩
   agentic: { s: 15.3, z: -0.9, r: 36.5, estimated: false }  # 에이전트
   trust: { s: 12.4, z: -0.66, r: 40.2, estimated: false }  # 신뢰성
   multimodal: { s: 56.2, z: -0.76, r: 38.6, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Large 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-05
-timestamp: 2026-10-05T00:00:00Z
+updated: 2026-10-06
+timestamp: 2026-10-06T00:00:00Z
 ---
 
 # Mistral Large 3
@@ -37,7 +37,7 @@ Mistral · Open · Large · 컨텍스트 256k · 종합지능 **9.0**
 - **약점**: 지시 따르기, 에이전트
 
 ## 실용 지표
-`입력 $0.5 · 출력 $1.5 · 혼합 $0.285/1M · 79.0 t/s · TTFT 1.13s · 256k ctx` · 가성비 31.6
+`입력 $0.5 · 출력 $1.5 · 혼합 $0.285/1M · 83.0 t/s · TTFT 1.02s · 256k ctx` · 가성비 31.6
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ Mistral · Open · Large · 컨텍스트 256k · 종합지능 **9.0**
 |---|---|---|---|---|
 | 전문 지식 | 47.3 | -0.18 | 실측 | [[aa-omniscience]] 25.0%×1.0, [[gpqa-diamond]] 68.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 41.6 | -0.56 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 68.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 52.6 | +0.17 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 16.0%×0.5 |
+| 코딩 | 52.5 | +0.17 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 16.0%×0.5 |
 | 에이전트 | 36.5 | -0.9 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 25.0%×1.0, [[tau3-banking]] 6.0%×1.0, [[terminal-bench]] 16.0%×1.0 |
 | 신뢰성 | 40.2 | -0.66 | 실측 | [[aa-omniscience]] 14.0%×1.0 |
 | 멀티모달 | 38.6 | -0.76 | 실측 | [[mmmu-pro]] 56.0%×1.0 |
