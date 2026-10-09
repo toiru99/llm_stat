@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: null
 radar:
   knowledge: { s: 60.9, z: 0.85, r: 62.7, estimated: false }  # 전문 지식
-  reasoning: { s: 50.0, z: 0.61, r: 59.2, estimated: false }  # 추론
-  coding: { s: 53.0, z: 0.57, r: 58.5, estimated: false }  # 코딩
-  agentic: { s: 45.3, z: 0.25, r: 53.7, estimated: false }  # 에이전트
-  trust: { s: 33.0, z: 0.3, r: 54.5, estimated: false }  # 신뢰성
+  reasoning: { s: 50.0, z: 0.61, r: 59.1, estimated: false }  # 추론
+  coding: { s: 53.0, z: 0.55, r: 58.3, estimated: false }  # 코딩
+  agentic: { s: 45.3, z: 0.24, r: 53.5, estimated: false }  # 에이전트
+  trust: { s: 33.0, z: 0.29, r: 54.3, estimated: false }  # 신뢰성
   multimodal: { s: 82.2, z: 0.54, r: 58.1, estimated: false }  # 멀티모달
-  long_context: { s: 87.6, z: 1.09, r: 66.3, estimated: false }  # 긴문맥
-  instruction: { s: 81.7, z: 1.14, r: 67.0, estimated: false }  # 지시 따르기
+  long_context: { s: 87.6, z: 1.08, r: 66.2, estimated: false }  # 긴문맥
+  instruction: { s: 81.7, z: 1.14, r: 67.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-06
-timestamp: 2026-10-06T00:00:00Z
+updated: 2026-10-09
+timestamp: 2026-10-09T00:00:00Z
 ---
 
 # Kimi K2.5
@@ -44,13 +44,13 @@ Kimi · Open · Unknown · 컨텍스트 256k · 종합지능 **23.0** · ⚠️ 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 62.7 | +0.85 | 실측 | [[aa-omniscience]] 35.0%×1.0, [[gpqa-diamond]] 88.0%×0.4, [[humanitys-last-exam]] 31.0%×0.3 |
-| 추론 | 59.2 | +0.61 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 88.0%×1.0, [[humanitys-last-exam]] 31.0%×1.0 |
-| 코딩 | 58.5 | +0.57 | 실측 | [[terminal-bench]] 35.0%×0.5 |
-| 에이전트 | 53.7 | +0.25 | 실측 | [[apex-agents]] 12.0%×1.0, [[gdpval]] 17.0%×1.0, [[tau2-bench]] 96.0%×1.0, [[tau3-banking]] 14.0%×1.0, [[terminal-bench]] 35.0%×1.0 |
-| 신뢰성 | 54.5 | +0.3 | 실측 | [[aa-omniscience]] 34.0%×1.0 |
+| 추론 | 59.1 | +0.61 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 88.0%×1.0, [[humanitys-last-exam]] 31.0%×1.0 |
+| 코딩 | 58.3 | +0.55 | 실측 | [[terminal-bench]] 35.0%×0.5 |
+| 에이전트 | 53.5 | +0.24 | 실측 | [[apex-agents]] 12.0%×1.0, [[gdpval]] 17.0%×1.0, [[tau2-bench]] 96.0%×1.0, [[tau3-banking]] 14.0%×1.0, [[terminal-bench]] 35.0%×1.0 |
+| 신뢰성 | 54.3 | +0.29 | 실측 | [[aa-omniscience]] 34.0%×1.0 |
 | 멀티모달 | 58.1 | +0.54 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
-| 긴문맥 | 66.3 | +1.09 | 실측 | [[aa-lcr]] 78.0%×1.0 |
-| 지시 따르기 | 67.0 | +1.14 | 실측 | [[ifbench]] 70.0%×1.0 |
+| 긴문맥 | 66.2 | +1.08 | 실측 | [[aa-lcr]] 78.0%×1.0 |
+| 지시 따르기 | 67.1 | +1.14 | 실측 | [[ifbench]] 70.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
