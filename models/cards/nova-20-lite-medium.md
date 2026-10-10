@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 36.5, z: -0.29, r: 45.7, estimated: false }  # 전문 지식
   reasoning: { s: 30.4, z: -0.28, r: 45.7, estimated: false }  # 추론
   coding: { s: 25.8, z: -0.38, r: 44.3, estimated: false }  # 코딩
-  agentic: { s: 51.3, z: 0.46, r: 57.0, estimated: false }  # 에이전트
+  agentic: { s: 51.3, z: 0.47, r: 57.0, estimated: false }  # 에이전트
   trust: { s: 6.2, z: -0.95, r: 35.7, estimated: false }  # 신뢰성
   multimodal: { s: 65.8, z: -0.28, r: 45.7, estimated: false }  # 멀티모달
   long_context: { s: 67.4, z: 0.47, r: 57.0, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova 2.0 Lite (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # Nova 2.0 Lite (medium)
@@ -33,7 +33,7 @@ timestamp: 2026-10-09T00:00:00Z
 Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **12.0**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 지시 따르기, 긴문맥
+- **강점**: 지시 따르기, 에이전트
 - **약점**: 코딩, 신뢰성
 
 ## 실용 지표
@@ -46,7 +46,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **12.0**
 | 전문 지식 | 45.7 | -0.29 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 77.0%×0.4, [[humanitys-last-exam]] 9.0%×0.3 |
 | 추론 | 45.7 | -0.28 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 77.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
 | 코딩 | 44.3 | -0.38 | 실측 | [[terminal-bench]] 17.0%×0.5 |
-| 에이전트 | 57.0 | +0.46 | 실측 | [[tau2-bench]] 76.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
+| 에이전트 | 57.0 | +0.47 | 실측 | [[tau2-bench]] 76.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
 | 신뢰성 | 35.7 | -0.95 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
 | 멀티모달 | 45.7 | -0.28 | 실측 | [[mmmu-pro]] 63.0%×1.0 |
 | 긴문맥 | 57.0 | +0.47 | 실측 | [[aa-lcr]] 60.0%×1.0 |

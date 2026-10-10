@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — K-EXAONE 2.0
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # K-EXAONE 2.0

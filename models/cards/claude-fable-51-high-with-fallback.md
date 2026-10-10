@@ -19,13 +19,13 @@ radar:
   trust: { s: 29.9, z: 0.14, r: 52.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 94.4, z: 1.28, r: 69.2, estimated: false }  # 긴문맥
-  instruction: { s: 78.0, z: 0.98, r: 64.8, estimated: true }  # 지시 따르기
+  instruction: { s: 78.0, z: 0.99, r: 64.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Fable 5.1 (high with fallback)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # Claude Fable 5.1 (high with fallback)
@@ -50,7 +50,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **51.0**
 | 신뢰성 | 52.2 | +0.14 | 실측 | [[aa-omniscience]] 31.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 69.2 | +1.28 | 실측 | [[aa-lcr]] 84.0%×1.0 |
-| 지시 따르기 | 64.8 | +0.98 | 추정 | (추정) |
+| 지시 따르기 | 64.8 | +0.99 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

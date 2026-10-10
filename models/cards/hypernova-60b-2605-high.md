@@ -19,13 +19,13 @@ radar:
   trust: { s: 16.5, z: -0.47, r: 42.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 40.4, z: -0.35, r: 44.8, estimated: false }  # 긴문맥
-  instruction: { s: 76.1, z: 0.9, r: 63.5, estimated: false }  # 지시 따르기
+  instruction: { s: 76.1, z: 0.9, r: 63.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — HyperNova 60B 2605 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # HyperNova 60B 2605 (high)
@@ -50,7 +50,7 @@ Multiverse Computing · Open · Medium · 컨텍스트 131k · 종합지능 **12
 | 신뢰성 | 42.9 | -0.47 | 실측 | [[aa-omniscience]] 18.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 44.8 | -0.35 | 실측 | [[aa-lcr]] 36.0%×1.0 |
-| 지시 따르기 | 63.5 | +0.9 | 실측 | [[ifbench]] 66.0%×1.0 |
+| 지시 따르기 | 63.6 | +0.9 | 실측 | [[ifbench]] 66.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -19,13 +19,13 @@ radar:
   trust: { s: 53.6, z: 1.24, r: 68.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 91.0, z: 1.18, r: 67.7, estimated: false }  # 긴문맥
-  instruction: { s: 91.5, z: 1.55, r: 73.2, estimated: false }  # 지시 따르기
+  instruction: { s: 91.5, z: 1.55, r: 73.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.6 Max Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # Qwen3.6 Max Preview
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **28.0** 
 - **약점**: 전문 지식, 추론
 
 ## 실용 지표
-`입력 $1.3 · 출력 $7.8 · 혼합 $1.131/1M · 71.0 t/s · TTFT 3.04s · 256k ctx` · 가성비 24.8
+`입력 $1.3 · 출력 $7.8 · 혼합 $1.131/1M · 71.0 t/s · TTFT 3.0s · 256k ctx` · 가성비 24.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **28.0** 
 | 신뢰성 | 68.6 | +1.24 | 실측 | [[aa-omniscience]] 54.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 67.7 | +1.18 | 실측 | [[aa-lcr]] 81.0%×1.0 |
-| 지시 따르기 | 73.2 | +1.55 | 실측 | [[ifbench]] 77.0%×1.0 |
+| 지시 따르기 | 73.3 | +1.55 | 실측 | [[ifbench]] 77.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

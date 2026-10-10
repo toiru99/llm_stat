@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 25.8, z: -0.78, r: 38.3, estimated: false }  # 전문 지식
   reasoning: { s: 27.7, z: -0.41, r: 43.9, estimated: false }  # 추론
   coding: { s: 31.7, z: -0.18, r: 47.4, estimated: false }  # 코딩
-  agentic: { s: 28.7, z: -0.4, r: 44.0, estimated: false }  # 에이전트
+  agentic: { s: 27.9, z: -0.43, r: 43.6, estimated: false }  # 에이전트
   trust: { s: 78.4, z: 2.39, r: 85.8, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 66.3, z: 0.43, r: 56.5, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniCPM5-2B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # MiniCPM5-2B
@@ -34,7 +34,7 @@ OpenBMB · Open · Tiny · 컨텍스트 131k · 종합지능 **12.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 긴문맥
-- **약점**: 추론, 전문 지식
+- **약점**: 에이전트, 전문 지식
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 131k ctx`
@@ -46,7 +46,7 @@ OpenBMB · Open · Tiny · 컨텍스트 131k · 종합지능 **12.0**
 | 전문 지식 | 38.3 | -0.78 | 실측 | [[aa-omniscience]] 8.0%×1.0, [[gpqa-diamond]] 70.0%×0.4, [[humanitys-last-exam]] 9.0%×0.3 |
 | 추론 | 43.9 | -0.41 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 70.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
 | 코딩 | 47.4 | -0.18 | 실측 | [[scicode]] 26.0%×1.0 |
-| 에이전트 | 44.0 | -0.4 | 실측 | [[gdpval]] 11.0%×1.0, [[tau3-banking]] 21.0%×1.0 |
+| 에이전트 | 43.6 | -0.43 | 실측 | [[gdpval]] 10.0%×1.0, [[tau3-banking]] 21.0%×1.0 |
 | 신뢰성 | 85.8 | +2.39 | 실측 | [[aa-omniscience]] 78.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 56.5 | +0.43 | 실측 | [[aa-lcr]] 59.0%×1.0 |

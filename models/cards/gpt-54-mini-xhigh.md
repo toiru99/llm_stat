@@ -19,13 +19,13 @@ radar:
   trust: { s: 8.2, z: -0.86, r: 37.2, estimated: false }  # 신뢰성
   multimodal: { s: 79.5, z: 0.4, r: 56.0, estimated: false }  # 멀티모달
   long_context: { s: 86.5, z: 1.04, r: 65.7, estimated: false }  # 긴문맥
-  instruction: { s: 85.9, z: 1.31, r: 69.7, estimated: false }  # 지시 따르기
+  instruction: { s: 85.9, z: 1.32, r: 69.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.4 mini (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # GPT-5.4 mini (xhigh)
@@ -50,7 +50,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **24.0** �
 | 신뢰성 | 37.2 | -0.86 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
 | 멀티모달 | 56.0 | +0.4 | 실측 | [[mmmu-pro]] 73.0%×1.0 |
 | 긴문맥 | 65.7 | +1.04 | 실측 | [[aa-lcr]] 77.0%×1.0 |
-| 지시 따르기 | 69.7 | +1.31 | 실측 | [[ifbench]] 73.0%×1.0 |
+| 지시 따르기 | 69.7 | +1.32 | 실측 | [[ifbench]] 73.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

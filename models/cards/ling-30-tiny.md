@@ -5,7 +5,7 @@ creator: InclusionAI
 license: Open
 intelligence_index: 11.0
 price_blended_usd_1m: 0
-output_speed_tps: 57.0
+output_speed_tps: 55.0
 context_window: 262000
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling 3.0 Tiny
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # Ling 3.0 Tiny
@@ -37,7 +37,7 @@ InclusionAI · Open · Small · 컨텍스트 262k · 종합지능 **11.0**
 - **약점**: 전문 지식, 지시 따르기
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 57.0 t/s · TTFT 2.58s · 262k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 55.0 t/s · TTFT 2.59s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 45.9, z: 0.15, r: 52.3, estimated: false }  # 전문 지식
   reasoning: { s: 54.9, z: 0.83, r: 62.4, estimated: false }  # 추론
   coding: { s: 66.7, z: 1.02, r: 65.3, estimated: false }  # 코딩
-  agentic: { s: 80.9, z: 1.6, r: 73.9, estimated: false }  # 에이전트
+  agentic: { s: 80.9, z: 1.6, r: 74.0, estimated: false }  # 에이전트
   trust: { s: 70.1, z: 2.0, r: 80.1, estimated: false }  # 신뢰성
   multimodal: { s: 83.6, z: 0.61, r: 59.1, estimated: false }  # 멀티모달
   long_context: { s: 92.1, z: 1.21, r: 68.2, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.8 27B (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # Qwen3.8 27B (xhigh)
@@ -46,7 +46,7 @@ Alibaba · Open · Small · 컨텍스트 256k · 종합지능 **34.0**
 | 전문 지식 | 52.3 | +0.15 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 34.0%×0.3 |
 | 추론 | 62.4 | +0.83 | 실측 | [[critpt]] 5.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 34.0%×1.0 |
 | 코딩 | 65.3 | +1.02 | 실측 | [[scicode]] 47.0%×1.0 |
-| 에이전트 | 73.9 | +1.6 | 실측 | [[gdpval]] 46.0%×1.0, [[tau3-banking]] 48.0%×1.0 |
+| 에이전트 | 74.0 | +1.6 | 실측 | [[gdpval]] 46.0%×1.0, [[tau3-banking]] 48.0%×1.0 |
 | 신뢰성 | 80.1 | +2.0 | 실측 | [[aa-omniscience]] 70.0%×1.0 |
 | 멀티모달 | 59.1 | +0.61 | 실측 | [[mmmu-pro]] 76.0%×1.0 |
 | 긴문맥 | 68.2 | +1.21 | 실측 | [[aa-lcr]] 82.0%×1.0 |

@@ -5,7 +5,7 @@ creator: Amazon
 license: Proprietary
 intelligence_index: 12.0
 price_blended_usd_1m: 0.52
-output_speed_tps: 161.0
+output_speed_tps: 167.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova 2.0 Lite (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # Nova 2.0 Lite (low)
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **12.0**
 - **약점**: 신뢰성, 코딩
 
 ## 실용 지표
-`입력 $0.3 · 출력 $2.5 · 혼합 $0.52/1M · 161.0 t/s · TTFT 10.73s · 1M ctx` · 가성비 23.1
+`입력 $0.3 · 출력 $2.5 · 혼합 $0.52/1M · 167.0 t/s · TTFT 8.81s · 1M ctx` · 가성비 23.1
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -4,7 +4,7 @@ title: LongCat 2.0
 creator: LongCat
 license: Open
 intelligence_index: 19.0
-price_blended_usd_1m: 0.1842
+price_blended_usd_1m: 0.4555
 output_speed_tps: None
 context_window: 1000000
 status: current
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — LongCat 2.0
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # LongCat 2.0
@@ -37,7 +37,7 @@ LongCat · Open · Large · 컨텍스트 1M · 종합지능 **19.0**
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.1842/1M · None t/s · TTFT Nones · 1M ctx` · 가성비 103.1
+`입력 $0.75 · 출력 $2.95 · 혼합 $0.4555/1M · None t/s · TTFT Nones · 1M ctx` · 가성비 41.7
 
 ## 레이더 8축 (평균=50 기준선)
 

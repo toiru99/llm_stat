@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 25.3, z: -0.81, r: 37.9, estimated: false }  # 전문 지식
   reasoning: { s: 17.6, z: -0.87, r: 37.0, estimated: false }  # 추론
   coding: { s: 28.0, z: -0.3, r: 45.5, estimated: false }  # 코딩
-  agentic: { s: 13.2, z: -0.99, r: 35.1, estimated: false }  # 에이전트
+  agentic: { s: 13.2, z: -0.99, r: 35.2, estimated: false }  # 에이전트
   trust: { s: 21.6, z: -0.24, r: 46.5, estimated: false }  # 신뢰성
   multimodal: { s: 45.2, z: -1.31, r: 30.3, estimated: false }  # 멀티모달
   long_context: { s: 22.5, z: -0.89, r: 36.6, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Small 3.2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # Mistral Small 3.2
@@ -46,7 +46,7 @@ Mistral · Open · Small · 컨텍스트 128k · 종합지능 **8.0** · ⚠️ 
 | 전문 지식 | 37.9 | -0.81 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 51.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 37.0 | -0.87 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 51.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 45.5 | -0.3 | 실측 | [[scicode]] 29.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
-| 에이전트 | 35.1 | -0.99 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 30.0%×1.0, [[tau3-banking]] 6.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
+| 에이전트 | 35.2 | -0.99 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 30.0%×1.0, [[tau3-banking]] 6.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
 | 신뢰성 | 46.5 | -0.24 | 실측 | [[aa-omniscience]] 23.0%×1.0 |
 | 멀티모달 | 30.3 | -1.31 | 실측 | [[mmmu-pro]] 48.0%×1.0 |
 | 긴문맥 | 36.6 | -0.89 | 실측 | [[aa-lcr]] 20.0%×1.0 |

@@ -19,13 +19,13 @@ radar:
   trust: { s: 34.8, z: 0.37, r: 55.6, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 84.0, z: 0.97, r: 64.5, estimated: true }  # 긴문맥
-  instruction: { s: 76.8, z: 0.93, r: 64.0, estimated: true }  # 지시 따르기
+  instruction: { s: 76.7, z: 0.93, r: 64.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Sonar Reasoning
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # Sonar Reasoning

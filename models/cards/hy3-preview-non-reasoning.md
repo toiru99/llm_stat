@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 39.2, z: -0.16, r: 47.6, estimated: false }  # 전문 지식
   reasoning: { s: 27.8, z: -0.41, r: 43.9, estimated: false }  # 추론
   coding: { s: 48.5, z: 0.4, r: 56.0, estimated: false }  # 코딩
-  agentic: { s: 58.6, z: 0.74, r: 61.2, estimated: false }  # 에이전트
+  agentic: { s: 58.6, z: 0.75, r: 61.2, estimated: false }  # 에이전트
   trust: { s: 22.7, z: -0.19, r: 47.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 47.2, z: -0.15, r: 47.8, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hy3-preview (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # Hy3-preview (non-reasoning)
@@ -46,7 +46,7 @@ Tencent · Open · Large · 컨텍스트 256k · 종합지능 **17.0** · ⚠️
 | 전문 지식 | 47.6 | -0.16 | 실측 | [[aa-omniscience]] 23.0%×1.0, [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
 | 추론 | 43.9 | -0.41 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
 | 코딩 | 56.0 | +0.4 | 실측 | [[terminal-bench]] 32.0%×0.5 |
-| 에이전트 | 61.2 | +0.74 | 실측 | [[tau2-bench]] 68.0%×1.0, [[terminal-bench]] 32.0%×1.0 |
+| 에이전트 | 61.2 | +0.75 | 실측 | [[tau2-bench]] 68.0%×1.0, [[terminal-bench]] 32.0%×1.0 |
 | 신뢰성 | 47.2 | -0.19 | 실측 | [[aa-omniscience]] 24.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 47.8 | -0.15 | 실측 | [[aa-lcr]] 42.0%×1.0 |

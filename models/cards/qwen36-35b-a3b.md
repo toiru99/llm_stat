@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.6 35B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # Qwen3.6 35B A3B
@@ -37,7 +37,7 @@ Alibaba · Open · Unknown · 컨텍스트 262k · 종합지능 **18.0**
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.38 · 출력 $2.25 · 혼합 $0.567/1M · 127.0 t/s · TTFT 1.99s · 262k ctx` · 가성비 31.7
+`입력 $0.38 · 출력 $2.25 · 혼합 $0.567/1M · 127.0 t/s · TTFT 2.0s · 262k ctx` · 가성비 31.7
 
 ## 레이더 8축 (평균=50 기준선)
 

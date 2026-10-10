@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 17.1, z: -1.19, r: 32.2, estimated: false }  # 전문 지식
   reasoning: { s: 12.3, z: -1.11, r: 33.4, estimated: false }  # 추론
   coding: { s: 3.0, z: -1.15, r: 32.7, estimated: false }  # 코딩
-  agentic: { s: 8.6, z: -1.17, r: 32.5, estimated: false }  # 에이전트
+  agentic: { s: 8.6, z: -1.16, r: 32.5, estimated: false }  # 에이전트
   trust: { s: 34.0, z: 0.34, r: 55.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 14.6, z: -1.13, r: 33.0, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova Micro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # Nova Micro
@@ -46,7 +46,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 130k · 종합지능 **6.0**
 | 전문 지식 | 32.2 | -1.19 | 실측 | [[aa-omniscience]] 10.0%×1.0, [[gpqa-diamond]] 36.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 33.4 | -1.11 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 36.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 32.7 | -1.15 | 실측 | [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 32.5 | -1.17 | 실측 | [[tau2-bench]] 14.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 에이전트 | 32.5 | -1.16 | 실측 | [[tau2-bench]] 14.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | 55.0 | +0.34 | 실측 | [[aa-omniscience]] 35.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 33.0 | -1.13 | 실측 | [[aa-lcr]] 13.0%×1.0 |

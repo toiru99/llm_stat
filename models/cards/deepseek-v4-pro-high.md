@@ -5,7 +5,7 @@ creator: DeepSeek
 license: Open
 intelligence_index: 30.0
 price_blended_usd_1m: 0.1765
-output_speed_tps: 90.0
+output_speed_tps: 89.0
 context_window: 1000000
 status: past
 size_class: Large
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 68.2, z: 1.18, r: 67.8, estimated: false }  # 전문 지식
   reasoning: { s: 60.7, z: 1.09, r: 66.4, estimated: false }  # 추론
   coding: { s: 63.6, z: 0.91, r: 63.7, estimated: false }  # 코딩
-  agentic: { s: 64.5, z: 0.97, r: 64.6, estimated: false }  # 에이전트
+  agentic: { s: 64.2, z: 0.96, r: 64.4, estimated: false }  # 에이전트
   trust: { s: 9.3, z: -0.81, r: 37.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 78.7, z: 0.81, r: 62.1, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Pro (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # DeepSeek V4 Pro (high)
@@ -37,7 +37,7 @@ DeepSeek · Open · Large · 컨텍스트 1M · 종합지능 **30.0** · ⚠️ 
 - **약점**: 긴문맥, 신뢰성
 
 ## 실용 지표
-`입력 $0.43 · 출력 $0.87 · 혼합 $0.1765/1M · 90.0 t/s · TTFT 1.7s · 1M ctx` · 가성비 170.0
+`입력 $0.43 · 출력 $0.87 · 혼합 $0.1765/1M · 89.0 t/s · TTFT 1.79s · 1M ctx` · 가성비 170.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ DeepSeek · Open · Large · 컨텍스트 1M · 종합지능 **30.0** · ⚠️ 
 | 전문 지식 | 67.8 | +1.18 | 실측 | [[aa-omniscience]] 41.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 35.0%×0.3 |
 | 추론 | 66.4 | +1.09 | 실측 | [[critpt]] 10.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 35.0%×1.0 |
 | 코딩 | 63.7 | +0.91 | 실측 | [[terminal-bench]] 42.0%×0.5 |
-| 에이전트 | 64.6 | +0.97 | 실측 | [[gdpval]] 33.0%×1.0, [[tau2-bench]] 94.0%×1.0, [[tau3-banking]] 26.0%×1.0, [[terminal-bench]] 42.0%×1.0 |
+| 에이전트 | 64.4 | +0.96 | 실측 | [[gdpval]] 32.0%×1.0, [[tau2-bench]] 94.0%×1.0, [[tau3-banking]] 26.0%×1.0, [[terminal-bench]] 42.0%×1.0 |
 | 신뢰성 | 37.9 | -0.81 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 62.1 | +0.81 | 실측 | [[aa-lcr]] 70.0%×1.0 |

@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 28.6, z: -0.65, r: 40.2, estimated: false }  # 전문 지식
   reasoning: { s: 22.5, z: -0.64, r: 40.4, estimated: false }  # 추론
   coding: { s: 3.0, z: -1.15, r: 32.7, estimated: false }  # 코딩
-  agentic: { s: 1.5, z: -1.44, r: 28.5, estimated: false }  # 에이전트
+  agentic: { s: 1.5, z: -1.43, r: 28.5, estimated: false }  # 에이전트
   trust: { s: 12.4, z: -0.67, r: 40.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.57, r: 26.4, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Olmo 3 32B Think
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # Olmo 3 32B Think
@@ -46,7 +46,7 @@ Allen Institute for AI · Open · Small · 컨텍스트 65k · 종합지능 **6.
 | 전문 지식 | 40.2 | -0.65 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 61.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 40.4 | -0.64 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 61.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 32.7 | -1.15 | 실측 | [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 28.5 | -1.44 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 에이전트 | 28.5 | -1.43 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | 40.0 | -0.67 | 실측 | [[aa-omniscience]] 14.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 26.4 | -1.57 | 실측 | [[aa-lcr]] 0.0%×1.0 |

@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 35.0
 price_blended_usd_1m: 0.174
-output_speed_tps: 110.0
+output_speed_tps: 111.0
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 69.1, z: 1.23, r: 68.4, estimated: false }  # 전문 지식
   reasoning: { s: 72.5, z: 1.63, r: 74.4, estimated: false }  # 추론
   coding: { s: 71.7, z: 1.19, r: 67.8, estimated: false }  # 코딩
-  agentic: { s: 61.5, z: 0.86, r: 62.8, estimated: false }  # 에이전트
+  agentic: { s: 61.5, z: 0.86, r: 62.9, estimated: false }  # 에이전트
   trust: { s: 6.2, z: -0.95, r: 35.7, estimated: false }  # 신뢰성
   multimodal: { s: 87.7, z: 0.81, r: 62.2, estimated: false }  # 멀티모달
   long_context: { s: 92.1, z: 1.21, r: 68.2, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Luna (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # GPT-5.6 Luna (xhigh)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **35.0** · 
 - **약점**: 멀티모달, 신뢰성
 
 ## 실용 지표
-`입력 $0.2 · 출력 $1.2 · 혼합 $0.174/1M · 110.0 t/s · TTFT 45.0s · 1M ctx` · 가성비 201.1
+`입력 $0.2 · 출력 $1.2 · 혼합 $0.174/1M · 111.0 t/s · TTFT 52.86s · 1M ctx` · 가성비 201.1
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **35.0** · 
 | 전문 지식 | 68.4 | +1.23 | 실측 | [[aa-omniscience]] 42.0%×1.0, [[gpqa-diamond]] 89.0%×0.4, [[humanitys-last-exam]] 37.0%×0.3 |
 | 추론 | 74.4 | +1.63 | 실측 | [[critpt]] 21.0%×1.0, [[gpqa-diamond]] 89.0%×1.0, [[humanitys-last-exam]] 37.0%×1.0 |
 | 코딩 | 67.8 | +1.19 | 실측 | [[scicode]] 50.0%×1.0 |
-| 에이전트 | 62.8 | +0.86 | 실측 | [[gdpval]] 45.0%×1.0, [[tau3-banking]] 29.0%×1.0 |
+| 에이전트 | 62.9 | +0.86 | 실측 | [[gdpval]] 45.0%×1.0, [[tau3-banking]] 29.0%×1.0 |
 | 신뢰성 | 35.7 | -0.95 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
 | 멀티모달 | 62.2 | +0.81 | 실측 | [[mmmu-pro]] 79.0%×1.0 |
 | 긴문맥 | 68.2 | +1.21 | 실측 | [[aa-lcr]] 82.0%×1.0 |

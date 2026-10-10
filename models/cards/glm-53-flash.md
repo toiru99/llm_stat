@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 58.2, z: 0.72, r: 60.8, estimated: false }  # 전문 지식
   reasoning: { s: 68.7, z: 1.45, r: 71.8, estimated: false }  # 추론
   coding: { s: 75.0, z: 1.3, r: 69.5, estimated: false }  # 코딩
-  agentic: { s: 89.0, z: 1.9, r: 78.6, estimated: false }  # 에이전트
+  agentic: { s: 89.0, z: 1.91, r: 78.6, estimated: false }  # 에이전트
   trust: { s: 72.2, z: 2.1, r: 81.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 89.9, z: 1.15, r: 67.2, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5.3-Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # GLM-5.3-Flash
@@ -46,7 +46,7 @@ Z AI · Open · Large · 컨텍스트 1M · 종합지능 **42.0**
 | 전문 지식 | 60.8 | +0.72 | 실측 | [[aa-omniscience]] 28.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 40.0%×0.3 |
 | 추론 | 71.8 | +1.45 | 실측 | [[critpt]] 15.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 40.0%×1.0 |
 | 코딩 | 69.5 | +1.3 | 실측 | [[scicode]] 52.0%×1.0 |
-| 에이전트 | 78.6 | +1.9 | 실측 | [[gdpval]] 57.0%×1.0, [[itbench]] 51.0%×1.0, [[tau3-banking]] 47.0%×1.0 |
+| 에이전트 | 78.6 | +1.91 | 실측 | [[gdpval]] 57.0%×1.0, [[itbench]] 51.0%×1.0, [[tau3-banking]] 47.0%×1.0 |
 | 신뢰성 | 81.5 | +2.1 | 실측 | [[aa-omniscience]] 72.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 67.2 | +1.15 | 실측 | [[aa-lcr]] 80.0%×1.0 |

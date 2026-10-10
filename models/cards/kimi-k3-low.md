@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K3 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # Kimi K3 (low)
@@ -37,7 +37,7 @@ Kimi · Open · Large · 컨텍스트 1M · 종합지능 **30.0**
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $3.0 · 출력 $15.0 · 혼합 $2.31/1M · 39.0 t/s · TTFT 3.84s · 1M ctx` · 가성비 13.0
+`입력 $3.0 · 출력 $15.0 · 혼합 $2.31/1M · 39.0 t/s · TTFT 3.98s · 1M ctx` · 가성비 13.0
 
 ## 레이더 8축 (평균=50 기준선)
 

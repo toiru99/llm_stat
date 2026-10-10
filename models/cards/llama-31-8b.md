@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.1 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # Llama 3.1 8B
@@ -37,7 +37,7 @@ Meta · Open · Small · 컨텍스트 128k · 종합지능 **7.0** · ⚠️ pas
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.02 · 출력 $0.05 · 혼합 $0.023/1M · 136.0 t/s · TTFT 0.92s · 128k ctx` · 가성비 304.3
+`입력 $0.02 · 출력 $0.05 · 혼합 $0.023/1M · 136.0 t/s · TTFT 0.91s · 128k ctx` · 가성비 304.3
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: Alibaba
 license: Proprietary
 intelligence_index: 13.0
 price_blended_usd_1m: 1.008
-output_speed_tps: 57.0
+output_speed_tps: 58.0
 context_window: 262000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Max (Preview)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # Qwen3 Max (Preview)
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 262k · 종합지능 **13.0** 
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $1.2 · 출력 $6.0 · 혼합 $1.008/1M · 57.0 t/s · TTFT 4.05s · 262k ctx` · 가성비 12.9
+`입력 $1.2 · 출력 $6.0 · 혼합 $1.008/1M · 58.0 t/s · TTFT 4.01s · 262k ctx` · 가성비 12.9
 
 ## 레이더 8축 (평균=50 기준선)
 

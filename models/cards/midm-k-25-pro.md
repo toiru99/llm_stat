@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 34.3, z: -0.39, r: 44.2, estimated: false }  # 전문 지식
   reasoning: { s: 27.1, z: -0.43, r: 43.5, estimated: false }  # 추론
   coding: { s: 3.0, z: -1.15, r: 32.7, estimated: false }  # 코딩
-  agentic: { s: 45.5, z: 0.24, r: 53.6, estimated: false }  # 에이전트
+  agentic: { s: 45.5, z: 0.24, r: 53.7, estimated: false }  # 에이전트
   trust: { s: 4.1, z: -1.05, r: 34.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 10.1, z: -1.27, r: 31.0, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mi:dm K 2.5 Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # Mi:dm K 2.5 Pro
@@ -46,7 +46,7 @@ Korea Telecom · Proprietary · Small · 컨텍스트 128k · 종합지능 **11.
 | 전문 지식 | 44.2 | -0.39 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 70.0%×0.4, [[humanitys-last-exam]] 8.0%×0.3 |
 | 추론 | 43.5 | -0.43 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 70.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
 | 코딩 | 32.7 | -1.15 | 실측 | [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 53.6 | +0.24 | 실측 | [[tau2-bench]] 87.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 에이전트 | 53.7 | +0.24 | 실측 | [[tau2-bench]] 87.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | 34.3 | -1.05 | 실측 | [[aa-omniscience]] 6.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 31.0 | -1.27 | 실측 | [[aa-lcr]] 9.0%×1.0 |

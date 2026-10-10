@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 58.6, z: 0.74, r: 61.1, estimated: false }  # 전문 지식
   reasoning: { s: 53.0, z: 0.74, r: 61.1, estimated: false }  # 추론
   coding: { s: 63.3, z: 0.9, r: 63.6, estimated: false }  # 코딩
-  agentic: { s: 55.2, z: 0.62, r: 59.2, estimated: false }  # 에이전트
+  agentic: { s: 55.2, z: 0.62, r: 59.3, estimated: false }  # 에이전트
   trust: { s: 20.6, z: -0.28, r: 45.7, estimated: false }  # 신뢰성
   multimodal: { s: 87.7, z: 0.81, r: 62.2, estimated: false }  # 멀티모달
   long_context: { s: 88.8, z: 1.11, r: 66.7, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Apodex 1.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # Apodex 1.1
@@ -46,7 +46,7 @@ Apodex · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **26.0**
 | 전문 지식 | 61.1 | +0.74 | 실측 | [[aa-omniscience]] 32.0%×1.0, [[gpqa-diamond]] 86.0%×0.4, [[humanitys-last-exam]] 34.0%×0.3 |
 | 추론 | 61.1 | +0.74 | 실측 | [[critpt]] 5.0%×1.0, [[gpqa-diamond]] 86.0%×1.0, [[humanitys-last-exam]] 34.0%×1.0 |
 | 코딩 | 63.6 | +0.9 | 실측 | [[scicode]] 45.0%×1.0 |
-| 에이전트 | 59.2 | +0.62 | 실측 | [[apex-agents]] 31.0%×1.0, [[gdpval]] 35.0%×1.0, [[tau3-banking]] 25.0%×1.0 |
+| 에이전트 | 59.3 | +0.62 | 실측 | [[apex-agents]] 31.0%×1.0, [[gdpval]] 35.0%×1.0, [[tau3-banking]] 25.0%×1.0 |
 | 신뢰성 | 45.7 | -0.28 | 실측 | [[aa-omniscience]] 22.0%×1.0 |
 | 멀티모달 | 62.2 | +0.81 | 실측 | [[mmmu-pro]] 79.0%×1.0 |
 | 긴문맥 | 66.7 | +1.11 | 실측 | [[aa-lcr]] 79.0%×1.0 |

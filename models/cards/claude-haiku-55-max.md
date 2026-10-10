@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Haiku 5.5 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-09
-timestamp: 2026-10-09T00:00:00Z
+updated: 2026-10-10
+timestamp: 2026-10-10T00:00:00Z
 ---
 
 # Claude Haiku 5.5 (max)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **43.0**
 - **약점**: 전문 지식, 지시 따르기
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.5 · 혼합 $0.077/1M · 240.0 t/s · TTFT 295.0s · 1M ctx` · 가성비 558.4
+`입력 $0.1 · 출력 $0.5 · 혼합 $0.077/1M · 240.0 t/s · TTFT 289.46s · 1M ctx` · 가성비 558.4
 
 ## 레이더 8축 (평균=50 기준선)
 
