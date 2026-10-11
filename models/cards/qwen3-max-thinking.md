@@ -10,7 +10,7 @@ context_window: 256000
 status: past
 size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: null
 radar:
   knowledge: { s: 55.1, z: 0.58, r: 58.7, estimated: false }  # 전문 지식
   reasoning: { s: 46.5, z: 0.45, r: 56.7, estimated: false }  # 추론
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Max Thinking
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-10
-timestamp: 2026-10-10T00:00:00Z
+updated: 2026-10-11
+timestamp: 2026-10-11T00:00:00Z
 ---
 
 # Qwen3 Max Thinking

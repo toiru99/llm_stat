@@ -10,7 +10,7 @@ context_window: 127000
 status: past
 size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: null
 radar:
   knowledge: { s: 60.5, z: 0.83, r: 62.4, estimated: false }  # 전문 지식
   reasoning: { s: 60.5, z: 1.08, r: 66.2, estimated: false }  # 추론
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Sonar Reasoning
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-10
-timestamp: 2026-10-10T00:00:00Z
+updated: 2026-10-11
+timestamp: 2026-10-11T00:00:00Z
 ---
 
 # Sonar Reasoning

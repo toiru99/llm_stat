@@ -10,7 +10,7 @@ context_window: 262000
 status: past
 size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: null
 radar:
   knowledge: { s: 77.0, z: 1.59, r: 73.9, estimated: false }  # 전문 지식
   reasoning: { s: 63.9, z: 1.24, r: 68.6, estimated: false }  # 추론
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Spark
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-10
-timestamp: 2026-10-10T00:00:00Z
+updated: 2026-10-11
+timestamp: 2026-10-11T00:00:00Z
 ---
 
 # Muse Spark

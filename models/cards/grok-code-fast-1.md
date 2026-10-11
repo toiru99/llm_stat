@@ -10,7 +10,7 @@ context_window: 256000
 status: past
 size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: null
 radar:
   knowledge: { s: 40.4, z: -0.11, r: 48.4, estimated: false }  # 전문 지식
   reasoning: { s: 28.3, z: -0.38, r: 44.3, estimated: false }  # 추론
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok Code Fast 1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-10
-timestamp: 2026-10-10T00:00:00Z
+updated: 2026-10-11
+timestamp: 2026-10-11T00:00:00Z
 ---
 
 # Grok Code Fast 1

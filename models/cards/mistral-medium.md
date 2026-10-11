@@ -10,7 +10,7 @@ context_window: 32800
 status: past
 size_class: Unknown
 params_b: null
-is_reasoning: false
+is_reasoning: null
 radar:
   knowledge: { s: 18.8, z: -1.11, r: 33.4, estimated: false }  # 전문 지식
   reasoning: { s: 17.0, z: -0.89, r: 36.6, estimated: false }  # 추론
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Medium
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-10
-timestamp: 2026-10-10T00:00:00Z
+updated: 2026-10-11
+timestamp: 2026-10-11T00:00:00Z
 ---
 
 # Mistral Medium

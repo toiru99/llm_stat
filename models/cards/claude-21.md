@@ -10,7 +10,7 @@ context_window: 200000
 status: past
 size_class: Unknown
 params_b: null
-is_reasoning: false
+is_reasoning: null
 radar:
   knowledge: { s: 16.8, z: -1.2, r: 32.0, estimated: false }  # 전문 지식
   reasoning: { s: 15.3, z: -0.97, r: 35.4, estimated: false }  # 추론
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 2.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-10
-timestamp: 2026-10-10T00:00:00Z
+updated: 2026-10-11
+timestamp: 2026-10-11T00:00:00Z
 ---
 
 # Claude 2.1

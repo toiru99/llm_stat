@@ -10,7 +10,7 @@ context_window: 128000
 status: current
 size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: null
 radar:
   knowledge: { s: 74.2, z: 1.46, r: 71.9, estimated: true }  # 전문 지식
   reasoning: { s: 81.2, z: 2.03, r: 80.4, estimated: false }  # 추론
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3 Deep Think
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-10
-timestamp: 2026-10-10T00:00:00Z
+updated: 2026-10-11
+timestamp: 2026-10-11T00:00:00Z
 ---
 
 # Gemini 3 Deep Think
