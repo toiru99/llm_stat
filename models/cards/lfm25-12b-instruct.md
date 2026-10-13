@@ -13,10 +13,10 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 14.2, z: -1.32, r: 30.2, estimated: false }  # 전문 지식
-  reasoning: { s: 12.2, z: -1.11, r: 33.4, estimated: false }  # 추론
-  coding: { s: 0.0, z: -1.26, r: 31.1, estimated: false }  # 코딩
-  agentic: { s: 5.6, z: -1.28, r: 30.8, estimated: false }  # 에이전트
-  trust: { s: 13.4, z: -0.62, r: 40.7, estimated: false }  # 신뢰성
+  reasoning: { s: 12.2, z: -1.12, r: 33.3, estimated: false }  # 추론
+  coding: { s: 0.0, z: -1.26, r: 31.2, estimated: false }  # 코딩
+  agentic: { s: 5.6, z: -1.28, r: 30.9, estimated: false }  # 에이전트
+  trust: { s: 13.4, z: -0.61, r: 40.8, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.57, r: 26.4, estimated: false }  # 긴문맥
   instruction: { s: 45.1, z: -0.39, r: 44.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — LFM2.5-1.2B-Instruct
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-11
-timestamp: 2026-10-11T00:00:00Z
+updated: 2026-10-13
+timestamp: 2026-10-13T00:00:00Z
 ---
 
 # LFM2.5-1.2B-Instruct
@@ -44,10 +44,10 @@ Liquid AI · Open · Tiny · 컨텍스트 32k · 종합지능 **5.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 30.2 | -1.32 | 실측 | [[aa-omniscience]] 7.0%×1.0, [[gpqa-diamond]] 33.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
-| 추론 | 33.4 | -1.11 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
-| 코딩 | 31.1 | -1.26 | 실측 | [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 30.8 | -1.28 | 실측 | [[tau2-bench]] 11.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 40.7 | -0.62 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
+| 추론 | 33.3 | -1.12 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
+| 코딩 | 31.2 | -1.26 | 실측 | [[terminal-bench]] 0.0%×0.5 |
+| 에이전트 | 30.9 | -1.28 | 실측 | [[tau2-bench]] 11.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 신뢰성 | 40.8 | -0.61 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 26.4 | -1.57 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 44.1 | -0.39 | 실측 | [[ifbench]] 44.0%×1.0 |

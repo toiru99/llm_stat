@@ -12,9 +12,9 @@ size_class: Tiny
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 9.4, z: -1.54, r: 26.8, estimated: false }  # 전문 지식
-  reasoning: { s: 9.0, z: -1.26, r: 31.1, estimated: false }  # 추론
-  coding: { s: 0.0, z: -1.26, r: 31.1, estimated: false }  # 코딩
+  knowledge: { s: 9.4, z: -1.55, r: 26.8, estimated: false }  # 전문 지식
+  reasoning: { s: 9.0, z: -1.27, r: 31.0, estimated: false }  # 추론
+  coding: { s: 0.0, z: -1.26, r: 31.2, estimated: false }  # 코딩
   agentic: { s: 6.6, z: -1.24, r: 31.4, estimated: false }  # 에이전트
   trust: { s: 22.7, z: -0.19, r: 47.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.0 350M
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-11
-timestamp: 2026-10-11T00:00:00Z
+updated: 2026-10-13
+timestamp: 2026-10-13T00:00:00Z
 ---
 
 # Granite 4.0 350M
@@ -43,9 +43,9 @@ IBM · Open · Tiny · 컨텍스트 32k · 종합지능 **5.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 26.8 | -1.54 | 실측 | [[aa-omniscience]] 4.0%×1.0, [[gpqa-diamond]] 26.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
-| 추론 | 31.1 | -1.26 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 26.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 31.1 | -1.26 | 실측 | [[terminal-bench]] 0.0%×0.5 |
+| 전문 지식 | 26.8 | -1.55 | 실측 | [[aa-omniscience]] 4.0%×1.0, [[gpqa-diamond]] 26.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 추론 | 31.0 | -1.27 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 26.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
+| 코딩 | 31.2 | -1.26 | 실측 | [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 31.4 | -1.24 | 실측 | [[tau2-bench]] 13.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | 47.2 | -0.19 | 실측 | [[aa-omniscience]] 24.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

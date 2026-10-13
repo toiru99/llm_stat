@@ -5,18 +5,18 @@ creator: StepFun
 license: Open
 intelligence_index: 19.0
 price_blended_usd_1m: 0.183
-output_speed_tps: 152.0
+output_speed_tps: 171.0
 context_window: 262000
 status: past
 size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 48.1, z: 0.26, r: 53.8, estimated: false }  # 전문 지식
-  reasoning: { s: 40.7, z: 0.18, r: 52.8, estimated: false }  # 추론
-  coding: { s: 59.3, z: 0.77, r: 61.5, estimated: false }  # 코딩
-  agentic: { s: 48.0, z: 0.34, r: 55.1, estimated: false }  # 에이전트
-  trust: { s: 13.4, z: -0.62, r: 40.7, estimated: false }  # 신뢰성
+  knowledge: { s: 48.1, z: 0.25, r: 53.8, estimated: false }  # 전문 지식
+  reasoning: { s: 40.7, z: 0.18, r: 52.7, estimated: false }  # 추론
+  coding: { s: 59.3, z: 0.76, r: 61.4, estimated: false }  # 코딩
+  agentic: { s: 48.0, z: 0.33, r: 55.0, estimated: false }  # 에이전트
+  trust: { s: 13.4, z: -0.61, r: 40.8, estimated: false }  # 신뢰성
   multimodal: { s: 82.2, z: 0.54, r: 58.1, estimated: false }  # 멀티모달
   long_context: { s: 83.1, z: 0.94, r: 64.1, estimated: false }  # 긴문맥
   instruction: { s: 77.5, z: 0.96, r: 64.4, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Step 3.7 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-11
-timestamp: 2026-10-11T00:00:00Z
+updated: 2026-10-13
+timestamp: 2026-10-13T00:00:00Z
 ---
 
 # Step 3.7 Flash
@@ -37,17 +37,17 @@ StepFun · Open · Large · 컨텍스트 262k · 종합지능 **19.0** · ⚠️
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $0.2 · 출력 $1.15 · 혼합 $0.183/1M · 152.0 t/s · TTFT 2.47s · 262k ctx` · 가성비 103.8
+`입력 $0.2 · 출력 $1.15 · 혼합 $0.183/1M · 171.0 t/s · TTFT 2.6s · 262k ctx` · 가성비 103.8
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 53.8 | +0.26 | 실측 | [[aa-omniscience]] 26.0%×1.0, [[gpqa-diamond]] 81.0%×0.4, [[humanitys-last-exam]] 21.0%×0.3 |
-| 추론 | 52.8 | +0.18 | 실측 | [[critpt]] 2.0%×1.0, [[gpqa-diamond]] 81.0%×1.0, [[humanitys-last-exam]] 21.0%×1.0 |
-| 코딩 | 61.5 | +0.77 | 실측 | [[scicode]] 44.0%×1.0, [[terminal-bench]] 36.0%×0.5 |
-| 에이전트 | 55.1 | +0.34 | 실측 | [[apex-agents]] 15.0%×1.0, [[gdpval]] 18.0%×1.0, [[itbench]] 30.0%×1.0, [[tau2-bench]] 99.0%×1.0, [[tau3-banking]] 12.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
-| 신뢰성 | 40.7 | -0.62 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
+| 전문 지식 | 53.8 | +0.25 | 실측 | [[aa-omniscience]] 26.0%×1.0, [[gpqa-diamond]] 81.0%×0.4, [[humanitys-last-exam]] 21.0%×0.3 |
+| 추론 | 52.7 | +0.18 | 실측 | [[critpt]] 2.0%×1.0, [[gpqa-diamond]] 81.0%×1.0, [[humanitys-last-exam]] 21.0%×1.0 |
+| 코딩 | 61.4 | +0.76 | 실측 | [[scicode]] 44.0%×1.0, [[terminal-bench]] 36.0%×0.5 |
+| 에이전트 | 55.0 | +0.33 | 실측 | [[apex-agents]] 15.0%×1.0, [[gdpval]] 18.0%×1.0, [[itbench]] 30.0%×1.0, [[tau2-bench]] 99.0%×1.0, [[tau3-banking]] 12.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
+| 신뢰성 | 40.8 | -0.61 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
 | 멀티모달 | 58.1 | +0.54 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
 | 긴문맥 | 64.1 | +0.94 | 실측 | [[aa-lcr]] 74.0%×1.0 |
 | 지시 따르기 | 64.4 | +0.96 | 실측 | [[ifbench]] 67.0%×1.0 |

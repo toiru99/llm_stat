@@ -13,10 +13,10 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 45.7, z: 0.14, r: 52.1, estimated: false }  # 전문 지식
-  reasoning: { s: 51.3, z: 0.66, r: 59.9, estimated: false }  # 추론
-  coding: { s: 68.3, z: 1.08, r: 66.1, estimated: false }  # 코딩
-  agentic: { s: 43.1, z: 0.15, r: 52.3, estimated: false }  # 에이전트
-  trust: { s: 75.3, z: 2.24, r: 83.6, estimated: false }  # 신뢰성
+  reasoning: { s: 51.1, z: 0.66, r: 59.9, estimated: false }  # 추론
+  coding: { s: 68.3, z: 1.07, r: 66.0, estimated: false }  # 코딩
+  agentic: { s: 43.1, z: 0.15, r: 52.2, estimated: false }  # 에이전트
+  trust: { s: 75.3, z: 2.23, r: 83.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 80.9, z: 0.87, r: 63.1, estimated: false }  # 긴문맥
   instruction: { s: 89.4, z: 1.46, r: 71.9, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Open2 250B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-11
-timestamp: 2026-10-11T00:00:00Z
+updated: 2026-10-13
+timestamp: 2026-10-13T00:00:00Z
 ---
 
 # Solar Open2 250B
@@ -45,9 +45,9 @@ Upstage · Open · Large · 컨텍스트 1M · 종합지능 **25.0**
 |---|---|---|---|---|
 | 전문 지식 | 52.1 | +0.14 | 실측 | [[aa-omniscience]] 19.0%×1.0, [[gpqa-diamond]] 86.0%×0.4, [[humanitys-last-exam]] 29.0%×0.3 |
 | 추론 | 59.9 | +0.66 | 실측 | [[critpt]] 6.0%×1.0, [[gpqa-diamond]] 86.0%×1.0, [[humanitys-last-exam]] 29.0%×1.0 |
-| 코딩 | 66.1 | +1.08 | 실측 | [[scicode]] 48.0%×1.0 |
-| 에이전트 | 52.3 | +0.15 | 실측 | [[tau3-banking]] 22.0%×1.0 |
-| 신뢰성 | 83.6 | +2.24 | 실측 | [[aa-omniscience]] 75.0%×1.0 |
+| 코딩 | 66.0 | +1.07 | 실측 | [[scicode]] 48.0%×1.0 |
+| 에이전트 | 52.2 | +0.15 | 실측 | [[tau3-banking]] 22.0%×1.0 |
+| 신뢰성 | 83.4 | +2.23 | 실측 | [[aa-omniscience]] 75.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 63.1 | +0.87 | 실측 | [[aa-lcr]] 72.0%×1.0 |
 | 지시 따르기 | 71.9 | +1.46 | 추정 | (추정) |

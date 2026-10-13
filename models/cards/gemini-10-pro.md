@@ -10,22 +10,22 @@ context_window: 32800
 status: past
 size_class: Unknown
 params_b: null
-is_reasoning: null
+is_reasoning: false
 radar:
-  knowledge: { s: 14.1, z: -1.32, r: 30.1, estimated: false }  # 전문 지식
+  knowledge: { s: 14.1, z: -1.33, r: 30.1, estimated: false }  # 전문 지식
   reasoning: { s: 13.0, z: -1.08, r: 33.8, estimated: false }  # 추론
-  coding: { s: 1.8, z: -1.2, r: 32.1, estimated: true }  # 코딩
-  agentic: { s: 10.1, z: -1.11, r: 33.4, estimated: true }  # 에이전트
-  trust: { s: 15.3, z: -0.53, r: 42.0, estimated: true }  # 신뢰성
+  coding: { s: 1.7, z: -1.2, r: 32.0, estimated: true }  # 코딩
+  agentic: { s: 9.9, z: -1.11, r: 33.3, estimated: true }  # 에이전트
+  trust: { s: 14.1, z: -0.58, r: 41.3, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 5.8, z: -1.4, r: 29.1, estimated: true }  # 긴문맥
-  instruction: { s: 21.4, z: -1.38, r: 29.3, estimated: true }  # 지시 따르기
+  long_context: { s: 5.8, z: -1.4, r: 29.0, estimated: true }  # 긴문맥
+  instruction: { s: 24.5, z: -1.25, r: 31.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 1.0 Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-11
-timestamp: 2026-10-11T00:00:00Z
+updated: 2026-10-13
+timestamp: 2026-10-13T00:00:00Z
 ---
 
 # Gemini 1.0 Pro
@@ -34,7 +34,7 @@ Google · Proprietary · Unknown · 컨텍스트 32k · 종합지능 **5.0** · 
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 추론
-- **약점**: 지시 따르기, 긴문맥
+- **약점**: 전문 지식, 긴문맥
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 32k ctx`
@@ -43,14 +43,14 @@ Google · Proprietary · Unknown · 컨텍스트 32k · 종합지능 **5.0** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 30.1 | -1.32 | 실측 | [[gpqa-diamond]] 28.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 전문 지식 | 30.1 | -1.33 | 실측 | [[gpqa-diamond]] 28.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 33.8 | -1.08 | 실측 | [[gpqa-diamond]] 28.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 32.1 | -1.2 | 추정 | (추정) |
-| 에이전트 | 33.4 | -1.11 | 추정 | (추정) |
-| 신뢰성 | 42.0 | -0.53 | 추정 | (추정) |
+| 코딩 | 32.0 | -1.2 | 추정 | (추정) |
+| 에이전트 | 33.3 | -1.11 | 추정 | (추정) |
+| 신뢰성 | 41.3 | -0.58 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 29.1 | -1.4 | 추정 | (추정) |
-| 지시 따르기 | 29.3 | -1.38 | 추정 | (추정) |
+| 긴문맥 | 29.0 | -1.4 | 추정 | (추정) |
+| 지시 따르기 | 31.2 | -1.25 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

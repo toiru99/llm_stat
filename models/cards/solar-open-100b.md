@@ -13,10 +13,10 @@ params_b: null
 is_reasoning: null
 radar:
   knowledge: { s: 34.6, z: -0.37, r: 44.4, estimated: false }  # 전문 지식
-  reasoning: { s: 26.7, z: -0.45, r: 43.2, estimated: false }  # 추론
+  reasoning: { s: 26.7, z: -0.46, r: 43.2, estimated: false }  # 추론
   coding: { s: 3.0, z: -1.15, r: 32.7, estimated: false }  # 코딩
-  agentic: { s: 25.8, z: -0.51, r: 42.4, estimated: false }  # 에이전트
-  trust: { s: 8.2, z: -0.86, r: 37.2, estimated: false }  # 신뢰성
+  agentic: { s: 25.8, z: -0.51, r: 42.3, estimated: false }  # 에이전트
+  trust: { s: 8.2, z: -0.85, r: 37.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 46.1, z: -0.18, r: 47.3, estimated: false }  # 긴문맥
   instruction: { s: 64.8, z: 0.43, r: 56.5, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Open 100B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-11
-timestamp: 2026-10-11T00:00:00Z
+updated: 2026-10-13
+timestamp: 2026-10-13T00:00:00Z
 ---
 
 # Solar Open 100B
@@ -44,10 +44,10 @@ Upstage · Open · Unknown · 컨텍스트 128k · 종합지능 **10.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 44.4 | -0.37 | 실측 | [[aa-omniscience]] 19.0%×1.0, [[gpqa-diamond]] 66.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
-| 추론 | 43.2 | -0.45 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 66.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
+| 추론 | 43.2 | -0.46 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 66.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
 | 코딩 | 32.7 | -1.15 | 실측 | [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 42.4 | -0.51 | 실측 | [[tau2-bench]] 48.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 37.2 | -0.86 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
+| 에이전트 | 42.3 | -0.51 | 실측 | [[tau2-bench]] 48.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 신뢰성 | 37.2 | -0.85 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 47.3 | -0.18 | 실측 | [[aa-lcr]] 41.0%×1.0 |
 | 지시 따르기 | 56.5 | +0.43 | 실측 | [[ifbench]] 58.0%×1.0 |

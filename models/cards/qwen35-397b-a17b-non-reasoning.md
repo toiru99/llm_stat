@@ -5,17 +5,17 @@ creator: Alibaba
 license: Open
 intelligence_index: 21.0
 price_blended_usd_1m: 0.9
-output_speed_tps: 83.0
+output_speed_tps: 84.0
 context_window: 262000
 status: current
 size_class: Large
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 48.3, z: 0.26, r: 54.0, estimated: false }  # 전문 지식
-  reasoning: { s: 41.1, z: 0.2, r: 53.0, estimated: false }  # 추론
-  coding: { s: 54.5, z: 0.6, r: 59.1, estimated: false }  # 코딩
-  agentic: { s: 69.7, z: 1.17, r: 67.5, estimated: false }  # 에이전트
+  knowledge: { s: 48.3, z: 0.26, r: 53.9, estimated: false }  # 전문 지식
+  reasoning: { s: 41.0, z: 0.2, r: 53.0, estimated: false }  # 추론
+  coding: { s: 54.5, z: 0.6, r: 59.0, estimated: false }  # 코딩
+  agentic: { s: 69.7, z: 1.16, r: 67.3, estimated: false }  # 에이전트
   trust: { s: 15.5, z: -0.52, r: 42.2, estimated: false }  # 신뢰성
   multimodal: { s: 52.1, z: -0.97, r: 35.5, estimated: false }  # 멀티모달
   long_context: { s: 71.9, z: 0.6, r: 59.0, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 397B A17B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-11
-timestamp: 2026-10-11T00:00:00Z
+updated: 2026-10-13
+timestamp: 2026-10-13T00:00:00Z
 ---
 
 # Qwen3.5 397B A17B (non-reasoning)
@@ -37,16 +37,16 @@ Alibaba · Open · Large · 컨텍스트 262k · 종합지능 **21.0**
 - **약점**: 신뢰성, 멀티모달
 
 ## 실용 지표
-`입력 $0.6 · 출력 $3.6 · 혼합 $0.9/1M · 83.0 t/s · TTFT 2.29s · 262k ctx` · 가성비 23.3
+`입력 $0.6 · 출력 $3.6 · 혼합 $0.9/1M · 84.0 t/s · TTFT 2.29s · 262k ctx` · 가성비 23.3
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 54.0 | +0.26 | 실측 | [[aa-omniscience]] 25.0%×1.0, [[gpqa-diamond]] 86.0%×0.4, [[humanitys-last-exam]] 20.0%×0.3 |
+| 전문 지식 | 53.9 | +0.26 | 실측 | [[aa-omniscience]] 25.0%×1.0, [[gpqa-diamond]] 86.0%×0.4, [[humanitys-last-exam]] 20.0%×0.3 |
 | 추론 | 53.0 | +0.2 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 86.0%×1.0, [[humanitys-last-exam]] 20.0%×1.0 |
-| 코딩 | 59.1 | +0.6 | 실측 | [[terminal-bench]] 36.0%×0.5 |
-| 에이전트 | 67.5 | +1.17 | 실측 | [[tau2-bench]] 84.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
+| 코딩 | 59.0 | +0.6 | 실측 | [[terminal-bench]] 36.0%×0.5 |
+| 에이전트 | 67.3 | +1.16 | 실측 | [[tau2-bench]] 84.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
 | 신뢰성 | 42.2 | -0.52 | 실측 | [[aa-omniscience]] 17.0%×1.0 |
 | 멀티모달 | 35.5 | -0.97 | 실측 | [[mmmu-pro]] 53.0%×1.0 |
 | 긴문맥 | 59.0 | +0.6 | 실측 | [[aa-lcr]] 64.0%×1.0 |

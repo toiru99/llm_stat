@@ -5,18 +5,18 @@ creator: Alibaba
 license: Open
 intelligence_index: 15.0
 price_blended_usd_1m: 0.425
-output_speed_tps: 161.0
+output_speed_tps: 162.0
 context_window: 262000
 status: past
 size_class: Small
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 37.3, z: -0.25, r: 46.3, estimated: false }  # 전문 지식
+  knowledge: { s: 37.3, z: -0.25, r: 46.2, estimated: false }  # 전문 지식
   reasoning: { s: 35.6, z: -0.05, r: 49.3, estimated: false }  # 추론
   coding: { s: 16.7, z: -0.69, r: 39.7, estimated: false }  # 코딩
-  agentic: { s: 30.5, z: -0.33, r: 45.1, estimated: false }  # 에이전트
-  trust: { s: 5.2, z: -1.0, r: 35.0, estimated: false }  # 신뢰성
+  agentic: { s: 30.2, z: -0.34, r: 44.9, estimated: false }  # 에이전트
+  trust: { s: 5.2, z: -0.99, r: 35.1, estimated: false }  # 신뢰성
   multimodal: { s: 74.0, z: 0.13, r: 51.9, estimated: false }  # 멀티모달
   long_context: { s: 70.8, z: 0.57, r: 58.5, estimated: false }  # 긴문맥
   instruction: { s: 45.1, z: -0.39, r: 44.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 35B A3B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-11
-timestamp: 2026-10-11T00:00:00Z
+updated: 2026-10-13
+timestamp: 2026-10-13T00:00:00Z
 ---
 
 # Qwen3.5 35B A3B (non-reasoning)
@@ -37,17 +37,17 @@ Alibaba · Open · Small · 컨텍스트 262k · 종합지능 **15.0** · ⚠️
 - **약점**: 코딩, 신뢰성
 
 ## 실용 지표
-`입력 $0.25 · 출력 $2.0 · 혼합 $0.425/1M · 161.0 t/s · TTFT 2.02s · 262k ctx` · 가성비 35.3
+`입력 $0.25 · 출력 $2.0 · 혼합 $0.425/1M · 162.0 t/s · TTFT 2.08s · 262k ctx` · 가성비 35.3
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 46.3 | -0.25 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 82.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
+| 전문 지식 | 46.2 | -0.25 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 82.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
 | 추론 | 49.3 | -0.05 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 82.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
 | 코딩 | 39.7 | -0.69 | 실측 | [[terminal-bench]] 11.0%×0.5 |
-| 에이전트 | 45.1 | -0.33 | 실측 | [[gdpval]] 6.0%×1.0, [[tau2-bench]] 86.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
-| 신뢰성 | 35.0 | -1.0 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
+| 에이전트 | 44.9 | -0.34 | 실측 | [[gdpval]] 5.0%×1.0, [[tau2-bench]] 86.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
+| 신뢰성 | 35.1 | -0.99 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
 | 멀티모달 | 51.9 | +0.13 | 실측 | [[mmmu-pro]] 69.0%×1.0 |
 | 긴문맥 | 58.5 | +0.57 | 실측 | [[aa-lcr]] 63.0%×1.0 |
 | 지시 따르기 | 44.1 | -0.39 | 실측 | [[ifbench]] 44.0%×1.0 |

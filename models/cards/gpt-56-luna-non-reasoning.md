@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 16.0
 price_blended_usd_1m: 0.174
-output_speed_tps: 105.0
+output_speed_tps: 112.0
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 42.3, z: -0.02, r: 49.7, estimated: false }  # 전문 지식
   reasoning: { s: 24.7, z: -0.55, r: 41.8, estimated: false }  # 추론
-  coding: { s: 55.0, z: 0.62, r: 59.3, estimated: false }  # 코딩
+  coding: { s: 55.0, z: 0.61, r: 59.2, estimated: false }  # 코딩
   agentic: { s: 25.2, z: -0.53, r: 42.1, estimated: false }  # 에이전트
   trust: { s: 23.7, z: -0.14, r: 47.9, estimated: false }  # 신뢰성
   multimodal: { s: 61.6, z: -0.49, r: 42.7, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Luna (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-11
-timestamp: 2026-10-11T00:00:00Z
+updated: 2026-10-13
+timestamp: 2026-10-13T00:00:00Z
 ---
 
 # GPT-5.6 Luna (non-reasoning)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **16.0** · 
 - **약점**: 에이전트, 추론
 
 ## 실용 지표
-`입력 $0.2 · 출력 $1.2 · 혼합 $0.174/1M · 105.0 t/s · TTFT 0.76s · 1M ctx` · 가성비 92.0
+`입력 $0.2 · 출력 $1.2 · 혼합 $0.174/1M · 112.0 t/s · TTFT 0.73s · 1M ctx` · 가성비 92.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **16.0** · 
 |---|---|---|---|---|
 | 전문 지식 | 49.7 | -0.02 | 실측 | [[aa-omniscience]] 29.0%×1.0, [[gpqa-diamond]] 65.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
 | 추론 | 41.8 | -0.55 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 65.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
-| 코딩 | 59.3 | +0.62 | 실측 | [[scicode]] 40.0%×1.0 |
+| 코딩 | 59.2 | +0.61 | 실측 | [[scicode]] 40.0%×1.0 |
 | 에이전트 | 42.1 | -0.53 | 실측 | [[gdpval]] 21.0%×1.0, [[tau3-banking]] 10.0%×1.0 |
 | 신뢰성 | 47.9 | -0.14 | 실측 | [[aa-omniscience]] 25.0%×1.0 |
 | 멀티모달 | 42.7 | -0.49 | 실측 | [[mmmu-pro]] 60.0%×1.0 |

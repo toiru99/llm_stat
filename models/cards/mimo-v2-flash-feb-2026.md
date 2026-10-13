@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 44.0, z: 0.06, r: 50.9, estimated: false }  # 전문 지식
-  reasoning: { s: 43.5, z: 0.31, r: 54.6, estimated: false }  # 추론
-  coding: { s: 47.0, z: 0.35, r: 55.2, estimated: false }  # 코딩
-  agentic: { s: 70.5, z: 1.2, r: 68.0, estimated: false }  # 에이전트
-  trust: { s: 51.5, z: 1.15, r: 67.2, estimated: false }  # 신뢰성
+  reasoning: { s: 43.4, z: 0.31, r: 54.6, estimated: false }  # 추론
+  coding: { s: 47.0, z: 0.34, r: 55.1, estimated: false }  # 코딩
+  agentic: { s: 70.5, z: 1.18, r: 67.8, estimated: false }  # 에이전트
+  trust: { s: 51.5, z: 1.14, r: 67.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 79.8, z: 0.84, r: 62.6, estimated: false }  # 긴문맥
-  instruction: { s: 84.5, z: 1.26, r: 68.8, estimated: false }  # 지시 따르기
+  instruction: { s: 84.5, z: 1.25, r: 68.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2-Flash (Feb 2026)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-11
-timestamp: 2026-10-11T00:00:00Z
+updated: 2026-10-13
+timestamp: 2026-10-13T00:00:00Z
 ---
 
 # MiMo-V2-Flash (Feb 2026)
@@ -45,12 +45,12 @@ Xiaomi · Open · Large · 컨텍스트 256k · 종합지능 **22.0** · ⚠️ 
 |---|---|---|---|---|
 | 전문 지식 | 50.9 | +0.06 | 실측 | [[aa-omniscience]] 20.0%×1.0, [[gpqa-diamond]] 84.0%×0.4, [[humanitys-last-exam]] 22.0%×0.3 |
 | 추론 | 54.6 | +0.31 | 실측 | [[critpt]] 3.0%×1.0, [[gpqa-diamond]] 84.0%×1.0, [[humanitys-last-exam]] 22.0%×1.0 |
-| 코딩 | 55.2 | +0.35 | 실측 | [[terminal-bench]] 31.0%×0.5 |
-| 에이전트 | 68.0 | +1.2 | 실측 | [[tau2-bench]] 93.0%×1.0, [[terminal-bench]] 31.0%×1.0 |
-| 신뢰성 | 67.2 | +1.15 | 실측 | [[aa-omniscience]] 52.0%×1.0 |
+| 코딩 | 55.1 | +0.34 | 실측 | [[terminal-bench]] 31.0%×0.5 |
+| 에이전트 | 67.8 | +1.18 | 실측 | [[tau2-bench]] 93.0%×1.0, [[terminal-bench]] 31.0%×1.0 |
+| 신뢰성 | 67.1 | +1.14 | 실측 | [[aa-omniscience]] 52.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 62.6 | +0.84 | 실측 | [[aa-lcr]] 71.0%×1.0 |
-| 지시 따르기 | 68.8 | +1.26 | 실측 | [[ifbench]] 72.0%×1.0 |
+| 지시 따르기 | 68.8 | +1.25 | 실측 | [[ifbench]] 72.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

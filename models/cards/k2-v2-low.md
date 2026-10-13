@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 27.0, z: -0.73, r: 39.1, estimated: false }  # 전문 지식
-  reasoning: { s: 18.7, z: -0.82, r: 37.8, estimated: false }  # 추론
+  reasoning: { s: 18.7, z: -0.82, r: 37.7, estimated: false }  # 추론
   coding: { s: 7.6, z: -1.0, r: 35.0, estimated: false }  # 코딩
   agentic: { s: 14.4, z: -0.94, r: 35.9, estimated: false }  # 에이전트
   trust: { s: 22.7, z: -0.19, r: 47.2, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — K2-V2 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-11
-timestamp: 2026-10-11T00:00:00Z
+updated: 2026-10-13
+timestamp: 2026-10-13T00:00:00Z
 ---
 
 # K2-V2 (low)
@@ -44,7 +44,7 @@ Institute of Foundation Models · Open · Medium · 컨텍스트 512k · 종합�
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 39.1 | -0.73 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 54.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 37.8 | -0.82 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 54.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 추론 | 37.7 | -0.82 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 54.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 35.0 | -1.0 | 실측 | [[terminal-bench]] 5.0%×0.5 |
 | 에이전트 | 35.9 | -0.94 | 실측 | [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
 | 신뢰성 | 47.2 | -0.19 | 실측 | [[aa-omniscience]] 24.0%×1.0 |

@@ -10,10 +10,10 @@ context_window: 1000000
 status: current
 size_class: Unknown
 params_b: null
-is_reasoning: null
+is_reasoning: false
 radar:
   knowledge: { s: 32.2, z: -0.49, r: 42.7, estimated: false }  # 전문 지식
-  reasoning: { s: 19.9, z: -0.76, r: 38.6, estimated: false }  # 추론
+  reasoning: { s: 19.9, z: -0.77, r: 38.5, estimated: false }  # 추론
   coding: { s: 10.6, z: -0.9, r: 36.6, estimated: false }  # 코딩
   agentic: { s: 24.5, z: -0.56, r: 41.6, estimated: false }  # 에이전트
   trust: { s: 26.8, z: 0.0, r: 50.0, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova Premier
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-11
-timestamp: 2026-10-11T00:00:00Z
+updated: 2026-10-13
+timestamp: 2026-10-13T00:00:00Z
 ---
 
 # Nova Premier
@@ -44,7 +44,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **9.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 42.7 | -0.49 | 실측 | [[aa-omniscience]] 21.0%×1.0, [[gpqa-diamond]] 57.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 38.6 | -0.76 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 57.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 추론 | 38.5 | -0.77 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 57.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 36.6 | -0.9 | 실측 | [[terminal-bench]] 7.0%×0.5 |
 | 에이전트 | 41.6 | -0.56 | 실측 | [[tau2-bench]] 38.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
 | 신뢰성 | 50.0 | +0.0 | 실측 | [[aa-omniscience]] 28.0%×1.0 |

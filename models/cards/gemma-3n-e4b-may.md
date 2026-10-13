@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 14.8, z: -1.29, r: 30.6, estimated: false }  # 전문 지식
-  reasoning: { s: 13.8, z: -1.04, r: 34.4, estimated: false }  # 추론
-  coding: { s: 3.9, z: -1.12, r: 33.1, estimated: true }  # 코딩
-  agentic: { s: 11.8, z: -1.04, r: 34.4, estimated: true }  # 에이전트
-  trust: { s: 34.3, z: 0.35, r: 55.3, estimated: true }  # 신뢰성
+  reasoning: { s: 13.8, z: -1.05, r: 34.3, estimated: false }  # 추론
+  coding: { s: 2.2, z: -1.18, r: 32.3, estimated: true }  # 코딩
+  agentic: { s: 7.3, z: -1.21, r: 31.9, estimated: true }  # 에이전트
+  trust: { s: 12.9, z: -0.64, r: 40.5, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 11.3, z: -1.23, r: 31.5, estimated: true }  # 긴문맥
-  instruction: { s: 34.9, z: -0.82, r: 37.7, estimated: true }  # 지시 따르기
+  long_context: { s: 3.6, z: -1.46, r: 28.0, estimated: true }  # 긴문맥
+  instruction: { s: 30.0, z: -1.02, r: 34.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 3n E4B (May)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-11
-timestamp: 2026-10-11T00:00:00Z
+updated: 2026-10-13
+timestamp: 2026-10-13T00:00:00Z
 ---
 
 # Gemma 3n E4B (May)
@@ -34,7 +34,7 @@ Google · Open · Small · 컨텍스트 32k · 종합지능 **6.0** · ⚠️ pa
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 지시 따르기
-- **약점**: 긴문맥, 전문 지식
+- **약점**: 전문 지식, 긴문맥
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 32k ctx`
@@ -44,13 +44,13 @@ Google · Open · Small · 컨텍스트 32k · 종합지능 **6.0** · ⚠️ pa
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 30.6 | -1.29 | 실측 | [[gpqa-diamond]] 28.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 34.4 | -1.04 | 실측 | [[gpqa-diamond]] 28.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 33.1 | -1.12 | 추정 | (추정) |
-| 에이전트 | 34.4 | -1.04 | 추정 | (추정) |
-| 신뢰성 | 55.3 | +0.35 | 추정 | (추정) |
+| 추론 | 34.3 | -1.05 | 실측 | [[gpqa-diamond]] 28.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 32.3 | -1.18 | 추정 | (추정) |
+| 에이전트 | 31.9 | -1.21 | 추정 | (추정) |
+| 신뢰성 | 40.5 | -0.64 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 31.5 | -1.23 | 추정 | (추정) |
-| 지시 따르기 | 37.7 | -0.82 | 추정 | (추정) |
+| 긴문맥 | 28.0 | -1.46 | 추정 | (추정) |
+| 지시 따르기 | 34.6 | -1.02 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
