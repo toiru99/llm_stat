@@ -12,11 +12,11 @@ size_class: Small
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 28.6, z: -0.65, r: 40.2, estimated: false }  # 전문 지식
+  knowledge: { s: 28.6, z: -0.66, r: 40.2, estimated: false }  # 전문 지식
   reasoning: { s: 22.5, z: -0.65, r: 40.3, estimated: false }  # 추론
   coding: { s: 3.0, z: -1.15, r: 32.7, estimated: false }  # 코딩
-  agentic: { s: 1.5, z: -1.43, r: 28.6, estimated: false }  # 에이전트
-  trust: { s: 12.4, z: -0.66, r: 40.1, estimated: false }  # 신뢰성
+  agentic: { s: 1.5, z: -1.43, r: 28.5, estimated: false }  # 에이전트
+  trust: { s: 12.4, z: -0.66, r: 40.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.57, r: 26.4, estimated: false }  # 긴문맥
   instruction: { s: 52.1, z: -0.1, r: 48.5, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Olmo 3 32B Think
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # Olmo 3 32B Think
@@ -33,7 +33,7 @@ timestamp: 2026-10-13T00:00:00Z
 Allen Institute for AI · Open · Small · 컨텍스트 65k · 종합지능 **6.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 지시 따르기, 전문 지식
+- **강점**: 지시 따르기, 추론
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
@@ -43,11 +43,11 @@ Allen Institute for AI · Open · Small · 컨텍스트 65k · 종합지능 **6.
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 40.2 | -0.65 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 61.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 전문 지식 | 40.2 | -0.66 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 61.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 40.3 | -0.65 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 61.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 32.7 | -1.15 | 실측 | [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 28.6 | -1.43 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 40.1 | -0.66 | 실측 | [[aa-omniscience]] 14.0%×1.0 |
+| 에이전트 | 28.5 | -1.43 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 신뢰성 | 40.0 | -0.66 | 실측 | [[aa-omniscience]] 14.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 26.4 | -1.57 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 48.5 | -0.1 | 실측 | [[ifbench]] 49.0%×1.0 |

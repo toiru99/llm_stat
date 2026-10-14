@@ -17,15 +17,15 @@ radar:
   coding: { s: 21.4, z: -0.53, r: 42.1, estimated: false }  # 코딩
   agentic: { s: 12.1, z: -1.03, r: 34.6, estimated: false }  # 에이전트
   trust: { s: 5.2, z: -0.99, r: 35.1, estimated: false }  # 신뢰성
-  multimodal: { s: 47.9, z: -1.17, r: 32.4, estimated: false }  # 멀티모달
+  multimodal: { s: 47.9, z: -1.18, r: 32.3, estimated: false }  # 멀티모달
   long_context: { s: 29.2, z: -0.69, r: 39.6, estimated: false }  # 긴문맥
   instruction: { s: 28.2, z: -1.1, r: 33.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Ministral 3 14B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # Ministral 3 14B
@@ -48,7 +48,7 @@ Mistral · Open · Small · 컨텍스트 256k · 종합지능 **6.0**
 | 코딩 | 42.1 | -0.53 | 실측 | [[scicode]] 24.0%×1.0, [[terminal-bench]] 5.0%×0.5 |
 | 에이전트 | 34.6 | -1.03 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 27.0%×1.0, [[tau3-banking]] 7.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
 | 신뢰성 | 35.1 | -0.99 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
-| 멀티모달 | 32.4 | -1.17 | 실측 | [[mmmu-pro]] 50.0%×1.0 |
+| 멀티모달 | 32.3 | -1.18 | 실측 | [[mmmu-pro]] 50.0%×1.0 |
 | 긴문맥 | 39.6 | -0.69 | 실측 | [[aa-lcr]] 26.0%×1.0 |
 | 지시 따르기 | 33.5 | -1.1 | 실측 | [[ifbench]] 32.0%×1.0 |
 

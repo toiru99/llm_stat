@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 72.0, z: 1.36, r: 70.4, estimated: false }  # 전문 지식
-  reasoning: { s: 51.4, z: 0.67, r: 60.1, estimated: false }  # 추론
-  coding: { s: 80.0, z: 1.46, r: 72.0, estimated: false }  # 코딩
-  agentic: { s: 79.4, z: 1.52, r: 72.9, estimated: false }  # 에이전트
-  trust: { s: 59.8, z: 1.52, r: 72.8, estimated: false }  # 신뢰성
+  reasoning: { s: 51.4, z: 0.67, r: 60.0, estimated: false }  # 추론
+  coding: { s: 80.0, z: 1.46, r: 71.9, estimated: false }  # 코딩
+  agentic: { s: 79.4, z: 1.52, r: 72.8, estimated: false }  # 에이전트
+  trust: { s: 59.8, z: 1.51, r: 72.7, estimated: false }  # 신뢰성
   multimodal: { s: 86.3, z: 0.74, r: 61.1, estimated: false }  # 멀티모달
   long_context: { s: 89.9, z: 1.14, r: 67.1, estimated: false }  # 긴문맥
-  instruction: { s: 64.3, z: 0.41, r: 56.2, estimated: true }  # 지시 따르기
+  instruction: { s: 64.4, z: 0.41, r: 56.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.7 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # Grok 4.7 (low)
@@ -37,17 +37,17 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **42.0**
 - **약점**: 추론, 지시 따르기
 
 ## 실용 지표
-`입력 $2.0 · 출력 $6.0 · 혼합 $1.35/1M · 65.0 t/s · TTFT 6.97s · 500k ctx` · 가성비 31.1
+`입력 $2.0 · 출력 $6.0 · 혼합 $1.35/1M · 65.0 t/s · TTFT 6.85s · 500k ctx` · 가성비 31.1
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 70.4 | +1.36 | 실측 | [[aa-omniscience]] 50.0%×1.0, [[humanitys-last-exam]] 39.0%×0.3 |
-| 추론 | 60.1 | +0.67 | 실측 | [[critpt]] 13.0%×1.0, [[humanitys-last-exam]] 39.0%×1.0 |
-| 코딩 | 72.0 | +1.46 | 실측 | [[scicode]] 55.0%×1.0 |
-| 에이전트 | 72.9 | +1.52 | 실측 | [[gdpval]] 54.0%×1.0 |
-| 신뢰성 | 72.8 | +1.52 | 실측 | [[aa-omniscience]] 60.0%×1.0 |
+| 추론 | 60.0 | +0.67 | 실측 | [[critpt]] 13.0%×1.0, [[humanitys-last-exam]] 39.0%×1.0 |
+| 코딩 | 71.9 | +1.46 | 실측 | [[scicode]] 55.0%×1.0 |
+| 에이전트 | 72.8 | +1.52 | 실측 | [[gdpval]] 54.0%×1.0 |
+| 신뢰성 | 72.7 | +1.51 | 실측 | [[aa-omniscience]] 60.0%×1.0 |
 | 멀티모달 | 61.1 | +0.74 | 실측 | [[mmmu-pro]] 78.0%×1.0 |
 | 긴문맥 | 67.1 | +1.14 | 실측 | [[aa-lcr]] 80.0%×1.0 |
 | 지시 따르기 | 56.2 | +0.41 | 추정 | (추정) |

@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 10.0
 price_blended_usd_1m: 0.2098
-output_speed_tps: 159.0
+output_speed_tps: 158.0
 context_window: 262000
 status: past
 size_class: Small
@@ -13,8 +13,8 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 26.4, z: -0.76, r: 38.7, estimated: false }  # 전문 지식
-  reasoning: { s: 17.9, z: -0.86, r: 37.2, estimated: false }  # 추론
-  coding: { s: 22.7, z: -0.48, r: 42.7, estimated: false }  # 코딩
+  reasoning: { s: 17.9, z: -0.86, r: 37.1, estimated: false }  # 추론
+  coding: { s: 22.7, z: -0.49, r: 42.7, estimated: false }  # 코딩
   agentic: { s: 29.0, z: -0.39, r: 44.2, estimated: false }  # 에이전트
   trust: { s: 18.6, z: -0.38, r: 44.3, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Coder 30B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # Qwen3 Coder 30B A3B
@@ -37,15 +37,15 @@ Alibaba · Open · Small · 컨텍스트 262k · 종합지능 **10.0** · ⚠️
 - **약점**: 추론, 지시 따르기
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.75 · 혼합 $0.2098/1M · 159.0 t/s · TTFT 1.02s · 262k ctx` · 가성비 47.7
+`입력 $0.15 · 출력 $0.75 · 혼합 $0.2098/1M · 158.0 t/s · TTFT 1.02s · 262k ctx` · 가성비 47.7
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 38.7 | -0.76 | 실측 | [[aa-omniscience]] 16.0%×1.0, [[gpqa-diamond]] 52.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 37.2 | -0.86 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 52.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 42.7 | -0.48 | 실측 | [[terminal-bench]] 15.0%×0.5 |
+| 추론 | 37.1 | -0.86 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 52.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 42.7 | -0.49 | 실측 | [[terminal-bench]] 15.0%×0.5 |
 | 에이전트 | 44.2 | -0.39 | 실측 | [[tau2-bench]] 35.0%×1.0, [[terminal-bench]] 15.0%×1.0 |
 | 신뢰성 | 44.3 | -0.38 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

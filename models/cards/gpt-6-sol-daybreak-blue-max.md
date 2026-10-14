@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6 Sol (Daybreak Blue, max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # GPT-6 Sol (Daybreak Blue, max)

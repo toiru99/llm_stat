@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 78.7, z: 1.67, r: 75.0, estimated: false }  # 전문 지식
-  reasoning: { s: 55.8, z: 0.88, r: 63.1, estimated: false }  # 추론
-  coding: { s: 80.0, z: 1.46, r: 72.0, estimated: false }  # 코딩
-  agentic: { s: 61.8, z: 0.86, r: 62.8, estimated: false }  # 에이전트
-  trust: { s: 34.0, z: 0.33, r: 55.0, estimated: false }  # 신뢰성
+  reasoning: { s: 55.8, z: 0.87, r: 63.1, estimated: false }  # 추론
+  coding: { s: 80.0, z: 1.46, r: 71.9, estimated: false }  # 코딩
+  agentic: { s: 61.8, z: 0.85, r: 62.8, estimated: false }  # 에이전트
+  trust: { s: 34.0, z: 0.33, r: 54.9, estimated: false }  # 신뢰성
   multimodal: { s: 95.9, z: 1.22, r: 68.3, estimated: false }  # 멀티모달
-  long_context: { s: 91.0, z: 1.18, r: 67.6, estimated: false }  # 긴문맥
-  instruction: { s: 82.1, z: 1.15, r: 67.3, estimated: true }  # 지시 따르기
+  long_context: { s: 91.0, z: 1.17, r: 67.6, estimated: false }  # 긴문맥
+  instruction: { s: 82.0, z: 1.15, r: 67.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.8 Flash (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # Gemini 3.8 Flash (low)
@@ -44,13 +44,13 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **33.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 75.0 | +1.67 | 실측 | [[aa-omniscience]] 52.0%×1.0, [[gpqa-diamond]] 92.0%×0.4, [[humanitys-last-exam]] 37.0%×0.3 |
-| 추론 | 63.1 | +0.88 | 실측 | [[critpt]] 4.0%×1.0, [[gpqa-diamond]] 92.0%×1.0, [[humanitys-last-exam]] 37.0%×1.0 |
-| 코딩 | 72.0 | +1.46 | 실측 | [[scicode]] 55.0%×1.0 |
-| 에이전트 | 62.8 | +0.86 | 실측 | [[gdpval]] 40.0%×1.0, [[tau3-banking]] 33.0%×1.0 |
-| 신뢰성 | 55.0 | +0.33 | 실측 | [[aa-omniscience]] 35.0%×1.0 |
+| 추론 | 63.1 | +0.87 | 실측 | [[critpt]] 4.0%×1.0, [[gpqa-diamond]] 92.0%×1.0, [[humanitys-last-exam]] 37.0%×1.0 |
+| 코딩 | 71.9 | +1.46 | 실측 | [[scicode]] 55.0%×1.0 |
+| 에이전트 | 62.8 | +0.85 | 실측 | [[gdpval]] 40.0%×1.0, [[tau3-banking]] 33.0%×1.0 |
+| 신뢰성 | 54.9 | +0.33 | 실측 | [[aa-omniscience]] 35.0%×1.0 |
 | 멀티모달 | 68.3 | +1.22 | 실측 | [[mmmu-pro]] 85.0%×1.0 |
-| 긴문맥 | 67.6 | +1.18 | 실측 | [[aa-lcr]] 81.0%×1.0 |
-| 지시 따르기 | 67.3 | +1.15 | 추정 | (추정) |
+| 긴문맥 | 67.6 | +1.17 | 실측 | [[aa-lcr]] 81.0%×1.0 |
+| 지시 따르기 | 67.2 | +1.15 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

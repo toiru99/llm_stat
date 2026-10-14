@@ -12,20 +12,20 @@ size_class: Medium
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 24.1, z: -0.86, r: 37.0, estimated: false }  # 전문 지식
-  reasoning: { s: 21.7, z: -0.68, r: 39.7, estimated: false }  # 추론
+  knowledge: { s: 24.1, z: -0.87, r: 37.0, estimated: false }  # 전문 지식
+  reasoning: { s: 21.7, z: -0.69, r: 39.7, estimated: false }  # 추론
   coding: { s: 6.8, z: -1.03, r: 34.6, estimated: true }  # 코딩
   agentic: { s: 14.5, z: -0.94, r: 35.9, estimated: true }  # 에이전트
   trust: { s: 29.0, z: 0.1, r: 51.5, estimated: true }  # 신뢰성
-  multimodal: { s: 32.9, z: -1.93, r: 21.1, estimated: false }  # 멀티모달
+  multimodal: { s: 32.9, z: -1.93, r: 21.0, estimated: false }  # 멀티모달
   long_context: { s: 14.5, z: -1.14, r: 32.9, estimated: true }  # 긴문맥
   instruction: { s: 23.8, z: -1.28, r: 30.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.2 90B (Vision)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # Llama 3.2 90B (Vision)
@@ -43,12 +43,12 @@ Meta · Open · Medium · 컨텍스트 128k · 종합지능 **6.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 37.0 | -0.86 | 실측 | [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 39.7 | -0.68 | 실측 | [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 전문 지식 | 37.0 | -0.87 | 실측 | [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 39.7 | -0.69 | 실측 | [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 34.6 | -1.03 | 추정 | (추정) |
 | 에이전트 | 35.9 | -0.94 | 추정 | (추정) |
 | 신뢰성 | 51.5 | +0.1 | 추정 | (추정) |
-| 멀티모달 | 21.1 | -1.93 | 실측 | [[mmmu-pro]] 39.0%×1.0 |
+| 멀티모달 | 21.0 | -1.93 | 실측 | [[mmmu-pro]] 39.0%×1.0 |
 | 긴문맥 | 32.9 | -1.14 | 추정 | (추정) |
 | 지시 따르기 | 30.8 | -1.28 | 추정 | (추정) |
 

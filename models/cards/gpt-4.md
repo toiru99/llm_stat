@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 29.1, z: -0.35, r: 44.8, estimated: false }  # 추론
   coding: { s: 5.0, z: -1.09, r: 33.7, estimated: true }  # 코딩
   agentic: { s: 0.0, z: -1.49, r: 27.7, estimated: false }  # 에이전트
-  trust: { s: 29.9, z: 0.14, r: 52.2, estimated: false }  # 신뢰성
+  trust: { s: 29.9, z: 0.14, r: 52.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 28.1, z: -0.72, r: 39.1, estimated: true }  # 긴문맥
   instruction: { s: 29.6, z: -1.04, r: 34.4, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # GPT-4
@@ -47,7 +47,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 8k · 종합지능 **7.0** · �
 | 추론 | 44.8 | -0.35 | 실측 | [[gpqa-diamond]] 35.0%×1.0 |
 | 코딩 | 33.7 | -1.09 | 추정 | (추정) |
 | 에이전트 | 27.7 | -1.49 | 실측 | [[gdpval]] 0.0%×1.0 |
-| 신뢰성 | 52.2 | +0.14 | 실측 | [[aa-omniscience]] 31.0%×1.0 |
+| 신뢰성 | 52.1 | +0.14 | 실측 | [[aa-omniscience]] 31.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 39.1 | -0.72 | 추정 | (추정) |
 | 지시 따르기 | 34.4 | -1.04 | 실측 | [[ifbench]] 33.0%×1.0 |

@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 34.8, z: -0.37, r: 44.5, estimated: false }  # 전문 지식
   reasoning: { s: 29.4, z: -0.33, r: 45.0, estimated: false }  # 추론
-  coding: { s: 12.1, z: -0.84, r: 37.3, estimated: false }  # 코딩
+  coding: { s: 12.1, z: -0.85, r: 37.3, estimated: false }  # 코딩
   agentic: { s: 6.1, z: -1.26, r: 31.1, estimated: false }  # 에이전트
   trust: { s: 8.2, z: -0.85, r: 37.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ring-flash-2.0
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # Ring-flash-2.0
@@ -45,7 +45,7 @@ InclusionAI · Open · Medium · 컨텍스트 128k · 종합지능 **7.0**
 |---|---|---|---|---|
 | 전문 지식 | 44.5 | -0.37 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
 | 추론 | 45.0 | -0.33 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
-| 코딩 | 37.3 | -0.84 | 실측 | [[terminal-bench]] 8.0%×0.5 |
+| 코딩 | 37.3 | -0.85 | 실측 | [[terminal-bench]] 8.0%×0.5 |
 | 에이전트 | 31.1 | -1.26 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
 | 신뢰성 | 37.2 | -0.85 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |

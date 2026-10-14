@@ -12,11 +12,11 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 29.9, z: -0.59, r: 41.1, estimated: false }  # 전문 지식
+  knowledge: { s: 29.9, z: -0.6, r: 41.1, estimated: false }  # 전문 지식
   reasoning: { s: 17.6, z: -0.87, r: 36.9, estimated: false }  # 추론
-  coding: { s: 12.1, z: -0.84, r: 37.3, estimated: false }  # 코딩
-  agentic: { s: 12.5, z: -1.01, r: 34.8, estimated: false }  # 에이전트
-  trust: { s: 61.9, z: 1.61, r: 74.2, estimated: false }  # 신뢰성
+  coding: { s: 12.1, z: -0.85, r: 37.3, estimated: false }  # 코딩
+  agentic: { s: 12.5, z: -1.02, r: 34.8, estimated: false }  # 에이전트
+  trust: { s: 61.9, z: 1.61, r: 74.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 55.1, z: 0.09, r: 51.3, estimated: false }  # 긴문맥
   instruction: { s: 31.0, z: -0.98, r: 35.3, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4o (Nov)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # GPT-4o (Nov)
@@ -43,11 +43,11 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **8.0** ·
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 41.1 | -0.59 | 실측 | [[aa-omniscience]] 20.0%×1.0, [[gpqa-diamond]] 54.0%×0.4, [[humanitys-last-exam]] 2.0%×0.3 |
+| 전문 지식 | 41.1 | -0.6 | 실측 | [[aa-omniscience]] 20.0%×1.0, [[gpqa-diamond]] 54.0%×0.4, [[humanitys-last-exam]] 2.0%×0.3 |
 | 추론 | 36.9 | -0.87 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 54.0%×1.0, [[humanitys-last-exam]] 2.0%×1.0 |
-| 코딩 | 37.3 | -0.84 | 실측 | [[terminal-bench]] 8.0%×0.5 |
-| 에이전트 | 34.8 | -1.01 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 25.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
-| 신뢰성 | 74.2 | +1.61 | 실측 | [[aa-omniscience]] 62.0%×1.0 |
+| 코딩 | 37.3 | -0.85 | 실측 | [[terminal-bench]] 8.0%×0.5 |
+| 에이전트 | 34.8 | -1.02 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 25.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
+| 신뢰성 | 74.1 | +1.61 | 실측 | [[aa-omniscience]] 62.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 51.3 | +0.09 | 실측 | [[aa-lcr]] 49.0%×1.0 |
 | 지시 따르기 | 35.3 | -0.98 | 실측 | [[ifbench]] 34.0%×1.0 |

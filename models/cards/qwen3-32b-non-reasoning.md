@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 7.0
 price_blended_usd_1m: 0.195
-output_speed_tps: 74.0
+output_speed_tps: 62.0
 context_window: 32800
 status: past
 size_class: Small
@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 31.4, z: -0.53, r: 42.1, estimated: false }  # 전문 지식
   reasoning: { s: 28.1, z: -0.39, r: 44.1, estimated: false }  # 추론
-  coding: { s: 9.5, z: -0.93, r: 36.0, estimated: true }  # 코딩
+  coding: { s: 9.5, z: -0.94, r: 36.0, estimated: true }  # 코딩
   agentic: { s: 21.1, z: -0.69, r: 39.7, estimated: true }  # 에이전트
-  trust: { s: 11.2, z: -0.71, r: 39.3, estimated: true }  # 신뢰성
+  trust: { s: 13.4, z: -0.62, r: 40.8, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.57, r: 26.4, estimated: false }  # 긴문맥
   instruction: { s: 26.8, z: -1.16, r: 32.6, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 32B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # Qwen3 32B (non-reasoning)
@@ -37,7 +37,7 @@ Alibaba · Open · Small · 컨텍스트 32k · 종합지능 **7.0** · ⚠️ p
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.6 · 혼합 $0.195/1M · 74.0 t/s · TTFT 1.45s · 32k ctx` · 가성비 35.9
+`입력 $0.15 · 출력 $0.6 · 혼합 $0.195/1M · 62.0 t/s · TTFT 1.32s · 32k ctx` · 가성비 35.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,9 +45,9 @@ Alibaba · Open · Small · 컨텍스트 32k · 종합지능 **7.0** · ⚠️ p
 |---|---|---|---|---|
 | 전문 지식 | 42.1 | -0.53 | 실측 | [[gpqa-diamond]] 54.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 44.1 | -0.39 | 실측 | [[gpqa-diamond]] 54.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 36.0 | -0.93 | 추정 | (추정) |
+| 코딩 | 36.0 | -0.94 | 추정 | (추정) |
 | 에이전트 | 39.7 | -0.69 | 추정 | (추정) |
-| 신뢰성 | 39.3 | -0.71 | 추정 | (추정) |
+| 신뢰성 | 40.8 | -0.62 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 26.4 | -1.57 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 32.6 | -1.16 | 실측 | [[ifbench]] 31.0%×1.0 |

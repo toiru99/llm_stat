@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 11.6, z: -1.44, r: 28.4, estimated: false }  # 전문 지식
   reasoning: { s: 9.6, z: -1.24, r: 31.4, estimated: false }  # 추론
-  coding: { s: 0.0, z: -1.26, r: 31.2, estimated: false }  # 코딩
-  agentic: { s: 4.0, z: -1.33, r: 30.0, estimated: false }  # 에이전트
-  trust: { s: 2.1, z: -1.13, r: 33.0, estimated: false }  # 신뢰성
-  multimodal: { s: 16.4, z: -2.75, r: 8.8, estimated: false }  # 멀티모달
+  coding: { s: 0.0, z: -1.26, r: 31.1, estimated: false }  # 코딩
+  agentic: { s: 4.0, z: -1.34, r: 30.0, estimated: false }  # 에이전트
+  trust: { s: 2.1, z: -1.14, r: 33.0, estimated: false }  # 신뢰성
+  multimodal: { s: 16.4, z: -2.75, r: 8.7, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.57, r: 26.4, estimated: false }  # 긴문맥
   instruction: { s: 29.6, z: -1.04, r: 34.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — LFM2.5-VL-1.6B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # LFM2.5-VL-1.6B
@@ -45,10 +45,10 @@ Liquid AI · Open · Tiny · 컨텍스트 32k · 종합지능 **5.0**
 |---|---|---|---|---|
 | 전문 지식 | 28.4 | -1.44 | 실측 | [[aa-omniscience]] 6.0%×1.0, [[gpqa-diamond]] 29.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 31.4 | -1.24 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 29.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 31.2 | -1.26 | 실측 | [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 30.0 | -1.33 | 실측 | [[tau2-bench]] 8.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 33.0 | -1.13 | 실측 | [[aa-omniscience]] 4.0%×1.0 |
-| 멀티모달 | 8.8 | -2.75 | 실측 | [[mmmu-pro]] 27.0%×1.0 |
+| 코딩 | 31.1 | -1.26 | 실측 | [[terminal-bench]] 0.0%×0.5 |
+| 에이전트 | 30.0 | -1.34 | 실측 | [[tau2-bench]] 8.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 신뢰성 | 33.0 | -1.14 | 실측 | [[aa-omniscience]] 4.0%×1.0 |
+| 멀티모달 | 8.7 | -2.75 | 실측 | [[mmmu-pro]] 27.0%×1.0 |
 | 긴문맥 | 26.4 | -1.57 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 34.4 | -1.04 | 실측 | [[ifbench]] 33.0%×1.0 |
 

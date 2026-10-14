@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 8.0
 price_blended_usd_1m: 0.1765
-output_speed_tps: 100.0
+output_speed_tps: 91.0
 context_window: 32800
 status: past
 size_class: Small
@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 22.9, z: -0.63, r: 40.6, estimated: false }  # 추론
   coding: { s: 3.0, z: -1.15, r: 32.7, estimated: false }  # 코딩
   agentic: { s: 14.6, z: -0.93, r: 36.0, estimated: false }  # 에이전트
-  trust: { s: 17.5, z: -0.42, r: 43.6, estimated: false }  # 신뢰성
+  trust: { s: 17.5, z: -0.43, r: 43.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.57, r: 26.4, estimated: false }  # 긴문맥
-  instruction: { s: 40.8, z: -0.57, r: 41.5, estimated: false }  # 지시 따르기
+  instruction: { s: 40.8, z: -0.57, r: 41.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 30B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # Qwen3 30B
@@ -37,7 +37,7 @@ Alibaba · Open · Small · 컨텍스트 32k · 종합지능 **8.0** · ⚠️ p
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
-`입력 $0.14 · 출력 $0.55 · 혼합 $0.1765/1M · 100.0 t/s · TTFT 0.71s · 32k ctx` · 가성비 45.3
+`입력 $0.14 · 출력 $0.55 · 혼합 $0.1765/1M · 91.0 t/s · TTFT 0.67s · 32k ctx` · 가성비 45.3
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,10 +47,10 @@ Alibaba · Open · Small · 컨텍스트 32k · 종합지능 **8.0** · ⚠️ p
 | 추론 | 40.6 | -0.63 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 62.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 32.7 | -1.15 | 실측 | [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 36.0 | -0.93 | 실측 | [[tau2-bench]] 26.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 43.6 | -0.42 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
+| 신뢰성 | 43.6 | -0.43 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 26.4 | -1.57 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 41.5 | -0.57 | 실측 | [[ifbench]] 41.0%×1.0 |
+| 지시 따르기 | 41.4 | -0.57 | 실측 | [[ifbench]] 41.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

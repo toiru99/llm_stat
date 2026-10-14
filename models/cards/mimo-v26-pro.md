@@ -5,7 +5,7 @@ creator: Xiaomi
 license: Open
 intelligence_index: 46.0
 price_blended_usd_1m: 0.1765
-output_speed_tps: 48.0
+output_speed_tps: 47.0
 context_window: 1000000
 status: current
 size_class: Large
@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 58.6, z: 0.74, r: 61.1, estimated: false }  # 전문 지식
   reasoning: { s: 80.9, z: 2.02, r: 80.3, estimated: false }  # 추론
-  coding: { s: 90.0, z: 1.8, r: 77.1, estimated: false }  # 코딩
+  coding: { s: 90.0, z: 1.8, r: 77.0, estimated: false }  # 코딩
   agentic: { s: 86.8, z: 1.8, r: 77.0, estimated: false }  # 에이전트
-  trust: { s: 58.8, z: 1.47, r: 72.1, estimated: false }  # 신뢰성
+  trust: { s: 58.8, z: 1.46, r: 72.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 96.6, z: 1.35, r: 70.2, estimated: false }  # 긴문맥
-  instruction: { s: 74.3, z: 0.83, r: 62.4, estimated: true }  # 지시 따르기
+  long_context: { s: 96.6, z: 1.34, r: 70.2, estimated: false }  # 긴문맥
+  instruction: { s: 74.8, z: 0.84, r: 62.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2.6-Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # MiMo-V2.6-Pro
@@ -37,7 +37,7 @@ Xiaomi · Open · Large · 컨텍스트 1M · 종합지능 **46.0**
 - **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
-`입력 $0.43 · 출력 $0.87 · 혼합 $0.1765/1M · 48.0 t/s · TTFT 3.74s · 1M ctx` · 가성비 260.6
+`입력 $0.43 · 출력 $0.87 · 혼합 $0.1765/1M · 47.0 t/s · TTFT 4.03s · 1M ctx` · 가성비 260.6
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,12 +45,12 @@ Xiaomi · Open · Large · 컨텍스트 1M · 종합지능 **46.0**
 |---|---|---|---|---|
 | 전문 지식 | 61.1 | +0.74 | 실측 | [[aa-omniscience]] 35.0%×1.0, [[humanitys-last-exam]] 49.0%×0.3 |
 | 추론 | 80.3 | +2.02 | 실측 | [[critpt]] 27.0%×1.0, [[humanitys-last-exam]] 49.0%×1.0 |
-| 코딩 | 77.1 | +1.8 | 실측 | [[scicode]] 61.0%×1.0 |
+| 코딩 | 77.0 | +1.8 | 실측 | [[scicode]] 61.0%×1.0 |
 | 에이전트 | 77.0 | +1.8 | 실측 | [[gdpval]] 59.0%×1.0 |
-| 신뢰성 | 72.1 | +1.47 | 실측 | [[aa-omniscience]] 59.0%×1.0 |
+| 신뢰성 | 72.0 | +1.46 | 실측 | [[aa-omniscience]] 59.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 70.2 | +1.35 | 실측 | [[aa-lcr]] 86.0%×1.0 |
-| 지시 따르기 | 62.4 | +0.83 | 추정 | (추정) |
+| 긴문맥 | 70.2 | +1.34 | 실측 | [[aa-lcr]] 86.0%×1.0 |
+| 지시 따르기 | 62.6 | +0.84 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

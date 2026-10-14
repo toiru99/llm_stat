@@ -19,13 +19,13 @@ radar:
   trust: { s: 23.7, z: -0.14, r: 47.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 77.5, z: 0.77, r: 61.5, estimated: false }  # 긴문맥
-  instruction: { s: 63.4, z: 0.37, r: 55.6, estimated: false }  # 지시 따르기
+  instruction: { s: 63.4, z: 0.37, r: 55.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V3.1 Terminus
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # DeepSeek V3.1 Terminus
@@ -50,7 +50,7 @@ DeepSeek · Open · Unknown · 컨텍스트 128k · 종합지능 **15.0** · ⚠
 | 신뢰성 | 47.9 | -0.14 | 실측 | [[aa-omniscience]] 25.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 61.5 | +0.77 | 실측 | [[aa-lcr]] 69.0%×1.0 |
-| 지시 따르기 | 55.6 | +0.37 | 실측 | [[ifbench]] 57.0%×1.0 |
+| 지시 따르기 | 55.5 | +0.37 | 실측 | [[ifbench]] 57.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

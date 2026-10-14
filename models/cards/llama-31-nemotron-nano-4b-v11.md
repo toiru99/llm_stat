@@ -16,7 +16,7 @@ radar:
   reasoning: { s: 21.4, z: -0.7, r: 39.5, estimated: false }  # 추론
   coding: { s: 4.6, z: -1.1, r: 33.5, estimated: true }  # 코딩
   agentic: { s: 12.1, z: -1.03, r: 34.6, estimated: false }  # 에이전트
-  trust: { s: 4.2, z: -1.04, r: 34.5, estimated: true }  # 신뢰성
+  trust: { s: 4.4, z: -1.03, r: 34.5, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.57, r: 26.4, estimated: false }  # 긴문맥
   instruction: { s: 19.7, z: -1.45, r: 28.2, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.1 Nemotron Nano 4B v1.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # Llama 3.1 Nemotron Nano 4B v1.1
@@ -47,7 +47,7 @@ NVIDIA · Open · Unknown · 컨텍스트 128k · 종합지능 **7.0** · ⚠️
 | 추론 | 39.5 | -0.7 | 실측 | [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 33.5 | -1.1 | 추정 | (추정) |
 | 에이전트 | 34.6 | -1.03 | 실측 | [[tau2-bench]] 12.0%×1.0 |
-| 신뢰성 | 34.5 | -1.04 | 추정 | (추정) |
+| 신뢰성 | 34.5 | -1.03 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 26.4 | -1.57 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 28.2 | -1.45 | 실측 | [[ifbench]] 26.0%×1.0 |

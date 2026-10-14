@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 28.0
 price_blended_usd_1m: 1.54
-output_speed_tps: 65.0
+output_speed_tps: 69.0
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -16,16 +16,16 @@ radar:
   reasoning: { s: 37.8, z: 0.05, r: 50.8, estimated: false }  # 추론
   coding: { s: 75.0, z: 1.29, r: 69.4, estimated: false }  # 코딩
   agentic: { s: 48.5, z: 0.35, r: 55.3, estimated: false }  # 에이전트
-  trust: { s: 28.9, z: 0.1, r: 51.4, estimated: false }  # 신뢰성
+  trust: { s: 28.9, z: 0.09, r: 51.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 83.1, z: 0.94, r: 64.1, estimated: false }  # 긴문맥
-  instruction: { s: 73.6, z: 0.8, r: 62.0, estimated: true }  # 지시 따르기
+  long_context: { s: 83.1, z: 0.94, r: 64.0, estimated: false }  # 긴문맥
+  instruction: { s: 74.8, z: 0.84, r: 62.7, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5 (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # Claude Sonnet 5 (medium)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **28.0** 
 - **약점**: 신뢰성, 추론
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 65.0 t/s · TTFT 1.53s · 1M ctx` · 가성비 18.2
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 69.0 t/s · TTFT 2.51s · 1M ctx` · 가성비 18.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -47,10 +47,10 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **28.0** 
 | 추론 | 50.8 | +0.05 | 실측 | [[critpt]] 9.0%×1.0, [[humanitys-last-exam]] 30.0%×1.0 |
 | 코딩 | 69.4 | +1.29 | 실측 | [[scicode]] 52.0%×1.0 |
 | 에이전트 | 55.3 | +0.35 | 실측 | [[gdpval]] 33.0%×1.0 |
-| 신뢰성 | 51.4 | +0.1 | 실측 | [[aa-omniscience]] 30.0%×1.0 |
+| 신뢰성 | 51.4 | +0.09 | 실측 | [[aa-omniscience]] 30.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 64.1 | +0.94 | 실측 | [[aa-lcr]] 74.0%×1.0 |
-| 지시 따르기 | 62.0 | +0.8 | 추정 | (추정) |
+| 긴문맥 | 64.0 | +0.94 | 실측 | [[aa-lcr]] 74.0%×1.0 |
+| 지시 따르기 | 62.7 | +0.84 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

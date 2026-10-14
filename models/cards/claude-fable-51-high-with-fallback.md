@@ -5,27 +5,27 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 51.0
 price_blended_usd_1m: 7.175
-output_speed_tps: 52.0
+output_speed_tps: 59.0
 context_window: 1000000
 status: current
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 95.4, z: 2.44, r: 86.6, estimated: false }  # 전문 지식
+  knowledge: { s: 95.4, z: 2.44, r: 86.7, estimated: false }  # 전문 지식
   reasoning: { s: 92.3, z: 2.54, r: 88.1, estimated: false }  # 추론
-  coding: { s: 86.7, z: 1.69, r: 75.4, estimated: false }  # 코딩
+  coding: { s: 86.7, z: 1.69, r: 75.3, estimated: false }  # 코딩
   agentic: { s: 84.1, z: 1.7, r: 75.5, estimated: false }  # 에이전트
-  trust: { s: 29.9, z: 0.14, r: 52.2, estimated: false }  # 신뢰성
+  trust: { s: 29.9, z: 0.14, r: 52.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 94.4, z: 1.28, r: 69.2, estimated: false }  # 긴문맥
+  long_context: { s: 94.4, z: 1.28, r: 69.1, estimated: false }  # 긴문맥
   instruction: { s: 78.0, z: 0.98, r: 64.7, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Fable 5.1 (high with fallback)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # Claude Fable 5.1 (high with fallback)
@@ -37,19 +37,19 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **51.0**
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $10.0 · 출력 $50.0 · 혼합 $7.175/1M · 52.0 t/s · TTFT 17.98s · 1M ctx` · 가성비 7.1
+`입력 $10.0 · 출력 $50.0 · 혼합 $7.175/1M · 59.0 t/s · TTFT 20.35s · 1M ctx` · 가성비 7.1
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 86.6 | +2.44 | 실측 | [[aa-omniscience]] 65.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 56.0%×0.3 |
+| 전문 지식 | 86.7 | +2.44 | 실측 | [[aa-omniscience]] 65.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 56.0%×0.3 |
 | 추론 | 88.1 | +2.54 | 실측 | [[critpt]] 30.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 56.0%×1.0 |
-| 코딩 | 75.4 | +1.69 | 실측 | [[scicode]] 59.0%×1.0 |
+| 코딩 | 75.3 | +1.69 | 실측 | [[scicode]] 59.0%×1.0 |
 | 에이전트 | 75.5 | +1.7 | 실측 | [[gdpval]] 57.0%×1.0, [[tau3-banking]] 43.0%×1.0 |
-| 신뢰성 | 52.2 | +0.14 | 실측 | [[aa-omniscience]] 31.0%×1.0 |
+| 신뢰성 | 52.1 | +0.14 | 실측 | [[aa-omniscience]] 31.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 69.2 | +1.28 | 실측 | [[aa-lcr]] 84.0%×1.0 |
+| 긴문맥 | 69.1 | +1.28 | 실측 | [[aa-lcr]] 84.0%×1.0 |
 | 지시 따르기 | 64.7 | +0.98 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

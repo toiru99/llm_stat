@@ -12,10 +12,10 @@ size_class: Tiny
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 14.6, z: -1.3, r: 30.5, estimated: false }  # 전문 지식
+  knowledge: { s: 14.6, z: -1.3, r: 30.4, estimated: false }  # 전문 지식
   reasoning: { s: 15.2, z: -0.98, r: 35.3, estimated: false }  # 추론
-  coding: { s: 0.0, z: -1.26, r: 31.2, estimated: false }  # 코딩
-  agentic: { s: 10.1, z: -1.1, r: 33.4, estimated: false }  # 에이전트
+  coding: { s: 0.0, z: -1.26, r: 31.1, estimated: false }  # 코딩
+  agentic: { s: 10.1, z: -1.11, r: 33.4, estimated: false }  # 에이전트
   trust: { s: 6.2, z: -0.95, r: 35.8, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.57, r: 26.4, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Exaone 4.0 1.2B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # Exaone 4.0 1.2B (non-reasoning)
@@ -43,10 +43,10 @@ LG AI Research · Open · Tiny · 컨텍스트 64k · 종합지능 **5.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 30.5 | -1.3 | 실측 | [[aa-omniscience]] 5.0%×1.0, [[gpqa-diamond]] 42.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 전문 지식 | 30.4 | -1.3 | 실측 | [[aa-omniscience]] 5.0%×1.0, [[gpqa-diamond]] 42.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 35.3 | -0.98 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 42.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 31.2 | -1.26 | 실측 | [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 33.4 | -1.1 | 실측 | [[tau2-bench]] 20.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 코딩 | 31.1 | -1.26 | 실측 | [[terminal-bench]] 0.0%×0.5 |
+| 에이전트 | 33.4 | -1.11 | 실측 | [[tau2-bench]] 20.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | 35.8 | -0.95 | 실측 | [[aa-omniscience]] 8.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 26.4 | -1.57 | 실측 | [[aa-lcr]] 0.0%×1.0 |

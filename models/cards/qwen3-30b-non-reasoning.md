@@ -5,18 +5,18 @@ creator: Alibaba
 license: Open
 intelligence_index: 7.0
 price_blended_usd_1m: 0.158
-output_speed_tps: 108.0
+output_speed_tps: 87.0
 context_window: 32800
 status: past
 size_class: Small
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 23.2, z: -0.9, r: 36.4, estimated: false }  # 전문 지식
+  knowledge: { s: 23.2, z: -0.91, r: 36.4, estimated: false }  # 전문 지식
   reasoning: { s: 18.5, z: -0.83, r: 37.5, estimated: false }  # 추론
-  coding: { s: 10.6, z: -0.9, r: 36.6, estimated: false }  # 코딩
-  agentic: { s: 16.4, z: -0.86, r: 37.0, estimated: false }  # 에이전트
-  trust: { s: 9.3, z: -0.8, r: 38.0, estimated: false }  # 신뢰성
+  coding: { s: 10.6, z: -0.9, r: 36.5, estimated: false }  # 코딩
+  agentic: { s: 16.4, z: -0.87, r: 37.0, estimated: false }  # 에이전트
+  trust: { s: 9.3, z: -0.81, r: 37.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.57, r: 26.4, estimated: false }  # 긴문맥
   instruction: { s: 28.2, z: -1.1, r: 33.5, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 30B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # Qwen3 30B (non-reasoning)
@@ -37,17 +37,17 @@ Alibaba · Open · Small · 컨텍스트 32k · 종합지능 **7.0** · ⚠️ p
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
-`입력 $0.12 · 출력 $0.5 · 혼합 $0.158/1M · 108.0 t/s · TTFT 0.67s · 32k ctx` · 가성비 44.3
+`입력 $0.12 · 출력 $0.5 · 혼합 $0.158/1M · 87.0 t/s · TTFT 0.62s · 32k ctx` · 가성비 44.3
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 36.4 | -0.9 | 실측 | [[aa-omniscience]] 12.0%×1.0, [[gpqa-diamond]] 52.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 전문 지식 | 36.4 | -0.91 | 실측 | [[aa-omniscience]] 12.0%×1.0, [[gpqa-diamond]] 52.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 37.5 | -0.83 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 52.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 36.6 | -0.9 | 실측 | [[terminal-bench]] 7.0%×0.5 |
-| 에이전트 | 37.0 | -0.86 | 실측 | [[tau2-bench]] 22.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
-| 신뢰성 | 38.0 | -0.8 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
+| 코딩 | 36.5 | -0.9 | 실측 | [[terminal-bench]] 7.0%×0.5 |
+| 에이전트 | 37.0 | -0.87 | 실측 | [[tau2-bench]] 22.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
+| 신뢰성 | 37.9 | -0.81 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 26.4 | -1.57 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 33.5 | -1.1 | 실측 | [[ifbench]] 32.0%×1.0 |

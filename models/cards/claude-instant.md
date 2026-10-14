@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 17.4, z: -1.17, r: 32.4, estimated: false }  # 전문 지식
   reasoning: { s: 15.9, z: -0.95, r: 35.7, estimated: false }  # 추론
-  coding: { s: 0.6, z: -1.23, r: 31.5, estimated: true }  # 코딩
+  coding: { s: 0.6, z: -1.24, r: 31.5, estimated: true }  # 코딩
   agentic: { s: 1.6, z: -1.43, r: 28.6, estimated: true }  # 에이전트
   trust: { s: 25.1, z: -0.08, r: 48.8, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Instant
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # Claude Instant
@@ -45,7 +45,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 100k · 종합지능 **5.0**
 |---|---|---|---|---|
 | 전문 지식 | 32.4 | -1.17 | 실측 | [[gpqa-diamond]] 33.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 35.7 | -0.95 | 실측 | [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 31.5 | -1.23 | 추정 | (추정) |
+| 코딩 | 31.5 | -1.24 | 추정 | (추정) |
 | 에이전트 | 28.6 | -1.43 | 추정 | (추정) |
 | 신뢰성 | 48.8 | -0.08 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |

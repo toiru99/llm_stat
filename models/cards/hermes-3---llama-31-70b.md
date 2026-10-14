@@ -5,15 +5,15 @@ creator: Nous Research
 license: Open
 intelligence_index: 6.0
 price_blended_usd_1m: 0.7
-output_speed_tps: 30.0
+output_speed_tps: 31.0
 context_window: 128000
 status: past
 size_class: Medium
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 22.1, z: -0.96, r: 35.7, estimated: false }  # 전문 지식
-  reasoning: { s: 19.9, z: -0.76, r: 38.5, estimated: false }  # 추론
+  knowledge: { s: 22.1, z: -0.96, r: 35.6, estimated: false }  # 전문 지식
+  reasoning: { s: 19.9, z: -0.77, r: 38.5, estimated: false }  # 추론
   coding: { s: 7.5, z: -1.0, r: 35.0, estimated: true }  # 코딩
   agentic: { s: 12.2, z: -1.03, r: 34.6, estimated: true }  # 에이전트
   trust: { s: 31.1, z: 0.2, r: 53.0, estimated: true }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hermes 3 - Llama-3.1 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # Hermes 3 - Llama-3.1 70B
@@ -37,14 +37,14 @@ Nous Research · Open · Medium · 컨텍스트 128k · 종합지능 **6.0** · 
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.7 · 출력 $0.7 · 혼합 $0.7/1M · 30.0 t/s · TTFT 2.27s · 128k ctx` · 가성비 8.6
+`입력 $0.7 · 출력 $0.7 · 혼합 $0.7/1M · 31.0 t/s · TTFT 2.27s · 128k ctx` · 가성비 8.6
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 35.7 | -0.96 | 실측 | [[gpqa-diamond]] 40.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 38.5 | -0.76 | 실측 | [[gpqa-diamond]] 40.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 전문 지식 | 35.6 | -0.96 | 실측 | [[gpqa-diamond]] 40.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 38.5 | -0.77 | 실측 | [[gpqa-diamond]] 40.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 35.0 | -1.0 | 추정 | (추정) |
 | 에이전트 | 34.6 | -1.03 | 추정 | (추정) |
 | 신뢰성 | 53.0 | +0.2 | 추정 | (추정) |

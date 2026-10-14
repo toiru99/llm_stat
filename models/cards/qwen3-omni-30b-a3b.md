@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 8.0
 price_blended_usd_1m: 0.322
-output_speed_tps: 103.0
+output_speed_tps: 102.0
 context_window: 65500
 status: current
 size_class: Small
@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 32.2, z: -0.49, r: 42.7, estimated: false }  # 전문 지식
   reasoning: { s: 27.8, z: -0.41, r: 43.9, estimated: false }  # 추론
   coding: { s: 6.1, z: -1.05, r: 34.2, estimated: false }  # 코딩
-  agentic: { s: 13.6, z: -0.97, r: 35.5, estimated: false }  # 에이전트
-  trust: { s: 9.3, z: -0.8, r: 38.0, estimated: false }  # 신뢰성
-  multimodal: { s: 61.6, z: -0.49, r: 42.7, estimated: false }  # 멀티모달
+  agentic: { s: 13.6, z: -0.97, r: 35.4, estimated: false }  # 에이전트
+  trust: { s: 9.3, z: -0.81, r: 37.9, estimated: false }  # 신뢰성
+  multimodal: { s: 61.6, z: -0.49, r: 42.6, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.57, r: 26.4, estimated: false }  # 긴문맥
   instruction: { s: 43.7, z: -0.45, r: 43.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Omni 30B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # Qwen3 Omni 30B A3B
@@ -37,7 +37,7 @@ Alibaba · Open · Small · 컨텍스트 65k · 종합지능 **8.0**
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
-`입력 $0.25 · 출력 $0.97 · 혼합 $0.322/1M · 103.0 t/s · TTFT 1.93s · 65k ctx` · 가성비 24.8
+`입력 $0.25 · 출력 $0.97 · 혼합 $0.322/1M · 102.0 t/s · TTFT 1.95s · 65k ctx` · 가성비 24.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,9 +46,9 @@ Alibaba · Open · Small · 컨텍스트 65k · 종합지능 **8.0**
 | 전문 지식 | 42.7 | -0.49 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
 | 추론 | 43.9 | -0.41 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
 | 코딩 | 34.2 | -1.05 | 실측 | [[terminal-bench]] 4.0%×0.5 |
-| 에이전트 | 35.5 | -0.97 | 실측 | [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 4.0%×1.0 |
-| 신뢰성 | 38.0 | -0.8 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
-| 멀티모달 | 42.7 | -0.49 | 실측 | [[mmmu-pro]] 60.0%×1.0 |
+| 에이전트 | 35.4 | -0.97 | 실측 | [[tau2-bench]] 21.0%×1.0, [[terminal-bench]] 4.0%×1.0 |
+| 신뢰성 | 37.9 | -0.81 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
+| 멀티모달 | 42.6 | -0.49 | 실측 | [[mmmu-pro]] 60.0%×1.0 |
 | 긴문맥 | 26.4 | -1.57 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 43.2 | -0.45 | 실측 | [[ifbench]] 43.0%×1.0 |
 

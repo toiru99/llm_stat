@@ -5,7 +5,7 @@ creator: InclusionAI
 license: Open
 intelligence_index: 20.0
 price_blended_usd_1m: 0.0475
-output_speed_tps: 346.0
+output_speed_tps: 306.0
 context_window: 262000
 status: past
 size_class: Medium
@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 43.1, z: 0.02, r: 50.3, estimated: false }  # 전문 지식
   reasoning: { s: 43.9, z: 0.33, r: 54.9, estimated: false }  # 추론
   coding: { s: 58.3, z: 0.73, r: 60.9, estimated: false }  # 코딩
-  agentic: { s: 42.6, z: 0.13, r: 52.0, estimated: false }  # 에이전트
-  trust: { s: 55.7, z: 1.33, r: 69.9, estimated: false }  # 신뢰성
+  agentic: { s: 42.6, z: 0.13, r: 51.9, estimated: false }  # 에이전트
+  trust: { s: 55.7, z: 1.32, r: 69.8, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 82.0, z: 0.9, r: 63.6, estimated: false }  # 긴문맥
+  long_context: { s: 82.0, z: 0.9, r: 63.5, estimated: false }  # 긴문맥
   instruction: { s: 71.1, z: 0.69, r: 60.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Ling 3.0 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # Ling 3.0 Flash
@@ -37,7 +37,7 @@ InclusionAI · Open · Medium · 컨텍스트 262k · 종합지능 **20.0** · �
 - **약점**: 에이전트, 전문 지식
 
 ## 실용 지표
-`입력 $0.07 · 출력 $0.22 · 혼합 $0.0475/1M · 346.0 t/s · TTFT 2.79s · 262k ctx` · 가성비 421.1
+`입력 $0.07 · 출력 $0.22 · 혼합 $0.0475/1M · 306.0 t/s · TTFT 2.72s · 262k ctx` · 가성비 421.1
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,10 +46,10 @@ InclusionAI · Open · Medium · 컨텍스트 262k · 종합지능 **20.0** · �
 | 전문 지식 | 50.3 | +0.02 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 24.0%×0.3 |
 | 추론 | 54.9 | +0.33 | 실측 | [[critpt]] 2.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 24.0%×1.0 |
 | 코딩 | 60.9 | +0.73 | 실측 | [[scicode]] 42.0%×1.0 |
-| 에이전트 | 52.0 | +0.13 | 실측 | [[gdpval]] 22.0%×1.0, [[tau3-banking]] 27.0%×1.0 |
-| 신뢰성 | 69.9 | +1.33 | 실측 | [[aa-omniscience]] 56.0%×1.0 |
+| 에이전트 | 51.9 | +0.13 | 실측 | [[gdpval]] 22.0%×1.0, [[tau3-banking]] 27.0%×1.0 |
+| 신뢰성 | 69.8 | +1.32 | 실측 | [[aa-omniscience]] 56.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 63.6 | +0.9 | 실측 | [[aa-lcr]] 73.0%×1.0 |
+| 긴문맥 | 63.5 | +0.9 | 실측 | [[aa-lcr]] 73.0%×1.0 |
 | 지시 따르기 | 60.4 | +0.69 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

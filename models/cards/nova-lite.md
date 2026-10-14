@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 18.7, z: -1.11, r: 33.3, estimated: false }  # 전문 지식
   reasoning: { s: 14.5, z: -1.02, r: 34.8, estimated: false }  # 추론
-  coding: { s: 1.5, z: -1.2, r: 31.9, estimated: false }  # 코딩
+  coding: { s: 1.5, z: -1.21, r: 31.9, estimated: false }  # 코딩
   agentic: { s: 9.8, z: -1.11, r: 33.3, estimated: false }  # 에이전트
-  trust: { s: 41.2, z: 0.66, r: 60.0, estimated: false }  # 신뢰성
-  multimodal: { s: 31.5, z: -2.0, r: 20.1, estimated: false }  # 멀티모달
+  trust: { s: 41.2, z: 0.66, r: 59.9, estimated: false }  # 신뢰성
+  multimodal: { s: 31.5, z: -2.0, r: 20.0, estimated: false }  # 멀티모달
   long_context: { s: 21.3, z: -0.93, r: 36.1, estimated: false }  # 긴문맥
   instruction: { s: 31.0, z: -0.98, r: 35.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nova Lite
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # Nova Lite
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 300k · 종합지능 **7.0** ·
 - **약점**: 코딩, 멀티모달
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.24 · 혼합 $0.0465/1M · 171.0 t/s · TTFT 0.94s · 300k ctx` · 가성비 150.5
+`입력 $0.06 · 출력 $0.24 · 혼합 $0.0465/1M · 171.0 t/s · TTFT 0.96s · 300k ctx` · 가성비 150.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,10 +45,10 @@ Amazon · Proprietary · Unknown · 컨텍스트 300k · 종합지능 **7.0** ·
 |---|---|---|---|---|
 | 전문 지식 | 33.3 | -1.11 | 실측 | [[aa-omniscience]] 10.0%×1.0, [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 34.8 | -1.02 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 31.9 | -1.2 | 실측 | [[terminal-bench]] 1.0%×0.5 |
+| 코딩 | 31.9 | -1.21 | 실측 | [[terminal-bench]] 1.0%×0.5 |
 | 에이전트 | 33.3 | -1.11 | 실측 | [[tau2-bench]] 18.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
-| 신뢰성 | 60.0 | +0.66 | 실측 | [[aa-omniscience]] 42.0%×1.0 |
-| 멀티모달 | 20.1 | -2.0 | 실측 | [[mmmu-pro]] 38.0%×1.0 |
+| 신뢰성 | 59.9 | +0.66 | 실측 | [[aa-omniscience]] 42.0%×1.0 |
+| 멀티모달 | 20.0 | -2.0 | 실측 | [[mmmu-pro]] 38.0%×1.0 |
 | 긴문맥 | 36.1 | -0.93 | 실측 | [[aa-lcr]] 19.0%×1.0 |
 | 지시 따르기 | 35.3 | -0.98 | 실측 | [[ifbench]] 34.0%×1.0 |
 

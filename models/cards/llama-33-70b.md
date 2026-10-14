@@ -5,7 +5,7 @@ creator: Meta
 license: Open
 intelligence_index: 8.0
 price_blended_usd_1m: 0.711
-output_speed_tps: 92.0
+output_speed_tps: 93.0
 context_window: 128000
 status: current
 size_class: Medium
@@ -19,13 +19,13 @@ radar:
   trust: { s: 8.2, z: -0.85, r: 37.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 18.0, z: -1.03, r: 34.5, estimated: false }  # 긴문맥
-  instruction: { s: 49.3, z: -0.22, r: 46.8, estimated: false }  # 지시 따르기
+  instruction: { s: 49.3, z: -0.22, r: 46.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.3 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # Llama 3.3 70B
@@ -37,7 +37,7 @@ Meta · Open · Medium · 컨텍스트 128k · 종합지능 **8.0**
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.71 · 출력 $0.72 · 혼합 $0.711/1M · 92.0 t/s · TTFT 1.7s · 128k ctx` · 가성비 11.3
+`입력 $0.71 · 출력 $0.72 · 혼합 $0.711/1M · 93.0 t/s · TTFT 1.73s · 128k ctx` · 가성비 11.3
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Meta · Open · Medium · 컨텍스트 128k · 종합지능 **8.0**
 | 신뢰성 | 37.2 | -0.85 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 34.5 | -1.03 | 실측 | [[aa-lcr]] 16.0%×1.0 |
-| 지시 따르기 | 46.8 | -0.22 | 실측 | [[ifbench]] 47.0%×1.0 |
+| 지시 따르기 | 46.7 | -0.22 | 실측 | [[ifbench]] 47.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

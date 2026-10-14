@@ -14,9 +14,9 @@ is_reasoning: false
 radar:
   knowledge: { s: 16.7, z: -1.21, r: 31.9, estimated: false }  # 전문 지식
   reasoning: { s: 15.0, z: -0.99, r: 35.2, estimated: false }  # 추론
-  coding: { s: 3.9, z: -1.12, r: 33.2, estimated: true }  # 코딩
-  agentic: { s: 16.7, z: -0.85, r: 37.2, estimated: true }  # 에이전트
-  trust: { s: 26.0, z: -0.04, r: 49.5, estimated: true }  # 신뢰성
+  coding: { s: 3.9, z: -1.12, r: 33.1, estimated: true }  # 코딩
+  agentic: { s: 16.7, z: -0.86, r: 37.2, estimated: true }  # 에이전트
+  trust: { s: 26.0, z: -0.04, r: 49.4, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 18.3, z: -1.02, r: 34.7, estimated: true }  # 긴문맥
   instruction: { s: 28.3, z: -1.09, r: 33.6, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DBRX
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-13
-timestamp: 2026-10-13T00:00:00Z
+updated: 2026-10-14
+timestamp: 2026-10-14T00:00:00Z
 ---
 
 # DBRX
@@ -45,9 +45,9 @@ Databricks · Open · Medium · 컨텍스트 32k · 종합지능 **5.0** · ⚠�
 |---|---|---|---|---|
 | 전문 지식 | 31.9 | -1.21 | 실측 | [[gpqa-diamond]] 33.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
 | 추론 | 35.2 | -0.99 | 실측 | [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
-| 코딩 | 33.2 | -1.12 | 추정 | (추정) |
-| 에이전트 | 37.2 | -0.85 | 추정 | (추정) |
-| 신뢰성 | 49.5 | -0.04 | 추정 | (추정) |
+| 코딩 | 33.1 | -1.12 | 추정 | (추정) |
+| 에이전트 | 37.2 | -0.86 | 추정 | (추정) |
+| 신뢰성 | 49.4 | -0.04 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 34.7 | -1.02 | 추정 | (추정) |
 | 지시 따르기 | 33.6 | -1.09 | 추정 | (추정) |
