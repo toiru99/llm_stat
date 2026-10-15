@@ -5,7 +5,7 @@ creator: Z AI
 license: Open
 intelligence_index: 8.0
 price_blended_usd_1m: 0.377
-output_speed_tps: 43.0
+output_speed_tps: 47.0
 context_window: 64000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.5V
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # GLM-4.5V
@@ -37,7 +37,7 @@ Z AI · Open · Unknown · 컨텍스트 64k · 종합지능 **8.0** · ⚠️ pa
 - **약점**: 멀티모달, 긴문맥
 
 ## 실용 지표
-`입력 $0.6 · 출력 $1.8 · 혼합 $0.377/1M · 43.0 t/s · TTFT 2.72s · 64k ctx` · 가성비 21.2
+`입력 $0.6 · 출력 $1.8 · 혼합 $0.377/1M · 47.0 t/s · TTFT 2.74s · 64k ctx` · 가성비 21.2
 
 ## 레이더 8축 (평균=50 기준선)
 

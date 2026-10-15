@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: 7.0
 price_blended_usd_1m: 0.053
-output_speed_tps: 65.0
+output_speed_tps: 58.0
 context_window: 32000
 status: past
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Small 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # Mistral Small 3
@@ -37,7 +37,7 @@ Mistral · Open · Small · 컨텍스트 32k · 종합지능 **7.0** · ⚠️ p
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.08 · 혼합 $0.053/1M · 65.0 t/s · TTFT 0.89s · 32k ctx` · 가성비 132.1
+`입력 $0.05 · 출력 $0.08 · 혼합 $0.053/1M · 58.0 t/s · TTFT 0.88s · 32k ctx` · 가성비 132.1
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -19,13 +19,13 @@ radar:
   trust: { s: 78.4, z: 2.36, r: 85.4, estimated: false }  # 신뢰성
   multimodal: { s: 87.7, z: 0.81, r: 62.2, estimated: false }  # 멀티모달
   long_context: { s: 87.6, z: 1.07, r: 66.1, estimated: false }  # 긴문맥
-  instruction: { s: 78.1, z: 0.98, r: 64.7, estimated: true }  # 지시 따르기
+  instruction: { s: 78.0, z: 0.98, r: 64.7, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Ling-3.0-flash-VL
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # Ling-3.0-flash-VL

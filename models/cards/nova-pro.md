@@ -5,7 +5,7 @@ creator: Amazon
 license: Proprietary
 intelligence_index: 7.0
 price_blended_usd_1m: 0.62
-output_speed_tps: 126.0
+output_speed_tps: 127.0
 context_window: 300000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # Nova Pro
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 300k · 종합지능 **7.0** ·
 - **약점**: 에이전트, 멀티모달
 
 ## 실용 지표
-`입력 $0.8 · 출력 $3.2 · 혼합 $0.62/1M · 126.0 t/s · TTFT 1.12s · 300k ctx` · 가성비 11.3
+`입력 $0.8 · 출력 $3.2 · 혼합 $0.62/1M · 127.0 t/s · TTFT 1.07s · 300k ctx` · 가성비 11.3
 
 ## 레이더 8축 (평균=50 기준선)
 

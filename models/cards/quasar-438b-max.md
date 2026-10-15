@@ -5,7 +5,7 @@ creator: Multiverse Computing
 license: Proprietary
 intelligence_index: 27.0
 price_blended_usd_1m: 0.72
-output_speed_tps: 165.0
+output_speed_tps: 145.0
 context_window: 1000000
 status: current
 size_class: Large
@@ -19,13 +19,13 @@ radar:
   trust: { s: 79.4, z: 2.41, r: 86.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 85.4, z: 1.0, r: 65.1, estimated: false }  # 긴문맥
-  instruction: { s: 79.9, z: 1.06, r: 65.9, estimated: true }  # 지시 따르기
+  instruction: { s: 79.5, z: 1.04, r: 65.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Quasar 438B (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # Quasar 438B (max)
@@ -37,7 +37,7 @@ Multiverse Computing · Proprietary · Large · 컨텍스트 1M · 종합지능 
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.6 · 출력 $1.8 · 혼합 $0.72/1M · 165.0 t/s · TTFT 1.29s · 1M ctx` · 가성비 37.5
+`입력 $0.6 · 출력 $1.8 · 혼합 $0.72/1M · 145.0 t/s · TTFT 1.3s · 1M ctx` · 가성비 37.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Multiverse Computing · Proprietary · Large · 컨텍스트 1M · 종합지능 
 | 신뢰성 | 86.2 | +2.41 | 실측 | [[aa-omniscience]] 79.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 65.1 | +1.0 | 실측 | [[aa-lcr]] 76.0%×1.0 |
-| 지시 따르기 | 65.9 | +1.06 | 추정 | (추정) |
+| 지시 따르기 | 65.6 | +1.04 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

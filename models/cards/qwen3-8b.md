@@ -3,7 +3,7 @@ type: Model
 title: Qwen3 8B
 creator: Alibaba
 license: Open
-intelligence_index: 7.0
+intelligence_index: 5.0
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 131000
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # Qwen3 8B
 
-Alibaba · Open · Unknown · 컨텍스트 131k · 종합지능 **7.0** · ⚠️ past(구세대)
+Alibaba · Open · Unknown · 컨텍스트 131k · 종합지능 **5.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 코딩, 추론

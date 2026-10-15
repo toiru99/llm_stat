@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 30.0
 price_blended_usd_1m: 1.74
-output_speed_tps: 106.0
+output_speed_tps: 88.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Terra (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # GPT-5.6 Terra (medium)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **30.0**
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $2.0 · 출력 $12.0 · 혼합 $1.74/1M · 106.0 t/s · TTFT 1.87s · 1M ctx` · 가성비 17.2
+`입력 $2.0 · 출력 $12.0 · 혼합 $1.74/1M · 88.0 t/s · TTFT 1.66s · 1M ctx` · 가성비 17.2
 
 ## 레이더 8축 (평균=50 기준선)
 

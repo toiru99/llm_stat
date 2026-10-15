@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 23.0
 price_blended_usd_1m: 1.54
-output_speed_tps: 70.0
+output_speed_tps: 58.0
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 54.3, z: 0.54, r: 58.1, estimated: false }  # 전문 지식
   reasoning: { s: 38.1, z: 0.07, r: 51.0, estimated: false }  # 추론
   coding: { s: 61.8, z: 0.84, r: 62.6, estimated: true }  # 코딩
-  agentic: { s: 42.2, z: 0.11, r: 51.7, estimated: false }  # 에이전트
+  agentic: { s: 41.4, z: 0.08, r: 51.2, estimated: false }  # 에이전트
   trust: { s: 47.4, z: 0.94, r: 64.2, estimated: false }  # 신뢰성
   multimodal: { s: 78.1, z: 0.33, r: 55.0, estimated: false }  # 멀티모달
   long_context: { s: 78.7, z: 0.8, r: 62.0, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # Claude Sonnet 5 (non-reasoning)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **23.0** 
 - **약점**: 에이전트, 추론
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 70.0 t/s · TTFT 0.73s · 1M ctx` · 가성비 14.9
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 58.0 t/s · TTFT 0.73s · 1M ctx` · 가성비 14.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **23.0** 
 | 전문 지식 | 58.1 | +0.54 | 실측 | [[aa-omniscience]] 34.0%×1.0, [[gpqa-diamond]] 80.0%×0.4, [[humanitys-last-exam]] 19.0%×0.3 |
 | 추론 | 51.0 | +0.07 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 80.0%×1.0, [[humanitys-last-exam]] 19.0%×1.0 |
 | 코딩 | 62.6 | +0.84 | 추정 | (추정) |
-| 에이전트 | 51.7 | +0.11 | 실측 | [[gdpval]] 36.0%×1.0, [[tau3-banking]] 16.0%×1.0 |
+| 에이전트 | 51.2 | +0.08 | 실측 | [[gdpval]] 35.0%×1.0, [[tau3-banking]] 16.0%×1.0 |
 | 신뢰성 | 64.2 | +0.94 | 실측 | [[aa-omniscience]] 48.0%×1.0 |
 | 멀티모달 | 55.0 | +0.33 | 실측 | [[mmmu-pro]] 72.0%×1.0 |
 | 긴문맥 | 62.0 | +0.8 | 실측 | [[aa-lcr]] 70.0%×1.0 |

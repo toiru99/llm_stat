@@ -5,7 +5,7 @@ creator: Thinking Machines
 license: Open
 intelligence_index: 26.0
 price_blended_usd_1m: 0.222
-output_speed_tps: 179.0
+output_speed_tps: 190.0
 context_window: 1000000
 status: current
 size_class: Large
@@ -19,13 +19,13 @@ radar:
   trust: { s: 36.1, z: 0.42, r: 56.4, estimated: false }  # 신뢰성
   multimodal: { s: 80.8, z: 0.47, r: 57.0, estimated: false }  # 멀티모달
   long_context: { s: 85.4, z: 1.0, r: 65.1, estimated: false }  # 긴문맥
-  instruction: { s: 84.1, z: 1.23, r: 68.5, estimated: true }  # 지시 따르기
+  instruction: { s: 82.6, z: 1.17, r: 67.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Inkling Small
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # Inkling Small
@@ -33,11 +33,11 @@ timestamp: 2026-10-14T00:00:00Z
 Thinking Machines · Open · Large · 컨텍스트 1M · 종합지능 **26.0**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 지시 따르기, 코딩
+- **강점**: 코딩, 지시 따르기
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 179.0 t/s · TTFT 2.2s · 1M ctx` · 가성비 117.1
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 190.0 t/s · TTFT 2.0s · 1M ctx` · 가성비 117.1
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Thinking Machines · Open · Large · 컨텍스트 1M · 종합지능 **26.0**
 | 신뢰성 | 56.4 | +0.42 | 실측 | [[aa-omniscience]] 37.0%×1.0 |
 | 멀티모달 | 57.0 | +0.47 | 실측 | [[mmmu-pro]] 74.0%×1.0 |
 | 긴문맥 | 65.1 | +1.0 | 실측 | [[aa-lcr]] 76.0%×1.0 |
-| 지시 따르기 | 68.5 | +1.23 | 추정 | (추정) |
+| 지시 따르기 | 67.6 | +1.17 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

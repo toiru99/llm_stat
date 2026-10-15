@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 4.6 (non-reasoning, high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # Claude Opus 4.6 (non-reasoning, high)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **26.0** 
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $5.0 · 출력 $25.0 · 혼합 $3.85/1M · 38.0 t/s · TTFT 1.96s · 1M ctx` · 가성비 6.8
+`입력 $5.0 · 출력 $25.0 · 혼합 $3.85/1M · 38.0 t/s · TTFT 2.13s · 1M ctx` · 가성비 6.8
 
 ## 레이더 8축 (평균=50 기준선)
 

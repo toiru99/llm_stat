@@ -5,7 +5,7 @@ creator: Alibaba
 license: Proprietary
 intelligence_index: 12.0
 price_blended_usd_1m: 0.17
-output_speed_tps: 234.0
+output_speed_tps: 223.0
 context_window: 256000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 Omni Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # Qwen3.5 Omni Flash
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **12.0**
 - **약점**: 코딩, 신뢰성
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.8 · 혼합 $0.17/1M · 234.0 t/s · TTFT 1.83s · 256k ctx` · 가성비 70.6
+`입력 $0.1 · 출력 $0.8 · 혼합 $0.17/1M · 223.0 t/s · TTFT 1.88s · 256k ctx` · 가성비 70.6
 
 ## 레이더 8축 (평균=50 기준선)
 

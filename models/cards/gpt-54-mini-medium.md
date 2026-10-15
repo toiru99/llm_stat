@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.4 mini (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # GPT-5.4 mini (medium)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **20.0** �
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $0.75 · 출력 $4.5 · 혼합 $0.6525/1M · 205.0 t/s · TTFT 16.43s · 400k ctx` · 가성비 30.7
+`입력 $0.75 · 출력 $4.5 · 혼합 $0.6525/1M · 205.0 t/s · TTFT 11.64s · 400k ctx` · 가성비 30.7
 
 ## 레이더 8축 (평균=50 기준선)
 

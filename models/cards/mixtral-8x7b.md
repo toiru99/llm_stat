@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: 5.0
 price_blended_usd_1m: 0.475
-output_speed_tps: 24.0
+output_speed_tps: 25.0
 context_window: 32800
 status: past
 size_class: Medium
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mixtral 8x7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # Mixtral 8x7B
@@ -37,7 +37,7 @@ Mistral · Open · Medium · 컨텍스트 32k · 종합지능 **5.0** · ⚠️ 
 - **약점**: 전문 지식, 긴문맥
 
 ## 실용 지표
-`입력 $0.45 · 출력 $0.7 · 혼합 $0.475/1M · 24.0 t/s · TTFT 1.11s · 32k ctx` · 가성비 10.5
+`입력 $0.45 · 출력 $0.7 · 혼합 $0.475/1M · 25.0 t/s · TTFT 1.11s · 32k ctx` · 가성비 10.5
 
 ## 레이더 8축 (평균=50 기준선)
 

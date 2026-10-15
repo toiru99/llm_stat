@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 29.0
 price_blended_usd_1m: 1.54
-output_speed_tps: 104.0
+output_speed_tps: 86.0
 context_window: 1050000
 status: past
 size_class: Unknown
@@ -19,13 +19,13 @@ radar:
   trust: { s: 14.4, z: -0.57, r: 41.5, estimated: false }  # 신뢰성
   multimodal: { s: 75.3, z: 0.19, r: 52.9, estimated: false }  # 멀티모달
   long_context: { s: 71.9, z: 0.6, r: 59.0, estimated: false }  # 긴문맥
-  instruction: { s: 62.9, z: 0.35, r: 55.2, estimated: true }  # 지시 따르기
+  instruction: { s: 62.9, z: 0.35, r: 55.3, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6 Sol (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # GPT-6 Sol (non-reasoning)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **29.0** · 
 - **약점**: 신뢰성, 추론
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 104.0 t/s · TTFT 0.85s · 1M ctx` · 가성비 18.8
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 86.0 t/s · TTFT 0.87s · 1M ctx` · 가성비 18.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **29.0** · 
 | 신뢰성 | 41.5 | -0.57 | 실측 | [[aa-omniscience]] 16.0%×1.0 |
 | 멀티모달 | 52.9 | +0.19 | 실측 | [[mmmu-pro]] 70.0%×1.0 |
 | 긴문맥 | 59.0 | +0.6 | 실측 | [[aa-lcr]] 64.0%×1.0 |
-| 지시 따르기 | 55.2 | +0.35 | 추정 | (추정) |
+| 지시 따르기 | 55.3 | +0.35 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Pro 4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # Solar Pro 4
@@ -37,7 +37,7 @@ Upstage · Proprietary · Unknown · 컨텍스트 512k · 종합지능 **28.0**
 - **약점**: 에이전트, 전문 지식
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 93.0 t/s · TTFT 1.95s · 512k ctx` · 가성비 126.1
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 93.0 t/s · TTFT 2.02s · 512k ctx` · 가성비 126.1
 
 ## 레이더 8축 (평균=50 기준선)
 

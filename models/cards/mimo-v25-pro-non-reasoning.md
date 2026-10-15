@@ -5,7 +5,7 @@ creator: Xiaomi
 license: Open
 intelligence_index: 18.0
 price_blended_usd_1m: 0.1765
-output_speed_tps: 38.0
+output_speed_tps: 32.0
 context_window: 1000000
 status: past
 size_class: Large
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 45.9, z: 0.15, r: 52.2, estimated: false }  # 전문 지식
   reasoning: { s: 34.4, z: -0.11, r: 48.4, estimated: false }  # 추론
   coding: { s: 54.5, z: 0.6, r: 58.9, estimated: false }  # 코딩
-  agentic: { s: 64.1, z: 0.94, r: 64.2, estimated: false }  # 에이전트
+  agentic: { s: 64.1, z: 0.94, r: 64.1, estimated: false }  # 에이전트
   trust: { s: 9.3, z: -0.81, r: 37.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 47.2, z: -0.15, r: 47.8, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2.5-Pro (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # MiMo-V2.5-Pro (non-reasoning)
@@ -37,7 +37,7 @@ Xiaomi · Open · Large · 컨텍스트 1M · 종합지능 **18.0** · ⚠️ pa
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $0.43 · 출력 $0.87 · 혼합 $0.1765/1M · 38.0 t/s · TTFT 1.99s · 1M ctx` · 가성비 102.0
+`입력 $0.43 · 출력 $0.87 · 혼합 $0.1765/1M · 32.0 t/s · TTFT 2.08s · 1M ctx` · 가성비 102.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Xiaomi · Open · Large · 컨텍스트 1M · 종합지능 **18.0** · ⚠️ pa
 | 전문 지식 | 52.2 | +0.15 | 실측 | [[aa-omniscience]] 27.0%×1.0, [[gpqa-diamond]] 76.0%×0.4, [[humanitys-last-exam]] 15.0%×0.3 |
 | 추론 | 48.4 | -0.11 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 15.0%×1.0 |
 | 코딩 | 58.9 | +0.6 | 실측 | [[terminal-bench]] 36.0%×0.5 |
-| 에이전트 | 64.2 | +0.94 | 실측 | [[tau2-bench]] 73.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
+| 에이전트 | 64.1 | +0.94 | 실측 | [[tau2-bench]] 73.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
 | 신뢰성 | 37.9 | -0.81 | 실측 | [[aa-omniscience]] 11.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 47.8 | -0.15 | 실측 | [[aa-lcr]] 42.0%×1.0 |

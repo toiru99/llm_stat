@@ -5,7 +5,7 @@ creator: SpaceXAI
 license: Proprietary
 intelligence_index: 15.0
 price_blended_usd_1m: 0.1625
-output_speed_tps: 67.0
+output_speed_tps: 65.0
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 35.0, z: -0.36, r: 44.6, estimated: false }  # 전문 지식
   reasoning: { s: 33.3, z: -0.16, r: 47.7, estimated: false }  # 추론
   coding: { s: 25.8, z: -0.38, r: 44.3, estimated: false }  # 코딩
-  agentic: { s: 58.3, z: 0.72, r: 60.9, estimated: false }  # 에이전트
+  agentic: { s: 58.3, z: 0.72, r: 60.8, estimated: false }  # 에이전트
   trust: { s: 74.2, z: 2.17, r: 82.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 61.8, z: 0.29, r: 54.4, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 3 mini Reasoning (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # Grok 3 mini Reasoning (high)
@@ -37,7 +37,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **15.0** �
 - **약점**: 전문 지식, 코딩
 
 ## 실용 지표
-`입력 $0.3 · 출력 $0.5 · 혼합 $0.1625/1M · 67.0 t/s · TTFT 1.7s · 1M ctx` · 가성비 92.3
+`입력 $0.3 · 출력 $0.5 · 혼합 $0.1625/1M · 65.0 t/s · TTFT 1.74s · 1M ctx` · 가성비 92.3
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **15.0** �
 | 전문 지식 | 44.6 | -0.36 | 실측 | [[aa-omniscience]] 15.0%×1.0, [[gpqa-diamond]] 79.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
 | 추론 | 47.7 | -0.16 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 79.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
 | 코딩 | 44.3 | -0.38 | 실측 | [[terminal-bench]] 17.0%×0.5 |
-| 에이전트 | 60.9 | +0.72 | 실측 | [[tau2-bench]] 90.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
+| 에이전트 | 60.8 | +0.72 | 실측 | [[tau2-bench]] 90.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
 | 신뢰성 | 82.6 | +2.17 | 실측 | [[aa-omniscience]] 74.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 54.4 | +0.29 | 실측 | [[aa-lcr]] 55.0%×1.0 |

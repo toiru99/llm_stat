@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 13.4, z: -1.36, r: 29.6, estimated: false }  # 전문 지식
   reasoning: { s: 9.6, z: -1.24, r: 31.4, estimated: false }  # 추론
   coding: { s: 1.5, z: -1.21, r: 31.9, estimated: false }  # 코딩
-  agentic: { s: 2.2, z: -1.41, r: 28.9, estimated: false }  # 에이전트
+  agentic: { s: 2.2, z: -1.4, r: 28.9, estimated: false }  # 에이전트
   trust: { s: 0.0, z: -1.23, r: 31.5, estimated: false }  # 신뢰성
   multimodal: { s: 20.5, z: -2.55, r: 11.8, estimated: false }  # 멀티모달
   long_context: { s: 7.9, z: -1.34, r: 29.9, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 3 4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # Gemma 3 4B
@@ -46,7 +46,7 @@ Google · Open · Tiny · 컨텍스트 128k · 종합지능 **5.0** · ⚠️ pa
 | 전문 지식 | 29.6 | -1.36 | 실측 | [[aa-omniscience]] 8.0%×1.0, [[gpqa-diamond]] 29.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 31.4 | -1.24 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 29.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 31.9 | -1.21 | 실측 | [[terminal-bench]] 1.0%×0.5 |
-| 에이전트 | 28.9 | -1.41 | 실측 | [[tau2-bench]] 5.0%×1.0, [[tau3-banking]] 0.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
+| 에이전트 | 28.9 | -1.4 | 실측 | [[tau2-bench]] 5.0%×1.0, [[tau3-banking]] 0.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
 | 신뢰성 | 31.5 | -1.23 | 실측 | [[aa-omniscience]] 2.0%×1.0 |
 | 멀티모달 | 11.8 | -2.55 | 실측 | [[mmmu-pro]] 30.0%×1.0 |
 | 긴문맥 | 29.9 | -1.34 | 실측 | [[aa-lcr]] 7.0%×1.0 |

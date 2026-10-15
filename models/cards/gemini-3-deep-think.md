@@ -19,13 +19,13 @@ radar:
   trust: { s: 34.8, z: 0.36, r: 55.5, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 90.5, z: 1.16, r: 67.4, estimated: true }  # 긴문맥
-  instruction: { s: 80.7, z: 1.09, r: 66.4, estimated: true }  # 지시 따르기
+  instruction: { s: 80.9, z: 1.1, r: 66.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3 Deep Think
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # Gemini 3 Deep Think
@@ -50,7 +50,7 @@ Google · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None**
 | 신뢰성 | 55.5 | +0.36 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 67.4 | +1.16 | 추정 | (추정) |
-| 지시 따르기 | 66.4 | +1.09 | 추정 | (추정) |
+| 지시 따르기 | 66.5 | +1.1 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

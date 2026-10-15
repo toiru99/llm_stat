@@ -19,13 +19,13 @@ radar:
   trust: { s: 47.4, z: 0.94, r: 64.2, estimated: false }  # 신뢰성
   multimodal: { s: 94.5, z: 1.15, r: 67.3, estimated: false }  # 멀티모달
   long_context: { s: 94.4, z: 1.28, r: 69.1, estimated: false }  # 긴문맥
-  instruction: { s: 78.0, z: 0.98, r: 64.6, estimated: true }  # 지시 따르기
+  instruction: { s: 78.3, z: 0.99, r: 64.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.8 Flash (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # Gemini 3.8 Flash (medium)
@@ -50,7 +50,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **40.0**
 | 신뢰성 | 64.2 | +0.94 | 실측 | [[aa-omniscience]] 48.0%×1.0 |
 | 멀티모달 | 67.3 | +1.15 | 실측 | [[mmmu-pro]] 84.0%×1.0 |
 | 긴문맥 | 69.1 | +1.28 | 실측 | [[aa-lcr]] 84.0%×1.0 |
-| 지시 따르기 | 64.6 | +0.98 | 추정 | (추정) |
+| 지시 따르기 | 64.9 | +0.99 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

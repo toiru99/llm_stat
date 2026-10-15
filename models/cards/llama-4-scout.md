@@ -3,9 +3,9 @@ type: Model
 title: Llama 4 Scout
 creator: Meta
 license: Open
-intelligence_index: 8.0
+intelligence_index: 6.0
 price_blended_usd_1m: 0.228
-output_speed_tps: 68.0
+output_speed_tps: 80.0
 context_window: 10000000
 status: current
 size_class: Medium
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 4 Scout
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # Llama 4 Scout
 
-Meta · Open · Medium · 컨텍스트 10M · 종합지능 **8.0**
+Meta · Open · Medium · 컨텍스트 10M · 종합지능 **6.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 긴문맥
 - **약점**: 멀티모달, 에이전트
 
 ## 실용 지표
-`입력 $0.18 · 출력 $0.66 · 혼합 $0.228/1M · 68.0 t/s · TTFT 0.88s · 10M ctx` · 가성비 35.1
+`입력 $0.18 · 출력 $0.66 · 혼합 $0.228/1M · 80.0 t/s · TTFT 0.94s · 10M ctx` · 가성비 26.3
 
 ## 레이더 8축 (평균=50 기준선)
 

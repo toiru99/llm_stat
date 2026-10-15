@@ -5,7 +5,7 @@ creator: DeepSeek
 license: Open
 intelligence_index: 39.0
 price_blended_usd_1m: 0.1842
-output_speed_tps: 186.0
+output_speed_tps: 174.0
 context_window: 1000000
 status: current
 size_class: Large
@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 67.4, z: 1.15, r: 67.2, estimated: false }  # 전문 지식
   reasoning: { s: 52.9, z: 0.74, r: 61.1, estimated: false }  # 추론
   coding: { s: 75.0, z: 1.29, r: 69.4, estimated: false }  # 코딩
-  agentic: { s: 82.3, z: 1.63, r: 74.5, estimated: false }  # 에이전트
+  agentic: { s: 82.3, z: 1.63, r: 74.4, estimated: false }  # 에이전트
   trust: { s: 2.1, z: -1.14, r: 33.0, estimated: false }  # 신뢰성
   multimodal: { s: 84.9, z: 0.67, r: 60.1, estimated: false }  # 멀티모달
   long_context: { s: 94.4, z: 1.28, r: 69.1, estimated: false }  # 긴문맥
-  instruction: { s: 83.2, z: 1.19, r: 67.9, estimated: true }  # 지시 따르기
+  instruction: { s: 83.1, z: 1.19, r: 67.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4.1 Flash (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # DeepSeek V4.1 Flash (max)
@@ -37,7 +37,7 @@ DeepSeek · Open · Large · 컨텍스트 1M · 종합지능 **39.0**
 - **약점**: 멀티모달, 신뢰성
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.1842/1M · 186.0 t/s · TTFT 0.96s · 1M ctx` · 가성비 211.7
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.1842/1M · 174.0 t/s · TTFT 1.13s · 1M ctx` · 가성비 211.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ DeepSeek · Open · Large · 컨텍스트 1M · 종합지능 **39.0**
 | 전문 지식 | 67.2 | +1.15 | 실측 | [[aa-omniscience]] 46.0%×1.0, [[humanitys-last-exam]] 39.0%×0.3 |
 | 추론 | 61.1 | +0.74 | 실측 | [[critpt]] 14.0%×1.0, [[humanitys-last-exam]] 39.0%×1.0 |
 | 코딩 | 69.4 | +1.29 | 실측 | [[scicode]] 52.0%×1.0 |
-| 에이전트 | 74.5 | +1.63 | 실측 | [[gdpval]] 55.0%×1.0, [[itbench]] 47.0%×1.0 |
+| 에이전트 | 74.4 | +1.63 | 실측 | [[gdpval]] 55.0%×1.0, [[itbench]] 47.0%×1.0 |
 | 신뢰성 | 33.0 | -1.14 | 실측 | [[aa-omniscience]] 4.0%×1.0 |
 | 멀티모달 | 60.1 | +0.67 | 실측 | [[mmmu-pro]] 77.0%×1.0 |
 | 긴문맥 | 69.1 | +1.28 | 실측 | [[aa-lcr]] 84.0%×1.0 |

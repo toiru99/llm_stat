@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 32.0
 price_blended_usd_1m: 1.54
-output_speed_tps: 72.0
+output_speed_tps: 59.0
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -19,13 +19,13 @@ radar:
   trust: { s: 33.0, z: 0.28, r: 54.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 86.5, z: 1.04, r: 65.6, estimated: false }  # 긴문맥
-  instruction: { s: 81.3, z: 1.12, r: 66.7, estimated: true }  # 지시 따르기
+  instruction: { s: 81.3, z: 1.12, r: 66.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # Claude Sonnet 5 (high)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **32.0** 
 - **약점**: 전문 지식, 신뢰성
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 72.0 t/s · TTFT 15.46s · 1M ctx` · 가성비 20.8
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 59.0 t/s · TTFT 14.28s · 1M ctx` · 가성비 20.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **32.0** 
 | 신뢰성 | 54.2 | +0.28 | 실측 | [[aa-omniscience]] 34.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 65.6 | +1.04 | 실측 | [[aa-lcr]] 77.0%×1.0 |
-| 지시 따르기 | 66.7 | +1.12 | 추정 | (추정) |
+| 지시 따르기 | 66.8 | +1.12 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

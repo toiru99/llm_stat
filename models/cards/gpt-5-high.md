@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # GPT-5 (high)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **23.0** �
 - **약점**: 코딩, 신뢰성
 
 ## 실용 지표
-`입력 $1.25 · 출력 $10.0 · 혼합 $1.3375/1M · 102.0 t/s · TTFT 80.92s · 400k ctx` · 가성비 17.2
+`입력 $1.25 · 출력 $10.0 · 혼합 $1.3375/1M · 102.0 t/s · TTFT 71.83s · 400k ctx` · 가성비 17.2
 
 ## 레이더 8축 (평균=50 기준선)
 

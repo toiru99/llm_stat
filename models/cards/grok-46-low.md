@@ -5,7 +5,7 @@ creator: SpaceXAI
 license: Proprietary
 intelligence_index: 35.0
 price_blended_usd_1m: 1.35
-output_speed_tps: 60.0
+output_speed_tps: 51.0
 context_window: 500000
 status: past
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 67.0, z: 1.13, r: 66.9, estimated: false }  # 전문 지식
   reasoning: { s: 51.3, z: 0.67, r: 60.0, estimated: false }  # 추론
   coding: { s: 70.0, z: 1.12, r: 66.8, estimated: false }  # 코딩
-  agentic: { s: 70.3, z: 1.18, r: 67.7, estimated: false }  # 에이전트
+  agentic: { s: 71.1, z: 1.21, r: 68.1, estimated: false }  # 에이전트
   trust: { s: 69.1, z: 1.94, r: 79.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 91.0, z: 1.17, r: 67.6, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.6 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # Grok 4.6 (low)
@@ -37,7 +37,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **35.0**
 - **약점**: 코딩, 추론
 
 ## 실용 지표
-`입력 $2.0 · 출력 $6.0 · 혼합 $1.35/1M · 60.0 t/s · TTFT 10.89s · 500k ctx` · 가성비 25.9
+`입력 $2.0 · 출력 $6.0 · 혼합 $1.35/1M · 51.0 t/s · TTFT 7.6s · 500k ctx` · 가성비 25.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **35.0**
 | 전문 지식 | 66.9 | +1.13 | 실측 | [[aa-omniscience]] 43.0%×1.0, [[gpqa-diamond]] 88.0%×0.4, [[humanitys-last-exam]] 28.0%×0.3 |
 | 추론 | 60.0 | +0.67 | 실측 | [[critpt]] 6.0%×1.0, [[gpqa-diamond]] 88.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
 | 코딩 | 66.8 | +1.12 | 실측 | [[scicode]] 49.0%×1.0 |
-| 에이전트 | 67.7 | +1.18 | 실측 | [[gdpval]] 45.0%×1.0, [[tau3-banking]] 38.0%×1.0 |
+| 에이전트 | 68.1 | +1.21 | 실측 | [[gdpval]] 46.0%×1.0, [[tau3-banking]] 38.0%×1.0 |
 | 신뢰성 | 79.1 | +1.94 | 실측 | [[aa-omniscience]] 69.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 67.6 | +1.17 | 실측 | [[aa-lcr]] 81.0%×1.0 |

@@ -5,7 +5,7 @@ creator: Sapiens AI
 license: Proprietary
 intelligence_index: 35.0
 price_blended_usd_1m: 0.057
-output_speed_tps: 95.0
+output_speed_tps: 119.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -19,13 +19,13 @@ radar:
   trust: { s: 67.0, z: 1.84, r: 77.6, estimated: false }  # 신뢰성
   multimodal: { s: 82.2, z: 0.54, r: 58.0, estimated: false }  # 멀티모달
   long_context: { s: 93.3, z: 1.24, r: 68.6, estimated: false }  # 긴문맥
-  instruction: { s: 90.3, z: 1.49, r: 72.4, estimated: true }  # 지시 따르기
+  instruction: { s: 86.5, z: 1.33, r: 70.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Agnes 2.5 Pro Beta
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # Agnes 2.5 Pro Beta
@@ -33,11 +33,11 @@ timestamp: 2026-10-14T00:00:00Z
 Sapiens AI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **35.0**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 신뢰성, 지시 따르기
+- **강점**: 신뢰성, 추론
 - **약점**: 멀티모달, 전문 지식
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.3 · 혼합 $0.057/1M · 95.0 t/s · TTFT 3.38s · 1M ctx` · 가성비 614.0
+`입력 $0.1 · 출력 $0.3 · 혼합 $0.057/1M · 119.0 t/s · TTFT 1.41s · 1M ctx` · 가성비 614.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Sapiens AI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **35.0**
 | 신뢰성 | 77.6 | +1.84 | 실측 | [[aa-omniscience]] 67.0%×1.0 |
 | 멀티모달 | 58.0 | +0.54 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
 | 긴문맥 | 68.6 | +1.24 | 실측 | [[aa-lcr]] 83.0%×1.0 |
-| 지시 따르기 | 72.4 | +1.49 | 추정 | (추정) |
+| 지시 따르기 | 70.0 | +1.33 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

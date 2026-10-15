@@ -5,7 +5,7 @@ creator: Google
 license: Open
 intelligence_index: 13.0
 price_blended_usd_1m: 0.136
-output_speed_tps: 97.0
+output_speed_tps: 93.0
 context_window: 256000
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 26B A4B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # Gemma 4 26B A4B (non-reasoning)
@@ -37,7 +37,7 @@ Google · Open · Small · 컨텍스트 256k · 종합지능 **13.0**
 - **약점**: 전문 지식, 신뢰성
 
 ## 실용 지표
-`입력 $0.13 · 출력 $0.4 · 혼합 $0.136/1M · 97.0 t/s · TTFT 0.97s · 256k ctx` · 가성비 95.6
+`입력 $0.13 · 출력 $0.4 · 혼합 $0.136/1M · 93.0 t/s · TTFT 0.98s · 256k ctx` · 가성비 95.6
 
 ## 레이더 8축 (평균=50 기준선)
 

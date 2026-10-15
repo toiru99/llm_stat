@@ -5,7 +5,7 @@ creator: DeepSeek
 license: Open
 intelligence_index: 10.0
 price_blended_usd_1m: 0.2325
-output_speed_tps: 84.0
+output_speed_tps: 83.0
 context_window: 128000
 status: past
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V3 0324
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # DeepSeek V3 0324
@@ -37,7 +37,7 @@ DeepSeek · Open · Large · 컨텍스트 128k · 종합지능 **10.0** · ⚠�
 - **약점**: 신뢰성, 에이전트
 
 ## 실용 지표
-`입력 $0.24 · 출력 $0.9 · 혼합 $0.2325/1M · 84.0 t/s · TTFT 0.71s · 128k ctx` · 가성비 43.0
+`입력 $0.24 · 출력 $0.9 · 혼합 $0.2325/1M · 83.0 t/s · TTFT 0.71s · 128k ctx` · 가성비 43.0
 
 ## 레이더 8축 (평균=50 기준선)
 

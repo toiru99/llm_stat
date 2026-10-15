@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 122B A10B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # Qwen3.5 122B A10B (non-reasoning)
@@ -37,7 +37,7 @@ Alibaba · Open · Medium · 컨텍스트 262k · 종합지능 **18.0**
 - **약점**: 전문 지식, 신뢰성
 
 ## 실용 지표
-`입력 $0.4 · 출력 $3.2 · 혼합 $0.68/1M · 142.0 t/s · TTFT 2.31s · 262k ctx` · 가성비 26.5
+`입력 $0.4 · 출력 $3.2 · 혼합 $0.68/1M · 142.0 t/s · TTFT 2.38s · 262k ctx` · 가성비 26.5
 
 ## 레이더 8축 (평균=50 기준선)
 

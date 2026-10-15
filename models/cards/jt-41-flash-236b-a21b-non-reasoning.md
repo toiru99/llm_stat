@@ -19,13 +19,13 @@ radar:
   trust: { s: 55.7, z: 1.32, r: 69.8, estimated: false }  # 신뢰성
   multimodal: { s: 67.1, z: -0.22, r: 46.7, estimated: false }  # 멀티모달
   long_context: { s: 79.8, z: 0.83, r: 62.5, estimated: false }  # 긴문맥
-  instruction: { s: 73.9, z: 0.8, r: 62.1, estimated: true }  # 지시 따르기
+  instruction: { s: 73.8, z: 0.8, r: 62.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — JT-4.1 Flash 236B A21B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # JT-4.1 Flash 236B A21B (non-reasoning)

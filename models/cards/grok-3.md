@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-14
-timestamp: 2026-10-14T00:00:00Z
+updated: 2026-10-15
+timestamp: 2026-10-15T00:00:00Z
 ---
 
 # Grok 3
@@ -37,7 +37,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **12.0** �
 - **약점**: 코딩, 신뢰성
 
 ## 실용 지표
-`입력 $3.0 · 출력 $15.0 · 혼합 $2.625/1M · 100.0 t/s · TTFT 1.65s · 1M ctx` · 가성비 4.6
+`입력 $3.0 · 출력 $15.0 · 혼합 $2.625/1M · 100.0 t/s · TTFT 1.78s · 1M ctx` · 가성비 4.6
 
 ## 레이더 8축 (평균=50 기준선)
 
