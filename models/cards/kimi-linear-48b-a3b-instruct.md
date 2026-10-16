@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 21.3, z: -0.99, r: 35.1, estimated: false }  # 전문 지식
-  reasoning: { s: 18.9, z: -0.82, r: 37.8, estimated: false }  # 추론
-  coding: { s: 16.7, z: -0.69, r: 39.6, estimated: false }  # 코딩
-  agentic: { s: 8.3, z: -1.17, r: 32.4, estimated: false }  # 에이전트
-  trust: { s: 19.2, z: -0.35, r: 44.7, estimated: true }  # 신뢰성
+  reasoning: { s: 18.9, z: -0.82, r: 37.7, estimated: false }  # 추론
+  coding: { s: 16.7, z: -0.7, r: 39.5, estimated: false }  # 코딩
+  agentic: { s: 8.3, z: -1.18, r: 32.4, estimated: false }  # 에이전트
+  trust: { s: 19.2, z: -0.36, r: 44.6, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 31.5, z: -0.62, r: 40.6, estimated: false }  # 긴문맥
-  instruction: { s: 22.5, z: -1.34, r: 30.0, estimated: false }  # 지시 따르기
+  long_context: { s: 31.5, z: -0.63, r: 40.6, estimated: false }  # 긴문맥
+  instruction: { s: 22.5, z: -1.34, r: 29.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi Linear 48B A3B Instruct
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-15
-timestamp: 2026-10-15T00:00:00Z
+updated: 2026-10-16
+timestamp: 2026-10-16T00:00:00Z
 ---
 
 # Kimi Linear 48B A3B Instruct
@@ -44,13 +44,13 @@ Kimi · Open · Medium · 컨텍스트 1M · 종합지능 **7.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 35.1 | -0.99 | 실측 | [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 2.0%×0.3 |
-| 추론 | 37.8 | -0.82 | 실측 | [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 2.0%×1.0 |
-| 코딩 | 39.6 | -0.69 | 실측 | [[terminal-bench]] 11.0%×0.5 |
-| 에이전트 | 32.4 | -1.17 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
-| 신뢰성 | 44.7 | -0.35 | 추정 | (추정) |
+| 추론 | 37.7 | -0.82 | 실측 | [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 2.0%×1.0 |
+| 코딩 | 39.5 | -0.7 | 실측 | [[terminal-bench]] 11.0%×0.5 |
+| 에이전트 | 32.4 | -1.18 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 11.0%×1.0 |
+| 신뢰성 | 44.6 | -0.36 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 40.6 | -0.62 | 실측 | [[aa-lcr]] 28.0%×1.0 |
-| 지시 따르기 | 30.0 | -1.34 | 실측 | [[ifbench]] 28.0%×1.0 |
+| 긴문맥 | 40.6 | -0.63 | 실측 | [[aa-lcr]] 28.0%×1.0 |
+| 지시 따르기 | 29.9 | -1.34 | 실측 | [[ifbench]] 28.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

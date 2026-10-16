@@ -13,10 +13,10 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 18.1, z: -1.14, r: 32.9, estimated: false }  # 전문 지식
-  reasoning: { s: 16.7, z: -0.91, r: 36.3, estimated: false }  # 추론
-  coding: { s: 2.4, z: -1.18, r: 32.4, estimated: true }  # 코딩
+  reasoning: { s: 16.7, z: -0.92, r: 36.3, estimated: false }  # 추론
+  coding: { s: 2.4, z: -1.18, r: 32.3, estimated: true }  # 코딩
   agentic: { s: 7.3, z: -1.21, r: 31.8, estimated: true }  # 에이전트
-  trust: { s: 34.5, z: 0.35, r: 55.3, estimated: true }  # 신뢰성
+  trust: { s: 34.5, z: 0.34, r: 55.1, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 8.8, z: -1.31, r: 30.3, estimated: true }  # 긴문맥
   instruction: { s: 30.6, z: -1.0, r: 35.0, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — LFM 40B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-15
-timestamp: 2026-10-15T00:00:00Z
+updated: 2026-10-16
+timestamp: 2026-10-16T00:00:00Z
 ---
 
 # LFM 40B
@@ -44,10 +44,10 @@ Liquid AI · Proprietary · Medium · 컨텍스트 32k · 종합지능 **5.0** �
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 32.9 | -1.14 | 실측 | [[gpqa-diamond]] 33.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 36.3 | -0.91 | 실측 | [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 32.4 | -1.18 | 추정 | (추정) |
+| 추론 | 36.3 | -0.92 | 실측 | [[gpqa-diamond]] 33.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 32.3 | -1.18 | 추정 | (추정) |
 | 에이전트 | 31.8 | -1.21 | 추정 | (추정) |
-| 신뢰성 | 55.3 | +0.35 | 추정 | (추정) |
+| 신뢰성 | 55.1 | +0.34 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 30.3 | -1.31 | 추정 | (추정) |
 | 지시 따르기 | 35.0 | -1.0 | 추정 | (추정) |

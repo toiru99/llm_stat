@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 17.5, z: -1.17, r: 32.4, estimated: false }  # 전문 지식
   reasoning: { s: 16.1, z: -0.94, r: 35.9, estimated: false }  # 추론
-  coding: { s: 0.0, z: -1.26, r: 31.1, estimated: false }  # 코딩
-  agentic: { s: 0.0, z: -1.49, r: 27.7, estimated: false }  # 에이전트
-  trust: { s: 17.9, z: -0.41, r: 43.8, estimated: true }  # 신뢰성
+  coding: { s: 0.0, z: -1.26, r: 31.0, estimated: false }  # 코딩
+  agentic: { s: 0.0, z: -1.49, r: 27.6, estimated: false }  # 에이전트
+  trust: { s: 17.9, z: -0.42, r: 43.7, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 4.2, z: -1.45, r: 28.3, estimated: true }  # 긴문맥
+  long_context: { s: 4.2, z: -1.45, r: 28.2, estimated: true }  # 긴문맥
   instruction: { s: 16.9, z: -1.57, r: 26.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Phi-3 Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-15
-timestamp: 2026-10-15T00:00:00Z
+updated: 2026-10-16
+timestamp: 2026-10-16T00:00:00Z
 ---
 
 # Phi-3 Mini
@@ -45,11 +45,11 @@ Microsoft · Open · Tiny · 컨텍스트 4k · 종합지능 **6.0** · ⚠️ p
 |---|---|---|---|---|
 | 전문 지식 | 32.4 | -1.17 | 실측 | [[gpqa-diamond]] 32.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 35.9 | -0.94 | 실측 | [[gpqa-diamond]] 32.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 31.1 | -1.26 | 실측 | [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 27.7 | -1.49 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 43.8 | -0.41 | 추정 | (추정) |
+| 코딩 | 31.0 | -1.26 | 실측 | [[terminal-bench]] 0.0%×0.5 |
+| 에이전트 | 27.6 | -1.49 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 신뢰성 | 43.7 | -0.42 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 28.3 | -1.45 | 추정 | (추정) |
+| 긴문맥 | 28.2 | -1.45 | 추정 | (추정) |
 | 지시 따르기 | 26.4 | -1.57 | 실측 | [[ifbench]] 24.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

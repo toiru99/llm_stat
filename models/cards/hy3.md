@@ -5,7 +5,7 @@ creator: Tencent
 license: Open
 intelligence_index: 25.0
 price_blended_usd_1m: 0.1065
-output_speed_tps: 85.0
+output_speed_tps: 89.0
 context_window: 256000
 status: current
 size_class: Large
@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 59.4, z: 0.77, r: 61.6, estimated: false }  # 전문 지식
   reasoning: { s: 53.8, z: 0.78, r: 61.7, estimated: false }  # 추론
-  coding: { s: 70.0, z: 1.12, r: 66.8, estimated: false }  # 코딩
-  agentic: { s: 43.1, z: 0.15, r: 52.2, estimated: false }  # 에이전트
-  trust: { s: 24.7, z: -0.1, r: 48.6, estimated: false }  # 신뢰성
+  coding: { s: 70.0, z: 1.11, r: 66.7, estimated: false }  # 코딩
+  agentic: { s: 43.1, z: 0.14, r: 52.2, estimated: false }  # 에이전트
+  trust: { s: 24.7, z: -0.11, r: 48.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 88.8, z: 1.11, r: 66.6, estimated: false }  # 긴문맥
-  instruction: { s: 81.4, z: 1.12, r: 66.8, estimated: true }  # 지시 따르기
+  long_context: { s: 88.8, z: 1.1, r: 66.5, estimated: false }  # 긴문맥
+  instruction: { s: 81.4, z: 1.12, r: 66.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Hy3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-15
-timestamp: 2026-10-15T00:00:00Z
+updated: 2026-10-16
+timestamp: 2026-10-16T00:00:00Z
 ---
 
 # Hy3
@@ -33,11 +33,11 @@ timestamp: 2026-10-15T00:00:00Z
 Tencent · Open · Large · 컨텍스트 256k · 종합지능 **25.0**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 코딩, 지시 따르기
+- **강점**: 지시 따르기, 코딩
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.14 · 출력 $0.55 · 혼합 $0.1065/1M · 85.0 t/s · TTFT 2.79s · 256k ctx` · 가성비 234.7
+`입력 $0.14 · 출력 $0.55 · 혼합 $0.1065/1M · 89.0 t/s · TTFT 2.8s · 256k ctx` · 가성비 234.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,12 +45,12 @@ Tencent · Open · Large · 컨텍스트 256k · 종합지능 **25.0**
 |---|---|---|---|---|
 | 전문 지식 | 61.6 | +0.77 | 실측 | [[aa-omniscience]] 32.0%×1.0, [[gpqa-diamond]] 90.0%×0.4, [[humanitys-last-exam]] 33.0%×0.3 |
 | 추론 | 61.7 | +0.78 | 실측 | [[critpt]] 5.0%×1.0, [[gpqa-diamond]] 90.0%×1.0, [[humanitys-last-exam]] 33.0%×1.0 |
-| 코딩 | 66.8 | +1.12 | 실측 | [[scicode]] 49.0%×1.0 |
-| 에이전트 | 52.2 | +0.15 | 실측 | [[gdpval]] 28.0%×1.0, [[tau3-banking]] 23.0%×1.0 |
-| 신뢰성 | 48.6 | -0.1 | 실측 | [[aa-omniscience]] 26.0%×1.0 |
+| 코딩 | 66.7 | +1.11 | 실측 | [[scicode]] 49.0%×1.0 |
+| 에이전트 | 52.2 | +0.14 | 실측 | [[gdpval]] 28.0%×1.0, [[tau3-banking]] 23.0%×1.0 |
+| 신뢰성 | 48.4 | -0.11 | 실측 | [[aa-omniscience]] 26.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 66.6 | +1.11 | 실측 | [[aa-lcr]] 79.0%×1.0 |
-| 지시 따르기 | 66.8 | +1.12 | 추정 | (추정) |
+| 긴문맥 | 66.5 | +1.1 | 실측 | [[aa-lcr]] 79.0%×1.0 |
+| 지시 따르기 | 66.9 | +1.12 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

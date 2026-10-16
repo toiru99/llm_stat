@@ -5,7 +5,7 @@ creator: Meta
 license: Open
 intelligence_index: 7.0
 price_blended_usd_1m: 0.56
-output_speed_tps: 36.0
+output_speed_tps: 33.0
 context_window: 128000
 status: past
 size_class: Medium
@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 26.9, z: -0.73, r: 39.0, estimated: false }  # 전문 지식
   reasoning: { s: 13.7, z: -1.05, r: 34.2, estimated: false }  # 추론
-  coding: { s: 4.5, z: -1.1, r: 33.5, estimated: false }  # 코딩
-  agentic: { s: 9.8, z: -1.11, r: 33.3, estimated: false }  # 에이전트
-  trust: { s: 20.6, z: -0.29, r: 45.7, estimated: false }  # 신뢰성
+  coding: { s: 4.5, z: -1.11, r: 33.3, estimated: false }  # 코딩
+  agentic: { s: 9.8, z: -1.12, r: 33.2, estimated: false }  # 에이전트
+  trust: { s: 20.6, z: -0.29, r: 45.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 22.5, z: -0.9, r: 36.6, estimated: true }  # 긴문맥
-  instruction: { s: 31.0, z: -0.98, r: 35.3, estimated: false }  # 지시 따르기
+  long_context: { s: 22.5, z: -0.9, r: 36.5, estimated: true }  # 긴문맥
+  instruction: { s: 31.0, z: -0.99, r: 35.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.1 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-15
-timestamp: 2026-10-15T00:00:00Z
+updated: 2026-10-16
+timestamp: 2026-10-16T00:00:00Z
 ---
 
 # Llama 3.1 70B
@@ -37,7 +37,7 @@ Meta · Open · Medium · 컨텍스트 128k · 종합지능 **7.0** · ⚠️ pa
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.56 · 출력 $0.56 · 혼합 $0.56/1M · 36.0 t/s · TTFT 2.04s · 128k ctx` · 가성비 12.5
+`입력 $0.56 · 출력 $0.56 · 혼합 $0.56/1M · 33.0 t/s · TTFT 2.03s · 128k ctx` · 가성비 12.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,12 +45,12 @@ Meta · Open · Medium · 컨텍스트 128k · 종합지능 **7.0** · ⚠️ pa
 |---|---|---|---|---|
 | 전문 지식 | 39.0 | -0.73 | 실측 | [[aa-omniscience]] 20.0%×1.0, [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 34.2 | -1.05 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 33.5 | -1.1 | 실측 | [[terminal-bench]] 3.0%×0.5 |
-| 에이전트 | 33.3 | -1.11 | 실측 | [[tau2-bench]] 15.0%×1.0, [[terminal-bench]] 3.0%×1.0 |
-| 신뢰성 | 45.7 | -0.29 | 실측 | [[aa-omniscience]] 22.0%×1.0 |
+| 코딩 | 33.3 | -1.11 | 실측 | [[terminal-bench]] 3.0%×0.5 |
+| 에이전트 | 33.2 | -1.12 | 실측 | [[tau2-bench]] 15.0%×1.0, [[terminal-bench]] 3.0%×1.0 |
+| 신뢰성 | 45.6 | -0.29 | 실측 | [[aa-omniscience]] 22.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 36.6 | -0.9 | 추정 | (추정) |
-| 지시 따르기 | 35.3 | -0.98 | 실측 | [[ifbench]] 34.0%×1.0 |
+| 긴문맥 | 36.5 | -0.9 | 추정 | (추정) |
+| 지시 따르기 | 35.2 | -0.99 | 실측 | [[ifbench]] 34.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

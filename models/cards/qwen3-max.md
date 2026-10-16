@@ -10,13 +10,13 @@ context_window: 262000
 status: past
 size_class: Unknown
 params_b: null
-is_reasoning: false
+is_reasoning: null
 radar:
   knowledge: { s: 42.4, z: -0.02, r: 49.7, estimated: false }  # 전문 지식
-  reasoning: { s: 31.7, z: -0.23, r: 46.6, estimated: false }  # 추론
-  coding: { s: 30.3, z: -0.23, r: 46.6, estimated: false }  # 코딩
+  reasoning: { s: 31.7, z: -0.23, r: 46.5, estimated: false }  # 추론
+  coding: { s: 30.3, z: -0.23, r: 46.5, estimated: false }  # 코딩
   agentic: { s: 52.5, z: 0.5, r: 57.5, estimated: false }  # 에이전트
-  trust: { s: 8.2, z: -0.85, r: 37.2, estimated: false }  # 신뢰성
+  trust: { s: 8.2, z: -0.86, r: 37.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 56.2, z: 0.12, r: 51.8, estimated: false }  # 긴문맥
   instruction: { s: 45.1, z: -0.4, r: 44.1, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Max
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-15
-timestamp: 2026-10-15T00:00:00Z
+updated: 2026-10-16
+timestamp: 2026-10-16T00:00:00Z
 ---
 
 # Qwen3 Max
@@ -44,10 +44,10 @@ Alibaba · Proprietary · Unknown · 컨텍스트 262k · 종합지능 **16.0** 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 49.7 | -0.02 | 실측 | [[aa-omniscience]] 24.0%×1.0, [[gpqa-diamond]] 76.0%×0.4, [[humanitys-last-exam]] 12.0%×0.3 |
-| 추론 | 46.6 | -0.23 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
-| 코딩 | 46.6 | -0.23 | 실측 | [[terminal-bench]] 20.0%×0.5 |
+| 추론 | 46.5 | -0.23 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
+| 코딩 | 46.5 | -0.23 | 실측 | [[terminal-bench]] 20.0%×0.5 |
 | 에이전트 | 57.5 | +0.5 | 실측 | [[tau2-bench]] 74.0%×1.0, [[terminal-bench]] 20.0%×1.0 |
-| 신뢰성 | 37.2 | -0.85 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
+| 신뢰성 | 37.1 | -0.86 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 51.8 | +0.12 | 실측 | [[aa-lcr]] 50.0%×1.0 |
 | 지시 따르기 | 44.1 | -0.4 | 실측 | [[ifbench]] 44.0%×1.0 |

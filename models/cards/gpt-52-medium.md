@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 61.8, z: 0.88, r: 63.3, estimated: false }  # 전문 지식
-  reasoning: { s: 52.0, z: 0.7, r: 60.5, estimated: false }  # 추론
-  coding: { s: 65.2, z: 0.96, r: 64.4, estimated: false }  # 코딩
+  knowledge: { s: 61.8, z: 0.89, r: 63.3, estimated: false }  # 전문 지식
+  reasoning: { s: 52.0, z: 0.7, r: 60.4, estimated: false }  # 추론
+  coding: { s: 65.2, z: 0.95, r: 64.2, estimated: false }  # 코딩
   agentic: { s: 69.9, z: 1.16, r: 67.4, estimated: false }  # 에이전트
-  trust: { s: 37.1, z: 0.47, r: 57.1, estimated: false }  # 신뢰성
-  multimodal: { s: 82.2, z: 0.54, r: 58.0, estimated: false }  # 멀티모달
+  trust: { s: 37.1, z: 0.46, r: 56.9, estimated: false }  # 신뢰성
+  multimodal: { s: 82.2, z: 0.53, r: 58.0, estimated: false }  # 멀티모달
   long_context: { s: 78.7, z: 0.8, r: 62.0, estimated: false }  # 긴문맥
   instruction: { s: 74.6, z: 0.84, r: 62.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.2 (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-15
-timestamp: 2026-10-15T00:00:00Z
+updated: 2026-10-16
+timestamp: 2026-10-16T00:00:00Z
 ---
 
 # GPT-5.2 (medium)
@@ -43,12 +43,12 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **27.0** �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 63.3 | +0.88 | 실측 | [[aa-omniscience]] 38.0%×1.0, [[gpqa-diamond]] 86.0%×0.4, [[humanitys-last-exam]] 27.0%×0.3 |
-| 추론 | 60.5 | +0.7 | 실측 | [[critpt]] 8.0%×1.0, [[gpqa-diamond]] 86.0%×1.0, [[humanitys-last-exam]] 27.0%×1.0 |
-| 코딩 | 64.4 | +0.96 | 실측 | [[terminal-bench]] 43.0%×0.5 |
+| 전문 지식 | 63.3 | +0.89 | 실측 | [[aa-omniscience]] 38.0%×1.0, [[gpqa-diamond]] 86.0%×0.4, [[humanitys-last-exam]] 27.0%×0.3 |
+| 추론 | 60.4 | +0.7 | 실측 | [[critpt]] 8.0%×1.0, [[gpqa-diamond]] 86.0%×1.0, [[humanitys-last-exam]] 27.0%×1.0 |
+| 코딩 | 64.2 | +0.95 | 실측 | [[terminal-bench]] 43.0%×0.5 |
 | 에이전트 | 67.4 | +1.16 | 실측 | [[tau2-bench]] 74.0%×1.0, [[terminal-bench]] 43.0%×1.0 |
-| 신뢰성 | 57.1 | +0.47 | 실측 | [[aa-omniscience]] 38.0%×1.0 |
-| 멀티모달 | 58.0 | +0.54 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
+| 신뢰성 | 56.9 | +0.46 | 실측 | [[aa-omniscience]] 38.0%×1.0 |
+| 멀티모달 | 58.0 | +0.53 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
 | 긴문맥 | 62.0 | +0.8 | 실측 | [[aa-lcr]] 70.0%×1.0 |
 | 지시 따르기 | 62.6 | +0.84 | 실측 | [[ifbench]] 65.0%×1.0 |
 

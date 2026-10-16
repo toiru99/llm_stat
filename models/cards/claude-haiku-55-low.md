@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 29.0
 price_blended_usd_1m: 0.077
-output_speed_tps: 146.0
+output_speed_tps: 187.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 47.9, z: 0.24, r: 53.6, estimated: false }  # 전문 지식
-  reasoning: { s: 35.3, z: -0.06, r: 49.0, estimated: false }  # 추론
-  coding: { s: 70.0, z: 1.12, r: 66.8, estimated: false }  # 코딩
+  reasoning: { s: 35.3, z: -0.07, r: 49.0, estimated: false }  # 추론
+  coding: { s: 70.0, z: 1.11, r: 66.7, estimated: false }  # 코딩
   agentic: { s: 45.6, z: 0.24, r: 53.6, estimated: false }  # 에이전트
-  trust: { s: 54.6, z: 1.28, r: 69.1, estimated: false }  # 신뢰성
+  trust: { s: 54.6, z: 1.26, r: 68.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 80.9, z: 0.87, r: 63.0, estimated: false }  # 긴문맥
-  instruction: { s: 71.1, z: 0.69, r: 60.3, estimated: true }  # 지시 따르기
+  instruction: { s: 66.6, z: 0.5, r: 57.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Haiku 5.5 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-15
-timestamp: 2026-10-15T00:00:00Z
+updated: 2026-10-16
+timestamp: 2026-10-16T00:00:00Z
 ---
 
 # Claude Haiku 5.5 (low)
@@ -37,20 +37,20 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **29.0**
 - **약점**: 에이전트, 추론
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.5 · 혼합 $0.077/1M · 146.0 t/s · TTFT 9.07s · 1M ctx` · 가성비 376.6
+`입력 $0.1 · 출력 $0.5 · 혼합 $0.077/1M · 187.0 t/s · TTFT 6.33s · 1M ctx` · 가성비 376.6
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 53.6 | +0.24 | 실측 | [[aa-omniscience]] 33.0%×1.0, [[humanitys-last-exam]] 27.0%×0.3 |
-| 추론 | 49.0 | -0.06 | 실측 | [[critpt]] 9.0%×1.0, [[humanitys-last-exam]] 27.0%×1.0 |
-| 코딩 | 66.8 | +1.12 | 실측 | [[scicode]] 49.0%×1.0 |
+| 추론 | 49.0 | -0.07 | 실측 | [[critpt]] 9.0%×1.0, [[humanitys-last-exam]] 27.0%×1.0 |
+| 코딩 | 66.7 | +1.11 | 실측 | [[scicode]] 49.0%×1.0 |
 | 에이전트 | 53.6 | +0.24 | 실측 | [[gdpval]] 31.0%×1.0 |
-| 신뢰성 | 69.1 | +1.28 | 실측 | [[aa-omniscience]] 55.0%×1.0 |
+| 신뢰성 | 68.9 | +1.26 | 실측 | [[aa-omniscience]] 55.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 63.0 | +0.87 | 실측 | [[aa-lcr]] 72.0%×1.0 |
-| 지시 따르기 | 60.3 | +0.69 | 추정 | (추정) |
+| 지시 따르기 | 57.6 | +0.5 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

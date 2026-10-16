@@ -13,10 +13,10 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 34.2, z: -0.4, r: 44.1, estimated: false }  # 전문 지식
-  reasoning: { s: 34.6, z: -0.09, r: 48.6, estimated: false }  # 추론
-  coding: { s: 35.0, z: -0.07, r: 49.0, estimated: false }  # 코딩
-  agentic: { s: 46.6, z: 0.28, r: 54.2, estimated: false }  # 에이전트
-  trust: { s: 66.0, z: 1.8, r: 76.9, estimated: false }  # 신뢰성
+  reasoning: { s: 34.6, z: -0.1, r: 48.6, estimated: false }  # 추론
+  coding: { s: 35.0, z: -0.08, r: 48.9, estimated: false }  # 코딩
+  agentic: { s: 46.6, z: 0.28, r: 54.1, estimated: false }  # 에이전트
+  trust: { s: 66.0, z: 1.77, r: 76.6, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 78.7, z: 0.8, r: 62.0, estimated: false }  # 긴문맥
   instruction: { s: 48.2, z: -0.27, r: 46.0, estimated: true }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — K2 Horizon 7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-15
-timestamp: 2026-10-15T00:00:00Z
+updated: 2026-10-16
+timestamp: 2026-10-16T00:00:00Z
 ---
 
 # K2 Horizon 7B
@@ -44,10 +44,10 @@ Institute of Foundation Models · Open · Small · 컨텍스트 524k · 종합�
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 44.1 | -0.4 | 실측 | [[aa-omniscience]] 13.0%×1.0, [[gpqa-diamond]] 75.0%×0.4, [[humanitys-last-exam]] 18.0%×0.3 |
-| 추론 | 48.6 | -0.09 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 75.0%×1.0, [[humanitys-last-exam]] 18.0%×1.0 |
-| 코딩 | 49.0 | -0.07 | 실측 | [[scicode]] 28.0%×1.0 |
-| 에이전트 | 54.2 | +0.28 | 실측 | [[gdpval]] 26.0%×1.0, [[tau3-banking]] 28.0%×1.0 |
-| 신뢰성 | 76.9 | +1.8 | 실측 | [[aa-omniscience]] 66.0%×1.0 |
+| 추론 | 48.6 | -0.1 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 75.0%×1.0, [[humanitys-last-exam]] 18.0%×1.0 |
+| 코딩 | 48.9 | -0.08 | 실측 | [[scicode]] 28.0%×1.0 |
+| 에이전트 | 54.1 | +0.28 | 실측 | [[gdpval]] 26.0%×1.0, [[tau3-banking]] 28.0%×1.0 |
+| 신뢰성 | 76.6 | +1.77 | 실측 | [[aa-omniscience]] 66.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 62.0 | +0.8 | 실측 | [[aa-lcr]] 70.0%×1.0 |
 | 지시 따르기 | 46.0 | -0.27 | 추정 | (추정) |

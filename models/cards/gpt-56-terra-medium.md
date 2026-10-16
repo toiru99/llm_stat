@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 30.0
 price_blended_usd_1m: 1.74
-output_speed_tps: 88.0
+output_speed_tps: 108.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 70.0, z: 1.26, r: 69.0, estimated: false }  # 전문 지식
   reasoning: { s: 64.8, z: 1.28, r: 69.2, estimated: false }  # 추론
-  coding: { s: 71.7, z: 1.18, r: 67.7, estimated: false }  # 코딩
+  coding: { s: 71.7, z: 1.17, r: 67.6, estimated: false }  # 코딩
   agentic: { s: 60.2, z: 0.79, r: 61.9, estimated: false }  # 에이전트
-  trust: { s: 8.2, z: -0.85, r: 37.2, estimated: false }  # 신뢰성
-  multimodal: { s: 84.9, z: 0.67, r: 60.1, estimated: false }  # 멀티모달
-  long_context: { s: 83.1, z: 0.94, r: 64.0, estimated: false }  # 긴문맥
-  instruction: { s: 70.4, z: 0.66, r: 59.9, estimated: false }  # 지시 따르기
+  trust: { s: 8.2, z: -0.86, r: 37.1, estimated: false }  # 신뢰성
+  multimodal: { s: 84.9, z: 0.67, r: 60.0, estimated: false }  # 멀티모달
+  long_context: { s: 83.1, z: 0.93, r: 64.0, estimated: false }  # 긴문맥
+  instruction: { s: 70.4, z: 0.66, r: 60.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Terra (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-15
-timestamp: 2026-10-15T00:00:00Z
+updated: 2026-10-16
+timestamp: 2026-10-16T00:00:00Z
 ---
 
 # GPT-5.6 Terra (medium)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **30.0**
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $2.0 · 출력 $12.0 · 혼합 $1.74/1M · 88.0 t/s · TTFT 1.66s · 1M ctx` · 가성비 17.2
+`입력 $2.0 · 출력 $12.0 · 혼합 $1.74/1M · 108.0 t/s · TTFT 1.64s · 1M ctx` · 가성비 17.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,12 +45,12 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **30.0**
 |---|---|---|---|---|
 | 전문 지식 | 69.0 | +1.26 | 실측 | [[aa-omniscience]] 45.0%×1.0, [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 33.0%×0.3 |
 | 추론 | 69.2 | +1.28 | 실측 | [[critpt]] 17.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 33.0%×1.0 |
-| 코딩 | 67.7 | +1.18 | 실측 | [[scicode]] 50.0%×1.0 |
+| 코딩 | 67.6 | +1.17 | 실측 | [[scicode]] 50.0%×1.0 |
 | 에이전트 | 61.9 | +0.79 | 실측 | [[gdpval]] 38.0%×1.0, [[tau2-bench]] 73.0%×1.0, [[tau3-banking]] 26.0%×1.0 |
-| 신뢰성 | 37.2 | -0.85 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
-| 멀티모달 | 60.1 | +0.67 | 실측 | [[mmmu-pro]] 77.0%×1.0 |
-| 긴문맥 | 64.0 | +0.94 | 실측 | [[aa-lcr]] 74.0%×1.0 |
-| 지시 따르기 | 59.9 | +0.66 | 실측 | [[ifbench]] 62.0%×1.0 |
+| 신뢰성 | 37.1 | -0.86 | 실측 | [[aa-omniscience]] 10.0%×1.0 |
+| 멀티모달 | 60.0 | +0.67 | 실측 | [[mmmu-pro]] 77.0%×1.0 |
+| 긴문맥 | 64.0 | +0.93 | 실측 | [[aa-lcr]] 74.0%×1.0 |
+| 지시 따르기 | 60.0 | +0.66 | 실측 | [[ifbench]] 62.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

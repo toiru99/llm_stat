@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 28.2, z: -0.67, r: 39.9, estimated: false }  # 전문 지식
   reasoning: { s: 16.8, z: -0.91, r: 36.3, estimated: false }  # 추론
-  coding: { s: 0.0, z: -1.26, r: 31.1, estimated: false }  # 코딩
-  agentic: { s: 11.1, z: -1.07, r: 34.0, estimated: false }  # 에이전트
-  trust: { s: 15.5, z: -0.52, r: 42.2, estimated: false }  # 신뢰성
+  coding: { s: 0.0, z: -1.26, r: 31.0, estimated: false }  # 코딩
+  agentic: { s: 11.1, z: -1.07, r: 33.9, estimated: false }  # 에이전트
+  trust: { s: 15.5, z: -0.53, r: 42.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 5.6, z: -1.41, r: 28.9, estimated: false }  # 긴문맥
-  instruction: { s: 23.9, z: -1.28, r: 30.9, estimated: false }  # 지시 따르기
+  long_context: { s: 5.6, z: -1.41, r: 28.8, estimated: false }  # 긴문맥
+  instruction: { s: 23.9, z: -1.28, r: 30.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Hermes 4 70B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-15
-timestamp: 2026-10-15T00:00:00Z
+updated: 2026-10-16
+timestamp: 2026-10-16T00:00:00Z
 ---
 
 # Hermes 4 70B (non-reasoning)
@@ -45,12 +45,12 @@ Nous Research · Open · Medium · 컨텍스트 128k · 종합지능 **7.0**
 |---|---|---|---|---|
 | 전문 지식 | 39.9 | -0.67 | 실측 | [[aa-omniscience]] 19.0%×1.0, [[gpqa-diamond]] 49.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 36.3 | -0.91 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 49.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 31.1 | -1.26 | 실측 | [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 34.0 | -1.07 | 실측 | [[tau2-bench]] 22.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 42.2 | -0.52 | 실측 | [[aa-omniscience]] 17.0%×1.0 |
+| 코딩 | 31.0 | -1.26 | 실측 | [[terminal-bench]] 0.0%×0.5 |
+| 에이전트 | 33.9 | -1.07 | 실측 | [[tau2-bench]] 22.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 신뢰성 | 42.1 | -0.53 | 실측 | [[aa-omniscience]] 17.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 28.9 | -1.41 | 실측 | [[aa-lcr]] 5.0%×1.0 |
-| 지시 따르기 | 30.9 | -1.28 | 실측 | [[ifbench]] 29.0%×1.0 |
+| 긴문맥 | 28.8 | -1.41 | 실측 | [[aa-lcr]] 5.0%×1.0 |
+| 지시 따르기 | 30.8 | -1.28 | 실측 | [[ifbench]] 29.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

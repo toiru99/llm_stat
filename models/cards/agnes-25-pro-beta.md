@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 48.0, z: 0.24, r: 53.6, estimated: false }  # 전문 지식
   reasoning: { s: 68.1, z: 1.43, r: 71.5, estimated: false }  # 추론
-  coding: { s: 70.0, z: 1.12, r: 66.8, estimated: false }  # 코딩
+  coding: { s: 70.0, z: 1.11, r: 66.7, estimated: false }  # 코딩
   agentic: { s: 65.4, z: 0.99, r: 64.9, estimated: false }  # 에이전트
-  trust: { s: 67.0, z: 1.84, r: 77.6, estimated: false }  # 신뢰성
-  multimodal: { s: 82.2, z: 0.54, r: 58.0, estimated: false }  # 멀티모달
+  trust: { s: 67.0, z: 1.82, r: 77.3, estimated: false }  # 신뢰성
+  multimodal: { s: 82.2, z: 0.53, r: 58.0, estimated: false }  # 멀티모달
   long_context: { s: 93.3, z: 1.24, r: 68.6, estimated: false }  # 긴문맥
-  instruction: { s: 86.5, z: 1.33, r: 70.0, estimated: true }  # 지시 따르기
+  instruction: { s: 86.2, z: 1.32, r: 69.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Agnes 2.5 Pro Beta
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-15
-timestamp: 2026-10-15T00:00:00Z
+updated: 2026-10-16
+timestamp: 2026-10-16T00:00:00Z
 ---
 
 # Agnes 2.5 Pro Beta
@@ -45,12 +45,12 @@ Sapiens AI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **35.0**
 |---|---|---|---|---|
 | 전문 지식 | 53.6 | +0.24 | 실측 | [[aa-omniscience]] 17.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 38.0%×0.3 |
 | 추론 | 71.5 | +1.43 | 실측 | [[critpt]] 16.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 38.0%×1.0 |
-| 코딩 | 66.8 | +1.12 | 실측 | [[scicode]] 49.0%×1.0 |
+| 코딩 | 66.7 | +1.11 | 실측 | [[scicode]] 49.0%×1.0 |
 | 에이전트 | 64.9 | +0.99 | 실측 | [[gdpval]] 41.0%×1.0, [[tau3-banking]] 36.0%×1.0 |
-| 신뢰성 | 77.6 | +1.84 | 실측 | [[aa-omniscience]] 67.0%×1.0 |
-| 멀티모달 | 58.0 | +0.54 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
+| 신뢰성 | 77.3 | +1.82 | 실측 | [[aa-omniscience]] 67.0%×1.0 |
+| 멀티모달 | 58.0 | +0.53 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
 | 긴문맥 | 68.6 | +1.24 | 실측 | [[aa-lcr]] 83.0%×1.0 |
-| 지시 따르기 | 70.0 | +1.33 | 추정 | (추정) |
+| 지시 따르기 | 69.9 | +1.32 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

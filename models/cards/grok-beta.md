@@ -10,22 +10,22 @@ context_window: 128000
 status: past
 size_class: Unknown
 params_b: null
-is_reasoning: false
+is_reasoning: null
 radar:
   knowledge: { s: 26.7, z: -0.74, r: 38.9, estimated: false }  # 전문 지식
   reasoning: { s: 24.0, z: -0.58, r: 41.3, estimated: false }  # 추론
-  coding: { s: 15.4, z: -0.73, r: 39.0, estimated: true }  # 코딩
-  agentic: { s: 32.4, z: -0.26, r: 46.1, estimated: true }  # 에이전트
-  trust: { s: 14.5, z: -0.57, r: 41.5, estimated: true }  # 신뢰성
+  coding: { s: 15.4, z: -0.74, r: 38.9, estimated: true }  # 코딩
+  agentic: { s: 33.0, z: -0.24, r: 46.4, estimated: true }  # 에이전트
+  trust: { s: 9.2, z: -0.82, r: 37.8, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 36.3, z: -0.48, r: 42.8, estimated: true }  # 긴문맥
-  instruction: { s: 42.5, z: -0.5, r: 42.5, estimated: true }  # 지시 따르기
+  long_context: { s: 40.4, z: -0.36, r: 44.6, estimated: true }  # 긴문맥
+  instruction: { s: 42.0, z: -0.52, r: 42.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Grok Beta
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-15
-timestamp: 2026-10-15T00:00:00Z
+updated: 2026-10-16
+timestamp: 2026-10-16T00:00:00Z
 ---
 
 # Grok Beta
@@ -34,7 +34,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **7.0** 
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 긴문맥
-- **약점**: 코딩, 전문 지식
+- **약점**: 코딩, 신뢰성
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 128k ctx`
@@ -45,12 +45,12 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **7.0** 
 |---|---|---|---|---|
 | 전문 지식 | 38.9 | -0.74 | 실측 | [[gpqa-diamond]] 47.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 41.3 | -0.58 | 실측 | [[gpqa-diamond]] 47.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 39.0 | -0.73 | 추정 | (추정) |
-| 에이전트 | 46.1 | -0.26 | 추정 | (추정) |
-| 신뢰성 | 41.5 | -0.57 | 추정 | (추정) |
+| 코딩 | 38.9 | -0.74 | 추정 | (추정) |
+| 에이전트 | 46.4 | -0.24 | 추정 | (추정) |
+| 신뢰성 | 37.8 | -0.82 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 42.8 | -0.48 | 추정 | (추정) |
-| 지시 따르기 | 42.5 | -0.5 | 추정 | (추정) |
+| 긴문맥 | 44.6 | -0.36 | 추정 | (추정) |
+| 지시 따르기 | 42.2 | -0.52 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

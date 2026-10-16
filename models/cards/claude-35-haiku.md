@@ -10,22 +10,22 @@ context_window: 200000
 status: past
 size_class: Unknown
 params_b: null
-is_reasoning: false
+is_reasoning: null
 radar:
   knowledge: { s: 20.8, z: -1.02, r: 34.7, estimated: false }  # 전문 지식
   reasoning: { s: 13.7, z: -1.05, r: 34.2, estimated: false }  # 추론
-  coding: { s: 3.0, z: -1.15, r: 32.7, estimated: false }  # 코딩
+  coding: { s: 3.0, z: -1.16, r: 32.6, estimated: false }  # 코딩
   agentic: { s: 9.4, z: -1.13, r: 33.0, estimated: false }  # 에이전트
-  trust: { s: 58.8, z: 1.46, r: 72.0, estimated: false }  # 신뢰성
-  multimodal: { s: 42.5, z: -1.45, r: 28.2, estimated: false }  # 멀티모달
+  trust: { s: 58.8, z: 1.45, r: 71.7, estimated: false }  # 신뢰성
+  multimodal: { s: 42.5, z: -1.46, r: 28.2, estimated: false }  # 멀티모달
   long_context: { s: 30.3, z: -0.66, r: 40.1, estimated: false }  # 긴문맥
-  instruction: { s: 43.7, z: -0.45, r: 43.2, estimated: false }  # 지시 따르기
+  instruction: { s: 43.7, z: -0.46, r: 43.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 3.5 Haiku
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-15
-timestamp: 2026-10-15T00:00:00Z
+updated: 2026-10-16
+timestamp: 2026-10-16T00:00:00Z
 ---
 
 # Claude 3.5 Haiku
@@ -45,12 +45,12 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **9.0**
 |---|---|---|---|---|
 | 전문 지식 | 34.7 | -1.02 | 실측 | [[aa-omniscience]] 13.0%×1.0, [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 34.2 | -1.05 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 32.7 | -1.15 | 실측 | [[terminal-bench]] 2.0%×0.5 |
+| 코딩 | 32.6 | -1.16 | 실측 | [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 33.0 | -1.13 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 25.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 72.0 | +1.46 | 실측 | [[aa-omniscience]] 59.0%×1.0 |
-| 멀티모달 | 28.2 | -1.45 | 실측 | [[mmmu-pro]] 46.0%×1.0 |
+| 신뢰성 | 71.7 | +1.45 | 실측 | [[aa-omniscience]] 59.0%×1.0 |
+| 멀티모달 | 28.2 | -1.46 | 실측 | [[mmmu-pro]] 46.0%×1.0 |
 | 긴문맥 | 40.1 | -0.66 | 실측 | [[aa-lcr]] 27.0%×1.0 |
-| 지시 따르기 | 43.2 | -0.45 | 실측 | [[ifbench]] 43.0%×1.0 |
+| 지시 따르기 | 43.2 | -0.46 | 실측 | [[ifbench]] 43.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

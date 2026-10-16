@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 22.3, z: -0.95, r: 35.8, estimated: false }  # 전문 지식
   reasoning: { s: 19.8, z: -0.77, r: 38.4, estimated: false }  # 추론
-  coding: { s: 3.0, z: -1.15, r: 32.7, estimated: false }  # 코딩
+  coding: { s: 3.0, z: -1.16, r: 32.6, estimated: false }  # 코딩
   agentic: { s: 48.5, z: 0.35, r: 55.2, estimated: false }  # 에이전트
-  trust: { s: 17.5, z: -0.43, r: 43.6, estimated: false }  # 신뢰성
+  trust: { s: 17.5, z: -0.43, r: 43.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 24.7, z: -0.83, r: 37.6, estimated: false }  # 긴문맥
+  long_context: { s: 24.7, z: -0.83, r: 37.5, estimated: false }  # 긴문맥
   instruction: { s: 49.3, z: -0.22, r: 46.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Tri-21B-think Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-15
-timestamp: 2026-10-15T00:00:00Z
+updated: 2026-10-16
+timestamp: 2026-10-16T00:00:00Z
 ---
 
 # Tri-21B-think Preview
@@ -45,11 +45,11 @@ Trillion Labs · Open · Small · 컨텍스트 32k · 종합지능 **10.0** · �
 |---|---|---|---|---|
 | 전문 지식 | 35.8 | -0.95 | 실측 | [[aa-omniscience]] 10.0%×1.0, [[gpqa-diamond]] 54.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 38.4 | -0.77 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 54.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 32.7 | -1.15 | 실측 | [[terminal-bench]] 2.0%×0.5 |
+| 코딩 | 32.6 | -1.16 | 실측 | [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 55.2 | +0.35 | 실측 | [[tau2-bench]] 93.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
-| 신뢰성 | 43.6 | -0.43 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
+| 신뢰성 | 43.5 | -0.43 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 37.6 | -0.83 | 실측 | [[aa-lcr]] 22.0%×1.0 |
+| 긴문맥 | 37.5 | -0.83 | 실측 | [[aa-lcr]] 22.0%×1.0 |
 | 지시 따르기 | 46.7 | -0.22 | 실측 | [[ifbench]] 47.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

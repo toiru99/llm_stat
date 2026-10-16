@@ -5,27 +5,27 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 18.0
 price_blended_usd_1m: 0.077
-output_speed_tps: 111.0
+output_speed_tps: 113.0
 context_window: 1000000
 status: current
 size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 39.8, z: -0.13, r: 48.0, estimated: false }  # 전문 지식
-  reasoning: { s: 8.2, z: -1.3, r: 30.5, estimated: false }  # 추론
-  coding: { s: 60.0, z: 0.78, r: 61.7, estimated: false }  # 코딩
-  agentic: { s: 39.7, z: 0.02, r: 50.3, estimated: false }  # 에이전트
-  trust: { s: 19.6, z: -0.33, r: 45.0, estimated: false }  # 신뢰성
-  multimodal: { s: 64.4, z: -0.35, r: 44.7, estimated: false }  # 멀티모달
+  knowledge: { s: 39.8, z: -0.14, r: 48.0, estimated: false }  # 전문 지식
+  reasoning: { s: 8.2, z: -1.31, r: 30.4, estimated: false }  # 추론
+  coding: { s: 60.0, z: 0.77, r: 61.6, estimated: false }  # 코딩
+  agentic: { s: 39.7, z: 0.01, r: 50.2, estimated: false }  # 에이전트
+  trust: { s: 19.6, z: -0.34, r: 44.9, estimated: false }  # 신뢰성
+  multimodal: { s: 64.4, z: -0.36, r: 44.6, estimated: false }  # 멀티모달
   long_context: { s: 44.9, z: -0.22, r: 46.7, estimated: false }  # 긴문맥
   instruction: { s: 44.7, z: -0.41, r: 43.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6 Luna (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-15
-timestamp: 2026-10-15T00:00:00Z
+updated: 2026-10-16
+timestamp: 2026-10-16T00:00:00Z
 ---
 
 # GPT-6 Luna (non-reasoning)
@@ -37,18 +37,18 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **18.0**
 - **약점**: 지시 따르기, 추론
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.5 · 혼합 $0.077/1M · 111.0 t/s · TTFT 0.9s · 1M ctx` · 가성비 233.8
+`입력 $0.1 · 출력 $0.5 · 혼합 $0.077/1M · 113.0 t/s · TTFT 0.95s · 1M ctx` · 가성비 233.8
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 48.0 | -0.13 | 실측 | [[aa-omniscience]] 32.0%×1.0, [[humanitys-last-exam]] 9.0%×0.3 |
-| 추론 | 30.5 | -1.3 | 실측 | [[critpt]] 1.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
-| 코딩 | 61.7 | +0.78 | 실측 | [[scicode]] 43.0%×1.0 |
-| 에이전트 | 50.3 | +0.02 | 실측 | [[gdpval]] 27.0%×1.0 |
-| 신뢰성 | 45.0 | -0.33 | 실측 | [[aa-omniscience]] 21.0%×1.0 |
-| 멀티모달 | 44.7 | -0.35 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
+| 전문 지식 | 48.0 | -0.14 | 실측 | [[aa-omniscience]] 32.0%×1.0, [[humanitys-last-exam]] 9.0%×0.3 |
+| 추론 | 30.4 | -1.31 | 실측 | [[critpt]] 1.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
+| 코딩 | 61.6 | +0.77 | 실측 | [[scicode]] 43.0%×1.0 |
+| 에이전트 | 50.2 | +0.01 | 실측 | [[gdpval]] 27.0%×1.0 |
+| 신뢰성 | 44.9 | -0.34 | 실측 | [[aa-omniscience]] 21.0%×1.0 |
+| 멀티모달 | 44.6 | -0.36 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
 | 긴문맥 | 46.7 | -0.22 | 실측 | [[aa-lcr]] 40.0%×1.0 |
 | 지시 따르기 | 43.8 | -0.41 | 추정 | (추정) |
 

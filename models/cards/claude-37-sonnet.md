@@ -13,10 +13,10 @@ params_b: null
 is_reasoning: null
 radar:
   knowledge: { s: 45.6, z: 0.13, r: 52.0, estimated: false }  # 전문 지식
-  reasoning: { s: 32.0, z: -0.22, r: 46.8, estimated: false }  # 추론
-  coding: { s: 31.8, z: -0.18, r: 47.4, estimated: false }  # 코딩
+  reasoning: { s: 32.0, z: -0.22, r: 46.7, estimated: false }  # 추론
+  coding: { s: 31.8, z: -0.18, r: 47.3, estimated: false }  # 코딩
   agentic: { s: 43.7, z: 0.17, r: 52.5, estimated: false }  # 에이전트
-  trust: { s: 59.8, z: 1.51, r: 72.7, estimated: false }  # 신뢰성
+  trust: { s: 59.8, z: 1.49, r: 72.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 66.1, z: 0.42, r: 56.3, estimated: true }  # 긴문맥
   instruction: { s: 50.7, z: -0.16, r: 47.6, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 3.7 Sonnet
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-15
-timestamp: 2026-10-15T00:00:00Z
+updated: 2026-10-16
+timestamp: 2026-10-16T00:00:00Z
 ---
 
 # Claude 3.7 Sonnet
@@ -44,10 +44,10 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **18.0*
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 52.0 | +0.13 | 실측 | [[aa-omniscience]] 28.0%×1.0, [[gpqa-diamond]] 77.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
-| 추론 | 46.8 | -0.22 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 77.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
-| 코딩 | 47.4 | -0.18 | 실측 | [[terminal-bench]] 21.0%×0.5 |
+| 추론 | 46.7 | -0.22 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 77.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
+| 코딩 | 47.3 | -0.18 | 실측 | [[terminal-bench]] 21.0%×0.5 |
 | 에이전트 | 52.5 | +0.17 | 실측 | [[tau2-bench]] 55.0%×1.0, [[terminal-bench]] 21.0%×1.0 |
-| 신뢰성 | 72.7 | +1.51 | 실측 | [[aa-omniscience]] 60.0%×1.0 |
+| 신뢰성 | 72.4 | +1.49 | 실측 | [[aa-omniscience]] 60.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 56.3 | +0.42 | 추정 | (추정) |
 | 지시 따르기 | 47.6 | -0.16 | 실측 | [[ifbench]] 48.0%×1.0 |

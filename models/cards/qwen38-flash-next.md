@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 55.3, z: 0.58, r: 58.7, estimated: false }  # 전문 지식
   reasoning: { s: 63.4, z: 1.22, r: 68.3, estimated: false }  # 추론
-  coding: { s: 73.3, z: 1.23, r: 68.5, estimated: false }  # 코딩
-  agentic: { s: 85.3, z: 1.74, r: 76.2, estimated: false }  # 에이전트
-  trust: { s: 54.6, z: 1.28, r: 69.1, estimated: false }  # 신뢰성
-  multimodal: { s: 89.0, z: 0.88, r: 63.2, estimated: false }  # 멀티모달
+  coding: { s: 73.3, z: 1.23, r: 68.4, estimated: false }  # 코딩
+  agentic: { s: 85.3, z: 1.75, r: 76.2, estimated: false }  # 에이전트
+  trust: { s: 54.6, z: 1.26, r: 68.9, estimated: false }  # 신뢰성
+  multimodal: { s: 89.0, z: 0.88, r: 63.1, estimated: false }  # 멀티모달
   long_context: { s: 89.9, z: 1.14, r: 67.1, estimated: false }  # 긴문맥
-  instruction: { s: 78.2, z: 0.99, r: 64.8, estimated: true }  # 지시 따르기
+  instruction: { s: 77.7, z: 0.97, r: 64.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.8-Flash-Next
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-15
-timestamp: 2026-10-15T00:00:00Z
+updated: 2026-10-16
+timestamp: 2026-10-16T00:00:00Z
 ---
 
 # Qwen3.8-Flash-Next
@@ -45,12 +45,12 @@ Alibaba · Open · Large · 컨텍스트 256k · 종합지능 **40.0**
 |---|---|---|---|---|
 | 전문 지식 | 58.7 | +0.58 | 실측 | [[aa-omniscience]] 25.0%×1.0, [[gpqa-diamond]] 92.0%×0.4, [[humanitys-last-exam]] 38.0%×0.3 |
 | 추론 | 68.3 | +1.22 | 실측 | [[critpt]] 11.0%×1.0, [[gpqa-diamond]] 92.0%×1.0, [[humanitys-last-exam]] 38.0%×1.0 |
-| 코딩 | 68.5 | +1.23 | 실측 | [[scicode]] 51.0%×1.0 |
-| 에이전트 | 76.2 | +1.74 | 실측 | [[gdpval]] 56.0%×1.0, [[tau3-banking]] 45.0%×1.0 |
-| 신뢰성 | 69.1 | +1.28 | 실측 | [[aa-omniscience]] 55.0%×1.0 |
-| 멀티모달 | 63.2 | +0.88 | 실측 | [[mmmu-pro]] 80.0%×1.0 |
+| 코딩 | 68.4 | +1.23 | 실측 | [[scicode]] 51.0%×1.0 |
+| 에이전트 | 76.2 | +1.75 | 실측 | [[gdpval]] 56.0%×1.0, [[tau3-banking]] 45.0%×1.0 |
+| 신뢰성 | 68.9 | +1.26 | 실측 | [[aa-omniscience]] 55.0%×1.0 |
+| 멀티모달 | 63.1 | +0.88 | 실측 | [[mmmu-pro]] 80.0%×1.0 |
 | 긴문맥 | 67.1 | +1.14 | 실측 | [[aa-lcr]] 80.0%×1.0 |
-| 지시 따르기 | 64.8 | +0.99 | 추정 | (추정) |
+| 지시 따르기 | 64.5 | +0.97 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 29.3, z: -0.62, r: 40.7, estimated: false }  # 전문 지식
   reasoning: { s: 26.1, z: -0.49, r: 42.7, estimated: false }  # 추론
-  coding: { s: 16.3, z: -0.7, r: 39.5, estimated: true }  # 코딩
-  agentic: { s: 29.1, z: -0.38, r: 44.2, estimated: true }  # 에이전트
-  trust: { s: 17.8, z: -0.42, r: 43.8, estimated: true }  # 신뢰성
+  coding: { s: 27.7, z: -0.32, r: 45.2, estimated: true }  # 코딩
+  agentic: { s: 37.1, z: -0.08, r: 48.8, estimated: true }  # 에이전트
+  trust: { s: 34.8, z: 0.35, r: 55.3, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 35.8, z: -0.49, r: 42.6, estimated: true }  # 긴문맥
-  instruction: { s: 44.8, z: -0.41, r: 43.9, estimated: true }  # 지시 따르기
+  long_context: { s: 38.5, z: -0.42, r: 43.8, estimated: true }  # 긴문맥
+  instruction: { s: 41.1, z: -0.56, r: 41.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Tulu3 405B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-15
-timestamp: 2026-10-15T00:00:00Z
+updated: 2026-10-16
+timestamp: 2026-10-16T00:00:00Z
 ---
 
 # Tulu3 405B
@@ -33,8 +33,8 @@ timestamp: 2026-10-15T00:00:00Z
 Allen Institute for AI · Open · Large · 컨텍스트 128k · 종합지능 **7.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 에이전트, 지시 따르기
-- **약점**: 전문 지식, 코딩
+- **강점**: 신뢰성, 에이전트
+- **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 128k ctx`
@@ -45,12 +45,12 @@ Allen Institute for AI · Open · Large · 컨텍스트 128k · 종합지능 **7
 |---|---|---|---|---|
 | 전문 지식 | 40.7 | -0.62 | 실측 | [[gpqa-diamond]] 52.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
 | 추론 | 42.7 | -0.49 | 실측 | [[gpqa-diamond]] 52.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
-| 코딩 | 39.5 | -0.7 | 추정 | (추정) |
-| 에이전트 | 44.2 | -0.38 | 추정 | (추정) |
-| 신뢰성 | 43.8 | -0.42 | 추정 | (추정) |
+| 코딩 | 45.2 | -0.32 | 추정 | (추정) |
+| 에이전트 | 48.8 | -0.08 | 추정 | (추정) |
+| 신뢰성 | 55.3 | +0.35 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 42.6 | -0.49 | 추정 | (추정) |
-| 지시 따르기 | 43.9 | -0.41 | 추정 | (추정) |
+| 긴문맥 | 43.8 | -0.42 | 추정 | (추정) |
+| 지시 따르기 | 41.6 | -0.56 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

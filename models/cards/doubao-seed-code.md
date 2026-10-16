@@ -10,22 +10,22 @@ context_window: 256000
 status: current
 size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: null
 radar:
   knowledge: { s: 43.8, z: 0.05, r: 50.8, estimated: false }  # 전문 지식
   reasoning: { s: 32.8, z: -0.18, r: 47.3, estimated: false }  # 추론
-  coding: { s: 40.9, z: 0.13, r: 52.0, estimated: false }  # 코딩
-  agentic: { s: 49.7, z: 0.4, r: 56.0, estimated: false }  # 에이전트
-  trust: { s: 18.6, z: -0.38, r: 44.3, estimated: false }  # 신뢰성
-  multimodal: { s: 72.6, z: 0.06, r: 50.8, estimated: false }  # 멀티모달
+  coding: { s: 40.9, z: 0.13, r: 51.9, estimated: false }  # 코딩
+  agentic: { s: 49.7, z: 0.4, r: 55.9, estimated: false }  # 에이전트
+  trust: { s: 18.6, z: -0.39, r: 44.2, estimated: false }  # 신뢰성
+  multimodal: { s: 72.6, z: 0.05, r: 50.8, estimated: false }  # 멀티모달
   long_context: { s: 80.9, z: 0.87, r: 63.0, estimated: false }  # 긴문맥
   instruction: { s: 54.9, z: 0.02, r: 50.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Doubao Seed Code
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-15
-timestamp: 2026-10-15T00:00:00Z
+updated: 2026-10-16
+timestamp: 2026-10-16T00:00:00Z
 ---
 
 # Doubao Seed Code
@@ -45,10 +45,10 @@ ByteDance Seed · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **
 |---|---|---|---|---|
 | 전문 지식 | 50.8 | +0.05 | 실측 | [[aa-omniscience]] 25.0%×1.0, [[gpqa-diamond]] 76.0%×0.4, [[humanitys-last-exam]] 14.0%×0.3 |
 | 추론 | 47.3 | -0.18 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 14.0%×1.0 |
-| 코딩 | 52.0 | +0.13 | 실측 | [[terminal-bench]] 27.0%×0.5 |
-| 에이전트 | 56.0 | +0.4 | 실측 | [[tau2-bench]] 58.0%×1.0, [[terminal-bench]] 27.0%×1.0 |
-| 신뢰성 | 44.3 | -0.38 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
-| 멀티모달 | 50.8 | +0.06 | 실측 | [[mmmu-pro]] 68.0%×1.0 |
+| 코딩 | 51.9 | +0.13 | 실측 | [[terminal-bench]] 27.0%×0.5 |
+| 에이전트 | 55.9 | +0.4 | 실측 | [[tau2-bench]] 58.0%×1.0, [[terminal-bench]] 27.0%×1.0 |
+| 신뢰성 | 44.2 | -0.39 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
+| 멀티모달 | 50.8 | +0.05 | 실측 | [[mmmu-pro]] 68.0%×1.0 |
 | 긴문맥 | 63.0 | +0.87 | 실측 | [[aa-lcr]] 72.0%×1.0 |
 | 지시 따르기 | 50.2 | +0.02 | 실측 | [[ifbench]] 51.0%×1.0 |
 

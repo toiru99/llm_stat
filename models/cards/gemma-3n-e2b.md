@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 10.6, z: -1.49, r: 27.6, estimated: false }  # 전문 지식
   reasoning: { s: 6.7, z: -1.37, r: 29.4, estimated: false }  # 추론
-  coding: { s: 1.5, z: -1.21, r: 31.9, estimated: false }  # 코딩
-  agentic: { s: 0.8, z: -1.46, r: 28.1, estimated: false }  # 에이전트
-  trust: { s: 5.2, z: -0.99, r: 35.1, estimated: false }  # 신뢰성
+  coding: { s: 1.5, z: -1.21, r: 31.8, estimated: false }  # 코딩
+  agentic: { s: 0.8, z: -1.46, r: 28.0, estimated: false }  # 에이전트
+  trust: { s: 5.2, z: -1.0, r: 35.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.57, r: 26.4, estimated: false }  # 긴문맥
-  instruction: { s: 14.1, z: -1.69, r: 24.7, estimated: false }  # 지시 따르기
+  long_context: { s: 0.0, z: -1.58, r: 26.3, estimated: false }  # 긴문맥
+  instruction: { s: 14.1, z: -1.69, r: 24.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 3n E2B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-15
-timestamp: 2026-10-15T00:00:00Z
+updated: 2026-10-16
+timestamp: 2026-10-16T00:00:00Z
 ---
 
 # Gemma 3n E2B
@@ -45,12 +45,12 @@ Google · Open · Small · 컨텍스트 32k · 종합지능 **5.0** · ⚠️ pa
 |---|---|---|---|---|
 | 전문 지식 | 27.6 | -1.49 | 실측 | [[aa-omniscience]] 7.0%×1.0, [[gpqa-diamond]] 23.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 29.4 | -1.37 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 23.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 31.9 | -1.21 | 실측 | [[terminal-bench]] 1.0%×0.5 |
-| 에이전트 | 28.1 | -1.46 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
-| 신뢰성 | 35.1 | -0.99 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
+| 코딩 | 31.8 | -1.21 | 실측 | [[terminal-bench]] 1.0%×0.5 |
+| 에이전트 | 28.0 | -1.46 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
+| 신뢰성 | 35.0 | -1.0 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 26.4 | -1.57 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 24.7 | -1.69 | 실측 | [[ifbench]] 22.0%×1.0 |
+| 긴문맥 | 26.3 | -1.58 | 실측 | [[aa-lcr]] 0.0%×1.0 |
+| 지시 따르기 | 24.6 | -1.69 | 실측 | [[ifbench]] 22.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -10,13 +10,13 @@ context_window: 262000
 status: past
 size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: null
 radar:
   knowledge: { s: 45.8, z: 0.14, r: 52.2, estimated: false }  # 전문 지식
-  reasoning: { s: 33.0, z: -0.17, r: 47.5, estimated: false }  # 추론
-  coding: { s: 25.8, z: -0.38, r: 44.3, estimated: false }  # 코딩
+  reasoning: { s: 33.0, z: -0.17, r: 47.4, estimated: false }  # 추론
+  coding: { s: 25.8, z: -0.39, r: 44.2, estimated: false }  # 코딩
   agentic: { s: 55.3, z: 0.61, r: 59.1, estimated: false }  # 에이전트
-  trust: { s: 7.2, z: -0.9, r: 36.5, estimated: false }  # 신뢰성
+  trust: { s: 7.2, z: -0.9, r: 36.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 69.7, z: 0.53, r: 57.9, estimated: false }  # 긴문맥
   instruction: { s: 59.2, z: 0.19, r: 52.9, estimated: false }  # 지시 따르기
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Max Thinking (Preview)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-15
-timestamp: 2026-10-15T00:00:00Z
+updated: 2026-10-16
+timestamp: 2026-10-16T00:00:00Z
 ---
 
 # Qwen3 Max Thinking (Preview)
@@ -44,10 +44,10 @@ Alibaba · Proprietary · Unknown · 컨텍스트 262k · 종합지능 **16.0** 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 52.2 | +0.14 | 실측 | [[aa-omniscience]] 27.0%×1.0, [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
-| 추론 | 47.5 | -0.17 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
-| 코딩 | 44.3 | -0.38 | 실측 | [[terminal-bench]] 17.0%×0.5 |
+| 추론 | 47.4 | -0.17 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
+| 코딩 | 44.2 | -0.39 | 실측 | [[terminal-bench]] 17.0%×0.5 |
 | 에이전트 | 59.1 | +0.61 | 실측 | [[tau2-bench]] 84.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
-| 신뢰성 | 36.5 | -0.9 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
+| 신뢰성 | 36.4 | -0.9 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 57.9 | +0.53 | 실측 | [[aa-lcr]] 62.0%×1.0 |
 | 지시 따르기 | 52.9 | +0.19 | 실측 | [[ifbench]] 54.0%×1.0 |

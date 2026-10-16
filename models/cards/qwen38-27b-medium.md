@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 28.0
 price_blended_usd_1m: 0.47
-output_speed_tps: 43.0
+output_speed_tps: 42.0
 context_window: 256000
 status: current
 size_class: Small
@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 40.1, z: -0.12, r: 48.2, estimated: false }  # 전문 지식
   reasoning: { s: 36.3, z: -0.02, r: 49.7, estimated: false }  # 추론
-  coding: { s: 53.3, z: 0.56, r: 58.3, estimated: false }  # 코딩
+  coding: { s: 53.3, z: 0.55, r: 58.2, estimated: false }  # 코딩
   agentic: { s: 78.4, z: 1.48, r: 72.3, estimated: false }  # 에이전트
-  trust: { s: 32.0, z: 0.24, r: 53.5, estimated: false }  # 신뢰성
-  multimodal: { s: 80.8, z: 0.47, r: 57.0, estimated: false }  # 멀티모달
+  trust: { s: 32.0, z: 0.22, r: 53.4, estimated: false }  # 신뢰성
+  multimodal: { s: 80.8, z: 0.46, r: 57.0, estimated: false }  # 멀티모달
   long_context: { s: 89.9, z: 1.14, r: 67.1, estimated: false }  # 긴문맥
   instruction: { s: 69.6, z: 0.63, r: 59.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.8 27B (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-15
-timestamp: 2026-10-15T00:00:00Z
+updated: 2026-10-16
+timestamp: 2026-10-16T00:00:00Z
 ---
 
 # Qwen3.8 27B (medium)
@@ -37,7 +37,7 @@ Alibaba · Open · Small · 컨텍스트 256k · 종합지능 **28.0**
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.5 · 출력 $3.0 · 혼합 $0.47/1M · 43.0 t/s · TTFT 3.96s · 256k ctx` · 가성비 59.6
+`입력 $0.5 · 출력 $3.0 · 혼합 $0.47/1M · 42.0 t/s · TTFT 4.04s · 256k ctx` · 가성비 59.6
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,10 +45,10 @@ Alibaba · Open · Small · 컨텍스트 256k · 종합지능 **28.0**
 |---|---|---|---|---|
 | 전문 지식 | 48.2 | -0.12 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 14.0%×0.3 |
 | 추론 | 49.7 | -0.02 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 14.0%×1.0 |
-| 코딩 | 58.3 | +0.56 | 실측 | [[scicode]] 39.0%×1.0 |
+| 코딩 | 58.2 | +0.55 | 실측 | [[scicode]] 39.0%×1.0 |
 | 에이전트 | 72.3 | +1.48 | 실측 | [[gdpval]] 44.0%×1.0, [[tau3-banking]] 47.0%×1.0 |
-| 신뢰성 | 53.5 | +0.24 | 실측 | [[aa-omniscience]] 33.0%×1.0 |
-| 멀티모달 | 57.0 | +0.47 | 실측 | [[mmmu-pro]] 74.0%×1.0 |
+| 신뢰성 | 53.4 | +0.22 | 실측 | [[aa-omniscience]] 33.0%×1.0 |
+| 멀티모달 | 57.0 | +0.46 | 실측 | [[mmmu-pro]] 74.0%×1.0 |
 | 긴문맥 | 67.1 | +1.14 | 실측 | [[aa-lcr]] 80.0%×1.0 |
 | 지시 따르기 | 59.4 | +0.63 | 추정 | (추정) |
 
