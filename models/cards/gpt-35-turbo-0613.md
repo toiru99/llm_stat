@@ -10,7 +10,7 @@ context_window: 4100
 status: past
 size_class: Unknown
 params_b: null
-is_reasoning: null
+is_reasoning: false
 radar:
   knowledge: { s: null, z: null, r: null, estimated: false }  # 전문 지식
   reasoning: { s: null, z: null, r: null, estimated: false }  # 추론
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-3.5 Turbo (0613)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-16
-timestamp: 2026-10-16T00:00:00Z
+updated: 2026-10-27
+timestamp: 2026-10-27T00:00:00Z
 ---
 
 # GPT-3.5 Turbo (0613)

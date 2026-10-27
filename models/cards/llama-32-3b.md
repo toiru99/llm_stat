@@ -12,20 +12,20 @@ size_class: Tiny
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 12.8, z: -1.39, r: 29.2, estimated: false }  # 전문 지식
-  reasoning: { s: 12.1, z: -1.13, r: 33.1, estimated: false }  # 추론
-  coding: { s: 2.1, z: -1.19, r: 32.1, estimated: true }  # 코딩
-  agentic: { s: 21.2, z: -0.69, r: 39.7, estimated: false }  # 에이전트
-  trust: { s: 4.7, z: -1.02, r: 34.7, estimated: true }  # 신뢰성
+  knowledge: { s: 12.8, z: -1.4, r: 29.0, estimated: false }  # 전문 지식
+  reasoning: { s: 12.1, z: -1.14, r: 32.9, estimated: false }  # 추론
+  coding: { s: 0.9, z: -1.25, r: 31.2, estimated: true }  # 코딩
+  agentic: { s: 5.9, z: -1.0, r: 35.0, estimated: true }  # 에이전트
+  trust: { s: 2.3, z: -1.13, r: 33.0, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 4.5, z: -1.44, r: 28.3, estimated: false }  # 긴문맥
-  instruction: { s: 19.7, z: -1.46, r: 28.1, estimated: false }  # 지시 따르기
+  long_context: { s: 4.5, z: -1.46, r: 28.2, estimated: false }  # 긴문맥
+  instruction: { s: 19.7, z: -1.49, r: 27.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.2 3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-16
-timestamp: 2026-10-16T00:00:00Z
+updated: 2026-10-27
+timestamp: 2026-10-27T00:00:00Z
 ---
 
 # Llama 3.2 3B
@@ -43,14 +43,14 @@ Meta · Open · Tiny · 컨텍스트 128k · 종합지능 **6.0** · ⚠️ past
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 29.2 | -1.39 | 실측 | [[gpqa-diamond]] 25.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 33.1 | -1.13 | 실측 | [[gpqa-diamond]] 25.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 32.1 | -1.19 | 추정 | (추정) |
-| 에이전트 | 39.7 | -0.69 | 실측 | [[tau2-bench]] 21.0%×1.0 |
-| 신뢰성 | 34.7 | -1.02 | 추정 | (추정) |
+| 전문 지식 | 29.0 | -1.4 | 실측 | [[gpqa-diamond]] 25.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 추론 | 32.9 | -1.14 | 실측 | [[gpqa-diamond]] 25.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 31.2 | -1.25 | 추정 | (추정) |
+| 에이전트 | 35.0 | -1.0 | 추정 | (추정) |
+| 신뢰성 | 33.0 | -1.13 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 28.3 | -1.44 | 실측 | [[aa-lcr]] 4.0%×1.0 |
-| 지시 따르기 | 28.1 | -1.46 | 실측 | [[ifbench]] 26.0%×1.0 |
+| 긴문맥 | 28.2 | -1.46 | 실측 | [[aa-lcr]] 4.0%×1.0 |
+| 지시 따르기 | 27.7 | -1.49 | 실측 | [[ifbench]] 26.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

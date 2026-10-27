@@ -5,27 +5,27 @@ creator: Mistral
 license: Open
 intelligence_index: 5.0
 price_blended_usd_1m: 0.037
-output_speed_tps: 199.0
+output_speed_tps: 191.0
 context_window: 256000
 status: current
 size_class: Tiny
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 16.2, z: -1.23, r: 31.5, estimated: false }  # 전문 지식
-  reasoning: { s: 12.3, z: -1.12, r: 33.2, estimated: false }  # 추론
-  coding: { s: 8.9, z: -0.96, r: 35.6, estimated: false }  # 코딩
-  agentic: { s: 8.8, z: -1.16, r: 32.6, estimated: false }  # 에이전트
-  trust: { s: 18.6, z: -0.39, r: 44.2, estimated: false }  # 신뢰성
-  multimodal: { s: 31.5, z: -2.0, r: 19.9, estimated: false }  # 멀티모달
-  long_context: { s: 19.1, z: -1.0, r: 35.0, estimated: false }  # 긴문맥
-  instruction: { s: 21.1, z: -1.4, r: 29.0, estimated: false }  # 지시 따르기
+  knowledge: { s: 16.2, z: -1.25, r: 31.3, estimated: false }  # 전문 지식
+  reasoning: { s: 12.3, z: -1.13, r: 33.1, estimated: false }  # 추론
+  coding: { s: 8.9, z: -0.98, r: 35.3, estimated: false }  # 코딩
+  agentic: { s: 3.7, z: -1.07, r: 33.9, estimated: false }  # 에이전트
+  trust: { s: 18.6, z: -0.4, r: 44.1, estimated: false }  # 신뢰성
+  multimodal: { s: 31.5, z: -2.03, r: 19.5, estimated: false }  # 멀티모달
+  long_context: { s: 19.1, z: -1.02, r: 34.7, estimated: false }  # 긴문맥
+  instruction: { s: 21.1, z: -1.43, r: 28.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Ministral 3 3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-16
-timestamp: 2026-10-16T00:00:00Z
+updated: 2026-10-27
+timestamp: 2026-10-27T00:00:00Z
 ---
 
 # Ministral 3 3B
@@ -37,20 +37,20 @@ Mistral · Open · Tiny · 컨텍스트 256k · 종합지능 **5.0**
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.1 · 혼합 $0.037/1M · 199.0 t/s · TTFT 0.71s · 256k ctx` · 가성비 135.1
+`입력 $0.1 · 출력 $0.1 · 혼합 $0.037/1M · 191.0 t/s · TTFT 0.66s · 256k ctx` · 가성비 135.1
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 31.5 | -1.23 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 36.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 33.2 | -1.12 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 36.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 35.6 | -0.96 | 실측 | [[scicode]] 15.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 32.6 | -1.16 | 실측 | [[gdpval]] 0.0%×1.0, [[tau2-bench]] 25.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
-| 신뢰성 | 44.2 | -0.39 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
-| 멀티모달 | 19.9 | -2.0 | 실측 | [[mmmu-pro]] 38.0%×1.0 |
-| 긴문맥 | 35.0 | -1.0 | 실측 | [[aa-lcr]] 17.0%×1.0 |
-| 지시 따르기 | 29.0 | -1.4 | 실측 | [[ifbench]] 27.0%×1.0 |
+| 전문 지식 | 31.3 | -1.25 | 실측 | [[aa-omniscience]] 9.0%×1.0, [[gpqa-diamond]] 36.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 추론 | 33.1 | -1.13 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 36.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 35.3 | -0.98 | 실측 | [[scicode]] 15.0%×1.0, [[terminal-bench]] 0.0%×0.5 |
+| 에이전트 | 33.9 | -1.07 | 실측 | [[gdpval]] 29.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 신뢰성 | 44.1 | -0.4 | 실측 | [[aa-omniscience]] 20.0%×1.0 |
+| 멀티모달 | 19.5 | -2.03 | 실측 | [[mmmu-pro]] 38.0%×1.0 |
+| 긴문맥 | 34.7 | -1.02 | 실측 | [[aa-lcr]] 17.0%×1.0 |
+| 지시 따르기 | 28.6 | -1.43 | 실측 | [[ifbench]] 27.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

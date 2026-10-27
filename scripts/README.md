@@ -36,3 +36,7 @@ node scripts/scrape_aa.mjs && python3 scripts/build_cards.py
 
 - 스크래핑은 사이트 프론트엔드 구조(헤더 chevron, 41열)에 의존 → AA가 UI를 바꾸면 `scrape_aa.mjs` 점검 필요.
 - 다국어 축은 소스에 없음(제외). 멀티모달은 약 48%만 측정 → 카드에서 "측정 안 됨" 처리.
+
+## 2026-10 지연 로드 대응
+
+과거 모델 상세 데이터는 Status 필터 해제 때 별도로 로드된다. `capture_models.mjs`를 페이지 로드 전에 설치해 페이지가 JSON으로 해석한 모델 목록을 확보하고, 초기 `__next_f`와 합쳐 속성을 조인한다. 추가 로드 모델 수는 Actions 로그에 기록하며 기존 조인율·가격 검증은 유지한다.

@@ -2,7 +2,7 @@
 type: Benchmark
 title: MMMU-Pro
 aa_metric: MMMU Pro
-column: "MMMU Pro"
+column: "MMMU-Pro"
 domain: Visual Reasoning
 category: 멀티모달
 # 레이더 기여 (SSOT — build_cards.py가 읽음)

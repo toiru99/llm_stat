@@ -13,6 +13,7 @@ import { writeFileSync, mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { extractModelAttrs } from './extract_attrs.mjs';
+import { captureModels } from './capture_models.mjs';
 import { checkScrape } from './validate_scrape.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -38,6 +39,7 @@ const loadWithEmbed = async (page, tries = 3) => {
 const run = async () => {
   const browser = await chromium.launch({ headless: true });
   const page = await browser.newPage({ userAgent: 'Mozilla/5.0 llm-stat/0.1' });
+  await page.addInitScript(captureModels);
   // 임베드는 표를 건드리기 전에 확보한다 — 필터 조작 뒤에 읽으면 간헐적으로 비어 있다.
   const embed = await loadWithEmbed(page);
 
@@ -70,10 +72,12 @@ const run = async () => {
     return { headerCount: headers.length, headers, modelCount: rows.length, rows };
   });
 
+  const loaded = await page.evaluate(() => JSON.stringify(globalThis.__llmStatModels || []));
+  console.log(`[수집] 추가 로드 모델 ${JSON.parse(loaded).length}개`);
   await browser.close();
 
-  // __next_f 속성 조인 (모델 표기명 기준)
-  const attrs = extractModelAttrs(embed);
+  // 초기 임베드와 지연 로드 데이터를 함께 파싱해 상세 속성을 유지한다.
+  const attrs = extractModelAttrs(embed + '\n' + loaded);
   const EMPTY = { paramClass: null, totalParameters: null, isReasoning: null, deprecated: null,
                   blendedPrice: null, priceClass: null };
   let joined = 0;
