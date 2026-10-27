@@ -5,7 +5,7 @@ creator: StepFun
 license: Open
 intelligence_index: 44.0
 price_blended_usd_1m: 0.54
-output_speed_tps: 194.0
+output_speed_tps: 192.0
 context_window: 1000000
 status: current
 size_class: Large
@@ -19,7 +19,7 @@ radar:
   trust: { s: 56.7, z: 1.33, r: 70.0, estimated: false }  # 신뢰성
   multimodal: { s: 83.6, z: 0.57, r: 58.5, estimated: false }  # 멀티모달
   long_context: { s: 98.9, z: 1.38, r: 70.7, estimated: false }  # 긴문맥
-  instruction: { s: 69.5, z: 0.64, r: 59.6, estimated: true }  # 지시 따르기
+  instruction: { s: 69.2, z: 0.63, r: 59.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Step 5 Preview
@@ -37,7 +37,7 @@ StepFun · Open · Large · 컨텍스트 1M · 종합지능 **44.0**
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $1.0 · 출력 $2.7 · 혼합 $0.54/1M · 194.0 t/s · TTFT 1.27s · 1M ctx` · 가성비 81.5
+`입력 $1.0 · 출력 $2.7 · 혼합 $0.54/1M · 192.0 t/s · TTFT 1.27s · 1M ctx` · 가성비 81.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ StepFun · Open · Large · 컨텍스트 1M · 종합지능 **44.0**
 | 신뢰성 | 70.0 | +1.33 | 실측 | [[aa-omniscience]] 57.0%×1.0 |
 | 멀티모달 | 58.5 | +0.57 | 실측 | [[mmmu-pro]] 76.0%×1.0 |
 | 긴문맥 | 70.7 | +1.38 | 실측 | [[aa-lcr]] 88.0%×1.0 |
-| 지시 따르기 | 59.6 | +0.64 | 추정 | (추정) |
+| 지시 따르기 | 59.5 | +0.63 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

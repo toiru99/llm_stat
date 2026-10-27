@@ -5,7 +5,7 @@ creator: MiniMax
 license: Open
 intelligence_index: 12.0
 price_blended_usd_1m: 0.715
-output_speed_tps: 114.0
+output_speed_tps: 110.0
 context_window: 1000000
 status: past
 size_class: Large
@@ -37,7 +37,7 @@ MiniMax · Open · Large · 컨텍스트 1M · 종합지능 **12.0** · ⚠️ p
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $0.55 · 출력 $2.2 · 혼합 $0.715/1M · 114.0 t/s · TTFT 1.64s · 1M ctx` · 가성비 16.8
+`입력 $0.55 · 출력 $2.2 · 혼합 $0.715/1M · 110.0 t/s · TTFT 1.64s · 1M ctx` · 가성비 16.8
 
 ## 레이더 8축 (평균=50 기준선)
 

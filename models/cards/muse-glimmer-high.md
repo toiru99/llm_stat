@@ -19,7 +19,7 @@ radar:
   trust: { s: 16.5, z: -0.49, r: 42.7, estimated: false }  # 신뢰성
   multimodal: { s: 80.8, z: 0.43, r: 56.5, estimated: false }  # 멀티모달
   long_context: { s: 93.3, z: 1.21, r: 68.2, estimated: false }  # 긴문맥
-  instruction: { s: 79.2, z: 1.05, r: 65.8, estimated: true }  # 지시 따르기
+  instruction: { s: 79.2, z: 1.06, r: 65.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Glimmer (high)
@@ -50,7 +50,7 @@ Meta · Open · Small · 컨텍스트 131k · 종합지능 **17.0**
 | 신뢰성 | 42.7 | -0.49 | 실측 | [[aa-omniscience]] 18.0%×1.0 |
 | 멀티모달 | 56.5 | +0.43 | 실측 | [[mmmu-pro]] 74.0%×1.0 |
 | 긴문맥 | 68.2 | +1.21 | 실측 | [[aa-lcr]] 83.0%×1.0 |
-| 지시 따르기 | 65.8 | +1.05 | 추정 | (추정) |
+| 지시 따르기 | 65.8 | +1.06 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

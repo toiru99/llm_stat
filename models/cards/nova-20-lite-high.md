@@ -5,7 +5,7 @@ creator: Amazon
 license: Proprietary
 intelligence_index: 13.0
 price_blended_usd_1m: 0.52
-output_speed_tps: 207.0
+output_speed_tps: 202.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -19,7 +19,7 @@ radar:
   trust: { s: 7.2, z: -0.91, r: 36.4, estimated: false }  # 신뢰성
   multimodal: { s: 67.1, z: -0.25, r: 46.2, estimated: false }  # 멀티모달
   long_context: { s: 67.4, z: 0.44, r: 56.5, estimated: false }  # 긴문맥
-  instruction: { s: 83.1, z: 1.22, r: 68.3, estimated: false }  # 지시 따르기
+  instruction: { s: 83.1, z: 1.22, r: 68.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nova 2.0 Lite (high)
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **13.0**
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.3 · 출력 $2.5 · 혼합 $0.52/1M · 207.0 t/s · TTFT 17.21s · 1M ctx` · 가성비 25.0
+`입력 $0.3 · 출력 $2.5 · 혼합 $0.52/1M · 202.0 t/s · TTFT 17.21s · 1M ctx` · 가성비 25.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **13.0**
 | 신뢰성 | 36.4 | -0.91 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | 46.2 | -0.25 | 실측 | [[mmmu-pro]] 64.0%×1.0 |
 | 긴문맥 | 56.5 | +0.44 | 실측 | [[aa-lcr]] 60.0%×1.0 |
-| 지시 따르기 | 68.3 | +1.22 | 실측 | [[ifbench]] 71.0%×1.0 |
+| 지시 따르기 | 68.4 | +1.22 | 실측 | [[ifbench]] 71.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

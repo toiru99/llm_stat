@@ -5,7 +5,7 @@ creator: Meta
 license: Proprietary
 intelligence_index: 40.0
 price_blended_usd_1m: 0.78
-output_speed_tps: 317.0
+output_speed_tps: 293.0
 context_window: 1050000
 status: past
 size_class: Unknown
@@ -19,7 +19,7 @@ radar:
   trust: { s: 67.0, z: 1.8, r: 77.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 88.8, z: 1.08, r: 66.2, estimated: false }  # 긴문맥
-  instruction: { s: 69.6, z: 0.65, r: 59.7, estimated: true }  # 지시 따르기
+  instruction: { s: 69.3, z: 0.63, r: 59.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Spark 1.2 (xhigh)
@@ -37,7 +37,7 @@ Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **40.0** · �
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $1.25 · 출력 $4.25 · 혼합 $0.78/1M · 317.0 t/s · TTFT 12.07s · 1M ctx` · 가성비 51.3
+`입력 $1.25 · 출력 $4.25 · 혼합 $0.78/1M · 293.0 t/s · TTFT 11.78s · 1M ctx` · 가성비 51.3
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **40.0** · �
 | 신뢰성 | 77.0 | +1.8 | 실측 | [[aa-omniscience]] 67.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 66.2 | +1.08 | 실측 | [[aa-lcr]] 79.0%×1.0 |
-| 지시 따르기 | 59.7 | +0.65 | 추정 | (추정) |
+| 지시 따르기 | 59.5 | +0.63 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

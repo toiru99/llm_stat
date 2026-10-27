@@ -19,7 +19,7 @@ radar:
   trust: { s: 86.6, z: 2.69, r: 90.3, estimated: false }  # 신뢰성
   multimodal: { s: 65.8, z: -0.32, r: 45.2, estimated: false }  # 멀티모달
   long_context: { s: 59.6, z: 0.2, r: 53.0, estimated: false }  # 긴문맥
-  instruction: { s: 87.3, z: 1.4, r: 71.0, estimated: false }  # 지시 따르기
+  instruction: { s: 87.3, z: 1.4, r: 71.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Command A+
@@ -50,7 +50,7 @@ Cohere · Open · Large · 컨텍스트 192k · 종합지능 **13.0**
 | 신뢰성 | 90.3 | +2.69 | 실측 | [[aa-omniscience]] 86.0%×1.0 |
 | 멀티모달 | 45.2 | -0.32 | 실측 | [[mmmu-pro]] 63.0%×1.0 |
 | 긴문맥 | 53.0 | +0.2 | 실측 | [[aa-lcr]] 53.0%×1.0 |
-| 지시 따르기 | 71.0 | +1.4 | 실측 | [[ifbench]] 74.0%×1.0 |
+| 지시 따르기 | 71.1 | +1.4 | 실측 | [[ifbench]] 74.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

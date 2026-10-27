@@ -19,7 +19,7 @@ radar:
   trust: { s: 13.4, z: -0.63, r: 40.6, estimated: false }  # 신뢰성
   multimodal: { s: 82.2, z: 0.5, r: 57.5, estimated: false }  # 멀티모달
   long_context: { s: 83.1, z: 0.91, r: 63.6, estimated: false }  # 긴문맥
-  instruction: { s: 77.5, z: 0.98, r: 64.7, estimated: false }  # 지시 따르기
+  instruction: { s: 77.5, z: 0.98, r: 64.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Step 3.7 Flash
@@ -50,7 +50,7 @@ StepFun · Open · Large · 컨텍스트 262k · 종합지능 **19.0** · ⚠️
 | 신뢰성 | 40.6 | -0.63 | 실측 | [[aa-omniscience]] 15.0%×1.0 |
 | 멀티모달 | 57.5 | +0.5 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
 | 긴문맥 | 63.6 | +0.91 | 실측 | [[aa-lcr]] 74.0%×1.0 |
-| 지시 따르기 | 64.7 | +0.98 | 실측 | [[ifbench]] 67.0%×1.0 |
+| 지시 따르기 | 64.8 | +0.98 | 실측 | [[ifbench]] 67.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

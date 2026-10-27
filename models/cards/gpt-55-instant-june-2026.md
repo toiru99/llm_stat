@@ -19,7 +19,7 @@ radar:
   trust: { s: 25.8, z: -0.07, r: 49.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 78.7, z: 0.77, r: 61.6, estimated: false }  # 긴문맥
-  instruction: { s: 74.4, z: 0.85, r: 62.7, estimated: true }  # 지시 따르기
+  instruction: { s: 74.4, z: 0.85, r: 62.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.5 Instant (June 2026)
@@ -50,7 +50,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **26.0**
 | 신뢰성 | 49.0 | -0.07 | 실측 | [[aa-omniscience]] 27.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 61.6 | +0.77 | 실측 | [[aa-lcr]] 70.0%×1.0 |
-| 지시 따르기 | 62.7 | +0.85 | 추정 | (추정) |
+| 지시 따르기 | 62.8 | +0.85 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

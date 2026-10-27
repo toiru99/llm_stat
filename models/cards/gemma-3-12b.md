@@ -19,7 +19,7 @@ radar:
   trust: { s: 1.0, z: -1.19, r: 32.2, estimated: false }  # 신뢰성
   multimodal: { s: 31.5, z: -2.03, r: 19.5, estimated: false }  # 멀티모달
   long_context: { s: 9.0, z: -1.32, r: 30.2, estimated: false }  # 긴문맥
-  instruction: { s: 35.2, z: -0.82, r: 37.6, estimated: false }  # 지시 따르기
+  instruction: { s: 35.2, z: -0.82, r: 37.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 3 12B
@@ -50,7 +50,7 @@ Google · Open · Small · 컨텍스트 128k · 종합지능 **4.0** · ⚠️ p
 | 신뢰성 | 32.2 | -1.19 | 실측 | [[aa-omniscience]] 3.0%×1.0 |
 | 멀티모달 | 19.5 | -2.03 | 실측 | [[mmmu-pro]] 38.0%×1.0 |
 | 긴문맥 | 30.2 | -1.32 | 실측 | [[aa-lcr]] 8.0%×1.0 |
-| 지시 따르기 | 37.6 | -0.82 | 실측 | [[ifbench]] 37.0%×1.0 |
+| 지시 따르기 | 37.7 | -0.82 | 실측 | [[ifbench]] 37.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

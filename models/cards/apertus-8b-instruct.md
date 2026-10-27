@@ -5,7 +5,7 @@ creator: Swiss AI Initiative
 license: Open
 intelligence_index: 5.0
 price_blended_usd_1m: 0.11
-output_speed_tps: 141.0
+output_speed_tps: 147.0
 context_window: 65500
 status: current
 size_class: Small
@@ -37,7 +37,7 @@ Swiss AI Initiative · Open · Small · 컨텍스트 65k · 종합지능 **5.0**
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.2 · 혼합 $0.11/1M · 141.0 t/s · TTFT 3.53s · 65k ctx` · 가성비 45.5
+`입력 $0.1 · 출력 $0.2 · 혼합 $0.11/1M · 147.0 t/s · TTFT 3.13s · 65k ctx` · 가성비 45.5
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -19,7 +19,7 @@ radar:
   trust: { s: 23.4, z: -0.18, r: 47.3, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 17.6, z: -1.06, r: 34.1, estimated: true }  # 긴문맥
-  instruction: { s: 27.2, z: -1.17, r: 32.5, estimated: true }  # 지시 따르기
+  instruction: { s: 27.2, z: -1.16, r: 32.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 2.1
@@ -50,7 +50,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **6.0**
 | 신뢰성 | 47.3 | -0.18 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 34.1 | -1.06 | 추정 | (추정) |
-| 지시 따르기 | 32.5 | -1.17 | 추정 | (추정) |
+| 지시 따르기 | 32.5 | -1.16 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

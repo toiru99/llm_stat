@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 22.0
 price_blended_usd_1m: 0.331
-output_speed_tps: 434.0
+output_speed_tps: 419.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **22.0**
 - **약점**: 에이전트, 추론
 
 ## 실용 지표
-`입력 $0.3 · 출력 $2.5 · 혼합 $0.331/1M · 434.0 t/s · TTFT 7.94s · 1M ctx` · 가성비 66.5
+`입력 $0.3 · 출력 $2.5 · 혼합 $0.331/1M · 419.0 t/s · TTFT 7.38s · 1M ctx` · 가성비 66.5
 
 ## 레이더 8축 (평균=50 기준선)
 

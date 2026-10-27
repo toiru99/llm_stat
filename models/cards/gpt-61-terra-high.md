@@ -19,7 +19,7 @@ radar:
   trust: { s: 56.7, z: 1.33, r: 70.0, estimated: false }  # 신뢰성
   multimodal: { s: 94.5, z: 1.12, r: 66.8, estimated: false }  # 멀티모달
   long_context: { s: 92.1, z: 1.18, r: 67.7, estimated: false }  # 긴문맥
-  instruction: { s: 69.2, z: 0.63, r: 59.5, estimated: true }  # 지시 따르기
+  instruction: { s: 69.3, z: 0.63, r: 59.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6.1 Terra (high)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **44.0**
 - **약점**: 멀티모달, 지시 따르기
 
 ## 실용 지표
-`입력 $1.0 · 출력 $5.0 · 혼합 $0.735/1M · 91.0 t/s · TTFT 5.66s · 1M ctx` · 가성비 59.9
+`입력 $1.0 · 출력 $5.0 · 혼합 $0.735/1M · 91.0 t/s · TTFT 6.12s · 1M ctx` · 가성비 59.9
 
 ## 레이더 8축 (평균=50 기준선)
 

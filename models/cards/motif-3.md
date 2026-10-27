@@ -19,7 +19,7 @@ radar:
   trust: { s: 72.2, z: 2.03, r: 80.5, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 85.4, z: 0.98, r: 64.7, estimated: false }  # 긴문맥
-  instruction: { s: 88.0, z: 1.43, r: 71.5, estimated: true }  # 지시 따르기
+  instruction: { s: 87.9, z: 1.43, r: 71.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Motif 3

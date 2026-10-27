@@ -19,7 +19,7 @@ radar:
   trust: { s: 53.6, z: 1.19, r: 67.9, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 91.0, z: 1.15, r: 67.2, estimated: false }  # 긴문맥
-  instruction: { s: 91.5, z: 1.58, r: 73.8, estimated: false }  # 지시 따르기
+  instruction: { s: 91.5, z: 1.59, r: 73.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.6 Max Preview
@@ -50,7 +50,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **28.0** 
 | 신뢰성 | 67.9 | +1.19 | 실측 | [[aa-omniscience]] 54.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 67.2 | +1.15 | 실측 | [[aa-lcr]] 81.0%×1.0 |
-| 지시 따르기 | 73.8 | +1.58 | 실측 | [[ifbench]] 77.0%×1.0 |
+| 지시 따르기 | 73.8 | +1.59 | 실측 | [[ifbench]] 77.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

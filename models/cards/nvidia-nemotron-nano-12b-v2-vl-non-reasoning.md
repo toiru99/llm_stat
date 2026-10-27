@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: 6.0
 price_blended_usd_1m: 0.24
-output_speed_tps: 202.0
+output_speed_tps: 203.0
 context_window: 128000
 status: current
 size_class: Small
@@ -19,7 +19,7 @@ radar:
   trust: { s: 2.1, z: -1.14, r: 32.9, estimated: false }  # 신뢰성
   multimodal: { s: 41.1, z: -1.55, r: 26.7, estimated: false }  # 멀티모달
   long_context: { s: 23.6, z: -0.88, r: 36.8, estimated: false }  # 긴문맥
-  instruction: { s: 19.7, z: -1.49, r: 27.7, estimated: false }  # 지시 따르기
+  instruction: { s: 19.7, z: -1.48, r: 27.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — NVIDIA Nemotron Nano 12B v2 VL (non-reasoning)
@@ -37,7 +37,7 @@ NVIDIA · Open · Small · 컨텍스트 128k · 종합지능 **6.0**
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.6 · 혼합 $0.24/1M · 202.0 t/s · TTFT 1.03s · 128k ctx` · 가성비 25.0
+`입력 $0.2 · 출력 $0.6 · 혼합 $0.24/1M · 203.0 t/s · TTFT 1.03s · 128k ctx` · 가성비 25.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ NVIDIA · Open · Small · 컨텍스트 128k · 종합지능 **6.0**
 | 신뢰성 | 32.9 | -1.14 | 실측 | [[aa-omniscience]] 4.0%×1.0 |
 | 멀티모달 | 26.7 | -1.55 | 실측 | [[mmmu-pro]] 45.0%×1.0 |
 | 긴문맥 | 36.8 | -0.88 | 실측 | [[aa-lcr]] 21.0%×1.0 |
-| 지시 따르기 | 27.7 | -1.49 | 실측 | [[ifbench]] 26.0%×1.0 |
+| 지시 따르기 | 27.7 | -1.48 | 실측 | [[ifbench]] 26.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

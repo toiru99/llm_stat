@@ -5,7 +5,7 @@ creator: OpenAI
 license: Open
 intelligence_index: 12.0
 price_blended_usd_1m: 0.16
-output_speed_tps: 250.0
+output_speed_tps: 241.0
 context_window: 131000
 status: current
 size_class: Medium
@@ -19,7 +19,7 @@ radar:
   trust: { s: 7.2, z: -0.91, r: 36.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 58.4, z: 0.17, r: 52.5, estimated: false }  # 긴문맥
-  instruction: { s: 80.3, z: 1.1, r: 66.5, estimated: false }  # 지시 따르기
+  instruction: { s: 80.3, z: 1.1, r: 66.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — gpt-oss-120b (high)
@@ -37,7 +37,7 @@ OpenAI · Open · Medium · 컨텍스트 131k · 종합지능 **12.0**
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.6 · 혼합 $0.16/1M · 250.0 t/s · TTFT 0.76s · 131k ctx` · 가성비 75.0
+`입력 $0.15 · 출력 $0.6 · 혼합 $0.16/1M · 241.0 t/s · TTFT 0.75s · 131k ctx` · 가성비 75.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ OpenAI · Open · Medium · 컨텍스트 131k · 종합지능 **12.0**
 | 신뢰성 | 36.4 | -0.91 | 실측 | [[aa-omniscience]] 9.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 52.5 | +0.17 | 실측 | [[aa-lcr]] 52.0%×1.0 |
-| 지시 따르기 | 66.5 | +1.1 | 실측 | [[ifbench]] 69.0%×1.0 |
+| 지시 따르기 | 66.6 | +1.1 | 실측 | [[ifbench]] 69.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

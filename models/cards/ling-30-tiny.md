@@ -19,7 +19,7 @@ radar:
   trust: { s: 70.1, z: 1.94, r: 79.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 67.4, z: 0.44, r: 56.5, estimated: false }  # 긴문맥
-  instruction: { s: 45.4, z: -0.39, r: 44.1, estimated: true }  # 지시 따르기
+  instruction: { s: 45.4, z: -0.39, r: 44.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Ling 3.0 Tiny
@@ -50,7 +50,7 @@ InclusionAI · Open · Small · 컨텍스트 262k · 종합지능 **11.0**
 | 신뢰성 | 79.1 | +1.94 | 실측 | [[aa-omniscience]] 70.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 56.5 | +0.44 | 실측 | [[aa-lcr]] 60.0%×1.0 |
-| 지시 따르기 | 44.1 | -0.39 | 추정 | (추정) |
+| 지시 따르기 | 44.2 | -0.39 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

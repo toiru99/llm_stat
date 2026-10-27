@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 7.0
 price_blended_usd_1m: 0.067
-output_speed_tps: 288.0
+output_speed_tps: 285.0
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -19,7 +19,7 @@ radar:
   trust: { s: 10.3, z: -0.77, r: 38.5, estimated: false }  # 신뢰성
   multimodal: { s: 53.4, z: -0.94, r: 35.9, estimated: false }  # 멀티모달
   long_context: { s: 36.0, z: -0.51, r: 42.3, estimated: false }  # 긴문맥
-  instruction: { s: 26.8, z: -1.19, r: 32.2, estimated: false }  # 지시 따르기
+  instruction: { s: 26.8, z: -1.18, r: 32.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.5 Flash-Lite (non-reasoning)
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **7.0** · �
 - **약점**: 코딩, 지시 따르기
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.4 · 혼합 $0.067/1M · 288.0 t/s · TTFT 0.31s · 1M ctx` · 가성비 104.5
+`입력 $0.1 · 출력 $0.4 · 혼합 $0.067/1M · 285.0 t/s · TTFT 0.31s · 1M ctx` · 가성비 104.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **7.0** · �
 | 신뢰성 | 38.5 | -0.77 | 실측 | [[aa-omniscience]] 12.0%×1.0 |
 | 멀티모달 | 35.9 | -0.94 | 실측 | [[mmmu-pro]] 54.0%×1.0 |
 | 긴문맥 | 42.3 | -0.51 | 실측 | [[aa-lcr]] 32.0%×1.0 |
-| 지시 따르기 | 32.2 | -1.19 | 실측 | [[ifbench]] 31.0%×1.0 |
+| 지시 따르기 | 32.2 | -1.18 | 실측 | [[ifbench]] 31.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

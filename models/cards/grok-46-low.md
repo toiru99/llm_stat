@@ -19,7 +19,7 @@ radar:
   trust: { s: 69.1, z: 1.89, r: 78.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 91.0, z: 1.15, r: 67.2, estimated: false }  # 긴문맥
-  instruction: { s: 74.5, z: 0.85, r: 62.8, estimated: true }  # 지시 따르기
+  instruction: { s: 74.4, z: 0.85, r: 62.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.6 (low)

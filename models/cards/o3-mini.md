@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 12.0
 price_blended_usd_1m: 1.045
-output_speed_tps: 229.0
+output_speed_tps: 232.0
 context_window: 200000
 status: past
 size_class: Unknown
@@ -19,7 +19,7 @@ radar:
   trust: { s: 9.3, z: -0.82, r: 37.8, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 63.4, z: 0.31, r: 54.7, estimated: true }  # 긴문맥
-  instruction: { s: 54.1, z: -0.02, r: 49.7, estimated: true }  # 지시 따르기
+  instruction: { s: 54.1, z: -0.02, r: 49.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — o3-mini
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **12.0** �
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $1.1 · 출력 $4.4 · 혼합 $1.045/1M · 229.0 t/s · TTFT 8.25s · 200k ctx` · 가성비 11.5
+`입력 $1.1 · 출력 $4.4 · 혼합 $1.045/1M · 232.0 t/s · TTFT 8.01s · 200k ctx` · 가성비 11.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **12.0** �
 | 신뢰성 | 37.8 | -0.82 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 54.7 | +0.31 | 추정 | (추정) |
-| 지시 따르기 | 49.7 | -0.02 | 추정 | (추정) |
+| 지시 따르기 | 49.8 | -0.02 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

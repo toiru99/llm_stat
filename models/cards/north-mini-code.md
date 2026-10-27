@@ -5,7 +5,7 @@ creator: Cohere
 license: Open
 intelligence_index: 10.0
 price_blended_usd_1m: 0
-output_speed_tps: 67.0
+output_speed_tps: 68.0
 context_window: 256000
 status: current
 size_class: Small
@@ -37,7 +37,7 @@ Cohere · Open · Small · 컨텍스트 256k · 종합지능 **10.0**
 - **약점**: 긴문맥, 신뢰성
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 67.0 t/s · TTFT 0.48s · 256k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 68.0 t/s · TTFT 0.49s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

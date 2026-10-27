@@ -19,7 +19,7 @@ radar:
   trust: { s: 54.6, z: 1.24, r: 68.6, estimated: false }  # 신뢰성
   multimodal: { s: 89.0, z: 0.84, r: 62.7, estimated: false }  # 멀티모달
   long_context: { s: 89.9, z: 1.11, r: 66.7, estimated: false }  # 긴문맥
-  instruction: { s: 70.0, z: 0.66, r: 60.0, estimated: true }  # 지시 따르기
+  instruction: { s: 69.8, z: 0.66, r: 59.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.8-Flash-Next
@@ -50,7 +50,7 @@ Alibaba · Open · Large · 컨텍스트 256k · 종합지능 **40.0**
 | 신뢰성 | 68.6 | +1.24 | 실측 | [[aa-omniscience]] 55.0%×1.0 |
 | 멀티모달 | 62.7 | +0.84 | 실측 | [[mmmu-pro]] 80.0%×1.0 |
 | 긴문맥 | 66.7 | +1.11 | 실측 | [[aa-lcr]] 80.0%×1.0 |
-| 지시 따르기 | 60.0 | +0.66 | 추정 | (추정) |
+| 지시 따르기 | 59.8 | +0.66 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 50.0
 price_blended_usd_1m: 1.47
-output_speed_tps: 60.0
+output_speed_tps: 58.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -19,7 +19,7 @@ radar:
   trust: { s: 50.5, z: 1.05, r: 65.8, estimated: false }  # 신뢰성
   multimodal: { s: 95.9, z: 1.19, r: 67.8, estimated: false }  # 멀티모달
   long_context: { s: 92.1, z: 1.18, r: 67.7, estimated: false }  # 긴문맥
-  instruction: { s: 76.6, z: 0.94, r: 64.1, estimated: true }  # 지시 따르기
+  instruction: { s: 76.6, z: 0.94, r: 64.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6.1 Sol (high)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **50.0**
 - **약점**: 신뢰성, 지시 따르기
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.47/1M · 60.0 t/s · TTFT 69.02s · 1M ctx` · 가성비 34.0
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.47/1M · 58.0 t/s · TTFT 69.02s · 1M ctx` · 가성비 34.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **50.0**
 | 신뢰성 | 65.8 | +1.05 | 실측 | [[aa-omniscience]] 51.0%×1.0 |
 | 멀티모달 | 67.8 | +1.19 | 실측 | [[mmmu-pro]] 85.0%×1.0 |
 | 긴문맥 | 67.7 | +1.18 | 실측 | [[aa-lcr]] 82.0%×1.0 |
-| 지시 따르기 | 64.1 | +0.94 | 추정 | (추정) |
+| 지시 따르기 | 64.2 | +0.94 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

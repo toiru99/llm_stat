@@ -5,7 +5,7 @@ creator: InclusionAI
 license: Open
 intelligence_index: 17.0
 price_blended_usd_1m: 0.52
-output_speed_tps: 123.0
+output_speed_tps: 122.0
 context_window: 262000
 status: current
 size_class: Large
@@ -37,7 +37,7 @@ InclusionAI · Open · Large · 컨텍스트 262k · 종합지능 **17.0**
 - **약점**: 지시 따르기, 신뢰성
 
 ## 실용 지표
-`입력 $0.3 · 출력 $2.5 · 혼합 $0.52/1M · 123.0 t/s · TTFT 3.77s · 262k ctx` · 가성비 32.7
+`입력 $0.3 · 출력 $2.5 · 혼합 $0.52/1M · 122.0 t/s · TTFT 3.76s · 262k ctx` · 가성비 32.7
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: Alibaba
 license: Proprietary
 intelligence_index: 12.0
 price_blended_usd_1m: 0.17
-output_speed_tps: 239.0
+output_speed_tps: 235.0
 context_window: 256000
 status: current
 size_class: Unknown
@@ -19,7 +19,7 @@ radar:
   trust: { s: 5.2, z: -1.0, r: 35.0, estimated: false }  # 신뢰성
   multimodal: { s: 68.5, z: -0.18, r: 47.2, estimated: false }  # 멀티모달
   long_context: { s: 58.4, z: 0.17, r: 52.5, estimated: false }  # 긴문맥
-  instruction: { s: 36.6, z: -0.76, r: 38.5, estimated: false }  # 지시 따르기
+  instruction: { s: 36.6, z: -0.76, r: 38.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 Omni Flash
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **12.0**
 - **약점**: 코딩, 신뢰성
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.8 · 혼합 $0.17/1M · 239.0 t/s · TTFT 1.8s · 256k ctx` · 가성비 70.6
+`입력 $0.1 · 출력 $0.8 · 혼합 $0.17/1M · 235.0 t/s · TTFT 1.81s · 256k ctx` · 가성비 70.6
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **12.0**
 | 신뢰성 | 35.0 | -1.0 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
 | 멀티모달 | 47.2 | -0.18 | 실측 | [[mmmu-pro]] 65.0%×1.0 |
 | 긴문맥 | 52.5 | +0.17 | 실측 | [[aa-lcr]] 52.0%×1.0 |
-| 지시 따르기 | 38.5 | -0.76 | 실측 | [[ifbench]] 38.0%×1.0 |
+| 지시 따르기 | 38.6 | -0.76 | 실측 | [[ifbench]] 38.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

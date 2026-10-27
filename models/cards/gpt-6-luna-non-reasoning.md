@@ -19,7 +19,7 @@ radar:
   trust: { s: 19.6, z: -0.35, r: 44.8, estimated: false }  # 신뢰성
   multimodal: { s: 64.4, z: -0.39, r: 44.2, estimated: false }  # 멀티모달
   long_context: { s: 44.9, z: -0.24, r: 46.4, estimated: false }  # 긴문맥
-  instruction: { s: 48.7, z: -0.25, r: 46.3, estimated: true }  # 지시 따르기
+  instruction: { s: 48.7, z: -0.24, r: 46.3, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6 Luna (non-reasoning)
@@ -50,7 +50,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **18.0**
 | 신뢰성 | 44.8 | -0.35 | 실측 | [[aa-omniscience]] 21.0%×1.0 |
 | 멀티모달 | 44.2 | -0.39 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
 | 긴문맥 | 46.4 | -0.24 | 실측 | [[aa-lcr]] 40.0%×1.0 |
-| 지시 따르기 | 46.3 | -0.25 | 추정 | (추정) |
+| 지시 따르기 | 46.3 | -0.24 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

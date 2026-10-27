@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: 7.0
 price_blended_usd_1m: 0.052
-output_speed_tps: 227.0
+output_speed_tps: 212.0
 context_window: 131000
 status: current
 size_class: Small
@@ -19,7 +19,7 @@ radar:
   trust: { s: 39.2, z: 0.54, r: 58.1, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 25.8, z: -0.81, r: 37.8, estimated: false }  # 긴문맥
-  instruction: { s: 22.5, z: -1.37, r: 29.5, estimated: false }  # 지시 따르기
+  instruction: { s: 22.5, z: -1.36, r: 29.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — NVIDIA Nemotron Nano 9B V2
@@ -37,7 +37,7 @@ NVIDIA · Open · Small · 컨텍스트 131k · 종합지능 **7.0**
 - **약점**: 코딩, 지시 따르기
 
 ## 실용 지표
-`입력 $0.04 · 출력 $0.16 · 혼합 $0.052/1M · 227.0 t/s · TTFT 0.54s · 131k ctx` · 가성비 134.6
+`입력 $0.04 · 출력 $0.16 · 혼합 $0.052/1M · 212.0 t/s · TTFT 0.55s · 131k ctx` · 가성비 134.6
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ NVIDIA · Open · Small · 컨텍스트 131k · 종합지능 **7.0**
 | 신뢰성 | 58.1 | +0.54 | 실측 | [[aa-omniscience]] 40.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 37.8 | -0.81 | 실측 | [[aa-lcr]] 23.0%×1.0 |
-| 지시 따르기 | 29.5 | -1.37 | 실측 | [[ifbench]] 28.0%×1.0 |
+| 지시 따르기 | 29.5 | -1.36 | 실측 | [[ifbench]] 28.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -5,7 +5,7 @@ creator: Upstage
 license: Proprietary
 intelligence_index: 24.0
 price_blended_usd_1m: 0.067
-output_speed_tps: 123.0
+output_speed_tps: 122.0
 context_window: 1050000
 status: current
 size_class: Small
@@ -37,7 +37,7 @@ Upstage · Proprietary · Small · 컨텍스트 1M · 종합지능 **24.0**
 - **약점**: 전문 지식, 추론
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.4 · 혼합 $0.067/1M · 123.0 t/s · TTFT 1.8s · 1M ctx` · 가성비 358.2
+`입력 $0.1 · 출력 $0.4 · 혼합 $0.067/1M · 122.0 t/s · TTFT 1.78s · 1M ctx` · 가성비 358.2
 
 ## 레이더 8축 (평균=50 기준선)
 

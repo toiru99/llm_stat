@@ -19,7 +19,7 @@ radar:
   trust: { s: 26.8, z: -0.02, r: 49.7, estimated: false }  # 신뢰성
   multimodal: { s: 83.6, z: 0.57, r: 58.5, estimated: false }  # 멀티모달
   long_context: { s: 76.4, z: 0.71, r: 60.6, estimated: false }  # 긴문맥
-  instruction: { s: 44.5, z: -0.43, r: 43.6, estimated: true }  # 지시 따르기
+  instruction: { s: 44.5, z: -0.42, r: 43.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6.1 Terra (non-reasoning)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **33.0**
 - **약점**: 지시 따르기, 추론
 
 ## 실용 지표
-`입력 $1.0 · 출력 $5.0 · 혼합 $0.735/1M · 91.0 t/s · TTFT 1.27s · 1M ctx` · 가성비 44.9
+`입력 $1.0 · 출력 $5.0 · 혼합 $0.735/1M · 91.0 t/s · TTFT 1.19s · 1M ctx` · 가성비 44.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **33.0**
 | 신뢰성 | 49.7 | -0.02 | 실측 | [[aa-omniscience]] 28.0%×1.0 |
 | 멀티모달 | 58.5 | +0.57 | 실측 | [[mmmu-pro]] 76.0%×1.0 |
 | 긴문맥 | 60.6 | +0.71 | 실측 | [[aa-lcr]] 68.0%×1.0 |
-| 지시 따르기 | 43.6 | -0.43 | 추정 | (추정) |
+| 지시 따르기 | 43.6 | -0.42 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

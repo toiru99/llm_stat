@@ -19,7 +19,7 @@ radar:
   trust: { s: 27.4, z: 0.0, r: 50.0, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 12.5, z: -1.22, r: 31.8, estimated: true }  # 긴문맥
-  instruction: { s: 26.0, z: -1.22, r: 31.8, estimated: true }  # 지시 따르기
+  instruction: { s: 26.0, z: -1.21, r: 31.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba 1.6 Large
@@ -34,7 +34,7 @@ AI21 Labs · Open · Large · 컨텍스트 256k · 종합지능 **6.0** · ⚠�
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 추론
-- **약점**: 긴문맥, 지시 따르기
+- **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 256k ctx`
@@ -50,7 +50,7 @@ AI21 Labs · Open · Large · 컨텍스트 256k · 종합지능 **6.0** · ⚠�
 | 신뢰성 | 50.0 | +0.0 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 31.8 | -1.22 | 추정 | (추정) |
-| 지시 따르기 | 31.8 | -1.22 | 추정 | (추정) |
+| 지시 따르기 | 31.8 | -1.21 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: 13.0
 price_blended_usd_1m: 0.2095
-output_speed_tps: 162.0
+output_speed_tps: 161.0
 context_window: 1000000
 status: past
 size_class: Medium
@@ -19,7 +19,7 @@ radar:
   trust: { s: 11.3, z: -0.72, r: 39.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 74.2, z: 0.64, r: 59.6, estimated: false }  # 긴문맥
-  instruction: { s: 83.1, z: 1.22, r: 68.3, estimated: false }  # 지시 따르기
+  instruction: { s: 83.1, z: 1.22, r: 68.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3 Super
@@ -37,7 +37,7 @@ NVIDIA · Open · Medium · 컨텍스트 1M · 종합지능 **13.0** · ⚠️ p
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.3 · 출력 $0.9 · 혼합 $0.2095/1M · 162.0 t/s · TTFT 1.35s · 1M ctx` · 가성비 62.1
+`입력 $0.3 · 출력 $0.9 · 혼합 $0.2095/1M · 161.0 t/s · TTFT 1.37s · 1M ctx` · 가성비 62.1
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ NVIDIA · Open · Medium · 컨텍스트 1M · 종합지능 **13.0** · ⚠️ p
 | 신뢰성 | 39.2 | -0.72 | 실측 | [[aa-omniscience]] 13.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 59.6 | +0.64 | 실측 | [[aa-lcr]] 66.0%×1.0 |
-| 지시 따르기 | 68.3 | +1.22 | 실측 | [[ifbench]] 71.0%×1.0 |
+| 지시 따르기 | 68.4 | +1.22 | 실측 | [[ifbench]] 71.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

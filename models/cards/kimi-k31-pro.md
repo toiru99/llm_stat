@@ -5,7 +5,7 @@ creator: Kimi
 license: Proprietary
 intelligence_index: 55.0
 price_blended_usd_1m: 1.54
-output_speed_tps: 44.0
+output_speed_tps: 43.0
 context_window: 1000000
 status: current
 size_class: Large
@@ -19,7 +19,7 @@ radar:
   trust: { s: 55.7, z: 1.29, r: 69.3, estimated: false }  # 신뢰성
   multimodal: { s: 94.5, z: 1.12, r: 66.8, estimated: false }  # 멀티모달
   long_context: { s: 96.6, z: 1.31, r: 69.7, estimated: false }  # 긴문맥
-  instruction: { s: 73.7, z: 0.82, r: 62.3, estimated: true }  # 지시 따르기
+  instruction: { s: 73.6, z: 0.82, r: 62.3, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K3.1 Pro
@@ -37,7 +37,7 @@ Kimi · Proprietary · Large · 컨텍스트 1M · 종합지능 **55.0**
 - **약점**: 멀티모달, 지시 따르기
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 44.0 t/s · TTFT 2.98s · 1M ctx` · 가성비 35.7
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 43.0 t/s · TTFT 2.95s · 1M ctx` · 가성비 35.7
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: Xiaomi
 license: Open
 intelligence_index: 22.0
 price_blended_usd_1m: 0.0552
-output_speed_tps: 39.0
+output_speed_tps: 41.0
 context_window: 1000000
 status: past
 size_class: Large
@@ -19,7 +19,7 @@ radar:
   trust: { s: 68.0, z: 1.85, r: 77.7, estimated: false }  # 신뢰성
   multimodal: { s: 82.2, z: 0.5, r: 57.5, estimated: false }  # 멀티모달
   long_context: { s: 82.0, z: 0.88, r: 63.1, estimated: false }  # 긴문맥
-  instruction: { s: 77.5, z: 0.98, r: 64.7, estimated: false }  # 지시 따르기
+  instruction: { s: 77.5, z: 0.98, r: 64.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2.5
@@ -37,7 +37,7 @@ Xiaomi · Open · Large · 컨텍스트 1M · 종합지능 **22.0** · ⚠️ pa
 - **약점**: 에이전트, 전문 지식
 
 ## 실용 지표
-`입력 $0.13 · 출력 $0.27 · 혼합 $0.0552/1M · 39.0 t/s · TTFT 2.01s · 1M ctx` · 가성비 398.6
+`입력 $0.13 · 출력 $0.27 · 혼합 $0.0552/1M · 41.0 t/s · TTFT 1.32s · 1M ctx` · 가성비 398.6
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Xiaomi · Open · Large · 컨텍스트 1M · 종합지능 **22.0** · ⚠️ pa
 | 신뢰성 | 77.7 | +1.85 | 실측 | [[aa-omniscience]] 68.0%×1.0 |
 | 멀티모달 | 57.5 | +0.5 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
 | 긴문맥 | 63.1 | +0.88 | 실측 | [[aa-lcr]] 73.0%×1.0 |
-| 지시 따르기 | 64.7 | +0.98 | 실측 | [[ifbench]] 67.0%×1.0 |
+| 지시 따르기 | 64.8 | +0.98 | 실측 | [[ifbench]] 67.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

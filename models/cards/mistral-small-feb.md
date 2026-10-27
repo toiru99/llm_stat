@@ -19,7 +19,7 @@ radar:
   trust: { s: 36.5, z: 0.42, r: 56.3, estimated: true }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 11.9, z: -1.23, r: 31.5, estimated: true }  # 긴문맥
-  instruction: { s: 31.9, z: -0.96, r: 35.5, estimated: true }  # 지시 따르기
+  instruction: { s: 31.9, z: -0.96, r: 35.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Small (Feb)
@@ -50,7 +50,7 @@ Mistral · Proprietary · Unknown · 컨텍스트 32k · 종합지능 **6.0** ·
 | 신뢰성 | 56.3 | +0.42 | 추정 | (추정) |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 31.5 | -1.23 | 추정 | (추정) |
-| 지시 따르기 | 35.5 | -0.96 | 추정 | (추정) |
+| 지시 따르기 | 35.6 | -0.96 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

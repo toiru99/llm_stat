@@ -5,7 +5,7 @@ creator: Meta
 license: Open
 intelligence_index: 6.0
 price_blended_usd_1m: 0.228
-output_speed_tps: 89.0
+output_speed_tps: 87.0
 context_window: 10000000
 status: current
 size_class: Medium
@@ -37,7 +37,7 @@ Meta · Open · Medium · 컨텍스트 10M · 종합지능 **6.0**
 - **약점**: 에이전트, 멀티모달
 
 ## 실용 지표
-`입력 $0.18 · 출력 $0.66 · 혼합 $0.228/1M · 89.0 t/s · TTFT 0.83s · 10M ctx` · 가성비 26.3
+`입력 $0.18 · 출력 $0.66 · 혼합 $0.228/1M · 87.0 t/s · TTFT 0.84s · 10M ctx` · 가성비 26.3
 
 ## 레이더 8축 (평균=50 기준선)
 

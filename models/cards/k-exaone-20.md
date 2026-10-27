@@ -19,7 +19,7 @@ radar:
   trust: { s: 77.3, z: 2.27, r: 84.0, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 67.4, z: 0.44, r: 56.5, estimated: false }  # 긴문맥
-  instruction: { s: 60.4, z: 0.25, r: 53.8, estimated: true }  # 지시 따르기
+  instruction: { s: 60.3, z: 0.25, r: 53.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — K-EXAONE 2.0

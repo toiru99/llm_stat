@@ -19,7 +19,7 @@ radar:
   trust: { s: 17.5, z: -0.44, r: 43.4, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 11.2, z: -1.25, r: 31.2, estimated: false }  # 긴문맥
-  instruction: { s: 22.5, z: -1.37, r: 29.5, estimated: false }  # 지시 따르기
+  instruction: { s: 22.5, z: -1.36, r: 29.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek R1 Distill Llama 70B
@@ -50,7 +50,7 @@ DeepSeek · Open · Medium · 컨텍스트 128k · 종합지능 **8.0** · ⚠�
 | 신뢰성 | 43.4 | -0.44 | 실측 | [[aa-omniscience]] 19.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 31.2 | -1.25 | 실측 | [[aa-lcr]] 10.0%×1.0 |
-| 지시 따르기 | 29.5 | -1.37 | 실측 | [[ifbench]] 28.0%×1.0 |
+| 지시 따르기 | 29.5 | -1.36 | 실측 | [[ifbench]] 28.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

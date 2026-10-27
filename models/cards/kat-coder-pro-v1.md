@@ -19,7 +19,7 @@ radar:
   trust: { s: 32.0, z: 0.21, r: 53.2, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 43.8, z: -0.27, r: 45.9, estimated: false }  # 긴문맥
-  instruction: { s: 78.9, z: 1.04, r: 65.6, estimated: false }  # 지시 따르기
+  instruction: { s: 78.9, z: 1.04, r: 65.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — KAT-Coder-Pro V1
@@ -50,7 +50,7 @@ KwaiKAT · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **19.0** 
 | 신뢰성 | 53.2 | +0.21 | 실측 | [[aa-omniscience]] 33.0%×1.0 |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 45.9 | -0.27 | 실측 | [[aa-lcr]] 39.0%×1.0 |
-| 지시 따르기 | 65.6 | +1.04 | 실측 | [[ifbench]] 68.0%×1.0 |
+| 지시 따르기 | 65.7 | +1.04 | 실측 | [[ifbench]] 68.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -19,7 +19,7 @@ radar:
   trust: { s: 30.9, z: 0.16, r: 52.5, estimated: false }  # 신뢰성
   multimodal: { s: 97.3, z: 1.26, r: 68.8, estimated: false }  # 멀티모달
   long_context: { s: 93.3, z: 1.21, r: 68.2, estimated: false }  # 긴문맥
-  instruction: { s: 77.3, z: 0.98, r: 64.6, estimated: true }  # 지시 따르기
+  instruction: { s: 77.3, z: 0.98, r: 64.7, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 5.5 (high with fallback)
@@ -50,7 +50,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **54.0**
 | 신뢰성 | 52.5 | +0.16 | 실측 | [[aa-omniscience]] 32.0%×1.0 |
 | 멀티모달 | 68.8 | +1.26 | 실측 | [[mmmu-pro]] 86.0%×1.0 |
 | 긴문맥 | 68.2 | +1.21 | 실측 | [[aa-lcr]] 83.0%×1.0 |
-| 지시 따르기 | 64.6 | +0.98 | 추정 | (추정) |
+| 지시 따르기 | 64.7 | +0.98 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
