@@ -874,12 +874,12 @@
       "Total Response (s)": "147.86",
       "Reasoning Time (s)": "117.54",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "small",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.042,
+      "priceClass": "low"
     },
     {
       "Model": "Claude Opus 5.5 (xhigh with fallback)",
@@ -1441,12 +1441,12 @@
       "Total Response (s)": "110.84",
       "Reasoning Time (s)": "98.52",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "small",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.9,
+      "priceClass": "medium"
     },
     {
       "Model": "Claude Fable 5 (with fallback)",
@@ -1882,12 +1882,12 @@
       "Total Response (s)": "89.66",
       "Reasoning Time (s)": "70.28",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "small",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.27,
+      "priceClass": "medium"
     },
     {
       "Model": "GPT-6.1 Terra (max)",
@@ -2134,12 +2134,12 @@
       "Total Response (s)": "81.82",
       "Reasoning Time (s)": "62.21",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "large",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.40700000000000003,
+      "priceClass": "medium"
     },
     {
       "Model": "GPT-5.5 (xhigh)",
@@ -2701,12 +2701,12 @@
       "Total Response (s)": "69.39",
       "Reasoning Time (s)": "54.37",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "large",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.511,
+      "priceClass": "medium"
     },
     {
       "Model": "MiMo-V2.5",
@@ -2890,12 +2890,12 @@
       "Total Response (s)": "65.32",
       "Reasoning Time (s)": "54.49",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "large",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.9,
+      "priceClass": "medium"
     },
     {
       "Model": "Gemma 4 31B",
@@ -2953,12 +2953,12 @@
       "Total Response (s)": "64.46",
       "Reasoning Time (s)": "49.20",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "small",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0,
+      "priceClass": "low"
     },
     {
       "Model": "Qwen3.8 27B (xhigh)",
@@ -3709,12 +3709,12 @@
       "Total Response (s)": "57.43",
       "Reasoning Time (s)": "49.25",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "large",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.8460000000000001,
+      "priceClass": "medium"
     },
     {
       "Model": "Muse Spark 1.3 (max)",
@@ -3835,12 +3835,12 @@
       "Total Response (s)": "55.94",
       "Reasoning Time (s)": "47.93",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "large",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.702,
+      "priceClass": "medium"
     },
     {
       "Model": "Qwen3.8 27B (medium)",
@@ -4024,12 +4024,12 @@
       "Total Response (s)": "54.54",
       "Reasoning Time (s)": "42.71",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "small",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.028000000000000004,
+      "priceClass": "low"
     },
     {
       "Model": "Gemini 4 Argon (high)",
@@ -4213,12 +4213,12 @@
       "Total Response (s)": "51.67",
       "Reasoning Time (s)": "43.07",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "large",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.66,
+      "priceClass": "medium"
     },
     {
       "Model": "Grok 4.7 (high)",
@@ -4528,12 +4528,12 @@
       "Total Response (s)": "49.76",
       "Reasoning Time (s)": "38.92",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "large",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.19276,
+      "priceClass": "medium"
     },
     {
       "Model": "Qwen3.8-Flash-Next",
@@ -4906,12 +4906,12 @@
       "Total Response (s)": "46.67",
       "Reasoning Time (s)": "38.41",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "large",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.49000000000000005,
+      "priceClass": "medium"
     },
     {
       "Model": "MiMo-V2.6-Pro",
@@ -5095,12 +5095,12 @@
       "Total Response (s)": "46.08",
       "Reasoning Time (s)": "40.27",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "small",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.5625,
+      "priceClass": "medium"
     },
     {
       "Model": "MiniMax-M2.5",
@@ -5410,12 +5410,12 @@
       "Total Response (s)": "43.79",
       "Reasoning Time (s)": "33.45",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "small",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.14150000000000001,
+      "priceClass": "low"
     },
     {
       "Model": "Grok 4.6 (xhigh)",
@@ -5725,12 +5725,12 @@
       "Total Response (s)": "40.30",
       "Reasoning Time (s)": "29.58",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "medium",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.377,
+      "priceClass": "medium"
     },
     {
       "Model": "GPT-5 (medium)",
@@ -5914,12 +5914,12 @@
       "Total Response (s)": "37.90",
       "Reasoning Time (s)": "25.78",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "small",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.51,
+      "priceClass": "medium"
     },
     {
       "Model": "North Mini Code",
@@ -6355,12 +6355,12 @@
       "Total Response (s)": "36.11",
       "Reasoning Time (s)": "28.19",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "small",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.132,
+      "priceClass": "low"
     },
     {
       "Model": "GPT-5.5 (high)",
@@ -6859,12 +6859,12 @@
       "Total Response (s)": "33.38",
       "Reasoning Time (s)": "23.61",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "medium",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.27425,
+      "priceClass": "medium"
     },
     {
       "Model": "Nova 2.0 Pro Preview (medium)",
@@ -7678,12 +7678,12 @@
       "Total Response (s)": "28.96",
       "Reasoning Time (s)": "22.10",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "small",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.06100000000000001,
+      "priceClass": "low"
     },
     {
       "Model": "Gemini 2.5 Pro",
@@ -8182,12 +8182,12 @@
       "Total Response (s)": "27.17",
       "Reasoning Time (s)": "21.00",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "small",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.08900000000000001,
+      "priceClass": "low"
     },
     {
       "Model": "Grok Build 0.1 0616",
@@ -9064,12 +9064,12 @@
       "Total Response (s)": "24.18",
       "Reasoning Time (s)": "17.55",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "small",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.12000000000000002,
+      "priceClass": "low"
     },
     {
       "Model": "Ring-2.6-1T",
@@ -9253,12 +9253,12 @@
       "Total Response (s)": "23.88",
       "Reasoning Time (s)": "16.56",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "large",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.69,
+      "priceClass": "medium"
     },
     {
       "Model": "MiniMax M1 80k",
@@ -9381,10 +9381,10 @@
       "Further Analysis": "Model Providers",
       "paramClass": null,
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.77,
+      "priceClass": "medium"
     },
     {
       "Model": "Grok 4.20 0309 v2",
@@ -9444,10 +9444,10 @@
       "Further Analysis": "Model Providers",
       "paramClass": null,
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.64,
+      "priceClass": "medium"
     },
     {
       "Model": "Nova 2.0 Lite (low)",
@@ -9633,10 +9633,10 @@
       "Further Analysis": "Model Providers",
       "paramClass": null,
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 2.31,
+      "priceClass": "high"
     },
     {
       "Model": "Claude Opus 4.5",
@@ -9696,10 +9696,10 @@
       "Further Analysis": "Model Providers",
       "paramClass": null,
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 3.85,
+      "priceClass": "high"
     },
     {
       "Model": "Mistral Large 4 Preview",
@@ -9822,10 +9822,10 @@
       "Further Analysis": "Model Providers",
       "paramClass": null,
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.067,
+      "priceClass": "low"
     },
     {
       "Model": "Qwen3 235B A22B 2507",
@@ -10576,12 +10576,12 @@
       "Total Response (s)": "21.22",
       "Reasoning Time (s)": "15.13",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "medium",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.68,
+      "priceClass": "medium"
     },
     {
       "Model": "Mixtral 8x7B",
@@ -11269,12 +11269,12 @@
       "Total Response (s)": "18.62",
       "Reasoning Time (s)": "13.26",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "small",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.425,
+      "priceClass": "medium"
     },
     {
       "Model": "DeepSeek V4 Flash 0731 (max)",
@@ -12468,10 +12468,10 @@
       "Further Analysis": "Model Providers",
       "paramClass": null,
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.331,
+      "priceClass": "medium"
     },
     {
       "Model": "Gemini 3.5 Flash (medium)",
@@ -13159,12 +13159,12 @@
       "Total Response (s)": "14.88",
       "Reasoning Time (s)": "11.20",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "medium",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.10049999999999999,
+      "priceClass": "low"
     },
     {
       "Model": "GPT-5 Codex (high)",
@@ -15427,12 +15427,12 @@
       "Total Response (s)": "11.57",
       "Reasoning Time (s)": "8.82",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "small",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.052000000000000005,
+      "priceClass": "low"
     },
     {
       "Model": "Qwen3 VL 235B A22B",
@@ -24312,10 +24312,10 @@
       "Further Analysis": "Model Providers",
       "paramClass": null,
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 1.1400000000000001,
+      "priceClass": "high"
     },
     {
       "Model": "Mistral Medium 3.1",
@@ -24877,12 +24877,12 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "large",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 1.69925,
+      "priceClass": "high"
     },
     {
       "Model": "DeepSeek R1 Distill Llama 8B",
@@ -25320,7 +25320,7 @@
       "Further Analysis": "Model Providers",
       "paramClass": null,
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
       "blendedPrice": null,
       "priceClass": null
@@ -25759,9 +25759,9 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "tiny",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
       "blendedPrice": null,
       "priceClass": null
@@ -26011,9 +26011,9 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "large",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
       "blendedPrice": null,
       "priceClass": null
@@ -26580,7 +26580,7 @@
       "Further Analysis": "Model Providers",
       "paramClass": null,
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
       "blendedPrice": null,
       "priceClass": null
@@ -26706,7 +26706,7 @@
       "Further Analysis": "Model Providers",
       "paramClass": null,
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
       "blendedPrice": null,
       "priceClass": null
@@ -28027,12 +28027,12 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "small",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0,
+      "priceClass": "low"
     },
     {
       "Model": "Qwen2.5 Turbo",
@@ -28342,9 +28342,9 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "medium",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
       "blendedPrice": null,
       "priceClass": null
@@ -28531,9 +28531,9 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "large",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
       "blendedPrice": null,
       "priceClass": null
@@ -29539,9 +29539,9 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "small",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
       "blendedPrice": null,
       "priceClass": null
@@ -29728,9 +29728,9 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "large",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
       "blendedPrice": null,
       "priceClass": null
@@ -30106,9 +30106,9 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "tiny",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
       "blendedPrice": null,
       "priceClass": null
@@ -30358,9 +30358,9 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "small",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
       "blendedPrice": null,
       "priceClass": null
@@ -31053,10 +31053,10 @@
       "Further Analysis": "Model Providers",
       "paramClass": null,
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.23000000000000004,
+      "priceClass": "medium"
     },
     {
       "Model": "GPT-4o (Mar)",
@@ -31177,9 +31177,9 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "tiny",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
       "blendedPrice": null,
       "priceClass": null
@@ -31366,9 +31366,9 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "medium",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
       "blendedPrice": null,
       "priceClass": null
@@ -31807,9 +31807,9 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "tiny",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
       "blendedPrice": null,
       "priceClass": null
@@ -32500,9 +32500,9 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "small",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
       "blendedPrice": null,
       "priceClass": null
@@ -33319,9 +33319,9 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "small",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
       "blendedPrice": null,
       "priceClass": null
@@ -33382,9 +33382,9 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "large",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
       "blendedPrice": null,
       "priceClass": null
@@ -34075,9 +34075,9 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "tiny",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
       "blendedPrice": null,
       "priceClass": null
@@ -35778,10 +35778,10 @@
       "Further Analysis": "Model Providers",
       "paramClass": null,
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 11.55,
+      "priceClass": "high"
     },
     {
       "Model": "GPT-3.5 Turbo (0613)",
@@ -35902,12 +35902,12 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "large",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.048299999999999996,
+      "priceClass": "low"
     },
     {
       "Model": "Gemini 1.0 Pro",
@@ -36028,9 +36028,9 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "small",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
       "blendedPrice": null,
       "priceClass": null
@@ -36973,9 +36973,9 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "small",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
       "blendedPrice": null,
       "priceClass": null
@@ -37855,9 +37855,9 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "tiny",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
       "blendedPrice": null,
       "priceClass": null
@@ -37983,7 +37983,7 @@
       "Further Analysis": "Model Providers",
       "paramClass": null,
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
       "blendedPrice": null,
       "priceClass": null
@@ -38926,12 +38926,12 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "large",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.1176,
+      "priceClass": "low"
     },
     {
       "Model": "Molmo 7B-D",
@@ -39178,9 +39178,9 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "small",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
       "blendedPrice": null,
       "priceClass": null
@@ -39241,9 +39241,9 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "small",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
       "blendedPrice": null,
       "priceClass": null
@@ -40438,12 +40438,12 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "large",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.12000000000000002,
+      "priceClass": "low"
     },
     {
       "Model": "G9v3-39A5B",
@@ -41385,10 +41385,10 @@
       "Further Analysis": "Model Providers",
       "paramClass": null,
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 11.55,
+      "priceClass": "high"
     },
     {
       "Model": "Qwen3 VL 30B A3B",
@@ -42139,12 +42139,12 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "large",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
-      "blendedPrice": null,
-      "priceClass": null
+      "blendedPrice": 0.1078,
+      "priceClass": "low"
     },
     {
       "Model": "Exaone 4.0 1.2B",
@@ -42202,9 +42202,9 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "tiny",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
       "blendedPrice": null,
       "priceClass": null
@@ -43210,9 +43210,9 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "medium",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
       "blendedPrice": null,
       "priceClass": null
@@ -43903,9 +43903,9 @@
       "Total Response (s)": "--",
       "Reasoning Time (s)": "--",
       "Further Analysis": "Model Providers",
-      "paramClass": null,
+      "paramClass": "large",
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": false,
       "blendedPrice": null,
       "priceClass": null
@@ -44094,7 +44094,7 @@
       "Further Analysis": "Model Providers",
       "paramClass": null,
       "totalParameters": null,
-      "isReasoning": null,
+      "isReasoning": true,
       "deprecated": true,
       "blendedPrice": null,
       "priceClass": null

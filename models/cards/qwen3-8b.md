@@ -8,9 +8,9 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 131000
 status: past
-size_class: Unknown
+size_class: Small
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 26.6, z: -0.77, r: 38.5, estimated: false }  # 전문 지식
   reasoning: { s: 20.7, z: -0.75, r: 38.7, estimated: false }  # 추론
@@ -30,7 +30,7 @@ timestamp: 2026-10-27T00:00:00Z
 
 # Qwen3 8B
 
-Alibaba · Open · Unknown · 컨텍스트 131k · 종합지능 **5.0** · ⚠️ past(구세대)
+Alibaba · Open · Small · 컨텍스트 131k · 종합지능 **5.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 코딩, 추론

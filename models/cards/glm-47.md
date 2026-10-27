@@ -4,13 +4,13 @@ title: GLM-4.7
 creator: Z AI
 license: Open
 intelligence_index: 22.0
-price_blended_usd_1m: 0.512
+price_blended_usd_1m: 0.511
 output_speed_tps: 37.0
 context_window: 200000
 status: past
-size_class: Unknown
+size_class: Large
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 53.9, z: 0.5, r: 57.5, estimated: false }  # 전문 지식
   reasoning: { s: 45.9, z: 0.39, r: 55.9, estimated: false }  # 추론
@@ -30,14 +30,14 @@ timestamp: 2026-10-27T00:00:00Z
 
 # GLM-4.7
 
-Z AI · Open · Unknown · 컨텍스트 200k · 종합지능 **22.0** · ⚠️ past(구세대)
+Z AI · Open · Large · 컨텍스트 200k · 종합지능 **22.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 긴문맥
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.53 · 출력 $2.1 · 혼합 $0.512/1M · 37.0 t/s · TTFT 1.43s · 200k ctx` · 가성비 43.0
+`입력 $0.53 · 출력 $2.1 · 혼합 $0.511/1M · 37.0 t/s · TTFT 1.43s · 200k ctx` · 가성비 43.1
 
 ## 레이더 8축 (평균=50 기준선)
 

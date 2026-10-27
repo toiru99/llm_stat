@@ -8,9 +8,9 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 131000
 status: current
-size_class: Unknown
+size_class: Small
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 41.3, z: -0.09, r: 48.7, estimated: true }  # 전문 지식
   reasoning: { s: 37.4, z: 0.01, r: 50.1, estimated: true }  # 추론
@@ -30,7 +30,7 @@ timestamp: 2026-10-27T00:00:00Z
 
 # Nemotron 3.5 Bolt E4B 4GB
 
-NVIDIA · Open · Unknown · 컨텍스트 131k · 종합지능 **None**
+NVIDIA · Open · Small · 컨텍스트 131k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 긴문맥

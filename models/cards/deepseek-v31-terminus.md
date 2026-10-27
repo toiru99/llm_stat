@@ -4,13 +4,13 @@ title: DeepSeek V3.1 Terminus
 creator: DeepSeek
 license: Open
 intelligence_index: 15.0
-price_blended_usd_1m: 1.702
+price_blended_usd_1m: 1.6992
 output_speed_tps: None
 context_window: 128000
 status: past
-size_class: Unknown
+size_class: Large
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 47.9, z: 0.22, r: 53.3, estimated: false }  # 전문 지식
   reasoning: { s: 37.1, z: -0.01, r: 49.9, estimated: false }  # 추론
@@ -30,14 +30,14 @@ timestamp: 2026-10-27T00:00:00Z
 
 # DeepSeek V3.1 Terminus
 
-DeepSeek · Open · Unknown · 컨텍스트 128k · 종합지능 **15.0** · ⚠️ past(구세대)
+DeepSeek · Open · Large · 컨텍스트 128k · 종합지능 **15.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 코딩
 - **약점**: 추론, 신뢰성
 
 ## 실용 지표
-`입력 $1.64 · 출력 $2.75 · 혼합 $1.702/1M · None t/s · TTFT Nones · 128k ctx` · 가성비 8.8
+`입력 $1.64 · 출력 $2.75 · 혼합 $1.6992/1M · None t/s · TTFT Nones · 128k ctx` · 가성비 8.8
 
 ## 레이더 8축 (평균=50 기준선)
 

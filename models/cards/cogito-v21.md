@@ -8,9 +8,9 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
 status: current
-size_class: Unknown
+size_class: Large
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 47.9, z: 0.22, r: 53.3, estimated: false }  # 전문 지식
   reasoning: { s: 32.1, z: -0.23, r: 46.5, estimated: false }  # 추론
@@ -30,7 +30,7 @@ timestamp: 2026-10-27T00:00:00Z
 
 # Cogito v2.1
 
-Deep Cogito · Open · Unknown · 컨텍스트 128k · 종합지능 **None**
+Deep Cogito · Open · Large · 컨텍스트 128k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 전문 지식, 추론

@@ -4,13 +4,13 @@ title: GLM-4.6V
 creator: Z AI
 license: Open
 intelligence_index: 11.0
-price_blended_usd_1m: 0.276
+price_blended_usd_1m: 0.2742
 output_speed_tps: 85.0
 context_window: 128000
 status: past
-size_class: Unknown
+size_class: Medium
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 33.7, z: -0.44, r: 43.4, estimated: false }  # 전문 지식
   reasoning: { s: 29.0, z: -0.37, r: 44.4, estimated: false }  # 추론
@@ -30,14 +30,14 @@ timestamp: 2026-10-27T00:00:00Z
 
 # GLM-4.6V
 
-Z AI · Open · Unknown · 컨텍스트 128k · 종합지능 **11.0** · ⚠️ past(구세대)
+Z AI · Open · Medium · 컨텍스트 128k · 종합지능 **11.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 긴문맥
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $0.3 · 출력 $0.9 · 혼합 $0.276/1M · 85.0 t/s · TTFT 3.87s · 128k ctx` · 가성비 39.9
+`입력 $0.3 · 출력 $0.9 · 혼합 $0.2742/1M · 85.0 t/s · TTFT 3.87s · 128k ctx` · 가성비 40.1
 
 ## 레이더 8축 (평균=50 기준선)
 

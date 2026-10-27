@@ -8,9 +8,9 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 262000
 status: current
-size_class: Unknown
+size_class: Large
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 62.0, z: 0.87, r: 63.1, estimated: false }  # 전문 지식
   reasoning: { s: 58.0, z: 0.94, r: 64.1, estimated: false }  # 추론
@@ -30,7 +30,7 @@ timestamp: 2026-10-27T00:00:00Z
 
 # Nex-N2-Pro
 
-Nex AGI · Open · Unknown · 컨텍스트 262k · 종합지능 **28.0**
+Nex AGI · Open · Large · 컨텍스트 262k · 종합지능 **28.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 추론

@@ -8,9 +8,9 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 262000
 status: current
-size_class: Unknown
+size_class: Small
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 36.5, z: -0.31, r: 45.4, estimated: false }  # 전문 지식
   reasoning: { s: 33.4, z: -0.17, r: 47.4, estimated: false }  # 추론
@@ -30,7 +30,7 @@ timestamp: 2026-10-27T00:00:00Z
 
 # EXAONE 4.5 33B
 
-LG AI Research · Open · Unknown · 컨텍스트 262k · 종합지능 **13.0**
+LG AI Research · Open · Small · 컨텍스트 262k · 종합지능 **13.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 긴문맥

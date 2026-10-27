@@ -4,13 +4,13 @@ title: Sarvam M
 creator: Sarvam
 license: Open
 intelligence_index: 5.0
-price_blended_usd_1m: 0.0
+price_blended_usd_1m: 0
 output_speed_tps: None
 context_window: 32800
 status: past
-size_class: Unknown
+size_class: Small
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 22.5, z: -0.95, r: 35.7, estimated: false }  # 전문 지식
   reasoning: { s: 13.5, z: -1.07, r: 33.9, estimated: false }  # 추론
@@ -30,14 +30,14 @@ timestamp: 2026-10-27T00:00:00Z
 
 # Sarvam M
 
-Sarvam · Open · Unknown · 컨텍스트 32k · 종합지능 **5.0** · ⚠️ past(구세대)
+Sarvam · Open · Small · 컨텍스트 32k · 종합지능 **5.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 전문 지식
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0.0/1M · None t/s · TTFT Nones · 32k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · None t/s · TTFT Nones · 32k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

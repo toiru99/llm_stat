@@ -8,9 +8,9 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
 status: current
-size_class: Unknown
+size_class: Medium
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 34.6, z: -0.39, r: 44.1, estimated: false }  # 전문 지식
   reasoning: { s: 26.7, z: -0.48, r: 42.9, estimated: false }  # 추론
@@ -30,7 +30,7 @@ timestamp: 2026-10-27T00:00:00Z
 
 # Solar Open 100B
 
-Upstage · Open · Unknown · 컨텍스트 128k · 종합지능 **10.0**
+Upstage · Open · Medium · 컨텍스트 128k · 종합지능 **10.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 긴문맥

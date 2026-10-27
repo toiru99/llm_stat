@@ -4,13 +4,13 @@ title: Qwen3.5 9B
 creator: Alibaba
 license: Open
 intelligence_index: 11.0
-price_blended_usd_1m: 0.146
+price_blended_usd_1m: 0.1415
 output_speed_tps: 60.0
 context_window: 262000
 status: current
-size_class: Unknown
+size_class: Small
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 37.6, z: -0.26, r: 46.1, estimated: false }  # 전문 지식
   reasoning: { s: 35.3, z: -0.09, r: 48.7, estimated: false }  # 추론
@@ -30,14 +30,14 @@ timestamp: 2026-10-27T00:00:00Z
 
 # Qwen3.5 9B
 
-Alibaba · Open · Unknown · 컨텍스트 262k · 종합지능 **11.0**
+Alibaba · Open · Small · 컨텍스트 262k · 종합지능 **11.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 긴문맥
 - **약점**: 에이전트, 신뢰성
 
 ## 실용 지표
-`입력 $0.14 · 출력 $0.2 · 혼합 $0.146/1M · 60.0 t/s · TTFT 1.98s · 262k ctx` · 가성비 75.3
+`입력 $0.14 · 출력 $0.2 · 혼합 $0.1415/1M · 60.0 t/s · TTFT 1.98s · 262k ctx` · 가성비 77.7
 
 ## 레이더 8축 (평균=50 기준선)
 

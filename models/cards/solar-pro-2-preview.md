@@ -8,9 +8,9 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 64000
 status: past
-size_class: Unknown
+size_class: Small
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 35.5, z: -0.36, r: 44.7, estimated: false }  # 전문 지식
   reasoning: { s: 32.1, z: -0.23, r: 46.5, estimated: false }  # 추론
@@ -30,7 +30,7 @@ timestamp: 2026-10-27T00:00:00Z
 
 # Solar Pro 2 (Preview)
 
-Upstage · Proprietary · Unknown · 컨텍스트 64k · 종합지능 **9.0** · ⚠️ past(구세대)
+Upstage · Proprietary · Small · 컨텍스트 64k · 종합지능 **9.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 코딩

@@ -8,9 +8,9 @@ price_blended_usd_1m: 0.702
 output_speed_tps: 93.0
 context_window: 256000
 status: past
-size_class: Unknown
+size_class: Large
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 61.7, z: 0.86, r: 62.9, estimated: false }  # 전문 지식
   reasoning: { s: 59.5, z: 1.01, r: 65.1, estimated: false }  # 추론
@@ -30,7 +30,7 @@ timestamp: 2026-10-27T00:00:00Z
 
 # Kimi K2.6
 
-Kimi · Open · Unknown · 컨텍스트 256k · 종합지능 **27.0** · ⚠️ past(구세대)
+Kimi · Open · Large · 컨텍스트 256k · 종합지능 **27.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 신뢰성

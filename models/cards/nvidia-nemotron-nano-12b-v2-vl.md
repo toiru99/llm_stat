@@ -8,9 +8,9 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
 status: current
-size_class: Unknown
+size_class: Small
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 27.5, z: -0.72, r: 39.1, estimated: false }  # 전문 지식
   reasoning: { s: 21.0, z: -0.73, r: 39.0, estimated: false }  # 추론
@@ -30,7 +30,7 @@ timestamp: 2026-10-27T00:00:00Z
 
 # NVIDIA Nemotron Nano 12B v2 VL
 
-NVIDIA · Open · Unknown · 컨텍스트 128k · 종합지능 **7.0**
+NVIDIA · Open · Small · 컨텍스트 128k · 종합지능 **7.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 전문 지식

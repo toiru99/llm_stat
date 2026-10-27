@@ -8,9 +8,9 @@ price_blended_usd_1m: 0.052
 output_speed_tps: 227.0
 context_window: 131000
 status: current
-size_class: Unknown
+size_class: Small
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 24.6, z: -0.86, r: 37.1, estimated: false }  # 전문 지식
   reasoning: { s: 20.4, z: -0.76, r: 38.6, estimated: false }  # 추론
@@ -30,7 +30,7 @@ timestamp: 2026-10-27T00:00:00Z
 
 # NVIDIA Nemotron Nano 9B V2
 
-NVIDIA · Open · Unknown · 컨텍스트 131k · 종합지능 **7.0**
+NVIDIA · Open · Small · 컨텍스트 131k · 종합지능 **7.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 추론

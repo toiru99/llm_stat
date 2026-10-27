@@ -4,13 +4,13 @@ title: Qwen3.6 35B A3B
 creator: Alibaba
 license: Open
 intelligence_index: 18.0
-price_blended_usd_1m: 0.567
+price_blended_usd_1m: 0.5625
 output_speed_tps: 134.0
 context_window: 262000
 status: current
-size_class: Unknown
+size_class: Small
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 43.1, z: -0.0, r: 50.0, estimated: false }  # 전문 지식
   reasoning: { s: 40.3, z: 0.14, r: 52.1, estimated: false }  # 추론
@@ -30,14 +30,14 @@ timestamp: 2026-10-27T00:00:00Z
 
 # Qwen3.6 35B A3B
 
-Alibaba · Open · Unknown · 컨텍스트 262k · 종합지능 **18.0**
+Alibaba · Open · Small · 컨텍스트 262k · 종합지능 **18.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 긴문맥
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.38 · 출력 $2.25 · 혼합 $0.567/1M · 134.0 t/s · TTFT 2.07s · 262k ctx` · 가성비 31.7
+`입력 $0.38 · 출력 $2.25 · 혼합 $0.5625/1M · 134.0 t/s · TTFT 2.07s · 262k ctx` · 가성비 32.0
 
 ## 레이더 8축 (평균=50 기준선)
 

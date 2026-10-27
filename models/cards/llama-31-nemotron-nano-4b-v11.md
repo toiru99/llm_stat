@@ -8,9 +8,9 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
 status: past
-size_class: Unknown
+size_class: Small
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 23.5, z: -0.91, r: 36.3, estimated: false }  # 전문 지식
   reasoning: { s: 21.4, z: -0.72, r: 39.2, estimated: false }  # 추론
@@ -30,7 +30,7 @@ timestamp: 2026-10-27T00:00:00Z
 
 # Llama 3.1 Nemotron Nano 4B v1.1
 
-NVIDIA · Open · Unknown · 컨텍스트 128k · 종합지능 **7.0** · ⚠️ past(구세대)
+NVIDIA · Open · Small · 컨텍스트 128k · 종합지능 **7.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 신뢰성

@@ -8,9 +8,9 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 64000
 status: current
-size_class: Unknown
+size_class: Tiny
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 19.1, z: -1.11, r: 33.3, estimated: false }  # 전문 지식
   reasoning: { s: 19.1, z: -0.82, r: 37.7, estimated: false }  # 추론
@@ -30,7 +30,7 @@ timestamp: 2026-10-27T00:00:00Z
 
 # Exaone 4.0 1.2B
 
-LG AI Research · Open · Unknown · 컨텍스트 64k · 종합지능 **5.0**
+LG AI Research · Open · Tiny · 컨텍스트 64k · 종합지능 **5.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 신뢰성

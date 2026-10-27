@@ -8,9 +8,9 @@ price_blended_usd_1m: 0.66
 output_speed_tps: 72.0
 context_window: 200000
 status: past
-size_class: Unknown
+size_class: Large
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 50.8, z: 0.35, r: 55.3, estimated: false }  # 전문 지식
   reasoning: { s: 45.5, z: 0.37, r: 55.6, estimated: false }  # 추론
@@ -30,7 +30,7 @@ timestamp: 2026-10-27T00:00:00Z
 
 # GLM-5
 
-Z AI · Open · Unknown · 컨텍스트 200k · 종합지능 **28.0** · ⚠️ past(구세대)
+Z AI · Open · Large · 컨텍스트 200k · 종합지능 **28.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 신뢰성, 지시 따르기

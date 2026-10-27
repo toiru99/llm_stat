@@ -8,9 +8,9 @@ price_blended_usd_1m: 0.12
 output_speed_tps: None
 context_window: 256000
 status: past
-size_class: Unknown
+size_class: Large
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 48.9, z: 0.27, r: 54.0, estimated: false }  # 전문 지식
   reasoning: { s: 45.3, z: 0.37, r: 55.5, estimated: false }  # 추론
@@ -30,7 +30,7 @@ timestamp: 2026-10-27T00:00:00Z
 
 # MiMo-V2-Flash
 
-Xiaomi · Open · Unknown · 컨텍스트 256k · 종합지능 **21.0** · ⚠️ past(구세대)
+Xiaomi · Open · Large · 컨텍스트 256k · 종합지능 **21.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 지시 따르기

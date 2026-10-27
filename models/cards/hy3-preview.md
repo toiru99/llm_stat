@@ -4,13 +4,13 @@ title: Hy3-preview
 creator: Tencent
 license: Open
 intelligence_index: 23.0
-price_blended_usd_1m: 0.047
+price_blended_usd_1m: 0.0483
 output_speed_tps: None
 context_window: 256000
 status: past
-size_class: Unknown
+size_class: Large
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 53.6, z: 0.48, r: 57.2, estimated: false }  # 전문 지식
   reasoning: { s: 49.9, z: 0.57, r: 58.6, estimated: false }  # 추론
@@ -30,14 +30,14 @@ timestamp: 2026-10-27T00:00:00Z
 
 # Hy3-preview
 
-Tencent · Open · Unknown · 컨텍스트 256k · 종합지능 **23.0** · ⚠️ past(구세대)
+Tencent · Open · Large · 컨텍스트 256k · 종합지능 **23.0** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 긴문맥
 - **약점**: 코딩, 신뢰성
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.21 · 혼합 $0.047/1M · None t/s · TTFT Nones · 256k ctx` · 가성비 489.4
+`입력 $0.06 · 출력 $0.21 · 혼합 $0.0483/1M · None t/s · TTFT Nones · 256k ctx` · 가성비 476.2
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -4,13 +4,13 @@ title: Mistral Small 4
 creator: Mistral
 license: Open
 intelligence_index: 11.0
-price_blended_usd_1m: 0.097
+price_blended_usd_1m: 0.1005
 output_speed_tps: 179.0
 context_window: 256000
 status: current
-size_class: Unknown
+size_class: Medium
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 40.3, z: -0.13, r: 48.0, estimated: false }  # 전문 지식
   reasoning: { s: 31.0, z: -0.28, r: 45.7, estimated: false }  # 추론
@@ -30,14 +30,14 @@ timestamp: 2026-10-27T00:00:00Z
 
 # Mistral Small 4
 
-Mistral · Open · Unknown · 컨텍스트 256k · 종합지능 **11.0**
+Mistral · Open · Medium · 컨텍스트 256k · 종합지능 **11.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 코딩, 신뢰성
 - **약점**: 에이전트, 멀티모달
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.6 · 혼합 $0.097/1M · 179.0 t/s · TTFT 0.88s · 256k ctx` · 가성비 113.4
+`입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · 179.0 t/s · TTFT 0.88s · 256k ctx` · 가성비 109.5
 
 ## 레이더 8축 (평균=50 기준선)
 
