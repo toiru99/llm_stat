@@ -3,7 +3,7 @@ type: Model
 title: GPT-4.5 (Preview)
 creator: OpenAI
 license: Proprietary
-intelligence_index: 10.0
+intelligence_index: None
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4.5 (Preview)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-27
-timestamp: 2026-10-27T00:00:00Z
+updated: 2026-10-28
+timestamp: 2026-10-28T00:00:00Z
 ---
 
 # GPT-4.5 (Preview)
 
-OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **10.0** · ⚠️ past(구세대)
+OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: —

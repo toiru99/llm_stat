@@ -3,54 +3,54 @@ type: Model
 title: Kimi K2.6
 creator: Kimi
 license: Open
-intelligence_index: 27.0
+intelligence_index: None
 price_blended_usd_1m: 0.702
-output_speed_tps: 93.0
+output_speed_tps: 80.0
 context_window: 256000
 status: past
-size_class: Large
+size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: null
 radar:
-  knowledge: { s: 61.7, z: 0.86, r: 62.9, estimated: false }  # 전문 지식
-  reasoning: { s: 59.5, z: 1.01, r: 65.1, estimated: false }  # 추론
-  coding: { s: 72.2, z: 1.16, r: 67.4, estimated: false }  # 코딩
-  agentic: { s: 56.1, z: 0.74, r: 61.0, estimated: false }  # 에이전트
-  trust: { s: 58.8, z: 1.43, r: 71.4, estimated: false }  # 신뢰성
+  knowledge: { s: 79.5, z: 1.33, r: 69.9, estimated: false }  # 전문 지식
+  reasoning: { s: 77.1, z: 1.41, r: 71.2, estimated: false }  # 추론
+  coding: { s: 72.2, z: 1.18, r: 67.7, estimated: false }  # 코딩
+  agentic: { s: 56.2, z: 0.76, r: 61.4, estimated: false }  # 에이전트
+  trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 87.7, z: 0.78, r: 61.6, estimated: false }  # 멀티모달
-  long_context: { s: 91.0, z: 1.15, r: 67.2, estimated: false }  # 긴문맥
-  instruction: { s: 90.1, z: 1.53, r: 72.9, estimated: false }  # 지시 따르기
+  long_context: { s: 91.0, z: 1.16, r: 67.4, estimated: false }  # 긴문맥
+  instruction: { s: 90.1, z: 1.56, r: 73.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2.6
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-27
-timestamp: 2026-10-27T00:00:00Z
+updated: 2026-10-28
+timestamp: 2026-10-28T00:00:00Z
 ---
 
 # Kimi K2.6
 
-Kimi · Open · Large · 컨텍스트 256k · 종합지능 **27.0** · ⚠️ past(구세대)
+Kimi · Open · Unknown · 컨텍스트 256k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 지시 따르기, 신뢰성
+- **강점**: 지시 따르기, 추론
 - **약점**: 멀티모달, 에이전트
 
 ## 실용 지표
-`입력 $0.95 · 출력 $4.0 · 혼합 $0.702/1M · 93.0 t/s · TTFT 2.62s · 256k ctx` · 가성비 38.5
+`입력 $0.95 · 출력 $4.0 · 혼합 $0.702/1M · 80.0 t/s · TTFT 2.64s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 62.9 | +0.86 | 실측 | [[aa-omniscience]] 33.0%×1.0, [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 37.0%×0.3 |
-| 추론 | 65.1 | +1.01 | 실측 | [[critpt]] 8.0%×1.0, [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 37.0%×1.0 |
-| 코딩 | 67.4 | +1.16 | 실측 | [[scicode]] 52.0%×1.0, [[terminal-bench]] 44.0%×0.5 |
-| 에이전트 | 61.0 | +0.74 | 실측 | [[apex-agents]] 28.0%×1.0, [[gdpval]] 1038.0%×1.0, [[itbench]] 31.0%×1.0, [[tau3-banking]] 23.0%×1.0, [[terminal-bench]] 44.0%×1.0 |
-| 신뢰성 | 71.4 | +1.43 | 실측 | [[aa-omniscience]] 59.0%×1.0 |
+| 전문 지식 | 69.9 | +1.33 | 실측 | [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 37.0%×0.3 |
+| 추론 | 71.2 | +1.41 | 실측 | [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 37.0%×1.0 |
+| 코딩 | 67.7 | +1.18 | 실측 | [[scicode]] 52.0%×1.0, [[terminal-bench]] 44.0%×0.5 |
+| 에이전트 | 61.4 | +0.76 | 실측 | [[apex-agents]] 28.0%×1.0, [[gdpval]] 1047.0%×1.0, [[itbench]] 31.0%×1.0, [[tau3-banking]] 23.0%×1.0, [[terminal-bench]] 44.0%×1.0 |
+| 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 61.6 | +0.78 | 실측 | [[mmmu-pro]] 79.0%×1.0 |
-| 긴문맥 | 67.2 | +1.15 | 실측 | [[aa-lcr]] 81.0%×1.0 |
-| 지시 따르기 | 72.9 | +1.53 | 실측 | [[ifbench]] 76.0%×1.0 |
+| 긴문맥 | 67.4 | +1.16 | 실측 | [[aa-lcr]] 81.0%×1.0 |
+| 지시 따르기 | 73.5 | +1.56 | 실측 | [[ifbench]] 76.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

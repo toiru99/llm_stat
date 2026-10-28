@@ -3,54 +3,54 @@ type: Model
 title: GPT-4o (May)
 creator: OpenAI
 license: Proprietary
-intelligence_index: 7.0
+intelligence_index: None
 price_blended_usd_1m: 6
-output_speed_tps: 124.0
+output_speed_tps: 139.0
 context_window: 128000
 status: past
 size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 29.3, z: -0.64, r: 40.4, estimated: false }  # 전문 지식
-  reasoning: { s: 25.8, z: -0.52, r: 42.3, estimated: false }  # 추론
-  coding: { s: 21.0, z: -0.57, r: 41.4, estimated: true }  # 코딩
-  agentic: { s: 14.8, z: -0.69, r: 39.7, estimated: true }  # 에이전트
-  trust: { s: 11.1, z: -0.73, r: 39.0, estimated: true }  # 신뢰성
+  knowledge: { s: 29.3, z: -0.89, r: 36.7, estimated: false }  # 전문 지식
+  reasoning: { s: 25.8, z: -0.9, r: 36.5, estimated: false }  # 추론
+  coding: { s: 12.6, z: -0.82, r: 37.7, estimated: true }  # 코딩
+  agentic: { s: 11.0, z: -0.8, r: 38.1, estimated: true }  # 에이전트
+  trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 24.3, z: -0.86, r: 37.1, estimated: true }  # 긴문맥
-  instruction: { s: 47.0, z: -0.32, r: 45.2, estimated: true }  # 지시 따르기
+  long_context: { s: 36.4, z: -0.47, r: 42.9, estimated: true }  # 긴문맥
+  instruction: { s: 29.0, z: -1.0, r: 35.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4o (May)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-27
-timestamp: 2026-10-27T00:00:00Z
+updated: 2026-10-28
+timestamp: 2026-10-28T00:00:00Z
 ---
 
 # GPT-4o (May)
 
-OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **7.0** · ⚠️ past(구세대)
+OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 지시 따르기, 추론
-- **약점**: 신뢰성, 긴문맥
+- **강점**: 긴문맥, 에이전트
+- **약점**: 추론, 지시 따르기
 
 ## 실용 지표
-`입력 $5.0 · 출력 $15.0 · 혼합 $6/1M · 124.0 t/s · TTFT 1.08s · 128k ctx` · 가성비 1.2
+`입력 $5.0 · 출력 $15.0 · 혼합 $6/1M · 139.0 t/s · TTFT 1.08s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 40.4 | -0.64 | 실측 | [[gpqa-diamond]] 53.0%×0.4, [[humanitys-last-exam]] 2.0%×0.3 |
-| 추론 | 42.3 | -0.52 | 실측 | [[gpqa-diamond]] 53.0%×1.0, [[humanitys-last-exam]] 2.0%×1.0 |
-| 코딩 | 41.4 | -0.57 | 추정 | (추정) |
-| 에이전트 | 39.7 | -0.69 | 추정 | (추정) |
-| 신뢰성 | 39.0 | -0.73 | 추정 | (추정) |
+| 전문 지식 | 36.7 | -0.89 | 실측 | [[gpqa-diamond]] 53.0%×0.4, [[humanitys-last-exam]] 2.0%×0.3 |
+| 추론 | 36.5 | -0.9 | 실측 | [[gpqa-diamond]] 53.0%×1.0, [[humanitys-last-exam]] 2.0%×1.0 |
+| 코딩 | 37.7 | -0.82 | 추정 | (추정) |
+| 에이전트 | 38.1 | -0.8 | 추정 | (추정) |
+| 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 37.1 | -0.86 | 추정 | (추정) |
-| 지시 따르기 | 45.2 | -0.32 | 추정 | (추정) |
+| 긴문맥 | 42.9 | -0.47 | 추정 | (추정) |
+| 지시 따르기 | 35.1 | -1.0 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

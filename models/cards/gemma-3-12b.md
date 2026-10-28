@@ -3,7 +3,7 @@ type: Model
 title: Gemma 3 12B
 creator: Google
 license: Open
-intelligence_index: 4.0
+intelligence_index: None
 price_blended_usd_1m: 0
 output_speed_tps: None
 context_window: 128000
@@ -12,29 +12,29 @@ size_class: Small
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 16.5, z: -1.23, r: 31.5, estimated: false }  # 전문 지식
-  reasoning: { s: 11.4, z: -1.17, r: 32.4, estimated: false }  # 추론
-  coding: { s: 10.5, z: -0.93, r: 36.1, estimated: false }  # 코딩
-  agentic: { s: 8.4, z: -0.91, r: 36.3, estimated: false }  # 에이전트
-  trust: { s: 1.0, z: -1.19, r: 32.2, estimated: false }  # 신뢰성
-  multimodal: { s: 31.5, z: -2.03, r: 19.5, estimated: false }  # 멀티모달
-  long_context: { s: 9.0, z: -1.32, r: 30.2, estimated: false }  # 긴문맥
-  instruction: { s: 35.2, z: -0.82, r: 37.7, estimated: false }  # 지시 따르기
+  knowledge: { s: 18.8, z: -1.35, r: 29.7, estimated: false }  # 전문 지식
+  reasoning: { s: 17.0, z: -1.3, r: 30.5, estimated: false }  # 추론
+  coding: { s: 10.5, z: -0.89, r: 36.6, estimated: false }  # 코딩
+  agentic: { s: 8.3, z: -0.89, r: 36.7, estimated: false }  # 에이전트
+  trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
+  multimodal: { s: 31.5, z: -2.02, r: 19.7, estimated: false }  # 멀티모달
+  long_context: { s: 9.0, z: -1.3, r: 30.6, estimated: false }  # 긴문맥
+  instruction: { s: 35.2, z: -0.74, r: 39.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 3 12B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-27
-timestamp: 2026-10-27T00:00:00Z
+updated: 2026-10-28
+timestamp: 2026-10-28T00:00:00Z
 ---
 
 # Gemma 3 12B
 
-Google · Open · Small · 컨텍스트 128k · 종합지능 **4.0** · ⚠️ past(구세대)
+Google · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 지시 따르기, 에이전트
-- **약점**: 긴문맥, 멀티모달
+- **강점**: 지시 따르기, 코딩
+- **약점**: 전문 지식, 멀티모달
 
 ## 실용 지표
 `입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · None t/s · TTFT Nones · 128k ctx`
@@ -43,14 +43,14 @@ Google · Open · Small · 컨텍스트 128k · 종합지능 **4.0** · ⚠️ p
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 31.5 | -1.23 | 실측 | [[aa-omniscience]] 10.0%×1.0, [[gpqa-diamond]] 35.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 32.4 | -1.17 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 35.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 36.1 | -0.93 | 실측 | [[scicode]] 16.0%×1.0, [[terminal-bench]] 1.0%×0.5 |
-| 에이전트 | 36.3 | -0.91 | 실측 | [[gdpval]] 409.0%×1.0, [[tau3-banking]] 1.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
-| 신뢰성 | 32.2 | -1.19 | 실측 | [[aa-omniscience]] 3.0%×1.0 |
-| 멀티모달 | 19.5 | -2.03 | 실측 | [[mmmu-pro]] 38.0%×1.0 |
-| 긴문맥 | 30.2 | -1.32 | 실측 | [[aa-lcr]] 8.0%×1.0 |
-| 지시 따르기 | 37.7 | -0.82 | 실측 | [[ifbench]] 37.0%×1.0 |
+| 전문 지식 | 29.7 | -1.35 | 실측 | [[gpqa-diamond]] 35.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 30.5 | -1.3 | 실측 | [[gpqa-diamond]] 35.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 36.6 | -0.89 | 실측 | [[scicode]] 16.0%×1.0, [[terminal-bench]] 1.0%×0.5 |
+| 에이전트 | 36.7 | -0.89 | 실측 | [[gdpval]] 401.0%×1.0, [[tau3-banking]] 1.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
+| 신뢰성 | — | — | 측정 안 됨 | — |
+| 멀티모달 | 19.7 | -2.02 | 실측 | [[mmmu-pro]] 38.0%×1.0 |
+| 긴문맥 | 30.6 | -1.3 | 실측 | [[aa-lcr]] 8.0%×1.0 |
+| 지시 따르기 | 39.0 | -0.74 | 실측 | [[ifbench]] 37.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

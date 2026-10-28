@@ -3,7 +3,7 @@ type: Model
 title: Grok 3 Reasoning Beta
 creator: SpaceXAI
 license: Proprietary
-intelligence_index: 10.0
+intelligence_index: None
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 1000000
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 3 Reasoning Beta
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-27
-timestamp: 2026-10-27T00:00:00Z
+updated: 2026-10-28
+timestamp: 2026-10-28T00:00:00Z
 ---
 
 # Grok 3 Reasoning Beta
 
-SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **10.0** · ⚠️ past(구세대)
+SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: —

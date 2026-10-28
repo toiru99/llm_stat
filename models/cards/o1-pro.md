@@ -3,7 +3,7 @@ type: Model
 title: o1-pro
 creator: OpenAI
 license: Proprietary
-intelligence_index: 12.0
+intelligence_index: None
 price_blended_usd_1m: 195
 output_speed_tps: None
 context_window: 200000
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — o1-pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-27
-timestamp: 2026-10-27T00:00:00Z
+updated: 2026-10-28
+timestamp: 2026-10-28T00:00:00Z
 ---
 
 # o1-pro
 
-OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **12.0** · ⚠️ past(구세대)
+OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: —
 - **약점**: —
 
 ## 실용 지표
-`입력 $150.0 · 출력 $600.0 · 혼합 $195/1M · None t/s · TTFT Nones · 200k ctx` · 가성비 0.1
+`입력 $150.0 · 출력 $600.0 · 혼합 $195/1M · None t/s · TTFT Nones · 200k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

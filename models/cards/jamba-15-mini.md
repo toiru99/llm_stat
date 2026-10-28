@@ -3,7 +3,7 @@ type: Model
 title: Jamba 1.5 Mini
 creator: AI21 Labs
 license: Open
-intelligence_index: 5.0
+intelligence_index: None
 price_blended_usd_1m: 0.22
 output_speed_tps: None
 context_window: 256000
@@ -12,45 +12,45 @@ size_class: Medium
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 16.1, z: -1.25, r: 31.3, estimated: false }  # 전문 지식
-  reasoning: { s: 15.0, z: -1.01, r: 34.9, estimated: false }  # 추론
-  coding: { s: 8.2, z: -1.01, r: 34.9, estimated: true }  # 코딩
-  agentic: { s: 6.9, z: -0.96, r: 35.6, estimated: true }  # 에이전트
-  trust: { s: 38.9, z: 0.53, r: 57.9, estimated: true }  # 신뢰성
+  knowledge: { s: 16.1, z: -1.47, r: 28.0, estimated: false }  # 전문 지식
+  reasoning: { s: 15.0, z: -1.39, r: 29.1, estimated: false }  # 추론
+  coding: { s: 0.1, z: -1.24, r: 31.4, estimated: true }  # 코딩
+  agentic: { s: 2.8, z: -1.08, r: 33.8, estimated: true }  # 에이전트
+  trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 9.7, z: -1.3, r: 30.5, estimated: true }  # 긴문맥
-  instruction: { s: 27.8, z: -1.14, r: 32.9, estimated: true }  # 지시 따르기
+  long_context: { s: 2.5, z: -1.49, r: 27.6, estimated: true }  # 긴문맥
+  instruction: { s: 20.8, z: -1.34, r: 29.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba 1.5 Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-27
-timestamp: 2026-10-27T00:00:00Z
+updated: 2026-10-28
+timestamp: 2026-10-28T00:00:00Z
 ---
 
 # Jamba 1.5 Mini
 
-AI21 Labs · Open · Medium · 컨텍스트 256k · 종합지능 **5.0** · ⚠️ past(구세대)
+AI21 Labs · Open · Medium · 컨텍스트 256k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 신뢰성, 에이전트
+- **강점**: 에이전트, 코딩
 - **약점**: 전문 지식, 긴문맥
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.4 · 혼합 $0.22/1M · None t/s · TTFT Nones · 256k ctx` · 가성비 22.7
+`입력 $0.2 · 출력 $0.4 · 혼합 $0.22/1M · None t/s · TTFT Nones · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 31.3 | -1.25 | 실측 | [[gpqa-diamond]] 30.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 34.9 | -1.01 | 실측 | [[gpqa-diamond]] 30.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 34.9 | -1.01 | 추정 | (추정) |
-| 에이전트 | 35.6 | -0.96 | 추정 | (추정) |
-| 신뢰성 | 57.9 | +0.53 | 추정 | (추정) |
+| 전문 지식 | 28.0 | -1.47 | 실측 | [[gpqa-diamond]] 30.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 추론 | 29.1 | -1.39 | 실측 | [[gpqa-diamond]] 30.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 31.4 | -1.24 | 추정 | (추정) |
+| 에이전트 | 33.8 | -1.08 | 추정 | (추정) |
+| 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 30.5 | -1.3 | 추정 | (추정) |
-| 지시 따르기 | 32.9 | -1.14 | 추정 | (추정) |
+| 긴문맥 | 27.6 | -1.49 | 추정 | (추정) |
+| 지시 따르기 | 29.9 | -1.34 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

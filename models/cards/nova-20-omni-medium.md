@@ -3,7 +3,7 @@ type: Model
 title: Nova 2.0 Omni (medium)
 creator: Amazon
 license: Proprietary
-intelligence_index: 14.0
+intelligence_index: None
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 1000000
@@ -12,29 +12,29 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 35.6, z: -0.35, r: 44.8, estimated: false }  # 전문 지식
-  reasoning: { s: 28.9, z: -0.38, r: 44.4, estimated: false }  # 추론
-  coding: { s: 7.6, z: -1.03, r: 34.6, estimated: false }  # 코딩
-  agentic: { s: 7.6, z: -0.94, r: 35.9, estimated: false }  # 에이전트
-  trust: { s: 5.2, z: -1.0, r: 35.0, estimated: false }  # 신뢰성
-  multimodal: { s: 64.4, z: -0.39, r: 44.2, estimated: false }  # 멀티모달
-  long_context: { s: 67.4, z: 0.44, r: 56.5, estimated: false }  # 긴문맥
-  instruction: { s: 76.1, z: 0.92, r: 63.8, estimated: false }  # 지시 따르기
+  knowledge: { s: 48.1, z: -0.06, r: 49.2, estimated: false }  # 전문 지식
+  reasoning: { s: 43.4, z: -0.11, r: 48.4, estimated: false }  # 추론
+  coding: { s: 7.6, z: -0.99, r: 35.2, estimated: false }  # 코딩
+  agentic: { s: 7.6, z: -0.91, r: 36.3, estimated: false }  # 에이전트
+  trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
+  multimodal: { s: 64.4, z: -0.38, r: 44.3, estimated: false }  # 멀티모달
+  long_context: { s: 67.4, z: 0.45, r: 56.8, estimated: false }  # 긴문맥
+  instruction: { s: 76.1, z: 0.97, r: 64.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nova 2.0 Omni (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-27
-timestamp: 2026-10-27T00:00:00Z
+updated: 2026-10-28
+timestamp: 2026-10-28T00:00:00Z
 ---
 
 # Nova 2.0 Omni (medium)
 
-Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **14.0**
+Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 긴문맥
-- **약점**: 신뢰성, 코딩
+- **약점**: 에이전트, 코딩
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 1M ctx`
@@ -43,14 +43,14 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **14.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 44.8 | -0.35 | 실측 | [[aa-omniscience]] 18.0%×1.0, [[gpqa-diamond]] 76.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
-| 추론 | 44.4 | -0.38 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
-| 코딩 | 34.6 | -1.03 | 실측 | [[terminal-bench]] 5.0%×0.5 |
-| 에이전트 | 35.9 | -0.94 | 실측 | [[terminal-bench]] 5.0%×1.0 |
-| 신뢰성 | 35.0 | -1.0 | 실측 | [[aa-omniscience]] 7.0%×1.0 |
-| 멀티모달 | 44.2 | -0.39 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
-| 긴문맥 | 56.5 | +0.44 | 실측 | [[aa-lcr]] 60.0%×1.0 |
-| 지시 따르기 | 63.8 | +0.92 | 실측 | [[ifbench]] 66.0%×1.0 |
+| 전문 지식 | 49.2 | -0.06 | 실측 | [[gpqa-diamond]] 76.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
+| 추론 | 48.4 | -0.11 | 실측 | [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
+| 코딩 | 35.2 | -0.99 | 실측 | [[terminal-bench]] 5.0%×0.5 |
+| 에이전트 | 36.3 | -0.91 | 실측 | [[terminal-bench]] 5.0%×1.0 |
+| 신뢰성 | — | — | 측정 안 됨 | — |
+| 멀티모달 | 44.3 | -0.38 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
+| 긴문맥 | 56.8 | +0.45 | 실측 | [[aa-lcr]] 60.0%×1.0 |
+| 지시 따르기 | 64.6 | +0.97 | 실측 | [[ifbench]] 66.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

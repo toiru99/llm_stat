@@ -3,7 +3,7 @@ type: Model
 title: Gemini 3.7 Flash (medium)
 creator: Google
 license: Proprietary
-intelligence_index: 40.0
+intelligence_index: None
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 1000000
@@ -12,29 +12,29 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 81.0, z: 1.75, r: 76.3, estimated: false }  # 전문 지식
-  reasoning: { s: 62.0, z: 1.12, r: 66.8, estimated: false }  # 추론
-  coding: { s: 88.3, z: 1.7, r: 75.6, estimated: false }  # 코딩
-  agentic: { s: 70.7, z: 1.24, r: 68.6, estimated: false }  # 에이전트
-  trust: { s: 33.0, z: 0.26, r: 53.9, estimated: false }  # 신뢰성
-  multimodal: { s: 95.9, z: 1.19, r: 67.8, estimated: false }  # 멀티모달
-  long_context: { s: 93.3, z: 1.21, r: 68.2, estimated: false }  # 긴문맥
-  instruction: { s: 80.3, z: 1.1, r: 66.6, estimated: true }  # 지시 따르기
+  knowledge: { s: 81.6, z: 1.42, r: 71.3, estimated: false }  # 전문 지식
+  reasoning: { s: 79.3, z: 1.52, r: 72.7, estimated: false }  # 추론
+  coding: { s: 88.3, z: 1.72, r: 75.8, estimated: false }  # 코딩
+  agentic: { s: 70.9, z: 1.27, r: 69.0, estimated: false }  # 에이전트
+  trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
+  multimodal: { s: 95.9, z: 1.18, r: 67.8, estimated: false }  # 멀티모달
+  long_context: { s: 93.3, z: 1.23, r: 68.4, estimated: false }  # 긴문맥
+  instruction: { s: 80.5, z: 1.16, r: 67.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.7 Flash (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-27
-timestamp: 2026-10-27T00:00:00Z
+updated: 2026-10-28
+timestamp: 2026-10-28T00:00:00Z
 ---
 
 # Gemini 3.7 Flash (medium)
 
-Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **40.0** · ⚠️ past(구세대)
+Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 전문 지식, 코딩
-- **약점**: 지시 따르기, 신뢰성
+- **강점**: 코딩, 추론
+- **약점**: 멀티모달, 지시 따르기
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 1M ctx`
@@ -43,14 +43,14 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **40.0** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 76.3 | +1.75 | 실측 | [[aa-omniscience]] 54.0%×1.0, [[gpqa-diamond]] 92.0%×0.4, [[humanitys-last-exam]] 39.0%×0.3 |
-| 추론 | 66.8 | +1.12 | 실측 | [[critpt]] 9.0%×1.0, [[gpqa-diamond]] 92.0%×1.0, [[humanitys-last-exam]] 39.0%×1.0 |
-| 코딩 | 75.6 | +1.7 | 실측 | [[scicode]] 60.0%×1.0 |
-| 에이전트 | 68.6 | +1.24 | 실측 | [[gdpval]] 1360.0%×1.0, [[tau3-banking]] 35.0%×1.0 |
-| 신뢰성 | 53.9 | +0.26 | 실측 | [[aa-omniscience]] 34.0%×1.0 |
-| 멀티모달 | 67.8 | +1.19 | 실측 | [[mmmu-pro]] 85.0%×1.0 |
-| 긴문맥 | 68.2 | +1.21 | 실측 | [[aa-lcr]] 83.0%×1.0 |
-| 지시 따르기 | 66.6 | +1.1 | 추정 | (추정) |
+| 전문 지식 | 71.3 | +1.42 | 실측 | [[gpqa-diamond]] 92.0%×0.4, [[humanitys-last-exam]] 39.0%×0.3 |
+| 추론 | 72.7 | +1.52 | 실측 | [[gpqa-diamond]] 92.0%×1.0, [[humanitys-last-exam]] 39.0%×1.0 |
+| 코딩 | 75.8 | +1.72 | 실측 | [[scicode]] 60.0%×1.0 |
+| 에이전트 | 69.0 | +1.27 | 실측 | [[gdpval]] 1367.0%×1.0, [[tau3-banking]] 35.0%×1.0 |
+| 신뢰성 | — | — | 측정 안 됨 | — |
+| 멀티모달 | 67.8 | +1.18 | 실측 | [[mmmu-pro]] 85.0%×1.0 |
+| 긴문맥 | 68.4 | +1.23 | 실측 | [[aa-lcr]] 83.0%×1.0 |
+| 지시 따르기 | 67.4 | +1.16 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

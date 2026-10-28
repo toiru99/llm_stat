@@ -3,7 +3,7 @@ type: Model
 title: Qwen1.5 Chat 110B
 creator: Alibaba
 license: Open
-intelligence_index: 6.0
+intelligence_index: None
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 32000
@@ -12,29 +12,29 @@ size_class: Medium
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 22.1, z: -0.97, r: 35.4, estimated: false }  # 전문 지식
-  reasoning: { s: 22.1, z: -0.69, r: 39.7, estimated: false }  # 추론
-  coding: { s: 16.9, z: -0.71, r: 39.4, estimated: true }  # 코딩
-  agentic: { s: 12.4, z: -0.77, r: 38.4, estimated: true }  # 에이전트
-  trust: { s: 19.8, z: -0.34, r: 44.9, estimated: true }  # 신뢰성
+  knowledge: { s: 22.1, z: -1.21, r: 31.9, estimated: false }  # 전문 지식
+  reasoning: { s: 22.1, z: -1.07, r: 33.9, estimated: false }  # 추론
+  coding: { s: 5.1, z: -1.07, r: 33.9, estimated: true }  # 코딩
+  agentic: { s: 3.6, z: -1.05, r: 34.2, estimated: true }  # 에이전트
+  trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 14.8, z: -1.14, r: 32.8, estimated: true }  # 긴문맥
-  instruction: { s: 25.5, z: -1.24, r: 31.4, estimated: true }  # 지시 따르기
+  long_context: { s: 14.7, z: -1.13, r: 33.1, estimated: true }  # 긴문맥
+  instruction: { s: 27.3, z: -1.07, r: 34.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen1.5 Chat 110B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-27
-timestamp: 2026-10-27T00:00:00Z
+updated: 2026-10-28
+timestamp: 2026-10-28T00:00:00Z
 ---
 
 # Qwen1.5 Chat 110B
 
-Alibaba · Open · Medium · 컨텍스트 32k · 종합지능 **6.0** · ⚠️ past(구세대)
+Alibaba · Open · Medium · 컨텍스트 32k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 신뢰성, 추론
-- **약점**: 긴문맥, 지시 따르기
+- **강점**: 에이전트, 추론
+- **약점**: 긴문맥, 전문 지식
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 32k ctx`
@@ -43,14 +43,14 @@ Alibaba · Open · Medium · 컨텍스트 32k · 종합지능 **6.0** · ⚠️ 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 35.4 | -0.97 | 실측 | [[gpqa-diamond]] 29.0%×0.4 |
-| 추론 | 39.7 | -0.69 | 실측 | [[gpqa-diamond]] 29.0%×1.0 |
-| 코딩 | 39.4 | -0.71 | 추정 | (추정) |
-| 에이전트 | 38.4 | -0.77 | 추정 | (추정) |
-| 신뢰성 | 44.9 | -0.34 | 추정 | (추정) |
+| 전문 지식 | 31.9 | -1.21 | 실측 | [[gpqa-diamond]] 29.0%×0.4 |
+| 추론 | 33.9 | -1.07 | 실측 | [[gpqa-diamond]] 29.0%×1.0 |
+| 코딩 | 33.9 | -1.07 | 추정 | (추정) |
+| 에이전트 | 34.2 | -1.05 | 추정 | (추정) |
+| 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 32.8 | -1.14 | 추정 | (추정) |
-| 지시 따르기 | 31.4 | -1.24 | 추정 | (추정) |
+| 긴문맥 | 33.1 | -1.13 | 추정 | (추정) |
+| 지시 따르기 | 34.0 | -1.07 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -3,54 +3,54 @@ type: Model
 title: Claude Opus 5.5 (low with fallback)
 creator: Anthropic
 license: Proprietary
-intelligence_index: 42.0
+intelligence_index: 35.0
 price_blended_usd_1m: 2.94
-output_speed_tps: 81.0
+output_speed_tps: 82.0
 context_window: 1000000
 status: current
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 91.6, z: 2.24, r: 83.6, estimated: false }  # 전문 지식
-  reasoning: { s: 66.4, z: 1.32, r: 69.8, estimated: false }  # 추론
-  coding: { s: 86.7, z: 1.65, r: 74.7, estimated: false }  # 코딩
-  agentic: { s: 66.4, z: 1.09, r: 66.4, estimated: false }  # 에이전트
-  trust: { s: 30.9, z: 0.16, r: 52.5, estimated: false }  # 신뢰성
-  multimodal: { s: 95.9, z: 1.19, r: 67.8, estimated: false }  # 멀티모달
-  long_context: { s: 91.0, z: 1.15, r: 67.2, estimated: false }  # 긴문맥
-  instruction: { s: 83.6, z: 1.25, r: 68.7, estimated: true }  # 지시 따르기
+  knowledge: { s: 78.3, z: 1.28, r: 69.1, estimated: false }  # 전문 지식
+  reasoning: { s: 62.8, z: 0.77, r: 61.5, estimated: false }  # 추론
+  coding: { s: 86.7, z: 1.66, r: 74.9, estimated: false }  # 코딩
+  agentic: { s: 66.5, z: 1.11, r: 66.7, estimated: false }  # 에이전트
+  trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
+  multimodal: { s: 95.9, z: 1.18, r: 67.8, estimated: false }  # 멀티모달
+  long_context: { s: 91.0, z: 1.16, r: 67.4, estimated: false }  # 긴문맥
+  instruction: { s: 73.0, z: 0.85, r: 62.7, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 5.5 (low with fallback)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-27
-timestamp: 2026-10-27T00:00:00Z
+updated: 2026-10-28
+timestamp: 2026-10-28T00:00:00Z
 ---
 
 # Claude Opus 5.5 (low with fallback)
 
-Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **42.0**
+Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **35.0**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 전문 지식, 코딩
-- **약점**: 에이전트, 신뢰성
+- **강점**: 코딩, 전문 지식
+- **약점**: 지시 따르기, 추론
 
 ## 실용 지표
-`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 81.0 t/s · TTFT 8.59s · 1M ctx` · 가성비 14.3
+`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 82.0 t/s · TTFT 5.24s · 1M ctx` · 가성비 11.9
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 83.6 | +2.24 | 실측 | [[aa-omniscience]] 64.0%×1.0, [[humanitys-last-exam]] 48.0%×0.3 |
-| 추론 | 69.8 | +1.32 | 실측 | [[critpt]] 18.0%×1.0, [[humanitys-last-exam]] 48.0%×1.0 |
-| 코딩 | 74.7 | +1.65 | 실측 | [[scicode]] 59.0%×1.0 |
-| 에이전트 | 66.4 | +1.09 | 실측 | [[gdpval]] 1240.0%×1.0 |
-| 신뢰성 | 52.5 | +0.16 | 실측 | [[aa-omniscience]] 32.0%×1.0 |
-| 멀티모달 | 67.8 | +1.19 | 실측 | [[mmmu-pro]] 85.0%×1.0 |
-| 긴문맥 | 67.2 | +1.15 | 실측 | [[aa-lcr]] 81.0%×1.0 |
-| 지시 따르기 | 68.7 | +1.25 | 추정 | (추정) |
+| 전문 지식 | 69.1 | +1.28 | 실측 | [[humanitys-last-exam]] 48.0%×0.3 |
+| 추론 | 61.5 | +0.77 | 실측 | [[critpt]] 34.0%×1.0, [[humanitys-last-exam]] 48.0%×1.0 |
+| 코딩 | 74.9 | +1.66 | 실측 | [[scicode]] 59.0%×1.0 |
+| 에이전트 | 66.7 | +1.11 | 실측 | [[gdpval]] 1240.0%×1.0 |
+| 신뢰성 | — | — | 측정 안 됨 | — |
+| 멀티모달 | 67.8 | +1.18 | 실측 | [[mmmu-pro]] 85.0%×1.0 |
+| 긴문맥 | 67.4 | +1.16 | 실측 | [[aa-lcr]] 81.0%×1.0 |
+| 지시 따르기 | 62.7 | +0.85 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

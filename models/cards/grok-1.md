@@ -3,7 +3,7 @@ type: Model
 title: Grok-1
 creator: SpaceXAI
 license: Open
-intelligence_index: 6.0
+intelligence_index: None
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 8189
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok-1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-27
-timestamp: 2026-10-27T00:00:00Z
+updated: 2026-10-28
+timestamp: 2026-10-28T00:00:00Z
 ---
 
 # Grok-1
 
-SpaceXAI · Open · Large · 컨텍스트 8k · 종합지능 **6.0** · ⚠️ past(구세대)
+SpaceXAI · Open · Large · 컨텍스트 8k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: —
