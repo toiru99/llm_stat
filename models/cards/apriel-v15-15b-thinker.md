@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 48.4, z: -0.05, r: 49.3, estimated: false }  # 전문 지식
   reasoning: { s: 44.6, z: -0.05, r: 49.2, estimated: false }  # 추론
-  coding: { s: 16.7, z: -0.68, r: 39.7, estimated: false }  # 코딩
+  coding: { s: 16.7, z: -0.69, r: 39.7, estimated: false }  # 코딩
   agentic: { s: 16.7, z: -0.6, r: 41.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 57.5, z: -0.72, r: 39.1, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Apriel-v1.5-15B-Thinker
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-28
-timestamp: 2026-10-28T00:00:00Z
+updated: 2026-10-29
+timestamp: 2026-10-29T00:00:00Z
 ---
 
 # Apriel-v1.5-15B-Thinker
@@ -45,7 +45,7 @@ ServiceNow · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠
 |---|---|---|---|---|
 | 전문 지식 | 49.3 | -0.05 | 실측 | [[gpqa-diamond]] 71.0%×0.4, [[humanitys-last-exam]] 12.0%×0.3 |
 | 추론 | 49.2 | -0.05 | 실측 | [[gpqa-diamond]] 71.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
-| 코딩 | 39.7 | -0.68 | 실측 | [[terminal-bench]] 11.0%×0.5 |
+| 코딩 | 39.7 | -0.69 | 실측 | [[terminal-bench]] 11.0%×0.5 |
 | 에이전트 | 41.0 | -0.6 | 실측 | [[terminal-bench]] 11.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 39.1 | -0.72 | 실측 | [[mmmu-pro]] 57.0%×1.0 |

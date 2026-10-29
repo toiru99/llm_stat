@@ -18,14 +18,14 @@ radar:
   agentic: { s: 3.7, z: -1.05, r: 34.3, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 3.4, z: -1.46, r: 28.1, estimated: true }  # 긴문맥
-  instruction: { s: 23.2, z: -1.24, r: 31.4, estimated: true }  # 지시 따르기
+  long_context: { s: 3.6, z: -1.46, r: 28.1, estimated: true }  # 긴문맥
+  instruction: { s: 23.3, z: -1.23, r: 31.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek Coder V2 Lite
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-28
-timestamp: 2026-10-28T00:00:00Z
+updated: 2026-10-29
+timestamp: 2026-10-29T00:00:00Z
 ---
 
 # DeepSeek Coder V2 Lite
@@ -33,7 +33,7 @@ timestamp: 2026-10-28T00:00:00Z
 DeepSeek · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 에이전트, 코딩
+- **강점**: 에이전트, 지시 따르기
 - **약점**: 전문 지식, 긴문맥
 
 ## 실용 지표
@@ -50,7 +50,7 @@ DeepSeek · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠�
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.1 | -1.46 | 추정 | (추정) |
-| 지시 따르기 | 31.4 | -1.24 | 추정 | (추정) |
+| 지시 따르기 | 31.5 | -1.23 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

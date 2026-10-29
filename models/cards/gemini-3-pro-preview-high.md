@@ -12,10 +12,10 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 81.7, z: 1.42, r: 71.3, estimated: false }  # 전문 지식
-  reasoning: { s: 79.6, z: 1.53, r: 72.9, estimated: false }  # 추론
-  coding: { s: 63.6, z: 0.89, r: 63.4, estimated: false }  # 코딩
-  agentic: { s: 63.6, z: 1.01, r: 65.2, estimated: false }  # 에이전트
+  knowledge: { s: 81.7, z: 1.42, r: 71.2, estimated: false }  # 전문 지식
+  reasoning: { s: 79.6, z: 1.52, r: 72.9, estimated: false }  # 추론
+  coding: { s: 63.6, z: 0.89, r: 63.3, estimated: false }  # 코딩
+  agentic: { s: 63.6, z: 1.01, r: 65.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 89.0, z: 0.84, r: 62.7, estimated: false }  # 멀티모달
   long_context: { s: 85.4, z: 0.99, r: 64.9, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3 Pro Preview (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-28
-timestamp: 2026-10-28T00:00:00Z
+updated: 2026-10-29
+timestamp: 2026-10-29T00:00:00Z
 ---
 
 # Gemini 3 Pro Preview (high)
@@ -43,10 +43,10 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 71.3 | +1.42 | 실측 | [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 40.0%×0.3 |
-| 추론 | 72.9 | +1.53 | 실측 | [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 40.0%×1.0 |
-| 코딩 | 63.4 | +0.89 | 실측 | [[terminal-bench]] 42.0%×0.5 |
-| 에이전트 | 65.2 | +1.01 | 실측 | [[terminal-bench]] 42.0%×1.0 |
+| 전문 지식 | 71.2 | +1.42 | 실측 | [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 40.0%×0.3 |
+| 추론 | 72.9 | +1.52 | 실측 | [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 40.0%×1.0 |
+| 코딩 | 63.3 | +0.89 | 실측 | [[terminal-bench]] 42.0%×0.5 |
+| 에이전트 | 65.1 | +1.01 | 실측 | [[terminal-bench]] 42.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 62.7 | +0.84 | 실측 | [[mmmu-pro]] 80.0%×1.0 |
 | 긴문맥 | 64.9 | +0.99 | 실측 | [[aa-lcr]] 76.0%×1.0 |

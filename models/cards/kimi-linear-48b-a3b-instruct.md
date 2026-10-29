@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 21.3, z: -1.24, r: 31.4, estimated: false }  # 전문 지식
   reasoning: { s: 18.9, z: -1.22, r: 31.8, estimated: false }  # 추론
-  coding: { s: 16.7, z: -0.68, r: 39.7, estimated: false }  # 코딩
+  coding: { s: 16.7, z: -0.69, r: 39.7, estimated: false }  # 코딩
   agentic: { s: 16.7, z: -0.6, r: 41.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 31.5, z: -0.62, r: 40.7, estimated: false }  # 긴문맥
-  instruction: { s: 22.5, z: -1.27, r: 31.0, estimated: false }  # 지시 따르기
+  long_context: { s: 31.5, z: -0.62, r: 40.6, estimated: false }  # 긴문맥
+  instruction: { s: 22.5, z: -1.26, r: 31.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi Linear 48B A3B Instruct
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-28
-timestamp: 2026-10-28T00:00:00Z
+updated: 2026-10-29
+timestamp: 2026-10-29T00:00:00Z
 ---
 
 # Kimi Linear 48B A3B Instruct
@@ -45,12 +45,12 @@ Kimi · Open · Medium · 컨텍스트 1M · 종합지능 **None**
 |---|---|---|---|---|
 | 전문 지식 | 31.4 | -1.24 | 실측 | [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 2.0%×0.3 |
 | 추론 | 31.8 | -1.22 | 실측 | [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 2.0%×1.0 |
-| 코딩 | 39.7 | -0.68 | 실측 | [[terminal-bench]] 11.0%×0.5 |
+| 코딩 | 39.7 | -0.69 | 실측 | [[terminal-bench]] 11.0%×0.5 |
 | 에이전트 | 41.0 | -0.6 | 실측 | [[terminal-bench]] 11.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 40.7 | -0.62 | 실측 | [[aa-lcr]] 28.0%×1.0 |
-| 지시 따르기 | 31.0 | -1.27 | 실측 | [[ifbench]] 28.0%×1.0 |
+| 긴문맥 | 40.6 | -0.62 | 실측 | [[aa-lcr]] 28.0%×1.0 |
+| 지시 따르기 | 31.0 | -1.26 | 실측 | [[ifbench]] 28.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

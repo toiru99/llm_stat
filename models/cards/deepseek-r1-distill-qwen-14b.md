@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 27.4, z: -0.97, r: 35.4, estimated: false }  # 전문 지식
-  reasoning: { s: 24.6, z: -0.96, r: 35.6, estimated: false }  # 추론
-  coding: { s: 3.6, z: -1.12, r: 33.2, estimated: true }  # 코딩
-  agentic: { s: 5.0, z: -1.0, r: 35.0, estimated: true }  # 에이전트
+  reasoning: { s: 24.6, z: -0.96, r: 35.7, estimated: false }  # 추론
+  coding: { s: 3.6, z: -1.12, r: 33.1, estimated: true }  # 코딩
+  agentic: { s: 5.0, z: -1.0, r: 34.9, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 11.2, z: -1.23, r: 31.6, estimated: false }  # 긴문맥
+  long_context: { s: 11.2, z: -1.23, r: 31.5, estimated: false }  # 긴문맥
   instruction: { s: 14.1, z: -1.62, r: 25.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek R1 Distill Qwen 14B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-28
-timestamp: 2026-10-28T00:00:00Z
+updated: 2026-10-29
+timestamp: 2026-10-29T00:00:00Z
 ---
 
 # DeepSeek R1 Distill Qwen 14B
@@ -44,12 +44,12 @@ DeepSeek · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠�
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 35.4 | -0.97 | 실측 | [[gpqa-diamond]] 48.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 35.6 | -0.96 | 실측 | [[gpqa-diamond]] 48.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 33.2 | -1.12 | 추정 | (추정) |
-| 에이전트 | 35.0 | -1.0 | 추정 | (추정) |
+| 추론 | 35.7 | -0.96 | 실측 | [[gpqa-diamond]] 48.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 33.1 | -1.12 | 추정 | (추정) |
+| 에이전트 | 34.9 | -1.0 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 31.6 | -1.23 | 실측 | [[aa-lcr]] 10.0%×1.0 |
+| 긴문맥 | 31.5 | -1.23 | 실측 | [[aa-lcr]] 10.0%×1.0 |
 | 지시 따르기 | 25.7 | -1.62 | 실측 | [[ifbench]] 22.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

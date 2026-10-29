@@ -5,16 +5,16 @@ creator: Meta
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.296
-output_speed_tps: 54.0
+output_speed_tps: 50.0
 context_window: 1000000
 status: current
 size_class: Large
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 40.7, z: -0.38, r: 44.3, estimated: false }  # 전문 지식
+  knowledge: { s: 40.7, z: -0.39, r: 44.2, estimated: false }  # 전문 지식
   reasoning: { s: 36.5, z: -0.42, r: 43.7, estimated: false }  # 추론
-  coding: { s: 31.3, z: -0.19, r: 47.1, estimated: false }  # 코딩
+  coding: { s: 31.3, z: -0.2, r: 47.1, estimated: false }  # 코딩
   agentic: { s: 10.9, z: -0.8, r: 38.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 64.4, z: -0.38, r: 44.3, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 4 Maverick
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-28
-timestamp: 2026-10-28T00:00:00Z
+updated: 2026-10-29
+timestamp: 2026-10-29T00:00:00Z
 ---
 
 # Llama 4 Maverick
@@ -37,15 +37,15 @@ Meta · Open · Large · 컨텍스트 1M · 종합지능 **None**
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.25 · 출력 $0.92 · 혼합 $0.296/1M · 54.0 t/s · TTFT 1.0s · 1M ctx`
+`입력 $0.25 · 출력 $0.92 · 혼합 $0.296/1M · 50.0 t/s · TTFT 0.97s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 44.3 | -0.38 | 실측 | [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 전문 지식 | 44.2 | -0.39 | 실측 | [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 43.7 | -0.42 | 실측 | [[gpqa-diamond]] 67.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 47.1 | -0.19 | 실측 | [[scicode]] 32.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
+| 코딩 | 47.1 | -0.2 | 실측 | [[scicode]] 32.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
 | 에이전트 | 38.0 | -0.8 | 실측 | [[gdpval]] 267.0%×1.0, [[tau3-banking]] 4.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 44.3 | -0.38 | 실측 | [[mmmu-pro]] 62.0%×1.0 |

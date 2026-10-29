@@ -18,14 +18,14 @@ radar:
   agentic: { s: 8.0, z: -0.9, r: 36.5, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 45.2, z: -1.34, r: 29.9, estimated: false }  # 멀티모달
-  long_context: { s: 21.1, z: -0.93, r: 36.0, estimated: true }  # 긴문맥
-  instruction: { s: 35.4, z: -0.73, r: 39.1, estimated: true }  # 지시 따르기
+  long_context: { s: 21.1, z: -0.94, r: 36.0, estimated: true }  # 긴문맥
+  instruction: { s: 35.4, z: -0.72, r: 39.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 1.5 Flash (Sep)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-28
-timestamp: 2026-10-28T00:00:00Z
+updated: 2026-10-29
+timestamp: 2026-10-29T00:00:00Z
 ---
 
 # Gemini 1.5 Flash (Sep)
@@ -49,8 +49,8 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 | 에이전트 | 36.5 | -0.9 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 29.9 | -1.34 | 실측 | [[mmmu-pro]] 48.0%×1.0 |
-| 긴문맥 | 36.0 | -0.93 | 추정 | (추정) |
-| 지시 따르기 | 39.1 | -0.73 | 추정 | (추정) |
+| 긴문맥 | 36.0 | -0.94 | 추정 | (추정) |
+| 지시 따르기 | 39.1 | -0.72 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

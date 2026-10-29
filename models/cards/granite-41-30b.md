@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 27.4, z: -0.97, r: 35.4, estimated: false }  # 전문 지식
-  reasoning: { s: 24.6, z: -0.96, r: 35.6, estimated: false }  # 추론
+  reasoning: { s: 24.6, z: -0.96, r: 35.7, estimated: false }  # 추론
   coding: { s: 3.0, z: -1.14, r: 32.9, estimated: false }  # 코딩
   agentic: { s: 6.8, z: -0.94, r: 35.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.1 30B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-28
-timestamp: 2026-10-28T00:00:00Z
+updated: 2026-10-29
+timestamp: 2026-10-29T00:00:00Z
 ---
 
 # Granite 4.1 30B
@@ -44,7 +44,7 @@ IBM · Open · Small · 컨텍스트 131k · 종합지능 **None** · ⚠️ pas
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 35.4 | -0.97 | 실측 | [[gpqa-diamond]] 48.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 35.6 | -0.96 | 실측 | [[gpqa-diamond]] 48.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 추론 | 35.7 | -0.96 | 실측 | [[gpqa-diamond]] 48.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 32.9 | -1.14 | 실측 | [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 35.9 | -0.94 | 실측 | [[gdpval]] 196.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

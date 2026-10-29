@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 27.4, z: -0.97, r: 35.5, estimated: false }  # 전문 지식
   reasoning: { s: 24.8, z: -0.95, r: 35.8, estimated: false }  # 추론
-  coding: { s: 12.1, z: -0.84, r: 37.5, estimated: false }  # 코딩
+  coding: { s: 12.1, z: -0.84, r: 37.4, estimated: false }  # 코딩
   agentic: { s: 12.4, z: -0.75, r: 38.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 52.1, z: -1.0, r: 35.0, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3 Nano Omni 30B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-28
-timestamp: 2026-10-28T00:00:00Z
+updated: 2026-10-29
+timestamp: 2026-10-29T00:00:00Z
 ---
 
 # Nemotron 3 Nano Omni 30B A3B
@@ -37,7 +37,7 @@ NVIDIA · Open · Small · 컨텍스트 256k · 종합지능 **None**
 - **약점**: 전문 지식, 멀티모달
 
 ## 실용 지표
-`입력 $0.4 · 출력 $1.36 · 혼합 $0.3565/1M · 230.0 t/s · TTFT 0.74s · 256k ctx`
+`입력 $0.4 · 출력 $1.36 · 혼합 $0.3565/1M · 230.0 t/s · TTFT 0.81s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ NVIDIA · Open · Small · 컨텍스트 256k · 종합지능 **None**
 |---|---|---|---|---|
 | 전문 지식 | 35.5 | -0.97 | 실측 | [[gpqa-diamond]] 47.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 35.8 | -0.95 | 실측 | [[gpqa-diamond]] 47.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 37.5 | -0.84 | 실측 | [[terminal-bench]] 8.0%×0.5 |
+| 코딩 | 37.4 | -0.84 | 실측 | [[terminal-bench]] 8.0%×0.5 |
 | 에이전트 | 38.8 | -0.75 | 실측 | [[gdpval]] 237.0%×1.0, [[terminal-bench]] 8.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 35.0 | -1.0 | 실측 | [[mmmu-pro]] 53.0%×1.0 |

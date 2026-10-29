@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 76.7, z: 1.21, r: 68.1, estimated: false }  # 전문 지식
-  reasoning: { s: 76.7, z: 1.4, r: 71.0, estimated: false }  # 추론
-  coding: { s: 63.2, z: 0.88, r: 63.1, estimated: true }  # 코딩
-  agentic: { s: 52.4, z: 0.63, r: 59.4, estimated: true }  # 에이전트
+  knowledge: { s: 76.7, z: 1.2, r: 68.0, estimated: false }  # 전문 지식
+  reasoning: { s: 76.7, z: 1.4, r: 70.9, estimated: false }  # 추론
+  coding: { s: 63.2, z: 0.87, r: 63.1, estimated: true }  # 코딩
+  agentic: { s: 52.4, z: 0.62, r: 59.3, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 86.7, z: 1.03, r: 65.5, estimated: true }  # 긴문맥
-  instruction: { s: 88.0, z: 1.47, r: 72.1, estimated: true }  # 지시 따르기
+  instruction: { s: 88.0, z: 1.48, r: 72.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — o1-preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-28
-timestamp: 2026-10-28T00:00:00Z
+updated: 2026-10-29
+timestamp: 2026-10-29T00:00:00Z
 ---
 
 # o1-preview
@@ -43,14 +43,14 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None** �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 68.1 | +1.21 | 실측 | [[gpqa-diamond]] 76.0%×0.4 |
-| 추론 | 71.0 | +1.4 | 실측 | [[gpqa-diamond]] 76.0%×1.0 |
-| 코딩 | 63.1 | +0.88 | 추정 | (추정) |
-| 에이전트 | 59.4 | +0.63 | 추정 | (추정) |
+| 전문 지식 | 68.0 | +1.2 | 실측 | [[gpqa-diamond]] 76.0%×0.4 |
+| 추론 | 70.9 | +1.4 | 실측 | [[gpqa-diamond]] 76.0%×1.0 |
+| 코딩 | 63.1 | +0.87 | 추정 | (추정) |
+| 에이전트 | 59.3 | +0.62 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 65.5 | +1.03 | 추정 | (추정) |
-| 지시 따르기 | 72.1 | +1.47 | 추정 | (추정) |
+| 지시 따르기 | 72.2 | +1.48 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -14,7 +14,7 @@ is_reasoning: null
 radar:
   knowledge: { s: 54.5, z: 0.22, r: 53.3, estimated: false }  # 전문 지식
   reasoning: { s: 50.4, z: 0.21, r: 53.1, estimated: false }  # 추론
-  coding: { s: 37.9, z: 0.03, r: 50.4, estimated: false }  # 코딩
+  coding: { s: 37.9, z: 0.02, r: 50.4, estimated: false }  # 코딩
   agentic: { s: 37.9, z: 0.13, r: 51.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V3.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-28
-timestamp: 2026-10-28T00:00:00Z
+updated: 2026-10-29
+timestamp: 2026-10-29T00:00:00Z
 ---
 
 # DeepSeek V3.1
@@ -37,7 +37,7 @@ DeepSeek · Open · Unknown · 컨텍스트 128k · 종합지능 **None** · ⚠
 - **약점**: 코딩, 지시 따르기
 
 ## 실용 지표
-`입력 $0.58 · 출력 $1.68 · 혼합 $0.69/1M · 120.0 t/s · TTFT 3.18s · 128k ctx`
+`입력 $0.58 · 출력 $1.68 · 혼합 $0.69/1M · 120.0 t/s · TTFT 3.06s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ DeepSeek · Open · Unknown · 컨텍스트 128k · 종합지능 **None** · ⚠
 |---|---|---|---|---|
 | 전문 지식 | 53.3 | +0.22 | 실측 | [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 14.0%×0.3 |
 | 추론 | 53.1 | +0.21 | 실측 | [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 14.0%×1.0 |
-| 코딩 | 50.4 | +0.03 | 실측 | [[terminal-bench]] 25.0%×0.5 |
+| 코딩 | 50.4 | +0.02 | 실측 | [[terminal-bench]] 25.0%×0.5 |
 | 에이전트 | 51.9 | +0.13 | 실측 | [[terminal-bench]] 25.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

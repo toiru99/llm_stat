@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 65.0, z: 0.69, r: 60.3, estimated: false }  # 전문 지식
-  reasoning: { s: 71.4, z: 1.16, r: 67.4, estimated: false }  # 추론
-  coding: { s: 75.0, z: 1.27, r: 69.1, estimated: false }  # 코딩
-  agentic: { s: 71.0, z: 1.27, r: 69.0, estimated: false }  # 에이전트
+  knowledge: { s: 65.0, z: 0.68, r: 60.2, estimated: false }  # 전문 지식
+  reasoning: { s: 71.4, z: 1.15, r: 67.3, estimated: false }  # 추론
+  coding: { s: 75.0, z: 1.27, r: 69.0, estimated: false }  # 코딩
+  agentic: { s: 71.0, z: 1.26, r: 68.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 93.2, z: 1.05, r: 65.7, estimated: false }  # 멀티모달
   long_context: { s: 91.0, z: 1.16, r: 67.4, estimated: false }  # 긴문맥
-  instruction: { s: 73.5, z: 0.87, r: 63.0, estimated: true }  # 지시 따르기
+  instruction: { s: 73.4, z: 0.87, r: 63.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6.1 Terra (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-28
-timestamp: 2026-10-28T00:00:00Z
+updated: 2026-10-29
+timestamp: 2026-10-29T00:00:00Z
 ---
 
 # GPT-6.1 Terra (medium)
@@ -37,16 +37,16 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **38.0**
 - **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
-`입력 $1.0 · 출력 $5.0 · 혼합 $0.735/1M · 91.0 t/s · TTFT 1.65s · 1M ctx` · 가성비 51.7
+`입력 $1.0 · 출력 $5.0 · 혼합 $0.735/1M · 91.0 t/s · TTFT 2.09s · 1M ctx` · 가성비 51.7
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 60.3 | +0.69 | 실측 | [[humanitys-last-exam]] 40.0%×0.3 |
-| 추론 | 67.4 | +1.16 | 실측 | [[critpt]] 56.0%×1.0, [[humanitys-last-exam]] 40.0%×1.0 |
-| 코딩 | 69.1 | +1.27 | 실측 | [[scicode]] 52.0%×1.0 |
-| 에이전트 | 69.0 | +1.27 | 실측 | [[gdpval]] 1325.0%×1.0 |
+| 전문 지식 | 60.2 | +0.68 | 실측 | [[humanitys-last-exam]] 40.0%×0.3 |
+| 추론 | 67.3 | +1.15 | 실측 | [[critpt]] 56.0%×1.0, [[humanitys-last-exam]] 40.0%×1.0 |
+| 코딩 | 69.0 | +1.27 | 실측 | [[scicode]] 52.0%×1.0 |
+| 에이전트 | 68.9 | +1.26 | 실측 | [[gdpval]] 1325.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 65.7 | +1.05 | 실측 | [[mmmu-pro]] 83.0%×1.0 |
 | 긴문맥 | 67.4 | +1.16 | 실측 | [[aa-lcr]] 81.0%×1.0 |

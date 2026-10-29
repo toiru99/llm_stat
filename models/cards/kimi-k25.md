@@ -5,16 +5,16 @@ creator: Kimi
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.49
-output_speed_tps: 83.0
+output_speed_tps: 87.0
 context_window: 256000
 status: past
 size_class: Unknown
 params_b: null
 is_reasoning: null
 radar:
-  knowledge: { s: 73.3, z: 1.05, r: 65.8, estimated: false }  # 전문 지식
-  reasoning: { s: 70.3, z: 1.11, r: 66.7, estimated: false }  # 추론
-  coding: { s: 53.0, z: 0.54, r: 58.0, estimated: false }  # 코딩
+  knowledge: { s: 73.3, z: 1.05, r: 65.7, estimated: false }  # 전문 지식
+  reasoning: { s: 70.3, z: 1.11, r: 66.6, estimated: false }  # 추론
+  coding: { s: 53.0, z: 0.53, r: 58.0, estimated: false }  # 코딩
   agentic: { s: 37.4, z: 0.11, r: 51.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 82.2, z: 0.5, r: 57.5, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-28
-timestamp: 2026-10-28T00:00:00Z
+updated: 2026-10-29
+timestamp: 2026-10-29T00:00:00Z
 ---
 
 # Kimi K2.5
@@ -37,15 +37,15 @@ Kimi · Open · Unknown · 컨텍스트 256k · 종합지능 **None** · ⚠️ 
 - **약점**: 멀티모달, 에이전트
 
 ## 실용 지표
-`입력 $0.6 · 출력 $3.0 · 혼합 $0.49/1M · 83.0 t/s · TTFT 1.85s · 256k ctx`
+`입력 $0.6 · 출력 $3.0 · 혼합 $0.49/1M · 87.0 t/s · TTFT 1.82s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 65.8 | +1.05 | 실측 | [[gpqa-diamond]] 88.0%×0.4, [[humanitys-last-exam]] 31.0%×0.3 |
-| 추론 | 66.7 | +1.11 | 실측 | [[gpqa-diamond]] 88.0%×1.0, [[humanitys-last-exam]] 31.0%×1.0 |
-| 코딩 | 58.0 | +0.54 | 실측 | [[terminal-bench]] 35.0%×0.5 |
+| 전문 지식 | 65.7 | +1.05 | 실측 | [[gpqa-diamond]] 88.0%×0.4, [[humanitys-last-exam]] 31.0%×0.3 |
+| 추론 | 66.6 | +1.11 | 실측 | [[gpqa-diamond]] 88.0%×1.0, [[humanitys-last-exam]] 31.0%×1.0 |
+| 코딩 | 58.0 | +0.53 | 실측 | [[terminal-bench]] 35.0%×0.5 |
 | 에이전트 | 51.7 | +0.11 | 실측 | [[apex-agents]] 12.0%×1.0, [[gdpval]] 847.0%×1.0, [[tau3-banking]] 14.0%×1.0, [[terminal-bench]] 35.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 57.5 | +0.5 | 실측 | [[mmmu-pro]] 75.0%×1.0 |

@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 42.2, z: -0.32, r: 45.2, estimated: false }  # 전문 지식
   reasoning: { s: 38.1, z: -0.35, r: 44.8, estimated: false }  # 추론
-  coding: { s: 12.1, z: -0.84, r: 37.5, estimated: false }  # 코딩
+  coding: { s: 12.1, z: -0.84, r: 37.4, estimated: false }  # 코딩
   agentic: { s: 12.1, z: -0.76, r: 38.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 67.1, z: -0.25, r: 46.3, estimated: false }  # 멀티모달
   long_context: { s: 56.6, z: 0.13, r: 52.0, estimated: true }  # 긴문맥
-  instruction: { s: 38.0, z: -0.62, r: 40.7, estimated: false }  # 지시 따르기
+  instruction: { s: 38.0, z: -0.62, r: 40.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 VL 32B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-28
-timestamp: 2026-10-28T00:00:00Z
+updated: 2026-10-29
+timestamp: 2026-10-29T00:00:00Z
 ---
 
 # Qwen3 VL 32B
@@ -45,12 +45,12 @@ Alibaba · Open · Small · 컨텍스트 256k · 종합지능 **None** · ⚠️
 |---|---|---|---|---|
 | 전문 지식 | 45.2 | -0.32 | 실측 | [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
 | 추론 | 44.8 | -0.35 | 실측 | [[gpqa-diamond]] 67.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
-| 코딩 | 37.5 | -0.84 | 실측 | [[terminal-bench]] 8.0%×0.5 |
+| 코딩 | 37.4 | -0.84 | 실측 | [[terminal-bench]] 8.0%×0.5 |
 | 에이전트 | 38.6 | -0.76 | 실측 | [[terminal-bench]] 8.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 46.3 | -0.25 | 실측 | [[mmmu-pro]] 64.0%×1.0 |
 | 긴문맥 | 52.0 | +0.13 | 추정 | (추정) |
-| 지시 따르기 | 40.7 | -0.62 | 실측 | [[ifbench]] 39.0%×1.0 |
+| 지시 따르기 | 40.8 | -0.62 | 실측 | [[ifbench]] 39.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

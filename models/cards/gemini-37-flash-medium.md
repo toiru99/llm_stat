@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 81.6, z: 1.42, r: 71.3, estimated: false }  # 전문 지식
-  reasoning: { s: 79.3, z: 1.52, r: 72.7, estimated: false }  # 추론
-  coding: { s: 88.3, z: 1.72, r: 75.8, estimated: false }  # 코딩
-  agentic: { s: 70.9, z: 1.27, r: 69.0, estimated: false }  # 에이전트
+  knowledge: { s: 81.6, z: 1.41, r: 71.2, estimated: false }  # 전문 지식
+  reasoning: { s: 79.3, z: 1.51, r: 72.7, estimated: false }  # 추론
+  coding: { s: 88.3, z: 1.71, r: 75.7, estimated: false }  # 코딩
+  agentic: { s: 70.9, z: 1.26, r: 68.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 95.9, z: 1.18, r: 67.8, estimated: false }  # 멀티모달
   long_context: { s: 93.3, z: 1.23, r: 68.4, estimated: false }  # 긴문맥
-  instruction: { s: 80.5, z: 1.16, r: 67.4, estimated: true }  # 지시 따르기
+  instruction: { s: 80.5, z: 1.16, r: 67.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.7 Flash (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-28
-timestamp: 2026-10-28T00:00:00Z
+updated: 2026-10-29
+timestamp: 2026-10-29T00:00:00Z
 ---
 
 # Gemini 3.7 Flash (medium)
@@ -43,14 +43,14 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 71.3 | +1.42 | 실측 | [[gpqa-diamond]] 92.0%×0.4, [[humanitys-last-exam]] 39.0%×0.3 |
-| 추론 | 72.7 | +1.52 | 실측 | [[gpqa-diamond]] 92.0%×1.0, [[humanitys-last-exam]] 39.0%×1.0 |
-| 코딩 | 75.8 | +1.72 | 실측 | [[scicode]] 60.0%×1.0 |
-| 에이전트 | 69.0 | +1.27 | 실측 | [[gdpval]] 1367.0%×1.0, [[tau3-banking]] 35.0%×1.0 |
+| 전문 지식 | 71.2 | +1.41 | 실측 | [[gpqa-diamond]] 92.0%×0.4, [[humanitys-last-exam]] 39.0%×0.3 |
+| 추론 | 72.7 | +1.51 | 실측 | [[gpqa-diamond]] 92.0%×1.0, [[humanitys-last-exam]] 39.0%×1.0 |
+| 코딩 | 75.7 | +1.71 | 실측 | [[scicode]] 60.0%×1.0 |
+| 에이전트 | 68.9 | +1.26 | 실측 | [[gdpval]] 1367.0%×1.0, [[tau3-banking]] 35.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 67.8 | +1.18 | 실측 | [[mmmu-pro]] 85.0%×1.0 |
 | 긴문맥 | 68.4 | +1.23 | 실측 | [[aa-lcr]] 83.0%×1.0 |
-| 지시 따르기 | 67.4 | +1.16 | 추정 | (추정) |
+| 지시 따르기 | 67.5 | +1.16 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

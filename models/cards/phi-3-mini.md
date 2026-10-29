@@ -18,14 +18,14 @@ radar:
   agentic: { s: 0.0, z: -1.17, r: 32.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 1.6, z: -1.52, r: 27.2, estimated: true }  # 긴문맥
+  long_context: { s: 2.1, z: -1.5, r: 27.4, estimated: true }  # 긴문맥
   instruction: { s: 16.9, z: -1.5, r: 27.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Phi-3 Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-28
-timestamp: 2026-10-28T00:00:00Z
+updated: 2026-10-29
+timestamp: 2026-10-29T00:00:00Z
 ---
 
 # Phi-3 Mini
@@ -34,7 +34,7 @@ Microsoft · Open · Tiny · 컨텍스트 4k · 종합지능 **None** · ⚠️ 
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 코딩
-- **약점**: 지시 따르기, 긴문맥
+- **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 4k ctx`
@@ -49,7 +49,7 @@ Microsoft · Open · Tiny · 컨텍스트 4k · 종합지능 **None** · ⚠️ 
 | 에이전트 | 32.4 | -1.17 | 실측 | [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 27.2 | -1.52 | 추정 | (추정) |
+| 긴문맥 | 27.4 | -1.5 | 추정 | (추정) |
 | 지시 따르기 | 27.5 | -1.5 | 실측 | [[ifbench]] 24.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

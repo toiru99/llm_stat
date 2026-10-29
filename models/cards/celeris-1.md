@@ -14,8 +14,8 @@ is_reasoning: false
 radar:
   knowledge: { s: 39.5, z: -0.44, r: 43.4, estimated: false }  # 전문 지식
   reasoning: { s: 35.8, z: -0.45, r: 43.2, estimated: false }  # 추론
-  coding: { s: 25.0, z: -0.4, r: 43.9, estimated: false }  # 코딩
-  agentic: { s: 12.2, z: -0.75, r: 38.7, estimated: false }  # 에이전트
+  coding: { s: 25.0, z: -0.41, r: 43.9, estimated: false }  # 코딩
+  agentic: { s: 12.2, z: -0.76, r: 38.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 42.7, z: -0.29, r: 45.7, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Celeris-1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-28
-timestamp: 2026-10-28T00:00:00Z
+updated: 2026-10-29
+timestamp: 2026-10-29T00:00:00Z
 ---
 
 # Celeris-1
@@ -37,7 +37,7 @@ Celeris · Proprietary · Unknown · 컨텍스트 131k · 종합지능 **None**
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.7 · 혼합 $0.25/1M · 1.0 t/s · TTFT 0.55s · 131k ctx`
+`입력 $0.2 · 출력 $0.7 · 혼합 $0.25/1M · 1.0 t/s · TTFT 0.54s · 131k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,8 +45,8 @@ Celeris · Proprietary · Unknown · 컨텍스트 131k · 종합지능 **None**
 |---|---|---|---|---|
 | 전문 지식 | 43.4 | -0.44 | 실측 | [[gpqa-diamond]] 63.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
 | 추론 | 43.2 | -0.45 | 실측 | [[gpqa-diamond]] 63.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
-| 코딩 | 43.9 | -0.4 | 실측 | [[scicode]] 22.0%×1.0 |
-| 에이전트 | 38.7 | -0.75 | 실측 | [[gdpval]] 310.0%×1.0, [[tau3-banking]] 4.0%×1.0 |
+| 코딩 | 43.9 | -0.41 | 실측 | [[scicode]] 22.0%×1.0 |
+| 에이전트 | 38.7 | -0.76 | 실측 | [[gdpval]] 310.0%×1.0, [[tau3-banking]] 4.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 45.7 | -0.29 | 실측 | [[aa-lcr]] 38.0%×1.0 |

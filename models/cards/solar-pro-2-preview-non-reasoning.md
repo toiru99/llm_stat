@@ -18,14 +18,14 @@ radar:
   agentic: { s: 7.5, z: -0.92, r: 36.2, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 8.4, z: -1.31, r: 30.3, estimated: true }  # 긴문맥
-  instruction: { s: 30.4, z: -0.94, r: 35.9, estimated: true }  # 지시 따르기
+  long_context: { s: 8.4, z: -1.32, r: 30.3, estimated: true }  # 긴문맥
+  instruction: { s: 30.4, z: -0.94, r: 36.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Pro 2 (Preview) (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-28
-timestamp: 2026-10-28T00:00:00Z
+updated: 2026-10-29
+timestamp: 2026-10-29T00:00:00Z
 ---
 
 # Solar Pro 2 (Preview) (non-reasoning)
@@ -49,8 +49,8 @@ Upstage · Proprietary · Small · 컨텍스트 64k · 종합지능 **None** · 
 | 에이전트 | 36.2 | -0.92 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 30.3 | -1.31 | 추정 | (추정) |
-| 지시 따르기 | 35.9 | -0.94 | 추정 | (추정) |
+| 긴문맥 | 30.3 | -1.32 | 추정 | (추정) |
+| 지시 따르기 | 36.0 | -0.94 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

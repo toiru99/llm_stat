@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 30.1, z: -2.09, r: 18.7, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.57, r: 26.5, estimated: false }  # 긴문맥
-  instruction: { s: 21.1, z: -1.33, r: 30.1, estimated: false }  # 지시 따르기
+  instruction: { s: 21.1, z: -1.32, r: 30.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Molmo2-8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-28
-timestamp: 2026-10-28T00:00:00Z
+updated: 2026-10-29
+timestamp: 2026-10-29T00:00:00Z
 ---
 
 # Molmo2-8B
@@ -50,7 +50,7 @@ Allen Institute for AI · Open · Small · 컨텍스트 36k · 종합지능 **No
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 18.7 | -2.09 | 실측 | [[mmmu-pro]] 37.0%×1.0 |
 | 긴문맥 | 26.5 | -1.57 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 30.1 | -1.33 | 실측 | [[ifbench]] 27.0%×1.0 |
+| 지시 따르기 | 30.1 | -1.32 | 실측 | [[ifbench]] 27.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

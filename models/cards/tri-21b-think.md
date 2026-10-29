@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Tri-21B-Think
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-28
-timestamp: 2026-10-28T00:00:00Z
+updated: 2026-10-29
+timestamp: 2026-10-29T00:00:00Z
 ---
 
 # Tri-21B-Think

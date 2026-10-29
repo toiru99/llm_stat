@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 20.3, z: -0.96, r: 35.6, estimated: true }  # 긴문맥
-  instruction: { s: 27.2, z: -1.07, r: 33.9, estimated: true }  # 지시 따르기
+  instruction: { s: 27.1, z: -1.07, r: 33.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepHermes 3 - Mistral 24B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-28
-timestamp: 2026-10-28T00:00:00Z
+updated: 2026-10-29
+timestamp: 2026-10-29T00:00:00Z
 ---
 
 # DeepHermes 3 - Mistral 24B (non-reasoning)

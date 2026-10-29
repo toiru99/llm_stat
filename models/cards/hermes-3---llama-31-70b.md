@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hermes 3 - Llama-3.1 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-28
-timestamp: 2026-10-28T00:00:00Z
+updated: 2026-10-29
+timestamp: 2026-10-29T00:00:00Z
 ---
 
 # Hermes 3 - Llama-3.1 70B
@@ -37,7 +37,7 @@ Nous Research · Open · Medium · 컨텍스트 128k · 종합지능 **None** ·
 - **약점**: 긴문맥, 전문 지식
 
 ## 실용 지표
-`입력 $0.7 · 출력 $0.7 · 혼합 $0.7/1M · 31.0 t/s · TTFT 2.09s · 128k ctx`
+`입력 $0.7 · 출력 $0.7 · 혼합 $0.7/1M · 31.0 t/s · TTFT 2.54s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
