@@ -13,9 +13,9 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 38.1, z: -0.5, r: 42.5, estimated: false }  # 전문 지식
-  reasoning: { s: 34.1, z: -0.53, r: 42.1, estimated: false }  # 추론
+  reasoning: { s: 34.1, z: -0.52, r: 42.2, estimated: false }  # 추론
   coding: { s: 43.9, z: 0.23, r: 53.4, estimated: false }  # 코딩
-  agentic: { s: 43.9, z: 0.33, r: 55.0, estimated: false }  # 에이전트
+  agentic: { s: 43.9, z: 0.34, r: 55.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 29.2, z: -0.69, r: 39.6, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.6 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-29
-timestamp: 2026-10-29T00:00:00Z
+updated: 2026-10-30
+timestamp: 2026-10-30T00:00:00Z
 ---
 
 # GLM-4.6 (non-reasoning)
@@ -37,16 +37,16 @@ Z AI · Open · Large · 컨텍스트 200k · 종합지능 **None** · ⚠️ pa
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.57 · 출력 $2.2 · 혼합 $0.5835/1M · 36.0 t/s · TTFT 5.55s · 200k ctx`
+`입력 $0.57 · 출력 $2.2 · 혼합 $0.5835/1M · 36.0 t/s · TTFT 5.09s · 200k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 42.5 | -0.5 | 실측 | [[gpqa-diamond]] 63.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 42.1 | -0.53 | 실측 | [[gpqa-diamond]] 63.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 추론 | 42.2 | -0.52 | 실측 | [[gpqa-diamond]] 63.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 53.4 | +0.23 | 실측 | [[terminal-bench]] 29.0%×0.5 |
-| 에이전트 | 55.0 | +0.33 | 실측 | [[terminal-bench]] 29.0%×1.0 |
+| 에이전트 | 55.0 | +0.34 | 실측 | [[terminal-bench]] 29.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 39.6 | -0.69 | 실측 | [[aa-lcr]] 26.0%×1.0 |

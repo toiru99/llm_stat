@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Large 2 (Nov)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-29
-timestamp: 2026-10-29T00:00:00Z
+updated: 2026-10-30
+timestamp: 2026-10-30T00:00:00Z
 ---
 
 # Mistral Large 2 (Nov)

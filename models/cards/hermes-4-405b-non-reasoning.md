@@ -5,7 +5,7 @@ creator: Nous Research
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 1.2
-output_speed_tps: 37.0
+output_speed_tps: 39.0
 context_window: 128000
 status: current
 size_class: Large
@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 31.4, z: -0.8, r: 38.1, estimated: false }  # 전문 지식
-  reasoning: { s: 28.1, z: -0.8, r: 38.0, estimated: false }  # 추론
+  reasoning: { s: 28.1, z: -0.8, r: 38.1, estimated: false }  # 추론
   coding: { s: 15.2, z: -0.74, r: 39.0, estimated: false }  # 코딩
   agentic: { s: 15.2, z: -0.65, r: 40.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hermes 4 405B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-29
-timestamp: 2026-10-29T00:00:00Z
+updated: 2026-10-30
+timestamp: 2026-10-30T00:00:00Z
 ---
 
 # Hermes 4 405B (non-reasoning)
@@ -37,14 +37,14 @@ Nous Research · Open · Large · 컨텍스트 128k · 종합지능 **None**
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $1.0 · 출력 $3.0 · 혼합 $1.2/1M · 37.0 t/s · TTFT 2.32s · 128k ctx`
+`입력 $1.0 · 출력 $3.0 · 혼합 $1.2/1M · 39.0 t/s · TTFT 2.33s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 38.1 | -0.8 | 실측 | [[gpqa-diamond]] 54.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 38.0 | -0.8 | 실측 | [[gpqa-diamond]] 54.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 추론 | 38.1 | -0.8 | 실측 | [[gpqa-diamond]] 54.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 39.0 | -0.74 | 실측 | [[terminal-bench]] 10.0%×0.5 |
 | 에이전트 | 40.2 | -0.65 | 실측 | [[terminal-bench]] 10.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

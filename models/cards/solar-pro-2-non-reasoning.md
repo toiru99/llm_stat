@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 32.7, z: -0.74, r: 38.9, estimated: false }  # 전문 지식
-  reasoning: { s: 29.2, z: -0.75, r: 38.8, estimated: false }  # 추론
+  reasoning: { s: 29.2, z: -0.74, r: 38.8, estimated: false }  # 추론
   coding: { s: 7.6, z: -0.99, r: 35.2, estimated: false }  # 코딩
   agentic: { s: 7.6, z: -0.91, r: 36.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Pro 2 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-29
-timestamp: 2026-10-29T00:00:00Z
+updated: 2026-10-30
+timestamp: 2026-10-30T00:00:00Z
 ---
 
 # Solar Pro 2 (non-reasoning)
@@ -44,7 +44,7 @@ Upstage · Proprietary · Unknown · 컨텍스트 65k · 종합지능 **None** �
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 38.9 | -0.74 | 실측 | [[gpqa-diamond]] 56.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 38.8 | -0.75 | 실측 | [[gpqa-diamond]] 56.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 추론 | 38.8 | -0.74 | 실측 | [[gpqa-diamond]] 56.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 35.2 | -0.99 | 실측 | [[terminal-bench]] 5.0%×0.5 |
 | 에이전트 | 36.3 | -0.91 | 실측 | [[terminal-bench]] 5.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

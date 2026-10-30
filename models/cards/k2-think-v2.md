@@ -12,10 +12,10 @@ size_class: Medium
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 47.0, z: -0.11, r: 48.3, estimated: false }  # 전문 지식
-  reasoning: { s: 43.0, z: -0.13, r: 48.1, estimated: false }  # 추론
+  knowledge: { s: 47.0, z: -0.11, r: 48.4, estimated: false }  # 전문 지식
+  reasoning: { s: 43.0, z: -0.12, r: 48.1, estimated: false }  # 추론
   coding: { s: 10.6, z: -0.89, r: 36.7, estimated: false }  # 코딩
-  agentic: { s: 9.0, z: -0.87, r: 37.0, estimated: false }  # 에이전트
+  agentic: { s: 8.9, z: -0.87, r: 37.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 64.0, z: 0.35, r: 55.3, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — K2 Think V2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-29
-timestamp: 2026-10-29T00:00:00Z
+updated: 2026-10-30
+timestamp: 2026-10-30T00:00:00Z
 ---
 
 # K2 Think V2
@@ -43,10 +43,10 @@ Institute of Foundation Models · Open · Medium · 컨텍스트 262k · 종합�
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 48.3 | -0.11 | 실측 | [[gpqa-diamond]] 71.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
-| 추론 | 48.1 | -0.13 | 실측 | [[gpqa-diamond]] 71.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
+| 전문 지식 | 48.4 | -0.11 | 실측 | [[gpqa-diamond]] 71.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
+| 추론 | 48.1 | -0.12 | 실측 | [[gpqa-diamond]] 71.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
 | 코딩 | 36.7 | -0.89 | 실측 | [[terminal-bench]] 7.0%×0.5 |
-| 에이전트 | 37.0 | -0.87 | 실측 | [[gdpval]] 138.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
+| 에이전트 | 37.0 | -0.87 | 실측 | [[gdpval]] 137.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 55.3 | +0.35 | 실측 | [[aa-lcr]] 57.0%×1.0 |

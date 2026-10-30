@@ -12,7 +12,7 @@ size_class: Small
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 22.7, z: -1.18, r: 32.4, estimated: false }  # 전문 지식
+  knowledge: { s: 22.7, z: -1.18, r: 32.3, estimated: false }  # 전문 지식
   reasoning: { s: 20.5, z: -1.14, r: 32.9, estimated: false }  # 추론
   coding: { s: 9.1, z: -0.94, r: 35.9, estimated: false }  # 코딩
   agentic: { s: 9.1, z: -0.86, r: 37.1, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Devstral Small
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-29
-timestamp: 2026-10-29T00:00:00Z
+updated: 2026-10-30
+timestamp: 2026-10-30T00:00:00Z
 ---
 
 # Devstral Small
@@ -43,7 +43,7 @@ Mistral · Open · Small · 컨텍스트 256k · 종합지능 **None** · ⚠️
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 32.4 | -1.18 | 실측 | [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 전문 지식 | 32.3 | -1.18 | 실측 | [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 32.9 | -1.14 | 실측 | [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 35.9 | -0.94 | 실측 | [[terminal-bench]] 6.0%×0.5 |
 | 에이전트 | 37.1 | -0.86 | 실측 | [[terminal-bench]] 6.0%×1.0 |

@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-29
-timestamp: 2026-10-29T00:00:00Z
+updated: 2026-10-30
+timestamp: 2026-10-30T00:00:00Z
 ---
 
 # GPT-4
@@ -46,7 +46,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 8k · 종합지능 **None** · 
 | 전문 지식 | 36.5 | -0.9 | 실측 | [[gpqa-diamond]] 35.0%×0.4 |
 | 추론 | 38.7 | -0.75 | 실측 | [[gpqa-diamond]] 35.0%×1.0 |
 | 코딩 | 33.8 | -1.08 | 추정 | (추정) |
-| 에이전트 | 32.7 | -1.15 | 실측 | [[gdpval]] 12.0%×1.0 |
+| 에이전트 | 32.7 | -1.15 | 실측 | [[gdpval]] 13.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 40.0 | -0.66 | 추정 | (추정) |

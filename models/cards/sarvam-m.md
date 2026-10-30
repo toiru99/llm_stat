@@ -13,9 +13,9 @@ params_b: null
 is_reasoning: null
 radar:
   knowledge: { s: 22.7, z: -1.18, r: 32.3, estimated: false }  # 전문 지식
-  reasoning: { s: 20.3, z: -1.15, r: 32.7, estimated: false }  # 추론
+  reasoning: { s: 20.3, z: -1.15, r: 32.8, estimated: false }  # 추론
   coding: { s: 3.0, z: -1.14, r: 32.9, estimated: false }  # 코딩
-  agentic: { s: 3.0, z: -1.07, r: 33.9, estimated: false }  # 에이전트
+  agentic: { s: 3.0, z: -1.07, r: 34.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.57, r: 26.5, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Sarvam M
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-29
-timestamp: 2026-10-29T00:00:00Z
+updated: 2026-10-30
+timestamp: 2026-10-30T00:00:00Z
 ---
 
 # Sarvam M
@@ -44,9 +44,9 @@ Sarvam · Open · Unknown · 컨텍스트 32k · 종합지능 **None** · ⚠️
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 32.3 | -1.18 | 실측 | [[gpqa-diamond]] 42.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
-| 추론 | 32.7 | -1.15 | 실측 | [[gpqa-diamond]] 42.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
+| 추론 | 32.8 | -1.15 | 실측 | [[gpqa-diamond]] 42.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 32.9 | -1.14 | 실측 | [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 33.9 | -1.07 | 실측 | [[terminal-bench]] 2.0%×1.0 |
+| 에이전트 | 34.0 | -1.07 | 실측 | [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 26.5 | -1.57 | 실측 | [[aa-lcr]] 0.0%×1.0 |

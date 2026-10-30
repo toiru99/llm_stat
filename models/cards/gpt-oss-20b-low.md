@@ -5,7 +5,7 @@ creator: OpenAI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.093
-output_speed_tps: 241.0
+output_speed_tps: 217.0
 context_window: 131000
 status: current
 size_class: Small
@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 36.7, z: -0.56, r: 41.6, estimated: false }  # 전문 지식
-  reasoning: { s: 33.0, z: -0.58, r: 41.3, estimated: false }  # 추론
+  reasoning: { s: 33.0, z: -0.57, r: 41.4, estimated: false }  # 추론
   coding: { s: 7.6, z: -0.99, r: 35.2, estimated: false }  # 코딩
   agentic: { s: 7.6, z: -0.91, r: 36.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 34.8, z: -0.52, r: 42.2, estimated: false }  # 긴문맥
-  instruction: { s: 64.8, z: 0.51, r: 57.6, estimated: false }  # 지시 따르기
+  instruction: { s: 64.8, z: 0.5, r: 57.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — gpt-oss-20b (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-29
-timestamp: 2026-10-29T00:00:00Z
+updated: 2026-10-30
+timestamp: 2026-10-30T00:00:00Z
 ---
 
 # gpt-oss-20b (low)
@@ -37,20 +37,20 @@ OpenAI · Open · Small · 컨텍스트 131k · 종합지능 **None**
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $0.07 · 출력 $0.3 · 혼합 $0.093/1M · 241.0 t/s · TTFT 0.86s · 131k ctx`
+`입력 $0.07 · 출력 $0.3 · 혼합 $0.093/1M · 217.0 t/s · TTFT 0.78s · 131k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 41.6 | -0.56 | 실측 | [[gpqa-diamond]] 61.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 41.3 | -0.58 | 실측 | [[gpqa-diamond]] 61.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 추론 | 41.4 | -0.57 | 실측 | [[gpqa-diamond]] 61.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 35.2 | -0.99 | 실측 | [[terminal-bench]] 5.0%×0.5 |
 | 에이전트 | 36.3 | -0.91 | 실측 | [[terminal-bench]] 5.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 42.2 | -0.52 | 실측 | [[aa-lcr]] 31.0%×1.0 |
-| 지시 따르기 | 57.6 | +0.51 | 실측 | [[ifbench]] 58.0%×1.0 |
+| 지시 따르기 | 57.6 | +0.5 | 실측 | [[ifbench]] 58.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

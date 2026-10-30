@@ -5,7 +5,7 @@ creator: Google
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.028
-output_speed_tps: 48.0
+output_speed_tps: 43.0
 context_window: 128000
 status: current
 size_class: Small
@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 32.8, z: -0.74, r: 39.0, estimated: false }  # 전문 지식
-  reasoning: { s: 29.5, z: -0.74, r: 39.0, estimated: false }  # 추론
+  reasoning: { s: 29.5, z: -0.73, r: 39.0, estimated: false }  # 추론
   coding: { s: 12.1, z: -0.84, r: 37.4, estimated: false }  # 코딩
   agentic: { s: 12.1, z: -0.76, r: 38.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 E4B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-29
-timestamp: 2026-10-29T00:00:00Z
+updated: 2026-10-30
+timestamp: 2026-10-30T00:00:00Z
 ---
 
 # Gemma 4 E4B (non-reasoning)
@@ -33,18 +33,18 @@ timestamp: 2026-10-29T00:00:00Z
 Google · Open · Small · 컨텍스트 128k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 지시 따르기, 전문 지식
+- **강점**: 지시 따르기, 추론
 - **약점**: 코딩, 멀티모달
 
 ## 실용 지표
-`입력 $0.02 · 출력 $0.1 · 혼합 $0.028/1M · 48.0 t/s · TTFT 0.94s · 128k ctx`
+`입력 $0.02 · 출력 $0.1 · 혼합 $0.028/1M · 43.0 t/s · TTFT 0.87s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 39.0 | -0.74 | 실측 | [[gpqa-diamond]] 55.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 39.0 | -0.74 | 실측 | [[gpqa-diamond]] 55.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 추론 | 39.0 | -0.73 | 실측 | [[gpqa-diamond]] 55.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 37.4 | -0.84 | 실측 | [[terminal-bench]] 8.0%×0.5 |
 | 에이전트 | 38.6 | -0.76 | 실측 | [[terminal-bench]] 8.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

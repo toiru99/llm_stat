@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 24.1, z: -1.12, r: 33.2, estimated: false }  # 전문 지식
   reasoning: { s: 21.7, z: -1.09, r: 33.7, estimated: false }  # 추론
   coding: { s: 10.6, z: -0.89, r: 36.7, estimated: false }  # 코딩
-  agentic: { s: 10.6, z: -0.81, r: 37.8, estimated: false }  # 에이전트
+  agentic: { s: 10.6, z: -0.81, r: 37.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 23.3, z: -2.43, r: 13.6, estimated: false }  # 멀티모달
   long_context: { s: 22.5, z: -0.89, r: 36.6, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5 nano (minimal)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-29
-timestamp: 2026-10-29T00:00:00Z
+updated: 2026-10-30
+timestamp: 2026-10-30T00:00:00Z
 ---
 
 # GPT-5 nano (minimal)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **None** �
 - **약점**: 전문 지식, 멀티모달
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.4 · 혼합 $0.0535/1M · 137.0 t/s · TTFT 0.83s · 400k ctx`
+`입력 $0.05 · 출력 $0.4 · 혼합 $0.0535/1M · 137.0 t/s · TTFT 0.85s · 400k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **None** �
 | 전문 지식 | 33.2 | -1.12 | 실측 | [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 33.7 | -1.09 | 실측 | [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 36.7 | -0.89 | 실측 | [[terminal-bench]] 7.0%×0.5 |
-| 에이전트 | 37.8 | -0.81 | 실측 | [[terminal-bench]] 7.0%×1.0 |
+| 에이전트 | 37.9 | -0.81 | 실측 | [[terminal-bench]] 7.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 13.6 | -2.43 | 실측 | [[mmmu-pro]] 32.0%×1.0 |
 | 긴문맥 | 36.6 | -0.89 | 실측 | [[aa-lcr]] 20.0%×1.0 |

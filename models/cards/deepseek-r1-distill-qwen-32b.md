@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 37.4, z: -0.53, r: 42.0, estimated: false }  # 전문 지식
-  reasoning: { s: 33.6, z: -0.55, r: 41.7, estimated: false }  # 추론
+  reasoning: { s: 33.6, z: -0.55, r: 41.8, estimated: false }  # 추론
   coding: { s: 6.0, z: -1.04, r: 34.4, estimated: true }  # 코딩
   agentic: { s: 5.0, z: -1.0, r: 35.0, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek R1 Distill Qwen 32B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-29
-timestamp: 2026-10-29T00:00:00Z
+updated: 2026-10-30
+timestamp: 2026-10-30T00:00:00Z
 ---
 
 # DeepSeek R1 Distill Qwen 32B
@@ -44,7 +44,7 @@ DeepSeek · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠�
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 42.0 | -0.53 | 실측 | [[gpqa-diamond]] 62.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 41.7 | -0.55 | 실측 | [[gpqa-diamond]] 62.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 추론 | 41.8 | -0.55 | 실측 | [[gpqa-diamond]] 62.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 34.4 | -1.04 | 추정 | (추정) |
 | 에이전트 | 35.0 | -1.0 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |

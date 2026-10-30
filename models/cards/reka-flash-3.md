@@ -4,8 +4,8 @@ title: Reka Flash 3
 creator: Reka AI
 license: Open
 intelligence_index: None
-price_blended_usd_1m: 0.26
-output_speed_tps: 90.0
+price_blended_usd_1m: 0.11
+output_speed_tps: 91.0
 context_window: 128000
 status: current
 size_class: Small
@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 30.7, z: -0.83, r: 37.6, estimated: false }  # 전문 지식
-  reasoning: { s: 27.5, z: -0.83, r: 37.6, estimated: false }  # 추론
+  reasoning: { s: 27.5, z: -0.82, r: 37.7, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.24, r: 31.4, estimated: false }  # 코딩
   agentic: { s: 0.0, z: -1.17, r: 32.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Reka Flash 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-29
-timestamp: 2026-10-29T00:00:00Z
+updated: 2026-10-30
+timestamp: 2026-10-30T00:00:00Z
 ---
 
 # Reka Flash 3
@@ -33,18 +33,18 @@ timestamp: 2026-10-29T00:00:00Z
 Reka AI · Open · Small · 컨텍스트 128k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 전문 지식, 추론
+- **강점**: 추론, 전문 지식
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.8 · 혼합 $0.26/1M · 90.0 t/s · TTFT 1.43s · 128k ctx`
+`입력 $0.1 · 출력 $0.2 · 혼합 $0.11/1M · 91.0 t/s · TTFT 1.38s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 37.6 | -0.83 | 실측 | [[gpqa-diamond]] 53.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 37.6 | -0.83 | 실측 | [[gpqa-diamond]] 53.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 추론 | 37.7 | -0.82 | 실측 | [[gpqa-diamond]] 53.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 31.4 | -1.24 | 실측 | [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 32.4 | -1.17 | 실측 | [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

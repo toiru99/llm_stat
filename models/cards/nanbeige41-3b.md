@@ -12,10 +12,10 @@ size_class: Tiny
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 57.0, z: 0.33, r: 54.9, estimated: false }  # 전문 지식
+  knowledge: { s: 57.0, z: 0.33, r: 55.0, estimated: false }  # 전문 지식
   reasoning: { s: 51.9, z: 0.28, r: 54.2, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.24, r: 31.4, estimated: false }  # 코딩
-  agentic: { s: 10.6, z: -0.81, r: 37.8, estimated: false }  # 에이전트
+  agentic: { s: 10.6, z: -0.81, r: 37.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.57, r: 26.5, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nanbeige4.1-3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-29
-timestamp: 2026-10-29T00:00:00Z
+updated: 2026-10-30
+timestamp: 2026-10-30T00:00:00Z
 ---
 
 # Nanbeige4.1-3B
@@ -43,10 +43,10 @@ Nanbeige · Open · Tiny · 컨텍스트 256k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 54.9 | +0.33 | 실측 | [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
+| 전문 지식 | 55.0 | +0.33 | 실측 | [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
 | 추론 | 54.2 | +0.28 | 실측 | [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
 | 코딩 | 31.4 | -1.24 | 실측 | [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 37.8 | -0.81 | 실측 | [[gdpval]] 396.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 에이전트 | 37.9 | -0.81 | 실측 | [[gdpval]] 397.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 26.5 | -1.57 | 실측 | [[aa-lcr]] 0.0%×1.0 |

@@ -12,9 +12,9 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 42.1, z: -0.32, r: 45.1, estimated: false }  # 전문 지식
-  reasoning: { s: 37.9, z: -0.36, r: 44.6, estimated: false }  # 추론
-  coding: { s: 27.3, z: -0.33, r: 45.0, estimated: false }  # 코딩
+  knowledge: { s: 42.1, z: -0.32, r: 45.2, estimated: false }  # 전문 지식
+  reasoning: { s: 37.9, z: -0.35, r: 44.7, estimated: false }  # 추론
+  coding: { s: 27.3, z: -0.33, r: 45.1, estimated: false }  # 코딩
   agentic: { s: 27.3, z: -0.24, r: 46.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — JT-MINI
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-29
-timestamp: 2026-10-29T00:00:00Z
+updated: 2026-10-30
+timestamp: 2026-10-30T00:00:00Z
 ---
 
 # JT-MINI
@@ -43,9 +43,9 @@ China Mobile · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **No
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 45.1 | -0.32 | 실측 | [[gpqa-diamond]] 68.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
-| 추론 | 44.6 | -0.36 | 실측 | [[gpqa-diamond]] 68.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 45.0 | -0.33 | 실측 | [[terminal-bench]] 18.0%×0.5 |
+| 전문 지식 | 45.2 | -0.32 | 실측 | [[gpqa-diamond]] 68.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 추론 | 44.7 | -0.35 | 실측 | [[gpqa-diamond]] 68.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
+| 코딩 | 45.1 | -0.33 | 실측 | [[terminal-bench]] 18.0%×0.5 |
 | 에이전트 | 46.4 | -0.24 | 실측 | [[terminal-bench]] 18.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

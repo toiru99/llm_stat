@@ -5,7 +5,7 @@ creator: InclusionAI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.183
-output_speed_tps: 7.0
+output_speed_tps: 5.0
 context_window: 128000
 status: past
 size_class: Medium
@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 40.8, z: -0.38, r: 44.3, estimated: false }  # 전문 지식
   reasoning: { s: 36.7, z: -0.41, r: 43.9, estimated: false }  # 추론
-  coding: { s: 16.7, z: -0.69, r: 39.7, estimated: false }  # 코딩
+  coding: { s: 16.7, z: -0.68, r: 39.7, estimated: false }  # 코딩
   agentic: { s: 16.7, z: -0.6, r: 41.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling-flash-2.0
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-29
-timestamp: 2026-10-29T00:00:00Z
+updated: 2026-10-30
+timestamp: 2026-10-30T00:00:00Z
 ---
 
 # Ling-flash-2.0
@@ -37,7 +37,7 @@ InclusionAI · Open · Medium · 컨텍스트 128k · 종합지능 **None** · �
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
-`입력 $0.14 · 출력 $0.57 · 혼합 $0.183/1M · 7.0 t/s · TTFT 2.48s · 128k ctx`
+`입력 $0.14 · 출력 $0.57 · 혼합 $0.183/1M · 5.0 t/s · TTFT 2.46s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ InclusionAI · Open · Medium · 컨텍스트 128k · 종합지능 **None** · �
 |---|---|---|---|---|
 | 전문 지식 | 44.3 | -0.38 | 실측 | [[gpqa-diamond]] 66.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 43.9 | -0.41 | 실측 | [[gpqa-diamond]] 66.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 39.7 | -0.69 | 실측 | [[terminal-bench]] 11.0%×0.5 |
+| 코딩 | 39.7 | -0.68 | 실측 | [[terminal-bench]] 11.0%×0.5 |
 | 에이전트 | 41.0 | -0.6 | 실측 | [[terminal-bench]] 11.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

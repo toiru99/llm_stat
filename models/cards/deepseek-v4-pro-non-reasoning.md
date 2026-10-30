@@ -4,17 +4,17 @@ title: DeepSeek V4 Pro (non-reasoning)
 creator: DeepSeek
 license: Open
 intelligence_index: None
-price_blended_usd_1m: 0.1765
-output_speed_tps: 77.0
+price_blended_usd_1m: 1.3568
+output_speed_tps: 165.0
 context_window: 1000000
 status: past
 size_class: Large
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 46.2, z: -0.14, r: 47.8, estimated: false }  # 전문 지식
-  reasoning: { s: 41.9, z: -0.18, r: 47.3, estimated: false }  # 추론
-  coding: { s: 54.5, z: 0.58, r: 58.7, estimated: false }  # 코딩
+  knowledge: { s: 46.2, z: -0.14, r: 47.9, estimated: false }  # 전문 지식
+  reasoning: { s: 41.9, z: -0.17, r: 47.4, estimated: false }  # 추론
+  coding: { s: 54.5, z: 0.59, r: 58.8, estimated: false }  # 코딩
   agentic: { s: 54.5, z: 0.7, r: 60.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Pro (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-29
-timestamp: 2026-10-29T00:00:00Z
+updated: 2026-10-30
+timestamp: 2026-10-30T00:00:00Z
 ---
 
 # DeepSeek V4 Pro (non-reasoning)
@@ -37,15 +37,15 @@ DeepSeek · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ 
 - **약점**: 추론, 지시 따르기
 
 ## 실용 지표
-`입력 $0.43 · 출력 $0.87 · 혼합 $0.1765/1M · 77.0 t/s · TTFT 1.6s · 1M ctx`
+`입력 $1.74 · 출력 $3.49 · 혼합 $1.3568/1M · 165.0 t/s · TTFT 1.34s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 47.8 | -0.14 | 실측 | [[gpqa-diamond]] 72.0%×0.4, [[humanitys-last-exam]] 8.0%×0.3 |
-| 추론 | 47.3 | -0.18 | 실측 | [[gpqa-diamond]] 72.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
-| 코딩 | 58.7 | +0.58 | 실측 | [[terminal-bench]] 36.0%×0.5 |
+| 전문 지식 | 47.9 | -0.14 | 실측 | [[gpqa-diamond]] 72.0%×0.4, [[humanitys-last-exam]] 8.0%×0.3 |
+| 추론 | 47.4 | -0.17 | 실측 | [[gpqa-diamond]] 72.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
+| 코딩 | 58.8 | +0.59 | 실측 | [[terminal-bench]] 36.0%×0.5 |
 | 에이전트 | 60.5 | +0.7 | 실측 | [[terminal-bench]] 36.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

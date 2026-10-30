@@ -5,7 +5,7 @@ creator: Amazon
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.52
-output_speed_tps: 179.0
+output_speed_tps: 173.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -13,9 +13,9 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 34.7, z: -0.65, r: 40.2, estimated: false }  # 전문 지식
-  reasoning: { s: 30.7, z: -0.68, r: 39.8, estimated: false }  # 추론
+  reasoning: { s: 30.7, z: -0.68, r: 39.9, estimated: false }  # 추론
   coding: { s: 10.6, z: -0.89, r: 36.7, estimated: false }  # 코딩
-  agentic: { s: 10.6, z: -0.81, r: 37.8, estimated: false }  # 에이전트
+  agentic: { s: 10.6, z: -0.81, r: 37.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 46.6, z: -1.27, r: 31.0, estimated: false }  # 멀티모달
   long_context: { s: 21.3, z: -0.93, r: 36.1, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova 2.0 Lite (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-29
-timestamp: 2026-10-29T00:00:00Z
+updated: 2026-10-30
+timestamp: 2026-10-30T00:00:00Z
 ---
 
 # Nova 2.0 Lite (non-reasoning)
@@ -37,16 +37,16 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None**
 - **약점**: 긴문맥, 멀티모달
 
 ## 실용 지표
-`입력 $0.3 · 출력 $2.5 · 혼합 $0.52/1M · 179.0 t/s · TTFT 1.09s · 1M ctx`
+`입력 $0.3 · 출력 $2.5 · 혼합 $0.52/1M · 173.0 t/s · TTFT 1.11s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 40.2 | -0.65 | 실측 | [[gpqa-diamond]] 60.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
-| 추론 | 39.8 | -0.68 | 실측 | [[gpqa-diamond]] 60.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
+| 추론 | 39.9 | -0.68 | 실측 | [[gpqa-diamond]] 60.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 36.7 | -0.89 | 실측 | [[terminal-bench]] 7.0%×0.5 |
-| 에이전트 | 37.8 | -0.81 | 실측 | [[terminal-bench]] 7.0%×1.0 |
+| 에이전트 | 37.9 | -0.81 | 실측 | [[terminal-bench]] 7.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 31.0 | -1.27 | 실측 | [[mmmu-pro]] 49.0%×1.0 |
 | 긴문맥 | 36.1 | -0.93 | 실측 | [[aa-lcr]] 19.0%×1.0 |
