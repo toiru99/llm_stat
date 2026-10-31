@@ -8,13 +8,13 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
 status: past
-size_class: Unknown
+size_class: Medium
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
-  knowledge: { s: 47.5, z: -0.09, r: 48.7, estimated: false }  # 전문 지식
-  reasoning: { s: 42.8, z: -0.13, r: 48.0, estimated: false }  # 추론
-  coding: { s: 7.6, z: -0.99, r: 35.2, estimated: false }  # 코딩
+  knowledge: { s: 47.5, z: -0.08, r: 48.7, estimated: false }  # 전문 지식
+  reasoning: { s: 42.8, z: -0.13, r: 48.1, estimated: false }  # 추론
+  coding: { s: 7.6, z: -0.99, r: 35.1, estimated: false }  # 코딩
   agentic: { s: 7.6, z: -0.91, r: 36.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama Nemotron Super 49B v1.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Llama Nemotron Super 49B v1.5
 
-NVIDIA · Open · Unknown · 컨텍스트 128k · 종합지능 **None** · ⚠️ past(구세대)
+NVIDIA · Open · Medium · 컨텍스트 128k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 전문 지식, 추론
@@ -43,9 +43,9 @@ NVIDIA · Open · Unknown · 컨텍스트 128k · 종합지능 **None** · ⚠�
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 48.7 | -0.09 | 실측 | [[gpqa-diamond]] 75.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
-| 추론 | 48.0 | -0.13 | 실측 | [[gpqa-diamond]] 75.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
-| 코딩 | 35.2 | -0.99 | 실측 | [[terminal-bench]] 5.0%×0.5 |
+| 전문 지식 | 48.7 | -0.08 | 실측 | [[gpqa-diamond]] 75.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
+| 추론 | 48.1 | -0.13 | 실측 | [[gpqa-diamond]] 75.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
+| 코딩 | 35.1 | -0.99 | 실측 | [[terminal-bench]] 5.0%×0.5 |
 | 에이전트 | 36.3 | -0.91 | 실측 | [[terminal-bench]] 5.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

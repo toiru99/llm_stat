@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 95.0, z: 2.01, r: 80.1, estimated: false }  # 전문 지식
+  knowledge: { s: 95.0, z: 2.01, r: 80.2, estimated: false }  # 전문 지식
   reasoning: { s: 91.2, z: 2.06, r: 80.9, estimated: false }  # 추론
   coding: { s: 96.7, z: 2.0, r: 80.0, estimated: false }  # 코딩
   agentic: { s: 98.3, z: 2.21, r: 83.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 98.6, z: 1.32, r: 69.8, estimated: false }  # 멀티모달
   long_context: { s: 95.5, z: 1.3, r: 69.5, estimated: false }  # 긴문맥
-  instruction: { s: 80.3, z: 1.15, r: 67.3, estimated: true }  # 지시 따르기
+  instruction: { s: 80.3, z: 1.16, r: 67.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 5.5 (xhigh with fallback)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Claude Opus 5.5 (xhigh with fallback)
@@ -37,20 +37,20 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **57.0**
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 85.0 t/s · TTFT 121.2s · 1M ctx` · 가성비 19.4
+`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 85.0 t/s · TTFT 127.23s · 1M ctx` · 가성비 19.4
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 80.1 | +2.01 | 실측 | [[humanitys-last-exam]] 58.0%×0.3 |
+| 전문 지식 | 80.2 | +2.01 | 실측 | [[humanitys-last-exam]] 58.0%×0.3 |
 | 추론 | 80.9 | +2.06 | 실측 | [[critpt]] 63.0%×1.0, [[humanitys-last-exam]] 58.0%×1.0 |
 | 코딩 | 80.0 | +2.0 | 실측 | [[scicode]] 65.0%×1.0 |
 | 에이전트 | 83.1 | +2.21 | 실측 | [[gdpval]] 1835.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 69.8 | +1.32 | 실측 | [[mmmu-pro]] 87.0%×1.0 |
 | 긴문맥 | 69.5 | +1.3 | 실측 | [[aa-lcr]] 85.0%×1.0 |
-| 지시 따르기 | 67.3 | +1.15 | 추정 | (추정) |
+| 지시 따르기 | 67.4 | +1.16 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6.1 Terra (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # GPT-6.1 Terra (medium)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **38.0**
 - **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
-`입력 $1.0 · 출력 $5.0 · 혼합 $0.735/1M · 91.0 t/s · TTFT 2.33s · 1M ctx` · 가성비 51.7
+`입력 $1.0 · 출력 $5.0 · 혼합 $0.735/1M · 91.0 t/s · TTFT 3.11s · 1M ctx` · 가성비 51.7
 
 ## 레이더 8축 (평균=50 기준선)
 

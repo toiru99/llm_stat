@@ -12,8 +12,8 @@ size_class: Small
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 18.8, z: -1.35, r: 29.7, estimated: false }  # 전문 지식
-  reasoning: { s: 17.3, z: -1.28, r: 30.7, estimated: false }  # 추론
+  knowledge: { s: 18.8, z: -1.35, r: 29.8, estimated: false }  # 전문 지식
+  reasoning: { s: 17.3, z: -1.28, r: 30.8, estimated: false }  # 추론
   coding: { s: 4.3, z: -1.1, r: 33.5, estimated: true }  # 코딩
   agentic: { s: 2.4, z: -1.09, r: 33.6, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen2.5 Coder 7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Qwen2.5 Coder 7B
@@ -43,8 +43,8 @@ Alibaba · Open · Small · 컨텍스트 131k · 종합지능 **None** · ⚠️
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 29.7 | -1.35 | 실측 | [[gpqa-diamond]] 34.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 30.7 | -1.28 | 실측 | [[gpqa-diamond]] 34.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 전문 지식 | 29.8 | -1.35 | 실측 | [[gpqa-diamond]] 34.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 추론 | 30.8 | -1.28 | 실측 | [[gpqa-diamond]] 34.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 33.5 | -1.1 | 추정 | (추정) |
 | 에이전트 | 33.6 | -1.09 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |

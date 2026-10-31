@@ -12,9 +12,9 @@ size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 78.1, z: 1.26, r: 69.0, estimated: false }  # 전문 지식
-  reasoning: { s: 75.4, z: 1.34, r: 70.1, estimated: false }  # 추론
-  coding: { s: 63.6, z: 0.89, r: 63.4, estimated: false }  # 코딩
+  knowledge: { s: 78.1, z: 1.27, r: 69.0, estimated: false }  # 전문 지식
+  reasoning: { s: 75.4, z: 1.34, r: 70.2, estimated: false }  # 추론
+  coding: { s: 63.6, z: 0.89, r: 63.3, estimated: false }  # 코딩
   agentic: { s: 58.9, z: 0.85, r: 62.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Pro (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # DeepSeek V4 Pro (high)
@@ -33,7 +33,7 @@ timestamp: 2026-10-30T00:00:00Z
 DeepSeek · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 추론, 지시 따르기
+- **강점**: 추론, 전문 지식
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
@@ -43,9 +43,9 @@ DeepSeek · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 69.0 | +1.26 | 실측 | [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 35.0%×0.3 |
-| 추론 | 70.1 | +1.34 | 실측 | [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 35.0%×1.0 |
-| 코딩 | 63.4 | +0.89 | 실측 | [[terminal-bench]] 42.0%×0.5 |
+| 전문 지식 | 69.0 | +1.27 | 실측 | [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 35.0%×0.3 |
+| 추론 | 70.2 | +1.34 | 실측 | [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 35.0%×1.0 |
+| 코딩 | 63.3 | +0.89 | 실측 | [[terminal-bench]] 42.0%×0.5 |
 | 에이전트 | 62.8 | +0.85 | 실측 | [[gdpval]] 1160.0%×1.0, [[tau3-banking]] 26.0%×1.0, [[terminal-bench]] 42.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

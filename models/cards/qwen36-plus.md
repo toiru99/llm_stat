@@ -5,14 +5,14 @@ creator: Alibaba
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.435
-output_speed_tps: 56.0
+output_speed_tps: 55.0
 context_window: 1000000
 status: past
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 71.1, z: 0.96, r: 64.3, estimated: false }  # 전문 지식
+  knowledge: { s: 71.1, z: 0.96, r: 64.4, estimated: false }  # 전문 지식
   reasoning: { s: 67.8, z: 1.0, r: 65.0, estimated: false }  # 추론
   coding: { s: 66.7, z: 0.99, r: 64.9, estimated: false }  # 코딩
   agentic: { s: 53.7, z: 0.67, r: 60.1, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.6 Plus
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Qwen3.6 Plus
@@ -37,13 +37,13 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** ·
 - **약점**: 멀티모달, 에이전트
 
 ## 실용 지표
-`입력 $0.5 · 출력 $3.0 · 혼합 $0.435/1M · 56.0 t/s · TTFT 2.04s · 1M ctx`
+`입력 $0.5 · 출력 $3.0 · 혼합 $0.435/1M · 55.0 t/s · TTFT 2.01s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 64.3 | +0.96 | 실측 | [[gpqa-diamond]] 88.0%×0.4, [[humanitys-last-exam]] 28.0%×0.3 |
+| 전문 지식 | 64.4 | +0.96 | 실측 | [[gpqa-diamond]] 88.0%×0.4, [[humanitys-last-exam]] 28.0%×0.3 |
 | 추론 | 65.0 | +1.0 | 실측 | [[gpqa-diamond]] 88.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
 | 코딩 | 64.9 | +0.99 | 실측 | [[terminal-bench]] 44.0%×0.5 |
 | 에이전트 | 60.1 | +0.67 | 실측 | [[gdpval]] 997.0%×1.0, [[tau3-banking]] 21.0%×1.0, [[terminal-bench]] 44.0%×1.0 |

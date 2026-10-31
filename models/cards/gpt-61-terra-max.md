@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 51.0
 price_blended_usd_1m: 0.735
-output_speed_tps: 91.0
+output_speed_tps: 97.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 75.0, z: 1.13, r: 66.9, estimated: false }  # 전문 지식
   reasoning: { s: 82.6, z: 1.67, r: 75.0, estimated: false }  # 추론
   coding: { s: 80.0, z: 1.44, r: 71.6, estimated: false }  # 코딩
-  agentic: { s: 79.1, z: 1.54, r: 73.2, estimated: false }  # 에이전트
+  agentic: { s: 79.1, z: 1.54, r: 73.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 95.9, z: 1.18, r: 67.8, estimated: false }  # 멀티모달
+  multimodal: { s: 95.9, z: 1.19, r: 67.8, estimated: false }  # 멀티모달
   long_context: { s: 93.3, z: 1.23, r: 68.5, estimated: false }  # 긴문맥
   instruction: { s: 80.0, z: 1.14, r: 67.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6.1 Terra (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # GPT-6.1 Terra (max)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **51.0**
 - **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
-`입력 $1.0 · 출력 $5.0 · 혼합 $0.735/1M · 91.0 t/s · TTFT 233.43s · 1M ctx` · 가성비 69.4
+`입력 $1.0 · 출력 $5.0 · 혼합 $0.735/1M · 97.0 t/s · TTFT 274.62s · 1M ctx` · 가성비 69.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,9 +46,9 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **51.0**
 | 전문 지식 | 66.9 | +1.13 | 실측 | [[humanitys-last-exam]] 46.0%×0.3 |
 | 추론 | 75.0 | +1.67 | 실측 | [[critpt]] 65.0%×1.0, [[humanitys-last-exam]] 46.0%×1.0 |
 | 코딩 | 71.6 | +1.44 | 실측 | [[scicode]] 55.0%×1.0 |
-| 에이전트 | 73.2 | +1.54 | 실측 | [[gdpval]] 1476.0%×1.0 |
+| 에이전트 | 73.1 | +1.54 | 실측 | [[gdpval]] 1476.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 67.8 | +1.18 | 실측 | [[mmmu-pro]] 85.0%×1.0 |
+| 멀티모달 | 67.8 | +1.19 | 실측 | [[mmmu-pro]] 85.0%×1.0 |
 | 긴문맥 | 68.5 | +1.23 | 실측 | [[aa-lcr]] 83.0%×1.0 |
 | 지시 따르기 | 67.1 | +1.14 | 추정 | (추정) |
 

@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 23.3, z: -1.15, r: 32.7, estimated: false }  # 전문 지식
-  reasoning: { s: 23.3, z: -1.01, r: 34.8, estimated: false }  # 추론
+  reasoning: { s: 23.3, z: -1.01, r: 34.9, estimated: false }  # 추론
   coding: { s: 2.2, z: -1.17, r: 32.5, estimated: true }  # 코딩
   agentic: { s: 2.2, z: -1.1, r: 33.5, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek R1 Distill Llama 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # DeepSeek R1 Distill Llama 8B
@@ -44,7 +44,7 @@ DeepSeek · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠�
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 32.7 | -1.15 | 실측 | [[gpqa-diamond]] 30.0%×0.4 |
-| 추론 | 34.8 | -1.01 | 실측 | [[gpqa-diamond]] 30.0%×1.0 |
+| 추론 | 34.9 | -1.01 | 실측 | [[gpqa-diamond]] 30.0%×1.0 |
 | 코딩 | 32.5 | -1.17 | 추정 | (추정) |
 | 에이전트 | 33.5 | -1.1 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |

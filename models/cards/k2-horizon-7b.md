@@ -13,8 +13,8 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 55.3, z: 0.26, r: 53.9, estimated: false }  # 전문 지식
-  reasoning: { s: 52.0, z: 0.28, r: 54.2, estimated: false }  # 추론
-  coding: { s: 35.0, z: -0.07, r: 49.0, estimated: false }  # 코딩
+  reasoning: { s: 52.0, z: 0.28, r: 54.3, estimated: false }  # 추론
+  coding: { s: 35.0, z: -0.07, r: 48.9, estimated: false }  # 코딩
   agentic: { s: 54.9, z: 0.71, r: 60.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — K2 Horizon 7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # K2 Horizon 7B
@@ -44,8 +44,8 @@ Institute of Foundation Models · Open · Small · 컨텍스트 524k · 종합�
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 53.9 | +0.26 | 실측 | [[gpqa-diamond]] 75.0%×0.4, [[humanitys-last-exam]] 18.0%×0.3 |
-| 추론 | 54.2 | +0.28 | 실측 | [[gpqa-diamond]] 75.0%×1.0, [[humanitys-last-exam]] 18.0%×1.0 |
-| 코딩 | 49.0 | -0.07 | 실측 | [[scicode]] 28.0%×1.0 |
+| 추론 | 54.3 | +0.28 | 실측 | [[gpqa-diamond]] 75.0%×1.0, [[humanitys-last-exam]] 18.0%×1.0 |
+| 코딩 | 48.9 | -0.07 | 실측 | [[scicode]] 28.0%×1.0 |
 | 에이전트 | 60.7 | +0.71 | 실측 | [[gdpval]] 1024.0%×1.0, [[tau3-banking]] 28.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

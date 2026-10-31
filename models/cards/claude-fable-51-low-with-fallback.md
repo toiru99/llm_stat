@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 86.1, z: 1.62, r: 74.3, estimated: false }  # 전문 지식
-  reasoning: { s: 79.1, z: 1.51, r: 72.6, estimated: false }  # 추론
+  reasoning: { s: 79.1, z: 1.51, r: 72.7, estimated: false }  # 추론
   coding: { s: 83.3, z: 1.55, r: 73.3, estimated: false }  # 코딩
   agentic: { s: 77.8, z: 1.5, r: 72.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Fable 5.1 (low with fallback)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Claude Fable 5.1 (low with fallback)
@@ -37,14 +37,14 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **38.0**
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
-`입력 $10.0 · 출력 $50.0 · 혼합 $7.175/1M · 55.0 t/s · TTFT 2.15s · 1M ctx` · 가성비 5.3
+`입력 $10.0 · 출력 $50.0 · 혼합 $7.175/1M · 55.0 t/s · TTFT 2.27s · 1M ctx` · 가성비 5.3
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 74.3 | +1.62 | 실측 | [[gpqa-diamond]] 88.0%×0.4, [[humanitys-last-exam]] 49.0%×0.3 |
-| 추론 | 72.6 | +1.51 | 실측 | [[critpt]] 48.0%×1.0, [[gpqa-diamond]] 88.0%×1.0, [[humanitys-last-exam]] 49.0%×1.0 |
+| 추론 | 72.7 | +1.51 | 실측 | [[critpt]] 48.0%×1.0, [[gpqa-diamond]] 88.0%×1.0, [[humanitys-last-exam]] 49.0%×1.0 |
 | 코딩 | 73.3 | +1.55 | 실측 | [[scicode]] 57.0%×1.0 |
 | 에이전트 | 72.5 | +1.5 | 실측 | [[gdpval]] 1477.0%×1.0, [[tau3-banking]] 39.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

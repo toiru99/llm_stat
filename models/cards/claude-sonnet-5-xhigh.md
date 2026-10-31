@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 63.3, z: 0.61, r: 59.2, estimated: false }  # 전문 지식
-  reasoning: { s: 63.3, z: 0.8, r: 61.9, estimated: false }  # 추론
+  reasoning: { s: 63.3, z: 0.8, r: 62.0, estimated: false }  # 추론
   coding: { s: 78.3, z: 1.38, r: 70.7, estimated: false }  # 코딩
   agentic: { s: 73.2, z: 1.34, r: 70.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Claude Sonnet 5 (xhigh)
@@ -37,14 +37,14 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 - **약점**: 전문 지식, 지시 따르기
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 69.0 t/s · TTFT 20.7s · 1M ctx`
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 69.0 t/s · TTFT 18.76s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 59.2 | +0.61 | 실측 | [[humanitys-last-exam]] 39.0%×0.3 |
-| 추론 | 61.9 | +0.8 | 실측 | [[humanitys-last-exam]] 39.0%×1.0 |
+| 추론 | 62.0 | +0.8 | 실측 | [[humanitys-last-exam]] 39.0%×1.0 |
 | 코딩 | 70.7 | +1.38 | 실측 | [[scicode]] 54.0%×1.0 |
 | 에이전트 | 70.1 | +1.34 | 실측 | [[gdpval]] 1366.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

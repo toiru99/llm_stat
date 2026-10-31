@@ -12,9 +12,9 @@ size_class: Medium
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 26.1, z: -1.03, r: 34.5, estimated: false }  # 전문 지식
-  reasoning: { s: 23.4, z: -1.01, r: 34.9, estimated: false }  # 추론
-  coding: { s: 7.6, z: -0.99, r: 35.2, estimated: false }  # 코딩
+  knowledge: { s: 26.1, z: -1.03, r: 34.6, estimated: false }  # 전문 지식
+  reasoning: { s: 23.4, z: -1.0, r: 35.0, estimated: false }  # 추론
+  coding: { s: 7.6, z: -0.99, r: 35.1, estimated: false }  # 코딩
   agentic: { s: 7.6, z: -0.91, r: 36.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.1 Nemotron 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Llama 3.1 Nemotron 70B
@@ -43,9 +43,9 @@ NVIDIA · Open · Medium · 컨텍스트 128k · 종합지능 **None** · ⚠️
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 34.5 | -1.03 | 실측 | [[gpqa-diamond]] 46.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 34.9 | -1.01 | 실측 | [[gpqa-diamond]] 46.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 35.2 | -0.99 | 실측 | [[terminal-bench]] 5.0%×0.5 |
+| 전문 지식 | 34.6 | -1.03 | 실측 | [[gpqa-diamond]] 46.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 35.0 | -1.0 | 실측 | [[gpqa-diamond]] 46.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 35.1 | -0.99 | 실측 | [[terminal-bench]] 5.0%×0.5 |
 | 에이전트 | 36.3 | -0.91 | 실측 | [[terminal-bench]] 5.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

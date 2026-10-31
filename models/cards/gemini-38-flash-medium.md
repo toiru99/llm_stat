@@ -17,15 +17,15 @@ radar:
   coding: { s: 80.0, z: 1.44, r: 71.6, estimated: false }  # 코딩
   agentic: { s: 83.4, z: 1.69, r: 75.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 94.5, z: 1.12, r: 66.7, estimated: false }  # 멀티모달
-  long_context: { s: 94.4, z: 1.26, r: 69.0, estimated: false }  # 긴문맥
-  instruction: { s: 82.9, z: 1.26, r: 68.9, estimated: true }  # 지시 따르기
+  multimodal: { s: 94.5, z: 1.12, r: 66.8, estimated: false }  # 멀티모달
+  long_context: { s: 94.4, z: 1.27, r: 69.0, estimated: false }  # 긴문맥
+  instruction: { s: 82.8, z: 1.26, r: 68.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.8 Flash (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Gemini 3.8 Flash (medium)
@@ -48,8 +48,8 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **30.0**
 | 코딩 | 71.6 | +1.44 | 실측 | [[scicode]] 55.0%×1.0 |
 | 에이전트 | 75.4 | +1.69 | 실측 | [[gdpval]] 1431.0%×1.0, [[tau3-banking]] 46.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 66.7 | +1.12 | 실측 | [[mmmu-pro]] 84.0%×1.0 |
-| 긴문맥 | 69.0 | +1.26 | 실측 | [[aa-lcr]] 84.0%×1.0 |
+| 멀티모달 | 66.8 | +1.12 | 실측 | [[mmmu-pro]] 84.0%×1.0 |
+| 긴문맥 | 69.0 | +1.27 | 실측 | [[aa-lcr]] 84.0%×1.0 |
 | 지시 따르기 | 68.9 | +1.26 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

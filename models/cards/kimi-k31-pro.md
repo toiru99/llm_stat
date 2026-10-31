@@ -5,7 +5,7 @@ creator: Kimi
 license: Proprietary
 intelligence_index: 46.0
 price_blended_usd_1m: 1.54
-output_speed_tps: 32.0
+output_speed_tps: 31.0
 context_window: 1000000
 status: current
 size_class: Large
@@ -17,15 +17,15 @@ radar:
   coding: { s: 90.0, z: 1.77, r: 76.6, estimated: false }  # 코딩
   agentic: { s: 99.6, z: 2.25, r: 83.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 94.5, z: 1.12, r: 66.7, estimated: false }  # 멀티모달
+  multimodal: { s: 94.5, z: 1.12, r: 66.8, estimated: false }  # 멀티모달
   long_context: { s: 96.6, z: 1.33, r: 70.0, estimated: false }  # 긴문맥
   instruction: { s: 82.8, z: 1.26, r: 68.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K3.1 Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Kimi K3.1 Pro
@@ -37,7 +37,7 @@ Kimi · Proprietary · Large · 컨텍스트 1M · 종합지능 **46.0**
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 32.0 t/s · TTFT 3.1s · 1M ctx` · 가성비 29.9
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 31.0 t/s · TTFT 3.27s · 1M ctx` · 가성비 29.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -48,7 +48,7 @@ Kimi · Proprietary · Large · 컨텍스트 1M · 종합지능 **46.0**
 | 코딩 | 76.6 | +1.77 | 실측 | [[scicode]] 61.0%×1.0 |
 | 에이전트 | 83.7 | +2.25 | 실측 | [[gdpval]] 1858.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 66.7 | +1.12 | 실측 | [[mmmu-pro]] 84.0%×1.0 |
+| 멀티모달 | 66.8 | +1.12 | 실측 | [[mmmu-pro]] 84.0%×1.0 |
 | 긴문맥 | 70.0 | +1.33 | 실측 | [[aa-lcr]] 86.0%×1.0 |
 | 지시 따르기 | 68.9 | +1.26 | 추정 | (추정) |
 

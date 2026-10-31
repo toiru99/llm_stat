@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 27.3, z: -0.97, r: 35.4, estimated: false }  # 전문 지식
-  reasoning: { s: 24.3, z: -0.97, r: 35.5, estimated: false }  # 추론
+  reasoning: { s: 24.3, z: -0.96, r: 35.6, estimated: false }  # 추론
   coding: { s: 9.1, z: -0.94, r: 35.9, estimated: false }  # 코딩
   agentic: { s: 9.1, z: -0.86, r: 37.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Large 2 (Nov)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Mistral Large 2 (Nov)
@@ -34,7 +34,7 @@ Mistral · Open · Medium · 컨텍스트 128k · 종합지능 **None** · ⚠�
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 에이전트
-- **약점**: 추론, 지시 따르기
+- **약점**: 전문 지식, 지시 따르기
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 128k ctx`
@@ -44,7 +44,7 @@ Mistral · Open · Medium · 컨텍스트 128k · 종합지능 **None** · ⚠�
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 35.4 | -0.97 | 실측 | [[gpqa-diamond]] 49.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
-| 추론 | 35.5 | -0.97 | 실측 | [[gpqa-diamond]] 49.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
+| 추론 | 35.6 | -0.96 | 실측 | [[gpqa-diamond]] 49.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 35.9 | -0.94 | 실측 | [[terminal-bench]] 6.0%×0.5 |
 | 에이전트 | 37.1 | -0.86 | 실측 | [[terminal-bench]] 6.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

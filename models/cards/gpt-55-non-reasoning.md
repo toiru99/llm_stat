@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 4.35
-output_speed_tps: 70.0
+output_speed_tps: 67.0
 context_window: 922000
 status: past
 size_class: Unknown
@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 53.8, z: 0.19, r: 52.9, estimated: false }  # 전문 지식
-  reasoning: { s: 49.8, z: 0.18, r: 52.8, estimated: false }  # 추론
+  reasoning: { s: 49.8, z: 0.19, r: 52.8, estimated: false }  # 추론
   coding: { s: 74.2, z: 1.25, r: 68.7, estimated: false }  # 코딩
   agentic: { s: 52.0, z: 0.61, r: 59.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.5 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # GPT-5.5 (non-reasoning)
@@ -37,14 +37,14 @@ OpenAI · Proprietary · Unknown · 컨텍스트 922k · 종합지능 **None** �
 - **약점**: 추론, 지시 따르기
 
 ## 실용 지표
-`입력 $5.0 · 출력 $30.0 · 혼합 $4.35/1M · 70.0 t/s · TTFT 1.02s · 922k ctx`
+`입력 $5.0 · 출력 $30.0 · 혼합 $4.35/1M · 67.0 t/s · TTFT 1.02s · 922k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 52.9 | +0.19 | 실측 | [[gpqa-diamond]] 77.0%×0.4, [[humanitys-last-exam]] 14.0%×0.3 |
-| 추론 | 52.8 | +0.18 | 실측 | [[gpqa-diamond]] 77.0%×1.0, [[humanitys-last-exam]] 14.0%×1.0 |
+| 추론 | 52.8 | +0.19 | 실측 | [[gpqa-diamond]] 77.0%×1.0, [[humanitys-last-exam]] 14.0%×1.0 |
 | 코딩 | 68.7 | +1.25 | 실측 | [[terminal-bench]] 49.0%×0.5 |
 | 에이전트 | 59.2 | +0.61 | 실측 | [[gdpval]] 978.0%×1.0, [[tau3-banking]] 15.0%×1.0, [[terminal-bench]] 49.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

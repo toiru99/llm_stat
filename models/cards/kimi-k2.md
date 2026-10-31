@@ -5,7 +5,7 @@ creator: Kimi
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.743
-output_speed_tps: 47.0
+output_speed_tps: 48.0
 context_window: 128000
 status: past
 size_class: Large
@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 48.8, z: -0.03, r: 49.6, estimated: false }  # 전문 지식
-  reasoning: { s: 44.0, z: -0.08, r: 48.8, estimated: false }  # 추론
+  reasoning: { s: 44.0, z: -0.08, r: 48.9, estimated: false }  # 추론
   coding: { s: 24.2, z: -0.43, r: 43.5, estimated: false }  # 코딩
   agentic: { s: 24.2, z: -0.34, r: 44.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Kimi K2
@@ -37,14 +37,14 @@ Kimi · Open · Large · 컨텍스트 128k · 종합지능 **None** · ⚠️ pa
 - **약점**: 코딩, 지시 따르기
 
 ## 실용 지표
-`입력 $0.57 · 출력 $2.3 · 혼합 $0.743/1M · 47.0 t/s · TTFT 1.89s · 128k ctx`
+`입력 $0.57 · 출력 $2.3 · 혼합 $0.743/1M · 48.0 t/s · TTFT 1.9s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 49.6 | -0.03 | 실측 | [[gpqa-diamond]] 77.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
-| 추론 | 48.8 | -0.08 | 실측 | [[gpqa-diamond]] 77.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
+| 추론 | 48.9 | -0.08 | 실측 | [[gpqa-diamond]] 77.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
 | 코딩 | 43.5 | -0.43 | 실측 | [[terminal-bench]] 16.0%×0.5 |
 | 에이전트 | 44.9 | -0.34 | 실측 | [[terminal-bench]] 16.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

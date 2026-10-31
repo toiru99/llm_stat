@@ -4,17 +4,17 @@ title: Hy3-preview
 creator: Tencent
 license: Open
 intelligence_index: None
-price_blended_usd_1m: 0.047
+price_blended_usd_1m: 0.0483
 output_speed_tps: None
 context_window: 256000
 status: past
-size_class: Unknown
+size_class: Large
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 70.4, z: 0.93, r: 63.9, estimated: false }  # 전문 지식
-  reasoning: { s: 67.3, z: 0.97, r: 64.6, estimated: false }  # 추론
-  coding: { s: 51.5, z: 0.48, r: 57.3, estimated: false }  # 코딩
+  reasoning: { s: 67.3, z: 0.98, r: 64.6, estimated: false }  # 추론
+  coding: { s: 51.5, z: 0.48, r: 57.2, estimated: false }  # 코딩
   agentic: { s: 51.5, z: 0.6, r: 58.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,28 +24,28 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hy3-preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Hy3-preview
 
-Tencent · Open · Unknown · 컨텍스트 256k · 종합지능 **None** · ⚠️ past(구세대)
+Tencent · Open · Large · 컨텍스트 256k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 전문 지식
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.21 · 혼합 $0.047/1M · None t/s · TTFT Nones · 256k ctx`
+`입력 $0.06 · 출력 $0.21 · 혼합 $0.0483/1M · None t/s · TTFT Nones · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 63.9 | +0.93 | 실측 | [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 28.0%×0.3 |
-| 추론 | 64.6 | +0.97 | 실측 | [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
-| 코딩 | 57.3 | +0.48 | 실측 | [[terminal-bench]] 34.0%×0.5 |
+| 추론 | 64.6 | +0.98 | 실측 | [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
+| 코딩 | 57.2 | +0.48 | 실측 | [[terminal-bench]] 34.0%×0.5 |
 | 에이전트 | 58.9 | +0.6 | 실측 | [[terminal-bench]] 34.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

@@ -12,7 +12,7 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 91.7, z: 1.86, r: 77.9, estimated: false }  # 전문 지식
+  knowledge: { s: 91.7, z: 1.86, r: 78.0, estimated: false }  # 전문 지식
   reasoning: { s: 86.1, z: 1.83, r: 77.4, estimated: false }  # 추론
   coding: { s: 88.3, z: 1.72, r: 75.8, estimated: false }  # 코딩
   agentic: { s: 91.8, z: 1.98, r: 79.7, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 5.5 (high with fallback)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Claude Opus 5.5 (high with fallback)
@@ -37,13 +37,13 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **52.0**
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 80.0 t/s · TTFT 30.74s · 1M ctx` · 가성비 17.7
+`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 80.0 t/s · TTFT 34.52s · 1M ctx` · 가성비 17.7
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 77.9 | +1.86 | 실측 | [[humanitys-last-exam]] 56.0%×0.3 |
+| 전문 지식 | 78.0 | +1.86 | 실측 | [[humanitys-last-exam]] 56.0%×0.3 |
 | 추론 | 77.4 | +1.83 | 실측 | [[critpt]] 58.0%×1.0, [[humanitys-last-exam]] 56.0%×1.0 |
 | 코딩 | 75.8 | +1.72 | 실측 | [[scicode]] 60.0%×1.0 |
 | 에이전트 | 79.7 | +1.98 | 실측 | [[gdpval]] 1714.0%×1.0 |

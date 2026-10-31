@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.6 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # GLM-4.6 (non-reasoning)
@@ -37,7 +37,7 @@ Z AI · Open · Large · 컨텍스트 200k · 종합지능 **None** · ⚠️ pa
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.57 · 출력 $2.2 · 혼합 $0.5835/1M · 36.0 t/s · TTFT 5.09s · 200k ctx`
+`입력 $0.57 · 출력 $2.2 · 혼합 $0.5835/1M · 36.0 t/s · TTFT 4.53s · 200k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

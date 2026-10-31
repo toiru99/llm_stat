@@ -12,9 +12,9 @@ size_class: Large
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 53.9, z: 0.2, r: 52.9, estimated: false }  # 전문 지식
-  reasoning: { s: 50.0, z: 0.2, r: 52.9, estimated: false }  # 추론
-  coding: { s: 54.5, z: 0.59, r: 58.8, estimated: false }  # 코딩
+  knowledge: { s: 53.9, z: 0.2, r: 53.0, estimated: false }  # 전문 지식
+  reasoning: { s: 50.0, z: 0.2, r: 53.0, estimated: false }  # 추론
+  coding: { s: 54.5, z: 0.58, r: 58.8, estimated: false }  # 코딩
   agentic: { s: 54.5, z: 0.7, r: 60.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2.5-Pro (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # MiMo-V2.5-Pro (non-reasoning)
@@ -43,9 +43,9 @@ Xiaomi · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ pa
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 52.9 | +0.2 | 실측 | [[gpqa-diamond]] 76.0%×0.4, [[humanitys-last-exam]] 15.0%×0.3 |
-| 추론 | 52.9 | +0.2 | 실측 | [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 15.0%×1.0 |
-| 코딩 | 58.8 | +0.59 | 실측 | [[terminal-bench]] 36.0%×0.5 |
+| 전문 지식 | 53.0 | +0.2 | 실측 | [[gpqa-diamond]] 76.0%×0.4, [[humanitys-last-exam]] 15.0%×0.3 |
+| 추론 | 53.0 | +0.2 | 실측 | [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 15.0%×1.0 |
+| 코딩 | 58.8 | +0.58 | 실측 | [[terminal-bench]] 36.0%×0.5 |
 | 에이전트 | 60.5 | +0.7 | 실측 | [[terminal-bench]] 36.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

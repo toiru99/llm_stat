@@ -5,7 +5,7 @@ creator: Meta
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.228
-output_speed_tps: 130.0
+output_speed_tps: 133.0
 context_window: 10000000
 status: current
 size_class: Medium
@@ -13,9 +13,9 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 34.7, z: -0.65, r: 40.3, estimated: false }  # 전문 지식
-  reasoning: { s: 31.0, z: -0.67, r: 40.0, estimated: false }  # 추론
+  reasoning: { s: 31.0, z: -0.66, r: 40.1, estimated: false }  # 추론
   coding: { s: 16.6, z: -0.69, r: 39.7, estimated: false }  # 코딩
-  agentic: { s: 5.7, z: -0.98, r: 35.4, estimated: false }  # 에이전트
+  agentic: { s: 5.7, z: -0.98, r: 35.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 52.1, z: -1.0, r: 35.0, estimated: false }  # 멀티모달
   long_context: { s: 31.5, z: -0.62, r: 40.6, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 4 Scout
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Llama 4 Scout
@@ -37,16 +37,16 @@ Meta · Open · Medium · 컨텍스트 10M · 종합지능 **None**
 - **약점**: 에이전트, 멀티모달
 
 ## 실용 지표
-`입력 $0.18 · 출력 $0.66 · 혼합 $0.228/1M · 130.0 t/s · TTFT 0.79s · 10M ctx`
+`입력 $0.18 · 출력 $0.66 · 혼합 $0.228/1M · 133.0 t/s · TTFT 0.82s · 10M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 40.3 | -0.65 | 실측 | [[gpqa-diamond]] 59.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 40.0 | -0.67 | 실측 | [[gpqa-diamond]] 59.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 추론 | 40.1 | -0.66 | 실측 | [[gpqa-diamond]] 59.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 39.7 | -0.69 | 실측 | [[scicode]] 21.0%×1.0, [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 35.4 | -0.98 | 실측 | [[gdpval]] 156.0%×1.0, [[tau3-banking]] 3.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
+| 에이전트 | 35.3 | -0.98 | 실측 | [[gdpval]] 156.0%×1.0, [[tau3-banking]] 3.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 35.0 | -1.0 | 실측 | [[mmmu-pro]] 53.0%×1.0 |
 | 긴문맥 | 40.6 | -0.62 | 실측 | [[aa-lcr]] 28.0%×1.0 |

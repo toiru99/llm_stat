@@ -5,7 +5,7 @@ creator: Amazon
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.52
-output_speed_tps: 187.0
+output_speed_tps: 183.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 55.0, z: 0.25, r: 53.7, estimated: false }  # 전문 지식
-  reasoning: { s: 50.4, z: 0.21, r: 53.2, estimated: false }  # 추론
+  reasoning: { s: 50.4, z: 0.22, r: 53.3, estimated: false }  # 추론
   coding: { s: 25.8, z: -0.38, r: 44.3, estimated: false }  # 코딩
   agentic: { s: 22.9, z: -0.39, r: 44.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova 2.0 Lite (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Nova 2.0 Lite (high)
@@ -37,14 +37,14 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None**
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $2.5 · 혼합 $0.52/1M · 187.0 t/s · TTFT 14.68s · 1M ctx`
+`입력 $0.3 · 출력 $2.5 · 혼합 $0.52/1M · 183.0 t/s · TTFT 14.37s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 53.7 | +0.25 | 실측 | [[gpqa-diamond]] 81.0%×0.4, [[humanitys-last-exam]] 12.0%×0.3 |
-| 추론 | 53.2 | +0.21 | 실측 | [[gpqa-diamond]] 81.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
+| 추론 | 53.3 | +0.22 | 실측 | [[gpqa-diamond]] 81.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
 | 코딩 | 44.3 | -0.38 | 실측 | [[terminal-bench]] 17.0%×0.5 |
 | 에이전트 | 44.2 | -0.39 | 실측 | [[gdpval]] 374.0%×1.0, [[terminal-bench]] 17.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

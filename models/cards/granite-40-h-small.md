@@ -12,10 +12,10 @@ size_class: Small
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 23.4, z: -1.15, r: 32.8, estimated: false }  # 전문 지식
-  reasoning: { s: 21.1, z: -1.11, r: 33.3, estimated: false }  # 추론
+  knowledge: { s: 23.4, z: -1.14, r: 32.8, estimated: false }  # 전문 지식
+  reasoning: { s: 21.1, z: -1.11, r: 33.4, estimated: false }  # 추론
   coding: { s: 3.0, z: -1.14, r: 32.9, estimated: false }  # 코딩
-  agentic: { s: 3.0, z: -1.07, r: 34.0, estimated: false }  # 에이전트
+  agentic: { s: 3.0, z: -1.07, r: 33.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 12.4, z: -1.2, r: 32.0, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.0 H Small
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Granite 4.0 H Small
@@ -34,7 +34,7 @@ IBM · Open · Small · 컨텍스트 128k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 지시 따르기
-- **약점**: 전문 지식, 긴문맥
+- **약점**: 코딩, 긴문맥
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 128k ctx`
@@ -43,10 +43,10 @@ IBM · Open · Small · 컨텍스트 128k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 32.8 | -1.15 | 실측 | [[gpqa-diamond]] 42.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 33.3 | -1.11 | 실측 | [[gpqa-diamond]] 42.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 전문 지식 | 32.8 | -1.14 | 실측 | [[gpqa-diamond]] 42.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 33.4 | -1.11 | 실측 | [[gpqa-diamond]] 42.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 32.9 | -1.14 | 실측 | [[terminal-bench]] 2.0%×0.5 |
-| 에이전트 | 34.0 | -1.07 | 실측 | [[terminal-bench]] 2.0%×1.0 |
+| 에이전트 | 33.9 | -1.07 | 실측 | [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 32.0 | -1.2 | 실측 | [[aa-lcr]] 11.0%×1.0 |

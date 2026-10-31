@@ -12,20 +12,20 @@ size_class: Small
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 12.2, z: -1.64, r: 25.3, estimated: false }  # 전문 지식
-  reasoning: { s: 11.5, z: -1.55, r: 26.8, estimated: false }  # 추론
-  coding: { s: 0.0, z: -1.24, r: 31.4, estimated: false }  # 코딩
-  agentic: { s: 0.0, z: -1.17, r: 32.4, estimated: false }  # 에이전트
+  knowledge: { s: 12.2, z: -1.64, r: 25.4, estimated: false }  # 전문 지식
+  reasoning: { s: 11.5, z: -1.54, r: 26.9, estimated: false }  # 추론
+  coding: { s: 0.0, z: -1.24, r: 31.3, estimated: false }  # 코딩
+  agentic: { s: 0.0, z: -1.18, r: 32.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 13.7, z: -2.91, r: 6.4, estimated: false }  # 멀티모달
+  multimodal: { s: 13.7, z: -2.91, r: 6.3, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.57, r: 26.5, estimated: false }  # 긴문맥
   instruction: { s: 11.3, z: -1.74, r: 24.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Molmo 7B-D
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Molmo 7B-D
@@ -43,12 +43,12 @@ Allen Institute for AI · Open · Small · 컨텍스트 4k · 종합지능 **Non
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 25.3 | -1.64 | 실측 | [[gpqa-diamond]] 24.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 26.8 | -1.55 | 실측 | [[gpqa-diamond]] 24.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 31.4 | -1.24 | 실측 | [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 32.4 | -1.17 | 실측 | [[terminal-bench]] 0.0%×1.0 |
+| 전문 지식 | 25.4 | -1.64 | 실측 | [[gpqa-diamond]] 24.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 추론 | 26.9 | -1.54 | 실측 | [[gpqa-diamond]] 24.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 31.3 | -1.24 | 실측 | [[terminal-bench]] 0.0%×0.5 |
+| 에이전트 | 32.4 | -1.18 | 실측 | [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 6.4 | -2.91 | 실측 | [[mmmu-pro]] 25.0%×1.0 |
+| 멀티모달 | 6.3 | -2.91 | 실측 | [[mmmu-pro]] 25.0%×1.0 |
 | 긴문맥 | 26.5 | -1.57 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 24.0 | -1.74 | 실측 | [[ifbench]] 20.0%×1.0 |
 

@@ -5,17 +5,17 @@ creator: Google
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.331
-output_speed_tps: 221.0
+output_speed_tps: 208.0
 context_window: 1000000
 status: past
 size_class: Unknown
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
-  knowledge: { s: 53.7, z: 0.19, r: 52.8, estimated: false }  # 전문 지식
-  reasoning: { s: 49.3, z: 0.16, r: 52.4, estimated: false }  # 추론
+  knowledge: { s: 53.7, z: 0.19, r: 52.9, estimated: false }  # 전문 지식
+  reasoning: { s: 49.3, z: 0.16, r: 52.5, estimated: false }  # 추론
   coding: { s: 21.2, z: -0.53, r: 42.0, estimated: false }  # 코딩
-  agentic: { s: 21.2, z: -0.44, r: 43.3, estimated: false }  # 에이전트
+  agentic: { s: 21.2, z: -0.45, r: 43.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 74.0, z: 0.09, r: 51.4, estimated: false }  # 멀티모달
   long_context: { s: 73.0, z: 0.62, r: 59.4, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.5 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Gemini 2.5 Flash
@@ -37,16 +37,16 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $0.3 · 출력 $2.5 · 혼합 $0.331/1M · 221.0 t/s · TTFT 14.22s · 1M ctx`
+`입력 $0.3 · 출력 $2.5 · 혼합 $0.331/1M · 208.0 t/s · TTFT 14.26s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 52.8 | +0.19 | 실측 | [[gpqa-diamond]] 79.0%×0.4, [[humanitys-last-exam]] 12.0%×0.3 |
-| 추론 | 52.4 | +0.16 | 실측 | [[gpqa-diamond]] 79.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
+| 전문 지식 | 52.9 | +0.19 | 실측 | [[gpqa-diamond]] 79.0%×0.4, [[humanitys-last-exam]] 12.0%×0.3 |
+| 추론 | 52.5 | +0.16 | 실측 | [[gpqa-diamond]] 79.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
 | 코딩 | 42.0 | -0.53 | 실측 | [[terminal-bench]] 14.0%×0.5 |
-| 에이전트 | 43.3 | -0.44 | 실측 | [[terminal-bench]] 14.0%×1.0 |
+| 에이전트 | 43.3 | -0.45 | 실측 | [[terminal-bench]] 14.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 51.4 | +0.09 | 실측 | [[mmmu-pro]] 69.0%×1.0 |
 | 긴문맥 | 59.4 | +0.62 | 실측 | [[aa-lcr]] 65.0%×1.0 |

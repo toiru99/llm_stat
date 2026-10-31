@@ -10,7 +10,7 @@ context_window: 65500
 status: past
 size_class: Unknown
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
   knowledge: { s: 43.5, z: -0.26, r: 46.1, estimated: false }  # 전문 지식
   reasoning: { s: 39.3, z: -0.29, r: 45.7, estimated: false }  # 추론
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Pro 2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Solar Pro 2

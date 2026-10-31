@@ -12,10 +12,10 @@ size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 65.5, z: 0.71, r: 60.6, estimated: false }  # 전문 지식
-  reasoning: { s: 61.7, z: 0.72, r: 60.8, estimated: false }  # 추론
+  knowledge: { s: 65.5, z: 0.71, r: 60.7, estimated: false }  # 전문 지식
+  reasoning: { s: 61.7, z: 0.72, r: 60.9, estimated: false }  # 추론
   coding: { s: 56.9, z: 0.66, r: 59.9, estimated: false }  # 코딩
-  agentic: { s: 39.9, z: 0.2, r: 52.9, estimated: false }  # 에이전트
+  agentic: { s: 39.9, z: 0.19, r: 52.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 78.7, z: 0.79, r: 61.9, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ring-2.6-1T
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Ring-2.6-1T
@@ -37,16 +37,16 @@ InclusionAI · Open · Large · 컨텍스트 262k · 종합지능 **None**
 - **약점**: 에이전트, 지시 따르기
 
 ## 실용 지표
-`입력 $0.3 · 출력 $2.5 · 혼합 $0.52/1M · 114.0 t/s · TTFT 3.69s · 262k ctx`
+`입력 $0.3 · 출력 $2.5 · 혼합 $0.52/1M · 114.0 t/s · TTFT 3.62s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 60.6 | +0.71 | 실측 | [[gpqa-diamond]] 86.0%×0.4, [[humanitys-last-exam]] 22.0%×0.3 |
-| 추론 | 60.8 | +0.72 | 실측 | [[gpqa-diamond]] 86.0%×1.0, [[humanitys-last-exam]] 22.0%×1.0 |
+| 전문 지식 | 60.7 | +0.71 | 실측 | [[gpqa-diamond]] 86.0%×0.4, [[humanitys-last-exam]] 22.0%×0.3 |
+| 추론 | 60.9 | +0.72 | 실측 | [[gpqa-diamond]] 86.0%×1.0, [[humanitys-last-exam]] 22.0%×1.0 |
 | 코딩 | 59.9 | +0.66 | 실측 | [[scicode]] 45.0%×1.0, [[terminal-bench]] 29.0%×0.5 |
-| 에이전트 | 52.9 | +0.2 | 실측 | [[gdpval]] 753.0%×1.0, [[tau3-banking]] 18.0%×1.0, [[terminal-bench]] 29.0%×1.0 |
+| 에이전트 | 52.9 | +0.19 | 실측 | [[gdpval]] 753.0%×1.0, [[tau3-banking]] 18.0%×1.0, [[terminal-bench]] 29.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 61.9 | +0.79 | 실측 | [[aa-lcr]] 70.0%×1.0 |

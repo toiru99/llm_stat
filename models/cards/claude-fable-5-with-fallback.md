@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 7.7
-output_speed_tps: 66.0
+output_speed_tps: 65.0
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 93.7, z: 1.95, r: 79.3, estimated: false }  # 전문 지식
   reasoning: { s: 93.3, z: 2.15, r: 82.2, estimated: false }  # 추론
-  coding: { s: 91.8, z: 1.83, r: 77.5, estimated: false }  # 코딩
+  coding: { s: 91.8, z: 1.84, r: 77.5, estimated: false }  # 코딩
   agentic: { s: 85.6, z: 1.77, r: 76.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Fable 5 (with fallback)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Claude Fable 5 (with fallback)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $10.0 · 출력 $50.0 · 혼합 $7.7/1M · 66.0 t/s · TTFT 69.69s · 1M ctx`
+`입력 $10.0 · 출력 $50.0 · 혼합 $7.7/1M · 65.0 t/s · TTFT 78.9s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 |---|---|---|---|---|
 | 전문 지식 | 79.3 | +1.95 | 실측 | [[gpqa-diamond]] 93.0%×0.4, [[humanitys-last-exam]] 55.0%×0.3 |
 | 추론 | 82.2 | +2.15 | 실측 | [[gpqa-diamond]] 93.0%×1.0, [[humanitys-last-exam]] 55.0%×1.0 |
-| 코딩 | 77.5 | +1.83 | 실측 | [[scicode]] 61.0%×1.0, [[terminal-bench]] 63.0%×0.5 |
+| 코딩 | 77.5 | +1.84 | 실측 | [[scicode]] 61.0%×1.0, [[terminal-bench]] 63.0%×0.5 |
 | 에이전트 | 76.5 | +1.77 | 실측 | [[gdpval]] 1618.0%×1.0, [[tau3-banking]] 38.0%×1.0, [[terminal-bench]] 63.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

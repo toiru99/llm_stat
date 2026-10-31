@@ -12,8 +12,8 @@ size_class: Small
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 10.8, z: -1.7, r: 24.4, estimated: false }  # 전문 지식
-  reasoning: { s: 10.1, z: -1.61, r: 25.8, estimated: false }  # 추론
+  knowledge: { s: 10.8, z: -1.7, r: 24.5, estimated: false }  # 전문 지식
+  reasoning: { s: 10.1, z: -1.6, r: 25.9, estimated: false }  # 추론
   coding: { s: 1.5, z: -1.19, r: 32.1, estimated: false }  # 코딩
   agentic: { s: 1.5, z: -1.12, r: 33.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 3n E2B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Gemma 3n E2B
@@ -43,8 +43,8 @@ Google · Open · Small · 컨텍스트 32k · 종합지능 **None** · ⚠️ p
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 24.4 | -1.7 | 실측 | [[gpqa-diamond]] 23.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 25.8 | -1.61 | 실측 | [[gpqa-diamond]] 23.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 전문 지식 | 24.5 | -1.7 | 실측 | [[gpqa-diamond]] 23.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 25.9 | -1.6 | 실측 | [[gpqa-diamond]] 23.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 32.1 | -1.19 | 실측 | [[terminal-bench]] 1.0%×0.5 |
 | 에이전트 | 33.2 | -1.12 | 실측 | [[terminal-bench]] 1.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

@@ -12,9 +12,9 @@ size_class: Large
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 24.1, z: -1.12, r: 33.2, estimated: false }  # 전문 지식
-  reasoning: { s: 21.7, z: -1.09, r: 33.7, estimated: false }  # 추론
-  coding: { s: 7.1, z: -1.0, r: 34.9, estimated: true }  # 코딩
+  knowledge: { s: 24.1, z: -1.12, r: 33.3, estimated: false }  # 전문 지식
+  reasoning: { s: 21.7, z: -1.08, r: 33.8, estimated: false }  # 추론
+  coding: { s: 7.1, z: -1.01, r: 34.9, estimated: true }  # 코딩
   agentic: { s: 7.6, z: -0.91, r: 36.3, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba 1.5 Large
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Jamba 1.5 Large
@@ -43,9 +43,9 @@ AI21 Labs · Open · Large · 컨텍스트 256k · 종합지능 **None** · ⚠�
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 33.2 | -1.12 | 실측 | [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 33.7 | -1.09 | 실측 | [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 34.9 | -1.0 | 추정 | (추정) |
+| 전문 지식 | 33.3 | -1.12 | 실측 | [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 33.8 | -1.08 | 실측 | [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 34.9 | -1.01 | 추정 | (추정) |
 | 에이전트 | 36.3 | -0.91 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

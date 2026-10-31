@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 25.0
 price_blended_usd_1m: 1.47
-output_speed_tps: 103.0
+output_speed_tps: 105.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -13,8 +13,8 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 58.3, z: 0.39, r: 55.9, estimated: false }  # 전문 지식
-  reasoning: { s: 45.1, z: -0.03, r: 49.6, estimated: false }  # 추론
-  coding: { s: 70.0, z: 1.1, r: 66.6, estimated: false }  # 코딩
+  reasoning: { s: 45.1, z: -0.02, r: 49.7, estimated: false }  # 추론
+  coding: { s: 70.0, z: 1.1, r: 66.5, estimated: false }  # 코딩
   agentic: { s: 63.3, z: 1.0, r: 65.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5.5 (low with fallback)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Claude Sonnet 5.5 (low with fallback)
@@ -37,15 +37,15 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **25.0**
 - **약점**: 추론, 지시 따르기
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.47/1M · 103.0 t/s · TTFT 1.26s · 1M ctx` · 가성비 17.0
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.47/1M · 105.0 t/s · TTFT 1.3s · 1M ctx` · 가성비 17.0
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 55.9 | +0.39 | 실측 | [[humanitys-last-exam]] 36.0%×0.3 |
-| 추론 | 49.6 | -0.03 | 실측 | [[critpt]] 23.0%×1.0, [[humanitys-last-exam]] 36.0%×1.0 |
-| 코딩 | 66.6 | +1.1 | 실측 | [[scicode]] 49.0%×1.0 |
+| 추론 | 49.7 | -0.02 | 실측 | [[critpt]] 23.0%×1.0, [[humanitys-last-exam]] 36.0%×1.0 |
+| 코딩 | 66.5 | +1.1 | 실측 | [[scicode]] 49.0%×1.0 |
 | 에이전트 | 65.0 | +1.0 | 실측 | [[gdpval]] 1182.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

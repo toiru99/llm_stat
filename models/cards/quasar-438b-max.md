@@ -5,15 +5,15 @@ creator: Multiverse Computing
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.0619
-output_speed_tps: 138.0
+output_speed_tps: 140.0
 context_window: 1000000
 status: current
 size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 54.7, z: 0.23, r: 53.5, estimated: false }  # 전문 지식
-  reasoning: { s: 51.6, z: 0.27, r: 54.0, estimated: false }  # 추론
+  knowledge: { s: 54.7, z: 0.24, r: 53.5, estimated: false }  # 전문 지식
+  reasoning: { s: 51.6, z: 0.27, r: 54.1, estimated: false }  # 추론
   coding: { s: 68.3, z: 1.05, r: 65.7, estimated: false }  # 코딩
   agentic: { s: 60.3, z: 0.9, r: 63.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Quasar 438B (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Quasar 438B (max)
@@ -37,14 +37,14 @@ Multiverse Computing · Proprietary · Large · 컨텍스트 1M · 종합지능 
 - **약점**: 전문 지식, 지시 따르기
 
 ## 실용 지표
-`입력 $0.11 · 출력 $0.33 · 혼합 $0.0619/1M · 138.0 t/s · TTFT 1.39s · 1M ctx`
+`입력 $0.11 · 출력 $0.33 · 혼합 $0.0619/1M · 140.0 t/s · TTFT 1.37s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 53.5 | +0.23 | 실측 | [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 19.0%×0.3 |
-| 추론 | 54.0 | +0.27 | 실측 | [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 19.0%×1.0 |
+| 전문 지식 | 53.5 | +0.24 | 실측 | [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 19.0%×0.3 |
+| 추론 | 54.1 | +0.27 | 실측 | [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 19.0%×1.0 |
 | 코딩 | 65.7 | +1.05 | 실측 | [[scicode]] 48.0%×1.0 |
 | 에이전트 | 63.5 | +0.9 | 실측 | [[gdpval]] 1190.0%×1.0, [[tau3-banking]] 29.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

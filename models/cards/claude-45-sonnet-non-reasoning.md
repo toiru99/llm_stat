@@ -5,15 +5,15 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 2.31
-output_speed_tps: 45.0
+output_speed_tps: 41.0
 context_window: 1000000
 status: past
 size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 46.1, z: -0.14, r: 47.8, estimated: false }  # 전문 지식
-  reasoning: { s: 41.6, z: -0.18, r: 47.2, estimated: false }  # 추론
+  knowledge: { s: 46.1, z: -0.14, r: 47.9, estimated: false }  # 전문 지식
+  reasoning: { s: 41.6, z: -0.18, r: 47.3, estimated: false }  # 추론
   coding: { s: 43.9, z: 0.23, r: 53.4, estimated: false }  # 코딩
   agentic: { s: 43.9, z: 0.34, r: 55.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 4.5 Sonnet (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Claude 4.5 Sonnet (non-reasoning)
@@ -37,14 +37,14 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 - **약점**: 멀티모달, 지시 따르기
 
 ## 실용 지표
-`입력 $3.0 · 출력 $15.0 · 혼합 $2.31/1M · 45.0 t/s · TTFT 1.07s · 1M ctx`
+`입력 $3.0 · 출력 $15.0 · 혼합 $2.31/1M · 41.0 t/s · TTFT 1.05s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 47.8 | -0.14 | 실측 | [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
-| 추론 | 47.2 | -0.18 | 실측 | [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
+| 전문 지식 | 47.9 | -0.14 | 실측 | [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
+| 추론 | 47.3 | -0.18 | 실측 | [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
 | 코딩 | 53.4 | +0.23 | 실측 | [[terminal-bench]] 29.0%×0.5 |
 | 에이전트 | 55.0 | +0.34 | 실측 | [[terminal-bench]] 29.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

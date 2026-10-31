@@ -10,9 +10,9 @@ context_window: 1000000
 status: past
 size_class: Unknown
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
-  knowledge: { s: 60.6, z: 0.49, r: 57.4, estimated: false }  # 전문 지식
+  knowledge: { s: 60.6, z: 0.5, r: 57.4, estimated: false }  # 전문 지식
   reasoning: { s: 56.6, z: 0.49, r: 57.4, estimated: false }  # 추론
   coding: { s: 61.5, z: 0.82, r: 62.3, estimated: false }  # 코딩
   agentic: { s: 50.9, z: 0.57, r: 58.6, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 4.5 Sonnet
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-30
-timestamp: 2026-10-30T00:00:00Z
+updated: 2026-10-31
+timestamp: 2026-10-31T00:00:00Z
 ---
 
 # Claude 4.5 Sonnet
@@ -43,7 +43,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 57.4 | +0.49 | 실측 | [[gpqa-diamond]] 83.0%×0.4, [[humanitys-last-exam]] 18.0%×0.3 |
+| 전문 지식 | 57.4 | +0.5 | 실측 | [[gpqa-diamond]] 83.0%×0.4, [[humanitys-last-exam]] 18.0%×0.3 |
 | 추론 | 57.4 | +0.49 | 실측 | [[gpqa-diamond]] 83.0%×1.0, [[humanitys-last-exam]] 18.0%×1.0 |
 | 코딩 | 62.3 | +0.82 | 실측 | [[scicode]] 46.0%×1.0, [[terminal-bench]] 36.0%×0.5 |
 | 에이전트 | 58.6 | +0.57 | 실측 | [[gdpval]] 915.0%×1.0, [[tau3-banking]] 25.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
