@@ -8,9 +8,9 @@ price_blended_usd_1m: 0.51
 output_speed_tps: 78.0
 context_window: 262000
 status: past
-size_class: Small
+size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: null
 radar:
   knowledge: { s: 66.9, z: 0.77, r: 61.6, estimated: false }  # 전문 지식
   reasoning: { s: 63.4, z: 0.8, r: 62.0, estimated: false }  # 추론
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 27B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-31
-timestamp: 2026-10-31T00:00:00Z
+updated: 2026-11-01
+timestamp: 2026-11-01T00:00:00Z
 ---
 
 # Qwen3.5 27B
 
-Alibaba · Open · Small · 컨텍스트 262k · 종합지능 **None** · ⚠️ past(구세대)
+Alibaba · Open · Unknown · 컨텍스트 262k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 긴문맥

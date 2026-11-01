@@ -8,9 +8,9 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 131000
 status: current
-size_class: Small
+size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: null
 radar:
   knowledge: { s: 49.7, z: 0.01, r: 50.2, estimated: false }  # 전문 지식
   reasoning: { s: 45.5, z: -0.0, r: 49.9, estimated: false }  # 추론
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — EXAONE 4.0 32B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-31
-timestamp: 2026-10-31T00:00:00Z
+updated: 2026-11-01
+timestamp: 2026-11-01T00:00:00Z
 ---
 
 # EXAONE 4.0 32B
 
-LG AI Research · Open · Small · 컨텍스트 131k · 종합지능 **None**
+LG AI Research · Open · Unknown · 컨텍스트 131k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 전문 지식, 추론

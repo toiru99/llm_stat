@@ -4,13 +4,13 @@ title: Gemma 4 31B
 creator: Google
 license: Open
 intelligence_index: None
-price_blended_usd_1m: 0
+price_blended_usd_1m: 0.0
 output_speed_tps: 35.0
 context_window: 256000
 status: current
-size_class: Small
+size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: null
 radar:
   knowledge: { s: 66.9, z: 0.77, r: 61.6, estimated: false }  # 전문 지식
   reasoning: { s: 44.1, z: -0.07, r: 48.9, estimated: false }  # 추론
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 31B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-31
-timestamp: 2026-10-31T00:00:00Z
+updated: 2026-11-01
+timestamp: 2026-11-01T00:00:00Z
 ---
 
 # Gemma 4 31B
 
-Google · Open · Small · 컨텍스트 256k · 종합지능 **None**
+Google · Open · Unknown · 컨텍스트 256k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 긴문맥
 - **약점**: 멀티모달, 추론
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 35.0 t/s · TTFT 1.09s · 256k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0.0/1M · 35.0 t/s · TTFT 1.09s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

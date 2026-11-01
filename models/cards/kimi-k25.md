@@ -8,9 +8,9 @@ price_blended_usd_1m: 0.49
 output_speed_tps: 65.0
 context_window: 256000
 status: past
-size_class: Large
+size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: null
 radar:
   knowledge: { s: 73.3, z: 1.05, r: 65.8, estimated: false }  # 전문 지식
   reasoning: { s: 70.3, z: 1.11, r: 66.7, estimated: false }  # 추론
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-31
-timestamp: 2026-10-31T00:00:00Z
+updated: 2026-11-01
+timestamp: 2026-11-01T00:00:00Z
 ---
 
 # Kimi K2.5
 
-Kimi · Open · Large · 컨텍스트 256k · 종합지능 **None** · ⚠️ past(구세대)
+Kimi · Open · Unknown · 컨텍스트 256k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 추론

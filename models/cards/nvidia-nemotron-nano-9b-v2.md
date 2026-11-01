@@ -8,9 +8,9 @@ price_blended_usd_1m: 0.052
 output_speed_tps: 213.0
 context_window: 131000
 status: current
-size_class: Small
+size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: null
 radar:
   knowledge: { s: 34.1, z: -0.67, r: 39.9, estimated: false }  # 전문 지식
   reasoning: { s: 30.7, z: -0.68, r: 39.9, estimated: false }  # 추론
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — NVIDIA Nemotron Nano 9B V2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-31
-timestamp: 2026-10-31T00:00:00Z
+updated: 2026-11-01
+timestamp: 2026-11-01T00:00:00Z
 ---
 
 # NVIDIA Nemotron Nano 9B V2
 
-NVIDIA · Open · Small · 컨텍스트 131k · 종합지능 **None**
+NVIDIA · Open · Unknown · 컨텍스트 131k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 전문 지식, 추론

@@ -4,13 +4,13 @@ title: MiMo-V2.5-Pro
 creator: Xiaomi
 license: Open
 intelligence_index: None
-price_blended_usd_1m: 0.1928
+price_blended_usd_1m: 0.191
 output_speed_tps: 52.0
 context_window: 1000000
 status: past
-size_class: Large
+size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: null
 radar:
   knowledge: { s: 76.2, z: 1.18, r: 67.7, estimated: false }  # 전문 지식
   reasoning: { s: 73.9, z: 1.28, r: 69.1, estimated: false }  # 추론
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2.5-Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-31
-timestamp: 2026-10-31T00:00:00Z
+updated: 2026-11-01
+timestamp: 2026-11-01T00:00:00Z
 ---
 
 # MiMo-V2.5-Pro
 
-Xiaomi · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ past(구세대)
+Xiaomi · Open · Unknown · 컨텍스트 1M · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 추론
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.41 · 출력 $1.02 · 혼합 $0.1928/1M · 52.0 t/s · TTFT 1.08s · 1M ctx`
+`입력 $0.41 · 출력 $1.02 · 혼합 $0.191/1M · 52.0 t/s · TTFT 1.08s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

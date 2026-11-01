@@ -8,9 +8,9 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 131000
 status: current
-size_class: Small
+size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: null
 radar:
   knowledge: { s: 53.0, z: 0.16, r: 52.4, estimated: true }  # 전문 지식
   reasoning: { s: 49.4, z: 0.17, r: 52.5, estimated: true }  # 추론
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3.5 Bolt E4B 4GB
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-31
-timestamp: 2026-10-31T00:00:00Z
+updated: 2026-11-01
+timestamp: 2026-11-01T00:00:00Z
 ---
 
 # Nemotron 3.5 Bolt E4B 4GB
 
-NVIDIA · Open · Small · 컨텍스트 131k · 종합지능 **None**
+NVIDIA · Open · Unknown · 컨텍스트 131k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 긴문맥

@@ -8,9 +8,9 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 256000
 status: past
-size_class: Large
+size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: null
 radar:
   knowledge: { s: 54.5, z: 0.22, r: 53.4, estimated: false }  # 전문 지식
   reasoning: { s: 50.4, z: 0.21, r: 53.2, estimated: false }  # 추론
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — K-EXAONE
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-31
-timestamp: 2026-10-31T00:00:00Z
+updated: 2026-11-01
+timestamp: 2026-11-01T00:00:00Z
 ---
 
 # K-EXAONE
 
-LG AI Research · Open · Large · 컨텍스트 256k · 종합지능 **None** · ⚠️ past(구세대)
+LG AI Research · Open · Unknown · 컨텍스트 256k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 긴문맥

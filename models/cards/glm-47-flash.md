@@ -8,9 +8,9 @@ price_blended_usd_1m: 0.061
 output_speed_tps: 101.0
 context_window: 200000
 status: past
-size_class: Small
+size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: null
 radar:
   knowledge: { s: 36.9, z: -0.55, r: 41.7, estimated: false }  # 전문 지식
   reasoning: { s: 33.7, z: -0.54, r: 42.0, estimated: false }  # 추론
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.7-Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-31
-timestamp: 2026-10-31T00:00:00Z
+updated: 2026-11-01
+timestamp: 2026-11-01T00:00:00Z
 ---
 
 # GLM-4.7-Flash
 
-Z AI · Open · Small · 컨텍스트 200k · 종합지능 **None** · ⚠️ past(구세대)
+Z AI · Open · Unknown · 컨텍스트 200k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 에이전트

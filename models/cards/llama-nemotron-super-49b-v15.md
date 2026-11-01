@@ -8,9 +8,9 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
 status: past
-size_class: Medium
+size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: null
 radar:
   knowledge: { s: 47.5, z: -0.08, r: 48.7, estimated: false }  # 전문 지식
   reasoning: { s: 42.8, z: -0.13, r: 48.1, estimated: false }  # 추론
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama Nemotron Super 49B v1.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-31
-timestamp: 2026-10-31T00:00:00Z
+updated: 2026-11-01
+timestamp: 2026-11-01T00:00:00Z
 ---
 
 # Llama Nemotron Super 49B v1.5
 
-NVIDIA · Open · Medium · 컨텍스트 128k · 종합지능 **None** · ⚠️ past(구세대)
+NVIDIA · Open · Unknown · 컨텍스트 128k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 전문 지식, 추론

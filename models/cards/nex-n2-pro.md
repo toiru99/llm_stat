@@ -8,9 +8,9 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 262000
 status: current
-size_class: Large
+size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: null
 radar:
   knowledge: { s: 76.1, z: 1.18, r: 67.6, estimated: false }  # 전문 지식
   reasoning: { s: 73.4, z: 1.25, r: 68.8, estimated: false }  # 추론
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nex-N2-Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-31
-timestamp: 2026-10-31T00:00:00Z
+updated: 2026-11-01
+timestamp: 2026-11-01T00:00:00Z
 ---
 
 # Nex-N2-Pro
 
-Nex AGI · Open · Large · 컨텍스트 262k · 종합지능 **None**
+Nex AGI · Open · Unknown · 컨텍스트 262k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 긴문맥

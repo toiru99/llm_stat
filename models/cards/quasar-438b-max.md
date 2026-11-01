@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Quasar 438B (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-31
-timestamp: 2026-10-31T00:00:00Z
+updated: 2026-11-01
+timestamp: 2026-11-01T00:00:00Z
 ---
 
 # Quasar 438B (max)

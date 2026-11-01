@@ -8,9 +8,9 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 128000
 status: current
-size_class: Large
+size_class: Unknown
 params_b: null
-is_reasoning: true
+is_reasoning: null
 radar:
   knowledge: { s: 52.4, z: 0.13, r: 52.0, estimated: false }  # 전문 지식
   reasoning: { s: 48.1, z: 0.11, r: 51.7, estimated: false }  # 추론
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Cogito v2.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-10-31
-timestamp: 2026-10-31T00:00:00Z
+updated: 2026-11-01
+timestamp: 2026-11-01T00:00:00Z
 ---
 
 # Cogito v2.1
 
-Deep Cogito · Open · Large · 컨텍스트 128k · 종합지능 **None**
+Deep Cogito · Open · Unknown · 컨텍스트 128k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 전문 지식, 추론
