@@ -17,15 +17,15 @@ radar:
   coding: { s: 30.3, z: -0.23, r: 46.6, estimated: false }  # 코딩
   agentic: { s: 27.8, z: -0.22, r: 46.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 71.2, z: -0.04, r: 49.4, estimated: false }  # 멀티모달
+  multimodal: { s: 70.3, z: -0.05, r: 49.2, estimated: false }  # 멀티모달
   long_context: { s: 61.8, z: 0.29, r: 54.3, estimated: false }  # 긴문맥
   instruction: { s: 64.8, z: 0.51, r: 57.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — EXAONE 4.5 33B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # EXAONE 4.5 33B
@@ -48,7 +48,7 @@ LG AI Research · Open · Unknown · 컨텍스트 262k · 종합지능 **None**
 | 코딩 | 46.6 | -0.23 | 실측 | [[terminal-bench]] 20.0%×0.5 |
 | 에이전트 | 46.7 | -0.22 | 실측 | [[gdpval]] 474.0%×1.0, [[terminal-bench]] 20.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 49.4 | -0.04 | 실측 | [[mmmu-pro]] 67.0%×1.0 |
+| 멀티모달 | 49.2 | -0.05 | 실측 | [[mmmu-pro]] 67.0%×1.0 |
 | 긴문맥 | 54.3 | +0.29 | 실측 | [[aa-lcr]] 55.0%×1.0 |
 | 지시 따르기 | 57.6 | +0.51 | 실측 | [[ifbench]] 58.0%×1.0 |
 

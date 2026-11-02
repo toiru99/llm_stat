@@ -18,14 +18,14 @@ radar:
   agentic: { s: 2.2, z: -1.1, r: 33.5, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.57, r: 26.5, estimated: false }  # 긴문맥
+  long_context: { s: 0.0, z: -1.57, r: 26.4, estimated: false }  # 긴문맥
   instruction: { s: 8.5, z: -1.85, r: 22.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek R1 Distill Llama 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # DeepSeek R1 Distill Llama 8B
@@ -49,7 +49,7 @@ DeepSeek · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠�
 | 에이전트 | 33.5 | -1.1 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 26.5 | -1.57 | 실측 | [[aa-lcr]] 0.0%×1.0 |
+| 긴문맥 | 26.4 | -1.57 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 22.2 | -1.85 | 실측 | [[ifbench]] 18.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

@@ -5,14 +5,14 @@ creator: SpaceXAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 2.625
-output_speed_tps: 76.0
+output_speed_tps: 77.0
 context_window: 1000000
 status: past
 size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 41.3, z: -0.35, r: 44.7, estimated: false }  # 전문 지식
+  knowledge: { s: 41.3, z: -0.36, r: 44.7, estimated: false }  # 전문 지식
   reasoning: { s: 36.8, z: -0.4, r: 44.0, estimated: false }  # 추론
   coding: { s: 16.7, z: -0.69, r: 39.7, estimated: false }  # 코딩
   agentic: { s: 16.7, z: -0.6, r: 41.0, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # Grok 3
@@ -37,13 +37,13 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** �
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $3.0 · 출력 $15.0 · 혼합 $2.625/1M · 76.0 t/s · TTFT 1.73s · 1M ctx`
+`입력 $3.0 · 출력 $15.0 · 혼합 $2.625/1M · 77.0 t/s · TTFT 1.59s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 44.7 | -0.35 | 실측 | [[gpqa-diamond]] 69.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 전문 지식 | 44.7 | -0.36 | 실측 | [[gpqa-diamond]] 69.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 44.0 | -0.4 | 실측 | [[gpqa-diamond]] 69.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 39.7 | -0.69 | 실측 | [[terminal-bench]] 11.0%×0.5 |
 | 에이전트 | 41.0 | -0.6 | 실측 | [[terminal-bench]] 11.0%×1.0 |

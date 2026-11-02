@@ -17,15 +17,15 @@ radar:
   coding: { s: 3.0, z: -1.14, r: 32.9, estimated: false }  # 코딩
   agentic: { s: 7.3, z: -0.92, r: 36.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 42.5, z: -1.48, r: 27.8, estimated: false }  # 멀티모달
+  multimodal: { s: 41.9, z: -1.48, r: 27.8, estimated: false }  # 멀티모달
   long_context: { s: 30.3, z: -0.66, r: 40.1, estimated: false }  # 긴문맥
   instruction: { s: 43.7, z: -0.38, r: 44.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 3.5 Haiku
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # Claude 3.5 Haiku

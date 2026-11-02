@@ -17,15 +17,15 @@ radar:
   coding: { s: 0.3, z: -1.23, r: 31.5, estimated: true }  # 코딩
   agentic: { s: 2.1, z: -1.1, r: 33.5, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 0.0, z: -3.59, r: 0, estimated: false }  # 멀티모달
+  multimodal: { s: 0.0, z: -3.6, r: 0, estimated: false }  # 멀티모달
   long_context: { s: 2.3, z: -1.5, r: 27.5, estimated: true }  # 긴문맥
   instruction: { s: 16.1, z: -1.53, r: 27.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Phi-4 Multimodal
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # Phi-4 Multimodal
@@ -48,7 +48,7 @@ Microsoft · Open · Small · 컨텍스트 128k · 종합지능 **None**
 | 코딩 | 31.5 | -1.23 | 추정 | (추정) |
 | 에이전트 | 33.5 | -1.1 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 0 | -3.59 | 실측 | [[mmmu-pro]] 15.0%×1.0 |
+| 멀티모달 | 0 | -3.6 | 실측 | [[mmmu-pro]] 15.0%×1.0 |
 | 긴문맥 | 27.5 | -1.5 | 추정 | (추정) |
 | 지시 따르기 | 27.0 | -1.53 | 추정 | (추정) |
 

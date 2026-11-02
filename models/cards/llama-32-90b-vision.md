@@ -17,15 +17,15 @@ radar:
   coding: { s: 2.9, z: -1.15, r: 32.8, estimated: true }  # 코딩
   agentic: { s: 3.0, z: -1.07, r: 33.9, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 32.9, z: -1.96, r: 20.7, estimated: false }  # 멀티모달
-  long_context: { s: 6.8, z: -1.36, r: 29.5, estimated: true }  # 긴문맥
-  instruction: { s: 25.3, z: -1.15, r: 32.8, estimated: true }  # 지시 따르기
+  multimodal: { s: 32.4, z: -1.96, r: 20.6, estimated: false }  # 멀티모달
+  long_context: { s: 6.8, z: -1.37, r: 29.5, estimated: true }  # 긴문맥
+  instruction: { s: 24.5, z: -1.18, r: 32.3, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.2 90B (Vision)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # Llama 3.2 90B (Vision)
@@ -48,9 +48,9 @@ Meta · Open · Medium · 컨텍스트 128k · 종합지능 **None**
 | 코딩 | 32.8 | -1.15 | 추정 | (추정) |
 | 에이전트 | 33.9 | -1.07 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 20.7 | -1.96 | 실측 | [[mmmu-pro]] 39.0%×1.0 |
-| 긴문맥 | 29.5 | -1.36 | 추정 | (추정) |
-| 지시 따르기 | 32.8 | -1.15 | 추정 | (추정) |
+| 멀티모달 | 20.6 | -1.96 | 실측 | [[mmmu-pro]] 39.0%×1.0 |
+| 긴문맥 | 29.5 | -1.37 | 추정 | (추정) |
+| 지시 따르기 | 32.3 | -1.18 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

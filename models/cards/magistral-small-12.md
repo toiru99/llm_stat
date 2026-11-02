@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.6
-output_speed_tps: 106.0
+output_speed_tps: 75.0
 context_window: 128000
 status: current
 size_class: Small
@@ -17,15 +17,15 @@ radar:
   coding: { s: 7.6, z: -0.99, r: 35.1, estimated: false }  # 코딩
   agentic: { s: 6.0, z: -0.97, r: 35.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 54.8, z: -0.86, r: 37.1, estimated: false }  # 멀티모달
+  multimodal: { s: 54.1, z: -0.87, r: 37.0, estimated: false }  # 멀티모달
   long_context: { s: 21.3, z: -0.93, r: 36.1, estimated: false }  # 긴문맥
   instruction: { s: 45.1, z: -0.32, r: 45.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Magistral Small 1.2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # Magistral Small 1.2
@@ -37,7 +37,7 @@ Mistral · Open · Small · 컨텍스트 128k · 종합지능 **None**
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $0.5 · 출력 $1.5 · 혼합 $0.6/1M · 106.0 t/s · TTFT 1.12s · 128k ctx`
+`입력 $0.5 · 출력 $1.5 · 혼합 $0.6/1M · 75.0 t/s · TTFT 1.5s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -48,7 +48,7 @@ Mistral · Open · Small · 컨텍스트 128k · 종합지능 **None**
 | 코딩 | 35.1 | -0.99 | 실측 | [[terminal-bench]] 5.0%×0.5 |
 | 에이전트 | 35.5 | -0.97 | 실측 | [[gdpval]] 12.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 5.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 37.1 | -0.86 | 실측 | [[mmmu-pro]] 55.0%×1.0 |
+| 멀티모달 | 37.0 | -0.87 | 실측 | [[mmmu-pro]] 55.0%×1.0 |
 | 긴문맥 | 36.1 | -0.93 | 실측 | [[aa-lcr]] 19.0%×1.0 |
 | 지시 따르기 | 45.2 | -0.32 | 실측 | [[ifbench]] 44.0%×1.0 |
 

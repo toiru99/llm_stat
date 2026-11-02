@@ -5,7 +5,7 @@ creator: Google
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.12
-output_speed_tps: 118.0
+output_speed_tps: 117.0
 context_window: 262000
 status: current
 size_class: Small
@@ -17,15 +17,15 @@ radar:
   coding: { s: 16.7, z: -0.69, r: 39.7, estimated: false }  # 코딩
   agentic: { s: 16.7, z: -0.6, r: 41.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 64.4, z: -0.38, r: 44.2, estimated: false }  # 멀티모달
+  multimodal: { s: 63.5, z: -0.39, r: 44.1, estimated: false }  # 멀티모달
   long_context: { s: 39.3, z: -0.39, r: 44.2, estimated: false }  # 긴문맥
   instruction: { s: 46.5, z: -0.26, r: 46.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 12B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # Gemma 4 12B (non-reasoning)
@@ -37,7 +37,7 @@ Google · Open · Small · 컨텍스트 262k · 종합지능 **None**
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.3 · 혼합 $0.12/1M · 118.0 t/s · TTFT 2.28s · 262k ctx`
+`입력 $0.1 · 출력 $0.3 · 혼합 $0.12/1M · 117.0 t/s · TTFT 2.2s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -48,7 +48,7 @@ Google · Open · Small · 컨텍스트 262k · 종합지능 **None**
 | 코딩 | 39.7 | -0.69 | 실측 | [[terminal-bench]] 11.0%×0.5 |
 | 에이전트 | 41.0 | -0.6 | 실측 | [[terminal-bench]] 11.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 44.2 | -0.38 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
+| 멀티모달 | 44.1 | -0.39 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
 | 긴문맥 | 44.2 | -0.39 | 실측 | [[aa-lcr]] 35.0%×1.0 |
 | 지시 따르기 | 46.1 | -0.26 | 실측 | [[ifbench]] 45.0%×1.0 |
 

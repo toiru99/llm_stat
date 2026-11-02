@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 28.5, z: -0.71, r: 39.3, estimated: true }  # 긴문맥
-  instruction: { s: 34.9, z: -0.75, r: 38.8, estimated: true }  # 지시 따르기
+  instruction: { s: 34.9, z: -0.74, r: 38.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Pro 2 (Preview)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # Solar Pro 2 (Preview)
@@ -50,7 +50,7 @@ Upstage · Proprietary · Unknown · 컨텍스트 64k · 종합지능 **None** �
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 39.3 | -0.71 | 추정 | (추정) |
-| 지시 따르기 | 38.8 | -0.75 | 추정 | (추정) |
+| 지시 따르기 | 38.8 | -0.74 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

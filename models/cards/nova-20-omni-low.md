@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 69.8, z: 0.9, r: 63.5, estimated: false }  # 전문 지식
+  knowledge: { s: 69.8, z: 0.89, r: 63.4, estimated: false }  # 전문 지식
   reasoning: { s: 69.8, z: 1.09, r: 66.3, estimated: false }  # 추론
   coding: { s: 6.1, z: -1.04, r: 34.4, estimated: false }  # 코딩
   agentic: { s: 6.1, z: -0.97, r: 35.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 61.6, z: -0.52, r: 42.2, estimated: false }  # 멀티모달
+  multimodal: { s: 60.8, z: -0.53, r: 42.1, estimated: false }  # 멀티모달
   long_context: { s: 65.2, z: 0.39, r: 55.8, estimated: false }  # 긴문맥
   instruction: { s: 70.4, z: 0.74, r: 61.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nova 2.0 Omni (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # Nova 2.0 Omni (low)
@@ -43,12 +43,12 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 63.5 | +0.9 | 실측 | [[gpqa-diamond]] 70.0%×0.4 |
+| 전문 지식 | 63.4 | +0.89 | 실측 | [[gpqa-diamond]] 70.0%×0.4 |
 | 추론 | 66.3 | +1.09 | 실측 | [[gpqa-diamond]] 70.0%×1.0 |
 | 코딩 | 34.4 | -1.04 | 실측 | [[terminal-bench]] 4.0%×0.5 |
 | 에이전트 | 35.5 | -0.97 | 실측 | [[terminal-bench]] 4.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 42.2 | -0.52 | 실측 | [[mmmu-pro]] 60.0%×1.0 |
+| 멀티모달 | 42.1 | -0.53 | 실측 | [[mmmu-pro]] 60.0%×1.0 |
 | 긴문맥 | 55.8 | +0.39 | 실측 | [[aa-lcr]] 58.0%×1.0 |
 | 지시 따르기 | 61.1 | +0.74 | 실측 | [[ifbench]] 62.0%×1.0 |
 

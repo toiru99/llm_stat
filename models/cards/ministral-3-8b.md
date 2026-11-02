@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.0555
-output_speed_tps: 91.0
+output_speed_tps: 99.0
 context_window: 256000
 status: current
 size_class: Small
@@ -17,15 +17,15 @@ radar:
   coding: { s: 18.1, z: -0.64, r: 40.4, estimated: false }  # 코딩
   agentic: { s: 9.1, z: -0.86, r: 37.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 42.5, z: -1.48, r: 27.8, estimated: false }  # 멀티모달
+  multimodal: { s: 41.9, z: -1.48, r: 27.8, estimated: false }  # 멀티모달
   long_context: { s: 29.2, z: -0.69, r: 39.6, estimated: false }  # 긴문맥
   instruction: { s: 23.9, z: -1.2, r: 31.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Ministral 3 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # Ministral 3 8B
@@ -37,7 +37,7 @@ Mistral · Open · Small · 컨텍스트 256k · 종합지능 **None**
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.15 · 혼합 $0.0555/1M · 91.0 t/s · TTFT 0.84s · 256k ctx`
+`입력 $0.15 · 출력 $0.15 · 혼합 $0.0555/1M · 99.0 t/s · TTFT 0.95s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

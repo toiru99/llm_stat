@@ -5,7 +5,7 @@ creator: Upstage
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.222
-output_speed_tps: 99.0
+output_speed_tps: 101.0
 context_window: 512000
 status: current
 size_class: Unknown
@@ -14,8 +14,8 @@ is_reasoning: true
 radar:
   knowledge: { s: 73.2, z: 1.05, r: 65.7, estimated: false }  # 전문 지식
   reasoning: { s: 70.1, z: 1.1, r: 66.5, estimated: false }  # 추론
-  coding: { s: 68.3, z: 1.05, r: 65.7, estimated: false }  # 코딩
-  agentic: { s: 52.2, z: 0.62, r: 59.3, estimated: false }  # 에이전트
+  coding: { s: 68.3, z: 1.04, r: 65.7, estimated: false }  # 코딩
+  agentic: { s: 52.2, z: 0.62, r: 59.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 79.8, z: 0.83, r: 62.4, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Pro 4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # Solar Pro 4
@@ -37,7 +37,7 @@ Upstage · Proprietary · Unknown · 컨텍스트 512k · 종합지능 **None**
 - **약점**: 긴문맥, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 99.0 t/s · TTFT 2.05s · 512k ctx`
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 101.0 t/s · TTFT 2.0s · 512k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,8 +45,8 @@ Upstage · Proprietary · Unknown · 컨텍스트 512k · 종합지능 **None**
 |---|---|---|---|---|
 | 전문 지식 | 65.7 | +1.05 | 실측 | [[gpqa-diamond]] 89.0%×0.4, [[humanitys-last-exam]] 30.0%×0.3 |
 | 추론 | 66.5 | +1.1 | 실측 | [[gpqa-diamond]] 89.0%×1.0, [[humanitys-last-exam]] 30.0%×1.0 |
-| 코딩 | 65.7 | +1.05 | 실측 | [[scicode]] 48.0%×1.0 |
-| 에이전트 | 59.3 | +0.62 | 실측 | [[gdpval]] 1106.0%×1.0, [[tau3-banking]] 23.0%×1.0 |
+| 코딩 | 65.7 | +1.04 | 실측 | [[scicode]] 48.0%×1.0 |
+| 에이전트 | 59.2 | +0.62 | 실측 | [[gdpval]] 1106.0%×1.0, [[tau3-banking]] 23.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 62.4 | +0.83 | 실측 | [[aa-lcr]] 71.0%×1.0 |

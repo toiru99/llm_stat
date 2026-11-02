@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.5
-output_speed_tps: 39.0
+output_speed_tps: 44.0
 context_window: 256000
 status: past
 size_class: Small
@@ -17,15 +17,15 @@ radar:
   coding: { s: 9.1, z: -0.94, r: 35.9, estimated: false }  # 코딩
   agentic: { s: 9.1, z: -0.86, r: 37.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 64.4, z: -0.38, r: 44.2, estimated: false }  # 멀티모달
+  multimodal: { s: 63.5, z: -0.39, r: 44.1, estimated: false }  # 멀티모달
   long_context: { s: 25.8, z: -0.79, r: 38.1, estimated: true }  # 긴문맥
   instruction: { s: 29.6, z: -0.97, r: 35.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 VL 30B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # Qwen3 VL 30B A3B
@@ -37,7 +37,7 @@ Alibaba · Open · Small · 컨텍스트 256k · 종합지능 **None** · ⚠️
 - **약점**: 코딩, 지시 따르기
 
 ## 실용 지표
-`입력 $0.35 · 출력 $0.6 · 혼합 $0.5/1M · 39.0 t/s · TTFT 2.43s · 256k ctx`
+`입력 $0.35 · 출력 $0.6 · 혼합 $0.5/1M · 44.0 t/s · TTFT 2.43s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -48,7 +48,7 @@ Alibaba · Open · Small · 컨텍스트 256k · 종합지능 **None** · ⚠️
 | 코딩 | 35.9 | -0.94 | 실측 | [[terminal-bench]] 6.0%×0.5 |
 | 에이전트 | 37.1 | -0.86 | 실측 | [[terminal-bench]] 6.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 44.2 | -0.38 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
+| 멀티모달 | 44.1 | -0.39 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
 | 긴문맥 | 38.1 | -0.79 | 추정 | (추정) |
 | 지시 따르기 | 35.5 | -0.97 | 실측 | [[ifbench]] 33.0%×1.0 |
 

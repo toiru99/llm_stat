@@ -12,7 +12,7 @@ size_class: Unknown
 params_b: null
 is_reasoning: null
 radar:
-  knowledge: { s: 76.1, z: 1.18, r: 67.6, estimated: false }  # 전문 지식
+  knowledge: { s: 76.1, z: 1.17, r: 67.6, estimated: false }  # 전문 지식
   reasoning: { s: 73.4, z: 1.25, r: 68.8, estimated: false }  # 추론
   coding: { s: 60.0, z: 0.77, r: 61.5, estimated: false }  # 코딩
   agentic: { s: 47.4, z: 0.45, r: 56.8, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nex-N2-Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # Nex-N2-Pro
@@ -43,7 +43,7 @@ Nex AGI · Open · Unknown · 컨텍스트 262k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 67.6 | +1.18 | 실측 | [[gpqa-diamond]] 89.0%×0.4, [[humanitys-last-exam]] 34.0%×0.3 |
+| 전문 지식 | 67.6 | +1.17 | 실측 | [[gpqa-diamond]] 89.0%×0.4, [[humanitys-last-exam]] 34.0%×0.3 |
 | 추론 | 68.8 | +1.25 | 실측 | [[gpqa-diamond]] 89.0%×1.0, [[humanitys-last-exam]] 34.0%×1.0 |
 | 코딩 | 61.5 | +0.77 | 실측 | [[scicode]] 43.0%×1.0 |
 | 에이전트 | 56.8 | +0.45 | 실측 | [[gdpval]] 1109.0%×1.0, [[tau3-banking]] 18.0%×1.0 |

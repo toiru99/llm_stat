@@ -5,7 +5,7 @@ creator: Amazon
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.62
-output_speed_tps: 128.0
+output_speed_tps: 131.0
 context_window: 300000
 status: past
 size_class: Unknown
@@ -17,15 +17,15 @@ radar:
   coding: { s: 9.1, z: -0.94, r: 35.9, estimated: false }  # 코딩
   agentic: { s: 9.1, z: -0.86, r: 37.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 39.7, z: -1.61, r: 25.8, estimated: false }  # 멀티모달
+  multimodal: { s: 39.2, z: -1.62, r: 25.7, estimated: false }  # 멀티모달
   long_context: { s: 23.6, z: -0.86, r: 37.1, estimated: false }  # 긴문맥
   instruction: { s: 36.6, z: -0.67, r: 39.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nova Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # Nova Pro
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 300k · 종합지능 **None** �
 - **약점**: 코딩, 멀티모달
 
 ## 실용 지표
-`입력 $0.8 · 출력 $3.2 · 혼합 $0.62/1M · 128.0 t/s · TTFT 1.09s · 300k ctx`
+`입력 $0.8 · 출력 $3.2 · 혼합 $0.62/1M · 131.0 t/s · TTFT 1.04s · 300k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -48,7 +48,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 300k · 종합지능 **None** �
 | 코딩 | 35.9 | -0.94 | 실측 | [[terminal-bench]] 6.0%×0.5 |
 | 에이전트 | 37.1 | -0.86 | 실측 | [[terminal-bench]] 6.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 25.8 | -1.61 | 실측 | [[mmmu-pro]] 44.0%×1.0 |
+| 멀티모달 | 25.7 | -1.62 | 실측 | [[mmmu-pro]] 44.0%×1.0 |
 | 긴문맥 | 37.1 | -0.86 | 실측 | [[aa-lcr]] 21.0%×1.0 |
 | 지시 따르기 | 39.9 | -0.67 | 실측 | [[ifbench]] 38.0%×1.0 |
 

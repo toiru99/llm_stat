@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.331
-output_speed_tps: 203.0
+output_speed_tps: 205.0
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 41.4, z: -0.35, r: 44.7, estimated: false }  # 전문 지식
   reasoning: { s: 37.1, z: -0.39, r: 44.2, estimated: false }  # 추론
-  coding: { s: 18.2, z: -0.63, r: 40.5, estimated: false }  # 코딩
+  coding: { s: 18.2, z: -0.64, r: 40.5, estimated: false }  # 코딩
   agentic: { s: 18.2, z: -0.55, r: 41.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 68.5, z: -0.18, r: 47.3, estimated: false }  # 멀티모달
+  multimodal: { s: 67.6, z: -0.19, r: 47.2, estimated: false }  # 멀티모달
   long_context: { s: 56.2, z: 0.12, r: 51.8, estimated: false }  # 긴문맥
   instruction: { s: 38.0, z: -0.61, r: 40.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.5 Flash (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # Gemini 2.5 Flash (non-reasoning)
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 - **약점**: 지시 따르기, 코딩
 
 ## 실용 지표
-`입력 $0.3 · 출력 $2.5 · 혼합 $0.331/1M · 203.0 t/s · TTFT 0.36s · 1M ctx`
+`입력 $0.3 · 출력 $2.5 · 혼합 $0.331/1M · 205.0 t/s · TTFT 0.38s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,10 +45,10 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 |---|---|---|---|---|
 | 전문 지식 | 44.7 | -0.35 | 실측 | [[gpqa-diamond]] 68.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 44.2 | -0.39 | 실측 | [[gpqa-diamond]] 68.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 40.5 | -0.63 | 실측 | [[terminal-bench]] 12.0%×0.5 |
+| 코딩 | 40.5 | -0.64 | 실측 | [[terminal-bench]] 12.0%×0.5 |
 | 에이전트 | 41.7 | -0.55 | 실측 | [[terminal-bench]] 12.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 47.3 | -0.18 | 실측 | [[mmmu-pro]] 65.0%×1.0 |
+| 멀티모달 | 47.2 | -0.19 | 실측 | [[mmmu-pro]] 65.0%×1.0 |
 | 긴문맥 | 51.8 | +0.12 | 실측 | [[aa-lcr]] 50.0%×1.0 |
 | 지시 따르기 | 40.8 | -0.61 | 실측 | [[ifbench]] 39.0%×1.0 |
 

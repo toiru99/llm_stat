@@ -5,7 +5,7 @@ creator: Kimi
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.84
-output_speed_tps: 50.0
+output_speed_tps: 56.0
 context_window: 256000
 status: past
 size_class: Large
@@ -17,15 +17,15 @@ radar:
   coding: { s: 28.8, z: -0.28, r: 45.8, estimated: false }  # 코딩
   agentic: { s: 28.8, z: -0.19, r: 47.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 79.5, z: 0.37, r: 55.5, estimated: false }  # 멀티모달
+  multimodal: { s: 78.4, z: 0.36, r: 55.4, estimated: false }  # 멀티모달
   long_context: { s: 75.3, z: 0.69, r: 60.4, estimated: false }  # 긴문맥
   instruction: { s: 45.1, z: -0.32, r: 45.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2.5 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # Kimi K2.5 (non-reasoning)
@@ -37,7 +37,7 @@ Kimi · Open · Large · 컨텍스트 256k · 종합지능 **None** · ⚠️ pa
 - **약점**: 코딩, 지시 따르기
 
 ## 실용 지표
-`입력 $0.6 · 출력 $3.0 · 혼합 $0.84/1M · 50.0 t/s · TTFT 2.26s · 256k ctx`
+`입력 $0.6 · 출력 $3.0 · 혼합 $0.84/1M · 56.0 t/s · TTFT 1.97s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -48,7 +48,7 @@ Kimi · Open · Large · 컨텍스트 256k · 종합지능 **None** · ⚠️ pa
 | 코딩 | 45.8 | -0.28 | 실측 | [[terminal-bench]] 19.0%×0.5 |
 | 에이전트 | 47.2 | -0.19 | 실측 | [[terminal-bench]] 19.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 55.5 | +0.37 | 실측 | [[mmmu-pro]] 73.0%×1.0 |
+| 멀티모달 | 55.4 | +0.36 | 실측 | [[mmmu-pro]] 73.0%×1.0 |
 | 긴문맥 | 60.4 | +0.69 | 실측 | [[aa-lcr]] 67.0%×1.0 |
 | 지시 따르기 | 45.2 | -0.32 | 실측 | [[ifbench]] 44.0%×1.0 |
 

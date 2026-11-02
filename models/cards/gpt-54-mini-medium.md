@@ -5,27 +5,27 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.6525
-output_speed_tps: 208.0
+output_speed_tps: 246.0
 context_window: 400000
 status: past
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 60.7, z: 0.5, r: 57.5, estimated: false }  # 전문 지식
-  reasoning: { s: 56.9, z: 0.51, r: 57.6, estimated: false }  # 추론
+  knowledge: { s: 60.7, z: 0.5, r: 57.4, estimated: false }  # 전문 지식
+  reasoning: { s: 56.9, z: 0.5, r: 57.6, estimated: false }  # 추론
   coding: { s: 51.5, z: 0.48, r: 57.2, estimated: false }  # 코딩
-  agentic: { s: 51.5, z: 0.6, r: 58.9, estimated: false }  # 에이전트
+  agentic: { s: 51.5, z: 0.59, r: 58.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 76.7, z: 0.23, r: 53.5, estimated: false }  # 멀티모달
+  multimodal: { s: 75.7, z: 0.22, r: 53.3, estimated: false }  # 멀티모달
   long_context: { s: 75.3, z: 0.69, r: 60.4, estimated: false }  # 긴문맥
   instruction: { s: 74.6, z: 0.92, r: 63.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.4 mini (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # GPT-5.4 mini (medium)
@@ -37,18 +37,18 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **None** �
 - **약점**: 코딩, 멀티모달
 
 ## 실용 지표
-`입력 $0.75 · 출력 $4.5 · 혼합 $0.6525/1M · 208.0 t/s · TTFT 4.44s · 400k ctx`
+`입력 $0.75 · 출력 $4.5 · 혼합 $0.6525/1M · 246.0 t/s · TTFT 10.12s · 400k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 57.5 | +0.5 | 실측 | [[gpqa-diamond]] 82.0%×0.4, [[humanitys-last-exam]] 19.0%×0.3 |
-| 추론 | 57.6 | +0.51 | 실측 | [[gpqa-diamond]] 82.0%×1.0, [[humanitys-last-exam]] 19.0%×1.0 |
+| 전문 지식 | 57.4 | +0.5 | 실측 | [[gpqa-diamond]] 82.0%×0.4, [[humanitys-last-exam]] 19.0%×0.3 |
+| 추론 | 57.6 | +0.5 | 실측 | [[gpqa-diamond]] 82.0%×1.0, [[humanitys-last-exam]] 19.0%×1.0 |
 | 코딩 | 57.2 | +0.48 | 실측 | [[terminal-bench]] 34.0%×0.5 |
-| 에이전트 | 58.9 | +0.6 | 실측 | [[terminal-bench]] 34.0%×1.0 |
+| 에이전트 | 58.9 | +0.59 | 실측 | [[terminal-bench]] 34.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 53.5 | +0.23 | 실측 | [[mmmu-pro]] 71.0%×1.0 |
+| 멀티모달 | 53.3 | +0.22 | 실측 | [[mmmu-pro]] 71.0%×1.0 |
 | 긴문맥 | 60.4 | +0.69 | 실측 | [[aa-lcr]] 67.0%×1.0 |
 | 지시 따르기 | 63.8 | +0.92 | 실측 | [[ifbench]] 65.0%×1.0 |
 

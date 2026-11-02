@@ -12,7 +12,7 @@ size_class: Unknown
 params_b: null
 is_reasoning: null
 radar:
-  knowledge: { s: 43.6, z: -0.25, r: 46.2, estimated: false }  # 전문 지식
+  knowledge: { s: 43.6, z: -0.26, r: 46.2, estimated: false }  # 전문 지식
   reasoning: { s: 40.1, z: -0.25, r: 46.2, estimated: false }  # 추론
   coding: { s: 3.0, z: -1.14, r: 32.9, estimated: false }  # 코딩
   agentic: { s: 3.0, z: -1.07, r: 33.9, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Open 100B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # Solar Open 100B
@@ -43,7 +43,7 @@ Upstage · Open · Unknown · 컨텍스트 128k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 46.2 | -0.25 | 실측 | [[gpqa-diamond]] 66.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
+| 전문 지식 | 46.2 | -0.26 | 실측 | [[gpqa-diamond]] 66.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
 | 추론 | 46.2 | -0.25 | 실측 | [[gpqa-diamond]] 66.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
 | 코딩 | 32.9 | -1.14 | 실측 | [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 33.9 | -1.07 | 실측 | [[terminal-bench]] 2.0%×1.0 |

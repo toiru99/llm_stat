@@ -18,14 +18,14 @@ radar:
   agentic: { s: 16.7, z: -0.6, r: 41.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 31.5, z: -0.62, r: 40.6, estimated: false }  # 긴문맥
+  long_context: { s: 31.5, z: -0.63, r: 40.6, estimated: false }  # 긴문맥
   instruction: { s: 22.5, z: -1.26, r: 31.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi Linear 48B A3B Instruct
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # Kimi Linear 48B A3B Instruct
@@ -49,7 +49,7 @@ Kimi · Open · Medium · 컨텍스트 1M · 종합지능 **None**
 | 에이전트 | 41.0 | -0.6 | 실측 | [[terminal-bench]] 11.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 40.6 | -0.62 | 실측 | [[aa-lcr]] 28.0%×1.0 |
+| 긴문맥 | 40.6 | -0.63 | 실측 | [[aa-lcr]] 28.0%×1.0 |
 | 지시 따르기 | 31.0 | -1.26 | 실측 | [[ifbench]] 28.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

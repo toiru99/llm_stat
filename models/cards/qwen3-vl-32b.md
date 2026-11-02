@@ -17,15 +17,15 @@ radar:
   coding: { s: 12.1, z: -0.84, r: 37.4, estimated: false }  # 코딩
   agentic: { s: 12.1, z: -0.76, r: 38.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 67.1, z: -0.25, r: 46.3, estimated: false }  # 멀티모달
+  multimodal: { s: 66.2, z: -0.26, r: 46.2, estimated: false }  # 멀티모달
   long_context: { s: 56.6, z: 0.13, r: 52.0, estimated: true }  # 긴문맥
   instruction: { s: 38.0, z: -0.61, r: 40.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 VL 32B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # Qwen3 VL 32B
@@ -48,7 +48,7 @@ Alibaba · Open · Small · 컨텍스트 256k · 종합지능 **None** · ⚠️
 | 코딩 | 37.4 | -0.84 | 실측 | [[terminal-bench]] 8.0%×0.5 |
 | 에이전트 | 38.6 | -0.76 | 실측 | [[terminal-bench]] 8.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 46.3 | -0.25 | 실측 | [[mmmu-pro]] 64.0%×1.0 |
+| 멀티모달 | 46.2 | -0.26 | 실측 | [[mmmu-pro]] 64.0%×1.0 |
 | 긴문맥 | 52.0 | +0.13 | 추정 | (추정) |
 | 지시 따르기 | 40.8 | -0.61 | 실측 | [[ifbench]] 39.0%×1.0 |
 

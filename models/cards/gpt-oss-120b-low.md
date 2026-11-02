@@ -5,14 +5,14 @@ creator: OpenAI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.172
-output_speed_tps: 250.0
+output_speed_tps: 259.0
 context_window: 131000
 status: current
 size_class: Medium
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 41.4, z: -0.35, r: 44.8, estimated: false }  # 전문 지식
+  knowledge: { s: 41.4, z: -0.35, r: 44.7, estimated: false }  # 전문 지식
   reasoning: { s: 37.3, z: -0.38, r: 44.4, estimated: false }  # 추론
   coding: { s: 7.6, z: -0.99, r: 35.1, estimated: false }  # 코딩
   agentic: { s: 7.7, z: -0.91, r: 36.3, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — gpt-oss-120b (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # gpt-oss-120b (low)
@@ -37,13 +37,13 @@ OpenAI · Open · Medium · 컨텍스트 131k · 종합지능 **None**
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $0.13 · 출력 $0.59 · 혼합 $0.172/1M · 250.0 t/s · TTFT 0.74s · 131k ctx`
+`입력 $0.13 · 출력 $0.59 · 혼합 $0.172/1M · 259.0 t/s · TTFT 0.74s · 131k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 44.8 | -0.35 | 실측 | [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 전문 지식 | 44.7 | -0.35 | 실측 | [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 44.4 | -0.38 | 실측 | [[gpqa-diamond]] 67.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 35.1 | -0.99 | 실측 | [[terminal-bench]] 5.0%×0.5 |
 | 에이전트 | 36.3 | -0.91 | 실측 | [[gdpval]] 179.0%×1.0, [[tau3-banking]] 3.0%×1.0, [[terminal-bench]] 5.0%×1.0 |

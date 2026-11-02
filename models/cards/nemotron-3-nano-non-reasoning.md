@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.065
-output_speed_tps: 243.0
+output_speed_tps: 269.0
 context_window: 1000000
 status: current
 size_class: Small
@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 22.8, z: -1.17, r: 32.4, estimated: false }  # 전문 지식
   reasoning: { s: 20.8, z: -1.12, r: 33.2, estimated: false }  # 추론
-  coding: { s: 18.2, z: -0.63, r: 40.5, estimated: false }  # 코딩
+  coding: { s: 18.2, z: -0.64, r: 40.5, estimated: false }  # 코딩
   agentic: { s: 18.4, z: -0.54, r: 41.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3 Nano (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # Nemotron 3 Nano (non-reasoning)
@@ -37,7 +37,7 @@ NVIDIA · Open · Small · 컨텍스트 1M · 종합지능 **None**
 - **약점**: 전문 지식, 긴문맥
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.2 · 혼합 $0.065/1M · 243.0 t/s · TTFT 0.55s · 1M ctx`
+`입력 $0.05 · 출력 $0.2 · 혼합 $0.065/1M · 269.0 t/s · TTFT 0.52s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ NVIDIA · Open · Small · 컨텍스트 1M · 종합지능 **None**
 |---|---|---|---|---|
 | 전문 지식 | 32.4 | -1.17 | 실측 | [[gpqa-diamond]] 40.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 33.2 | -1.12 | 실측 | [[gpqa-diamond]] 40.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 40.5 | -0.63 | 실측 | [[terminal-bench]] 12.0%×0.5 |
+| 코딩 | 40.5 | -0.64 | 실측 | [[terminal-bench]] 12.0%×0.5 |
 | 에이전트 | 41.9 | -0.54 | 실측 | [[gdpval]] 349.0%×1.0, [[terminal-bench]] 12.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

@@ -12,10 +12,10 @@ size_class: Unknown
 params_b: null
 is_reasoning: null
 radar:
-  knowledge: { s: 52.4, z: 0.13, r: 52.0, estimated: false }  # 전문 지식
+  knowledge: { s: 52.4, z: 0.13, r: 51.9, estimated: false }  # 전문 지식
   reasoning: { s: 48.1, z: 0.11, r: 51.7, estimated: false }  # 추론
   coding: { s: 25.8, z: -0.38, r: 44.3, estimated: false }  # 코딩
-  agentic: { s: 25.8, z: -0.29, r: 45.7, estimated: false }  # 에이전트
+  agentic: { s: 25.8, z: -0.29, r: 45.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 25.8, z: -0.79, r: 38.1, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Cogito v2.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # Cogito v2.1
@@ -43,10 +43,10 @@ Deep Cogito · Open · Unknown · 컨텍스트 128k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 52.0 | +0.13 | 실측 | [[gpqa-diamond]] 77.0%×0.4, [[humanitys-last-exam]] 12.0%×0.3 |
+| 전문 지식 | 51.9 | +0.13 | 실측 | [[gpqa-diamond]] 77.0%×0.4, [[humanitys-last-exam]] 12.0%×0.3 |
 | 추론 | 51.7 | +0.11 | 실측 | [[gpqa-diamond]] 77.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
 | 코딩 | 44.3 | -0.38 | 실측 | [[terminal-bench]] 17.0%×0.5 |
-| 에이전트 | 45.7 | -0.29 | 실측 | [[terminal-bench]] 17.0%×1.0 |
+| 에이전트 | 45.6 | -0.29 | 실측 | [[terminal-bench]] 17.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 38.1 | -0.79 | 실측 | [[aa-lcr]] 23.0%×1.0 |

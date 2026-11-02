@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 29.0, z: -0.7, r: 39.5, estimated: true }  # 긴문맥
-  instruction: { s: 33.7, z: -0.8, r: 38.1, estimated: true }  # 지시 따르기
+  instruction: { s: 33.7, z: -0.79, r: 38.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen2.5 Max
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-01
-timestamp: 2026-11-01T00:00:00Z
+updated: 2026-11-02
+timestamp: 2026-11-02T00:00:00Z
 ---
 
 # Qwen2.5 Max
@@ -34,7 +34,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 32k · 종합지능 **None** �
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 코딩, 전문 지식
-- **약점**: 에이전트, 지시 따르기
+- **약점**: 지시 따르기, 에이전트
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 32k ctx`
@@ -50,7 +50,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 32k · 종합지능 **None** �
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 39.5 | -0.7 | 추정 | (추정) |
-| 지시 따르기 | 38.1 | -0.8 | 추정 | (추정) |
+| 지시 따르기 | 38.1 | -0.79 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
