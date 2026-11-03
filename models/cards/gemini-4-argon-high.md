@@ -12,10 +12,10 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 93.3, z: 1.93, r: 79.0, estimated: false }  # 전문 지식
+  knowledge: { s: 93.3, z: 1.93, r: 78.9, estimated: false }  # 전문 지식
   reasoning: { s: 83.5, z: 1.7, r: 75.5, estimated: false }  # 추론
-  coding: { s: 91.7, z: 1.83, r: 77.4, estimated: false }  # 코딩
-  agentic: { s: 87.4, z: 1.83, r: 77.4, estimated: false }  # 에이전트
+  coding: { s: 91.7, z: 1.82, r: 77.3, estimated: false }  # 코딩
+  agentic: { s: 87.4, z: 1.82, r: 77.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 89.9, z: 1.13, r: 66.9, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 4 Argon (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-02
-timestamp: 2026-11-02T00:00:00Z
+updated: 2026-11-03
+timestamp: 2026-11-03T00:00:00Z
 ---
 
 # Gemini 4 Argon (high)
@@ -37,16 +37,16 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **50.0**
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
-`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 83.0 t/s · TTFT 40.49s · 1M ctx` · 가성비 17.0
+`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 83.0 t/s · TTFT 40.47s · 1M ctx` · 가성비 17.0
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 79.0 | +1.93 | 실측 | [[humanitys-last-exam]] 57.0%×0.3 |
+| 전문 지식 | 78.9 | +1.93 | 실측 | [[humanitys-last-exam]] 57.0%×0.3 |
 | 추론 | 75.5 | +1.7 | 실측 | [[critpt]] 53.0%×1.0, [[humanitys-last-exam]] 57.0%×1.0 |
-| 코딩 | 77.4 | +1.83 | 실측 | [[scicode]] 62.0%×1.0 |
-| 에이전트 | 77.4 | +1.83 | 실측 | [[gdpval]] 1631.0%×1.0 |
+| 코딩 | 77.3 | +1.82 | 실측 | [[scicode]] 62.0%×1.0 |
+| 에이전트 | 77.3 | +1.82 | 실측 | [[gdpval]] 1631.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 66.9 | +1.13 | 실측 | [[aa-lcr]] 80.0%×1.0 |

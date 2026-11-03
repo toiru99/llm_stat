@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 76.7, z: 1.2, r: 68.0, estimated: false }  # 전문 지식
-  reasoning: { s: 76.7, z: 1.4, r: 71.0, estimated: false }  # 추론
+  reasoning: { s: 76.7, z: 1.4, r: 70.9, estimated: false }  # 추론
   coding: { s: 63.2, z: 0.87, r: 63.1, estimated: true }  # 코딩
   agentic: { s: 52.3, z: 0.62, r: 59.3, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — o1-preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-02
-timestamp: 2026-11-02T00:00:00Z
+updated: 2026-11-03
+timestamp: 2026-11-03T00:00:00Z
 ---
 
 # o1-preview
@@ -44,7 +44,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None** �
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 68.0 | +1.2 | 실측 | [[gpqa-diamond]] 76.0%×0.4 |
-| 추론 | 71.0 | +1.4 | 실측 | [[gpqa-diamond]] 76.0%×1.0 |
+| 추론 | 70.9 | +1.4 | 실측 | [[gpqa-diamond]] 76.0%×1.0 |
 | 코딩 | 63.1 | +0.87 | 추정 | (추정) |
 | 에이전트 | 59.3 | +0.62 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |

@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.567
-output_speed_tps: 133.0
+output_speed_tps: 134.0
 context_window: 262000
 status: current
 size_class: Unknown
@@ -14,8 +14,8 @@ is_reasoning: null
 radar:
   knowledge: { s: 64.2, z: 0.65, r: 59.7, estimated: false }  # 전문 지식
   reasoning: { s: 60.5, z: 0.67, r: 60.0, estimated: false }  # 추론
-  coding: { s: 51.0, z: 0.46, r: 57.0, estimated: false }  # 코딩
-  agentic: { s: 39.6, z: 0.18, r: 52.8, estimated: false }  # 에이전트
+  coding: { s: 51.0, z: 0.46, r: 56.9, estimated: false }  # 코딩
+  agentic: { s: 39.6, z: 0.18, r: 52.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 81.1, z: 0.5, r: 57.4, estimated: false }  # 멀티모달
   long_context: { s: 80.9, z: 0.86, r: 62.9, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.6 35B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-02
-timestamp: 2026-11-02T00:00:00Z
+updated: 2026-11-03
+timestamp: 2026-11-03T00:00:00Z
 ---
 
 # Qwen3.6 35B A3B
@@ -37,7 +37,7 @@ Alibaba · Open · Unknown · 컨텍스트 262k · 종합지능 **None**
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.38 · 출력 $2.25 · 혼합 $0.567/1M · 133.0 t/s · TTFT 2.04s · 262k ctx`
+`입력 $0.38 · 출력 $2.25 · 혼합 $0.567/1M · 134.0 t/s · TTFT 2.06s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,8 +45,8 @@ Alibaba · Open · Unknown · 컨텍스트 262k · 종합지능 **None**
 |---|---|---|---|---|
 | 전문 지식 | 59.7 | +0.65 | 실측 | [[gpqa-diamond]] 84.0%×0.4, [[humanitys-last-exam]] 22.0%×0.3 |
 | 추론 | 60.0 | +0.67 | 실측 | [[gpqa-diamond]] 84.0%×1.0, [[humanitys-last-exam]] 22.0%×1.0 |
-| 코딩 | 57.0 | +0.46 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 35.0%×0.5 |
-| 에이전트 | 52.8 | +0.18 | 실측 | [[gdpval]] 899.0%×1.0, [[tau3-banking]] 9.0%×1.0, [[terminal-bench]] 35.0%×1.0 |
+| 코딩 | 56.9 | +0.46 | 실측 | [[scicode]] 37.0%×1.0, [[terminal-bench]] 35.0%×0.5 |
+| 에이전트 | 52.7 | +0.18 | 실측 | [[gdpval]] 899.0%×1.0, [[tau3-banking]] 9.0%×1.0, [[terminal-bench]] 35.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 57.4 | +0.5 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
 | 긴문맥 | 62.9 | +0.86 | 실측 | [[aa-lcr]] 72.0%×1.0 |

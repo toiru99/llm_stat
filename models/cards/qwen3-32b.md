@@ -14,7 +14,7 @@ is_reasoning: null
 radar:
   knowledge: { s: 42.2, z: -0.32, r: 45.2, estimated: false }  # 전문 지식
   reasoning: { s: 38.1, z: -0.34, r: 44.9, estimated: false }  # 추론
-  coding: { s: 33.7, z: -0.11, r: 48.3, estimated: false }  # 코딩
+  coding: { s: 33.7, z: -0.12, r: 48.3, estimated: false }  # 코딩
   agentic: { s: 5.5, z: -0.99, r: 35.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 32B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-02
-timestamp: 2026-11-02T00:00:00Z
+updated: 2026-11-03
+timestamp: 2026-11-03T00:00:00Z
 ---
 
 # Qwen3 32B
@@ -37,7 +37,7 @@ Alibaba · Open · Unknown · 컨텍스트 32k · 종합지능 **None** · ⚠�
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.24 · 출력 $0.54 · 혼합 $0.27/1M · 26.0 t/s · TTFT 1.5s · 32k ctx`
+`입력 $0.24 · 출력 $0.54 · 혼합 $0.27/1M · 26.0 t/s · TTFT 1.46s · 32k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ Alibaba · Open · Unknown · 컨텍스트 32k · 종합지능 **None** · ⚠�
 |---|---|---|---|---|
 | 전문 지식 | 45.2 | -0.32 | 실측 | [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
 | 추론 | 44.9 | -0.34 | 실측 | [[gpqa-diamond]] 67.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
-| 코딩 | 48.3 | -0.11 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 3.0%×0.5 |
+| 코딩 | 48.3 | -0.12 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 3.0%×0.5 |
 | 에이전트 | 35.2 | -0.99 | 실측 | [[gdpval]] 41.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 3.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

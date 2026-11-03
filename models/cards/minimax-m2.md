@@ -5,7 +5,7 @@ creator: MiniMax
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.39
-output_speed_tps: 123.0
+output_speed_tps: 121.0
 context_window: 205000
 status: past
 size_class: Large
@@ -14,8 +14,8 @@ is_reasoning: true
 radar:
   knowledge: { s: 54.5, z: 0.22, r: 53.3, estimated: false }  # 전문 지식
   reasoning: { s: 50.4, z: 0.21, r: 53.2, estimated: false }  # 추론
-  coding: { s: 39.4, z: 0.08, r: 51.1, estimated: false }  # 코딩
-  agentic: { s: 39.4, z: 0.18, r: 52.7, estimated: false }  # 에이전트
+  coding: { s: 39.4, z: 0.07, r: 51.1, estimated: false }  # 코딩
+  agentic: { s: 39.4, z: 0.17, r: 52.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 71.9, z: 0.59, r: 58.8, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax-M2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-02
-timestamp: 2026-11-02T00:00:00Z
+updated: 2026-11-03
+timestamp: 2026-11-03T00:00:00Z
 ---
 
 # MiniMax-M2
@@ -37,7 +37,7 @@ MiniMax · Open · Large · 컨텍스트 205k · 종합지능 **None** · ⚠️
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.39/1M · 123.0 t/s · TTFT 1.32s · 205k ctx`
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.39/1M · 121.0 t/s · TTFT 1.34s · 205k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,8 +45,8 @@ MiniMax · Open · Large · 컨텍스트 205k · 종합지능 **None** · ⚠️
 |---|---|---|---|---|
 | 전문 지식 | 53.3 | +0.22 | 실측 | [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 14.0%×0.3 |
 | 추론 | 53.2 | +0.21 | 실측 | [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 14.0%×1.0 |
-| 코딩 | 51.1 | +0.08 | 실측 | [[terminal-bench]] 26.0%×0.5 |
-| 에이전트 | 52.7 | +0.18 | 실측 | [[terminal-bench]] 26.0%×1.0 |
+| 코딩 | 51.1 | +0.07 | 실측 | [[terminal-bench]] 26.0%×0.5 |
+| 에이전트 | 52.6 | +0.17 | 실측 | [[terminal-bench]] 26.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 58.8 | +0.59 | 실측 | [[aa-lcr]] 64.0%×1.0 |

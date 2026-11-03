@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling 3.0 Tiny
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-02
-timestamp: 2026-11-02T00:00:00Z
+updated: 2026-11-03
+timestamp: 2026-11-03T00:00:00Z
 ---
 
 # Ling 3.0 Tiny
@@ -37,7 +37,7 @@ InclusionAI · Open · Small · 컨텍스트 262k · 종합지능 **None**
 - **약점**: 추론, 코딩
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 58.0 t/s · TTFT 2.59s · 262k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 58.0 t/s · TTFT 2.55s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

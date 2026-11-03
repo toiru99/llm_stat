@@ -5,17 +5,17 @@ creator: MiniMax
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.201
-output_speed_tps: 51.0
+output_speed_tps: 56.0
 context_window: 205000
 status: past
 size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 64.1, z: 0.65, r: 59.7, estimated: false }  # 전문 지식
-  reasoning: { s: 60.3, z: 0.66, r: 59.9, estimated: false }  # 추론
-  coding: { s: 53.0, z: 0.53, r: 58.0, estimated: false }  # 코딩
-  agentic: { s: 53.0, z: 0.65, r: 59.7, estimated: false }  # 에이전트
+  knowledge: { s: 64.1, z: 0.64, r: 59.7, estimated: false }  # 전문 지식
+  reasoning: { s: 60.3, z: 0.66, r: 59.8, estimated: false }  # 추론
+  coding: { s: 53.0, z: 0.53, r: 57.9, estimated: false }  # 코딩
+  agentic: { s: 53.0, z: 0.64, r: 59.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 82.0, z: 0.89, r: 63.4, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax-M2.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-02
-timestamp: 2026-11-02T00:00:00Z
+updated: 2026-11-03
+timestamp: 2026-11-03T00:00:00Z
 ---
 
 # MiniMax-M2.5
@@ -37,16 +37,16 @@ MiniMax · Open · Large · 컨텍스트 205k · 종합지능 **None** · ⚠️
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.201/1M · 51.0 t/s · TTFT 1.76s · 205k ctx`
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.201/1M · 56.0 t/s · TTFT 1.72s · 205k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 59.7 | +0.65 | 실측 | [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 21.0%×0.3 |
-| 추론 | 59.9 | +0.66 | 실측 | [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 21.0%×1.0 |
-| 코딩 | 58.0 | +0.53 | 실측 | [[terminal-bench]] 35.0%×0.5 |
-| 에이전트 | 59.7 | +0.65 | 실측 | [[terminal-bench]] 35.0%×1.0 |
+| 전문 지식 | 59.7 | +0.64 | 실측 | [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 21.0%×0.3 |
+| 추론 | 59.8 | +0.66 | 실측 | [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 21.0%×1.0 |
+| 코딩 | 57.9 | +0.53 | 실측 | [[terminal-bench]] 35.0%×0.5 |
+| 에이전트 | 59.6 | +0.64 | 실측 | [[terminal-bench]] 35.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 63.4 | +0.89 | 실측 | [[aa-lcr]] 73.0%×1.0 |

@@ -18,14 +18,14 @@ radar:
   agentic: { s: 12.1, z: -0.76, r: 38.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 66.2, z: -0.26, r: 46.2, estimated: false }  # 멀티모달
-  long_context: { s: 56.6, z: 0.13, r: 52.0, estimated: true }  # 긴문맥
-  instruction: { s: 38.0, z: -0.61, r: 40.8, estimated: false }  # 지시 따르기
+  long_context: { s: 56.6, z: 0.13, r: 51.9, estimated: true }  # 긴문맥
+  instruction: { s: 38.0, z: -0.62, r: 40.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 VL 32B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-02
-timestamp: 2026-11-02T00:00:00Z
+updated: 2026-11-03
+timestamp: 2026-11-03T00:00:00Z
 ---
 
 # Qwen3 VL 32B
@@ -49,8 +49,8 @@ Alibaba · Open · Small · 컨텍스트 256k · 종합지능 **None** · ⚠️
 | 에이전트 | 38.6 | -0.76 | 실측 | [[terminal-bench]] 8.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 46.2 | -0.26 | 실측 | [[mmmu-pro]] 64.0%×1.0 |
-| 긴문맥 | 52.0 | +0.13 | 추정 | (추정) |
-| 지시 따르기 | 40.8 | -0.61 | 실측 | [[ifbench]] 39.0%×1.0 |
+| 긴문맥 | 51.9 | +0.13 | 추정 | (추정) |
+| 지시 따르기 | 40.8 | -0.62 | 실측 | [[ifbench]] 39.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

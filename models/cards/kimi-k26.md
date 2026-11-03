@@ -5,16 +5,16 @@ creator: Kimi
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.702
-output_speed_tps: 42.0
+output_speed_tps: 41.0
 context_window: 256000
 status: past
 size_class: Unknown
 params_b: null
 is_reasoning: null
 radar:
-  knowledge: { s: 79.5, z: 1.32, r: 69.9, estimated: false }  # 전문 지식
-  reasoning: { s: 77.1, z: 1.42, r: 71.2, estimated: false }  # 추론
-  coding: { s: 72.2, z: 1.18, r: 67.6, estimated: false }  # 코딩
+  knowledge: { s: 79.5, z: 1.32, r: 69.8, estimated: false }  # 전문 지식
+  reasoning: { s: 77.1, z: 1.41, r: 71.2, estimated: false }  # 추론
+  coding: { s: 72.2, z: 1.17, r: 67.6, estimated: false }  # 코딩
   agentic: { s: 56.2, z: 0.75, r: 61.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 86.5, z: 0.77, r: 61.5, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2.6
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-02
-timestamp: 2026-11-02T00:00:00Z
+updated: 2026-11-03
+timestamp: 2026-11-03T00:00:00Z
 ---
 
 # Kimi K2.6
@@ -37,15 +37,15 @@ Kimi · Open · Unknown · 컨텍스트 256k · 종합지능 **None** · ⚠️ 
 - **약점**: 멀티모달, 에이전트
 
 ## 실용 지표
-`입력 $0.95 · 출력 $4.0 · 혼합 $0.702/1M · 42.0 t/s · TTFT 2.83s · 256k ctx`
+`입력 $0.95 · 출력 $4.0 · 혼합 $0.702/1M · 41.0 t/s · TTFT 2.82s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 69.9 | +1.32 | 실측 | [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 37.0%×0.3 |
-| 추론 | 71.2 | +1.42 | 실측 | [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 37.0%×1.0 |
-| 코딩 | 67.6 | +1.18 | 실측 | [[scicode]] 52.0%×1.0, [[terminal-bench]] 44.0%×0.5 |
+| 전문 지식 | 69.8 | +1.32 | 실측 | [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 37.0%×0.3 |
+| 추론 | 71.2 | +1.41 | 실측 | [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 37.0%×1.0 |
+| 코딩 | 67.6 | +1.17 | 실측 | [[scicode]] 52.0%×1.0, [[terminal-bench]] 44.0%×0.5 |
 | 에이전트 | 61.3 | +0.75 | 실측 | [[apex-agents]] 28.0%×1.0, [[gdpval]] 1047.0%×1.0, [[itbench]] 31.0%×1.0, [[tau3-banking]] 23.0%×1.0, [[terminal-bench]] 44.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 61.5 | +0.77 | 실측 | [[mmmu-pro]] 79.0%×1.0 |

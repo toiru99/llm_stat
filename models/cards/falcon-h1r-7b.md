@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 12.4, z: -1.2, r: 32.0, estimated: false }  # 긴문맥
-  instruction: { s: 59.2, z: 0.27, r: 54.1, estimated: false }  # 지시 따르기
+  instruction: { s: 59.2, z: 0.27, r: 54.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Falcon-H1R-7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-02
-timestamp: 2026-11-02T00:00:00Z
+updated: 2026-11-03
+timestamp: 2026-11-03T00:00:00Z
 ---
 
 # Falcon-H1R-7B
@@ -50,7 +50,7 @@ TII UAE · Open · Small · 컨텍스트 256k · 종합지능 **None**
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 32.0 | -1.2 | 실측 | [[aa-lcr]] 11.0%×1.0 |
-| 지시 따르기 | 54.1 | +0.27 | 실측 | [[ifbench]] 54.0%×1.0 |
+| 지시 따르기 | 54.0 | +0.27 | 실측 | [[ifbench]] 54.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

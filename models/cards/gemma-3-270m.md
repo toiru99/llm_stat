@@ -12,10 +12,10 @@ size_class: Tiny
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 10.1, z: -1.73, r: 24.0, estimated: false }  # 전문 지식
+  knowledge: { s: 10.1, z: -1.73, r: 24.1, estimated: false }  # 전문 지식
   reasoning: { s: 9.5, z: -1.63, r: 25.6, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.24, r: 31.3, estimated: false }  # 코딩
-  agentic: { s: 0.0, z: -1.17, r: 32.4, estimated: false }  # 에이전트
+  agentic: { s: 0.0, z: -1.18, r: 32.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.57, r: 26.4, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 3 270M
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-02
-timestamp: 2026-11-02T00:00:00Z
+updated: 2026-11-03
+timestamp: 2026-11-03T00:00:00Z
 ---
 
 # Gemma 3 270M
@@ -43,10 +43,10 @@ Google · Open · Tiny · 컨텍스트 32k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 24.0 | -1.73 | 실측 | [[gpqa-diamond]] 22.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 전문 지식 | 24.1 | -1.73 | 실측 | [[gpqa-diamond]] 22.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 25.6 | -1.63 | 실측 | [[gpqa-diamond]] 22.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 31.3 | -1.24 | 실측 | [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 32.4 | -1.17 | 실측 | [[terminal-bench]] 0.0%×1.0 |
+| 에이전트 | 32.4 | -1.18 | 실측 | [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 26.4 | -1.57 | 실측 | [[aa-lcr]] 0.0%×1.0 |

@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 28.1, z: -0.94, r: 35.9, estimated: false }  # 전문 지식
   reasoning: { s: 25.2, z: -0.92, r: 36.2, estimated: false }  # 추론
   coding: { s: 7.6, z: -0.99, r: 35.1, estimated: false }  # 코딩
-  agentic: { s: 7.6, z: -0.91, r: 36.3, estimated: false }  # 에이전트
+  agentic: { s: 7.6, z: -0.92, r: 36.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 29.0, z: -0.7, r: 39.5, estimated: true }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen2.5 72B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-02
-timestamp: 2026-11-02T00:00:00Z
+updated: 2026-11-03
+timestamp: 2026-11-03T00:00:00Z
 ---
 
 # Qwen2.5 72B
@@ -37,7 +37,7 @@ Alibaba · Open · Medium · 컨텍스트 131k · 종합지능 **None** · ⚠�
 - **약점**: 전문 지식, 코딩
 
 ## 실용 지표
-`입력 $0.47 · 출력 $0.49 · 혼합 $0.477/1M · 27.0 t/s · TTFT 4.16s · 131k ctx`
+`입력 $0.47 · 출력 $0.49 · 혼합 $0.477/1M · 27.0 t/s · TTFT 4.13s · 131k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Alibaba · Open · Medium · 컨텍스트 131k · 종합지능 **None** · ⚠�
 | 전문 지식 | 35.9 | -0.94 | 실측 | [[gpqa-diamond]] 49.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 36.2 | -0.92 | 실측 | [[gpqa-diamond]] 49.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 35.1 | -0.99 | 실측 | [[terminal-bench]] 5.0%×0.5 |
-| 에이전트 | 36.3 | -0.91 | 실측 | [[terminal-bench]] 5.0%×1.0 |
+| 에이전트 | 36.3 | -0.92 | 실측 | [[terminal-bench]] 5.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 39.5 | -0.7 | 추정 | (추정) |

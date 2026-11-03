@@ -18,14 +18,14 @@ radar:
   agentic: { s: 3.1, z: -1.07, r: 34.0, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 2.9, z: -1.48, r: 27.7, estimated: true }  # 긴문맥
-  instruction: { s: 18.6, z: -1.43, r: 28.6, estimated: true }  # 지시 따르기
+  long_context: { s: 2.9, z: -1.48, r: 27.8, estimated: true }  # 긴문맥
+  instruction: { s: 18.6, z: -1.43, r: 28.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Mixtral 8x7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-02
-timestamp: 2026-11-02T00:00:00Z
+updated: 2026-11-03
+timestamp: 2026-11-03T00:00:00Z
 ---
 
 # Mixtral 8x7B
@@ -49,8 +49,8 @@ Mistral · Open · Medium · 컨텍스트 32k · 종합지능 **None** · ⚠️
 | 에이전트 | 34.0 | -1.07 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 27.7 | -1.48 | 추정 | (추정) |
-| 지시 따르기 | 28.6 | -1.43 | 추정 | (추정) |
+| 긴문맥 | 27.8 | -1.48 | 추정 | (추정) |
+| 지시 따르기 | 28.5 | -1.43 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

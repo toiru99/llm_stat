@@ -5,14 +5,14 @@ creator: LongCat
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.4555
-output_speed_tps: 78.0
+output_speed_tps: 75.0
 context_window: 1000000
 status: current
 size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 68.8, z: 0.85, r: 62.8, estimated: false }  # 전문 지식
+  knowledge: { s: 68.8, z: 0.85, r: 62.7, estimated: false }  # 전문 지식
   reasoning: { s: 67.0, z: 0.96, r: 64.4, estimated: false }  # 추론
   coding: { s: 48.3, z: 0.37, r: 55.6, estimated: false }  # 코딩
   agentic: { s: 36.2, z: 0.07, r: 51.0, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — LongCat 2.0
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-02
-timestamp: 2026-11-02T00:00:00Z
+updated: 2026-11-03
+timestamp: 2026-11-03T00:00:00Z
 ---
 
 # LongCat 2.0
@@ -37,13 +37,13 @@ LongCat · Open · Large · 컨텍스트 1M · 종합지능 **None**
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.75 · 출력 $2.95 · 혼합 $0.4555/1M · 78.0 t/s · TTFT 2.62s · 1M ctx`
+`입력 $0.75 · 출력 $2.95 · 혼합 $0.4555/1M · 75.0 t/s · TTFT 2.76s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 62.8 | +0.85 | 실측 | [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 34.0%×0.3 |
+| 전문 지식 | 62.7 | +0.85 | 실측 | [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 34.0%×0.3 |
 | 추론 | 64.4 | +0.96 | 실측 | [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 34.0%×1.0 |
 | 코딩 | 55.6 | +0.37 | 실측 | [[scicode]] 36.0%×1.0 |
 | 에이전트 | 51.0 | +0.07 | 실측 | [[gdpval]] 877.0%×1.0, [[tau3-banking]] 13.0%×1.0 |

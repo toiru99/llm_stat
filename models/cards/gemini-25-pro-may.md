@@ -14,8 +14,8 @@ is_reasoning: true
 radar:
   knowledge: { s: 61.4, z: 0.53, r: 57.9, estimated: false }  # 전문 지식
   reasoning: { s: 57.7, z: 0.54, r: 58.1, estimated: false }  # 추론
-  coding: { s: 56.4, z: 0.65, r: 59.7, estimated: true }  # 코딩
-  agentic: { s: 49.8, z: 0.54, r: 58.0, estimated: true }  # 에이전트
+  coding: { s: 56.4, z: 0.64, r: 59.6, estimated: true }  # 코딩
+  agentic: { s: 49.8, z: 0.53, r: 58.0, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 80.2, z: 0.84, r: 62.6, estimated: true }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.5 Pro (May)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-02
-timestamp: 2026-11-02T00:00:00Z
+updated: 2026-11-03
+timestamp: 2026-11-03T00:00:00Z
 ---
 
 # Gemini 2.5 Pro (May)
@@ -34,7 +34,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 지시 따르기
-- **약점**: 에이전트, 전문 지식
+- **약점**: 전문 지식, 에이전트
 
 ## 실용 지표
 `입력 $1.25 · 출력 $10.0 · 혼합 $1.3375/1M · None t/s · TTFT Nones · 1M ctx`
@@ -45,8 +45,8 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 |---|---|---|---|---|
 | 전문 지식 | 57.9 | +0.53 | 실측 | [[gpqa-diamond]] 82.0%×0.4, [[humanitys-last-exam]] 20.0%×0.3 |
 | 추론 | 58.1 | +0.54 | 실측 | [[gpqa-diamond]] 82.0%×1.0, [[humanitys-last-exam]] 20.0%×1.0 |
-| 코딩 | 59.7 | +0.65 | 추정 | (추정) |
-| 에이전트 | 58.0 | +0.54 | 추정 | (추정) |
+| 코딩 | 59.6 | +0.64 | 추정 | (추정) |
+| 에이전트 | 58.0 | +0.53 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 62.6 | +0.84 | 추정 | (추정) |

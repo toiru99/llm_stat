@@ -13,9 +13,9 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 53.9, z: 0.19, r: 52.9, estimated: false }  # 전문 지식
-  reasoning: { s: 50.0, z: 0.2, r: 53.0, estimated: false }  # 추론
+  reasoning: { s: 50.0, z: 0.2, r: 52.9, estimated: false }  # 추론
   coding: { s: 54.5, z: 0.58, r: 58.7, estimated: false }  # 코딩
-  agentic: { s: 54.5, z: 0.7, r: 60.5, estimated: false }  # 에이전트
+  agentic: { s: 54.5, z: 0.69, r: 60.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 47.2, z: -0.15, r: 47.7, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2.5-Pro (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-02
-timestamp: 2026-11-02T00:00:00Z
+updated: 2026-11-03
+timestamp: 2026-11-03T00:00:00Z
 ---
 
 # MiMo-V2.5-Pro (non-reasoning)
@@ -37,16 +37,16 @@ Xiaomi · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ pa
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.39 · 출력 $1.17 · 혼합 $0.209/1M · 51.0 t/s · TTFT 1.03s · 1M ctx`
+`입력 $0.39 · 출력 $1.17 · 혼합 $0.209/1M · 51.0 t/s · TTFT 1.08s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 52.9 | +0.19 | 실측 | [[gpqa-diamond]] 76.0%×0.4, [[humanitys-last-exam]] 15.0%×0.3 |
-| 추론 | 53.0 | +0.2 | 실측 | [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 15.0%×1.0 |
+| 추론 | 52.9 | +0.2 | 실측 | [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 15.0%×1.0 |
 | 코딩 | 58.7 | +0.58 | 실측 | [[terminal-bench]] 36.0%×0.5 |
-| 에이전트 | 60.5 | +0.7 | 실측 | [[terminal-bench]] 36.0%×1.0 |
+| 에이전트 | 60.4 | +0.69 | 실측 | [[terminal-bench]] 36.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 47.7 | -0.15 | 실측 | [[aa-lcr]] 42.0%×1.0 |

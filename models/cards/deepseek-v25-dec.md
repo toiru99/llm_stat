@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 37.2, z: -0.54, r: 41.9, estimated: false }  # 전문 지식
   reasoning: { s: 37.2, z: -0.38, r: 44.3, estimated: false }  # 추론
   coding: { s: 21.5, z: -0.52, r: 42.1, estimated: true }  # 코딩
-  agentic: { s: 19.8, z: -0.5, r: 42.6, estimated: true }  # 에이전트
+  agentic: { s: 19.8, z: -0.5, r: 42.5, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 35.3, z: -0.51, r: 42.3, estimated: true }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek-V2.5 (Dec)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-02
-timestamp: 2026-11-02T00:00:00Z
+updated: 2026-11-03
+timestamp: 2026-11-03T00:00:00Z
 ---
 
 # DeepSeek-V2.5 (Dec)
@@ -46,7 +46,7 @@ DeepSeek · Open · Large · 컨텍스트 128k · 종합지능 **None** · ⚠�
 | 전문 지식 | 41.9 | -0.54 | 실측 | [[gpqa-diamond]] 42.0%×0.4 |
 | 추론 | 44.3 | -0.38 | 실측 | [[gpqa-diamond]] 42.0%×1.0 |
 | 코딩 | 42.1 | -0.52 | 추정 | (추정) |
-| 에이전트 | 42.6 | -0.5 | 추정 | (추정) |
+| 에이전트 | 42.5 | -0.5 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 42.3 | -0.51 | 추정 | (추정) |

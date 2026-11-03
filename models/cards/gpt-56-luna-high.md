@@ -13,9 +13,9 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 75.3, z: 1.14, r: 67.1, estimated: false }  # 전문 지식
-  reasoning: { s: 72.6, z: 1.21, r: 68.2, estimated: false }  # 추론
+  reasoning: { s: 72.6, z: 1.21, r: 68.1, estimated: false }  # 추론
   coding: { s: 75.0, z: 1.27, r: 69.0, estimated: false }  # 코딩
-  agentic: { s: 60.4, z: 0.9, r: 63.5, estimated: false }  # 에이전트
+  agentic: { s: 60.4, z: 0.89, r: 63.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 85.1, z: 0.7, r: 60.5, estimated: false }  # 멀티모달
   long_context: { s: 89.9, z: 1.13, r: 66.9, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Luna (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-02
-timestamp: 2026-11-02T00:00:00Z
+updated: 2026-11-03
+timestamp: 2026-11-03T00:00:00Z
 ---
 
 # GPT-5.6 Luna (high)
@@ -37,16 +37,16 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 - **약점**: 에이전트, 멀티모달
 
 ## 실용 지표
-`입력 $0.2 · 출력 $1.2 · 혼합 $0.174/1M · 109.0 t/s · TTFT 22.08s · 1M ctx`
+`입력 $0.2 · 출력 $1.2 · 혼합 $0.174/1M · 109.0 t/s · TTFT 22.8s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 67.1 | +1.14 | 실측 | [[gpqa-diamond]] 89.0%×0.4, [[humanitys-last-exam]] 33.0%×0.3 |
-| 추론 | 68.2 | +1.21 | 실측 | [[gpqa-diamond]] 89.0%×1.0, [[humanitys-last-exam]] 33.0%×1.0 |
+| 추론 | 68.1 | +1.21 | 실측 | [[gpqa-diamond]] 89.0%×1.0, [[humanitys-last-exam]] 33.0%×1.0 |
 | 코딩 | 69.0 | +1.27 | 실측 | [[scicode]] 52.0%×1.0 |
-| 에이전트 | 63.5 | +0.9 | 실측 | [[gdpval]] 1339.0%×1.0, [[tau3-banking]] 25.0%×1.0 |
+| 에이전트 | 63.4 | +0.89 | 실측 | [[gdpval]] 1339.0%×1.0, [[tau3-banking]] 25.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 60.5 | +0.7 | 실측 | [[mmmu-pro]] 78.0%×1.0 |
 | 긴문맥 | 66.9 | +1.13 | 실측 | [[aa-lcr]] 80.0%×1.0 |

@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 9.0
 price_blended_usd_1m: 0.077
-output_speed_tps: 118.0
+output_speed_tps: 110.0
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 13.3, z: -1.59, r: 26.2, estimated: false }  # 전문 지식
   reasoning: { s: 10.1, z: -1.6, r: 26.0, estimated: false }  # 추론
-  coding: { s: 60.0, z: 0.77, r: 61.5, estimated: false }  # 코딩
-  agentic: { s: 56.4, z: 0.76, r: 61.4, estimated: false }  # 에이전트
+  coding: { s: 60.0, z: 0.76, r: 61.4, estimated: false }  # 코딩
+  agentic: { s: 56.4, z: 0.76, r: 61.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 63.5, z: -0.39, r: 44.1, estimated: false }  # 멀티모달
   long_context: { s: 44.9, z: -0.22, r: 46.7, estimated: false }  # 긴문맥
-  instruction: { s: 43.4, z: -0.39, r: 44.2, estimated: true }  # 지시 따르기
+  instruction: { s: 43.4, z: -0.39, r: 44.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6 Luna (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-02
-timestamp: 2026-11-02T00:00:00Z
+updated: 2026-11-03
+timestamp: 2026-11-03T00:00:00Z
 ---
 
 # GPT-6 Luna (non-reasoning)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **9.0**
 - **약점**: 전문 지식, 추론
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.5 · 혼합 $0.077/1M · 118.0 t/s · TTFT 0.81s · 1M ctx` · 가성비 116.9
+`입력 $0.1 · 출력 $0.5 · 혼합 $0.077/1M · 110.0 t/s · TTFT 0.81s · 1M ctx` · 가성비 116.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,12 +45,12 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **9.0**
 |---|---|---|---|---|
 | 전문 지식 | 26.2 | -1.59 | 실측 | [[humanitys-last-exam]] 9.0%×0.3 |
 | 추론 | 26.0 | -1.6 | 실측 | [[critpt]] 5.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
-| 코딩 | 61.5 | +0.77 | 실측 | [[scicode]] 43.0%×1.0 |
-| 에이전트 | 61.4 | +0.76 | 실측 | [[gdpval]] 1052.0%×1.0 |
+| 코딩 | 61.4 | +0.76 | 실측 | [[scicode]] 43.0%×1.0 |
+| 에이전트 | 61.3 | +0.76 | 실측 | [[gdpval]] 1052.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 44.1 | -0.39 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
 | 긴문맥 | 46.7 | -0.22 | 실측 | [[aa-lcr]] 40.0%×1.0 |
-| 지시 따르기 | 44.2 | -0.39 | 추정 | (추정) |
+| 지시 따르기 | 44.1 | -0.39 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

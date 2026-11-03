@@ -12,7 +12,7 @@ size_class: Unknown
 params_b: null
 is_reasoning: null
 radar:
-  knowledge: { s: 53.8, z: 0.19, r: 52.9, estimated: false }  # 전문 지식
+  knowledge: { s: 53.8, z: 0.19, r: 52.8, estimated: false }  # 전문 지식
   reasoning: { s: 49.5, z: 0.17, r: 52.6, estimated: false }  # 추론
   coding: { s: 33.3, z: -0.13, r: 48.1, estimated: false }  # 코딩
   agentic: { s: 33.3, z: -0.03, r: 49.5, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-02
-timestamp: 2026-11-02T00:00:00Z
+updated: 2026-11-03
+timestamp: 2026-11-03T00:00:00Z
 ---
 
 # GLM-4.5
@@ -43,7 +43,7 @@ Z AI · Open · Unknown · 컨텍스트 128k · 종합지능 **None** · ⚠️ 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 52.9 | +0.19 | 실측 | [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
+| 전문 지식 | 52.8 | +0.19 | 실측 | [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
 | 추론 | 52.6 | +0.17 | 실측 | [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
 | 코딩 | 48.1 | -0.13 | 실측 | [[terminal-bench]] 22.0%×0.5 |
 | 에이전트 | 49.5 | -0.03 | 실측 | [[terminal-bench]] 22.0%×1.0 |
