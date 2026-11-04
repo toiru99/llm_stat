@@ -5,16 +5,16 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 3.08
-output_speed_tps: 130.0
+output_speed_tps: None
 context_window: 1000000
 status: past
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 90.1, z: 1.79, r: 76.8, estimated: false }  # 전문 지식
-  reasoning: { s: 85.2, z: 1.77, r: 76.6, estimated: false }  # 추론
-  coding: { s: 88.9, z: 1.73, r: 75.9, estimated: false }  # 코딩
+  knowledge: { s: 90.1, z: 1.78, r: 76.7, estimated: false }  # 전문 지식
+  reasoning: { s: 87.0, z: 1.84, r: 77.5, estimated: false }  # 추론
+  coding: { s: 88.9, z: 1.73, r: 76.0, estimated: false }  # 코딩
   agentic: { s: 93.2, z: 2.02, r: 80.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 91.9, z: 1.04, r: 65.6, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Sol (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-03
-timestamp: 2026-11-03T00:00:00Z
+updated: 2026-11-04
+timestamp: 2026-11-04T00:00:00Z
 ---
 
 # GPT-5.6 Sol (max)
@@ -33,19 +33,19 @@ timestamp: 2026-11-03T00:00:00Z
 OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 에이전트, 전문 지식
+- **강점**: 에이전트, 추론
 - **약점**: 긴문맥, 멀티모달
 
 ## 실용 지표
-`입력 $4.0 · 출력 $20.0 · 혼합 $3.08/1M · 130.0 t/s · TTFT 112.75s · 1M ctx`
+`입력 $4.0 · 출력 $20.0 · 혼합 $3.08/1M · None t/s · TTFT Nones · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 76.8 | +1.79 | 실측 | [[gpqa-diamond]] 94.0%×0.4, [[humanitys-last-exam]] 49.0%×0.3 |
-| 추론 | 76.6 | +1.77 | 실측 | [[critpt]] 56.0%×1.0, [[gpqa-diamond]] 94.0%×1.0, [[humanitys-last-exam]] 49.0%×1.0 |
-| 코딩 | 75.9 | +1.73 | 실측 | [[scicode]] 57.0%×1.0, [[terminal-bench]] 66.0%×0.5 |
+| 전문 지식 | 76.7 | +1.78 | 실측 | [[gpqa-diamond]] 94.0%×0.4, [[humanitys-last-exam]] 49.0%×0.3 |
+| 추론 | 77.5 | +1.84 | 실측 | [[critpt]] 60.0%×1.0, [[gpqa-diamond]] 94.0%×1.0, [[humanitys-last-exam]] 49.0%×1.0 |
+| 코딩 | 76.0 | +1.73 | 실측 | [[scicode]] 57.0%×1.0, [[terminal-bench]] 66.0%×0.5 |
 | 에이전트 | 80.3 | +2.02 | 실측 | [[gdpval]] 1618.0%×1.0, [[itbench]] 56.0%×1.0, [[tau3-banking]] 44.0%×1.0, [[terminal-bench]] 66.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 65.6 | +1.04 | 실측 | [[mmmu-pro]] 83.0%×1.0 |

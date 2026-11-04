@@ -14,18 +14,18 @@ is_reasoning: null
 radar:
   knowledge: { s: 35.5, z: -0.62, r: 40.8, estimated: false }  # 전문 지식
   reasoning: { s: 32.1, z: -0.61, r: 40.8, estimated: false }  # 추론
-  coding: { s: 19.6, z: -0.59, r: 41.2, estimated: true }  # 코딩
-  agentic: { s: 13.7, z: -0.71, r: 39.4, estimated: true }  # 에이전트
+  coding: { s: 21.3, z: -0.53, r: 42.0, estimated: true }  # 코딩
+  agentic: { s: 10.6, z: -0.81, r: 37.8, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 28.5, z: -0.71, r: 39.3, estimated: true }  # 긴문맥
-  instruction: { s: 34.9, z: -0.75, r: 38.8, estimated: true }  # 지시 따르기
+  long_context: { s: 28.3, z: -0.72, r: 39.2, estimated: true }  # 긴문맥
+  instruction: { s: 34.5, z: -0.78, r: 38.3, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Pro 2 (Preview)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-03
-timestamp: 2026-11-03T00:00:00Z
+updated: 2026-11-04
+timestamp: 2026-11-04T00:00:00Z
 ---
 
 # Solar Pro 2 (Preview)
@@ -34,7 +34,7 @@ Upstage · Proprietary · Unknown · 컨텍스트 64k · 종합지능 **None** �
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 코딩, 추론
-- **약점**: 긴문맥, 지시 따르기
+- **약점**: 지시 따르기, 에이전트
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 64k ctx`
@@ -45,12 +45,12 @@ Upstage · Proprietary · Unknown · 컨텍스트 64k · 종합지능 **None** �
 |---|---|---|---|---|
 | 전문 지식 | 40.8 | -0.62 | 실측 | [[gpqa-diamond]] 58.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 40.8 | -0.61 | 실측 | [[gpqa-diamond]] 58.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 41.2 | -0.59 | 추정 | (추정) |
-| 에이전트 | 39.4 | -0.71 | 추정 | (추정) |
+| 코딩 | 42.0 | -0.53 | 추정 | (추정) |
+| 에이전트 | 37.8 | -0.81 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 39.3 | -0.71 | 추정 | (추정) |
-| 지시 따르기 | 38.8 | -0.75 | 추정 | (추정) |
+| 긴문맥 | 39.2 | -0.72 | 추정 | (추정) |
+| 지시 따르기 | 38.3 | -0.78 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

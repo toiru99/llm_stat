@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 3.08
-output_speed_tps: 124.0
+output_speed_tps: None
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 88.0, z: 1.69, r: 75.4, estimated: false }  # 전문 지식
-  reasoning: { s: 86.6, z: 1.84, r: 77.6, estimated: false }  # 추론
+  reasoning: { s: 86.6, z: 1.82, r: 77.3, estimated: false }  # 추론
   coding: { s: 86.4, z: 1.65, r: 74.7, estimated: false }  # 코딩
   agentic: { s: 83.8, z: 1.7, r: 75.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 91.9, z: 1.04, r: 65.6, estimated: false }  # 멀티모달
   long_context: { s: 92.1, z: 1.19, r: 67.9, estimated: false }  # 긴문맥
-  instruction: { s: 83.1, z: 1.27, r: 69.1, estimated: false }  # 지시 따르기
+  instruction: { s: 83.1, z: 1.27, r: 69.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Sol (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-03
-timestamp: 2026-11-03T00:00:00Z
+updated: 2026-11-04
+timestamp: 2026-11-04T00:00:00Z
 ---
 
 # GPT-5.6 Sol (xhigh)
@@ -37,20 +37,20 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 - **약점**: 긴문맥, 멀티모달
 
 ## 실용 지표
-`입력 $4.0 · 출력 $20.0 · 혼합 $3.08/1M · 124.0 t/s · TTFT 46.25s · 1M ctx`
+`입력 $4.0 · 출력 $20.0 · 혼합 $3.08/1M · None t/s · TTFT Nones · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 75.4 | +1.69 | 실측 | [[gpqa-diamond]] 93.0%×0.4, [[humanitys-last-exam]] 47.0%×0.3 |
-| 추론 | 77.6 | +1.84 | 실측 | [[gpqa-diamond]] 93.0%×1.0, [[humanitys-last-exam]] 47.0%×1.0 |
+| 추론 | 77.3 | +1.82 | 실측 | [[gpqa-diamond]] 93.0%×1.0, [[humanitys-last-exam]] 47.0%×1.0 |
 | 코딩 | 74.7 | +1.65 | 실측 | [[scicode]] 57.0%×1.0, [[terminal-bench]] 61.0%×0.5 |
 | 에이전트 | 75.5 | +1.7 | 실측 | [[gdpval]] 1578.0%×1.0, [[tau3-banking]] 38.0%×1.0, [[terminal-bench]] 61.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 65.6 | +1.04 | 실측 | [[mmmu-pro]] 83.0%×1.0 |
 | 긴문맥 | 67.9 | +1.19 | 실측 | [[aa-lcr]] 82.0%×1.0 |
-| 지시 따르기 | 69.1 | +1.27 | 실측 | [[ifbench]] 71.0%×1.0 |
+| 지시 따르기 | 69.0 | +1.27 | 실측 | [[ifbench]] 71.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

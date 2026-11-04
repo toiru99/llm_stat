@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 28.7, z: -0.91, r: 36.3, estimated: false }  # 전문 지식
   reasoning: { s: 25.5, z: -0.91, r: 36.4, estimated: false }  # 추론
   coding: { s: 7.4, z: -1.0, r: 35.0, estimated: true }  # 코딩
-  agentic: { s: 7.9, z: -0.9, r: 36.4, estimated: true }  # 에이전트
+  agentic: { s: 7.9, z: -0.9, r: 36.5, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 25.3, z: -0.81, r: 37.9, estimated: true }  # 긴문맥
-  instruction: { s: 31.5, z: -0.89, r: 36.7, estimated: true }  # 지시 따르기
+  long_context: { s: 25.3, z: -0.81, r: 37.8, estimated: true }  # 긴문맥
+  instruction: { s: 31.5, z: -0.9, r: 36.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-03
-timestamp: 2026-11-03T00:00:00Z
+updated: 2026-11-04
+timestamp: 2026-11-04T00:00:00Z
 ---
 
 # Grok 2
@@ -33,7 +33,7 @@ timestamp: 2026-11-03T00:00:00Z
 SpaceXAI · Open · Large · 컨텍스트 131k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 긴문맥, 지시 따르기
+- **강점**: 긴문맥, 에이전트
 - **약점**: 추론, 코딩
 
 ## 실용 지표
@@ -46,11 +46,11 @@ SpaceXAI · Open · Large · 컨텍스트 131k · 종합지능 **None** · ⚠�
 | 전문 지식 | 36.3 | -0.91 | 실측 | [[gpqa-diamond]] 51.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
 | 추론 | 36.4 | -0.91 | 실측 | [[gpqa-diamond]] 51.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 35.0 | -1.0 | 추정 | (추정) |
-| 에이전트 | 36.4 | -0.9 | 추정 | (추정) |
+| 에이전트 | 36.5 | -0.9 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 37.9 | -0.81 | 추정 | (추정) |
-| 지시 따르기 | 36.7 | -0.89 | 추정 | (추정) |
+| 긴문맥 | 37.8 | -0.81 | 추정 | (추정) |
+| 지시 따르기 | 36.5 | -0.9 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

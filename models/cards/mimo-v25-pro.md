@@ -4,8 +4,8 @@ title: MiMo-V2.5-Pro
 creator: Xiaomi
 license: Open
 intelligence_index: None
-price_blended_usd_1m: 0.191
-output_speed_tps: 53.0
+price_blended_usd_1m: 0.173
+output_speed_tps: None
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -13,9 +13,9 @@ params_b: null
 is_reasoning: null
 radar:
   knowledge: { s: 76.2, z: 1.17, r: 67.6, estimated: false }  # 전문 지식
-  reasoning: { s: 73.9, z: 1.27, r: 69.0, estimated: false }  # 추론
+  reasoning: { s: 73.9, z: 1.25, r: 68.8, estimated: false }  # 추론
   coding: { s: 70.6, z: 1.12, r: 66.8, estimated: false }  # 코딩
-  agentic: { s: 42.9, z: 0.3, r: 54.4, estimated: false }  # 에이전트
+  agentic: { s: 42.9, z: 0.3, r: 54.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 89.9, z: 1.13, r: 66.9, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2.5-Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-03
-timestamp: 2026-11-03T00:00:00Z
+updated: 2026-11-04
+timestamp: 2026-11-04T00:00:00Z
 ---
 
 # MiMo-V2.5-Pro
@@ -37,16 +37,16 @@ Xiaomi · Open · Unknown · 컨텍스트 1M · 종합지능 **None** · ⚠️ 
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.41 · 출력 $1.02 · 혼합 $0.191/1M · 53.0 t/s · TTFT 1.12s · 1M ctx`
+`입력 $0.43 · 출력 $0.87 · 혼합 $0.173/1M · None t/s · TTFT Nones · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 67.6 | +1.17 | 실측 | [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 36.0%×0.3 |
-| 추론 | 69.0 | +1.27 | 실측 | [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 36.0%×1.0 |
+| 추론 | 68.8 | +1.25 | 실측 | [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 36.0%×1.0 |
 | 코딩 | 66.8 | +1.12 | 실측 | [[scicode]] 51.0%×1.0, [[terminal-bench]] 43.0%×0.5 |
-| 에이전트 | 54.4 | +0.3 | 실측 | [[apex-agents]] 2.0%×1.0, [[gdpval]] 1129.0%×1.0, [[itbench]] 38.0%×1.0, [[tau3-banking]] 10.0%×1.0, [[terminal-bench]] 43.0%×1.0 |
+| 에이전트 | 54.5 | +0.3 | 실측 | [[apex-agents]] 2.0%×1.0, [[gdpval]] 1129.0%×1.0, [[itbench]] 38.0%×1.0, [[tau3-banking]] 10.0%×1.0, [[terminal-bench]] 43.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 66.9 | +1.13 | 실측 | [[aa-lcr]] 80.0%×1.0 |
