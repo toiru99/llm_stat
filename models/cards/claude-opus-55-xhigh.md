@@ -1,6 +1,6 @@
 ---
 type: Model
-title: Claude Opus 5.5 (xhigh with fallback)
+title: Claude Opus 5.5 (xhigh)
 creator: Anthropic
 license: Proprietary
 intelligence_index: 57.0
@@ -13,22 +13,22 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 95.0, z: 2.0, r: 80.0, estimated: false }  # 전문 지식
-  reasoning: { s: 94.7, z: 2.18, r: 82.7, estimated: false }  # 추론
+  reasoning: { s: 94.7, z: 2.19, r: 82.8, estimated: false }  # 추론
   coding: { s: 96.7, z: 1.99, r: 79.9, estimated: false }  # 코딩
-  agentic: { s: 98.3, z: 2.2, r: 82.9, estimated: false }  # 에이전트
+  agentic: { s: 98.3, z: 2.2, r: 83.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 97.3, z: 1.31, r: 69.7, estimated: false }  # 멀티모달
-  long_context: { s: 95.5, z: 1.3, r: 69.4, estimated: false }  # 긴문맥
-  instruction: { s: 80.7, z: 1.16, r: 67.5, estimated: true }  # 지시 따르기
+  multimodal: { s: 97.3, z: 1.31, r: 69.6, estimated: false }  # 멀티모달
+  long_context: { s: 95.5, z: 1.29, r: 69.4, estimated: false }  # 긴문맥
+  instruction: { s: 80.7, z: 1.16, r: 67.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
-    title: Artificial Analysis — Claude Opus 5.5 (xhigh with fallback)
+    title: Artificial Analysis — Claude Opus 5.5 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
-# Claude Opus 5.5 (xhigh with fallback)
+# Claude Opus 5.5 (xhigh)
 
 Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **57.0**
 
@@ -44,13 +44,13 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **57.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 80.0 | +2.0 | 실측 | [[humanitys-last-exam]] 58.0%×0.3 |
-| 추론 | 82.7 | +2.18 | 실측 | [[critpt]] 68.0%×1.0, [[humanitys-last-exam]] 58.0%×1.0 |
+| 추론 | 82.8 | +2.19 | 실측 | [[critpt]] 68.0%×1.0, [[humanitys-last-exam]] 58.0%×1.0 |
 | 코딩 | 79.9 | +1.99 | 실측 | [[scicode]] 65.0%×1.0 |
-| 에이전트 | 82.9 | +2.2 | 실측 | [[gdpval]] 1835.0%×1.0 |
+| 에이전트 | 83.0 | +2.2 | 실측 | [[gdpval]] 1835.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 69.7 | +1.31 | 실측 | [[mmmu-pro]] 87.0%×1.0 |
-| 긴문맥 | 69.4 | +1.3 | 실측 | [[aa-lcr]] 85.0%×1.0 |
-| 지시 따르기 | 67.5 | +1.16 | 추정 | (추정) |
+| 멀티모달 | 69.6 | +1.31 | 실측 | [[mmmu-pro]] 87.0%×1.0 |
+| 긴문맥 | 69.4 | +1.29 | 실측 | [[aa-lcr]] 85.0%×1.0 |
+| 지시 따르기 | 67.4 | +1.16 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

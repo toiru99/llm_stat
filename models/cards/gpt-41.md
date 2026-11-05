@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 40.0, z: -0.42, r: 43.8, estimated: false }  # 전문 지식
+  knowledge: { s: 40.0, z: -0.42, r: 43.7, estimated: false }  # 전문 지식
   reasoning: { s: 35.6, z: -0.45, r: 43.2, estimated: false }  # 추론
-  coding: { s: 21.2, z: -0.53, r: 42.0, estimated: false }  # 코딩
-  agentic: { s: 21.2, z: -0.45, r: 43.3, estimated: false }  # 에이전트
+  coding: { s: 21.2, z: -0.54, r: 41.9, estimated: false }  # 코딩
+  agentic: { s: 21.2, z: -0.45, r: 43.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 62.2, z: -0.46, r: 43.1, estimated: false }  # 멀티모달
+  multimodal: { s: 62.2, z: -0.46, r: 43.0, estimated: false }  # 멀티모달
   long_context: { s: 76.4, z: 0.72, r: 60.8, estimated: false }  # 긴문맥
   instruction: { s: 43.7, z: -0.39, r: 44.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # GPT-4.1
@@ -43,12 +43,12 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 43.8 | -0.42 | 실측 | [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 전문 지식 | 43.7 | -0.42 | 실측 | [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 43.2 | -0.45 | 실측 | [[gpqa-diamond]] 67.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 42.0 | -0.53 | 실측 | [[terminal-bench]] 14.0%×0.5 |
-| 에이전트 | 43.3 | -0.45 | 실측 | [[terminal-bench]] 14.0%×1.0 |
+| 코딩 | 41.9 | -0.54 | 실측 | [[terminal-bench]] 14.0%×0.5 |
+| 에이전트 | 43.2 | -0.45 | 실측 | [[terminal-bench]] 14.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 43.1 | -0.46 | 실측 | [[mmmu-pro]] 61.0%×1.0 |
+| 멀티모달 | 43.0 | -0.46 | 실측 | [[mmmu-pro]] 61.0%×1.0 |
 | 긴문맥 | 60.8 | +0.72 | 실측 | [[aa-lcr]] 68.0%×1.0 |
 | 지시 따르기 | 44.1 | -0.39 | 실측 | [[ifbench]] 43.0%×1.0 |
 

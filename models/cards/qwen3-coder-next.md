@@ -12,10 +12,10 @@ size_class: Medium
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 49.0, z: -0.02, r: 49.7, estimated: false }  # 전문 지식
+  knowledge: { s: 49.0, z: -0.03, r: 49.6, estimated: false }  # 전문 지식
   reasoning: { s: 44.7, z: -0.05, r: 49.3, estimated: false }  # 추론
-  coding: { s: 41.3, z: 0.14, r: 52.1, estimated: false }  # 코딩
-  agentic: { s: 21.7, z: -0.43, r: 43.5, estimated: false }  # 에이전트
+  coding: { s: 41.3, z: 0.14, r: 52.0, estimated: false }  # 코딩
+  agentic: { s: 21.7, z: -0.44, r: 43.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 52.8, z: 0.01, r: 50.2, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Coder Next
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # Qwen3 Coder Next
@@ -43,10 +43,10 @@ Alibaba · Open · Medium · 컨텍스트 256k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 49.7 | -0.02 | 실측 | [[gpqa-diamond]] 74.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
+| 전문 지식 | 49.6 | -0.03 | 실측 | [[gpqa-diamond]] 74.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
 | 추론 | 49.3 | -0.05 | 실측 | [[gpqa-diamond]] 74.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
-| 코딩 | 52.1 | +0.14 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 18.0%×0.5 |
-| 에이전트 | 43.5 | -0.43 | 실측 | [[gdpval]] 521.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 18.0%×1.0 |
+| 코딩 | 52.0 | +0.14 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 18.0%×0.5 |
+| 에이전트 | 43.5 | -0.44 | 실측 | [[gdpval]] 521.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 18.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 50.2 | +0.01 | 실측 | [[aa-lcr]] 47.0%×1.0 |

@@ -17,15 +17,15 @@ radar:
   coding: { s: 34.8, z: -0.08, r: 48.8, estimated: false }  # 코딩
   agentic: { s: 34.8, z: 0.02, r: 50.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 63.5, z: -0.39, r: 44.1, estimated: false }  # 멀티모달
-  long_context: { s: 50.6, z: -0.05, r: 49.2, estimated: false }  # 긴문맥
+  multimodal: { s: 63.5, z: -0.4, r: 44.1, estimated: false }  # 멀티모달
+  long_context: { s: 50.6, z: -0.06, r: 49.1, estimated: false }  # 긴문맥
   instruction: { s: 43.7, z: -0.39, r: 44.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.1 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # GPT-5.1 (non-reasoning)
@@ -48,8 +48,8 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **None** �
 | 코딩 | 48.8 | -0.08 | 실측 | [[terminal-bench]] 23.0%×0.5 |
 | 에이전트 | 50.3 | +0.02 | 실측 | [[terminal-bench]] 23.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 44.1 | -0.39 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
-| 긴문맥 | 49.2 | -0.05 | 실측 | [[aa-lcr]] 45.0%×1.0 |
+| 멀티모달 | 44.1 | -0.4 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
+| 긴문맥 | 49.1 | -0.06 | 실측 | [[aa-lcr]] 45.0%×1.0 |
 | 지시 따르기 | 44.1 | -0.39 | 실측 | [[ifbench]] 43.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

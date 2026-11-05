@@ -12,10 +12,10 @@ size_class: Large
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 31.4, z: -0.79, r: 38.1, estimated: false }  # 전문 지식
-  reasoning: { s: 28.1, z: -0.79, r: 38.1, estimated: false }  # 추론
+  knowledge: { s: 31.4, z: -0.8, r: 38.0, estimated: false }  # 전문 지식
+  reasoning: { s: 28.1, z: -0.79, r: 38.2, estimated: false }  # 추론
   coding: { s: 15.2, z: -0.74, r: 38.9, estimated: false }  # 코딩
-  agentic: { s: 15.2, z: -0.66, r: 40.2, estimated: false }  # 에이전트
+  agentic: { s: 15.2, z: -0.66, r: 40.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 24.7, z: -0.83, r: 37.5, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hermes 4 405B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # Hermes 4 405B (non-reasoning)
@@ -43,10 +43,10 @@ Nous Research · Open · Large · 컨텍스트 128k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 38.1 | -0.79 | 실측 | [[gpqa-diamond]] 54.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 38.1 | -0.79 | 실측 | [[gpqa-diamond]] 54.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 전문 지식 | 38.0 | -0.8 | 실측 | [[gpqa-diamond]] 54.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 38.2 | -0.79 | 실측 | [[gpqa-diamond]] 54.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 38.9 | -0.74 | 실측 | [[terminal-bench]] 10.0%×0.5 |
-| 에이전트 | 40.2 | -0.66 | 실측 | [[terminal-bench]] 10.0%×1.0 |
+| 에이전트 | 40.1 | -0.66 | 실측 | [[terminal-bench]] 10.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 37.5 | -0.83 | 실측 | [[aa-lcr]] 22.0%×1.0 |

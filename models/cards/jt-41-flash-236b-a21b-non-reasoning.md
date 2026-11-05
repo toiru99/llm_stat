@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 62.0, z: 0.55, r: 58.2, estimated: false }  # 전문 지식
-  reasoning: { s: 57.8, z: 0.53, r: 58.0, estimated: false }  # 추론
-  coding: { s: 57.0, z: 0.66, r: 60.0, estimated: true }  # 코딩
+  reasoning: { s: 57.8, z: 0.54, r: 58.0, estimated: false }  # 추론
+  coding: { s: 57.0, z: 0.66, r: 59.9, estimated: true }  # 코딩
   agentic: { s: 60.4, z: 0.9, r: 63.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 66.2, z: -0.26, r: 46.2, estimated: false }  # 멀티모달
+  multimodal: { s: 66.2, z: -0.26, r: 46.1, estimated: false }  # 멀티모달
   long_context: { s: 79.8, z: 0.82, r: 62.3, estimated: false }  # 긴문맥
-  instruction: { s: 71.9, z: 0.8, r: 61.9, estimated: true }  # 지시 따르기
+  instruction: { s: 71.9, z: 0.79, r: 61.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — JT-4.1 Flash 236B A21B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # JT-4.1 Flash 236B A21B (non-reasoning)
@@ -44,13 +44,13 @@ China Mobile · Proprietary · Large · 컨텍스트 262k · 종합지능 **None
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 58.2 | +0.55 | 실측 | [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 18.0%×0.3 |
-| 추론 | 58.0 | +0.53 | 실측 | [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 18.0%×1.0 |
-| 코딩 | 60.0 | +0.66 | 추정 | (추정) |
+| 추론 | 58.0 | +0.54 | 실측 | [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 18.0%×1.0 |
+| 코딩 | 59.9 | +0.66 | 추정 | (추정) |
 | 에이전트 | 63.5 | +0.9 | 실측 | [[gdpval]] 1128.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 46.2 | -0.26 | 실측 | [[mmmu-pro]] 64.0%×1.0 |
+| 멀티모달 | 46.1 | -0.26 | 실측 | [[mmmu-pro]] 64.0%×1.0 |
 | 긴문맥 | 62.3 | +0.82 | 실측 | [[aa-lcr]] 71.0%×1.0 |
-| 지시 따르기 | 61.9 | +0.8 | 추정 | (추정) |
+| 지시 따르기 | 61.9 | +0.79 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

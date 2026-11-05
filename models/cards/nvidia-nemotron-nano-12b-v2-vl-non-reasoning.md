@@ -14,8 +14,8 @@ is_reasoning: false
 radar:
   knowledge: { s: 24.7, z: -1.09, r: 33.7, estimated: false }  # 전문 지식
   reasoning: { s: 22.3, z: -1.05, r: 34.3, estimated: false }  # 추론
-  coding: { s: 0.0, z: -1.24, r: 31.3, estimated: false }  # 코딩
-  agentic: { s: 0.0, z: -1.18, r: 32.4, estimated: false }  # 에이전트
+  coding: { s: 0.0, z: -1.25, r: 31.2, estimated: false }  # 코딩
+  agentic: { s: 0.0, z: -1.18, r: 32.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 40.5, z: -1.55, r: 26.7, estimated: false }  # 멀티모달
   long_context: { s: 23.6, z: -0.87, r: 37.0, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — NVIDIA Nemotron Nano 12B v2 VL (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # NVIDIA Nemotron Nano 12B v2 VL (non-reasoning)
@@ -45,8 +45,8 @@ NVIDIA · Open · Small · 컨텍스트 128k · 종합지능 **None**
 |---|---|---|---|---|
 | 전문 지식 | 33.7 | -1.09 | 실측 | [[gpqa-diamond]] 44.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 34.3 | -1.05 | 실측 | [[gpqa-diamond]] 44.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 31.3 | -1.24 | 실측 | [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 32.4 | -1.18 | 실측 | [[terminal-bench]] 0.0%×1.0 |
+| 코딩 | 31.2 | -1.25 | 실측 | [[terminal-bench]] 0.0%×0.5 |
+| 에이전트 | 32.3 | -1.18 | 실측 | [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 26.7 | -1.55 | 실측 | [[mmmu-pro]] 45.0%×1.0 |
 | 긴문맥 | 37.0 | -0.87 | 실측 | [[aa-lcr]] 21.0%×1.0 |

@@ -1,6 +1,6 @@
 ---
 type: Model
-title: Claude Sonnet 5.5 (xhigh with fallback)
+title: Claude Sonnet 5.5 (xhigh)
 creator: Anthropic
 license: Proprietary
 intelligence_index: 50.0
@@ -13,22 +13,22 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 81.7, z: 1.41, r: 71.2, estimated: false }  # 전문 지식
-  reasoning: { s: 80.4, z: 1.54, r: 73.1, estimated: false }  # 추론
+  reasoning: { s: 80.4, z: 1.55, r: 73.2, estimated: false }  # 추론
   coding: { s: 83.3, z: 1.54, r: 73.2, estimated: false }  # 코딩
-  agentic: { s: 93.0, z: 2.01, r: 80.2, estimated: false }  # 에이전트
+  agentic: { s: 93.0, z: 2.02, r: 80.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 89.9, z: 1.13, r: 66.9, estimated: false }  # 긴문맥
-  instruction: { s: 82.5, z: 1.24, r: 68.6, estimated: true }  # 지시 따르기
+  instruction: { s: 81.2, z: 1.18, r: 67.7, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
-    title: Artificial Analysis — Claude Sonnet 5.5 (xhigh with fallback)
+    title: Artificial Analysis — Claude Sonnet 5.5 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
-# Claude Sonnet 5.5 (xhigh with fallback)
+# Claude Sonnet 5.5 (xhigh)
 
 Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **50.0**
 
@@ -44,13 +44,13 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **50.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 71.2 | +1.41 | 실측 | [[humanitys-last-exam]] 50.0%×0.3 |
-| 추론 | 73.1 | +1.54 | 실측 | [[critpt]] 57.0%×1.0, [[humanitys-last-exam]] 50.0%×1.0 |
+| 추론 | 73.2 | +1.55 | 실측 | [[critpt]] 57.0%×1.0, [[humanitys-last-exam]] 50.0%×1.0 |
 | 코딩 | 73.2 | +1.54 | 실측 | [[scicode]] 57.0%×1.0 |
-| 에이전트 | 80.2 | +2.01 | 실측 | [[gdpval]] 1735.0%×1.0 |
+| 에이전트 | 80.2 | +2.02 | 실측 | [[gdpval]] 1735.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 66.9 | +1.13 | 실측 | [[aa-lcr]] 80.0%×1.0 |
-| 지시 따르기 | 68.6 | +1.24 | 추정 | (추정) |
+| 지시 따르기 | 67.7 | +1.18 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

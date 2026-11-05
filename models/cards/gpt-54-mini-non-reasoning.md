@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 37.5, z: -0.53, r: 42.1, estimated: false }  # 전문 지식
+  knowledge: { s: 37.5, z: -0.53, r: 42.0, estimated: false }  # 전문 지식
   reasoning: { s: 33.8, z: -0.53, r: 42.0, estimated: false }  # 추론
-  coding: { s: 27.3, z: -0.33, r: 45.0, estimated: false }  # 코딩
-  agentic: { s: 30.7, z: -0.12, r: 48.1, estimated: false }  # 에이전트
+  coding: { s: 27.3, z: -0.34, r: 45.0, estimated: false }  # 코딩
+  agentic: { s: 30.7, z: -0.13, r: 48.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 60.8, z: -0.53, r: 42.1, estimated: false }  # 멀티모달
+  multimodal: { s: 60.8, z: -0.53, r: 42.0, estimated: false }  # 멀티모달
   long_context: { s: 41.6, z: -0.33, r: 45.1, estimated: false }  # 긴문맥
   instruction: { s: 38.0, z: -0.63, r: 40.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.4 mini (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # GPT-5.4 mini (non-reasoning)
@@ -33,7 +33,7 @@ timestamp: 2026-11-04T00:00:00Z
 OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 에이전트, 코딩
+- **강점**: 에이전트, 긴문맥
 - **약점**: 멀티모달, 지시 따르기
 
 ## 실용 지표
@@ -43,12 +43,12 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **None** �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 42.1 | -0.53 | 실측 | [[gpqa-diamond]] 61.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
+| 전문 지식 | 42.0 | -0.53 | 실측 | [[gpqa-diamond]] 61.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 42.0 | -0.53 | 실측 | [[gpqa-diamond]] 61.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 45.0 | -0.33 | 실측 | [[terminal-bench]] 18.0%×0.5 |
-| 에이전트 | 48.1 | -0.12 | 실측 | [[gdpval]] 597.0%×1.0, [[itbench]] 19.0%×1.0, [[terminal-bench]] 18.0%×1.0 |
+| 코딩 | 45.0 | -0.34 | 실측 | [[terminal-bench]] 18.0%×0.5 |
+| 에이전트 | 48.1 | -0.13 | 실측 | [[gdpval]] 597.0%×1.0, [[itbench]] 19.0%×1.0, [[terminal-bench]] 18.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 42.1 | -0.53 | 실측 | [[mmmu-pro]] 60.0%×1.0 |
+| 멀티모달 | 42.0 | -0.53 | 실측 | [[mmmu-pro]] 60.0%×1.0 |
 | 긴문맥 | 45.1 | -0.33 | 실측 | [[aa-lcr]] 37.0%×1.0 |
 | 지시 따르기 | 40.6 | -0.63 | 실측 | [[ifbench]] 39.0%×1.0 |
 

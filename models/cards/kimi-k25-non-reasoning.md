@@ -12,20 +12,20 @@ size_class: Large
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 54.4, z: 0.22, r: 53.2, estimated: false }  # 전문 지식
+  knowledge: { s: 54.4, z: 0.21, r: 53.2, estimated: false }  # 전문 지식
   reasoning: { s: 50.1, z: 0.19, r: 52.9, estimated: false }  # 추론
-  coding: { s: 28.8, z: -0.28, r: 45.8, estimated: false }  # 코딩
-  agentic: { s: 28.8, z: -0.19, r: 47.2, estimated: false }  # 에이전트
+  coding: { s: 28.8, z: -0.28, r: 45.7, estimated: false }  # 코딩
+  agentic: { s: 28.8, z: -0.19, r: 47.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 78.4, z: 0.36, r: 55.4, estimated: false }  # 멀티모달
+  multimodal: { s: 78.4, z: 0.35, r: 55.3, estimated: false }  # 멀티모달
   long_context: { s: 75.3, z: 0.69, r: 60.3, estimated: false }  # 긴문맥
   instruction: { s: 45.1, z: -0.33, r: 45.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2.5 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # Kimi K2.5 (non-reasoning)
@@ -43,12 +43,12 @@ Kimi · Open · Large · 컨텍스트 256k · 종합지능 **None** · ⚠️ pa
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 53.2 | +0.22 | 실측 | [[gpqa-diamond]] 79.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
+| 전문 지식 | 53.2 | +0.21 | 실측 | [[gpqa-diamond]] 79.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
 | 추론 | 52.9 | +0.19 | 실측 | [[gpqa-diamond]] 79.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
-| 코딩 | 45.8 | -0.28 | 실측 | [[terminal-bench]] 19.0%×0.5 |
-| 에이전트 | 47.2 | -0.19 | 실측 | [[terminal-bench]] 19.0%×1.0 |
+| 코딩 | 45.7 | -0.28 | 실측 | [[terminal-bench]] 19.0%×0.5 |
+| 에이전트 | 47.1 | -0.19 | 실측 | [[terminal-bench]] 19.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 55.4 | +0.36 | 실측 | [[mmmu-pro]] 73.0%×1.0 |
+| 멀티모달 | 55.3 | +0.35 | 실측 | [[mmmu-pro]] 73.0%×1.0 |
 | 긴문맥 | 60.3 | +0.69 | 실측 | [[aa-lcr]] 67.0%×1.0 |
 | 지시 따르기 | 45.0 | -0.33 | 실측 | [[ifbench]] 44.0%×1.0 |
 

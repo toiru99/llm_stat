@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 71.7, z: 0.97, r: 64.6, estimated: false }  # 전문 지식
   reasoning: { s: 66.4, z: 0.92, r: 63.8, estimated: false }  # 추론
   coding: { s: 80.0, z: 1.43, r: 71.5, estimated: false }  # 코딩
-  agentic: { s: 87.4, z: 1.82, r: 77.3, estimated: false }  # 에이전트
+  agentic: { s: 87.4, z: 1.82, r: 77.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 93.3, z: 1.23, r: 68.4, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Haiku 5.5 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # Claude Haiku 5.5 (max)
@@ -46,7 +46,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **36.0**
 | 전문 지식 | 64.6 | +0.97 | 실측 | [[humanitys-last-exam]] 44.0%×0.3 |
 | 추론 | 63.8 | +0.92 | 실측 | [[critpt]] 44.0%×1.0, [[humanitys-last-exam]] 44.0%×1.0 |
 | 코딩 | 71.5 | +1.43 | 실측 | [[scicode]] 55.0%×1.0 |
-| 에이전트 | 77.3 | +1.82 | 실측 | [[gdpval]] 1631.0%×1.0 |
+| 에이전트 | 77.4 | +1.82 | 실측 | [[gdpval]] 1631.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 68.4 | +1.23 | 실측 | [[aa-lcr]] 83.0%×1.0 |

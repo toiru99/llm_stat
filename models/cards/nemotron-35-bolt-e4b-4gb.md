@@ -12,9 +12,9 @@ size_class: Unknown
 params_b: null
 is_reasoning: null
 radar:
-  knowledge: { s: 55.1, z: 0.25, r: 53.7, estimated: true }  # 전문 지식
-  reasoning: { s: 53.2, z: 0.33, r: 54.9, estimated: true }  # 추론
-  coding: { s: 46.5, z: 0.31, r: 54.7, estimated: true }  # 코딩
+  knowledge: { s: 55.1, z: 0.24, r: 53.7, estimated: true }  # 전문 지식
+  reasoning: { s: 53.2, z: 0.33, r: 55.0, estimated: true }  # 추론
+  coding: { s: 46.5, z: 0.31, r: 54.6, estimated: true }  # 코딩
   agentic: { s: 48.3, z: 0.48, r: 57.2, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3.5 Bolt E4B 4GB
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # Nemotron 3.5 Bolt E4B 4GB
@@ -43,9 +43,9 @@ NVIDIA · Open · Unknown · 컨텍스트 131k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 53.7 | +0.25 | 추정 | (추정) |
-| 추론 | 54.9 | +0.33 | 추정 | (추정) |
-| 코딩 | 54.7 | +0.31 | 추정 | (추정) |
+| 전문 지식 | 53.7 | +0.24 | 추정 | (추정) |
+| 추론 | 55.0 | +0.33 | 추정 | (추정) |
+| 코딩 | 54.6 | +0.31 | 추정 | (추정) |
 | 에이전트 | 57.2 | +0.48 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

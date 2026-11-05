@@ -6,14 +6,14 @@ license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.067
 output_speed_tps: None
-context_window: 1050000
+context_window: 1000000
 status: current
 size_class: Small
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 41.7, z: -0.34, r: 44.9, estimated: false }  # 전문 지식
-  reasoning: { s: 41.7, z: -0.18, r: 47.2, estimated: false }  # 추론
+  knowledge: { s: 41.7, z: -0.35, r: 44.8, estimated: false }  # 전문 지식
+  reasoning: { s: 41.7, z: -0.18, r: 47.3, estimated: false }  # 추론
   coding: { s: 68.3, z: 1.04, r: 65.6, estimated: false }  # 코딩
   agentic: { s: 58.5, z: 0.83, r: 62.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Mini 4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # Solar Mini 4
@@ -43,8 +43,8 @@ Upstage · Proprietary · Small · 컨텍스트 1M · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 44.9 | -0.34 | 실측 | [[humanitys-last-exam]] 26.0%×0.3 |
-| 추론 | 47.2 | -0.18 | 실측 | [[humanitys-last-exam]] 26.0%×1.0 |
+| 전문 지식 | 44.8 | -0.35 | 실측 | [[humanitys-last-exam]] 26.0%×0.3 |
+| 추론 | 47.3 | -0.18 | 실측 | [[humanitys-last-exam]] 26.0%×1.0 |
 | 코딩 | 65.6 | +1.04 | 실측 | [[scicode]] 48.0%×1.0 |
 | 에이전트 | 62.5 | +0.83 | 실측 | [[gdpval]] 1092.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

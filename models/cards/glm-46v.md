@@ -12,10 +12,10 @@ size_class: Unknown
 params_b: null
 is_reasoning: null
 radar:
-  knowledge: { s: 47.6, z: -0.08, r: 48.8, estimated: false }  # 전문 지식
+  knowledge: { s: 47.6, z: -0.08, r: 48.7, estimated: false }  # 전문 지식
   reasoning: { s: 43.5, z: -0.1, r: 48.5, estimated: false }  # 추론
-  coding: { s: 21.2, z: -0.53, r: 42.0, estimated: false }  # 코딩
-  agentic: { s: 21.2, z: -0.45, r: 43.3, estimated: false }  # 에이전트
+  coding: { s: 21.2, z: -0.54, r: 41.9, estimated: false }  # 코딩
+  agentic: { s: 21.2, z: -0.45, r: 43.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 45.9, z: -1.28, r: 30.8, estimated: false }  # 멀티모달
   long_context: { s: 55.1, z: 0.08, r: 51.2, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.6V
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # GLM-4.6V
@@ -43,10 +43,10 @@ Z AI · Open · Unknown · 컨텍스트 128k · 종합지능 **None** · ⚠️ 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 48.8 | -0.08 | 실측 | [[gpqa-diamond]] 72.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
+| 전문 지식 | 48.7 | -0.08 | 실측 | [[gpqa-diamond]] 72.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
 | 추론 | 48.5 | -0.1 | 실측 | [[gpqa-diamond]] 72.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
-| 코딩 | 42.0 | -0.53 | 실측 | [[terminal-bench]] 14.0%×0.5 |
-| 에이전트 | 43.3 | -0.45 | 실측 | [[terminal-bench]] 14.0%×1.0 |
+| 코딩 | 41.9 | -0.54 | 실측 | [[terminal-bench]] 14.0%×0.5 |
+| 에이전트 | 43.2 | -0.45 | 실측 | [[terminal-bench]] 14.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 30.8 | -1.28 | 실측 | [[mmmu-pro]] 49.0%×1.0 |
 | 긴문맥 | 51.2 | +0.08 | 실측 | [[aa-lcr]] 49.0%×1.0 |

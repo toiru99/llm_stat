@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 53.8, z: 0.19, r: 52.8, estimated: false }  # 전문 지식
   reasoning: { s: 49.5, z: 0.17, r: 52.5, estimated: false }  # 추론
   coding: { s: 37.9, z: 0.02, r: 50.3, estimated: false }  # 코딩
-  agentic: { s: 37.9, z: 0.12, r: 51.9, estimated: false }  # 에이전트
+  agentic: { s: 37.9, z: 0.12, r: 51.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 67.6, z: -0.19, r: 47.2, estimated: false }  # 멀티모달
+  multimodal: { s: 67.6, z: -0.19, r: 47.1, estimated: false }  # 멀티모달
   long_context: { s: 61.8, z: 0.28, r: 54.2, estimated: true }  # 긴문맥
   instruction: { s: 40.8, z: -0.51, r: 42.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — ERNIE 5.0 Thinking Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # ERNIE 5.0 Thinking Preview
@@ -46,9 +46,9 @@ Baidu · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None**
 | 전문 지식 | 52.8 | +0.19 | 실측 | [[gpqa-diamond]] 78.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
 | 추론 | 52.5 | +0.17 | 실측 | [[gpqa-diamond]] 78.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
 | 코딩 | 50.3 | +0.02 | 실측 | [[terminal-bench]] 25.0%×0.5 |
-| 에이전트 | 51.9 | +0.12 | 실측 | [[terminal-bench]] 25.0%×1.0 |
+| 에이전트 | 51.8 | +0.12 | 실측 | [[terminal-bench]] 25.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 47.2 | -0.19 | 실측 | [[mmmu-pro]] 65.0%×1.0 |
+| 멀티모달 | 47.1 | -0.19 | 실측 | [[mmmu-pro]] 65.0%×1.0 |
 | 긴문맥 | 54.2 | +0.28 | 추정 | (추정) |
 | 지시 따르기 | 42.3 | -0.51 | 실측 | [[ifbench]] 41.0%×1.0 |
 

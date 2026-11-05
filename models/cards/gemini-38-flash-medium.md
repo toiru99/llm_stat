@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 85.1, z: 1.56, r: 73.4, estimated: false }  # 전문 지식
-  reasoning: { s: 76.2, z: 1.35, r: 70.3, estimated: false }  # 추론
+  reasoning: { s: 76.2, z: 1.36, r: 70.4, estimated: false }  # 추론
   coding: { s: 80.0, z: 1.43, r: 71.5, estimated: false }  # 코딩
   agentic: { s: 83.4, z: 1.69, r: 75.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 93.2, z: 1.11, r: 66.6, estimated: false }  # 멀티모달
+  multimodal: { s: 93.2, z: 1.1, r: 66.6, estimated: false }  # 멀티모달
   long_context: { s: 94.4, z: 1.26, r: 68.9, estimated: false }  # 긴문맥
-  instruction: { s: 81.8, z: 1.21, r: 68.2, estimated: true }  # 지시 따르기
+  instruction: { s: 83.2, z: 1.27, r: 69.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.8 Flash (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # Gemini 3.8 Flash (medium)
@@ -34,7 +34,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **30.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 전문 지식
-- **약점**: 지시 따르기, 멀티모달
+- **약점**: 긴문맥, 멀티모달
 
 ## 실용 지표
 `입력 $0.75 · 출력 $3.75 · 혼합 $0.5775/1M · None t/s · TTFT Nones · 1M ctx` · 가성비 51.9
@@ -44,13 +44,13 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **30.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 73.4 | +1.56 | 실측 | [[gpqa-diamond]] 94.0%×0.4, [[humanitys-last-exam]] 42.0%×0.3 |
-| 추론 | 70.3 | +1.35 | 실측 | [[critpt]] 45.0%×1.0, [[gpqa-diamond]] 94.0%×1.0, [[humanitys-last-exam]] 42.0%×1.0 |
+| 추론 | 70.4 | +1.36 | 실측 | [[critpt]] 45.0%×1.0, [[gpqa-diamond]] 94.0%×1.0, [[humanitys-last-exam]] 42.0%×1.0 |
 | 코딩 | 71.5 | +1.43 | 실측 | [[scicode]] 55.0%×1.0 |
 | 에이전트 | 75.3 | +1.69 | 실측 | [[gdpval]] 1431.0%×1.0, [[tau3-banking]] 46.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 66.6 | +1.11 | 실측 | [[mmmu-pro]] 84.0%×1.0 |
+| 멀티모달 | 66.6 | +1.1 | 실측 | [[mmmu-pro]] 84.0%×1.0 |
 | 긴문맥 | 68.9 | +1.26 | 실측 | [[aa-lcr]] 84.0%×1.0 |
-| 지시 따르기 | 68.2 | +1.21 | 추정 | (추정) |
+| 지시 따르기 | 69.0 | +1.27 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

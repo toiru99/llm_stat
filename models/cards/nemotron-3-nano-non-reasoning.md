@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 22.8, z: -1.17, r: 32.4, estimated: false }  # 전문 지식
-  reasoning: { s: 20.8, z: -1.12, r: 33.3, estimated: false }  # 추론
-  coding: { s: 18.2, z: -0.64, r: 40.5, estimated: false }  # 코딩
-  agentic: { s: 18.4, z: -0.54, r: 41.8, estimated: false }  # 에이전트
+  reasoning: { s: 20.8, z: -1.11, r: 33.3, estimated: false }  # 추론
+  coding: { s: 18.2, z: -0.64, r: 40.4, estimated: false }  # 코딩
+  agentic: { s: 18.4, z: -0.55, r: 41.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 12.4, z: -1.2, r: 32.0, estimated: false }  # 긴문맥
+  long_context: { s: 12.4, z: -1.21, r: 31.9, estimated: false }  # 긴문맥
   instruction: { s: 35.2, z: -0.75, r: 38.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3 Nano (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # Nemotron 3 Nano (non-reasoning)
@@ -44,12 +44,12 @@ NVIDIA · Open · Small · 컨텍스트 1M · 종합지능 **None**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 32.4 | -1.17 | 실측 | [[gpqa-diamond]] 40.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 33.3 | -1.12 | 실측 | [[gpqa-diamond]] 40.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 40.5 | -0.64 | 실측 | [[terminal-bench]] 12.0%×0.5 |
-| 에이전트 | 41.8 | -0.54 | 실측 | [[gdpval]] 349.0%×1.0, [[terminal-bench]] 12.0%×1.0 |
+| 추론 | 33.3 | -1.11 | 실측 | [[gpqa-diamond]] 40.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 코딩 | 40.4 | -0.64 | 실측 | [[terminal-bench]] 12.0%×0.5 |
+| 에이전트 | 41.8 | -0.55 | 실측 | [[gdpval]] 349.0%×1.0, [[terminal-bench]] 12.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 32.0 | -1.2 | 실측 | [[aa-lcr]] 11.0%×1.0 |
+| 긴문맥 | 31.9 | -1.21 | 실측 | [[aa-lcr]] 11.0%×1.0 |
 | 지시 따르기 | 38.8 | -0.75 | 실측 | [[ifbench]] 37.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

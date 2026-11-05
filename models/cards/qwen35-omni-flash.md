@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 47.5, z: -0.09, r: 48.7, estimated: false }  # 전문 지식
-  reasoning: { s: 43.0, z: -0.12, r: 48.1, estimated: false }  # 추론
-  coding: { s: 12.1, z: -0.84, r: 37.4, estimated: false }  # 코딩
+  reasoning: { s: 43.0, z: -0.12, r: 48.2, estimated: false }  # 추론
+  coding: { s: 12.1, z: -0.84, r: 37.3, estimated: false }  # 코딩
   agentic: { s: 12.1, z: -0.76, r: 38.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 67.6, z: -0.19, r: 47.2, estimated: false }  # 멀티모달
+  multimodal: { s: 67.6, z: -0.19, r: 47.1, estimated: false }  # 멀티모달
   long_context: { s: 58.4, z: 0.18, r: 52.7, estimated: false }  # 긴문맥
   instruction: { s: 36.6, z: -0.69, r: 39.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 Omni Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # Qwen3.5 Omni Flash
@@ -44,11 +44,11 @@ Alibaba · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **None**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 48.7 | -0.09 | 실측 | [[gpqa-diamond]] 74.0%×0.4, [[humanitys-last-exam]] 8.0%×0.3 |
-| 추론 | 48.1 | -0.12 | 실측 | [[gpqa-diamond]] 74.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
-| 코딩 | 37.4 | -0.84 | 실측 | [[terminal-bench]] 8.0%×0.5 |
+| 추론 | 48.2 | -0.12 | 실측 | [[gpqa-diamond]] 74.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
+| 코딩 | 37.3 | -0.84 | 실측 | [[terminal-bench]] 8.0%×0.5 |
 | 에이전트 | 38.6 | -0.76 | 실측 | [[terminal-bench]] 8.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 47.2 | -0.19 | 실측 | [[mmmu-pro]] 65.0%×1.0 |
+| 멀티모달 | 47.1 | -0.19 | 실측 | [[mmmu-pro]] 65.0%×1.0 |
 | 긴문맥 | 52.7 | +0.18 | 실측 | [[aa-lcr]] 52.0%×1.0 |
 | 지시 따르기 | 39.7 | -0.69 | 실측 | [[ifbench]] 38.0%×1.0 |
 

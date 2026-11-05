@@ -6,7 +6,7 @@ license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: None
 output_speed_tps: None
-context_window: 4100
+context_window: 4000
 status: past
 size_class: Unknown
 params_b: null
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-3.5 Turbo (0613)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # GPT-3.5 Turbo (0613)

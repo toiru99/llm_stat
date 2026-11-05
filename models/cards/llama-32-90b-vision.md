@@ -12,20 +12,20 @@ size_class: Medium
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 24.1, z: -1.12, r: 33.3, estimated: false }  # 전문 지식
-  reasoning: { s: 21.7, z: -1.08, r: 33.9, estimated: false }  # 추론
-  coding: { s: 3.9, z: -1.11, r: 33.3, estimated: true }  # 코딩
-  agentic: { s: 3.0, z: -1.07, r: 33.9, estimated: true }  # 에이전트
+  knowledge: { s: 24.1, z: -1.12, r: 33.2, estimated: false }  # 전문 지식
+  reasoning: { s: 21.7, z: -1.07, r: 33.9, estimated: false }  # 추론
+  coding: { s: 3.8, z: -1.12, r: 33.2, estimated: true }  # 코딩
+  agentic: { s: 3.0, z: -1.08, r: 33.9, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 32.4, z: -1.96, r: 20.6, estimated: false }  # 멀티모달
-  long_context: { s: 6.7, z: -1.37, r: 29.4, estimated: true }  # 긴문맥
+  long_context: { s: 6.8, z: -1.37, r: 29.4, estimated: true }  # 긴문맥
   instruction: { s: 26.3, z: -1.12, r: 33.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.2 90B (Vision)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # Llama 3.2 90B (Vision)
@@ -33,7 +33,7 @@ timestamp: 2026-11-04T00:00:00Z
 Meta · Open · Medium · 컨텍스트 128k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 에이전트, 추론
+- **강점**: 추론, 에이전트
 - **약점**: 긴문맥, 멀티모달
 
 ## 실용 지표
@@ -43,10 +43,10 @@ Meta · Open · Medium · 컨텍스트 128k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 33.3 | -1.12 | 실측 | [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 33.9 | -1.08 | 실측 | [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 33.3 | -1.11 | 추정 | (추정) |
-| 에이전트 | 33.9 | -1.07 | 추정 | (추정) |
+| 전문 지식 | 33.2 | -1.12 | 실측 | [[gpqa-diamond]] 43.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 33.9 | -1.07 | 실측 | [[gpqa-diamond]] 43.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 33.2 | -1.12 | 추정 | (추정) |
+| 에이전트 | 33.9 | -1.08 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 20.6 | -1.96 | 실측 | [[mmmu-pro]] 39.0%×1.0 |
 | 긴문맥 | 29.4 | -1.37 | 추정 | (추정) |

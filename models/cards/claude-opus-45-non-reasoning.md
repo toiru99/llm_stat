@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 55.7, z: 0.27, r: 54.1, estimated: false }  # 전문 지식
-  reasoning: { s: 51.3, z: 0.24, r: 53.7, estimated: false }  # 추론
+  reasoning: { s: 51.3, z: 0.25, r: 53.7, estimated: false }  # 추론
   coding: { s: 62.1, z: 0.83, r: 62.5, estimated: false }  # 코딩
   agentic: { s: 62.1, z: 0.95, r: 64.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 4.5 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # Claude Opus 4.5 (non-reasoning)
@@ -44,7 +44,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None*
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 54.1 | +0.27 | 실측 | [[gpqa-diamond]] 81.0%×0.4, [[humanitys-last-exam]] 13.0%×0.3 |
-| 추론 | 53.7 | +0.24 | 실측 | [[gpqa-diamond]] 81.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
+| 추론 | 53.7 | +0.25 | 실측 | [[gpqa-diamond]] 81.0%×1.0, [[humanitys-last-exam]] 13.0%×1.0 |
 | 코딩 | 62.5 | +0.83 | 실측 | [[terminal-bench]] 41.0%×0.5 |
 | 에이전트 | 64.3 | +0.95 | 실측 | [[terminal-bench]] 41.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

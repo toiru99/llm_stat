@@ -6,7 +6,7 @@ license: Open
 intelligence_index: None
 price_blended_usd_1m: None
 output_speed_tps: None
-context_window: 33800
+context_window: 34000
 status: past
 size_class: Medium
 params_b: null
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen Chat 72B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # Qwen Chat 72B
 
-Alibaba · Open · Medium · 컨텍스트 33k · 종합지능 **None** · ⚠️ past(구세대)
+Alibaba · Open · Medium · 컨텍스트 34k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: —
 - **약점**: —
 
 ## 실용 지표
-`입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 33k ctx`
+`입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 34k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

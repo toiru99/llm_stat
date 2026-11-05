@@ -6,26 +6,26 @@ license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 2.175
 output_speed_tps: None
-context_window: 1050000
+context_window: 1000000
 status: past
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 85.2, z: 1.57, r: 73.5, estimated: false }  # 전문 지식
-  reasoning: { s: 83.5, z: 1.68, r: 75.2, estimated: false }  # 추론
-  coding: { s: 87.9, z: 1.7, r: 75.4, estimated: false }  # 코딩
+  reasoning: { s: 83.5, z: 1.68, r: 75.3, estimated: false }  # 추론
+  coding: { s: 87.9, z: 1.7, r: 75.5, estimated: false }  # 코딩
   agentic: { s: 75.8, z: 1.42, r: 71.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 85.1, z: 0.7, r: 60.5, estimated: false }  # 멀티모달
+  multimodal: { s: 85.1, z: 0.7, r: 60.4, estimated: false }  # 멀티모달
   long_context: { s: 92.1, z: 1.19, r: 67.9, estimated: false }  # 긴문맥
-  instruction: { s: 87.3, z: 1.44, r: 71.7, estimated: false }  # 지시 따르기
+  instruction: { s: 87.3, z: 1.44, r: 71.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.4 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # GPT-5.4 (xhigh)
@@ -44,13 +44,13 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 73.5 | +1.57 | 실측 | [[gpqa-diamond]] 92.0%×0.4, [[humanitys-last-exam]] 44.0%×0.3 |
-| 추론 | 75.2 | +1.68 | 실측 | [[gpqa-diamond]] 92.0%×1.0, [[humanitys-last-exam]] 44.0%×1.0 |
-| 코딩 | 75.4 | +1.7 | 실측 | [[terminal-bench]] 58.0%×0.5 |
+| 추론 | 75.3 | +1.68 | 실측 | [[gpqa-diamond]] 92.0%×1.0, [[humanitys-last-exam]] 44.0%×1.0 |
+| 코딩 | 75.5 | +1.7 | 실측 | [[terminal-bench]] 58.0%×0.5 |
 | 에이전트 | 71.4 | +1.42 | 실측 | [[apex-agents]] 33.0%×1.0, [[gdpval]] 1256.0%×1.0, [[tau3-banking]] 40.0%×1.0, [[terminal-bench]] 58.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 60.5 | +0.7 | 실측 | [[mmmu-pro]] 78.0%×1.0 |
+| 멀티모달 | 60.4 | +0.7 | 실측 | [[mmmu-pro]] 78.0%×1.0 |
 | 긴문맥 | 67.9 | +1.19 | 실측 | [[aa-lcr]] 82.0%×1.0 |
-| 지시 따르기 | 71.7 | +1.44 | 실측 | [[ifbench]] 74.0%×1.0 |
+| 지시 따르기 | 71.6 | +1.44 | 실측 | [[ifbench]] 74.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

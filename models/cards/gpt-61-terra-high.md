@@ -17,15 +17,15 @@ radar:
   coding: { s: 75.0, z: 1.27, r: 69.0, estimated: false }  # 코딩
   agentic: { s: 72.5, z: 1.31, r: 69.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 93.2, z: 1.11, r: 66.6, estimated: false }  # 멀티모달
+  multimodal: { s: 93.2, z: 1.1, r: 66.6, estimated: false }  # 멀티모달
   long_context: { s: 92.1, z: 1.19, r: 67.9, estimated: false }  # 긴문맥
-  instruction: { s: 79.7, z: 1.12, r: 66.8, estimated: true }  # 지시 따르기
+  instruction: { s: 81.2, z: 1.18, r: 67.7, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6.1 Terra (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # GPT-6.1 Terra (high)
@@ -48,9 +48,9 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **42.0**
 | 코딩 | 69.0 | +1.27 | 실측 | [[scicode]] 52.0%×1.0 |
 | 에이전트 | 69.7 | +1.31 | 실측 | [[gdpval]] 1353.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 66.6 | +1.11 | 실측 | [[mmmu-pro]] 84.0%×1.0 |
+| 멀티모달 | 66.6 | +1.1 | 실측 | [[mmmu-pro]] 84.0%×1.0 |
 | 긴문맥 | 67.9 | +1.19 | 실측 | [[aa-lcr]] 82.0%×1.0 |
-| 지시 따르기 | 66.8 | +1.12 | 추정 | (추정) |
+| 지시 따르기 | 67.7 | +1.18 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

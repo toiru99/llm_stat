@@ -12,10 +12,10 @@ size_class: Medium
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 30.7, z: -0.82, r: 37.6, estimated: false }  # 전문 지식
-  reasoning: { s: 27.5, z: -0.82, r: 37.8, estimated: false }  # 추론
-  coding: { s: 1.5, z: -1.19, r: 32.1, estimated: false }  # 코딩
-  agentic: { s: 1.5, z: -1.12, r: 33.1, estimated: false }  # 에이전트
+  knowledge: { s: 30.7, z: -0.83, r: 37.6, estimated: false }  # 전문 지식
+  reasoning: { s: 27.5, z: -0.81, r: 37.8, estimated: false }  # 추론
+  coding: { s: 1.5, z: -1.2, r: 32.0, estimated: false }  # 코딩
+  agentic: { s: 1.5, z: -1.13, r: 33.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 23.6, z: -0.87, r: 37.0, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Command A
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # Command A
@@ -33,7 +33,7 @@ timestamp: 2026-11-04T00:00:00Z
 Cohere · Open · Medium · 컨텍스트 256k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 지시 따르기, 전문 지식
+- **강점**: 추론, 지시 따르기
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
@@ -43,10 +43,10 @@ Cohere · Open · Medium · 컨텍스트 256k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 37.6 | -0.82 | 실측 | [[gpqa-diamond]] 53.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 37.8 | -0.82 | 실측 | [[gpqa-diamond]] 53.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 32.1 | -1.19 | 실측 | [[terminal-bench]] 1.0%×0.5 |
-| 에이전트 | 33.1 | -1.12 | 실측 | [[terminal-bench]] 1.0%×1.0 |
+| 전문 지식 | 37.6 | -0.83 | 실측 | [[gpqa-diamond]] 53.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 추론 | 37.8 | -0.81 | 실측 | [[gpqa-diamond]] 53.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
+| 코딩 | 32.0 | -1.2 | 실측 | [[terminal-bench]] 1.0%×0.5 |
+| 에이전트 | 33.1 | -1.13 | 실측 | [[terminal-bench]] 1.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 37.0 | -0.87 | 실측 | [[aa-lcr]] 21.0%×1.0 |

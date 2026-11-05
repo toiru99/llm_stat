@@ -6,7 +6,7 @@ license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: None
 output_speed_tps: None
-context_window: 32800
+context_window: 33000
 status: past
 size_class: Unknown
 params_b: null
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 1.0 Ultra
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-04
-timestamp: 2026-11-04T00:00:00Z
+updated: 2026-11-05
+timestamp: 2026-11-05T00:00:00Z
 ---
 
 # Gemini 1.0 Ultra
 
-Google · Proprietary · Unknown · 컨텍스트 32k · 종합지능 **None** · ⚠️ past(구세대)
+Google · Proprietary · Unknown · 컨텍스트 33k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: —
 - **약점**: —
 
 ## 실용 지표
-`입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 32k ctx`
+`입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 33k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
