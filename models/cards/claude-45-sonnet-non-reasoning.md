@@ -12,10 +12,10 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 46.1, z: -0.15, r: 47.8, estimated: false }  # 전문 지식
-  reasoning: { s: 41.6, z: -0.18, r: 47.2, estimated: false }  # 추론
-  coding: { s: 43.9, z: 0.22, r: 53.4, estimated: false }  # 코딩
-  agentic: { s: 43.9, z: 0.33, r: 55.0, estimated: false }  # 에이전트
+  knowledge: { s: 46.1, z: -0.15, r: 47.7, estimated: false }  # 전문 지식
+  reasoning: { s: 41.6, z: -0.18, r: 47.3, estimated: false }  # 추론
+  coding: { s: 43.9, z: 0.22, r: 53.3, estimated: false }  # 코딩
+  agentic: { s: 43.9, z: 0.33, r: 54.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 67.6, z: -0.19, r: 47.1, estimated: false }  # 멀티모달
   long_context: { s: 60.7, z: 0.25, r: 53.7, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 4.5 Sonnet (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # Claude 4.5 Sonnet (non-reasoning)
@@ -43,10 +43,10 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 47.8 | -0.15 | 실측 | [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
-| 추론 | 47.2 | -0.18 | 실측 | [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
-| 코딩 | 53.4 | +0.22 | 실측 | [[terminal-bench]] 29.0%×0.5 |
-| 에이전트 | 55.0 | +0.33 | 실측 | [[terminal-bench]] 29.0%×1.0 |
+| 전문 지식 | 47.7 | -0.15 | 실측 | [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
+| 추론 | 47.3 | -0.18 | 실측 | [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
+| 코딩 | 53.3 | +0.22 | 실측 | [[terminal-bench]] 29.0%×0.5 |
+| 에이전트 | 54.9 | +0.33 | 실측 | [[terminal-bench]] 29.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 47.1 | -0.19 | 실측 | [[mmmu-pro]] 65.0%×1.0 |
 | 긴문맥 | 53.7 | +0.25 | 실측 | [[aa-lcr]] 54.0%×1.0 |

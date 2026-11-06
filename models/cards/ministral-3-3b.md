@@ -18,14 +18,14 @@ radar:
   agentic: { s: 3.9, z: -1.05, r: 34.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 31.1, z: -2.03, r: 19.5, estimated: false }  # 멀티모달
-  long_context: { s: 19.1, z: -1.0, r: 34.9, estimated: false }  # 긴문맥
-  instruction: { s: 21.1, z: -1.34, r: 29.9, estimated: false }  # 지시 따르기
+  long_context: { s: 19.1, z: -1.01, r: 34.9, estimated: false }  # 긴문맥
+  instruction: { s: 21.1, z: -1.34, r: 30.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Ministral 3 3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # Ministral 3 3B
@@ -49,8 +49,8 @@ Mistral · Open · Tiny · 컨텍스트 256k · 종합지능 **None**
 | 에이전트 | 34.3 | -1.05 | 실측 | [[gdpval]] 37.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 19.5 | -2.03 | 실측 | [[mmmu-pro]] 38.0%×1.0 |
-| 긴문맥 | 34.9 | -1.0 | 실측 | [[aa-lcr]] 17.0%×1.0 |
-| 지시 따르기 | 29.9 | -1.34 | 실측 | [[ifbench]] 27.0%×1.0 |
+| 긴문맥 | 34.9 | -1.01 | 실측 | [[aa-lcr]] 17.0%×1.0 |
+| 지시 따르기 | 30.0 | -1.34 | 실측 | [[ifbench]] 27.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

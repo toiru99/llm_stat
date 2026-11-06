@@ -13,9 +13,9 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 59.4, z: 0.43, r: 56.5, estimated: false }  # 전문 지식
-  reasoning: { s: 55.9, z: 0.46, r: 56.8, estimated: false }  # 추론
+  reasoning: { s: 55.9, z: 0.46, r: 56.9, estimated: false }  # 추론
   coding: { s: 57.6, z: 0.68, r: 60.2, estimated: false }  # 코딩
-  agentic: { s: 57.6, z: 0.8, r: 62.0, estimated: false }  # 에이전트
+  agentic: { s: 57.6, z: 0.8, r: 61.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 78.7, z: 0.79, r: 61.8, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2.6 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # Kimi K2.6 (non-reasoning)
@@ -44,9 +44,9 @@ Kimi · Open · Large · 컨텍스트 256k · 종합지능 **None** · ⚠️ pa
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 56.5 | +0.43 | 실측 | [[gpqa-diamond]] 79.0%×0.4, [[humanitys-last-exam]] 20.0%×0.3 |
-| 추론 | 56.8 | +0.46 | 실측 | [[gpqa-diamond]] 79.0%×1.0, [[humanitys-last-exam]] 20.0%×1.0 |
+| 추론 | 56.9 | +0.46 | 실측 | [[gpqa-diamond]] 79.0%×1.0, [[humanitys-last-exam]] 20.0%×1.0 |
 | 코딩 | 60.2 | +0.68 | 실측 | [[terminal-bench]] 38.0%×0.5 |
-| 에이전트 | 62.0 | +0.8 | 실측 | [[terminal-bench]] 38.0%×1.0 |
+| 에이전트 | 61.9 | +0.8 | 실측 | [[terminal-bench]] 38.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 61.8 | +0.79 | 실측 | [[aa-lcr]] 70.0%×1.0 |

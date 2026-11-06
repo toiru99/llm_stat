@@ -12,20 +12,20 @@ size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 41.7, z: -0.34, r: 44.8, estimated: true }  # 전문 지식
+  knowledge: { s: 41.7, z: -0.35, r: 44.8, estimated: true }  # 전문 지식
   reasoning: { s: 37.5, z: -0.37, r: 44.5, estimated: false }  # 추론
   coding: { s: 18.4, z: -0.63, r: 40.5, estimated: true }  # 코딩
-  agentic: { s: 17.5, z: -0.58, r: 41.3, estimated: true }  # 에이전트
+  agentic: { s: 17.9, z: -0.57, r: 41.5, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 48.0, z: -0.13, r: 48.0, estimated: true }  # 긴문맥
-  instruction: { s: 46.8, z: -0.26, r: 46.0, estimated: true }  # 지시 따르기
+  long_context: { s: 50.8, z: -0.05, r: 49.2, estimated: true }  # 긴문맥
+  instruction: { s: 49.0, z: -0.17, r: 47.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Large 4 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # Mistral Large 4 (high)
@@ -43,14 +43,14 @@ Mistral · Open · Large · 컨텍스트 1M · 종합지능 **26.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 44.8 | -0.34 | 추정 | (추정) |
+| 전문 지식 | 44.8 | -0.35 | 추정 | (추정) |
 | 추론 | 44.5 | -0.37 | 실측 | [[critpt]] 27.0%×1.0 |
 | 코딩 | 40.5 | -0.63 | 추정 | (추정) |
-| 에이전트 | 41.3 | -0.58 | 추정 | (추정) |
+| 에이전트 | 41.5 | -0.57 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 48.0 | -0.13 | 추정 | (추정) |
-| 지시 따르기 | 46.0 | -0.26 | 추정 | (추정) |
+| 긴문맥 | 49.2 | -0.05 | 추정 | (추정) |
+| 지시 따르기 | 47.5 | -0.17 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

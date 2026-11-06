@@ -3,7 +3,7 @@ type: Model
 title: North Mini Code
 creator: Cohere
 license: Open
-intelligence_index: None
+intelligence_index: 3.0
 price_blended_usd_1m: 0
 output_speed_tps: None
 context_window: 256000
@@ -12,7 +12,7 @@ size_class: Small
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 51.0, z: 0.06, r: 51.0, estimated: false }  # 전문 지식
+  knowledge: { s: 51.0, z: 0.06, r: 50.9, estimated: false }  # 전문 지식
   reasoning: { s: 31.6, z: -0.63, r: 40.5, estimated: false }  # 추론
   coding: { s: 51.2, z: 0.47, r: 57.0, estimated: false }  # 코딩
   agentic: { s: 25.3, z: -0.31, r: 45.3, estimated: false }  # 에이전트
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — North Mini Code
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # North Mini Code
 
-Cohere · Open · Small · 컨텍스트 256k · 종합지능 **None**
+Cohere · Open · Small · 컨텍스트 256k · 종합지능 **3.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 코딩
@@ -43,7 +43,7 @@ Cohere · Open · Small · 컨텍스트 256k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 51.0 | +0.06 | 실측 | [[gpqa-diamond]] 76.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
+| 전문 지식 | 50.9 | +0.06 | 실측 | [[gpqa-diamond]] 76.0%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
 | 추론 | 40.5 | -0.63 | 실측 | [[critpt]] 1.0%×1.0, [[gpqa-diamond]] 76.0%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
 | 코딩 | 57.0 | +0.47 | 실측 | [[scicode]] 39.0%×1.0, [[terminal-bench]] 31.0%×0.5 |
 | 에이전트 | 45.3 | -0.31 | 실측 | [[gdpval]] 319.0%×1.0, [[tau3-banking]] 6.0%×1.0, [[terminal-bench]] 31.0%×1.0 |

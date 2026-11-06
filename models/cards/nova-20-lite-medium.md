@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 50.2, z: 0.03, r: 50.5, estimated: false }  # 전문 지식
-  reasoning: { s: 45.6, z: -0.01, r: 49.9, estimated: false }  # 추론
+  knowledge: { s: 50.2, z: 0.03, r: 50.4, estimated: false }  # 전문 지식
+  reasoning: { s: 45.6, z: -0.0, r: 49.9, estimated: false }  # 추론
   coding: { s: 25.8, z: -0.39, r: 44.2, estimated: false }  # 코딩
-  agentic: { s: 25.8, z: -0.29, r: 45.6, estimated: false }  # 에이전트
+  agentic: { s: 25.8, z: -0.3, r: 45.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 64.9, z: -0.33, r: 45.1, estimated: false }  # 멀티모달
+  multimodal: { s: 64.9, z: -0.33, r: 45.0, estimated: false }  # 멀티모달
   long_context: { s: 67.4, z: 0.45, r: 56.7, estimated: false }  # 긴문맥
   instruction: { s: 80.3, z: 1.14, r: 67.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nova 2.0 Lite (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # Nova 2.0 Lite (medium)
@@ -43,12 +43,12 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 50.5 | +0.03 | 실측 | [[gpqa-diamond]] 77.0%×0.4, [[humanitys-last-exam]] 9.0%×0.3 |
-| 추론 | 49.9 | -0.01 | 실측 | [[gpqa-diamond]] 77.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
+| 전문 지식 | 50.4 | +0.03 | 실측 | [[gpqa-diamond]] 77.0%×0.4, [[humanitys-last-exam]] 9.0%×0.3 |
+| 추론 | 49.9 | +-0.0 | 실측 | [[gpqa-diamond]] 77.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
 | 코딩 | 44.2 | -0.39 | 실측 | [[terminal-bench]] 17.0%×0.5 |
-| 에이전트 | 45.6 | -0.29 | 실측 | [[terminal-bench]] 17.0%×1.0 |
+| 에이전트 | 45.6 | -0.3 | 실측 | [[terminal-bench]] 17.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 45.1 | -0.33 | 실측 | [[mmmu-pro]] 63.0%×1.0 |
+| 멀티모달 | 45.0 | -0.33 | 실측 | [[mmmu-pro]] 63.0%×1.0 |
 | 긴문맥 | 56.7 | +0.45 | 실측 | [[aa-lcr]] 60.0%×1.0 |
 | 지시 따르기 | 67.1 | +1.14 | 실측 | [[ifbench]] 69.0%×1.0 |
 

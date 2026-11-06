@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 90.1, z: 1.78, r: 76.7, estimated: false }  # 전문 지식
-  reasoning: { s: 87.0, z: 1.84, r: 77.6, estimated: false }  # 추론
-  coding: { s: 88.9, z: 1.73, r: 76.0, estimated: false }  # 코딩
-  agentic: { s: 93.2, z: 2.02, r: 80.4, estimated: false }  # 에이전트
+  reasoning: { s: 87.0, z: 1.85, r: 77.7, estimated: false }  # 추론
+  coding: { s: 88.9, z: 1.73, r: 75.9, estimated: false }  # 코딩
+  agentic: { s: 93.2, z: 2.02, r: 80.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 91.9, z: 1.04, r: 65.5, estimated: false }  # 멀티모달
+  multimodal: { s: 91.9, z: 1.03, r: 65.5, estimated: false }  # 멀티모달
   long_context: { s: 94.4, z: 1.26, r: 68.9, estimated: false }  # 긴문맥
   instruction: { s: 85.9, z: 1.38, r: 70.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Sol (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # GPT-5.6 Sol (max)
@@ -44,11 +44,11 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 76.7 | +1.78 | 실측 | [[gpqa-diamond]] 94.0%×0.4, [[humanitys-last-exam]] 49.0%×0.3 |
-| 추론 | 77.6 | +1.84 | 실측 | [[critpt]] 60.0%×1.0, [[gpqa-diamond]] 94.0%×1.0, [[humanitys-last-exam]] 49.0%×1.0 |
-| 코딩 | 76.0 | +1.73 | 실측 | [[scicode]] 57.0%×1.0, [[terminal-bench]] 66.0%×0.5 |
-| 에이전트 | 80.4 | +2.02 | 실측 | [[gdpval]] 1618.0%×1.0, [[itbench]] 56.0%×1.0, [[tau3-banking]] 44.0%×1.0, [[terminal-bench]] 66.0%×1.0 |
+| 추론 | 77.7 | +1.85 | 실측 | [[critpt]] 60.0%×1.0, [[gpqa-diamond]] 94.0%×1.0, [[humanitys-last-exam]] 49.0%×1.0 |
+| 코딩 | 75.9 | +1.73 | 실측 | [[scicode]] 57.0%×1.0, [[terminal-bench]] 66.0%×0.5 |
+| 에이전트 | 80.3 | +2.02 | 실측 | [[gdpval]] 1618.0%×1.0, [[itbench]] 56.0%×1.0, [[tau3-banking]] 44.0%×1.0, [[terminal-bench]] 66.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 65.5 | +1.04 | 실측 | [[mmmu-pro]] 83.0%×1.0 |
+| 멀티모달 | 65.5 | +1.03 | 실측 | [[mmmu-pro]] 83.0%×1.0 |
 | 긴문맥 | 68.9 | +1.26 | 실측 | [[aa-lcr]] 84.0%×1.0 |
 | 지시 따르기 | 70.7 | +1.38 | 실측 | [[ifbench]] 73.0%×1.0 |
 

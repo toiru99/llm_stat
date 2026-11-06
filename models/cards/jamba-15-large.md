@@ -18,14 +18,14 @@ radar:
   agentic: { s: 7.7, z: -0.92, r: 36.3, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 29.7, z: -0.68, r: 39.7, estimated: true }  # 긴문맥
+  long_context: { s: 29.7, z: -0.69, r: 39.7, estimated: true }  # 긴문맥
   instruction: { s: 33.7, z: -0.81, r: 37.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba 1.5 Large
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # Jamba 1.5 Large
@@ -49,7 +49,7 @@ AI21 Labs · Open · Large · 컨텍스트 256k · 종합지능 **None** · ⚠�
 | 에이전트 | 36.3 | -0.92 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 39.7 | -0.68 | 추정 | (추정) |
+| 긴문맥 | 39.7 | -0.69 | 추정 | (추정) |
 | 지시 따르기 | 37.9 | -0.81 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

@@ -12,7 +12,7 @@ size_class: Unknown
 params_b: null
 is_reasoning: null
 radar:
-  knowledge: { s: 42.2, z: -0.32, r: 45.1, estimated: false }  # 전문 지식
+  knowledge: { s: 42.2, z: -0.33, r: 45.1, estimated: false }  # 전문 지식
   reasoning: { s: 38.1, z: -0.34, r: 44.9, estimated: false }  # 추론
   coding: { s: 33.7, z: -0.12, r: 48.2, estimated: false }  # 코딩
   agentic: { s: 5.5, z: -0.99, r: 35.1, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 32B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # Qwen3 32B
@@ -43,7 +43,7 @@ Alibaba · Open · Unknown · 컨텍스트 33k · 종합지능 **None** · ⚠�
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 45.1 | -0.32 | 실측 | [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
+| 전문 지식 | 45.1 | -0.33 | 실측 | [[gpqa-diamond]] 67.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
 | 추론 | 44.9 | -0.34 | 실측 | [[gpqa-diamond]] 67.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
 | 코딩 | 48.2 | -0.12 | 실측 | [[scicode]] 36.0%×1.0, [[terminal-bench]] 3.0%×0.5 |
 | 에이전트 | 35.1 | -0.99 | 실측 | [[gdpval]] 41.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 3.0%×1.0 |

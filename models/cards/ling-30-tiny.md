@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 47.6, z: -0.09, r: 48.7, estimated: false }  # 전문 지식
   reasoning: { s: 43.3, z: -0.11, r: 48.4, estimated: false }  # 추론
   coding: { s: 28.3, z: -0.3, r: 45.5, estimated: false }  # 코딩
-  agentic: { s: 35.8, z: 0.05, r: 50.8, estimated: false }  # 에이전트
+  agentic: { s: 35.8, z: 0.05, r: 50.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 67.4, z: 0.45, r: 56.7, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling 3.0 Tiny
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # Ling 3.0 Tiny
@@ -46,7 +46,7 @@ InclusionAI · Open · Small · 컨텍스트 262k · 종합지능 **None**
 | 전문 지식 | 48.7 | -0.09 | 실측 | [[gpqa-diamond]] 73.0%×0.4, [[humanitys-last-exam]] 9.0%×0.3 |
 | 추론 | 48.4 | -0.11 | 실측 | [[gpqa-diamond]] 73.0%×1.0, [[humanitys-last-exam]] 9.0%×1.0 |
 | 코딩 | 45.5 | -0.3 | 실측 | [[scicode]] 24.0%×1.0 |
-| 에이전트 | 50.8 | +0.05 | 실측 | [[gdpval]] 568.0%×1.0, [[tau3-banking]] 21.0%×1.0 |
+| 에이전트 | 50.7 | +0.05 | 실측 | [[gdpval]] 568.0%×1.0, [[tau3-banking]] 21.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 56.7 | +0.45 | 실측 | [[aa-lcr]] 60.0%×1.0 |

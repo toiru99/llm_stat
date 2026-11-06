@@ -12,10 +12,10 @@ size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 76.8, z: 1.2, r: 67.9, estimated: false }  # 전문 지식
-  reasoning: { s: 74.3, z: 1.27, r: 69.1, estimated: false }  # 추론
-  coding: { s: 60.4, z: 0.78, r: 61.6, estimated: false }  # 코딩
-  agentic: { s: 56.9, z: 0.78, r: 61.6, estimated: false }  # 에이전트
+  knowledge: { s: 76.8, z: 1.19, r: 67.9, estimated: false }  # 전문 지식
+  reasoning: { s: 74.3, z: 1.28, r: 69.1, estimated: false }  # 추론
+  coding: { s: 60.4, z: 0.77, r: 61.6, estimated: false }  # 코딩
+  agentic: { s: 56.9, z: 0.77, r: 61.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 83.1, z: 0.92, r: 63.8, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Flash (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # DeepSeek V4 Flash (max)
@@ -43,10 +43,10 @@ DeepSeek · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 67.9 | +1.2 | 실측 | [[gpqa-diamond]] 89.0%×0.4, [[humanitys-last-exam]] 35.0%×0.3 |
-| 추론 | 69.1 | +1.27 | 실측 | [[gpqa-diamond]] 89.0%×1.0, [[humanitys-last-exam]] 35.0%×1.0 |
-| 코딩 | 61.6 | +0.78 | 실측 | [[scicode]] 45.0%×1.0, [[terminal-bench]] 36.0%×0.5 |
-| 에이전트 | 61.6 | +0.78 | 실측 | [[gdpval]] 1046.0%×1.0, [[itbench]] 32.0%×1.0, [[tau3-banking]] 31.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
+| 전문 지식 | 67.9 | +1.19 | 실측 | [[gpqa-diamond]] 89.0%×0.4, [[humanitys-last-exam]] 35.0%×0.3 |
+| 추론 | 69.1 | +1.28 | 실측 | [[gpqa-diamond]] 89.0%×1.0, [[humanitys-last-exam]] 35.0%×1.0 |
+| 코딩 | 61.6 | +0.77 | 실측 | [[scicode]] 45.0%×1.0, [[terminal-bench]] 36.0%×0.5 |
+| 에이전트 | 61.6 | +0.77 | 실측 | [[gdpval]] 1046.0%×1.0, [[itbench]] 32.0%×1.0, [[tau3-banking]] 31.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 63.8 | +0.92 | 실측 | [[aa-lcr]] 74.0%×1.0 |

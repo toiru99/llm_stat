@@ -18,14 +18,14 @@ radar:
   agentic: { s: 8.2, z: -0.9, r: 36.5, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 20.3, z: -0.97, r: 35.5, estimated: true }  # 긴문맥
+  long_context: { s: 20.3, z: -0.97, r: 35.4, estimated: true }  # 긴문맥
   instruction: { s: 36.4, z: -0.7, r: 39.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nanbeige4.3-33B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # Nanbeige4.3-33B
@@ -49,7 +49,7 @@ Nanbeige · Open · Small · 컨텍스트 524k · 종합지능 **20.0**
 | 에이전트 | 36.5 | -0.9 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 35.5 | -0.97 | 추정 | (추정) |
+| 긴문맥 | 35.4 | -0.97 | 추정 | (추정) |
 | 지시 따르기 | 39.5 | -0.7 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

@@ -12,20 +12,20 @@ size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 61.5, z: 0.52, r: 57.9, estimated: false }  # 전문 지식
-  reasoning: { s: 57.9, z: 0.54, r: 58.2, estimated: false }  # 추론
+  knowledge: { s: 61.5, z: 0.52, r: 57.8, estimated: false }  # 전문 지식
+  reasoning: { s: 57.9, z: 0.55, r: 58.2, estimated: false }  # 추론
   coding: { s: 59.3, z: 0.74, r: 61.1, estimated: false }  # 코딩
-  agentic: { s: 41.5, z: 0.25, r: 53.7, estimated: false }  # 에이전트
+  agentic: { s: 41.5, z: 0.24, r: 53.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 81.1, z: 0.49, r: 57.4, estimated: false }  # 멀티모달
+  multimodal: { s: 81.1, z: 0.49, r: 57.3, estimated: false }  # 멀티모달
   long_context: { s: 83.1, z: 0.92, r: 63.8, estimated: false }  # 긴문맥
   instruction: { s: 77.5, z: 1.02, r: 65.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Step 3.7 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # Step 3.7 Flash
@@ -43,12 +43,12 @@ StepFun · Open · Large · 컨텍스트 262k · 종합지능 **None** · ⚠️
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 57.9 | +0.52 | 실측 | [[gpqa-diamond]] 81.0%×0.4, [[humanitys-last-exam]] 21.0%×0.3 |
-| 추론 | 58.2 | +0.54 | 실측 | [[gpqa-diamond]] 81.0%×1.0, [[humanitys-last-exam]] 21.0%×1.0 |
+| 전문 지식 | 57.8 | +0.52 | 실측 | [[gpqa-diamond]] 81.0%×0.4, [[humanitys-last-exam]] 21.0%×0.3 |
+| 추론 | 58.2 | +0.55 | 실측 | [[gpqa-diamond]] 81.0%×1.0, [[humanitys-last-exam]] 21.0%×1.0 |
 | 코딩 | 61.1 | +0.74 | 실측 | [[scicode]] 44.0%×1.0, [[terminal-bench]] 36.0%×0.5 |
-| 에이전트 | 53.7 | +0.25 | 실측 | [[apex-agents]] 15.0%×1.0, [[gdpval]] 864.0%×1.0, [[itbench]] 30.0%×1.0, [[tau3-banking]] 12.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
+| 에이전트 | 53.7 | +0.24 | 실측 | [[apex-agents]] 15.0%×1.0, [[gdpval]] 864.0%×1.0, [[itbench]] 30.0%×1.0, [[tau3-banking]] 12.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 57.4 | +0.49 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
+| 멀티모달 | 57.3 | +0.49 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
 | 긴문맥 | 63.8 | +0.92 | 실측 | [[aa-lcr]] 74.0%×1.0 |
 | 지시 따르기 | 65.4 | +1.02 | 실측 | [[ifbench]] 67.0%×1.0 |
 

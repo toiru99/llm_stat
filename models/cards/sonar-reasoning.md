@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 60.5, z: 0.48, r: 57.2, estimated: false }  # 전문 지식
   reasoning: { s: 60.5, z: 0.66, r: 59.9, estimated: false }  # 추론
-  coding: { s: 51.2, z: 0.47, r: 57.0, estimated: true }  # 코딩
+  coding: { s: 51.2, z: 0.46, r: 57.0, estimated: true }  # 코딩
   agentic: { s: 49.0, z: 0.5, r: 57.5, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Sonar Reasoning
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # Sonar Reasoning
@@ -45,7 +45,7 @@ Perplexity · Proprietary · Unknown · 컨텍스트 127k · 종합지능 **None
 |---|---|---|---|---|
 | 전문 지식 | 57.2 | +0.48 | 실측 | [[gpqa-diamond]] 62.0%×0.4 |
 | 추론 | 59.9 | +0.66 | 실측 | [[gpqa-diamond]] 62.0%×1.0 |
-| 코딩 | 57.0 | +0.47 | 추정 | (추정) |
+| 코딩 | 57.0 | +0.46 | 추정 | (추정) |
 | 에이전트 | 57.5 | +0.5 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

@@ -12,20 +12,20 @@ size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 73.3, z: 1.04, r: 65.7, estimated: false }  # 전문 지식
+  knowledge: { s: 73.3, z: 1.04, r: 65.6, estimated: false }  # 전문 지식
   reasoning: { s: 52.6, z: 0.31, r: 54.6, estimated: false }  # 추론
   coding: { s: 60.0, z: 0.76, r: 61.4, estimated: false }  # 코딩
   agentic: { s: 69.9, z: 1.22, r: 68.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 89.9, z: 1.13, r: 66.9, estimated: false }  # 긴문맥
-  instruction: { s: 77.2, z: 1.01, r: 65.2, estimated: true }  # 지시 따르기
+  long_context: { s: 89.9, z: 1.12, r: 66.9, estimated: false }  # 긴문맥
+  instruction: { s: 77.4, z: 1.02, r: 65.3, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — K2 Horizon 375B A23B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # K2 Horizon 375B A23B
@@ -43,14 +43,14 @@ Institute of Foundation Models · Open · Large · 컨텍스트 524k · 종합�
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 65.7 | +1.04 | 실측 | [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 32.0%×0.3 |
+| 전문 지식 | 65.6 | +1.04 | 실측 | [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 32.0%×0.3 |
 | 추론 | 54.6 | +0.31 | 실측 | [[critpt]] 12.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 32.0%×1.0 |
 | 코딩 | 61.4 | +0.76 | 실측 | [[scicode]] 43.0%×1.0 |
 | 에이전트 | 68.3 | +1.22 | 실측 | [[gdpval]] 1365.0%×1.0, [[tau3-banking]] 34.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 66.9 | +1.13 | 실측 | [[aa-lcr]] 80.0%×1.0 |
-| 지시 따르기 | 65.2 | +1.01 | 추정 | (추정) |
+| 긴문맥 | 66.9 | +1.12 | 실측 | [[aa-lcr]] 80.0%×1.0 |
+| 지시 따르기 | 65.3 | +1.02 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

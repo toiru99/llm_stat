@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 75.0, z: 1.12, r: 66.8, estimated: false }  # 전문 지식
   reasoning: { s: 75.0, z: 1.31, r: 69.6, estimated: false }  # 추론
   coding: { s: 80.0, z: 1.43, r: 71.5, estimated: false }  # 코딩
-  agentic: { s: 78.6, z: 1.52, r: 72.8, estimated: false }  # 에이전트
+  agentic: { s: 78.6, z: 1.52, r: 72.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 91.9, z: 1.04, r: 65.5, estimated: false }  # 멀티모달
+  multimodal: { s: 91.9, z: 1.03, r: 65.5, estimated: false }  # 멀티모달
   long_context: { s: 91.0, z: 1.16, r: 67.4, estimated: false }  # 긴문맥
-  instruction: { s: 75.6, z: 0.95, r: 64.2, estimated: true }  # 지시 따르기
+  instruction: { s: 75.7, z: 0.95, r: 64.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6 Sol (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # GPT-6 Sol (xhigh)
@@ -46,9 +46,9 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 | 전문 지식 | 66.8 | +1.12 | 실측 | [[humanitys-last-exam]] 46.0%×0.3 |
 | 추론 | 69.6 | +1.31 | 실측 | [[humanitys-last-exam]] 46.0%×1.0 |
 | 코딩 | 71.5 | +1.43 | 실측 | [[scicode]] 55.0%×1.0 |
-| 에이전트 | 72.8 | +1.52 | 실측 | [[gdpval]] 1466.0%×1.0 |
+| 에이전트 | 72.7 | +1.52 | 실측 | [[gdpval]] 1466.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 65.5 | +1.04 | 실측 | [[mmmu-pro]] 83.0%×1.0 |
+| 멀티모달 | 65.5 | +1.03 | 실측 | [[mmmu-pro]] 83.0%×1.0 |
 | 긴문맥 | 67.4 | +1.16 | 실측 | [[aa-lcr]] 81.0%×1.0 |
 | 지시 따르기 | 64.2 | +0.95 | 추정 | (추정) |
 

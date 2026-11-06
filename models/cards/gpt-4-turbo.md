@@ -12,7 +12,7 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 3.3, z: -2.03, r: 19.6, estimated: false }  # 전문 지식
+  knowledge: { s: 3.3, z: -2.03, r: 19.5, estimated: false }  # 전문 지식
   reasoning: { s: 3.3, z: -1.89, r: 21.6, estimated: false }  # 추론
   coding: { s: 0.3, z: -1.24, r: 31.4, estimated: true }  # 코딩
   agentic: { s: 2.3, z: -1.1, r: 33.5, estimated: true }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4 Turbo
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # GPT-4 Turbo
@@ -43,7 +43,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None** �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 19.6 | -2.03 | 실측 | [[humanitys-last-exam]] 3.0%×0.3 |
+| 전문 지식 | 19.5 | -2.03 | 실측 | [[humanitys-last-exam]] 3.0%×0.3 |
 | 추론 | 21.6 | -1.89 | 실측 | [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 31.4 | -1.24 | 추정 | (추정) |
 | 에이전트 | 33.5 | -1.1 | 추정 | (추정) |

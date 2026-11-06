@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 93.6, z: 1.94, r: 79.0, estimated: false }  # 전문 지식
-  reasoning: { s: 95.2, z: 2.2, r: 83.1, estimated: false }  # 추론
+  knowledge: { s: 93.6, z: 1.93, r: 79.0, estimated: false }  # 전문 지식
+  reasoning: { s: 95.2, z: 2.21, r: 83.1, estimated: false }  # 추론
   coding: { s: 80.0, z: 1.43, r: 71.5, estimated: false }  # 코딩
   agentic: { s: 80.4, z: 1.58, r: 73.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 95.9, z: 1.24, r: 68.6, estimated: false }  # 멀티모달
-  long_context: { s: 89.9, z: 1.13, r: 66.9, estimated: false }  # 긴문맥
+  long_context: { s: 89.9, z: 1.12, r: 66.9, estimated: false }  # 긴문맥
   instruction: { s: 77.1, z: 1.01, r: 65.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6 Astra (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # GPT-6 Astra (high)
@@ -43,13 +43,13 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **55.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 79.0 | +1.94 | 실측 | [[gpqa-diamond]] 95.0%×0.4, [[humanitys-last-exam]] 53.0%×0.3 |
-| 추론 | 83.1 | +2.2 | 실측 | [[critpt]] 72.0%×1.0, [[gpqa-diamond]] 95.0%×1.0, [[humanitys-last-exam]] 53.0%×1.0 |
+| 전문 지식 | 79.0 | +1.93 | 실측 | [[gpqa-diamond]] 95.0%×0.4, [[humanitys-last-exam]] 53.0%×0.3 |
+| 추론 | 83.1 | +2.21 | 실측 | [[critpt]] 72.0%×1.0, [[gpqa-diamond]] 95.0%×1.0, [[humanitys-last-exam]] 53.0%×1.0 |
 | 코딩 | 71.5 | +1.43 | 실측 | [[scicode]] 55.0%×1.0 |
 | 에이전트 | 73.7 | +1.58 | 실측 | [[gdpval]] 1536.0%×1.0, [[tau3-banking]] 40.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 68.6 | +1.24 | 실측 | [[mmmu-pro]] 86.0%×1.0 |
-| 긴문맥 | 66.9 | +1.13 | 실측 | [[aa-lcr]] 80.0%×1.0 |
+| 긴문맥 | 66.9 | +1.12 | 실측 | [[aa-lcr]] 80.0%×1.0 |
 | 지시 따르기 | 65.1 | +1.01 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

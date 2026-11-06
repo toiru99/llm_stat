@@ -17,15 +17,15 @@ radar:
   coding: { s: 31.3, z: -0.2, r: 47.0, estimated: false }  # 코딩
   agentic: { s: 10.9, z: -0.8, r: 37.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 63.5, z: -0.4, r: 44.1, estimated: false }  # 멀티모달
-  long_context: { s: 56.2, z: 0.11, r: 51.7, estimated: false }  # 긴문맥
+  multimodal: { s: 63.5, z: -0.4, r: 44.0, estimated: false }  # 멀티모달
+  long_context: { s: 56.2, z: 0.11, r: 51.6, estimated: false }  # 긴문맥
   instruction: { s: 43.7, z: -0.39, r: 44.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 4 Maverick
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # Llama 4 Maverick
@@ -48,8 +48,8 @@ Meta · Open · Large · 컨텍스트 1M · 종합지능 **None**
 | 코딩 | 47.0 | -0.2 | 실측 | [[scicode]] 32.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
 | 에이전트 | 37.9 | -0.8 | 실측 | [[gdpval]] 268.0%×1.0, [[tau3-banking]] 4.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 44.1 | -0.4 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
-| 긴문맥 | 51.7 | +0.11 | 실측 | [[aa-lcr]] 50.0%×1.0 |
+| 멀티모달 | 44.0 | -0.4 | 실측 | [[mmmu-pro]] 62.0%×1.0 |
+| 긴문맥 | 51.6 | +0.11 | 실측 | [[aa-lcr]] 50.0%×1.0 |
 | 지시 따르기 | 44.1 | -0.39 | 실측 | [[ifbench]] 43.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

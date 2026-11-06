@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 3.7, z: -1.47, r: 28.0, estimated: true }  # 긴문맥
-  instruction: { s: 27.6, z: -1.07, r: 34.0, estimated: true }  # 지시 따르기
+  instruction: { s: 20.3, z: -1.37, r: 29.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 2 Chat 13B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # Llama 2 Chat 13B
@@ -33,7 +33,7 @@ timestamp: 2026-11-05T00:00:00Z
 Meta · Open · Small · 컨텍스트 4k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 지시 따르기, 에이전트
+- **강점**: 에이전트, 코딩
 - **약점**: 전문 지식, 긴문맥
 
 ## 실용 지표
@@ -50,7 +50,7 @@ Meta · Open · Small · 컨텍스트 4k · 종합지능 **None** · ⚠️ past
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.0 | -1.47 | 추정 | (추정) |
-| 지시 따르기 | 34.0 | -1.07 | 추정 | (추정) |
+| 지시 따르기 | 29.4 | -1.37 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 70.0, z: 0.9, r: 63.5, estimated: false }  # 전문 지식
-  reasoning: { s: 62.1, z: 0.73, r: 60.9, estimated: false }  # 추론
-  coding: { s: 83.3, z: 1.54, r: 73.2, estimated: false }  # 코딩
-  agentic: { s: 88.6, z: 1.86, r: 78.0, estimated: false }  # 에이전트
+  reasoning: { s: 62.1, z: 0.73, r: 61.0, estimated: false }  # 추론
+  coding: { s: 83.3, z: 1.54, r: 73.1, estimated: false }  # 코딩
+  agentic: { s: 88.6, z: 1.86, r: 77.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 92.1, z: 1.19, r: 67.9, estimated: false }  # 긴문맥
-  instruction: { s: 65.1, z: 0.51, r: 57.6, estimated: true }  # 지시 따르기
+  instruction: { s: 68.3, z: 0.64, r: 59.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Ling 3.1 Flash 1019
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # Ling 3.1 Flash 1019
@@ -44,13 +44,13 @@ InclusionAI · Open · Large · 컨텍스트 1M · 종합지능 **30.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 63.5 | +0.9 | 실측 | [[humanitys-last-exam]] 43.0%×0.3 |
-| 추론 | 60.9 | +0.73 | 실측 | [[critpt]] 39.0%×1.0, [[humanitys-last-exam]] 43.0%×1.0 |
-| 코딩 | 73.2 | +1.54 | 실측 | [[scicode]] 57.0%×1.0 |
-| 에이전트 | 78.0 | +1.86 | 실측 | [[gdpval]] 1653.0%×1.0 |
+| 추론 | 61.0 | +0.73 | 실측 | [[critpt]] 39.0%×1.0, [[humanitys-last-exam]] 43.0%×1.0 |
+| 코딩 | 73.1 | +1.54 | 실측 | [[scicode]] 57.0%×1.0 |
+| 에이전트 | 77.9 | +1.86 | 실측 | [[gdpval]] 1653.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 67.9 | +1.19 | 실측 | [[aa-lcr]] 82.0%×1.0 |
-| 지시 따르기 | 57.6 | +0.51 | 추정 | (추정) |
+| 지시 따르기 | 59.6 | +0.64 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

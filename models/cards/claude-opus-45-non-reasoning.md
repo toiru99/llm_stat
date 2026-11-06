@@ -17,15 +17,15 @@ radar:
   coding: { s: 62.1, z: 0.83, r: 62.5, estimated: false }  # 코딩
   agentic: { s: 62.1, z: 0.95, r: 64.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 75.7, z: 0.22, r: 53.3, estimated: false }  # 멀티모달
+  multimodal: { s: 75.7, z: 0.22, r: 53.2, estimated: false }  # 멀티모달
   long_context: { s: 79.8, z: 0.82, r: 62.3, estimated: false }  # 긴문맥
   instruction: { s: 43.7, z: -0.39, r: 44.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 4.5 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # Claude Opus 4.5 (non-reasoning)
@@ -48,7 +48,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None*
 | 코딩 | 62.5 | +0.83 | 실측 | [[terminal-bench]] 41.0%×0.5 |
 | 에이전트 | 64.3 | +0.95 | 실측 | [[terminal-bench]] 41.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 53.3 | +0.22 | 실측 | [[mmmu-pro]] 71.0%×1.0 |
+| 멀티모달 | 53.2 | +0.22 | 실측 | [[mmmu-pro]] 71.0%×1.0 |
 | 긴문맥 | 62.3 | +0.82 | 실측 | [[aa-lcr]] 71.0%×1.0 |
 | 지시 따르기 | 44.1 | -0.39 | 실측 | [[ifbench]] 43.0%×1.0 |
 

@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 43.4, z: -0.27, r: 46.0, estimated: false }  # 전문 지식
   reasoning: { s: 39.1, z: -0.3, r: 45.5, estimated: false }  # 추론
-  coding: { s: 24.4, z: -0.43, r: 43.5, estimated: true }  # 코딩
-  agentic: { s: 21.6, z: -0.44, r: 43.4, estimated: true }  # 에이전트
+  coding: { s: 21.6, z: -0.53, r: 42.1, estimated: true }  # 코딩
+  agentic: { s: 18.6, z: -0.54, r: 41.9, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 62.4, z: 0.3, r: 54.5, estimated: true }  # 긴문맥
+  long_context: { s: 61.0, z: 0.25, r: 53.8, estimated: true }  # 긴문맥
   instruction: { s: 43.7, z: -0.39, r: 44.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 4 Opus (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # Claude 4 Opus (non-reasoning)
@@ -45,11 +45,11 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None*
 |---|---|---|---|---|
 | 전문 지식 | 46.0 | -0.27 | 실측 | [[gpqa-diamond]] 70.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 45.5 | -0.3 | 실측 | [[gpqa-diamond]] 70.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 43.5 | -0.43 | 추정 | (추정) |
-| 에이전트 | 43.4 | -0.44 | 추정 | (추정) |
+| 코딩 | 42.1 | -0.53 | 추정 | (추정) |
+| 에이전트 | 41.9 | -0.54 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 54.5 | +0.3 | 추정 | (추정) |
+| 긴문맥 | 53.8 | +0.25 | 추정 | (추정) |
 | 지시 따르기 | 44.1 | -0.39 | 실측 | [[ifbench]] 43.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

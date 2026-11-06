@@ -18,14 +18,14 @@ radar:
   agentic: { s: 3.3, z: -1.07, r: 34.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 36.5, z: -1.76, r: 23.6, estimated: false }  # 멀티모달
-  long_context: { s: 14.2, z: -1.15, r: 32.8, estimated: true }  # 긴문맥
+  long_context: { s: 14.6, z: -1.14, r: 32.9, estimated: true }  # 긴문맥
   instruction: { s: 26.8, z: -1.1, r: 33.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4o mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # GPT-4o mini
@@ -49,7 +49,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None** �
 | 에이전트 | 34.0 | -1.07 | 실측 | [[gdpval]] 15.0%×1.0, [[tau3-banking]] 3.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 23.6 | -1.76 | 실측 | [[mmmu-pro]] 42.0%×1.0 |
-| 긴문맥 | 32.8 | -1.15 | 추정 | (추정) |
+| 긴문맥 | 32.9 | -1.14 | 추정 | (추정) |
 | 지시 따르기 | 33.5 | -1.1 | 실측 | [[ifbench]] 31.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

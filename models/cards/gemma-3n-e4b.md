@@ -17,15 +17,15 @@ radar:
   coding: { s: 3.0, z: -1.15, r: 32.8, estimated: false }  # 코딩
   agentic: { s: 1.5, z: -1.13, r: 33.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 14.9, z: -2.85, r: 7.3, estimated: false }  # 멀티모달
+  multimodal: { s: 14.9, z: -2.85, r: 7.2, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.58, r: 26.3, estimated: false }  # 긴문맥
   instruction: { s: 22.5, z: -1.28, r: 30.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 3n E4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # Gemma 3n E4B
@@ -48,7 +48,7 @@ Google · Open · Small · 컨텍스트 32k · 종합지능 **None** · ⚠️ p
 | 코딩 | 32.8 | -1.15 | 실측 | [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 33.1 | -1.13 | 실측 | [[tau3-banking]] 0.0%×1.0, [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 7.3 | -2.85 | 실측 | [[mmmu-pro]] 26.0%×1.0 |
+| 멀티모달 | 7.2 | -2.85 | 실측 | [[mmmu-pro]] 26.0%×1.0 |
 | 긴문맥 | 26.3 | -1.58 | 실측 | [[aa-lcr]] 0.0%×1.0 |
 | 지시 따르기 | 30.8 | -1.28 | 실측 | [[ifbench]] 28.0%×1.0 |
 

@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 74.0, z: 1.08, r: 66.1, estimated: false }  # 전문 지식
+  knowledge: { s: 74.0, z: 1.07, r: 66.1, estimated: false }  # 전문 지식
   reasoning: { s: 71.4, z: 1.15, r: 67.2, estimated: false }  # 추론
   coding: { s: 71.7, z: 1.15, r: 67.3, estimated: false }  # 코딩
   agentic: { s: 59.6, z: 0.87, r: 63.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 83.8, z: 0.63, r: 59.4, estimated: false }  # 멀티모달
+  multimodal: { s: 83.8, z: 0.62, r: 59.4, estimated: false }  # 멀티모달
   long_context: { s: 83.1, z: 0.92, r: 63.8, estimated: false }  # 긴문맥
   instruction: { s: 70.4, z: 0.73, r: 60.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Terra (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # GPT-5.6 Terra (medium)
@@ -43,12 +43,12 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 66.1 | +1.08 | 실측 | [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 33.0%×0.3 |
+| 전문 지식 | 66.1 | +1.07 | 실측 | [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 33.0%×0.3 |
 | 추론 | 67.2 | +1.15 | 실측 | [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 33.0%×1.0 |
 | 코딩 | 67.3 | +1.15 | 실측 | [[scicode]] 50.0%×1.0 |
 | 에이전트 | 63.0 | +0.87 | 실측 | [[gdpval]] 1274.0%×1.0, [[tau3-banking]] 26.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 59.4 | +0.63 | 실측 | [[mmmu-pro]] 77.0%×1.0 |
+| 멀티모달 | 59.4 | +0.62 | 실측 | [[mmmu-pro]] 77.0%×1.0 |
 | 긴문맥 | 63.8 | +0.92 | 실측 | [[aa-lcr]] 74.0%×1.0 |
 | 지시 따르기 | 60.9 | +0.73 | 실측 | [[ifbench]] 62.0%×1.0 |
 

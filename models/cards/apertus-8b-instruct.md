@@ -12,7 +12,7 @@ size_class: Small
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 13.5, z: -1.58, r: 26.3, estimated: false }  # 전문 지식
+  knowledge: { s: 13.5, z: -1.58, r: 26.2, estimated: false }  # 전문 지식
   reasoning: { s: 12.6, z: -1.48, r: 27.8, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.25, r: 31.2, estimated: false }  # 코딩
   agentic: { s: 0.0, z: -1.18, r: 32.3, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Apertus 8B Instruct
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # Apertus 8B Instruct
@@ -43,7 +43,7 @@ Swiss AI Initiative · Open · Small · 컨텍스트 66k · 종합지능 **None*
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 26.3 | -1.58 | 실측 | [[gpqa-diamond]] 26.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 전문 지식 | 26.2 | -1.58 | 실측 | [[gpqa-diamond]] 26.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 27.8 | -1.48 | 실측 | [[gpqa-diamond]] 26.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 31.2 | -1.25 | 실측 | [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 32.3 | -1.18 | 실측 | [[terminal-bench]] 0.0%×1.0 |

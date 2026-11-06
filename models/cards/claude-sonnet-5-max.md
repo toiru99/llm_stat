@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 82.4, z: 1.44, r: 71.6, estimated: false }  # 전문 지식
-  reasoning: { s: 80.4, z: 1.55, r: 73.2, estimated: false }  # 추론
-  coding: { s: 78.3, z: 1.38, r: 70.7, estimated: false }  # 코딩
+  reasoning: { s: 80.4, z: 1.55, r: 73.3, estimated: false }  # 추론
+  coding: { s: 78.3, z: 1.38, r: 70.6, estimated: false }  # 코딩
   agentic: { s: 75.7, z: 1.42, r: 71.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 83.8, z: 0.63, r: 59.4, estimated: false }  # 멀티모달
+  multimodal: { s: 83.8, z: 0.62, r: 59.4, estimated: false }  # 멀티모달
   long_context: { s: 92.1, z: 1.19, r: 67.9, estimated: false }  # 긴문맥
   instruction: { s: 78.0, z: 1.05, r: 65.7, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # Claude Sonnet 5 (max)
@@ -44,11 +44,11 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 71.6 | +1.44 | 실측 | [[gpqa-diamond]] 91.0%×0.4, [[humanitys-last-exam]] 41.0%×0.3 |
-| 추론 | 73.2 | +1.55 | 실측 | [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 41.0%×1.0 |
-| 코딩 | 70.7 | +1.38 | 실측 | [[scicode]] 54.0%×1.0 |
+| 추론 | 73.3 | +1.55 | 실측 | [[gpqa-diamond]] 91.0%×1.0, [[humanitys-last-exam]] 41.0%×1.0 |
+| 코딩 | 70.6 | +1.38 | 실측 | [[scicode]] 54.0%×1.0 |
 | 에이전트 | 71.3 | +1.42 | 실측 | [[gdpval]] 1470.0%×1.0, [[tau3-banking]] 37.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 59.4 | +0.63 | 실측 | [[mmmu-pro]] 77.0%×1.0 |
+| 멀티모달 | 59.4 | +0.62 | 실측 | [[mmmu-pro]] 77.0%×1.0 |
 | 긴문맥 | 67.9 | +1.19 | 실측 | [[aa-lcr]] 82.0%×1.0 |
 | 지시 따르기 | 65.7 | +1.05 | 추정 | (추정) |
 

@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 18.3, z: -1.37, r: 29.4, estimated: false }  # 전문 지식
   reasoning: { s: 9.9, z: -1.6, r: 26.0, estimated: false }  # 추론
   coding: { s: 53.3, z: 0.54, r: 58.1, estimated: false }  # 코딩
-  agentic: { s: 55.7, z: 0.74, r: 61.0, estimated: true }  # 에이전트
+  agentic: { s: 55.7, z: 0.73, r: 61.0, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 73.0, z: 0.08, r: 51.2, estimated: false }  # 멀티모달
   long_context: { s: 64.0, z: 0.35, r: 55.2, estimated: false }  # 긴문맥
-  instruction: { s: 44.8, z: -0.35, r: 44.8, estimated: true }  # 지시 따르기
+  instruction: { s: 42.4, z: -0.45, r: 43.3, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4.1 Flash 1017 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # DeepSeek V4.1 Flash 1017 (non-reasoning)
@@ -46,11 +46,11 @@ DeepSeek · Open · Large · 컨텍스트 1M · 종합지능 **19.0**
 | 전문 지식 | 29.4 | -1.37 | 실측 | [[humanitys-last-exam]] 12.0%×0.3 |
 | 추론 | 26.0 | -1.6 | 실측 | [[critpt]] 1.0%×1.0, [[humanitys-last-exam]] 12.0%×1.0 |
 | 코딩 | 58.1 | +0.54 | 실측 | [[scicode]] 39.0%×1.0 |
-| 에이전트 | 61.0 | +0.74 | 추정 | (추정) |
+| 에이전트 | 61.0 | +0.73 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 51.2 | +0.08 | 실측 | [[mmmu-pro]] 69.0%×1.0 |
 | 긴문맥 | 55.2 | +0.35 | 실측 | [[aa-lcr]] 57.0%×1.0 |
-| 지시 따르기 | 44.8 | -0.35 | 추정 | (추정) |
+| 지시 따르기 | 43.3 | -0.45 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

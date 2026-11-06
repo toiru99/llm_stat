@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 16.7, z: -1.44, r: 28.3, estimated: false }  # 전문 지식
   reasoning: { s: 16.7, z: -1.3, r: 30.5, estimated: false }  # 추론
-  coding: { s: 48.3, z: 0.37, r: 55.6, estimated: false }  # 코딩
-  agentic: { s: 72.3, z: 1.3, r: 69.6, estimated: false }  # 에이전트
+  coding: { s: 48.3, z: 0.37, r: 55.5, estimated: false }  # 코딩
+  agentic: { s: 72.3, z: 1.3, r: 69.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 68.9, z: -0.12, r: 48.2, estimated: false }  # 멀티모달
+  multimodal: { s: 68.9, z: -0.13, r: 48.1, estimated: false }  # 멀티모달
   long_context: { s: 61.8, z: 0.28, r: 54.2, estimated: false }  # 긴문맥
-  instruction: { s: 43.4, z: -0.4, r: 44.0, estimated: true }  # 지시 따르기
+  instruction: { s: 41.5, z: -0.48, r: 42.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4.1 Flash (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # DeepSeek V4.1 Flash (non-reasoning)
@@ -45,12 +45,12 @@ DeepSeek · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ 
 |---|---|---|---|---|
 | 전문 지식 | 28.3 | -1.44 | 실측 | [[humanitys-last-exam]] 11.0%×0.3 |
 | 추론 | 30.5 | -1.3 | 실측 | [[humanitys-last-exam]] 11.0%×1.0 |
-| 코딩 | 55.6 | +0.37 | 실측 | [[scicode]] 36.0%×1.0 |
-| 에이전트 | 69.6 | +1.3 | 실측 | [[gdpval]] 1349.0%×1.0 |
+| 코딩 | 55.5 | +0.37 | 실측 | [[scicode]] 36.0%×1.0 |
+| 에이전트 | 69.5 | +1.3 | 실측 | [[gdpval]] 1349.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 48.2 | -0.12 | 실측 | [[mmmu-pro]] 66.0%×1.0 |
+| 멀티모달 | 48.1 | -0.13 | 실측 | [[mmmu-pro]] 66.0%×1.0 |
 | 긴문맥 | 54.2 | +0.28 | 실측 | [[aa-lcr]] 55.0%×1.0 |
-| 지시 따르기 | 44.0 | -0.4 | 추정 | (추정) |
+| 지시 따르기 | 42.8 | -0.48 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 65.5, z: 0.7, r: 60.5, estimated: false }  # 전문 지식
   reasoning: { s: 61.7, z: 0.71, r: 60.7, estimated: false }  # 추론
-  coding: { s: 61.7, z: 0.82, r: 62.3, estimated: false }  # 코딩
+  coding: { s: 61.7, z: 0.82, r: 62.2, estimated: false }  # 코딩
   agentic: { s: 64.6, z: 1.04, r: 65.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 86.5, z: 0.76, r: 61.5, estimated: false }  # 멀티모달
-  long_context: { s: 87.6, z: 1.06, r: 65.9, estimated: false }  # 긴문맥
-  instruction: { s: 81.6, z: 1.2, r: 68.0, estimated: true }  # 지시 따르기
+  multimodal: { s: 86.5, z: 0.76, r: 61.4, estimated: false }  # 멀티모달
+  long_context: { s: 87.6, z: 1.06, r: 65.8, estimated: false }  # 긴문맥
+  instruction: { s: 81.9, z: 1.21, r: 68.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Ling-3.0-flash-VL
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # Ling-3.0-flash-VL
@@ -45,12 +45,12 @@ InclusionAI · Open · Medium · 컨텍스트 262k · 종합지능 **None**
 |---|---|---|---|---|
 | 전문 지식 | 60.5 | +0.7 | 실측 | [[gpqa-diamond]] 86.0%×0.4, [[humanitys-last-exam]] 22.0%×0.3 |
 | 추론 | 60.7 | +0.71 | 실측 | [[gpqa-diamond]] 86.0%×1.0, [[humanitys-last-exam]] 22.0%×1.0 |
-| 코딩 | 62.3 | +0.82 | 실측 | [[scicode]] 44.0%×1.0 |
+| 코딩 | 62.2 | +0.82 | 실측 | [[scicode]] 44.0%×1.0 |
 | 에이전트 | 65.6 | +1.04 | 실측 | [[gdpval]] 1169.0%×1.0, [[tau3-banking]] 34.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 61.5 | +0.76 | 실측 | [[mmmu-pro]] 79.0%×1.0 |
-| 긴문맥 | 65.9 | +1.06 | 실측 | [[aa-lcr]] 78.0%×1.0 |
-| 지시 따르기 | 68.0 | +1.2 | 추정 | (추정) |
+| 멀티모달 | 61.4 | +0.76 | 실측 | [[mmmu-pro]] 79.0%×1.0 |
+| 긴문맥 | 65.8 | +1.06 | 실측 | [[aa-lcr]] 78.0%×1.0 |
+| 지시 따르기 | 68.1 | +1.21 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

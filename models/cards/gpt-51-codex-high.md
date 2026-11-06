@@ -17,15 +17,15 @@ radar:
   coding: { s: 53.0, z: 0.53, r: 57.9, estimated: false }  # 코딩
   agentic: { s: 53.0, z: 0.64, r: 59.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 77.0, z: 0.29, r: 54.3, estimated: false }  # 멀티모달
+  multimodal: { s: 77.0, z: 0.28, r: 54.2, estimated: false }  # 멀티모달
   long_context: { s: 77.5, z: 0.75, r: 61.3, estimated: false }  # 긴문맥
   instruction: { s: 81.7, z: 1.2, r: 68.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.1 Codex (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # GPT-5.1 Codex (high)
@@ -48,7 +48,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **None** �
 | 코딩 | 57.9 | +0.53 | 실측 | [[terminal-bench]] 35.0%×0.5 |
 | 에이전트 | 59.6 | +0.64 | 실측 | [[terminal-bench]] 35.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 54.3 | +0.29 | 실측 | [[mmmu-pro]] 72.0%×1.0 |
+| 멀티모달 | 54.2 | +0.28 | 실측 | [[mmmu-pro]] 72.0%×1.0 |
 | 긴문맥 | 61.3 | +0.75 | 실측 | [[aa-lcr]] 69.0%×1.0 |
 | 지시 따르기 | 68.0 | +1.2 | 실측 | [[ifbench]] 70.0%×1.0 |
 

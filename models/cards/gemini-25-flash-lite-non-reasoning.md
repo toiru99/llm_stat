@@ -17,15 +17,15 @@ radar:
   coding: { s: 3.0, z: -1.15, r: 32.8, estimated: false }  # 코딩
   agentic: { s: 3.0, z: -1.08, r: 33.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 52.7, z: -0.94, r: 35.9, estimated: false }  # 멀티모달
+  multimodal: { s: 52.7, z: -0.94, r: 35.8, estimated: false }  # 멀티모달
   long_context: { s: 36.0, z: -0.5, r: 42.5, estimated: false }  # 긴문맥
   instruction: { s: 26.8, z: -1.1, r: 33.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.5 Flash-Lite (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # Gemini 2.5 Flash-Lite (non-reasoning)
@@ -48,7 +48,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 | 코딩 | 32.8 | -1.15 | 실측 | [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 33.9 | -1.08 | 실측 | [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 35.9 | -0.94 | 실측 | [[mmmu-pro]] 54.0%×1.0 |
+| 멀티모달 | 35.8 | -0.94 | 실측 | [[mmmu-pro]] 54.0%×1.0 |
 | 긴문맥 | 42.5 | -0.5 | 실측 | [[aa-lcr]] 32.0%×1.0 |
 | 지시 따르기 | 33.5 | -1.1 | 실측 | [[ifbench]] 31.0%×1.0 |
 

@@ -12,7 +12,7 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 35.4, z: -0.62, r: 40.7, estimated: false }  # 전문 지식
+  knowledge: { s: 35.4, z: -0.62, r: 40.6, estimated: false }  # 전문 지식
   reasoning: { s: 31.6, z: -0.63, r: 40.5, estimated: false }  # 추론
   coding: { s: 21.7, z: -0.52, r: 42.2, estimated: true }  # 코딩
   agentic: { s: 11.3, z: -0.79, r: 38.1, estimated: true }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — o1-mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # o1-mini
@@ -43,7 +43,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None** �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 40.7 | -0.62 | 실측 | [[gpqa-diamond]] 60.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 전문 지식 | 40.6 | -0.62 | 실측 | [[gpqa-diamond]] 60.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 40.5 | -0.63 | 실측 | [[gpqa-diamond]] 60.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 42.2 | -0.52 | 추정 | (추정) |
 | 에이전트 | 38.1 | -0.79 | 추정 | (추정) |

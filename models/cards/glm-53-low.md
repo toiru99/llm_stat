@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 60.0, z: 0.46, r: 56.9, estimated: false }  # 전문 지식
   reasoning: { s: 45.3, z: -0.02, r: 49.7, estimated: false }  # 추론
-  coding: { s: 58.3, z: 0.71, r: 60.6, estimated: false }  # 코딩
+  coding: { s: 58.3, z: 0.7, r: 60.6, estimated: false }  # 코딩
   agentic: { s: 71.4, z: 1.27, r: 69.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 82.0, z: 0.89, r: 63.3, estimated: false }  # 긴문맥
-  instruction: { s: 45.1, z: -0.33, r: 45.0, estimated: true }  # 지시 따르기
+  instruction: { s: 45.2, z: -0.33, r: 45.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5.3 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # GLM-5.3 (low)
@@ -45,12 +45,12 @@ Z AI · Open · Large · 컨텍스트 1M · 종합지능 **23.0**
 |---|---|---|---|---|
 | 전문 지식 | 56.9 | +0.46 | 실측 | [[humanitys-last-exam]] 37.0%×0.3 |
 | 추론 | 49.7 | -0.02 | 실측 | [[critpt]] 22.0%×1.0, [[humanitys-last-exam]] 37.0%×1.0 |
-| 코딩 | 60.6 | +0.71 | 실측 | [[scicode]] 42.0%×1.0 |
+| 코딩 | 60.6 | +0.7 | 실측 | [[scicode]] 42.0%×1.0 |
 | 에이전트 | 69.1 | +1.27 | 실측 | [[gdpval]] 1333.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 63.3 | +0.89 | 실측 | [[aa-lcr]] 73.0%×1.0 |
-| 지시 따르기 | 45.0 | -0.33 | 추정 | (추정) |
+| 지시 따르기 | 45.1 | -0.33 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

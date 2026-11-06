@@ -12,7 +12,7 @@ size_class: Small
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 22.8, z: -1.17, r: 32.4, estimated: false }  # 전문 지식
+  knowledge: { s: 22.8, z: -1.18, r: 32.4, estimated: false }  # 전문 지식
   reasoning: { s: 20.8, z: -1.11, r: 33.3, estimated: false }  # 추론
   coding: { s: 18.2, z: -0.64, r: 40.4, estimated: false }  # 코딩
   agentic: { s: 18.4, z: -0.55, r: 41.8, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3 Nano (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # Nemotron 3 Nano (non-reasoning)
@@ -43,7 +43,7 @@ NVIDIA · Open · Small · 컨텍스트 1M · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 32.4 | -1.17 | 실측 | [[gpqa-diamond]] 40.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 전문 지식 | 32.4 | -1.18 | 실측 | [[gpqa-diamond]] 40.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 33.3 | -1.11 | 실측 | [[gpqa-diamond]] 40.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 40.4 | -0.64 | 실측 | [[terminal-bench]] 12.0%×0.5 |
 | 에이전트 | 41.8 | -0.55 | 실측 | [[gdpval]] 349.0%×1.0, [[terminal-bench]] 12.0%×1.0 |

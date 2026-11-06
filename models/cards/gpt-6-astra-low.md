@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 89.4, z: 1.75, r: 76.3, estimated: false }  # 전문 지식
   reasoning: { s: 88.0, z: 1.89, r: 78.3, estimated: false }  # 추론
-  coding: { s: 78.3, z: 1.38, r: 70.7, estimated: false }  # 코딩
+  coding: { s: 78.3, z: 1.38, r: 70.6, estimated: false }  # 코딩
   agentic: { s: 69.0, z: 1.19, r: 67.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 94.6, z: 1.17, r: 67.6, estimated: false }  # 멀티모달
-  long_context: { s: 89.9, z: 1.13, r: 66.9, estimated: false }  # 긴문맥
-  instruction: { s: 77.9, z: 1.04, r: 65.6, estimated: true }  # 지시 따르기
+  multimodal: { s: 94.6, z: 1.17, r: 67.5, estimated: false }  # 멀티모달
+  long_context: { s: 89.9, z: 1.12, r: 66.9, estimated: false }  # 긴문맥
+  instruction: { s: 78.0, z: 1.04, r: 65.7, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6 Astra (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-05
-timestamp: 2026-11-05T00:00:00Z
+updated: 2026-11-06
+timestamp: 2026-11-06T00:00:00Z
 ---
 
 # GPT-6 Astra (low)
@@ -45,12 +45,12 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **43.0**
 |---|---|---|---|---|
 | 전문 지식 | 76.3 | +1.75 | 실측 | [[gpqa-diamond]] 93.0%×0.4, [[humanitys-last-exam]] 49.0%×0.3 |
 | 추론 | 78.3 | +1.89 | 실측 | [[critpt]] 63.0%×1.0, [[gpqa-diamond]] 93.0%×1.0, [[humanitys-last-exam]] 49.0%×1.0 |
-| 코딩 | 70.7 | +1.38 | 실측 | [[scicode]] 54.0%×1.0 |
+| 코딩 | 70.6 | +1.38 | 실측 | [[scicode]] 54.0%×1.0 |
 | 에이전트 | 67.8 | +1.19 | 실측 | [[gdpval]] 1403.0%×1.0, [[tau3-banking]] 32.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 67.6 | +1.17 | 실측 | [[mmmu-pro]] 85.0%×1.0 |
-| 긴문맥 | 66.9 | +1.13 | 실측 | [[aa-lcr]] 80.0%×1.0 |
-| 지시 따르기 | 65.6 | +1.04 | 추정 | (추정) |
+| 멀티모달 | 67.5 | +1.17 | 실측 | [[mmmu-pro]] 85.0%×1.0 |
+| 긴문맥 | 66.9 | +1.12 | 실측 | [[aa-lcr]] 80.0%×1.0 |
+| 지시 따르기 | 65.7 | +1.04 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
