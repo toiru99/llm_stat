@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 55.9, z: 0.28, r: 54.2, estimated: false }  # 전문 지식
   reasoning: { s: 52.3, z: 0.29, r: 54.4, estimated: false }  # 추론
   coding: { s: 48.1, z: 0.36, r: 55.4, estimated: false }  # 코딩
-  agentic: { s: 28.5, z: -0.2, r: 47.0, estimated: false }  # 에이전트
+  agentic: { s: 28.5, z: -0.2, r: 46.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 49.4, z: -0.09, r: 48.6, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mercury 2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # Mercury 2
@@ -46,7 +46,7 @@ Inception · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None*
 | 전문 지식 | 54.2 | +0.28 | 실측 | [[gpqa-diamond]] 77.0%×0.4, [[humanitys-last-exam]] 17.0%×0.3 |
 | 추론 | 54.4 | +0.29 | 실측 | [[gpqa-diamond]] 77.0%×1.0, [[humanitys-last-exam]] 17.0%×1.0 |
 | 코딩 | 55.4 | +0.36 | 실측 | [[scicode]] 38.0%×1.0, [[terminal-bench]] 27.0%×0.5 |
-| 에이전트 | 47.0 | -0.2 | 실측 | [[gdpval]] 502.0%×1.0, [[tau3-banking]] 9.0%×1.0, [[terminal-bench]] 27.0%×1.0 |
+| 에이전트 | 46.9 | -0.2 | 실측 | [[gdpval]] 502.0%×1.0, [[tau3-banking]] 9.0%×1.0, [[terminal-bench]] 27.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 48.6 | -0.09 | 실측 | [[aa-lcr]] 44.0%×1.0 |

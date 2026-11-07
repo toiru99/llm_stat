@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 45.0, z: -0.2, r: 47.0, estimated: false }  # 전문 지식
   reasoning: { s: 41.9, z: -0.17, r: 47.5, estimated: false }  # 추론
   coding: { s: 73.3, z: 1.21, r: 68.1, estimated: false }  # 코딩
-  agentic: { s: 68.0, z: 1.16, r: 67.3, estimated: false }  # 에이전트
+  agentic: { s: 68.0, z: 1.15, r: 67.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 85.1, z: 0.69, r: 60.4, estimated: false }  # 멀티모달
   long_context: { s: 87.6, z: 1.06, r: 65.8, estimated: false }  # 긴문맥
-  instruction: { s: 46.8, z: -0.26, r: 46.1, estimated: true }  # 지시 따르기
+  instruction: { s: 47.3, z: -0.24, r: 46.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6 Luna (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # GPT-6 Luna (medium)
@@ -46,11 +46,11 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **18.0**
 | 전문 지식 | 47.0 | -0.2 | 실측 | [[humanitys-last-exam]] 28.0%×0.3 |
 | 추론 | 47.5 | -0.17 | 실측 | [[critpt]] 28.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
 | 코딩 | 68.1 | +1.21 | 실측 | [[scicode]] 51.0%×1.0 |
-| 에이전트 | 67.3 | +1.16 | 실측 | [[gdpval]] 1270.0%×1.0 |
+| 에이전트 | 67.3 | +1.15 | 실측 | [[gdpval]] 1270.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 60.4 | +0.69 | 실측 | [[mmmu-pro]] 78.0%×1.0 |
 | 긴문맥 | 65.8 | +1.06 | 실측 | [[aa-lcr]] 78.0%×1.0 |
-| 지시 따르기 | 46.1 | -0.26 | 추정 | (추정) |
+| 지시 따르기 | 46.4 | -0.24 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

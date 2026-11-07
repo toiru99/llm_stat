@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 73.2, z: 1.04, r: 65.6, estimated: false }  # 전문 지식
   reasoning: { s: 55.1, z: 0.42, r: 56.3, estimated: false }  # 추론
   coding: { s: 68.3, z: 1.04, r: 65.6, estimated: false }  # 코딩
-  agentic: { s: 52.2, z: 0.61, r: 59.2, estimated: false }  # 에이전트
+  agentic: { s: 52.2, z: 0.61, r: 59.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 79.8, z: 0.82, r: 62.3, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Pro 4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # Solar Pro 4
@@ -46,7 +46,7 @@ Upstage · Proprietary · Unknown · 컨텍스트 512k · 종합지능 **None**
 | 전문 지식 | 65.6 | +1.04 | 실측 | [[gpqa-diamond]] 89.0%×0.4, [[humanitys-last-exam]] 30.0%×0.3 |
 | 추론 | 56.3 | +0.42 | 실측 | [[critpt]] 18.0%×1.0, [[gpqa-diamond]] 89.0%×1.0, [[humanitys-last-exam]] 30.0%×1.0 |
 | 코딩 | 65.6 | +1.04 | 실측 | [[scicode]] 48.0%×1.0 |
-| 에이전트 | 59.2 | +0.61 | 실측 | [[gdpval]] 1106.0%×1.0, [[tau3-banking]] 23.0%×1.0 |
+| 에이전트 | 59.1 | +0.61 | 실측 | [[gdpval]] 1106.0%×1.0, [[tau3-banking]] 23.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 62.3 | +0.82 | 실측 | [[aa-lcr]] 71.0%×1.0 |

@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 29.1, z: -0.9, r: 36.5, estimated: false }  # 전문 지식
-  reasoning: { s: 29.1, z: -0.74, r: 38.8, estimated: false }  # 추론
+  reasoning: { s: 29.1, z: -0.74, r: 38.9, estimated: false }  # 추론
   coding: { s: 4.8, z: -1.09, r: 33.7, estimated: true }  # 코딩
   agentic: { s: 0.6, z: -1.16, r: 32.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # GPT-4
@@ -44,7 +44,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 8k · 종합지능 **None** · 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 36.5 | -0.9 | 실측 | [[gpqa-diamond]] 35.0%×0.4 |
-| 추론 | 38.8 | -0.74 | 실측 | [[gpqa-diamond]] 35.0%×1.0 |
+| 추론 | 38.9 | -0.74 | 실측 | [[gpqa-diamond]] 35.0%×1.0 |
 | 코딩 | 33.7 | -1.09 | 추정 | (추정) |
 | 에이전트 | 32.6 | -1.16 | 실측 | [[gdpval]] 13.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

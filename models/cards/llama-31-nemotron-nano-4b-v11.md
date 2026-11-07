@@ -14,8 +14,8 @@ is_reasoning: null
 radar:
   knowledge: { s: 23.5, z: -1.15, r: 32.8, estimated: false }  # 전문 지식
   reasoning: { s: 21.4, z: -1.09, r: 33.7, estimated: false }  # 추론
-  coding: { s: 1.0, z: -1.22, r: 31.8, estimated: true }  # 코딩
-  agentic: { s: 1.0, z: -1.14, r: 32.8, estimated: true }  # 에이전트
+  coding: { s: 1.0, z: -1.22, r: 31.7, estimated: true }  # 코딩
+  agentic: { s: 1.0, z: -1.15, r: 32.8, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.58, r: 26.3, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.1 Nemotron Nano 4B v1.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # Llama 3.1 Nemotron Nano 4B v1.1
@@ -33,7 +33,7 @@ timestamp: 2026-11-06T00:00:00Z
 NVIDIA · Open · Unknown · 컨텍스트 128k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 추론, 에이전트
+- **강점**: 추론, 전문 지식
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
@@ -45,8 +45,8 @@ NVIDIA · Open · Unknown · 컨텍스트 128k · 종합지능 **None** · ⚠�
 |---|---|---|---|---|
 | 전문 지식 | 32.8 | -1.15 | 실측 | [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 33.7 | -1.09 | 실측 | [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 31.8 | -1.22 | 추정 | (추정) |
-| 에이전트 | 32.8 | -1.14 | 추정 | (추정) |
+| 코딩 | 31.7 | -1.22 | 추정 | (추정) |
+| 에이전트 | 32.8 | -1.15 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 26.3 | -1.58 | 실측 | [[aa-lcr]] 0.0%×1.0 |

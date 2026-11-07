@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 23.5, z: -1.14, r: 32.8, estimated: false }  # 전문 지식
-  reasoning: { s: 21.6, z: -1.08, r: 33.8, estimated: false }  # 추론
+  reasoning: { s: 21.6, z: -1.08, r: 33.9, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.25, r: 31.2, estimated: false }  # 코딩
   agentic: { s: 0.0, z: -1.18, r: 32.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Olmo 3 7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # Olmo 3 7B
@@ -44,7 +44,7 @@ Allen Institute for AI · Open · Small · 컨텍스트 66k · 종합지능 **No
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 32.8 | -1.14 | 실측 | [[gpqa-diamond]] 40.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
-| 추론 | 33.8 | -1.08 | 실측 | [[gpqa-diamond]] 40.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
+| 추론 | 33.9 | -1.08 | 실측 | [[gpqa-diamond]] 40.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
 | 코딩 | 31.2 | -1.25 | 실측 | [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 32.3 | -1.18 | 실측 | [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

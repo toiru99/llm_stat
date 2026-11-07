@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 64.1, z: 0.64, r: 59.6, estimated: false }  # 전문 지식
   reasoning: { s: 60.3, z: 0.65, r: 59.8, estimated: false }  # 추론
   coding: { s: 40.9, z: 0.12, r: 51.8, estimated: false }  # 코딩
-  agentic: { s: 39.5, z: 0.18, r: 52.7, estimated: false }  # 에이전트
+  agentic: { s: 39.5, z: 0.18, r: 52.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 78.4, z: 0.35, r: 55.3, estimated: false }  # 멀티모달
   long_context: { s: 80.9, z: 0.85, r: 62.8, estimated: false }  # 긴문맥
-  instruction: { s: 85.9, z: 1.38, r: 70.7, estimated: false }  # 지시 따르기
+  instruction: { s: 85.9, z: 1.38, r: 70.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 35B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # Qwen3.5 35B A3B
@@ -46,11 +46,11 @@ Alibaba · Open · Unknown · 컨텍스트 262k · 종합지능 **None** · ⚠�
 | 전문 지식 | 59.6 | +0.64 | 실측 | [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 21.0%×0.3 |
 | 추론 | 59.8 | +0.65 | 실측 | [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 21.0%×1.0 |
 | 코딩 | 51.8 | +0.12 | 실측 | [[terminal-bench]] 27.0%×0.5 |
-| 에이전트 | 52.7 | +0.18 | 실측 | [[itbench]] 22.0%×1.0, [[terminal-bench]] 27.0%×1.0 |
+| 에이전트 | 52.6 | +0.18 | 실측 | [[itbench]] 22.0%×1.0, [[terminal-bench]] 27.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 55.3 | +0.35 | 실측 | [[mmmu-pro]] 73.0%×1.0 |
 | 긴문맥 | 62.8 | +0.85 | 실측 | [[aa-lcr]] 72.0%×1.0 |
-| 지시 따르기 | 70.7 | +1.38 | 실측 | [[ifbench]] 73.0%×1.0 |
+| 지시 따르기 | 70.6 | +1.38 | 실측 | [[ifbench]] 73.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

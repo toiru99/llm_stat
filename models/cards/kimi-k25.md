@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 73.3, z: 1.04, r: 65.6, estimated: false }  # 전문 지식
   reasoning: { s: 70.3, z: 1.1, r: 66.5, estimated: false }  # 추론
   coding: { s: 53.0, z: 0.53, r: 57.9, estimated: false }  # 코딩
-  agentic: { s: 37.4, z: 0.11, r: 51.6, estimated: false }  # 에이전트
+  agentic: { s: 37.4, z: 0.1, r: 51.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 81.1, z: 0.49, r: 57.3, estimated: false }  # 멀티모달
   long_context: { s: 87.6, z: 1.06, r: 65.8, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # Kimi K2.5
@@ -46,7 +46,7 @@ Kimi · Open · Unknown · 컨텍스트 256k · 종합지능 **None** · ⚠️ 
 | 전문 지식 | 65.6 | +1.04 | 실측 | [[gpqa-diamond]] 88.0%×0.4, [[humanitys-last-exam]] 31.0%×0.3 |
 | 추론 | 66.5 | +1.1 | 실측 | [[gpqa-diamond]] 88.0%×1.0, [[humanitys-last-exam]] 31.0%×1.0 |
 | 코딩 | 57.9 | +0.53 | 실측 | [[terminal-bench]] 35.0%×0.5 |
-| 에이전트 | 51.6 | +0.11 | 실측 | [[apex-agents]] 12.0%×1.0, [[gdpval]] 847.0%×1.0, [[tau3-banking]] 14.0%×1.0, [[terminal-bench]] 35.0%×1.0 |
+| 에이전트 | 51.6 | +0.1 | 실측 | [[apex-agents]] 12.0%×1.0, [[gdpval]] 847.0%×1.0, [[tau3-banking]] 14.0%×1.0, [[terminal-bench]] 35.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 57.3 | +0.49 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
 | 긴문맥 | 65.8 | +1.06 | 실측 | [[aa-lcr]] 78.0%×1.0 |

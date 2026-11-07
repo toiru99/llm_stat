@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 32.1, z: -0.77, r: 38.5, estimated: false }  # 전문 지식
-  reasoning: { s: 28.9, z: -0.75, r: 38.7, estimated: false }  # 추론
+  reasoning: { s: 28.9, z: -0.75, r: 38.8, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.25, r: 31.2, estimated: false }  # 코딩
   agentic: { s: 0.0, z: -1.18, r: 32.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Olmo 3.1 32B Instruct
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # Olmo 3.1 32B Instruct
@@ -44,7 +44,7 @@ Allen Institute for AI · Open · Small · 컨텍스트 66k · 종합지능 **No
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 38.5 | -0.77 | 실측 | [[gpqa-diamond]] 54.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 38.7 | -0.75 | 실측 | [[gpqa-diamond]] 54.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
+| 추론 | 38.8 | -0.75 | 실측 | [[gpqa-diamond]] 54.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 31.2 | -1.25 | 실측 | [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 32.3 | -1.18 | 실측 | [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

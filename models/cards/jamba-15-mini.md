@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 16.1, z: -1.47, r: 28.0, estimated: false }  # 전문 지식
   reasoning: { s: 15.0, z: -1.37, r: 29.4, estimated: false }  # 추론
   coding: { s: 13.3, z: -0.81, r: 37.9, estimated: true }  # 코딩
-  agentic: { s: 9.2, z: -0.86, r: 37.0, estimated: true }  # 에이전트
+  agentic: { s: 9.2, z: -0.87, r: 37.0, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 13.2, z: -1.18, r: 32.3, estimated: true }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba 1.5 Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # Jamba 1.5 Mini
@@ -46,7 +46,7 @@ AI21 Labs · Open · Medium · 컨텍스트 256k · 종합지능 **None** · ⚠
 | 전문 지식 | 28.0 | -1.47 | 실측 | [[gpqa-diamond]] 30.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 29.4 | -1.37 | 실측 | [[gpqa-diamond]] 30.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
 | 코딩 | 37.9 | -0.81 | 추정 | (추정) |
-| 에이전트 | 37.0 | -0.86 | 추정 | (추정) |
+| 에이전트 | 37.0 | -0.87 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 32.3 | -1.18 | 추정 | (추정) |

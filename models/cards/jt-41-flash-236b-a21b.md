@@ -14,18 +14,18 @@ is_reasoning: null
 radar:
   knowledge: { s: 71.7, z: 0.97, r: 64.6, estimated: false }  # 전문 지식
   reasoning: { s: 71.7, z: 1.16, r: 67.4, estimated: false }  # 추론
-  coding: { s: 75.0, z: 1.26, r: 69.0, estimated: false }  # 코딩
-  agentic: { s: 71.5, z: 1.28, r: 69.1, estimated: false }  # 에이전트
+  coding: { s: 75.0, z: 1.26, r: 68.9, estimated: false }  # 코딩
+  agentic: { s: 71.5, z: 1.27, r: 69.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 87.6, z: 1.06, r: 65.8, estimated: false }  # 긴문맥
-  instruction: { s: 71.2, z: 0.76, r: 61.4, estimated: true }  # 지시 따르기
+  instruction: { s: 71.3, z: 0.76, r: 61.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — JT-4.1 Flash 236B A21B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # JT-4.1 Flash 236B A21B
@@ -45,8 +45,8 @@ China Mobile · Proprietary · Unknown · 컨텍스트 262k · 종합지능 **No
 |---|---|---|---|---|
 | 전문 지식 | 64.6 | +0.97 | 실측 | [[humanitys-last-exam]] 44.0%×0.3 |
 | 추론 | 67.4 | +1.16 | 실측 | [[humanitys-last-exam]] 44.0%×1.0 |
-| 코딩 | 69.0 | +1.26 | 실측 | [[scicode]] 52.0%×1.0 |
-| 에이전트 | 69.1 | +1.28 | 실측 | [[gdpval]] 1335.0%×1.0 |
+| 코딩 | 68.9 | +1.26 | 실측 | [[scicode]] 52.0%×1.0 |
+| 에이전트 | 69.1 | +1.27 | 실측 | [[gdpval]] 1335.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 65.8 | +1.06 | 실측 | [[aa-lcr]] 78.0%×1.0 |

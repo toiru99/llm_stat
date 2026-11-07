@@ -12,8 +12,8 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 68.4, z: 0.83, r: 62.4, estimated: false }  # 전문 지식
-  reasoning: { s: 65.0, z: 0.86, r: 62.9, estimated: false }  # 추론
+  knowledge: { s: 68.4, z: 0.82, r: 62.4, estimated: false }  # 전문 지식
+  reasoning: { s: 65.0, z: 0.86, r: 63.0, estimated: false }  # 추론
   coding: { s: 53.0, z: 0.53, r: 57.9, estimated: false }  # 코딩
   agentic: { s: 53.0, z: 0.64, r: 59.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.1 Codex (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # GPT-5.1 Codex (high)
@@ -43,8 +43,8 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **None** �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 62.4 | +0.83 | 실측 | [[gpqa-diamond]] 86.0%×0.4, [[humanitys-last-exam]] 26.0%×0.3 |
-| 추론 | 62.9 | +0.86 | 실측 | [[gpqa-diamond]] 86.0%×1.0, [[humanitys-last-exam]] 26.0%×1.0 |
+| 전문 지식 | 62.4 | +0.82 | 실측 | [[gpqa-diamond]] 86.0%×0.4, [[humanitys-last-exam]] 26.0%×0.3 |
+| 추론 | 63.0 | +0.86 | 실측 | [[gpqa-diamond]] 86.0%×1.0, [[humanitys-last-exam]] 26.0%×1.0 |
 | 코딩 | 57.9 | +0.53 | 실측 | [[terminal-bench]] 35.0%×0.5 |
 | 에이전트 | 59.6 | +0.64 | 실측 | [[terminal-bench]] 35.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

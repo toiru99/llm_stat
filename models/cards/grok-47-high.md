@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 86.5, z: 1.02, r: 65.3, estimated: false }  # 긴문맥
-  instruction: { s: 67.3, z: 0.6, r: 58.9, estimated: true }  # 지시 따르기
+  instruction: { s: 62.7, z: 0.4, r: 56.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.7 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # Grok 4.7 (high)
@@ -50,7 +50,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **35.0**
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 65.3 | +1.02 | 실측 | [[aa-lcr]] 77.0%×1.0 |
-| 지시 따르기 | 58.9 | +0.6 | 추정 | (추정) |
+| 지시 따르기 | 56.0 | +0.4 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

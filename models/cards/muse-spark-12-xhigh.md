@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 84.6, z: 1.54, r: 73.1, estimated: false }  # 전문 지식
-  reasoning: { s: 83.2, z: 1.67, r: 75.1, estimated: false }  # 추론
+  reasoning: { s: 83.2, z: 1.68, r: 75.1, estimated: false }  # 추론
   coding: { s: 83.3, z: 1.54, r: 73.1, estimated: false }  # 코딩
   agentic: { s: 74.0, z: 1.36, r: 70.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Spark 1.2 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # Muse Spark 1.2 (xhigh)
@@ -44,7 +44,7 @@ Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · �
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 73.1 | +1.54 | 실측 | [[gpqa-diamond]] 90.0%×0.4, [[humanitys-last-exam]] 45.0%×0.3 |
-| 추론 | 75.1 | +1.67 | 실측 | [[gpqa-diamond]] 90.0%×1.0, [[humanitys-last-exam]] 45.0%×1.0 |
+| 추론 | 75.1 | +1.68 | 실측 | [[gpqa-diamond]] 90.0%×1.0, [[humanitys-last-exam]] 45.0%×1.0 |
 | 코딩 | 73.1 | +1.54 | 실측 | [[scicode]] 57.0%×1.0 |
 | 에이전트 | 70.4 | +1.36 | 실측 | [[gdpval]] 1480.0%×1.0, [[tau3-banking]] 35.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

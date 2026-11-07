@@ -18,14 +18,14 @@ radar:
   agentic: { s: 9.7, z: -0.85, r: 37.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 31.1, z: -2.03, r: 19.5, estimated: false }  # 멀티모달
-  long_context: { s: 7.9, z: -1.34, r: 29.9, estimated: false }  # 긴문맥
+  long_context: { s: 7.9, z: -1.34, r: 29.8, estimated: false }  # 긴문맥
   instruction: { s: 21.1, z: -1.34, r: 30.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiniCPM-V 4.6 1.3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # MiniCPM-V 4.6 1.3B
@@ -49,7 +49,7 @@ OpenBMB · Open · Tiny · 컨텍스트 262k · 종합지능 **None**
 | 에이전트 | 37.3 | -0.85 | 실측 | [[gdpval]] 362.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 19.5 | -2.03 | 실측 | [[mmmu-pro]] 38.0%×1.0 |
-| 긴문맥 | 29.9 | -1.34 | 실측 | [[aa-lcr]] 7.0%×1.0 |
+| 긴문맥 | 29.8 | -1.34 | 실측 | [[aa-lcr]] 7.0%×1.0 |
 | 지시 따르기 | 30.0 | -1.34 | 실측 | [[ifbench]] 27.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

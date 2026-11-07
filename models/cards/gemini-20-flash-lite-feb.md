@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 30.7, z: -0.83, r: 37.5, estimated: false }  # 전문 지식
-  reasoning: { s: 27.2, z: -0.83, r: 37.6, estimated: false }  # 추론
+  reasoning: { s: 27.2, z: -0.82, r: 37.6, estimated: false }  # 추론
   coding: { s: 8.5, z: -0.97, r: 35.5, estimated: true }  # 코딩
   agentic: { s: 7.4, z: -0.92, r: 36.1, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.0 Flash-Lite (Feb)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # Gemini 2.0 Flash-Lite (Feb)
@@ -33,7 +33,7 @@ timestamp: 2026-11-06T00:00:00Z
 Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 전문 지식, 추론
+- **강점**: 추론, 전문 지식
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
@@ -44,7 +44,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 37.5 | -0.83 | 실측 | [[gpqa-diamond]] 54.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
-| 추론 | 37.6 | -0.83 | 실측 | [[gpqa-diamond]] 54.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
+| 추론 | 37.6 | -0.82 | 실측 | [[gpqa-diamond]] 54.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
 | 코딩 | 35.5 | -0.97 | 추정 | (추정) |
 | 에이전트 | 36.1 | -0.92 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |

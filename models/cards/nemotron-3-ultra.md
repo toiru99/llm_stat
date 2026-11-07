@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 70.4, z: 0.92, r: 63.8, estimated: false }  # 전문 지식
   reasoning: { s: 51.8, z: 0.27, r: 54.1, estimated: false }  # 추론
   coding: { s: 54.8, z: 0.59, r: 58.8, estimated: false }  # 코딩
-  agentic: { s: 45.6, z: 0.38, r: 55.8, estimated: false }  # 에이전트
+  agentic: { s: 45.6, z: 0.38, r: 55.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 88.8, z: 1.09, r: 66.3, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3 Ultra
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # Nemotron 3 Ultra
@@ -46,7 +46,7 @@ NVIDIA · Open · Large · 컨텍스트 262k · 종합지능 **12.0**
 | 전문 지식 | 63.8 | +0.92 | 실측 | [[gpqa-diamond]] 87.0%×0.4, [[humanitys-last-exam]] 28.0%×0.3 |
 | 추론 | 54.1 | +0.27 | 실측 | [[critpt]] 15.0%×1.0, [[gpqa-diamond]] 87.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
 | 코딩 | 58.8 | +0.59 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 36.0%×0.5 |
-| 에이전트 | 55.8 | +0.38 | 실측 | [[gdpval]] 1021.0%×1.0, [[tau3-banking]] 14.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
+| 에이전트 | 55.7 | +0.38 | 실측 | [[gdpval]] 1021.0%×1.0, [[tau3-banking]] 14.0%×1.0, [[terminal-bench]] 36.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 66.3 | +1.09 | 실측 | [[aa-lcr]] 79.0%×1.0 |

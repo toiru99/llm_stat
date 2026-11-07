@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 85.0, z: 1.56, r: 73.3, estimated: false }  # 전문 지식
   reasoning: { s: 77.2, z: 1.41, r: 71.1, estimated: false }  # 추론
   coding: { s: 90.0, z: 1.77, r: 76.5, estimated: false }  # 코딩
-  agentic: { s: 99.6, z: 2.24, r: 83.6, estimated: false }  # 에이전트
+  agentic: { s: 99.6, z: 2.24, r: 83.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 93.2, z: 1.1, r: 66.5, estimated: false }  # 멀티모달
   long_context: { s: 96.6, z: 1.33, r: 69.9, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K3.1 Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # Kimi K3.1 Pro
@@ -46,7 +46,7 @@ Kimi · Open · Large · 컨텍스트 1M · 종합지능 **46.0**
 | 전문 지식 | 73.3 | +1.56 | 실측 | [[humanitys-last-exam]] 52.0%×0.3 |
 | 추론 | 71.1 | +1.41 | 실측 | [[critpt]] 50.0%×1.0, [[humanitys-last-exam]] 52.0%×1.0 |
 | 코딩 | 76.5 | +1.77 | 실측 | [[scicode]] 61.0%×1.0 |
-| 에이전트 | 83.6 | +2.24 | 실측 | [[gdpval]] 1858.0%×1.0 |
+| 에이전트 | 83.5 | +2.24 | 실측 | [[gdpval]] 1858.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 66.5 | +1.1 | 실측 | [[mmmu-pro]] 84.0%×1.0 |
 | 긴문맥 | 69.9 | +1.33 | 실측 | [[aa-lcr]] 86.0%×1.0 |

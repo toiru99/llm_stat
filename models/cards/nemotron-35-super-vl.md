@@ -4,7 +4,7 @@ title: Nemotron 3.5 Super VL
 creator: NVIDIA
 license: Open
 intelligence_index: 14.0
-price_blended_usd_1m: 0.125
+price_blended_usd_1m: 0.12
 output_speed_tps: None
 context_window: 1000000
 status: current
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 50.0, z: 0.02, r: 50.3, estimated: false }  # 전문 지식
   reasoning: { s: 34.7, z: -0.49, r: 42.6, estimated: false }  # 추론
   coding: { s: 68.3, z: 1.04, r: 65.6, estimated: false }  # 코딩
-  agentic: { s: 62.3, z: 0.96, r: 64.4, estimated: false }  # 에이전트
+  agentic: { s: 62.3, z: 0.96, r: 64.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 77.5, z: 0.75, r: 61.3, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3.5 Super VL
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # Nemotron 3.5 Super VL
@@ -37,7 +37,7 @@ NVIDIA · Open · Medium · 컨텍스트 1M · 종합지능 **14.0**
 - **약점**: 지시 따르기, 추론
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.5 · 혼합 $0.125/1M · None t/s · TTFT Nones · 1M ctx` · 가성비 112.0
+`입력 $0.17 · 출력 $0.5 · 혼합 $0.12/1M · None t/s · TTFT Nones · 1M ctx` · 가성비 116.7
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ NVIDIA · Open · Medium · 컨텍스트 1M · 종합지능 **14.0**
 | 전문 지식 | 50.3 | +0.02 | 실측 | [[humanitys-last-exam]] 31.0%×0.3 |
 | 추론 | 42.6 | -0.49 | 실측 | [[critpt]] 14.0%×1.0, [[humanitys-last-exam]] 31.0%×1.0 |
 | 코딩 | 65.6 | +1.04 | 실측 | [[scicode]] 48.0%×1.0 |
-| 에이전트 | 64.4 | +0.96 | 실측 | [[gdpval]] 1162.0%×1.0 |
+| 에이전트 | 64.3 | +0.96 | 실측 | [[gdpval]] 1162.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 61.3 | +0.75 | 실측 | [[aa-lcr]] 69.0%×1.0 |

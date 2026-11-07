@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 38.7, z: -0.48, r: 42.8, estimated: true }  # 전문 지식
-  reasoning: { s: 31.9, z: -0.62, r: 40.8, estimated: false }  # 추론
+  reasoning: { s: 31.9, z: -0.61, r: 40.8, estimated: false }  # 추론
   coding: { s: 17.3, z: -0.67, r: 39.9, estimated: true }  # 코딩
   agentic: { s: 17.0, z: -0.6, r: 41.0, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Large 4 (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # Mistral Large 4 (medium)
@@ -44,7 +44,7 @@ Mistral · Open · Large · 컨텍스트 1M · 종합지능 **23.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 42.8 | -0.48 | 추정 | (추정) |
-| 추론 | 40.8 | -0.62 | 실측 | [[critpt]] 23.0%×1.0 |
+| 추론 | 40.8 | -0.61 | 실측 | [[critpt]] 23.0%×1.0 |
 | 코딩 | 39.9 | -0.67 | 추정 | (추정) |
 | 에이전트 | 41.0 | -0.6 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |

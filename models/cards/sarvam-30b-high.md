@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 40.2, z: -0.41, r: 43.8, estimated: false }  # 전문 지식
-  reasoning: { s: 36.6, z: -0.41, r: 43.9, estimated: false }  # 추론
+  reasoning: { s: 36.6, z: -0.4, r: 43.9, estimated: false }  # 추론
   coding: { s: 3.0, z: -1.15, r: 32.8, estimated: false }  # 코딩
   agentic: { s: 3.0, z: -1.08, r: 33.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Sarvam 30B (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # Sarvam 30B (high)
@@ -33,7 +33,7 @@ timestamp: 2026-11-06T00:00:00Z
 Sarvam · Open · Small · 컨텍스트 66k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 전문 지식, 추론
+- **강점**: 추론, 전문 지식
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
@@ -44,7 +44,7 @@ Sarvam · Open · Small · 컨텍스트 66k · 종합지능 **None**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 43.8 | -0.41 | 실측 | [[gpqa-diamond]] 63.0%×0.4, [[humanitys-last-exam]] 8.0%×0.3 |
-| 추론 | 43.9 | -0.41 | 실측 | [[gpqa-diamond]] 63.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
+| 추론 | 43.9 | -0.4 | 실측 | [[gpqa-diamond]] 63.0%×1.0, [[humanitys-last-exam]] 8.0%×1.0 |
 | 코딩 | 32.8 | -1.15 | 실측 | [[terminal-bench]] 2.0%×0.5 |
 | 에이전트 | 33.9 | -1.08 | 실측 | [[terminal-bench]] 2.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

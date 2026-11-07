@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 41.6, z: -0.35, r: 44.8, estimated: false }  # 전문 지식
   reasoning: { s: 25.5, z: -0.9, r: 36.5, estimated: false }  # 추론
-  coding: { s: 40.0, z: 0.09, r: 51.4, estimated: false }  # 코딩
+  coding: { s: 40.0, z: 0.09, r: 51.3, estimated: false }  # 코딩
   agentic: { s: 21.2, z: -0.45, r: 43.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.2 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # Granite 4.2 8B
@@ -45,7 +45,7 @@ IBM · Open · Small · 컨텍스트 131k · 종합지능 **5.0**
 |---|---|---|---|---|
 | 전문 지식 | 44.8 | -0.35 | 실측 | [[gpqa-diamond]] 63.0%×0.4, [[humanitys-last-exam]] 10.0%×0.3 |
 | 추론 | 36.5 | -0.9 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 63.0%×1.0, [[humanitys-last-exam]] 10.0%×1.0 |
-| 코딩 | 51.4 | +0.09 | 실측 | [[scicode]] 31.0%×1.0 |
+| 코딩 | 51.3 | +0.09 | 실측 | [[scicode]] 31.0%×1.0 |
 | 에이전트 | 43.2 | -0.45 | 실측 | [[gdpval]] 499.0%×1.0, [[tau3-banking]] 8.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 85.1, z: 1.56, r: 73.4, estimated: false }  # 전문 지식
   reasoning: { s: 79.1, z: 1.49, r: 72.4, estimated: false }  # 추론
   coding: { s: 82.6, z: 1.52, r: 72.8, estimated: false }  # 코딩
-  agentic: { s: 83.6, z: 1.69, r: 75.4, estimated: false }  # 에이전트
+  agentic: { s: 83.6, z: 1.69, r: 75.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 89.2, z: 0.9, r: 63.5, estimated: false }  # 멀티모달
   long_context: { s: 93.3, z: 1.22, r: 68.4, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Terra (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # GPT-5.6 Terra (max)
@@ -46,7 +46,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **32.0** · 
 | 전문 지식 | 73.4 | +1.56 | 실측 | [[gpqa-diamond]] 93.0%×0.4, [[humanitys-last-exam]] 43.0%×0.3 |
 | 추론 | 72.4 | +1.49 | 실측 | [[critpt]] 51.0%×1.0, [[gpqa-diamond]] 93.0%×1.0, [[humanitys-last-exam]] 43.0%×1.0 |
 | 코딩 | 72.8 | +1.52 | 실측 | [[scicode]] 55.0%×1.0, [[terminal-bench]] 58.0%×0.5 |
-| 에이전트 | 75.4 | +1.69 | 실측 | [[apex-agents]] 39.0%×1.0, [[gdpval]] 1461.0%×1.0, [[itbench]] 51.0%×1.0, [[tau3-banking]] 40.0%×1.0, [[terminal-bench]] 58.0%×1.0 |
+| 에이전트 | 75.3 | +1.69 | 실측 | [[apex-agents]] 39.0%×1.0, [[gdpval]] 1461.0%×1.0, [[itbench]] 51.0%×1.0, [[tau3-banking]] 40.0%×1.0, [[terminal-bench]] 58.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 63.5 | +0.9 | 실측 | [[mmmu-pro]] 81.0%×1.0 |
 | 긴문맥 | 68.4 | +1.22 | 실측 | [[aa-lcr]] 83.0%×1.0 |

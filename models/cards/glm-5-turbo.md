@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 69.1, z: 0.86, r: 62.9, estimated: false }  # 전문 지식
   reasoning: { s: 66.1, z: 0.91, r: 63.7, estimated: false }  # 추론
-  coding: { s: 50.0, z: 0.43, r: 56.4, estimated: false }  # 코딩
+  coding: { s: 50.0, z: 0.42, r: 56.4, estimated: false }  # 코딩
   agentic: { s: 50.0, z: 0.54, r: 58.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 80.9, z: 0.85, r: 62.8, estimated: false }  # 긴문맥
-  instruction: { s: 85.9, z: 1.38, r: 70.7, estimated: false }  # 지시 따르기
+  instruction: { s: 85.9, z: 1.38, r: 70.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5-Turbo
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # GLM-5-Turbo
@@ -45,12 +45,12 @@ Z AI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None** · 
 |---|---|---|---|---|
 | 전문 지식 | 62.9 | +0.86 | 실측 | [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 28.0%×0.3 |
 | 추론 | 63.7 | +0.91 | 실측 | [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
-| 코딩 | 56.4 | +0.43 | 실측 | [[terminal-bench]] 33.0%×0.5 |
+| 코딩 | 56.4 | +0.42 | 실측 | [[terminal-bench]] 33.0%×0.5 |
 | 에이전트 | 58.0 | +0.54 | 실측 | [[terminal-bench]] 33.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 62.8 | +0.85 | 실측 | [[aa-lcr]] 72.0%×1.0 |
-| 지시 따르기 | 70.7 | +1.38 | 실측 | [[ifbench]] 73.0%×1.0 |
+| 지시 따르기 | 70.6 | +1.38 | 실측 | [[ifbench]] 73.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

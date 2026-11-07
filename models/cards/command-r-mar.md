@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 14.8, z: -1.53, r: 27.1, estimated: false }  # 전문 지식
   reasoning: { s: 13.8, z: -1.43, r: 28.6, estimated: false }  # 추론
-  coding: { s: 1.4, z: -1.2, r: 32.0, estimated: true }  # 코딩
+  coding: { s: 1.4, z: -1.2, r: 31.9, estimated: true }  # 코딩
   agentic: { s: 1.6, z: -1.13, r: 33.1, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Command-R (Mar)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # Command-R (Mar)
@@ -45,7 +45,7 @@ Cohere · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠️ 
 |---|---|---|---|---|
 | 전문 지식 | 27.1 | -1.53 | 실측 | [[gpqa-diamond]] 28.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 28.6 | -1.43 | 실측 | [[gpqa-diamond]] 28.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 32.0 | -1.2 | 추정 | (추정) |
+| 코딩 | 31.9 | -1.2 | 추정 | (추정) |
 | 에이전트 | 33.1 | -1.13 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

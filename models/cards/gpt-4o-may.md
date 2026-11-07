@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 29.3, z: -0.89, r: 36.6, estimated: false }  # 전문 지식
   reasoning: { s: 25.8, z: -0.89, r: 36.7, estimated: false }  # 추론
-  coding: { s: 12.6, z: -0.83, r: 37.6, estimated: true }  # 코딩
+  coding: { s: 12.6, z: -0.83, r: 37.5, estimated: true }  # 코딩
   agentic: { s: 11.0, z: -0.8, r: 38.0, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 36.4, z: -0.48, r: 42.7, estimated: true }  # 긴문맥
+  long_context: { s: 36.4, z: -0.49, r: 42.7, estimated: true }  # 긴문맥
   instruction: { s: 29.0, z: -1.01, r: 34.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4o (May)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # GPT-4o (May)
@@ -45,11 +45,11 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None** �
 |---|---|---|---|---|
 | 전문 지식 | 36.6 | -0.89 | 실측 | [[gpqa-diamond]] 53.0%×0.4, [[humanitys-last-exam]] 2.0%×0.3 |
 | 추론 | 36.7 | -0.89 | 실측 | [[gpqa-diamond]] 53.0%×1.0, [[humanitys-last-exam]] 2.0%×1.0 |
-| 코딩 | 37.6 | -0.83 | 추정 | (추정) |
+| 코딩 | 37.5 | -0.83 | 추정 | (추정) |
 | 에이전트 | 38.0 | -0.8 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 42.7 | -0.48 | 추정 | (추정) |
+| 긴문맥 | 42.7 | -0.49 | 추정 | (추정) |
 | 지시 따르기 | 34.9 | -1.01 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

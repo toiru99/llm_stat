@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 78.2, z: 1.26, r: 68.8, estimated: false }  # 전문 지식
   reasoning: { s: 75.7, z: 1.34, r: 70.1, estimated: false }  # 추론
   coding: { s: 56.1, z: 0.63, r: 59.4, estimated: false }  # 코딩
-  agentic: { s: 56.1, z: 0.74, r: 61.2, estimated: false }  # 에이전트
+  agentic: { s: 56.1, z: 0.74, r: 61.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 82.4, z: 0.56, r: 58.3, estimated: false }  # 멀티모달
   long_context: { s: 92.1, z: 1.19, r: 67.9, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.2 Codex (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # GPT-5.2 Codex (xhigh)
@@ -46,7 +46,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **None** �
 | 전문 지식 | 68.8 | +1.26 | 실측 | [[gpqa-diamond]] 90.0%×0.4, [[humanitys-last-exam]] 36.0%×0.3 |
 | 추론 | 70.1 | +1.34 | 실측 | [[gpqa-diamond]] 90.0%×1.0, [[humanitys-last-exam]] 36.0%×1.0 |
 | 코딩 | 59.4 | +0.63 | 실측 | [[terminal-bench]] 37.0%×0.5 |
-| 에이전트 | 61.2 | +0.74 | 실측 | [[terminal-bench]] 37.0%×1.0 |
+| 에이전트 | 61.1 | +0.74 | 실측 | [[terminal-bench]] 37.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 58.3 | +0.56 | 실측 | [[mmmu-pro]] 76.0%×1.0 |
 | 긴문맥 | 67.9 | +1.19 | 실측 | [[aa-lcr]] 82.0%×1.0 |

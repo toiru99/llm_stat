@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 18.8, z: -1.35, r: 29.7, estimated: false }  # 전문 지식
   reasoning: { s: 17.0, z: -1.28, r: 30.8, estimated: false }  # 추론
   coding: { s: 10.5, z: -0.9, r: 36.5, estimated: false }  # 코딩
-  agentic: { s: 8.3, z: -0.89, r: 36.6, estimated: false }  # 에이전트
+  agentic: { s: 8.3, z: -0.9, r: 36.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 31.1, z: -2.03, r: 19.5, estimated: false }  # 멀티모달
   long_context: { s: 9.0, z: -1.31, r: 30.4, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 3 12B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # Gemma 3 12B
@@ -33,7 +33,7 @@ timestamp: 2026-11-06T00:00:00Z
 Google · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 지시 따르기, 에이전트
+- **강점**: 지시 따르기, 코딩
 - **약점**: 전문 지식, 멀티모달
 
 ## 실용 지표
@@ -46,7 +46,7 @@ Google · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠️ 
 | 전문 지식 | 29.7 | -1.35 | 실측 | [[gpqa-diamond]] 35.0%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 30.8 | -1.28 | 실측 | [[gpqa-diamond]] 35.0%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 36.5 | -0.9 | 실측 | [[scicode]] 16.0%×1.0, [[terminal-bench]] 1.0%×0.5 |
-| 에이전트 | 36.6 | -0.89 | 실측 | [[gdpval]] 401.0%×1.0, [[tau3-banking]] 1.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
+| 에이전트 | 36.6 | -0.9 | 실측 | [[gdpval]] 401.0%×1.0, [[tau3-banking]] 1.0%×1.0, [[terminal-bench]] 1.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 19.5 | -2.03 | 실측 | [[mmmu-pro]] 38.0%×1.0 |
 | 긴문맥 | 30.4 | -1.31 | 실측 | [[aa-lcr]] 8.0%×1.0 |

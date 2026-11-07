@@ -13,8 +13,8 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 78.9, z: 1.29, r: 69.3, estimated: false }  # 전문 지식
-  reasoning: { s: 76.5, z: 1.38, r: 70.6, estimated: false }  # 추론
-  coding: { s: 59.1, z: 0.73, r: 61.0, estimated: false }  # 코딩
+  reasoning: { s: 76.5, z: 1.38, r: 70.7, estimated: false }  # 추론
+  coding: { s: 59.1, z: 0.73, r: 60.9, estimated: false }  # 코딩
   agentic: { s: 53.0, z: 0.64, r: 59.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 87.8, z: 0.83, r: 62.4, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # Gemini 3 Flash
@@ -44,8 +44,8 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 69.3 | +1.29 | 실측 | [[gpqa-diamond]] 90.0%×0.4, [[humanitys-last-exam]] 37.0%×0.3 |
-| 추론 | 70.6 | +1.38 | 실측 | [[gpqa-diamond]] 90.0%×1.0, [[humanitys-last-exam]] 37.0%×1.0 |
-| 코딩 | 61.0 | +0.73 | 실측 | [[terminal-bench]] 39.0%×0.5 |
+| 추론 | 70.7 | +1.38 | 실측 | [[gpqa-diamond]] 90.0%×1.0, [[humanitys-last-exam]] 37.0%×1.0 |
+| 코딩 | 60.9 | +0.73 | 실측 | [[terminal-bench]] 39.0%×0.5 |
 | 에이전트 | 59.6 | +0.64 | 실측 | [[apex-agents]] 28.0%×1.0, [[tau3-banking]] 21.0%×1.0, [[terminal-bench]] 39.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 62.4 | +0.83 | 실측 | [[mmmu-pro]] 80.0%×1.0 |

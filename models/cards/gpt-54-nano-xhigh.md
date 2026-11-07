@@ -14,8 +14,8 @@ is_reasoning: true
 radar:
   knowledge: { s: 67.1, z: 0.77, r: 61.6, estimated: false }  # 전문 지식
   reasoning: { s: 64.4, z: 0.83, r: 62.5, estimated: false }  # 추론
-  coding: { s: 65.7, z: 0.95, r: 64.3, estimated: false }  # 코딩
-  agentic: { s: 52.3, z: 0.62, r: 59.3, estimated: false }  # 에이전트
+  coding: { s: 65.7, z: 0.95, r: 64.2, estimated: false }  # 코딩
+  agentic: { s: 52.3, z: 0.62, r: 59.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 67.6, z: -0.19, r: 47.1, estimated: false }  # 멀티모달
   long_context: { s: 86.5, z: 1.02, r: 65.3, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.4 nano (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # GPT-5.4 nano (xhigh)
@@ -45,8 +45,8 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **None** �
 |---|---|---|---|---|
 | 전문 지식 | 61.6 | +0.77 | 실측 | [[gpqa-diamond]] 82.0%×0.4, [[humanitys-last-exam]] 28.0%×0.3 |
 | 추론 | 62.5 | +0.83 | 실측 | [[gpqa-diamond]] 82.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
-| 코딩 | 64.3 | +0.95 | 실측 | [[scicode]] 47.0%×1.0, [[terminal-bench]] 42.0%×0.5 |
-| 에이전트 | 59.3 | +0.62 | 실측 | [[apex-agents]] 25.0%×1.0, [[gdpval]] 955.0%×1.0, [[itbench]] 24.0%×1.0, [[tau3-banking]] 27.0%×1.0, [[terminal-bench]] 42.0%×1.0 |
+| 코딩 | 64.2 | +0.95 | 실측 | [[scicode]] 47.0%×1.0, [[terminal-bench]] 42.0%×0.5 |
+| 에이전트 | 59.2 | +0.62 | 실측 | [[apex-agents]] 25.0%×1.0, [[gdpval]] 955.0%×1.0, [[itbench]] 24.0%×1.0, [[tau3-banking]] 27.0%×1.0, [[terminal-bench]] 42.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 47.1 | -0.19 | 실측 | [[mmmu-pro]] 65.0%×1.0 |
 | 긴문맥 | 65.3 | +1.02 | 실측 | [[aa-lcr]] 77.0%×1.0 |

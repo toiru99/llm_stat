@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 37.5, z: -0.53, r: 42.0, estimated: false }  # 전문 지식
   reasoning: { s: 33.8, z: -0.53, r: 42.0, estimated: false }  # 추론
-  coding: { s: 27.3, z: -0.34, r: 45.0, estimated: false }  # 코딩
+  coding: { s: 27.3, z: -0.34, r: 44.9, estimated: false }  # 코딩
   agentic: { s: 30.7, z: -0.13, r: 48.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 60.8, z: -0.53, r: 42.0, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.4 mini (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # GPT-5.4 mini (non-reasoning)
@@ -45,7 +45,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **None** �
 |---|---|---|---|---|
 | 전문 지식 | 42.0 | -0.53 | 실측 | [[gpqa-diamond]] 61.0%×0.4, [[humanitys-last-exam]] 6.0%×0.3 |
 | 추론 | 42.0 | -0.53 | 실측 | [[gpqa-diamond]] 61.0%×1.0, [[humanitys-last-exam]] 6.0%×1.0 |
-| 코딩 | 45.0 | -0.34 | 실측 | [[terminal-bench]] 18.0%×0.5 |
+| 코딩 | 44.9 | -0.34 | 실측 | [[terminal-bench]] 18.0%×0.5 |
 | 에이전트 | 48.1 | -0.13 | 실측 | [[gdpval]] 597.0%×1.0, [[itbench]] 19.0%×1.0, [[terminal-bench]] 18.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 42.0 | -0.53 | 실측 | [[mmmu-pro]] 60.0%×1.0 |

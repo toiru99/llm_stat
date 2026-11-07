@@ -18,14 +18,14 @@ radar:
   agentic: { s: 78.5, z: 1.51, r: 72.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 86.5, z: 0.76, r: 61.4, estimated: false }  # 멀티모달
-  long_context: { s: 89.9, z: 1.12, r: 66.9, estimated: false }  # 긴문맥
-  instruction: { s: 68.0, z: 0.63, r: 59.4, estimated: true }  # 지시 따르기
+  long_context: { s: 89.9, z: 1.12, r: 66.8, estimated: false }  # 긴문맥
+  instruction: { s: 72.8, z: 0.83, r: 62.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax-M3.1-Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # MiniMax-M3.1-Flash
@@ -34,7 +34,7 @@ MiniMax · Open · Large · 컨텍스트 1M · 종합지능 **29.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 코딩
-- **약점**: 추론, 지시 따르기
+- **약점**: 멀티모달, 추론
 
 ## 실용 지표
 `입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · None t/s · TTFT Nones · 1M ctx` · 가성비 288.6
@@ -49,8 +49,8 @@ MiniMax · Open · Large · 컨텍스트 1M · 종합지능 **29.0**
 | 에이전트 | 72.7 | +1.51 | 실측 | [[gdpval]] 1465.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 61.4 | +0.76 | 실측 | [[mmmu-pro]] 79.0%×1.0 |
-| 긴문맥 | 66.9 | +1.12 | 실측 | [[aa-lcr]] 80.0%×1.0 |
-| 지시 따르기 | 59.4 | +0.63 | 추정 | (추정) |
+| 긴문맥 | 66.8 | +1.12 | 실측 | [[aa-lcr]] 80.0%×1.0 |
+| 지시 따르기 | 62.4 | +0.83 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

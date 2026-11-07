@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 85.1, z: 1.56, r: 73.4, estimated: false }  # 전문 지식
   reasoning: { s: 83.0, z: 1.67, r: 75.0, estimated: false }  # 추론
   coding: { s: 81.7, z: 1.49, r: 72.3, estimated: false }  # 코딩
-  agentic: { s: 86.5, z: 1.79, r: 76.9, estimated: false }  # 에이전트
+  agentic: { s: 86.5, z: 1.79, r: 76.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 91.0, z: 1.16, r: 67.4, estimated: false }  # 긴문맥
-  instruction: { s: 84.5, z: 1.32, r: 69.8, estimated: true }  # 지시 따르기
+  long_context: { s: 91.0, z: 1.16, r: 67.3, estimated: false }  # 긴문맥
+  instruction: { s: 84.5, z: 1.32, r: 69.7, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.6 (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-06
-timestamp: 2026-11-06T00:00:00Z
+updated: 2026-11-07
+timestamp: 2026-11-07T00:00:00Z
 ---
 
 # Grok 4.6 (medium)
@@ -46,11 +46,11 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **None**
 | 전문 지식 | 73.4 | +1.56 | 실측 | [[gpqa-diamond]] 94.0%×0.4, [[humanitys-last-exam]] 42.0%×0.3 |
 | 추론 | 75.0 | +1.67 | 실측 | [[gpqa-diamond]] 94.0%×1.0, [[humanitys-last-exam]] 42.0%×1.0 |
 | 코딩 | 72.3 | +1.49 | 실측 | [[scicode]] 56.0%×1.0 |
-| 에이전트 | 76.9 | +1.79 | 실측 | [[gdpval]] 1620.0%×1.0, [[tau3-banking]] 44.0%×1.0 |
+| 에이전트 | 76.8 | +1.79 | 실측 | [[gdpval]] 1620.0%×1.0, [[tau3-banking]] 44.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 67.4 | +1.16 | 실측 | [[aa-lcr]] 81.0%×1.0 |
-| 지시 따르기 | 69.8 | +1.32 | 추정 | (추정) |
+| 긴문맥 | 67.3 | +1.16 | 실측 | [[aa-lcr]] 81.0%×1.0 |
+| 지시 따르기 | 69.7 | +1.32 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
