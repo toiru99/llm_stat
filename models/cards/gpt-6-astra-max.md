@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 95.7, z: 2.03, r: 80.4, estimated: false }  # 전문 지식
-  reasoning: { s: 96.2, z: 2.26, r: 83.9, estimated: false }  # 추론
-  coding: { s: 81.7, z: 1.49, r: 72.3, estimated: false }  # 코딩
-  agentic: { s: 84.2, z: 1.71, r: 75.6, estimated: false }  # 에이전트
+  knowledge: { s: 95.1, z: 2.02, r: 80.3, estimated: false }  # 전문 지식
+  reasoning: { s: 95.5, z: 2.25, r: 83.7, estimated: false }  # 추론
+  coding: { s: 82.7, z: 1.51, r: 72.7, estimated: false }  # 코딩
+  agentic: { s: 83.9, z: 1.7, r: 75.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 97.3, z: 1.31, r: 69.6, estimated: false }  # 멀티모달
-  long_context: { s: 91.0, z: 1.16, r: 67.3, estimated: false }  # 긴문맥
-  instruction: { s: 79.2, z: 1.09, r: 66.4, estimated: true }  # 지시 따르기
+  long_context: { s: 91.0, z: 1.15, r: 67.2, estimated: false }  # 긴문맥
+  instruction: { s: 78.1, z: 1.07, r: 66.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6 Astra (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-07
-timestamp: 2026-11-07T00:00:00Z
+updated: 2026-11-08
+timestamp: 2026-11-08T00:00:00Z
 ---
 
 # GPT-6 Astra (max)
@@ -43,14 +43,14 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **57.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 80.4 | +2.03 | 실측 | [[gpqa-diamond]] 96.0%×0.4, [[humanitys-last-exam]] 55.0%×0.3 |
-| 추론 | 83.9 | +2.26 | 실측 | [[critpt]] 71.0%×1.0, [[gpqa-diamond]] 96.0%×1.0, [[humanitys-last-exam]] 55.0%×1.0 |
-| 코딩 | 72.3 | +1.49 | 실측 | [[scicode]] 56.0%×1.0 |
-| 에이전트 | 75.6 | +1.71 | 실측 | [[gdpval]] 1584.0%×1.0, [[itbench]] 49.0%×1.0, [[tau3-banking]] 41.0%×1.0 |
+| 전문 지식 | 80.3 | +2.02 | 실측 | [[gpqa-diamond]] 96.1%×0.4, [[humanitys-last-exam]] 54.7%×0.3 |
+| 추론 | 83.7 | +2.25 | 실측 | [[critpt]] 70.5%×1.0, [[gpqa-diamond]] 96.1%×1.0, [[humanitys-last-exam]] 54.7%×1.0 |
+| 코딩 | 72.7 | +1.51 | 실측 | [[scicode]] 56.5%×1.0 |
+| 에이전트 | 75.5 | +1.7 | 실측 | [[gdpval]] 1584.0%×1.0, [[itbench]] 48.6%×1.0, [[tau3-banking]] 41.4%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 69.6 | +1.31 | 실측 | [[mmmu-pro]] 87.0%×1.0 |
-| 긴문맥 | 67.3 | +1.16 | 실측 | [[aa-lcr]] 81.0%×1.0 |
-| 지시 따르기 | 66.4 | +1.09 | 추정 | (추정) |
+| 긴문맥 | 67.2 | +1.15 | 실측 | [[aa-lcr]] 80.7%×1.0 |
+| 지시 따르기 | 66.0 | +1.07 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

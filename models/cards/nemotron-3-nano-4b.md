@@ -12,20 +12,20 @@ size_class: Tiny
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 30.1, z: -0.86, r: 37.2, estimated: false }  # 전문 지식
-  reasoning: { s: 18.1, z: -1.23, r: 31.5, estimated: false }  # 추론
-  coding: { s: 13.5, z: -0.8, r: 38.0, estimated: false }  # 코딩
-  agentic: { s: 6.6, z: -0.95, r: 35.7, estimated: false }  # 에이전트
+  knowledge: { s: 30.1, z: -0.85, r: 37.3, estimated: false }  # 전문 지식
+  reasoning: { s: 18.1, z: -1.23, r: 31.6, estimated: false }  # 추론
+  coding: { s: 13.7, z: -0.79, r: 38.1, estimated: false }  # 코딩
+  agentic: { s: 6.5, z: -0.95, r: 35.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 24.7, z: -0.84, r: 37.4, estimated: false }  # 긴문맥
-  instruction: { s: 64.8, z: 0.49, r: 57.4, estimated: false }  # 지시 따르기
+  long_context: { s: 24.5, z: -0.85, r: 37.3, estimated: false }  # 긴문맥
+  instruction: { s: 64.7, z: 0.5, r: 57.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3 Nano 4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-07
-timestamp: 2026-11-07T00:00:00Z
+updated: 2026-11-08
+timestamp: 2026-11-08T00:00:00Z
 ---
 
 # Nemotron 3 Nano 4B
@@ -43,14 +43,14 @@ NVIDIA · Open · Tiny · 컨텍스트 262k · 종합지능 **2.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 37.2 | -0.86 | 실측 | [[gpqa-diamond]] 51.0%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
-| 추론 | 31.5 | -1.23 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 51.0%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 38.0 | -0.8 | 실측 | [[scicode]] 16.0%×1.0, [[terminal-bench]] 7.0%×0.5 |
-| 에이전트 | 35.7 | -0.95 | 실측 | [[gdpval]] 51.0%×1.0, [[terminal-bench]] 7.0%×1.0 |
+| 전문 지식 | 37.3 | -0.85 | 실측 | [[gpqa-diamond]] 51.3%×0.4, [[humanitys-last-exam]] 4.9%×0.3 |
+| 추론 | 31.6 | -1.23 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 51.3%×1.0, [[humanitys-last-exam]] 4.9%×1.0 |
+| 코딩 | 38.1 | -0.79 | 실측 | [[scicode]] 16.1%×1.0, [[terminal-bench]] 6.8%×0.5 |
+| 에이전트 | 35.7 | -0.95 | 실측 | [[gdpval]] 51.0%×1.0, [[terminal-bench]] 6.8%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 37.4 | -0.84 | 실측 | [[aa-lcr]] 22.0%×1.0 |
-| 지시 따르기 | 57.4 | +0.49 | 실측 | [[ifbench]] 58.0%×1.0 |
+| 긴문맥 | 37.3 | -0.85 | 실측 | [[aa-lcr]] 21.7%×1.0 |
+| 지시 따르기 | 57.5 | +0.5 | 실측 | [[ifbench]] 58.2%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

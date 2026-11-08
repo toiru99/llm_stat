@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: null
 radar:
-  knowledge: { s: 47.5, z: -0.09, r: 48.6, estimated: false }  # 전문 지식
-  reasoning: { s: 42.8, z: -0.13, r: 48.1, estimated: false }  # 추론
-  coding: { s: 7.6, z: -1.0, r: 35.0, estimated: false }  # 코딩
-  agentic: { s: 7.6, z: -0.92, r: 36.2, estimated: false }  # 에이전트
+  knowledge: { s: 47.3, z: -0.09, r: 48.7, estimated: false }  # 전문 지식
+  reasoning: { s: 42.7, z: -0.12, r: 48.2, estimated: false }  # 추론
+  coding: { s: 8.0, z: -0.98, r: 35.3, estimated: false }  # 코딩
+  agentic: { s: 8.0, z: -0.9, r: 36.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 34.9, z: -0.53, r: 42.1, estimated: true }  # 긴문맥
-  instruction: { s: 35.2, z: -0.75, r: 38.8, estimated: false }  # 지시 따르기
+  long_context: { s: 31.9, z: -0.62, r: 40.7, estimated: true }  # 긴문맥
+  instruction: { s: 35.0, z: -0.76, r: 38.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama Nemotron Super 49B v1.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-07
-timestamp: 2026-11-07T00:00:00Z
+updated: 2026-11-08
+timestamp: 2026-11-08T00:00:00Z
 ---
 
 # Llama Nemotron Super 49B v1.5
@@ -43,14 +43,14 @@ NVIDIA · Open · Unknown · 컨텍스트 128k · 종합지능 **None** · ⚠�
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 48.6 | -0.09 | 실측 | [[gpqa-diamond]] 75.0%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
-| 추론 | 48.1 | -0.13 | 실측 | [[gpqa-diamond]] 75.0%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
-| 코딩 | 35.0 | -1.0 | 실측 | [[terminal-bench]] 5.0%×0.5 |
-| 에이전트 | 36.2 | -0.92 | 실측 | [[terminal-bench]] 5.0%×1.0 |
+| 전문 지식 | 48.7 | -0.09 | 실측 | [[gpqa-diamond]] 74.8%×0.4, [[humanitys-last-exam]] 7.3%×0.3 |
+| 추론 | 48.2 | -0.12 | 실측 | [[gpqa-diamond]] 74.8%×1.0, [[humanitys-last-exam]] 7.3%×1.0 |
+| 코딩 | 35.3 | -0.98 | 실측 | [[terminal-bench]] 5.3%×0.5 |
+| 에이전트 | 36.5 | -0.9 | 실측 | [[terminal-bench]] 5.3%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 42.1 | -0.53 | 추정 | (추정) |
-| 지시 따르기 | 38.8 | -0.75 | 실측 | [[ifbench]] 37.0%×1.0 |
+| 긴문맥 | 40.7 | -0.62 | 추정 | (추정) |
+| 지시 따르기 | 38.5 | -0.76 | 실측 | [[ifbench]] 37.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

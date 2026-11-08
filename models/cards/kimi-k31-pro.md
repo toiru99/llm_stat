@@ -12,20 +12,20 @@ size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 85.0, z: 1.56, r: 73.3, estimated: false }  # 전문 지식
-  reasoning: { s: 77.2, z: 1.41, r: 71.1, estimated: false }  # 추론
-  coding: { s: 90.0, z: 1.77, r: 76.5, estimated: false }  # 코딩
-  agentic: { s: 99.6, z: 2.24, r: 83.5, estimated: false }  # 에이전트
+  knowledge: { s: 85.2, z: 1.59, r: 73.8, estimated: false }  # 전문 지식
+  reasoning: { s: 77.0, z: 1.42, r: 71.2, estimated: false }  # 추론
+  coding: { s: 89.8, z: 1.75, r: 76.3, estimated: false }  # 코딩
+  agentic: { s: 99.6, z: 2.23, r: 83.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 93.2, z: 1.1, r: 66.5, estimated: false }  # 멀티모달
-  long_context: { s: 96.6, z: 1.33, r: 69.9, estimated: false }  # 긴문맥
-  instruction: { s: 82.9, z: 1.25, r: 68.8, estimated: true }  # 지시 따르기
+  long_context: { s: 97.3, z: 1.34, r: 70.1, estimated: false }  # 긴문맥
+  instruction: { s: 82.2, z: 1.24, r: 68.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K3.1 Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-07
-timestamp: 2026-11-07T00:00:00Z
+updated: 2026-11-08
+timestamp: 2026-11-08T00:00:00Z
 ---
 
 # Kimi K3.1 Pro
@@ -43,14 +43,14 @@ Kimi · Open · Large · 컨텍스트 1M · 종합지능 **46.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 73.3 | +1.56 | 실측 | [[humanitys-last-exam]] 52.0%×0.3 |
-| 추론 | 71.1 | +1.41 | 실측 | [[critpt]] 50.0%×1.0, [[humanitys-last-exam]] 52.0%×1.0 |
-| 코딩 | 76.5 | +1.77 | 실측 | [[scicode]] 61.0%×1.0 |
-| 에이전트 | 83.5 | +2.24 | 실측 | [[gdpval]] 1858.0%×1.0 |
+| 전문 지식 | 73.8 | +1.59 | 실측 | [[humanitys-last-exam]] 52.5%×0.3 |
+| 추론 | 71.2 | +1.42 | 실측 | [[critpt]] 49.5%×1.0, [[humanitys-last-exam]] 52.5%×1.0 |
+| 코딩 | 76.3 | +1.75 | 실측 | [[scicode]] 60.8%×1.0 |
+| 에이전트 | 83.5 | +2.23 | 실측 | [[gdpval]] 1858.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 66.5 | +1.1 | 실측 | [[mmmu-pro]] 84.0%×1.0 |
-| 긴문맥 | 69.9 | +1.33 | 실측 | [[aa-lcr]] 86.0%×1.0 |
-| 지시 따르기 | 68.8 | +1.25 | 추정 | (추정) |
+| 긴문맥 | 70.1 | +1.34 | 실측 | [[aa-lcr]] 86.3%×1.0 |
+| 지시 따르기 | 68.6 | +1.24 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

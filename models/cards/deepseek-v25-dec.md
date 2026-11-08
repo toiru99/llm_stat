@@ -12,20 +12,20 @@ size_class: Large
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 37.2, z: -0.54, r: 41.9, estimated: false }  # 전문 지식
-  reasoning: { s: 37.2, z: -0.38, r: 44.3, estimated: false }  # 추론
-  coding: { s: 21.5, z: -0.53, r: 42.0, estimated: true }  # 코딩
-  agentic: { s: 19.8, z: -0.5, r: 42.5, estimated: true }  # 에이전트
+  knowledge: { s: 37.6, z: -0.52, r: 42.2, estimated: false }  # 전문 지식
+  reasoning: { s: 37.6, z: -0.35, r: 44.7, estimated: false }  # 추론
+  coding: { s: 29.7, z: -0.26, r: 46.2, estimated: true }  # 코딩
+  agentic: { s: 25.0, z: -0.32, r: 45.2, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 35.3, z: -0.52, r: 42.2, estimated: true }  # 긴문맥
-  instruction: { s: 43.7, z: -0.39, r: 44.1, estimated: true }  # 지시 따르기
+  long_context: { s: 37.0, z: -0.47, r: 42.9, estimated: true }  # 긴문맥
+  instruction: { s: 47.4, z: -0.23, r: 46.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek-V2.5 (Dec)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-07
-timestamp: 2026-11-07T00:00:00Z
+updated: 2026-11-08
+timestamp: 2026-11-08T00:00:00Z
 ---
 
 # DeepSeek-V2.5 (Dec)
@@ -33,8 +33,8 @@ timestamp: 2026-11-07T00:00:00Z
 DeepSeek · Open · Large · 컨텍스트 128k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 추론, 지시 따르기
-- **약점**: 코딩, 전문 지식
+- **강점**: 지시 따르기, 코딩
+- **약점**: 긴문맥, 전문 지식
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 128k ctx`
@@ -43,14 +43,14 @@ DeepSeek · Open · Large · 컨텍스트 128k · 종합지능 **None** · ⚠�
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 41.9 | -0.54 | 실측 | [[gpqa-diamond]] 42.0%×0.4 |
-| 추론 | 44.3 | -0.38 | 실측 | [[gpqa-diamond]] 42.0%×1.0 |
-| 코딩 | 42.0 | -0.53 | 추정 | (추정) |
-| 에이전트 | 42.5 | -0.5 | 추정 | (추정) |
+| 전문 지식 | 42.2 | -0.52 | 실측 | [[gpqa-diamond]] 42.3%×0.4 |
+| 추론 | 44.7 | -0.35 | 실측 | [[gpqa-diamond]] 42.3%×1.0 |
+| 코딩 | 46.2 | -0.26 | 추정 | (추정) |
+| 에이전트 | 45.2 | -0.32 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 42.2 | -0.52 | 추정 | (추정) |
-| 지시 따르기 | 44.1 | -0.39 | 추정 | (추정) |
+| 긴문맥 | 42.9 | -0.47 | 추정 | (추정) |
+| 지시 따르기 | 46.5 | -0.23 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

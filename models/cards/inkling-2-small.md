@@ -12,20 +12,20 @@ size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 71.7, z: 0.97, r: 64.6, estimated: false }  # 전문 지식
-  reasoning: { s: 60.1, z: 0.65, r: 59.7, estimated: false }  # 추론
-  coding: { s: 75.0, z: 1.26, r: 68.9, estimated: false }  # 코딩
-  agentic: { s: 82.9, z: 1.66, r: 75.0, estimated: false }  # 에이전트
+  knowledge: { s: 71.3, z: 0.97, r: 64.6, estimated: false }  # 전문 지식
+  reasoning: { s: 60.0, z: 0.65, r: 59.8, estimated: false }  # 추론
+  coding: { s: 75.7, z: 1.28, r: 69.2, estimated: false }  # 코딩
+  agentic: { s: 83.0, z: 1.67, r: 75.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 90.5, z: 0.97, r: 64.5, estimated: false }  # 멀티모달
-  long_context: { s: 93.3, z: 1.22, r: 68.4, estimated: false }  # 긴문맥
-  instruction: { s: 68.4, z: 0.64, r: 59.6, estimated: true }  # 지시 따르기
+  long_context: { s: 93.9, z: 1.24, r: 68.5, estimated: false }  # 긴문맥
+  instruction: { s: 66.9, z: 0.59, r: 58.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Inkling 2 Small
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-07
-timestamp: 2026-11-07T00:00:00Z
+updated: 2026-11-08
+timestamp: 2026-11-08T00:00:00Z
 ---
 
 # Inkling 2 Small
@@ -43,14 +43,14 @@ Thinking Machines · Proprietary · Large · 컨텍스트 1M · 종합지능 **3
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 64.6 | +0.97 | 실측 | [[humanitys-last-exam]] 44.0%×0.3 |
-| 추론 | 59.7 | +0.65 | 실측 | [[critpt]] 35.0%×1.0, [[humanitys-last-exam]] 44.0%×1.0 |
-| 코딩 | 68.9 | +1.26 | 실측 | [[scicode]] 52.0%×1.0 |
-| 에이전트 | 75.0 | +1.66 | 실측 | [[gdpval]] 1630.0%×1.0, [[tau3-banking]] 40.0%×1.0 |
+| 전문 지식 | 64.6 | +0.97 | 실측 | [[humanitys-last-exam]] 44.1%×0.3 |
+| 추론 | 59.8 | +0.65 | 실측 | [[critpt]] 35.0%×1.0, [[humanitys-last-exam]] 44.1%×1.0 |
+| 코딩 | 69.2 | +1.28 | 실측 | [[scicode]] 52.3%×1.0 |
+| 에이전트 | 75.0 | +1.67 | 실측 | [[gdpval]] 1630.0%×1.0, [[tau3-banking]] 40.4%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 64.5 | +0.97 | 실측 | [[mmmu-pro]] 82.0%×1.0 |
-| 긴문맥 | 68.4 | +1.22 | 실측 | [[aa-lcr]] 83.0%×1.0 |
-| 지시 따르기 | 59.6 | +0.64 | 추정 | (추정) |
+| 긴문맥 | 68.5 | +1.24 | 실측 | [[aa-lcr]] 83.3%×1.0 |
+| 지시 따르기 | 58.8 | +0.59 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

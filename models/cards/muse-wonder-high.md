@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 75.9, z: 1.16, r: 67.3, estimated: true }  # 전문 지식
-  reasoning: { s: 70.8, z: 1.12, r: 66.9, estimated: false }  # 추론
-  coding: { s: 66.7, z: 0.98, r: 64.7, estimated: true }  # 코딩
-  agentic: { s: 51.1, z: 0.57, r: 58.6, estimated: true }  # 에이전트
+  knowledge: { s: 73.2, z: 1.06, r: 65.8, estimated: true }  # 전문 지식
+  reasoning: { s: 70.8, z: 1.14, r: 67.1, estimated: false }  # 추론
+  coding: { s: 63.5, z: 0.87, r: 63.0, estimated: true }  # 코딩
+  agentic: { s: 59.1, z: 0.85, r: 62.8, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 93.2, z: 1.1, r: 66.5, estimated: false }  # 멀티모달
-  long_context: { s: 84.7, z: 0.97, r: 64.5, estimated: true }  # 긴문맥
-  instruction: { s: 87.4, z: 1.44, r: 71.6, estimated: true }  # 지시 따르기
+  long_context: { s: 82.5, z: 0.89, r: 63.4, estimated: true }  # 긴문맥
+  instruction: { s: 86.7, z: 1.43, r: 71.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Wonder (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-07
-timestamp: 2026-11-07T00:00:00Z
+updated: 2026-11-08
+timestamp: 2026-11-08T00:00:00Z
 ---
 
 # Muse Wonder (high)
@@ -33,8 +33,8 @@ timestamp: 2026-11-07T00:00:00Z
 Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **41.0**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 지시 따르기, 전문 지식
-- **약점**: 긴문맥, 에이전트
+- **강점**: 지시 따르기, 추론
+- **약점**: 코딩, 에이전트
 
 ## 실용 지표
 `입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · None t/s · TTFT Nones · 1M ctx` · 가성비 13.9
@@ -43,14 +43,14 @@ Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **41.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 67.3 | +1.16 | 추정 | (추정) |
-| 추론 | 66.9 | +1.12 | 실측 | [[critpt]] 51.0%×1.0 |
-| 코딩 | 64.7 | +0.98 | 추정 | (추정) |
-| 에이전트 | 58.6 | +0.57 | 추정 | (추정) |
+| 전문 지식 | 65.8 | +1.06 | 추정 | (추정) |
+| 추론 | 67.1 | +1.14 | 실측 | [[critpt]] 51.0%×1.0 |
+| 코딩 | 63.0 | +0.87 | 추정 | (추정) |
+| 에이전트 | 62.8 | +0.85 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 66.5 | +1.1 | 실측 | [[mmmu-pro]] 84.0%×1.0 |
-| 긴문맥 | 64.5 | +0.97 | 추정 | (추정) |
-| 지시 따르기 | 71.6 | +1.44 | 추정 | (추정) |
+| 긴문맥 | 63.4 | +0.89 | 추정 | (추정) |
+| 지시 따르기 | 71.5 | +1.43 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

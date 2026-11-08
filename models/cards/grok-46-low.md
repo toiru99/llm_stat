@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 71.1, z: 0.95, r: 64.2, estimated: false }  # 전문 지식
-  reasoning: { s: 67.8, z: 0.99, r: 64.8, estimated: false }  # 추론
-  coding: { s: 70.0, z: 1.1, r: 66.4, estimated: false }  # 코딩
-  agentic: { s: 75.2, z: 1.4, r: 71.0, estimated: false }  # 에이전트
+  knowledge: { s: 70.4, z: 0.93, r: 64.0, estimated: false }  # 전문 지식
+  reasoning: { s: 67.1, z: 0.97, r: 64.6, estimated: false }  # 추론
+  coding: { s: 70.8, z: 1.12, r: 66.7, estimated: false }  # 코딩
+  agentic: { s: 75.1, z: 1.4, r: 70.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 91.0, z: 1.16, r: 67.3, estimated: false }  # 긴문맥
-  instruction: { s: 72.5, z: 0.81, r: 62.2, estimated: true }  # 지시 따르기
+  long_context: { s: 91.0, z: 1.15, r: 67.2, estimated: false }  # 긴문맥
+  instruction: { s: 71.8, z: 0.8, r: 62.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.6 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-07
-timestamp: 2026-11-07T00:00:00Z
+updated: 2026-11-08
+timestamp: 2026-11-08T00:00:00Z
 ---
 
 # Grok 4.6 (low)
@@ -43,14 +43,14 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 64.2 | +0.95 | 실측 | [[gpqa-diamond]] 88.0%×0.4, [[humanitys-last-exam]] 28.0%×0.3 |
-| 추론 | 64.8 | +0.99 | 실측 | [[gpqa-diamond]] 88.0%×1.0, [[humanitys-last-exam]] 28.0%×1.0 |
-| 코딩 | 66.4 | +1.1 | 실측 | [[scicode]] 49.0%×1.0 |
-| 에이전트 | 71.0 | +1.4 | 실측 | [[gdpval]] 1418.0%×1.0, [[tau3-banking]] 38.0%×1.0 |
+| 전문 지식 | 64.0 | +0.93 | 실측 | [[gpqa-diamond]] 87.9%×0.4, [[humanitys-last-exam]] 27.6%×0.3 |
+| 추론 | 64.6 | +0.97 | 실측 | [[gpqa-diamond]] 87.9%×1.0, [[humanitys-last-exam]] 27.6%×1.0 |
+| 코딩 | 66.7 | +1.12 | 실측 | [[scicode]] 49.4%×1.0 |
+| 에이전트 | 70.9 | +1.4 | 실측 | [[gdpval]] 1418.0%×1.0, [[tau3-banking]] 38.1%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 67.3 | +1.16 | 실측 | [[aa-lcr]] 81.0%×1.0 |
-| 지시 따르기 | 62.2 | +0.81 | 추정 | (추정) |
+| 긴문맥 | 67.2 | +1.15 | 실측 | [[aa-lcr]] 80.7%×1.0 |
+| 지시 따르기 | 62.0 | +0.8 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

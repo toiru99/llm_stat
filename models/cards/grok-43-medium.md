@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 73.2, z: 1.04, r: 65.6, estimated: false }  # 전문 지식
-  reasoning: { s: 70.1, z: 1.09, r: 66.4, estimated: false }  # 추론
-  coding: { s: 45.5, z: 0.27, r: 54.1, estimated: false }  # 코딩
-  agentic: { s: 45.5, z: 0.38, r: 55.7, estimated: false }  # 에이전트
+  knowledge: { s: 72.9, z: 1.04, r: 65.6, estimated: false }  # 전문 지식
+  reasoning: { s: 69.7, z: 1.09, r: 66.4, estimated: false }  # 추론
+  coding: { s: 46.0, z: 0.29, r: 54.3, estimated: false }  # 코딩
+  agentic: { s: 46.0, z: 0.4, r: 56.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 82.4, z: 0.56, r: 58.3, estimated: false }  # 멀티모달
-  long_context: { s: 84.3, z: 0.95, r: 64.3, estimated: false }  # 긴문맥
-  instruction: { s: 100.0, z: 1.97, r: 79.5, estimated: false }  # 지시 따르기
+  long_context: { s: 84.6, z: 0.96, r: 64.3, estimated: false }  # 긴문맥
+  instruction: { s: 100.0, z: 2.0, r: 79.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.3 (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-07
-timestamp: 2026-11-07T00:00:00Z
+updated: 2026-11-08
+timestamp: 2026-11-08T00:00:00Z
 ---
 
 # Grok 4.3 (medium)
@@ -45,12 +45,12 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** �
 |---|---|---|---|---|
 | 전문 지식 | 65.6 | +1.04 | 실측 | [[gpqa-diamond]] 89.0%×0.4, [[humanitys-last-exam]] 30.0%×0.3 |
 | 추론 | 66.4 | +1.09 | 실측 | [[gpqa-diamond]] 89.0%×1.0, [[humanitys-last-exam]] 30.0%×1.0 |
-| 코딩 | 54.1 | +0.27 | 실측 | [[terminal-bench]] 30.0%×0.5 |
-| 에이전트 | 55.7 | +0.38 | 실측 | [[terminal-bench]] 30.0%×1.0 |
+| 코딩 | 54.3 | +0.29 | 실측 | [[terminal-bench]] 30.3%×0.5 |
+| 에이전트 | 56.0 | +0.4 | 실측 | [[terminal-bench]] 30.3%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 58.3 | +0.56 | 실측 | [[mmmu-pro]] 76.0%×1.0 |
-| 긴문맥 | 64.3 | +0.95 | 실측 | [[aa-lcr]] 75.0%×1.0 |
-| 지시 따르기 | 79.5 | +1.97 | 실측 | [[ifbench]] 83.0%×1.0 |
+| 긴문맥 | 64.3 | +0.96 | 실측 | [[aa-lcr]] 75.0%×1.0 |
+| 지시 따르기 | 79.9 | +2.0 | 실측 | [[ifbench]] 83.3%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

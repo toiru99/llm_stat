@@ -12,20 +12,20 @@ size_class: Medium
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 65.5, z: 0.7, r: 60.5, estimated: false }  # 전문 지식
-  reasoning: { s: 61.7, z: 0.71, r: 60.7, estimated: false }  # 추론
-  coding: { s: 61.7, z: 0.82, r: 62.2, estimated: false }  # 코딩
-  agentic: { s: 64.6, z: 1.04, r: 65.6, estimated: false }  # 에이전트
+  knowledge: { s: 65.3, z: 0.71, r: 60.6, estimated: false }  # 전문 지식
+  reasoning: { s: 61.5, z: 0.72, r: 60.8, estimated: false }  # 추론
+  coding: { s: 62.2, z: 0.83, r: 62.4, estimated: false }  # 코딩
+  agentic: { s: 64.8, z: 1.04, r: 65.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 86.5, z: 0.76, r: 61.4, estimated: false }  # 멀티모달
-  long_context: { s: 87.6, z: 1.06, r: 65.8, estimated: false }  # 긴문맥
-  instruction: { s: 81.9, z: 1.21, r: 68.1, estimated: true }  # 지시 따르기
+  long_context: { s: 88.3, z: 1.07, r: 66.0, estimated: false }  # 긴문맥
+  instruction: { s: 82.0, z: 1.23, r: 68.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Ling-3.0-flash-VL
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-07
-timestamp: 2026-11-07T00:00:00Z
+updated: 2026-11-08
+timestamp: 2026-11-08T00:00:00Z
 ---
 
 # Ling-3.0-flash-VL
@@ -43,14 +43,14 @@ InclusionAI · Open · Medium · 컨텍스트 262k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 60.5 | +0.7 | 실측 | [[gpqa-diamond]] 86.0%×0.4, [[humanitys-last-exam]] 22.0%×0.3 |
-| 추론 | 60.7 | +0.71 | 실측 | [[gpqa-diamond]] 86.0%×1.0, [[humanitys-last-exam]] 22.0%×1.0 |
-| 코딩 | 62.2 | +0.82 | 실측 | [[scicode]] 44.0%×1.0 |
-| 에이전트 | 65.6 | +1.04 | 실측 | [[gdpval]] 1169.0%×1.0, [[tau3-banking]] 34.0%×1.0 |
+| 전문 지식 | 60.6 | +0.71 | 실측 | [[gpqa-diamond]] 86.2%×0.4, [[humanitys-last-exam]] 22.0%×0.3 |
+| 추론 | 60.8 | +0.72 | 실측 | [[gpqa-diamond]] 86.2%×1.0, [[humanitys-last-exam]] 22.0%×1.0 |
+| 코딩 | 62.4 | +0.83 | 실측 | [[scicode]] 44.2%×1.0 |
+| 에이전트 | 65.6 | +1.04 | 실측 | [[gdpval]] 1169.0%×1.0, [[tau3-banking]] 34.4%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 61.4 | +0.76 | 실측 | [[mmmu-pro]] 79.0%×1.0 |
-| 긴문맥 | 65.8 | +1.06 | 실측 | [[aa-lcr]] 78.0%×1.0 |
-| 지시 따르기 | 68.1 | +1.21 | 추정 | (추정) |
+| 긴문맥 | 66.0 | +1.07 | 실측 | [[aa-lcr]] 78.3%×1.0 |
+| 지시 따르기 | 68.5 | +1.23 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

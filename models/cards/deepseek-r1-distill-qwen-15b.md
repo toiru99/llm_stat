@@ -12,20 +12,20 @@ size_class: Tiny
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 1.4, z: -2.11, r: 18.3, estimated: false }  # 전문 지식
+  knowledge: { s: 1.4, z: -2.12, r: 18.3, estimated: false }  # 전문 지식
   reasoning: { s: 1.7, z: -1.97, r: 20.5, estimated: false }  # 추론
-  coding: { s: 0.1, z: -1.25, r: 31.3, estimated: true }  # 코딩
-  agentic: { s: 2.6, z: -1.09, r: 33.6, estimated: true }  # 에이전트
+  coding: { s: 0.1, z: -1.24, r: 31.3, estimated: true }  # 코딩
+  agentic: { s: 2.6, z: -1.09, r: 33.7, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 2.2, z: -1.51, r: 27.3, estimated: false }  # 긴문맥
-  instruction: { s: 1.4, z: -2.16, r: 17.6, estimated: false }  # 지시 따르기
+  long_context: { s: 1.9, z: -1.52, r: 27.2, estimated: false }  # 긴문맥
+  instruction: { s: 1.5, z: -2.18, r: 17.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek R1 Distill Qwen 1.5B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-07
-timestamp: 2026-11-07T00:00:00Z
+updated: 2026-11-08
+timestamp: 2026-11-08T00:00:00Z
 ---
 
 # DeepSeek R1 Distill Qwen 1.5B
@@ -43,14 +43,14 @@ DeepSeek · Open · Tiny · 컨텍스트 128k · 종합지능 **None** · ⚠️
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 18.3 | -2.11 | 실측 | [[gpqa-diamond]] 10.0%×0.4, [[humanitys-last-exam]] 3.0%×0.3 |
-| 추론 | 20.5 | -1.97 | 실측 | [[gpqa-diamond]] 10.0%×1.0, [[humanitys-last-exam]] 3.0%×1.0 |
-| 코딩 | 31.3 | -1.25 | 추정 | (추정) |
-| 에이전트 | 33.6 | -1.09 | 추정 | (추정) |
+| 전문 지식 | 18.3 | -2.12 | 실측 | [[gpqa-diamond]] 9.8%×0.4, [[humanitys-last-exam]] 3.1%×0.3 |
+| 추론 | 20.5 | -1.97 | 실측 | [[gpqa-diamond]] 9.8%×1.0, [[humanitys-last-exam]] 3.1%×1.0 |
+| 코딩 | 31.3 | -1.24 | 추정 | (추정) |
+| 에이전트 | 33.7 | -1.09 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 27.3 | -1.51 | 실측 | [[aa-lcr]] 2.0%×1.0 |
-| 지시 따르기 | 17.6 | -2.16 | 실측 | [[ifbench]] 13.0%×1.0 |
+| 긴문맥 | 27.2 | -1.52 | 실측 | [[aa-lcr]] 1.7%×1.0 |
+| 지시 따르기 | 17.3 | -2.18 | 실측 | [[ifbench]] 13.2%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

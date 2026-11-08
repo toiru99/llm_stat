@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 60.5, z: 0.48, r: 57.2, estimated: false }  # 전문 지식
-  reasoning: { s: 56.1, z: 0.47, r: 57.0, estimated: false }  # 추론
-  coding: { s: 74.2, z: 1.24, r: 68.6, estimated: false }  # 코딩
-  agentic: { s: 41.3, z: 0.24, r: 53.5, estimated: false }  # 에이전트
+  knowledge: { s: 60.7, z: 0.5, r: 57.5, estimated: false }  # 전문 지식
+  reasoning: { s: 56.2, z: 0.48, r: 57.2, estimated: false }  # 추론
+  coding: { s: 74.7, z: 1.24, r: 68.7, estimated: false }  # 코딩
+  agentic: { s: 40.9, z: 0.23, r: 53.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 82.0, z: 0.89, r: 63.3, estimated: false }  # 긴문맥
-  instruction: { s: 77.5, z: 1.02, r: 65.3, estimated: false }  # 지시 따르기
+  long_context: { s: 82.3, z: 0.89, r: 63.3, estimated: false }  # 긴문맥
+  instruction: { s: 76.7, z: 1.01, r: 65.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — KAT-Coder-Pro V2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-07
-timestamp: 2026-11-07T00:00:00Z
+updated: 2026-11-08
+timestamp: 2026-11-08T00:00:00Z
 ---
 
 # KAT-Coder-Pro V2
@@ -43,14 +43,14 @@ KwaiKAT · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 57.2 | +0.48 | 실측 | [[gpqa-diamond]] 85.0%×0.4, [[humanitys-last-exam]] 16.0%×0.3 |
-| 추론 | 57.0 | +0.47 | 실측 | [[gpqa-diamond]] 85.0%×1.0, [[humanitys-last-exam]] 16.0%×1.0 |
-| 코딩 | 68.6 | +1.24 | 실측 | [[terminal-bench]] 49.0%×0.5 |
-| 에이전트 | 53.5 | +0.24 | 실측 | [[gdpval]] 742.0%×1.0, [[tau3-banking]] 5.0%×1.0, [[terminal-bench]] 49.0%×1.0 |
+| 전문 지식 | 57.5 | +0.5 | 실측 | [[gpqa-diamond]] 85.5%×0.4, [[humanitys-last-exam]] 16.1%×0.3 |
+| 추론 | 57.2 | +0.48 | 실측 | [[gpqa-diamond]] 85.5%×1.0, [[humanitys-last-exam]] 16.1%×1.0 |
+| 코딩 | 68.7 | +1.24 | 실측 | [[terminal-bench]] 49.2%×0.5 |
+| 에이전트 | 53.4 | +0.23 | 실측 | [[gdpval]] 742.0%×1.0, [[tau3-banking]] 4.5%×1.0, [[terminal-bench]] 49.2%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 63.3 | +0.89 | 실측 | [[aa-lcr]] 73.0%×1.0 |
-| 지시 따르기 | 65.3 | +1.02 | 실측 | [[ifbench]] 67.0%×1.0 |
+| 지시 따르기 | 65.1 | +1.01 | 실측 | [[ifbench]] 66.7%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

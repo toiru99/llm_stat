@@ -12,20 +12,20 @@ size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 80.0, z: 1.34, r: 70.0, estimated: false }  # 전문 지식
-  reasoning: { s: 63.6, z: 0.8, r: 62.0, estimated: false }  # 추론
-  coding: { s: 90.0, z: 1.77, r: 76.5, estimated: false }  # 코딩
-  agentic: { s: 90.5, z: 1.93, r: 78.9, estimated: false }  # 에이전트
+  knowledge: { s: 80.1, z: 1.36, r: 70.4, estimated: false }  # 전문 지식
+  reasoning: { s: 63.7, z: 0.82, r: 62.3, estimated: false }  # 추론
+  coding: { s: 90.0, z: 1.76, r: 76.3, estimated: false }  # 코딩
+  agentic: { s: 90.5, z: 1.92, r: 78.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 96.6, z: 1.33, r: 69.9, estimated: false }  # 긴문맥
-  instruction: { s: 75.5, z: 0.94, r: 64.1, estimated: true }  # 지시 따르기
+  long_context: { s: 97.3, z: 1.34, r: 70.1, estimated: false }  # 긴문맥
+  instruction: { s: 73.6, z: 0.88, r: 63.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2.6-Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-07
-timestamp: 2026-11-07T00:00:00Z
+updated: 2026-11-08
+timestamp: 2026-11-08T00:00:00Z
 ---
 
 # MiMo-V2.6-Pro
@@ -43,14 +43,14 @@ Xiaomi · Open · Large · 컨텍스트 1M · 종합지능 **30.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 70.0 | +1.34 | 실측 | [[humanitys-last-exam]] 49.0%×0.3 |
-| 추론 | 62.0 | +0.8 | 실측 | [[critpt]] 34.0%×1.0, [[humanitys-last-exam]] 49.0%×1.0 |
-| 코딩 | 76.5 | +1.77 | 실측 | [[scicode]] 61.0%×1.0 |
-| 에이전트 | 78.9 | +1.93 | 실측 | [[gdpval]] 1689.0%×1.0 |
+| 전문 지식 | 70.4 | +1.36 | 실측 | [[humanitys-last-exam]] 49.4%×0.3 |
+| 추론 | 62.3 | +0.82 | 실측 | [[critpt]] 34.0%×1.0, [[humanitys-last-exam]] 49.4%×1.0 |
+| 코딩 | 76.3 | +1.76 | 실측 | [[scicode]] 60.9%×1.0 |
+| 에이전트 | 78.9 | +1.92 | 실측 | [[gdpval]] 1689.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 69.9 | +1.33 | 실측 | [[aa-lcr]] 86.0%×1.0 |
-| 지시 따르기 | 64.1 | +0.94 | 추정 | (추정) |
+| 긴문맥 | 70.1 | +1.34 | 실측 | [[aa-lcr]] 86.3%×1.0 |
+| 지시 따르기 | 63.2 | +0.88 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
