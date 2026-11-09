@@ -18,14 +18,14 @@ radar:
   agentic: { s: 4.6, z: -1.02, r: 34.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 16.6, z: -1.08, r: 33.8, estimated: false }  # 긴문맥
-  instruction: { s: 47.1, z: -0.25, r: 46.2, estimated: false }  # 지시 따르기
+  long_context: { s: 16.6, z: -1.08, r: 33.7, estimated: false }  # 긴문맥
+  instruction: { s: 47.1, z: -0.25, r: 46.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Mi:dm K 2.5 Pro Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Mi:dm K 2.5 Pro Preview
@@ -49,8 +49,8 @@ Korea Telecom · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **N
 | 에이전트 | 34.7 | -1.02 | 실측 | [[terminal-bench]] 3.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 33.8 | -1.08 | 실측 | [[aa-lcr]] 14.7%×1.0 |
-| 지시 따르기 | 46.2 | -0.25 | 실측 | [[ifbench]] 45.6%×1.0 |
+| 긴문맥 | 33.7 | -1.08 | 실측 | [[aa-lcr]] 14.7%×1.0 |
+| 지시 따르기 | 46.3 | -0.25 | 실측 | [[ifbench]] 45.6%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

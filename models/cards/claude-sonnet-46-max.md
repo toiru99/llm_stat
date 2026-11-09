@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 74.4, z: 1.11, r: 66.6, estimated: false }  # 전문 지식
   reasoning: { s: 71.9, z: 1.19, r: 67.8, estimated: false }  # 추론
   coding: { s: 74.8, z: 1.25, r: 68.7, estimated: false }  # 코딩
-  agentic: { s: 68.6, z: 1.18, r: 67.6, estimated: false }  # 에이전트
+  agentic: { s: 68.6, z: 1.17, r: 67.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 78.4, z: 0.35, r: 55.3, estimated: false }  # 멀티모달
-  long_context: { s: 90.2, z: 1.12, r: 66.9, estimated: false }  # 긴문맥
-  instruction: { s: 62.5, z: 0.4, r: 56.1, estimated: false }  # 지시 따르기
+  multimodal: { s: 78.4, z: 0.35, r: 55.2, estimated: false }  # 멀티모달
+  long_context: { s: 90.2, z: 1.12, r: 66.8, estimated: false }  # 긴문맥
+  instruction: { s: 62.5, z: 0.41, r: 56.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 4.6 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Claude Sonnet 4.6 (max)
@@ -46,11 +46,11 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 | 전문 지식 | 66.6 | +1.11 | 실측 | [[gpqa-diamond]] 87.5%×0.4, [[humanitys-last-exam]] 33.6%×0.3 |
 | 추론 | 67.8 | +1.19 | 실측 | [[gpqa-diamond]] 87.5%×1.0, [[humanitys-last-exam]] 33.6%×1.0 |
 | 코딩 | 68.7 | +1.25 | 실측 | [[scicode]] 50.1%×1.0, [[terminal-bench]] 53.0%×0.5 |
-| 에이전트 | 67.6 | +1.18 | 실측 | [[apex-agents]] 28.0%×1.0, [[gdpval]] 1241.0%×1.0, [[itbench]] 39.8%×1.0, [[tau3-banking]] 34.4%×1.0, [[terminal-bench]] 53.0%×1.0 |
+| 에이전트 | 67.6 | +1.17 | 실측 | [[apex-agents]] 28.0%×1.0, [[gdpval]] 1241.0%×1.0, [[itbench]] 39.8%×1.0, [[tau3-banking]] 34.4%×1.0, [[terminal-bench]] 53.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 55.3 | +0.35 | 실측 | [[mmmu-pro]] 73.0%×1.0 |
-| 긴문맥 | 66.9 | +1.12 | 실측 | [[aa-lcr]] 80.0%×1.0 |
-| 지시 따르기 | 56.1 | +0.4 | 실측 | [[ifbench]] 56.6%×1.0 |
+| 멀티모달 | 55.2 | +0.35 | 실측 | [[mmmu-pro]] 73.0%×1.0 |
+| 긴문맥 | 66.8 | +1.12 | 실측 | [[aa-lcr]] 80.0%×1.0 |
+| 지시 따르기 | 56.1 | +0.41 | 실측 | [[ifbench]] 56.6%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

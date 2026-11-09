@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 24.1, z: -1.11, r: 33.3, estimated: false }  # 전문 지식
   reasoning: { s: 21.8, z: -1.06, r: 34.1, estimated: false }  # 추론
-  coding: { s: 20.1, z: -0.58, r: 41.4, estimated: false }  # 코딩
+  coding: { s: 20.1, z: -0.58, r: 41.3, estimated: false }  # 코딩
   agentic: { s: 9.5, z: -0.85, r: 37.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 44.6, z: -1.35, r: 29.7, estimated: false }  # 멀티모달
+  multimodal: { s: 44.6, z: -1.36, r: 29.7, estimated: false }  # 멀티모달
   long_context: { s: 8.2, z: -1.33, r: 30.0, estimated: false }  # 긴문맥
   instruction: { s: 27.7, z: -1.07, r: 33.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 3 27B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Gemma 3 27B
@@ -45,10 +45,10 @@ Google · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠️ 
 |---|---|---|---|---|
 | 전문 지식 | 33.3 | -1.11 | 실측 | [[gpqa-diamond]] 42.8%×0.4, [[humanitys-last-exam]] 4.4%×0.3 |
 | 추론 | 34.1 | -1.06 | 실측 | [[gpqa-diamond]] 42.8%×1.0, [[humanitys-last-exam]] 4.4%×1.0 |
-| 코딩 | 41.4 | -0.58 | 실측 | [[scicode]] 23.3%×1.0, [[terminal-bench]] 3.8%×0.5 |
+| 코딩 | 41.3 | -0.58 | 실측 | [[scicode]] 23.3%×1.0, [[terminal-bench]] 3.8%×0.5 |
 | 에이전트 | 37.2 | -0.85 | 실측 | [[gdpval]] 401.0%×1.0, [[tau3-banking]] 0.8%×1.0, [[terminal-bench]] 3.8%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 29.7 | -1.35 | 실측 | [[mmmu-pro]] 48.0%×1.0 |
+| 멀티모달 | 29.7 | -1.36 | 실측 | [[mmmu-pro]] 48.0%×1.0 |
 | 긴문맥 | 30.0 | -1.33 | 실측 | [[aa-lcr]] 7.3%×1.0 |
 | 지시 따르기 | 33.9 | -1.07 | 실측 | [[ifbench]] 31.8%×1.0 |
 

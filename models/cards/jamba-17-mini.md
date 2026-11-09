@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 17.1, z: -1.42, r: 28.7, estimated: false }  # 전문 지식
-  reasoning: { s: 15.7, z: -1.34, r: 30.0, estimated: false }  # 추론
+  reasoning: { s: 15.7, z: -1.34, r: 29.9, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.25, r: 31.3, estimated: false }  # 코딩
   agentic: { s: 0.0, z: -1.18, r: 32.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba 1.7 Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Jamba 1.7 Mini
@@ -44,7 +44,7 @@ AI21 Labs · Open · Medium · 컨텍스트 258k · 종합지능 **None**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 28.7 | -1.42 | 실측 | [[gpqa-diamond]] 32.2%×0.4, [[humanitys-last-exam]] 4.4%×0.3 |
-| 추론 | 30.0 | -1.34 | 실측 | [[gpqa-diamond]] 32.2%×1.0, [[humanitys-last-exam]] 4.4%×1.0 |
+| 추론 | 29.9 | -1.34 | 실측 | [[gpqa-diamond]] 32.2%×1.0, [[humanitys-last-exam]] 4.4%×1.0 |
 | 코딩 | 31.3 | -1.25 | 실측 | [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 32.4 | -1.18 | 실측 | [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

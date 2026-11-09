@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 45.4, z: -0.17, r: 47.4, estimated: false }  # 전문 지식
   reasoning: { s: 41.0, z: -0.2, r: 47.0, estimated: false }  # 추론
   coding: { s: 16.1, z: -0.71, r: 39.3, estimated: false }  # 코딩
-  agentic: { s: 16.1, z: -0.62, r: 40.6, estimated: false }  # 에이전트
+  agentic: { s: 16.1, z: -0.63, r: 40.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 41.4, z: -0.34, r: 44.9, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling-1T
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Ling-1T
@@ -46,7 +46,7 @@ InclusionAI · Open · Large · 컨텍스트 128k · 종합지능 **None** · �
 | 전문 지식 | 47.4 | -0.17 | 실측 | [[gpqa-diamond]] 71.9%×0.4, [[humanitys-last-exam]] 7.3%×0.3 |
 | 추론 | 47.0 | -0.2 | 실측 | [[gpqa-diamond]] 71.9%×1.0, [[humanitys-last-exam]] 7.3%×1.0 |
 | 코딩 | 39.3 | -0.71 | 실측 | [[terminal-bench]] 10.6%×0.5 |
-| 에이전트 | 40.6 | -0.62 | 실측 | [[terminal-bench]] 10.6%×1.0 |
+| 에이전트 | 40.6 | -0.63 | 실측 | [[terminal-bench]] 10.6%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 44.9 | -0.34 | 실측 | [[aa-lcr]] 36.7%×1.0 |

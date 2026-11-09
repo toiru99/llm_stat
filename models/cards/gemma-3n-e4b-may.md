@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 14.5, z: -1.54, r: 26.9, estimated: false }  # 전문 지식
-  reasoning: { s: 13.5, z: -1.44, r: 28.5, estimated: false }  # 추론
+  reasoning: { s: 13.5, z: -1.44, r: 28.4, estimated: false }  # 추론
   coding: { s: 0.1, z: -1.25, r: 31.3, estimated: true }  # 코딩
   agentic: { s: 0.0, z: -1.18, r: 32.4, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 3n E4B (May)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Gemma 3n E4B (May)
@@ -44,7 +44,7 @@ Google · Open · Small · 컨텍스트 32k · 종합지능 **None** · ⚠️ p
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 26.9 | -1.54 | 실측 | [[gpqa-diamond]] 27.8%×0.4, [[humanitys-last-exam]] 4.8%×0.3 |
-| 추론 | 28.5 | -1.44 | 실측 | [[gpqa-diamond]] 27.8%×1.0, [[humanitys-last-exam]] 4.8%×1.0 |
+| 추론 | 28.4 | -1.44 | 실측 | [[gpqa-diamond]] 27.8%×1.0, [[humanitys-last-exam]] 4.8%×1.0 |
 | 코딩 | 31.3 | -1.25 | 추정 | (추정) |
 | 에이전트 | 32.4 | -1.18 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |

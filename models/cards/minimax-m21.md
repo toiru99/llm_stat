@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 64.1, z: 0.65, r: 59.8, estimated: false }  # 전문 지식
   reasoning: { s: 60.6, z: 0.68, r: 60.2, estimated: false }  # 추론
-  coding: { s: 43.7, z: 0.21, r: 53.2, estimated: false }  # 코딩
+  coding: { s: 43.7, z: 0.21, r: 53.1, estimated: false }  # 코딩
   agentic: { s: 43.7, z: 0.32, r: 54.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax-M2.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # MiniMax-M2.1
@@ -45,7 +45,7 @@ MiniMax · Open · Large · 컨텍스트 205k · 종합지능 **None** · ⚠️
 |---|---|---|---|---|
 | 전문 지식 | 59.8 | +0.65 | 실측 | [[gpqa-diamond]] 83.0%×0.4, [[humanitys-last-exam]] 23.2%×0.3 |
 | 추론 | 60.2 | +0.68 | 실측 | [[gpqa-diamond]] 83.0%×1.0, [[humanitys-last-exam]] 23.2%×1.0 |
-| 코딩 | 53.2 | +0.21 | 실측 | [[terminal-bench]] 28.8%×0.5 |
+| 코딩 | 53.1 | +0.21 | 실측 | [[terminal-bench]] 28.8%×0.5 |
 | 에이전트 | 54.8 | +0.32 | 실측 | [[terminal-bench]] 28.8%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

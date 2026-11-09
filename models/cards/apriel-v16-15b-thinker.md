@@ -18,14 +18,14 @@ radar:
   agentic: { s: 21.9, z: -0.43, r: 43.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 59.2, z: 0.2, r: 52.9, estimated: true }  # 긴문맥
-  instruction: { s: 80.1, z: 1.15, r: 67.2, estimated: false }  # 지시 따르기
+  long_context: { s: 59.2, z: 0.19, r: 52.9, estimated: true }  # 긴문맥
+  instruction: { s: 80.1, z: 1.15, r: 67.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Apriel-v1.6-15B-Thinker
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Apriel-v1.6-15B-Thinker
@@ -49,8 +49,8 @@ ServiceNow · Open · Small · 컨텍스트 128k · 종합지능 **None**
 | 에이전트 | 43.6 | -0.43 | 실측 | [[terminal-bench]] 14.4%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 52.9 | +0.2 | 추정 | (추정) |
-| 지시 따르기 | 67.2 | +1.15 | 실측 | [[ifbench]] 69.1%×1.0 |
+| 긴문맥 | 52.9 | +0.19 | 추정 | (추정) |
+| 지시 따르기 | 67.3 | +1.15 | 실측 | [[ifbench]] 69.1%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

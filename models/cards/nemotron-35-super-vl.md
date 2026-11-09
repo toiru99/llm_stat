@@ -14,8 +14,8 @@ is_reasoning: true
 radar:
   knowledge: { s: 49.1, z: -0.01, r: 49.8, estimated: false }  # 전문 지식
   reasoning: { s: 33.9, z: -0.52, r: 42.2, estimated: false }  # 추론
-  coding: { s: 68.2, z: 1.03, r: 65.4, estimated: false }  # 코딩
-  agentic: { s: 62.3, z: 0.96, r: 64.3, estimated: false }  # 에이전트
+  coding: { s: 68.2, z: 1.02, r: 65.4, estimated: false }  # 코딩
+  agentic: { s: 62.3, z: 0.95, r: 64.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 77.8, z: 0.75, r: 61.3, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3.5 Super VL
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Nemotron 3.5 Super VL
@@ -45,8 +45,8 @@ NVIDIA · Open · Medium · 컨텍스트 1M · 종합지능 **14.0**
 |---|---|---|---|---|
 | 전문 지식 | 49.8 | -0.01 | 실측 | [[humanitys-last-exam]] 30.7%×0.3 |
 | 추론 | 42.2 | -0.52 | 실측 | [[critpt]] 13.5%×1.0, [[humanitys-last-exam]] 30.7%×1.0 |
-| 코딩 | 65.4 | +1.03 | 실측 | [[scicode]] 47.8%×1.0 |
-| 에이전트 | 64.3 | +0.96 | 실측 | [[gdpval]] 1162.0%×1.0 |
+| 코딩 | 65.4 | +1.02 | 실측 | [[scicode]] 47.8%×1.0 |
+| 에이전트 | 64.3 | +0.95 | 실측 | [[gdpval]] 1162.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 61.3 | +0.75 | 실측 | [[aa-lcr]] 69.0%×1.0 |

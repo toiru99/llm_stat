@@ -12,20 +12,20 @@ size_class: Small
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 19.8, z: -1.3, r: 30.4, estimated: false }  # 전문 지식
-  reasoning: { s: 18.1, z: -1.23, r: 31.6, estimated: false }  # 추론
+  knowledge: { s: 19.8, z: -1.31, r: 30.4, estimated: false }  # 전문 지식
+  reasoning: { s: 18.1, z: -1.23, r: 31.5, estimated: false }  # 추론
   coding: { s: 0.7, z: -1.23, r: 31.6, estimated: true }  # 코딩
   agentic: { s: 0.0, z: -1.17, r: 32.4, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 29.7, z: -2.1, r: 18.5, estimated: false }  # 멀티모달
+  multimodal: { s: 29.7, z: -2.11, r: 18.4, estimated: false }  # 멀티모달
   long_context: { s: 2.9, z: -1.49, r: 27.6, estimated: true }  # 긴문맥
   instruction: { s: 31.7, z: -0.9, r: 36.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 1.5 Flash-8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Gemini 1.5 Flash-8B
@@ -43,12 +43,12 @@ Google · Proprietary · Small · 컨텍스트 1M · 종합지능 **None** · �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 30.4 | -1.3 | 실측 | [[gpqa-diamond]] 35.9%×0.4, [[humanitys-last-exam]] 4.7%×0.3 |
-| 추론 | 31.6 | -1.23 | 실측 | [[gpqa-diamond]] 35.9%×1.0, [[humanitys-last-exam]] 4.7%×1.0 |
+| 전문 지식 | 30.4 | -1.31 | 실측 | [[gpqa-diamond]] 35.9%×0.4, [[humanitys-last-exam]] 4.7%×0.3 |
+| 추론 | 31.5 | -1.23 | 실측 | [[gpqa-diamond]] 35.9%×1.0, [[humanitys-last-exam]] 4.7%×1.0 |
 | 코딩 | 31.6 | -1.23 | 추정 | (추정) |
 | 에이전트 | 32.4 | -1.17 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 18.5 | -2.1 | 실측 | [[mmmu-pro]] 37.0%×1.0 |
+| 멀티모달 | 18.4 | -2.11 | 실측 | [[mmmu-pro]] 37.0%×1.0 |
 | 긴문맥 | 27.6 | -1.49 | 추정 | (추정) |
 | 지시 따르기 | 36.5 | -0.9 | 추정 | (추정) |
 

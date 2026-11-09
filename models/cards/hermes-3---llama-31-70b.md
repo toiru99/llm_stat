@@ -12,7 +12,7 @@ size_class: Medium
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 22.1, z: -1.2, r: 32.0, estimated: false }  # 전문 지식
+  knowledge: { s: 22.1, z: -1.2, r: 31.9, estimated: false }  # 전문 지식
   reasoning: { s: 19.9, z: -1.15, r: 32.8, estimated: false }  # 추론
   coding: { s: 9.2, z: -0.94, r: 35.9, estimated: true }  # 코딩
   agentic: { s: 8.1, z: -0.9, r: 36.5, estimated: true }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hermes 3 - Llama-3.1 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Hermes 3 - Llama-3.1 70B
@@ -43,7 +43,7 @@ Nous Research · Open · Medium · 컨텍스트 128k · 종합지능 **None** ·
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 32.0 | -1.2 | 실측 | [[gpqa-diamond]] 40.1%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
+| 전문 지식 | 31.9 | -1.2 | 실측 | [[gpqa-diamond]] 40.1%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
 | 추론 | 32.8 | -1.15 | 실측 | [[gpqa-diamond]] 40.1%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
 | 코딩 | 35.9 | -0.94 | 추정 | (추정) |
 | 에이전트 | 36.5 | -0.9 | 추정 | (추정) |

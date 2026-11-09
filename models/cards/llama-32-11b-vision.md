@@ -17,15 +17,15 @@ radar:
   coding: { s: 1.2, z: -1.21, r: 31.9, estimated: false }  # 코딩
   agentic: { s: 1.2, z: -1.13, r: 33.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 18.9, z: -2.65, r: 10.3, estimated: false }  # 멀티모달
+  multimodal: { s: 18.9, z: -2.65, r: 10.2, estimated: false }  # 멀티모달
   long_context: { s: 14.3, z: -1.15, r: 32.7, estimated: false }  # 긴문맥
   instruction: { s: 25.7, z: -1.16, r: 32.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.2 11B (Vision)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Llama 3.2 11B (Vision)
@@ -48,7 +48,7 @@ Meta · Open · Small · 컨텍스트 128k · 종합지능 **None**
 | 코딩 | 31.9 | -1.21 | 실측 | [[terminal-bench]] 0.8%×0.5 |
 | 에이전트 | 33.0 | -1.13 | 실측 | [[terminal-bench]] 0.8%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 10.3 | -2.65 | 실측 | [[mmmu-pro]] 29.0%×1.0 |
+| 멀티모달 | 10.2 | -2.65 | 실측 | [[mmmu-pro]] 29.0%×1.0 |
 | 긴문맥 | 32.7 | -1.15 | 실측 | [[aa-lcr]] 12.7%×1.0 |
 | 지시 따르기 | 32.6 | -1.16 | 실측 | [[ifbench]] 30.4%×1.0 |
 

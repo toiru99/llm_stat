@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 83.0, z: 1.49, r: 72.3, estimated: false }  # 전문 지식
   reasoning: { s: 80.9, z: 1.59, r: 73.9, estimated: false }  # 추론
-  coding: { s: 77.5, z: 1.34, r: 70.1, estimated: false }  # 코딩
-  agentic: { s: 63.8, z: 1.01, r: 65.1, estimated: false }  # 에이전트
+  coding: { s: 77.5, z: 1.34, r: 70.0, estimated: false }  # 코딩
+  agentic: { s: 63.8, z: 1.0, r: 65.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 91.9, z: 1.03, r: 65.5, estimated: false }  # 멀티모달
-  long_context: { s: 90.2, z: 1.12, r: 66.9, estimated: false }  # 긴문맥
+  long_context: { s: 90.2, z: 1.12, r: 66.8, estimated: false }  # 긴문맥
   instruction: { s: 86.8, z: 1.44, r: 71.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.6 Flash (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Gemini 3.6 Flash (high)
@@ -45,11 +45,11 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 |---|---|---|---|---|
 | 전문 지식 | 72.3 | +1.49 | 실측 | [[gpqa-diamond]] 92.8%×0.4, [[humanitys-last-exam]] 40.8%×0.3 |
 | 추론 | 73.9 | +1.59 | 실측 | [[gpqa-diamond]] 92.8%×1.0, [[humanitys-last-exam]] 40.8%×1.0 |
-| 코딩 | 70.1 | +1.34 | 실측 | [[scicode]] 53.4%×1.0 |
-| 에이전트 | 65.1 | +1.01 | 실측 | [[gdpval]] 1295.0%×1.0, [[tau3-banking]] 29.9%×1.0 |
+| 코딩 | 70.0 | +1.34 | 실측 | [[scicode]] 53.4%×1.0 |
+| 에이전트 | 65.1 | +1.0 | 실측 | [[gdpval]] 1295.0%×1.0, [[tau3-banking]] 29.9%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 65.5 | +1.03 | 실측 | [[mmmu-pro]] 83.0%×1.0 |
-| 긴문맥 | 66.9 | +1.12 | 실측 | [[aa-lcr]] 80.0%×1.0 |
+| 긴문맥 | 66.8 | +1.12 | 실측 | [[aa-lcr]] 80.0%×1.0 |
 | 지시 따르기 | 71.6 | +1.44 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

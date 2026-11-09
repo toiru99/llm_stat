@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 77.8, z: 1.26, r: 68.9, estimated: false }  # 전문 지식
   reasoning: { s: 61.5, z: 0.72, r: 60.8, estimated: false }  # 추론
-  coding: { s: 77.5, z: 1.34, r: 70.1, estimated: false }  # 코딩
-  agentic: { s: 78.5, z: 1.51, r: 72.7, estimated: false }  # 에이전트
+  coding: { s: 77.5, z: 1.34, r: 70.0, estimated: false }  # 코딩
+  agentic: { s: 78.5, z: 1.51, r: 72.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 86.5, z: 0.76, r: 61.4, estimated: false }  # 멀티모달
   long_context: { s: 89.9, z: 1.11, r: 66.7, estimated: false }  # 긴문맥
-  instruction: { s: 71.6, z: 0.79, r: 61.8, estimated: true }  # 지시 따르기
+  instruction: { s: 68.0, z: 0.64, r: 59.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax-M3.1-Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # MiniMax-M3.1-Flash
@@ -34,7 +34,7 @@ MiniMax · Open · Large · 컨텍스트 1M · 종합지능 **29.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 코딩
-- **약점**: 멀티모달, 추론
+- **약점**: 추론, 지시 따르기
 
 ## 실용 지표
 `입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · None t/s · TTFT Nones · 1M ctx` · 가성비 288.6
@@ -45,12 +45,12 @@ MiniMax · Open · Large · 컨텍스트 1M · 종합지능 **29.0**
 |---|---|---|---|---|
 | 전문 지식 | 68.9 | +1.26 | 실측 | [[humanitys-last-exam]] 48.0%×0.3 |
 | 추론 | 60.8 | +0.72 | 실측 | [[critpt]] 32.5%×1.0, [[humanitys-last-exam]] 48.0%×1.0 |
-| 코딩 | 70.1 | +1.34 | 실측 | [[scicode]] 53.4%×1.0 |
-| 에이전트 | 72.7 | +1.51 | 실측 | [[gdpval]] 1465.0%×1.0 |
+| 코딩 | 70.0 | +1.34 | 실측 | [[scicode]] 53.4%×1.0 |
+| 에이전트 | 72.6 | +1.51 | 실측 | [[gdpval]] 1465.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 61.4 | +0.76 | 실측 | [[mmmu-pro]] 79.0%×1.0 |
 | 긴문맥 | 66.7 | +1.11 | 실측 | [[aa-lcr]] 79.7%×1.0 |
-| 지시 따르기 | 61.8 | +0.79 | 추정 | (추정) |
+| 지시 따르기 | 59.6 | +0.64 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

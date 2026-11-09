@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 46.1, z: -0.14, r: 47.8, estimated: false }  # 전문 지식
   reasoning: { s: 41.5, z: -0.18, r: 47.4, estimated: false }  # 추론
   coding: { s: 48.3, z: 0.36, r: 55.4, estimated: false }  # 코딩
-  agentic: { s: 48.3, z: 0.48, r: 57.2, estimated: false }  # 에이전트
+  agentic: { s: 48.3, z: 0.47, r: 57.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 47.4, z: -0.16, r: 47.6, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hy3-preview (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Hy3-preview (non-reasoning)
@@ -37,7 +37,7 @@ Tencent · Open · Large · 컨텍스트 256k · 종합지능 **None** · ⚠️
 - **약점**: 긴문맥, 추론
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.21 · 혼합 $0.0483/1M · None t/s · TTFT Nones · 256k ctx`
+`입력 $0.063 · 출력 $0.21 · 혼합 $0.0483/1M · None t/s · TTFT Nones · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Tencent · Open · Large · 컨텍스트 256k · 종합지능 **None** · ⚠️
 | 전문 지식 | 47.8 | -0.14 | 실측 | [[gpqa-diamond]] 73.2%×0.4, [[humanitys-last-exam]] 7.0%×0.3 |
 | 추론 | 47.4 | -0.18 | 실측 | [[gpqa-diamond]] 73.2%×1.0, [[humanitys-last-exam]] 7.0%×1.0 |
 | 코딩 | 55.4 | +0.36 | 실측 | [[terminal-bench]] 31.8%×0.5 |
-| 에이전트 | 57.2 | +0.48 | 실측 | [[terminal-bench]] 31.8%×1.0 |
+| 에이전트 | 57.1 | +0.47 | 실측 | [[terminal-bench]] 31.8%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 47.6 | -0.16 | 실측 | [[aa-lcr]] 42.0%×1.0 |

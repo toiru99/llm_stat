@@ -14,8 +14,8 @@ is_reasoning: true
 radar:
   knowledge: { s: 46.0, z: -0.15, r: 47.8, estimated: false }  # 전문 지식
   reasoning: { s: 42.3, z: -0.14, r: 47.9, estimated: false }  # 추론
-  coding: { s: 40.9, z: 0.12, r: 51.8, estimated: false }  # 코딩
-  agentic: { s: 12.0, z: -0.76, r: 38.5, estimated: false }  # 에이전트
+  coding: { s: 40.9, z: 0.12, r: 51.7, estimated: false }  # 코딩
+  agentic: { s: 12.0, z: -0.77, r: 38.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 39.1, z: -0.41, r: 43.9, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — gpt-oss-20b (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # gpt-oss-20b (high)
@@ -45,8 +45,8 @@ OpenAI · Open · Small · 컨텍스트 131k · 종합지능 **None**
 |---|---|---|---|---|
 | 전문 지식 | 47.8 | -0.15 | 실측 | [[gpqa-diamond]] 68.8%×0.4, [[humanitys-last-exam]] 11.0%×0.3 |
 | 추론 | 47.9 | -0.14 | 실측 | [[gpqa-diamond]] 68.8%×1.0, [[humanitys-last-exam]] 11.0%×1.0 |
-| 코딩 | 51.8 | +0.12 | 실측 | [[scicode]] 38.9%×1.0, [[terminal-bench]] 10.6%×0.5 |
-| 에이전트 | 38.5 | -0.76 | 실측 | [[apex-agents]] 0.7%×1.0, [[gdpval]] 347.0%×1.0, [[tau3-banking]] 7.0%×1.0, [[terminal-bench]] 10.6%×1.0 |
+| 코딩 | 51.7 | +0.12 | 실측 | [[scicode]] 38.9%×1.0, [[terminal-bench]] 10.6%×0.5 |
+| 에이전트 | 38.5 | -0.77 | 실측 | [[apex-agents]] 0.7%×1.0, [[gdpval]] 347.0%×1.0, [[tau3-banking]] 7.0%×1.0, [[terminal-bench]] 10.6%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 43.9 | -0.41 | 실측 | [[aa-lcr]] 34.7%×1.0 |

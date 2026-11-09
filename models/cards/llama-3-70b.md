@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 21.0, z: -1.25, r: 31.2, estimated: false }  # 전문 지식
-  reasoning: { s: 19.1, z: -1.18, r: 32.2, estimated: false }  # 추론
+  reasoning: { s: 19.1, z: -1.19, r: 32.2, estimated: false }  # 추론
   coding: { s: 1.2, z: -1.21, r: 31.9, estimated: false }  # 코딩
   agentic: { s: 1.2, z: -1.13, r: 33.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Llama 3 70B
@@ -44,7 +44,7 @@ Meta · Open · Medium · 컨텍스트 8k · 종합지능 **None** · ⚠️ pas
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 31.2 | -1.25 | 실측 | [[gpqa-diamond]] 37.9%×0.4, [[humanitys-last-exam]] 4.5%×0.3 |
-| 추론 | 32.2 | -1.18 | 실측 | [[gpqa-diamond]] 37.9%×1.0, [[humanitys-last-exam]] 4.5%×1.0 |
+| 추론 | 32.2 | -1.19 | 실측 | [[gpqa-diamond]] 37.9%×1.0, [[humanitys-last-exam]] 4.5%×1.0 |
 | 코딩 | 31.9 | -1.21 | 실측 | [[terminal-bench]] 0.8%×0.5 |
 | 에이전트 | 33.0 | -1.13 | 실측 | [[terminal-bench]] 0.8%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

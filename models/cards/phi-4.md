@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 33.4, z: -0.7, r: 39.5, estimated: false }  # 전문 지식
   reasoning: { s: 29.8, z: -0.7, r: 39.5, estimated: false }  # 추론
-  coding: { s: 5.8, z: -1.06, r: 34.2, estimated: false }  # 코딩
+  coding: { s: 5.8, z: -1.06, r: 34.1, estimated: false }  # 코딩
   agentic: { s: 5.8, z: -0.98, r: 35.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Phi-4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Phi-4
@@ -45,7 +45,7 @@ Microsoft · Open · Small · 컨텍스트 16k · 종합지능 **None**
 |---|---|---|---|---|
 | 전문 지식 | 39.5 | -0.7 | 실측 | [[gpqa-diamond]] 57.5%×0.4, [[humanitys-last-exam]] 3.8%×0.3 |
 | 추론 | 39.5 | -0.7 | 실측 | [[gpqa-diamond]] 57.5%×1.0, [[humanitys-last-exam]] 3.8%×1.0 |
-| 코딩 | 34.2 | -1.06 | 실측 | [[terminal-bench]] 3.8%×0.5 |
+| 코딩 | 34.1 | -1.06 | 실측 | [[terminal-bench]] 3.8%×0.5 |
 | 에이전트 | 35.3 | -0.98 | 실측 | [[terminal-bench]] 3.8%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

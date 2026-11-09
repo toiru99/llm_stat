@@ -12,10 +12,10 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 32.0, z: -0.76, r: 38.5, estimated: false }  # 전문 지식
+  knowledge: { s: 32.0, z: -0.77, r: 38.5, estimated: false }  # 전문 지식
   reasoning: { s: 28.4, z: -0.76, r: 38.5, estimated: false }  # 추론
-  coding: { s: 13.2, z: -0.81, r: 37.9, estimated: true }  # 코딩
-  agentic: { s: 10.7, z: -0.81, r: 37.9, estimated: true }  # 에이전트
+  coding: { s: 13.2, z: -0.81, r: 37.8, estimated: true }  # 코딩
+  agentic: { s: 10.7, z: -0.81, r: 37.8, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 26.1, z: -0.8, r: 38.0, estimated: true }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 3.5 Sonnet (June)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Claude 3.5 Sonnet (June)
@@ -33,7 +33,7 @@ timestamp: 2026-11-08T00:00:00Z
 Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 지시 따르기, 전문 지식
+- **강점**: 지시 따르기, 추론
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
@@ -43,10 +43,10 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None*
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 38.5 | -0.76 | 실측 | [[gpqa-diamond]] 56.0%×0.4, [[humanitys-last-exam]] 3.2%×0.3 |
+| 전문 지식 | 38.5 | -0.77 | 실측 | [[gpqa-diamond]] 56.0%×0.4, [[humanitys-last-exam]] 3.2%×0.3 |
 | 추론 | 38.5 | -0.76 | 실측 | [[gpqa-diamond]] 56.0%×1.0, [[humanitys-last-exam]] 3.2%×1.0 |
-| 코딩 | 37.9 | -0.81 | 추정 | (추정) |
-| 에이전트 | 37.9 | -0.81 | 추정 | (추정) |
+| 코딩 | 37.8 | -0.81 | 추정 | (추정) |
+| 에이전트 | 37.8 | -0.81 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 38.0 | -0.8 | 추정 | (추정) |

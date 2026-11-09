@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 34.6, z: -0.65, r: 40.3, estimated: false }  # 전문 지식
-  reasoning: { s: 30.7, z: -0.66, r: 40.1, estimated: false }  # 추론
-  coding: { s: 10.3, z: -0.9, r: 36.4, estimated: false }  # 코딩
+  reasoning: { s: 30.7, z: -0.66, r: 40.0, estimated: false }  # 추론
+  coding: { s: 10.3, z: -0.91, r: 36.4, estimated: false }  # 코딩
   agentic: { s: 10.3, z: -0.82, r: 37.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 45.9, z: -1.28, r: 30.7, estimated: false }  # 멀티모달
+  multimodal: { s: 45.9, z: -1.29, r: 30.7, estimated: false }  # 멀티모달
   long_context: { s: 21.1, z: -0.95, r: 35.8, estimated: false }  # 긴문맥
   instruction: { s: 39.9, z: -0.55, r: 41.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nova 2.0 Lite (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Nova 2.0 Lite (non-reasoning)
@@ -44,11 +44,11 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 40.3 | -0.65 | 실측 | [[gpqa-diamond]] 60.3%×0.4, [[humanitys-last-exam]] 2.9%×0.3 |
-| 추론 | 40.1 | -0.66 | 실측 | [[gpqa-diamond]] 60.3%×1.0, [[humanitys-last-exam]] 2.9%×1.0 |
-| 코딩 | 36.4 | -0.9 | 실측 | [[terminal-bench]] 6.8%×0.5 |
+| 추론 | 40.0 | -0.66 | 실측 | [[gpqa-diamond]] 60.3%×1.0, [[humanitys-last-exam]] 2.9%×1.0 |
+| 코딩 | 36.4 | -0.91 | 실측 | [[terminal-bench]] 6.8%×0.5 |
 | 에이전트 | 37.7 | -0.82 | 실측 | [[terminal-bench]] 6.8%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 30.7 | -1.28 | 실측 | [[mmmu-pro]] 49.0%×1.0 |
+| 멀티모달 | 30.7 | -1.29 | 실측 | [[mmmu-pro]] 49.0%×1.0 |
 | 긴문맥 | 35.8 | -0.95 | 실측 | [[aa-lcr]] 18.7%×1.0 |
 | 지시 따르기 | 41.7 | -0.55 | 실측 | [[ifbench]] 40.5%×1.0 |
 

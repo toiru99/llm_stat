@@ -17,15 +17,15 @@ radar:
   coding: { s: 16.1, z: -0.71, r: 39.3, estimated: false }  # 코딩
   agentic: { s: 19.4, z: -0.51, r: 42.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 73.0, z: 0.08, r: 51.2, estimated: false }  # 멀티모달
-  long_context: { s: 71.0, z: 0.55, r: 58.3, estimated: false }  # 긴문맥
+  multimodal: { s: 73.0, z: 0.08, r: 51.1, estimated: false }  # 멀티모달
+  long_context: { s: 71.0, z: 0.55, r: 58.2, estimated: false }  # 긴문맥
   instruction: { s: 45.5, z: -0.32, r: 45.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 35B A3B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Qwen3.5 35B A3B (non-reasoning)
@@ -48,8 +48,8 @@ Alibaba · Open · Small · 컨텍스트 262k · 종합지능 **None** · ⚠️
 | 코딩 | 39.3 | -0.71 | 실측 | [[terminal-bench]] 10.6%×0.5 |
 | 에이전트 | 42.3 | -0.51 | 실측 | [[gdpval]] 616.0%×1.0, [[tau3-banking]] 4.9%×1.0, [[terminal-bench]] 10.6%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 51.2 | +0.08 | 실측 | [[mmmu-pro]] 69.0%×1.0 |
-| 긴문맥 | 58.3 | +0.55 | 실측 | [[aa-lcr]] 63.0%×1.0 |
+| 멀티모달 | 51.1 | +0.08 | 실측 | [[mmmu-pro]] 69.0%×1.0 |
+| 긴문맥 | 58.2 | +0.55 | 실측 | [[aa-lcr]] 63.0%×1.0 |
 | 지시 따르기 | 45.3 | -0.32 | 실측 | [[ifbench]] 44.5%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

@@ -17,15 +17,15 @@ radar:
   coding: { s: 52.8, z: 0.51, r: 57.7, estimated: false }  # 코딩
   agentic: { s: 52.8, z: 0.63, r: 59.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 74.3, z: 0.15, r: 52.2, estimated: false }  # 멀티모달
-  long_context: { s: 84.6, z: 0.96, r: 64.3, estimated: false }  # 긴문맥
+  multimodal: { s: 74.3, z: 0.14, r: 52.2, estimated: false }  # 멀티모달
+  long_context: { s: 84.6, z: 0.95, r: 64.3, estimated: false }  # 긴문맥
   instruction: { s: 58.1, z: 0.22, r: 53.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2-Omni
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # MiMo-V2-Omni
@@ -48,8 +48,8 @@ Xiaomi · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **None** �
 | 코딩 | 57.7 | +0.51 | 실측 | [[terminal-bench]] 34.8%×0.5 |
 | 에이전트 | 59.5 | +0.63 | 실측 | [[terminal-bench]] 34.8%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 52.2 | +0.15 | 실측 | [[mmmu-pro]] 70.0%×1.0 |
-| 긴문맥 | 64.3 | +0.96 | 실측 | [[aa-lcr]] 75.0%×1.0 |
+| 멀티모달 | 52.2 | +0.14 | 실측 | [[mmmu-pro]] 70.0%×1.0 |
+| 긴문맥 | 64.3 | +0.95 | 실측 | [[aa-lcr]] 75.0%×1.0 |
 | 지시 따르기 | 53.3 | +0.22 | 실측 | [[ifbench]] 53.5%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

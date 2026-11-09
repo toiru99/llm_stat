@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 81.1, z: 1.4, r: 71.0, estimated: false }  # 전문 지식
   reasoning: { s: 79.2, z: 1.52, r: 72.8, estimated: false }  # 추론
-  coding: { s: 74.9, z: 1.25, r: 68.8, estimated: false }  # 코딩
-  agentic: { s: 73.0, z: 1.33, r: 69.9, estimated: false }  # 에이전트
+  coding: { s: 74.9, z: 1.25, r: 68.7, estimated: false }  # 코딩
+  agentic: { s: 73.0, z: 1.32, r: 69.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 88.3, z: 1.07, r: 66.0, estimated: false }  # 긴문맥
-  instruction: { s: 86.0, z: 1.4, r: 71.0, estimated: false }  # 지시 따르기
+  instruction: { s: 86.0, z: 1.4, r: 71.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5.2 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # GLM-5.2 (max)
@@ -45,12 +45,12 @@ Z AI · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ past
 |---|---|---|---|---|
 | 전문 지식 | 71.0 | +1.4 | 실측 | [[gpqa-diamond]] 89.5%×0.4, [[humanitys-last-exam]] 41.1%×0.3 |
 | 추론 | 72.8 | +1.52 | 실측 | [[gpqa-diamond]] 89.5%×1.0, [[humanitys-last-exam]] 41.1%×1.0 |
-| 코딩 | 68.8 | +1.25 | 실측 | [[scicode]] 51.2%×1.0, [[terminal-bench]] 50.8%×0.5 |
-| 에이전트 | 69.9 | +1.33 | 실측 | [[apex-agents]] 33.7%×1.0, [[gdpval]] 1381.0%×1.0, [[itbench]] 42.7%×1.0, [[tau3-banking]] 34.6%×1.0, [[terminal-bench]] 50.8%×1.0 |
+| 코딩 | 68.7 | +1.25 | 실측 | [[scicode]] 51.2%×1.0, [[terminal-bench]] 50.8%×0.5 |
+| 에이전트 | 69.8 | +1.32 | 실측 | [[apex-agents]] 33.7%×1.0, [[gdpval]] 1381.0%×1.0, [[itbench]] 42.7%×1.0, [[tau3-banking]] 34.6%×1.0, [[terminal-bench]] 50.8%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 66.0 | +1.07 | 실측 | [[aa-lcr]] 78.3%×1.0 |
-| 지시 따르기 | 71.0 | +1.4 | 실측 | [[ifbench]] 73.3%×1.0 |
+| 지시 따르기 | 71.1 | +1.4 | 실측 | [[ifbench]] 73.3%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

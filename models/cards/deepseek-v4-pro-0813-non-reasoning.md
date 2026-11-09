@@ -12,9 +12,9 @@ size_class: Large
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 15.8, z: -1.48, r: 27.8, estimated: false }  # 전문 지식
-  reasoning: { s: 13.8, z: -1.42, r: 28.7, estimated: false }  # 추론
-  coding: { s: 55.0, z: 0.59, r: 58.8, estimated: false }  # 코딩
+  knowledge: { s: 15.8, z: -1.48, r: 27.7, estimated: false }  # 전문 지식
+  reasoning: { s: 13.8, z: -1.42, r: 28.6, estimated: false }  # 추론
+  coding: { s: 55.0, z: 0.58, r: 58.8, estimated: false }  # 코딩
   agentic: { s: 57.1, z: 0.78, r: 61.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Pro 0813 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # DeepSeek V4 Pro 0813 (non-reasoning)
@@ -43,9 +43,9 @@ DeepSeek · Open · Large · 컨텍스트 1M · 종합지능 **13.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 27.8 | -1.48 | 실측 | [[humanitys-last-exam]] 10.6%×0.3 |
-| 추론 | 28.7 | -1.42 | 실측 | [[critpt]] 8.5%×1.0, [[humanitys-last-exam]] 10.6%×1.0 |
-| 코딩 | 58.8 | +0.59 | 실측 | [[scicode]] 39.9%×1.0 |
+| 전문 지식 | 27.7 | -1.48 | 실측 | [[humanitys-last-exam]] 10.6%×0.3 |
+| 추론 | 28.6 | -1.42 | 실측 | [[critpt]] 8.5%×1.0, [[humanitys-last-exam]] 10.6%×1.0 |
+| 코딩 | 58.8 | +0.58 | 실측 | [[scicode]] 39.9%×1.0 |
 | 에이전트 | 61.7 | +0.78 | 실측 | [[gdpval]] 1066.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

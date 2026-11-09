@@ -12,10 +12,10 @@ size_class: Medium
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 16.7, z: -1.44, r: 28.4, estimated: false }  # 전문 지식
-  reasoning: { s: 15.0, z: -1.37, r: 29.5, estimated: false }  # 추론
+  knowledge: { s: 16.7, z: -1.44, r: 28.3, estimated: false }  # 전문 지식
+  reasoning: { s: 15.0, z: -1.37, r: 29.4, estimated: false }  # 추론
   coding: { s: 0.2, z: -1.24, r: 31.4, estimated: true }  # 코딩
-  agentic: { s: 5.0, z: -1.0, r: 34.9, estimated: true }  # 에이전트
+  agentic: { s: 5.0, z: -1.01, r: 34.9, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 5.9, z: -1.4, r: 28.9, estimated: true }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DBRX
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # DBRX
@@ -43,10 +43,10 @@ Databricks · Open · Medium · 컨텍스트 33k · 종합지능 **None** · ⚠
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 28.4 | -1.44 | 실측 | [[gpqa-diamond]] 33.1%×0.4, [[humanitys-last-exam]] 2.9%×0.3 |
-| 추론 | 29.5 | -1.37 | 실측 | [[gpqa-diamond]] 33.1%×1.0, [[humanitys-last-exam]] 2.9%×1.0 |
+| 전문 지식 | 28.3 | -1.44 | 실측 | [[gpqa-diamond]] 33.1%×0.4, [[humanitys-last-exam]] 2.9%×0.3 |
+| 추론 | 29.4 | -1.37 | 실측 | [[gpqa-diamond]] 33.1%×1.0, [[humanitys-last-exam]] 2.9%×1.0 |
 | 코딩 | 31.4 | -1.24 | 추정 | (추정) |
-| 에이전트 | 34.9 | -1.0 | 추정 | (추정) |
+| 에이전트 | 34.9 | -1.01 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 28.9 | -1.4 | 추정 | (추정) |

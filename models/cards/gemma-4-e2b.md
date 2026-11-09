@@ -12,7 +12,7 @@ size_class: Unknown
 params_b: null
 is_reasoning: null
 radar:
-  knowledge: { s: 24.8, z: -1.08, r: 33.7, estimated: false }  # 전문 지식
+  knowledge: { s: 24.8, z: -1.09, r: 33.7, estimated: false }  # 전문 지식
   reasoning: { s: 22.4, z: -1.03, r: 34.5, estimated: false }  # 추론
   coding: { s: 4.6, z: -1.1, r: 33.5, estimated: false }  # 코딩
   agentic: { s: 7.1, z: -0.93, r: 36.0, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 E2B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Gemma 4 E2B
@@ -43,7 +43,7 @@ Google · Open · Unknown · 컨텍스트 128k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 33.7 | -1.08 | 실측 | [[gpqa-diamond]] 43.3%×0.4, [[humanitys-last-exam]] 4.8%×0.3 |
+| 전문 지식 | 33.7 | -1.09 | 실측 | [[gpqa-diamond]] 43.3%×0.4, [[humanitys-last-exam]] 4.8%×0.3 |
 | 추론 | 34.5 | -1.03 | 실측 | [[gpqa-diamond]] 43.3%×1.0, [[humanitys-last-exam]] 4.8%×1.0 |
 | 코딩 | 33.5 | -1.1 | 실측 | [[terminal-bench]] 3.0%×0.5 |
 | 에이전트 | 36.0 | -0.93 | 실측 | [[gdpval]] 181.0%×1.0, [[terminal-bench]] 3.0%×1.0 |

@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 17.4, z: -1.41, r: 28.8, estimated: false }  # 전문 지식
-  reasoning: { s: 16.0, z: -1.32, r: 30.1, estimated: false }  # 추론
+  reasoning: { s: 16.0, z: -1.33, r: 30.1, estimated: false }  # 추론
   coding: { s: 0.3, z: -1.24, r: 31.4, estimated: true }  # 코딩
   agentic: { s: 2.7, z: -1.08, r: 33.8, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 2 Chat 13B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Llama 2 Chat 13B
@@ -44,7 +44,7 @@ Meta · Open · Small · 컨텍스트 4k · 종합지능 **None** · ⚠️ past
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 28.8 | -1.41 | 실측 | [[gpqa-diamond]] 32.1%×0.4, [[humanitys-last-exam]] 4.8%×0.3 |
-| 추론 | 30.1 | -1.32 | 실측 | [[gpqa-diamond]] 32.1%×1.0, [[humanitys-last-exam]] 4.8%×1.0 |
+| 추론 | 30.1 | -1.33 | 실측 | [[gpqa-diamond]] 32.1%×1.0, [[humanitys-last-exam]] 4.8%×1.0 |
 | 코딩 | 31.4 | -1.24 | 추정 | (추정) |
 | 에이전트 | 33.8 | -1.08 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |

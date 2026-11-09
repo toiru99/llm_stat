@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 73.2, z: 1.06, r: 65.8, estimated: true }  # 전문 지식
   reasoning: { s: 70.8, z: 1.14, r: 67.1, estimated: false }  # 추론
   coding: { s: 63.5, z: 0.87, r: 63.0, estimated: true }  # 코딩
-  agentic: { s: 59.1, z: 0.85, r: 62.8, estimated: true }  # 에이전트
+  agentic: { s: 59.1, z: 0.85, r: 62.7, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 93.2, z: 1.1, r: 66.5, estimated: false }  # 멀티모달
   long_context: { s: 82.5, z: 0.89, r: 63.4, estimated: true }  # 긴문맥
-  instruction: { s: 86.7, z: 1.43, r: 71.5, estimated: true }  # 지시 따르기
+  instruction: { s: 86.7, z: 1.44, r: 71.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Wonder (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Muse Wonder (high)
@@ -46,11 +46,11 @@ Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **41.0**
 | 전문 지식 | 65.8 | +1.06 | 추정 | (추정) |
 | 추론 | 67.1 | +1.14 | 실측 | [[critpt]] 51.0%×1.0 |
 | 코딩 | 63.0 | +0.87 | 추정 | (추정) |
-| 에이전트 | 62.8 | +0.85 | 추정 | (추정) |
+| 에이전트 | 62.7 | +0.85 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 66.5 | +1.1 | 실측 | [[mmmu-pro]] 84.0%×1.0 |
 | 긴문맥 | 63.4 | +0.89 | 추정 | (추정) |
-| 지시 따르기 | 71.5 | +1.43 | 추정 | (추정) |
+| 지시 따르기 | 71.5 | +1.44 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

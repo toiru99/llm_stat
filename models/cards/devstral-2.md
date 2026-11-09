@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 34.5, z: -0.65, r: 40.2, estimated: false }  # 전문 지식
   reasoning: { s: 30.7, z: -0.66, r: 40.1, estimated: false }  # 추론
-  coding: { s: 38.3, z: 0.03, r: 50.5, estimated: false }  # 코딩
+  coding: { s: 38.3, z: 0.03, r: 50.4, estimated: false }  # 코딩
   agentic: { s: 26.1, z: -0.28, r: 45.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Devstral 2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Devstral 2
@@ -45,7 +45,7 @@ Mistral · Open · Medium · 컨텍스트 256k · 종합지능 **None** · ⚠�
 |---|---|---|---|---|
 | 전문 지식 | 40.2 | -0.65 | 실측 | [[gpqa-diamond]] 59.4%×0.4, [[humanitys-last-exam]] 3.6%×0.3 |
 | 추론 | 40.1 | -0.66 | 실측 | [[gpqa-diamond]] 59.4%×1.0, [[humanitys-last-exam]] 3.6%×1.0 |
-| 코딩 | 50.5 | +0.03 | 실측 | [[scicode]] 32.8%×1.0, [[terminal-bench]] 18.9%×0.5 |
+| 코딩 | 50.4 | +0.03 | 실측 | [[scicode]] 32.8%×1.0, [[terminal-bench]] 18.9%×0.5 |
 | 에이전트 | 45.8 | -0.28 | 실측 | [[gdpval]] 552.0%×1.0, [[tau3-banking]] 10.5%×1.0, [[terminal-bench]] 18.9%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

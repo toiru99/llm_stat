@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 74.8, z: 1.12, r: 66.9, estimated: false }  # 전문 지식
   reasoning: { s: 84.6, z: 1.76, r: 76.4, estimated: false }  # 추론
-  coding: { s: 80.3, z: 1.43, r: 71.5, estimated: false }  # 코딩
-  agentic: { s: 79.1, z: 1.53, r: 73.0, estimated: false }  # 에이전트
+  coding: { s: 80.3, z: 1.43, r: 71.4, estimated: false }  # 코딩
+  agentic: { s: 79.1, z: 1.53, r: 72.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 94.6, z: 1.17, r: 67.5, estimated: false }  # 멀티모달
-  long_context: { s: 93.2, z: 1.22, r: 68.2, estimated: false }  # 긴문맥
-  instruction: { s: 79.4, z: 1.12, r: 66.8, estimated: true }  # 지시 따르기
+  long_context: { s: 93.2, z: 1.21, r: 68.2, estimated: false }  # 긴문맥
+  instruction: { s: 79.4, z: 1.12, r: 66.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6.1 Terra (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # GPT-6.1 Terra (max)
@@ -45,12 +45,12 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **51.0**
 |---|---|---|---|---|
 | 전문 지식 | 66.9 | +1.12 | 실측 | [[humanitys-last-exam]] 46.2%×0.3 |
 | 추론 | 76.4 | +1.76 | 실측 | [[critpt]] 68.0%×1.0, [[humanitys-last-exam]] 46.2%×1.0 |
-| 코딩 | 71.5 | +1.43 | 실측 | [[scicode]] 55.1%×1.0 |
-| 에이전트 | 73.0 | +1.53 | 실측 | [[gdpval]] 1476.0%×1.0 |
+| 코딩 | 71.4 | +1.43 | 실측 | [[scicode]] 55.1%×1.0 |
+| 에이전트 | 72.9 | +1.53 | 실측 | [[gdpval]] 1476.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 67.5 | +1.17 | 실측 | [[mmmu-pro]] 85.0%×1.0 |
-| 긴문맥 | 68.2 | +1.22 | 실측 | [[aa-lcr]] 82.7%×1.0 |
-| 지시 따르기 | 66.8 | +1.12 | 추정 | (추정) |
+| 긴문맥 | 68.2 | +1.21 | 실측 | [[aa-lcr]] 82.7%×1.0 |
+| 지시 따르기 | 66.9 | +1.12 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

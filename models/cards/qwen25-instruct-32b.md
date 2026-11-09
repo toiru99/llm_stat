@@ -18,14 +18,14 @@ radar:
   agentic: { s: 6.9, z: -0.94, r: 35.9, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 21.0, z: -0.95, r: 35.8, estimated: true }  # 긴문맥
+  long_context: { s: 21.0, z: -0.95, r: 35.7, estimated: true }  # 긴문맥
   instruction: { s: 34.2, z: -0.8, r: 38.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen2.5 Instruct 32B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Qwen2.5 Instruct 32B
@@ -49,7 +49,7 @@ Alibaba · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠️
 | 에이전트 | 35.9 | -0.94 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 35.8 | -0.95 | 추정 | (추정) |
+| 긴문맥 | 35.7 | -0.95 | 추정 | (추정) |
 | 지시 따르기 | 38.1 | -0.8 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

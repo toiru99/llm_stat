@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 84.6, z: 1.56, r: 73.4, estimated: false }  # 전문 지식
   reasoning: { s: 82.8, z: 1.68, r: 75.2, estimated: false }  # 추론
   coding: { s: 87.4, z: 1.67, r: 75.0, estimated: false }  # 코딩
-  agentic: { s: 75.5, z: 1.41, r: 71.2, estimated: false }  # 에이전트
+  agentic: { s: 75.5, z: 1.41, r: 71.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 85.1, z: 0.69, r: 60.4, estimated: false }  # 멀티모달
   long_context: { s: 92.4, z: 1.19, r: 67.9, estimated: false }  # 긴문맥
-  instruction: { s: 86.8, z: 1.44, r: 71.5, estimated: false }  # 지시 따르기
+  instruction: { s: 86.8, z: 1.44, r: 71.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.4 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # GPT-5.4 (xhigh)
@@ -46,11 +46,11 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 | 전문 지식 | 73.4 | +1.56 | 실측 | [[gpqa-diamond]] 92.0%×0.4, [[humanitys-last-exam]] 43.7%×0.3 |
 | 추론 | 75.2 | +1.68 | 실측 | [[gpqa-diamond]] 92.0%×1.0, [[humanitys-last-exam]] 43.7%×1.0 |
 | 코딩 | 75.0 | +1.67 | 실측 | [[terminal-bench]] 57.6%×0.5 |
-| 에이전트 | 71.2 | +1.41 | 실측 | [[apex-agents]] 33.3%×1.0, [[gdpval]] 1256.0%×1.0, [[tau3-banking]] 39.6%×1.0, [[terminal-bench]] 57.6%×1.0 |
+| 에이전트 | 71.1 | +1.41 | 실측 | [[apex-agents]] 33.3%×1.0, [[gdpval]] 1256.0%×1.0, [[tau3-banking]] 39.6%×1.0, [[terminal-bench]] 57.6%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 60.4 | +0.69 | 실측 | [[mmmu-pro]] 78.0%×1.0 |
 | 긴문맥 | 67.9 | +1.19 | 실측 | [[aa-lcr]] 82.0%×1.0 |
-| 지시 따르기 | 71.5 | +1.44 | 실측 | [[ifbench]] 73.9%×1.0 |
+| 지시 따르기 | 71.6 | +1.44 | 실측 | [[ifbench]] 73.9%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

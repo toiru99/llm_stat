@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 56.4, z: 0.31, r: 54.7, estimated: false }  # 전문 지식
   reasoning: { s: 48.7, z: 0.14, r: 52.2, estimated: false }  # 추론
   coding: { s: 74.0, z: 1.22, r: 68.3, estimated: false }  # 코딩
-  agentic: { s: 86.5, z: 1.79, r: 76.8, estimated: false }  # 에이전트
+  agentic: { s: 86.5, z: 1.78, r: 76.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 78.4, z: 0.35, r: 55.3, estimated: false }  # 멀티모달
-  long_context: { s: 83.8, z: 0.93, r: 64.0, estimated: false }  # 긴문맥
-  instruction: { s: 54.0, z: 0.05, r: 50.7, estimated: true }  # 지시 따르기
+  multimodal: { s: 78.4, z: 0.35, r: 55.2, estimated: false }  # 멀티모달
+  long_context: { s: 83.8, z: 0.93, r: 63.9, estimated: false }  # 긴문맥
+  instruction: { s: 53.7, z: 0.03, r: 50.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2.6-Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # MiMo-V2.6-Flash
@@ -46,11 +46,11 @@ Xiaomi · Open · Large · 컨텍스트 1M · 종합지능 **27.0**
 | 전문 지식 | 54.7 | +0.31 | 실측 | [[humanitys-last-exam]] 35.1%×0.3 |
 | 추론 | 52.2 | +0.14 | 실측 | [[critpt]] 29.5%×1.0, [[humanitys-last-exam]] 35.1%×1.0 |
 | 코딩 | 68.3 | +1.22 | 실측 | [[scicode]] 51.3%×1.0 |
-| 에이전트 | 76.8 | +1.79 | 실측 | [[gdpval]] 1614.0%×1.0 |
+| 에이전트 | 76.7 | +1.78 | 실측 | [[gdpval]] 1614.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 55.3 | +0.35 | 실측 | [[mmmu-pro]] 73.0%×1.0 |
-| 긴문맥 | 64.0 | +0.93 | 실측 | [[aa-lcr]] 74.3%×1.0 |
-| 지시 따르기 | 50.7 | +0.05 | 추정 | (추정) |
+| 멀티모달 | 55.2 | +0.35 | 실측 | [[mmmu-pro]] 73.0%×1.0 |
+| 긴문맥 | 63.9 | +0.93 | 실측 | [[aa-lcr]] 74.3%×1.0 |
+| 지시 따르기 | 50.5 | +0.03 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

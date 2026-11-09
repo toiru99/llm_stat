@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 40.2, z: -0.4, r: 43.9, estimated: false }  # 전문 지식
+  knowledge: { s: 40.2, z: -0.41, r: 43.9, estimated: false }  # 전문 지식
   reasoning: { s: 36.0, z: -0.43, r: 43.6, estimated: false }  # 추론
-  coding: { s: 11.5, z: -0.86, r: 37.0, estimated: false }  # 코딩
+  coding: { s: 11.5, z: -0.87, r: 37.0, estimated: false }  # 코딩
   agentic: { s: 12.2, z: -0.76, r: 38.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 59.5, z: -0.6, r: 41.0, estimated: false }  # 멀티모달
+  multimodal: { s: 59.5, z: -0.61, r: 40.9, estimated: false }  # 멀티모달
   long_context: { s: 49.6, z: -0.09, r: 48.6, estimated: false }  # 긴문맥
   instruction: { s: 36.8, z: -0.69, r: 39.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4.1 mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # GPT-4.1 mini
@@ -43,12 +43,12 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 43.9 | -0.4 | 실측 | [[gpqa-diamond]] 66.4%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
+| 전문 지식 | 43.9 | -0.41 | 실측 | [[gpqa-diamond]] 66.4%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 43.6 | -0.43 | 실측 | [[gpqa-diamond]] 66.4%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 37.0 | -0.86 | 실측 | [[terminal-bench]] 7.6%×0.5 |
+| 코딩 | 37.0 | -0.87 | 실측 | [[terminal-bench]] 7.6%×0.5 |
 | 에이전트 | 38.6 | -0.76 | 실측 | [[gdpval]] 277.0%×1.0, [[tau3-banking]] 5.4%×1.0, [[terminal-bench]] 7.6%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 41.0 | -0.6 | 실측 | [[mmmu-pro]] 59.0%×1.0 |
+| 멀티모달 | 40.9 | -0.61 | 실측 | [[mmmu-pro]] 59.0%×1.0 |
 | 긴문맥 | 48.6 | -0.09 | 실측 | [[aa-lcr]] 44.0%×1.0 |
 | 지시 따르기 | 39.7 | -0.69 | 실측 | [[ifbench]] 38.3%×1.0 |
 

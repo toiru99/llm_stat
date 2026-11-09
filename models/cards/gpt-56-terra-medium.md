@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 74.0, z: 1.09, r: 66.4, estimated: false }  # 전문 지식
   reasoning: { s: 71.4, z: 1.17, r: 67.5, estimated: false }  # 추론
-  coding: { s: 72.7, z: 1.18, r: 67.7, estimated: false }  # 코딩
-  agentic: { s: 59.0, z: 0.84, r: 62.7, estimated: false }  # 에이전트
+  coding: { s: 72.7, z: 1.17, r: 67.6, estimated: false }  # 코딩
+  agentic: { s: 59.0, z: 0.84, r: 62.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 83.8, z: 0.62, r: 59.4, estimated: false }  # 멀티모달
+  multimodal: { s: 83.8, z: 0.62, r: 59.3, estimated: false }  # 멀티모달
   long_context: { s: 83.4, z: 0.92, r: 63.8, estimated: false }  # 긴문맥
   instruction: { s: 70.4, z: 0.74, r: 61.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Terra (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # GPT-5.6 Terra (medium)
@@ -33,7 +33,7 @@ timestamp: 2026-11-08T00:00:00Z
 OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 코딩, 추론
+- **강점**: 추론, 코딩
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
@@ -45,10 +45,10 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 |---|---|---|---|---|
 | 전문 지식 | 66.4 | +1.09 | 실측 | [[gpqa-diamond]] 87.2%×0.4, [[humanitys-last-exam]] 33.3%×0.3 |
 | 추론 | 67.5 | +1.17 | 실측 | [[gpqa-diamond]] 87.2%×1.0, [[humanitys-last-exam]] 33.3%×1.0 |
-| 코딩 | 67.7 | +1.18 | 실측 | [[scicode]] 50.5%×1.0 |
-| 에이전트 | 62.7 | +0.84 | 실측 | [[gdpval]] 1274.0%×1.0, [[tau3-banking]] 25.6%×1.0 |
+| 코딩 | 67.6 | +1.17 | 실측 | [[scicode]] 50.5%×1.0 |
+| 에이전트 | 62.6 | +0.84 | 실측 | [[gdpval]] 1274.0%×1.0, [[tau3-banking]] 25.6%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 59.4 | +0.62 | 실측 | [[mmmu-pro]] 77.0%×1.0 |
+| 멀티모달 | 59.3 | +0.62 | 실측 | [[mmmu-pro]] 77.0%×1.0 |
 | 긴문맥 | 63.8 | +0.92 | 실측 | [[aa-lcr]] 74.0%×1.0 |
 | 지시 따르기 | 61.1 | +0.74 | 실측 | [[ifbench]] 62.2%×1.0 |
 

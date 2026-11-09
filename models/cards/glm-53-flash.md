@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 81.4, z: 1.41, r: 71.2, estimated: false }  # 전문 지식
   reasoning: { s: 64.2, z: 0.84, r: 62.6, estimated: false }  # 추론
-  coding: { s: 74.5, z: 1.24, r: 68.6, estimated: false }  # 코딩
+  coding: { s: 74.5, z: 1.24, r: 68.5, estimated: false }  # 코딩
   agentic: { s: 90.4, z: 1.92, r: 78.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 90.2, z: 1.12, r: 66.9, estimated: false }  # 긴문맥
-  instruction: { s: 69.2, z: 0.69, r: 60.3, estimated: true }  # 지시 따르기
+  long_context: { s: 90.2, z: 1.12, r: 66.8, estimated: false }  # 긴문맥
+  instruction: { s: 67.7, z: 0.63, r: 59.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5.3-Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # GLM-5.3-Flash
@@ -45,12 +45,12 @@ Z AI · Open · Large · 컨텍스트 1M · 종합지능 **28.0**
 |---|---|---|---|---|
 | 전문 지식 | 71.2 | +1.41 | 실측 | [[gpqa-diamond]] 91.2%×0.4, [[humanitys-last-exam]] 39.9%×0.3 |
 | 추론 | 62.6 | +0.84 | 실측 | [[critpt]] 24.5%×1.0, [[gpqa-diamond]] 91.2%×1.0, [[humanitys-last-exam]] 39.9%×1.0 |
-| 코딩 | 68.6 | +1.24 | 실측 | [[scicode]] 51.6%×1.0 |
+| 코딩 | 68.5 | +1.24 | 실측 | [[scicode]] 51.6%×1.0 |
 | 에이전트 | 78.8 | +1.92 | 실측 | [[gdpval]] 1649.0%×1.0, [[itbench]] 51.2%×1.0, [[tau3-banking]] 47.2%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 66.9 | +1.12 | 실측 | [[aa-lcr]] 80.0%×1.0 |
-| 지시 따르기 | 60.3 | +0.69 | 추정 | (추정) |
+| 긴문맥 | 66.8 | +1.12 | 실측 | [[aa-lcr]] 80.0%×1.0 |
+| 지시 따르기 | 59.4 | +0.63 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 85.9, z: 1.61, r: 74.2, estimated: false }  # 전문 지식
   reasoning: { s: 74.5, z: 1.31, r: 69.6, estimated: false }  # 추론
-  coding: { s: 76.8, z: 1.32, r: 69.7, estimated: false }  # 코딩
-  agentic: { s: 86.5, z: 1.79, r: 76.8, estimated: false }  # 에이전트
+  coding: { s: 76.8, z: 1.31, r: 69.7, estimated: false }  # 코딩
+  agentic: { s: 86.5, z: 1.78, r: 76.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 91.3, z: 1.16, r: 67.4, estimated: false }  # 긴문맥
+  long_context: { s: 91.3, z: 1.16, r: 67.3, estimated: false }  # 긴문맥
   instruction: { s: 84.3, z: 1.33, r: 70.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.6 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Grok 4.6 (xhigh)
@@ -34,7 +34,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **31.0**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 전문 지식
-- **약점**: 추론, 긴문맥
+- **약점**: 코딩, 긴문맥
 
 ## 실용 지표
 `입력 $2.0 · 출력 $6.0 · 혼합 $1.35/1M · None t/s · TTFT Nones · 500k ctx` · 가성비 23.0
@@ -45,11 +45,11 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **31.0**
 |---|---|---|---|---|
 | 전문 지식 | 74.2 | +1.61 | 실측 | [[gpqa-diamond]] 93.5%×0.4, [[humanitys-last-exam]] 44.1%×0.3 |
 | 추론 | 69.6 | +1.31 | 실측 | [[critpt]] 40.0%×1.0, [[gpqa-diamond]] 93.5%×1.0, [[humanitys-last-exam]] 44.1%×1.0 |
-| 코딩 | 69.7 | +1.32 | 실측 | [[scicode]] 53.0%×1.0 |
-| 에이전트 | 76.8 | +1.79 | 실측 | [[gdpval]] 1654.0%×1.0, [[tau3-banking]] 43.3%×1.0 |
+| 코딩 | 69.7 | +1.31 | 실측 | [[scicode]] 53.0%×1.0 |
+| 에이전트 | 76.7 | +1.78 | 실측 | [[gdpval]] 1654.0%×1.0, [[tau3-banking]] 43.3%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 67.4 | +1.16 | 실측 | [[aa-lcr]] 81.0%×1.0 |
+| 긴문맥 | 67.3 | +1.16 | 실측 | [[aa-lcr]] 81.0%×1.0 |
 | 지시 따르기 | 70.0 | +1.33 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

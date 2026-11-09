@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 87.9, z: 1.7, r: 75.5, estimated: false }  # 전문 지식
   reasoning: { s: 86.5, z: 1.84, r: 77.6, estimated: false }  # 추론
-  coding: { s: 86.8, z: 1.65, r: 74.8, estimated: false }  # 코딩
-  agentic: { s: 84.0, z: 1.7, r: 75.5, estimated: false }  # 에이전트
+  coding: { s: 86.8, z: 1.65, r: 74.7, estimated: false }  # 코딩
+  agentic: { s: 84.0, z: 1.7, r: 75.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 91.9, z: 1.03, r: 65.5, estimated: false }  # 멀티모달
   long_context: { s: 92.8, z: 1.2, r: 68.0, estimated: false }  # 긴문맥
-  instruction: { s: 82.7, z: 1.26, r: 68.9, estimated: false }  # 지시 따르기
+  instruction: { s: 82.7, z: 1.27, r: 69.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Sol (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # GPT-5.6 Sol (xhigh)
@@ -45,12 +45,12 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 |---|---|---|---|---|
 | 전문 지식 | 75.5 | +1.7 | 실측 | [[gpqa-diamond]] 93.1%×0.4, [[humanitys-last-exam]] 47.3%×0.3 |
 | 추론 | 77.6 | +1.84 | 실측 | [[gpqa-diamond]] 93.1%×1.0, [[humanitys-last-exam]] 47.3%×1.0 |
-| 코딩 | 74.8 | +1.65 | 실측 | [[scicode]] 57.1%×1.0, [[terminal-bench]] 61.4%×0.5 |
-| 에이전트 | 75.5 | +1.7 | 실측 | [[gdpval]] 1578.0%×1.0, [[tau3-banking]] 38.1%×1.0, [[terminal-bench]] 61.4%×1.0 |
+| 코딩 | 74.7 | +1.65 | 실측 | [[scicode]] 57.1%×1.0, [[terminal-bench]] 61.4%×0.5 |
+| 에이전트 | 75.4 | +1.7 | 실측 | [[gdpval]] 1578.0%×1.0, [[tau3-banking]] 38.1%×1.0, [[terminal-bench]] 61.4%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 65.5 | +1.03 | 실측 | [[mmmu-pro]] 83.0%×1.0 |
 | 긴문맥 | 68.0 | +1.2 | 실측 | [[aa-lcr]] 82.3%×1.0 |
-| 지시 따르기 | 68.9 | +1.26 | 실측 | [[ifbench]] 71.0%×1.0 |
+| 지시 따르기 | 69.0 | +1.27 | 실측 | [[ifbench]] 71.0%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

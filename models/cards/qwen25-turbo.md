@@ -12,9 +12,9 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 22.7, z: -1.17, r: 32.4, estimated: false }  # 전문 지식
+  knowledge: { s: 22.7, z: -1.18, r: 32.4, estimated: false }  # 전문 지식
   reasoning: { s: 20.5, z: -1.12, r: 33.2, estimated: false }  # 추론
-  coding: { s: 4.9, z: -1.08, r: 33.7, estimated: true }  # 코딩
+  coding: { s: 4.9, z: -1.09, r: 33.7, estimated: true }  # 코딩
   agentic: { s: 3.7, z: -1.05, r: 34.3, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen2.5 Turbo
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Qwen2.5 Turbo
@@ -34,7 +34,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** ·
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 코딩
-- **약점**: 지시 따르기, 긴문맥
+- **약점**: 전문 지식, 긴문맥
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 1M ctx`
@@ -43,9 +43,9 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** ·
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 32.4 | -1.17 | 실측 | [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 4.1%×0.3 |
+| 전문 지식 | 32.4 | -1.18 | 실측 | [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 4.1%×0.3 |
 | 추론 | 33.2 | -1.12 | 실측 | [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 4.1%×1.0 |
-| 코딩 | 33.7 | -1.08 | 추정 | (추정) |
+| 코딩 | 33.7 | -1.09 | 추정 | (추정) |
 | 에이전트 | 34.3 | -1.05 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

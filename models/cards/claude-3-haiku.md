@@ -17,15 +17,15 @@ radar:
   coding: { s: 1.2, z: -1.21, r: 31.9, estimated: false }  # 코딩
   agentic: { s: 1.2, z: -1.13, r: 33.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 21.6, z: -2.51, r: 12.3, estimated: false }  # 멀티모달
-  long_context: { s: 31.2, z: -0.64, r: 40.4, estimated: false }  # 긴문맥
+  multimodal: { s: 21.6, z: -2.52, r: 12.2, estimated: false }  # 멀티모달
+  long_context: { s: 31.2, z: -0.64, r: 40.3, estimated: false }  # 긴문맥
   instruction: { s: 33.7, z: -0.82, r: 37.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 3 Haiku
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Claude 3 Haiku
@@ -48,8 +48,8 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None*
 | 코딩 | 31.9 | -1.21 | 실측 | [[terminal-bench]] 0.8%×0.5 |
 | 에이전트 | 33.0 | -1.13 | 실측 | [[terminal-bench]] 0.8%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 12.3 | -2.51 | 실측 | [[mmmu-pro]] 31.0%×1.0 |
-| 긴문맥 | 40.4 | -0.64 | 실측 | [[aa-lcr]] 27.7%×1.0 |
+| 멀티모달 | 12.2 | -2.52 | 실측 | [[mmmu-pro]] 31.0%×1.0 |
+| 긴문맥 | 40.3 | -0.64 | 실측 | [[aa-lcr]] 27.7%×1.0 |
 | 지시 따르기 | 37.7 | -0.82 | 실측 | [[ifbench]] 36.1%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

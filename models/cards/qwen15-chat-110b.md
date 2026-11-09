@@ -12,8 +12,8 @@ size_class: Medium
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 22.1, z: -1.2, r: 32.0, estimated: false }  # 전문 지식
-  reasoning: { s: 22.1, z: -1.05, r: 34.3, estimated: false }  # 추론
+  knowledge: { s: 22.1, z: -1.2, r: 31.9, estimated: false }  # 전문 지식
+  reasoning: { s: 22.1, z: -1.05, r: 34.2, estimated: false }  # 추론
   coding: { s: 2.7, z: -1.16, r: 32.6, estimated: true }  # 코딩
   agentic: { s: 2.8, z: -1.08, r: 33.8, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen1.5 Chat 110B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Qwen1.5 Chat 110B
@@ -43,8 +43,8 @@ Alibaba · Open · Medium · 컨텍스트 32k · 종합지능 **None** · ⚠️
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 32.0 | -1.2 | 실측 | [[gpqa-diamond]] 28.9%×0.4 |
-| 추론 | 34.3 | -1.05 | 실측 | [[gpqa-diamond]] 28.9%×1.0 |
+| 전문 지식 | 31.9 | -1.2 | 실측 | [[gpqa-diamond]] 28.9%×0.4 |
+| 추론 | 34.2 | -1.05 | 실측 | [[gpqa-diamond]] 28.9%×1.0 |
 | 코딩 | 32.6 | -1.16 | 추정 | (추정) |
 | 에이전트 | 33.8 | -1.08 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |

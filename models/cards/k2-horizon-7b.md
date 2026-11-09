@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 55.4, z: 0.27, r: 54.0, estimated: false }  # 전문 지식
   reasoning: { s: 35.4, z: -0.45, r: 43.2, estimated: false }  # 추론
-  coding: { s: 34.3, z: -0.1, r: 48.5, estimated: false }  # 코딩
+  coding: { s: 34.3, z: -0.1, r: 48.4, estimated: false }  # 코딩
   agentic: { s: 54.2, z: 0.68, r: 60.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 78.6, z: 0.78, r: 61.7, estimated: false }  # 긴문맥
-  instruction: { s: 51.9, z: -0.05, r: 49.3, estimated: true }  # 지시 따르기
+  long_context: { s: 78.6, z: 0.77, r: 61.6, estimated: false }  # 긴문맥
+  instruction: { s: 51.9, z: -0.04, r: 49.3, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — K2 Horizon 7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # K2 Horizon 7B
@@ -45,12 +45,12 @@ Institute of Foundation Models · Open · Small · 컨텍스트 524k · 종합�
 |---|---|---|---|---|
 | 전문 지식 | 54.0 | +0.27 | 실측 | [[gpqa-diamond]] 75.3%×0.4, [[humanitys-last-exam]] 18.2%×0.3 |
 | 추론 | 43.2 | -0.45 | 실측 | [[critpt]] 1.5%×1.0, [[gpqa-diamond]] 75.3%×1.0, [[humanitys-last-exam]] 18.2%×1.0 |
-| 코딩 | 48.5 | -0.1 | 실측 | [[scicode]] 27.5%×1.0 |
+| 코딩 | 48.4 | -0.1 | 실측 | [[scicode]] 27.5%×1.0 |
 | 에이전트 | 60.2 | +0.68 | 실측 | [[gdpval]] 1024.0%×1.0, [[tau3-banking]] 27.6%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 61.7 | +0.78 | 실측 | [[aa-lcr]] 69.7%×1.0 |
-| 지시 따르기 | 49.3 | -0.05 | 추정 | (추정) |
+| 긴문맥 | 61.6 | +0.77 | 실측 | [[aa-lcr]] 69.7%×1.0 |
+| 지시 따르기 | 49.3 | -0.04 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

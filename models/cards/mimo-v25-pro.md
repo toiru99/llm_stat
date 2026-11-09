@@ -4,7 +4,7 @@ title: MiMo-V2.5-Pro
 creator: Xiaomi
 license: Open
 intelligence_index: None
-price_blended_usd_1m: 0.173
+price_blended_usd_1m: 0.1755
 output_speed_tps: None
 context_window: 1000000
 status: past
@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 75.3, z: 1.15, r: 67.2, estimated: false }  # 전문 지식
   reasoning: { s: 73.1, z: 1.24, r: 68.6, estimated: false }  # 추론
   coding: { s: 70.4, z: 1.1, r: 66.5, estimated: false }  # 코딩
-  agentic: { s: 43.3, z: 0.31, r: 54.6, estimated: false }  # 에이전트
+  agentic: { s: 43.3, z: 0.3, r: 54.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 89.9, z: 1.11, r: 66.7, estimated: false }  # 긴문맥
-  instruction: { s: 95.2, z: 1.79, r: 76.9, estimated: false }  # 지시 따르기
+  instruction: { s: 95.2, z: 1.8, r: 77.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2.5-Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # MiMo-V2.5-Pro
@@ -37,7 +37,7 @@ Xiaomi · Open · Unknown · 컨텍스트 1M · 종합지능 **None** · ⚠️ 
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.43 · 출력 $0.87 · 혼합 $0.173/1M · None t/s · TTFT Nones · 1M ctx`
+`입력 $0.43 · 출력 $0.87 · 혼합 $0.1755/1M · None t/s · TTFT Nones · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,11 +46,11 @@ Xiaomi · Open · Unknown · 컨텍스트 1M · 종합지능 **None** · ⚠️ 
 | 전문 지식 | 67.2 | +1.15 | 실측 | [[gpqa-diamond]] 86.6%×0.4, [[humanitys-last-exam]] 35.7%×0.3 |
 | 추론 | 68.6 | +1.24 | 실측 | [[gpqa-diamond]] 86.6%×1.0, [[humanitys-last-exam]] 35.7%×1.0 |
 | 코딩 | 66.5 | +1.1 | 실측 | [[scicode]] 50.6%×1.0, [[terminal-bench]] 43.2%×0.5 |
-| 에이전트 | 54.6 | +0.31 | 실측 | [[apex-agents]] 2.4%×1.0, [[gdpval]] 1129.0%×1.0, [[itbench]] 38.2%×1.0, [[tau3-banking]] 9.9%×1.0, [[terminal-bench]] 43.2%×1.0 |
+| 에이전트 | 54.6 | +0.3 | 실측 | [[apex-agents]] 2.4%×1.0, [[gdpval]] 1129.0%×1.0, [[itbench]] 38.2%×1.0, [[tau3-banking]] 9.9%×1.0, [[terminal-bench]] 43.2%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 66.7 | +1.11 | 실측 | [[aa-lcr]] 79.7%×1.0 |
-| 지시 따르기 | 76.9 | +1.79 | 실측 | [[ifbench]] 79.9%×1.0 |
+| 지시 따르기 | 77.0 | +1.8 | 실측 | [[ifbench]] 79.9%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

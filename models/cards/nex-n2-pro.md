@@ -14,18 +14,18 @@ is_reasoning: null
 radar:
   knowledge: { s: 75.6, z: 1.16, r: 67.4, estimated: false }  # 전문 지식
   reasoning: { s: 72.9, z: 1.23, r: 68.5, estimated: false }  # 추론
-  coding: { s: 60.7, z: 0.78, r: 61.7, estimated: false }  # 코딩
+  coding: { s: 60.7, z: 0.77, r: 61.6, estimated: false }  # 코딩
   agentic: { s: 46.6, z: 0.42, r: 56.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 92.1, z: 1.18, r: 67.7, estimated: false }  # 긴문맥
-  instruction: { s: 76.0, z: 0.98, r: 64.6, estimated: false }  # 지시 따르기
+  instruction: { s: 76.0, z: 0.98, r: 64.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nex-N2-Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Nex-N2-Pro
@@ -45,12 +45,12 @@ Nex AGI · Open · Unknown · 컨텍스트 262k · 종합지능 **None**
 |---|---|---|---|---|
 | 전문 지식 | 67.4 | +1.16 | 실측 | [[gpqa-diamond]] 89.2%×0.4, [[humanitys-last-exam]] 33.7%×0.3 |
 | 추론 | 68.5 | +1.23 | 실측 | [[gpqa-diamond]] 89.2%×1.0, [[humanitys-last-exam]] 33.7%×1.0 |
-| 코딩 | 61.7 | +0.78 | 실측 | [[scicode]] 43.3%×1.0 |
+| 코딩 | 61.6 | +0.77 | 실측 | [[scicode]] 43.3%×1.0 |
 | 에이전트 | 56.3 | +0.42 | 실측 | [[gdpval]] 1109.0%×1.0, [[tau3-banking]] 17.5%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 67.7 | +1.18 | 실측 | [[aa-lcr]] 81.7%×1.0 |
-| 지시 따르기 | 64.6 | +0.98 | 실측 | [[ifbench]] 66.2%×1.0 |
+| 지시 따르기 | 64.7 | +0.98 | 실측 | [[ifbench]] 66.2%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

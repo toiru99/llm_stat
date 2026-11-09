@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 29.2, z: -0.89, r: 36.6, estimated: false }  # 전문 지식
   reasoning: { s: 26.2, z: -0.87, r: 37.0, estimated: false }  # 추론
-  coding: { s: 27.6, z: -0.33, r: 45.1, estimated: false }  # 코딩
-  agentic: { s: 10.7, z: -0.81, r: 37.9, estimated: false }  # 에이전트
+  coding: { s: 27.6, z: -0.33, r: 45.0, estimated: false }  # 코딩
+  agentic: { s: 10.7, z: -0.81, r: 37.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 44.6, z: -1.35, r: 29.7, estimated: false }  # 멀티모달
+  multimodal: { s: 44.6, z: -1.36, r: 29.7, estimated: false }  # 멀티모달
   long_context: { s: 22.9, z: -0.89, r: 36.6, estimated: false }  # 긴문맥
   instruction: { s: 30.1, z: -0.97, r: 35.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Small 3.2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Mistral Small 3.2
@@ -37,7 +37,7 @@ Mistral · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠️
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $0.07 · 출력 $0.2 · 혼합 $0.0875/1M · None t/s · TTFT Nones · 128k ctx`
+`입력 $0.075 · 출력 $0.2 · 혼합 $0.0875/1M · None t/s · TTFT Nones · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,10 +45,10 @@ Mistral · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠️
 |---|---|---|---|---|
 | 전문 지식 | 36.6 | -0.89 | 실측 | [[gpqa-diamond]] 50.5%×0.4, [[humanitys-last-exam]] 4.3%×0.3 |
 | 추론 | 37.0 | -0.87 | 실측 | [[gpqa-diamond]] 50.5%×1.0, [[humanitys-last-exam]] 4.3%×1.0 |
-| 코딩 | 45.1 | -0.33 | 실측 | [[scicode]] 28.6%×1.0, [[terminal-bench]] 6.8%×0.5 |
-| 에이전트 | 37.9 | -0.81 | 실측 | [[gdpval]] 188.0%×1.0, [[tau3-banking]] 6.2%×1.0, [[terminal-bench]] 6.8%×1.0 |
+| 코딩 | 45.0 | -0.33 | 실측 | [[scicode]] 28.6%×1.0, [[terminal-bench]] 6.8%×0.5 |
+| 에이전트 | 37.8 | -0.81 | 실측 | [[gdpval]] 188.0%×1.0, [[tau3-banking]] 6.2%×1.0, [[terminal-bench]] 6.8%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 29.7 | -1.35 | 실측 | [[mmmu-pro]] 48.0%×1.0 |
+| 멀티모달 | 29.7 | -1.36 | 실측 | [[mmmu-pro]] 48.0%×1.0 |
 | 긴문맥 | 36.6 | -0.89 | 실측 | [[aa-lcr]] 20.3%×1.0 |
 | 지시 따르기 | 35.4 | -0.97 | 실측 | [[ifbench]] 33.5%×1.0 |
 

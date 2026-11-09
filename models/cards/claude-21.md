@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 16.6, z: -1.45, r: 28.3, estimated: false }  # 전문 지식
-  reasoning: { s: 15.1, z: -1.36, r: 29.6, estimated: false }  # 추론
+  reasoning: { s: 15.1, z: -1.36, r: 29.5, estimated: false }  # 추론
   coding: { s: 0.1, z: -1.25, r: 31.3, estimated: true }  # 코딩
   agentic: { s: 4.1, z: -1.03, r: 34.5, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 2.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Claude 2.1
@@ -44,7 +44,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None*
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 28.3 | -1.45 | 실측 | [[gpqa-diamond]] 31.9%×0.4, [[humanitys-last-exam]] 3.9%×0.3 |
-| 추론 | 29.6 | -1.36 | 실측 | [[gpqa-diamond]] 31.9%×1.0, [[humanitys-last-exam]] 3.9%×1.0 |
+| 추론 | 29.5 | -1.36 | 실측 | [[gpqa-diamond]] 31.9%×1.0, [[humanitys-last-exam]] 3.9%×1.0 |
 | 코딩 | 31.3 | -1.25 | 추정 | (추정) |
 | 에이전트 | 34.5 | -1.03 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |

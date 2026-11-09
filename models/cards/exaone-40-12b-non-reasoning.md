@@ -12,7 +12,7 @@ size_class: Tiny
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 24.8, z: -1.08, r: 33.8, estimated: false }  # 전문 지식
+  knowledge: { s: 24.8, z: -1.08, r: 33.7, estimated: false }  # 전문 지식
   reasoning: { s: 22.7, z: -1.02, r: 34.6, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.25, r: 31.3, estimated: false }  # 코딩
   agentic: { s: 0.0, z: -1.18, r: 32.4, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Exaone 4.0 1.2B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Exaone 4.0 1.2B (non-reasoning)
@@ -43,7 +43,7 @@ LG AI Research · Open · Tiny · 컨텍스트 64k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 33.8 | -1.08 | 실측 | [[gpqa-diamond]] 42.4%×0.4, [[humanitys-last-exam]] 5.7%×0.3 |
+| 전문 지식 | 33.7 | -1.08 | 실측 | [[gpqa-diamond]] 42.4%×0.4, [[humanitys-last-exam]] 5.7%×0.3 |
 | 추론 | 34.6 | -1.02 | 실측 | [[gpqa-diamond]] 42.4%×1.0, [[humanitys-last-exam]] 5.7%×1.0 |
 | 코딩 | 31.3 | -1.25 | 실측 | [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 32.4 | -1.18 | 실측 | [[terminal-bench]] 0.0%×1.0 |

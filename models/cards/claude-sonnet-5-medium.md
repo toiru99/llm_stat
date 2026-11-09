@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 47.9, z: -0.06, r: 49.1, estimated: false }  # 전문 지식
   reasoning: { s: 47.9, z: 0.11, r: 51.7, estimated: false }  # 추론
-  coding: { s: 74.5, z: 1.24, r: 68.6, estimated: false }  # 코딩
-  agentic: { s: 62.5, z: 0.97, r: 64.5, estimated: false }  # 에이전트
+  coding: { s: 74.5, z: 1.24, r: 68.5, estimated: false }  # 코딩
+  agentic: { s: 62.5, z: 0.96, r: 64.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 83.1, z: 0.91, r: 63.7, estimated: false }  # 긴문맥
-  instruction: { s: 46.4, z: -0.28, r: 45.8, estimated: true }  # 지시 따르기
+  long_context: { s: 83.1, z: 0.91, r: 63.6, estimated: false }  # 긴문맥
+  instruction: { s: 47.5, z: -0.23, r: 46.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5 (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Claude Sonnet 5 (medium)
@@ -45,12 +45,12 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 |---|---|---|---|---|
 | 전문 지식 | 49.1 | -0.06 | 실측 | [[humanitys-last-exam]] 30.0%×0.3 |
 | 추론 | 51.7 | +0.11 | 실측 | [[humanitys-last-exam]] 30.0%×1.0 |
-| 코딩 | 68.6 | +1.24 | 실측 | [[scicode]] 51.6%×1.0 |
-| 에이전트 | 64.5 | +0.97 | 실측 | [[gdpval]] 1167.0%×1.0 |
+| 코딩 | 68.5 | +1.24 | 실측 | [[scicode]] 51.6%×1.0 |
+| 에이전트 | 64.4 | +0.96 | 실측 | [[gdpval]] 1167.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 63.7 | +0.91 | 실측 | [[aa-lcr]] 73.7%×1.0 |
-| 지시 따르기 | 45.8 | -0.28 | 추정 | (추정) |
+| 긴문맥 | 63.6 | +0.91 | 실측 | [[aa-lcr]] 73.7%×1.0 |
+| 지시 따르기 | 46.5 | -0.23 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

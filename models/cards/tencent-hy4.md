@@ -14,8 +14,8 @@ is_reasoning: true
 radar:
   knowledge: { s: 58.4, z: 0.4, r: 56.0, estimated: true }  # 전문 지식
   reasoning: { s: 54.2, z: 0.39, r: 55.9, estimated: false }  # 추론
-  coding: { s: 44.9, z: 0.25, r: 53.8, estimated: true }  # 코딩
-  agentic: { s: 34.5, z: 0.01, r: 50.1, estimated: true }  # 에이전트
+  coding: { s: 44.9, z: 0.25, r: 53.7, estimated: true }  # 코딩
+  agentic: { s: 34.5, z: 0.0, r: 50.0, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 69.7, z: 0.51, r: 57.6, estimated: true }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Tencent Hy4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Tencent Hy4
@@ -45,8 +45,8 @@ Tencent · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **35.0**
 |---|---|---|---|---|
 | 전문 지식 | 56.0 | +0.4 | 추정 | (추정) |
 | 추론 | 55.9 | +0.39 | 실측 | [[critpt]] 39.0%×1.0 |
-| 코딩 | 53.8 | +0.25 | 추정 | (추정) |
-| 에이전트 | 50.1 | +0.01 | 추정 | (추정) |
+| 코딩 | 53.7 | +0.25 | 추정 | (추정) |
+| 에이전트 | 50.0 | +0.0 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 57.6 | +0.51 | 추정 | (추정) |

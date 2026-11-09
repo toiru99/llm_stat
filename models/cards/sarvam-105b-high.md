@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Sarvam 105B (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Sarvam 105B (high)
@@ -37,7 +37,7 @@ Sarvam · Open · Medium · 컨텍스트 128k · 종합지능 **None**
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
-`입력 $0.04 · 출력 $0.17 · 혼합 $0.0436/1M · None t/s · TTFT Nones · 128k ctx`
+`입력 $0.042 · 출력 $0.17 · 혼합 $0.0436/1M · None t/s · TTFT Nones · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

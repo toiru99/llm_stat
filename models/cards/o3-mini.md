@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 47.8, z: -0.07, r: 49.0, estimated: false }  # 전문 지식
   reasoning: { s: 43.2, z: -0.1, r: 48.5, estimated: false }  # 추론
-  coding: { s: 10.3, z: -0.9, r: 36.4, estimated: false }  # 코딩
+  coding: { s: 10.3, z: -0.91, r: 36.4, estimated: false }  # 코딩
   agentic: { s: 10.3, z: -0.82, r: 37.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — o3-mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # o3-mini
@@ -45,7 +45,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None** �
 |---|---|---|---|---|
 | 전문 지식 | 49.0 | -0.07 | 실측 | [[gpqa-diamond]] 74.8%×0.4, [[humanitys-last-exam]] 7.9%×0.3 |
 | 추론 | 48.5 | -0.1 | 실측 | [[gpqa-diamond]] 74.8%×1.0, [[humanitys-last-exam]] 7.9%×1.0 |
-| 코딩 | 36.4 | -0.9 | 실측 | [[terminal-bench]] 6.8%×0.5 |
+| 코딩 | 36.4 | -0.91 | 실측 | [[terminal-bench]] 6.8%×0.5 |
 | 에이전트 | 37.7 | -0.82 | 실측 | [[terminal-bench]] 6.8%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

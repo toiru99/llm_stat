@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 22.4, z: -1.19, r: 32.2, estimated: false }  # 전문 지식
   reasoning: { s: 20.0, z: -1.14, r: 32.9, estimated: false }  # 추론
   coding: { s: 3.5, z: -1.13, r: 33.0, estimated: false }  # 코딩
-  agentic: { s: 3.5, z: -1.06, r: 34.2, estimated: false }  # 에이전트
+  agentic: { s: 3.5, z: -1.06, r: 34.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.58, r: 26.3, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Sarvam M
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Sarvam M
@@ -46,7 +46,7 @@ Sarvam · Open · Unknown · 컨텍스트 33k · 종합지능 **None** · ⚠️
 | 전문 지식 | 32.2 | -1.19 | 실측 | [[gpqa-diamond]] 41.6%×0.4, [[humanitys-last-exam]] 3.1%×0.3 |
 | 추론 | 32.9 | -1.14 | 실측 | [[gpqa-diamond]] 41.6%×1.0, [[humanitys-last-exam]] 3.1%×1.0 |
 | 코딩 | 33.0 | -1.13 | 실측 | [[terminal-bench]] 2.3%×0.5 |
-| 에이전트 | 34.2 | -1.06 | 실측 | [[terminal-bench]] 2.3%×1.0 |
+| 에이전트 | 34.1 | -1.06 | 실측 | [[terminal-bench]] 2.3%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 26.3 | -1.58 | 실측 | [[aa-lcr]] 0.0%×1.0 |

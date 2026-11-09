@@ -13,8 +13,8 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 22.4, z: -1.19, r: 32.1, estimated: false }  # 전문 지식
-  reasoning: { s: 20.3, z: -1.13, r: 33.1, estimated: false }  # 추론
-  coding: { s: 18.4, z: -0.64, r: 40.5, estimated: false }  # 코딩
+  reasoning: { s: 20.3, z: -1.13, r: 33.0, estimated: false }  # 추론
+  coding: { s: 18.4, z: -0.64, r: 40.4, estimated: false }  # 코딩
   agentic: { s: 18.5, z: -0.54, r: 41.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3 Nano (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Nemotron 3 Nano (non-reasoning)
@@ -44,8 +44,8 @@ NVIDIA · Open · Small · 컨텍스트 1M · 종합지능 **None**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 32.1 | -1.19 | 실측 | [[gpqa-diamond]] 39.9%×0.4, [[humanitys-last-exam]] 4.6%×0.3 |
-| 추론 | 33.1 | -1.13 | 실측 | [[gpqa-diamond]] 39.9%×1.0, [[humanitys-last-exam]] 4.6%×1.0 |
-| 코딩 | 40.5 | -0.64 | 실측 | [[terminal-bench]] 12.1%×0.5 |
+| 추론 | 33.0 | -1.13 | 실측 | [[gpqa-diamond]] 39.9%×1.0, [[humanitys-last-exam]] 4.6%×1.0 |
+| 코딩 | 40.4 | -0.64 | 실측 | [[terminal-bench]] 12.1%×0.5 |
 | 에이전트 | 41.9 | -0.54 | 실측 | [[gdpval]] 349.0%×1.0, [[terminal-bench]] 12.1%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

@@ -12,10 +12,10 @@ size_class: Tiny
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 15.9, z: -1.47, r: 27.9, estimated: false }  # 전문 지식
-  reasoning: { s: 14.8, z: -1.37, r: 29.4, estimated: false }  # 추론
+  knowledge: { s: 15.9, z: -1.48, r: 27.9, estimated: false }  # 전문 지식
+  reasoning: { s: 14.8, z: -1.38, r: 29.4, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.25, r: 31.3, estimated: false }  # 코딩
-  agentic: { s: 15.3, z: -0.65, r: 40.3, estimated: false }  # 에이전트
+  agentic: { s: 15.3, z: -0.65, r: 40.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 7.1, z: -1.37, r: 29.5, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — K2 Horizon 0.9B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # K2 Horizon 0.9B
@@ -34,7 +34,7 @@ Institute of Foundation Models · Open · Tiny · 컨텍스트 131k · 종합지
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 지시 따르기
-- **약점**: 긴문맥, 전문 지식
+- **약점**: 추론, 전문 지식
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 131k ctx`
@@ -43,10 +43,10 @@ Institute of Foundation Models · Open · Tiny · 컨텍스트 131k · 종합지
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 27.9 | -1.47 | 실측 | [[gpqa-diamond]] 29.3%×0.4, [[humanitys-last-exam]] 5.4%×0.3 |
-| 추론 | 29.4 | -1.37 | 실측 | [[gpqa-diamond]] 29.3%×1.0, [[humanitys-last-exam]] 5.4%×1.0 |
+| 전문 지식 | 27.9 | -1.48 | 실측 | [[gpqa-diamond]] 29.3%×0.4, [[humanitys-last-exam]] 5.4%×0.3 |
+| 추론 | 29.4 | -1.38 | 실측 | [[gpqa-diamond]] 29.3%×1.0, [[humanitys-last-exam]] 5.4%×1.0 |
 | 코딩 | 31.3 | -1.25 | 실측 | [[scicode]] 6.9%×1.0 |
-| 에이전트 | 40.3 | -0.65 | 실측 | [[gdpval]] 402.0%×1.0, [[tau3-banking]] 4.9%×1.0 |
+| 에이전트 | 40.2 | -0.65 | 실측 | [[gdpval]] 402.0%×1.0, [[tau3-banking]] 4.9%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 29.5 | -1.37 | 실측 | [[aa-lcr]] 6.3%×1.0 |

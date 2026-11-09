@@ -17,15 +17,15 @@ radar:
   coding: { s: 1.2, z: -1.21, r: 31.9, estimated: false }  # 코딩
   agentic: { s: 1.2, z: -1.13, r: 33.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 31.1, z: -2.03, r: 19.5, estimated: false }  # 멀티모달
+  multimodal: { s: 31.1, z: -2.04, r: 19.4, estimated: false }  # 멀티모달
   long_context: { s: 21.4, z: -0.94, r: 35.9, estimated: false }  # 긴문맥
   instruction: { s: 30.9, z: -0.94, r: 36.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nova Lite
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Nova Lite
@@ -48,7 +48,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 300k · 종합지능 **None** �
 | 코딩 | 31.9 | -1.21 | 실측 | [[terminal-bench]] 0.8%×0.5 |
 | 에이전트 | 33.0 | -1.13 | 실측 | [[terminal-bench]] 0.8%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 19.5 | -2.03 | 실측 | [[mmmu-pro]] 38.0%×1.0 |
+| 멀티모달 | 19.4 | -2.04 | 실측 | [[mmmu-pro]] 38.0%×1.0 |
 | 긴문맥 | 35.9 | -0.94 | 실측 | [[aa-lcr]] 19.0%×1.0 |
 | 지시 따르기 | 36.0 | -0.94 | 실측 | [[ifbench]] 34.1%×1.0 |
 

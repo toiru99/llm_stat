@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 46.9, z: -0.11, r: 48.4, estimated: false }  # 전문 지식
   reasoning: { s: 42.4, z: -0.14, r: 47.9, estimated: false }  # 추론
-  coding: { s: 11.5, z: -0.86, r: 37.0, estimated: false }  # 코딩
+  coding: { s: 11.5, z: -0.87, r: 37.0, estimated: false }  # 코딩
   agentic: { s: 11.5, z: -0.78, r: 38.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Next 80B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Qwen3 Next 80B A3B
@@ -45,7 +45,7 @@ Alibaba · Open · Medium · 컨텍스트 262k · 종합지능 **None**
 |---|---|---|---|---|
 | 전문 지식 | 48.4 | -0.11 | 실측 | [[gpqa-diamond]] 73.8%×0.4, [[humanitys-last-exam]] 7.6%×0.3 |
 | 추론 | 47.9 | -0.14 | 실측 | [[gpqa-diamond]] 73.8%×1.0, [[humanitys-last-exam]] 7.6%×1.0 |
-| 코딩 | 37.0 | -0.86 | 실측 | [[terminal-bench]] 7.6%×0.5 |
+| 코딩 | 37.0 | -0.87 | 실측 | [[terminal-bench]] 7.6%×0.5 |
 | 에이전트 | 38.3 | -0.78 | 실측 | [[terminal-bench]] 7.6%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

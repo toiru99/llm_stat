@@ -12,9 +12,9 @@ size_class: Small
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 47.7, z: -0.07, r: 49.0, estimated: false }  # 전문 지식
-  reasoning: { s: 43.6, z: -0.08, r: 48.8, estimated: false }  # 추론
-  coding: { s: 10.3, z: -0.9, r: 36.4, estimated: false }  # 코딩
+  knowledge: { s: 47.7, z: -0.07, r: 48.9, estimated: false }  # 전문 지식
+  reasoning: { s: 43.6, z: -0.08, r: 48.7, estimated: false }  # 추론
+  coding: { s: 10.3, z: -0.91, r: 36.4, estimated: false }  # 코딩
   agentic: { s: 10.3, z: -0.82, r: 37.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Seed-OSS-36B-Instruct
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-08
-timestamp: 2026-11-08T00:00:00Z
+updated: 2026-11-09
+timestamp: 2026-11-09T00:00:00Z
 ---
 
 # Seed-OSS-36B-Instruct
@@ -43,9 +43,9 @@ ByteDance Seed · Open · Small · 컨텍스트 512k · 종합지능 **None** ·
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 49.0 | -0.07 | 실측 | [[gpqa-diamond]] 72.6%×0.4, [[humanitys-last-exam]] 9.9%×0.3 |
-| 추론 | 48.8 | -0.08 | 실측 | [[gpqa-diamond]] 72.6%×1.0, [[humanitys-last-exam]] 9.9%×1.0 |
-| 코딩 | 36.4 | -0.9 | 실측 | [[terminal-bench]] 6.8%×0.5 |
+| 전문 지식 | 48.9 | -0.07 | 실측 | [[gpqa-diamond]] 72.6%×0.4, [[humanitys-last-exam]] 9.9%×0.3 |
+| 추론 | 48.7 | -0.08 | 실측 | [[gpqa-diamond]] 72.6%×1.0, [[humanitys-last-exam]] 9.9%×1.0 |
+| 코딩 | 36.4 | -0.91 | 실측 | [[terminal-bench]] 6.8%×0.5 |
 | 에이전트 | 37.7 | -0.82 | 실측 | [[terminal-bench]] 6.8%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
