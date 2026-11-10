@@ -12,20 +12,20 @@ size_class: Small
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 43.2, z: -0.27, r: 46.0, estimated: false }  # 전문 지식
-  reasoning: { s: 27.3, z: -0.82, r: 37.8, estimated: false }  # 추론
-  coding: { s: 51.5, z: 0.47, r: 57.0, estimated: false }  # 코딩
-  agentic: { s: 29.5, z: -0.17, r: 47.5, estimated: false }  # 에이전트
+  knowledge: { s: 42.0, z: -0.24, r: 46.4, estimated: false }  # 전문 지식
+  reasoning: { s: 26.3, z: -0.83, r: 37.6, estimated: false }  # 추론
+  coding: { s: 50.8, z: 0.44, r: 56.6, estimated: false }  # 코딩
+  agentic: { s: 29.5, z: -0.18, r: 47.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 55.2, z: 0.08, r: 51.1, estimated: false }  # 긴문맥
-  instruction: { s: 55.6, z: 0.11, r: 51.7, estimated: true }  # 지시 따르기
+  long_context: { s: 55.2, z: 0.07, r: 51.0, estimated: false }  # 긴문맥
+  instruction: { s: 55.6, z: 0.12, r: 51.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.2 30B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-09
-timestamp: 2026-11-09T00:00:00Z
+updated: 2026-11-10
+timestamp: 2026-11-10T00:00:00Z
 ---
 
 # Granite 4.2 30B
@@ -43,14 +43,14 @@ IBM · Open · Small · 컨텍스트 131k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 46.0 | -0.27 | 실측 | [[gpqa-diamond]] 64.4%×0.4, [[humanitys-last-exam]] 11.2%×0.3 |
-| 추론 | 37.8 | -0.82 | 실측 | [[critpt]] 1.5%×1.0, [[gpqa-diamond]] 64.4%×1.0, [[humanitys-last-exam]] 11.2%×1.0 |
-| 코딩 | 57.0 | +0.47 | 실측 | [[scicode]] 37.8%×1.0 |
-| 에이전트 | 47.5 | -0.17 | 실측 | [[gdpval]] 583.0%×1.0, [[tau3-banking]] 14.4%×1.0 |
+| 전문 지식 | 46.4 | -0.24 | 실측 | [[gpqa-diamond]] 64.4%×0.4, [[humanitys-last-exam]] 11.2%×0.3 |
+| 추론 | 37.6 | -0.83 | 실측 | [[critpt]] 1.5%×1.0, [[gpqa-diamond]] 64.4%×1.0, [[humanitys-last-exam]] 11.2%×1.0 |
+| 코딩 | 56.6 | +0.44 | 실측 | [[scicode]] 37.8%×1.0 |
+| 에이전트 | 47.3 | -0.18 | 실측 | [[gdpval]] 583.0%×1.0, [[tau3-banking]] 14.4%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 51.1 | +0.08 | 실측 | [[aa-lcr]] 49.0%×1.0 |
-| 지시 따르기 | 51.7 | +0.11 | 추정 | (추정) |
+| 긴문맥 | 51.0 | +0.07 | 실측 | [[aa-lcr]] 49.0%×1.0 |
+| 지시 따르기 | 51.8 | +0.12 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

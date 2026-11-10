@@ -12,20 +12,20 @@ size_class: Small
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 22.8, z: -1.17, r: 32.4, estimated: false }  # 전문 지식
-  reasoning: { s: 20.5, z: -1.12, r: 33.2, estimated: false }  # 추론
-  coding: { s: 9.3, z: -0.94, r: 35.9, estimated: false }  # 코딩
-  agentic: { s: 9.3, z: -0.86, r: 37.1, estimated: false }  # 에이전트
+  knowledge: { s: 22.5, z: -1.18, r: 32.3, estimated: false }  # 전문 지식
+  reasoning: { s: 20.1, z: -1.13, r: 33.1, estimated: false }  # 추론
+  coding: { s: 9.3, z: -0.95, r: 35.7, estimated: false }  # 코딩
+  agentic: { s: 9.3, z: -0.87, r: 37.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 21.1, z: -0.95, r: 35.8, estimated: false }  # 긴문맥
-  instruction: { s: 31.6, z: -0.91, r: 36.4, estimated: false }  # 지시 따르기
+  long_context: { s: 21.1, z: -0.96, r: 35.6, estimated: false }  # 긴문맥
+  instruction: { s: 31.6, z: -0.91, r: 36.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Devstral Small
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-09
-timestamp: 2026-11-09T00:00:00Z
+updated: 2026-11-10
+timestamp: 2026-11-10T00:00:00Z
 ---
 
 # Devstral Small
@@ -43,14 +43,14 @@ Mistral · Open · Small · 컨텍스트 256k · 종합지능 **None** · ⚠️
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 32.4 | -1.17 | 실측 | [[gpqa-diamond]] 41.4%×0.4, [[humanitys-last-exam]] 3.8%×0.3 |
-| 추론 | 33.2 | -1.12 | 실측 | [[gpqa-diamond]] 41.4%×1.0, [[humanitys-last-exam]] 3.8%×1.0 |
-| 코딩 | 35.9 | -0.94 | 실측 | [[terminal-bench]] 6.1%×0.5 |
-| 에이전트 | 37.1 | -0.86 | 실측 | [[terminal-bench]] 6.1%×1.0 |
+| 전문 지식 | 32.3 | -1.18 | 실측 | [[gpqa-diamond]] 41.4%×0.4, [[humanitys-last-exam]] 3.8%×0.3 |
+| 추론 | 33.1 | -1.13 | 실측 | [[gpqa-diamond]] 41.4%×1.0, [[humanitys-last-exam]] 3.8%×1.0 |
+| 코딩 | 35.7 | -0.95 | 실측 | [[terminal-bench]] 6.1%×0.5 |
+| 에이전트 | 37.0 | -0.87 | 실측 | [[terminal-bench]] 6.1%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 35.8 | -0.95 | 실측 | [[aa-lcr]] 18.7%×1.0 |
-| 지시 따르기 | 36.4 | -0.91 | 실측 | [[ifbench]] 34.6%×1.0 |
+| 긴문맥 | 35.6 | -0.96 | 실측 | [[aa-lcr]] 18.7%×1.0 |
+| 지시 따르기 | 36.3 | -0.91 | 실측 | [[ifbench]] 34.6%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

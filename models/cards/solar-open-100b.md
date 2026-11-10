@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: null
 radar:
-  knowledge: { s: 43.5, z: -0.26, r: 46.2, estimated: false }  # 전문 지식
-  reasoning: { s: 40.0, z: -0.24, r: 46.3, estimated: false }  # 추론
-  coding: { s: 3.5, z: -1.13, r: 33.0, estimated: false }  # 코딩
+  knowledge: { s: 42.4, z: -0.22, r: 46.7, estimated: false }  # 전문 지식
+  reasoning: { s: 38.7, z: -0.22, r: 46.7, estimated: false }  # 추론
+  coding: { s: 3.5, z: -1.15, r: 32.8, estimated: false }  # 코딩
   agentic: { s: 3.5, z: -1.06, r: 34.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 46.2, z: -0.2, r: 47.1, estimated: false }  # 긴문맥
-  instruction: { s: 64.0, z: 0.47, r: 57.1, estimated: false }  # 지시 따르기
+  long_context: { s: 46.2, z: -0.2, r: 46.9, estimated: false }  # 긴문맥
+  instruction: { s: 64.0, z: 0.48, r: 57.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Open 100B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-09
-timestamp: 2026-11-09T00:00:00Z
+updated: 2026-11-10
+timestamp: 2026-11-10T00:00:00Z
 ---
 
 # Solar Open 100B
@@ -43,14 +43,14 @@ Upstage · Open · Unknown · 컨텍스트 128k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 46.2 | -0.26 | 실측 | [[gpqa-diamond]] 65.7%×0.4, [[humanitys-last-exam]] 10.4%×0.3 |
-| 추론 | 46.3 | -0.24 | 실측 | [[gpqa-diamond]] 65.7%×1.0, [[humanitys-last-exam]] 10.4%×1.0 |
-| 코딩 | 33.0 | -1.13 | 실측 | [[terminal-bench]] 2.3%×0.5 |
+| 전문 지식 | 46.7 | -0.22 | 실측 | [[gpqa-diamond]] 65.7%×0.4, [[humanitys-last-exam]] 10.4%×0.3 |
+| 추론 | 46.7 | -0.22 | 실측 | [[gpqa-diamond]] 65.7%×1.0, [[humanitys-last-exam]] 10.4%×1.0 |
+| 코딩 | 32.8 | -1.15 | 실측 | [[terminal-bench]] 2.3%×0.5 |
 | 에이전트 | 34.1 | -1.06 | 실측 | [[terminal-bench]] 2.3%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 47.1 | -0.2 | 실측 | [[aa-lcr]] 41.0%×1.0 |
-| 지시 따르기 | 57.1 | +0.47 | 실측 | [[ifbench]] 57.7%×1.0 |
+| 긴문맥 | 46.9 | -0.2 | 실측 | [[aa-lcr]] 41.0%×1.0 |
+| 지시 따르기 | 57.3 | +0.48 | 실측 | [[ifbench]] 57.7%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

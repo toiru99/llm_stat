@@ -12,20 +12,20 @@ size_class: Large
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 28.6, z: -0.91, r: 36.3, estimated: false }  # 전문 지식
-  reasoning: { s: 25.5, z: -0.9, r: 36.5, estimated: false }  # 추론
-  coding: { s: 10.8, z: -0.89, r: 36.6, estimated: true }  # 코딩
-  agentic: { s: 10.3, z: -0.82, r: 37.7, estimated: true }  # 에이전트
+  knowledge: { s: 28.4, z: -0.9, r: 36.6, estimated: false }  # 전문 지식
+  reasoning: { s: 25.2, z: -0.88, r: 36.8, estimated: false }  # 추론
+  coding: { s: 13.0, z: -0.83, r: 37.6, estimated: true }  # 코딩
+  agentic: { s: 11.5, z: -0.79, r: 38.2, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 25.4, z: -0.82, r: 37.7, estimated: true }  # 긴문맥
-  instruction: { s: 34.7, z: -0.78, r: 38.4, estimated: true }  # 지시 따르기
+  long_context: { s: 39.4, z: -0.41, r: 43.9, estimated: true }  # 긴문맥
+  instruction: { s: 37.8, z: -0.65, r: 40.3, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-09
-timestamp: 2026-11-09T00:00:00Z
+updated: 2026-11-10
+timestamp: 2026-11-10T00:00:00Z
 ---
 
 # Grok 2
@@ -33,7 +33,7 @@ timestamp: 2026-11-09T00:00:00Z
 SpaceXAI · Open · Large · 컨텍스트 131k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 지시 따르기, 에이전트
+- **강점**: 긴문맥, 지시 따르기
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
@@ -43,14 +43,14 @@ SpaceXAI · Open · Large · 컨텍스트 131k · 종합지능 **None** · ⚠�
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 36.3 | -0.91 | 실측 | [[gpqa-diamond]] 51.0%×0.4, [[humanitys-last-exam]] 3.1%×0.3 |
-| 추론 | 36.5 | -0.9 | 실측 | [[gpqa-diamond]] 51.0%×1.0, [[humanitys-last-exam]] 3.1%×1.0 |
-| 코딩 | 36.6 | -0.89 | 추정 | (추정) |
-| 에이전트 | 37.7 | -0.82 | 추정 | (추정) |
+| 전문 지식 | 36.6 | -0.9 | 실측 | [[gpqa-diamond]] 51.0%×0.4, [[humanitys-last-exam]] 3.1%×0.3 |
+| 추론 | 36.8 | -0.88 | 실측 | [[gpqa-diamond]] 51.0%×1.0, [[humanitys-last-exam]] 3.1%×1.0 |
+| 코딩 | 37.6 | -0.83 | 추정 | (추정) |
+| 에이전트 | 38.2 | -0.79 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 37.7 | -0.82 | 추정 | (추정) |
-| 지시 따르기 | 38.4 | -0.78 | 추정 | (추정) |
+| 긴문맥 | 43.9 | -0.41 | 추정 | (추정) |
+| 지시 따르기 | 40.3 | -0.65 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

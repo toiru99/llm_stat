@@ -12,20 +12,20 @@ size_class: Tiny
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 14.7, z: -1.53, r: 27.1, estimated: false }  # 전문 지식
-  reasoning: { s: 13.6, z: -1.43, r: 28.6, estimated: false }  # 추론
-  coding: { s: 0.0, z: -1.25, r: 31.3, estimated: false }  # 코딩
-  agentic: { s: 0.0, z: -1.18, r: 32.4, estimated: false }  # 에이전트
+  knowledge: { s: 14.3, z: -1.58, r: 26.3, estimated: false }  # 전문 지식
+  reasoning: { s: 13.1, z: -1.47, r: 27.9, estimated: false }  # 추론
+  coding: { s: 0.0, z: -1.26, r: 31.0, estimated: false }  # 코딩
+  agentic: { s: 0.0, z: -1.18, r: 32.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 6.8, z: -1.38, r: 29.3, estimated: false }  # 긴문맥
-  instruction: { s: 11.8, z: -1.75, r: 23.8, estimated: false }  # 지시 따르기
+  long_context: { s: 6.8, z: -1.39, r: 29.2, estimated: false }  # 긴문맥
+  instruction: { s: 11.8, z: -1.76, r: 23.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.0 1B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-09
-timestamp: 2026-11-09T00:00:00Z
+updated: 2026-11-10
+timestamp: 2026-11-10T00:00:00Z
 ---
 
 # Granite 4.0 1B
@@ -43,14 +43,14 @@ IBM · Open · Tiny · 컨텍스트 128k · 종합지능 **None** · ⚠️ past
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 27.1 | -1.53 | 실측 | [[gpqa-diamond]] 28.1%×0.4, [[humanitys-last-exam]] 4.8%×0.3 |
-| 추론 | 28.6 | -1.43 | 실측 | [[gpqa-diamond]] 28.1%×1.0, [[humanitys-last-exam]] 4.8%×1.0 |
-| 코딩 | 31.3 | -1.25 | 실측 | [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 32.4 | -1.18 | 실측 | [[terminal-bench]] 0.0%×1.0 |
+| 전문 지식 | 26.3 | -1.58 | 실측 | [[gpqa-diamond]] 28.1%×0.4, [[humanitys-last-exam]] 4.8%×0.3 |
+| 추론 | 27.9 | -1.47 | 실측 | [[gpqa-diamond]] 28.1%×1.0, [[humanitys-last-exam]] 4.8%×1.0 |
+| 코딩 | 31.0 | -1.26 | 실측 | [[terminal-bench]] 0.0%×0.5 |
+| 에이전트 | 32.3 | -1.18 | 실측 | [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 29.3 | -1.38 | 실측 | [[aa-lcr]] 6.0%×1.0 |
-| 지시 따르기 | 23.8 | -1.75 | 실측 | [[ifbench]] 20.5%×1.0 |
+| 긴문맥 | 29.2 | -1.39 | 실측 | [[aa-lcr]] 6.0%×1.0 |
+| 지시 따르기 | 23.5 | -1.76 | 실측 | [[ifbench]] 20.5%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
