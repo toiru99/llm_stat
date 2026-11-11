@@ -17,15 +17,15 @@ radar:
   coding: { s: 66.4, z: 0.96, r: 64.5, estimated: false }  # 코딩
   agentic: { s: 67.2, z: 1.1, r: 66.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 74.3, z: 0.14, r: 52.2, estimated: false }  # 멀티모달
+  multimodal: { s: 74.3, z: 0.15, r: 52.2, estimated: false }  # 멀티모달
   long_context: { s: 72.2, z: 0.57, r: 58.6, estimated: false }  # 긴문맥
   instruction: { s: 44.2, z: -0.37, r: 44.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6 Sol (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # GPT-6 Sol (non-reasoning)
@@ -48,7 +48,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 | 코딩 | 64.5 | +0.96 | 실측 | [[scicode]] 47.3%×1.0 |
 | 에이전트 | 66.5 | +1.1 | 실측 | [[gdpval]] 1254.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 52.2 | +0.14 | 실측 | [[mmmu-pro]] 70.0%×1.0 |
+| 멀티모달 | 52.2 | +0.15 | 실측 | [[mmmu-pro]] 70.0%×1.0 |
 | 긴문맥 | 58.6 | +0.57 | 실측 | [[aa-lcr]] 64.0%×1.0 |
 | 지시 따르기 | 44.5 | -0.37 | 추정 | (추정) |
 

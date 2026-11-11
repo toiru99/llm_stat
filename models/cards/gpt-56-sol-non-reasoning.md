@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 54.8, z: 0.38, r: 55.7, estimated: false }  # 전문 지식
-  reasoning: { s: 50.7, z: 0.36, r: 55.5, estimated: false }  # 추론
+  reasoning: { s: 50.7, z: 0.37, r: 55.5, estimated: false }  # 추론
   coding: { s: 67.1, z: 0.99, r: 64.8, estimated: false }  # 코딩
   agentic: { s: 52.5, z: 0.6, r: 59.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Sol (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # GPT-5.6 Sol (non-reasoning)
@@ -44,7 +44,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 55.7 | +0.38 | 실측 | [[gpqa-diamond]] 79.0%×0.4, [[humanitys-last-exam]] 16.7%×0.3 |
-| 추론 | 55.5 | +0.36 | 실측 | [[gpqa-diamond]] 79.0%×1.0, [[humanitys-last-exam]] 16.7%×1.0 |
+| 추론 | 55.5 | +0.37 | 실측 | [[gpqa-diamond]] 79.0%×1.0, [[humanitys-last-exam]] 16.7%×1.0 |
 | 코딩 | 64.8 | +0.99 | 실측 | [[scicode]] 47.7%×1.0 |
 | 에이전트 | 59.0 | +0.6 | 실측 | [[gdpval]] 1250.0%×1.0, [[tau3-banking]] 19.6%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 42.5, z: -0.21, r: 46.8, estimated: false }  # 전문 지식
-  reasoning: { s: 38.3, z: -0.24, r: 46.4, estimated: false }  # 추론
+  reasoning: { s: 38.3, z: -0.24, r: 46.5, estimated: false }  # 추론
   coding: { s: 3.5, z: -1.15, r: 32.8, estimated: false }  # 코딩
   agentic: { s: 3.5, z: -1.06, r: 34.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax M1 40k
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # MiniMax M1 40k
@@ -44,7 +44,7 @@ MiniMax · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ p
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 46.8 | -0.21 | 실측 | [[gpqa-diamond]] 68.2%×0.4, [[humanitys-last-exam]] 7.8%×0.3 |
-| 추론 | 46.4 | -0.24 | 실측 | [[gpqa-diamond]] 68.2%×1.0, [[humanitys-last-exam]] 7.8%×1.0 |
+| 추론 | 46.5 | -0.24 | 실측 | [[gpqa-diamond]] 68.2%×1.0, [[humanitys-last-exam]] 7.8%×1.0 |
 | 코딩 | 32.8 | -1.15 | 실측 | [[terminal-bench]] 2.3%×0.5 |
 | 에이전트 | 34.1 | -1.06 | 실측 | [[terminal-bench]] 2.3%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

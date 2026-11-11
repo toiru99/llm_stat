@@ -17,15 +17,15 @@ radar:
   coding: { s: 43.2, z: 0.18, r: 52.8, estimated: false }  # 코딩
   agentic: { s: 28.9, z: -0.2, r: 47.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 73.0, z: 0.08, r: 51.1, estimated: false }  # 멀티모달
+  multimodal: { s: 73.0, z: 0.08, r: 51.2, estimated: false }  # 멀티모달
   long_context: { s: 74.1, z: 0.63, r: 59.5, estimated: false }  # 긴문맥
   instruction: { s: 84.7, z: 1.37, r: 70.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 26B A4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # Gemma 4 26B A4B
@@ -48,7 +48,7 @@ Google · Open · Unknown · 컨텍스트 256k · 종합지능 **None**
 | 코딩 | 52.8 | +0.18 | 실측 | [[scicode]] 40.0%×1.0, [[terminal-bench]] 13.6%×0.5 |
 | 에이전트 | 47.0 | -0.2 | 실측 | [[gdpval]] 573.0%×1.0, [[itbench]] 23.6%×1.0, [[tau3-banking]] 12.0%×1.0, [[terminal-bench]] 13.6%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 51.1 | +0.08 | 실측 | [[mmmu-pro]] 69.0%×1.0 |
+| 멀티모달 | 51.2 | +0.08 | 실측 | [[mmmu-pro]] 69.0%×1.0 |
 | 긴문맥 | 59.5 | +0.63 | 실측 | [[aa-lcr]] 65.7%×1.0 |
 | 지시 따르기 | 70.6 | +1.37 | 실측 | [[ifbench]] 72.4%×1.0 |
 

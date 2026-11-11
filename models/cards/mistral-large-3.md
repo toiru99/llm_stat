@@ -13,9 +13,9 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 40.3, z: -0.32, r: 45.2, estimated: false }  # 전문 지식
-  reasoning: { s: 35.8, z: -0.36, r: 44.5, estimated: false }  # 추론
+  reasoning: { s: 35.8, z: -0.36, r: 44.6, estimated: false }  # 추론
   coding: { s: 40.6, z: 0.1, r: 51.5, estimated: false }  # 코딩
-  agentic: { s: 19.3, z: -0.52, r: 42.1, estimated: false }  # 에이전트
+  agentic: { s: 19.3, z: -0.53, r: 42.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 55.4, z: -0.81, r: 37.8, estimated: false }  # 멀티모달
   long_context: { s: 40.6, z: -0.37, r: 44.4, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Large 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # Mistral Large 3
@@ -44,9 +44,9 @@ Mistral · Open · Large · 컨텍스트 256k · 종합지능 **None** · ⚠️
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 45.2 | -0.32 | 실측 | [[gpqa-diamond]] 68.0%×0.4, [[humanitys-last-exam]] 4.2%×0.3 |
-| 추론 | 44.5 | -0.36 | 실측 | [[gpqa-diamond]] 68.0%×1.0, [[humanitys-last-exam]] 4.2%×1.0 |
+| 추론 | 44.6 | -0.36 | 실측 | [[gpqa-diamond]] 68.0%×1.0, [[humanitys-last-exam]] 4.2%×1.0 |
 | 코딩 | 51.5 | +0.1 | 실측 | [[scicode]] 36.6%×1.0, [[terminal-bench]] 15.9%×0.5 |
-| 에이전트 | 42.1 | -0.52 | 실측 | [[gdpval]] 428.0%×1.0, [[tau3-banking]] 5.8%×1.0, [[terminal-bench]] 15.9%×1.0 |
+| 에이전트 | 42.1 | -0.53 | 실측 | [[gdpval]] 428.0%×1.0, [[tau3-banking]] 5.8%×1.0, [[terminal-bench]] 15.9%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 37.8 | -0.81 | 실측 | [[mmmu-pro]] 56.0%×1.0 |
 | 긴문맥 | 44.4 | -0.37 | 실측 | [[aa-lcr]] 36.0%×1.0 |

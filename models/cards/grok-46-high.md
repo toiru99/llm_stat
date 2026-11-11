@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 80.7, z: 1.63, r: 74.4, estimated: false }  # 전문 지식
-  reasoning: { s: 77.7, z: 1.69, r: 75.3, estimated: false }  # 추론
+  reasoning: { s: 77.7, z: 1.7, r: 75.4, estimated: false }  # 추론
   coding: { s: 81.6, z: 1.47, r: 72.1, estimated: false }  # 코딩
   agentic: { s: 93.0, z: 1.97, r: 79.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.6 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # Grok 4.6 (high)
@@ -44,7 +44,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **None**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 74.4 | +1.63 | 실측 | [[gpqa-diamond]] 94.9%×0.4, [[humanitys-last-exam]] 42.9%×0.3 |
-| 추론 | 75.3 | +1.69 | 실측 | [[gpqa-diamond]] 94.9%×1.0, [[humanitys-last-exam]] 42.9%×1.0 |
+| 추론 | 75.4 | +1.7 | 실측 | [[gpqa-diamond]] 94.9%×1.0, [[humanitys-last-exam]] 42.9%×1.0 |
 | 코딩 | 72.1 | +1.47 | 실측 | [[scicode]] 56.5%×1.0 |
 | 에이전트 | 79.6 | +1.97 | 실측 | [[gdpval]] 1626.0%×1.0, [[tau3-banking]] 50.7%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

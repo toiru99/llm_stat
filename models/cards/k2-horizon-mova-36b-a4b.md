@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 80.8, z: 0.83, r: 62.5, estimated: false }  # 긴문맥
-  instruction: { s: 46.9, z: -0.25, r: 46.2, estimated: true }  # 지시 따르기
+  instruction: { s: 46.7, z: -0.26, r: 46.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — K2 Horizon MoVA 36B A4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # K2 Horizon MoVA 36B A4B
@@ -50,7 +50,7 @@ Institute of Foundation Models · Open · Small · 컨텍스트 524k · 종합�
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 62.5 | +0.83 | 실측 | [[aa-lcr]] 71.7%×1.0 |
-| 지시 따르기 | 46.2 | -0.25 | 추정 | (추정) |
+| 지시 따르기 | 46.1 | -0.26 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

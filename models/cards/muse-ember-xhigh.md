@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 54.8, z: 0.38, r: 55.7, estimated: true }  # 전문 지식
-  reasoning: { s: 50.3, z: 0.35, r: 55.2, estimated: false }  # 추론
+  reasoning: { s: 50.3, z: 0.35, r: 55.3, estimated: false }  # 추론
   coding: { s: 41.8, z: 0.14, r: 52.0, estimated: true }  # 코딩
   agentic: { s: 31.3, z: -0.12, r: 48.2, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Ember (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # Muse Ember (xhigh)
@@ -44,7 +44,7 @@ Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **34.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 55.7 | +0.38 | 추정 | (추정) |
-| 추론 | 55.2 | +0.35 | 실측 | [[critpt]] 38.5%×1.0 |
+| 추론 | 55.3 | +0.35 | 실측 | [[critpt]] 38.5%×1.0 |
 | 코딩 | 52.0 | +0.14 | 추정 | (추정) |
 | 에이전트 | 48.2 | -0.12 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |

@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 1.9, z: -1.53, r: 27.0, estimated: false }  # 긴문맥
-  instruction: { s: 1.5, z: -2.2, r: 16.9, estimated: false }  # 지시 따르기
+  instruction: { s: 1.5, z: -2.21, r: 16.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek R1 Distill Qwen 1.5B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # DeepSeek R1 Distill Qwen 1.5B
@@ -34,7 +34,7 @@ DeepSeek · Open · Tiny · 컨텍스트 128k · 종합지능 **None** · ⚠️
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 코딩
-- **약점**: 지시 따르기, 전문 지식
+- **약점**: 전문 지식, 지시 따르기
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 128k ctx`
@@ -50,7 +50,7 @@ DeepSeek · Open · Tiny · 컨텍스트 128k · 종합지능 **None** · ⚠️
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 27.0 | -1.53 | 실측 | [[aa-lcr]] 1.7%×1.0 |
-| 지시 따르기 | 16.9 | -2.2 | 실측 | [[ifbench]] 13.2%×1.0 |
+| 지시 따르기 | 16.9 | -2.21 | 실측 | [[ifbench]] 13.2%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

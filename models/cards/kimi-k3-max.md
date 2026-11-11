@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 82.1, z: 1.7, r: 75.5, estimated: false }  # 전문 지식
-  reasoning: { s: 70.8, z: 1.35, r: 70.2, estimated: false }  # 추론
+  reasoning: { s: 70.8, z: 1.35, r: 70.3, estimated: false }  # 추론
   coding: { s: 86.5, z: 1.64, r: 74.6, estimated: false }  # 코딩
   agentic: { s: 86.1, z: 1.74, r: 76.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K3 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # Kimi K3 (max)
@@ -44,7 +44,7 @@ Kimi · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ past
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 75.5 | +1.7 | 실측 | [[gpqa-diamond]] 93.5%×0.4, [[humanitys-last-exam]] 46.9%×0.3 |
-| 추론 | 70.2 | +1.35 | 실측 | [[critpt]] 40.5%×1.0, [[gpqa-diamond]] 93.5%×1.0, [[humanitys-last-exam]] 46.9%×1.0 |
+| 추론 | 70.3 | +1.35 | 실측 | [[critpt]] 40.5%×1.0, [[gpqa-diamond]] 93.5%×1.0, [[humanitys-last-exam]] 46.9%×1.0 |
 | 코딩 | 74.6 | +1.64 | 실측 | [[scicode]] 59.5%×1.0 |
 | 에이전트 | 76.1 | +1.74 | 실측 | [[apex-agents]] 41.3%×1.0, [[gdpval]] 1543.0%×1.0, [[itbench]] 47.7%×1.0, [[tau3-banking]] 46.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

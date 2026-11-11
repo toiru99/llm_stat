@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 73.7, z: 1.29, r: 69.4, estimated: false }  # 전문 지식
-  reasoning: { s: 70.6, z: 1.34, r: 70.1, estimated: false }  # 추론
+  reasoning: { s: 70.6, z: 1.34, r: 70.2, estimated: false }  # 추론
   coding: { s: 71.7, z: 1.14, r: 67.1, estimated: false }  # 코딩
   agentic: { s: 65.6, z: 1.04, r: 65.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Luna (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # GPT-5.6 Luna (xhigh)
@@ -44,7 +44,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 69.4 | +1.29 | 실측 | [[gpqa-diamond]] 89.5%×0.4, [[humanitys-last-exam]] 37.0%×0.3 |
-| 추론 | 70.1 | +1.34 | 실측 | [[gpqa-diamond]] 89.5%×1.0, [[humanitys-last-exam]] 37.0%×1.0 |
+| 추론 | 70.2 | +1.34 | 실측 | [[gpqa-diamond]] 89.5%×1.0, [[humanitys-last-exam]] 37.0%×1.0 |
 | 코딩 | 67.1 | +1.14 | 실측 | [[scicode]] 50.5%×1.0 |
 | 에이전트 | 65.7 | +1.04 | 실측 | [[gdpval]] 1408.0%×1.0, [[tau3-banking]] 28.7%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

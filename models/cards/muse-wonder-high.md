@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 69.5, z: 1.09, r: 66.3, estimated: true }  # 전문 지식
-  reasoning: { s: 66.7, z: 1.15, r: 67.2, estimated: false }  # 추론
+  reasoning: { s: 66.7, z: 1.15, r: 67.3, estimated: false }  # 추론
   coding: { s: 67.0, z: 0.98, r: 64.7, estimated: true }  # 코딩
   agentic: { s: 51.1, z: 0.55, r: 58.3, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Wonder (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # Muse Wonder (high)
@@ -44,7 +44,7 @@ Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **41.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 66.3 | +1.09 | 추정 | (추정) |
-| 추론 | 67.2 | +1.15 | 실측 | [[critpt]] 51.0%×1.0 |
+| 추론 | 67.3 | +1.15 | 실측 | [[critpt]] 51.0%×1.0 |
 | 코딩 | 64.7 | +0.98 | 추정 | (추정) |
 | 에이전트 | 58.3 | +0.55 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |

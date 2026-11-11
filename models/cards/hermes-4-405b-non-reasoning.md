@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 30.7, z: -0.78, r: 38.3, estimated: false }  # 전문 지식
   reasoning: { s: 27.4, z: -0.77, r: 38.4, estimated: false }  # 추론
-  coding: { s: 14.9, z: -0.77, r: 38.5, estimated: false }  # 코딩
+  coding: { s: 14.9, z: -0.76, r: 38.5, estimated: false }  # 코딩
   agentic: { s: 14.9, z: -0.68, r: 39.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hermes 4 405B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # Hermes 4 405B (non-reasoning)
@@ -33,7 +33,7 @@ timestamp: 2026-11-10T00:00:00Z
 Nous Research · Open · Large · 컨텍스트 128k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 에이전트, 추론
+- **강점**: 에이전트, 코딩
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
@@ -45,7 +45,7 @@ Nous Research · Open · Large · 컨텍스트 128k · 종합지능 **None**
 |---|---|---|---|---|
 | 전문 지식 | 38.3 | -0.78 | 실측 | [[gpqa-diamond]] 53.6%×0.4, [[humanitys-last-exam]] 4.2%×0.3 |
 | 추론 | 38.4 | -0.77 | 실측 | [[gpqa-diamond]] 53.6%×1.0, [[humanitys-last-exam]] 4.2%×1.0 |
-| 코딩 | 38.5 | -0.77 | 실측 | [[terminal-bench]] 9.8%×0.5 |
+| 코딩 | 38.5 | -0.76 | 실측 | [[terminal-bench]] 9.8%×0.5 |
 | 에이전트 | 39.9 | -0.68 | 실측 | [[terminal-bench]] 9.8%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

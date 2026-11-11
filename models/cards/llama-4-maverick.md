@@ -4,7 +4,7 @@ title: Llama 4 Maverick
 creator: Meta
 license: Open
 intelligence_index: None
-price_blended_usd_1m: 0.296
+price_blended_usd_1m: 0.315
 output_speed_tps: None
 context_window: 1000000
 status: current
@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 40.1, z: -0.33, r: 45.0, estimated: false }  # 전문 지식
-  reasoning: { s: 35.7, z: -0.37, r: 44.5, estimated: false }  # 추론
+  reasoning: { s: 35.7, z: -0.36, r: 44.5, estimated: false }  # 추론
   coding: { s: 30.6, z: -0.24, r: 46.5, estimated: false }  # 코딩
   agentic: { s: 10.5, z: -0.82, r: 37.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 4 Maverick
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # Llama 4 Maverick
@@ -37,14 +37,14 @@ Meta · Open · Large · 컨텍스트 1M · 종합지능 **None**
 - **약점**: 지시 따르기, 에이전트
 
 ## 실용 지표
-`입력 $0.25 · 출력 $0.92 · 혼합 $0.296/1M · None t/s · TTFT Nones · 1M ctx`
+`입력 $0.25 · 출력 $0.97 · 혼합 $0.315/1M · None t/s · TTFT Nones · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 45.0 | -0.33 | 실측 | [[gpqa-diamond]] 67.1%×0.4, [[humanitys-last-exam]] 4.9%×0.3 |
-| 추론 | 44.5 | -0.37 | 실측 | [[gpqa-diamond]] 67.1%×1.0, [[humanitys-last-exam]] 4.9%×1.0 |
+| 추론 | 44.5 | -0.36 | 실측 | [[gpqa-diamond]] 67.1%×1.0, [[humanitys-last-exam]] 4.9%×1.0 |
 | 코딩 | 46.5 | -0.24 | 실측 | [[scicode]] 31.7%×1.0, [[terminal-bench]] 6.8%×0.5 |
 | 에이전트 | 37.6 | -0.82 | 실측 | [[gdpval]] 268.0%×1.0, [[tau3-banking]] 3.7%×1.0, [[terminal-bench]] 6.8%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

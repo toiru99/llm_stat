@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 70.2, z: 1.12, r: 66.9, estimated: false }  # 전문 지식
-  reasoning: { s: 67.5, z: 1.19, r: 67.8, estimated: false }  # 추론
+  reasoning: { s: 67.5, z: 1.19, r: 67.9, estimated: false }  # 추론
   coding: { s: 88.7, z: 1.71, r: 75.6, estimated: false }  # 코딩
   agentic: { s: 99.7, z: 2.2, r: 83.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K3.1 Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # Kimi K3.1 Pro
@@ -44,7 +44,7 @@ Kimi · Open · Large · 컨텍스트 1M · 종합지능 **46.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 66.9 | +1.12 | 실측 | [[humanitys-last-exam]] 52.5%×0.3 |
-| 추론 | 67.8 | +1.19 | 실측 | [[critpt]] 49.5%×1.0, [[humanitys-last-exam]] 52.5%×1.0 |
+| 추론 | 67.9 | +1.19 | 실측 | [[critpt]] 49.5%×1.0, [[humanitys-last-exam]] 52.5%×1.0 |
 | 코딩 | 75.6 | +1.71 | 실측 | [[scicode]] 60.8%×1.0 |
 | 에이전트 | 83.0 | +2.2 | 실측 | [[gdpval]] 1861.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

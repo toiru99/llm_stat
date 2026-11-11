@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 52.2, z: 0.25, r: 53.8, estimated: false }  # 전문 지식
-  reasoning: { s: 48.7, z: 0.27, r: 54.0, estimated: false }  # 추론
+  reasoning: { s: 48.7, z: 0.27, r: 54.1, estimated: false }  # 추론
   coding: { s: 67.8, z: 1.01, r: 65.1, estimated: false }  # 코딩
   agentic: { s: 59.8, z: 0.85, r: 62.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Quasar 438B (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # Quasar 438B (max)
@@ -44,7 +44,7 @@ Multiverse Computing · Proprietary · Large · 컨텍스트 1M · 종합지능 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 53.8 | +0.25 | 실측 | [[gpqa-diamond]] 73.2%×0.4, [[humanitys-last-exam]] 18.7%×0.3 |
-| 추론 | 54.0 | +0.27 | 실측 | [[gpqa-diamond]] 73.2%×1.0, [[humanitys-last-exam]] 18.7%×1.0 |
+| 추론 | 54.1 | +0.27 | 실측 | [[gpqa-diamond]] 73.2%×1.0, [[humanitys-last-exam]] 18.7%×1.0 |
 | 코딩 | 65.1 | +1.01 | 실측 | [[scicode]] 48.1%×1.0 |
 | 에이전트 | 62.7 | +0.85 | 실측 | [[gdpval]] 1190.0%×1.0, [[tau3-banking]] 28.7%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

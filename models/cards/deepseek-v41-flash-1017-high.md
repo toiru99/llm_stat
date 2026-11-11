@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 40.2, z: -0.32, r: 45.1, estimated: true }  # 전문 지식
-  reasoning: { s: 35.9, z: -0.36, r: 44.7, estimated: false }  # 추론
+  reasoning: { s: 35.9, z: -0.35, r: 44.7, estimated: false }  # 추론
   coding: { s: 16.1, z: -0.72, r: 39.1, estimated: true }  # 코딩
   agentic: { s: 17.5, z: -0.59, r: 41.2, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4.1 Flash 1017 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # DeepSeek V4.1 Flash 1017 (high)
@@ -44,7 +44,7 @@ DeepSeek · Open · Large · 컨텍스트 1M · 종합지능 **29.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 45.1 | -0.32 | 추정 | (추정) |
-| 추론 | 44.7 | -0.36 | 실측 | [[critpt]] 27.5%×1.0 |
+| 추론 | 44.7 | -0.35 | 실측 | [[critpt]] 27.5%×1.0 |
 | 코딩 | 39.1 | -0.72 | 추정 | (추정) |
 | 에이전트 | 41.2 | -0.59 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |

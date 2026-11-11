@@ -17,15 +17,15 @@ radar:
   coding: { s: 60.6, z: 0.77, r: 61.5, estimated: false }  # 코딩
   agentic: { s: 50.2, z: 0.52, r: 57.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 73.0, z: 0.08, r: 51.1, estimated: false }  # 멀티모달
+  multimodal: { s: 73.0, z: 0.08, r: 51.2, estimated: false }  # 멀티모달
   long_context: { s: 81.5, z: 0.85, r: 62.8, estimated: false }  # 긴문맥
   instruction: { s: 63.5, z: 0.46, r: 56.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 4.5 Sonnet
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # Claude 4.5 Sonnet
@@ -48,7 +48,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 | 코딩 | 61.5 | +0.77 | 실측 | [[scicode]] 45.7%×1.0, [[terminal-bench]] 35.6%×0.5 |
 | 에이전트 | 57.8 | +0.52 | 실측 | [[gdpval]] 915.0%×1.0, [[tau3-banking]] 24.5%×1.0, [[terminal-bench]] 35.6%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 51.1 | +0.08 | 실측 | [[mmmu-pro]] 69.0%×1.0 |
+| 멀티모달 | 51.2 | +0.08 | 실측 | [[mmmu-pro]] 69.0%×1.0 |
 | 긴문맥 | 62.8 | +0.85 | 실측 | [[aa-lcr]] 72.3%×1.0 |
 | 지시 따르기 | 56.9 | +0.46 | 실측 | [[ifbench]] 57.3%×1.0 |
 

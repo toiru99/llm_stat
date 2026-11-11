@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 83.1, z: 0.9, r: 63.5, estimated: false }  # 긴문맥
-  instruction: { s: 46.5, z: -0.27, r: 45.9, estimated: true }  # 지시 따르기
+  instruction: { s: 46.4, z: -0.27, r: 45.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5 (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # Claude Sonnet 5 (medium)

@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 86.7, z: 1.92, r: 78.8, estimated: false }  # 전문 지식
-  reasoning: { s: 87.6, z: 2.17, r: 82.6, estimated: false }  # 추론
+  reasoning: { s: 87.6, z: 2.18, r: 82.7, estimated: false }  # 추론
   coding: { s: 79.8, z: 1.41, r: 71.2, estimated: false }  # 코딩
   agentic: { s: 80.1, z: 1.53, r: 73.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 95.9, z: 1.24, r: 68.5, estimated: false }  # 멀티모달
+  multimodal: { s: 95.9, z: 1.24, r: 68.6, estimated: false }  # 멀티모달
   long_context: { s: 90.2, z: 1.11, r: 66.7, estimated: false }  # 긴문맥
   instruction: { s: 77.6, z: 1.07, r: 66.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6 Astra (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # GPT-6 Astra (high)
@@ -44,11 +44,11 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **55.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 78.8 | +1.92 | 실측 | [[gpqa-diamond]] 94.9%×0.4, [[humanitys-last-exam]] 53.1%×0.3 |
-| 추론 | 82.6 | +2.17 | 실측 | [[critpt]] 71.5%×1.0, [[gpqa-diamond]] 94.9%×1.0, [[humanitys-last-exam]] 53.1%×1.0 |
+| 추론 | 82.7 | +2.18 | 실측 | [[critpt]] 71.5%×1.0, [[gpqa-diamond]] 94.9%×1.0, [[humanitys-last-exam]] 53.1%×1.0 |
 | 코딩 | 71.2 | +1.41 | 실측 | [[scicode]] 55.4%×1.0 |
 | 에이전트 | 73.0 | +1.53 | 실측 | [[gdpval]] 1536.0%×1.0, [[tau3-banking]] 40.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 68.5 | +1.24 | 실측 | [[mmmu-pro]] 86.0%×1.0 |
+| 멀티모달 | 68.6 | +1.24 | 실측 | [[mmmu-pro]] 86.0%×1.0 |
 | 긴문맥 | 66.7 | +1.11 | 실측 | [[aa-lcr]] 80.0%×1.0 |
 | 지시 따르기 | 66.0 | +1.07 | 추정 | (추정) |
 

@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 47.5, z: 0.03, r: 50.4, estimated: false }  # 전문 지식
-  reasoning: { s: 43.1, z: -0.01, r: 49.9, estimated: false }  # 추론
+  reasoning: { s: 43.1, z: -0.0, r: 49.9, estimated: false }  # 추론
   coding: { s: 41.3, z: 0.12, r: 51.8, estimated: false }  # 코딩
   agentic: { s: 21.9, z: -0.44, r: 43.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Coder Next
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # Qwen3 Coder Next
@@ -44,7 +44,7 @@ Alibaba · Open · Medium · 컨텍스트 256k · 종합지능 **None**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 50.4 | +0.03 | 실측 | [[gpqa-diamond]] 73.7%×0.4, [[humanitys-last-exam]] 10.1%×0.3 |
-| 추론 | 49.9 | -0.01 | 실측 | [[gpqa-diamond]] 73.7%×1.0, [[humanitys-last-exam]] 10.1%×1.0 |
+| 추론 | 49.9 | +-0.0 | 실측 | [[gpqa-diamond]] 73.7%×1.0, [[humanitys-last-exam]] 10.1%×1.0 |
 | 코딩 | 51.8 | +0.12 | 실측 | [[scicode]] 36.2%×1.0, [[terminal-bench]] 18.2%×0.5 |
 | 에이전트 | 43.4 | -0.44 | 실측 | [[gdpval]] 521.0%×1.0, [[tau3-banking]] 5.4%×1.0, [[terminal-bench]] 18.2%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

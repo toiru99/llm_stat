@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: null
 radar:
   knowledge: { s: 66.4, z: 0.94, r: 64.1, estimated: false }  # 전문 지식
-  reasoning: { s: 62.7, z: 0.95, r: 64.3, estimated: false }  # 추론
+  reasoning: { s: 62.7, z: 0.96, r: 64.4, estimated: false }  # 추론
   coding: { s: 51.7, z: 0.47, r: 57.1, estimated: false }  # 코딩
   agentic: { s: 51.7, z: 0.57, r: 58.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hy3-preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # Hy3-preview
@@ -44,7 +44,7 @@ Tencent · Open · Unknown · 컨텍스트 256k · 종합지능 **None** · ⚠�
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 64.1 | +0.94 | 실측 | [[gpqa-diamond]] 86.7%×0.4, [[humanitys-last-exam]] 27.8%×0.3 |
-| 추론 | 64.3 | +0.95 | 실측 | [[gpqa-diamond]] 86.7%×1.0, [[humanitys-last-exam]] 27.8%×1.0 |
+| 추론 | 64.4 | +0.96 | 실측 | [[gpqa-diamond]] 86.7%×1.0, [[humanitys-last-exam]] 27.8%×1.0 |
 | 코딩 | 57.1 | +0.47 | 실측 | [[terminal-bench]] 34.1%×0.5 |
 | 에이전트 | 58.6 | +0.57 | 실측 | [[terminal-bench]] 34.1%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

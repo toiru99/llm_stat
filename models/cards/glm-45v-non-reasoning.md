@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 32.8, z: -0.68, r: 39.7, estimated: false }  # 전문 지식
-  reasoning: { s: 29.1, z: -0.69, r: 39.6, estimated: false }  # 추론
+  reasoning: { s: 29.1, z: -0.69, r: 39.7, estimated: false }  # 추론
   coding: { s: 10.3, z: -0.92, r: 36.2, estimated: false }  # 코딩
   agentic: { s: 10.3, z: -0.83, r: 37.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.5V (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # GLM-4.5V (non-reasoning)
@@ -44,7 +44,7 @@ Z AI · Open · Medium · 컨텍스트 64k · 종합지능 **None** · ⚠️ pa
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 39.7 | -0.68 | 실측 | [[gpqa-diamond]] 57.3%×0.4, [[humanitys-last-exam]] 3.5%×0.3 |
-| 추론 | 39.6 | -0.69 | 실측 | [[gpqa-diamond]] 57.3%×1.0, [[humanitys-last-exam]] 3.5%×1.0 |
+| 추론 | 39.7 | -0.69 | 실측 | [[gpqa-diamond]] 57.3%×1.0, [[humanitys-last-exam]] 3.5%×1.0 |
 | 코딩 | 36.2 | -0.92 | 실측 | [[terminal-bench]] 6.8%×0.5 |
 | 에이전트 | 37.5 | -0.83 | 실측 | [[terminal-bench]] 6.8%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

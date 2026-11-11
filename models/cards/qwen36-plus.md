@@ -13,8 +13,8 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 67.4, z: 0.99, r: 64.8, estimated: false }  # 전문 지식
-  reasoning: { s: 63.6, z: 1.0, r: 64.9, estimated: false }  # 추론
-  coding: { s: 66.6, z: 0.97, r: 64.5, estimated: false }  # 코딩
+  reasoning: { s: 63.6, z: 1.0, r: 65.0, estimated: false }  # 추론
+  coding: { s: 66.6, z: 0.97, r: 64.6, estimated: false }  # 코딩
   agentic: { s: 53.4, z: 0.63, r: 59.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 85.1, z: 0.69, r: 60.4, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.6 Plus
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # Qwen3.6 Plus
@@ -44,8 +44,8 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** ·
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 64.8 | +0.99 | 실측 | [[gpqa-diamond]] 88.2%×0.4, [[humanitys-last-exam]] 27.8%×0.3 |
-| 추론 | 64.9 | +1.0 | 실측 | [[gpqa-diamond]] 88.2%×1.0, [[humanitys-last-exam]] 27.8%×1.0 |
-| 코딩 | 64.5 | +0.97 | 실측 | [[terminal-bench]] 43.9%×0.5 |
+| 추론 | 65.0 | +1.0 | 실측 | [[gpqa-diamond]] 88.2%×1.0, [[humanitys-last-exam]] 27.8%×1.0 |
+| 코딩 | 64.6 | +0.97 | 실측 | [[terminal-bench]] 43.9%×0.5 |
 | 에이전트 | 59.5 | +0.63 | 실측 | [[gdpval]] 997.0%×1.0, [[tau3-banking]] 20.8%×1.0, [[terminal-bench]] 43.9%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 60.4 | +0.69 | 실측 | [[mmmu-pro]] 78.0%×1.0 |

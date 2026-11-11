@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 87.8, z: 0.83, r: 62.4, estimated: false }  # 멀티모달
   long_context: { s: 89.4, z: 1.09, r: 66.3, estimated: false }  # 긴문맥
-  instruction: { s: 50.3, z: -0.11, r: 48.4, estimated: true }  # 지시 따르기
+  instruction: { s: 50.6, z: -0.09, r: 48.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6 Sol (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # GPT-6 Sol (low)
@@ -50,7 +50,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 62.4 | +0.83 | 실측 | [[mmmu-pro]] 80.0%×1.0 |
 | 긴문맥 | 66.3 | +1.09 | 실측 | [[aa-lcr]] 79.3%×1.0 |
-| 지시 따르기 | 48.4 | -0.11 | 추정 | (추정) |
+| 지시 따르기 | 48.6 | -0.09 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

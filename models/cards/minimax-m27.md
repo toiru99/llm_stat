@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 67.9, z: 1.01, r: 65.2, estimated: false }  # 전문 지식
-  reasoning: { s: 64.3, z: 1.03, r: 65.5, estimated: false }  # 추론
+  reasoning: { s: 64.3, z: 1.04, r: 65.6, estimated: false }  # 추론
   coding: { s: 67.3, z: 0.99, r: 64.9, estimated: false }  # 코딩
   agentic: { s: 40.2, z: 0.18, r: 52.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax-M2.7
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # MiniMax-M2.7
@@ -44,7 +44,7 @@ MiniMax · Open · Large · 컨텍스트 205k · 종합지능 **None** · ⚠️
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 65.2 | +1.01 | 실측 | [[gpqa-diamond]] 87.4%×0.4, [[humanitys-last-exam]] 29.6%×0.3 |
-| 추론 | 65.5 | +1.03 | 실측 | [[gpqa-diamond]] 87.4%×1.0, [[humanitys-last-exam]] 29.6%×1.0 |
+| 추론 | 65.6 | +1.04 | 실측 | [[gpqa-diamond]] 87.4%×1.0, [[humanitys-last-exam]] 29.6%×1.0 |
 | 코딩 | 64.9 | +0.99 | 실측 | [[scicode]] 50.1%×1.0, [[terminal-bench]] 39.4%×0.5 |
 | 에이전트 | 52.7 | +0.18 | 실측 | [[apex-agents]] 10.6%×1.0, [[gdpval]] 1016.0%×1.0, [[itbench]] 26.5%×1.0, [[tau3-banking]] 9.9%×1.0, [[terminal-bench]] 39.4%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

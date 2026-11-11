@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 89.0, z: 2.03, r: 80.4, estimated: false }  # 전문 지식
-  reasoning: { s: 84.6, z: 2.02, r: 80.4, estimated: false }  # 추론
+  reasoning: { s: 84.6, z: 2.03, r: 80.5, estimated: false }  # 추론
   coding: { s: 88.8, z: 1.71, r: 75.7, estimated: false }  # 코딩
   agentic: { s: 91.2, z: 1.91, r: 78.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Fable 5.1 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # Claude Fable 5.1 (xhigh)
@@ -44,7 +44,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **50.0** 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 80.4 | +2.03 | 실측 | [[gpqa-diamond]] 93.4%×0.4, [[humanitys-last-exam]] 58.7%×0.3 |
-| 추론 | 80.4 | +2.02 | 실측 | [[critpt]] 60.0%×1.0, [[gpqa-diamond]] 93.4%×1.0, [[humanitys-last-exam]] 58.7%×1.0 |
+| 추론 | 80.5 | +2.03 | 실측 | [[critpt]] 60.0%×1.0, [[gpqa-diamond]] 93.4%×1.0, [[humanitys-last-exam]] 58.7%×1.0 |
 | 코딩 | 75.7 | +1.71 | 실측 | [[scicode]] 60.9%×1.0 |
 | 에이전트 | 78.7 | +1.91 | 실측 | [[gdpval]] 1740.0%×1.0, [[tau3-banking]] 45.8%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 66.2, z: -0.26, r: 46.0, estimated: false }  # 멀티모달
   long_context: { s: 80.4, z: 0.82, r: 62.3, estimated: false }  # 긴문맥
-  instruction: { s: 73.1, z: 0.87, r: 63.1, estimated: true }  # 지시 따르기
+  instruction: { s: 73.1, z: 0.88, r: 63.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — JT-4.1 Flash 236B A21B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-10
-timestamp: 2026-11-10T00:00:00Z
+updated: 2026-11-11
+timestamp: 2026-11-11T00:00:00Z
 ---
 
 # JT-4.1 Flash 236B A21B (non-reasoning)
@@ -33,7 +33,7 @@ timestamp: 2026-11-10T00:00:00Z
 China Mobile · Proprietary · Large · 컨텍스트 262k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 에이전트, 지시 따르기
+- **강점**: 지시 따르기, 에이전트
 - **약점**: 추론, 멀티모달
 
 ## 실용 지표
@@ -50,7 +50,7 @@ China Mobile · Proprietary · Large · 컨텍스트 262k · 종합지능 **None
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 46.0 | -0.26 | 실측 | [[mmmu-pro]] 64.0%×1.0 |
 | 긴문맥 | 62.3 | +0.82 | 실측 | [[aa-lcr]] 71.3%×1.0 |
-| 지시 따르기 | 63.1 | +0.87 | 추정 | (추정) |
+| 지시 따르기 | 63.1 | +0.88 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
