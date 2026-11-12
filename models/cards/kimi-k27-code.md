@@ -18,14 +18,14 @@ radar:
   agentic: { s: 54.3, z: 0.66, r: 59.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 89.4, z: 1.09, r: 66.3, estimated: false }  # 긴문맥
+  long_context: { s: 89.4, z: 1.09, r: 66.4, estimated: false }  # 긴문맥
   instruction: { s: 71.6, z: 0.81, r: 62.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2.7 Code
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Kimi K2.7 Code
@@ -49,7 +49,7 @@ Kimi · Open · Large · 컨텍스트 256k · 종합지능 **None**
 | 에이전트 | 59.9 | +0.66 | 실측 | [[gdpval]] 1046.0%×1.0, [[tau3-banking]] 20.2%×1.0, [[terminal-bench]] 44.7%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 66.3 | +1.09 | 실측 | [[aa-lcr]] 79.3%×1.0 |
+| 긴문맥 | 66.4 | +1.09 | 실측 | [[aa-lcr]] 79.3%×1.0 |
 | 지시 따르기 | 62.2 | +0.81 | 실측 | [[ifbench]] 63.1%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

@@ -12,8 +12,8 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 65.7, z: 0.9, r: 63.6, estimated: false }  # 전문 지식
-  reasoning: { s: 62.3, z: 0.94, r: 64.0, estimated: false }  # 추론
+  knowledge: { s: 65.7, z: 0.91, r: 63.6, estimated: false }  # 전문 지식
+  reasoning: { s: 62.3, z: 0.94, r: 64.1, estimated: false }  # 추론
   coding: { s: 69.4, z: 1.06, r: 65.9, estimated: false }  # 코딩
   agentic: { s: 54.3, z: 0.66, r: 59.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Terra (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # GPT-5.6 Terra (low)
@@ -43,8 +43,8 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 63.6 | +0.9 | 실측 | [[gpqa-diamond]] 84.3%×0.4, [[humanitys-last-exam]] 29.2%×0.3 |
-| 추론 | 64.0 | +0.94 | 실측 | [[gpqa-diamond]] 84.3%×1.0, [[humanitys-last-exam]] 29.2%×1.0 |
+| 전문 지식 | 63.6 | +0.91 | 실측 | [[gpqa-diamond]] 84.3%×0.4, [[humanitys-last-exam]] 29.2%×0.3 |
+| 추론 | 64.1 | +0.94 | 실측 | [[gpqa-diamond]] 84.3%×1.0, [[humanitys-last-exam]] 29.2%×1.0 |
 | 코딩 | 65.9 | +1.06 | 실측 | [[scicode]] 49.9%×1.0, [[terminal-bench]] 43.9%×0.5 |
 | 에이전트 | 59.9 | +0.66 | 실측 | [[gdpval]] 1117.0%×1.0, [[tau3-banking]] 18.8%×1.0, [[terminal-bench]] 43.9%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

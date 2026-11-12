@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 91.3, z: 1.15, r: 67.2, estimated: false }  # 긴문맥
-  instruction: { s: 79.3, z: 1.14, r: 67.1, estimated: true }  # 지시 따르기
+  instruction: { s: 79.2, z: 1.14, r: 67.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.6 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Grok 4.6 (xhigh)

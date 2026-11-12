@@ -12,10 +12,10 @@ size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 44.1, z: -0.14, r: 48.0, estimated: false }  # 전문 지식
-  reasoning: { s: 40.0, z: -0.16, r: 47.6, estimated: false }  # 추론
-  coding: { s: 4.6, z: -1.11, r: 33.3, estimated: false }  # 코딩
-  agentic: { s: 4.6, z: -1.03, r: 34.6, estimated: false }  # 에이전트
+  knowledge: { s: 44.1, z: -0.13, r: 48.0, estimated: false }  # 전문 지식
+  reasoning: { s: 40.0, z: -0.16, r: 47.7, estimated: false }  # 추론
+  coding: { s: 4.6, z: -1.11, r: 33.4, estimated: false }  # 코딩
+  agentic: { s: 4.6, z: -1.02, r: 34.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 65.1, z: 0.36, r: 55.4, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax M1 80k
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # MiniMax M1 80k
@@ -43,10 +43,10 @@ MiniMax · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ p
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 48.0 | -0.14 | 실측 | [[gpqa-diamond]] 69.7%×0.4, [[humanitys-last-exam]] 8.9%×0.3 |
-| 추론 | 47.6 | -0.16 | 실측 | [[gpqa-diamond]] 69.7%×1.0, [[humanitys-last-exam]] 8.9%×1.0 |
-| 코딩 | 33.3 | -1.11 | 실측 | [[terminal-bench]] 3.0%×0.5 |
-| 에이전트 | 34.6 | -1.03 | 실측 | [[terminal-bench]] 3.0%×1.0 |
+| 전문 지식 | 48.0 | -0.13 | 실측 | [[gpqa-diamond]] 69.7%×0.4, [[humanitys-last-exam]] 8.9%×0.3 |
+| 추론 | 47.7 | -0.16 | 실측 | [[gpqa-diamond]] 69.7%×1.0, [[humanitys-last-exam]] 8.9%×1.0 |
+| 코딩 | 33.4 | -1.11 | 실측 | [[terminal-bench]] 3.0%×0.5 |
+| 에이전트 | 34.6 | -1.02 | 실측 | [[terminal-bench]] 3.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 55.4 | +0.36 | 실측 | [[aa-lcr]] 57.7%×1.0 |

@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 32.2, z: -0.71, r: 39.4, estimated: false }  # 전문 지식
-  reasoning: { s: 32.2, z: -0.54, r: 42.0, estimated: false }  # 추론
+  reasoning: { s: 32.2, z: -0.53, r: 42.0, estimated: false }  # 추론
   coding: { s: 53.9, z: 0.55, r: 58.2, estimated: false }  # 코딩
   agentic: { s: 52.4, z: 0.6, r: 59.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 78.6, z: 0.77, r: 61.5, estimated: false }  # 긴문맥
-  instruction: { s: 39.8, z: -0.56, r: 41.6, estimated: true }  # 지시 따르기
+  instruction: { s: 39.7, z: -0.56, r: 41.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3.5 Bolt 74B-A9B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Nemotron 3.5 Bolt 74B-A9B
@@ -44,7 +44,7 @@ NVIDIA · Open · Medium · 컨텍스트 262k · 종합지능 **None**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 39.4 | -0.71 | 실측 | [[humanitys-last-exam]] 24.7%×0.3 |
-| 추론 | 42.0 | -0.54 | 실측 | [[humanitys-last-exam]] 24.7%×1.0 |
+| 추론 | 42.0 | -0.53 | 실측 | [[humanitys-last-exam]] 24.7%×1.0 |
 | 코딩 | 58.2 | +0.55 | 실측 | [[scicode]] 39.7%×1.0 |
 | 에이전트 | 59.0 | +0.6 | 실측 | [[gdpval]] 979.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

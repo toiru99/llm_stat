@@ -12,7 +12,7 @@ size_class: Unknown
 params_b: null
 is_reasoning: null
 radar:
-  knowledge: { s: 75.0, z: 1.36, r: 70.3, estimated: false }  # 전문 지식
+  knowledge: { s: 75.0, z: 1.36, r: 70.4, estimated: false }  # 전문 지식
   reasoning: { s: 71.9, z: 1.41, r: 71.1, estimated: false }  # 추론
   coding: { s: 71.1, z: 1.12, r: 66.8, estimated: false }  # 코딩
   agentic: { s: 56.6, z: 0.74, r: 61.1, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2.6
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Kimi K2.6
@@ -43,7 +43,7 @@ Kimi · Open · Unknown · 컨텍스트 256k · 종합지능 **None** · ⚠️ 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 70.3 | +1.36 | 실측 | [[gpqa-diamond]] 91.1%×0.4, [[humanitys-last-exam]] 37.5%×0.3 |
+| 전문 지식 | 70.4 | +1.36 | 실측 | [[gpqa-diamond]] 91.1%×0.4, [[humanitys-last-exam]] 37.5%×0.3 |
 | 추론 | 71.1 | +1.41 | 실측 | [[gpqa-diamond]] 91.1%×1.0, [[humanitys-last-exam]] 37.5%×1.0 |
 | 코딩 | 66.8 | +1.12 | 실측 | [[scicode]] 51.5%×1.0, [[terminal-bench]] 43.9%×0.5 |
 | 에이전트 | 61.1 | +0.74 | 실측 | [[apex-agents]] 28.5%×1.0, [[gdpval]] 1047.0%×1.0, [[itbench]] 31.2%×1.0, [[tau3-banking]] 23.3%×1.0, [[terminal-bench]] 43.9%×1.0 |

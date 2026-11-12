@@ -13,8 +13,8 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 77.0, z: 1.45, r: 71.8, estimated: false }  # 전문 지식
-  reasoning: { s: 74.6, z: 1.54, r: 73.1, estimated: false }  # 추론
-  coding: { s: 69.6, z: 1.07, r: 66.0, estimated: false }  # 코딩
+  reasoning: { s: 74.6, z: 1.54, r: 73.2, estimated: false }  # 추론
+  coding: { s: 69.6, z: 1.07, r: 66.1, estimated: false }  # 코딩
   agentic: { s: 64.6, z: 1.01, r: 65.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 87.8, z: 0.83, r: 62.4, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 5 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Claude Opus 5 (low)
@@ -44,8 +44,8 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 71.8 | +1.45 | 실측 | [[gpqa-diamond]] 88.9%×0.4, [[humanitys-last-exam]] 43.4%×0.3 |
-| 추론 | 73.1 | +1.54 | 실측 | [[gpqa-diamond]] 88.9%×1.0, [[humanitys-last-exam]] 43.4%×1.0 |
-| 코딩 | 66.0 | +1.07 | 실측 | [[scicode]] 49.2%×1.0 |
+| 추론 | 73.2 | +1.54 | 실측 | [[gpqa-diamond]] 88.9%×1.0, [[humanitys-last-exam]] 43.4%×1.0 |
+| 코딩 | 66.1 | +1.07 | 실측 | [[scicode]] 49.2%×1.0 |
 | 에이전트 | 65.1 | +1.01 | 실측 | [[gdpval]] 1311.0%×1.0, [[tau3-banking]] 30.3%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 62.4 | +0.83 | 실측 | [[mmmu-pro]] 80.0%×1.0 |

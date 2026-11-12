@@ -12,7 +12,7 @@ size_class: Large
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 47.8, z: 0.04, r: 50.6, estimated: false }  # 전문 지식
+  knowledge: { s: 47.8, z: 0.04, r: 50.7, estimated: false }  # 전문 지식
   reasoning: { s: 42.9, z: -0.01, r: 49.8, estimated: false }  # 추론
   coding: { s: 24.1, z: -0.45, r: 43.2, estimated: false }  # 코딩
   agentic: { s: 24.1, z: -0.36, r: 44.6, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Kimi K2
@@ -43,7 +43,7 @@ Kimi · Open · Large · 컨텍스트 128k · 종합지능 **None** · ⚠️ pa
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 50.6 | +0.04 | 실측 | [[gpqa-diamond]] 76.6%×0.4, [[humanitys-last-exam]] 7.4%×0.3 |
+| 전문 지식 | 50.7 | +0.04 | 실측 | [[gpqa-diamond]] 76.6%×0.4, [[humanitys-last-exam]] 7.4%×0.3 |
 | 추론 | 49.8 | -0.01 | 실측 | [[gpqa-diamond]] 76.6%×1.0, [[humanitys-last-exam]] 7.4%×1.0 |
 | 코딩 | 43.2 | -0.45 | 실측 | [[terminal-bench]] 15.9%×0.5 |
 | 에이전트 | 44.6 | -0.36 | 실측 | [[terminal-bench]] 15.9%×1.0 |

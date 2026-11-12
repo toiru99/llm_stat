@@ -12,7 +12,7 @@ size_class: Small
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 51.4, z: 0.21, r: 53.2, estimated: false }  # 전문 지식
+  knowledge: { s: 51.4, z: 0.22, r: 53.2, estimated: false }  # 전문 지식
   reasoning: { s: 45.9, z: 0.13, r: 52.0, estimated: false }  # 추론
   coding: { s: 43.7, z: 0.2, r: 53.0, estimated: false }  # 코딩
   agentic: { s: 43.7, z: 0.3, r: 54.5, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — JT-35B-Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # JT-35B-Flash
@@ -43,7 +43,7 @@ China Mobile · Proprietary · Small · 컨텍스트 256k · 종합지능 **None
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 53.2 | +0.21 | 실측 | [[gpqa-diamond]] 82.9%×0.4, [[humanitys-last-exam]] 6.4%×0.3 |
+| 전문 지식 | 53.2 | +0.22 | 실측 | [[gpqa-diamond]] 82.9%×0.4, [[humanitys-last-exam]] 6.4%×0.3 |
 | 추론 | 52.0 | +0.13 | 실측 | [[gpqa-diamond]] 82.9%×1.0, [[humanitys-last-exam]] 6.4%×1.0 |
 | 코딩 | 53.0 | +0.2 | 실측 | [[terminal-bench]] 28.8%×0.5 |
 | 에이전트 | 54.5 | +0.3 | 실측 | [[terminal-bench]] 28.8%×1.0 |

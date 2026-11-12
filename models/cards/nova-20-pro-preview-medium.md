@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 50.2, z: 0.16, r: 52.4, estimated: false }  # 전문 지식
   reasoning: { s: 45.4, z: 0.11, r: 51.6, estimated: false }  # 추론
   coding: { s: 36.7, z: -0.03, r: 49.5, estimated: false }  # 코딩
-  agentic: { s: 31.1, z: -0.13, r: 48.1, estimated: false }  # 에이전트
+  agentic: { s: 31.1, z: -0.12, r: 48.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 67.6, z: -0.2, r: 47.1, estimated: false }  # 멀티모달
   long_context: { s: 72.2, z: 0.57, r: 58.6, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova 2.0 Pro Preview (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Nova 2.0 Pro Preview (medium)
@@ -46,7 +46,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **None**
 | 전문 지식 | 52.4 | +0.16 | 실측 | [[gpqa-diamond]] 78.5%×0.4, [[humanitys-last-exam]] 9.4%×0.3 |
 | 추론 | 51.6 | +0.11 | 실측 | [[gpqa-diamond]] 78.5%×1.0, [[humanitys-last-exam]] 9.4%×1.0 |
 | 코딩 | 49.5 | -0.03 | 실측 | [[terminal-bench]] 24.2%×0.5 |
-| 에이전트 | 48.1 | -0.13 | 실측 | [[gdpval]] 477.0%×1.0, [[terminal-bench]] 24.2%×1.0 |
+| 에이전트 | 48.1 | -0.12 | 실측 | [[gdpval]] 477.0%×1.0, [[terminal-bench]] 24.2%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 47.1 | -0.2 | 실측 | [[mmmu-pro]] 65.0%×1.0 |
 | 긴문맥 | 58.6 | +0.57 | 실측 | [[aa-lcr]] 64.0%×1.0 |

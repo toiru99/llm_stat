@@ -14,8 +14,8 @@ is_reasoning: false
 radar:
   knowledge: { s: 25.7, z: -1.03, r: 34.6, estimated: false }  # 전문 지식
   reasoning: { s: 23.1, z: -0.98, r: 35.3, estimated: false }  # 추론
-  coding: { s: 5.8, z: -1.07, r: 33.9, estimated: false }  # 코딩
-  agentic: { s: 5.8, z: -0.98, r: 35.2, estimated: false }  # 에이전트
+  coding: { s: 5.8, z: -1.07, r: 34.0, estimated: false }  # 코딩
+  agentic: { s: 5.8, z: -0.98, r: 35.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 22.9, z: -0.9, r: 36.5, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.7-Flash (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # GLM-4.7-Flash (non-reasoning)
@@ -45,8 +45,8 @@ Z AI · Open · Small · 컨텍스트 200k · 종합지능 **None** · ⚠️ pa
 |---|---|---|---|---|
 | 전문 지식 | 34.6 | -1.03 | 실측 | [[gpqa-diamond]] 45.2%×0.4, [[humanitys-last-exam]] 5.0%×0.3 |
 | 추론 | 35.3 | -0.98 | 실측 | [[gpqa-diamond]] 45.2%×1.0, [[humanitys-last-exam]] 5.0%×1.0 |
-| 코딩 | 33.9 | -1.07 | 실측 | [[terminal-bench]] 3.8%×0.5 |
-| 에이전트 | 35.2 | -0.98 | 실측 | [[terminal-bench]] 3.8%×1.0 |
+| 코딩 | 34.0 | -1.07 | 실측 | [[terminal-bench]] 3.8%×0.5 |
+| 에이전트 | 35.3 | -0.98 | 실측 | [[terminal-bench]] 3.8%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 36.5 | -0.9 | 실측 | [[aa-lcr]] 20.3%×1.0 |

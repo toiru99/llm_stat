@@ -12,10 +12,10 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 50.3, z: 0.16, r: 52.4, estimated: false }  # 전문 지식
+  knowledge: { s: 50.3, z: 0.16, r: 52.5, estimated: false }  # 전문 지식
   reasoning: { s: 45.9, z: 0.13, r: 52.0, estimated: false }  # 추론
   coding: { s: 31.1, z: -0.22, r: 46.7, estimated: false }  # 코딩
-  agentic: { s: 31.1, z: -0.13, r: 48.1, estimated: false }  # 에이전트
+  agentic: { s: 31.1, z: -0.12, r: 48.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 56.4, z: 0.1, r: 51.5, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Max
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Qwen3 Max
@@ -43,10 +43,10 @@ Alibaba · Proprietary · Unknown · 컨텍스트 262k · 종합지능 **None** 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 52.4 | +0.16 | 실측 | [[gpqa-diamond]] 76.4%×0.4, [[humanitys-last-exam]] 11.9%×0.3 |
+| 전문 지식 | 52.5 | +0.16 | 실측 | [[gpqa-diamond]] 76.4%×0.4, [[humanitys-last-exam]] 11.9%×0.3 |
 | 추론 | 52.0 | +0.13 | 실측 | [[gpqa-diamond]] 76.4%×1.0, [[humanitys-last-exam]] 11.9%×1.0 |
 | 코딩 | 46.7 | -0.22 | 실측 | [[terminal-bench]] 20.5%×0.5 |
-| 에이전트 | 48.1 | -0.13 | 실측 | [[terminal-bench]] 20.5%×1.0 |
+| 에이전트 | 48.1 | -0.12 | 실측 | [[terminal-bench]] 20.5%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 51.5 | +0.1 | 실측 | [[aa-lcr]] 50.0%×1.0 |

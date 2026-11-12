@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 86.0, z: 1.89, r: 78.3, estimated: true }  # 전문 지식
-  reasoning: { s: 85.0, z: 2.05, r: 80.7, estimated: false }  # 추론
-  coding: { s: 82.8, z: 1.51, r: 72.7, estimated: true }  # 코딩
-  agentic: { s: 84.8, z: 1.7, r: 75.4, estimated: true }  # 에이전트
+  reasoning: { s: 85.0, z: 2.05, r: 80.8, estimated: false }  # 추론
+  coding: { s: 82.8, z: 1.52, r: 72.7, estimated: true }  # 코딩
+  agentic: { s: 84.8, z: 1.7, r: 75.5, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 91.0, z: 1.14, r: 67.1, estimated: true }  # 긴문맥
-  instruction: { s: 78.0, z: 1.09, r: 66.3, estimated: true }  # 지시 따르기
+  instruction: { s: 78.2, z: 1.1, r: 66.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 4 Carbon (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Gemini 4 Carbon (low)
@@ -44,13 +44,13 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **54.0**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 78.3 | +1.89 | 추정 | (추정) |
-| 추론 | 80.7 | +2.05 | 실측 | [[critpt]] 65.0%×1.0 |
-| 코딩 | 72.7 | +1.51 | 추정 | (추정) |
-| 에이전트 | 75.4 | +1.7 | 추정 | (추정) |
+| 추론 | 80.8 | +2.05 | 실측 | [[critpt]] 65.0%×1.0 |
+| 코딩 | 72.7 | +1.52 | 추정 | (추정) |
+| 에이전트 | 75.5 | +1.7 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 67.1 | +1.14 | 추정 | (추정) |
-| 지시 따르기 | 66.3 | +1.09 | 추정 | (추정) |
+| 지시 따르기 | 66.4 | +1.1 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 34.9, z: -0.58, r: 41.3, estimated: false }  # 전문 지식
   reasoning: { s: 31.5, z: -0.57, r: 41.4, estimated: false }  # 추론
   coding: { s: 30.4, z: -0.24, r: 46.4, estimated: true }  # 코딩
-  agentic: { s: 20.7, z: -0.48, r: 42.8, estimated: true }  # 에이전트
+  agentic: { s: 20.7, z: -0.48, r: 42.9, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 31.4, z: -0.65, r: 40.3, estimated: true }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Sonar Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Sonar Pro
@@ -46,7 +46,7 @@ Perplexity · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None
 | 전문 지식 | 41.3 | -0.58 | 실측 | [[gpqa-diamond]] 57.8%×0.4, [[humanitys-last-exam]] 6.6%×0.3 |
 | 추론 | 41.4 | -0.57 | 실측 | [[gpqa-diamond]] 57.8%×1.0, [[humanitys-last-exam]] 6.6%×1.0 |
 | 코딩 | 46.4 | -0.24 | 추정 | (추정) |
-| 에이전트 | 42.8 | -0.48 | 추정 | (추정) |
+| 에이전트 | 42.9 | -0.48 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 40.3 | -0.65 | 추정 | (추정) |

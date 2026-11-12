@@ -18,14 +18,14 @@ radar:
   agentic: { s: 5.9, z: -0.98, r: 35.3, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 9.3, z: -1.31, r: 30.3, estimated: true }  # 긴문맥
+  long_context: { s: 9.3, z: -1.31, r: 30.4, estimated: true }  # 긴문맥
   instruction: { s: 26.8, z: -1.12, r: 33.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepHermes 3 - Llama-3.1 8B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # DeepHermes 3 - Llama-3.1 8B (non-reasoning)
@@ -49,7 +49,7 @@ Nous Research · Open · Small · 컨텍스트 128k · 종합지능 **None**
 | 에이전트 | 35.3 | -0.98 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 30.3 | -1.31 | 추정 | (추정) |
+| 긴문맥 | 30.4 | -1.31 | 추정 | (추정) |
 | 지시 따르기 | 33.2 | -1.12 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

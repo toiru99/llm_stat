@@ -13,9 +13,9 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 66.0, z: 0.92, r: 63.8, estimated: false }  # 전문 지식
-  reasoning: { s: 46.6, z: 0.17, r: 52.5, estimated: false }  # 추론
+  reasoning: { s: 46.6, z: 0.17, r: 52.6, estimated: false }  # 추론
   coding: { s: 49.5, z: 0.4, r: 55.9, estimated: false }  # 코딩
-  agentic: { s: 47.3, z: 0.42, r: 56.3, estimated: false }  # 에이전트
+  agentic: { s: 47.3, z: 0.42, r: 56.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 79.7, z: 0.42, r: 56.3, estimated: false }  # 멀티모달
   long_context: { s: 88.2, z: 1.05, r: 65.8, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # GPT-5 (high)
@@ -44,9 +44,9 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **None** �
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 63.8 | +0.92 | 실측 | [[gpqa-diamond]] 85.4%×0.4, [[humanitys-last-exam]] 28.5%×0.3 |
-| 추론 | 52.5 | +0.17 | 실측 | [[critpt]] 11.5%×1.0, [[gpqa-diamond]] 85.4%×1.0, [[humanitys-last-exam]] 28.5%×1.0 |
+| 추론 | 52.6 | +0.17 | 실측 | [[critpt]] 11.5%×1.0, [[gpqa-diamond]] 85.4%×1.0, [[humanitys-last-exam]] 28.5%×1.0 |
 | 코딩 | 55.9 | +0.4 | 실측 | [[terminal-bench]] 32.6%×0.5 |
-| 에이전트 | 56.3 | +0.42 | 실측 | [[gdpval]] 925.0%×1.0, [[tau3-banking]] 22.1%×1.0, [[terminal-bench]] 32.6%×1.0 |
+| 에이전트 | 56.4 | +0.42 | 실측 | [[gdpval]] 925.0%×1.0, [[tau3-banking]] 22.1%×1.0, [[terminal-bench]] 32.6%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 56.3 | +0.42 | 실측 | [[mmmu-pro]] 74.0%×1.0 |
 | 긴문맥 | 65.8 | +1.05 | 실측 | [[aa-lcr]] 78.2%×1.0 |

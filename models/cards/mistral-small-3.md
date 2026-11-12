@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 25.6, z: -1.03, r: 34.6, estimated: false }  # 전문 지식
   reasoning: { s: 22.9, z: -0.99, r: 35.1, estimated: false }  # 추론
-  coding: { s: 2.3, z: -1.19, r: 32.2, estimated: true }  # 코딩
+  coding: { s: 2.3, z: -1.18, r: 32.2, estimated: true }  # 코딩
   agentic: { s: 2.3, z: -1.1, r: 33.5, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Small 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Mistral Small 3
@@ -45,7 +45,7 @@ Mistral · Open · Small · 컨텍스트 32k · 종합지능 **None** · ⚠️ 
 |---|---|---|---|---|
 | 전문 지식 | 34.6 | -1.03 | 실측 | [[gpqa-diamond]] 46.2%×0.4, [[humanitys-last-exam]] 3.8%×0.3 |
 | 추론 | 35.1 | -0.99 | 실측 | [[gpqa-diamond]] 46.2%×1.0, [[humanitys-last-exam]] 3.8%×1.0 |
-| 코딩 | 32.2 | -1.19 | 추정 | (추정) |
+| 코딩 | 32.2 | -1.18 | 추정 | (추정) |
 | 에이전트 | 33.5 | -1.1 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

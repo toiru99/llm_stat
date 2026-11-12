@@ -12,10 +12,10 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 70.8, z: 1.15, r: 67.3, estimated: false }  # 전문 지식
+  knowledge: { s: 70.8, z: 1.16, r: 67.3, estimated: false }  # 전문 지식
   reasoning: { s: 67.5, z: 1.19, r: 67.9, estimated: false }  # 추론
-  coding: { s: 82.7, z: 1.51, r: 72.6, estimated: false }  # 코딩
-  agentic: { s: 82.7, z: 1.62, r: 74.3, estimated: false }  # 에이전트
+  coding: { s: 82.7, z: 1.51, r: 72.7, estimated: false }  # 코딩
+  agentic: { s: 82.7, z: 1.62, r: 74.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 82.4, z: 0.55, r: 58.3, estimated: false }  # 멀티모달
   long_context: { s: 85.3, z: 0.97, r: 64.5, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 4.7 (non-reasoning, high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Claude Opus 4.7 (non-reasoning, high)
@@ -43,10 +43,10 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 67.3 | +1.15 | 실측 | [[gpqa-diamond]] 88.5%×0.4, [[humanitys-last-exam]] 33.3%×0.3 |
+| 전문 지식 | 67.3 | +1.16 | 실측 | [[gpqa-diamond]] 88.5%×0.4, [[humanitys-last-exam]] 33.3%×0.3 |
 | 추론 | 67.9 | +1.19 | 실측 | [[gpqa-diamond]] 88.5%×1.0, [[humanitys-last-exam]] 33.3%×1.0 |
-| 코딩 | 72.6 | +1.51 | 실측 | [[terminal-bench]] 54.5%×0.5 |
-| 에이전트 | 74.3 | +1.62 | 실측 | [[terminal-bench]] 54.5%×1.0 |
+| 코딩 | 72.7 | +1.51 | 실측 | [[terminal-bench]] 54.5%×0.5 |
+| 에이전트 | 74.4 | +1.62 | 실측 | [[terminal-bench]] 54.5%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 58.3 | +0.55 | 실측 | [[mmmu-pro]] 76.0%×1.0 |
 | 긴문맥 | 64.5 | +0.97 | 실측 | [[aa-lcr]] 75.7%×1.0 |

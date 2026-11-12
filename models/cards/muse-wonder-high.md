@@ -18,14 +18,14 @@ radar:
   agentic: { s: 51.1, z: 0.55, r: 58.3, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 93.2, z: 1.1, r: 66.5, estimated: false }  # 멀티모달
-  long_context: { s: 84.9, z: 0.96, r: 64.3, estimated: true }  # 긴문맥
+  long_context: { s: 84.9, z: 0.96, r: 64.4, estimated: true }  # 긴문맥
   instruction: { s: 85.1, z: 1.39, r: 70.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Wonder (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Muse Wonder (high)
@@ -49,7 +49,7 @@ Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **41.0**
 | 에이전트 | 58.3 | +0.55 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 66.5 | +1.1 | 실측 | [[mmmu-pro]] 84.0%×1.0 |
-| 긴문맥 | 64.3 | +0.96 | 추정 | (추정) |
+| 긴문맥 | 64.4 | +0.96 | 추정 | (추정) |
 | 지시 따르기 | 70.9 | +1.39 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

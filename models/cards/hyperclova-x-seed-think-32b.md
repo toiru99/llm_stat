@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 36.7, z: -0.49, r: 42.6, estimated: false }  # 전문 지식
-  reasoning: { s: 32.9, z: -0.5, r: 42.4, estimated: false }  # 추론
+  reasoning: { s: 32.9, z: -0.5, r: 42.5, estimated: false }  # 추론
   coding: { s: 18.4, z: -0.65, r: 40.3, estimated: false }  # 코딩
-  agentic: { s: 18.4, z: -0.56, r: 41.6, estimated: false }  # 에이전트
+  agentic: { s: 18.4, z: -0.56, r: 41.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 15.4, z: -1.13, r: 33.1, estimated: false }  # 긴문맥
+  long_context: { s: 15.4, z: -1.12, r: 33.1, estimated: false }  # 긴문맥
   instruction: { s: 36.2, z: -0.71, r: 39.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — HyperCLOVA X SEED Think (32B)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # HyperCLOVA X SEED Think (32B)
@@ -44,12 +44,12 @@ Naver · Open · Small · 컨텍스트 128k · 종합지능 **None**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 42.6 | -0.49 | 실측 | [[gpqa-diamond]] 61.5%×0.4, [[humanitys-last-exam]] 5.5%×0.3 |
-| 추론 | 42.4 | -0.5 | 실측 | [[gpqa-diamond]] 61.5%×1.0, [[humanitys-last-exam]] 5.5%×1.0 |
+| 추론 | 42.5 | -0.5 | 실측 | [[gpqa-diamond]] 61.5%×1.0, [[humanitys-last-exam]] 5.5%×1.0 |
 | 코딩 | 40.3 | -0.65 | 실측 | [[terminal-bench]] 12.1%×0.5 |
-| 에이전트 | 41.6 | -0.56 | 실측 | [[terminal-bench]] 12.1%×1.0 |
+| 에이전트 | 41.7 | -0.56 | 실측 | [[terminal-bench]] 12.1%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 33.1 | -1.13 | 실측 | [[aa-lcr]] 13.7%×1.0 |
+| 긴문맥 | 33.1 | -1.12 | 실측 | [[aa-lcr]] 13.7%×1.0 |
 | 지시 따르기 | 39.3 | -0.71 | 실측 | [[ifbench]] 37.9%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

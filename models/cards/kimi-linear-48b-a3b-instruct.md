@@ -12,9 +12,9 @@ size_class: Medium
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 21.6, z: -1.23, r: 31.6, estimated: false }  # 전문 지식
+  knowledge: { s: 21.6, z: -1.22, r: 31.6, estimated: false }  # 전문 지식
   reasoning: { s: 19.1, z: -1.18, r: 32.3, estimated: false }  # 추론
-  coding: { s: 17.3, z: -0.68, r: 39.7, estimated: false }  # 코딩
+  coding: { s: 17.3, z: -0.68, r: 39.8, estimated: false }  # 코딩
   agentic: { s: 17.3, z: -0.59, r: 41.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi Linear 48B A3B Instruct
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Kimi Linear 48B A3B Instruct
@@ -43,9 +43,9 @@ Kimi · Open · Medium · 컨텍스트 1M · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 31.6 | -1.23 | 실측 | [[gpqa-diamond]] 41.2%×0.4, [[humanitys-last-exam]] 2.5%×0.3 |
+| 전문 지식 | 31.6 | -1.22 | 실측 | [[gpqa-diamond]] 41.2%×0.4, [[humanitys-last-exam]] 2.5%×0.3 |
 | 추론 | 32.3 | -1.18 | 실측 | [[gpqa-diamond]] 41.2%×1.0, [[humanitys-last-exam]] 2.5%×1.0 |
-| 코딩 | 39.7 | -0.68 | 실측 | [[terminal-bench]] 11.4%×0.5 |
+| 코딩 | 39.8 | -0.68 | 실측 | [[terminal-bench]] 11.4%×0.5 |
 | 에이전트 | 41.1 | -0.59 | 실측 | [[terminal-bench]] 11.4%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

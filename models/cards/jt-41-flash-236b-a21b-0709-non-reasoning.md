@@ -1,13 +1,13 @@
 ---
 type: Model
-title: JT-4.1 Flash 236B A21B (non-reasoning)
+title: JT-4.1 Flash 236B A21B 0709 (non-reasoning)
 creator: China Mobile
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 262000
-status: current
+status: past
 size_class: Large
 params_b: null
 is_reasoning: false
@@ -22,15 +22,15 @@ radar:
   instruction: { s: 73.1, z: 0.88, r: 63.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
-    title: Artificial Analysis — JT-4.1 Flash 236B A21B (non-reasoning)
+    title: Artificial Analysis — JT-4.1 Flash 236B A21B 0709 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
-# JT-4.1 Flash 236B A21B (non-reasoning)
+# JT-4.1 Flash 236B A21B 0709 (non-reasoning)
 
-China Mobile · Proprietary · Large · 컨텍스트 262k · 종합지능 **None**
+China Mobile · Proprietary · Large · 컨텍스트 262k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 에이전트

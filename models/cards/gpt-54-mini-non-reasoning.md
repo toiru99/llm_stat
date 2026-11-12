@@ -12,9 +12,9 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 36.4, z: -0.51, r: 42.3, estimated: false }  # 전문 지식
-  reasoning: { s: 32.6, z: -0.52, r: 42.3, estimated: false }  # 추론
-  coding: { s: 27.6, z: -0.34, r: 44.9, estimated: false }  # 코딩
+  knowledge: { s: 36.4, z: -0.51, r: 42.4, estimated: false }  # 전문 지식
+  reasoning: { s: 32.6, z: -0.51, r: 42.3, estimated: false }  # 추론
+  coding: { s: 27.6, z: -0.34, r: 45.0, estimated: false }  # 코딩
   agentic: { s: 30.6, z: -0.14, r: 47.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 60.8, z: -0.54, r: 41.9, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.4 mini (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # GPT-5.4 mini (non-reasoning)
@@ -43,9 +43,9 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **None** �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 42.3 | -0.51 | 실측 | [[gpqa-diamond]] 60.6%×0.4, [[humanitys-last-exam]] 5.9%×0.3 |
-| 추론 | 42.3 | -0.52 | 실측 | [[gpqa-diamond]] 60.6%×1.0, [[humanitys-last-exam]] 5.9%×1.0 |
-| 코딩 | 44.9 | -0.34 | 실측 | [[terminal-bench]] 18.2%×0.5 |
+| 전문 지식 | 42.4 | -0.51 | 실측 | [[gpqa-diamond]] 60.6%×0.4, [[humanitys-last-exam]] 5.9%×0.3 |
+| 추론 | 42.3 | -0.51 | 실측 | [[gpqa-diamond]] 60.6%×1.0, [[humanitys-last-exam]] 5.9%×1.0 |
+| 코딩 | 45.0 | -0.34 | 실측 | [[terminal-bench]] 18.2%×0.5 |
 | 에이전트 | 47.9 | -0.14 | 실측 | [[gdpval]] 597.0%×1.0, [[itbench]] 18.6%×1.0, [[terminal-bench]] 18.2%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 41.9 | -0.54 | 실측 | [[mmmu-pro]] 60.0%×1.0 |

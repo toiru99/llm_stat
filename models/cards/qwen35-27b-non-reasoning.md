@@ -14,8 +14,8 @@ is_reasoning: false
 radar:
   knowledge: { s: 56.6, z: 0.47, r: 57.0, estimated: false }  # 전문 지식
   reasoning: { s: 51.7, z: 0.42, r: 56.3, estimated: false }  # 추론
-  coding: { s: 48.3, z: 0.35, r: 55.3, estimated: false }  # 코딩
-  agentic: { s: 48.3, z: 0.46, r: 56.8, estimated: false }  # 에이전트
+  coding: { s: 48.3, z: 0.36, r: 55.3, estimated: false }  # 코딩
+  agentic: { s: 48.3, z: 0.46, r: 56.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 74.3, z: 0.15, r: 52.2, estimated: false }  # 멀티모달
   long_context: { s: 72.2, z: 0.57, r: 58.6, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 27B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Qwen3.5 27B (non-reasoning)
@@ -45,8 +45,8 @@ Alibaba · Open · Small · 컨텍스트 262k · 종합지능 **None** · ⚠️
 |---|---|---|---|---|
 | 전문 지식 | 57.0 | +0.47 | 실측 | [[gpqa-diamond]] 84.2%×0.4, [[humanitys-last-exam]] 13.9%×0.3 |
 | 추론 | 56.3 | +0.42 | 실측 | [[gpqa-diamond]] 84.2%×1.0, [[humanitys-last-exam]] 13.9%×1.0 |
-| 코딩 | 55.3 | +0.35 | 실측 | [[terminal-bench]] 31.8%×0.5 |
-| 에이전트 | 56.8 | +0.46 | 실측 | [[terminal-bench]] 31.8%×1.0 |
+| 코딩 | 55.3 | +0.36 | 실측 | [[terminal-bench]] 31.8%×0.5 |
+| 에이전트 | 56.9 | +0.46 | 실측 | [[terminal-bench]] 31.8%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 52.2 | +0.15 | 실측 | [[mmmu-pro]] 70.0%×1.0 |
 | 긴문맥 | 58.6 | +0.57 | 실측 | [[aa-lcr]] 64.0%×1.0 |

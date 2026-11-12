@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 61.0, z: 0.68, r: 60.2, estimated: false }  # 전문 지식
-  reasoning: { s: 56.9, z: 0.68, r: 60.1, estimated: false }  # 추론
+  reasoning: { s: 56.9, z: 0.68, r: 60.2, estimated: false }  # 추론
   coding: { s: 47.2, z: 0.32, r: 54.8, estimated: false }  # 코딩
   agentic: { s: 47.2, z: 0.42, r: 56.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2-Flash (Feb 2026)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # MiMo-V2-Flash (Feb 2026)
@@ -44,7 +44,7 @@ Xiaomi · Open · Large · 컨텍스트 256k · 종합지능 **None** · ⚠️ 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 60.2 | +0.68 | 실측 | [[gpqa-diamond]] 83.5%×0.4, [[humanitys-last-exam]] 22.1%×0.3 |
-| 추론 | 60.1 | +0.68 | 실측 | [[gpqa-diamond]] 83.5%×1.0, [[humanitys-last-exam]] 22.1%×1.0 |
+| 추론 | 60.2 | +0.68 | 실측 | [[gpqa-diamond]] 83.5%×1.0, [[humanitys-last-exam]] 22.1%×1.0 |
 | 코딩 | 54.8 | +0.32 | 실측 | [[terminal-bench]] 31.1%×0.5 |
 | 에이전트 | 56.3 | +0.42 | 실측 | [[terminal-bench]] 31.1%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

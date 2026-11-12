@@ -18,14 +18,14 @@ radar:
   agentic: { s: 59.4, z: 0.83, r: 62.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 84.2, z: 0.93, r: 64.0, estimated: false }  # 긴문맥
+  long_context: { s: 84.2, z: 0.94, r: 64.0, estimated: false }  # 긴문맥
   instruction: { s: 87.9, z: 1.51, r: 72.7, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Motif 3 (Beta)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Motif 3 (Beta)
@@ -34,7 +34,7 @@ Motif Technologies · Proprietary · Large · 컨텍스트 262k · 종합지능 
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 추론
-- **약점**: 긴문맥, 에이전트
+- **약점**: 코딩, 에이전트
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 262k ctx`
@@ -49,7 +49,7 @@ Motif Technologies · Proprietary · Large · 컨텍스트 262k · 종합지능 
 | 에이전트 | 62.5 | +0.83 | 실측 | [[gdpval]] 1109.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 64.0 | +0.93 | 실측 | [[aa-lcr]] 74.7%×1.0 |
+| 긴문맥 | 64.0 | +0.94 | 실측 | [[aa-lcr]] 74.7%×1.0 |
 | 지시 따르기 | 72.7 | +1.51 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

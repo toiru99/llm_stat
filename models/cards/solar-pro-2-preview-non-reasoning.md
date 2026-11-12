@@ -12,9 +12,9 @@ size_class: Small
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 31.0, z: -0.77, r: 38.4, estimated: false }  # 전문 지식
-  reasoning: { s: 27.6, z: -0.77, r: 38.5, estimated: false }  # 추론
-  coding: { s: 10.3, z: -0.92, r: 36.2, estimated: true }  # 코딩
+  knowledge: { s: 31.0, z: -0.77, r: 38.5, estimated: false }  # 전문 지식
+  reasoning: { s: 27.6, z: -0.76, r: 38.5, estimated: false }  # 추론
+  coding: { s: 10.3, z: -0.92, r: 36.3, estimated: true }  # 코딩
   agentic: { s: 10.0, z: -0.84, r: 37.4, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Pro 2 (Preview) (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Solar Pro 2 (Preview) (non-reasoning)
@@ -33,7 +33,7 @@ timestamp: 2026-11-11T00:00:00Z
 Upstage · Proprietary · Small · 컨텍스트 64k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 전문 지식, 추론
+- **강점**: 추론, 전문 지식
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
@@ -43,9 +43,9 @@ Upstage · Proprietary · Small · 컨텍스트 64k · 종합지능 **None** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 38.4 | -0.77 | 실측 | [[gpqa-diamond]] 54.4%×0.4, [[humanitys-last-exam]] 3.7%×0.3 |
-| 추론 | 38.5 | -0.77 | 실측 | [[gpqa-diamond]] 54.4%×1.0, [[humanitys-last-exam]] 3.7%×1.0 |
-| 코딩 | 36.2 | -0.92 | 추정 | (추정) |
+| 전문 지식 | 38.5 | -0.77 | 실측 | [[gpqa-diamond]] 54.4%×0.4, [[humanitys-last-exam]] 3.7%×0.3 |
+| 추론 | 38.5 | -0.76 | 실측 | [[gpqa-diamond]] 54.4%×1.0, [[humanitys-last-exam]] 3.7%×1.0 |
+| 코딩 | 36.3 | -0.92 | 추정 | (추정) |
 | 에이전트 | 37.4 | -0.84 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

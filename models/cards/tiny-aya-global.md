@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 16.1, z: -1.49, r: 27.7, estimated: false }  # 전문 지식
   reasoning: { s: 14.8, z: -1.39, r: 29.1, estimated: false }  # 추론
-  coding: { s: 0.0, z: -1.26, r: 31.0, estimated: false }  # 코딩
+  coding: { s: 0.0, z: -1.26, r: 31.1, estimated: false }  # 코딩
   agentic: { s: 0.0, z: -1.18, r: 32.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Tiny Aya Global
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Tiny Aya Global
@@ -45,7 +45,7 @@ Cohere · Open · Tiny · 컨텍스트 8k · 종합지능 **None**
 |---|---|---|---|---|
 | 전문 지식 | 27.7 | -1.49 | 실측 | [[gpqa-diamond]] 30.5%×0.4, [[humanitys-last-exam]] 5.2%×0.3 |
 | 추론 | 29.1 | -1.39 | 실측 | [[gpqa-diamond]] 30.5%×1.0, [[humanitys-last-exam]] 5.2%×1.0 |
-| 코딩 | 31.0 | -1.26 | 실측 | [[terminal-bench]] 0.0%×0.5 |
+| 코딩 | 31.1 | -1.26 | 실측 | [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 32.3 | -1.18 | 실측 | [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

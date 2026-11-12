@@ -13,8 +13,8 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 16.0, z: -1.49, r: 27.6, estimated: false }  # 전문 지식
-  reasoning: { s: 14.7, z: -1.4, r: 29.1, estimated: false }  # 추론
-  coding: { s: 0.0, z: -1.26, r: 31.0, estimated: false }  # 코딩
+  reasoning: { s: 14.7, z: -1.39, r: 29.1, estimated: false }  # 추론
+  coding: { s: 0.0, z: -1.26, r: 31.1, estimated: false }  # 코딩
   agentic: { s: 9.7, z: -0.85, r: 37.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 31.1, z: -2.04, r: 19.4, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniCPM-V 4.6 1.3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # MiniCPM-V 4.6 1.3B
@@ -44,8 +44,8 @@ OpenBMB · Open · Tiny · 컨텍스트 262k · 종합지능 **None**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 27.6 | -1.49 | 실측 | [[gpqa-diamond]] 30.5%×0.4, [[humanitys-last-exam]] 5.1%×0.3 |
-| 추론 | 29.1 | -1.4 | 실측 | [[gpqa-diamond]] 30.5%×1.0, [[humanitys-last-exam]] 5.1%×1.0 |
-| 코딩 | 31.0 | -1.26 | 실측 | [[terminal-bench]] 0.0%×0.5 |
+| 추론 | 29.1 | -1.39 | 실측 | [[gpqa-diamond]] 30.5%×1.0, [[humanitys-last-exam]] 5.1%×1.0 |
+| 코딩 | 31.1 | -1.26 | 실측 | [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 37.2 | -0.85 | 실측 | [[gdpval]] 362.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 19.4 | -2.04 | 실측 | [[mmmu-pro]] 38.0%×1.0 |

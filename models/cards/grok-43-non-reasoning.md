@@ -18,14 +18,14 @@ radar:
   agentic: { s: 31.6, z: -0.11, r: 48.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 67.6, z: -0.2, r: 47.1, estimated: false }  # 멀티모달
-  long_context: { s: 36.4, z: -0.5, r: 42.5, estimated: false }  # 긴문맥
+  long_context: { s: 36.4, z: -0.5, r: 42.6, estimated: false }  # 긴문맥
   instruction: { s: 49.9, z: -0.13, r: 48.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.3 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Grok 4.3 (non-reasoning)
@@ -49,7 +49,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** �
 | 에이전트 | 48.4 | -0.11 | 실측 | [[gdpval]] 949.0%×1.0, [[tau3-banking]] 8.0%×1.0, [[terminal-bench]] 18.9%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 47.1 | -0.2 | 실측 | [[mmmu-pro]] 65.0%×1.0 |
-| 긴문맥 | 42.5 | -0.5 | 실측 | [[aa-lcr]] 32.3%×1.0 |
+| 긴문맥 | 42.6 | -0.5 | 실측 | [[aa-lcr]] 32.3%×1.0 |
 | 지시 따르기 | 48.1 | -0.13 | 실측 | [[ifbench]] 47.6%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

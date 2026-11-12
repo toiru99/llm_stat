@@ -12,7 +12,7 @@ size_class: Unknown
 params_b: null
 is_reasoning: null
 radar:
-  knowledge: { s: 46.6, z: -0.02, r: 49.7, estimated: false }  # 전문 지식
+  knowledge: { s: 46.6, z: -0.02, r: 49.8, estimated: false }  # 전문 지식
   reasoning: { s: 41.8, z: -0.07, r: 49.0, estimated: false }  # 추론
   coding: { s: 8.0, z: -0.99, r: 35.1, estimated: false }  # 코딩
   agentic: { s: 8.0, z: -0.91, r: 36.4, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama Nemotron Super 49B v1.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Llama Nemotron Super 49B v1.5
@@ -43,7 +43,7 @@ NVIDIA · Open · Unknown · 컨텍스트 128k · 종합지능 **None** · ⚠�
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 49.7 | -0.02 | 실측 | [[gpqa-diamond]] 74.8%×0.4, [[humanitys-last-exam]] 7.3%×0.3 |
+| 전문 지식 | 49.8 | -0.02 | 실측 | [[gpqa-diamond]] 74.8%×0.4, [[humanitys-last-exam]] 7.3%×0.3 |
 | 추론 | 49.0 | -0.07 | 실측 | [[gpqa-diamond]] 74.8%×1.0, [[humanitys-last-exam]] 7.3%×1.0 |
 | 코딩 | 35.1 | -0.99 | 실측 | [[terminal-bench]] 5.3%×0.5 |
 | 에이전트 | 36.4 | -0.91 | 실측 | [[terminal-bench]] 5.3%×1.0 |

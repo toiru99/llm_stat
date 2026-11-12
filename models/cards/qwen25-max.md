@@ -12,7 +12,7 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 33.9, z: -0.63, r: 40.5, estimated: false }  # 전문 지식
+  knowledge: { s: 33.9, z: -0.63, r: 40.6, estimated: false }  # 전문 지식
   reasoning: { s: 30.1, z: -0.64, r: 40.4, estimated: false }  # 추론
   coding: { s: 19.6, z: -0.61, r: 40.9, estimated: true }  # 코딩
   agentic: { s: 13.6, z: -0.72, r: 39.2, estimated: true }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen2.5 Max
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Qwen2.5 Max
@@ -43,7 +43,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 32k · 종합지능 **None** �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 40.5 | -0.63 | 실측 | [[gpqa-diamond]] 58.7%×0.4, [[humanitys-last-exam]] 3.8%×0.3 |
+| 전문 지식 | 40.6 | -0.63 | 실측 | [[gpqa-diamond]] 58.7%×0.4, [[humanitys-last-exam]] 3.8%×0.3 |
 | 추론 | 40.4 | -0.64 | 실측 | [[gpqa-diamond]] 58.7%×1.0, [[humanitys-last-exam]] 3.8%×1.0 |
 | 코딩 | 40.9 | -0.61 | 추정 | (추정) |
 | 에이전트 | 39.2 | -0.72 | 추정 | (추정) |

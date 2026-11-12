@@ -14,8 +14,8 @@ is_reasoning: true
 radar:
   knowledge: { s: 45.2, z: -0.08, r: 48.8, estimated: false }  # 전문 지식
   reasoning: { s: 40.7, z: -0.12, r: 48.2, estimated: false }  # 추론
-  coding: { s: 5.8, z: -1.07, r: 33.9, estimated: false }  # 코딩
-  agentic: { s: 5.8, z: -0.98, r: 35.2, estimated: false }  # 에이전트
+  coding: { s: 5.8, z: -1.07, r: 34.0, estimated: false }  # 코딩
+  agentic: { s: 5.8, z: -0.98, r: 35.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 60.8, z: -0.54, r: 41.9, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.59, r: 26.2, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Omni 30B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Qwen3 Omni 30B A3B
@@ -45,8 +45,8 @@ Alibaba · Open · Small · 컨텍스트 66k · 종합지능 **None**
 |---|---|---|---|---|
 | 전문 지식 | 48.8 | -0.08 | 실측 | [[gpqa-diamond]] 72.6%×0.4, [[humanitys-last-exam]] 7.5%×0.3 |
 | 추론 | 48.2 | -0.12 | 실측 | [[gpqa-diamond]] 72.6%×1.0, [[humanitys-last-exam]] 7.5%×1.0 |
-| 코딩 | 33.9 | -1.07 | 실측 | [[terminal-bench]] 3.8%×0.5 |
-| 에이전트 | 35.2 | -0.98 | 실측 | [[terminal-bench]] 3.8%×1.0 |
+| 코딩 | 34.0 | -1.07 | 실측 | [[terminal-bench]] 3.8%×0.5 |
+| 에이전트 | 35.3 | -0.98 | 실측 | [[terminal-bench]] 3.8%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 41.9 | -0.54 | 실측 | [[mmmu-pro]] 60.0%×1.0 |
 | 긴문맥 | 26.2 | -1.59 | 실측 | [[aa-lcr]] 0.0%×1.0 |

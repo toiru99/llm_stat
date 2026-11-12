@@ -13,9 +13,9 @@ params_b: null
 is_reasoning: null
 radar:
   knowledge: { s: 29.9, z: -0.82, r: 37.7, estimated: false }  # 전문 지식
-  reasoning: { s: 26.8, z: -0.8, r: 37.9, estimated: false }  # 추론
-  coding: { s: 7.3, z: -1.02, r: 34.7, estimated: true }  # 코딩
-  agentic: { s: 6.9, z: -0.95, r: 35.8, estimated: true }  # 에이전트
+  reasoning: { s: 26.8, z: -0.8, r: 38.0, estimated: false }  # 추론
+  coding: { s: 7.3, z: -1.02, r: 34.8, estimated: true }  # 코딩
+  agentic: { s: 6.9, z: -0.94, r: 35.8, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.59, r: 26.2, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Qwen3 4B
@@ -44,9 +44,9 @@ Alibaba · Open · Unknown · 컨텍스트 32k · 종합지능 **None** · ⚠�
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 37.7 | -0.82 | 실측 | [[gpqa-diamond]] 52.2%×0.4, [[humanitys-last-exam]] 4.4%×0.3 |
-| 추론 | 37.9 | -0.8 | 실측 | [[gpqa-diamond]] 52.2%×1.0, [[humanitys-last-exam]] 4.4%×1.0 |
-| 코딩 | 34.7 | -1.02 | 추정 | (추정) |
-| 에이전트 | 35.8 | -0.95 | 추정 | (추정) |
+| 추론 | 38.0 | -0.8 | 실측 | [[gpqa-diamond]] 52.2%×1.0, [[humanitys-last-exam]] 4.4%×1.0 |
+| 코딩 | 34.8 | -1.02 | 추정 | (추정) |
+| 에이전트 | 35.8 | -0.94 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 26.2 | -1.59 | 실측 | [[aa-lcr]] 0.0%×1.0 |

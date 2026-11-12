@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 32.3, z: -0.71, r: 39.4, estimated: true }  # 전문 지식
   reasoning: { s: 29.4, z: -0.67, r: 39.9, estimated: false }  # 추론
   coding: { s: 8.5, z: -0.98, r: 35.3, estimated: true }  # 코딩
-  agentic: { s: 8.9, z: -0.88, r: 36.8, estimated: true }  # 에이전트
+  agentic: { s: 8.9, z: -0.88, r: 36.9, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 22.5, z: -0.91, r: 36.3, estimated: true }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Large 4 (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Mistral Large 4 (medium)
@@ -46,7 +46,7 @@ Mistral · Open · Large · 컨텍스트 1M · 종합지능 **23.0**
 | 전문 지식 | 39.4 | -0.71 | 추정 | (추정) |
 | 추론 | 39.9 | -0.67 | 실측 | [[critpt]] 22.5%×1.0 |
 | 코딩 | 35.3 | -0.98 | 추정 | (추정) |
-| 에이전트 | 36.8 | -0.88 | 추정 | (추정) |
+| 에이전트 | 36.9 | -0.88 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 36.3 | -0.91 | 추정 | (추정) |

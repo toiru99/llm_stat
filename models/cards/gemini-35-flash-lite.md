@@ -12,7 +12,7 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 59.2, z: 0.59, r: 58.9, estimated: false }  # 전문 지식
+  knowledge: { s: 59.2, z: 0.6, r: 58.9, estimated: false }  # 전문 지식
   reasoning: { s: 38.1, z: -0.25, r: 46.3, estimated: false }  # 추론
   coding: { s: 56.6, z: 0.63, r: 59.5, estimated: false }  # 코딩
   agentic: { s: 43.6, z: 0.3, r: 54.5, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.5 Flash-Lite
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Gemini 3.5 Flash-Lite
@@ -43,7 +43,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **12.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 58.9 | +0.59 | 실측 | [[gpqa-diamond]] 83.8%×0.4, [[humanitys-last-exam]] 18.8%×0.3 |
+| 전문 지식 | 58.9 | +0.6 | 실측 | [[gpqa-diamond]] 83.8%×0.4, [[humanitys-last-exam]] 18.8%×0.3 |
 | 추론 | 46.3 | -0.25 | 실측 | [[critpt]] 3.5%×1.0, [[gpqa-diamond]] 83.8%×1.0, [[humanitys-last-exam]] 18.8%×1.0 |
 | 코딩 | 59.5 | +0.63 | 실측 | [[scicode]] 41.3%×1.0 |
 | 에이전트 | 54.5 | +0.3 | 실측 | [[gdpval]] 995.0%×1.0, [[tau3-banking]] 17.5%×1.0 |

@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 61.8, z: 0.72, r: 60.8, estimated: false }  # 전문 지식
   reasoning: { s: 58.1, z: 0.73, r: 61.0, estimated: false }  # 추론
   coding: { s: 49.5, z: 0.4, r: 55.9, estimated: false }  # 코딩
-  agentic: { s: 49.5, z: 0.5, r: 57.4, estimated: false }  # 에이전트
+  agentic: { s: 49.5, z: 0.5, r: 57.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 71.0, z: 0.54, r: 58.1, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Step 3.5 Flash 2603
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Step 3.5 Flash 2603
@@ -46,7 +46,7 @@ StepFun · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **None** 
 | 전문 지식 | 60.8 | +0.72 | 실측 | [[gpqa-diamond]] 82.6%×0.4, [[humanitys-last-exam]] 24.5%×0.3 |
 | 추론 | 61.0 | +0.73 | 실측 | [[gpqa-diamond]] 82.6%×1.0, [[humanitys-last-exam]] 24.5%×1.0 |
 | 코딩 | 55.9 | +0.4 | 실측 | [[terminal-bench]] 32.6%×0.5 |
-| 에이전트 | 57.4 | +0.5 | 실측 | [[terminal-bench]] 32.6%×1.0 |
+| 에이전트 | 57.5 | +0.5 | 실측 | [[terminal-bench]] 32.6%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 58.1 | +0.54 | 실측 | [[aa-lcr]] 63.0%×1.0 |

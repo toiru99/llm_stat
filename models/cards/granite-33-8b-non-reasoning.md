@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 17.7, z: -1.41, r: 28.8, estimated: false }  # 전문 지식
   reasoning: { s: 16.0, z: -1.33, r: 30.0, estimated: false }  # 추론
-  coding: { s: 0.0, z: -1.26, r: 31.0, estimated: false }  # 코딩
+  coding: { s: 0.0, z: -1.26, r: 31.1, estimated: false }  # 코딩
   agentic: { s: 0.0, z: -1.18, r: 32.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 3.3 8B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Granite 3.3 8B (non-reasoning)
@@ -45,7 +45,7 @@ IBM · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠️ pas
 |---|---|---|---|---|
 | 전문 지식 | 28.8 | -1.41 | 실측 | [[gpqa-diamond]] 33.8%×0.4, [[humanitys-last-exam]] 4.2%×0.3 |
 | 추론 | 30.0 | -1.33 | 실측 | [[gpqa-diamond]] 33.8%×1.0, [[humanitys-last-exam]] 4.2%×1.0 |
-| 코딩 | 31.0 | -1.26 | 실측 | [[terminal-bench]] 0.0%×0.5 |
+| 코딩 | 31.1 | -1.26 | 실측 | [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 32.3 | -1.18 | 실측 | [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

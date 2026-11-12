@@ -18,14 +18,14 @@ radar:
   agentic: { s: 10.1, z: -0.84, r: 37.4, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 21.1, z: -0.96, r: 35.7, estimated: true }  # 긴문맥
-  instruction: { s: 32.4, z: -0.88, r: 36.8, estimated: true }  # 지시 따르기
+  long_context: { s: 21.1, z: -0.95, r: 35.7, estimated: true }  # 긴문맥
+  instruction: { s: 32.4, z: -0.88, r: 36.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 3.5 Sonnet (Oct)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Claude 3.5 Sonnet (Oct)
@@ -49,8 +49,8 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None*
 | 에이전트 | 37.4 | -0.84 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 35.7 | -0.96 | 추정 | (추정) |
-| 지시 따르기 | 36.8 | -0.88 | 추정 | (추정) |
+| 긴문맥 | 35.7 | -0.95 | 추정 | (추정) |
+| 지시 따르기 | 36.9 | -0.88 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 24.7, z: -1.07, r: 33.9, estimated: true }  # 전문 지식
   reasoning: { s: 20.3, z: -1.12, r: 33.2, estimated: false }  # 추론
-  coding: { s: 8.6, z: -0.98, r: 35.4, estimated: true }  # 코딩
+  coding: { s: 8.6, z: -0.97, r: 35.4, estimated: true }  # 코딩
   agentic: { s: 9.8, z: -0.85, r: 37.3, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nanbeige4.3-33B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Nanbeige4.3-33B
@@ -45,7 +45,7 @@ Nanbeige · Open · Small · 컨텍스트 524k · 종합지능 **20.0**
 |---|---|---|---|---|
 | 전문 지식 | 33.9 | -1.07 | 추정 | (추정) |
 | 추론 | 33.2 | -1.12 | 실측 | [[critpt]] 15.5%×1.0 |
-| 코딩 | 35.4 | -0.98 | 추정 | (추정) |
+| 코딩 | 35.4 | -0.97 | 추정 | (추정) |
 | 에이전트 | 37.3 | -0.85 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

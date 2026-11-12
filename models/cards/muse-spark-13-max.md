@@ -18,14 +18,14 @@ radar:
   agentic: { s: 82.4, z: 1.61, r: 74.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 93.6, z: 1.21, r: 68.2, estimated: false }  # 긴문맥
+  long_context: { s: 93.6, z: 1.22, r: 68.2, estimated: false }  # 긴문맥
   instruction: { s: 83.3, z: 1.31, r: 69.7, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Spark 1.3 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Muse Spark 1.3 (max)
@@ -49,7 +49,7 @@ Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **37.0** · �
 | 에이전트 | 74.2 | +1.61 | 실측 | [[gdpval]] 1681.0%×1.0, [[itbench]] 33.2%×1.0, [[tau3-banking]] 50.5%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 68.2 | +1.21 | 실측 | [[aa-lcr]] 83.0%×1.0 |
+| 긴문맥 | 68.2 | +1.22 | 실측 | [[aa-lcr]] 83.0%×1.0 |
 | 지시 따르기 | 69.7 | +1.31 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

@@ -12,9 +12,9 @@ size_class: Large
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 44.7, z: -0.11, r: 48.3, estimated: false }  # 전문 지식
+  knowledge: { s: 44.7, z: -0.11, r: 48.4, estimated: false }  # 전문 지식
   reasoning: { s: 40.1, z: -0.15, r: 47.8, estimated: false }  # 추론
-  coding: { s: 16.1, z: -0.72, r: 39.1, estimated: false }  # 코딩
+  coding: { s: 16.1, z: -0.72, r: 39.2, estimated: false }  # 코딩
   agentic: { s: 16.1, z: -0.63, r: 40.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling-1T
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Ling-1T
@@ -43,9 +43,9 @@ InclusionAI · Open · Large · 컨텍스트 128k · 종합지능 **None** · �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 48.3 | -0.11 | 실측 | [[gpqa-diamond]] 71.9%×0.4, [[humanitys-last-exam]] 7.3%×0.3 |
+| 전문 지식 | 48.4 | -0.11 | 실측 | [[gpqa-diamond]] 71.9%×0.4, [[humanitys-last-exam]] 7.3%×0.3 |
 | 추론 | 47.8 | -0.15 | 실측 | [[gpqa-diamond]] 71.9%×1.0, [[humanitys-last-exam]] 7.3%×1.0 |
-| 코딩 | 39.1 | -0.72 | 실측 | [[terminal-bench]] 10.6%×0.5 |
+| 코딩 | 39.2 | -0.72 | 실측 | [[terminal-bench]] 10.6%×0.5 |
 | 에이전트 | 40.5 | -0.63 | 실측 | [[terminal-bench]] 10.6%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

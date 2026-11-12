@@ -12,7 +12,7 @@ size_class: Small
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 43.9, z: -0.15, r: 47.8, estimated: false }  # 전문 지식
+  knowledge: { s: 43.9, z: -0.14, r: 47.8, estimated: false }  # 전문 지식
   reasoning: { s: 39.6, z: -0.17, r: 47.4, estimated: false }  # 추론
   coding: { s: 3.5, z: -1.15, r: 32.8, estimated: false }  # 코딩
   agentic: { s: 3.5, z: -1.06, r: 34.1, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mi:dm K 2.5 Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Mi:dm K 2.5 Pro
@@ -43,7 +43,7 @@ Korea Telecom · Proprietary · Small · 컨텍스트 128k · 종합지능 **Non
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 47.8 | -0.15 | 실측 | [[gpqa-diamond]] 70.1%×0.4, [[humanitys-last-exam]] 8.1%×0.3 |
+| 전문 지식 | 47.8 | -0.14 | 실측 | [[gpqa-diamond]] 70.1%×0.4, [[humanitys-last-exam]] 8.1%×0.3 |
 | 추론 | 47.4 | -0.17 | 실측 | [[gpqa-diamond]] 70.1%×1.0, [[humanitys-last-exam]] 8.1%×1.0 |
 | 코딩 | 32.8 | -1.15 | 실측 | [[terminal-bench]] 2.3%×0.5 |
 | 에이전트 | 34.1 | -1.06 | 실측 | [[terminal-bench]] 2.3%×1.0 |

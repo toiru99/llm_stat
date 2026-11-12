@@ -18,14 +18,14 @@ radar:
   agentic: { s: 6.8, z: -0.95, r: 35.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 29.2, z: -0.72, r: 39.3, estimated: true }  # 긴문맥
+  long_context: { s: 29.2, z: -0.71, r: 39.3, estimated: true }  # 긴문맥
   instruction: { s: 34.8, z: -0.77, r: 38.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen2.5 72B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # Qwen2.5 72B
@@ -49,7 +49,7 @@ Alibaba · Open · Medium · 컨텍스트 131k · 종합지능 **None** · ⚠�
 | 에이전트 | 35.8 | -0.95 | 실측 | [[terminal-bench]] 4.5%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 39.3 | -0.72 | 추정 | (추정) |
+| 긴문맥 | 39.3 | -0.71 | 추정 | (추정) |
 | 지시 따르기 | 38.4 | -0.77 | 실측 | [[ifbench]] 36.9%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

@@ -12,9 +12,9 @@ size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 40.2, z: -0.32, r: 45.1, estimated: true }  # 전문 지식
+  knowledge: { s: 40.2, z: -0.32, r: 45.2, estimated: true }  # 전문 지식
   reasoning: { s: 35.9, z: -0.35, r: 44.7, estimated: false }  # 추론
-  coding: { s: 16.1, z: -0.72, r: 39.1, estimated: true }  # 코딩
+  coding: { s: 16.1, z: -0.72, r: 39.2, estimated: true }  # 코딩
   agentic: { s: 17.5, z: -0.59, r: 41.2, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 87.8, z: 0.83, r: 62.4, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4.1 Flash 1017 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-11
-timestamp: 2026-11-11T00:00:00Z
+updated: 2026-11-12
+timestamp: 2026-11-12T00:00:00Z
 ---
 
 # DeepSeek V4.1 Flash 1017 (high)
@@ -43,9 +43,9 @@ DeepSeek · Open · Large · 컨텍스트 1M · 종합지능 **29.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 45.1 | -0.32 | 추정 | (추정) |
+| 전문 지식 | 45.2 | -0.32 | 추정 | (추정) |
 | 추론 | 44.7 | -0.35 | 실측 | [[critpt]] 27.5%×1.0 |
-| 코딩 | 39.1 | -0.72 | 추정 | (추정) |
+| 코딩 | 39.2 | -0.72 | 추정 | (추정) |
 | 에이전트 | 41.2 | -0.59 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 62.4 | +0.83 | 실측 | [[mmmu-pro]] 80.0%×1.0 |
