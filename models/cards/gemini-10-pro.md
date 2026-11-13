@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 13.6, z: -1.61, r: 25.9, estimated: false }  # 전문 지식
   reasoning: { s: 12.5, z: -1.5, r: 27.4, estimated: false }  # 추론
-  coding: { s: 0.2, z: -1.25, r: 31.2, estimated: true }  # 코딩
-  agentic: { s: 0.0, z: -1.18, r: 32.3, estimated: true }  # 에이전트
+  coding: { s: 0.2, z: -1.26, r: 31.1, estimated: true }  # 코딩
+  agentic: { s: 0.0, z: -1.18, r: 32.2, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 2.7, z: -1.51, r: 27.4, estimated: true }  # 긴문맥
-  instruction: { s: 16.5, z: -1.56, r: 26.6, estimated: true }  # 지시 따르기
+  long_context: { s: 2.7, z: -1.51, r: 27.3, estimated: true }  # 긴문맥
+  instruction: { s: 16.5, z: -1.57, r: 26.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 1.0 Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-12
-timestamp: 2026-11-12T00:00:00Z
+updated: 2026-11-13
+timestamp: 2026-11-13T00:00:00Z
 ---
 
 # Gemini 1.0 Pro
@@ -45,12 +45,12 @@ Google · Proprietary · Unknown · 컨텍스트 33k · 종합지능 **None** ·
 |---|---|---|---|---|
 | 전문 지식 | 25.9 | -1.61 | 실측 | [[gpqa-diamond]] 27.7%×0.4, [[humanitys-last-exam]] 4.2%×0.3 |
 | 추론 | 27.4 | -1.5 | 실측 | [[gpqa-diamond]] 27.7%×1.0, [[humanitys-last-exam]] 4.2%×1.0 |
-| 코딩 | 31.2 | -1.25 | 추정 | (추정) |
-| 에이전트 | 32.3 | -1.18 | 추정 | (추정) |
+| 코딩 | 31.1 | -1.26 | 추정 | (추정) |
+| 에이전트 | 32.2 | -1.18 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 27.4 | -1.51 | 추정 | (추정) |
-| 지시 따르기 | 26.6 | -1.56 | 추정 | (추정) |
+| 긴문맥 | 27.3 | -1.51 | 추정 | (추정) |
+| 지시 따르기 | 26.5 | -1.57 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

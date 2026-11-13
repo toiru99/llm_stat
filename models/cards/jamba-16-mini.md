@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 15.2, z: -1.53, r: 27.0, estimated: false }  # 전문 지식
-  reasoning: { s: 13.9, z: -1.44, r: 28.5, estimated: false }  # 추론
-  coding: { s: 1.1, z: -1.22, r: 31.6, estimated: true }  # 코딩
-  agentic: { s: 1.3, z: -1.13, r: 33.0, estimated: true }  # 에이전트
+  reasoning: { s: 13.9, z: -1.44, r: 28.4, estimated: false }  # 추론
+  coding: { s: 1.1, z: -1.23, r: 31.6, estimated: true }  # 코딩
+  agentic: { s: 1.3, z: -1.14, r: 32.9, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 2.8, z: -1.5, r: 27.4, estimated: true }  # 긴문맥
-  instruction: { s: 21.4, z: -1.35, r: 29.8, estimated: true }  # 지시 따르기
+  long_context: { s: 2.8, z: -1.51, r: 27.3, estimated: true }  # 긴문맥
+  instruction: { s: 21.4, z: -1.35, r: 29.7, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba 1.6 Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-12
-timestamp: 2026-11-12T00:00:00Z
+updated: 2026-11-13
+timestamp: 2026-11-13T00:00:00Z
 ---
 
 # Jamba 1.6 Mini
@@ -44,13 +44,13 @@ AI21 Labs · Open · Medium · 컨텍스트 256k · 종합지능 **None** · ⚠
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 27.0 | -1.53 | 실측 | [[gpqa-diamond]] 30.0%×0.4, [[humanitys-last-exam]] 4.3%×0.3 |
-| 추론 | 28.5 | -1.44 | 실측 | [[gpqa-diamond]] 30.0%×1.0, [[humanitys-last-exam]] 4.3%×1.0 |
-| 코딩 | 31.6 | -1.22 | 추정 | (추정) |
-| 에이전트 | 33.0 | -1.13 | 추정 | (추정) |
+| 추론 | 28.4 | -1.44 | 실측 | [[gpqa-diamond]] 30.0%×1.0, [[humanitys-last-exam]] 4.3%×1.0 |
+| 코딩 | 31.6 | -1.23 | 추정 | (추정) |
+| 에이전트 | 32.9 | -1.14 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 27.4 | -1.5 | 추정 | (추정) |
-| 지시 따르기 | 29.8 | -1.35 | 추정 | (추정) |
+| 긴문맥 | 27.3 | -1.51 | 추정 | (추정) |
+| 지시 따르기 | 29.7 | -1.35 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

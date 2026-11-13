@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 60.7, z: 0.67, r: 60.0, estimated: false }  # 전문 지식
-  reasoning: { s: 60.7, z: 0.86, r: 62.9, estimated: false }  # 추론
-  coding: { s: 58.3, z: 0.69, r: 60.4, estimated: true }  # 코딩
-  agentic: { s: 44.6, z: 0.33, r: 55.0, estimated: true }  # 에이전트
+  knowledge: { s: 60.7, z: 0.65, r: 59.8, estimated: false }  # 전문 지식
+  reasoning: { s: 60.7, z: 0.85, r: 62.7, estimated: false }  # 추론
+  coding: { s: 58.3, z: 0.68, r: 60.3, estimated: true }  # 코딩
+  agentic: { s: 44.6, z: 0.33, r: 54.9, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 82.8, z: 0.89, r: 63.4, estimated: true }  # 긴문맥
-  instruction: { s: 69.3, z: 0.71, r: 60.7, estimated: true }  # 지시 따르기
+  long_context: { s: 82.8, z: 0.89, r: 63.3, estimated: true }  # 긴문맥
+  instruction: { s: 69.3, z: 0.7, r: 60.5, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Sonar Reasoning
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-12
-timestamp: 2026-11-12T00:00:00Z
+updated: 2026-11-13
+timestamp: 2026-11-13T00:00:00Z
 ---
 
 # Sonar Reasoning
@@ -43,14 +43,14 @@ Perplexity · Proprietary · Unknown · 컨텍스트 127k · 종합지능 **None
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 60.0 | +0.67 | 실측 | [[gpqa-diamond]] 62.3%×0.4 |
-| 추론 | 62.9 | +0.86 | 실측 | [[gpqa-diamond]] 62.3%×1.0 |
-| 코딩 | 60.4 | +0.69 | 추정 | (추정) |
-| 에이전트 | 55.0 | +0.33 | 추정 | (추정) |
+| 전문 지식 | 59.8 | +0.65 | 실측 | [[gpqa-diamond]] 62.3%×0.4 |
+| 추론 | 62.7 | +0.85 | 실측 | [[gpqa-diamond]] 62.3%×1.0 |
+| 코딩 | 60.3 | +0.68 | 추정 | (추정) |
+| 에이전트 | 54.9 | +0.33 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 63.4 | +0.89 | 추정 | (추정) |
-| 지시 따르기 | 60.7 | +0.71 | 추정 | (추정) |
+| 긴문맥 | 63.3 | +0.89 | 추정 | (추정) |
+| 지시 따르기 | 60.5 | +0.7 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

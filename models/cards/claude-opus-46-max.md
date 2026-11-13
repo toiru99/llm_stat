@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 75.4, z: 1.38, r: 70.7, estimated: false }  # 전문 지식
-  reasoning: { s: 72.6, z: 1.45, r: 71.7, estimated: false }  # 추론
-  coding: { s: 70.1, z: 1.09, r: 66.3, estimated: false }  # 코딩
-  agentic: { s: 69.9, z: 1.19, r: 67.8, estimated: false }  # 에이전트
+  knowledge: { s: 75.4, z: 1.36, r: 70.4, estimated: false }  # 전문 지식
+  reasoning: { s: 72.6, z: 1.43, r: 71.4, estimated: false }  # 추론
+  coding: { s: 70.1, z: 1.08, r: 66.2, estimated: false }  # 코딩
+  agentic: { s: 69.9, z: 1.18, r: 67.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 81.1, z: 0.49, r: 57.3, estimated: false }  # 멀티모달
-  long_context: { s: 87.9, z: 1.05, r: 65.7, estimated: false }  # 긴문맥
-  instruction: { s: 57.6, z: 0.21, r: 53.1, estimated: false }  # 지시 따르기
+  long_context: { s: 87.9, z: 1.04, r: 65.6, estimated: false }  # 긴문맥
+  instruction: { s: 57.6, z: 0.2, r: 52.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 4.6 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-12
-timestamp: 2026-11-12T00:00:00Z
+updated: 2026-11-13
+timestamp: 2026-11-13T00:00:00Z
 ---
 
 # Claude Opus 4.6 (max)
@@ -43,14 +43,14 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 70.7 | +1.38 | 실측 | [[gpqa-diamond]] 89.6%×0.4, [[humanitys-last-exam]] 39.9%×0.3 |
-| 추론 | 71.7 | +1.45 | 실측 | [[gpqa-diamond]] 89.6%×1.0, [[humanitys-last-exam]] 39.9%×1.0 |
-| 코딩 | 66.3 | +1.09 | 실측 | [[terminal-bench]] 46.2%×0.5 |
-| 에이전트 | 67.8 | +1.19 | 실측 | [[apex-agents]] 33.0%×1.0, [[terminal-bench]] 46.2%×1.0 |
+| 전문 지식 | 70.4 | +1.36 | 실측 | [[gpqa-diamond]] 89.6%×0.4, [[humanitys-last-exam]] 39.9%×0.3 |
+| 추론 | 71.4 | +1.43 | 실측 | [[gpqa-diamond]] 89.6%×1.0, [[humanitys-last-exam]] 39.9%×1.0 |
+| 코딩 | 66.2 | +1.08 | 실측 | [[terminal-bench]] 46.2%×0.5 |
+| 에이전트 | 67.7 | +1.18 | 실측 | [[apex-agents]] 33.0%×1.0, [[terminal-bench]] 46.2%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 57.3 | +0.49 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
-| 긴문맥 | 65.7 | +1.05 | 실측 | [[aa-lcr]] 78.0%×1.0 |
-| 지시 따르기 | 53.1 | +0.21 | 실측 | [[ifbench]] 53.1%×1.0 |
+| 긴문맥 | 65.6 | +1.04 | 실측 | [[aa-lcr]] 78.0%×1.0 |
+| 지시 따르기 | 52.9 | +0.2 | 실측 | [[ifbench]] 53.1%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

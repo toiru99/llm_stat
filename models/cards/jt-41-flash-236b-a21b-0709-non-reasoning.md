@@ -12,20 +12,20 @@ size_class: Large
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 59.1, z: 0.59, r: 58.8, estimated: false }  # 전문 지식
-  reasoning: { s: 54.6, z: 0.56, r: 58.4, estimated: false }  # 추론
-  coding: { s: 59.1, z: 0.72, r: 60.8, estimated: true }  # 코딩
-  agentic: { s: 60.4, z: 0.87, r: 63.0, estimated: false }  # 에이전트
+  knowledge: { s: 59.1, z: 0.58, r: 58.7, estimated: false }  # 전문 지식
+  reasoning: { s: 54.6, z: 0.55, r: 58.2, estimated: false }  # 추론
+  coding: { s: 59.1, z: 0.71, r: 60.7, estimated: true }  # 코딩
+  agentic: { s: 60.4, z: 0.86, r: 62.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 66.2, z: -0.26, r: 46.0, estimated: false }  # 멀티모달
-  long_context: { s: 80.4, z: 0.82, r: 62.3, estimated: false }  # 긴문맥
-  instruction: { s: 73.1, z: 0.88, r: 63.1, estimated: true }  # 지시 따르기
+  long_context: { s: 80.4, z: 0.81, r: 62.2, estimated: false }  # 긴문맥
+  instruction: { s: 73.1, z: 0.86, r: 62.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — JT-4.1 Flash 236B A21B 0709 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-12
-timestamp: 2026-11-12T00:00:00Z
+updated: 2026-11-13
+timestamp: 2026-11-13T00:00:00Z
 ---
 
 # JT-4.1 Flash 236B A21B 0709 (non-reasoning)
@@ -33,7 +33,7 @@ timestamp: 2026-11-12T00:00:00Z
 China Mobile · Proprietary · Large · 컨텍스트 262k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 지시 따르기, 에이전트
+- **강점**: 에이전트, 지시 따르기
 - **약점**: 추론, 멀티모달
 
 ## 실용 지표
@@ -43,14 +43,14 @@ China Mobile · Proprietary · Large · 컨텍스트 262k · 종합지능 **None
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 58.8 | +0.59 | 실측 | [[gpqa-diamond]] 84.5%×0.4, [[humanitys-last-exam]] 17.8%×0.3 |
-| 추론 | 58.4 | +0.56 | 실측 | [[gpqa-diamond]] 84.5%×1.0, [[humanitys-last-exam]] 17.8%×1.0 |
-| 코딩 | 60.8 | +0.72 | 추정 | (추정) |
-| 에이전트 | 63.0 | +0.87 | 실측 | [[gdpval]] 1128.0%×1.0 |
+| 전문 지식 | 58.7 | +0.58 | 실측 | [[gpqa-diamond]] 84.5%×0.4, [[humanitys-last-exam]] 17.8%×0.3 |
+| 추론 | 58.2 | +0.55 | 실측 | [[gpqa-diamond]] 84.5%×1.0, [[humanitys-last-exam]] 17.8%×1.0 |
+| 코딩 | 60.7 | +0.71 | 추정 | (추정) |
+| 에이전트 | 62.9 | +0.86 | 실측 | [[gdpval]] 1128.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 46.0 | -0.26 | 실측 | [[mmmu-pro]] 64.0%×1.0 |
-| 긴문맥 | 62.3 | +0.82 | 실측 | [[aa-lcr]] 71.3%×1.0 |
-| 지시 따르기 | 63.1 | +0.88 | 추정 | (추정) |
+| 긴문맥 | 62.2 | +0.81 | 실측 | [[aa-lcr]] 71.3%×1.0 |
+| 지시 따르기 | 62.9 | +0.86 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

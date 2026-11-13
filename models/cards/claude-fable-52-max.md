@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 100.0, z: 2.56, r: 88.4, estimated: false }  # 전문 지식
-  reasoning: { s: 100.0, z: 2.79, r: 91.8, estimated: false }  # 추론
-  coding: { s: 100.0, z: 2.09, r: 81.4, estimated: false }  # 코딩
-  agentic: { s: 98.1, z: 2.15, r: 82.2, estimated: false }  # 에이전트
+  knowledge: { s: 100.0, z: 2.54, r: 88.2, estimated: false }  # 전문 지식
+  reasoning: { s: 100.0, z: 2.76, r: 91.5, estimated: false }  # 추론
+  coding: { s: 100.0, z: 2.08, r: 81.2, estimated: false }  # 코딩
+  agentic: { s: 98.1, z: 2.13, r: 82.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 93.9, z: 1.23, r: 68.4, estimated: false }  # 긴문맥
-  instruction: { s: 80.1, z: 1.18, r: 67.6, estimated: true }  # 지시 따르기
+  long_context: { s: 93.9, z: 1.22, r: 68.3, estimated: false }  # 긴문맥
+  instruction: { s: 80.1, z: 1.16, r: 67.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Fable 5.2 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-12
-timestamp: 2026-11-12T00:00:00Z
+updated: 2026-11-13
+timestamp: 2026-11-13T00:00:00Z
 ---
 
 # Claude Fable 5.2 (max)
@@ -43,14 +43,14 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **65.0**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 88.4 | +2.56 | 실측 | [[humanitys-last-exam]] 74.3%×0.3 |
-| 추론 | 91.8 | +2.79 | 실측 | [[critpt]] 76.5%×1.0, [[humanitys-last-exam]] 74.3%×1.0 |
-| 코딩 | 81.4 | +2.09 | 실측 | [[scicode]] 67.7%×1.0 |
-| 에이전트 | 82.2 | +2.15 | 실측 | [[gdpval]] 1831.0%×1.0 |
+| 전문 지식 | 88.2 | +2.54 | 실측 | [[humanitys-last-exam]] 74.3%×0.3 |
+| 추론 | 91.5 | +2.76 | 실측 | [[critpt]] 76.5%×1.0, [[humanitys-last-exam]] 74.3%×1.0 |
+| 코딩 | 81.2 | +2.08 | 실측 | [[scicode]] 67.7%×1.0 |
+| 에이전트 | 82.0 | +2.13 | 실측 | [[gdpval]] 1831.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 68.4 | +1.23 | 실측 | [[aa-lcr]] 83.3%×1.0 |
-| 지시 따르기 | 67.6 | +1.18 | 추정 | (추정) |
+| 긴문맥 | 68.3 | +1.22 | 실측 | [[aa-lcr]] 83.3%×1.0 |
+| 지시 따르기 | 67.4 | +1.16 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

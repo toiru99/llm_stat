@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 18.1, z: -1.39, r: 29.1, estimated: false }  # 전문 지식
   reasoning: { s: 16.3, z: -1.32, r: 30.2, estimated: false }  # 추론
-  coding: { s: 3.4, z: -1.15, r: 32.8, estimated: true }  # 코딩
+  coding: { s: 3.4, z: -1.15, r: 32.7, estimated: true }  # 코딩
   agentic: { s: 2.4, z: -1.1, r: 33.5, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 11.2, z: -1.25, r: 31.2, estimated: true }  # 긴문맥
-  instruction: { s: 24.5, z: -1.22, r: 31.7, estimated: true }  # 지시 따르기
+  long_context: { s: 11.2, z: -1.26, r: 31.1, estimated: true }  # 긴문맥
+  instruction: { s: 24.5, z: -1.22, r: 31.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Large (Feb)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-12
-timestamp: 2026-11-12T00:00:00Z
+updated: 2026-11-13
+timestamp: 2026-11-13T00:00:00Z
 ---
 
 # Mistral Large (Feb)
@@ -45,12 +45,12 @@ Mistral · Proprietary · Unknown · 컨텍스트 33k · 종합지능 **None** �
 |---|---|---|---|---|
 | 전문 지식 | 29.1 | -1.39 | 실측 | [[gpqa-diamond]] 35.1%×0.4, [[humanitys-last-exam]] 3.5%×0.3 |
 | 추론 | 30.2 | -1.32 | 실측 | [[gpqa-diamond]] 35.1%×1.0, [[humanitys-last-exam]] 3.5%×1.0 |
-| 코딩 | 32.8 | -1.15 | 추정 | (추정) |
+| 코딩 | 32.7 | -1.15 | 추정 | (추정) |
 | 에이전트 | 33.5 | -1.1 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 31.2 | -1.25 | 추정 | (추정) |
-| 지시 따르기 | 31.7 | -1.22 | 추정 | (추정) |
+| 긴문맥 | 31.1 | -1.26 | 추정 | (추정) |
+| 지시 따르기 | 31.6 | -1.22 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

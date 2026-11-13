@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 22.4, z: -1.19, r: 32.2, estimated: false }  # 전문 지식
   reasoning: { s: 20.1, z: -1.13, r: 33.0, estimated: false }  # 추론
-  coding: { s: 4.7, z: -1.11, r: 33.4, estimated: true }  # 코딩
-  agentic: { s: 3.7, z: -1.05, r: 34.2, estimated: true }  # 에이전트
+  coding: { s: 4.7, z: -1.11, r: 33.3, estimated: true }  # 코딩
+  agentic: { s: 3.7, z: -1.06, r: 34.1, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 13.3, z: -1.19, r: 32.2, estimated: true }  # 긴문맥
-  instruction: { s: 25.3, z: -1.18, r: 32.3, estimated: true }  # 지시 따르기
+  long_context: { s: 13.3, z: -1.2, r: 32.1, estimated: true }  # 긴문맥
+  instruction: { s: 25.3, z: -1.19, r: 32.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen2.5 Turbo
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-12
-timestamp: 2026-11-12T00:00:00Z
+updated: 2026-11-13
+timestamp: 2026-11-13T00:00:00Z
 ---
 
 # Qwen2.5 Turbo
@@ -34,7 +34,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** ·
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 코딩
-- **약점**: 전문 지식, 긴문맥
+- **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 1M ctx`
@@ -45,12 +45,12 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** ·
 |---|---|---|---|---|
 | 전문 지식 | 32.2 | -1.19 | 실측 | [[gpqa-diamond]] 41.0%×0.4, [[humanitys-last-exam]] 4.1%×0.3 |
 | 추론 | 33.0 | -1.13 | 실측 | [[gpqa-diamond]] 41.0%×1.0, [[humanitys-last-exam]] 4.1%×1.0 |
-| 코딩 | 33.4 | -1.11 | 추정 | (추정) |
-| 에이전트 | 34.2 | -1.05 | 추정 | (추정) |
+| 코딩 | 33.3 | -1.11 | 추정 | (추정) |
+| 에이전트 | 34.1 | -1.06 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 32.2 | -1.19 | 추정 | (추정) |
-| 지시 따르기 | 32.3 | -1.18 | 추정 | (추정) |
+| 긴문맥 | 32.1 | -1.2 | 추정 | (추정) |
+| 지시 따르기 | 32.2 | -1.19 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

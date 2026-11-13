@@ -12,20 +12,20 @@ size_class: Medium
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 27.4, z: -0.94, r: 35.9, estimated: false }  # 전문 지식
+  knowledge: { s: 27.4, z: -0.95, r: 35.8, estimated: false }  # 전문 지식
   reasoning: { s: 24.4, z: -0.92, r: 36.2, estimated: false }  # 추론
-  coding: { s: 6.8, z: -1.03, r: 34.5, estimated: false }  # 코딩
-  agentic: { s: 6.8, z: -0.95, r: 35.8, estimated: false }  # 에이전트
+  coding: { s: 6.8, z: -1.04, r: 34.4, estimated: false }  # 코딩
+  agentic: { s: 6.8, z: -0.95, r: 35.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 29.2, z: -0.71, r: 39.3, estimated: true }  # 긴문맥
-  instruction: { s: 34.8, z: -0.77, r: 38.4, estimated: false }  # 지시 따르기
+  long_context: { s: 29.2, z: -0.72, r: 39.2, estimated: true }  # 긴문맥
+  instruction: { s: 34.8, z: -0.78, r: 38.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen2.5 72B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-12
-timestamp: 2026-11-12T00:00:00Z
+updated: 2026-11-13
+timestamp: 2026-11-13T00:00:00Z
 ---
 
 # Qwen2.5 72B
@@ -43,14 +43,14 @@ Alibaba · Open · Medium · 컨텍스트 131k · 종합지능 **None** · ⚠�
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 35.9 | -0.94 | 실측 | [[gpqa-diamond]] 49.1%×0.4, [[humanitys-last-exam]] 3.6%×0.3 |
+| 전문 지식 | 35.8 | -0.95 | 실측 | [[gpqa-diamond]] 49.1%×0.4, [[humanitys-last-exam]] 3.6%×0.3 |
 | 추론 | 36.2 | -0.92 | 실측 | [[gpqa-diamond]] 49.1%×1.0, [[humanitys-last-exam]] 3.6%×1.0 |
-| 코딩 | 34.5 | -1.03 | 실측 | [[terminal-bench]] 4.5%×0.5 |
-| 에이전트 | 35.8 | -0.95 | 실측 | [[terminal-bench]] 4.5%×1.0 |
+| 코딩 | 34.4 | -1.04 | 실측 | [[terminal-bench]] 4.5%×0.5 |
+| 에이전트 | 35.7 | -0.95 | 실측 | [[terminal-bench]] 4.5%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 39.3 | -0.71 | 추정 | (추정) |
-| 지시 따르기 | 38.4 | -0.77 | 실측 | [[ifbench]] 36.9%×1.0 |
+| 긴문맥 | 39.2 | -0.72 | 추정 | (추정) |
+| 지시 따르기 | 38.3 | -0.78 | 실측 | [[ifbench]] 36.9%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 23.6, z: -1.12, r: 33.1, estimated: false }  # 전문 지식
-  reasoning: { s: 23.6, z: -0.96, r: 35.7, estimated: false }  # 추론
-  coding: { s: 66.4, z: 0.97, r: 64.5, estimated: false }  # 코딩
-  agentic: { s: 67.2, z: 1.1, r: 66.5, estimated: false }  # 에이전트
+  knowledge: { s: 23.6, z: -1.13, r: 33.1, estimated: false }  # 전문 지식
+  reasoning: { s: 23.6, z: -0.96, r: 35.6, estimated: false }  # 추론
+  coding: { s: 66.4, z: 0.96, r: 64.3, estimated: false }  # 코딩
+  agentic: { s: 67.2, z: 1.09, r: 66.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 74.3, z: 0.15, r: 52.2, estimated: false }  # 멀티모달
-  long_context: { s: 72.2, z: 0.57, r: 58.6, estimated: false }  # 긴문맥
-  instruction: { s: 44.0, z: -0.38, r: 44.3, estimated: true }  # 지시 따르기
+  long_context: { s: 72.2, z: 0.57, r: 58.5, estimated: false }  # 긴문맥
+  instruction: { s: 43.4, z: -0.41, r: 43.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6 Sol (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-12
-timestamp: 2026-11-12T00:00:00Z
+updated: 2026-11-13
+timestamp: 2026-11-13T00:00:00Z
 ---
 
 # GPT-6 Sol (non-reasoning)
@@ -43,14 +43,14 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 33.1 | -1.12 | 실측 | [[humanitys-last-exam]] 18.4%×0.3 |
-| 추론 | 35.7 | -0.96 | 실측 | [[humanitys-last-exam]] 18.4%×1.0 |
-| 코딩 | 64.5 | +0.97 | 실측 | [[scicode]] 47.3%×1.0 |
-| 에이전트 | 66.5 | +1.1 | 실측 | [[gdpval]] 1254.0%×1.0 |
+| 전문 지식 | 33.1 | -1.13 | 실측 | [[humanitys-last-exam]] 18.4%×0.3 |
+| 추론 | 35.6 | -0.96 | 실측 | [[humanitys-last-exam]] 18.4%×1.0 |
+| 코딩 | 64.3 | +0.96 | 실측 | [[scicode]] 47.3%×1.0 |
+| 에이전트 | 66.3 | +1.09 | 실측 | [[gdpval]] 1254.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 52.2 | +0.15 | 실측 | [[mmmu-pro]] 70.0%×1.0 |
-| 긴문맥 | 58.6 | +0.57 | 실측 | [[aa-lcr]] 64.0%×1.0 |
-| 지시 따르기 | 44.3 | -0.38 | 추정 | (추정) |
+| 긴문맥 | 58.5 | +0.57 | 실측 | [[aa-lcr]] 64.0%×1.0 |
+| 지시 따르기 | 43.8 | -0.41 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -4,7 +4,7 @@ title: Gemini 4 Carbon (low)
 creator: Google
 license: Proprietary
 intelligence_index: 54.0
-price_blended_usd_1m: 2.94
+price_blended_usd_1m: 1.47
 output_speed_tps: None
 context_window: 1000000
 status: current
@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 86.0, z: 1.89, r: 78.3, estimated: true }  # 전문 지식
-  reasoning: { s: 85.0, z: 2.05, r: 80.8, estimated: false }  # 추론
-  coding: { s: 82.8, z: 1.52, r: 72.7, estimated: true }  # 코딩
-  agentic: { s: 84.8, z: 1.7, r: 75.5, estimated: true }  # 에이전트
+  knowledge: { s: 86.0, z: 1.87, r: 78.1, estimated: true }  # 전문 지식
+  reasoning: { s: 85.0, z: 2.03, r: 80.5, estimated: false }  # 추론
+  coding: { s: 83.6, z: 1.53, r: 73.0, estimated: true }  # 코딩
+  agentic: { s: 85.7, z: 1.72, r: 75.7, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 91.0, z: 1.14, r: 67.1, estimated: true }  # 긴문맥
-  instruction: { s: 78.2, z: 1.1, r: 66.4, estimated: true }  # 지시 따르기
+  long_context: { s: 91.2, z: 1.14, r: 67.1, estimated: true }  # 긴문맥
+  instruction: { s: 78.4, z: 1.09, r: 66.3, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 4 Carbon (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-12
-timestamp: 2026-11-12T00:00:00Z
+updated: 2026-11-13
+timestamp: 2026-11-13T00:00:00Z
 ---
 
 # Gemini 4 Carbon (low)
@@ -37,20 +37,20 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **54.0**
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · None t/s · TTFT Nones · 1M ctx` · 가성비 18.4
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.47/1M · None t/s · TTFT Nones · 1M ctx` · 가성비 36.7
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 78.3 | +1.89 | 추정 | (추정) |
-| 추론 | 80.8 | +2.05 | 실측 | [[critpt]] 65.0%×1.0 |
-| 코딩 | 72.7 | +1.52 | 추정 | (추정) |
-| 에이전트 | 75.5 | +1.7 | 추정 | (추정) |
+| 전문 지식 | 78.1 | +1.87 | 추정 | (추정) |
+| 추론 | 80.5 | +2.03 | 실측 | [[critpt]] 65.0%×1.0 |
+| 코딩 | 73.0 | +1.53 | 추정 | (추정) |
+| 에이전트 | 75.7 | +1.72 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 67.1 | +1.14 | 추정 | (추정) |
-| 지시 따르기 | 66.4 | +1.1 | 추정 | (추정) |
+| 지시 따르기 | 66.3 | +1.09 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

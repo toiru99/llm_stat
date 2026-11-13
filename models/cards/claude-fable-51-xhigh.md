@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 89.0, z: 2.03, r: 80.4, estimated: false }  # 전문 지식
-  reasoning: { s: 84.6, z: 2.03, r: 80.5, estimated: false }  # 추론
-  coding: { s: 88.8, z: 1.72, r: 75.7, estimated: false }  # 코딩
-  agentic: { s: 91.2, z: 1.91, r: 78.7, estimated: false }  # 에이전트
+  knowledge: { s: 89.0, z: 2.01, r: 80.2, estimated: false }  # 전문 지식
+  reasoning: { s: 84.6, z: 2.01, r: 80.2, estimated: false }  # 추론
+  coding: { s: 88.8, z: 1.7, r: 75.6, estimated: false }  # 코딩
+  agentic: { s: 91.2, z: 1.9, r: 78.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 93.6, z: 1.22, r: 68.2, estimated: false }  # 긴문맥
-  instruction: { s: 78.8, z: 1.12, r: 66.8, estimated: true }  # 지시 따르기
+  long_context: { s: 93.6, z: 1.21, r: 68.1, estimated: false }  # 긴문맥
+  instruction: { s: 78.8, z: 1.1, r: 66.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Fable 5.1 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-12
-timestamp: 2026-11-12T00:00:00Z
+updated: 2026-11-13
+timestamp: 2026-11-13T00:00:00Z
 ---
 
 # Claude Fable 5.1 (xhigh)
@@ -43,14 +43,14 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **50.0** 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 80.4 | +2.03 | 실측 | [[gpqa-diamond]] 93.4%×0.4, [[humanitys-last-exam]] 58.7%×0.3 |
-| 추론 | 80.5 | +2.03 | 실측 | [[critpt]] 60.0%×1.0, [[gpqa-diamond]] 93.4%×1.0, [[humanitys-last-exam]] 58.7%×1.0 |
-| 코딩 | 75.7 | +1.72 | 실측 | [[scicode]] 60.9%×1.0 |
-| 에이전트 | 78.7 | +1.91 | 실측 | [[gdpval]] 1740.0%×1.0, [[tau3-banking]] 45.8%×1.0 |
+| 전문 지식 | 80.2 | +2.01 | 실측 | [[gpqa-diamond]] 93.4%×0.4, [[humanitys-last-exam]] 58.7%×0.3 |
+| 추론 | 80.2 | +2.01 | 실측 | [[critpt]] 60.0%×1.0, [[gpqa-diamond]] 93.4%×1.0, [[humanitys-last-exam]] 58.7%×1.0 |
+| 코딩 | 75.6 | +1.7 | 실측 | [[scicode]] 60.9%×1.0 |
+| 에이전트 | 78.5 | +1.9 | 실측 | [[gdpval]] 1740.0%×1.0, [[tau3-banking]] 45.8%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 68.2 | +1.22 | 실측 | [[aa-lcr]] 83.0%×1.0 |
-| 지시 따르기 | 66.8 | +1.12 | 추정 | (추정) |
+| 긴문맥 | 68.1 | +1.21 | 실측 | [[aa-lcr]] 83.0%×1.0 |
+| 지시 따르기 | 66.6 | +1.1 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

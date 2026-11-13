@@ -12,20 +12,20 @@ size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 60.1, z: 0.64, r: 59.6, estimated: false }  # 전문 지식
-  reasoning: { s: 56.0, z: 0.63, r: 59.5, estimated: false }  # 추론
-  coding: { s: 41.4, z: 0.13, r: 51.9, estimated: false }  # 코딩
-  agentic: { s: 41.4, z: 0.23, r: 53.4, estimated: false }  # 에이전트
+  knowledge: { s: 60.1, z: 0.63, r: 59.4, estimated: false }  # 전문 지식
+  reasoning: { s: 56.0, z: 0.62, r: 59.3, estimated: false }  # 추론
+  coding: { s: 41.4, z: 0.12, r: 51.8, estimated: false }  # 코딩
+  agentic: { s: 41.4, z: 0.22, r: 53.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 56.4, z: 0.1, r: 51.5, estimated: false }  # 긴문맥
-  instruction: { s: 73.7, z: 0.9, r: 63.5, estimated: false }  # 지시 따르기
+  long_context: { s: 56.4, z: 0.1, r: 51.4, estimated: false }  # 긴문맥
+  instruction: { s: 73.7, z: 0.89, r: 63.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Step 3.5 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-12
-timestamp: 2026-11-12T00:00:00Z
+updated: 2026-11-13
+timestamp: 2026-11-13T00:00:00Z
 ---
 
 # Step 3.5 Flash
@@ -43,14 +43,14 @@ StepFun · Open · Large · 컨텍스트 256k · 종합지능 **None** · ⚠️
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 59.6 | +0.64 | 실측 | [[gpqa-diamond]] 83.1%×0.4, [[humanitys-last-exam]] 21.1%×0.3 |
-| 추론 | 59.5 | +0.63 | 실측 | [[gpqa-diamond]] 83.1%×1.0, [[humanitys-last-exam]] 21.1%×1.0 |
-| 코딩 | 51.9 | +0.13 | 실측 | [[terminal-bench]] 27.3%×0.5 |
-| 에이전트 | 53.4 | +0.23 | 실측 | [[terminal-bench]] 27.3%×1.0 |
+| 전문 지식 | 59.4 | +0.63 | 실측 | [[gpqa-diamond]] 83.1%×0.4, [[humanitys-last-exam]] 21.1%×0.3 |
+| 추론 | 59.3 | +0.62 | 실측 | [[gpqa-diamond]] 83.1%×1.0, [[humanitys-last-exam]] 21.1%×1.0 |
+| 코딩 | 51.8 | +0.12 | 실측 | [[terminal-bench]] 27.3%×0.5 |
+| 에이전트 | 53.3 | +0.22 | 실측 | [[terminal-bench]] 27.3%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 51.5 | +0.1 | 실측 | [[aa-lcr]] 50.0%×1.0 |
-| 지시 따르기 | 63.5 | +0.9 | 실측 | [[ifbench]] 64.6%×1.0 |
+| 긴문맥 | 51.4 | +0.1 | 실측 | [[aa-lcr]] 50.0%×1.0 |
+| 지시 따르기 | 63.3 | +0.89 | 실측 | [[ifbench]] 64.6%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
