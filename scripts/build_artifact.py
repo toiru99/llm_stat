@@ -14,7 +14,7 @@ body = tpl.replace("__CARDS__", data.replace("</", "<\\/"))
 body = body.replace("__EXPLORER_CORE__", (ROOT / "artifact/explorer.mjs").read_text().replace("export ", ""))
 body = body.replace("__CREATOR_PREFS__", (ROOT / "artifact/creator-prefs.js").read_text())
 body = body.replace("__EXPLORER_UI__", (ROOT / "artifact/explorer-ui.js").read_text())
-body = "<style>" + (ROOT / "artifact/explorer.css").read_text() + "</style>" + body
+body = "<style>" + (ROOT / "artifact/explorer.css").read_text() + (ROOT / "artifact/comparison.css").read_text() + "</style>" + body
 assert "__CARDS__" not in body, "주입 실패: 템플릿에 __CARDS__ 토큰이 없습니다"
 
 FAVICON = ("data:image/svg+xml,"
@@ -32,6 +32,7 @@ out = HEAD + body + "\n</body>\n</html>\n"
 
 dest = ROOT / "artifact" / "llm-radar-legacy.html"
 dest.write_text(out, encoding="utf-8")
+(ROOT / "artifact/llm-radar.html").write_text(out, encoding="utf-8")
 print(f"[완료] {dest.relative_to(ROOT)} 생성 ({len(out)} bytes, 완결 문서)")
 
 # Astryx is bundled locally; the deployed file needs no CDN or runtime build server.
@@ -40,6 +41,6 @@ js = (ROOT / "web/dist/main.js").read_text().replace("</script", "<\\/script")
 css = (ROOT / "web/dist/main.css").read_text()
 safe_data = data.replace("<", "\\u003c")
 html = HEAD.replace("<body>", "<style>" + css + "</style><body>") + '<div id="root"></div>' + '<script>globalThis.MODEL_DATA=' + safe_data + ';</script><script>' + js + '</script></body></html>'
-main_dest = ROOT / "artifact/llm-radar.html"
+main_dest = ROOT / "artifact/llm-guide-astryx.html"
 main_dest.write_text(html, encoding="utf-8")
 print(f"[완료] Astryx UI → {main_dest.relative_to(ROOT)} ({len(html)} characters)")
