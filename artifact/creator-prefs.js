@@ -1,0 +1,20 @@
+function readCreatorPreferences(){try{return parsePreferences(localStorage.getItem('llm-guide-preferences-v1'),[...new Set(MODELS.map(m=>m.creator))]);}catch{return parsePreferences(null,[]);}}
+function persistPreferences(){try{localStorage.setItem('llm-guide-preferences-v1',JSON.stringify({creators:[...pinnedCreators],only:pinnedOnly,minIntelligence:qualityFloor}));return true;}catch{return false;}}
+function refreshCreatorControls(){const c=$(".creator-pref");c.replaceChildren();creatorControls(c);}
+function creatorControls(container){
+ const head=el('div','creator-heading');const title=el('strong');title.textContent='내 제작사';const manage=el('button','creator-button');manage.type='button';manage.textContent='고정 편집';manage.onclick=openCreatorManager;head.append(title,manage);container.append(head);
+ const modes=el('div','creator-modes');
+ for(const [only,label] of [[false,'전체 보기'],[true,`고정만 (${pinnedCreators.size})`]]){const b=el('button','creator-button');b.type='button';b.textContent=label;b.disabled=only&&!pinnedCreators.size;b.setAttribute('aria-pressed',String(only===pinnedOnly));b.onclick=()=>{pinnedOnly=only;state.creators=new Set(only?pinnedCreators:[]);persistPreferences();refreshCreatorControls();render();};modes.append(b);}container.append(modes);
+ const saved=el('div','pinned-summary');saved.textContent=pinnedCreators.size?[...pinnedCreators].slice(0,3).join(' · ')+(pinnedCreators.size>3?` 외 ${pinnedCreators.size-3}곳`:''):'원하는 제작사를 고정해 두세요. 다음 방문에도 유지됩니다.';container.append(saved);
+}
+function openCreatorManager(){
+ let dialog=$('#creator-manager');if(!dialog){dialog=el('dialog','creator-dialog');dialog.id='creator-manager';document.body.append(dialog);}
+ const available=[...new Set(MODELS.map(m=>m.creator))].sort(),draft=new Set(pinnedCreators);
+ dialog.innerHTML='<form method="dialog"><div class="creator-heading"><h2 id="creator-title">내 제작사 고정</h2><button class="creator-button" type="button" id="creator-cancel">닫기</button></div><p>전체 제작사에서 골라 고정하세요. 저장하면 고정한 제작사의 모델만 표시합니다. 전체 보기로 언제든 전환할 수 있습니다.</p><label class="creator-search-label">제작사 검색<input id="creator-search" type="search" placeholder="이름으로 찾기" autocomplete="off"></label><div class="creator-actions"><button type="button" class="creator-button" id="creator-all">전체 고정</button><button type="button" class="creator-button" id="creator-clear">모두 해제</button><span id="creator-picked" role="status"></span></div><div id="creator-options"></div><div class="creator-footer"><span id="creator-storage-note">이 브라우저에 저장됩니다.</span><button type="button" id="creator-save" class="creator-save">저장하고 적용</button></div></form>';
+ dialog.setAttribute('aria-labelledby','creator-title');
+ dialog.querySelector('form').onsubmit=e=>e.preventDefault();$('#creator-cancel').onclick=()=>dialog.close();
+ const paint=()=>{const list=$('#creator-options');list.replaceChildren();const q=$('#creator-search').value.toLowerCase().trim();const visible=available.filter(c=>c.toLowerCase().includes(q));for(const c of visible){const label=el('label','creator-option');const box=el('input');box.type='checkbox';box.checked=draft.has(c);box.onchange=()=>{box.checked?draft.add(c):draft.delete(c);$('#creator-picked').textContent=`${draft.size}개 고정`;};label.append(box,document.createTextNode(c));list.append(label);}if(!visible.length)list.textContent='일치하는 제작사가 없습니다.';$('#creator-picked').textContent=`${draft.size}개 고정`;};
+ $('#creator-search').oninput=paint;$('#creator-all').onclick=()=>{available.forEach(c=>draft.add(c));paint();};$('#creator-clear').onclick=()=>{draft.clear();paint();};
+ $('#creator-save').onclick=()=>{pinnedCreators=new Set(draft);pinnedOnly=draft.size>0;state.creators=new Set(draft);const saved=persistPreferences();dialog.close();refreshCreatorControls();render();if(!saved){const note=el('p','preference-notice');note.setAttribute('role','status');note.textContent='브라우저 저장을 사용할 수 없어 이번 방문에만 유지됩니다.';$('#filters').prepend(note);}};
+ paint();dialog.showModal();$('#creator-search').focus();
+}

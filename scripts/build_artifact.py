@@ -12,6 +12,7 @@ data = (ROOT / "models" / "data" / "cards.json").read_text(encoding="utf-8")
 
 body = tpl.replace("__CARDS__", data.replace("</", "<\\/"))
 body = body.replace("__EXPLORER_CORE__", (ROOT / "artifact/explorer.mjs").read_text().replace("export ", ""))
+body = body.replace("__CREATOR_PREFS__", (ROOT / "artifact/creator-prefs.js").read_text())
 body = body.replace("__EXPLORER_UI__", (ROOT / "artifact/explorer-ui.js").read_text())
 body = "<style>" + (ROOT / "artifact/explorer.css").read_text() + "</style>" + body
 assert "__CARDS__" not in body, "주입 실패: 템플릿에 __CARDS__ 토큰이 없습니다"
