@@ -5,9 +5,21 @@
   "description": "AA 리더보드 기반 LLM 능력 레이더 파이프라인",
   "type": "module",
   "scripts": {
-    "scrape": "node scripts/scrape_aa.mjs"
+    "scrape": "node scripts/scrape_aa.mjs",
+    "build:ui": "node scripts/build_ui.mjs",
+    "astryx": "node node_modules/@astryxdesign/cli/clients/cli/bin/astryx.mjs"
   },
   "dependencies": {
-    "playwright": "^1.49.0"
+    "@astryxdesign/cli": "0.7.16",
+    "@astryxdesign/core": "0.7.16",
+    "@astryxdesign/theme-neutral": "0.7.16",
+    "@fontsource/figtree": "5.3.0",
+    "@stylexjs/stylex": "0.19.2",
+    "playwright": "^1.49.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
   }
 }

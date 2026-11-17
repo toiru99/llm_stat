@@ -4,7 +4,7 @@
 build_cards.py 다음에 실행. 템플릿(artifact/template.html, body 내용)에 데이터를 주입하고
 doctype/head(title·viewport·favicon)로 감싼 자체 완결 문서를 만든다.
 """
-import pathlib
+import pathlib, subprocess
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 tpl = (ROOT / "artifact" / "template.html").read_text(encoding="utf-8")
@@ -30,6 +30,16 @@ HEAD = (
 )
 out = HEAD + body + "\n</body>\n</html>\n"
 
-dest = ROOT / "artifact" / "llm-radar.html"
+dest = ROOT / "artifact" / "llm-radar-legacy.html"
 dest.write_text(out, encoding="utf-8")
 print(f"[완료] {dest.relative_to(ROOT)} 생성 ({len(out)} bytes, 완결 문서)")
+
+# Astryx is bundled locally; the deployed file needs no CDN or runtime build server.
+subprocess.run(["node", str(ROOT / "scripts/build_ui.mjs")], cwd=ROOT, check=True)
+js = (ROOT / "web/dist/main.js").read_text().replace("</script", "<\\/script")
+css = (ROOT / "web/dist/main.css").read_text()
+safe_data = data.replace("<", "\\u003c")
+html = HEAD.replace("<body>", "<style>" + css + "</style><body>") + '<div id="root"></div>' + '<script>globalThis.MODEL_DATA=' + safe_data + ';</script><script>' + js + '</script></body></html>'
+main_dest = ROOT / "artifact/llm-radar.html"
+main_dest.write_text(html, encoding="utf-8")
+print(f"[완료] Astryx UI → {main_dest.relative_to(ROOT)} ({len(html)} characters)")

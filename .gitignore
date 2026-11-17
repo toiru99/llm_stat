@@ -4,3 +4,5 @@ __pycache__/
 .playwright-mcp/
 node_modules/
 site/
+
+web/dist/

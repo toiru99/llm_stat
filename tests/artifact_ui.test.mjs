@@ -8,7 +8,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const PAGE = 'file://' + join(ROOT, 'artifact', 'llm-radar.html');
+const PAGE = 'file://' + join(ROOT, 'artifact', 'llm-radar-legacy.html');
 
 let browser, page, jsErrors;
 

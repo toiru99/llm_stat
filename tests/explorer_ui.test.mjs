@@ -1,6 +1,6 @@
 import {test,before,after} from 'node:test';import assert from 'node:assert/strict';import {chromium} from 'playwright';
 let b,p;const errors=[];
-before(async()=>{b=await chromium.launch();p=await b.newPage();p.on('pageerror',e=>errors.push(e.message));await p.goto('file://'+process.cwd()+'/artifact/llm-radar.html');});after(async()=>{await b?.close();});
+before(async()=>{b=await chromium.launch();p=await b.newPage();p.on('pageerror',e=>errors.push(e.message));await p.goto('file://'+process.cwd()+'/artifact/llm-radar-legacy.html');});after(async()=>{await b?.close();});
 test('새 기본 화면은 버전·용도·측정 공백 표시',async()=>{assert.match(await p.locator('#freshness').innerText(),/5\.0\.1/);assert.equal(await p.locator('.explorer').count(),1);assert.match(await p.locator('.coverage').innerText(),/실측/);});
 test('코딩 목적 변경 시 실측 점수 내림차순·근거 표시',async()=>{await p.locator('[data-purpose=coding]').click();assert.match(await p.locator('.explore-note').first().innerText(),/FrontierCode/);const nums=await p.locator('.explore-table tbody tr td:nth-child(2)').allTextContents();const values=nums.filter(x=>x!=='미측정').map(parseFloat);assert.ok(values.length>0);assert.ok(values.every((v,i)=>!i||values[i-1]>=v));});
 test('음수 토큰 비용 계산 거부 및 비교 다운로드 제공',async()=>{await p.locator('summary').filter({hasText:'API 비용'}).click();await p.locator('#budget-in').fill('-1');assert.match(await p.locator('#budget-results').innerText(),/계산 불가/);const dl=p.waitForEvent('download');await p.locator('#download-comparison').click();assert.equal((await dl).suggestedFilename(),'model-comparison.json');});

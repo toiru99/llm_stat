@@ -1,0 +1,12 @@
+import React from 'react';
+import {createRoot} from 'react-dom/client';
+import '@astryxdesign/core/reset.css';
+import '@fontsource/figtree/latin-400.css';
+import '@fontsource/figtree/latin-500.css';
+import '@fontsource/figtree/latin-600.css';
+import '@fontsource/figtree/latin-700.css';
+import '@astryxdesign/core/astryx.css';
+import {Theme} from '@astryxdesign/core/theme';
+import {themes,defaultThemeSlug} from '../astryx-themes';
+import App from './App';
+createRoot(document.getElementById('root')!).render(<Theme theme={themes[defaultThemeSlug]}><App/></Theme>);

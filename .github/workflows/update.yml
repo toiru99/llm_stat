@@ -51,6 +51,7 @@ jobs:
         run: |
           mkdir -p site
           cp artifact/llm-radar.html site/index.html
+          cp artifact/llm-radar-legacy.html site/llm-radar-legacy.html
 
       - name: Commit refreshed data
         run: |

@@ -1,0 +1,2 @@
+import {build} from 'esbuild';
+await build({entryPoints:['web/main.tsx'],bundle:true,minify:true,outdir:'web/dist',format:'iife',jsx:'automatic',define:{'process.env.NODE_ENV':'"production"'},loader:{'.woff2':'dataurl','.woff':'dataurl','.ttf':'dataurl','.svg':'dataurl'},legalComments:'eof',plugins:[{name:'local-theme-fonts',setup(b){b.onResolve({filter:/^@astryxdesign\/theme-neutral\/fonts\.css$/},()=>({path:'fonts',namespace:'local-fonts'}));b.onLoad({filter:/.*/,namespace:'local-fonts'},()=>({contents:'',loader:'css'}));}}]});
