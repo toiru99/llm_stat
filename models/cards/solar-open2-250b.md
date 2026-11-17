@@ -6,26 +6,26 @@ license: Open
 intelligence_index: None
 price_blended_usd_1m: None
 output_speed_tps: None
-context_window: 1000000
+context_window: 1048576
 status: current
 size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 66.2, z: 0.92, r: 63.8, estimated: false }  # 전문 지식
-  reasoning: { s: 62.6, z: 0.94, r: 64.1, estimated: false }  # 추론
-  coding: { s: 67.6, z: 0.99, r: 64.9, estimated: false }  # 코딩
-  agentic: { s: 47.1, z: 0.41, r: 56.2, estimated: false }  # 에이전트
+  knowledge: { s: 66.2, z: 0.92, r: 63.9, estimated: false }  # 전문 지식
+  reasoning: { s: 47.1, z: 0.58, r: 58.7, estimated: false }  # 추론
+  coding: { s: 67.6, z: 0.95, r: 64.2, estimated: false }  # 코딩
+  agentic: { s: 51.4, z: 0.24, r: 53.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 80.8, z: 0.83, r: 62.4, estimated: false }  # 긴문맥
-  instruction: { s: 79.9, z: 1.15, r: 67.3, estimated: true }  # 지시 따르기
+  long_context: { s: 80.8, z: 0.82, r: 62.3, estimated: false }  # 긴문맥
+  instruction: { s: 79.0, z: 1.06, r: 65.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Open2 250B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-13
-timestamp: 2026-11-13T00:00:00Z
+updated: 2026-11-17
+timestamp: 2026-11-17T00:00:00Z
 ---
 
 # Solar Open2 250B
@@ -34,7 +34,7 @@ Upstage · Open · Large · 컨텍스트 1M · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 코딩
-- **약점**: 긴문맥, 에이전트
+- **약점**: 추론, 에이전트
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 1M ctx`
@@ -43,14 +43,14 @@ Upstage · Open · Large · 컨텍스트 1M · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 63.8 | +0.92 | 실측 | [[gpqa-diamond]] 85.7%×0.4, [[humanitys-last-exam]] 28.5%×0.3 |
-| 추론 | 64.1 | +0.94 | 실측 | [[gpqa-diamond]] 85.7%×1.0, [[humanitys-last-exam]] 28.5%×1.0 |
-| 코딩 | 64.9 | +0.99 | 실측 | [[scicode]] 48.0%×1.0 |
-| 에이전트 | 56.2 | +0.41 | 실측 | [[gdpval]] 978.0%×1.0, [[tau3-banking]] 21.6%×1.0 |
+| 전문 지식 | 63.9 | +0.92 | 실측 | [[gpqa-diamond]] 85.6565656565657%×0.4, [[humanitys-last-exam]] 28.544949026876697%×0.3 |
+| 추론 | 58.7 | +0.58 | 실측 | [[critpt]] 5.71428571428571%×1.0, [[gpqa-diamond]] 85.6565656565657%×1.0, [[humanitys-last-exam]] 28.544949026876697%×1.0 |
+| 코딩 | 64.2 | +0.95 | 실측 | [[scicode]] 48.032407407407405%×1.0 |
+| 에이전트 | 53.5 | +0.24 | 실측 | [[gdpval]] 978.0%×1.0, [[tau3-banking]] 21.6494845360825%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 62.4 | +0.83 | 실측 | [[aa-lcr]] 71.7%×1.0 |
-| 지시 따르기 | 67.3 | +1.15 | 추정 | (추정) |
+| 긴문맥 | 62.3 | +0.82 | 실측 | [[aa-lcr]] 71.6666666666667%×1.0 |
+| 지시 따르기 | 65.9 | +1.06 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

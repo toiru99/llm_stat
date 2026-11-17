@@ -3,54 +3,54 @@ type: Model
 title: Qwen3.8 27B (non-reasoning)
 creator: Alibaba
 license: Open
-intelligence_index: 10.0
+intelligence_index: 10.0316676028892
 price_blended_usd_1m: 0.47
-output_speed_tps: None
+output_speed_tps: 40.26345294374213
 context_window: 256000
 status: current
 size_class: Small
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 54.0, z: 0.33, r: 55.0, estimated: false }  # 전문 지식
-  reasoning: { s: 33.6, z: -0.47, r: 42.9, estimated: false }  # 추론
-  coding: { s: 48.2, z: 0.35, r: 55.2, estimated: false }  # 코딩
-  agentic: { s: 48.4, z: 0.45, r: 56.8, estimated: false }  # 에이전트
+  knowledge: { s: 54.1, z: 0.34, r: 55.1, estimated: false }  # 전문 지식
+  reasoning: { s: 33.1, z: -0.11, r: 48.3, estimated: false }  # 추론
+  coding: { s: 48.2, z: 0.29, r: 54.3, estimated: false }  # 코딩
+  agentic: { s: 52.1, z: 0.26, r: 53.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 74.3, z: 0.15, r: 52.2, estimated: false }  # 멀티모달
-  long_context: { s: 78.1, z: 0.75, r: 61.2, estimated: false }  # 긴문맥
-  instruction: { s: 66.0, z: 0.56, r: 58.4, estimated: true }  # 지시 따르기
+  multimodal: { s: 74.2, z: 0.15, r: 52.2, estimated: false }  # 멀티모달
+  long_context: { s: 78.2, z: 0.74, r: 61.1, estimated: false }  # 긴문맥
+  instruction: { s: 73.7, z: 0.84, r: 62.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.8 27B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-13
-timestamp: 2026-11-13T00:00:00Z
+updated: 2026-11-17
+timestamp: 2026-11-17T00:00:00Z
 ---
 
 # Qwen3.8 27B (non-reasoning)
 
-Alibaba · Open · Small · 컨텍스트 256k · 종합지능 **10.0**
+Alibaba · Open · Small · 컨텍스트 256k · 종합지능 **10.0316676028892**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 긴문맥, 지시 따르기
+- **강점**: 지시 따르기, 긴문맥
 - **약점**: 멀티모달, 추론
 
 ## 실용 지표
-`입력 $0.5 · 출력 $3.0 · 혼합 $0.47/1M · None t/s · TTFT Nones · 256k ctx` · 가성비 21.3
+`입력 $0.5 · 출력 $3.0 · 혼합 $0.47/1M · 40.26345294374213 t/s · TTFT 5.059794964073479s · 256k ctx` · 가성비 21.3
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 55.0 | +0.33 | 실측 | [[gpqa-diamond]] 81.8%×0.4, [[humanitys-last-exam]] 12.1%×0.3 |
-| 추론 | 42.9 | -0.47 | 실측 | [[critpt]] 2.0%×1.0, [[gpqa-diamond]] 81.8%×1.0, [[humanitys-last-exam]] 12.1%×1.0 |
-| 코딩 | 55.2 | +0.35 | 실측 | [[scicode]] 36.2%×1.0 |
-| 에이전트 | 56.8 | +0.45 | 실측 | [[gdpval]] 1082.0%×1.0, [[tau3-banking]] 20.0%×1.0 |
+| 전문 지식 | 55.1 | +0.34 | 실측 | [[gpqa-diamond]] 81.8181818181818%×0.4, [[humanitys-last-exam]] 12.1408711770158%×0.3 |
+| 추론 | 48.3 | -0.11 | 실측 | [[critpt]] 0.28571428571428603%×1.0, [[gpqa-diamond]] 81.8181818181818%×1.0, [[humanitys-last-exam]] 12.1408711770158%×1.0 |
+| 코딩 | 54.3 | +0.29 | 실측 | [[scicode]] 36.2268518518519%×1.0 |
+| 에이전트 | 53.9 | +0.26 | 실측 | [[gdpval]] 1081.15%×1.0, [[tau3-banking]] 20.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 52.2 | +0.15 | 실측 | [[mmmu-pro]] 70.0%×1.0 |
-| 긴문맥 | 61.2 | +0.75 | 실측 | [[aa-lcr]] 69.3%×1.0 |
-| 지시 따르기 | 58.4 | +0.56 | 추정 | (추정) |
+| 멀티모달 | 52.2 | +0.15 | 실측 | [[mmmu-pro]] 69.9421965317919%×1.0 |
+| 긴문맥 | 61.1 | +0.74 | 실측 | [[aa-lcr]] 69.3333333333333%×1.0 |
+| 지시 따르기 | 62.6 | +0.84 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -5,27 +5,27 @@ creator: Nous Research
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.7
-output_speed_tps: None
+output_speed_tps: 120.26907507552932
 context_window: 128000
 status: past
 size_class: Medium
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 21.7, z: -1.22, r: 31.7, estimated: false }  # 전문 지식
-  reasoning: { s: 19.5, z: -1.16, r: 32.6, estimated: false }  # 추론
-  coding: { s: 10.4, z: -0.92, r: 36.2, estimated: true }  # 코딩
-  agentic: { s: 8.1, z: -0.91, r: 36.3, estimated: true }  # 에이전트
+  knowledge: { s: 21.7, z: -1.23, r: 31.6, estimated: false }  # 전문 지식
+  reasoning: { s: 19.5, z: -0.78, r: 38.2, estimated: false }  # 추론
+  coding: { s: 42.2, z: 0.08, r: 51.3, estimated: true }  # 코딩
+  agentic: { s: 19.8, z: -0.86, r: 37.1, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 17.8, z: -1.06, r: 34.1, estimated: true }  # 긴문맥
-  instruction: { s: 29.7, z: -1.0, r: 35.0, estimated: true }  # 지시 따르기
+  long_context: { s: 14.6, z: -1.15, r: 32.8, estimated: true }  # 긴문맥
+  instruction: { s: 23.2, z: -1.27, r: 30.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Hermes 3 - Llama-3.1 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-13
-timestamp: 2026-11-13T00:00:00Z
+updated: 2026-11-17
+timestamp: 2026-11-17T00:00:00Z
 ---
 
 # Hermes 3 - Llama-3.1 70B
@@ -33,24 +33,24 @@ timestamp: 2026-11-13T00:00:00Z
 Nous Research · Open · Medium · 컨텍스트 128k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 에이전트, 코딩
-- **약점**: 추론, 전문 지식
+- **강점**: 코딩, 추론
+- **약점**: 전문 지식, 지시 따르기
 
 ## 실용 지표
-`입력 $0.7 · 출력 $0.7 · 혼합 $0.7/1M · None t/s · TTFT Nones · 128k ctx`
+`입력 $0.7 · 출력 $0.7 · 혼합 $0.7/1M · 120.26907507552932 t/s · TTFT 1.7184373491166915s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 31.7 | -1.22 | 실측 | [[gpqa-diamond]] 40.1%×0.4, [[humanitys-last-exam]] 4.0%×0.3 |
-| 추론 | 32.6 | -1.16 | 실측 | [[gpqa-diamond]] 40.1%×1.0, [[humanitys-last-exam]] 4.0%×1.0 |
-| 코딩 | 36.2 | -0.92 | 추정 | (추정) |
-| 에이전트 | 36.3 | -0.91 | 추정 | (추정) |
+| 전문 지식 | 31.6 | -1.23 | 실측 | [[gpqa-diamond]] 40.1010101010101%×0.4, [[humanitys-last-exam]] 3.9899999999999998%×0.3 |
+| 추론 | 38.2 | -0.78 | 실측 | [[gpqa-diamond]] 40.1010101010101%×1.0, [[humanitys-last-exam]] 3.9899999999999998%×1.0 |
+| 코딩 | 51.3 | +0.08 | 추정 | (추정) |
+| 에이전트 | 37.1 | -0.86 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 34.1 | -1.06 | 추정 | (추정) |
-| 지시 따르기 | 35.0 | -1.0 | 추정 | (추정) |
+| 긴문맥 | 32.8 | -1.15 | 추정 | (추정) |
+| 지시 따르기 | 30.9 | -1.27 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

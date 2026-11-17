@@ -37,6 +37,8 @@ tags: [composite, index, aggregate, headline]
 timestamp: 2026-06-23T00:00:00Z
 ---
 
+> 이 문서는 v4.1 역사 기록입니다. 현재 v5.0.1 구성은 [2026-11-17 분석](../docs/research/2026-11-17-aa-v5-review.md)을 참조하세요. 서로 다른 버전의 점수를 직접 비교하지 않습니다.
+
 # 무엇인가 (복합 지수)
 
 Artificial Analysis Intelligence Index는 **개별 벤치마크가 아니다.** 여러 어려운 평가를 **가중 평균**해 LLM의 종합 지능(추론·지식·수학·코딩·에이전트 능력)을 **하나의 숫자**로 압축한 **복합 지수(composite index)**다. Artificial Analysis가 자체 구성한 지표로, 표준화된 학술 논문은 없으며 방법론 웹페이지가 유일한 정본(正本) 출처다.

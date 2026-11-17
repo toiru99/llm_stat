@@ -8,33 +8,33 @@ price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 64000
 status: past
-size_class: Unknown
+size_class: Small
 params_b: null
-is_reasoning: null
+is_reasoning: true
 radar:
-  knowledge: { s: 34.6, z: -0.6, r: 41.0, estimated: false }  # 전문 지식
-  reasoning: { s: 31.2, z: -0.59, r: 41.1, estimated: false }  # 추론
-  coding: { s: 25.3, z: -0.42, r: 43.7, estimated: true }  # 코딩
-  agentic: { s: 8.4, z: -0.9, r: 36.5, estimated: true }  # 에이전트
+  knowledge: { s: 34.6, z: -0.6, r: 40.9, estimated: false }  # 전문 지식
+  reasoning: { s: 31.2, z: -0.21, r: 46.9, estimated: false }  # 추론
+  coding: { s: 58.9, z: 0.65, r: 59.8, estimated: true }  # 코딩
+  agentic: { s: 51.9, z: 0.25, r: 53.8, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 19.4, z: -1.01, r: 34.8, estimated: true }  # 긴문맥
-  instruction: { s: 34.4, z: -0.8, r: 38.0, estimated: true }  # 지시 따르기
+  long_context: { s: 18.7, z: -1.03, r: 34.6, estimated: true }  # 긴문맥
+  instruction: { s: 35.2, z: -0.77, r: 38.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Pro 2 (Preview)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-13
-timestamp: 2026-11-13T00:00:00Z
+updated: 2026-11-17
+timestamp: 2026-11-17T00:00:00Z
 ---
 
 # Solar Pro 2 (Preview)
 
-Upstage · Proprietary · Unknown · 컨텍스트 64k · 종합지능 **None** · ⚠️ past(구세대)
+Upstage · Proprietary · Small · 컨텍스트 64k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 코딩, 추론
-- **약점**: 에이전트, 긴문맥
+- **강점**: 코딩, 에이전트
+- **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 64k ctx`
@@ -43,14 +43,14 @@ Upstage · Proprietary · Unknown · 컨텍스트 64k · 종합지능 **None** �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 41.0 | -0.6 | 실측 | [[gpqa-diamond]] 57.8%×0.4, [[humanitys-last-exam]] 6.1%×0.3 |
-| 추론 | 41.1 | -0.59 | 실측 | [[gpqa-diamond]] 57.8%×1.0, [[humanitys-last-exam]] 6.1%×1.0 |
-| 코딩 | 43.7 | -0.42 | 추정 | (추정) |
-| 에이전트 | 36.5 | -0.9 | 추정 | (추정) |
+| 전문 지식 | 40.9 | -0.6 | 실측 | [[gpqa-diamond]] 57.77777777777779%×0.4, [[humanitys-last-exam]] 6.0704355885078805%×0.3 |
+| 추론 | 46.9 | -0.21 | 실측 | [[gpqa-diamond]] 57.77777777777779%×1.0, [[humanitys-last-exam]] 6.0704355885078805%×1.0 |
+| 코딩 | 59.8 | +0.65 | 추정 | (추정) |
+| 에이전트 | 53.8 | +0.25 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 34.8 | -1.01 | 추정 | (추정) |
-| 지시 따르기 | 38.0 | -0.8 | 추정 | (추정) |
+| 긴문맥 | 34.6 | -1.03 | 추정 | (추정) |
+| 지시 따르기 | 38.4 | -0.77 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -9,9 +9,9 @@ export const MIN_MODELS = 400;      // Status(Current) 해제 시 전체 유니�
 export const MIN_JOIN_RATE = 0.9;   // 임베드 속성 조인율
 export const MIN_PRICE_RATE = 0.5;  // 혼합가 보유 비율 (실측 ~0.68)
 
-export function checkScrape({ headerCount, modelCount, rows, joined }) {
+export function checkScrape({ headerCount, modelCount, rows, joined, structured = false }) {
   const errs = [];
-  if (!modelCount || headerCount < MIN_HEADERS)
+  if (!modelCount || (!structured && headerCount < MIN_HEADERS))
     errs.push(`열 ${headerCount}, 모델 ${modelCount}. 표 구조 변경 의심.`);
   if (modelCount < MIN_MODELS)
     errs.push(`전체 유니버스 ${modelCount}개(<${MIN_MODELS}). Status 해제 미반영 의심.`);

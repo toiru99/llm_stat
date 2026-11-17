@@ -6,7 +6,7 @@ export function captureModels() {
   JSON.parse = function (...args) {
     const value = Reflect.apply(parse, this, args);
     if (Array.isArray(value)) {
-      const models = value.filter(o => o && typeof o.slug === 'string'
+      const models = value.filter(o => o && (typeof o.slug === 'string' || typeof o.id === 'string')
         && typeof o.name === 'string' && typeof o.deprecated === 'boolean');
       if (models.length) globalThis.__llmStatModels.push(...models);
     }

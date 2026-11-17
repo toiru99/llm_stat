@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 38.9, z: -0.39, r: 44.1, estimated: false }  # 전문 지식
-  reasoning: { s: 34.7, z: -0.42, r: 43.7, estimated: false }  # 추론
-  coding: { s: 11.5, z: -0.88, r: 36.8, estimated: false }  # 코딩
-  agentic: { s: 11.5, z: -0.79, r: 38.1, estimated: false }  # 에이전트
+  knowledge: { s: 38.9, z: -0.4, r: 44.0, estimated: false }  # 전문 지식
+  reasoning: { s: 23.1, z: -0.61, r: 40.9, estimated: false }  # 추론
+  coding: { s: 11.5, z: -0.96, r: 35.6, estimated: false }  # 코딩
+  agentic: { s: 21.1, z: -0.81, r: 37.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 64.9, z: -0.33, r: 45.0, estimated: false }  # 멀티모달
-  long_context: { s: 56.0, z: 0.09, r: 51.3, estimated: false }  # 긴문맥
-  instruction: { s: 41.7, z: -0.48, r: 42.7, estimated: false }  # 지시 따르기
+  multimodal: { s: 65.4, z: -0.3, r: 45.5, estimated: false }  # 멀티모달
+  long_context: { s: 56.0, z: 0.08, r: 51.2, estimated: false }  # 긴문맥
+  instruction: { s: 41.7, z: -0.5, r: 42.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.5 Flash-Lite (Sep) (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-13
-timestamp: 2026-11-13T00:00:00Z
+updated: 2026-11-17
+timestamp: 2026-11-17T00:00:00Z
 ---
 
 # Gemini 2.5 Flash-Lite (Sep) (non-reasoning)
@@ -43,14 +43,14 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 44.1 | -0.39 | 실측 | [[gpqa-diamond]] 65.1%×0.4, [[humanitys-last-exam]] 5.1%×0.3 |
-| 추론 | 43.7 | -0.42 | 실측 | [[gpqa-diamond]] 65.1%×1.0, [[humanitys-last-exam]] 5.1%×1.0 |
-| 코딩 | 36.8 | -0.88 | 실측 | [[terminal-bench]] 7.6%×0.5 |
-| 에이전트 | 38.1 | -0.79 | 실측 | [[terminal-bench]] 7.6%×1.0 |
+| 전문 지식 | 44.0 | -0.4 | 실측 | [[gpqa-diamond]] 65.05050505050501%×0.4, [[humanitys-last-exam]] 5.09731232622799%×0.3 |
+| 추론 | 40.9 | -0.61 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 65.05050505050501%×1.0, [[humanitys-last-exam]] 5.09731232622799%×1.0 |
+| 코딩 | 35.6 | -0.96 | 실측 | [[terminal-bench]] 7.57575757575758%×0.5 |
+| 에이전트 | 37.8 | -0.81 | 실측 | [[tau2-bench]] 30.409356725146203%×1.0, [[terminal-bench]] 7.57575757575758%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 45.0 | -0.33 | 실측 | [[mmmu-pro]] 63.0%×1.0 |
-| 긴문맥 | 51.3 | +0.09 | 실측 | [[aa-lcr]] 49.7%×1.0 |
-| 지시 따르기 | 42.7 | -0.48 | 실측 | [[ifbench]] 41.8%×1.0 |
+| 멀티모달 | 45.5 | -0.3 | 실측 | [[mmmu-pro]] 63.410404624277504%×1.0 |
+| 긴문맥 | 51.2 | +0.08 | 실측 | [[aa-lcr]] 49.6666666666667%×1.0 |
+| 지시 따르기 | 42.5 | -0.5 | 실측 | [[ifbench]] 41.836734693877595%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

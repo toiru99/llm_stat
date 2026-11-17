@@ -73,3 +73,9 @@
 ## 출처
 
 - [Artificial Analysis 모델 리더보드](https://artificialanalysis.ai/leaderboards/models)
+
+## 2026-11 모델 탐색 v2
+
+새 기본 화면은 업무별 실측 비교·과제당 비용/시간·비교 근거·API 토큰 비용 계산을 제공한다. 기존8축은 구형 평가 기반 보조 화면이다. [변경 분석](docs/research/2026-11-17-aa-v5-review.md), [설계](docs/superpowers/specs/2026-11-17-model-explorer-design.md), [구현 계획/결과](docs/superpowers/plans/2026-11-17-model-explorer.md).
+
+수집기는 공식 지능/성능 방법론 버전을 확인하며 핵심v5 score 소실·동일버전50%초과 보유수 급감을 차단한다. 구조화 모델 id로 변형을 보존하고 표 행수와 전체모델수를 구분한다. `node --test tests/*.test.mjs`, `python3 -m unittest discover -s tests`로 검증한다.

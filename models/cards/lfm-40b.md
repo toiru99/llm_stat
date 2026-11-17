@@ -12,20 +12,20 @@ size_class: Medium
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 17.4, z: -1.43, r: 28.6, estimated: false }  # 전문 지식
-  reasoning: { s: 15.8, z: -1.34, r: 29.9, estimated: false }  # 추론
-  coding: { s: 0.7, z: -1.24, r: 31.4, estimated: true }  # 코딩
-  agentic: { s: 2.4, z: -1.1, r: 33.5, estimated: true }  # 에이전트
+  knowledge: { s: 17.4, z: -1.44, r: 28.4, estimated: false }  # 전문 지식
+  reasoning: { s: 15.9, z: -0.96, r: 35.5, estimated: false }  # 추론
+  coding: { s: 1.8, z: -1.29, r: 30.7, estimated: true }  # 코딩
+  agentic: { s: 3.9, z: -1.41, r: 28.8, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 7.6, z: -1.37, r: 29.5, estimated: true }  # 긴문맥
-  instruction: { s: 25.6, z: -1.17, r: 32.4, estimated: true }  # 지시 따르기
+  long_context: { s: 3.5, z: -1.48, r: 27.8, estimated: true }  # 긴문맥
+  instruction: { s: 26.9, z: -1.12, r: 33.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — LFM 40B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-13
-timestamp: 2026-11-13T00:00:00Z
+updated: 2026-11-17
+timestamp: 2026-11-17T00:00:00Z
 ---
 
 # LFM 40B
@@ -33,8 +33,8 @@ timestamp: 2026-11-13T00:00:00Z
 Liquid AI · Proprietary · Medium · 컨텍스트 32k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 에이전트, 지시 따르기
-- **약점**: 긴문맥, 전문 지식
+- **강점**: 추론, 지시 따르기
+- **약점**: 전문 지식, 긴문맥
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 32k ctx`
@@ -43,14 +43,14 @@ Liquid AI · Proprietary · Medium · 컨텍스트 32k · 종합지능 **None** 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 28.6 | -1.43 | 실측 | [[gpqa-diamond]] 32.7%×0.4, [[humanitys-last-exam]] 4.9%×0.3 |
-| 추론 | 29.9 | -1.34 | 실측 | [[gpqa-diamond]] 32.7%×1.0, [[humanitys-last-exam]] 4.9%×1.0 |
-| 코딩 | 31.4 | -1.24 | 추정 | (추정) |
-| 에이전트 | 33.5 | -1.1 | 추정 | (추정) |
+| 전문 지식 | 28.4 | -1.44 | 실측 | [[gpqa-diamond]] 32.7272727272727%×0.4, [[humanitys-last-exam]] 4.93%×0.3 |
+| 추론 | 35.5 | -0.96 | 실측 | [[gpqa-diamond]] 32.7272727272727%×1.0, [[humanitys-last-exam]] 4.93%×1.0 |
+| 코딩 | 30.7 | -1.29 | 추정 | (추정) |
+| 에이전트 | 28.8 | -1.41 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 29.5 | -1.37 | 추정 | (추정) |
-| 지시 따르기 | 32.4 | -1.17 | 추정 | (추정) |
+| 긴문맥 | 27.8 | -1.48 | 추정 | (추정) |
+| 지시 따르기 | 33.2 | -1.12 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

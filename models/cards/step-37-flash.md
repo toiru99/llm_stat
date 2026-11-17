@@ -5,27 +5,27 @@ creator: StepFun
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.183
-output_speed_tps: None
-context_window: 262000
+output_speed_tps: 152.06009877257333
+context_window: 262144
 status: past
 size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 58.9, z: 0.57, r: 58.5, estimated: false }  # 전문 지식
-  reasoning: { s: 55.0, z: 0.57, r: 58.5, estimated: false }  # 추론
-  coding: { s: 58.6, z: 0.69, r: 60.4, estimated: false }  # 코딩
-  agentic: { s: 41.4, z: 0.22, r: 53.3, estimated: false }  # 에이전트
+  knowledge: { s: 58.9, z: 0.57, r: 58.6, estimated: false }  # 전문 지식
+  reasoning: { s: 38.8, z: 0.17, r: 52.6, estimated: false }  # 추론
+  coding: { s: 58.5, z: 0.64, r: 59.6, estimated: false }  # 코딩
+  agentic: { s: 58.1, z: 0.47, r: 57.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 81.1, z: 0.49, r: 57.3, estimated: false }  # 멀티모달
-  long_context: { s: 83.1, z: 0.9, r: 63.4, estimated: false }  # 긴문맥
-  instruction: { s: 77.5, z: 1.05, r: 65.8, estimated: false }  # 지시 따르기
+  multimodal: { s: 81.4, z: 0.52, r: 57.7, estimated: false }  # 멀티모달
+  long_context: { s: 83.1, z: 0.88, r: 63.3, estimated: false }  # 긴문맥
+  instruction: { s: 77.5, z: 1.0, r: 64.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Step 3.7 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-13
-timestamp: 2026-11-13T00:00:00Z
+updated: 2026-11-17
+timestamp: 2026-11-17T00:00:00Z
 ---
 
 # Step 3.7 Flash
@@ -34,23 +34,23 @@ StepFun · Open · Large · 컨텍스트 262k · 종합지능 **None** · ⚠️
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 긴문맥
-- **약점**: 멀티모달, 에이전트
+- **약점**: 에이전트, 추론
 
 ## 실용 지표
-`입력 $0.2 · 출력 $1.15 · 혼합 $0.183/1M · None t/s · TTFT Nones · 262k ctx`
+`입력 $0.2 · 출력 $1.15 · 혼합 $0.183/1M · 152.06009877257333 t/s · TTFT 2.8436725171248525s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 58.5 | +0.57 | 실측 | [[gpqa-diamond]] 80.9%×0.4, [[humanitys-last-exam]] 21.4%×0.3 |
-| 추론 | 58.5 | +0.57 | 실측 | [[gpqa-diamond]] 80.9%×1.0, [[humanitys-last-exam]] 21.4%×1.0 |
-| 코딩 | 60.4 | +0.69 | 실측 | [[scicode]] 43.9%×1.0, [[terminal-bench]] 35.6%×0.5 |
-| 에이전트 | 53.3 | +0.22 | 실측 | [[apex-agents]] 14.8%×1.0, [[gdpval]] 864.0%×1.0, [[itbench]] 30.3%×1.0, [[tau3-banking]] 12.0%×1.0, [[terminal-bench]] 35.6%×1.0 |
+| 전문 지식 | 58.6 | +0.57 | 실측 | [[gpqa-diamond]] 80.90909090909089%×0.4, [[humanitys-last-exam]] 21.408711770157602%×0.3 |
+| 추론 | 52.6 | +0.17 | 실측 | [[critpt]] 2.28571428571429%×1.0, [[gpqa-diamond]] 80.90909090909089%×1.0, [[humanitys-last-exam]] 21.408711770157602%×1.0 |
+| 코딩 | 59.6 | +0.64 | 실측 | [[scicode]] 43.8657407407407%×1.0, [[terminal-bench]] 35.6060606060606%×0.5 |
+| 에이전트 | 57.0 | +0.47 | 실측 | [[gdpval]] 863.73%×1.0, [[tau2-bench]] 98.5380116959064%×1.0, [[tau3-banking]] 11.9587628865979%×1.0, [[terminal-bench]] 35.6060606060606%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 57.3 | +0.49 | 실측 | [[mmmu-pro]] 75.0%×1.0 |
-| 긴문맥 | 63.4 | +0.9 | 실측 | [[aa-lcr]] 73.7%×1.0 |
-| 지시 따르기 | 65.8 | +1.05 | 실측 | [[ifbench]] 67.3%×1.0 |
+| 멀티모달 | 57.7 | +0.52 | 실측 | [[mmmu-pro]] 75.3179190751445%×1.0 |
+| 긴문맥 | 63.3 | +0.88 | 실측 | [[aa-lcr]] 73.6666666666667%×1.0 |
+| 지시 따르기 | 64.9 | +1.0 | 실측 | [[ifbench]] 67.2789115646258%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

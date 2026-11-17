@@ -3,54 +3,54 @@ type: Model
 title: GPT-6 Astra (high)
 creator: OpenAI
 license: Proprietary
-intelligence_index: 55.0
+intelligence_index: 54.849838322506
 price_blended_usd_1m: 7.7
-output_speed_tps: None
+output_speed_tps: 41.81582904633869
 context_window: 1000000
 status: current
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 86.7, z: 1.9, r: 78.5, estimated: false }  # 전문 지식
-  reasoning: { s: 87.6, z: 2.16, r: 82.4, estimated: false }  # 추론
-  coding: { s: 79.8, z: 1.4, r: 71.0, estimated: false }  # 코딩
-  agentic: { s: 80.1, z: 1.53, r: 72.9, estimated: false }  # 에이전트
+  knowledge: { s: 86.7, z: 1.92, r: 78.7, estimated: false }  # 전문 지식
+  reasoning: { s: 83.4, z: 2.38, r: 85.7, estimated: false }  # 추론
+  coding: { s: 79.8, z: 1.36, r: 70.5, estimated: false }  # 코딩
+  agentic: { s: 81.7, z: 1.29, r: 69.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 95.9, z: 1.24, r: 68.6, estimated: false }  # 멀티모달
-  long_context: { s: 90.2, z: 1.11, r: 66.6, estimated: false }  # 긴문맥
-  instruction: { s: 77.6, z: 1.06, r: 65.8, estimated: true }  # 지시 따르기
+  multimodal: { s: 96.2, z: 1.28, r: 69.1, estimated: false }  # 멀티모달
+  long_context: { s: 90.2, z: 1.1, r: 66.4, estimated: false }  # 긴문맥
+  instruction: { s: 82.5, z: 1.2, r: 68.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6 Astra (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-13
-timestamp: 2026-11-13T00:00:00Z
+updated: 2026-11-17
+timestamp: 2026-11-17T00:00:00Z
 ---
 
 # GPT-6 Astra (high)
 
-OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **55.0**
+OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **54.849838322506**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 전문 지식
-- **약점**: 긴문맥, 지시 따르기
+- **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
-`입력 $10.0 · 출력 $50.0 · 혼합 $7.7/1M · None t/s · TTFT Nones · 1M ctx` · 가성비 7.1
+`입력 $10.0 · 출력 $50.0 · 혼합 $7.7/1M · 41.81582904633869 t/s · TTFT 47.46298620750243s · 1M ctx` · 가성비 7.1
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 78.5 | +1.9 | 실측 | [[gpqa-diamond]] 94.9%×0.4, [[humanitys-last-exam]] 53.1%×0.3 |
-| 추론 | 82.4 | +2.16 | 실측 | [[critpt]] 71.5%×1.0, [[gpqa-diamond]] 94.9%×1.0, [[humanitys-last-exam]] 53.1%×1.0 |
-| 코딩 | 71.0 | +1.4 | 실측 | [[scicode]] 55.4%×1.0 |
-| 에이전트 | 72.9 | +1.53 | 실측 | [[gdpval]] 1536.0%×1.0, [[tau3-banking]] 40.0%×1.0 |
+| 전문 지식 | 78.7 | +1.92 | 실측 | [[gpqa-diamond]] 94.94949494949499%×0.4, [[humanitys-last-exam]] 53.058387395736794%×0.3 |
+| 추론 | 85.7 | +2.38 | 실측 | [[critpt]] 28.857142857142897%×1.0, [[gpqa-diamond]] 94.94949494949499%×1.0, [[humanitys-last-exam]] 53.058387395736794%×1.0 |
+| 코딩 | 70.5 | +1.36 | 실측 | [[scicode]] 55.4398148148148%×1.0 |
+| 에이전트 | 69.3 | +1.29 | 실측 | [[gdpval]] 1538.15%×1.0, [[tau3-banking]] 40.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 68.6 | +1.24 | 실측 | [[mmmu-pro]] 86.0%×1.0 |
-| 긴문맥 | 66.6 | +1.11 | 실측 | [[aa-lcr]] 80.0%×1.0 |
-| 지시 따르기 | 65.8 | +1.06 | 추정 | (추정) |
+| 멀티모달 | 69.1 | +1.28 | 실측 | [[mmmu-pro]] 86.4161849710983%×1.0 |
+| 긴문맥 | 66.4 | +1.1 | 실측 | [[aa-lcr]] 80.0%×1.0 |
+| 지시 따르기 | 68.1 | +1.2 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

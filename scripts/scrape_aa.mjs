@@ -9,10 +9,12 @@
 // 출처표기 의무: artificialanalysis.ai
 
 import { chromium } from 'playwright';
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { extractModelAttrs } from './extract_attrs.mjs';
+import { checkContract } from './check_contract.mjs';
+import { normalizeModels } from './normalize_models.mjs';
 import { captureModels } from './capture_models.mjs';
 import { checkScrape } from './validate_scrape.mjs';
 
@@ -42,6 +44,15 @@ const run = async () => {
   await page.addInitScript(captureModels);
   // 임베드는 표를 건드리기 전에 확보한다 — 필터 조작 뒤에 읽으면 간헐적으로 비어 있다.
   const embed = await loadWithEmbed(page);
+  const intelligenceResponse = await page.request.get('https://artificialanalysis.ai/methodology/intelligence-benchmarking');
+  if (!intelligenceResponse.ok()) throw new Error('지능 방법론 조회 실패');
+  const pageText = (await intelligenceResponse.text()).replace(/<[^>]*>/g,' ');
+  const observedVersion = pageText.match(/Intelligence Index v(\d+\.\d+(?:\.\d+)?)/)?.[1];
+  const performanceResponse = await page.request.get('https://artificialanalysis.ai/methodology/performance-benchmarking');
+  if (!performanceResponse.ok()) throw new Error('성능 방법론 조회 실패');
+  const performanceVersion = (await performanceResponse.text()).replace(/<[^>]*>/g,' ').match(/Version\s+(\d+\.\d+\.\d+)/)?.[1];
+  if (performanceVersion !== '3.0.0') throw new Error(`성능 버전 변경/미확인: ${performanceVersion || 'unknown'}`);
+  if (observedVersion !== '5.0.1') throw new Error(`지수 버전 변경/미확인: ${observedVersion || 'unknown'} — 매핑 검토 필요`);
 
   // Status 필터의 "Current" 체크 해제 → 과거(deprecated) 모델 포함 전체 행 노출.
   // 기본(current) 행 수를 기록해 두면 조인 없이도 current/past 규모를 검증할 수 있다.
@@ -52,7 +63,7 @@ const run = async () => {
     (n) => document.querySelectorAll('tbody tr').length > n, currentCount, { timeout: 30000 });
   await page.keyboard.press('Escape');                        // 팝오버 닫기
 
-  const data = await page.evaluate(async () => {
+  let data = await page.evaluate(async () => {
     const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     // 각 그룹 헤더의 펼치기(chevron) 버튼 클릭 → 전체 열 노출
     const chevrons = Array.from(document.querySelectorAll('table thead th button')).filter((b) => b.querySelector('svg'));
@@ -77,17 +88,26 @@ const run = async () => {
   await browser.close();
 
   // 초기 임베드와 지연 로드 데이터를 함께 파싱해 상세 속성을 유지한다.
+  const normalized = normalizeModels(JSON.parse(loaded));
+  if (!normalized.length) throw new Error("v2 구조화 모델 수집 실패 — 이전 데이터 보존");
+  if (normalized.length) data = {structured:true,headerCount:Object.keys(normalized[0]).length, headers:Object.keys(normalized[0]), modelCount:normalized.length, rows:normalized};
   const attrs = extractModelAttrs(embed + '\n' + loaded);
   const EMPTY = { paramClass: null, totalParameters: null, isReasoning: null, deprecated: null,
                   blendedPrice: null, priceClass: null };
   let joined = 0;
   for (const row of data.rows) {
+    if (row.aa) { joined++; continue; }
     const a = attrs.get(row['Model']);
     if (a) { Object.assign(row, a); joined++; }
     else Object.assign(row, EMPTY);
   }
 
   const errs = checkScrape({ ...data, joined });
+  if (normalized.length) {
+    const previousPath = join(DATA, 'latest.json');
+    const previous = existsSync(previousPath) ? JSON.parse(readFileSync(previousPath,'utf8')) : null;
+    errs.push(...checkContract(data.rows,previous?.methodology?.intelligence===observedVersion ? previous.rows : null));
+  }
   if (errs.length) throw new Error(`스크래핑 검증 실패 — ${errs.join(' / ')}`);
 
   const past = data.rows.filter((r) => r.deprecated === true).length;
@@ -95,12 +115,18 @@ const run = async () => {
 
   // 날짜는 환경변수로 주입(스크립트 내 Date 사용 가능하나 cron 로그 일관성 위해 인자 우선)
   const today = process.env.RUN_DATE || new Date().toISOString().slice(0, 10);
-  const payload = { scraped_at: today, source: URL, currentCount, ...data };
+  if (normalized.length) {
+    for (const field of ['intelligenceIndex', 'intelligenceIndexCostPerTask', 'intelligenceIndexTimePerTask']) {
+      const count = JSON.parse(loaded).filter(m => Number.isFinite(m[field])).length;
+      if (count < 10) throw new Error(`핵심 필드 소실: ${field} ${count}개`);
+    }
+  }
+  const payload = { schema_version: 2, methodology: {intelligence:observedVersion,performance:performanceVersion,verified_at:'2026-11-17',source:'https://artificialanalysis.ai/methodology/intelligence-benchmarking'}, scraped_at: today, source: URL, currentCount:data.rows.filter(r=>r.deprecated===false).length, ...data };
   mkdirSync(DATA, { recursive: true });
   const out = JSON.stringify(payload, null, 2);
   writeFileSync(join(DATA, `aa-leaderboard-${today}.json`), out);
   writeFileSync(join(DATA, 'latest.json'), out);
-  console.log(`[완료] ${data.modelCount}개 모델(current ${currentCount} · past ${past}) × ${data.headerCount}열 저장, 속성 조인 ${joined} · 가격 ${priced} (${today}).`);
+  console.log(`[완료] ${data.modelCount}개 모델(current ${payload.currentCount} · past ${past}) × ${data.headerCount}열 저장, 속성 조인 ${joined} · 가격 ${priced} (${today}).`);
 };
 
 run().catch((e) => { console.error('[중단]', e.message); process.exit(1); });

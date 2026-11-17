@@ -10,7 +10,10 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 tpl = (ROOT / "artifact" / "template.html").read_text(encoding="utf-8")
 data = (ROOT / "models" / "data" / "cards.json").read_text(encoding="utf-8")
 
-body = tpl.replace("__CARDS__", data)
+body = tpl.replace("__CARDS__", data.replace("</", "<\\/"))
+body = body.replace("__EXPLORER_CORE__", (ROOT / "artifact/explorer.mjs").read_text().replace("export ", ""))
+body = body.replace("__EXPLORER_UI__", (ROOT / "artifact/explorer-ui.js").read_text())
+body = "<style>" + (ROOT / "artifact/explorer.css").read_text() + "</style>" + body
 assert "__CARDS__" not in body, "주입 실패: 템플릿에 __CARDS__ 토큰이 없습니다"
 
 FAVICON = ("data:image/svg+xml,"
@@ -20,7 +23,7 @@ HEAD = (
     "<!doctype html>\n<html lang=\"ko\">\n<head>\n"
     "<meta charset=\"utf-8\">\n"
     "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n"
-    "<title>LLM 능력 레이더 · Alan</title>\n"
+    "<title>LLM 모델 가이드 · Alan</title>\n"
     f"<link rel=\"icon\" href=\"{FAVICON}\">\n"
     "</head>\n<body>\n"
 )

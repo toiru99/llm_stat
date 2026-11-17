@@ -12,20 +12,20 @@ size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 50.5, z: 0.16, r: 52.5, estimated: false }  # 전문 지식
-  reasoning: { s: 45.9, z: 0.13, r: 51.9, estimated: false }  # 추론
-  coding: { s: 10.3, z: -0.92, r: 36.2, estimated: false }  # 코딩
-  agentic: { s: 10.3, z: -0.83, r: 37.5, estimated: false }  # 에이전트
+  knowledge: { s: 50.5, z: 0.17, r: 52.5, estimated: false }  # 전문 지식
+  reasoning: { s: 31.2, z: -0.21, r: 46.9, estimated: false }  # 추론
+  coding: { s: 10.3, z: -1.0, r: 35.0, estimated: false }  # 코딩
+  agentic: { s: 18.4, z: -0.91, r: 36.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 61.7, z: 0.25, r: 53.8, estimated: false }  # 긴문맥
-  instruction: { s: 45.6, z: -0.32, r: 45.3, estimated: false }  # 지시 따르기
+  long_context: { s: 61.7, z: 0.25, r: 53.7, estimated: false }  # 긴문맥
+  instruction: { s: 45.6, z: -0.34, r: 44.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Ring-1T
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-13
-timestamp: 2026-11-13T00:00:00Z
+updated: 2026-11-17
+timestamp: 2026-11-17T00:00:00Z
 ---
 
 # Ring-1T
@@ -43,14 +43,14 @@ InclusionAI · Open · Large · 컨텍스트 128k · 종합지능 **None** · �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 52.5 | +0.16 | 실측 | [[gpqa-diamond]] 77.4%×0.4, [[humanitys-last-exam]] 11.1%×0.3 |
-| 추론 | 51.9 | +0.13 | 실측 | [[gpqa-diamond]] 77.4%×1.0, [[humanitys-last-exam]] 11.1%×1.0 |
-| 코딩 | 36.2 | -0.92 | 실측 | [[terminal-bench]] 6.8%×0.5 |
-| 에이전트 | 37.5 | -0.83 | 실측 | [[terminal-bench]] 6.8%×1.0 |
+| 전문 지식 | 52.5 | +0.17 | 실측 | [[gpqa-diamond]] 77.3737373737374%×0.4, [[humanitys-last-exam]] 11.1214087117702%×0.3 |
+| 추론 | 46.9 | -0.21 | 실측 | [[critpt]] 0.571428571428571%×1.0, [[gpqa-diamond]] 77.3737373737374%×1.0, [[humanitys-last-exam]] 11.1214087117702%×1.0 |
+| 코딩 | 35.0 | -1.0 | 실측 | [[terminal-bench]] 6.81818181818182%×0.5 |
+| 에이전트 | 36.4 | -0.91 | 실측 | [[tau2-bench]] 26.315789473684198%×1.0, [[terminal-bench]] 6.81818181818182%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 53.8 | +0.25 | 실측 | [[aa-lcr]] 54.7%×1.0 |
-| 지시 따르기 | 45.3 | -0.32 | 실측 | [[ifbench]] 44.6%×1.0 |
+| 긴문맥 | 53.7 | +0.25 | 실측 | [[aa-lcr]] 54.6666666666667%×1.0 |
+| 지시 따르기 | 44.9 | -0.34 | 실측 | [[ifbench]] 44.5578231292517%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

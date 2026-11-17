@@ -136,11 +136,12 @@
   <header class="top">
     <div>
       <p class="eyebrow">Alan · LLM capability instrument</p>
-      <h1>LLM 능력 레이더 <span class="dim">— 평균 대비 강·약점</span></h1>
+      <h1>LLM 모델 가이드 <span class="dim">— 내 작업에 맞는 선택</span></h1>
     </div>
     <div class="meta" id="meta"></div>
   </header>
 
+  <div class="freshness" id="freshness" role="status"></div>
   <div class="grid">
     <!-- LEFT RAIL -->
     <aside class="rail">
@@ -158,8 +159,9 @@
     <!-- STAGE -->
     <section class="stage card">
       <div class="tabs">
-        <button class="tab" data-view="radar" aria-selected="true">레이더</button>
-        <button class="tab" data-view="scatter" aria-selected="false">가성비</button>
+        <button class="tab" data-view="explore" aria-selected="true">모델 탐색</button>
+        <button class="tab" data-view="radar" aria-selected="false">기존 8축</button>
+        <button class="tab" data-view="scatter" aria-selected="false">토큰 단가 비교</button>
       </div>
       <div class="view">
         <div class="view-wrap" id="viewwrap"></div>
@@ -179,6 +181,7 @@
 </div>
 
 <script>
+__EXPLORER_CORE__
 const PAYLOAD = __CARDS__;
 const AX = PAYLOAD.axes, LAB = PAYLOAD.labels, MODELS = PAYLOAD.models;
 
@@ -186,7 +189,7 @@ const $=s=>document.querySelector(s), el=(t,c)=>{const e=document.createElement(
 const fmtCtx=n=>!n?"—":n>=1e6?(n/1e6)+"M":Math.round(n/1e3)+"k";
 const SERIES=["--series-0","--series-1","--series-2"];
 
-let state={view:"radar",selected:[(MODELS.find(m=>m.status==="current")||MODELS[0]).slug],q:"",creators:new Set(PAYLOAD.defaultCreators||[]),lic:new Set(),maxPrice:Infinity,minCtx:0,sizes:new Set(),reasoning:new Set(),curOnly:true,axesOpen:false};
+let state={view:"explore",selected:[(MODELS.find(m=>m.status==="current")||MODELS[0]).slug],q:"",creators:new Set(),lic:new Set(),maxPrice:Infinity,minCtx:0,sizes:new Set(),reasoning:new Set(),curOnly:true,axesOpen:false};
 
 // ---------- filters ----------
 function buildFilters(){
@@ -212,7 +215,7 @@ function buildFilters(){
     cc.appendChild(tg);cg.appendChild(xc);
   }
   f.appendChild(cg);
-  const lg=el("div","filter-grp");lg.innerHTML="<span>라이선스</span>";
+  const lg=el("div","filter-grp");lg.innerHTML="<span>가중치 공개 여부 · 이용허락 별도 확인</span>";
   const lc=el("div","chips");
   lics.forEach(c=>{const b=el("span","chip");b.textContent=c==="Open"?"오픈":c==="Proprietary"?"독점":c;b.setAttribute("aria-pressed","false");
     b.onclick=()=>{b.getAttribute("aria-pressed")==="true"?(state.lic.delete(c),b.setAttribute("aria-pressed","false")):(state.lic.add(c),b.setAttribute("aria-pressed","true"));render();};lc.appendChild(b);});
@@ -252,7 +255,7 @@ function filtered(){
     if(state.q && !m.name.toLowerCase().includes(state.q)) return false;
     if(state.creators.size && !state.creators.has(m.creator)) return false;
     if(state.lic.size && !state.lic.has(m.license)) return false;
-    if(m.price!=null && m.price>state.maxPrice) return false;
+    if(Number.isFinite(state.maxPrice) && (m.price==null || m.price>state.maxPrice)) return false;
     if(state.curOnly && m.status!=="current") return false;
     if(state.sizes.size && !state.sizes.has(m.size)) return false;
     if(state.reasoning.size){
@@ -274,7 +277,7 @@ function buildList(){
     if(si>0)r.classList.add("cmp");
     const dot=el("span","dot");dot.style.background= si>=0?`var(${SERIES[si]})`:"transparent";
     const nm=el("span","nm");nm.textContent=m.name;
-    const ix=el("span","ix");ix.textContent=m.intel==null?"—":m.intel;
+    const ix=el("span","ix");ix.textContent=m.intel==null?"—":Number(m.intel.toFixed(1));
     if(m.status==="past"){const pb=el("span","pastb");pb.textContent="past";r.append(dot,nm,pb,ix);}
     else r.append(dot,nm,ix);
     r.onclick=(e)=>toggleSelect(m.slug,e.metaKey||e.ctrlKey||e.shiftKey);
@@ -375,7 +378,7 @@ const METRICS=[
   {k:"컨텍스트",    g:m=>m.ctx,        dir:+1, fmt:fmtCtx},
   {k:"속도",        g:m=>m.speed,      dir:+1, unit:" t/s"},
   {k:"TTFT",        g:m=>m.ttft,       dir:-1, unit:" s",
-   tip:"첫 토큰까지 지연. 추론 모델은 사고시간 포함이라 큼"},
+   tip:"첫 토큰까지의 지연. 추론 모델의 첫 사고 토큰일 수 있어 첫 답변 대기와 다름"},
   {k:"총 응답시간", g:m=>m.total_resp, dir:-1, unit:" s"},
   {k:"멀티모달",    g:m=>m.radar.multimodal.measured?"측정":"미측정", dir:0},
   {k:"크기",        g:m=>m.size==="Unknown"?"비공개":m.size, dir:0,
@@ -477,7 +480,7 @@ function legendHTML(){
   if(state.view==="radar"){
     lg.innerHTML=state.selected.map((s,i)=>{const m=MODELS.find(x=>x.slug===s);return m?`<span class="it"><span class="sw" style="background:var(${SERIES[i]})"></span>${m.name}</span>`:'';}).join('')
       +`<span class="it"><span class="sw" style="background:var(--base)"></span>평균(50) 기준선</span>`;
-    hint.textContent="축이 기준선 밖 = 평균 이상. 점선 표식 = 측정 안 됨. ⌘+클릭으로 최대 3개 비교.";
+    hint.textContent="기존 8축은 구형 평가 기반 자체 상대지표입니다. v5 지수와 다릅니다. 축이 기준선 밖 = 평균 이상. 점선 표식 = 측정 안 됨. ⌘+클릭으로 최대 3개 비교.";
   } else {
     lg.innerHTML="";
     hint.textContent="왼쪽 위일수록 가성비 우수(싸고 똑똑). 점 클릭 → 선택. 가격은 로그 축.";
@@ -488,14 +491,24 @@ function legendHTML(){
 function render(){
   document.querySelector(".grid").classList.toggle("cmp", state.selected.length>1);
   buildList();panelHTML();legendHTML();
+  if(state.view==="explore"){
+    $("#viewwrap").innerHTML=explorerHTML();
+    const sel=state.selected.map(id=>MODELS.find(m=>m.slug===id)).filter(Boolean);
+    $("#panel").innerHTML=evidenceHTML(sel);$("#legend").innerHTML="";$("#hint").textContent="모델명을 눌러 최대 3개를 비교하세요. 선택은 최소 1개 유지되며, 3개일 때는 먼저 하나를 해제하세요.";bindExplorer();return;
+  }
   $("#viewwrap").innerHTML = state.view==="radar"?radarSVG():scatterSVG();
   if(state.view==="scatter"){
     $("#viewwrap").querySelectorAll("circle[data-slug]").forEach(c=>c.onclick=e=>toggleSelect(c.getAttribute("data-slug"),e.metaKey||e.ctrlKey||e.shiftKey));
   }
 }
 
+__EXPLORER_UI__
+
 // init
 $("#meta").innerHTML=`데이터 ${PAYLOAD.scraped_at} · ${MODELS.length}개 모델(전체 제작사·current+past) · 기본 Current만 표시`;
+const ageDays=Math.floor((Date.now()-Date.parse(PAYLOAD.scraped_at+'T00:00:00Z'))/86400000);
+$("#freshness").classList.toggle('stale',ageDays>2);
+$("#freshness").textContent=`AA Intelligence ${PAYLOAD.methodology?.intelligence||'버전 미확인'} · 데이터 ${PAYLOAD.scraped_at} · ${ageDays>2?'갱신 지연: 최신 결과와 다를 수 있습니다.':'현재 스냅샷 기준'} · API 모델 비교 / 채팅 구독료 별도`;
 $("#footdate").textContent="갱신 "+PAYLOAD.scraped_at;
 $("#search").oninput=e=>{state.q=e.target.value.toLowerCase().trim();render();};
 document.querySelectorAll(".tab").forEach(t=>t.onclick=()=>{

@@ -19,6 +19,7 @@ before(async () => {
   page.on('pageerror', (e) => jsErrors.push(e.message));
   await page.goto(PAGE, { waitUntil: 'load' });
   await page.waitForSelector('#list .mrow');
+  await page.locator('[data-view=radar]').click();
 });
 after(async () => { await browser.close(); });
 

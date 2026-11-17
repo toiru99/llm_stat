@@ -12,20 +12,20 @@ size_class: Medium
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 16.9, z: -1.45, r: 28.2, estimated: false }  # 전문 지식
-  reasoning: { s: 15.4, z: -1.36, r: 29.6, estimated: false }  # 추론
-  coding: { s: 0.4, z: -1.25, r: 31.2, estimated: true }  # 코딩
-  agentic: { s: 0.5, z: -1.17, r: 32.5, estimated: true }  # 에이전트
+  knowledge: { s: 17.0, z: -1.46, r: 28.1, estimated: false }  # 전문 지식
+  reasoning: { s: 15.5, z: -0.99, r: 35.2, estimated: false }  # 추론
+  coding: { s: 0.7, z: -1.33, r: 30.1, estimated: true }  # 코딩
+  agentic: { s: 0.8, z: -1.52, r: 27.2, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 6.3, z: -1.4, r: 29.0, estimated: true }  # 긴문맥
-  instruction: { s: 35.0, z: -0.77, r: 38.4, estimated: true }  # 지시 따르기
+  long_context: { s: 2.0, z: -1.52, r: 27.2, estimated: true }  # 긴문맥
+  instruction: { s: 22.7, z: -1.3, r: 30.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Command-R+ (Apr)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-13
-timestamp: 2026-11-13T00:00:00Z
+updated: 2026-11-17
+timestamp: 2026-11-17T00:00:00Z
 ---
 
 # Command-R+ (Apr)
@@ -33,8 +33,8 @@ timestamp: 2026-11-13T00:00:00Z
 Cohere · Open · Medium · 컨텍스트 128k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 지시 따르기, 에이전트
-- **약점**: 긴문맥, 전문 지식
+- **강점**: 추론, 지시 따르기
+- **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 128k ctx`
@@ -43,14 +43,14 @@ Cohere · Open · Medium · 컨텍스트 128k · 종합지능 **None** · ⚠️
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 28.2 | -1.45 | 실측 | [[gpqa-diamond]] 32.3%×0.4, [[humanitys-last-exam]] 4.6%×0.3 |
-| 추론 | 29.6 | -1.36 | 실측 | [[gpqa-diamond]] 32.3%×1.0, [[humanitys-last-exam]] 4.6%×1.0 |
-| 코딩 | 31.2 | -1.25 | 추정 | (추정) |
-| 에이전트 | 32.5 | -1.17 | 추정 | (추정) |
+| 전문 지식 | 28.1 | -1.46 | 실측 | [[gpqa-diamond]] 32.3232323232323%×0.4, [[humanitys-last-exam]] 4.63%×0.3 |
+| 추론 | 35.2 | -0.99 | 실측 | [[gpqa-diamond]] 32.3232323232323%×1.0, [[humanitys-last-exam]] 4.63%×1.0 |
+| 코딩 | 30.1 | -1.33 | 추정 | (추정) |
+| 에이전트 | 27.2 | -1.52 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 29.0 | -1.4 | 추정 | (추정) |
-| 지시 따르기 | 38.4 | -0.77 | 추정 | (추정) |
+| 긴문맥 | 27.2 | -1.52 | 추정 | (추정) |
+| 지시 따르기 | 30.6 | -1.3 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

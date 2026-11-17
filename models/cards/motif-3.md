@@ -6,26 +6,26 @@ license: Open
 intelligence_index: None
 price_blended_usd_1m: None
 output_speed_tps: None
-context_window: 262000
+context_window: 262144
 status: current
 size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 69.6, z: 1.08, r: 66.3, estimated: false }  # 전문 지식
-  reasoning: { s: 67.1, z: 1.16, r: 67.4, estimated: false }  # 추론
-  coding: { s: 58.1, z: 0.68, r: 60.1, estimated: false }  # 코딩
-  agentic: { s: 64.5, z: 1.0, r: 65.0, estimated: false }  # 에이전트
+  knowledge: { s: 69.7, z: 1.09, r: 66.4, estimated: false }  # 전문 지식
+  reasoning: { s: 50.9, z: 0.77, r: 61.5, estimated: false }  # 추론
+  coding: { s: 58.1, z: 0.63, r: 59.4, estimated: false }  # 코딩
+  agentic: { s: 68.0, z: 0.81, r: 62.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 85.7, z: 0.97, r: 64.6, estimated: false }  # 긴문맥
-  instruction: { s: 84.4, z: 1.35, r: 70.2, estimated: true }  # 지시 따르기
+  long_context: { s: 85.7, z: 0.96, r: 64.4, estimated: false }  # 긴문맥
+  instruction: { s: 86.7, z: 1.38, r: 70.7, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Motif 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-13
-timestamp: 2026-11-13T00:00:00Z
+updated: 2026-11-17
+timestamp: 2026-11-17T00:00:00Z
 ---
 
 # Motif 3
@@ -33,8 +33,8 @@ timestamp: 2026-11-13T00:00:00Z
 Motif Technologies · Open · Large · 컨텍스트 262k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 지시 따르기, 추론
-- **약점**: 긴문맥, 코딩
+- **강점**: 지시 따르기, 전문 지식
+- **약점**: 추론, 코딩
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 262k ctx`
@@ -43,14 +43,14 @@ Motif Technologies · Open · Large · 컨텍스트 262k · 종합지능 **None*
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 66.3 | +1.08 | 실측 | [[gpqa-diamond]] 83.4%×0.4, [[humanitys-last-exam]] 37.0%×0.3 |
-| 추론 | 67.4 | +1.16 | 실측 | [[gpqa-diamond]] 83.4%×1.0, [[humanitys-last-exam]] 37.0%×1.0 |
-| 코딩 | 60.1 | +0.68 | 실측 | [[scicode]] 42.2%×1.0 |
-| 에이전트 | 65.0 | +1.0 | 실측 | [[gdpval]] 1127.0%×1.0, [[tau3-banking]] 35.3%×1.0 |
+| 전문 지식 | 66.4 | +1.09 | 실측 | [[gpqa-diamond]] 83.4343434343434%×0.4, [[humanitys-last-exam]] 36.9786839666358%×0.3 |
+| 추론 | 61.5 | +0.77 | 실측 | [[critpt]] 6.571428571428569%×1.0, [[gpqa-diamond]] 83.4343434343434%×1.0, [[humanitys-last-exam]] 36.9786839666358%×1.0 |
+| 코딩 | 59.4 | +0.63 | 실측 | [[scicode]] 42.2453703703704%×1.0 |
+| 에이전트 | 62.2 | +0.81 | 실측 | [[gdpval]] 1126.52%×1.0, [[tau3-banking]] 35.2577319587629%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 64.6 | +0.97 | 실측 | [[aa-lcr]] 76.0%×1.0 |
-| 지시 따르기 | 70.2 | +1.35 | 추정 | (추정) |
+| 긴문맥 | 64.4 | +0.96 | 실측 | [[aa-lcr]] 76.0%×1.0 |
+| 지시 따르기 | 70.7 | +1.38 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

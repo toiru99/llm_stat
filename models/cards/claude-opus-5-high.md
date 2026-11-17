@@ -5,27 +5,27 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 3.85
-output_speed_tps: None
+output_speed_tps: 78.63374913419462
 context_window: 1000000
 status: past
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 85.7, z: 1.86, r: 77.8, estimated: false }  # 전문 지식
-  reasoning: { s: 83.8, z: 1.98, r: 79.6, estimated: false }  # 추론
-  coding: { s: 79.8, z: 1.4, r: 71.0, estimated: false }  # 코딩
-  agentic: { s: 86.5, z: 1.74, r: 76.1, estimated: false }  # 에이전트
+  knowledge: { s: 85.8, z: 1.87, r: 78.1, estimated: false }  # 전문 지식
+  reasoning: { s: 82.3, z: 2.33, r: 84.9, estimated: false }  # 추론
+  coding: { s: 79.8, z: 1.36, r: 70.5, estimated: false }  # 코딩
+  agentic: { s: 87.8, z: 1.5, r: 72.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 90.5, z: 0.96, r: 64.5, estimated: false }  # 멀티모달
-  long_context: { s: 89.1, z: 1.07, r: 66.1, estimated: false }  # 긴문맥
-  instruction: { s: 78.6, z: 1.1, r: 66.4, estimated: true }  # 지시 따르기
+  multimodal: { s: 90.9, z: 1.0, r: 65.0, estimated: false }  # 멀티모달
+  long_context: { s: 89.1, z: 1.06, r: 65.9, estimated: false }  # 긴문맥
+  instruction: { s: 82.6, z: 1.21, r: 68.1, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 5 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-13
-timestamp: 2026-11-13T00:00:00Z
+updated: 2026-11-17
+timestamp: 2026-11-17T00:00:00Z
 ---
 
 # Claude Opus 5 (high)
@@ -37,20 +37,20 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 - **약점**: 긴문맥, 멀티모달
 
 ## 실용 지표
-`입력 $5.0 · 출력 $25.0 · 혼합 $3.85/1M · None t/s · TTFT Nones · 1M ctx`
+`입력 $5.0 · 출력 $25.0 · 혼합 $3.85/1M · 78.63374913419462 t/s · TTFT 15.482908264930595s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 77.8 | +1.86 | 실측 | [[gpqa-diamond]] 93.7%×0.4, [[humanitys-last-exam]] 52.8%×0.3 |
-| 추론 | 79.6 | +1.98 | 실측 | [[gpqa-diamond]] 93.7%×1.0, [[humanitys-last-exam]] 52.8%×1.0 |
-| 코딩 | 71.0 | +1.4 | 실측 | [[scicode]] 55.4%×1.0 |
-| 에이전트 | 76.1 | +1.74 | 실측 | [[gdpval]] 1604.0%×1.0, [[tau3-banking]] 44.7%×1.0 |
+| 전문 지식 | 78.1 | +1.87 | 실측 | [[gpqa-diamond]] 93.7373737373737%×0.4, [[humanitys-last-exam]] 52.8266913809083%×0.3 |
+| 추론 | 84.9 | +2.33 | 실측 | [[critpt]] 28.2857142857143%×1.0, [[gpqa-diamond]] 93.7373737373737%×1.0, [[humanitys-last-exam]] 52.8266913809083%×1.0 |
+| 코딩 | 70.5 | +1.36 | 실측 | [[scicode]] 55.4398148148148%×1.0 |
+| 에이전트 | 72.5 | +1.5 | 실측 | [[gdpval]] 1604.81%×1.0, [[tau3-banking]] 44.7422680412371%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 64.5 | +0.96 | 실측 | [[mmmu-pro]] 82.0%×1.0 |
-| 긴문맥 | 66.1 | +1.07 | 실측 | [[aa-lcr]] 79.0%×1.0 |
-| 지시 따르기 | 66.4 | +1.1 | 추정 | (추정) |
+| 멀티모달 | 65.0 | +1.0 | 실측 | [[mmmu-pro]] 82.4277456647399%×1.0 |
+| 긴문맥 | 65.9 | +1.06 | 실측 | [[aa-lcr]] 79.0%×1.0 |
+| 지시 따르기 | 68.1 | +1.21 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

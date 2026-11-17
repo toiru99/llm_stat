@@ -12,20 +12,20 @@ size_class: Medium
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 38.6, z: -0.41, r: 43.9, estimated: false }  # 전문 지식
-  reasoning: { s: 34.6, z: -0.43, r: 43.6, estimated: false }  # 추론
-  coding: { s: 0.0, z: -1.27, r: 31.0, estimated: false }  # 코딩
-  agentic: { s: 0.0, z: -1.18, r: 32.2, estimated: false }  # 에이전트
+  knowledge: { s: 38.7, z: -0.41, r: 43.9, estimated: false }  # 전문 지식
+  reasoning: { s: 23.1, z: -0.61, r: 40.9, estimated: false }  # 추론
+  coding: { s: 0.0, z: -1.35, r: 29.7, estimated: false }  # 코딩
+  agentic: { s: 13.6, z: -1.08, r: 33.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 20.6, z: -0.98, r: 35.4, estimated: false }  # 긴문맥
-  instruction: { s: 36.5, z: -0.71, r: 39.4, estimated: false }  # 지시 따르기
+  long_context: { s: 20.7, z: -0.97, r: 35.5, estimated: false }  # 긴문맥
+  instruction: { s: 36.5, z: -0.72, r: 39.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.3 Nemotron Super 49B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-13
-timestamp: 2026-11-13T00:00:00Z
+updated: 2026-11-17
+timestamp: 2026-11-17T00:00:00Z
 ---
 
 # Llama 3.3 Nemotron Super 49B
@@ -43,14 +43,14 @@ NVIDIA · Open · Medium · 컨텍스트 128k · 종합지능 **None** · ⚠️
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 43.9 | -0.41 | 실측 | [[gpqa-diamond]] 64.3%×0.4, [[humanitys-last-exam]] 5.6%×0.3 |
-| 추론 | 43.6 | -0.43 | 실측 | [[gpqa-diamond]] 64.3%×1.0, [[humanitys-last-exam]] 5.6%×1.0 |
-| 코딩 | 31.0 | -1.27 | 실측 | [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 32.2 | -1.18 | 실측 | [[terminal-bench]] 0.0%×1.0 |
+| 전문 지식 | 43.9 | -0.41 | 실측 | [[gpqa-diamond]] 64.3434343434343%×0.4, [[humanitys-last-exam]] 5.62%×0.3 |
+| 추론 | 40.9 | -0.61 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 64.3434343434343%×1.0, [[humanitys-last-exam]] 5.62%×1.0 |
+| 코딩 | 29.7 | -1.35 | 실측 | [[terminal-bench]] 0.0%×0.5 |
+| 에이전트 | 33.9 | -1.08 | 실측 | [[tau2-bench]] 26.900584795321603%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 35.4 | -0.98 | 실측 | [[aa-lcr]] 18.3%×1.0 |
-| 지시 따르기 | 39.4 | -0.71 | 실측 | [[ifbench]] 38.1%×1.0 |
+| 긴문맥 | 35.5 | -0.97 | 실측 | [[aa-lcr]] 18.3333333333333%×1.0 |
+| 지시 따르기 | 39.2 | -0.72 | 실측 | [[ifbench]] 38.0952380952381%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

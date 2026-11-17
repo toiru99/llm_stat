@@ -6,7 +6,7 @@ license: Open
 intelligence_index: None
 price_blended_usd_1m: None
 output_speed_tps: None
-context_window: 262000
+context_window: 262144
 status: current
 size_class: Small
 params_b: null
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — EXAONE 4.5 33B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-13
-timestamp: 2026-11-13T00:00:00Z
+updated: 2026-11-17
+timestamp: 2026-11-17T00:00:00Z
 ---
 
 # EXAONE 4.5 33B (non-reasoning)

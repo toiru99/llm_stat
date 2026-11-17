@@ -6,7 +6,7 @@ license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 1.54
 output_speed_tps: None
-context_window: 1000000
+context_window: 1050000
 status: current
 size_class: Unknown
 params_b: null
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6 Sol (Daybreak Blue, max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-13
-timestamp: 2026-11-13T00:00:00Z
+updated: 2026-11-17
+timestamp: 2026-11-17T00:00:00Z
 ---
 
 # GPT-6 Sol (Daybreak Blue, max)

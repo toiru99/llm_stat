@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 30.1, z: -0.82, r: 37.7, estimated: false }  # 전문 지식
-  reasoning: { s: 26.7, z: -0.81, r: 37.9, estimated: false }  # 추론
-  coding: { s: 36.4, z: -0.05, r: 49.3, estimated: false }  # 코딩
-  agentic: { s: 24.8, z: -0.34, r: 44.8, estimated: false }  # 에이전트
+  reasoning: { s: 17.8, z: -0.87, r: 37.0, estimated: false }  # 추론
+  coding: { s: 36.4, z: -0.11, r: 48.3, estimated: false }  # 코딩
+  agentic: { s: 27.7, z: -0.59, r: 41.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 40.5, z: -1.56, r: 26.6, estimated: false }  # 멀티모달
-  long_context: { s: 31.6, z: -0.65, r: 40.3, estimated: false }  # 긴문맥
-  instruction: { s: 26.8, z: -1.12, r: 33.2, estimated: false }  # 지시 따르기
+  multimodal: { s: 40.3, z: -1.58, r: 26.2, estimated: false }  # 멀티모달
+  long_context: { s: 31.6, z: -0.64, r: 40.3, estimated: false }  # 긴문맥
+  instruction: { s: 26.7, z: -1.13, r: 33.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Devstral Small 2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-13
-timestamp: 2026-11-13T00:00:00Z
+updated: 2026-11-17
+timestamp: 2026-11-17T00:00:00Z
 ---
 
 # Devstral Small 2
@@ -43,14 +43,14 @@ Mistral · Open · Small · 컨텍스트 256k · 종합지능 **None** · ⚠️
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 37.7 | -0.82 | 실측 | [[gpqa-diamond]] 53.2%×0.4, [[humanitys-last-exam]] 3.5%×0.3 |
-| 추론 | 37.9 | -0.81 | 실측 | [[gpqa-diamond]] 53.2%×1.0, [[humanitys-last-exam]] 3.5%×1.0 |
-| 코딩 | 49.3 | -0.05 | 실측 | [[scicode]] 32.4%×1.0, [[terminal-bench]] 16.7%×0.5 |
-| 에이전트 | 44.8 | -0.34 | 실측 | [[gdpval]] 535.0%×1.0, [[tau3-banking]] 10.7%×1.0, [[terminal-bench]] 16.7%×1.0 |
+| 전문 지식 | 37.7 | -0.82 | 실측 | [[gpqa-diamond]] 53.232323232323196%×0.4, [[humanitys-last-exam]] 3.47544022242817%×0.3 |
+| 추론 | 37.0 | -0.87 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 53.232323232323196%×1.0, [[humanitys-last-exam]] 3.47544022242817%×1.0 |
+| 코딩 | 48.3 | -0.11 | 실측 | [[scicode]] 32.407407407407405%×1.0, [[terminal-bench]] 16.6666666666667%×0.5 |
+| 에이전트 | 41.2 | -0.59 | 실측 | [[gdpval]] 535.11%×1.0, [[tau2-bench]] 23.3918128654971%×1.0, [[tau3-banking]] 10.7216494845361%×1.0, [[terminal-bench]] 16.6666666666667%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 26.6 | -1.56 | 실측 | [[mmmu-pro]] 45.0%×1.0 |
-| 긴문맥 | 40.3 | -0.65 | 실측 | [[aa-lcr]] 28.0%×1.0 |
-| 지시 따르기 | 33.2 | -1.12 | 실측 | [[ifbench]] 31.2%×1.0 |
+| 멀티모달 | 26.2 | -1.58 | 실측 | [[mmmu-pro]] 44.6242774566474%×1.0 |
+| 긴문맥 | 40.3 | -0.64 | 실측 | [[aa-lcr]] 28.000000000000004%×1.0 |
+| 지시 따르기 | 33.1 | -1.13 | 실측 | [[ifbench]] 31.156462585034%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

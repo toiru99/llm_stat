@@ -150,7 +150,7 @@ def main():
     if CFG["cards"].get("dedupe_variants", True):
         best = {}
         for r in models:
-            nm = col(r, "Model")
+            nm = r.get("aa", {}).get("id") or col(r, "Model")
             iv = pct(col(r, H_INTEL))
             iv = iv if iv is not None else -1
             if nm not in best or iv > best[nm][0]:
@@ -189,7 +189,7 @@ def main():
             comps[ax] = parts
         recs.append({
             "name": col(m, "Model"), "creator": col(m, "Creator"), "license": col(m, "License"),
-            "intel": pct(col(m, H_INTEL)),
+            "intel": pct(col(m, H_INTEL)), "aa": m.get("aa", {}),
             "price": resolve_price(m.get("blendedPrice"), cache_hit_price(m),
                                    money(col(m, H_PIN)), money(col(m, H_POUT))),
             "priceClass": m.get("priceClass"),
@@ -303,7 +303,7 @@ def main():
         (out_dir / f"{slug}.md").write_text("\n".join(fm + body), encoding="utf-8")
         written.append((slug, m["name"], m["intel"], m["status"]))
         export.append({
-            "slug": slug, "name": m["name"], "creator": m["creator"], "license": m["license"],
+            "aa": m["aa"], "slug": slug, "name": m["name"], "creator": m["creator"], "license": m["license"],
             "intel": m["intel"], "price": m["price"], "price_in": m["price_in"], "price_out": m["price_out"],
             "ttft": m["ttft"], "total_resp": m["total_resp"], "speed": m["speed"], "ctx": m["ctx"], "value": value,
             "size": m["size"], "params": m["params"], "reasoning": m["reasoning"],
@@ -330,7 +330,7 @@ def main():
     default_creators = [c for c in CFG["creators"].get("default_selected", []) if c in present]
     (ROOT / "models" / "data" / "cards.json").write_text(
         json.dumps({"scraped_at": scraped_at, "axes": AX_ORDER, "labels": AX_LABEL,
-                    "defaultCreators": default_creators, "models": export},
+                    "methodology": SNAP.get("methodology", {}), "defaultCreators": default_creators, "models": export},
                    ensure_ascii=False, indent=2), encoding="utf-8")
 
     # 리포트

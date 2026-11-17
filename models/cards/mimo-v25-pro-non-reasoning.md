@@ -13,19 +13,19 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 51.9, z: 0.23, r: 53.5, estimated: false }  # 전문 지식
-  reasoning: { s: 47.7, z: 0.22, r: 53.2, estimated: false }  # 추론
-  coding: { s: 54.0, z: 0.54, r: 58.1, estimated: false }  # 코딩
-  agentic: { s: 54.0, z: 0.64, r: 59.6, estimated: false }  # 에이전트
+  reasoning: { s: 32.9, z: -0.12, r: 48.2, estimated: false }  # 추론
+  coding: { s: 54.0, z: 0.49, r: 57.3, estimated: false }  # 코딩
+  agentic: { s: 63.6, z: 0.66, r: 59.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 47.0, z: -0.18, r: 47.2, estimated: false }  # 긴문맥
-  instruction: { s: 43.0, z: -0.43, r: 43.5, estimated: false }  # 지시 따르기
+  long_context: { s: 47.0, z: -0.19, r: 47.2, estimated: false }  # 긴문맥
+  instruction: { s: 43.0, z: -0.45, r: 43.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2.5-Pro (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-13
-timestamp: 2026-11-13T00:00:00Z
+updated: 2026-11-17
+timestamp: 2026-11-17T00:00:00Z
 ---
 
 # MiMo-V2.5-Pro (non-reasoning)
@@ -37,20 +37,20 @@ Xiaomi · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ pa
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.35 · 출력 $0.7 · 혼합 $0.1406/1M · None t/s · TTFT Nones · 1M ctx`
+`입력 $0.348 · 출력 $0.696 · 혼합 $0.1406/1M · None t/s · TTFT Nones · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 53.5 | +0.23 | 실측 | [[gpqa-diamond]] 76.2%×0.4, [[humanitys-last-exam]] 14.8%×0.3 |
-| 추론 | 53.2 | +0.22 | 실측 | [[gpqa-diamond]] 76.2%×1.0, [[humanitys-last-exam]] 14.8%×1.0 |
-| 코딩 | 58.1 | +0.54 | 실측 | [[terminal-bench]] 35.6%×0.5 |
-| 에이전트 | 59.6 | +0.64 | 실측 | [[terminal-bench]] 35.6%×1.0 |
+| 전문 지식 | 53.5 | +0.23 | 실측 | [[gpqa-diamond]] 76.1616161616162%×0.4, [[humanitys-last-exam]] 14.7822057460612%×0.3 |
+| 추론 | 48.2 | -0.12 | 실측 | [[critpt]] 1.1428571428571401%×1.0, [[gpqa-diamond]] 76.1616161616162%×1.0, [[humanitys-last-exam]] 14.7822057460612%×1.0 |
+| 코딩 | 57.3 | +0.49 | 실측 | [[terminal-bench]] 35.6060606060606%×0.5 |
+| 에이전트 | 59.9 | +0.66 | 실측 | [[tau2-bench]] 72.5146198830409%×1.0, [[terminal-bench]] 35.6060606060606%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 47.2 | -0.18 | 실측 | [[aa-lcr]] 41.7%×1.0 |
-| 지시 따르기 | 43.5 | -0.43 | 실측 | [[ifbench]] 42.7%×1.0 |
+| 긴문맥 | 47.2 | -0.19 | 실측 | [[aa-lcr]] 41.6666666666667%×1.0 |
+| 지시 따르기 | 43.3 | -0.45 | 실측 | [[ifbench]] 42.7210884353741%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

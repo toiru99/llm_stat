@@ -45,3 +45,9 @@ test('여러 게이트가 동시에 깨지면 모두 보고 (첫 오류에서 �
   const errs = checkScrape({ headerCount: 5, modelCount: 10, joined: 0, rows: rows(10, 0) });
   assert.equal(errs.length, 4);
 });
+
+test('구조화 수집은 DOM 열 수 대신 기존 모델·가격·조인 검증 적용',()=>{
+ const rows=Array.from({length:500},()=>({blendedPrice:1}));
+ assert.deepEqual(checkScrape({structured:true,headerCount:1,modelCount:500,rows,joined:500}),[]);
+ assert.ok(checkScrape({structured:true,headerCount:1,modelCount:500,rows,joined:0}).length>0);
+});
