@@ -5,7 +5,7 @@ creator: Meta
 license: Open
 intelligence_index: 6.34128724913462
 price_blended_usd_1m: 0.228
-output_speed_tps: 90.31153762338947
+output_speed_tps: 90.43975354367763
 context_window: 131072
 status: current
 size_class: Small
@@ -37,7 +37,7 @@ Meta · Open · Small · 컨텍스트 131k · 종합지능 **6.34128724913462**
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.32499999999999996 · 출력 $1.35 · 혼합 $0.228/1M · 90.31153762338947 t/s · TTFT 1.6904895120403323s · 131k ctx` · 가성비 27.8
+`입력 $0.32499999999999996 · 출력 $1.35 · 혼합 $0.228/1M · 90.43975354367763 t/s · TTFT 1.6895718301879687s · 131k ctx` · 가성비 27.8
 
 ## 레이더 8축 (평균=50 기준선)
 

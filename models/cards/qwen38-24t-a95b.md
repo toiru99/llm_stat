@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 1.175
-output_speed_tps: 40.8236848745775
+output_speed_tps: 40.91404876722163
 context_window: 262000
 status: current
 size_class: Large
@@ -37,7 +37,7 @@ Alibaba · Open · Large · 컨텍스트 262k · 종합지능 **None**
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $2.0 · 출력 $6.0 · 혼합 $1.175/1M · 40.8236848745775 t/s · TTFT 4.72186651632612s · 262k ctx`
+`입력 $2.0 · 출력 $6.0 · 혼합 $1.175/1M · 40.91404876722163 t/s · TTFT 4.943265094997088s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

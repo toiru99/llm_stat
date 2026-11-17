@@ -5,7 +5,7 @@ creator: OpenAI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.172
-output_speed_tps: 186.22375803352168
+output_speed_tps: 185.8754992812677
 context_window: 131072
 status: current
 size_class: Medium
@@ -37,7 +37,7 @@ OpenAI · Open · Medium · 컨텍스트 131k · 종합지능 **None**
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $0.125 · 출력 $0.595 · 혼합 $0.172/1M · 186.22375803352168 t/s · TTFT 1.1880420691124578s · 131k ctx`
+`입력 $0.125 · 출력 $0.595 · 혼합 $0.172/1M · 185.8754992812677 t/s · TTFT 1.1879303149389284s · 131k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

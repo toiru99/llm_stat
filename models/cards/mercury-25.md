@@ -5,7 +5,7 @@ creator: Inception
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.129
-output_speed_tps: 534.2345087018833
+output_speed_tps: 537.2035754907137
 context_window: 260000
 status: current
 size_class: Unknown
@@ -37,7 +37,7 @@ Inception · Proprietary · Unknown · 컨텍스트 260k · 종합지능 **None*
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.75 · 혼합 $0.129/1M · 534.2345087018833 t/s · TTFT 2.266197151528708s · 260k ctx`
+`입력 $0.2 · 출력 $0.75 · 혼합 $0.129/1M · 537.2035754907137 t/s · TTFT 2.2836719121768367s · 260k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

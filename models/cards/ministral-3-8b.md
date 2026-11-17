@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.0555
-output_speed_tps: 86.42316635910795
+output_speed_tps: 84.66428952474764
 context_window: 256000
 status: current
 size_class: Small
@@ -37,7 +37,7 @@ Mistral · Open · Small · 컨텍스트 256k · 종합지능 **None**
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.15 · 혼합 $0.0555/1M · 86.42316635910795 t/s · TTFT 1.829911643536686s · 256k ctx`
+`입력 $0.15 · 출력 $0.15 · 혼합 $0.0555/1M · 84.66428952474764 t/s · TTFT 1.843524846314646s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

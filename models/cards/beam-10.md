@@ -5,7 +5,7 @@ creator: Reflection
 license: Open
 intelligence_index: 17.7307282547205
 price_blended_usd_1m: 0.228
-output_speed_tps: 281.1694058009585
+output_speed_tps: 271.89723637255213
 context_window: 1048576
 status: current
 size_class: Large
@@ -37,7 +37,7 @@ Reflection · Open · Large · 컨텍스트 1M · 종합지능 **17.730728254720
 - **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
-`입력 $0.4 · 출력 $1.2 · 혼합 $0.228/1M · 281.1694058009585 t/s · TTFT 0.7367212250915043s · 1M ctx` · 가성비 77.8
+`입력 $0.4 · 출력 $1.2 · 혼합 $0.228/1M · 271.89723637255213 t/s · TTFT 0.7429918095179034s · 1M ctx` · 가성비 77.8
 
 ## 레이더 8축 (평균=50 기준선)
 

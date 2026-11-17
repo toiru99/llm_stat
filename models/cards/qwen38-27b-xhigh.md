@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 20.1068756031705
 price_blended_usd_1m: 0.47
-output_speed_tps: 48.95624187654121
+output_speed_tps: 48.35794119754038
 context_window: 256000
 status: current
 size_class: Small
@@ -37,7 +37,7 @@ Alibaba · Open · Small · 컨텍스트 256k · 종합지능 **20.1068756031705
 - **약점**: 추론, 멀티모달
 
 ## 실용 지표
-`입력 $0.5 · 출력 $3.0 · 혼합 $0.47/1M · 48.95624187654121 t/s · TTFT 5.623715107999812s · 256k ctx` · 가성비 42.8
+`입력 $0.5 · 출력 $3.0 · 혼합 $0.47/1M · 48.35794119754038 t/s · TTFT 5.562282042899299s · 256k ctx` · 가성비 42.8
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: Cohere
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0
-output_speed_tps: 130.90916323523538
+output_speed_tps: 130.85750889222828
 context_window: 8192
 status: current
 size_class: Tiny
@@ -37,7 +37,7 @@ Cohere · Open · Tiny · 컨텍스트 8k · 종합지능 **None**
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 130.90916323523538 t/s · TTFT 0.18371000881245314s · 8k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 130.85750889222828 t/s · TTFT 0.18379218479410095s · 8k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

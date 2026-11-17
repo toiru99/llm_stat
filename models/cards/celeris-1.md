@@ -5,7 +5,7 @@ creator: Celeris
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.124
-output_speed_tps: 785.6773471070707
+output_speed_tps: 775.9749748927115
 context_window: 131072
 status: current
 size_class: Unknown
@@ -37,7 +37,7 @@ Celeris · Proprietary · Unknown · 컨텍스트 131k · 종합지능 **None**
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.7 · 혼합 $0.124/1M · 785.6773471070707 t/s · TTFT 0.6620419961673986s · 131k ctx`
+`입력 $0.2 · 출력 $0.7 · 혼합 $0.124/1M · 775.9749748927115 t/s · TTFT 0.6541433205812118s · 131k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

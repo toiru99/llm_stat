@@ -5,7 +5,7 @@ creator: Reka AI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.11
-output_speed_tps: 59.11446378967172
+output_speed_tps: 58.657495700572625
 context_window: 128000
 status: current
 size_class: Small
@@ -37,7 +37,7 @@ Reka AI · Open · Small · 컨텍스트 128k · 종합지능 **None**
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.2 · 혼합 $0.11/1M · 59.11446378967172 t/s · TTFT 0.9134845251100889s · 128k ctx`
+`입력 $0.1 · 출력 $0.2 · 혼합 $0.11/1M · 58.657495700572625 t/s · TTFT 0.9120507406166549s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

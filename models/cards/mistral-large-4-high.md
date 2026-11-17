@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: 26.1249946754784
 price_blended_usd_1m: 0.399
-output_speed_tps: 75.92082626642066
+output_speed_tps: 75.1460691813927
 context_window: 1000000
 status: current
 size_class: Large
@@ -37,7 +37,7 @@ Mistral · Open · Large · 컨텍스트 1M · 종합지능 **26.1249946754784**
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $0.7 · 출력 $2.1 · 혼합 $0.399/1M · 75.92082626642066 t/s · TTFT 3.369093990510965s · 1M ctx` · 가성비 65.5
+`입력 $0.7 · 출력 $2.1 · 혼합 $0.399/1M · 75.1460691813927 t/s · TTFT 3.365866978807315s · 1M ctx` · 가성비 65.5
 
 ## 레이더 8축 (평균=50 기준선)
 
