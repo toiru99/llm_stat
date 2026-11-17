@@ -5,7 +5,7 @@ creator: Z AI
 license: Open
 intelligence_index: 27.803889160883
 price_blended_usd_1m: 0.101
-output_speed_tps: 57.2095731151044
+output_speed_tps: 57.09718378988342
 context_window: 1000000
 status: current
 size_class: Large
@@ -37,7 +37,7 @@ Z AI · Open · Large · 컨텍스트 1M · 종합지능 **27.803889160883**
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.5 · 혼합 $0.101/1M · 57.2095731151044 t/s · TTFT 3.1328613055096053s · 1M ctx` · 가성비 275.3
+`입력 $0.15 · 출력 $0.5 · 혼합 $0.101/1M · 57.09718378988342 t/s · TTFT 3.091759223375627s · 1M ctx` · 가성비 275.3
 
 ## 레이더 8축 (평균=50 기준선)
 

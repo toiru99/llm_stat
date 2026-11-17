@@ -5,7 +5,7 @@ creator: LongCat
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.4555
-output_speed_tps: 60.57453735533403
+output_speed_tps: 60.842593289409194
 context_window: 1000000
 status: current
 size_class: Large
@@ -37,7 +37,7 @@ LongCat · Open · Large · 컨텍스트 1M · 종합지능 **None**
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.75 · 출력 $2.95 · 혼합 $0.4555/1M · 60.57453735533403 t/s · TTFT 3.1898685287923314s · 1M ctx`
+`입력 $0.75 · 출력 $2.95 · 혼합 $0.4555/1M · 60.842593289409194 t/s · TTFT 3.2025799304575364s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

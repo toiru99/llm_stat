@@ -5,7 +5,7 @@ creator: Institute of Foundation Models
 license: Open
 intelligence_index: 17.8202731734027
 price_blended_usd_1m: 0
-output_speed_tps: 217.22231624579265
+output_speed_tps: 206.52119585654165
 context_window: 524288
 status: current
 size_class: Large
@@ -37,7 +37,7 @@ Institute of Foundation Models · Open · Large · 컨텍스트 524k · 종합�
 - **약점**: 코딩, 추론
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 217.22231624579265 t/s · TTFT 6.345300174963103s · 524k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 206.52119585654165 t/s · TTFT 7.284323631411248s · 524k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

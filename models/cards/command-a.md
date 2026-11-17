@@ -5,7 +5,7 @@ creator: Cohere
 license: Open
 intelligence_index: 6.24120025576958
 price_blended_usd_1m: 0
-output_speed_tps: 169.9954572866005
+output_speed_tps: 172.28978388157807
 context_window: 192000
 status: current
 size_class: Large
@@ -37,7 +37,7 @@ Cohere · Open · Large · 컨텍스트 192k · 종합지능 **6.24120025576958*
 - **약점**: 추론, 멀티모달
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 169.9954572866005 t/s · TTFT 1.0206312465631096s · 192k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 172.28978388157807 t/s · TTFT 0.9757684875837668s · 192k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

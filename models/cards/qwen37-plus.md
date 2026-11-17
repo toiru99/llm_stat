@@ -5,7 +5,7 @@ creator: Alibaba
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.296
-output_speed_tps: 56.148898359833645
+output_speed_tps: 56.35919434875462
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None**
 - **약점**: 긴문맥, 에이전트
 
 ## 실용 지표
-`입력 $0.4 · 출력 $1.6 · 혼합 $0.296/1M · 56.148898359833645 t/s · TTFT 2.6974251055823992s · 1M ctx`
+`입력 $0.4 · 출력 $1.6 · 혼합 $0.296/1M · 56.35919434875462 t/s · TTFT 2.698078736711105s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

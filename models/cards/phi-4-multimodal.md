@@ -5,7 +5,7 @@ creator: Microsoft
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.104
-output_speed_tps: 21.75218874145943
+output_speed_tps: 21.49006957606039
 context_window: 128000
 status: current
 size_class: Small
@@ -37,7 +37,7 @@ Microsoft · Open · Small · 컨텍스트 128k · 종합지능 **None**
 - **약점**: 긴문맥, 멀티모달
 
 ## 실용 지표
-`입력 $0.08 · 출력 $0.32 · 혼합 $0.104/1M · 21.75218874145943 t/s · TTFT 0.40317503712493874s · 128k ctx`
+`입력 $0.08 · 출력 $0.32 · 혼합 $0.104/1M · 21.49006957606039 t/s · TTFT 0.4025676874999483s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

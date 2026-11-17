@@ -5,7 +5,7 @@ creator: Nous Research
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 1.2
-output_speed_tps: 37.0129271911642
+output_speed_tps: 37.167013643204896
 context_window: 128000
 status: current
 size_class: Large
@@ -37,7 +37,7 @@ Nous Research · Open · Large · 컨텍스트 128k · 종합지능 **None**
 - **약점**: 에이전트, 지시 따르기
 
 ## 실용 지표
-`입력 $1.0 · 출력 $3.0 · 혼합 $1.2/1M · 37.0129271911642 t/s · TTFT 5.101048657222664s · 128k ctx`
+`입력 $1.0 · 출력 $3.0 · 혼합 $1.2/1M · 37.167013643204896 t/s · TTFT 5.109914056225096s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

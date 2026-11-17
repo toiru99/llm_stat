@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.24
-output_speed_tps: 134.7623534035972
+output_speed_tps: 135.4833536694169
 context_window: 128000
 status: current
 size_class: Small
@@ -37,7 +37,7 @@ NVIDIA · Open · Small · 컨텍스트 128k · 종합지능 **None**
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.6 · 혼합 $0.24/1M · 134.7623534035972 t/s · TTFT 1.5337464676703594s · 128k ctx`
+`입력 $0.2 · 출력 $0.6 · 혼합 $0.24/1M · 135.4833536694169 t/s · TTFT 1.5284322851826317s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

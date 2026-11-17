@@ -5,7 +5,7 @@ creator: Xiaomi
 license: Open
 intelligence_index: 26.7276981444568
 price_blended_usd_1m: 0.058
-output_speed_tps: 42.322358124208584
+output_speed_tps: 42.867887328855666
 context_window: 1000000
 status: current
 size_class: Large
@@ -37,7 +37,7 @@ Xiaomi · Open · Large · 컨텍스트 1M · 종합지능 **26.7276981444568**
 - **약점**: 전문 지식, 지시 따르기
 
 ## 실용 지표
-`입력 $0.14 · 출력 $0.28 · 혼합 $0.058/1M · 42.322358124208584 t/s · TTFT 5.17038126377316s · 1M ctx` · 가성비 460.8
+`입력 $0.14 · 출력 $0.28 · 혼합 $0.058/1M · 42.867887328855666 t/s · TTFT 5.195514058050248s · 1M ctx` · 가성비 460.8
 
 ## 레이더 8축 (평균=50 기준선)
 

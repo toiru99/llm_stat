@@ -5,7 +5,7 @@ creator: StepFun
 license: Open
 intelligence_index: 28.5283090216016
 price_blended_usd_1m: 0.54
-output_speed_tps: 130.0884745058369
+output_speed_tps: 133.2242183258676
 context_window: 1000000
 status: current
 size_class: Large
@@ -37,7 +37,7 @@ StepFun · Open · Large · 컨텍스트 1M · 종합지능 **28.5283090216016**
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $1.0 · 출력 $2.7 · 혼합 $0.54/1M · 130.0884745058369 t/s · TTFT 0.8736641965866813s · 1M ctx` · 가성비 52.8
+`입력 $1.0 · 출력 $2.7 · 혼합 $0.54/1M · 133.2242183258676 t/s · TTFT 0.868099945323784s · 1M ctx` · 가성비 52.8
 
 ## 레이더 8축 (평균=50 기준선)
 
