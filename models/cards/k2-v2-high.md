@@ -12,20 +12,20 @@ size_class: Medium
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 44.1, z: -0.15, r: 47.8, estimated: false }  # 전문 지식
-  reasoning: { s: 26.8, z: -0.42, r: 43.6, estimated: false }  # 추론
-  coding: { s: 14.9, z: -0.84, r: 37.4, estimated: false }  # 코딩
-  agentic: { s: 21.5, z: -0.8, r: 38.0, estimated: false }  # 에이전트
+  knowledge: { s: 44.1, z: -0.16, r: 47.6, estimated: false }  # 전문 지식
+  reasoning: { s: 26.8, z: -0.43, r: 43.5, estimated: false }  # 추론
+  coding: { s: 14.9, z: -0.85, r: 37.2, estimated: false }  # 코딩
+  agentic: { s: 21.5, z: -0.81, r: 37.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 39.5, z: -0.41, r: 43.8, estimated: false }  # 긴문맥
-  instruction: { s: 67.4, z: 0.58, r: 58.6, estimated: false }  # 지시 따르기
+  long_context: { s: 39.5, z: -0.42, r: 43.7, estimated: false }  # 긴문맥
+  instruction: { s: 67.4, z: 0.57, r: 58.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — K2-V2 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-17
-timestamp: 2026-11-17T00:00:00Z
+updated: 2026-11-18
+timestamp: 2026-11-18T00:00:00Z
 ---
 
 # K2-V2 (high)
@@ -43,14 +43,14 @@ Institute of Foundation Models · Open · Medium · 컨텍스트 512k · 종합�
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 47.8 | -0.15 | 실측 | [[gpqa-diamond]] 68.0808080808081%×0.4, [[humanitys-last-exam]] 10.5189990732159%×0.3 |
-| 추론 | 43.6 | -0.42 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 68.0808080808081%×1.0, [[humanitys-last-exam]] 10.5189990732159%×1.0 |
-| 코딩 | 37.4 | -0.84 | 실측 | [[terminal-bench]] 9.84848484848485%×0.5 |
-| 에이전트 | 38.0 | -0.8 | 실측 | [[tau2-bench]] 27.7777777777778%×1.0, [[terminal-bench]] 9.84848484848485%×1.0 |
+| 전문 지식 | 47.6 | -0.16 | 실측 | [[gpqa-diamond]] 68.0808080808081%×0.4, [[humanitys-last-exam]] 10.5189990732159%×0.3 |
+| 추론 | 43.5 | -0.43 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 68.0808080808081%×1.0, [[humanitys-last-exam]] 10.5189990732159%×1.0 |
+| 코딩 | 37.2 | -0.85 | 실측 | [[terminal-bench]] 9.84848484848485%×0.5 |
+| 에이전트 | 37.9 | -0.81 | 실측 | [[tau2-bench]] 27.7777777777778%×1.0, [[terminal-bench]] 9.84848484848485%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 43.8 | -0.41 | 실측 | [[aa-lcr]] 35.0%×1.0 |
-| 지시 따르기 | 58.6 | +0.58 | 실측 | [[ifbench]] 60.136054421768705%×1.0 |
+| 긴문맥 | 43.7 | -0.42 | 실측 | [[aa-lcr]] 35.0%×1.0 |
+| 지시 따르기 | 58.5 | +0.57 | 실측 | [[ifbench]] 60.136054421768705%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

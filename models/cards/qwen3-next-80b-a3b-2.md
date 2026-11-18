@@ -12,20 +12,20 @@ size_class: Medium
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 50.4, z: 0.16, r: 52.4, estimated: false }  # 전문 지식
-  reasoning: { s: 30.7, z: -0.23, r: 46.5, estimated: false }  # 추론
-  coding: { s: 14.9, z: -0.84, r: 37.4, estimated: false }  # 코딩
-  agentic: { s: 23.1, z: -0.75, r: 38.8, estimated: false }  # 에이전트
+  knowledge: { s: 50.4, z: 0.15, r: 52.2, estimated: false }  # 전문 지식
+  reasoning: { s: 30.7, z: -0.24, r: 46.4, estimated: false }  # 추론
+  coding: { s: 14.9, z: -0.85, r: 37.2, estimated: false }  # 코딩
+  agentic: { s: 23.1, z: -0.75, r: 38.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 71.8, z: 0.55, r: 58.2, estimated: false }  # 긴문맥
-  instruction: { s: 68.2, z: 0.61, r: 59.1, estimated: false }  # 지시 따르기
+  long_context: { s: 71.8, z: 0.54, r: 58.1, estimated: false }  # 긴문맥
+  instruction: { s: 68.2, z: 0.6, r: 59.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Next 80B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-17
-timestamp: 2026-11-17T00:00:00Z
+updated: 2026-11-18
+timestamp: 2026-11-18T00:00:00Z
 ---
 
 # Qwen3 Next 80B A3B
@@ -43,14 +43,14 @@ Alibaba · Open · Medium · 컨텍스트 262k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 52.4 | +0.16 | 실측 | [[gpqa-diamond]] 75.8585858585858%×0.4, [[humanitys-last-exam]] 12.5579240037071%×0.3 |
-| 추론 | 46.5 | -0.23 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 75.8585858585858%×1.0, [[humanitys-last-exam]] 12.5579240037071%×1.0 |
-| 코딩 | 37.4 | -0.84 | 실측 | [[terminal-bench]] 9.84848484848485%×0.5 |
-| 에이전트 | 38.8 | -0.75 | 실측 | [[gdpval]] 135.54%×1.0, [[tau2-bench]] 41.5204678362573%×1.0, [[tau3-banking]] 6.18556701030928%×1.0, [[terminal-bench]] 9.84848484848485%×1.0 |
+| 전문 지식 | 52.2 | +0.15 | 실측 | [[gpqa-diamond]] 75.8585858585858%×0.4, [[humanitys-last-exam]] 12.5579240037071%×0.3 |
+| 추론 | 46.4 | -0.24 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 75.8585858585858%×1.0, [[humanitys-last-exam]] 12.5579240037071%×1.0 |
+| 코딩 | 37.2 | -0.85 | 실측 | [[terminal-bench]] 9.84848484848485%×0.5 |
+| 에이전트 | 38.7 | -0.75 | 실측 | [[gdpval]] 135.54%×1.0, [[tau2-bench]] 41.5204678362573%×1.0, [[tau3-banking]] 6.18556701030928%×1.0, [[terminal-bench]] 9.84848484848485%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 58.2 | +0.55 | 실측 | [[aa-lcr]] 63.66666666666671%×1.0 |
-| 지시 따르기 | 59.1 | +0.61 | 실측 | [[ifbench]] 60.6802721088435%×1.0 |
+| 긴문맥 | 58.1 | +0.54 | 실측 | [[aa-lcr]] 63.66666666666671%×1.0 |
+| 지시 따르기 | 59.0 | +0.6 | 실측 | [[ifbench]] 60.6802721088435%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

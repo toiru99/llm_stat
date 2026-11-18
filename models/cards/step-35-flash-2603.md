@@ -5,27 +5,27 @@ creator: StepFun
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.064
-output_speed_tps: 115.01659079621247
+output_speed_tps: 107.50434174961015
 context_window: 256000
 status: past
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 61.8, z: 0.71, r: 60.7, estimated: false }  # 전문 지식
-  reasoning: { s: 40.9, z: 0.27, r: 54.1, estimated: false }  # 추론
-  coding: { s: 49.4, z: 0.33, r: 55.0, estimated: false }  # 코딩
-  agentic: { s: 68.8, z: 0.84, r: 62.6, estimated: false }  # 에이전트
+  knowledge: { s: 61.8, z: 0.7, r: 60.5, estimated: false }  # 전문 지식
+  reasoning: { s: 40.9, z: 0.26, r: 53.9, estimated: false }  # 추론
+  coding: { s: 49.4, z: 0.32, r: 54.8, estimated: false }  # 코딩
+  agentic: { s: 68.8, z: 0.83, r: 62.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 71.1, z: 0.53, r: 57.9, estimated: false }  # 긴문맥
-  instruction: { s: 76.4, z: 0.95, r: 64.3, estimated: false }  # 지시 따르기
+  long_context: { s: 71.1, z: 0.52, r: 57.8, estimated: false }  # 긴문맥
+  instruction: { s: 76.4, z: 0.94, r: 64.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Step 3.5 Flash 2603
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-17
-timestamp: 2026-11-17T00:00:00Z
+updated: 2026-11-18
+timestamp: 2026-11-18T00:00:00Z
 ---
 
 # Step 3.5 Flash 2603
@@ -37,20 +37,20 @@ StepFun · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **None** 
 - **약점**: 코딩, 추론
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.3 · 혼합 $0.064/1M · 115.01659079621247 t/s · TTFT 3.6474524586728685s · 256k ctx`
+`입력 $0.1 · 출력 $0.3 · 혼합 $0.064/1M · 107.50434174961015 t/s · TTFT 3.5483986882513663s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 60.7 | +0.71 | 실측 | [[gpqa-diamond]] 82.6262626262626%×0.4, [[humanitys-last-exam]] 24.4670991658943%×0.3 |
-| 추론 | 54.1 | +0.27 | 실측 | [[critpt]] 2.28571428571429%×1.0, [[gpqa-diamond]] 82.6262626262626%×1.0, [[humanitys-last-exam]] 24.4670991658943%×1.0 |
-| 코딩 | 55.0 | +0.33 | 실측 | [[terminal-bench]] 32.5757575757576%×0.5 |
-| 에이전트 | 62.6 | +0.84 | 실측 | [[tau2-bench]] 87.42690058479529%×1.0, [[terminal-bench]] 32.5757575757576%×1.0 |
+| 전문 지식 | 60.5 | +0.7 | 실측 | [[gpqa-diamond]] 82.6262626262626%×0.4, [[humanitys-last-exam]] 24.4670991658943%×0.3 |
+| 추론 | 53.9 | +0.26 | 실측 | [[critpt]] 2.28571428571429%×1.0, [[gpqa-diamond]] 82.6262626262626%×1.0, [[humanitys-last-exam]] 24.4670991658943%×1.0 |
+| 코딩 | 54.8 | +0.32 | 실측 | [[terminal-bench]] 32.5757575757576%×0.5 |
+| 에이전트 | 62.4 | +0.83 | 실측 | [[tau2-bench]] 87.42690058479529%×1.0, [[terminal-bench]] 32.5757575757576%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 57.9 | +0.53 | 실측 | [[aa-lcr]] 63.0%×1.0 |
-| 지시 따르기 | 64.3 | +0.95 | 실측 | [[ifbench]] 66.53061224489801%×1.0 |
+| 긴문맥 | 57.8 | +0.52 | 실측 | [[aa-lcr]] 63.0%×1.0 |
+| 지시 따르기 | 64.1 | +0.94 | 실측 | [[ifbench]] 66.53061224489801%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

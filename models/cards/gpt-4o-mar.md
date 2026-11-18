@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 38.5, z: -0.42, r: 43.7, estimated: false }  # 전문 지식
-  reasoning: { s: 34.2, z: -0.06, r: 49.1, estimated: false }  # 추론
-  coding: { s: 69.3, z: 1.01, r: 65.1, estimated: true }  # 코딩
-  agentic: { s: 66.8, z: 0.77, r: 61.5, estimated: true }  # 에이전트
+  knowledge: { s: 38.5, z: -0.43, r: 43.6, estimated: false }  # 전문 지식
+  reasoning: { s: 34.2, z: -0.07, r: 49.0, estimated: false }  # 추론
+  coding: { s: 69.3, z: 1.0, r: 64.9, estimated: true }  # 코딩
+  agentic: { s: 66.8, z: 0.76, r: 61.4, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 56.4, z: 0.09, r: 51.4, estimated: true }  # 긴문맥
-  instruction: { s: 49.6, z: -0.17, r: 47.4, estimated: true }  # 지시 따르기
+  long_context: { s: 56.4, z: 0.08, r: 51.2, estimated: true }  # 긴문맥
+  instruction: { s: 49.6, z: -0.18, r: 47.3, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4o (Mar)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-17
-timestamp: 2026-11-17T00:00:00Z
+updated: 2026-11-18
+timestamp: 2026-11-18T00:00:00Z
 ---
 
 # GPT-4o (Mar)
@@ -43,14 +43,14 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None** �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 43.7 | -0.42 | 실측 | [[gpqa-diamond]] 65.4545454545455%×0.4, [[humanitys-last-exam]] 3.9699999999999998%×0.3 |
-| 추론 | 49.1 | -0.06 | 실측 | [[gpqa-diamond]] 65.4545454545455%×1.0, [[humanitys-last-exam]] 3.9699999999999998%×1.0 |
-| 코딩 | 65.1 | +1.01 | 추정 | (추정) |
-| 에이전트 | 61.5 | +0.77 | 추정 | (추정) |
+| 전문 지식 | 43.6 | -0.43 | 실측 | [[gpqa-diamond]] 65.4545454545455%×0.4, [[humanitys-last-exam]] 3.9699999999999998%×0.3 |
+| 추론 | 49.0 | -0.07 | 실측 | [[gpqa-diamond]] 65.4545454545455%×1.0, [[humanitys-last-exam]] 3.9699999999999998%×1.0 |
+| 코딩 | 64.9 | +1.0 | 추정 | (추정) |
+| 에이전트 | 61.4 | +0.76 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 51.4 | +0.09 | 추정 | (추정) |
-| 지시 따르기 | 47.4 | -0.17 | 추정 | (추정) |
+| 긴문맥 | 51.2 | +0.08 | 추정 | (추정) |
+| 지시 따르기 | 47.3 | -0.18 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

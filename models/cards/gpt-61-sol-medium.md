@@ -5,51 +5,51 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 46.3468797067114
 price_blended_usd_1m: 1.47
-output_speed_tps: 52.90774737818825
+output_speed_tps: 52.14671485888929
 context_window: 1000000
-status: current
+status: past
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 66.6, z: 0.95, r: 64.2, estimated: false }  # 전문 지식
-  reasoning: { s: 72.1, z: 1.82, r: 77.3, estimated: false }  # 추론
-  coding: { s: 76.2, z: 1.24, r: 68.6, estimated: false }  # 코딩
-  agentic: { s: 82.2, z: 1.3, r: 69.6, estimated: false }  # 에이전트
+  knowledge: { s: 66.6, z: 0.93, r: 64.0, estimated: false }  # 전문 지식
+  reasoning: { s: 72.1, z: 1.8, r: 77.0, estimated: false }  # 추론
+  coding: { s: 76.2, z: 1.23, r: 68.4, estimated: false }  # 코딩
+  agentic: { s: 82.2, z: 1.29, r: 69.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 92.9, z: 1.11, r: 66.6, estimated: false }  # 멀티모달
-  long_context: { s: 94.0, z: 1.21, r: 68.1, estimated: false }  # 긴문맥
-  instruction: { s: 77.6, z: 1.0, r: 65.0, estimated: true }  # 지시 따르기
+  multimodal: { s: 92.6, z: 1.08, r: 66.2, estimated: false }  # 멀티모달
+  long_context: { s: 94.0, z: 1.2, r: 68.0, estimated: false }  # 긴문맥
+  instruction: { s: 77.7, z: 1.0, r: 65.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6.1 Sol (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-17
-timestamp: 2026-11-17T00:00:00Z
+updated: 2026-11-18
+timestamp: 2026-11-18T00:00:00Z
 ---
 
 # GPT-6.1 Sol (medium)
 
-OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **46.3468797067114**
+OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **46.3468797067114** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 에이전트
 - **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.47/1M · 52.90774737818825 t/s · TTFT 5.203649726994199s · 1M ctx` · 가성비 31.5
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.47/1M · 52.14671485888929 t/s · TTFT 4.768464812954881s · 1M ctx` · 가성비 31.5
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 64.2 | +0.95 | 실측 | [[humanitys-last-exam]] 49.8609823911029%×0.3 |
-| 추론 | 77.3 | +1.82 | 실측 | [[critpt]] 27.7142857142857%×1.0, [[humanitys-last-exam]] 49.8609823911029%×1.0 |
-| 코딩 | 68.6 | +1.24 | 실측 | [[scicode]] 53.2407407407407%×1.0 |
-| 에이전트 | 69.6 | +1.3 | 실측 | [[gdpval]] 1463.14%×1.0 |
+| 전문 지식 | 64.0 | +0.93 | 실측 | [[humanitys-last-exam]] 49.8609823911029%×0.3 |
+| 추론 | 77.0 | +1.8 | 실측 | [[critpt]] 27.7142857142857%×1.0, [[humanitys-last-exam]] 49.8609823911029%×1.0 |
+| 코딩 | 68.4 | +1.23 | 실측 | [[scicode]] 53.2407407407407%×1.0 |
+| 에이전트 | 69.4 | +1.29 | 실측 | [[gdpval]] 1463.14%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 66.6 | +1.11 | 실측 | [[mmmu-pro]] 83.93063583815031%×1.0 |
-| 긴문맥 | 68.1 | +1.21 | 실측 | [[aa-lcr]] 83.3333333333333%×1.0 |
+| 멀티모달 | 66.2 | +1.08 | 실측 | [[mmmu-pro]] 83.93063583815031%×1.0 |
+| 긴문맥 | 68.0 | +1.2 | 실측 | [[aa-lcr]] 83.3333333333333%×1.0 |
 | 지시 따르기 | 65.0 | +1.0 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

@@ -12,20 +12,20 @@ size_class: Tiny
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 11.5, z: -1.72, r: 24.2, estimated: false }  # 전문 지식
-  reasoning: { s: 7.2, z: -1.4, r: 29.1, estimated: false }  # 추론
-  coding: { s: 0.0, z: -1.35, r: 29.7, estimated: false }  # 코딩
-  agentic: { s: 22.5, z: -0.77, r: 38.5, estimated: false }  # 에이전트
+  knowledge: { s: 11.5, z: -1.73, r: 24.1, estimated: false }  # 전문 지식
+  reasoning: { s: 7.2, z: -1.4, r: 29.0, estimated: false }  # 추론
+  coding: { s: 0.0, z: -1.36, r: 29.6, estimated: false }  # 코딩
+  agentic: { s: 22.5, z: -0.77, r: 38.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 14.9, z: -2.88, r: 6.8, estimated: false }  # 멀티모달
-  long_context: { s: 9.0, z: -1.31, r: 30.3, estimated: false }  # 긴문맥
-  instruction: { s: 13.3, z: -1.69, r: 24.7, estimated: false }  # 지시 따르기
+  multimodal: { s: 14.9, z: -2.89, r: 6.7, estimated: false }  # 멀티모달
+  long_context: { s: 9.0, z: -1.32, r: 30.1, estimated: false }  # 긴문맥
+  instruction: { s: 13.3, z: -1.7, r: 24.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 0.8B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-17
-timestamp: 2026-11-17T00:00:00Z
+updated: 2026-11-18
+timestamp: 2026-11-18T00:00:00Z
 ---
 
 # Qwen3.5 0.8B (non-reasoning)
@@ -43,14 +43,14 @@ Alibaba · Open · Tiny · 컨텍스트 262k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 24.2 | -1.72 | 실측 | [[gpqa-diamond]] 23.6363636363636%×0.4, [[humanitys-last-exam]] 5.09731232622799%×0.3 |
-| 추론 | 29.1 | -1.4 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 23.6363636363636%×1.0, [[humanitys-last-exam]] 5.09731232622799%×1.0 |
-| 코딩 | 29.7 | -1.35 | 실측 | [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 38.5 | -0.77 | 실측 | [[gdpval]] -362.66%×1.0, [[tau2-bench]] 65.2046783625731%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 전문 지식 | 24.1 | -1.73 | 실측 | [[gpqa-diamond]] 23.6363636363636%×0.4, [[humanitys-last-exam]] 5.09731232622799%×0.3 |
+| 추론 | 29.0 | -1.4 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 23.6363636363636%×1.0, [[humanitys-last-exam]] 5.09731232622799%×1.0 |
+| 코딩 | 29.6 | -1.36 | 실측 | [[terminal-bench]] 0.0%×0.5 |
+| 에이전트 | 38.4 | -0.77 | 실측 | [[gdpval]] -362.66%×1.0, [[tau2-bench]] 65.2046783625731%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 6.8 | -2.88 | 실측 | [[mmmu-pro]] 25.6647398843931%×1.0 |
-| 긴문맥 | 30.3 | -1.31 | 실측 | [[aa-lcr]] 8.0%×1.0 |
-| 지시 따르기 | 24.7 | -1.69 | 실측 | [[ifbench]] 21.5646258503401%×1.0 |
+| 멀티모달 | 6.7 | -2.89 | 실측 | [[mmmu-pro]] 25.6647398843931%×1.0 |
+| 긴문맥 | 30.1 | -1.32 | 실측 | [[aa-lcr]] 8.0%×1.0 |
+| 지시 따르기 | 24.5 | -1.7 | 실측 | [[ifbench]] 21.5646258503401%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

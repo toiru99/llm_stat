@@ -12,20 +12,20 @@ size_class: Small
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 18.5, z: -1.38, r: 29.3, estimated: false }  # 전문 지식
-  reasoning: { s: 11.3, z: -1.19, r: 32.1, estimated: false }  # 추론
-  coding: { s: 0.0, z: -1.35, r: 29.7, estimated: false }  # 코딩
-  agentic: { s: 5.3, z: -1.36, r: 29.6, estimated: false }  # 에이전트
+  knowledge: { s: 18.5, z: -1.39, r: 29.2, estimated: false }  # 전문 지식
+  reasoning: { s: 11.3, z: -1.2, r: 32.0, estimated: false }  # 추론
+  coding: { s: 0.0, z: -1.36, r: 29.6, estimated: false }  # 코딩
+  agentic: { s: 5.3, z: -1.37, r: 29.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 7.2, z: -1.37, r: 29.5, estimated: true }  # 긴문맥
-  instruction: { s: 19.9, z: -1.41, r: 28.8, estimated: false }  # 지시 따르기
+  long_context: { s: 7.2, z: -1.38, r: 29.3, estimated: true }  # 긴문맥
+  instruction: { s: 19.9, z: -1.42, r: 28.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — LFM2 8B A1B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-17
-timestamp: 2026-11-17T00:00:00Z
+updated: 2026-11-18
+timestamp: 2026-11-18T00:00:00Z
 ---
 
 # LFM2 8B A1B
@@ -43,14 +43,14 @@ Liquid AI · Open · Small · 컨텍스트 32k · 종합지능 **None** · ⚠�
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 29.3 | -1.38 | 실측 | [[gpqa-diamond]] 34.4444444444444%×0.4, [[humanitys-last-exam]] 4.91195551436515%×0.3 |
-| 추론 | 32.1 | -1.19 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 34.4444444444444%×1.0, [[humanitys-last-exam]] 4.91195551436515%×1.0 |
-| 코딩 | 29.7 | -1.35 | 실측 | [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 29.6 | -1.36 | 실측 | [[tau2-bench]] 10.526315789473701%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 전문 지식 | 29.2 | -1.39 | 실측 | [[gpqa-diamond]] 34.4444444444444%×0.4, [[humanitys-last-exam]] 4.91195551436515%×0.3 |
+| 추론 | 32.0 | -1.2 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 34.4444444444444%×1.0, [[humanitys-last-exam]] 4.91195551436515%×1.0 |
+| 코딩 | 29.6 | -1.36 | 실측 | [[terminal-bench]] 0.0%×0.5 |
+| 에이전트 | 29.5 | -1.37 | 실측 | [[tau2-bench]] 10.526315789473701%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 29.5 | -1.37 | 추정 | (추정) |
-| 지시 따르기 | 28.8 | -1.41 | 실측 | [[ifbench]] 26.2585034013605%×1.0 |
+| 긴문맥 | 29.3 | -1.38 | 추정 | (추정) |
+| 지시 따르기 | 28.7 | -1.42 | 실측 | [[ifbench]] 26.2585034013605%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

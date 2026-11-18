@@ -12,20 +12,20 @@ size_class: Large
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 20.8, z: -1.27, r: 30.9, estimated: false }  # 전문 지식
-  reasoning: { s: 12.4, z: -1.14, r: 33.0, estimated: false }  # 추론
-  coding: { s: 3.4, z: -1.23, r: 31.5, estimated: false }  # 코딩
-  agentic: { s: 8.5, z: -1.25, r: 31.2, estimated: false }  # 에이전트
+  knowledge: { s: 20.8, z: -1.28, r: 30.8, estimated: false }  # 전문 지식
+  reasoning: { s: 12.4, z: -1.14, r: 32.9, estimated: false }  # 추론
+  coding: { s: 3.4, z: -1.24, r: 31.4, estimated: false }  # 코딩
+  agentic: { s: 8.5, z: -1.26, r: 31.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 21.8, z: -0.94, r: 36.0, estimated: false }  # 긴문맥
-  instruction: { s: 32.4, z: -0.89, r: 36.7, estimated: false }  # 지시 따르기
+  long_context: { s: 21.8, z: -0.94, r: 35.8, estimated: false }  # 긴문맥
+  instruction: { s: 32.4, z: -0.9, r: 36.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba 1.7 Large
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-17
-timestamp: 2026-11-17T00:00:00Z
+updated: 2026-11-18
+timestamp: 2026-11-18T00:00:00Z
 ---
 
 # Jamba 1.7 Large
@@ -43,14 +43,14 @@ AI21 Labs · Open · Large · 컨텍스트 256k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 30.9 | -1.27 | 실측 | [[gpqa-diamond]] 38.989898989899004%×0.4, [[humanitys-last-exam]] 3.66079703429101%×0.3 |
-| 추론 | 33.0 | -1.14 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 38.989898989899004%×1.0, [[humanitys-last-exam]] 3.66079703429101%×1.0 |
-| 코딩 | 31.5 | -1.23 | 실측 | [[terminal-bench]] 2.27272727272727%×0.5 |
-| 에이전트 | 31.2 | -1.25 | 실측 | [[tau2-bench]] 13.450292397660801%×1.0, [[terminal-bench]] 2.27272727272727%×1.0 |
+| 전문 지식 | 30.8 | -1.28 | 실측 | [[gpqa-diamond]] 38.989898989899004%×0.4, [[humanitys-last-exam]] 3.66079703429101%×0.3 |
+| 추론 | 32.9 | -1.14 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 38.989898989899004%×1.0, [[humanitys-last-exam]] 3.66079703429101%×1.0 |
+| 코딩 | 31.4 | -1.24 | 실측 | [[terminal-bench]] 2.27272727272727%×0.5 |
+| 에이전트 | 31.1 | -1.26 | 실측 | [[tau2-bench]] 13.450292397660801%×1.0, [[terminal-bench]] 2.27272727272727%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 36.0 | -0.94 | 실측 | [[aa-lcr]] 19.3333333333333%×1.0 |
-| 지시 따르기 | 36.7 | -0.89 | 실측 | [[ifbench]] 35.1700680272109%×1.0 |
+| 긴문맥 | 35.8 | -0.94 | 실측 | [[aa-lcr]] 19.3333333333333%×1.0 |
+| 지시 따르기 | 36.5 | -0.9 | 실측 | [[ifbench]] 35.1700680272109%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

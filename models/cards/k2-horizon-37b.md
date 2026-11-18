@@ -12,20 +12,20 @@ size_class: Tiny
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 46.7, z: -0.02, r: 49.7, estimated: false }  # 전문 지식
-  reasoning: { s: 28.7, z: -0.33, r: 45.1, estimated: false }  # 추론
-  coding: { s: 24.8, z: -0.51, r: 42.4, estimated: false }  # 코딩
-  agentic: { s: 47.4, z: 0.1, r: 51.5, estimated: false }  # 에이전트
+  knowledge: { s: 46.7, z: -0.03, r: 49.6, estimated: false }  # 전문 지식
+  reasoning: { s: 28.7, z: -0.34, r: 44.9, estimated: false }  # 추론
+  coding: { s: 24.8, z: -0.52, r: 42.2, estimated: false }  # 코딩
+  agentic: { s: 47.4, z: 0.09, r: 51.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 70.3, z: 0.5, r: 57.6, estimated: false }  # 긴문맥
-  instruction: { s: 78.5, z: 1.04, r: 65.6, estimated: true }  # 지시 따르기
+  long_context: { s: 70.3, z: 0.5, r: 57.4, estimated: false }  # 긴문맥
+  instruction: { s: 78.5, z: 1.03, r: 65.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — K2 Horizon 3.7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-17
-timestamp: 2026-11-17T00:00:00Z
+updated: 2026-11-18
+timestamp: 2026-11-18T00:00:00Z
 ---
 
 # K2 Horizon 3.7B
@@ -43,14 +43,14 @@ Institute of Foundation Models · Open · Tiny · 컨텍스트 524k · 종합지
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 49.7 | -0.02 | 실측 | [[gpqa-diamond]] 69.1919191919192%×0.4, [[humanitys-last-exam]] 13.855421686746999%×0.3 |
-| 추론 | 45.1 | -0.33 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 69.1919191919192%×1.0, [[humanitys-last-exam]] 13.855421686746999%×1.0 |
-| 코딩 | 42.4 | -0.51 | 실측 | [[scicode]] 21.990740740740698%×1.0 |
-| 에이전트 | 51.5 | +0.1 | 실측 | [[gdpval]] 889.27%×1.0, [[tau3-banking]] 19.5876288659794%×1.0 |
+| 전문 지식 | 49.6 | -0.03 | 실측 | [[gpqa-diamond]] 69.1919191919192%×0.4, [[humanitys-last-exam]] 13.855421686746999%×0.3 |
+| 추론 | 44.9 | -0.34 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 69.1919191919192%×1.0, [[humanitys-last-exam]] 13.855421686746999%×1.0 |
+| 코딩 | 42.2 | -0.52 | 실측 | [[scicode]] 21.990740740740698%×1.0 |
+| 에이전트 | 51.3 | +0.09 | 실측 | [[gdpval]] 889.27%×1.0, [[tau3-banking]] 19.5876288659794%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 57.6 | +0.5 | 실측 | [[aa-lcr]] 62.33333333333329%×1.0 |
-| 지시 따르기 | 65.6 | +1.04 | 추정 | (추정) |
+| 긴문맥 | 57.4 | +0.5 | 실측 | [[aa-lcr]] 62.33333333333329%×1.0 |
+| 지시 따르기 | 65.4 | +1.03 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

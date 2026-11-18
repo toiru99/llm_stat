@@ -12,20 +12,20 @@ size_class: Small
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 50.0, z: 0.14, r: 52.1, estimated: true }  # 전문 지식
-  reasoning: { s: 41.1, z: 0.28, r: 54.3, estimated: true }  # 추론
-  coding: { s: 67.6, z: 0.95, r: 64.2, estimated: true }  # 코딩
-  agentic: { s: 66.4, z: 0.76, r: 61.3, estimated: true }  # 에이전트
+  knowledge: { s: 50.0, z: 0.13, r: 51.9, estimated: true }  # 전문 지식
+  reasoning: { s: 41.1, z: 0.27, r: 54.1, estimated: true }  # 추론
+  coding: { s: 67.6, z: 0.94, r: 64.1, estimated: true }  # 코딩
+  agentic: { s: 66.4, z: 0.74, r: 61.2, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 87.7, z: 1.02, r: 65.3, estimated: true }  # 긴문맥
-  instruction: { s: 68.8, z: 0.63, r: 59.5, estimated: false }  # 지시 따르기
+  long_context: { s: 87.7, z: 1.01, r: 65.2, estimated: true }  # 긴문맥
+  instruction: { s: 68.8, z: 0.62, r: 59.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3.5 Bolt E4B 4GB
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-17
-timestamp: 2026-11-17T00:00:00Z
+updated: 2026-11-18
+timestamp: 2026-11-18T00:00:00Z
 ---
 
 # Nemotron 3.5 Bolt E4B 4GB
@@ -43,14 +43,14 @@ NVIDIA · Open · Small · 컨텍스트 131k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 52.1 | +0.14 | 추정 | (추정) |
-| 추론 | 54.3 | +0.28 | 추정 | (추정) |
-| 코딩 | 64.2 | +0.95 | 추정 | (추정) |
-| 에이전트 | 61.3 | +0.76 | 추정 | (추정) |
+| 전문 지식 | 51.9 | +0.13 | 추정 | (추정) |
+| 추론 | 54.1 | +0.27 | 추정 | (추정) |
+| 코딩 | 64.1 | +0.94 | 추정 | (추정) |
+| 에이전트 | 61.2 | +0.74 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 65.3 | +1.02 | 추정 | (추정) |
-| 지시 따르기 | 59.5 | +0.63 | 실측 | [[ifbench]] 61.0884353741497%×1.0 |
+| 긴문맥 | 65.2 | +1.01 | 추정 | (추정) |
+| 지시 따르기 | 59.4 | +0.62 | 실측 | [[ifbench]] 61.0884353741497%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

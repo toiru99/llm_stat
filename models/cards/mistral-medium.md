@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 18.1, z: -1.41, r: 28.9, estimated: false }  # 전문 지식
-  reasoning: { s: 16.2, z: -0.95, r: 35.8, estimated: false }  # 추론
-  coding: { s: 3.4, z: -1.24, r: 31.5, estimated: true }  # 코딩
-  agentic: { s: 2.9, z: -1.45, r: 28.3, estimated: true }  # 에이전트
+  knowledge: { s: 18.1, z: -1.41, r: 28.8, estimated: false }  # 전문 지식
+  reasoning: { s: 16.2, z: -0.96, r: 35.7, estimated: false }  # 추론
+  coding: { s: 3.4, z: -1.24, r: 31.4, estimated: true }  # 코딩
+  agentic: { s: 2.9, z: -1.45, r: 28.2, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 1.5, z: -1.54, r: 26.9, estimated: true }  # 긴문맥
-  instruction: { s: 26.2, z: -1.15, r: 32.8, estimated: true }  # 지시 따르기
+  long_context: { s: 1.5, z: -1.55, r: 26.8, estimated: true }  # 긴문맥
+  instruction: { s: 26.2, z: -1.16, r: 32.6, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Medium
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-17
-timestamp: 2026-11-17T00:00:00Z
+updated: 2026-11-18
+timestamp: 2026-11-18T00:00:00Z
 ---
 
 # Mistral Medium
@@ -43,14 +43,14 @@ Mistral · Proprietary · Unknown · 컨텍스트 32k · 종합지능 **None** �
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 28.9 | -1.41 | 실측 | [[gpqa-diamond]] 34.949494949494905%×0.4, [[humanitys-last-exam]] 3.51%×0.3 |
-| 추론 | 35.8 | -0.95 | 실측 | [[gpqa-diamond]] 34.949494949494905%×1.0, [[humanitys-last-exam]] 3.51%×1.0 |
-| 코딩 | 31.5 | -1.24 | 추정 | (추정) |
-| 에이전트 | 28.3 | -1.45 | 추정 | (추정) |
+| 전문 지식 | 28.8 | -1.41 | 실측 | [[gpqa-diamond]] 34.949494949494905%×0.4, [[humanitys-last-exam]] 3.51%×0.3 |
+| 추론 | 35.7 | -0.96 | 실측 | [[gpqa-diamond]] 34.949494949494905%×1.0, [[humanitys-last-exam]] 3.51%×1.0 |
+| 코딩 | 31.4 | -1.24 | 추정 | (추정) |
+| 에이전트 | 28.2 | -1.45 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 26.9 | -1.54 | 추정 | (추정) |
-| 지시 따르기 | 32.8 | -1.15 | 추정 | (추정) |
+| 긴문맥 | 26.8 | -1.55 | 추정 | (추정) |
+| 지시 따르기 | 32.6 | -1.16 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

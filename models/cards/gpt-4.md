@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 29.1, z: -0.87, r: 36.9, estimated: false }  # 전문 지식
-  reasoning: { s: 29.1, z: -0.31, r: 45.3, estimated: false }  # 추론
-  coding: { s: 34.8, z: -0.17, r: 47.5, estimated: true }  # 코딩
-  agentic: { s: 17.2, z: -0.95, r: 35.7, estimated: false }  # 에이전트
+  knowledge: { s: 29.1, z: -0.88, r: 36.8, estimated: false }  # 전문 지식
+  reasoning: { s: 29.1, z: -0.32, r: 45.2, estimated: false }  # 추론
+  coding: { s: 34.8, z: -0.18, r: 47.4, estimated: true }  # 코딩
+  agentic: { s: 17.2, z: -0.96, r: 35.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 26.5, z: -0.8, r: 38.1, estimated: true }  # 긴문맥
-  instruction: { s: 29.6, z: -1.01, r: 34.9, estimated: false }  # 지시 따르기
+  long_context: { s: 26.5, z: -0.8, r: 37.9, estimated: true }  # 긴문맥
+  instruction: { s: 29.6, z: -1.01, r: 34.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-17
-timestamp: 2026-11-17T00:00:00Z
+updated: 2026-11-18
+timestamp: 2026-11-18T00:00:00Z
 ---
 
 # GPT-4
@@ -43,14 +43,14 @@ OpenAI · Proprietary · Unknown · 컨텍스트 8k · 종합지능 **None** · 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 36.9 | -0.87 | 실측 | [[gpqa-diamond]] 34.949494949494905%×0.4 |
-| 추론 | 45.3 | -0.31 | 실측 | [[gpqa-diamond]] 34.949494949494905%×1.0 |
-| 코딩 | 47.5 | -0.17 | 추정 | (추정) |
-| 에이전트 | 35.7 | -0.95 | 실측 | [[gdpval]] -12.81%×1.0 |
+| 전문 지식 | 36.8 | -0.88 | 실측 | [[gpqa-diamond]] 34.949494949494905%×0.4 |
+| 추론 | 45.2 | -0.32 | 실측 | [[gpqa-diamond]] 34.949494949494905%×1.0 |
+| 코딩 | 47.4 | -0.18 | 추정 | (추정) |
+| 에이전트 | 35.6 | -0.96 | 실측 | [[gdpval]] -12.81%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 38.1 | -0.8 | 추정 | (추정) |
-| 지시 따르기 | 34.9 | -1.01 | 실측 | [[ifbench]] 33.197278911564595%×1.0 |
+| 긴문맥 | 37.9 | -0.8 | 추정 | (추정) |
+| 지시 따르기 | 34.8 | -1.01 | 실측 | [[ifbench]] 33.197278911564595%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 50.7870826951304
 price_blended_usd_1m: 1.1025
-output_speed_tps: 179.64929745555978
+output_speed_tps: 167.2923343151068
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 4 Hydrogen (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-17
-timestamp: 2026-11-17T00:00:00Z
+updated: 2026-11-18
+timestamp: 2026-11-18T00:00:00Z
 ---
 
 # Gemini 4 Hydrogen (high)
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **50.7870826
 - **약점**: —
 
 ## 실용 지표
-`입력 $1.5 · 출력 $7.5 · 혼합 $1.1025/1M · 179.64929745555978 t/s · TTFT 15.212962949627046s · 1M ctx` · 가성비 46.1
+`입력 $1.5 · 출력 $7.5 · 혼합 $1.1025/1M · 167.2923343151068 t/s · TTFT 17.440751096843343s · 1M ctx` · 가성비 46.1
 
 ## 레이더 8축 (평균=50 기준선)
 

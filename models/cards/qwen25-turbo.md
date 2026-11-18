@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 22.4, z: -1.2, r: 32.1, estimated: false }  # 전문 지식
-  reasoning: { s: 20.1, z: -0.75, r: 38.7, estimated: false }  # 추론
-  coding: { s: 47.7, z: 0.27, r: 54.1, estimated: true }  # 코딩
-  agentic: { s: 16.4, z: -0.98, r: 35.3, estimated: true }  # 에이전트
+  knowledge: { s: 22.4, z: -1.2, r: 32.0, estimated: false }  # 전문 지식
+  reasoning: { s: 20.1, z: -0.76, r: 38.6, estimated: false }  # 추론
+  coding: { s: 47.7, z: 0.26, r: 53.9, estimated: true }  # 코딩
+  agentic: { s: 16.4, z: -0.99, r: 35.2, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 8.9, z: -1.32, r: 30.2, estimated: true }  # 긴문맥
-  instruction: { s: 21.9, z: -1.33, r: 30.1, estimated: true }  # 지시 따르기
+  long_context: { s: 8.9, z: -1.33, r: 30.1, estimated: true }  # 긴문맥
+  instruction: { s: 21.9, z: -1.34, r: 30.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen2.5 Turbo
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-17
-timestamp: 2026-11-17T00:00:00Z
+updated: 2026-11-18
+timestamp: 2026-11-18T00:00:00Z
 ---
 
 # Qwen2.5 Turbo
@@ -43,14 +43,14 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** ·
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 32.1 | -1.2 | 실측 | [[gpqa-diamond]] 41.010101010101%×0.4, [[humanitys-last-exam]] 4.09%×0.3 |
-| 추론 | 38.7 | -0.75 | 실측 | [[gpqa-diamond]] 41.010101010101%×1.0, [[humanitys-last-exam]] 4.09%×1.0 |
-| 코딩 | 54.1 | +0.27 | 추정 | (추정) |
-| 에이전트 | 35.3 | -0.98 | 추정 | (추정) |
+| 전문 지식 | 32.0 | -1.2 | 실측 | [[gpqa-diamond]] 41.010101010101%×0.4, [[humanitys-last-exam]] 4.09%×0.3 |
+| 추론 | 38.6 | -0.76 | 실측 | [[gpqa-diamond]] 41.010101010101%×1.0, [[humanitys-last-exam]] 4.09%×1.0 |
+| 코딩 | 53.9 | +0.26 | 추정 | (추정) |
+| 에이전트 | 35.2 | -0.99 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 30.2 | -1.32 | 추정 | (추정) |
-| 지시 따르기 | 30.1 | -1.33 | 추정 | (추정) |
+| 긴문맥 | 30.1 | -1.33 | 추정 | (추정) |
+| 지시 따르기 | 30.0 | -1.34 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -5,27 +5,27 @@ creator: SpaceXAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.64
-output_speed_tps: 105.0202337306149
+output_speed_tps: 114.28624797638336
 context_window: 2000000
 status: past
 size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 60.5, z: 0.65, r: 59.7, estimated: false }  # 전문 지식
-  reasoning: { s: 38.6, z: 0.16, r: 52.4, estimated: false }  # 추론
-  coding: { s: 25.3, z: -0.49, r: 42.6, estimated: false }  # 코딩
-  agentic: { s: 42.9, z: -0.06, r: 49.1, estimated: false }  # 에이전트
+  knowledge: { s: 60.5, z: 0.64, r: 59.5, estimated: false }  # 전문 지식
+  reasoning: { s: 38.6, z: 0.15, r: 52.3, estimated: false }  # 추론
+  coding: { s: 25.3, z: -0.5, r: 42.5, estimated: false }  # 코딩
+  agentic: { s: 42.9, z: -0.07, r: 49.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 67.4, z: -0.2, r: 47.1, estimated: false }  # 멀티모달
-  long_context: { s: 26.3, z: -0.8, r: 38.0, estimated: false }  # 긴문맥
-  instruction: { s: 52.2, z: -0.06, r: 49.1, estimated: false }  # 지시 따르기
+  multimodal: { s: 67.2, z: -0.21, r: 46.8, estimated: false }  # 멀티모달
+  long_context: { s: 26.3, z: -0.81, r: 37.8, estimated: false }  # 긴문맥
+  instruction: { s: 52.2, z: -0.07, r: 49.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.20 0309 v2 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-17
-timestamp: 2026-11-17T00:00:00Z
+updated: 2026-11-18
+timestamp: 2026-11-18T00:00:00Z
 ---
 
 # Grok 4.20 0309 v2 (non-reasoning)
@@ -37,20 +37,20 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 2M · 종합지능 **None** �
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
-`입력 $1.25 · 출력 $2.5 · 혼합 $0.64/1M · 105.0202337306149 t/s · TTFT 1.2618507931702714s · 2M ctx`
+`입력 $1.25 · 출력 $2.5 · 혼합 $0.64/1M · 114.28624797638336 t/s · TTFT 0.9858736253277348s · 2M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 59.7 | +0.65 | 실측 | [[gpqa-diamond]] 77.57575757575759%×0.4, [[humanitys-last-exam]] 27.9425393883225%×0.3 |
-| 추론 | 52.4 | +0.16 | 실측 | [[critpt]] 0.28571428571428603%×1.0, [[gpqa-diamond]] 77.57575757575759%×1.0, [[humanitys-last-exam]] 27.9425393883225%×1.0 |
-| 코딩 | 42.6 | -0.49 | 실측 | [[terminal-bench]] 16.6666666666667%×0.5 |
-| 에이전트 | 49.1 | -0.06 | 실측 | [[tau2-bench]] 59.9415204678363%×1.0, [[terminal-bench]] 16.6666666666667%×1.0 |
+| 전문 지식 | 59.5 | +0.64 | 실측 | [[gpqa-diamond]] 77.57575757575759%×0.4, [[humanitys-last-exam]] 27.9425393883225%×0.3 |
+| 추론 | 52.3 | +0.15 | 실측 | [[critpt]] 0.28571428571428603%×1.0, [[gpqa-diamond]] 77.57575757575759%×1.0, [[humanitys-last-exam]] 27.9425393883225%×1.0 |
+| 코딩 | 42.5 | -0.5 | 실측 | [[terminal-bench]] 16.6666666666667%×0.5 |
+| 에이전트 | 49.0 | -0.07 | 실측 | [[tau2-bench]] 59.9415204678363%×1.0, [[terminal-bench]] 16.6666666666667%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 47.1 | -0.2 | 실측 | [[mmmu-pro]] 64.91329479768791%×1.0 |
-| 긴문맥 | 38.0 | -0.8 | 실측 | [[aa-lcr]] 23.3333333333333%×1.0 |
-| 지시 따르기 | 49.1 | -0.06 | 실측 | [[ifbench]] 49.319727891156504%×1.0 |
+| 멀티모달 | 46.8 | -0.21 | 실측 | [[mmmu-pro]] 64.91329479768791%×1.0 |
+| 긴문맥 | 37.8 | -0.81 | 실측 | [[aa-lcr]] 23.3333333333333%×1.0 |
+| 지시 따르기 | 49.0 | -0.07 | 실측 | [[ifbench]] 49.319727891156504%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

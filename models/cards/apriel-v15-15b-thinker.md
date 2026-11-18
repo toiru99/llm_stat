@@ -12,20 +12,20 @@ size_class: Small
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 47.1, z: 0.0, r: 50.0, estimated: false }  # 전문 지식
-  reasoning: { s: 29.8, z: -0.27, r: 45.9, estimated: false }  # 추론
-  coding: { s: 16.1, z: -0.8, r: 37.9, estimated: false }  # 코딩
-  agentic: { s: 42.6, z: -0.07, r: 48.9, estimated: false }  # 에이전트
+  knowledge: { s: 47.1, z: -0.01, r: 49.9, estimated: false }  # 전문 지식
+  reasoning: { s: 29.8, z: -0.28, r: 45.7, estimated: false }  # 추론
+  coding: { s: 16.1, z: -0.81, r: 37.8, estimated: false }  # 코딩
+  agentic: { s: 42.6, z: -0.08, r: 48.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 56.9, z: -0.73, r: 39.0, estimated: false }  # 멀티모달
-  long_context: { s: 24.1, z: -0.87, r: 37.0, estimated: false }  # 긴문맥
-  instruction: { s: 69.6, z: 0.67, r: 60.0, estimated: false }  # 지시 따르기
+  multimodal: { s: 56.7, z: -0.75, r: 38.8, estimated: false }  # 멀티모달
+  long_context: { s: 24.1, z: -0.88, r: 36.8, estimated: false }  # 긴문맥
+  instruction: { s: 69.6, z: 0.66, r: 59.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Apriel-v1.5-15B-Thinker
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-17
-timestamp: 2026-11-17T00:00:00Z
+updated: 2026-11-18
+timestamp: 2026-11-18T00:00:00Z
 ---
 
 # Apriel-v1.5-15B-Thinker
@@ -43,14 +43,14 @@ ServiceNow · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 50.0 | +0.0 | 실측 | [[gpqa-diamond]] 71.3131313131313%×0.4, [[humanitys-last-exam]] 12.1408711770158%×0.3 |
-| 추론 | 45.9 | -0.27 | 실측 | [[critpt]] 1.1428571428571401%×1.0, [[gpqa-diamond]] 71.3131313131313%×1.0, [[humanitys-last-exam]] 12.1408711770158%×1.0 |
-| 코딩 | 37.9 | -0.8 | 실측 | [[terminal-bench]] 10.6060606060606%×0.5 |
-| 에이전트 | 48.9 | -0.07 | 실측 | [[tau2-bench]] 68.4210526315789%×1.0, [[terminal-bench]] 10.6060606060606%×1.0 |
+| 전문 지식 | 49.9 | -0.01 | 실측 | [[gpqa-diamond]] 71.3131313131313%×0.4, [[humanitys-last-exam]] 12.1408711770158%×0.3 |
+| 추론 | 45.7 | -0.28 | 실측 | [[critpt]] 1.1428571428571401%×1.0, [[gpqa-diamond]] 71.3131313131313%×1.0, [[humanitys-last-exam]] 12.1408711770158%×1.0 |
+| 코딩 | 37.8 | -0.81 | 실측 | [[terminal-bench]] 10.6060606060606%×0.5 |
+| 에이전트 | 48.8 | -0.08 | 실측 | [[tau2-bench]] 68.4210526315789%×1.0, [[terminal-bench]] 10.6060606060606%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 39.0 | -0.73 | 실측 | [[mmmu-pro]] 57.05202312138729%×1.0 |
-| 긴문맥 | 37.0 | -0.87 | 실측 | [[aa-lcr]] 21.3333333333333%×1.0 |
-| 지시 따르기 | 60.0 | +0.67 | 실측 | [[ifbench]] 61.7006802721088%×1.0 |
+| 멀티모달 | 38.8 | -0.75 | 실측 | [[mmmu-pro]] 57.05202312138729%×1.0 |
+| 긴문맥 | 36.8 | -0.88 | 실측 | [[aa-lcr]] 21.3333333333333%×1.0 |
+| 지시 따르기 | 59.9 | +0.66 | 실측 | [[ifbench]] 61.7006802721088%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

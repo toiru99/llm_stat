@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 74.7, z: 1.33, r: 70.0, estimated: false }  # 전문 지식
-  reasoning: { s: 62.4, z: 1.34, r: 70.1, estimated: false }  # 추론
-  coding: { s: 69.0, z: 0.99, r: 64.9, estimated: false }  # 코딩
-  agentic: { s: 73.0, z: 0.98, r: 64.8, estimated: false }  # 에이전트
+  knowledge: { s: 74.7, z: 1.32, r: 69.8, estimated: false }  # 전문 지식
+  reasoning: { s: 62.4, z: 1.32, r: 69.8, estimated: false }  # 추론
+  coding: { s: 69.0, z: 0.98, r: 64.7, estimated: false }  # 코딩
+  agentic: { s: 73.0, z: 0.97, r: 64.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 81.5, z: 0.52, r: 57.9, estimated: false }  # 멀티모달
-  long_context: { s: 93.6, z: 1.2, r: 68.0, estimated: false }  # 긴문맥
-  instruction: { s: 82.6, z: 1.21, r: 68.2, estimated: true }  # 지시 따르기
+  multimodal: { s: 81.3, z: 0.5, r: 57.6, estimated: false }  # 멀티모달
+  long_context: { s: 93.6, z: 1.19, r: 67.8, estimated: false }  # 긴문맥
+  instruction: { s: 82.6, z: 1.2, r: 68.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Agnes 2.5 Pro Beta
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-17
-timestamp: 2026-11-17T00:00:00Z
+updated: 2026-11-18
+timestamp: 2026-11-18T00:00:00Z
 ---
 
 # Agnes 2.5 Pro Beta
@@ -33,7 +33,7 @@ timestamp: 2026-11-17T00:00:00Z
 Sapiens AI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 추론, 전문 지식
+- **강점**: 전문 지식, 추론
 - **약점**: 에이전트, 멀티모달
 
 ## 실용 지표
@@ -43,14 +43,14 @@ Sapiens AI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 70.0 | +1.33 | 실측 | [[gpqa-diamond]] 90.5050505050505%×0.4, [[humanitys-last-exam]] 37.5347544022243%×0.3 |
-| 추론 | 70.1 | +1.34 | 실측 | [[critpt]] 15.7142857142857%×1.0, [[gpqa-diamond]] 90.5050505050505%×1.0, [[humanitys-last-exam]] 37.5347544022243%×1.0 |
-| 코딩 | 64.9 | +0.99 | 실측 | [[scicode]] 48.842592592592595%×1.0 |
-| 에이전트 | 64.8 | +0.98 | 실측 | [[gdpval]] 1335.33%×1.0, [[tau3-banking]] 35.6701030927835%×1.0 |
+| 전문 지식 | 69.8 | +1.32 | 실측 | [[gpqa-diamond]] 90.5050505050505%×0.4, [[humanitys-last-exam]] 37.5347544022243%×0.3 |
+| 추론 | 69.8 | +1.32 | 실측 | [[critpt]] 15.7142857142857%×1.0, [[gpqa-diamond]] 90.5050505050505%×1.0, [[humanitys-last-exam]] 37.5347544022243%×1.0 |
+| 코딩 | 64.7 | +0.98 | 실측 | [[scicode]] 48.842592592592595%×1.0 |
+| 에이전트 | 64.6 | +0.97 | 실측 | [[gdpval]] 1335.33%×1.0, [[tau3-banking]] 35.6701030927835%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 57.9 | +0.52 | 실측 | [[mmmu-pro]] 75.4335260115607%×1.0 |
-| 긴문맥 | 68.0 | +1.2 | 실측 | [[aa-lcr]] 83.0%×1.0 |
-| 지시 따르기 | 68.2 | +1.21 | 추정 | (추정) |
+| 멀티모달 | 57.6 | +0.5 | 실측 | [[mmmu-pro]] 75.4335260115607%×1.0 |
+| 긴문맥 | 67.8 | +1.19 | 실측 | [[aa-lcr]] 83.0%×1.0 |
+| 지시 따르기 | 68.0 | +1.2 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

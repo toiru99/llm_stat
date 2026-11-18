@@ -5,27 +5,27 @@ creator: DeepSeek
 license: Open
 intelligence_index: 18.5131594039446
 price_blended_usd_1m: 0.1842
-output_speed_tps: 155.1794061674697
+output_speed_tps: 152.10343804723541
 context_window: 1000000
 status: current
 size_class: Large
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 14.3, z: -1.59, r: 26.2, estimated: false }  # 전문 지식
+  knowledge: { s: 14.3, z: -1.59, r: 26.1, estimated: false }  # 전문 지식
   reasoning: { s: 7.6, z: -1.38, r: 29.3, estimated: false }  # 추론
-  coding: { s: 52.0, z: 0.42, r: 56.3, estimated: false }  # 코딩
-  agentic: { s: 75.8, z: 1.08, r: 66.2, estimated: false }  # 에이전트
+  coding: { s: 52.0, z: 0.41, r: 56.1, estimated: false }  # 코딩
+  agentic: { s: 75.8, z: 1.07, r: 66.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
-  multimodal: { s: 73.2, z: 0.1, r: 51.5, estimated: false }  # 멀티모달
-  long_context: { s: 64.7, z: 0.34, r: 55.1, estimated: false }  # 긴문맥
-  instruction: { s: 51.3, z: -0.1, r: 48.5, estimated: true }  # 지시 따르기
+  multimodal: { s: 72.9, z: 0.08, r: 51.2, estimated: false }  # 멀티모달
+  long_context: { s: 64.7, z: 0.33, r: 54.9, estimated: false }  # 긴문맥
+  instruction: { s: 51.3, z: -0.11, r: 48.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4.1 Flash 1017 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-17
-timestamp: 2026-11-17T00:00:00Z
+updated: 2026-11-18
+timestamp: 2026-11-18T00:00:00Z
 ---
 
 # DeepSeek V4.1 Flash 1017 (non-reasoning)
@@ -37,20 +37,20 @@ DeepSeek · Open · Large · 컨텍스트 1M · 종합지능 **18.5131594039446*
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.1842/1M · 155.1794061674697 t/s · TTFT 1.2648816943489682s · 1M ctx` · 가성비 100.5
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.1842/1M · 152.10343804723541 t/s · TTFT 1.1832726292896232s · 1M ctx` · 가성비 100.5
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 26.2 | -1.59 | 실측 | [[humanitys-last-exam]] 11.538461538461501%×0.3 |
+| 전문 지식 | 26.1 | -1.59 | 실측 | [[humanitys-last-exam]] 11.538461538461501%×0.3 |
 | 추론 | 29.3 | -1.38 | 실측 | [[critpt]] 0.28571428571428603%×1.0, [[humanitys-last-exam]] 11.538461538461501%×1.0 |
-| 코딩 | 56.3 | +0.42 | 실측 | [[scicode]] 38.5416666666667%×1.0 |
-| 에이전트 | 66.2 | +1.08 | 실측 | [[gdpval]] 1317.14%×1.0 |
+| 코딩 | 56.1 | +0.41 | 실측 | [[scicode]] 38.5416666666667%×1.0 |
+| 에이전트 | 66.0 | +1.07 | 실측 | [[gdpval]] 1317.14%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 51.5 | +0.1 | 실측 | [[mmmu-pro]] 69.19075144508669%×1.0 |
-| 긴문맥 | 55.1 | +0.34 | 실측 | [[aa-lcr]] 57.3333333333333%×1.0 |
-| 지시 따르기 | 48.5 | -0.1 | 추정 | (추정) |
+| 멀티모달 | 51.2 | +0.08 | 실측 | [[mmmu-pro]] 69.19075144508669%×1.0 |
+| 긴문맥 | 54.9 | +0.33 | 실측 | [[aa-lcr]] 57.3333333333333%×1.0 |
+| 지시 따르기 | 48.4 | -0.11 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 
