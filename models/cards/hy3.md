@@ -5,7 +5,7 @@ creator: Tencent
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.1065
-output_speed_tps: 78.82553449761627
+output_speed_tps: 79.3355708420618
 context_window: 256000
 status: past
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hy3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-18
-timestamp: 2026-11-18T00:00:00Z
+updated: 2026-11-19
+timestamp: 2026-11-19T00:00:00Z
 ---
 
 # Hy3
@@ -37,7 +37,7 @@ Tencent · Open · Large · 컨텍스트 256k · 종합지능 **None** · ⚠️
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.136 · 출력 $0.5549999999999999 · 혼합 $0.1065/1M · 78.82553449761627 t/s · TTFT 4.550279406555721s · 256k ctx`
+`입력 $0.136 · 출력 $0.5549999999999999 · 혼합 $0.1065/1M · 79.3355708420618 t/s · TTFT 4.81391139602308s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

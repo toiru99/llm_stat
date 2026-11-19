@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 12
-output_speed_tps: 95.76785663483389
+output_speed_tps: 82.8205760168776
 context_window: 128000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4 Turbo
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-18
-timestamp: 2026-11-18T00:00:00Z
+updated: 2026-11-19
+timestamp: 2026-11-19T00:00:00Z
 ---
 
 # GPT-4 Turbo
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None** �
 - **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
-`입력 $10.0 · 출력 $30.0 · 혼합 $12/1M · 95.76785663483389 t/s · TTFT 1.486688619279364s · 128k ctx`
+`입력 $10.0 · 출력 $30.0 · 혼합 $12/1M · 82.8205760168776 t/s · TTFT 1.74993799539523s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

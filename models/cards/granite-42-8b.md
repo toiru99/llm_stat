@@ -5,7 +5,7 @@ creator: IBM
 license: Open
 intelligence_index: 5.09826495217051
 price_blended_usd_1m: 0.0475
-output_speed_tps: 74.46462731583647
+output_speed_tps: 88.1587822367017
 context_window: 131072
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.2 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-18
-timestamp: 2026-11-18T00:00:00Z
+updated: 2026-11-19
+timestamp: 2026-11-19T00:00:00Z
 ---
 
 # Granite 4.2 8B
@@ -37,7 +37,7 @@ IBM · Open · Small · 컨텍스트 131k · 종합지능 **5.09826495217051**
 - **약점**: 에이전트, 지시 따르기
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.25 · 혼합 $0.0475/1M · 74.46462731583647 t/s · TTFT 2.012072296854805s · 131k ctx` · 가성비 107.3
+`입력 $0.06 · 출력 $0.25 · 혼합 $0.0475/1M · 88.1587822367017 t/s · TTFT 1.9851856337773s · 131k ctx` · 가성비 107.3
 
 ## 레이더 8축 (평균=50 기준선)
 

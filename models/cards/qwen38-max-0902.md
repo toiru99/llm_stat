@@ -5,7 +5,7 @@ creator: Alibaba
 license: Proprietary
 intelligence_index: 33.6545627367888
 price_blended_usd_1m: 1.175
-output_speed_tps: 60.03516740998768
+output_speed_tps: 59.5458808425727
 context_window: 983616
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.8 Max (0902)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-18
-timestamp: 2026-11-18T00:00:00Z
+updated: 2026-11-19
+timestamp: 2026-11-19T00:00:00Z
 ---
 
 # Qwen3.8 Max (0902)
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 983k · 종합지능 **33.6545
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $2.0 · 출력 $6.0 · 혼합 $1.175/1M · 60.03516740998768 t/s · TTFT 3.5489699579873353s · 983k ctx` · 가성비 28.6
+`입력 $2.0 · 출력 $6.0 · 혼합 $1.175/1M · 59.5458808425727 t/s · TTFT 4.05525899563548s · 983k ctx` · 가성비 28.6
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: Meta
 license: Open
 intelligence_index: 6.34128724913462
 price_blended_usd_1m: 0.228
-output_speed_tps: 93.25036753552281
+output_speed_tps: 86.46252228213945
 context_window: 131072
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Glimmer (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-18
-timestamp: 2026-11-18T00:00:00Z
+updated: 2026-11-19
+timestamp: 2026-11-19T00:00:00Z
 ---
 
 # Muse Glimmer (high)
@@ -37,7 +37,7 @@ Meta · Open · Small · 컨텍스트 131k · 종합지능 **6.34128724913462**
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.32499999999999996 · 출력 $1.35 · 혼합 $0.228/1M · 93.25036753552281 t/s · TTFT 1.6238830550599532s · 131k ctx` · 가성비 27.8
+`입력 $0.32499999999999996 · 출력 $1.35 · 혼합 $0.228/1M · 86.46252228213945 t/s · TTFT 1.6604097333015249s · 131k ctx` · 가성비 27.8
 
 ## 레이더 8축 (평균=50 기준선)
 

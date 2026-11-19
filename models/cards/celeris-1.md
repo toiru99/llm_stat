@@ -5,7 +5,7 @@ creator: Celeris
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.124
-output_speed_tps: 759.3555382128433
+output_speed_tps: 716.581573193982
 context_window: 131072
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Celeris-1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-18
-timestamp: 2026-11-18T00:00:00Z
+updated: 2026-11-19
+timestamp: 2026-11-19T00:00:00Z
 ---
 
 # Celeris-1
@@ -37,7 +37,7 @@ Celeris · Proprietary · Unknown · 컨텍스트 131k · 종합지능 **None**
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.7 · 혼합 $0.124/1M · 759.3555382128433 t/s · TTFT 1.2868657531000527s · 131k ctx`
+`입력 $0.2 · 출력 $0.7 · 혼합 $0.124/1M · 716.581573193982 t/s · TTFT 1.26806660430698s · 131k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

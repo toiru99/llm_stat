@@ -5,7 +5,7 @@ creator: Upstage
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.067
-output_speed_tps: 135.02006278912071
+output_speed_tps: 135.403323349746
 context_window: 1048576
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Mini 4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-18
-timestamp: 2026-11-18T00:00:00Z
+updated: 2026-11-19
+timestamp: 2026-11-19T00:00:00Z
 ---
 
 # Solar Mini 4
@@ -37,7 +37,7 @@ Upstage · Proprietary · Small · 컨텍스트 1M · 종합지능 **None**
 - **약점**: 전문 지식, 추론
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.4 · 혼합 $0.067/1M · 135.02006278912071 t/s · TTFT 2.169888220286042s · 1M ctx`
+`입력 $0.1 · 출력 $0.4 · 혼합 $0.067/1M · 135.403323349746 t/s · TTFT 2.21493895300883s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

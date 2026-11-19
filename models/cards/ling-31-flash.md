@@ -5,7 +5,7 @@ creator: InclusionAI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.192
-output_speed_tps: 92.44665448516689
+output_speed_tps: 87.7776671431023
 context_window: 1000000
 status: past
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling 3.1 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-18
-timestamp: 2026-11-18T00:00:00Z
+updated: 2026-11-19
+timestamp: 2026-11-19T00:00:00Z
 ---
 
 # Ling 3.1 Flash
@@ -37,7 +37,7 @@ InclusionAI · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠�
 - **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
-`입력 $0.3 · 출력 $0.9 · 혼합 $0.192/1M · 92.44665448516689 t/s · TTFT 4.369917740598446s · 1M ctx`
+`입력 $0.3 · 출력 $0.9 · 혼합 $0.192/1M · 87.7776671431023 t/s · TTFT 4.32445145030456s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

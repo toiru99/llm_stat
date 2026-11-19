@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 4.35
-output_speed_tps: 74.94735393393744
+output_speed_tps: 70.477964324384
 context_window: 922000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.5 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-18
-timestamp: 2026-11-18T00:00:00Z
+updated: 2026-11-19
+timestamp: 2026-11-19T00:00:00Z
 ---
 
 # GPT-5.5 (non-reasoning)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 922k · 종합지능 **None** �
 - **약점**: 추론, 지시 따르기
 
 ## 실용 지표
-`입력 $5.0 · 출력 $30.0 · 혼합 $4.35/1M · 74.94735393393744 t/s · TTFT 1.7199355201718163s · 922k ctx`
+`입력 $5.0 · 출력 $30.0 · 혼합 $4.35/1M · 70.477964324384 t/s · TTFT 1.76084157918016s · 922k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

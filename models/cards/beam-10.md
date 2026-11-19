@@ -5,7 +5,7 @@ creator: Reflection
 license: Open
 intelligence_index: 17.7307282547205
 price_blended_usd_1m: 0.228
-output_speed_tps: 263.0475398697567
+output_speed_tps: 267.317191378317
 context_window: 1048576
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Beam 1.0
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-18
-timestamp: 2026-11-18T00:00:00Z
+updated: 2026-11-19
+timestamp: 2026-11-19T00:00:00Z
 ---
 
 # Beam 1.0
@@ -37,7 +37,7 @@ Reflection · Open · Large · 컨텍스트 1M · 종합지능 **17.730728254720
 - **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
-`입력 $0.4 · 출력 $1.2 · 혼합 $0.228/1M · 263.0475398697567 t/s · TTFT 0.7394623602261569s · 1M ctx` · 가성비 77.8
+`입력 $0.4 · 출력 $1.2 · 혼합 $0.228/1M · 267.317191378317 t/s · TTFT 0.745974856855688s · 1M ctx` · 가성비 77.8
 
 ## 레이더 8축 (평균=50 기준선)
 

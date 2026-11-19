@@ -1,18 +1,20 @@
 # 모델 (Models)
 
-`scripts/build_cards.py` 자동 생성 · 데이터 2026-11-18 · 제작사 61곳 · current 282 + past 476 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
+`scripts/build_cards.py` 자동 생성 · 데이터 2026-11-19 · 제작사 61곳 · current 287 + past 476 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
 
 - 레이더 축·방법론: [radar-spec.md](radar-spec.md) · 설정: [../config.toml](../config.toml)
 
-## 모델 목록 (종합지능 내림차순, 758개)
+## 모델 목록 (종합지능 내림차순, 763개)
 
 * [Claude Fable 5.2 (max)](cards/claude-fable-52-max.md) - 종합지능 64.563595756626
 * [Claude Fable 5.2 (xhigh)](cards/claude-fable-52-xhigh.md) - 종합지능 62.2167392403357
 * [GPT-6.2 Astra (max)](cards/gpt-62-astra-max.md) - 종합지능 62.1387990593969
 * [Claude Fable 5.2 (high)](cards/claude-fable-52-high.md) - 종합지능 61.8218785440284
 * [GPT-6.2 Astra (xhigh)](cards/gpt-62-astra-xhigh.md) - 종합지능 61.5602325371388
+* [Gemini 4 Neon (xhigh)](cards/gemini-4-neon-xhigh.md) - 종합지능 61.3982491392674
 * [GPT-6.2 Astra (high)](cards/gpt-62-astra-high.md) - 종합지능 60.0882280338247
 * [Gemini 4 Carbon (high)](cards/gemini-4-carbon-high.md) - 종합지능 60.025738829526
+* [Gemini 4 Neon (high)](cards/gemini-4-neon-high.md) - 종합지능 59.6189441875232
 * [Claude Opus 5.5 (max)](cards/claude-opus-55-max.md) - 종합지능 59.1060336078904
 * [Gemini 4 Carbon (medium)](cards/gemini-4-carbon-medium.md) - 종합지능 58.2587824022788
 * [Claude Opus 5.5 (xhigh)](cards/claude-opus-55-xhigh.md) - 종합지능 57.4447060170507
@@ -23,6 +25,7 @@
 * [GPT-6.2 Sol (xhigh)](cards/gpt-62-sol-xhigh.md) - 종합지능 55.7351067246438
 * [GPT-6 Astra (xhigh)](cards/gpt-6-astra-xhigh.md) - 종합지능 55.3057468569681 · past
 * [GPT-6.2 Sol (high)](cards/gpt-62-sol-high.md) - 종합지능 54.8898658241942
+* [Gemini 4 Neon (medium)](cards/gemini-4-neon-medium.md) - 종합지능 54.8622945007349
 * [GPT-6 Astra (high)](cards/gpt-6-astra-high.md) - 종합지능 54.849838322506 · past
 * [GPT-6.1 Sol (max)](cards/gpt-61-sol-max.md) - 종합지능 54.6087338138148 · past
 * [Claude Sonnet 5.5 (max)](cards/claude-sonnet-55-max.md) - 종합지능 54.54133407109
@@ -50,6 +53,7 @@
 * [GPT-6.1 Terra (xhigh)](cards/gpt-61-terra-xhigh.md) - 종합지능 45.250051789066
 * [Claude Opus 5 (max)](cards/claude-opus-5-max.md) - 종합지능 44.1646231569372 · past
 * [GPT-6 Sol (max)](cards/gpt-6-sol-max.md) - 종합지능 44.1555010304265 · past
+* [Gemini 4 Neon (low)](cards/gemini-4-neon-low.md) - 종합지능 44.0831506204565
 * [Muse Wonder (max)](cards/muse-wonder-max.md) - 종합지능 43.5748225998431
 * [GPT-6 Astra (low)](cards/gpt-6-astra-low.md) - 종합지능 43.3349823228524 · past
 * [Claude Fable 5.1 (medium)](cards/claude-fable-51-medium.md) - 종합지능 43.171597828284 · past
@@ -122,6 +126,8 @@
 * [Kimi K3 (low)](cards/kimi-k3-low.md) - 종합지능 17.4191985300887 · past
 * [Qwen3.8 27B (low)](cards/qwen38-27b-low.md) - 종합지능 15.6850612405479
 * [Solar Pro 4](cards/solar-pro-4.md) - 종합지능 14.1589437644357
+* [K2 Horizon 32B](cards/k2-horizon-32b.md) - 종합지능 13.880544179919
+* [K2 Horizon MoVA 36B A4B](cards/k2-horizon-mova-36b-a4b.md) - 종합지능 13.8458943758068
 * [Apodex 1.1](cards/apodex-11.md) - 종합지능 13.6712884627289
 * [Nemotron 3.5 Super VL](cards/nemotron-35-super-vl.md) - 종합지능 13.6203422723141
 * [Inkling Small](cards/inkling-small.md) - 종합지능 12.9101620926084 · past
@@ -130,17 +136,20 @@
 * [Nemotron 3 Ultra](cards/nemotron-3-ultra.md) - 종합지능 11.7592726308177
 * [Gemini 3.5 Flash-Lite](cards/gemini-35-flash-lite.md) - 종합지능 11.6563462044212
 * [Inkling (high)](cards/inkling-high.md) - 종합지능 11.0316478809701
+* [K2 Horizon 7B](cards/k2-horizon-7b.md) - 종합지능 10.5630231522891
 * [Qwen3.8 27B (non-reasoning)](cards/qwen38-27b-non-reasoning.md) - 종합지능 10.0316676028892
 * [GPT-6 Luna (low)](cards/gpt-6-luna-low.md) - 종합지능 9.66610812336462
 * [Inkling Small (high)](cards/inkling-small-high.md) - 종합지능 9.57506402218475 · past
 * [GPT-6 Luna (non-reasoning)](cards/gpt-6-luna-non-reasoning.md) - 종합지능 9.44244373619813
 * [A.X-K2](cards/ax-k2.md) - 종합지능 9.04405716512642
+* [K2 Horizon 3.7B](cards/k2-horizon-37b.md) - 종합지능 8.02272873835814
 * [K-EXAONE 2.0](cards/k-exaone-20.md) - 종합지능 7.56357436827474
 * [Claude 4.5 Haiku](cards/claude-45-haiku.md) - 종합지능 7.43033851624488 · past
 * [Muse Glimmer (high)](cards/muse-glimmer-high.md) - 종합지능 6.34128724913462
 * [Command A+](cards/command-a.md) - 종합지능 6.24120025576958
 * [Gemini 3.1 Flash-Lite](cards/gemini-31-flash-lite.md) - 종합지능 6.15684082814488 · past
 * [LFM3-1.7B](cards/lfm3-17b.md) - 종합지능 5.99389916662478
+* [Granite 4.2 30B](cards/granite-42-30b.md) - 종합지능 5.53591398205629
 * [Nemotron 3.5 Lightning](cards/nemotron-35-lightning.md) - 종합지능 5.5346663903388
 * [Granite 4.2 8B](cards/granite-42-8b.md) - 종합지능 5.09826495217051
 * [Gemma 4 E4B](cards/gemma-4-e4b.md) - 종합지능 4.78077714822335
@@ -150,6 +159,7 @@
 * [Mistral Small 4](cards/mistral-small-4.md) - 종합지능 4.29716249600478
 * [gpt-oss-120b (high)](cards/gpt-oss-120b-high.md) - 종합지능 3.81981165137417
 * [North Mini Code](cards/north-mini-code.md) - 종합지능 3.42470262148493
+* [K2 Horizon 0.9B](cards/k2-horizon-09b.md) - 종합지능 2.71764699052683
 * [Nemotron 3 Nano 4B](cards/nemotron-3-nano-4b.md) - 종합지능 1.81584603785463
 * [LFM3-VL-2B](cards/lfm3-vl-2b.md) - 종합지능 1.70629313092144
 * [GLM-4.5V (non-reasoning)](cards/glm-45v-non-reasoning.md) - 종합지능 None · past
@@ -197,8 +207,6 @@
 * [LFM2 1.2B](cards/lfm2-12b.md) - 종합지능 None · past
 * [Kimi K2.6 (non-reasoning)](cards/kimi-k26-non-reasoning.md) - 종합지능 None · past
 * [Magistral Small 1](cards/magistral-small-1.md) - 종합지능 None · past
-* [Granite 4.2 30B](cards/granite-42-30b.md) - 종합지능 None
-* [K2 Horizon 7B](cards/k2-horizon-7b.md) - 종합지능 None
 * [LFM 40B](cards/lfm-40b.md) - 종합지능 None · past
 * [MiniMax-M2.5](cards/minimax-m25.md) - 종합지능 None · past
 * [Mistral Small 4 (non-reasoning)](cards/mistral-small-4-non-reasoning.md) - 종합지능 None
@@ -274,7 +282,6 @@
 * [GLM-4.5V](cards/glm-45v.md) - 종합지능 None · past
 * [Qwen3.5 4B (non-reasoning)](cards/qwen35-4b-non-reasoning.md) - 종합지능 None
 * [Qwen3.5 397B A17B (non-reasoning)](cards/qwen35-397b-a17b-non-reasoning.md) - 종합지능 None
-* [K2 Horizon 3.7B](cards/k2-horizon-37b.md) - 종합지능 None
 * [Qwen3 235B 2507](cards/qwen3-235b-2507.md) - 종합지능 None · past
 * [Olmo 3 7B Think](cards/olmo-3-7b-think.md) - 종합지능 None
 * [HyperCLOVA X SEED Think (32B)](cards/hyperclova-x-seed-think-32b.md) - 종합지능 None
@@ -353,7 +360,6 @@
 * [GPT-6 Sol (high)](cards/gpt-6-sol-high.md) - 종합지능 None · past
 * [Gemma 4 E4B (non-reasoning)](cards/gemma-4-e4b-non-reasoning.md) - 종합지능 None
 * [GPT-5.4 (low)](cards/gpt-54-low.md) - 종합지능 None · past
-* [K2 Horizon MoVA 36B A4B](cards/k2-horizon-mova-36b-a4b.md) - 종합지능 None
 * [Claude Opus 4.6 (max)](cards/claude-opus-46-max.md) - 종합지능 None · past
 * [Jamba 1.5 Mini](cards/jamba-15-mini.md) - 종합지능 None · past
 * [OLMo 2 32B](cards/olmo-2-32b.md) - 종합지능 None · past
@@ -543,7 +549,6 @@
 * [Qwen3 8B](cards/qwen3-8b.md) - 종합지능 None · past
 * [Claude 2.1](cards/claude-21.md) - 종합지능 None · past
 * [GPT-5.6 Terra (xhigh)](cards/gpt-56-terra-xhigh.md) - 종합지능 None · past
-* [K2 Horizon 0.9B](cards/k2-horizon-09b.md) - 종합지능 None
 * [Devstral Small](cards/devstral-small.md) - 종합지능 None · past
 * [GPT-4.1 mini](cards/gpt-41-mini.md) - 종합지능 None · past
 * [Phi-4 Mini](cards/phi-4-mini.md) - 종합지능 None

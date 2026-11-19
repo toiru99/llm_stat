@@ -3,7 +3,7 @@ type: Model
 title: K2 Horizon 7B
 creator: Institute of Foundation Models
 license: Open
-intelligence_index: None
+intelligence_index: 10.5630231522891
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 524288
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — K2 Horizon 7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-18
-timestamp: 2026-11-18T00:00:00Z
+updated: 2026-11-19
+timestamp: 2026-11-19T00:00:00Z
 ---
 
 # K2 Horizon 7B
 
-Institute of Foundation Models · Open · Small · 컨텍스트 524k · 종합지능 **None**
+Institute of Foundation Models · Open · Small · 컨텍스트 524k · 종합지능 **10.5630231522891**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 에이전트

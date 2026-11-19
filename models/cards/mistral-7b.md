@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.155
-output_speed_tps: 100.22808110771797
+output_speed_tps: 100.785237205816
 context_window: 8192
 status: past
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral 7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-18
-timestamp: 2026-11-18T00:00:00Z
+updated: 2026-11-19
+timestamp: 2026-11-19T00:00:00Z
 ---
 
 # Mistral 7B
@@ -37,7 +37,7 @@ Mistral · Open · Small · 컨텍스트 8k · 종합지능 **None** · ⚠️ p
 - **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.2 · 혼합 $0.155/1M · 100.22808110771797 t/s · TTFT 0.4388737695835043s · 8k ctx`
+`입력 $0.15 · 출력 $0.2 · 혼합 $0.155/1M · 100.785237205816 t/s · TTFT 0.427138885916852s · 8k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

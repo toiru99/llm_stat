@@ -3,7 +3,7 @@ type: Model
 title: Granite 4.2 30B
 creator: IBM
 license: Open
-intelligence_index: None
+intelligence_index: 5.53591398205629
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 131072
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.2 30B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-18
-timestamp: 2026-11-18T00:00:00Z
+updated: 2026-11-19
+timestamp: 2026-11-19T00:00:00Z
 ---
 
 # Granite 4.2 30B
 
-IBM · Open · Small · 컨텍스트 131k · 종합지능 **None**
+IBM · Open · Small · 컨텍스트 131k · 종합지능 **5.53591398205629**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 코딩, 긴문맥

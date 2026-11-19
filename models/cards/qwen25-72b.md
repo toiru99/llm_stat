@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.477
-output_speed_tps: 29.93838862354529
+output_speed_tps: 29.47074263378525
 context_window: 131072
 status: past
 size_class: Medium
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen2.5 72B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-18
-timestamp: 2026-11-18T00:00:00Z
+updated: 2026-11-19
+timestamp: 2026-11-19T00:00:00Z
 ---
 
 # Qwen2.5 72B
@@ -37,7 +37,7 @@ Alibaba · Open · Medium · 컨텍스트 131k · 종합지능 **None** · ⚠�
 - **약점**: 전문 지식, 코딩
 
 ## 실용 지표
-`입력 $0.475 · 출력 $0.495 · 혼합 $0.477/1M · 29.93838862354529 t/s · TTFT 2.0165722515472293s · 131k ctx`
+`입력 $0.475 · 출력 $0.495 · 혼합 $0.477/1M · 29.47074263378525 t/s · TTFT 1.98123390069509s · 131k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

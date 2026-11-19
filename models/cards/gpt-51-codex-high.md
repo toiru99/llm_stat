@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 1.3375
-output_speed_tps: 106.84970243652221
+output_speed_tps: 105.714621614634
 context_window: 400000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.1 Codex (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-18
-timestamp: 2026-11-18T00:00:00Z
+updated: 2026-11-19
+timestamp: 2026-11-19T00:00:00Z
 ---
 
 # GPT-5.1 Codex (high)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **None** �
 - **약점**: 코딩, 멀티모달
 
 ## 실용 지표
-`입력 $1.25 · 출력 $10.0 · 혼합 $1.3375/1M · 106.84970243652221 t/s · TTFT 14.567037705224989s · 400k ctx`
+`입력 $1.25 · 출력 $10.0 · 혼합 $1.3375/1M · 105.714621614634 t/s · TTFT 11.5552899026194s · 400k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

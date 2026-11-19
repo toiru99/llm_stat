@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.0535
-output_speed_tps: 157.18842000836625
+output_speed_tps: 149.657157180418
 context_window: 400000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5 nano (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-18
-timestamp: 2026-11-18T00:00:00Z
+updated: 2026-11-19
+timestamp: 2026-11-19T00:00:00Z
 ---
 
 # GPT-5 nano (medium)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **None** �
 - **약점**: 에이전트, 멀티모달
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.4 · 혼합 $0.0535/1M · 157.18842000836625 t/s · TTFT 22.42830651501383s · 400k ctx`
+`입력 $0.05 · 출력 $0.4 · 혼합 $0.0535/1M · 149.657157180418 t/s · TTFT 27.2772732850416s · 400k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
