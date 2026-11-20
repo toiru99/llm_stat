@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 4.35
-output_speed_tps: 122.613566549147
+output_speed_tps: 123.973571902424
 context_window: 400000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.5 Instant (June 2026)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-19
-timestamp: 2026-11-19T00:00:00Z
+updated: 2026-11-20
+timestamp: 2026-11-20T00:00:00Z
 ---
 
 # GPT-5.5 Instant (June 2026)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **None**
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $5.0 · 출력 $30.0 · 혼합 $4.35/1M · 122.613566549147 t/s · TTFT 1.75617895801898s · 400k ctx`
+`입력 $5.0 · 출력 $30.0 · 혼합 $4.35/1M · 123.973571902424 t/s · TTFT 1.77385404961182s · 400k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

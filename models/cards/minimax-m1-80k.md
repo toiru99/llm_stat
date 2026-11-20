@@ -5,7 +5,7 @@ creator: MiniMax
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.715
-output_speed_tps: 45.6447250234203
+output_speed_tps: 49.5536337975649
 context_window: 1000000
 status: past
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax M1 80k
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-19
-timestamp: 2026-11-19T00:00:00Z
+updated: 2026-11-20
+timestamp: 2026-11-20T00:00:00Z
 ---
 
 # MiniMax M1 80k
@@ -37,7 +37,7 @@ MiniMax · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ p
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $0.55 · 출력 $2.2 · 혼합 $0.715/1M · 45.6447250234203 t/s · TTFT 4.02803919778615s · 1M ctx`
+`입력 $0.55 · 출력 $2.2 · 혼합 $0.715/1M · 49.5536337975649 t/s · TTFT 4.04659026894725s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

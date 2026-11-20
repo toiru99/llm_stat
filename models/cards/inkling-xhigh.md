@@ -5,7 +5,7 @@ creator: Thinking Machines
 license: Open
 intelligence_index: 12.4781698715401
 price_blended_usd_1m: 0.724
-output_speed_tps: 106.334227351475
+output_speed_tps: 101.35482774527
 context_window: 1000000
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Inkling (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-19
-timestamp: 2026-11-19T00:00:00Z
+updated: 2026-11-20
+timestamp: 2026-11-20T00:00:00Z
 ---
 
 # Inkling (xhigh)
@@ -37,7 +37,7 @@ Thinking Machines · Open · Large · 컨텍스트 1M · 종합지능 **12.47816
 - **약점**: 에이전트, 멀티모달
 
 ## 실용 지표
-`입력 $1.0 · 출력 $4.05 · 혼합 $0.724/1M · 106.334227351475 t/s · TTFT 1.48824960292351s · 1M ctx` · 가성비 17.2
+`입력 $1.0 · 출력 $4.05 · 혼합 $0.724/1M · 101.35482774527 t/s · TTFT 1.49256388654221s · 1M ctx` · 가성비 17.2
 
 ## 레이더 8축 (평균=50 기준선)
 

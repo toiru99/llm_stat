@@ -5,7 +5,7 @@ creator: MiniMax
 license: Open
 intelligence_index: 18.8789083859255
 price_blended_usd_1m: 0.222
-output_speed_tps: 91.0620584946077
+output_speed_tps: 83.7161868728253
 context_window: 1000000
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax-M3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-19
-timestamp: 2026-11-19T00:00:00Z
+updated: 2026-11-20
+timestamp: 2026-11-20T00:00:00Z
 ---
 
 # MiniMax-M3
@@ -37,7 +37,7 @@ MiniMax · Open · Large · 컨텍스트 1M · 종합지능 **18.8789083859255**
 - **약점**: 멀티모달, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 91.0620584946077 t/s · TTFT 2.31865749208037s · 1M ctx` · 가성비 85.0
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 83.7161868728253 t/s · TTFT 2.4534906940151s · 1M ctx` · 가성비 85.0
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 47.6040598289046
 price_blended_usd_1m: 1.47
-output_speed_tps: 57.5277530809586
+output_speed_tps: 58.0482591955666
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 4 Argon (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-19
-timestamp: 2026-11-19T00:00:00Z
+updated: 2026-11-20
+timestamp: 2026-11-20T00:00:00Z
 ---
 
 # Gemini 4 Argon (medium)
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **47.6040598
 - **약점**: 전문 지식, 지시 따르기
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.47/1M · 57.5277530809586 t/s · TTFT 15.0859658009836s · 1M ctx` · 가성비 32.4
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.47/1M · 58.0482591955666 t/s · TTFT 13.7955137161484s · 1M ctx` · 가성비 32.4
 
 ## 레이더 8축 (평균=50 기준선)
 

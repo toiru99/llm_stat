@@ -5,7 +5,7 @@ creator: StepFun
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.183
-output_speed_tps: 138.634739688018
+output_speed_tps: 134.405163904108
 context_window: 262144
 status: past
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Step 3.7 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-19
-timestamp: 2026-11-19T00:00:00Z
+updated: 2026-11-20
+timestamp: 2026-11-20T00:00:00Z
 ---
 
 # Step 3.7 Flash
@@ -37,7 +37,7 @@ StepFun · Open · Large · 컨텍스트 262k · 종합지능 **None** · ⚠️
 - **약점**: 에이전트, 추론
 
 ## 실용 지표
-`입력 $0.2 · 출력 $1.15 · 혼합 $0.183/1M · 138.634739688018 t/s · TTFT 2.72745057311669s · 262k ctx`
+`입력 $0.2 · 출력 $1.15 · 혼합 $0.183/1M · 134.405163904108 t/s · TTFT 2.67513968138896s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

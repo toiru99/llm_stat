@@ -4,8 +4,8 @@ title: Nemotron 3 Nano (non-reasoning)
 creator: NVIDIA
 license: Open
 intelligence_index: None
-price_blended_usd_1m: 0.065
-output_speed_tps: 155.35753713773
+price_blended_usd_1m: 0.058
+output_speed_tps: 155.1731379355
 context_window: 1000000
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3 Nano (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-19
-timestamp: 2026-11-19T00:00:00Z
+updated: 2026-11-20
+timestamp: 2026-11-20T00:00:00Z
 ---
 
 # Nemotron 3 Nano (non-reasoning)
@@ -37,7 +37,7 @@ NVIDIA · Open · Small · 컨텍스트 1M · 종합지능 **None**
 - **약점**: 전문 지식, 긴문맥
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.2 · 혼합 $0.065/1M · 155.35753713773 t/s · TTFT 0.873559079885681s · 1M ctx`
+`입력 $0.05 · 출력 $0.2 · 혼합 $0.058/1M · 155.1731379355 t/s · TTFT 1.46381048137656s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
