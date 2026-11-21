@@ -5,7 +5,7 @@ creator: Tencent
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.1105
-output_speed_tps: 82.288967804388
+output_speed_tps: 73.5532900734034
 context_window: 256000
 status: past
 size_class: Large
@@ -13,9 +13,9 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 71.8, z: 1.18, r: 67.7, estimated: false }  # 전문 지식
-  reasoning: { s: 50.1, z: 0.72, r: 60.7, estimated: false }  # 추론
+  reasoning: { s: 50.1, z: 0.71, r: 60.7, estimated: false }  # 추론
   coding: { s: 68.6, z: 0.97, r: 64.5, estimated: false }  # 코딩
-  agentic: { s: 54.6, z: 0.34, r: 55.1, estimated: false }  # 에이전트
+  agentic: { s: 54.6, z: 0.34, r: 55.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 89.1, z: 1.05, r: 65.8, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hy3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Hy3
@@ -37,16 +37,16 @@ Tencent · Open · Large · 컨텍스트 256k · 종합지능 **None** · ⚠️
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.14 · 출력 $0.58 · 혼합 $0.1105/1M · 82.288967804388 t/s · TTFT 4.52218305166576s · 256k ctx`
+`입력 $0.14 · 출력 $0.58 · 혼합 $0.1105/1M · 73.5532900734034 t/s · TTFT 4.97419226838151s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 67.7 | +1.18 | 실측 | [[gpqa-diamond]] 89.6969696969697%×0.4, [[humanitys-last-exam]] 33.4569045412419%×0.3 |
-| 추론 | 60.7 | +0.72 | 실측 | [[critpt]] 4.857142857142859%×1.0, [[gpqa-diamond]] 89.6969696969697%×1.0, [[humanitys-last-exam]] 33.4569045412419%×1.0 |
+| 추론 | 60.7 | +0.71 | 실측 | [[critpt]] 4.857142857142859%×1.0, [[gpqa-diamond]] 89.6969696969697%×1.0, [[humanitys-last-exam]] 33.4569045412419%×1.0 |
 | 코딩 | 64.5 | +0.97 | 실측 | [[scicode]] 48.6111111111111%×1.0 |
-| 에이전트 | 55.1 | +0.34 | 실측 | [[gdpval]] 1068.94%×1.0, [[tau3-banking]] 22.886597938144302%×1.0 |
+| 에이전트 | 55.0 | +0.34 | 실측 | [[gdpval]] 1068.94%×1.0, [[tau3-banking]] 22.886597938144302%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 65.8 | +1.05 | 실측 | [[aa-lcr]] 79.0%×1.0 |

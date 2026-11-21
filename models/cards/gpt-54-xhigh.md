@@ -5,14 +5,14 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 2.175
-output_speed_tps: 63.7791504917916
+output_speed_tps: 65.2720702428483
 context_window: 1050000
 status: past
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 79.3, z: 1.54, r: 73.1, estimated: false }  # 전문 지식
+  knowledge: { s: 79.3, z: 1.54, r: 73.2, estimated: false }  # 전문 지식
   reasoning: { s: 73.0, z: 1.84, r: 77.7, estimated: false }  # 추론
   coding: { s: 87.4, z: 1.61, r: 74.1, estimated: false }  # 코딩
   agentic: { s: 81.3, z: 1.26, r: 68.9, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.4 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # GPT-5.4 (xhigh)
@@ -37,13 +37,13 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 - **약점**: 긴문맥, 멀티모달
 
 ## 실용 지표
-`입력 $2.5 · 출력 $15.0 · 혼합 $2.175/1M · 63.7791504917916 t/s · TTFT 108.262675266877s · 1M ctx`
+`입력 $2.5 · 출력 $15.0 · 혼합 $2.175/1M · 65.2720702428483 t/s · TTFT 91.5960807314407s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 73.1 | +1.54 | 실측 | [[gpqa-diamond]] 92.020202020202%×0.4, [[humanitys-last-exam]] 43.7442075996293%×0.3 |
+| 전문 지식 | 73.2 | +1.54 | 실측 | [[gpqa-diamond]] 92.020202020202%×0.4, [[humanitys-last-exam]] 43.7442075996293%×0.3 |
 | 추론 | 77.7 | +1.84 | 실측 | [[critpt]] 23.42857143%×1.0, [[gpqa-diamond]] 92.020202020202%×1.0, [[humanitys-last-exam]] 43.7442075996293%×1.0 |
 | 코딩 | 74.1 | +1.61 | 실측 | [[terminal-bench]] 57.5757575757576%×0.5 |
 | 에이전트 | 68.9 | +1.26 | 실측 | [[gdpval]] 1255.65%×1.0, [[tau2-bench]] 87.1345029239766%×1.0, [[tau3-banking]] 39.587628865979404%×1.0, [[terminal-bench]] 57.5757575757576%×1.0 |

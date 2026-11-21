@@ -12,8 +12,8 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 52.0, z: 0.23, r: 53.4, estimated: false }  # 전문 지식
-  reasoning: { s: 33.1, z: -0.12, r: 48.1, estimated: false }  # 추론
+  knowledge: { s: 52.0, z: 0.22, r: 53.4, estimated: false }  # 전문 지식
+  reasoning: { s: 33.1, z: -0.13, r: 48.1, estimated: false }  # 추론
   coding: { s: 37.9, z: -0.07, r: 48.9, estimated: false }  # 코딩
   agentic: { s: 61.3, z: 0.57, r: 58.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — ERNIE 5.0 Thinking Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # ERNIE 5.0 Thinking Preview
@@ -43,8 +43,8 @@ Baidu · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 53.4 | +0.23 | 실측 | [[gpqa-diamond]] 77.6767676767677%×0.4, [[humanitys-last-exam]] 13.253012048192799%×0.3 |
-| 추론 | 48.1 | -0.12 | 실측 | [[critpt]] 1.42857142857143%×1.0, [[gpqa-diamond]] 77.6767676767677%×1.0, [[humanitys-last-exam]] 13.253012048192799%×1.0 |
+| 전문 지식 | 53.4 | +0.22 | 실측 | [[gpqa-diamond]] 77.6767676767677%×0.4, [[humanitys-last-exam]] 13.253012048192799%×0.3 |
+| 추론 | 48.1 | -0.13 | 실측 | [[critpt]] 1.42857142857143%×1.0, [[gpqa-diamond]] 77.6767676767677%×1.0, [[humanitys-last-exam]] 13.253012048192799%×1.0 |
 | 코딩 | 48.9 | -0.07 | 실측 | [[terminal-bench]] 25.0%×0.5 |
 | 에이전트 | 58.5 | +0.57 | 실측 | [[tau2-bench]] 83.9181286549707%×1.0, [[terminal-bench]] 25.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

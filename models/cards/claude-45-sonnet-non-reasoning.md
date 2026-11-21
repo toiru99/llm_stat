@@ -5,16 +5,16 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 2.31
-output_speed_tps: 53.3203784015845
+output_speed_tps: 52.0799520704402
 context_window: 1000000
 status: past
 size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 45.2, z: -0.1, r: 48.5, estimated: false }  # 전문 지식
+  knowledge: { s: 45.2, z: -0.1, r: 48.4, estimated: false }  # 전문 지식
   reasoning: { s: 27.1, z: -0.42, r: 43.7, estimated: false }  # 추론
-  coding: { s: 43.7, z: 0.12, r: 51.9, estimated: false }  # 코딩
+  coding: { s: 43.7, z: 0.12, r: 51.8, estimated: false }  # 코딩
   agentic: { s: 57.4, z: 0.43, r: 56.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 67.6, z: -0.19, r: 47.1, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 4.5 Sonnet (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Claude 4.5 Sonnet (non-reasoning)
@@ -37,15 +37,15 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 - **약점**: 추론, 지시 따르기
 
 ## 실용 지표
-`입력 $3.0 · 출력 $15.0 · 혼합 $2.31/1M · 53.3203784015845 t/s · TTFT 1.60558670585001s · 1M ctx`
+`입력 $3.0 · 출력 $15.0 · 혼합 $2.31/1M · 52.0799520704402 t/s · TTFT 1.47953641947777s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 48.5 | -0.1 | 실측 | [[gpqa-diamond]] 72.72727272727269%×0.4, [[humanitys-last-exam]] 7.228915662650599%×0.3 |
+| 전문 지식 | 48.4 | -0.1 | 실측 | [[gpqa-diamond]] 72.72727272727269%×0.4, [[humanitys-last-exam]] 7.228915662650599%×0.3 |
 | 추론 | 43.7 | -0.42 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 72.72727272727269%×1.0, [[humanitys-last-exam]] 7.228915662650599%×1.0 |
-| 코딩 | 51.9 | +0.12 | 실측 | [[terminal-bench]] 28.7878787878788%×0.5 |
+| 코딩 | 51.8 | +0.12 | 실측 | [[terminal-bench]] 28.7878787878788%×0.5 |
 | 에이전트 | 56.5 | +0.43 | 실측 | [[tau2-bench]] 70.4678362573099%×1.0, [[terminal-bench]] 28.7878787878788%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 47.1 | -0.19 | 실측 | [[mmmu-pro]] 65.2023121387283%×1.0 |

@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 48.2081024960691
 price_blended_usd_1m: 2.94
-output_speed_tps: 106.001848821747
+output_speed_tps: 107.909781164034
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -14,8 +14,8 @@ is_reasoning: true
 radar:
   knowledge: { s: 73.3, z: 1.25, r: 68.8, estimated: false }  # 전문 지식
   reasoning: { s: 75.4, z: 1.97, r: 79.5, estimated: false }  # 추론
-  coding: { s: 86.1, z: 1.56, r: 73.5, estimated: false }  # 코딩
-  agentic: { s: 87.8, z: 1.49, r: 72.3, estimated: false }  # 에이전트
+  coding: { s: 86.1, z: 1.56, r: 73.4, estimated: false }  # 코딩
+  agentic: { s: 87.8, z: 1.48, r: 72.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 95.0, z: 1.2, r: 68.1, estimated: false }  # 멀티모달
   long_context: { s: 95.1, z: 1.23, r: 68.5, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 5.5 (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Claude Opus 5.5 (medium)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **48.2081
 - **약점**: 멀티모달, 지시 따르기
 
 ## 실용 지표
-`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 106.001848821747 t/s · TTFT 14.7793983595606s · 1M ctx` · 가성비 16.4
+`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 107.909781164034 t/s · TTFT 14.7975055472021s · 1M ctx` · 가성비 16.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,8 +45,8 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **48.2081
 |---|---|---|---|---|
 | 전문 지식 | 68.8 | +1.25 | 실측 | [[humanitys-last-exam]] 54.72659870250231%×0.3 |
 | 추론 | 79.5 | +1.97 | 실측 | [[critpt]] 27.7142857142857%×1.0, [[humanitys-last-exam]] 54.72659870250231%×1.0 |
-| 코딩 | 73.5 | +1.56 | 실측 | [[scicode]] 59.2592592592593%×1.0 |
-| 에이전트 | 72.3 | +1.49 | 실측 | [[gdpval]] 1590.15%×1.0 |
+| 코딩 | 73.4 | +1.56 | 실측 | [[scicode]] 59.2592592592593%×1.0 |
+| 에이전트 | 72.3 | +1.48 | 실측 | [[gdpval]] 1590.15%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 68.1 | +1.2 | 실측 | [[mmmu-pro]] 85.72254335260119%×1.0 |
 | 긴문맥 | 68.5 | +1.23 | 실측 | [[aa-lcr]] 84.3333333333333%×1.0 |

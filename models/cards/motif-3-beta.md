@@ -12,7 +12,7 @@ size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 73.9, z: 1.28, r: 69.2, estimated: false }  # 전문 지식
+  knowledge: { s: 73.9, z: 1.28, r: 69.3, estimated: false }  # 전문 지식
   reasoning: { s: 53.2, z: 0.87, r: 63.0, estimated: false }  # 추론
   coding: { s: 66.5, z: 0.9, r: 63.5, estimated: true }  # 코딩
   agentic: { s: 66.6, z: 0.75, r: 61.3, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Motif 3 (Beta)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Motif 3 (Beta)
@@ -43,7 +43,7 @@ Motif Technologies · Proprietary · Large · 컨텍스트 262k · 종합지능 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 69.2 | +1.28 | 실측 | [[gpqa-diamond]] 86.8686868686869%×0.4, [[humanitys-last-exam]] 40.361445783132496%×0.3 |
+| 전문 지식 | 69.3 | +1.28 | 실측 | [[gpqa-diamond]] 86.8686868686869%×0.4, [[humanitys-last-exam]] 40.361445783132496%×0.3 |
 | 추론 | 63.0 | +0.87 | 실측 | [[critpt]] 6.0%×1.0, [[gpqa-diamond]] 86.8686868686869%×1.0, [[humanitys-last-exam]] 40.361445783132496%×1.0 |
 | 코딩 | 63.5 | +0.9 | 추정 | (추정) |
 | 에이전트 | 61.3 | +0.75 | 실측 | [[gdpval]] 1109.16%×1.0 |

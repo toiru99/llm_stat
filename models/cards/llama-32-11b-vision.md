@@ -12,7 +12,7 @@ size_class: Small
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 10.8, z: -1.76, r: 23.5, estimated: false }  # 전문 지식
+  knowledge: { s: 10.8, z: -1.77, r: 23.5, estimated: false }  # 전문 지식
   reasoning: { s: 6.8, z: -1.42, r: 28.7, estimated: false }  # 추론
   coding: { s: 1.1, z: -1.32, r: 30.2, estimated: false }  # 코딩
   agentic: { s: 7.9, z: -1.28, r: 30.8, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.2 11B (Vision)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Llama 3.2 11B (Vision)
@@ -43,7 +43,7 @@ Meta · Open · Small · 컨텍스트 128k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 23.5 | -1.76 | 실측 | [[gpqa-diamond]] 22.1212121212121%×0.4, [[humanitys-last-exam]] 5.53%×0.3 |
+| 전문 지식 | 23.5 | -1.77 | 실측 | [[gpqa-diamond]] 22.1212121212121%×0.4, [[humanitys-last-exam]] 5.53%×0.3 |
 | 추론 | 28.7 | -1.42 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 22.1212121212121%×1.0, [[humanitys-last-exam]] 5.53%×1.0 |
 | 코딩 | 30.2 | -1.32 | 실측 | [[terminal-bench]] 0.757575757575758%×0.5 |
 | 에이전트 | 30.8 | -1.28 | 실측 | [[tau2-bench]] 14.619883040935699%×1.0, [[terminal-bench]] 0.757575757575758%×1.0 |

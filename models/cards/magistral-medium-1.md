@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 43.5, z: -0.18, r: 47.2, estimated: false }  # 전문 지식
   reasoning: { s: 26.6, z: -0.44, r: 43.4, estimated: false }  # 추론
-  coding: { s: 13.8, z: -0.89, r: 36.7, estimated: false }  # 코딩
+  coding: { s: 13.8, z: -0.89, r: 36.6, estimated: false }  # 코딩
   agentic: { s: 18.5, z: -0.91, r: 36.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Magistral Medium 1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Magistral Medium 1
@@ -45,7 +45,7 @@ Mistral · Proprietary · Unknown · 컨텍스트 40k · 종합지능 **None** �
 |---|---|---|---|---|
 | 전문 지식 | 47.2 | -0.18 | 실측 | [[gpqa-diamond]] 67.8787878787879%×0.4, [[humanitys-last-exam]] 9.82391102873031%×0.3 |
 | 추론 | 43.4 | -0.44 | 실측 | [[critpt]] 0.28571428571428603%×1.0, [[gpqa-diamond]] 67.8787878787879%×1.0, [[humanitys-last-exam]] 9.82391102873031%×1.0 |
-| 코딩 | 36.7 | -0.89 | 실측 | [[terminal-bench]] 9.09090909090909%×0.5 |
+| 코딩 | 36.6 | -0.89 | 실측 | [[terminal-bench]] 9.09090909090909%×0.5 |
 | 에이전트 | 36.3 | -0.91 | 실측 | [[tau2-bench]] 23.0994152046784%×1.0, [[terminal-bench]] 9.09090909090909%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

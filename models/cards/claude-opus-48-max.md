@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 3.85
-output_speed_tps: 83.8751626711172
+output_speed_tps: 84.5961579686928
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 82.2, z: 1.68, r: 75.2, estimated: false }  # 전문 지식
   reasoning: { s: 72.8, z: 1.84, r: 77.6, estimated: false }  # 추론
-  coding: { s: 81.6, z: 1.41, r: 71.2, estimated: false }  # 코딩
+  coding: { s: 81.6, z: 1.41, r: 71.1, estimated: false }  # 코딩
   agentic: { s: 83.1, z: 1.32, r: 69.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 4.8 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Claude Opus 4.8 (max)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $5.0 · 출력 $25.0 · 혼합 $3.85/1M · 83.8751626711172 t/s · TTFT 27.8337127153501s · 1M ctx`
+`입력 $5.0 · 출력 $25.0 · 혼합 $3.85/1M · 84.5961579686928 t/s · TTFT 25.0206442332s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 |---|---|---|---|---|
 | 전문 지식 | 75.2 | +1.68 | 실측 | [[gpqa-diamond]] 92.020202020202%×0.4, [[humanitys-last-exam]] 48.6561631139944%×0.3 |
 | 추론 | 77.6 | +1.84 | 실측 | [[critpt]] 20.8571428571429%×1.0, [[gpqa-diamond]] 92.020202020202%×1.0, [[humanitys-last-exam]] 48.6561631139944%×1.0 |
-| 코딩 | 71.2 | +1.41 | 실측 | [[scicode]] 54.398148148148195%×1.0, [[terminal-bench]] 58.3333333333333%×0.5 |
+| 코딩 | 71.1 | +1.41 | 실측 | [[scicode]] 54.398148148148195%×1.0, [[terminal-bench]] 58.3333333333333%×0.5 |
 | 에이전트 | 69.8 | +1.32 | 실측 | [[gdpval]] 1461.41%×1.0, [[tau2-bench]] 94.4444444444445%×1.0, [[tau3-banking]] 34.226804123711304%×1.0, [[terminal-bench]] 58.3333333333333%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

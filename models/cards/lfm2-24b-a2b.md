@@ -12,8 +12,8 @@ size_class: Small
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 26.7, z: -1.0, r: 35.1, estimated: false }  # 전문 지식
-  reasoning: { s: 15.9, z: -0.97, r: 35.5, estimated: false }  # 추론
+  knowledge: { s: 26.7, z: -1.0, r: 35.0, estimated: false }  # 전문 지식
+  reasoning: { s: 15.9, z: -0.97, r: 35.4, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.36, r: 29.6, estimated: false }  # 코딩
   agentic: { s: 5.6, z: -1.36, r: 29.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — LFM2 24B A2B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # LFM2 24B A2B
@@ -43,8 +43,8 @@ Liquid AI · Open · Small · 컨텍스트 32k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 35.1 | -1.0 | 실측 | [[gpqa-diamond]] 47.3737373737374%×0.4, [[humanitys-last-exam]] 4.21686746987952%×0.3 |
-| 추론 | 35.5 | -0.97 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 47.3737373737374%×1.0, [[humanitys-last-exam]] 4.21686746987952%×1.0 |
+| 전문 지식 | 35.0 | -1.0 | 실측 | [[gpqa-diamond]] 47.3737373737374%×0.4, [[humanitys-last-exam]] 4.21686746987952%×0.3 |
+| 추론 | 35.4 | -0.97 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 47.3737373737374%×1.0, [[humanitys-last-exam]] 4.21686746987952%×1.0 |
 | 코딩 | 29.6 | -1.36 | 실측 | [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 29.6 | -1.36 | 실측 | [[tau2-bench]] 11.1111111111111%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

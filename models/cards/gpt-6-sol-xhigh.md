@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 1.54
-output_speed_tps: 104.934419514509
+output_speed_tps: 106.688459952347
 context_window: 1050000
 status: past
 size_class: Unknown
@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 61.8, z: 0.7, r: 60.4, estimated: false }  # 전문 지식
   reasoning: { s: 70.1, z: 1.7, r: 75.5, estimated: false }  # 추론
-  coding: { s: 79.2, z: 1.33, r: 70.0, estimated: false }  # 코딩
+  coding: { s: 79.2, z: 1.33, r: 69.9, estimated: false }  # 코딩
   agentic: { s: 82.4, z: 1.3, r: 69.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 90.7, z: 0.99, r: 64.8, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6 Sol (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # GPT-6 Sol (xhigh)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 - **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 104.934419514509 t/s · TTFT 14.4259582048666s · 1M ctx`
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 106.688459952347 t/s · TTFT 15.20509689392s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 |---|---|---|---|---|
 | 전문 지식 | 60.4 | +0.7 | 실측 | [[humanitys-last-exam]] 46.2928637627433%×0.3 |
 | 추론 | 75.5 | +1.7 | 실측 | [[critpt]] 28.000000000000004%×1.0, [[humanitys-last-exam]] 46.2928637627433%×1.0 |
-| 코딩 | 70.0 | +1.33 | 실측 | [[scicode]] 55.0925925925926%×1.0 |
+| 코딩 | 69.9 | +1.33 | 실측 | [[scicode]] 55.0925925925926%×1.0 |
 | 에이전트 | 69.4 | +1.3 | 실측 | [[gdpval]] 1465.98%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 64.8 | +0.99 | 실측 | [[mmmu-pro]] 82.5433526011561%×1.0 |

@@ -12,20 +12,20 @@ size_class: Small
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 10.9, z: -1.76, r: 23.7, estimated: false }  # 전문 지식
+  knowledge: { s: 10.9, z: -1.76, r: 23.6, estimated: false }  # 전문 지식
   reasoning: { s: 10.2, z: -1.25, r: 31.2, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.36, r: 29.6, estimated: true }  # 코딩
-  agentic: { s: 8.6, z: -1.25, r: 31.2, estimated: true }  # 에이전트
+  agentic: { s: 8.6, z: -1.26, r: 31.2, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 1.6, z: -1.54, r: 26.8, estimated: true }  # 긴문맥
-  instruction: { s: 11.3, z: -1.78, r: 23.3, estimated: true }  # 지시 따르기
+  long_context: { s: 1.6, z: -1.55, r: 26.8, estimated: true }  # 긴문맥
+  instruction: { s: 11.3, z: -1.78, r: 23.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — OpenChat 3.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # OpenChat 3.5
@@ -43,14 +43,14 @@ OpenChat · Open · Small · 컨텍스트 8k · 종합지능 **None** · ⚠️ 
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 23.7 | -1.76 | 실측 | [[gpqa-diamond]] 23.030303030303003%×0.4, [[humanitys-last-exam]] 4.79%×0.3 |
+| 전문 지식 | 23.6 | -1.76 | 실측 | [[gpqa-diamond]] 23.030303030303003%×0.4, [[humanitys-last-exam]] 4.79%×0.3 |
 | 추론 | 31.2 | -1.25 | 실측 | [[gpqa-diamond]] 23.030303030303003%×1.0, [[humanitys-last-exam]] 4.79%×1.0 |
 | 코딩 | 29.6 | -1.36 | 추정 | (추정) |
-| 에이전트 | 31.2 | -1.25 | 추정 | (추정) |
+| 에이전트 | 31.2 | -1.26 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 26.8 | -1.54 | 추정 | (추정) |
-| 지시 따르기 | 23.3 | -1.78 | 추정 | (추정) |
+| 긴문맥 | 26.8 | -1.55 | 추정 | (추정) |
+| 지시 따르기 | 23.2 | -1.78 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

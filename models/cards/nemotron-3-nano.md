@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.065
-output_speed_tps: 166.798760601333
+output_speed_tps: 157.147837505997
 context_window: 1000000
 status: current
 size_class: Small
@@ -14,8 +14,8 @@ is_reasoning: true
 radar:
   knowledge: { s: 49.6, z: 0.11, r: 51.6, estimated: false }  # 전문 지식
   reasoning: { s: 30.9, z: -0.23, r: 46.5, estimated: false }  # 추론
-  coding: { s: 32.8, z: -0.24, r: 46.3, estimated: false }  # 코딩
-  agentic: { s: 25.6, z: -0.66, r: 40.0, estimated: false }  # 에이전트
+  coding: { s: 32.8, z: -0.25, r: 46.3, estimated: false }  # 코딩
+  agentic: { s: 25.6, z: -0.67, r: 40.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 42.9, z: -0.32, r: 45.2, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3 Nano
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Nemotron 3 Nano
@@ -37,7 +37,7 @@ NVIDIA · Open · Small · 컨텍스트 1M · 종합지능 **None**
 - **약점**: 긴문맥, 에이전트
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.2 · 혼합 $0.065/1M · 166.798760601333 t/s · TTFT 1.71422587478535s · 1M ctx`
+`입력 $0.05 · 출력 $0.2 · 혼합 $0.065/1M · 157.147837505997 t/s · TTFT 1.34839178134253s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,8 +45,8 @@ NVIDIA · Open · Small · 컨텍스트 1M · 종합지능 **None**
 |---|---|---|---|---|
 | 전문 지식 | 51.6 | +0.11 | 실측 | [[gpqa-diamond]] 75.6565656565657%×0.4, [[humanitys-last-exam]] 11.3994439295644%×0.3 |
 | 추론 | 46.5 | -0.23 | 실측 | [[critpt]] 0.857142857142857%×1.0, [[gpqa-diamond]] 75.6565656565657%×1.0, [[humanitys-last-exam]] 11.3994439295644%×1.0 |
-| 코딩 | 46.3 | -0.24 | 실측 | [[scicode]] 30.555555555555603%×1.0, [[terminal-bench]] 13.6363636363636%×0.5 |
-| 에이전트 | 40.0 | -0.66 | 실측 | [[gdpval]] 262.0%×1.0, [[tau2-bench]] 40.935672514619895%×1.0, [[tau3-banking]] 5.97938144329897%×1.0, [[terminal-bench]] 13.6363636363636%×1.0 |
+| 코딩 | 46.3 | -0.25 | 실측 | [[scicode]] 30.555555555555603%×1.0, [[terminal-bench]] 13.6363636363636%×0.5 |
+| 에이전트 | 40.0 | -0.67 | 실측 | [[gdpval]] 262.0%×1.0, [[tau2-bench]] 40.935672514619895%×1.0, [[tau3-banking]] 5.97938144329897%×1.0, [[terminal-bench]] 13.6363636363636%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 45.2 | -0.32 | 실측 | [[aa-lcr]] 38.0%×1.0 |

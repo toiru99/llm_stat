@@ -5,7 +5,7 @@ creator: StepFun
 license: Open
 intelligence_index: 28.5283090216016
 price_blended_usd_1m: 0.54
-output_speed_tps: 142.375111888449
+output_speed_tps: 135.839147547702
 context_window: 1000000
 status: current
 size_class: Large
@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 62.0, z: 0.71, r: 60.6, estimated: false }  # 전문 지식
   reasoning: { s: 60.2, z: 1.21, r: 68.2, estimated: false }  # 추론
-  coding: { s: 85.5, z: 1.54, r: 73.2, estimated: false }  # 코딩
+  coding: { s: 85.5, z: 1.54, r: 73.1, estimated: false }  # 코딩
   agentic: { s: 87.9, z: 1.49, r: 72.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 82.5, z: 0.57, r: 58.5, estimated: false }  # 멀티모달
-  long_context: { s: 99.6, z: 1.37, r: 70.5, estimated: false }  # 긴문맥
+  long_context: { s: 99.6, z: 1.36, r: 70.5, estimated: false }  # 긴문맥
   instruction: { s: 68.1, z: 0.59, r: 58.9, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Step 5 Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Step 5 Preview
@@ -37,7 +37,7 @@ StepFun · Open · Large · 컨텍스트 1M · 종합지능 **28.5283090216016**
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $1.0 · 출력 $2.7 · 혼합 $0.54/1M · 142.375111888449 t/s · TTFT 4.46226836721187s · 1M ctx` · 가성비 52.8
+`입력 $1.0 · 출력 $2.7 · 혼합 $0.54/1M · 135.839147547702 t/s · TTFT 8.04238748428126s · 1M ctx` · 가성비 52.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,11 +45,11 @@ StepFun · Open · Large · 컨텍스트 1M · 종합지능 **28.5283090216016**
 |---|---|---|---|---|
 | 전문 지식 | 60.6 | +0.71 | 실측 | [[humanitys-last-exam]] 46.4782205746061%×0.3 |
 | 추론 | 68.2 | +1.21 | 실측 | [[critpt]] 20.8571428571429%×1.0, [[humanitys-last-exam]] 46.4782205746061%×1.0 |
-| 코딩 | 73.2 | +1.54 | 실측 | [[scicode]] 58.912037037037%×1.0 |
+| 코딩 | 73.1 | +1.54 | 실측 | [[scicode]] 58.912037037037%×1.0 |
 | 에이전트 | 72.3 | +1.49 | 실측 | [[gdpval]] 1590.7%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 58.5 | +0.57 | 실측 | [[mmmu-pro]] 76.35838150289021%×1.0 |
-| 긴문맥 | 70.5 | +1.37 | 실측 | [[aa-lcr]] 88.3333333333333%×1.0 |
+| 긴문맥 | 70.5 | +1.36 | 실측 | [[aa-lcr]] 88.3333333333333%×1.0 |
 | 지시 따르기 | 58.9 | +0.59 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

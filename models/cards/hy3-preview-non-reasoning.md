@@ -12,7 +12,7 @@ size_class: Large
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 45.4, z: -0.09, r: 48.6, estimated: false }  # 전문 지식
+  knowledge: { s: 45.4, z: -0.1, r: 48.6, estimated: false }  # 전문 지식
   reasoning: { s: 27.4, z: -0.4, r: 43.9, estimated: false }  # 추론
   coding: { s: 48.3, z: 0.28, r: 54.2, estimated: false }  # 코딩
   agentic: { s: 58.2, z: 0.46, r: 56.9, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hy3-preview (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Hy3-preview (non-reasoning)
@@ -43,7 +43,7 @@ Tencent · Open · Large · 컨텍스트 256k · 종합지능 **None** · ⚠️
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 48.6 | -0.09 | 실측 | [[gpqa-diamond]] 73.23232323232321%×0.4, [[humanitys-last-exam]] 6.95088044485635%×0.3 |
+| 전문 지식 | 48.6 | -0.1 | 실측 | [[gpqa-diamond]] 73.23232323232321%×0.4, [[humanitys-last-exam]] 6.95088044485635%×0.3 |
 | 추론 | 43.9 | -0.4 | 실측 | [[critpt]] 0.28571428571428603%×1.0, [[gpqa-diamond]] 73.23232323232321%×1.0, [[humanitys-last-exam]] 6.95088044485635%×1.0 |
 | 코딩 | 54.2 | +0.28 | 실측 | [[terminal-bench]] 31.818181818181802%×0.5 |
 | 에이전트 | 56.9 | +0.46 | 실측 | [[tau2-bench]] 67.5438596491228%×1.0, [[terminal-bench]] 31.818181818181802%×1.0 |

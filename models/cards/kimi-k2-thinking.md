@@ -5,7 +5,7 @@ creator: Kimi
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.79
-output_speed_tps: 117.047406578098
+output_speed_tps: 113.324755852109
 context_window: 256000
 status: past
 size_class: Large
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 62.3, z: 0.72, r: 60.8, estimated: false }  # 전문 지식
   reasoning: { s: 41.3, z: 0.28, r: 54.2, estimated: false }  # 추론
   coding: { s: 47.1, z: 0.24, r: 53.6, estimated: false }  # 코딩
-  agentic: { s: 70.5, z: 0.89, r: 63.3, estimated: false }  # 에이전트
+  agentic: { s: 70.5, z: 0.88, r: 63.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 81.2, z: 0.82, r: 62.3, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2 Thinking
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Kimi K2 Thinking
@@ -37,7 +37,7 @@ Kimi · Open · Large · 컨텍스트 256k · 종합지능 **None** · ⚠️ pa
 - **약점**: 추론, 코딩
 
 ## 실용 지표
-`입력 $0.6 · 출력 $2.5 · 혼합 $0.79/1M · 117.047406578098 t/s · TTFT 3.17048110851117s · 256k ctx`
+`입력 $0.6 · 출력 $2.5 · 혼합 $0.79/1M · 113.324755852109 t/s · TTFT 3.05780384545006s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Kimi · Open · Large · 컨텍스트 256k · 종합지능 **None** · ⚠️ pa
 | 전문 지식 | 60.8 | +0.72 | 실측 | [[gpqa-diamond]] 83.8383838383838%×0.4, [[humanitys-last-exam]] 23.8183503243744%×0.3 |
 | 추론 | 54.2 | +0.28 | 실측 | [[critpt]] 2.57142857142857%×1.0, [[gpqa-diamond]] 83.8383838383838%×1.0, [[humanitys-last-exam]] 23.8183503243744%×1.0 |
 | 코딩 | 53.6 | +0.24 | 실측 | [[terminal-bench]] 31.060606060606098%×0.5 |
-| 에이전트 | 63.3 | +0.89 | 실측 | [[tau2-bench]] 92.9824561403509%×1.0, [[terminal-bench]] 31.060606060606098%×1.0 |
+| 에이전트 | 63.3 | +0.88 | 실측 | [[tau2-bench]] 92.9824561403509%×1.0, [[terminal-bench]] 31.060606060606098%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 62.3 | +0.82 | 실측 | [[aa-lcr]] 72.0%×1.0 |

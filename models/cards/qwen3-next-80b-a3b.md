@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.193
-output_speed_tps: 90.8035811070399
+output_speed_tps: 100.371581154773
 context_window: 262144
 status: current
 size_class: Medium
@@ -13,9 +13,9 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 46.2, z: -0.06, r: 49.2, estimated: false }  # 전문 지식
-  reasoning: { s: 27.7, z: -0.39, r: 44.2, estimated: false }  # 추론
+  reasoning: { s: 27.7, z: -0.39, r: 44.1, estimated: false }  # 추론
   coding: { s: 11.5, z: -0.97, r: 35.5, estimated: false }  # 코딩
-  agentic: { s: 16.7, z: -0.98, r: 35.4, estimated: false }  # 에이전트
+  agentic: { s: 16.7, z: -0.98, r: 35.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 59.4, z: 0.17, r: 52.6, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Next 80B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Qwen3 Next 80B A3B
@@ -37,16 +37,16 @@ Alibaba · Open · Medium · 컨텍스트 262k · 종합지능 **None**
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.1 · 출력 $1.1 · 혼합 $0.193/1M · 90.8035811070399 t/s · TTFT 1.20490117907332s · 262k ctx`
+`입력 $0.1 · 출력 $1.1 · 혼합 $0.193/1M · 100.371581154773 t/s · TTFT 1.26459729433888s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 49.2 | -0.06 | 실측 | [[gpqa-diamond]] 73.8383838383838%×0.4, [[humanitys-last-exam]] 7.645968489341979%×0.3 |
-| 추론 | 44.2 | -0.39 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.8383838383838%×1.0, [[humanitys-last-exam]] 7.645968489341979%×1.0 |
+| 추론 | 44.1 | -0.39 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.8383838383838%×1.0, [[humanitys-last-exam]] 7.645968489341979%×1.0 |
 | 코딩 | 35.5 | -0.97 | 실측 | [[terminal-bench]] 7.57575757575758%×0.5 |
-| 에이전트 | 35.4 | -0.98 | 실측 | [[tau2-bench]] 21.6374269005848%×1.0, [[terminal-bench]] 7.57575757575758%×1.0 |
+| 에이전트 | 35.3 | -0.98 | 실측 | [[tau2-bench]] 21.6374269005848%×1.0, [[terminal-bench]] 7.57575757575758%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 52.6 | +0.17 | 실측 | [[aa-lcr]] 52.66666666666669%×1.0 |

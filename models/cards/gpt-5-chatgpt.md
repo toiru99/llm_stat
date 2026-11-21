@@ -14,8 +14,8 @@ is_reasoning: false
 radar:
   knowledge: { s: 42.1, z: -0.25, r: 46.2, estimated: false }  # 전문 지식
   reasoning: { s: 37.8, z: 0.11, r: 51.6, estimated: false }  # 추론
-  coding: { s: 19.5, z: -0.69, r: 39.6, estimated: false }  # 코딩
-  agentic: { s: 9.8, z: -1.21, r: 31.8, estimated: false }  # 에이전트
+  coding: { s: 19.5, z: -0.7, r: 39.6, estimated: false }  # 코딩
+  agentic: { s: 9.8, z: -1.22, r: 31.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 73.3, z: 0.58, r: 58.8, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5 (ChatGPT)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # GPT-5 (ChatGPT)
@@ -45,8 +45,8 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None** �
 |---|---|---|---|---|
 | 전문 지식 | 46.2 | -0.25 | 실측 | [[gpqa-diamond]] 68.58585858585859%×0.4, [[humanitys-last-exam]] 6.62650602409639%×0.3 |
 | 추론 | 51.6 | +0.11 | 실측 | [[gpqa-diamond]] 68.58585858585859%×1.0, [[humanitys-last-exam]] 6.62650602409639%×1.0 |
-| 코딩 | 39.6 | -0.69 | 실측 | [[terminal-bench]] 12.8787878787879%×0.5 |
-| 에이전트 | 31.8 | -1.21 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 12.8787878787879%×1.0 |
+| 코딩 | 39.6 | -0.7 | 실측 | [[terminal-bench]] 12.8787878787879%×0.5 |
+| 에이전트 | 31.8 | -1.22 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 12.8787878787879%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 58.8 | +0.58 | 실측 | [[aa-lcr]] 65.0%×1.0 |

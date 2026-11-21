@@ -1,10 +1,10 @@
 # 모델 (Models)
 
-`scripts/build_cards.py` 자동 생성 · 데이터 2026-11-20 · 제작사 61곳 · current 287 + past 476 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
+`scripts/build_cards.py` 자동 생성 · 데이터 2026-11-21 · 제작사 61곳 · current 288 + past 476 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
 
 - 레이더 축·방법론: [radar-spec.md](radar-spec.md) · 설정: [../config.toml](../config.toml)
 
-## 모델 목록 (종합지능 내림차순, 763개)
+## 모델 목록 (종합지능 내림차순, 764개)
 
 * [Claude Fable 5.2 (max)](cards/claude-fable-52-max.md) - 종합지능 64.563595756626
 * [Claude Fable 5.2 (xhigh)](cards/claude-fable-52-xhigh.md) - 종합지능 62.2167392403357
@@ -114,6 +114,7 @@
 * [GPT-6 Luna (high)](cards/gpt-6-luna-high.md) - 종합지능 21.4290170864582
 * [DeepSeek V4 Pro 0813 (high)](cards/deepseek-v4-pro-0813-high.md) - 종합지능 20.799409628237
 * [Nanbeige4.3-33B](cards/nanbeige43-33b.md) - 종합지능 20.4071119588083
+* [Inkling 2 Mini](cards/inkling-2-mini.md) - 종합지능 20.1315214698783
 * [Qwen3.8 27B (xhigh)](cards/qwen38-27b-xhigh.md) - 종합지능 20.1068756031705
 * [JT-4.1 Flash 236B A21B](cards/jt-41-flash-236b-a21b.md) - 종합지능 18.952876906667
 * [MiniMax-M3](cards/minimax-m3.md) - 종합지능 18.8789083859255

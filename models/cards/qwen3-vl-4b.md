@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 19.5, z: -1.34, r: 29.9, estimated: false }  # 전문 지식
   reasoning: { s: 11.7, z: -1.18, r: 32.3, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.36, r: 29.6, estimated: false }  # 코딩
-  agentic: { s: 11.8, z: -1.14, r: 32.8, estimated: false }  # 에이전트
+  agentic: { s: 11.8, z: -1.15, r: 32.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 39.2, z: -1.65, r: 25.3, estimated: false }  # 멀티모달
-  long_context: { s: 15.8, z: -1.12, r: 33.2, estimated: false }  # 긴문맥
-  instruction: { s: 27.7, z: -1.09, r: 33.6, estimated: false }  # 지시 따르기
+  long_context: { s: 15.8, z: -1.12, r: 33.1, estimated: false }  # 긴문맥
+  instruction: { s: 27.7, z: -1.1, r: 33.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 VL 4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Qwen3 VL 4B
@@ -46,11 +46,11 @@ Alibaba · Open · Tiny · 컨텍스트 256k · 종합지능 **None** · ⚠️ 
 | 전문 지식 | 29.9 | -1.34 | 실측 | [[gpqa-diamond]] 37.0707070707071%×0.4, [[humanitys-last-exam]] 3.6144578313252995%×0.3 |
 | 추론 | 32.3 | -1.18 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 37.0707070707071%×1.0, [[humanitys-last-exam]] 3.6144578313252995%×1.0 |
 | 코딩 | 29.6 | -1.36 | 실측 | [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 32.8 | -1.14 | 실측 | [[tau2-bench]] 23.3918128654971%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 에이전트 | 32.8 | -1.15 | 실측 | [[tau2-bench]] 23.3918128654971%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 25.3 | -1.65 | 실측 | [[mmmu-pro]] 43.8728323699422%×1.0 |
-| 긴문맥 | 33.2 | -1.12 | 실측 | [[aa-lcr]] 14.000000000000002%×1.0 |
-| 지시 따르기 | 33.6 | -1.09 | 실측 | [[ifbench]] 31.8367346938775%×1.0 |
+| 긴문맥 | 33.1 | -1.12 | 실측 | [[aa-lcr]] 14.000000000000002%×1.0 |
+| 지시 따르기 | 33.6 | -1.1 | 실측 | [[ifbench]] 31.8367346938775%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

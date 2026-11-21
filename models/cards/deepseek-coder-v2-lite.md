@@ -12,10 +12,10 @@ size_class: Small
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 17.1, z: -1.46, r: 28.2, estimated: false }  # 전문 지식
+  knowledge: { s: 17.1, z: -1.46, r: 28.1, estimated: false }  # 전문 지식
   reasoning: { s: 15.7, z: -0.98, r: 35.3, estimated: false }  # 추론
   coding: { s: 0.8, z: -1.33, r: 30.0, estimated: true }  # 코딩
-  agentic: { s: 0.8, z: -1.52, r: 27.2, estimated: true }  # 에이전트
+  agentic: { s: 0.8, z: -1.52, r: 27.1, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 1.8, z: -1.54, r: 26.9, estimated: true }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek Coder V2 Lite
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # DeepSeek Coder V2 Lite
@@ -43,10 +43,10 @@ DeepSeek · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠�
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 28.2 | -1.46 | 실측 | [[gpqa-diamond]] 31.919191919191903%×0.4, [[humanitys-last-exam]] 5.36%×0.3 |
+| 전문 지식 | 28.1 | -1.46 | 실측 | [[gpqa-diamond]] 31.919191919191903%×0.4, [[humanitys-last-exam]] 5.36%×0.3 |
 | 추론 | 35.3 | -0.98 | 실측 | [[gpqa-diamond]] 31.919191919191903%×1.0, [[humanitys-last-exam]] 5.36%×1.0 |
 | 코딩 | 30.0 | -1.33 | 추정 | (추정) |
-| 에이전트 | 27.2 | -1.52 | 추정 | (추정) |
+| 에이전트 | 27.1 | -1.52 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 26.9 | -1.54 | 추정 | (추정) |

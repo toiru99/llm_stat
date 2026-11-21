@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 18.1, z: -1.41, r: 28.8, estimated: false }  # 전문 지식
   reasoning: { s: 16.2, z: -0.96, r: 35.7, estimated: false }  # 추론
-  coding: { s: 3.4, z: -1.24, r: 31.4, estimated: true }  # 코딩
+  coding: { s: 3.4, z: -1.24, r: 31.3, estimated: true }  # 코딩
   agentic: { s: 2.9, z: -1.45, r: 28.2, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Medium
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Mistral Medium
@@ -45,7 +45,7 @@ Mistral · Proprietary · Unknown · 컨텍스트 32k · 종합지능 **None** �
 |---|---|---|---|---|
 | 전문 지식 | 28.8 | -1.41 | 실측 | [[gpqa-diamond]] 34.949494949494905%×0.4, [[humanitys-last-exam]] 3.51%×0.3 |
 | 추론 | 35.7 | -0.96 | 실측 | [[gpqa-diamond]] 34.949494949494905%×1.0, [[humanitys-last-exam]] 3.51%×1.0 |
-| 코딩 | 31.4 | -1.24 | 추정 | (추정) |
+| 코딩 | 31.3 | -1.24 | 추정 | (추정) |
 | 에이전트 | 28.2 | -1.45 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

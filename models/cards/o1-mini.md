@@ -18,14 +18,14 @@ radar:
   agentic: { s: 46.4, z: 0.05, r: 50.8, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 22.5, z: -0.92, r: 36.1, estimated: true }  # 긴문맥
+  long_context: { s: 22.5, z: -0.93, r: 36.1, estimated: true }  # 긴문맥
   instruction: { s: 39.2, z: -0.62, r: 40.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — o1-mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # o1-mini
@@ -49,7 +49,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None** �
 | 에이전트 | 50.8 | +0.05 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 36.1 | -0.92 | 추정 | (추정) |
+| 긴문맥 | 36.1 | -0.93 | 추정 | (추정) |
 | 지시 따르기 | 40.8 | -0.62 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

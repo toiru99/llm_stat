@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 18.2, z: -1.41, r: 28.9, estimated: false }  # 전문 지식
   reasoning: { s: 16.6, z: -0.94, r: 35.9, estimated: false }  # 추론
   coding: { s: 2.3, z: -1.28, r: 30.8, estimated: true }  # 코딩
-  agentic: { s: 2.2, z: -1.47, r: 27.9, estimated: true }  # 에이전트
+  agentic: { s: 2.2, z: -1.48, r: 27.9, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 2.3, z: -1.52, r: 27.2, estimated: true }  # 긴문맥
+  long_context: { s: 2.3, z: -1.52, r: 27.1, estimated: true }  # 긴문맥
   instruction: { s: 24.9, z: -1.21, r: 31.8, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen2.5 Coder 7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Qwen2.5 Coder 7B
@@ -46,10 +46,10 @@ Alibaba · Open · Small · 컨텍스트 131k · 종합지능 **None** · ⚠️
 | 전문 지식 | 28.9 | -1.41 | 실측 | [[gpqa-diamond]] 33.9393939393939%×0.4, [[humanitys-last-exam]] 4.89%×0.3 |
 | 추론 | 35.9 | -0.94 | 실측 | [[gpqa-diamond]] 33.9393939393939%×1.0, [[humanitys-last-exam]] 4.89%×1.0 |
 | 코딩 | 30.8 | -1.28 | 추정 | (추정) |
-| 에이전트 | 27.9 | -1.47 | 추정 | (추정) |
+| 에이전트 | 27.9 | -1.48 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 27.2 | -1.52 | 추정 | (추정) |
+| 긴문맥 | 27.1 | -1.52 | 추정 | (추정) |
 | 지시 따르기 | 31.8 | -1.21 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

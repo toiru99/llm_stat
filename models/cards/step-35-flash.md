@@ -5,7 +5,7 @@ creator: StepFun
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.064
-output_speed_tps: 113.29694459196
+output_speed_tps: 119.744726782125
 context_window: 256000
 status: past
 size_class: Large
@@ -13,9 +13,9 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 60.2, z: 0.62, r: 59.3, estimated: false }  # 전문 지식
-  reasoning: { s: 39.7, z: 0.2, r: 53.1, estimated: false }  # 추론
-  coding: { s: 41.4, z: 0.05, r: 50.7, estimated: false }  # 코딩
-  agentic: { s: 68.3, z: 0.81, r: 62.2, estimated: false }  # 에이전트
+  reasoning: { s: 39.7, z: 0.2, r: 53.0, estimated: false }  # 추론
+  coding: { s: 41.4, z: 0.04, r: 50.7, estimated: false }  # 코딩
+  agentic: { s: 68.3, z: 0.81, r: 62.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 56.4, z: 0.08, r: 51.2, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Step 3.5 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Step 3.5 Flash
@@ -37,16 +37,16 @@ StepFun · Open · Large · 컨텍스트 256k · 종합지능 **None** · ⚠️
 - **약점**: 긴문맥, 코딩
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.3 · 혼합 $0.064/1M · 113.29694459196 t/s · TTFT 3.58002241543892s · 256k ctx`
+`입력 $0.1 · 출력 $0.3 · 혼합 $0.064/1M · 119.744726782125 t/s · TTFT 3.44570248201671s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 59.3 | +0.62 | 실측 | [[gpqa-diamond]] 83.1313131313131%×0.4, [[humanitys-last-exam]] 21.1306765523633%×0.3 |
-| 추론 | 53.1 | +0.2 | 실측 | [[critpt]] 2.46938775510204%×1.0, [[gpqa-diamond]] 83.1313131313131%×1.0, [[humanitys-last-exam]] 21.1306765523633%×1.0 |
-| 코딩 | 50.7 | +0.05 | 실측 | [[terminal-bench]] 27.2727272727273%×0.5 |
-| 에이전트 | 62.2 | +0.81 | 실측 | [[tau2-bench]] 94.4444444444444%×1.0, [[terminal-bench]] 27.2727272727273%×1.0 |
+| 추론 | 53.0 | +0.2 | 실측 | [[critpt]] 2.46938775510204%×1.0, [[gpqa-diamond]] 83.1313131313131%×1.0, [[humanitys-last-exam]] 21.1306765523633%×1.0 |
+| 코딩 | 50.7 | +0.04 | 실측 | [[terminal-bench]] 27.2727272727273%×0.5 |
+| 에이전트 | 62.1 | +0.81 | 실측 | [[tau2-bench]] 94.4444444444444%×1.0, [[terminal-bench]] 27.2727272727273%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 51.2 | +0.08 | 실측 | [[aa-lcr]] 50.0%×1.0 |

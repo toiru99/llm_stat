@@ -2,13 +2,13 @@
 type: Model
 title: Tencent Hy4
 creator: Tencent
-license: Proprietary
+license: Open
 intelligence_index: 34.5552385392508
 price_blended_usd_1m: 0.4463
-output_speed_tps: 93.1978302590923
+output_speed_tps: 91.8539995902526
 context_window: 1048576
 status: current
-size_class: Unknown
+size_class: Large
 params_b: null
 is_reasoning: true
 radar:
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Tencent Hy4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Tencent Hy4
 
-Tencent · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **34.5552385392508**
+Tencent · Open · Large · 컨텍스트 1M · 종합지능 **34.5552385392508**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: —
 - **약점**: —
 
 ## 실용 지표
-`입력 $0.834 · 출력 $2.501 · 혼합 $0.4463/1M · 93.1978302590923 t/s · TTFT 2.609374654783s · 1M ctx` · 가성비 77.4
+`입력 $0.834 · 출력 $2.501 · 혼합 $0.4463/1M · 91.8539995902526 t/s · TTFT 2.59793871055456s · 1M ctx` · 가성비 77.4
 
 ## 레이더 8축 (평균=50 기준선)
 

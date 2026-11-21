@@ -5,7 +5,7 @@ creator: Z AI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.251
-output_speed_tps: 52.4142481223083
+output_speed_tps: 65.8854784196184
 context_window: 128000
 status: past
 size_class: Medium
@@ -14,18 +14,18 @@ is_reasoning: true
 radar:
   knowledge: { s: 45.5, z: -0.09, r: 48.7, estimated: false }  # 전문 지식
   reasoning: { s: 27.2, z: -0.41, r: 43.8, estimated: false }  # 추론
-  coding: { s: 31.0, z: -0.3, r: 45.4, estimated: false }  # 코딩
-  agentic: { s: 39.0, z: -0.2, r: 46.9, estimated: false }  # 에이전트
+  coding: { s: 31.0, z: -0.31, r: 45.4, estimated: false }  # 코딩
+  agentic: { s: 39.0, z: -0.21, r: 46.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 52.6, z: -0.03, r: 49.6, estimated: false }  # 긴문맥
+  long_context: { s: 52.6, z: -0.03, r: 49.5, estimated: false }  # 긴문맥
   instruction: { s: 35.7, z: -0.76, r: 38.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.5-Air
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # GLM-4.5-Air
@@ -37,7 +37,7 @@ Z AI · Open · Medium · 컨텍스트 128k · 종합지능 **None** · ⚠️ p
 - **약점**: 추론, 지시 따르기
 
 ## 실용 지표
-`입력 $0.17 · 출력 $0.98 · 혼합 $0.251/1M · 52.4142481223083 t/s · TTFT 1.65247967202666s · 128k ctx`
+`입력 $0.17 · 출력 $0.98 · 혼합 $0.251/1M · 65.8854784196184 t/s · TTFT 1.52108376544002s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,11 +45,11 @@ Z AI · Open · Medium · 컨텍스트 128k · 종합지능 **None** · ⚠️ p
 |---|---|---|---|---|
 | 전문 지식 | 48.7 | -0.09 | 실측 | [[gpqa-diamond]] 73.3333333333333%×0.4, [[humanitys-last-exam]] 7.043558850787771%×0.3 |
 | 추론 | 43.8 | -0.41 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 73.3333333333333%×1.0, [[humanitys-last-exam]] 7.043558850787771%×1.0 |
-| 코딩 | 45.4 | -0.3 | 실측 | [[terminal-bench]] 20.4545454545455%×0.5 |
-| 에이전트 | 46.9 | -0.2 | 실측 | [[tau2-bench]] 46.4912280701754%×1.0, [[terminal-bench]] 20.4545454545455%×1.0 |
+| 코딩 | 45.4 | -0.31 | 실측 | [[terminal-bench]] 20.4545454545455%×0.5 |
+| 에이전트 | 46.9 | -0.21 | 실측 | [[tau2-bench]] 46.4912280701754%×1.0, [[terminal-bench]] 20.4545454545455%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 49.6 | -0.03 | 실측 | [[aa-lcr]] 46.6666666666667%×1.0 |
+| 긴문맥 | 49.5 | -0.03 | 실측 | [[aa-lcr]] 46.6666666666667%×1.0 |
 | 지시 따르기 | 38.6 | -0.76 | 실측 | [[ifbench]] 37.551020408163296%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

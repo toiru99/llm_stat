@@ -5,17 +5,17 @@ creator: Microsoft
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.0975
-output_speed_tps: 13.8122450912512
+output_speed_tps: 13.1593315336851
 context_window: 128000
 status: current
 size_class: Tiny
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 17.4, z: -1.44, r: 28.4, estimated: false }  # 전문 지식
+  knowledge: { s: 17.4, z: -1.44, r: 28.3, estimated: false }  # 전문 지식
   reasoning: { s: 10.5, z: -1.24, r: 31.5, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.36, r: 29.6, estimated: false }  # 코딩
-  agentic: { s: 2.8, z: -1.46, r: 28.2, estimated: false }  # 에이전트
+  agentic: { s: 2.8, z: -1.46, r: 28.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 17.3, z: -1.08, r: 33.8, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Phi-4 Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Phi-4 Mini
@@ -37,16 +37,16 @@ Microsoft · Open · Tiny · 컨텍스트 128k · 종합지능 **None**
 - **약점**: 에이전트, 지시 따르기
 
 ## 실용 지표
-`입력 $0.075 · 출력 $0.3 · 혼합 $0.0975/1M · 13.8122450912512 t/s · TTFT 4.6953780639319s · 128k ctx`
+`입력 $0.075 · 출력 $0.3 · 혼합 $0.0975/1M · 13.1593315336851 t/s · TTFT 4.70032473613327s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 28.4 | -1.44 | 실측 | [[gpqa-diamond]] 33.1313131313131%×0.4, [[humanitys-last-exam]] 4.45%×0.3 |
+| 전문 지식 | 28.3 | -1.44 | 실측 | [[gpqa-diamond]] 33.1313131313131%×0.4, [[humanitys-last-exam]] 4.45%×0.3 |
 | 추론 | 31.5 | -1.24 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 33.1313131313131%×1.0, [[humanitys-last-exam]] 4.45%×1.0 |
 | 코딩 | 29.6 | -1.36 | 실측 | [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 28.2 | -1.46 | 실측 | [[gdpval]] -401.23%×1.0, [[tau2-bench]] 8.18713450292398%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 에이전트 | 28.1 | -1.46 | 실측 | [[gdpval]] -401.23%×1.0, [[tau2-bench]] 8.18713450292398%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 33.8 | -1.08 | 실측 | [[aa-lcr]] 15.333333333333298%×1.0 |

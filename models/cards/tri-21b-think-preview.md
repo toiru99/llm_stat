@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 31.9, z: -0.75, r: 38.8, estimated: false }  # 전문 지식
   reasoning: { s: 19.1, z: -0.81, r: 37.8, estimated: false }  # 추론
   coding: { s: 3.4, z: -1.24, r: 31.4, estimated: false }  # 코딩
-  agentic: { s: 48.8, z: 0.14, r: 52.0, estimated: false }  # 에이전트
+  agentic: { s: 48.8, z: 0.13, r: 52.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 24.4, z: -0.87, r: 37.0, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Tri-21B-think Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Tri-21B-think Preview
@@ -46,7 +46,7 @@ Trillion Labs · Open · Small · 컨텍스트 32k · 종합지능 **None** · �
 | 전문 지식 | 38.8 | -0.75 | 실측 | [[gpqa-diamond]] 53.8383838383838%×0.4, [[humanitys-last-exam]] 5.79240037071362%×0.3 |
 | 추론 | 37.8 | -0.81 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 53.8383838383838%×1.0, [[humanitys-last-exam]] 5.79240037071362%×1.0 |
 | 코딩 | 31.4 | -1.24 | 실측 | [[terminal-bench]] 2.27272727272727%×0.5 |
-| 에이전트 | 52.0 | +0.14 | 실측 | [[tau2-bench]] 93.2748538011696%×1.0, [[terminal-bench]] 2.27272727272727%×1.0 |
+| 에이전트 | 52.0 | +0.13 | 실측 | [[tau2-bench]] 93.2748538011696%×1.0, [[terminal-bench]] 2.27272727272727%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 37.0 | -0.87 | 실측 | [[aa-lcr]] 21.6666666666667%×1.0 |

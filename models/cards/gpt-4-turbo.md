@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 12
-output_speed_tps: 73.6755938412421
+output_speed_tps: 76.9751636633707
 context_window: 128000
 status: past
 size_class: Unknown
@@ -13,8 +13,8 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 2.8, z: -2.15, r: 17.8, estimated: false }  # 전문 지식
-  reasoning: { s: 2.8, z: -1.62, r: 25.8, estimated: false }  # 추론
-  coding: { s: 0.1, z: -1.36, r: 29.7, estimated: true }  # 코딩
+  reasoning: { s: 2.8, z: -1.62, r: 25.7, estimated: false }  # 추론
+  coding: { s: 0.1, z: -1.36, r: 29.6, estimated: true }  # 코딩
   agentic: { s: 5.5, z: -1.36, r: 29.6, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4 Turbo
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # GPT-4 Turbo
@@ -37,15 +37,15 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None** �
 - **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
-`입력 $10.0 · 출력 $30.0 · 혼합 $12/1M · 73.6755938412421 t/s · TTFT 2.02001295368205s · 128k ctx`
+`입력 $10.0 · 출력 $30.0 · 혼합 $12/1M · 76.9751636633707 t/s · TTFT 1.9463218957791s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 17.8 | -2.15 | 실측 | [[humanitys-last-exam]] 3.1300000000000003%×0.3 |
-| 추론 | 25.8 | -1.62 | 실측 | [[humanitys-last-exam]] 3.1300000000000003%×1.0 |
-| 코딩 | 29.7 | -1.36 | 추정 | (추정) |
+| 추론 | 25.7 | -1.62 | 실측 | [[humanitys-last-exam]] 3.1300000000000003%×1.0 |
+| 코딩 | 29.6 | -1.36 | 추정 | (추정) |
 | 에이전트 | 29.6 | -1.36 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

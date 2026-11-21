@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.174
-output_speed_tps: 92.118002518933
+output_speed_tps: 92.3195071615012
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 59.7, z: 0.6, r: 59.0, estimated: false }  # 전문 지식
   reasoning: { s: 39.4, z: 0.19, r: 52.8, estimated: false }  # 추론
   coding: { s: 64.4, z: 0.83, r: 62.4, estimated: false }  # 코딩
-  agentic: { s: 43.2, z: -0.06, r: 49.2, estimated: false }  # 에이전트
+  agentic: { s: 43.2, z: -0.06, r: 49.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 79.3, z: 0.41, r: 56.1, estimated: false }  # 멀티모달
   long_context: { s: 78.9, z: 0.75, r: 61.3, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Luna (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # GPT-5.6 Luna (low)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.2 · 출력 $1.2 · 혼합 $0.174/1M · 92.118002518933 t/s · TTFT 2.13589745508681s · 1M ctx`
+`입력 $0.2 · 출력 $1.2 · 혼합 $0.174/1M · 92.3195071615012 t/s · TTFT 2.04684481251613s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 | 전문 지식 | 59.0 | +0.6 | 실측 | [[gpqa-diamond]] 83.5353535353535%×0.4, [[humanitys-last-exam]] 19.8331788693234%×0.3 |
 | 추론 | 52.8 | +0.19 | 실측 | [[critpt]] 2.57142857142857%×1.0, [[gpqa-diamond]] 83.5353535353535%×1.0, [[humanitys-last-exam]] 19.8331788693234%×1.0 |
 | 코딩 | 62.4 | +0.83 | 실측 | [[scicode]] 46.064814814814795%×1.0 |
-| 에이전트 | 49.2 | -0.06 | 실측 | [[gdpval]] 1001.61%×1.0, [[tau3-banking]] 12.7835051546392%×1.0 |
+| 에이전트 | 49.1 | -0.06 | 실측 | [[gdpval]] 1001.61%×1.0, [[tau3-banking]] 12.7835051546392%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 56.1 | +0.41 | 실측 | [[mmmu-pro]] 73.9884393063584%×1.0 |
 | 긴문맥 | 61.3 | +0.75 | 실측 | [[aa-lcr]] 70.0%×1.0 |

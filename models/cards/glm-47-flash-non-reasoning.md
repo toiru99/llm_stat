@@ -5,7 +5,7 @@ creator: Z AI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.082
-output_speed_tps: 59.6958182080363
+output_speed_tps: 57.471546040627544
 context_window: 200000
 status: past
 size_class: Small
@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 25.6, z: -1.05, r: 34.3, estimated: false }  # 전문 지식
   reasoning: { s: 15.4, z: -1.0, r: 35.1, estimated: false }  # 추론
-  coding: { s: 5.7, z: -1.16, r: 32.6, estimated: false }  # 코딩
+  coding: { s: 5.7, z: -1.16, r: 32.5, estimated: false }  # 코딩
   agentic: { s: 49.2, z: 0.15, r: 52.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.7-Flash (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # GLM-4.7-Flash (non-reasoning)
@@ -37,7 +37,7 @@ Z AI · Open · Small · 컨텍스트 200k · 종합지능 **None** · ⚠️ pa
 - **약점**: 전문 지식, 코딩
 
 ## 실용 지표
-`입력 $0.07 · 출력 $0.4 · 혼합 $0.082/1M · 59.6958182080363 t/s · TTFT 9.199086226787465s · 200k ctx`
+`입력 $0.07 · 출력 $0.4 · 혼합 $0.082/1M · 57.471546040627544 t/s · TTFT 21.54169849043334s · 200k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ Z AI · Open · Small · 컨텍스트 200k · 종합지능 **None** · ⚠️ pa
 |---|---|---|---|---|
 | 전문 지식 | 34.3 | -1.05 | 실측 | [[gpqa-diamond]] 45.1515151515151%×0.4, [[humanitys-last-exam]] 4.95829471733086%×0.3 |
 | 추론 | 35.1 | -1.0 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 45.1515151515151%×1.0, [[humanitys-last-exam]] 4.95829471733086%×1.0 |
-| 코딩 | 32.6 | -1.16 | 실측 | [[terminal-bench]] 3.78787878787879%×0.5 |
+| 코딩 | 32.5 | -1.16 | 실측 | [[terminal-bench]] 3.78787878787879%×0.5 |
 | 에이전트 | 52.2 | +0.15 | 실측 | [[tau2-bench]] 91.812865497076%×1.0, [[terminal-bench]] 3.78787878787879%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

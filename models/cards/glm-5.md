@@ -5,7 +5,7 @@ creator: Z AI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.66
-output_speed_tps: 69.5110969180369
+output_speed_tps: 65.5749609122118
 context_window: 200000
 status: past
 size_class: Large
@@ -13,9 +13,9 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 64.2, z: 0.82, r: 62.2, estimated: false }  # 전문 지식
-  reasoning: { s: 42.6, z: 0.34, r: 55.2, estimated: false }  # 추론
-  coding: { s: 65.5, z: 0.87, r: 63.0, estimated: false }  # 코딩
-  agentic: { s: 82.3, z: 1.3, r: 69.4, estimated: false }  # 에이전트
+  reasoning: { s: 42.6, z: 0.34, r: 55.1, estimated: false }  # 추론
+  coding: { s: 65.5, z: 0.86, r: 63.0, estimated: false }  # 코딩
+  agentic: { s: 82.3, z: 1.29, r: 69.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 85.3, z: 0.94, r: 64.1, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # GLM-5
@@ -37,16 +37,16 @@ Z AI · Open · Large · 컨텍스트 200k · 종합지능 **None** · ⚠️ pa
 - **약점**: 전문 지식, 추론
 
 ## 실용 지표
-`입력 $1.0 · 출력 $3.2 · 혼합 $0.66/1M · 69.5110969180369 t/s · TTFT 2.37713331370791s · 200k ctx`
+`입력 $1.0 · 출력 $3.2 · 혼합 $0.66/1M · 65.5749609122118 t/s · TTFT 2.45455122428097s · 200k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 62.2 | +0.82 | 실측 | [[gpqa-diamond]] 82.020202020202%×0.4, [[humanitys-last-exam]] 29.286376274328102%×0.3 |
-| 추론 | 55.2 | +0.34 | 실측 | [[critpt]] 2.0%×1.0, [[gpqa-diamond]] 82.020202020202%×1.0, [[humanitys-last-exam]] 29.286376274328102%×1.0 |
-| 코딩 | 63.0 | +0.87 | 실측 | [[terminal-bench]] 43.1818181818182%×0.5 |
-| 에이전트 | 69.4 | +1.3 | 실측 | [[tau2-bench]] 98.2456140350877%×1.0, [[terminal-bench]] 43.1818181818182%×1.0 |
+| 추론 | 55.1 | +0.34 | 실측 | [[critpt]] 2.0%×1.0, [[gpqa-diamond]] 82.020202020202%×1.0, [[humanitys-last-exam]] 29.286376274328102%×1.0 |
+| 코딩 | 63.0 | +0.86 | 실측 | [[terminal-bench]] 43.1818181818182%×0.5 |
+| 에이전트 | 69.4 | +1.29 | 실측 | [[tau2-bench]] 98.2456140350877%×1.0, [[terminal-bench]] 43.1818181818182%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 64.1 | +0.94 | 실측 | [[aa-lcr]] 75.6666666666667%×1.0 |

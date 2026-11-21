@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 59.1060336078904
 price_blended_usd_1m: 2.94
-output_speed_tps: 112.525266145127
+output_speed_tps: 112.465361361904
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 82.3, z: 1.69, r: 75.3, estimated: false }  # 전문 지식
   reasoning: { s: 85.6, z: 2.47, r: 87.0, estimated: false }  # 추론
-  coding: { s: 98.7, z: 1.99, r: 79.9, estimated: false }  # 코딩
+  coding: { s: 98.7, z: 1.99, r: 79.8, estimated: false }  # 코딩
   agentic: { s: 100.0, z: 1.91, r: 78.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 97.6, z: 1.34, r: 70.1, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 5.5 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Claude Opus 5.5 (max)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **59.1060
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 112.525266145127 t/s · TTFT 368.857135467293s · 1M ctx` · 가성비 20.1
+`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 112.465361361904 t/s · TTFT 356.594729997513s · 1M ctx` · 가성비 20.1
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **59.1060
 |---|---|---|---|---|
 | 전문 지식 | 75.3 | +1.69 | 실측 | [[humanitys-last-exam]] 61.353104726598694%×0.3 |
 | 추론 | 87.0 | +2.47 | 실측 | [[critpt]] 31.7142857142857%×1.0, [[humanitys-last-exam]] 61.353104726598694%×1.0 |
-| 코딩 | 79.9 | +1.99 | 실측 | [[scicode]] 66.8981481481482%×1.0 |
+| 코딩 | 79.8 | +1.99 | 실측 | [[scicode]] 66.8981481481482%×1.0 |
 | 에이전트 | 78.6 | +1.91 | 실측 | [[gdpval]] 1866.27%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 70.1 | +1.34 | 실측 | [[mmmu-pro]] 87.6878612716763%×1.0 |

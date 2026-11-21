@@ -5,7 +5,7 @@ creator: DeepSeek
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.4693
-output_speed_tps: 112.369557193289
+output_speed_tps: 104.990238894267
 context_window: 128000
 status: past
 size_class: Large
@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 52.7, z: 0.26, r: 53.9, estimated: false }  # 전문 지식
   reasoning: { s: 34.1, z: -0.07, r: 48.9, estimated: false }  # 추론
   coding: { s: 37.9, z: -0.07, r: 48.9, estimated: false }  # 코딩
-  agentic: { s: 37.8, z: -0.24, r: 46.4, estimated: false }  # 에이전트
+  agentic: { s: 37.8, z: -0.24, r: 46.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 63.9, z: 0.31, r: 54.6, estimated: false }  # 긴문맥
+  long_context: { s: 63.9, z: 0.3, r: 54.6, estimated: false }  # 긴문맥
   instruction: { s: 41.3, z: -0.53, r: 42.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V3.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # DeepSeek V3.1
@@ -37,7 +37,7 @@ DeepSeek · Open · Large · 컨텍스트 128k · 종합지능 **None** · ⚠�
 - **약점**: 에이전트, 지시 따르기
 
 ## 실용 지표
-`입력 $0.425 · 출력 $1.3399999999999999 · 혼합 $0.4693/1M · 112.369557193289 t/s · TTFT 2.7221615191837s · 128k ctx`
+`입력 $0.425 · 출력 $1.3399999999999999 · 혼합 $0.4693/1M · 104.990238894267 t/s · TTFT 2.70865044066666s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,10 +46,10 @@ DeepSeek · Open · Large · 컨텍스트 128k · 종합지능 **None** · ⚠�
 | 전문 지식 | 53.9 | +0.26 | 실측 | [[gpqa-diamond]] 77.8787878787879%×0.4, [[humanitys-last-exam]] 14.272474513438398%×0.3 |
 | 추론 | 48.9 | -0.07 | 실측 | [[critpt]] 2.0%×1.0, [[gpqa-diamond]] 77.8787878787879%×1.0, [[humanitys-last-exam]] 14.272474513438398%×1.0 |
 | 코딩 | 48.9 | -0.07 | 실측 | [[terminal-bench]] 25.0%×0.5 |
-| 에이전트 | 46.4 | -0.24 | 실측 | [[tau2-bench]] 37.4269005847953%×1.0, [[terminal-bench]] 25.0%×1.0 |
+| 에이전트 | 46.3 | -0.24 | 실측 | [[tau2-bench]] 37.4269005847953%×1.0, [[terminal-bench]] 25.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 54.6 | +0.31 | 실측 | [[aa-lcr]] 56.6666666666667%×1.0 |
+| 긴문맥 | 54.6 | +0.3 | 실측 | [[aa-lcr]] 56.6666666666667%×1.0 |
 | 지시 따르기 | 42.1 | -0.53 | 실측 | [[ifbench]] 41.4965986394558%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

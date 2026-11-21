@@ -5,27 +5,27 @@ creator: Cohere
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0
-output_speed_tps: 131.708007929015
+output_speed_tps: 131.750842123278
 context_window: 8192
 status: current
 size_class: Tiny
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 16.1, z: -1.5, r: 27.4, estimated: false }  # 전문 지식
+  knowledge: { s: 16.1, z: -1.51, r: 27.4, estimated: false }  # 전문 지식
   reasoning: { s: 9.9, z: -1.27, r: 31.0, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.36, r: 29.6, estimated: false }  # 코딩
   agentic: { s: 0.0, z: -1.55, r: 26.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.59, r: 26.1, estimated: false }  # 긴문맥
-  instruction: { s: 11.3, z: -1.78, r: 23.3, estimated: false }  # 지시 따르기
+  instruction: { s: 11.3, z: -1.78, r: 23.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Tiny Aya Global
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Tiny Aya Global
@@ -37,20 +37,20 @@ Cohere · Open · Tiny · 컨텍스트 8k · 종합지능 **None**
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 131.708007929015 t/s · TTFT 0.183213057527778s · 8k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 131.750842123278 t/s · TTFT 0.183224203000029s · 8k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 27.4 | -1.5 | 실측 | [[gpqa-diamond]] 30.5050505050505%×0.4, [[humanitys-last-exam]] 5.23632993512512%×0.3 |
+| 전문 지식 | 27.4 | -1.51 | 실측 | [[gpqa-diamond]] 30.5050505050505%×0.4, [[humanitys-last-exam]] 5.23632993512512%×0.3 |
 | 추론 | 31.0 | -1.27 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 30.5050505050505%×1.0, [[humanitys-last-exam]] 5.23632993512512%×1.0 |
 | 코딩 | 29.6 | -1.36 | 실측 | [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 26.7 | -1.55 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 26.1 | -1.59 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 23.3 | -1.78 | 실측 | [[ifbench]] 20.1360544217687%×1.0 |
+| 지시 따르기 | 23.2 | -1.78 | 실측 | [[ifbench]] 20.1360544217687%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

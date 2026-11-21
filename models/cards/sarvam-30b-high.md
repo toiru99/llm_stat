@@ -12,7 +12,7 @@ size_class: Small
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 39.2, z: -0.39, r: 44.1, estimated: false }  # 전문 지식
+  knowledge: { s: 39.2, z: -0.4, r: 44.1, estimated: false }  # 전문 지식
   reasoning: { s: 23.8, z: -0.58, r: 41.3, estimated: false }  # 추론
   coding: { s: 3.4, z: -1.24, r: 31.4, estimated: false }  # 코딩
   agentic: { s: 19.1, z: -0.89, r: 36.6, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Sarvam 30B (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Sarvam 30B (high)
@@ -43,7 +43,7 @@ Sarvam · Open · Small · 컨텍스트 65k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 44.1 | -0.39 | 실측 | [[gpqa-diamond]] 63.3333333333333%×0.4, [[humanitys-last-exam]] 7.50695088044486%×0.3 |
+| 전문 지식 | 44.1 | -0.4 | 실측 | [[gpqa-diamond]] 63.3333333333333%×0.4, [[humanitys-last-exam]] 7.50695088044486%×0.3 |
 | 추론 | 41.3 | -0.58 | 실측 | [[critpt]] 0.28571428571428603%×1.0, [[gpqa-diamond]] 63.3333333333333%×1.0, [[humanitys-last-exam]] 7.50695088044486%×1.0 |
 | 코딩 | 31.4 | -1.24 | 실측 | [[terminal-bench]] 2.27272727272727%×0.5 |
 | 에이전트 | 36.6 | -0.89 | 실측 | [[tau2-bench]] 34.5029239766082%×1.0, [[terminal-bench]] 2.27272727272727%×1.0 |

@@ -18,14 +18,14 @@ radar:
   agentic: { s: 47.4, z: 0.09, r: 51.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 70.3, z: 0.5, r: 57.4, estimated: false }  # 긴문맥
+  long_context: { s: 70.3, z: 0.49, r: 57.4, estimated: false }  # 긴문맥
   instruction: { s: 78.5, z: 1.03, r: 65.4, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — K2 Horizon 3.7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # K2 Horizon 3.7B
@@ -49,7 +49,7 @@ Institute of Foundation Models · Open · Tiny · 컨텍스트 524k · 종합지
 | 에이전트 | 51.3 | +0.09 | 실측 | [[gdpval]] 889.27%×1.0, [[tau3-banking]] 19.5876288659794%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 57.4 | +0.5 | 실측 | [[aa-lcr]] 62.33333333333329%×1.0 |
+| 긴문맥 | 57.4 | +0.49 | 실측 | [[aa-lcr]] 62.33333333333329%×1.0 |
 | 지시 따르기 | 65.4 | +1.03 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

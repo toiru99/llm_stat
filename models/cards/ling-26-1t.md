@@ -18,14 +18,14 @@ radar:
   agentic: { s: 68.8, z: 0.83, r: 62.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 47.0, z: -0.2, r: 47.1, estimated: false }  # 긴문맥
+  long_context: { s: 47.0, z: -0.2, r: 47.0, estimated: false }  # 긴문맥
   instruction: { s: 62.8, z: 0.38, r: 55.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Ling-2.6-1T
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Ling-2.6-1T
@@ -49,7 +49,7 @@ InclusionAI · Open · Large · 컨텍스트 262k · 종합지능 **None** · �
 | 에이전트 | 62.4 | +0.83 | 실측 | [[tau2-bench]] 89.76608187134501%×1.0, [[terminal-bench]] 31.060606060606098%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 47.1 | -0.2 | 실측 | [[aa-lcr]] 41.6666666666667%×1.0 |
+| 긴문맥 | 47.0 | -0.2 | 실측 | [[aa-lcr]] 41.6666666666667%×1.0 |
 | 지시 따르기 | 55.6 | +0.38 | 실측 | [[ifbench]] 56.87074829931969%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

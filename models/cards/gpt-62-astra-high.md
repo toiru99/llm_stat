@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 60.0882280338247
 price_blended_usd_1m: 5.88
-output_speed_tps: 47.4746575421653
+output_speed_tps: 46.6636409452811
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 78.7, z: 1.51, r: 72.7, estimated: true }  # 전문 지식
   reasoning: { s: 67.2, z: 1.56, r: 73.4, estimated: true }  # 추론
   coding: { s: 80.5, z: 1.37, r: 70.6, estimated: true }  # 코딩
-  agentic: { s: 88.6, z: 1.51, r: 72.7, estimated: true }  # 에이전트
+  agentic: { s: 88.6, z: 1.51, r: 72.6, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 97.6, z: 1.34, r: 70.1, estimated: false }  # 멀티모달
   long_context: { s: 91.0, z: 1.11, r: 66.6, estimated: true }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6.2 Astra (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # GPT-6.2 Astra (high)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **60.0882280
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $8.0 · 출력 $40.0 · 혼합 $5.88/1M · 47.4746575421653 t/s · TTFT 26.0586862744438s · 1M ctx` · 가성비 10.2
+`입력 $8.0 · 출력 $40.0 · 혼합 $5.88/1M · 46.6636409452811 t/s · TTFT 23.0673513538868s · 1M ctx` · 가성비 10.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **60.0882280
 | 전문 지식 | 72.7 | +1.51 | 추정 | (추정) |
 | 추론 | 73.4 | +1.56 | 추정 | (추정) |
 | 코딩 | 70.6 | +1.37 | 추정 | (추정) |
-| 에이전트 | 72.7 | +1.51 | 추정 | (추정) |
+| 에이전트 | 72.6 | +1.51 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 70.1 | +1.34 | 실측 | [[mmmu-pro]] 87.6878612716763%×1.0 |
 | 긴문맥 | 66.6 | +1.11 | 추정 | (추정) |

@@ -5,17 +5,17 @@ creator: Reflection
 license: Open
 intelligence_index: 17.7307282547205
 price_blended_usd_1m: 0.228
-output_speed_tps: 258.157083466545
+output_speed_tps: 257.775619567255
 context_window: 1048576
 status: current
 size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 45.9, z: -0.07, r: 49.0, estimated: false }  # 전문 지식
+  knowledge: { s: 45.9, z: -0.07, r: 48.9, estimated: false }  # 전문 지식
   reasoning: { s: 41.3, z: 0.28, r: 54.3, estimated: false }  # 추론
   coding: { s: 68.4, z: 0.96, r: 64.4, estimated: false }  # 코딩
-  agentic: { s: 69.6, z: 0.86, r: 62.8, estimated: false }  # 에이전트
+  agentic: { s: 69.6, z: 0.85, r: 62.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 88.0, z: 1.02, r: 65.3, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Beam 1.0
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Beam 1.0
@@ -37,16 +37,16 @@ Reflection · Open · Large · 컨텍스트 1M · 종합지능 **17.730728254720
 - **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
-`입력 $0.4 · 출력 $1.2 · 혼합 $0.228/1M · 258.157083466545 t/s · TTFT 0.739583576690292s · 1M ctx` · 가성비 77.8
+`입력 $0.4 · 출력 $1.2 · 혼합 $0.228/1M · 257.775619567255 t/s · TTFT 0.734732923262017s · 1M ctx` · 가성비 77.8
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 49.0 | -0.07 | 실측 | [[humanitys-last-exam]] 34.661723818350296%×0.3 |
+| 전문 지식 | 48.9 | -0.07 | 실측 | [[humanitys-last-exam]] 34.661723818350296%×0.3 |
 | 추론 | 54.3 | +0.28 | 실측 | [[critpt]] 13.1428571428571%×1.0, [[humanitys-last-exam]] 34.661723818350296%×1.0 |
 | 코딩 | 64.4 | +0.96 | 실측 | [[scicode]] 48.4953703703704%×1.0 |
-| 에이전트 | 62.8 | +0.86 | 실측 | [[gdpval]] 1177.08%×1.0 |
+| 에이전트 | 62.8 | +0.85 | 실측 | [[gdpval]] 1177.08%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 65.3 | +1.02 | 실측 | [[aa-lcr]] 78.0%×1.0 |

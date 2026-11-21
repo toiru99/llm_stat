@@ -5,15 +5,15 @@ creator: Amazon
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.62
-output_speed_tps: 100.793661971604
+output_speed_tps: 98.2760081241134
 context_window: 300000
 status: past
 size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 27.7, z: -0.94, r: 35.8, estimated: false }  # 전문 지식
-  reasoning: { s: 16.4, z: -0.94, r: 35.8, estimated: false }  # 추론
+  knowledge: { s: 27.7, z: -0.95, r: 35.8, estimated: false }  # 전문 지식
+  reasoning: { s: 16.4, z: -0.95, r: 35.8, estimated: false }  # 추론
   coding: { s: 9.2, z: -1.05, r: 34.3, estimated: false }  # 코딩
   agentic: { s: 11.7, z: -1.15, r: 32.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Nova Pro
@@ -37,14 +37,14 @@ Amazon · Proprietary · Unknown · 컨텍스트 300k · 종합지능 **None** �
 - **약점**: 에이전트, 멀티모달
 
 ## 실용 지표
-`입력 $0.8 · 출력 $3.2 · 혼합 $0.62/1M · 100.793661971604 t/s · TTFT 2.6621194176361s · 300k ctx`
+`입력 $0.8 · 출력 $3.2 · 혼합 $0.62/1M · 98.2760081241134 t/s · TTFT 3.07526439798998s · 300k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 35.8 | -0.94 | 실측 | [[gpqa-diamond]] 49.898989898989896%×0.4, [[humanitys-last-exam]] 3.19%×0.3 |
-| 추론 | 35.8 | -0.94 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 49.898989898989896%×1.0, [[humanitys-last-exam]] 3.19%×1.0 |
+| 전문 지식 | 35.8 | -0.95 | 실측 | [[gpqa-diamond]] 49.898989898989896%×0.4, [[humanitys-last-exam]] 3.19%×0.3 |
+| 추론 | 35.8 | -0.95 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 49.898989898989896%×1.0, [[humanitys-last-exam]] 3.19%×1.0 |
 | 코딩 | 34.3 | -1.05 | 실측 | [[terminal-bench]] 6.06060606060606%×0.5 |
 | 에이전트 | 32.8 | -1.15 | 실측 | [[tau2-bench]] 14.0350877192982%×1.0, [[terminal-bench]] 6.06060606060606%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

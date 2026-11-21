@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 71.6, z: 1.17, r: 67.6, estimated: false }  # 전문 지식
   reasoning: { s: 53.5, z: 0.88, r: 63.2, estimated: false }  # 추론
   coding: { s: 59.8, z: 0.67, r: 60.1, estimated: false }  # 코딩
-  agentic: { s: 60.9, z: 0.56, r: 58.3, estimated: false }  # 에이전트
+  agentic: { s: 60.9, z: 0.55, r: 58.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 92.1, z: 1.14, r: 67.1, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nex-N2-Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Nex-N2-Pro
@@ -46,7 +46,7 @@ Nex AGI · Open · Large · 컨텍스트 262k · 종합지능 **None**
 | 전문 지식 | 67.6 | +1.17 | 실측 | [[gpqa-diamond]] 89.1919191919192%×0.4, [[humanitys-last-exam]] 33.734939759036095%×0.3 |
 | 추론 | 63.2 | +0.88 | 실측 | [[critpt]] 8.57142857142857%×1.0, [[gpqa-diamond]] 89.1919191919192%×1.0, [[humanitys-last-exam]] 33.734939759036095%×1.0 |
 | 코딩 | 60.1 | +0.67 | 실측 | [[scicode]] 43.287037037037%×1.0 |
-| 에이전트 | 58.3 | +0.56 | 실측 | [[gdpval]] 1109.21%×1.0, [[tau2-bench]] 81.5789473684211%×1.0, [[tau3-banking]] 17.5257731958763%×1.0 |
+| 에이전트 | 58.3 | +0.55 | 실측 | [[gdpval]] 1109.21%×1.0, [[tau2-bench]] 81.5789473684211%×1.0, [[tau3-banking]] 17.5257731958763%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 67.1 | +1.14 | 실측 | [[aa-lcr]] 81.6666666666667%×1.0 |

@@ -12,10 +12,10 @@ size_class: Medium
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 29.4, z: -0.86, r: 37.1, estimated: false }  # 전문 지식
+  knowledge: { s: 29.4, z: -0.86, r: 37.0, estimated: false }  # 전문 지식
   reasoning: { s: 18.3, z: -0.85, r: 37.2, estimated: false }  # 추론
   coding: { s: 58.3, z: 0.62, r: 59.3, estimated: false }  # 코딩
-  agentic: { s: 70.8, z: 0.9, r: 63.4, estimated: false }  # 에이전트
+  agentic: { s: 70.8, z: 0.89, r: 63.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 83.1, z: 0.87, r: 63.1, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling-3.0-flash-Fin
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Ling-3.0-flash-Fin
@@ -43,10 +43,10 @@ InclusionAI · Open · Medium · 컨텍스트 262k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 37.1 | -0.86 | 실측 | [[humanitys-last-exam]] 22.613531047266%×0.3 |
+| 전문 지식 | 37.0 | -0.86 | 실측 | [[humanitys-last-exam]] 22.613531047266%×0.3 |
 | 추론 | 37.2 | -0.85 | 실측 | [[critpt]] 2.57142857142857%×1.0, [[humanitys-last-exam]] 22.613531047266%×1.0 |
 | 코딩 | 59.3 | +0.62 | 실측 | [[scicode]] 42.3611111111111%×1.0 |
-| 에이전트 | 63.4 | +0.9 | 실측 | [[gdpval]] 1107.13%×1.0, [[tau3-banking]] 38.5567010309278%×1.0 |
+| 에이전트 | 63.4 | +0.89 | 실측 | [[gdpval]] 1107.13%×1.0, [[tau3-banking]] 38.5567010309278%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 63.1 | +0.87 | 실측 | [[aa-lcr]] 73.6666666666667%×1.0 |

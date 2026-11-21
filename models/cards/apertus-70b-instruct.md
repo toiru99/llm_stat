@@ -12,7 +12,7 @@ size_class: Medium
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 14.1, z: -1.6, r: 25.9, estimated: false }  # 전문 지식
+  knowledge: { s: 14.1, z: -1.61, r: 25.9, estimated: false }  # 전문 지식
   reasoning: { s: 8.7, z: -1.33, r: 30.1, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.36, r: 29.6, estimated: false }  # 코딩
   agentic: { s: 6.5, z: -1.33, r: 30.1, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Apertus 70B Instruct
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Apertus 70B Instruct
@@ -43,7 +43,7 @@ Swiss AI Initiative · Open · Medium · 컨텍스트 65k · 종합지능 **None
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 25.9 | -1.6 | 실측 | [[gpqa-diamond]] 27.1717171717172%×0.4, [[humanitys-last-exam]] 5.4680259499536605%×0.3 |
+| 전문 지식 | 25.9 | -1.61 | 실측 | [[gpqa-diamond]] 27.1717171717172%×0.4, [[humanitys-last-exam]] 5.4680259499536605%×0.3 |
 | 추론 | 30.1 | -1.33 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 27.1717171717172%×1.0, [[humanitys-last-exam]] 5.4680259499536605%×1.0 |
 | 코딩 | 29.6 | -1.36 | 실측 | [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 30.1 | -1.33 | 실측 | [[tau2-bench]] 12.865497076023399%×1.0, [[terminal-bench]] 0.0%×1.0 |

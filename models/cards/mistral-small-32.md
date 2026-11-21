@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.0875
-output_speed_tps: 52.3674067286876
+output_speed_tps: 51.5515322491632
 context_window: 128000
 status: past
 size_class: Small
@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 28.8, z: -0.89, r: 36.6, estimated: false }  # 전문 지식
   reasoning: { s: 17.2, z: -0.91, r: 36.4, estimated: false }  # 추론
-  coding: { s: 27.2, z: -0.43, r: 43.5, estimated: false }  # 코딩
+  coding: { s: 27.2, z: -0.44, r: 43.5, estimated: false }  # 코딩
   agentic: { s: 15.3, z: -1.02, r: 34.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 44.6, z: -1.37, r: 29.5, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Small 3.2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Mistral Small 3.2
@@ -37,7 +37,7 @@ Mistral · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠️
 - **약점**: 에이전트, 멀티모달
 
 ## 실용 지표
-`입력 $0.075 · 출력 $0.2 · 혼합 $0.0875/1M · 52.3674067286876 t/s · TTFT 2.54051831969005s · 128k ctx`
+`입력 $0.075 · 출력 $0.2 · 혼합 $0.0875/1M · 51.5515322491632 t/s · TTFT 2.69278633478569s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ Mistral · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠️
 |---|---|---|---|---|
 | 전문 지식 | 36.6 | -0.89 | 실측 | [[gpqa-diamond]] 50.5050505050505%×0.4, [[humanitys-last-exam]] 4.30954587581094%×0.3 |
 | 추론 | 36.4 | -0.91 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 50.5050505050505%×1.0, [[humanitys-last-exam]] 4.30954587581094%×1.0 |
-| 코딩 | 43.5 | -0.43 | 실측 | [[scicode]] 28.587962962962997%×1.0, [[terminal-bench]] 6.81818181818182%×0.5 |
+| 코딩 | 43.5 | -0.44 | 실측 | [[scicode]] 28.587962962962997%×1.0, [[terminal-bench]] 6.81818181818182%×0.5 |
 | 에이전트 | 34.7 | -1.02 | 실측 | [[gdpval]] -188.15%×1.0, [[tau2-bench]] 29.5321637426901%×1.0, [[tau3-banking]] 6.18556701030928%×1.0, [[terminal-bench]] 6.81818181818182%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 29.5 | -1.37 | 실측 | [[mmmu-pro]] 47.9768786127168%×1.0 |

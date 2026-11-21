@@ -12,10 +12,10 @@ size_class: Tiny
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 17.1, z: -1.46, r: 28.2, estimated: false }  # 전문 지식
+  knowledge: { s: 17.1, z: -1.46, r: 28.1, estimated: false }  # 전문 지식
   reasoning: { s: 10.3, z: -1.25, r: 31.3, estimated: false }  # 추론
   coding: { s: 1.1, z: -1.32, r: 30.2, estimated: false }  # 코딩
-  agentic: { s: 8.5, z: -1.26, r: 31.2, estimated: false }  # 에이전트
+  agentic: { s: 8.5, z: -1.26, r: 31.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 7.1, z: -1.38, r: 29.3, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba Reasoning 3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Jamba Reasoning 3B
@@ -43,10 +43,10 @@ AI21 Labs · Open · Tiny · 컨텍스트 262k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 28.2 | -1.46 | 실측 | [[gpqa-diamond]] 33.3333333333333%×0.4, [[humanitys-last-exam]] 3.75347544022243%×0.3 |
+| 전문 지식 | 28.1 | -1.46 | 실측 | [[gpqa-diamond]] 33.3333333333333%×0.4, [[humanitys-last-exam]] 3.75347544022243%×0.3 |
 | 추론 | 31.3 | -1.25 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 33.3333333333333%×1.0, [[humanitys-last-exam]] 3.75347544022243%×1.0 |
 | 코딩 | 30.2 | -1.32 | 실측 | [[terminal-bench]] 0.757575757575758%×0.5 |
-| 에이전트 | 31.2 | -1.26 | 실측 | [[tau2-bench]] 15.7894736842105%×1.0, [[terminal-bench]] 0.757575757575758%×1.0 |
+| 에이전트 | 31.1 | -1.26 | 실측 | [[tau2-bench]] 15.7894736842105%×1.0, [[terminal-bench]] 0.757575757575758%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 29.3 | -1.38 | 실측 | [[aa-lcr]] 6.3333333333333295%×1.0 |

@@ -5,7 +5,7 @@ creator: SpaceXAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 1.35
-output_speed_tps: 71.7497669275198
+output_speed_tps: 73.3426926432243
 context_window: 500000
 status: past
 size_class: Unknown
@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 79.4, z: 1.55, r: 73.2, estimated: false }  # 전문 지식
   reasoning: { s: 67.5, z: 1.57, r: 73.6, estimated: false }  # 추론
-  coding: { s: 80.6, z: 1.38, r: 70.6, estimated: false }  # 코딩
+  coding: { s: 80.6, z: 1.37, r: 70.6, estimated: false }  # 코딩
   agentic: { s: 87.7, z: 1.48, r: 72.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.6 (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Grok 4.6 (medium)
@@ -37,7 +37,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **None**
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $2.0 · 출력 $6.0 · 혼합 $1.35/1M · 71.7497669275198 t/s · TTFT 16.1109121559954s · 500k ctx`
+`입력 $2.0 · 출력 $6.0 · 혼합 $1.35/1M · 73.3426926432243 t/s · TTFT 15.1029145963352s · 500k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **None**
 |---|---|---|---|---|
 | 전문 지식 | 73.2 | +1.55 | 실측 | [[gpqa-diamond]] 93.53535353535351%×0.4, [[humanitys-last-exam]] 42.122335495829496%×0.3 |
 | 추론 | 73.6 | +1.57 | 실측 | [[critpt]] 17.714285714285698%×1.0, [[gpqa-diamond]] 93.53535353535351%×1.0, [[humanitys-last-exam]] 42.122335495829496%×1.0 |
-| 코딩 | 70.6 | +1.38 | 실측 | [[scicode]] 55.9027777777778%×1.0 |
+| 코딩 | 70.6 | +1.37 | 실측 | [[scicode]] 55.9027777777778%×1.0 |
 | 에이전트 | 72.2 | +1.48 | 실측 | [[gdpval]] 1620.59%×1.0, [[tau3-banking]] 44.3298969072165%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

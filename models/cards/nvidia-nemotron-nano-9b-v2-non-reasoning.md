@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.077
-output_speed_tps: 136.340165862578
+output_speed_tps: 133.299385013283
 context_window: 131072
 status: current
 size_class: Small
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 32.4, z: -0.72, r: 39.2, estimated: false }  # 전문 지식
   reasoning: { s: 19.3, z: -0.8, r: 37.9, estimated: false }  # 추론
   coding: { s: 1.1, z: -1.32, r: 30.2, estimated: false }  # 코딩
-  agentic: { s: 12.4, z: -1.12, r: 33.1, estimated: false }  # 에이전트
+  agentic: { s: 12.4, z: -1.13, r: 33.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 27.1, z: -0.79, r: 38.2, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — NVIDIA Nemotron Nano 9B V2 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # NVIDIA Nemotron Nano 9B V2 (non-reasoning)
@@ -37,7 +37,7 @@ NVIDIA · Open · Small · 컨텍스트 131k · 종합지능 **None**
 - **약점**: 코딩, 지시 따르기
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.23 · 혼합 $0.077/1M · 136.340165862578 t/s · TTFT 6.38464905274742s · 131k ctx`
+`입력 $0.06 · 출력 $0.23 · 혼합 $0.077/1M · 133.299385013283 t/s · TTFT 7.44144043195799s · 131k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ NVIDIA · Open · Small · 컨텍스트 131k · 종합지능 **None**
 | 전문 지식 | 39.2 | -0.72 | 실측 | [[gpqa-diamond]] 55.656565656565704%×0.4, [[humanitys-last-exam]] 4.5875810936051895%×0.3 |
 | 추론 | 37.9 | -0.8 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 55.656565656565704%×1.0, [[humanitys-last-exam]] 4.5875810936051895%×1.0 |
 | 코딩 | 30.2 | -1.32 | 실측 | [[terminal-bench]] 0.757575757575758%×0.5 |
-| 에이전트 | 33.1 | -1.12 | 실측 | [[tau2-bench]] 23.3918128654971%×1.0, [[terminal-bench]] 0.757575757575758%×1.0 |
+| 에이전트 | 33.1 | -1.13 | 실측 | [[tau2-bench]] 23.3918128654971%×1.0, [[terminal-bench]] 0.757575757575758%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 38.2 | -0.79 | 실측 | [[aa-lcr]] 24.0%×1.0 |

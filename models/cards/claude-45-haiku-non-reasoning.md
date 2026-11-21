@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.77
-output_speed_tps: 98.3458692589442
+output_speed_tps: 99.2931841548968
 context_window: 200000
 status: past
 size_class: Unknown
@@ -14,8 +14,8 @@ is_reasoning: false
 radar:
   knowledge: { s: 38.1, z: -0.45, r: 43.3, estimated: false }  # 전문 지식
   reasoning: { s: 22.6, z: -0.64, r: 40.4, estimated: false }  # 추론
-  coding: { s: 41.4, z: 0.05, r: 50.7, estimated: false }  # 코딩
-  agentic: { s: 37.1, z: -0.27, r: 46.0, estimated: false }  # 에이전트
+  coding: { s: 41.4, z: 0.04, r: 50.7, estimated: false }  # 코딩
+  agentic: { s: 37.1, z: -0.27, r: 45.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 54.2, z: -0.88, r: 36.8, estimated: false }  # 멀티모달
   long_context: { s: 56.0, z: 0.07, r: 51.1, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 4.5 Haiku (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Claude 4.5 Haiku (non-reasoning)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None*
 - **약점**: 추론, 멀티모달
 
 ## 실용 지표
-`입력 $1.0 · 출력 $5.0 · 혼합 $0.77/1M · 98.3458692589442 t/s · TTFT 0.955004431194464s · 200k ctx`
+`입력 $1.0 · 출력 $5.0 · 혼합 $0.77/1M · 99.2931841548968 t/s · TTFT 0.978112569833321s · 200k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,8 +45,8 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None*
 |---|---|---|---|---|
 | 전문 지식 | 43.3 | -0.45 | 실측 | [[gpqa-diamond]] 64.6464646464646%×0.4, [[humanitys-last-exam]] 4.21686746987952%×0.3 |
 | 추론 | 40.4 | -0.64 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 64.6464646464646%×1.0, [[humanitys-last-exam]] 4.21686746987952%×1.0 |
-| 코딩 | 50.7 | +0.05 | 실측 | [[terminal-bench]] 27.2727272727273%×0.5 |
-| 에이전트 | 46.0 | -0.27 | 실측 | [[tau2-bench]] 32.4561403508772%×1.0, [[terminal-bench]] 27.2727272727273%×1.0 |
+| 코딩 | 50.7 | +0.04 | 실측 | [[terminal-bench]] 27.2727272727273%×0.5 |
+| 에이전트 | 45.9 | -0.27 | 실측 | [[tau2-bench]] 32.4561403508772%×1.0, [[terminal-bench]] 27.2727272727273%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 36.8 | -0.88 | 실측 | [[mmmu-pro]] 55.144508670520196%×1.0 |
 | 긴문맥 | 51.1 | +0.07 | 실측 | [[aa-lcr]] 49.6666666666667%×1.0 |

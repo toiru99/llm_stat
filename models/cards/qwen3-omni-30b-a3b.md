@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.322
-output_speed_tps: 76.4698648798324
+output_speed_tps: 77.7991472692387
 context_window: 65536
 status: current
 size_class: Small
@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 54.7, z: -0.85, r: 37.2, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.59, r: 26.1, estimated: false }  # 긴문맥
-  instruction: { s: 26.7, z: -1.13, r: 33.0, estimated: false }  # 지시 따르기
+  instruction: { s: 26.7, z: -1.14, r: 33.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Omni 30B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Qwen3 Omni 30B A3B
@@ -37,7 +37,7 @@ Alibaba · Open · Small · 컨텍스트 65k · 종합지능 **None**
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
-`입력 $0.25 · 출력 $0.97 · 혼합 $0.322/1M · 76.4698648798324 t/s · TTFT 1.15211861797535s · 65k ctx`
+`입력 $0.25 · 출력 $0.97 · 혼합 $0.322/1M · 77.7991472692387 t/s · TTFT 1.13371677163625s · 65k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Alibaba · Open · Small · 컨텍스트 65k · 종합지능 **None**
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 37.2 | -0.85 | 실측 | [[mmmu-pro]] 55.4913294797688%×1.0 |
 | 긴문맥 | 26.1 | -1.59 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 33.0 | -1.13 | 실측 | [[ifbench]] 31.156462585034%×1.0 |
+| 지시 따르기 | 33.0 | -1.14 | 실측 | [[ifbench]] 31.156462585034%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

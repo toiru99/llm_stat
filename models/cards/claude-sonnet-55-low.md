@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 25.649704549789
 price_blended_usd_1m: 1.47
-output_speed_tps: 133.37630996166
+output_speed_tps: 135.351093311452
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -14,8 +14,8 @@ is_reasoning: true
 radar:
   knowledge: { s: 48.0, z: 0.03, r: 50.5, estimated: false }  # 전문 지식
   reasoning: { s: 40.0, z: 0.22, r: 53.3, estimated: false }  # 추론
-  coding: { s: 69.3, z: 1.0, r: 64.9, estimated: false }  # 코딩
-  agentic: { s: 69.9, z: 0.86, r: 63.0, estimated: false }  # 에이전트
+  coding: { s: 69.3, z: 0.99, r: 64.9, estimated: false }  # 코딩
+  agentic: { s: 69.9, z: 0.86, r: 62.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 85.7, z: 0.95, r: 64.3, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5.5 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Claude Sonnet 5.5 (low)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **25.6497
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.47/1M · 133.37630996166 t/s · TTFT 2.24069926398062s · 1M ctx` · 가성비 17.4
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.47/1M · 135.351093311452 t/s · TTFT 2.13216479467335s · 1M ctx` · 가성비 17.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,8 +45,8 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **25.6497
 |---|---|---|---|---|
 | 전문 지식 | 50.5 | +0.03 | 실측 | [[humanitys-last-exam]] 36.2372567191844%×0.3 |
 | 추론 | 53.3 | +0.22 | 실측 | [[critpt]] 11.4285714285714%×1.0, [[humanitys-last-exam]] 36.2372567191844%×1.0 |
-| 코딩 | 64.9 | +1.0 | 실측 | [[scicode]] 49.0740740740741%×1.0 |
-| 에이전트 | 63.0 | +0.86 | 실측 | [[gdpval]] 1182.47%×1.0 |
+| 코딩 | 64.9 | +0.99 | 실측 | [[scicode]] 49.0740740740741%×1.0 |
+| 에이전트 | 62.9 | +0.86 | 실측 | [[gdpval]] 1182.47%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 64.3 | +0.95 | 실측 | [[aa-lcr]] 76.0%×1.0 |

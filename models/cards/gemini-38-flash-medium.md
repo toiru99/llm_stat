@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 30.078569475636
 price_blended_usd_1m: 0.5775
-output_speed_tps: 116.061796954144
+output_speed_tps: 110.689103142129
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 79.4, z: 1.55, r: 73.2, estimated: false }  # 전문 지식
   reasoning: { s: 62.4, z: 1.32, r: 69.9, estimated: false }  # 추론
-  coding: { s: 79.2, z: 1.33, r: 70.0, estimated: false }  # 코딩
+  coding: { s: 79.2, z: 1.33, r: 69.9, estimated: false }  # 코딩
   agentic: { s: 85.0, z: 1.39, r: 70.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 93.0, z: 1.1, r: 66.5, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.8 Flash (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Gemini 3.8 Flash (medium)
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **30.0785694
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $0.75 · 출력 $3.75 · 혼합 $0.5775/1M · 116.061796954144 t/s · TTFT 12.3668553108115s · 1M ctx` · 가성비 52.1
+`입력 $0.75 · 출력 $3.75 · 혼합 $0.5775/1M · 110.689103142129 t/s · TTFT 12.5853061751577s · 1M ctx` · 가성비 52.1
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **30.0785694
 |---|---|---|---|---|
 | 전문 지식 | 73.2 | +1.55 | 실측 | [[gpqa-diamond]] 93.53535353535351%×0.4, [[humanitys-last-exam]] 42.122335495829496%×0.3 |
 | 추론 | 69.9 | +1.32 | 실측 | [[critpt]] 12.285714285714299%×1.0, [[gpqa-diamond]] 93.53535353535351%×1.0, [[humanitys-last-exam]] 42.122335495829496%×1.0 |
-| 코딩 | 70.0 | +1.33 | 실측 | [[scicode]] 55.0925925925926%×1.0 |
+| 코딩 | 69.9 | +1.33 | 실측 | [[scicode]] 55.0925925925926%×1.0 |
 | 에이전트 | 70.8 | +1.39 | 실측 | [[gdpval]] 1432.18%×1.0, [[tau3-banking]] 45.7731958762887%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 66.5 | +1.1 | 실측 | [[mmmu-pro]] 84.2196531791908%×1.0 |

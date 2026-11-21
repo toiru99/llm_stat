@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: 4.29716249600478
 price_blended_usd_1m: 0.1005
-output_speed_tps: 141.174064457278
+output_speed_tps: 140.440534059205
 context_window: 256000
 status: current
 size_class: Medium
@@ -14,8 +14,8 @@ is_reasoning: true
 radar:
   knowledge: { s: 49.5, z: 0.1, r: 51.6, estimated: false }  # 전문 지식
   reasoning: { s: 30.1, z: -0.27, r: 46.0, estimated: false }  # 추론
-  coding: { s: 43.7, z: 0.13, r: 51.9, estimated: false }  # 코딩
-  agentic: { s: 27.8, z: -0.59, r: 41.2, estimated: false }  # 에이전트
+  coding: { s: 43.7, z: 0.12, r: 51.9, estimated: false }  # 코딩
+  agentic: { s: 27.8, z: -0.59, r: 41.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 56.4, z: -0.76, r: 38.5, estimated: false }  # 멀티모달
   long_context: { s: 56.0, z: 0.07, r: 51.1, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Small 4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Mistral Small 4
@@ -37,7 +37,7 @@ Mistral · Open · Medium · 컨텍스트 256k · 종합지능 **4.2971624960047
 - **약점**: 에이전트, 멀티모달
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · 141.174064457278 t/s · TTFT 1.67325644375055s · 256k ctx` · 가성비 42.8
+`입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · 140.440534059205 t/s · TTFT 1.46786200371215s · 256k ctx` · 가성비 42.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,8 +45,8 @@ Mistral · Open · Medium · 컨텍스트 256k · 종합지능 **4.2971624960047
 |---|---|---|---|---|
 | 전문 지식 | 51.6 | +0.1 | 실측 | [[gpqa-diamond]] 76.8686868686869%×0.4, [[humanitys-last-exam]] 9.870250231696021%×0.3 |
 | 추론 | 46.0 | -0.27 | 실측 | [[critpt]] 0.28571428571428603%×1.0, [[gpqa-diamond]] 76.8686868686869%×1.0, [[humanitys-last-exam]] 9.870250231696021%×1.0 |
-| 코딩 | 51.9 | +0.13 | 실측 | [[scicode]] 38.7731481481481%×1.0, [[terminal-bench]] 17.4242424242424%×0.5 |
-| 에이전트 | 41.2 | -0.59 | 실측 | [[gdpval]] 369.35%×1.0, [[tau2-bench]] 41.2280701754386%×1.0, [[tau3-banking]] 4.948453608247419%×1.0, [[terminal-bench]] 17.4242424242424%×1.0 |
+| 코딩 | 51.9 | +0.12 | 실측 | [[scicode]] 38.7731481481481%×1.0, [[terminal-bench]] 17.4242424242424%×0.5 |
+| 에이전트 | 41.1 | -0.59 | 실측 | [[gdpval]] 369.35%×1.0, [[tau2-bench]] 41.2280701754386%×1.0, [[tau3-banking]] 4.948453608247419%×1.0, [[terminal-bench]] 17.4242424242424%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 38.5 | -0.76 | 실측 | [[mmmu-pro]] 56.8208092485549%×1.0 |
 | 긴문맥 | 51.1 | +0.07 | 실측 | [[aa-lcr]] 49.6666666666667%×1.0 |

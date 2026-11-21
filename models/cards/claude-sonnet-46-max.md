@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 2.31
-output_speed_tps: 58.5614700186151
+output_speed_tps: 57.4726755743013
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 70.4, z: 1.11, r: 66.7, estimated: false }  # 전문 지식
-  reasoning: { s: 47.7, z: 0.6, r: 59.0, estimated: false }  # 추론
+  reasoning: { s: 47.7, z: 0.6, r: 58.9, estimated: false }  # 추론
   coding: { s: 74.2, z: 1.16, r: 67.4, estimated: false }  # 코딩
   agentic: { s: 74.1, z: 1.01, r: 65.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 4.6 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Claude Sonnet 4.6 (max)
@@ -37,14 +37,14 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 - **약점**: 멀티모달, 지시 따르기
 
 ## 실용 지표
-`입력 $3.0 · 출력 $15.0 · 혼합 $2.31/1M · 58.5614700186151 t/s · TTFT 107.038144921416s · 1M ctx`
+`입력 $3.0 · 출력 $15.0 · 혼합 $2.31/1M · 57.4726755743013 t/s · TTFT 86.9858895491593s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 66.7 | +1.11 | 실측 | [[gpqa-diamond]] 87.4747474747475%×0.4, [[humanitys-last-exam]] 33.595922150139%×0.3 |
-| 추론 | 59.0 | +0.6 | 실측 | [[critpt]] 3.14285714285714%×1.0, [[gpqa-diamond]] 87.4747474747475%×1.0, [[humanitys-last-exam]] 33.595922150139%×1.0 |
+| 추론 | 58.9 | +0.6 | 실측 | [[critpt]] 3.14285714285714%×1.0, [[gpqa-diamond]] 87.4747474747475%×1.0, [[humanitys-last-exam]] 33.595922150139%×1.0 |
 | 코딩 | 67.4 | +1.16 | 실측 | [[scicode]] 50.1157407407407%×1.0, [[terminal-bench]] 53.030303030303%×0.5 |
 | 에이전트 | 65.1 | +1.01 | 실측 | [[gdpval]] 1240.2%×1.0, [[tau2-bench]] 75.7309941520468%×1.0, [[tau3-banking]] 34.4329896907216%×1.0, [[terminal-bench]] 53.030303030303%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

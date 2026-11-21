@@ -14,8 +14,8 @@ is_reasoning: true
 radar:
   knowledge: { s: 51.8, z: 0.22, r: 53.3, estimated: false }  # 전문 지식
   reasoning: { s: 32.7, z: -0.14, r: 47.9, estimated: false }  # 추론
-  coding: { s: 48.4, z: 0.29, r: 54.3, estimated: false }  # 코딩
-  agentic: { s: 42.3, z: -0.09, r: 48.7, estimated: false }  # 에이전트
+  coding: { s: 48.4, z: 0.28, r: 54.3, estimated: false }  # 코딩
+  agentic: { s: 42.3, z: -0.09, r: 48.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 42.9, z: -0.32, r: 45.2, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Trinity Large Thinking
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Trinity Large Thinking
@@ -45,8 +45,8 @@ Arcee AI · Open · Large · 컨텍스트 512k · 종합지능 **None**
 |---|---|---|---|---|
 | 전문 지식 | 53.3 | +0.22 | 실측 | [[gpqa-diamond]] 75.1515151515151%×0.4, [[humanitys-last-exam]] 15.8480074142725%×0.3 |
 | 추론 | 47.9 | -0.14 | 실측 | [[critpt]] 0.857142857142857%×1.0, [[gpqa-diamond]] 75.1515151515151%×1.0, [[humanitys-last-exam]] 15.8480074142725%×1.0 |
-| 코딩 | 54.3 | +0.29 | 실측 | [[scicode]] 40.625%×1.0, [[terminal-bench]] 22.727272727272698%×0.5 |
-| 에이전트 | 48.7 | -0.09 | 실측 | [[gdpval]] 343.38%×1.0, [[tau2-bench]] 90.0584795321637%×1.0, [[tau3-banking]] 5.77319587628866%×1.0, [[terminal-bench]] 22.727272727272698%×1.0 |
+| 코딩 | 54.3 | +0.28 | 실측 | [[scicode]] 40.625%×1.0, [[terminal-bench]] 22.727272727272698%×0.5 |
+| 에이전트 | 48.6 | -0.09 | 실측 | [[gdpval]] 343.38%×1.0, [[tau2-bench]] 90.0584795321637%×1.0, [[tau3-banking]] 5.77319587628866%×1.0, [[terminal-bench]] 22.727272727272698%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 45.2 | -0.32 | 실측 | [[aa-lcr]] 38.0%×1.0 |

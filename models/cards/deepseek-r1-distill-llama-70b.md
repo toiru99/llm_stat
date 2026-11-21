@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 22.5, z: -1.2, r: 32.0, estimated: false }  # 전문 지식
   reasoning: { s: 13.6, z: -1.09, r: 33.7, estimated: false }  # 추론
   coding: { s: 2.3, z: -1.28, r: 30.8, estimated: false }  # 코딩
-  agentic: { s: 12.2, z: -1.13, r: 33.1, estimated: false }  # 에이전트
+  agentic: { s: 12.2, z: -1.13, r: 33.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 11.3, z: -1.26, r: 31.1, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek R1 Distill Llama 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # DeepSeek R1 Distill Llama 70B
@@ -46,7 +46,7 @@ DeepSeek · Open · Medium · 컨텍스트 128k · 종합지능 **None** · ⚠�
 | 전문 지식 | 32.0 | -1.2 | 실측 | [[gpqa-diamond]] 40.2020202020202%×0.4, [[humanitys-last-exam]] 5.13%×0.3 |
 | 추론 | 33.7 | -1.09 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 40.2020202020202%×1.0, [[humanitys-last-exam]] 5.13%×1.0 |
 | 코딩 | 30.8 | -1.28 | 실측 | [[terminal-bench]] 1.51515151515152%×0.5 |
-| 에이전트 | 33.1 | -1.13 | 실측 | [[tau2-bench]] 21.9298245614035%×1.0, [[terminal-bench]] 1.51515151515152%×1.0 |
+| 에이전트 | 33.0 | -1.13 | 실측 | [[tau2-bench]] 21.9298245614035%×1.0, [[terminal-bench]] 1.51515151515152%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 31.1 | -1.26 | 실측 | [[aa-lcr]] 10.0%×1.0 |

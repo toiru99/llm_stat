@@ -14,8 +14,8 @@ is_reasoning: true
 radar:
   knowledge: { s: 50.8, z: 0.17, r: 52.5, estimated: false }  # 전문 지식
   reasoning: { s: 31.3, z: -0.21, r: 46.8, estimated: false }  # 추론
-  coding: { s: 13.8, z: -0.89, r: 36.7, estimated: false }  # 코딩
-  agentic: { s: 20.3, z: -0.85, r: 37.3, estimated: false }  # 에이전트
+  coding: { s: 13.8, z: -0.89, r: 36.6, estimated: false }  # 코딩
+  agentic: { s: 20.3, z: -0.85, r: 37.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 44.7, z: -0.26, r: 46.0, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — INTELLECT-3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # INTELLECT-3
@@ -45,8 +45,8 @@ Prime Intellect · Open · Medium · 컨텍스트 131k · 종합지능 **None**
 |---|---|---|---|---|
 | 전문 지식 | 52.5 | +0.17 | 실측 | [[gpqa-diamond]] 76.06060606060609%×0.4, [[humanitys-last-exam]] 13.0676552363299%×0.3 |
 | 추론 | 46.8 | -0.21 | 실측 | [[critpt]] 0.28571428571428603%×1.0, [[gpqa-diamond]] 76.06060606060609%×1.0, [[humanitys-last-exam]] 13.0676552363299%×1.0 |
-| 코딩 | 36.7 | -0.89 | 실측 | [[terminal-bench]] 9.09090909090909%×0.5 |
-| 에이전트 | 37.3 | -0.85 | 실측 | [[tau2-bench]] 26.6081871345029%×1.0, [[terminal-bench]] 9.09090909090909%×1.0 |
+| 코딩 | 36.6 | -0.89 | 실측 | [[terminal-bench]] 9.09090909090909%×0.5 |
+| 에이전트 | 37.2 | -0.85 | 실측 | [[tau2-bench]] 26.6081871345029%×1.0, [[terminal-bench]] 9.09090909090909%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 46.0 | -0.26 | 실측 | [[aa-lcr]] 39.6666666666667%×1.0 |

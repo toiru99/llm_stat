@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 23.9, z: -1.13, r: 33.0, estimated: false }  # 전문 지식
-  reasoning: { s: 14.0, z: -1.06, r: 34.1, estimated: false }  # 추론
+  reasoning: { s: 14.0, z: -1.06, r: 34.0, estimated: false }  # 추론
   coding: { s: 3.4, z: -1.24, r: 31.4, estimated: false }  # 코딩
   agentic: { s: 14.3, z: -1.06, r: 34.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 8B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Qwen3 8B (non-reasoning)
@@ -44,7 +44,7 @@ Alibaba · Open · Small · 컨텍스트 131k · 종합지능 **None** · ⚠️
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 33.0 | -1.13 | 실측 | [[gpqa-diamond]] 45.1515151515152%×0.4, [[humanitys-last-exam]] 1.95%×0.3 |
-| 추론 | 34.1 | -1.06 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 45.1515151515152%×1.0, [[humanitys-last-exam]] 1.95%×1.0 |
+| 추론 | 34.0 | -1.06 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 45.1515151515152%×1.0, [[humanitys-last-exam]] 1.95%×1.0 |
 | 코딩 | 31.4 | -1.24 | 실측 | [[terminal-bench]] 2.27272727272727%×0.5 |
 | 에이전트 | 34.1 | -1.06 | 실측 | [[tau2-bench]] 24.8538011695906%×1.0, [[terminal-bench]] 2.27272727272727%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

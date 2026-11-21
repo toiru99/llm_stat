@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.331
-output_speed_tps: 170.920039444071
+output_speed_tps: 176.085576734061
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -13,8 +13,8 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 40.8, z: -0.32, r: 45.3, estimated: false }  # 전문 지식
-  reasoning: { s: 25.5, z: -0.49, r: 42.6, estimated: false }  # 추론
-  coding: { s: 18.4, z: -0.73, r: 39.0, estimated: false }  # 코딩
+  reasoning: { s: 25.5, z: -0.5, r: 42.6, estimated: false }  # 추론
+  coding: { s: 18.4, z: -0.74, r: 39.0, estimated: false }  # 코딩
   agentic: { s: 16.7, z: -0.97, r: 35.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 68.0, z: -0.17, r: 47.4, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 2.5 Flash (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Gemini 2.5 Flash (non-reasoning)
@@ -37,15 +37,15 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $2.5 · 혼합 $0.331/1M · 170.920039444071 t/s · TTFT 0.649814480319471s · 1M ctx`
+`입력 $0.3 · 출력 $2.5 · 혼합 $0.331/1M · 176.085576734061 t/s · TTFT 0.70847600155557s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 45.3 | -0.32 | 실측 | [[gpqa-diamond]] 68.2828282828283%×0.4, [[humanitys-last-exam]] 4.72659870250232%×0.3 |
-| 추론 | 42.6 | -0.49 | 실측 | [[critpt]] 1.42857142857143%×1.0, [[gpqa-diamond]] 68.2828282828283%×1.0, [[humanitys-last-exam]] 4.72659870250232%×1.0 |
-| 코딩 | 39.0 | -0.73 | 실측 | [[terminal-bench]] 12.1212121212121%×0.5 |
+| 추론 | 42.6 | -0.5 | 실측 | [[critpt]] 1.42857142857143%×1.0, [[gpqa-diamond]] 68.2828282828283%×1.0, [[humanitys-last-exam]] 4.72659870250232%×1.0 |
+| 코딩 | 39.0 | -0.74 | 실측 | [[terminal-bench]] 12.1212121212121%×0.5 |
 | 에이전트 | 35.4 | -0.97 | 실측 | [[tau2-bench]] 14.9122807017544%×1.0, [[terminal-bench]] 12.1212121212121%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 47.4 | -0.17 | 실측 | [[mmmu-pro]] 65.4913294797688%×1.0 |

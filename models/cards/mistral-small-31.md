@@ -18,14 +18,14 @@ radar:
   agentic: { s: 21.4, z: -0.81, r: 37.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 25.2, z: -0.84, r: 37.3, estimated: false }  # 긴문맥
+  long_context: { s: 25.2, z: -0.85, r: 37.3, estimated: false }  # 긴문맥
   instruction: { s: 25.0, z: -1.21, r: 31.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Small 3.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Mistral Small 3.1
@@ -49,7 +49,7 @@ Mistral · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠️
 | 에이전트 | 37.8 | -0.81 | 실측 | [[gdpval]] 383.79%×1.0, [[tau2-bench]] 25.1461988304094%×1.0, [[tau3-banking]] 7.42268041237113%×1.0, [[terminal-bench]] 7.57575757575758%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 37.3 | -0.84 | 실측 | [[aa-lcr]] 22.3333333333333%×1.0 |
+| 긴문맥 | 37.3 | -0.85 | 실측 | [[aa-lcr]] 22.3333333333333%×1.0 |
 | 지시 따르기 | 31.9 | -1.21 | 실측 | [[ifbench]] 29.9319727891156%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

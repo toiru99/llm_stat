@@ -18,14 +18,14 @@ radar:
   agentic: { s: 60.7, z: 0.55, r: 58.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 14.7, z: -1.16, r: 32.7, estimated: false }  # 긴문맥
+  long_context: { s: 14.7, z: -1.16, r: 32.6, estimated: false }  # 긴문맥
   instruction: { s: 34.5, z: -0.81, r: 37.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — JT-MINI
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # JT-MINI
@@ -49,7 +49,7 @@ China Mobile · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **No
 | 에이전트 | 58.2 | +0.55 | 실측 | [[tau2-bench]] 92.9824561403509%×1.0, [[terminal-bench]] 18.181818181818198%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 32.7 | -1.16 | 실측 | [[aa-lcr]] 13.0%×1.0 |
+| 긴문맥 | 32.6 | -1.16 | 실측 | [[aa-lcr]] 13.0%×1.0 |
 | 지시 따르기 | 37.8 | -0.81 | 실측 | [[ifbench]] 36.6666666666667%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

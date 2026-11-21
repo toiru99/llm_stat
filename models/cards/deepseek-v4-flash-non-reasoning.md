@@ -14,18 +14,18 @@ is_reasoning: false
 radar:
   knowledge: { s: 44.8, z: -0.12, r: 48.2, estimated: false }  # 전문 지식
   reasoning: { s: 27.2, z: -0.42, r: 43.8, estimated: false }  # 추론
-  coding: { s: 51.7, z: 0.4, r: 56.0, estimated: false }  # 코딩
-  agentic: { s: 73.5, z: 0.99, r: 64.9, estimated: false }  # 에이전트
+  coding: { s: 51.7, z: 0.4, r: 55.9, estimated: false }  # 코딩
+  agentic: { s: 73.5, z: 0.99, r: 64.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 47.0, z: -0.2, r: 47.1, estimated: false }  # 긴문맥
+  long_context: { s: 47.0, z: -0.2, r: 47.0, estimated: false }  # 긴문맥
   instruction: { s: 49.3, z: -0.19, r: 47.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Flash (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # DeepSeek V4 Flash (non-reasoning)
@@ -45,11 +45,11 @@ DeepSeek · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ 
 |---|---|---|---|---|
 | 전문 지식 | 48.2 | -0.12 | 실측 | [[gpqa-diamond]] 71.6161616161616%×0.4, [[humanitys-last-exam]] 7.784986098239111%×0.3 |
 | 추론 | 43.8 | -0.42 | 실측 | [[critpt]] 0.28571428571428603%×1.0, [[gpqa-diamond]] 71.6161616161616%×1.0, [[humanitys-last-exam]] 7.784986098239111%×1.0 |
-| 코딩 | 56.0 | +0.4 | 실측 | [[terminal-bench]] 34.0909090909091%×0.5 |
-| 에이전트 | 64.9 | +0.99 | 실측 | [[tau2-bench]] 94.4444444444445%×1.0, [[terminal-bench]] 34.0909090909091%×1.0 |
+| 코딩 | 55.9 | +0.4 | 실측 | [[terminal-bench]] 34.0909090909091%×0.5 |
+| 에이전트 | 64.8 | +0.99 | 실측 | [[tau2-bench]] 94.4444444444445%×1.0, [[terminal-bench]] 34.0909090909091%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 47.1 | -0.2 | 실측 | [[aa-lcr]] 41.6666666666667%×1.0 |
+| 긴문맥 | 47.0 | -0.2 | 실측 | [[aa-lcr]] 41.6666666666667%×1.0 |
 | 지시 따르기 | 47.1 | -0.19 | 실측 | [[ifbench]] 47.2108843537415%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

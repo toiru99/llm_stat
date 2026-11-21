@@ -5,7 +5,7 @@ creator: OpenAI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.067
-output_speed_tps: 100.73736665988841
+output_speed_tps: 102.40668037012276
 context_window: 131072
 status: current
 size_class: Small
@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 44.8, z: -0.12, r: 48.2, estimated: false }  # 전문 지식
-  reasoning: { s: 28.6, z: -0.34, r: 44.8, estimated: false }  # 추론
+  reasoning: { s: 28.6, z: -0.35, r: 44.8, estimated: false }  # 추론
   coding: { s: 40.4, z: 0.01, r: 50.2, estimated: false }  # 코딩
   agentic: { s: 30.8, z: -0.49, r: 42.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — gpt-oss-20b (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # gpt-oss-20b (high)
@@ -37,14 +37,14 @@ OpenAI · Open · Small · 컨텍스트 131k · 종합지능 **None**
 - **약점**: 긴문맥, 에이전트
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.22 · 혼합 $0.067/1M · 100.73736665988841 t/s · TTFT 1.229832137010415s · 131k ctx`
+`입력 $0.05 · 출력 $0.22 · 혼합 $0.067/1M · 102.40668037012276 t/s · TTFT 1.2000952852981102s · 131k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 48.2 | -0.12 | 실측 | [[gpqa-diamond]] 68.7878787878788%×0.4, [[humanitys-last-exam]] 10.982391102873%×0.3 |
-| 추론 | 44.8 | -0.34 | 실측 | [[critpt]] 1.42857142857143%×1.0, [[gpqa-diamond]] 68.7878787878788%×1.0, [[humanitys-last-exam]] 10.982391102873%×1.0 |
+| 추론 | 44.8 | -0.35 | 실측 | [[critpt]] 1.42857142857143%×1.0, [[gpqa-diamond]] 68.7878787878788%×1.0, [[humanitys-last-exam]] 10.982391102873%×1.0 |
 | 코딩 | 50.2 | +0.01 | 실측 | [[scicode]] 38.8888888888889%×1.0, [[terminal-bench]] 10.6060606060606%×0.5 |
 | 에이전트 | 42.7 | -0.49 | 실측 | [[gdpval]] 346.87%×1.0, [[tau2-bench]] 60.23391812865499%×1.0, [[tau3-banking]] 7.01030927835052%×1.0, [[terminal-bench]] 10.6060606060606%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 54.849838322506
 price_blended_usd_1m: 7.7
-output_speed_tps: 43.9831285395414
+output_speed_tps: 47.4252458330621
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 86.7, z: 1.9, r: 78.5, estimated: false }  # 전문 지식
   reasoning: { s: 83.4, z: 2.36, r: 85.4, estimated: false }  # 추론
-  coding: { s: 79.8, z: 1.35, r: 70.3, estimated: false }  # 코딩
+  coding: { s: 79.8, z: 1.35, r: 70.2, estimated: false }  # 코딩
   agentic: { s: 81.7, z: 1.27, r: 69.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 95.9, z: 1.25, r: 68.8, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6 Astra (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # GPT-6 Astra (high)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **54.8498383
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
-`입력 $10.0 · 출력 $50.0 · 혼합 $7.7/1M · 43.9831285395414 t/s · TTFT 41.49620131405s · 1M ctx` · 가성비 7.1
+`입력 $10.0 · 출력 $50.0 · 혼합 $7.7/1M · 47.4252458330621 t/s · TTFT 35.9851231729941s · 1M ctx` · 가성비 7.1
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **54.8498383
 |---|---|---|---|---|
 | 전문 지식 | 78.5 | +1.9 | 실측 | [[gpqa-diamond]] 94.94949494949499%×0.4, [[humanitys-last-exam]] 53.058387395736794%×0.3 |
 | 추론 | 85.4 | +2.36 | 실측 | [[critpt]] 28.857142857142897%×1.0, [[gpqa-diamond]] 94.94949494949499%×1.0, [[humanitys-last-exam]] 53.058387395736794%×1.0 |
-| 코딩 | 70.3 | +1.35 | 실측 | [[scicode]] 55.4398148148148%×1.0 |
+| 코딩 | 70.2 | +1.35 | 실측 | [[scicode]] 55.4398148148148%×1.0 |
 | 에이전트 | 69.1 | +1.27 | 실측 | [[gdpval]] 1538.15%×1.0, [[tau3-banking]] 40.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 68.8 | +1.25 | 실측 | [[mmmu-pro]] 86.4161849710983%×1.0 |

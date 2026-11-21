@@ -4,7 +4,7 @@ title: JoyAI-VL-Preview
 creator: Joy Future Academy
 license: Proprietary
 intelligence_index: 28.0361254876924
-price_blended_usd_1m: 0
+price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 1048576
 status: current
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — JoyAI-VL-Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # JoyAI-VL-Preview
@@ -37,7 +37,7 @@ Joy Future Academy · Proprietary · Large · 컨텍스트 1M · 종합지능 **
 - **약점**: —
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · None t/s · TTFT Nones · 1M ctx`
+`입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

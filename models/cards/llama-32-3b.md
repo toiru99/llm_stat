@@ -12,8 +12,8 @@ size_class: Tiny
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 12.9, z: -1.66, r: 25.1, estimated: false }  # 전문 지식
-  reasoning: { s: 12.0, z: -1.16, r: 32.5, estimated: false }  # 추론
+  knowledge: { s: 12.9, z: -1.66, r: 25.0, estimated: false }  # 전문 지식
+  reasoning: { s: 12.0, z: -1.17, r: 32.5, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.36, r: 29.6, estimated: true }  # 코딩
   agentic: { s: 21.2, z: -0.82, r: 37.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.2 3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Llama 3.2 3B
@@ -43,8 +43,8 @@ Meta · Open · Tiny · 컨텍스트 128k · 종합지능 **None** · ⚠️ pas
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 25.1 | -1.66 | 실측 | [[gpqa-diamond]] 25.454545454545503%×0.4, [[humanitys-last-exam]] 5.35%×0.3 |
-| 추론 | 32.5 | -1.16 | 실측 | [[gpqa-diamond]] 25.454545454545503%×1.0, [[humanitys-last-exam]] 5.35%×1.0 |
+| 전문 지식 | 25.0 | -1.66 | 실측 | [[gpqa-diamond]] 25.454545454545503%×0.4, [[humanitys-last-exam]] 5.35%×0.3 |
+| 추론 | 32.5 | -1.17 | 실측 | [[gpqa-diamond]] 25.454545454545503%×1.0, [[humanitys-last-exam]] 5.35%×1.0 |
 | 코딩 | 29.6 | -1.36 | 추정 | (추정) |
 | 에이전트 | 37.7 | -0.82 | 실측 | [[tau2-bench]] 21.052631578947402%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

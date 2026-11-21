@@ -12,8 +12,8 @@ size_class: Tiny
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 11.1, z: -1.75, r: 23.8, estimated: false }  # 전문 지식
-  reasoning: { s: 6.9, z: -1.41, r: 28.8, estimated: false }  # 추론
+  knowledge: { s: 11.1, z: -1.75, r: 23.7, estimated: false }  # 전문 지식
+  reasoning: { s: 6.9, z: -1.42, r: 28.8, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.36, r: 29.6, estimated: false }  # 코딩
   agentic: { s: 7.4, z: -1.3, r: 30.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 0.6B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Qwen3 0.6B (non-reasoning)
@@ -43,8 +43,8 @@ Alibaba · Open · Tiny · 컨텍스트 32k · 종합지능 **None** · ⚠️ p
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 23.8 | -1.75 | 실측 | [[gpqa-diamond]] 23.1313131313131%×0.4, [[humanitys-last-exam]] 4.93%×0.3 |
-| 추론 | 28.8 | -1.41 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 23.1313131313131%×1.0, [[humanitys-last-exam]] 4.93%×1.0 |
+| 전문 지식 | 23.7 | -1.75 | 실측 | [[gpqa-diamond]] 23.1313131313131%×0.4, [[humanitys-last-exam]] 4.93%×0.3 |
+| 추론 | 28.8 | -1.42 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 23.1313131313131%×1.0, [[humanitys-last-exam]] 4.93%×1.0 |
 | 코딩 | 29.6 | -1.36 | 실측 | [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 30.5 | -1.3 | 실측 | [[tau2-bench]] 14.619883040935699%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

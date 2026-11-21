@@ -5,7 +5,7 @@ creator: Meta
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.656
-output_speed_tps: 68.8193901744296
+output_speed_tps: 68.1402314303001
 context_window: 128000
 status: current
 size_class: Medium
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 27.9, z: -0.94, r: 35.9, estimated: false }  # 전문 지식
   reasoning: { s: 16.6, z: -0.94, r: 35.9, estimated: false }  # 추론
   coding: { s: 4.6, z: -1.2, r: 32.0, estimated: false }  # 코딩
-  agentic: { s: 13.9, z: -1.07, r: 34.0, estimated: false }  # 에이전트
+  agentic: { s: 13.9, z: -1.07, r: 33.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 17.7, z: -1.07, r: 34.0, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.3 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Llama 3.3 70B
@@ -37,7 +37,7 @@ Meta · Open · Medium · 컨텍스트 128k · 종합지능 **None**
 - **약점**: 긴문맥, 코딩
 
 ## 실용 지표
-`입력 $0.6499999999999999 · 출력 $0.71 · 혼합 $0.656/1M · 68.8193901744296 t/s · TTFT 2.3784465234353402s · 128k ctx`
+`입력 $0.6499999999999999 · 출력 $0.71 · 혼합 $0.656/1M · 68.1402314303001 t/s · TTFT 2.36441608943076s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Meta · Open · Medium · 컨텍스트 128k · 종합지능 **None**
 | 전문 지식 | 35.9 | -0.94 | 실측 | [[gpqa-diamond]] 49.7979797979798%×0.4, [[humanitys-last-exam]] 3.56%×0.3 |
 | 추론 | 35.9 | -0.94 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 49.7979797979798%×1.0, [[humanitys-last-exam]] 3.56%×1.0 |
 | 코딩 | 32.0 | -1.2 | 실측 | [[terminal-bench]] 3.03030303030303%×0.5 |
-| 에이전트 | 34.0 | -1.07 | 실측 | [[gdpval]] -166.46%×1.0, [[tau2-bench]] 26.6081871345029%×1.0, [[terminal-bench]] 3.03030303030303%×1.0 |
+| 에이전트 | 33.9 | -1.07 | 실측 | [[gdpval]] -166.46%×1.0, [[tau2-bench]] 26.6081871345029%×1.0, [[terminal-bench]] 3.03030303030303%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 34.0 | -1.07 | 실측 | [[aa-lcr]] 15.666666666666702%×1.0 |

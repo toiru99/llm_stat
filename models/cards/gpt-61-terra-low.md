@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 29.4169280792131
 price_blended_usd_1m: 0.735
-output_speed_tps: 53.8422377535818
+output_speed_tps: 53.2724677471148
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 47.5, z: 0.01, r: 50.1, estimated: false }  # 전문 지식
   reasoning: { s: 44.9, z: 0.46, r: 56.9, estimated: false }  # 추론
   coding: { s: 74.9, z: 1.18, r: 67.7, estimated: false }  # 코딩
-  agentic: { s: 70.8, z: 0.9, r: 63.5, estimated: false }  # 에이전트
+  agentic: { s: 70.8, z: 0.9, r: 63.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 90.7, z: 0.98, r: 64.8, estimated: false }  # 멀티모달
   long_context: { s: 91.4, z: 1.12, r: 66.8, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6.1 Terra (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # GPT-6.1 Terra (low)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **29.4169280
 - **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
-`입력 $1.0 · 출력 $5.0 · 혼합 $0.735/1M · 53.8422377535818 t/s · TTFT 3.08011980787818s · 1M ctx` · 가성비 40.0
+`입력 $1.0 · 출력 $5.0 · 혼합 $0.735/1M · 53.2724677471148 t/s · TTFT 3.13185449223798s · 1M ctx` · 가성비 40.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **29.4169280
 | 전문 지식 | 50.1 | +0.01 | 실측 | [[humanitys-last-exam]] 35.820203892493005%×0.3 |
 | 추론 | 56.9 | +0.46 | 실측 | [[critpt]] 15.1428571428571%×1.0, [[humanitys-last-exam]] 35.820203892493005%×1.0 |
 | 코딩 | 67.7 | +1.18 | 실측 | [[scicode]] 52.4305555555556%×1.0 |
-| 에이전트 | 63.5 | +0.9 | 실측 | [[gdpval]] 1203.72%×1.0 |
+| 에이전트 | 63.4 | +0.9 | 실측 | [[gdpval]] 1203.72%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 64.8 | +0.98 | 실측 | [[mmmu-pro]] 82.485549132948%×1.0 |
 | 긴문맥 | 66.8 | +1.12 | 실측 | [[aa-lcr]] 81.0%×1.0 |

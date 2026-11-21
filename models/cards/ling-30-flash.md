@@ -5,7 +5,7 @@ creator: InclusionAI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.0475
-output_speed_tps: 133.147728243133
+output_speed_tps: 147.153614645295
 context_window: 262144
 status: past
 size_class: Medium
@@ -13,9 +13,9 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 63.2, z: 0.77, r: 61.5, estimated: false }  # 전문 지식
-  reasoning: { s: 41.1, z: 0.27, r: 54.1, estimated: false }  # 추론
+  reasoning: { s: 41.1, z: 0.27, r: 54.0, estimated: false }  # 추론
   coding: { s: 57.7, z: 0.6, r: 59.0, estimated: false }  # 코딩
-  agentic: { s: 56.4, z: 0.4, r: 56.0, estimated: false }  # 에이전트
+  agentic: { s: 56.4, z: 0.4, r: 55.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 82.3, z: 0.85, r: 62.8, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling 3.0 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Ling 3.0 Flash
@@ -37,16 +37,16 @@ InclusionAI · Open · Medium · 컨텍스트 262k · 종합지능 **None** · �
 - **약점**: 에이전트, 추론
 
 ## 실용 지표
-`입력 $0.075 · 출력 $0.22 · 혼합 $0.0475/1M · 133.147728243133 t/s · TTFT 3.69802989808888s · 262k ctx`
+`입력 $0.075 · 출력 $0.22 · 혼합 $0.0475/1M · 147.153614645295 t/s · TTFT 2.77613855954997s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 61.5 | +0.77 | 실측 | [[gpqa-diamond]] 85.45454545454541%×0.4, [[humanitys-last-exam]] 23.6793327154773%×0.3 |
-| 추론 | 54.1 | +0.27 | 실측 | [[critpt]] 1.71428571428571%×1.0, [[gpqa-diamond]] 85.45454545454541%×1.0, [[humanitys-last-exam]] 23.6793327154773%×1.0 |
+| 추론 | 54.0 | +0.27 | 실측 | [[critpt]] 1.71428571428571%×1.0, [[gpqa-diamond]] 85.45454545454541%×1.0, [[humanitys-last-exam]] 23.6793327154773%×1.0 |
 | 코딩 | 59.0 | +0.6 | 실측 | [[scicode]] 42.0138888888889%×1.0 |
-| 에이전트 | 56.0 | +0.4 | 실측 | [[gdpval]] 956.1%×1.0, [[tau3-banking]] 27.2164948453608%×1.0 |
+| 에이전트 | 55.9 | +0.4 | 실측 | [[gdpval]] 956.1%×1.0, [[tau3-banking]] 27.2164948453608%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 62.8 | +0.85 | 실측 | [[aa-lcr]] 73.0%×1.0 |

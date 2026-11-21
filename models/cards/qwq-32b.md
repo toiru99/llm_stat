@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 36.4, z: -0.53, r: 42.1, estimated: false }  # 전문 지식
   reasoning: { s: 32.9, z: -0.13, r: 48.0, estimated: false }  # 추론
-  coding: { s: 45.8, z: 0.2, r: 52.9, estimated: true }  # 코딩
+  coding: { s: 45.8, z: 0.19, r: 52.9, estimated: true }  # 코딩
   agentic: { s: 38.1, z: -0.23, r: 46.5, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — QwQ-32B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # QwQ-32B
@@ -45,7 +45,7 @@ Alibaba · Open · Small · 컨텍스트 131k · 종합지능 **None** · ⚠️
 |---|---|---|---|---|
 | 전문 지식 | 42.1 | -0.53 | 실측 | [[gpqa-diamond]] 59.292929292929294%×0.4, [[humanitys-last-exam]] 7.35%×0.3 |
 | 추론 | 48.0 | -0.13 | 실측 | [[gpqa-diamond]] 59.292929292929294%×1.0, [[humanitys-last-exam]] 7.35%×1.0 |
-| 코딩 | 52.9 | +0.2 | 추정 | (추정) |
+| 코딩 | 52.9 | +0.19 | 추정 | (추정) |
 | 에이전트 | 46.5 | -0.23 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 32.9, z: -0.69, r: 39.6, estimated: false }  # 전문 지식
+  knowledge: { s: 32.9, z: -0.7, r: 39.6, estimated: false }  # 전문 지식
   reasoning: { s: 19.6, z: -0.79, r: 38.1, estimated: false }  # 추론
   coding: { s: 10.3, z: -1.01, r: 34.9, estimated: false }  # 코딩
-  agentic: { s: 24.5, z: -0.7, r: 39.4, estimated: false }  # 에이전트
+  agentic: { s: 24.5, z: -0.71, r: 39.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 38.7, z: -0.44, r: 43.4, estimated: false }  # 긴문맥
+  long_context: { s: 38.7, z: -0.44, r: 43.3, estimated: false }  # 긴문맥
   instruction: { s: 33.8, z: -0.84, r: 37.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nova Premier
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Nova Premier
@@ -43,13 +43,13 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 39.6 | -0.69 | 실측 | [[gpqa-diamond]] 56.8686868686869%×0.4, [[humanitys-last-exam]] 4.17052826691381%×0.3 |
+| 전문 지식 | 39.6 | -0.7 | 실측 | [[gpqa-diamond]] 56.8686868686869%×0.4, [[humanitys-last-exam]] 4.17052826691381%×0.3 |
 | 추론 | 38.1 | -0.79 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 56.8686868686869%×1.0, [[humanitys-last-exam]] 4.17052826691381%×1.0 |
 | 코딩 | 34.9 | -1.01 | 실측 | [[terminal-bench]] 6.81818181818182%×0.5 |
-| 에이전트 | 39.4 | -0.7 | 실측 | [[tau2-bench]] 38.3040935672515%×1.0, [[terminal-bench]] 6.81818181818182%×1.0 |
+| 에이전트 | 39.4 | -0.71 | 실측 | [[tau2-bench]] 38.3040935672515%×1.0, [[terminal-bench]] 6.81818181818182%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 43.4 | -0.44 | 실측 | [[aa-lcr]] 34.3333333333333%×1.0 |
+| 긴문맥 | 43.3 | -0.44 | 실측 | [[aa-lcr]] 34.3333333333333%×1.0 |
 | 지시 따르기 | 37.4 | -0.84 | 실측 | [[ifbench]] 36.190476190476204%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

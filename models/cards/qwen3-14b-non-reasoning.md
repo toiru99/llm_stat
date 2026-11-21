@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.132
-output_speed_tps: 50.9716412573186
+output_speed_tps: 39.8676019896929
 context_window: 32768
 status: past
 size_class: Small
@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 26.3, z: -1.01, r: 34.8, estimated: false }  # 전문 지식
   reasoning: { s: 15.7, z: -0.98, r: 35.3, estimated: false }  # 추론
-  coding: { s: 8.0, z: -1.08, r: 33.7, estimated: false }  # 코딩
+  coding: { s: 8.0, z: -1.09, r: 33.7, estimated: false }  # 코딩
   agentic: { s: 20.2, z: -0.85, r: 37.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 14B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Qwen3 14B (non-reasoning)
@@ -37,7 +37,7 @@ Alibaba · Open · Small · 컨텍스트 32k · 종합지능 **None** · ⚠️ 
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
-`입력 $0.12 · 출력 $0.24 · 혼합 $0.132/1M · 50.9716412573186 t/s · TTFT 0.670651328783343s · 32k ctx`
+`입력 $0.12 · 출력 $0.24 · 혼합 $0.132/1M · 39.8676019896929 t/s · TTFT 0.883877122073324s · 32k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ Alibaba · Open · Small · 컨텍스트 32k · 종합지능 **None** · ⚠️ 
 |---|---|---|---|---|
 | 전문 지식 | 34.8 | -1.01 | 실측 | [[gpqa-diamond]] 46.969696969697%×0.4, [[humanitys-last-exam]] 4.09%×0.3 |
 | 추론 | 35.3 | -0.98 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 46.969696969697%×1.0, [[humanitys-last-exam]] 4.09%×1.0 |
-| 코딩 | 33.7 | -1.08 | 실측 | [[terminal-bench]] 5.3030303030303%×0.5 |
+| 코딩 | 33.7 | -1.09 | 실측 | [[terminal-bench]] 5.3030303030303%×0.5 |
 | 에이전트 | 37.2 | -0.85 | 실측 | [[tau2-bench]] 32.1637426900585%×1.0, [[terminal-bench]] 5.3030303030303%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

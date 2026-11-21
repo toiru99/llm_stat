@@ -12,10 +12,10 @@ size_class: Medium
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 17.0, z: -1.46, r: 28.0, estimated: false }  # 전문 지식
+  knowledge: { s: 17.0, z: -1.47, r: 28.0, estimated: false }  # 전문 지식
   reasoning: { s: 15.5, z: -0.99, r: 35.1, estimated: false }  # 추론
   coding: { s: 0.7, z: -1.33, r: 30.0, estimated: true }  # 코딩
-  agentic: { s: 0.8, z: -1.52, r: 27.1, estimated: true }  # 에이전트
+  agentic: { s: 0.8, z: -1.53, r: 27.1, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 2.0, z: -1.53, r: 27.0, estimated: true }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Command-R+ (Apr)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Command-R+ (Apr)
@@ -43,10 +43,10 @@ Cohere · Open · Medium · 컨텍스트 128k · 종합지능 **None** · ⚠️
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 28.0 | -1.46 | 실측 | [[gpqa-diamond]] 32.3232323232323%×0.4, [[humanitys-last-exam]] 4.63%×0.3 |
+| 전문 지식 | 28.0 | -1.47 | 실측 | [[gpqa-diamond]] 32.3232323232323%×0.4, [[humanitys-last-exam]] 4.63%×0.3 |
 | 추론 | 35.1 | -0.99 | 실측 | [[gpqa-diamond]] 32.3232323232323%×1.0, [[humanitys-last-exam]] 4.63%×1.0 |
 | 코딩 | 30.0 | -1.33 | 추정 | (추정) |
-| 에이전트 | 27.1 | -1.52 | 추정 | (추정) |
+| 에이전트 | 27.1 | -1.53 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 27.0 | -1.53 | 추정 | (추정) |

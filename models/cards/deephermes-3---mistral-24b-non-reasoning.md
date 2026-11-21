@@ -13,8 +13,8 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 20.3, z: -1.3, r: 30.5, estimated: false }  # 전문 지식
-  reasoning: { s: 18.3, z: -0.85, r: 37.2, estimated: false }  # 추론
-  coding: { s: 17.1, z: -0.78, r: 38.4, estimated: true }  # 코딩
+  reasoning: { s: 18.3, z: -0.86, r: 37.2, estimated: false }  # 추론
+  coding: { s: 17.1, z: -0.78, r: 38.3, estimated: true }  # 코딩
   agentic: { s: 10.8, z: -1.18, r: 32.3, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepHermes 3 - Mistral 24B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # DeepHermes 3 - Mistral 24B (non-reasoning)
@@ -44,8 +44,8 @@ Nous Research · Open · Small · 컨텍스트 32k · 종합지능 **None**
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 30.5 | -1.3 | 실측 | [[gpqa-diamond]] 38.1818181818182%×0.4, [[humanitys-last-exam]] 3.7600000000000002%×0.3 |
-| 추론 | 37.2 | -0.85 | 실측 | [[gpqa-diamond]] 38.1818181818182%×1.0, [[humanitys-last-exam]] 3.7600000000000002%×1.0 |
-| 코딩 | 38.4 | -0.78 | 추정 | (추정) |
+| 추론 | 37.2 | -0.86 | 실측 | [[gpqa-diamond]] 38.1818181818182%×1.0, [[humanitys-last-exam]] 3.7600000000000002%×1.0 |
+| 코딩 | 38.3 | -0.78 | 추정 | (추정) |
 | 에이전트 | 32.3 | -1.18 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

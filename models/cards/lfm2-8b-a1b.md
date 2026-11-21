@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 7.2, z: -1.38, r: 29.3, estimated: true }  # 긴문맥
-  instruction: { s: 19.9, z: -1.42, r: 28.7, estimated: false }  # 지시 따르기
+  instruction: { s: 19.9, z: -1.42, r: 28.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — LFM2 8B A1B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # LFM2 8B A1B
@@ -50,7 +50,7 @@ Liquid AI · Open · Small · 컨텍스트 32k · 종합지능 **None** · ⚠�
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 29.3 | -1.38 | 추정 | (추정) |
-| 지시 따르기 | 28.7 | -1.42 | 실측 | [[ifbench]] 26.2585034013605%×1.0 |
+| 지시 따르기 | 28.6 | -1.42 | 실측 | [[ifbench]] 26.2585034013605%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

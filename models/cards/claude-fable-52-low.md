@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 53.9249388799182
 price_blended_usd_1m: 5.74
-output_speed_tps: 108.191808082589
+output_speed_tps: 107.848063389964
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 80.1, z: 1.58, r: 73.7, estimated: false }  # 전문 지식
   reasoning: { s: 81.3, z: 2.25, r: 83.8, estimated: false }  # 추론
   coding: { s: 83.6, z: 1.48, r: 72.2, estimated: false }  # 코딩
-  agentic: { s: 85.9, z: 1.42, r: 71.3, estimated: false }  # 에이전트
+  agentic: { s: 85.9, z: 1.42, r: 71.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 90.2, z: 1.09, r: 66.3, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Fable 5.2 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Claude Fable 5.2 (low)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **53.9249
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
-`입력 $8.0 · 출력 $40.0 · 혼합 $5.74/1M · 108.191808082589 t/s · TTFT 8.33333143127012s · 1M ctx` · 가성비 9.4
+`입력 $8.0 · 출력 $40.0 · 혼합 $5.74/1M · 107.848063389964 t/s · TTFT 8.64808120008399s · 1M ctx` · 가성비 9.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **53.9249
 | 전문 지식 | 73.7 | +1.58 | 실측 | [[humanitys-last-exam]] 59.7312326227989%×0.3 |
 | 추론 | 83.8 | +2.25 | 실측 | [[critpt]] 29.4285714285714%×1.0, [[humanitys-last-exam]] 59.7312326227989%×1.0 |
 | 코딩 | 72.2 | +1.48 | 실측 | [[scicode]] 57.7546296296296%×1.0 |
-| 에이전트 | 71.3 | +1.42 | 실측 | [[gdpval]] 1545.68%×1.0 |
+| 에이전트 | 71.2 | +1.42 | 실측 | [[gdpval]] 1545.68%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 66.3 | +1.09 | 실측 | [[aa-lcr]] 80.0%×1.0 |

@@ -5,7 +5,7 @@ creator: Mistral
 license: Proprietary
 intelligence_index: 25.336451488165
 price_blended_usd_1m: 0.399
-output_speed_tps: 56.1059420489273
+output_speed_tps: 44.9370409108731
 context_window: 524288
 status: past
 size_class: Large
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 46.4, z: -0.05, r: 49.3, estimated: false }  # 전문 지식
   reasoning: { s: 38.0, z: 0.12, r: 51.8, estimated: false }  # 추론
   coding: { s: 77.7, z: 1.28, r: 69.2, estimated: false }  # 코딩
-  agentic: { s: 80.8, z: 1.24, r: 68.7, estimated: false }  # 에이전트
+  agentic: { s: 80.8, z: 1.24, r: 68.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 82.6, z: 0.57, r: 58.6, estimated: false }  # 멀티모달
   long_context: { s: 91.7, z: 1.13, r: 67.0, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Large 4 Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Mistral Large 4 Preview
@@ -37,7 +37,7 @@ Mistral · Proprietary · Large · 컨텍스트 524k · 종합지능 **25.336451
 - **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
-`입력 $0.7 · 출력 $2.1 · 혼합 $0.399/1M · 56.1059420489273 t/s · TTFT 3.45407714811671s · 524k ctx` · 가성비 63.5
+`입력 $0.7 · 출력 $2.1 · 혼합 $0.399/1M · 44.9370409108731 t/s · TTFT 3.06992732504003s · 524k ctx` · 가성비 63.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Mistral · Proprietary · Large · 컨텍스트 524k · 종합지능 **25.336451
 | 전문 지식 | 49.3 | -0.05 | 실측 | [[humanitys-last-exam]] 35.032437442075995%×0.3 |
 | 추론 | 51.8 | +0.12 | 실측 | [[critpt]] 10.5714285714286%×1.0, [[humanitys-last-exam]] 35.032437442075995%×1.0 |
 | 코딩 | 69.2 | +1.28 | 실측 | [[scicode]] 54.1666666666667%×1.0 |
-| 에이전트 | 68.7 | +1.24 | 실측 | [[gdpval]] 1431.08%×1.0 |
+| 에이전트 | 68.6 | +1.24 | 실측 | [[gdpval]] 1431.08%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 58.6 | +0.57 | 실측 | [[mmmu-pro]] 76.4161849710983%×1.0 |
 | 긴문맥 | 67.0 | +1.13 | 실측 | [[aa-lcr]] 81.3333333333333%×1.0 |

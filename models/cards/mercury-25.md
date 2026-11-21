@@ -5,7 +5,7 @@ creator: Inception
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.129
-output_speed_tps: 523.890506903663
+output_speed_tps: 538.373041804203
 context_window: 260000
 status: current
 size_class: Unknown
@@ -13,9 +13,9 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 14.6, z: -1.58, r: 26.3, estimated: false }  # 전문 지식
-  reasoning: { s: 7.3, z: -1.39, r: 29.1, estimated: false }  # 추론
+  reasoning: { s: 7.3, z: -1.4, r: 29.1, estimated: false }  # 추론
   coding: { s: 52.0, z: 0.41, r: 56.1, estimated: false }  # 코딩
-  agentic: { s: 39.0, z: -0.2, r: 46.9, estimated: false }  # 에이전트
+  agentic: { s: 39.0, z: -0.21, r: 46.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 80.8, z: 0.81, r: 62.1, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mercury 2.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Mercury 2.5
@@ -37,16 +37,16 @@ Inception · Proprietary · Unknown · 컨텍스트 260k · 종합지능 **None*
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.75 · 혼합 $0.129/1M · 523.890506903663 t/s · TTFT 2.25201405462593s · 260k ctx`
+`입력 $0.2 · 출력 $0.75 · 혼합 $0.129/1M · 538.373041804203 t/s · TTFT 2.19254163725937s · 260k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 26.3 | -1.58 | 실측 | [[humanitys-last-exam]] 11.770157553290101%×0.3 |
-| 추론 | 29.1 | -1.39 | 실측 | [[critpt]] 0.0%×1.0, [[humanitys-last-exam]] 11.770157553290101%×1.0 |
+| 추론 | 29.1 | -1.4 | 실측 | [[critpt]] 0.0%×1.0, [[humanitys-last-exam]] 11.770157553290101%×1.0 |
 | 코딩 | 56.1 | +0.41 | 실측 | [[scicode]] 38.5416666666667%×1.0 |
-| 에이전트 | 46.9 | -0.2 | 실측 | [[gdpval]] 481.63%×1.0 |
+| 에이전트 | 46.9 | -0.21 | 실측 | [[gdpval]] 481.63%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 62.1 | +0.81 | 실측 | [[aa-lcr]] 71.6666666666667%×1.0 |

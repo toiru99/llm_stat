@@ -12,20 +12,20 @@ size_class: Tiny
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 44.5, z: -0.13, r: 48.0, estimated: false }  # 전문 지식
-  reasoning: { s: 27.1, z: -0.42, r: 43.8, estimated: false }  # 추론
+  knowledge: { s: 44.5, z: -0.14, r: 48.0, estimated: false }  # 전문 지식
+  reasoning: { s: 27.1, z: -0.42, r: 43.7, estimated: false }  # 추론
   coding: { s: 31.8, z: -0.28, r: 45.8, estimated: false }  # 코딩
-  agentic: { s: 44.8, z: -0.0, r: 50.0, estimated: false }  # 에이전트
+  agentic: { s: 44.8, z: -0.0, r: 49.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 66.9, z: 0.4, r: 55.9, estimated: false }  # 긴문맥
+  long_context: { s: 66.9, z: 0.39, r: 55.9, estimated: false }  # 긴문맥
   instruction: { s: 62.3, z: 0.35, r: 55.3, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiniCPM5-2B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # MiniCPM5-2B
@@ -43,13 +43,13 @@ OpenBMB · Open · Tiny · 컨텍스트 131k · 종합지능 **None**
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 48.0 | -0.13 | 실측 | [[gpqa-diamond]] 70.2020202020202%×0.4, [[humanitys-last-exam]] 8.943466172381841%×0.3 |
-| 추론 | 43.8 | -0.42 | 실측 | [[critpt]] 0.28571428571428603%×1.0, [[gpqa-diamond]] 70.2020202020202%×1.0, [[humanitys-last-exam]] 8.943466172381841%×1.0 |
+| 전문 지식 | 48.0 | -0.14 | 실측 | [[gpqa-diamond]] 70.2020202020202%×0.4, [[humanitys-last-exam]] 8.943466172381841%×0.3 |
+| 추론 | 43.7 | -0.42 | 실측 | [[critpt]] 0.28571428571428603%×1.0, [[gpqa-diamond]] 70.2020202020202%×1.0, [[humanitys-last-exam]] 8.943466172381841%×1.0 |
 | 코딩 | 45.8 | -0.28 | 실측 | [[scicode]] 26.273148148148103%×1.0 |
-| 에이전트 | 50.0 | +-0.0 | 실측 | [[gdpval]] 714.45%×1.0, [[tau3-banking]] 20.8247422680412%×1.0 |
+| 에이전트 | 49.9 | +-0.0 | 실측 | [[gdpval]] 714.45%×1.0, [[tau3-banking]] 20.8247422680412%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 55.9 | +0.4 | 실측 | [[aa-lcr]] 59.33333333333331%×1.0 |
+| 긴문맥 | 55.9 | +0.39 | 실측 | [[aa-lcr]] 59.33333333333331%×1.0 |
 | 지시 따르기 | 55.3 | +0.35 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

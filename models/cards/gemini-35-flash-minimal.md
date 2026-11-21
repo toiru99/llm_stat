@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 1.305
-output_speed_tps: 129.923492520964
+output_speed_tps: 136.812658463636
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 61.7, z: 0.7, r: 60.4, estimated: false }  # 전문 지식
   reasoning: { s: 40.0, z: 0.22, r: 53.2, estimated: false }  # 추론
   coding: { s: 70.1, z: 1.02, r: 65.3, estimated: false }  # 코딩
-  agentic: { s: 64.7, z: 0.69, r: 60.3, estimated: false }  # 에이전트
+  agentic: { s: 64.7, z: 0.68, r: 60.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 87.5, z: 0.82, r: 62.3, estimated: false }  # 멀티모달
   long_context: { s: 69.2, z: 0.46, r: 56.9, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.5 Flash (minimal)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Gemini 3.5 Flash (minimal)
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 - **약점**: 추론, 지시 따르기
 
 ## 실용 지표
-`입력 $1.5 · 출력 $9.0 · 혼합 $1.305/1M · 129.923492520964 t/s · TTFT 2.22981193537781s · 1M ctx`
+`입력 $1.5 · 출력 $9.0 · 혼합 $1.305/1M · 136.812658463636 t/s · TTFT 2.55502790738335s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 | 전문 지식 | 60.4 | +0.7 | 실측 | [[gpqa-diamond]] 82.8282828282828%×0.4, [[humanitys-last-exam]] 24.0963855421687%×0.3 |
 | 추론 | 53.2 | +0.22 | 실측 | [[critpt]] 1.42857142857143%×1.0, [[gpqa-diamond]] 82.8282828282828%×1.0, [[humanitys-last-exam]] 24.0963855421687%×1.0 |
 | 코딩 | 65.3 | +1.02 | 실측 | [[terminal-bench]] 46.2121212121212%×0.5 |
-| 에이전트 | 60.3 | +0.69 | 실측 | [[tau2-bench]] 58.7719298245614%×1.0, [[terminal-bench]] 46.2121212121212%×1.0 |
+| 에이전트 | 60.3 | +0.68 | 실측 | [[tau2-bench]] 58.7719298245614%×1.0, [[terminal-bench]] 46.2121212121212%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 62.3 | +0.82 | 실측 | [[mmmu-pro]] 80.1156069364162%×1.0 |
 | 긴문맥 | 56.9 | +0.46 | 실측 | [[aa-lcr]] 61.33333333333329%×1.0 |

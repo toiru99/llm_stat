@@ -15,17 +15,17 @@ radar:
   knowledge: { s: 73.3, z: 1.25, r: 68.8, estimated: false }  # 전문 지식
   reasoning: { s: 56.0, z: 1.01, r: 65.1, estimated: false }  # 추론
   coding: { s: 63.2, z: 0.79, r: 61.8, estimated: false }  # 코딩
-  agentic: { s: 69.5, z: 0.85, r: 62.8, estimated: false }  # 에이전트
+  agentic: { s: 69.5, z: 0.85, r: 62.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 79.3, z: 0.76, r: 61.5, estimated: false }  # 긴문맥
+  long_context: { s: 79.3, z: 0.76, r: 61.4, estimated: false }  # 긴문맥
   instruction: { s: 83.1, z: 1.22, r: 68.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Pro (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # DeepSeek V4 Pro (high)
@@ -46,10 +46,10 @@ DeepSeek · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ 
 | 전문 지식 | 68.8 | +1.25 | 실측 | [[gpqa-diamond]] 90.5050505050505%×0.4, [[humanitys-last-exam]] 35.2177942539388%×0.3 |
 | 추론 | 65.1 | +1.01 | 실측 | [[critpt]] 10.0%×1.0, [[gpqa-diamond]] 90.5050505050505%×1.0, [[humanitys-last-exam]] 35.2177942539388%×1.0 |
 | 코딩 | 61.8 | +0.79 | 실측 | [[terminal-bench]] 41.6666666666667%×0.5 |
-| 에이전트 | 62.8 | +0.85 | 실측 | [[gdpval]] 1159.95%×1.0, [[tau2-bench]] 94.15204678362569%×1.0, [[tau3-banking]] 26.185567010309303%×1.0, [[terminal-bench]] 41.6666666666667%×1.0 |
+| 에이전트 | 62.7 | +0.85 | 실측 | [[gdpval]] 1159.95%×1.0, [[tau2-bench]] 94.15204678362569%×1.0, [[tau3-banking]] 26.185567010309303%×1.0, [[terminal-bench]] 41.6666666666667%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 61.5 | +0.76 | 실측 | [[aa-lcr]] 70.3333333333333%×1.0 |
+| 긴문맥 | 61.4 | +0.76 | 실측 | [[aa-lcr]] 70.3333333333333%×1.0 |
 | 지시 따르기 | 68.3 | +1.22 | 실측 | [[ifbench]] 71.2925170068027%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).

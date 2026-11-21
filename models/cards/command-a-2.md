@@ -5,7 +5,7 @@ creator: Cohere
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 3.25
-output_speed_tps: 59.2329773321441
+output_speed_tps: 49.8709515275508
 context_window: 256000
 status: past
 size_class: Medium
@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 24.1, z: -0.88, r: 36.8, estimated: false }  # 긴문맥
-  instruction: { s: 34.2, z: -0.82, r: 37.7, estimated: false }  # 지시 따르기
+  instruction: { s: 34.2, z: -0.82, r: 37.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Command A
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Command A
@@ -37,7 +37,7 @@ Cohere · Open · Medium · 컨텍스트 256k · 종합지능 **None** · ⚠️
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $2.5 · 출력 $10.0 · 혼합 $3.25/1M · 59.2329773321441 t/s · TTFT 5.78663642675668s · 256k ctx`
+`입력 $2.5 · 출력 $10.0 · 혼합 $3.25/1M · 49.8709515275508 t/s · TTFT 6.48618373657334s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Cohere · Open · Medium · 컨텍스트 256k · 종합지능 **None** · ⚠️
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 36.8 | -0.88 | 실측 | [[aa-lcr]] 21.3333333333333%×1.0 |
-| 지시 따르기 | 37.7 | -0.82 | 실측 | [[ifbench]] 36.4625850340136%×1.0 |
+| 지시 따르기 | 37.6 | -0.82 | 실측 | [[ifbench]] 36.4625850340136%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -5,7 +5,7 @@ creator: Z AI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.377
-output_speed_tps: 32.6235641740631
+output_speed_tps: 36.0205828213866
 context_window: 64000
 status: past
 size_class: Medium
@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 37.7, z: -1.72, r: 24.2, estimated: false }  # 멀티모달
   long_context: { s: 0.0, z: -1.59, r: 26.1, estimated: false }  # 긴문맥
-  instruction: { s: 23.2, z: -1.28, r: 30.8, estimated: false }  # 지시 따르기
+  instruction: { s: 23.2, z: -1.28, r: 30.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.5V (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # GLM-4.5V (non-reasoning)
@@ -37,7 +37,7 @@ Z AI · Open · Medium · 컨텍스트 64k · 종합지능 **None** · ⚠️ pa
 - **약점**: 긴문맥, 멀티모달
 
 ## 실용 지표
-`입력 $0.6 · 출력 $1.8 · 혼합 $0.377/1M · 32.6235641740631 t/s · TTFT 6.33785047567335s · 64k ctx`
+`입력 $0.6 · 출력 $1.8 · 혼합 $0.377/1M · 36.0205828213866 t/s · TTFT 6.18565838764002s · 64k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Z AI · Open · Medium · 컨텍스트 64k · 종합지능 **None** · ⚠️ pa
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 24.2 | -1.72 | 실측 | [[mmmu-pro]] 42.7745664739884%×1.0 |
 | 긴문맥 | 26.1 | -1.59 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 30.8 | -1.28 | 실측 | [[ifbench]] 28.6394557823129%×1.0 |
+| 지시 따르기 | 30.7 | -1.28 | 실측 | [[ifbench]] 28.6394557823129%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

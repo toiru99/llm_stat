@@ -12,10 +12,10 @@ size_class: Medium
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 17.6, z: -1.43, r: 28.5, estimated: false }  # 전문 지식
+  knowledge: { s: 17.6, z: -1.44, r: 28.5, estimated: false }  # 전문 지식
   reasoning: { s: 16.1, z: -0.96, r: 35.6, estimated: false }  # 추론
-  coding: { s: 1.3, z: -1.31, r: 30.3, estimated: true }  # 코딩
-  agentic: { s: 1.4, z: -1.5, r: 27.4, estimated: true }  # 에이전트
+  coding: { s: 1.3, z: -1.32, r: 30.3, estimated: true }  # 코딩
+  agentic: { s: 1.4, z: -1.51, r: 27.4, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 2.2, z: -1.53, r: 27.1, estimated: true }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 2 Chat 70B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Llama 2 Chat 70B
@@ -43,10 +43,10 @@ Meta · Open · Medium · 컨텍스트 4k · 종합지능 **None** · ⚠️ pas
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 28.5 | -1.43 | 실측 | [[gpqa-diamond]] 32.7272727272727%×0.4, [[humanitys-last-exam]] 5.21%×0.3 |
+| 전문 지식 | 28.5 | -1.44 | 실측 | [[gpqa-diamond]] 32.7272727272727%×0.4, [[humanitys-last-exam]] 5.21%×0.3 |
 | 추론 | 35.6 | -0.96 | 실측 | [[gpqa-diamond]] 32.7272727272727%×1.0, [[humanitys-last-exam]] 5.21%×1.0 |
-| 코딩 | 30.3 | -1.31 | 추정 | (추정) |
-| 에이전트 | 27.4 | -1.5 | 추정 | (추정) |
+| 코딩 | 30.3 | -1.32 | 추정 | (추정) |
+| 에이전트 | 27.4 | -1.51 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 27.1 | -1.53 | 추정 | (추정) |

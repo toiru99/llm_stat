@@ -5,7 +5,7 @@ creator: Celeris
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.124
-output_speed_tps: 722.928029199984
+output_speed_tps: 740.34938767812
 context_window: 131072
 status: current
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 38.6, z: -0.42, r: 43.7, estimated: false }  # 전문 지식
   reasoning: { s: 23.2, z: -0.61, r: 40.8, estimated: false }  # 추론
   coding: { s: 24.2, z: -0.54, r: 41.9, estimated: false }  # 코딩
-  agentic: { s: 19.3, z: -0.88, r: 36.7, estimated: false }  # 에이전트
+  agentic: { s: 19.3, z: -0.89, r: 36.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 42.9, z: -0.32, r: 45.2, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Celeris-1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # Celeris-1
@@ -37,7 +37,7 @@ Celeris · Proprietary · Unknown · 컨텍스트 131k · 종합지능 **None**
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.7 · 혼합 $0.124/1M · 722.928029199984 t/s · TTFT 1.26155480189099s · 131k ctx`
+`입력 $0.2 · 출력 $0.7 · 혼합 $0.124/1M · 740.34938767812 t/s · TTFT 1.2918116646053s · 131k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Celeris · Proprietary · Unknown · 컨텍스트 131k · 종합지능 **None**
 | 전문 지식 | 43.7 | -0.42 | 실측 | [[gpqa-diamond]] 63.13131313131311%×0.4, [[humanitys-last-exam]] 6.811862835959221%×0.3 |
 | 추론 | 40.8 | -0.61 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 63.13131313131311%×1.0, [[humanitys-last-exam]] 6.811862835959221%×1.0 |
 | 코딩 | 41.9 | -0.54 | 실측 | [[scicode]] 21.6435185185185%×1.0 |
-| 에이전트 | 36.7 | -0.88 | 실측 | [[gdpval]] 309.13%×1.0, [[tau3-banking]] 3.9175257731958797%×1.0 |
+| 에이전트 | 36.7 | -0.89 | 실측 | [[gdpval]] 309.13%×1.0, [[tau3-banking]] 3.9175257731958797%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 45.2 | -0.32 | 실측 | [[aa-lcr]] 38.0%×1.0 |

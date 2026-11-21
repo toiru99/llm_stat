@@ -5,14 +5,14 @@ creator: MiniMax
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.39
-output_speed_tps: 94.074920593514
+output_speed_tps: 87.8195619842035
 context_window: 204800
 status: past
 size_class: Large
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 52.2, z: 0.24, r: 53.6, estimated: false }  # 전문 지식
+  knowledge: { s: 52.2, z: 0.24, r: 53.5, estimated: false }  # 전문 지식
   reasoning: { s: 32.7, z: -0.14, r: 47.9, estimated: false }  # 추론
   coding: { s: 39.1, z: -0.03, r: 49.5, estimated: false }  # 코딩
   agentic: { s: 63.3, z: 0.64, r: 59.6, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax-M2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-20
-timestamp: 2026-11-20T00:00:00Z
+updated: 2026-11-21
+timestamp: 2026-11-21T00:00:00Z
 ---
 
 # MiniMax-M2
@@ -37,13 +37,13 @@ MiniMax · Open · Large · 컨텍스트 204k · 종합지능 **None** · ⚠️
 - **약점**: 코딩, 추론
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.39/1M · 94.074920593514 t/s · TTFT 1.35379419897778s · 204k ctx`
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.39/1M · 87.8195619842035 t/s · TTFT 1.39830680759997s · 204k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 53.6 | +0.24 | 실측 | [[gpqa-diamond]] 77.6767676767677%×0.4, [[humanitys-last-exam]] 13.670064874884199%×0.3 |
+| 전문 지식 | 53.5 | +0.24 | 실측 | [[gpqa-diamond]] 77.6767676767677%×0.4, [[humanitys-last-exam]] 13.670064874884199%×0.3 |
 | 추론 | 47.9 | -0.14 | 실측 | [[critpt]] 0.857142857142857%×1.0, [[gpqa-diamond]] 77.6767676767677%×1.0, [[humanitys-last-exam]] 13.670064874884199%×1.0 |
 | 코딩 | 49.5 | -0.03 | 실측 | [[terminal-bench]] 25.7575757575758%×0.5 |
 | 에이전트 | 59.6 | +0.64 | 실측 | [[tau2-bench]] 86.8421052631579%×1.0, [[terminal-bench]] 25.7575757575758%×1.0 |
