@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 59.1060336078904
 price_blended_usd_1m: 2.94
-output_speed_tps: 112.465361361904
+output_speed_tps: 114.300965178341
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 5.5 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Claude Opus 5.5 (max)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **59.1060
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 112.465361361904 t/s · TTFT 356.594729997513s · 1M ctx` · 가성비 20.1
+`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 114.300965178341 t/s · TTFT 345.435830864319s · 1M ctx` · 가성비 20.1
 
 ## 레이더 8축 (평균=50 기준선)
 

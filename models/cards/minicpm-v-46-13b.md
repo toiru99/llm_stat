@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniCPM-V 4.6 1.3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # MiniCPM-V 4.6 1.3B
@@ -46,7 +46,7 @@ OpenBMB · Open · Tiny · 컨텍스트 262k · 종합지능 **None**
 | 전문 지식 | 27.3 | -1.51 | 실측 | [[gpqa-diamond]] 30.5050505050505%×0.4, [[humanitys-last-exam]] 5.050973123262279%×0.3 |
 | 추론 | 30.9 | -1.27 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 30.5050505050505%×1.0, [[humanitys-last-exam]] 5.050973123262279%×1.0 |
 | 코딩 | 29.6 | -1.36 | 실측 | [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 42.3 | -0.51 | 실측 | [[gdpval]] -362.32%×1.0, [[tau2-bench]] 87.719298245614%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 에이전트 | 42.3 | -0.51 | 실측 | [[gdpval]] -362.63%×1.0, [[tau2-bench]] 87.719298245614%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 19.2 | -2.05 | 실측 | [[mmmu-pro]] 37.9190751445087%×1.0 |
 | 긴문맥 | 29.6 | -1.36 | 실측 | [[aa-lcr]] 7.000000000000001%×1.0 |

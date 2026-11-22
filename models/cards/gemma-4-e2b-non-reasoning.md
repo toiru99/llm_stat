@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 E2B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Gemma 4 E2B (non-reasoning)

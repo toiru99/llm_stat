@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 84.2, z: 0.91, r: 63.6, estimated: false }  # 긴문맥
-  instruction: { s: 87.7, z: 1.42, r: 71.2, estimated: true }  # 지시 따르기
+  instruction: { s: 87.7, z: 1.41, r: 71.2, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Motif 3 (Beta)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Motif 3 (Beta)
@@ -46,11 +46,11 @@ Motif Technologies · Proprietary · Large · 컨텍스트 262k · 종합지능 
 | 전문 지식 | 69.3 | +1.28 | 실측 | [[gpqa-diamond]] 86.8686868686869%×0.4, [[humanitys-last-exam]] 40.361445783132496%×0.3 |
 | 추론 | 63.0 | +0.87 | 실측 | [[critpt]] 6.0%×1.0, [[gpqa-diamond]] 86.8686868686869%×1.0, [[humanitys-last-exam]] 40.361445783132496%×1.0 |
 | 코딩 | 63.5 | +0.9 | 추정 | (추정) |
-| 에이전트 | 61.3 | +0.75 | 실측 | [[gdpval]] 1109.16%×1.0 |
+| 에이전트 | 61.3 | +0.75 | 실측 | [[gdpval]] 1108.5%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 63.6 | +0.91 | 실측 | [[aa-lcr]] 74.6666666666667%×1.0 |
-| 지시 따르기 | 71.2 | +1.42 | 추정 | (추정) |
+| 지시 따르기 | 71.2 | +1.41 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

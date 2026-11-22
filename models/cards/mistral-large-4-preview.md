@@ -5,7 +5,7 @@ creator: Mistral
 license: Proprietary
 intelligence_index: 25.336451488165
 price_blended_usd_1m: 0.399
-output_speed_tps: 44.9370409108731
+output_speed_tps: 56.8991954551048
 context_window: 524288
 status: past
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Large 4 Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Mistral Large 4 Preview
@@ -37,7 +37,7 @@ Mistral · Proprietary · Large · 컨텍스트 524k · 종합지능 **25.336451
 - **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
-`입력 $0.7 · 출력 $2.1 · 혼합 $0.399/1M · 44.9370409108731 t/s · TTFT 3.06992732504003s · 524k ctx` · 가성비 63.5
+`입력 $0.7 · 출력 $2.1 · 혼합 $0.399/1M · 56.8991954551048 t/s · TTFT 2.67413696530839s · 524k ctx` · 가성비 63.5
 
 ## 레이더 8축 (평균=50 기준선)
 

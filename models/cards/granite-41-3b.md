@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.1 3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Granite 4.1 3B
@@ -46,7 +46,7 @@ IBM · Open · Tiny · 컨텍스트 131k · 종합지능 **None** · ⚠️ past
 | 전문 지식 | 27.1 | -1.53 | 실측 | [[gpqa-diamond]] 31.4141414141414%×0.4, [[humanitys-last-exam]] 3.42910101946247%×0.3 |
 | 추론 | 30.6 | -1.29 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 31.4141414141414%×1.0, [[humanitys-last-exam]] 3.42910101946247%×1.0 |
 | 코딩 | 31.4 | -1.24 | 실측 | [[terminal-bench]] 2.27272727272727%×0.5 |
-| 에이전트 | 32.7 | -1.15 | 실측 | [[gdpval]] -138.11%×1.0, [[tau2-bench]] 19.5906432748538%×1.0, [[terminal-bench]] 2.27272727272727%×1.0 |
+| 에이전트 | 32.7 | -1.15 | 실측 | [[gdpval]] -138.43%×1.0, [[tau2-bench]] 19.5906432748538%×1.0, [[terminal-bench]] 2.27272727272727%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 29.1 | -1.39 | 실측 | [[aa-lcr]] 6.0%×1.0 |

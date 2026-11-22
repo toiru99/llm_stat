@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.9
-output_speed_tps: 53.5435419593383
+output_speed_tps: 53.2396948977254
 context_window: 262144
 status: past
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.6 27B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Qwen3.6 27B (non-reasoning)
@@ -37,7 +37,7 @@ Alibaba · Open · Small · 컨텍스트 262k · 종합지능 **None** · ⚠️
 - **약점**: 코딩, 지시 따르기
 
 ## 실용 지표
-`입력 $0.6 · 출력 $3.6 · 혼합 $0.9/1M · 53.5435419593383 t/s · TTFT 7.05343286423328s · 262k ctx`
+`입력 $0.6 · 출력 $3.6 · 혼합 $0.9/1M · 53.2396948977254 t/s · TTFT 7.11860818334164s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Alibaba · Open · Small · 컨텍스트 262k · 종합지능 **None** · ⚠️
 | 전문 지식 | 56.6 | +0.44 | 실측 | [[gpqa-diamond]] 82.9292929292929%×0.4, [[humanitys-last-exam]] 15.060240963855401%×0.3 |
 | 추론 | 49.8 | -0.01 | 실측 | [[critpt]] 0.857142857142857%×1.0, [[gpqa-diamond]] 82.9292929292929%×1.0, [[humanitys-last-exam]] 15.060240963855401%×1.0 |
 | 코딩 | 46.0 | -0.27 | 실측 | [[terminal-bench]] 21.2121212121212%×0.5 |
-| 에이전트 | 53.3 | +0.22 | 실측 | [[gdpval]] 969.03%×1.0, [[tau2-bench]] 93.56725146198829%×1.0, [[tau3-banking]] 9.27835051546392%×1.0, [[terminal-bench]] 21.2121212121212%×1.0 |
+| 에이전트 | 53.3 | +0.22 | 실측 | [[gdpval]] 969.31%×1.0, [[tau2-bench]] 93.56725146198829%×1.0, [[tau3-banking]] 9.27835051546392%×1.0, [[terminal-bench]] 21.2121212121212%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 53.8 | +0.25 | 실측 | [[mmmu-pro]] 71.73410404624279%×1.0 |
 | 긴문맥 | 59.6 | +0.64 | 실측 | [[aa-lcr]] 66.6666666666667%×1.0 |

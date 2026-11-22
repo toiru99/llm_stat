@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.322
-output_speed_tps: 83.3709443232802
+output_speed_tps: 84.0717365425818
 context_window: 65536
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Omni 30B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Qwen3 Omni 30B A3B
@@ -37,7 +37,7 @@ Alibaba · Open · Small · 컨텍스트 65k · 종합지능 **None**
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
-`입력 $0.25 · 출력 $0.97 · 혼합 $0.322/1M · 83.3709443232802 t/s · TTFT 1.18394470221394s · 65k ctx`
+`입력 $0.25 · 출력 $0.97 · 혼합 $0.322/1M · 84.0717365425818 t/s · TTFT 1.20695607799613s · 65k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

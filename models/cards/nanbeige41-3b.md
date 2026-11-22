@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nanbeige4.1-3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Nanbeige4.1-3B
@@ -46,7 +46,7 @@ Nanbeige · Open · Tiny · 컨텍스트 256k · 종합지능 **None**
 | 전문 지식 | 55.8 | +0.39 | 실측 | [[gpqa-diamond]] 84.94949494949499%×0.4, [[humanitys-last-exam]] 10.8897126969416%×0.3 |
 | 추론 | 48.4 | -0.11 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 84.94949494949499%×1.0, [[humanitys-last-exam]] 10.8897126969416%×1.0 |
 | 코딩 | 29.6 | -1.36 | 실측 | [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 30.5 | -1.3 | 실측 | [[gdpval]] -396.55%×1.0, [[tau2-bench]] 21.6374269005848%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 에이전트 | 30.5 | -1.3 | 실측 | [[gdpval]] -396.86%×1.0, [[tau2-bench]] 21.6374269005848%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 26.1 | -1.59 | 실측 | [[aa-lcr]] 0.0%×1.0 |

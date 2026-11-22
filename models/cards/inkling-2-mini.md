@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 87.5, z: 1.01, r: 65.1, estimated: true }  # 긴문맥
-  instruction: { s: 65.0, z: 0.47, r: 57.0, estimated: true }  # 지시 따르기
+  instruction: { s: 65.0, z: 0.46, r: 57.0, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Inkling 2 Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Inkling 2 Mini
@@ -50,7 +50,7 @@ Thinking Machines · Open · Small · 컨텍스트 1M · 종합지능 **20.13152
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 65.1 | +1.01 | 추정 | (추정) |
-| 지시 따르기 | 57.0 | +0.47 | 추정 | (추정) |
+| 지시 따르기 | 57.0 | +0.46 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

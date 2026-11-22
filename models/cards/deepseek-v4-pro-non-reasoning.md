@@ -5,7 +5,7 @@ creator: DeepSeek
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.7975
-output_speed_tps: 124.797663234205
+output_speed_tps: 141.1883313069025
 context_window: 1000000
 status: past
 size_class: Large
@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 59.8, z: 0.18, r: 52.7, estimated: false }  # 긴문맥
-  instruction: { s: 47.3, z: -0.28, r: 45.9, estimated: false }  # 지시 따르기
+  instruction: { s: 47.3, z: -0.28, r: 45.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Pro (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # DeepSeek V4 Pro (non-reasoning)
@@ -37,7 +37,7 @@ DeepSeek · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ 
 - **약점**: 지시 따르기, 추론
 
 ## 실용 지표
-`입력 $1.74 · 출력 $3.48 · 혼합 $0.7975/1M · 124.797663234205 t/s · TTFT 1.712546217219145s · 1M ctx`
+`입력 $1.74 · 출력 $3.48 · 혼합 $0.7975/1M · 141.1883313069025 t/s · TTFT 4.6772545230640405s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ DeepSeek · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ 
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 52.7 | +0.18 | 실측 | [[aa-lcr]] 53.0%×1.0 |
-| 지시 따르기 | 45.9 | -0.28 | 실측 | [[ifbench]] 45.782312925170096%×1.0 |
+| 지시 따르기 | 45.8 | -0.28 | 실측 | [[ifbench]] 45.782312925170096%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

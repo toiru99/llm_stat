@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 1.1, z: -1.56, r: 26.6, estimated: true }  # 긴문맥
-  instruction: { s: 16.5, z: -1.56, r: 26.5, estimated: false }  # 지시 따르기
+  instruction: { s: 16.5, z: -1.56, r: 26.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Phi-3 Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Phi-3 Mini
@@ -50,7 +50,7 @@ Microsoft · Open · Tiny · 컨텍스트 4k · 종합지능 **None** · ⚠️ 
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 26.6 | -1.56 | 추정 | (추정) |
-| 지시 따르기 | 26.5 | -1.56 | 실측 | [[ifbench]] 23.877551020408198%×1.0 |
+| 지시 따르기 | 26.6 | -1.56 | 실측 | [[ifbench]] 23.877551020408198%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

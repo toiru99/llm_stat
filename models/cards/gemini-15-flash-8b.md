@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 19.3, z: -1.35, r: 29.7, estimated: false }  # 전문 지식
   reasoning: { s: 17.5, z: -0.89, r: 36.6, estimated: false }  # 추론
   coding: { s: 15.0, z: -0.85, r: 37.2, estimated: true }  # 코딩
-  agentic: { s: 10.5, z: -1.19, r: 32.1, estimated: true }  # 에이전트
+  agentic: { s: 10.4, z: -1.19, r: 32.1, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 29.4, z: -2.15, r: 17.8, estimated: false }  # 멀티모달
   long_context: { s: 17.1, z: -1.08, r: 33.7, estimated: true }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 1.5 Flash-8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Gemini 1.5 Flash-8B

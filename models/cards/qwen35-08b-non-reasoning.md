@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 0.8B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Qwen3.5 0.8B (non-reasoning)
@@ -46,7 +46,7 @@ Alibaba · Open · Tiny · 컨텍스트 262k · 종합지능 **None**
 | 전문 지식 | 24.1 | -1.73 | 실측 | [[gpqa-diamond]] 23.6363636363636%×0.4, [[humanitys-last-exam]] 5.09731232622799%×0.3 |
 | 추론 | 29.0 | -1.4 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 23.6363636363636%×1.0, [[humanitys-last-exam]] 5.09731232622799%×1.0 |
 | 코딩 | 29.6 | -1.36 | 실측 | [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 38.4 | -0.77 | 실측 | [[gdpval]] -362.66%×1.0, [[tau2-bench]] 65.2046783625731%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 에이전트 | 38.4 | -0.77 | 실측 | [[gdpval]] -362.97%×1.0, [[tau2-bench]] 65.2046783625731%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 6.7 | -2.89 | 실측 | [[mmmu-pro]] 25.6647398843931%×1.0 |
 | 긴문맥 | 30.1 | -1.33 | 실측 | [[aa-lcr]] 8.0%×1.0 |

@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.7 Flash (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Gemini 3.7 Flash (medium)
@@ -46,7 +46,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 | 전문 지식 | 71.2 | +1.41 | 실측 | [[gpqa-diamond]] 92.12121212121211%×0.4, [[humanitys-last-exam]] 38.9712696941613%×0.3 |
 | 추론 | 66.4 | +1.1 | 실측 | [[critpt]] 9.42857142857143%×1.0, [[gpqa-diamond]] 92.12121212121211%×1.0, [[humanitys-last-exam]] 38.9712696941613%×1.0 |
 | 코딩 | 73.9 | +1.59 | 실측 | [[scicode]] 59.837962962963%×1.0 |
-| 에이전트 | 64.8 | +0.99 | 실측 | [[gdpval]] 1366.98%×1.0, [[tau3-banking]] 35.4639175257732%×1.0 |
+| 에이전트 | 64.8 | +0.99 | 실측 | [[gdpval]] 1369.08%×1.0, [[tau3-banking]] 35.4639175257732%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 67.1 | +1.14 | 실측 | [[mmmu-pro]] 84.7398843930636%×1.0 |
 | 긴문맥 | 67.8 | +1.19 | 실측 | [[aa-lcr]] 83.0%×1.0 |

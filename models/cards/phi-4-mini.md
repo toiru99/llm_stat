@@ -5,7 +5,7 @@ creator: Microsoft
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.0975
-output_speed_tps: 13.1593315336851
+output_speed_tps: 16.4457852678572
 context_window: 128000
 status: current
 size_class: Tiny
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Phi-4 Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Phi-4 Mini
@@ -37,7 +37,7 @@ Microsoft · Open · Tiny · 컨텍스트 128k · 종합지능 **None**
 - **약점**: 에이전트, 지시 따르기
 
 ## 실용 지표
-`입력 $0.075 · 출력 $0.3 · 혼합 $0.0975/1M · 13.1593315336851 t/s · TTFT 4.70032473613327s · 128k ctx`
+`입력 $0.075 · 출력 $0.3 · 혼합 $0.0975/1M · 16.4457852678572 t/s · TTFT 4.75359314694283s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Microsoft · Open · Tiny · 컨텍스트 128k · 종합지능 **None**
 | 전문 지식 | 28.3 | -1.44 | 실측 | [[gpqa-diamond]] 33.1313131313131%×0.4, [[humanitys-last-exam]] 4.45%×0.3 |
 | 추론 | 31.5 | -1.24 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 33.1313131313131%×1.0, [[humanitys-last-exam]] 4.45%×1.0 |
 | 코딩 | 29.6 | -1.36 | 실측 | [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 28.1 | -1.46 | 실측 | [[gdpval]] -401.23%×1.0, [[tau2-bench]] 8.18713450292398%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 에이전트 | 28.1 | -1.46 | 실측 | [[gdpval]] -401.54%×1.0, [[tau2-bench]] 8.18713450292398%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 33.8 | -1.08 | 실측 | [[aa-lcr]] 15.333333333333298%×1.0 |

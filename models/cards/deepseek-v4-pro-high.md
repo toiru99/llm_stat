@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Pro (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # DeepSeek V4 Pro (high)
@@ -46,7 +46,7 @@ DeepSeek · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ 
 | 전문 지식 | 68.8 | +1.25 | 실측 | [[gpqa-diamond]] 90.5050505050505%×0.4, [[humanitys-last-exam]] 35.2177942539388%×0.3 |
 | 추론 | 65.1 | +1.01 | 실측 | [[critpt]] 10.0%×1.0, [[gpqa-diamond]] 90.5050505050505%×1.0, [[humanitys-last-exam]] 35.2177942539388%×1.0 |
 | 코딩 | 61.8 | +0.79 | 실측 | [[terminal-bench]] 41.6666666666667%×0.5 |
-| 에이전트 | 62.7 | +0.85 | 실측 | [[gdpval]] 1159.95%×1.0, [[tau2-bench]] 94.15204678362569%×1.0, [[tau3-banking]] 26.185567010309303%×1.0, [[terminal-bench]] 41.6666666666667%×1.0 |
+| 에이전트 | 62.7 | +0.85 | 실측 | [[gdpval]] 1159.7%×1.0, [[tau2-bench]] 94.15204678362569%×1.0, [[tau3-banking]] 26.185567010309303%×1.0, [[terminal-bench]] 41.6666666666667%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 61.4 | +0.76 | 실측 | [[aa-lcr]] 70.3333333333333%×1.0 |

@@ -5,7 +5,7 @@ creator: Cohere
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 3.25
-output_speed_tps: 49.8709515275508
+output_speed_tps: 51.6299419830122
 context_window: 256000
 status: past
 size_class: Medium
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Command A
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Command A
@@ -37,7 +37,7 @@ Cohere · Open · Medium · 컨텍스트 256k · 종합지능 **None** · ⚠️
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $2.5 · 출력 $10.0 · 혼합 $3.25/1M · 49.8709515275508 t/s · TTFT 6.48618373657334s · 256k ctx`
+`입력 $2.5 · 출력 $10.0 · 혼합 $3.25/1M · 51.6299419830122 t/s · TTFT 6.4861393375267s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

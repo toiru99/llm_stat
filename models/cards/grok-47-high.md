@@ -5,7 +5,7 @@ creator: SpaceXAI
 license: Proprietary
 intelligence_index: 35.2122962959703
 price_blended_usd_1m: 1.35
-output_speed_tps: 72.3131469962018
+output_speed_tps: 73.5576382255379
 context_window: 500000
 status: current
 size_class: Unknown
@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 86.8, z: 0.99, r: 64.8, estimated: false }  # 긴문맥
-  instruction: { s: 66.2, z: 0.52, r: 57.8, estimated: true }  # 지시 따르기
+  instruction: { s: 66.2, z: 0.52, r: 57.7, estimated: true }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.7 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Grok 4.7 (high)
@@ -37,7 +37,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **35.212
 - **약점**: 지시 따르기, 전문 지식
 
 ## 실용 지표
-`입력 $2.0 · 출력 $6.0 · 혼합 $1.35/1M · 72.3131469962018 t/s · TTFT 39.2280307610439s · 500k ctx` · 가성비 26.1
+`입력 $2.0 · 출력 $6.0 · 혼합 $1.35/1M · 73.5576382255379 t/s · TTFT 40.8087995138109s · 500k ctx` · 가성비 26.1
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **35.212
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 64.8 | +0.99 | 실측 | [[aa-lcr]] 77.0%×1.0 |
-| 지시 따르기 | 57.8 | +0.52 | 추정 | (추정) |
+| 지시 따르기 | 57.7 | +0.52 | 추정 | (추정) |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

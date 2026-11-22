@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 1.54
-output_speed_tps: 103.36375605141
+output_speed_tps: 104.39026005205
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Claude Sonnet 5 (non-reasoning)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 - **약점**: 에이전트, 추론
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 103.36375605141 t/s · TTFT 1.11161330551663s · 1M ctx`
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 104.39026005205 t/s · TTFT 0.93899589976103s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 | 전문 지식 | 56.9 | +0.46 | 실측 | [[gpqa-diamond]] 80.0%×0.4, [[humanitys-last-exam]] 19.0454124189064%×0.3 |
 | 추론 | 50.5 | +0.04 | 실측 | [[critpt]] 1.1428571428571401%×1.0, [[gpqa-diamond]] 80.0%×1.0, [[humanitys-last-exam]] 19.0454124189064%×1.0 |
 | 코딩 | 55.7 | +0.38 | 추정 | (추정) |
-| 에이전트 | 53.1 | +0.21 | 실측 | [[gdpval]] 1220.8%×1.0, [[tau3-banking]] 15.6701030927835%×1.0 |
+| 에이전트 | 53.1 | +0.21 | 실측 | [[gdpval]] 1220.34%×1.0, [[tau3-banking]] 15.6701030927835%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 54.0 | +0.26 | 실측 | [[mmmu-pro]] 71.90751445086701%×1.0 |
 | 긴문맥 | 61.3 | +0.75 | 실측 | [[aa-lcr]] 70.0%×1.0 |

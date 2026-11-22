@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.1425
-output_speed_tps: 55.7992602929085
+output_speed_tps: 62.0378602669298
 context_window: 128000
 status: past
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 23.5, z: -1.15, r: 32.8, estimated: false }  # 전문 지식
   reasoning: { s: 21.1, z: -0.71, r: 39.3, estimated: false }  # 추론
   coding: { s: 18.0, z: -0.75, r: 38.8, estimated: true }  # 코딩
-  agentic: { s: 11.2, z: -1.17, r: 32.5, estimated: false }  # 에이전트
+  agentic: { s: 11.1, z: -1.17, r: 32.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 36.0, z: -1.81, r: 22.9, estimated: false }  # 멀티모달
   long_context: { s: 20.8, z: -0.98, r: 35.4, estimated: true }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4o mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # GPT-4o mini
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None** �
 - **약점**: 에이전트, 멀티모달
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.6 · 혼합 $0.1425/1M · 55.7992602929085 t/s · TTFT 1.9815250231666s · 128k ctx`
+`입력 $0.15 · 출력 $0.6 · 혼합 $0.1425/1M · 62.0378602669298 t/s · TTFT 1.70829612766384s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None** �
 | 전문 지식 | 32.8 | -1.15 | 실측 | [[gpqa-diamond]] 42.6262626262626%×0.4, [[humanitys-last-exam]] 4.2%×0.3 |
 | 추론 | 39.3 | -0.71 | 실측 | [[gpqa-diamond]] 42.6262626262626%×1.0, [[humanitys-last-exam]] 4.2%×1.0 |
 | 코딩 | 38.8 | -0.75 | 추정 | (추정) |
-| 에이전트 | 32.5 | -1.17 | 실측 | [[gdpval]] -15.24%×1.0, [[tau3-banking]] 2.88659793814433%×1.0 |
+| 에이전트 | 32.5 | -1.17 | 실측 | [[gdpval]] -15.55%×1.0, [[tau3-banking]] 2.88659793814433%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 22.9 | -1.81 | 실측 | [[mmmu-pro]] 41.5028901734104%×1.0 |
 | 긴문맥 | 35.4 | -0.98 | 추정 | (추정) |

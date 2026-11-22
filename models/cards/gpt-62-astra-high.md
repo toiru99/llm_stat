@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 60.0882280338247
 price_blended_usd_1m: 5.88
-output_speed_tps: 46.6636409452811
+output_speed_tps: 44.5862177844179
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6.2 Astra (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # GPT-6.2 Astra (high)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **60.0882280
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $8.0 · 출력 $40.0 · 혼합 $5.88/1M · 46.6636409452811 t/s · TTFT 23.0673513538868s · 1M ctx` · 가성비 10.2
+`입력 $8.0 · 출력 $40.0 · 혼합 $5.88/1M · 44.5862177844179 t/s · TTFT 20.5523591367897s · 1M ctx` · 가성비 10.2
 
 ## 레이더 8축 (평균=50 기준선)
 

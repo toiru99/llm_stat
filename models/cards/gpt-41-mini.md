@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.31
-output_speed_tps: 77.6443848523773
+output_speed_tps: 82.4853308496916
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4.1 mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # GPT-4.1 mini
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 - **약점**: 지시 따르기, 코딩
 
 ## 실용 지표
-`입력 $0.4 · 출력 $1.6 · 혼합 $0.31/1M · 77.6443848523773 t/s · TTFT 1.77938940241662s · 1M ctx`
+`입력 $0.4 · 출력 $1.6 · 혼합 $0.31/1M · 82.4853308496916 t/s · TTFT 1.68444172863055s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 | 전문 지식 | 44.5 | -0.37 | 실측 | [[gpqa-diamond]] 66.3636363636364%×0.4, [[humanitys-last-exam]] 5.0200000000000005%×0.3 |
 | 추론 | 41.1 | -0.59 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 66.3636363636364%×1.0, [[humanitys-last-exam]] 5.0200000000000005%×1.0 |
 | 코딩 | 35.5 | -0.97 | 실측 | [[terminal-bench]] 7.57575757575758%×0.5 |
-| 에이전트 | 40.3 | -0.65 | 실측 | [[gdpval]] 277.48%×1.0, [[tau2-bench]] 52.9239766081871%×1.0, [[tau3-banking]] 5.36082474226804%×1.0, [[terminal-bench]] 7.57575757575758%×1.0 |
+| 에이전트 | 40.3 | -0.65 | 실측 | [[gdpval]] 277.16%×1.0, [[tau2-bench]] 52.9239766081871%×1.0, [[tau3-banking]] 5.36082474226804%×1.0, [[terminal-bench]] 7.57575757575758%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 40.5 | -0.63 | 실측 | [[mmmu-pro]] 58.728323699422006%×1.0 |
 | 긴문맥 | 48.2 | -0.12 | 실측 | [[aa-lcr]] 44.0%×1.0 |

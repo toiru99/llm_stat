@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2-Flash (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # MiMo-V2-Flash (non-reasoning)
@@ -46,7 +46,7 @@ Xiaomi · Open · Large · 컨텍스트 256k · 종합지능 **None** · ⚠️ 
 | 전문 지식 | 45.6 | -0.29 | 실측 | [[gpqa-diamond]] 65.5555555555556%×0.4, [[humanitys-last-exam]] 8.57275254865616%×0.3 |
 | 추론 | 42.1 | -0.53 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 65.5555555555556%×1.0, [[humanitys-last-exam]] 8.57275254865616%×1.0 |
 | 코딩 | 49.5 | -0.03 | 실측 | [[terminal-bench]] 25.7575757575758%×0.5 |
-| 에이전트 | 56.0 | +0.4 | 실측 | [[gdpval]] 635.81%×1.0, [[tau2-bench]] 83.9181286549708%×1.0, [[terminal-bench]] 25.7575757575758%×1.0 |
+| 에이전트 | 56.0 | +0.4 | 실측 | [[gdpval]] 635.51%×1.0, [[tau2-bench]] 83.9181286549708%×1.0, [[terminal-bench]] 25.7575757575758%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 44.4 | -0.38 | 실측 | [[aa-lcr]] 36.3333333333333%×1.0 |

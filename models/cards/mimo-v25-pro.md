@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 89.8, z: 1.07, r: 66.1, estimated: false }  # 긴문맥
-  instruction: { s: 95.1, z: 1.73, r: 75.9, estimated: false }  # 지시 따르기
+  instruction: { s: 95.1, z: 1.72, r: 75.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2.5-Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # MiMo-V2.5-Pro
@@ -50,7 +50,7 @@ Xiaomi · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ pa
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 66.1 | +1.07 | 실측 | [[aa-lcr]] 79.6666666666667%×1.0 |
-| 지시 따르기 | 75.9 | +1.73 | 실측 | [[ifbench]] 79.8639455782313%×1.0 |
+| 지시 따르기 | 75.9 | +1.72 | 실측 | [[ifbench]] 79.8639455782313%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

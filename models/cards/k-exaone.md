@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — K-EXAONE
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # K-EXAONE
@@ -46,7 +46,7 @@ LG AI Research · Open · Large · 컨텍스트 256k · 종합지능 **None** ·
 | 전문 지식 | 54.0 | +0.26 | 실측 | [[gpqa-diamond]] 78.2828282828283%×0.4, [[humanitys-last-exam]] 13.9481000926784%×0.3 |
 | 추론 | 48.3 | -0.11 | 실측 | [[critpt]] 1.11836734693878%×1.0, [[gpqa-diamond]] 78.2828282828283%×1.0, [[humanitys-last-exam]] 13.9481000926784%×1.0 |
 | 코딩 | 47.2 | -0.19 | 실측 | [[terminal-bench]] 22.727272727272698%×0.5 |
-| 에이전트 | 51.5 | +0.1 | 실측 | [[gdpval]] 374.54%×1.0, [[tau2-bench]] 74.2690058479532%×1.0, [[terminal-bench]] 22.727272727272698%×1.0 |
+| 에이전트 | 51.5 | +0.1 | 실측 | [[gdpval]] 374.33%×1.0, [[tau2-bench]] 74.2690058479532%×1.0, [[terminal-bench]] 22.727272727272698%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 56.9 | +0.46 | 실측 | [[aa-lcr]] 61.33333333333329%×1.0 |

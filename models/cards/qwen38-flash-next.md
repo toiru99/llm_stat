@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 28.5750026655353
 price_blended_usd_1m: 0.0882
-output_speed_tps: 72.0093638375437
+output_speed_tps: 67.3176613591193
 context_window: 256000
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.8-Flash-Next
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Qwen3.8-Flash-Next
@@ -37,7 +37,7 @@ Alibaba · Open · Large · 컨텍스트 256k · 종합지능 **28.5750026655353
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.47 · 혼합 $0.0882/1M · 72.0093638375437 t/s · TTFT 2.56940160633758s · 256k ctx` · 가성비 324.0
+`입력 $0.15 · 출력 $0.47 · 혼합 $0.0882/1M · 67.3176613591193 t/s · TTFT 2.62712933174746s · 256k ctx` · 가성비 324.0
 
 ## 레이더 8축 (평균=50 기준선)
 

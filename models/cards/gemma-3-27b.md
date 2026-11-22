@@ -5,7 +5,7 @@ creator: Google
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0
-output_speed_tps: 37.6815753653152
+output_speed_tps: 33.9821341206699
 context_window: 128000
 status: past
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 3 27B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Gemma 3 27B
@@ -37,7 +37,7 @@ Google · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠️ 
 - **약점**: 멀티모달, 에이전트
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 37.6815753653152 t/s · TTFT 3.26558833318334s · 128k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 33.9821341206699 t/s · TTFT 3.25056560092497s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

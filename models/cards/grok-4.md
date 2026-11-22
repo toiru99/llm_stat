@@ -5,7 +5,7 @@ creator: SpaceXAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 4.2
-output_speed_tps: 70.7473951381933
+output_speed_tps: 70.1077142039812
 context_window: 256000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Grok 4
@@ -37,7 +37,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **None**
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $3.0 · 출력 $15.0 · 혼합 $4.2/1M · 70.7473951381933 t/s · TTFT 14.2404330569458s · 256k ctx`
+`입력 $3.0 · 출력 $15.0 · 혼합 $4.2/1M · 70.1077142039812 t/s · TTFT 13.1417459213674s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

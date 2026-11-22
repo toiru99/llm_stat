@@ -5,7 +5,7 @@ creator: Kimi
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.49
-output_speed_tps: 41.6020204370319
+output_speed_tps: 44.1312769765862
 context_window: 256000
 status: past
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Kimi K2.5
@@ -37,7 +37,7 @@ Kimi · Open · Large · 컨텍스트 256k · 종합지능 **None** · ⚠️ pa
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $0.6 · 출력 $3.0 · 혼합 $0.49/1M · 41.6020204370319 t/s · TTFT 2.79812994468333s · 256k ctx`
+`입력 $0.6 · 출력 $3.0 · 혼합 $0.49/1M · 44.1312769765862 t/s · TTFT 2.78742349723611s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Kimi · Open · Large · 컨텍스트 256k · 종합지능 **None** · ⚠️ pa
 | 전문 지식 | 65.7 | +1.04 | 실측 | [[gpqa-diamond]] 87.8787878787879%×0.4, [[humanitys-last-exam]] 30.722891566265098%×0.3 |
 | 추론 | 58.1 | +0.54 | 실측 | [[critpt]] 3.14285714285714%×1.0, [[gpqa-diamond]] 87.8787878787879%×1.0, [[humanitys-last-exam]] 30.722891566265098%×1.0 |
 | 코딩 | 56.5 | +0.43 | 실측 | [[terminal-bench]] 34.8484848484849%×0.5 |
-| 에이전트 | 56.8 | +0.45 | 실측 | [[gdpval]] 846.64%×1.0, [[tau2-bench]] 95.906432748538%×1.0, [[tau3-banking]] 14.2268041237113%×1.0, [[terminal-bench]] 34.8484848484849%×1.0 |
+| 에이전트 | 56.8 | +0.45 | 실측 | [[gdpval]] 846.32%×1.0, [[tau2-bench]] 95.906432748538%×1.0, [[tau3-banking]] 14.2268041237113%×1.0, [[terminal-bench]] 34.8484848484849%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 57.5 | +0.5 | 실측 | [[mmmu-pro]] 75.3757225433526%×1.0 |
 | 긴문맥 | 65.3 | +1.02 | 실측 | [[aa-lcr]] 78.0%×1.0 |

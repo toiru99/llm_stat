@@ -5,7 +5,7 @@ creator: Alibaba
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 1.6
-output_speed_tps: 143.259510857762
+output_speed_tps: 148.939266480398
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 89.1, z: 1.05, r: 65.8, estimated: false }  # 긴문맥
-  instruction: { s: 96.1, z: 1.77, r: 76.5, estimated: false }  # 지시 따르기
+  instruction: { s: 96.1, z: 1.76, r: 76.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.7 Max
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Qwen3.7 Max
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** ·
 - **약점**: 긴문맥, 에이전트
 
 ## 실용 지표
-`입력 $2.5 · 출력 $7.5 · 혼합 $1.6/1M · 143.259510857762 t/s · TTFT 2.46524450524448s · 1M ctx`
+`입력 $2.5 · 출력 $7.5 · 혼합 $1.6/1M · 148.939266480398 t/s · TTFT 2.50682702497785s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** ·
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 65.8 | +1.05 | 실측 | [[aa-lcr]] 79.0%×1.0 |
-| 지시 따르기 | 76.5 | +1.77 | 실측 | [[ifbench]] 80.5442176870748%×1.0 |
+| 지시 따르기 | 76.5 | +1.76 | 실측 | [[ifbench]] 80.5442176870748%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

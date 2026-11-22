@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 15.1, z: -2.87, r: 6.9, estimated: false }  # 멀티모달
   long_context: { s: 10.2, z: -1.29, r: 30.6, estimated: false }  # 긴문맥
-  instruction: { s: 13.2, z: -1.7, r: 24.4, estimated: false }  # 지시 따르기
+  instruction: { s: 13.2, z: -1.7, r: 24.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 0.8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Qwen3.5 0.8B
@@ -46,11 +46,11 @@ Alibaba · Open · Tiny · 컨텍스트 262k · 종합지능 **None**
 | 전문 지식 | 16.4 | -2.24 | 실측 | [[gpqa-diamond]] 11.1111111111111%×0.4, [[humanitys-last-exam]] 1.06580166821131%×0.3 |
 | 추론 | 24.0 | -1.73 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 11.1111111111111%×1.0, [[humanitys-last-exam]] 1.06580166821131%×1.0 |
 | 코딩 | 29.6 | -1.36 | 실측 | [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 35.2 | -0.99 | 실측 | [[gdpval]] -381.04%×1.0, [[tau2-bench]] 47.6608187134503%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 에이전트 | 35.2 | -0.99 | 실측 | [[gdpval]] -381.35%×1.0, [[tau2-bench]] 47.6608187134503%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 6.9 | -2.87 | 실측 | [[mmmu-pro]] 25.838150289017296%×1.0 |
 | 긴문맥 | 30.6 | -1.29 | 실측 | [[aa-lcr]] 9.0%×1.0 |
-| 지시 따르기 | 24.4 | -1.7 | 실측 | [[ifbench]] 21.4965986394558%×1.0 |
+| 지시 따르기 | 24.5 | -1.7 | 실측 | [[ifbench]] 21.4965986394558%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

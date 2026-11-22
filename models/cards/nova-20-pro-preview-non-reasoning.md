@@ -5,7 +5,7 @@ creator: Amazon
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 2.125
-output_speed_tps: 111.4986461417
+output_speed_tps: 110.597918631646
 context_window: 256000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova 2.0 Pro Preview (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Nova 2.0 Pro Preview (non-reasoning)
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **None**
 - **약점**: 긴문맥, 추론
 
 ## 실용 지표
-`입력 $1.25 · 출력 $10.0 · 혼합 $2.125/1M · 111.4986461417 t/s · TTFT 1.62056351150774s · 256k ctx`
+`입력 $1.25 · 출력 $10.0 · 혼합 $2.125/1M · 110.597918631646 t/s · TTFT 1.63265176780636s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **None**
 | 전문 지식 | 42.7 | -0.49 | 실측 | [[gpqa-diamond]] 63.636363636363605%×0.4, [[humanitys-last-exam]] 3.93883225208526%×0.3 |
 | 추론 | 40.0 | -0.67 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 63.636363636363605%×1.0, [[humanitys-last-exam]] 3.93883225208526%×1.0 |
 | 코딩 | 42.5 | -0.5 | 실측 | [[terminal-bench]] 16.6666666666667%×0.5 |
-| 에이전트 | 49.2 | -0.05 | 실측 | [[gdpval]] 338.76%×1.0, [[tau2-bench]] 71.6374269005848%×1.0, [[terminal-bench]] 16.6666666666667%×1.0 |
+| 에이전트 | 49.2 | -0.05 | 실측 | [[gdpval]] 338.44%×1.0, [[tau2-bench]] 71.6374269005848%×1.0, [[terminal-bench]] 16.6666666666667%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 41.2 | -0.59 | 실측 | [[aa-lcr]] 30.0%×1.0 |

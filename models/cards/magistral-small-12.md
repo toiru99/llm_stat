@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.6
-output_speed_tps: 54.7467435779468
+output_speed_tps: 54.6588422789067
 context_window: 128000
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Magistral Small 1.2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Magistral Small 1.2
@@ -37,7 +37,7 @@ Mistral · Open · Small · 컨텍스트 128k · 종합지능 **None**
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $0.5 · 출력 $1.5 · 혼합 $0.6/1M · 54.7467435779468 t/s · TTFT 5.26032571093298s · 128k ctx`
+`입력 $0.5 · 출력 $1.5 · 혼합 $0.6/1M · 54.6588422789067 t/s · TTFT 5.04108008937057s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Mistral · Open · Small · 컨텍스트 128k · 종합지능 **None**
 | 전문 지식 | 45.0 | -0.33 | 실측 | [[gpqa-diamond]] 66.2626262626263%×0.4, [[humanitys-last-exam]] 6.44114921223355%×0.3 |
 | 추론 | 41.8 | -0.55 | 실측 | [[critpt]] 0.28571428571428603%×1.0, [[gpqa-diamond]] 66.2626262626263%×1.0, [[humanitys-last-exam]] 6.44114921223355%×1.0 |
 | 코딩 | 33.1 | -1.13 | 실측 | [[terminal-bench]] 4.545454545454549%×0.5 |
-| 에이전트 | 34.7 | -1.02 | 실측 | [[gdpval]] 11.57%×1.0, [[tau2-bench]] 27.7777777777778%×1.0, [[tau3-banking]] 4.5360824742267996%×1.0, [[terminal-bench]] 4.545454545454549%×1.0 |
+| 에이전트 | 34.7 | -1.02 | 실측 | [[gdpval]] 11.25%×1.0, [[tau2-bench]] 27.7777777777778%×1.0, [[tau3-banking]] 4.5360824742267996%×1.0, [[terminal-bench]] 4.545454545454549%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 37.2 | -0.85 | 실측 | [[mmmu-pro]] 55.4913294797688%×1.0 |
 | 긴문맥 | 35.8 | -0.95 | 실측 | [[aa-lcr]] 19.3333333333333%×1.0 |

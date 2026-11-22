@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: 13.6203422723141
 price_blended_usd_1m: 0.115
-output_speed_tps: 296.107984487865
+output_speed_tps: 311.324813454478
 context_window: 1000000
 status: current
 size_class: Medium
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3.5 Super VL
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Nemotron 3.5 Super VL
@@ -37,7 +37,7 @@ NVIDIA · Open · Medium · 컨텍스트 1M · 종합지능 **13.6203422723141**
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.5 · 혼합 $0.115/1M · 296.107984487865 t/s · TTFT 1.04182782818296s · 1M ctx` · 가성비 118.4
+`입력 $0.15 · 출력 $0.5 · 혼합 $0.115/1M · 311.324813454478 t/s · TTFT 1.02511607505011s · 1M ctx` · 가성비 118.4
 
 ## 레이더 8축 (평균=50 기준선)
 

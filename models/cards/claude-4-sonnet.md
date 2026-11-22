@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 4 Sonnet
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Claude 4 Sonnet
@@ -46,7 +46,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 | 전문 지식 | 52.3 | +0.15 | 실측 | [[gpqa-diamond]] 77.6767676767677%×0.4, [[humanitys-last-exam]] 10.704355885078801%×0.3 |
 | 추론 | 46.5 | -0.24 | 실측 | [[critpt]] 0.28571428571428603%×1.0, [[gpqa-diamond]] 77.6767676767677%×1.0, [[humanitys-last-exam]] 10.704355885078801%×1.0 |
 | 코딩 | 53.6 | +0.24 | 실측 | [[terminal-bench]] 31.060606060606098%×0.5 |
-| 에이전트 | 51.7 | +0.12 | 실측 | [[gdpval]] 698.21%×1.0, [[tau2-bench]] 64.6198830409357%×1.0, [[tau3-banking]] 16.7010309278351%×1.0, [[terminal-bench]] 31.060606060606098%×1.0 |
+| 에이전트 | 51.7 | +0.12 | 실측 | [[gdpval]] 697.76%×1.0, [[tau2-bench]] 64.6198830409357%×1.0, [[tau3-banking]] 16.7010309278351%×1.0, [[terminal-bench]] 31.060606060606098%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 43.6 | -0.43 | 실측 | [[mmmu-pro]] 61.7919075144509%×1.0 |
 | 긴문맥 | 61.4 | +0.76 | 실측 | [[aa-lcr]] 70.3333333333333%×1.0 |

@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 E2B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Gemma 4 E2B
@@ -46,7 +46,7 @@ Google · Open · Small · 컨텍스트 128k · 종합지능 **None**
 | 전문 지식 | 33.3 | -1.11 | 실측 | [[gpqa-diamond]] 43.3333333333333%×0.4, [[humanitys-last-exam]] 4.77293790546803%×0.3 |
 | 추론 | 34.5 | -1.04 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 43.3333333333333%×1.0, [[humanitys-last-exam]] 4.77293790546803%×1.0 |
 | 코딩 | 32.0 | -1.2 | 실측 | [[terminal-bench]] 3.03030303030303%×0.5 |
-| 에이전트 | 32.8 | -1.15 | 실측 | [[gdpval]] -180.63%×1.0, [[tau2-bench]] 20.7602339181287%×1.0, [[terminal-bench]] 3.03030303030303%×1.0 |
+| 에이전트 | 32.8 | -1.15 | 실측 | [[gdpval]] -180.95%×1.0, [[tau2-bench]] 20.7602339181287%×1.0, [[terminal-bench]] 3.03030303030303%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 26.0 | -1.6 | 실측 | [[mmmu-pro]] 44.5664739884393%×1.0 |
 | 긴문맥 | 34.3 | -1.05 | 실측 | [[aa-lcr]] 16.3333333333333%×1.0 |

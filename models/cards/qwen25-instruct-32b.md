@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 26.0, z: -1.03, r: 34.6, estimated: false }  # 전문 지식
   reasoning: { s: 23.3, z: -0.61, r: 40.9, estimated: false }  # 추론
   coding: { s: 43.9, z: 0.13, r: 51.9, estimated: true }  # 코딩
-  agentic: { s: 19.4, z: -0.88, r: 36.7, estimated: true }  # 에이전트
+  agentic: { s: 19.3, z: -0.88, r: 36.7, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 15.0, z: -1.15, r: 32.8, estimated: true }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen2.5 Instruct 32B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Qwen2.5 Instruct 32B

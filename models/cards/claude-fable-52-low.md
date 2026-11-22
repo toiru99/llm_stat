@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 53.9249388799182
 price_blended_usd_1m: 5.74
-output_speed_tps: 107.848063389964
+output_speed_tps: 106.960703647356
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Fable 5.2 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Claude Fable 5.2 (low)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **53.9249
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
-`입력 $8.0 · 출력 $40.0 · 혼합 $5.74/1M · 107.848063389964 t/s · TTFT 8.64808120008399s · 1M ctx` · 가성비 9.4
+`입력 $8.0 · 출력 $40.0 · 혼합 $5.74/1M · 106.960703647356 t/s · TTFT 8.14738322567433s · 1M ctx` · 가성비 9.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **53.9249
 | 전문 지식 | 73.7 | +1.58 | 실측 | [[humanitys-last-exam]] 59.7312326227989%×0.3 |
 | 추론 | 83.8 | +2.25 | 실측 | [[critpt]] 29.4285714285714%×1.0, [[humanitys-last-exam]] 59.7312326227989%×1.0 |
 | 코딩 | 72.2 | +1.48 | 실측 | [[scicode]] 57.7546296296296%×1.0 |
-| 에이전트 | 71.2 | +1.42 | 실측 | [[gdpval]] 1545.68%×1.0 |
+| 에이전트 | 71.2 | +1.42 | 실측 | [[gdpval]] 1545.55%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 66.3 | +1.09 | 실측 | [[aa-lcr]] 80.0%×1.0 |

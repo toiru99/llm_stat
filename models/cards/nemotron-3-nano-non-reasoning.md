@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.058
-output_speed_tps: 157.3571667141135
+output_speed_tps: 152.835215641076
 context_window: 1000000
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3 Nano (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Nemotron 3 Nano (non-reasoning)
@@ -37,7 +37,7 @@ NVIDIA · Open · Small · 컨텍스트 1M · 종합지능 **None**
 - **약점**: 전문 지식, 긴문맥
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.2 · 혼합 $0.058/1M · 157.3571667141135 t/s · TTFT 1.499300200622054s · 1M ctx`
+`입력 $0.05 · 출력 $0.2 · 혼합 $0.058/1M · 152.835215641076 t/s · TTFT 1.4657984357890095s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ NVIDIA · Open · Small · 컨텍스트 1M · 종합지능 **None**
 | 전문 지식 | 31.6 | -1.22 | 실측 | [[gpqa-diamond]] 39.8989898989899%×0.4, [[humanitys-last-exam]] 4.5875810936051895%×0.3 |
 | 추론 | 33.4 | -1.1 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 39.8989898989899%×1.0, [[humanitys-last-exam]] 4.5875810936051895%×1.0 |
 | 코딩 | 39.0 | -0.74 | 실측 | [[terminal-bench]] 12.1212121212121%×0.5 |
-| 에이전트 | 34.7 | -1.02 | 실측 | [[gdpval]] -349.42%×1.0, [[tau2-bench]] 25.4385964912281%×1.0, [[terminal-bench]] 12.1212121212121%×1.0 |
+| 에이전트 | 34.7 | -1.02 | 실측 | [[gdpval]] -349.73%×1.0, [[tau2-bench]] 25.4385964912281%×1.0, [[terminal-bench]] 12.1212121212121%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 31.5 | -1.24 | 실측 | [[aa-lcr]] 10.6666666666667%×1.0 |

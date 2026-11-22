@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling 2.6 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Ling 2.6 Flash
@@ -46,7 +46,7 @@ InclusionAI · Open · Medium · 컨텍스트 262k · 종합지능 **None** · �
 | 전문 지식 | 41.6 | -0.56 | 실측 | [[gpqa-diamond]] 59.292929292929294%×0.4, [[humanitys-last-exam]] 6.25579240037071%×0.3 |
 | 추론 | 39.5 | -0.7 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 59.292929292929294%×1.0, [[humanitys-last-exam]] 6.25579240037071%×1.0 |
 | 코딩 | 46.0 | -0.27 | 실측 | [[terminal-bench]] 21.2121212121212%×0.5 |
-| 에이전트 | 47.0 | -0.2 | 실측 | [[gdpval]] 326.01%×1.0, [[tau2-bench]] 85.9649122807018%×1.0, [[tau3-banking]] 2.88659793814433%×1.0, [[terminal-bench]] 21.2121212121212%×1.0 |
+| 에이전트 | 47.0 | -0.2 | 실측 | [[gdpval]] 325.71%×1.0, [[tau2-bench]] 85.9649122807018%×1.0, [[tau3-banking]] 2.88659793814433%×1.0, [[terminal-bench]] 21.2121212121212%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 41.8 | -0.54 | 실측 | [[aa-lcr]] 31.3333333333333%×1.0 |

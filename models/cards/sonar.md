@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 26.9, z: -0.99, r: 35.2, estimated: false }  # 전문 지식
   reasoning: { s: 24.2, z: -0.56, r: 41.5, estimated: false }  # 추론
   coding: { s: 29.8, z: -0.35, r: 44.8, estimated: true }  # 코딩
-  agentic: { s: 19.4, z: -0.88, r: 36.7, estimated: true }  # 에이전트
+  agentic: { s: 19.3, z: -0.88, r: 36.7, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 20.5, z: -0.99, r: 35.2, estimated: true }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Sonar
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Sonar

@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 3.5 Haiku
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Claude 3.5 Haiku
@@ -46,7 +46,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None*
 | 전문 지식 | 31.7 | -1.22 | 실측 | [[gpqa-diamond]] 40.808080808080796%×0.4, [[humanitys-last-exam]] 3.63%×0.3 |
 | 추론 | 33.4 | -1.11 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 40.808080808080796%×1.0, [[humanitys-last-exam]] 3.63%×1.0 |
 | 코딩 | 31.4 | -1.24 | 실측 | [[terminal-bench]] 2.27272727272727%×0.5 |
-| 에이전트 | 36.3 | -0.91 | 실측 | [[gdpval]] 217.91%×1.0, [[tau2-bench]] 24.5614035087719%×1.0, [[terminal-bench]] 2.27272727272727%×1.0 |
+| 에이전트 | 36.3 | -0.91 | 실측 | [[gdpval]] 217.62%×1.0, [[tau2-bench]] 24.5614035087719%×1.0, [[terminal-bench]] 2.27272727272727%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 27.1 | -1.53 | 실측 | [[mmmu-pro]] 45.606936416185%×1.0 |
 | 긴문맥 | 39.8 | -0.68 | 실측 | [[aa-lcr]] 27.3333333333333%×1.0 |

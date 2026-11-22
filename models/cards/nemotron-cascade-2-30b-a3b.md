@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron Cascade 2 30B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Nemotron Cascade 2 30B A3B
@@ -46,7 +46,7 @@ NVIDIA · Open · Small · 컨텍스트 1M · 종합지능 **None**
 | 전문 지식 | 51.9 | +0.13 | 실측 | [[gpqa-diamond]] 75.75757575757581%×0.4, [[humanitys-last-exam]] 12.0018535681186%×0.3 |
 | 추론 | 46.6 | -0.23 | 실측 | [[critpt]] 0.571428571428571%×1.0, [[gpqa-diamond]] 75.75757575757581%×1.0, [[humanitys-last-exam]] 12.0018535681186%×1.0 |
 | 코딩 | 46.0 | -0.27 | 실측 | [[terminal-bench]] 21.2121212121212%×0.5 |
-| 에이전트 | 46.7 | -0.22 | 실측 | [[gdpval]] 272.28%×1.0, [[tau2-bench]] 53.2163742690059%×1.0, [[terminal-bench]] 21.2121212121212%×1.0 |
+| 에이전트 | 46.7 | -0.22 | 실측 | [[gdpval]] 271.96%×1.0, [[tau2-bench]] 53.2163742690059%×1.0, [[terminal-bench]] 21.2121212121212%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 45.9 | -0.28 | 실측 | [[aa-lcr]] 39.3333333333333%×1.0 |

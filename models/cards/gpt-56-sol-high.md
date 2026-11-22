@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 3.08
-output_speed_tps: 94.1467290958877
+output_speed_tps: 99.3355482778525
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 81.2, z: 1.63, r: 74.5, estimated: false }  # 전문 지식
   reasoning: { s: 76.5, z: 2.02, r: 80.2, estimated: false }  # 추론
   coding: { s: 87.2, z: 1.6, r: 74.0, estimated: false }  # 코딩
-  agentic: { s: 83.5, z: 1.33, r: 70.0, estimated: false }  # 에이전트
+  agentic: { s: 83.5, z: 1.34, r: 70.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 89.8, z: 0.94, r: 64.1, estimated: false }  # 멀티모달
   long_context: { s: 92.1, z: 1.14, r: 67.1, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.6 Sol (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # GPT-5.6 Sol (high)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $4.0 · 출력 $20.0 · 혼합 $3.08/1M · 94.1467290958877 t/s · TTFT 10.87063884054s · 1M ctx`
+`입력 $4.0 · 출력 $20.0 · 혼합 $3.08/1M · 99.3355482778525 t/s · TTFT 7.19226003898887s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 | 전문 지식 | 74.5 | +1.63 | 실측 | [[gpqa-diamond]] 92.82828282828281%×0.4, [[humanitys-last-exam]] 46.014828544949%×0.3 |
 | 추론 | 80.2 | +2.02 | 실측 | [[critpt]] 25.7142857142857%×1.0, [[gpqa-diamond]] 92.82828282828281%×1.0, [[humanitys-last-exam]] 46.014828544949%×1.0 |
 | 코딩 | 74.0 | +1.6 | 실측 | [[scicode]] 57.7546296296296%×1.0, [[terminal-bench]] 62.121212121212096%×0.5 |
-| 에이전트 | 70.0 | +1.33 | 실측 | [[gdpval]] 1511.27%×1.0, [[tau2-bench]] 83.3333333333333%×1.0, [[tau3-banking]] 36.701030927835%×1.0, [[terminal-bench]] 62.121212121212096%×1.0 |
+| 에이전트 | 70.0 | +1.34 | 실측 | [[gdpval]] 1511.27%×1.0, [[tau2-bench]] 83.3333333333333%×1.0, [[tau3-banking]] 36.701030927835%×1.0, [[terminal-bench]] 62.121212121212096%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 64.1 | +0.94 | 실측 | [[mmmu-pro]] 81.84971098265899%×1.0 |
 | 긴문맥 | 67.1 | +1.14 | 실측 | [[aa-lcr]] 81.6666666666667%×1.0 |

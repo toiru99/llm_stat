@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 87.6, z: 0.83, r: 62.4, estimated: false }  # 멀티모달
   long_context: { s: 85.7, z: 0.95, r: 64.3, estimated: false }  # 긴문맥
-  instruction: { s: 81.9, z: 1.17, r: 67.6, estimated: false }  # 지시 따르기
+  instruction: { s: 81.9, z: 1.17, r: 67.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3 Pro Preview (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Gemini 3 Pro Preview (high)
@@ -50,7 +50,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 62.4 | +0.83 | 실측 | [[mmmu-pro]] 80.1734104046243%×1.0 |
 | 긴문맥 | 64.3 | +0.95 | 실측 | [[aa-lcr]] 76.0%×1.0 |
-| 지시 따르기 | 67.6 | +1.17 | 실측 | [[ifbench]] 70.4081632653061%×1.0 |
+| 지시 따르기 | 67.5 | +1.17 | 실측 | [[ifbench]] 70.4081632653061%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

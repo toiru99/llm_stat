@@ -5,7 +5,7 @@ creator: Z AI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.8845
-output_speed_tps: 106.98859409993
+output_speed_tps: 130.43762768014898
 context_window: 1000000
 status: past
 size_class: Large
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 44.0, z: -0.16, r: 47.5, estimated: false }  # 전문 지식
   reasoning: { s: 29.6, z: -0.3, r: 45.5, estimated: false }  # 추론
   coding: { s: 36.8, z: -0.11, r: 48.3, estimated: true }  # 코딩
-  agentic: { s: 52.6, z: 0.27, r: 54.0, estimated: false }  # 에이전트
+  agentic: { s: 52.5, z: 0.26, r: 53.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 47.7, z: -0.18, r: 47.4, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5.2 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # GLM-5.2 (non-reasoning)
@@ -37,7 +37,7 @@ Z AI · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ past
 - **약점**: 추론, 지시 따르기
 
 ## 실용 지표
-`입력 $1.4 · 출력 $4.4 · 혼합 $0.8845/1M · 106.98859409993 t/s · TTFT 2.0085436768383502s · 1M ctx`
+`입력 $1.4 · 출력 $4.4 · 혼합 $0.8845/1M · 130.43762768014898 t/s · TTFT 1.964207052646s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Z AI · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ past
 | 전문 지식 | 47.5 | -0.16 | 실측 | [[gpqa-diamond]] 68.58585858585859%×0.4, [[humanitys-last-exam]] 9.7775718257646%×0.3 |
 | 추론 | 45.5 | -0.3 | 실측 | [[critpt]] 3.14285714285714%×1.0, [[gpqa-diamond]] 68.58585858585859%×1.0, [[humanitys-last-exam]] 9.7775718257646%×1.0 |
 | 코딩 | 48.3 | -0.11 | 추정 | (추정) |
-| 에이전트 | 54.0 | +0.27 | 실측 | [[gdpval]] 1251.81%×1.0, [[tau3-banking]] 16.7010309278351%×1.0 |
+| 에이전트 | 53.9 | +0.26 | 실측 | [[gdpval]] 1248.71%×1.0, [[tau3-banking]] 16.7010309278351%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 47.4 | -0.18 | 실측 | [[aa-lcr]] 42.3333333333333%×1.0 |

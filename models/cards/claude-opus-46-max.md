@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 3.85
-output_speed_tps: 51.4087573714166
+output_speed_tps: 51.4282116922398
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -19,13 +19,13 @@ radar:
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 81.3, z: 0.5, r: 57.6, estimated: false }  # 멀티모달
   long_context: { s: 88.0, z: 1.02, r: 65.3, estimated: false }  # 긴문맥
-  instruction: { s: 57.6, z: 0.16, r: 52.3, estimated: false }  # 지시 따르기
+  instruction: { s: 57.6, z: 0.15, r: 52.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 4.6 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Claude Opus 4.6 (max)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 - **약점**: 멀티모달, 지시 따르기
 
 ## 실용 지표
-`입력 $5.0 · 출력 $25.0 · 혼합 $3.85/1M · 51.4087573714166 t/s · TTFT 18.8948568157815s · 1M ctx`
+`입력 $5.0 · 출력 $25.0 · 혼합 $3.85/1M · 51.4282116922398 t/s · TTFT 27.3713888496865s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -50,7 +50,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 57.6 | +0.5 | 실측 | [[mmmu-pro]] 75.4335260115607%×1.0 |
 | 긴문맥 | 65.3 | +1.02 | 실측 | [[aa-lcr]] 78.0%×1.0 |
-| 지시 따르기 | 52.3 | +0.16 | 실측 | [[ifbench]] 53.1292517006803%×1.0 |
+| 지시 따르기 | 52.3 | +0.15 | 실측 | [[ifbench]] 53.1292517006803%×1.0 |
 
 > r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
 

@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.074
-output_speed_tps: 76.5583983115239
+output_speed_tps: 71.7814134280242
 context_window: 256000
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ministral 3 14B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # Ministral 3 14B
@@ -37,7 +37,7 @@ Mistral · Open · Small · 컨텍스트 256k · 종합지능 **None**
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.2 · 혼합 $0.074/1M · 76.5583983115239 t/s · TTFT 2.35914309391732s · 256k ctx`
+`입력 $0.2 · 출력 $0.2 · 혼합 $0.074/1M · 71.7814134280242 t/s · TTFT 2.26512334863984s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

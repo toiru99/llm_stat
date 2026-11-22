@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — EXAONE 4.5 33B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-21
-timestamp: 2026-11-21T00:00:00Z
+updated: 2026-11-22
+timestamp: 2026-11-22T00:00:00Z
 ---
 
 # EXAONE 4.5 33B
@@ -46,7 +46,7 @@ LG AI Research · Open · Small · 컨텍스트 262k · 종합지능 **None**
 | 전문 지식 | 54.0 | +0.27 | 실측 | [[gpqa-diamond]] 79.39393939393939%×0.4, [[humanitys-last-exam]] 12.8822984244671%×0.3 |
 | 추론 | 47.7 | -0.15 | 실측 | [[critpt]] 0.28571428571428603%×1.0, [[gpqa-diamond]] 79.39393939393939%×1.0, [[humanitys-last-exam]] 12.8822984244671%×1.0 |
 | 코딩 | 45.4 | -0.31 | 실측 | [[terminal-bench]] 20.4545454545455%×0.5 |
-| 에이전트 | 52.4 | +0.16 | 실측 | [[gdpval]] 474.45%×1.0, [[tau2-bench]] 78.07017543859651%×1.0, [[terminal-bench]] 20.4545454545455%×1.0 |
+| 에이전트 | 52.4 | +0.16 | 실측 | [[gdpval]] 474.09%×1.0, [[tau2-bench]] 78.07017543859651%×1.0, [[terminal-bench]] 20.4545454545455%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 49.3 | -0.05 | 실측 | [[mmmu-pro]] 67.3410404624277%×1.0 |
 | 긴문맥 | 53.6 | +0.24 | 실측 | [[aa-lcr]] 54.6666666666667%×1.0 |
