@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 58.2587824022788
 price_blended_usd_1m: 2.94
-output_speed_tps: 68.1111363761142
+output_speed_tps: 71.3969486160878
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 80.2, z: 1.59, r: 73.8, estimated: true }  # 전문 지식
-  reasoning: { s: 73.4, z: 1.87, r: 78.0, estimated: true }  # 추론
+  reasoning: { s: 73.4, z: 1.86, r: 78.0, estimated: true }  # 추론
   coding: { s: 81.4, z: 1.4, r: 71.1, estimated: true }  # 코딩
   agentic: { s: 84.2, z: 1.36, r: 70.4, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 4 Carbon (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # Gemini 4 Carbon (medium)
@@ -37,14 +37,14 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **58.2587824
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 68.1111363761142 t/s · TTFT 32.9934110255207s · 1M ctx` · 가성비 19.8
+`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 71.3969486160878 t/s · TTFT 26.5423594052976s · 1M ctx` · 가성비 19.8
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 73.8 | +1.59 | 추정 | (추정) |
-| 추론 | 78.0 | +1.87 | 추정 | (추정) |
+| 추론 | 78.0 | +1.86 | 추정 | (추정) |
 | 코딩 | 71.1 | +1.4 | 추정 | (추정) |
 | 에이전트 | 70.4 | +1.36 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |

@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.2025
-output_speed_tps: 130.736494021765
+output_speed_tps: 159.375396969887
 context_window: 1000000
 status: past
 size_class: Medium
@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 57.9, z: 0.51, r: 57.7, estimated: false }  # 전문 지식
   reasoning: { s: 39.0, z: 0.17, r: 52.5, estimated: false }  # 추론
-  coding: { s: 46.7, z: 0.23, r: 53.4, estimated: false }  # 코딩
+  coding: { s: 46.7, z: 0.22, r: 53.4, estimated: false }  # 코딩
   agentic: { s: 42.9, z: -0.07, r: 48.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3 Super
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # Nemotron 3 Super
@@ -37,7 +37,7 @@ NVIDIA · Open · Medium · 컨텍스트 1M · 종합지능 **None** · ⚠️ p
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $0.9 · 혼합 $0.2025/1M · 130.736494021765 t/s · TTFT 1.90076634836394s · 1M ctx`
+`입력 $0.3 · 출력 $0.9 · 혼합 $0.2025/1M · 159.375396969887 t/s · TTFT 2.11839756679668s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ NVIDIA · Open · Medium · 컨텍스트 1M · 종합지능 **None** · ⚠️ p
 |---|---|---|---|---|
 | 전문 지식 | 57.7 | +0.51 | 실측 | [[gpqa-diamond]] 80.0%×0.4, [[humanitys-last-exam]] 20.7599629286376%×0.3 |
 | 추론 | 52.5 | +0.17 | 실측 | [[critpt]] 3.14285714285714%×1.0, [[gpqa-diamond]] 80.0%×1.0, [[humanitys-last-exam]] 20.7599629286376%×1.0 |
-| 코딩 | 53.4 | +0.23 | 실측 | [[scicode]] 36.2268518518519%×1.0, [[terminal-bench]] 28.7878787878788%×0.5 |
+| 코딩 | 53.4 | +0.22 | 실측 | [[scicode]] 36.2268518518519%×1.0, [[terminal-bench]] 28.7878787878788%×0.5 |
 | 에이전트 | 48.9 | -0.07 | 실측 | [[gdpval]] 497.16%×1.0, [[tau2-bench]] 67.83625730994149%×1.0, [[tau3-banking]] 10.3092783505155%×1.0, [[terminal-bench]] 28.7878787878788%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

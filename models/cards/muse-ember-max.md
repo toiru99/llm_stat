@@ -5,7 +5,7 @@ creator: Meta
 license: Proprietary
 intelligence_index: 36.0212987864912
 price_blended_usd_1m: 0.0728
-output_speed_tps: 457.662076987625
+output_speed_tps: 438.372780513333
 context_window: 1048576
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Ember (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # Muse Ember (max)
@@ -37,7 +37,7 @@ Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **36.021298786
 - **약점**: —
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.5 · 혼합 $0.0728/1M · 457.662076987625 t/s · TTFT 5.26874320419388s · 1M ctx` · 가성비 494.8
+`입력 $0.1 · 출력 $0.5 · 혼합 $0.0728/1M · 438.372780513333 t/s · TTFT 4.73747788293722s · 1M ctx` · 가성비 494.8
 
 ## 레이더 8축 (평균=50 기준선)
 

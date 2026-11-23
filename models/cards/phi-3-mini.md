@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Phi-3 Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # Phi-3 Mini

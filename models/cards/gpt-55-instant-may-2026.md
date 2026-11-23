@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 61.5, z: 0.68, r: 60.2, estimated: false }  # 전문 지식
   reasoning: { s: 40.6, z: 0.25, r: 53.7, estimated: false }  # 추론
-  coding: { s: 64.4, z: 0.83, r: 62.4, estimated: false }  # 코딩
+  coding: { s: 64.4, z: 0.82, r: 62.4, estimated: false }  # 코딩
   agentic: { s: 57.1, z: 0.42, r: 56.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.5 Instant (May 2026)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # GPT-5.5 Instant (May 2026)
@@ -45,7 +45,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 400k · 종합지능 **None** �
 |---|---|---|---|---|
 | 전문 지식 | 60.2 | +0.68 | 실측 | [[gpqa-diamond]] 84.64646464646461%×0.4, [[humanitys-last-exam]] 21.5940685820204%×0.3 |
 | 추론 | 53.7 | +0.25 | 실측 | [[critpt]] 2.57142857142857%×1.0, [[gpqa-diamond]] 84.64646464646461%×1.0, [[humanitys-last-exam]] 21.5940685820204%×1.0 |
-| 코딩 | 62.4 | +0.83 | 실측 | [[terminal-bench]] 42.4242424242424%×0.5 |
+| 코딩 | 62.4 | +0.82 | 실측 | [[terminal-bench]] 42.4242424242424%×0.5 |
 | 에이전트 | 56.3 | +0.42 | 실측 | [[tau2-bench]] 49.4152046783626%×1.0, [[terminal-bench]] 42.4242424242424%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

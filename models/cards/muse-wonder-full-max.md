@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 71.8, z: 1.18, r: 67.7, estimated: false }  # 전문 지식
-  reasoning: { s: 81.9, z: 2.28, r: 84.3, estimated: false }  # 추론
+  reasoning: { s: 81.9, z: 2.28, r: 84.2, estimated: false }  # 추론
   coding: { s: 91.6, z: 1.75, r: 76.2, estimated: false }  # 코딩
   agentic: { s: 99.6, z: 1.89, r: 78.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Wonder Full (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # Muse Wonder Full (max)
@@ -44,7 +44,7 @@ Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **50.077212362
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 67.7 | +1.18 | 실측 | [[humanitys-last-exam]] 53.6144578313253%×0.3 |
-| 추론 | 84.3 | +2.28 | 실측 | [[critpt]] 32.857142857142904%×1.0, [[humanitys-last-exam]] 53.6144578313253%×1.0 |
+| 추론 | 84.2 | +2.28 | 실측 | [[critpt]] 32.857142857142904%×1.0, [[humanitys-last-exam]] 53.6144578313253%×1.0 |
 | 코딩 | 76.2 | +1.75 | 실측 | [[scicode]] 62.6157407407407%×1.0 |
 | 에이전트 | 78.4 | +1.89 | 실측 | [[gdpval]] 1857.09%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

@@ -5,7 +5,7 @@ creator: Z AI
 license: Open
 intelligence_index: 31.653381843882
 price_blended_usd_1m: 0.902
-output_speed_tps: 65.614599482189
+output_speed_tps: 67.8963671173365
 context_window: 1000000
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5.3 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # GLM-5.3 (max)
@@ -37,7 +37,7 @@ Z AI · Open · Large · 컨텍스트 1M · 종합지능 **31.653381843882**
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $1.4 · 출력 $4.4 · 혼합 $0.902/1M · 65.614599482189 t/s · TTFT 5.44068366646137s · 1M ctx` · 가성비 35.1
+`입력 $1.4 · 출력 $4.4 · 혼합 $0.902/1M · 67.8963671173365 t/s · TTFT 5.07909149622567s · 1M ctx` · 가성비 35.1
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Z AI · Open · Large · 컨텍스트 1M · 종합지능 **31.653381843882**
 | 전문 지식 | 72.4 | +1.49 | 실측 | [[gpqa-diamond]] 91.7171717171717%×0.4, [[humanitys-last-exam]] 42.2613531047266%×0.3 |
 | 추론 | 74.1 | +1.61 | 실측 | [[critpt]] 19.1428571428571%×1.0, [[gpqa-diamond]] 91.7171717171717%×1.0, [[humanitys-last-exam]] 42.2613531047266%×1.0 |
 | 코딩 | 73.2 | +1.55 | 실측 | [[scicode]] 59.0277777777778%×1.0 |
-| 에이전트 | 75.6 | +1.71 | 실측 | [[gdpval]] 1654.78%×1.0, [[tau3-banking]] 50.3092783505155%×1.0 |
+| 에이전트 | 75.6 | +1.71 | 실측 | [[gdpval]] 1654.2%×1.0, [[tau3-banking]] 50.3092783505155%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 66.1 | +1.07 | 실측 | [[aa-lcr]] 79.6666666666667%×1.0 |

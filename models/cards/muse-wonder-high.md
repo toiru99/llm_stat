@@ -5,7 +5,7 @@ creator: Meta
 license: Proprietary
 intelligence_index: 40.5266079185604
 price_blended_usd_1m: 2.94
-output_speed_tps: 110.14419015114
+output_speed_tps: 103.545349515792
 context_window: 1048576
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Wonder (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # Muse Wonder (high)
@@ -37,7 +37,7 @@ Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **40.526607918
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 110.14419015114 t/s · TTFT 12.3627577526933s · 1M ctx` · 가성비 13.8
+`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 103.545349515792 t/s · TTFT 12.8726170184977s · 1M ctx` · 가성비 13.8
 
 ## 레이더 8축 (평균=50 기준선)
 

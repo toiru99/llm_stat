@@ -5,7 +5,7 @@ creator: Meta
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.053
-output_speed_tps: 130.7066090689645
+output_speed_tps: 132.240811808389
 context_window: 128000
 status: past
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.1 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # Llama 3.1 8B
@@ -37,7 +37,7 @@ Meta · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠️ pa
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.08 · 혼합 $0.053/1M · 130.7066090689645 t/s · TTFT 1.4514376484787s · 128k ctx`
+`입력 $0.05 · 출력 $0.08 · 혼합 $0.053/1M · 132.240811808389 t/s · TTFT 1.4581451232176201s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

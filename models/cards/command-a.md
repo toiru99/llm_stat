@@ -5,7 +5,7 @@ creator: Cohere
 license: Open
 intelligence_index: 6.24120025576958
 price_blended_usd_1m: 0
-output_speed_tps: 198.775699633033
+output_speed_tps: 210.54355649516
 context_window: 192000
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Command A+
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # Command A+
@@ -37,7 +37,7 @@ Cohere · Open · Large · 컨텍스트 192k · 종합지능 **6.24120025576958*
 - **약점**: 추론, 멀티모달
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 198.775699633033 t/s · TTFT 0.95677753282588s · 192k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 210.54355649516 t/s · TTFT 0.919266790221863s · 192k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: Google
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.086
-output_speed_tps: 73.4241621088364
+output_speed_tps: 87.27311950153279
 context_window: 256000
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 4 26B A4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # Gemma 4 26B A4B
@@ -37,7 +37,7 @@ Google · Open · Small · 컨텍스트 256k · 종합지능 **None**
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.095 · 출력 $0.32 · 혼합 $0.086/1M · 73.4241621088364 t/s · TTFT 1.33975750695641s · 256k ctx`
+`입력 $0.095 · 출력 $0.32 · 혼합 $0.086/1M · 87.27311950153279 t/s · TTFT 1.21205081776057s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Google · Open · Small · 컨텍스트 256k · 종합지능 **None**
 | 전문 지식 | 56.7 | +0.44 | 실측 | [[gpqa-diamond]] 79.1919191919192%×0.4, [[humanitys-last-exam]] 19.3234476367006%×0.3 |
 | 추론 | 49.6 | -0.03 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 79.1919191919192%×1.0, [[humanitys-last-exam]] 19.3234476367006%×1.0 |
 | 코딩 | 51.6 | +0.11 | 실측 | [[scicode]] 40.046296296296305%×1.0, [[terminal-bench]] 13.639999999999999%×0.5 |
-| 에이전트 | 43.6 | -0.42 | 실측 | [[gdpval]] 572.54%×1.0, [[tau2-bench]] 43.5672514619883%×1.0, [[tau3-banking]] 11.9587628865979%×1.0, [[terminal-bench]] 13.639999999999999%×1.0 |
+| 에이전트 | 43.6 | -0.42 | 실측 | [[gdpval]] 572.57%×1.0, [[tau2-bench]] 43.5672514619883%×1.0, [[tau3-banking]] 11.9587628865979%×1.0, [[terminal-bench]] 13.639999999999999%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 51.2 | +0.08 | 실측 | [[mmmu-pro]] 69.2485549132948%×1.0 |
 | 긴문맥 | 59.1 | +0.61 | 실측 | [[aa-lcr]] 65.6666666666667%×1.0 |

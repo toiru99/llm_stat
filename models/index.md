@@ -1,10 +1,10 @@
 # 모델 (Models)
 
-`scripts/build_cards.py` 자동 생성 · 데이터 2026-11-22 · 제작사 61곳 · current 288 + past 476 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
+`scripts/build_cards.py` 자동 생성 · 데이터 2026-11-23 · 제작사 61곳 · current 289 + past 476 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
 
 - 레이더 축·방법론: [radar-spec.md](radar-spec.md) · 설정: [../config.toml](../config.toml)
 
-## 모델 목록 (종합지능 내림차순, 764개)
+## 모델 목록 (종합지능 내림차순, 765개)
 
 * [Claude Fable 5.2 (max)](cards/claude-fable-52-max.md) - 종합지능 64.563595756626
 * [Claude Fable 5.2 (xhigh)](cards/claude-fable-52-xhigh.md) - 종합지능 62.2167392403357
@@ -283,6 +283,7 @@
 * [GLM-4.5V](cards/glm-45v.md) - 종합지능 None · past
 * [Qwen3.5 4B (non-reasoning)](cards/qwen35-4b-non-reasoning.md) - 종합지능 None
 * [Qwen3.5 397B A17B (non-reasoning)](cards/qwen35-397b-a17b-non-reasoning.md) - 종합지능 None
+* [LingSante-3.1-flash](cards/lingsante-31-flash.md) - 종합지능 None
 * [Qwen3 235B 2507](cards/qwen3-235b-2507.md) - 종합지능 None · past
 * [Olmo 3 7B Think](cards/olmo-3-7b-think.md) - 종합지능 None
 * [HyperCLOVA X SEED Think (32B)](cards/hyperclova-x-seed-think-32b.md) - 종합지능 None

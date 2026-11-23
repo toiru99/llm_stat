@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 6.15684082814488
 price_blended_usd_1m: 0.2175
-output_speed_tps: 320.410331011488
+output_speed_tps: 327.913701443893
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3.1 Flash-Lite
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # Gemini 3.1 Flash-Lite
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **6.15684082
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.25 · 출력 $1.5 · 혼합 $0.2175/1M · 320.410331011488 t/s · TTFT 5.68602805406257s · 1M ctx` · 가성비 28.3
+`입력 $0.25 · 출력 $1.5 · 혼합 $0.2175/1M · 327.913701443893 t/s · TTFT 5.71209742153479s · 1M ctx` · 가성비 28.3
 
 ## 레이더 8축 (평균=50 기준선)
 

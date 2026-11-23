@@ -5,16 +5,16 @@ creator: Alibaba
 license: Proprietary
 intelligence_index: 42.8914543287565
 price_blended_usd_1m: 0.8025
-output_speed_tps: 65.1359424688953
+output_speed_tps: 63.565185853567
 context_window: 983616
 status: current
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 77.9, z: 1.47, r: 72.1, estimated: true }  # 전문 지식
-  reasoning: { s: 71.3, z: 1.76, r: 76.4, estimated: true }  # 추론
-  coding: { s: 80.0, z: 1.36, r: 70.3, estimated: true }  # 코딩
+  knowledge: { s: 77.6, z: 1.46, r: 71.9, estimated: true }  # 전문 지식
+  reasoning: { s: 73.9, z: 1.89, r: 78.3, estimated: true }  # 추론
+  coding: { s: 80.8, z: 1.38, r: 70.7, estimated: true }  # 코딩
   agentic: { s: 97.5, z: 1.82, r: 77.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen4 Max
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # Qwen4 Max
@@ -33,20 +33,20 @@ timestamp: 2026-11-22T00:00:00Z
 Alibaba · Proprietary · Unknown · 컨텍스트 983k · 종합지능 **42.8914543287565**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 에이전트, 추론
+- **강점**: 추론, 에이전트
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $1.5 · 출력 $4.5 · 혼합 $0.8025/1M · 65.1359424688953 t/s · TTFT 4.31472568931273s · 983k ctx` · 가성비 53.4
+`입력 $1.5 · 출력 $4.5 · 혼합 $0.8025/1M · 63.565185853567 t/s · TTFT 4.55447935447497s · 983k ctx` · 가성비 53.4
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 72.1 | +1.47 | 추정 | (추정) |
-| 추론 | 76.4 | +1.76 | 추정 | (추정) |
-| 코딩 | 70.3 | +1.36 | 추정 | (추정) |
-| 에이전트 | 77.3 | +1.82 | 실측 | [[gdpval]] 1808.69%×1.0 |
+| 전문 지식 | 71.9 | +1.46 | 추정 | (추정) |
+| 추론 | 78.3 | +1.89 | 추정 | (추정) |
+| 코딩 | 70.7 | +1.38 | 추정 | (추정) |
+| 에이전트 | 77.3 | +1.82 | 실측 | [[gdpval]] 1808.87%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 66.1 | +1.07 | 추정 | (추정) |

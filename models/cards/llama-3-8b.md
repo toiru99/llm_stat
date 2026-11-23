@@ -5,7 +5,7 @@ creator: Meta
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.07
-output_speed_tps: 71.0876034541223
+output_speed_tps: 71.3043178698151
 context_window: 8192
 status: past
 size_class: Small
@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 15.4, z: -1.54, r: 26.9, estimated: false }  # 전문 지식
-  reasoning: { s: 9.5, z: -1.29, r: 30.6, estimated: false }  # 추론
+  reasoning: { s: 9.5, z: -1.29, r: 30.7, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.36, r: 29.6, estimated: false }  # 코딩
   agentic: { s: 0.0, z: -1.55, r: 26.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # Llama 3 8B
@@ -37,14 +37,14 @@ Meta · Open · Small · 컨텍스트 8k · 종합지능 **None** · ⚠️ past
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.25 · 혼합 $0.07/1M · 71.0876034541223 t/s · TTFT 0.553775993166861s · 8k ctx`
+`입력 $0.05 · 출력 $0.25 · 혼합 $0.07/1M · 71.3043178698151 t/s · TTFT 0.573282226666832s · 8k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 26.9 | -1.54 | 실측 | [[gpqa-diamond]] 29.5959595959596%×0.4, [[humanitys-last-exam]] 5.06%×0.3 |
-| 추론 | 30.6 | -1.29 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 29.5959595959596%×1.0, [[humanitys-last-exam]] 5.06%×1.0 |
+| 추론 | 30.7 | -1.29 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 29.5959595959596%×1.0, [[humanitys-last-exam]] 5.06%×1.0 |
 | 코딩 | 29.6 | -1.36 | 실측 | [[terminal-bench]] 0.0%×0.5 |
 | 에이전트 | 26.7 | -1.55 | 실측 | [[tau2-bench]] 0.0%×1.0, [[terminal-bench]] 0.0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

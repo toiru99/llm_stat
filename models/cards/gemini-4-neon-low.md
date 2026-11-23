@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 44.0831506204565
 price_blended_usd_1m: 2.205
-output_speed_tps: 99.0533805477175
+output_speed_tps: 96.3910736692989
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 4 Neon (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # Gemini 4 Neon (low)
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **44.0831506
 - **약점**: —
 
 ## 실용 지표
-`입력 $3.0 · 출력 $15.0 · 혼합 $2.205/1M · 99.0533805477175 t/s · TTFT 17.3067412474844s · 1M ctx` · 가성비 20.0
+`입력 $3.0 · 출력 $15.0 · 혼합 $2.205/1M · 96.3910736692989 t/s · TTFT 19.2624940477943s · 1M ctx` · 가성비 20.0
 
 ## 레이더 8축 (평균=50 기준선)
 

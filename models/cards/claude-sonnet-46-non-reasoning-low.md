@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 2.31
-output_speed_tps: 56.3607427701429
+output_speed_tps: 55.2724034071321
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -14,7 +14,7 @@ is_reasoning: false
 radar:
   knowledge: { s: 52.1, z: 0.23, r: 53.5, estimated: false }  # 전문 지식
   reasoning: { s: 32.4, z: -0.16, r: 47.6, estimated: false }  # 추론
-  coding: { s: 64.4, z: 0.83, r: 62.4, estimated: false }  # 코딩
+  coding: { s: 64.4, z: 0.82, r: 62.4, estimated: false }  # 코딩
   agentic: { s: 72.0, z: 0.94, r: 64.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 72.9, z: 0.08, r: 51.2, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 4.6 (non-reasoning, low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # Claude Sonnet 4.6 (non-reasoning, low)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 - **약점**: 추론, 지시 따르기
 
 ## 실용 지표
-`입력 $3.0 · 출력 $15.0 · 혼합 $2.31/1M · 56.3607427701429 t/s · TTFT 1.2101519156187s · 1M ctx`
+`입력 $3.0 · 출력 $15.0 · 혼합 $2.31/1M · 55.2724034071321 t/s · TTFT 1.20254395619068s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 |---|---|---|---|---|
 | 전문 지식 | 53.5 | +0.23 | 실측 | [[gpqa-diamond]] 79.6969696969697%×0.4, [[humanitys-last-exam]] 11.2140871177016%×0.3 |
 | 추론 | 47.6 | -0.16 | 실측 | [[critpt]] 0.857142857142857%×1.0, [[gpqa-diamond]] 79.6969696969697%×1.0, [[humanitys-last-exam]] 11.2140871177016%×1.0 |
-| 코딩 | 62.4 | +0.83 | 실측 | [[terminal-bench]] 42.4242424242424%×0.5 |
+| 코딩 | 62.4 | +0.82 | 실측 | [[terminal-bench]] 42.4242424242424%×0.5 |
 | 에이전트 | 64.1 | +0.94 | 실측 | [[tau2-bench]] 78.9473684210526%×1.0, [[terminal-bench]] 42.4242424242424%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 51.2 | +0.08 | 실측 | [[mmmu-pro]] 69.19075144508669%×1.0 |

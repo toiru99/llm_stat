@@ -5,7 +5,7 @@ creator: DeepSeek
 license: Open
 intelligence_index: 28.6437391540402
 price_blended_usd_1m: 0.1842
-output_speed_tps: 165.984592689805
+output_speed_tps: 173.829948358152
 context_window: 1000000
 status: current
 size_class: Large
@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 66.5, z: 0.93, r: 63.9, estimated: true }  # 전문 지식
-  reasoning: { s: 53.1, z: 0.87, r: 63.0, estimated: true }  # 추론
+  reasoning: { s: 53.1, z: 0.86, r: 63.0, estimated: true }  # 추론
   coding: { s: 60.0, z: 0.68, r: 60.2, estimated: true }  # 코딩
   agentic: { s: 61.3, z: 0.57, r: 58.5, estimated: true }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4.1 Flash 1017 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # DeepSeek V4.1 Flash 1017 (high)
@@ -37,14 +37,14 @@ DeepSeek · Open · Large · 컨텍스트 1M · 종합지능 **28.6437391540402*
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.1842/1M · 165.984592689805 t/s · TTFT 1.08312902045142s · 1M ctx` · 가성비 155.5
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.1842/1M · 173.829948358152 t/s · TTFT 0.980184541138532s · 1M ctx` · 가성비 155.5
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 63.9 | +0.93 | 추정 | (추정) |
-| 추론 | 63.0 | +0.87 | 추정 | (추정) |
+| 추론 | 63.0 | +0.86 | 추정 | (추정) |
 | 코딩 | 60.2 | +0.68 | 추정 | (추정) |
 | 에이전트 | 58.5 | +0.57 | 추정 | (추정) |
 | 신뢰성 | — | — | 측정 안 됨 | — |

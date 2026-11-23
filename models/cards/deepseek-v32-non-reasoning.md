@@ -5,14 +5,14 @@ creator: DeepSeek
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.294
-output_speed_tps: 38.0702918913604
+output_speed_tps: 38.7252013529795
 context_window: 128000
 status: past
 size_class: Large
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 49.1, z: 0.08, r: 51.2, estimated: false }  # 전문 지식
+  knowledge: { s: 49.1, z: 0.08, r: 51.3, estimated: false }  # 전문 지식
   reasoning: { s: 30.6, z: -0.25, r: 46.3, estimated: false }  # 추론
   coding: { s: 49.4, z: 0.32, r: 54.8, estimated: false }  # 코딩
   agentic: { s: 64.5, z: 0.68, r: 60.2, estimated: false }  # 에이전트
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V3.2 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # DeepSeek V3.2 (non-reasoning)
@@ -37,13 +37,13 @@ DeepSeek · Open · Large · 컨텍스트 128k · 종합지능 **None** · ⚠�
 - **약점**: 지시 따르기, 추론
 
 ## 실용 지표
-`입력 $0.28 · 출력 $0.42 · 혼합 $0.294/1M · 38.0702918913604 t/s · TTFT 2.30627229259718s · 128k ctx`
+`입력 $0.28 · 출력 $0.42 · 혼합 $0.294/1M · 38.7252013529795 t/s · TTFT 2.29113380462498s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
-| 전문 지식 | 51.2 | +0.08 | 실측 | [[gpqa-diamond]] 75.0505050505051%×0.4, [[humanitys-last-exam]] 11.2140871177016%×0.3 |
+| 전문 지식 | 51.3 | +0.08 | 실측 | [[gpqa-diamond]] 75.0505050505051%×0.4, [[humanitys-last-exam]] 11.2140871177016%×0.3 |
 | 추론 | 46.3 | -0.25 | 실측 | [[critpt]] 0.857142857142857%×1.0, [[gpqa-diamond]] 75.0505050505051%×1.0, [[humanitys-last-exam]] 11.2140871177016%×1.0 |
 | 코딩 | 54.8 | +0.32 | 실측 | [[terminal-bench]] 32.5757575757576%×0.5 |
 | 에이전트 | 60.2 | +0.68 | 실측 | [[tau2-bench]] 78.9473684210526%×1.0, [[terminal-bench]] 32.5757575757576%×1.0 |

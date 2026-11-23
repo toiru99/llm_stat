@@ -5,7 +5,7 @@ creator: Microsoft
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.0975
-output_speed_tps: 16.4457852678572
+output_speed_tps: 17.8548746357951
 context_window: 128000
 status: current
 size_class: Tiny
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Phi-4 Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # Phi-4 Mini
@@ -37,7 +37,7 @@ Microsoft · Open · Tiny · 컨텍스트 128k · 종합지능 **None**
 - **약점**: 에이전트, 지시 따르기
 
 ## 실용 지표
-`입력 $0.075 · 출력 $0.3 · 혼합 $0.0975/1M · 16.4457852678572 t/s · TTFT 4.75359314694283s · 128k ctx`
+`입력 $0.075 · 출력 $0.3 · 혼합 $0.0975/1M · 17.8548746357951 t/s · TTFT 4.61537536809246s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: Z AI
 license: Open
 intelligence_index: 27.803889160883
 price_blended_usd_1m: 0.101
-output_speed_tps: 60.2799358108219
+output_speed_tps: 61.1205772300968
 context_window: 1000000
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5.3-Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # GLM-5.3-Flash
@@ -37,7 +37,7 @@ Z AI · Open · Large · 컨텍스트 1M · 종합지능 **27.803889160883**
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.5 · 혼합 $0.101/1M · 60.2799358108219 t/s · TTFT 3.06615732009823s · 1M ctx` · 가성비 275.3
+`입력 $0.15 · 출력 $0.5 · 혼합 $0.101/1M · 61.1205772300968 t/s · TTFT 3.17310546954362s · 1M ctx` · 가성비 275.3
 
 ## 레이더 8축 (평균=50 기준선)
 

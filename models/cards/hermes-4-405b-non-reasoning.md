@@ -5,7 +5,7 @@ creator: Nous Research
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 1.2
-output_speed_tps: 30.0135649515803
+output_speed_tps: 30.5964186217869
 context_window: 128000
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hermes 4 405B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # Hermes 4 405B (non-reasoning)
@@ -37,7 +37,7 @@ Nous Research · Open · Large · 컨텍스트 128k · 종합지능 **None**
 - **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
-`입력 $1.0 · 출력 $3.0 · 혼합 $1.2/1M · 30.0135649515803 t/s · TTFT 5.08545404929157s · 128k ctx`
+`입력 $1.0 · 출력 $3.0 · 혼합 $1.2/1M · 30.5964186217869 t/s · TTFT 5.04729363179577s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

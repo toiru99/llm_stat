@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: false
 radar:
   knowledge: { s: 34.5, z: -0.62, r: 40.7, estimated: false }  # 전문 지식
-  reasoning: { s: 20.5, z: -0.74, r: 38.8, estimated: false }  # 추론
+  reasoning: { s: 20.5, z: -0.74, r: 38.9, estimated: false }  # 추론
   coding: { s: 33.3, z: -0.23, r: 46.6, estimated: false }  # 코딩
   agentic: { s: 27.0, z: -0.62, r: 40.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Medium 3.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # Mistral Medium 3.1
@@ -44,7 +44,7 @@ Mistral · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None** 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 40.7 | -0.62 | 실측 | [[gpqa-diamond]] 58.7878787878788%×0.4, [[humanitys-last-exam]] 4.68025949953661%×0.3 |
-| 추론 | 38.8 | -0.74 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 58.7878787878788%×1.0, [[humanitys-last-exam]] 4.68025949953661%×1.0 |
+| 추론 | 38.9 | -0.74 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 58.7878787878788%×1.0, [[humanitys-last-exam]] 4.68025949953661%×1.0 |
 | 코딩 | 46.6 | -0.23 | 실측 | [[scicode]] 32.407407407407405%×1.0, [[terminal-bench]] 10.6060606060606%×0.5 |
 | 에이전트 | 40.7 | -0.62 | 실측 | [[gdpval]] 392.33%×1.0, [[tau2-bench]] 40.643274853801195%×1.0, [[tau3-banking]] 8.24742268041237%×1.0, [[terminal-bench]] 10.6060606060606%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

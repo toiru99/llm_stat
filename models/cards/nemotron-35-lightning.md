@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: 5.5346663903388
 price_blended_usd_1m: 0.06
-output_speed_tps: 273.297807276527
+output_speed_tps: 290.719652041148
 context_window: 1000000
 status: current
 size_class: Small
@@ -14,7 +14,7 @@ is_reasoning: true
 radar:
   knowledge: { s: 48.2, z: 0.04, r: 50.6, estimated: false }  # 전문 지식
   reasoning: { s: 29.2, z: -0.32, r: 45.3, estimated: false }  # 추론
-  coding: { s: 41.3, z: 0.04, r: 50.7, estimated: false }  # 코딩
+  coding: { s: 41.3, z: 0.04, r: 50.6, estimated: false }  # 코딩
   agentic: { s: 31.6, z: -0.46, r: 43.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3.5 Lightning
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # Nemotron 3.5 Lightning
@@ -37,7 +37,7 @@ NVIDIA · Open · Small · 컨텍스트 1M · 종합지능 **5.5346663903388**
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.2 · 혼합 $0.06/1M · 273.297807276527 t/s · TTFT 0.810373409072623s · 1M ctx` · 가성비 92.2
+`입력 $0.06 · 출력 $0.2 · 혼합 $0.06/1M · 290.719652041148 t/s · TTFT 0.777889363928751s · 1M ctx` · 가성비 92.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -45,7 +45,7 @@ NVIDIA · Open · Small · 컨텍스트 1M · 종합지능 **5.5346663903388**
 |---|---|---|---|---|
 | 전문 지식 | 50.6 | +0.04 | 실측 | [[gpqa-diamond]] 74.3434343434343%×0.4, [[humanitys-last-exam]] 10.5653382761817%×0.3 |
 | 추론 | 45.3 | -0.32 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 74.3434343434343%×1.0, [[humanitys-last-exam]] 10.5653382761817%×1.0 |
-| 코딩 | 50.7 | +0.04 | 실측 | [[scicode]] 32.060185185185205%×1.0 |
+| 코딩 | 50.6 | +0.04 | 실측 | [[scicode]] 32.060185185185205%×1.0 |
 | 에이전트 | 43.1 | -0.46 | 실측 | [[gdpval]] 645.26%×1.0, [[tau3-banking]] 8.8659793814433%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |

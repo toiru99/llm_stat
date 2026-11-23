@@ -5,7 +5,7 @@ creator: Meta
 license: Open
 intelligence_index: 24.8815868992913
 price_blended_usd_1m: 0.78
-output_speed_tps: 169.709903934103
+output_speed_tps: 170.269906297531
 context_window: 1048576
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Spark Open (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # Muse Spark Open (xhigh)
@@ -37,7 +37,7 @@ Meta · Open · Large · 컨텍스트 1M · 종합지능 **24.8815868992913**
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $1.25 · 출력 $4.25 · 혼합 $0.78/1M · 169.709903934103 t/s · TTFT 0.975314897383622s · 1M ctx` · 가성비 31.9
+`입력 $1.25 · 출력 $4.25 · 혼합 $0.78/1M · 170.269906297531 t/s · TTFT 0.997918191954095s · 1M ctx` · 가성비 31.9
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.193
-output_speed_tps: 108.434382385161
+output_speed_tps: 112.698315886505
 context_window: 262144
 status: current
 size_class: Medium
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 Next 80B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # Qwen3 Next 80B A3B
@@ -37,7 +37,7 @@ Alibaba · Open · Medium · 컨텍스트 262k · 종합지능 **None**
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.1 · 출력 $1.1 · 혼합 $0.193/1M · 108.434382385161 t/s · TTFT 1.30699864523224s · 262k ctx`
+`입력 $0.1 · 출력 $1.1 · 혼합 $0.193/1M · 112.698315886505 t/s · TTFT 1.32454438586796s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

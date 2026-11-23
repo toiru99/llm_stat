@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.8525
-output_speed_tps: 113.918835291079
+output_speed_tps: 113.11004242336
 context_window: 200000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — o4-mini (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # o4-mini (high)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None** �
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $1.1 · 출력 $4.4 · 혼합 $0.8525/1M · 113.918835291079 t/s · TTFT 14.7021714932s · 200k ctx`
+`입력 $1.1 · 출력 $4.4 · 혼합 $0.8525/1M · 113.11004242336 t/s · TTFT 12.7799008061667s · 200k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

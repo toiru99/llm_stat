@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 28.5750026655353
 price_blended_usd_1m: 0.0882
-output_speed_tps: 67.3176613591193
+output_speed_tps: 64.6002016986526
 context_window: 256000
 status: current
 size_class: Large
@@ -13,7 +13,7 @@ params_b: null
 is_reasoning: true
 radar:
   knowledge: { s: 76.2, z: 1.39, r: 70.9, estimated: false }  # 전문 지식
-  reasoning: { s: 59.1, z: 1.16, r: 67.4, estimated: false }  # 추론
+  reasoning: { s: 59.1, z: 1.16, r: 67.3, estimated: false }  # 추론
   coding: { s: 71.8, z: 1.08, r: 66.2, estimated: false }  # 코딩
   agentic: { s: 89.1, z: 1.53, r: 72.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.8-Flash-Next
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # Qwen3.8-Flash-Next
@@ -37,14 +37,14 @@ Alibaba · Open · Large · 컨텍스트 256k · 종합지능 **28.5750026655353
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.47 · 혼합 $0.0882/1M · 67.3176613591193 t/s · TTFT 2.62712933174746s · 256k ctx` · 가성비 324.0
+`입력 $0.15 · 출력 $0.47 · 혼합 $0.0882/1M · 64.6002016986526 t/s · TTFT 2.60525594815216s · 256k ctx` · 가성비 324.0
 
 ## 레이더 8축 (평균=50 기준선)
 
 | 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
 |---|---|---|---|---|
 | 전문 지식 | 70.9 | +1.39 | 실측 | [[gpqa-diamond]] 92.32323232323229%×0.4, [[humanitys-last-exam]] 38.044485634847106%×0.3 |
-| 추론 | 67.4 | +1.16 | 실측 | [[critpt]] 11.1428571428571%×1.0, [[gpqa-diamond]] 92.32323232323229%×1.0, [[humanitys-last-exam]] 38.044485634847106%×1.0 |
+| 추론 | 67.3 | +1.16 | 실측 | [[critpt]] 11.1428571428571%×1.0, [[gpqa-diamond]] 92.32323232323229%×1.0, [[humanitys-last-exam]] 38.044485634847106%×1.0 |
 | 코딩 | 66.2 | +1.08 | 실측 | [[scicode]] 50.578703703703695%×1.0 |
 | 에이전트 | 72.9 | +1.53 | 실측 | [[gdpval]] 1636.77%×1.0, [[tau3-banking]] 45.360824742268%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |

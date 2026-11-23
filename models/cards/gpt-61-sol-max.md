@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 54.6087338138148
 price_blended_usd_1m: 1.47
-output_speed_tps: 46.5288657192814
+output_speed_tps: 50.7180300859488
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6.1 Sol (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # GPT-6.1 Sol (max)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **54.6087338
 - **약점**: 전문 지식, 지시 따르기
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.47/1M · 46.5288657192814 t/s · TTFT 121.620050550292s · 1M ctx` · 가성비 37.1
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.47/1M · 50.7180300859488 t/s · TTFT 117.112126029375s · 1M ctx` · 가성비 37.1
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **54.6087338
 | 전문 지식 | 67.0 | +1.13 | 실측 | [[humanitys-last-exam]] 52.919369786839695%×0.3 |
 | 추론 | 82.7 | +2.18 | 실측 | [[critpt]] 31.7142857142857%×1.0, [[humanitys-last-exam]] 52.919369786839695%×1.0 |
 | 코딩 | 69.2 | +1.28 | 실측 | [[scicode]] 54.1666666666667%×1.0 |
-| 에이전트 | 72.7 | +1.51 | 실측 | [[gdpval]] 1607.47%×1.0 |
+| 에이전트 | 72.7 | +1.51 | 실측 | [[gdpval]] 1607.38%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 68.3 | +1.22 | 실측 | [[mmmu-pro]] 85.9537572254335%×1.0 |
 | 긴문맥 | 67.8 | +1.19 | 실측 | [[aa-lcr]] 83.0%×1.0 |

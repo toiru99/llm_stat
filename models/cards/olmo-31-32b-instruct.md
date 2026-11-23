@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Olmo 3.1 32B Instruct
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # Olmo 3.1 32B Instruct

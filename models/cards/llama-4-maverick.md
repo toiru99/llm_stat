@@ -5,7 +5,7 @@ creator: Meta
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.318
-output_speed_tps: 143.330278589608
+output_speed_tps: 115.150441070361
 context_window: 1000000
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 4 Maverick
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-22
-timestamp: 2026-11-22T00:00:00Z
+updated: 2026-11-23
+timestamp: 2026-11-23T00:00:00Z
 ---
 
 # Llama 4 Maverick
@@ -37,7 +37,7 @@ Meta · Open · Large · 컨텍스트 1M · 종합지능 **None**
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.25 · 출력 $1.0 · 혼합 $0.318/1M · 143.330278589608 t/s · TTFT 1.19483196065447s · 1M ctx`
+`입력 $0.25 · 출력 $1.0 · 혼합 $0.318/1M · 115.150441070361 t/s · TTFT 1.18020938898316s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
