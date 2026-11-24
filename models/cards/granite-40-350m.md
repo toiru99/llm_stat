@@ -9,50 +9,50 @@ output_speed_tps: None
 context_window: 32768
 status: current
 size_class: Tiny
-params_b: null
+params_b: 0.3
 is_reasoning: false
 radar:
-  knowledge: { s: 13.4, z: -1.64, r: 25.4, estimated: false }  # 전문 지식
-  reasoning: { s: 8.3, z: -1.35, r: 29.8, estimated: false }  # 추론
-  coding: { s: 0.0, z: -1.36, r: 29.6, estimated: false }  # 코딩
-  agentic: { s: 6.6, z: -1.32, r: 30.1, estimated: false }  # 에이전트
+  knowledge: { s: 13.4, z: -1.62, r: 25.6, estimated: false }  # 전문 지식
+  reasoning: { s: 8.3, z: -1.33, r: 30.0, estimated: false }  # 추론
+  coding: { s: 0.0, z: -1.38, r: 29.2, estimated: false }  # 코딩
+  agentic: { s: 6.6, z: -1.43, r: 28.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.59, r: 26.1, estimated: false }  # 긴문맥
-  instruction: { s: 5.3, z: -2.03, r: 19.5, estimated: false }  # 지시 따르기
+  long_context: { s: 0.0, z: -1.77, r: 23.5, estimated: false }  # 긴문맥
+  instruction: { s: 5.3, z: -1.87, r: 21.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.0 350M
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-23
-timestamp: 2026-11-23T00:00:00Z
+updated: 2026-11-24
+timestamp: 2026-11-24T00:00:00Z
 ---
 
 # Granite 4.0 350M
 
-IBM · Open · Tiny · 컨텍스트 32k · 종합지능 **None**
+IBM · Open · Tiny(0.3B) · 컨텍스트 32k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 에이전트, 추론
-- **약점**: 전문 지식, 지시 따르기
+- **강점**: 추론, 코딩
+- **약점**: 긴문맥, 지시 따르기
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 32k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
-| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
+| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(원점수) |
 |---|---|---|---|---|
-| 전문 지식 | 25.4 | -1.64 | 실측 | [[gpqa-diamond]] 26.0606060606061%×0.4, [[humanitys-last-exam]] 5.514365152919369%×0.3 |
-| 추론 | 29.8 | -1.35 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 26.0606060606061%×1.0, [[humanitys-last-exam]] 5.514365152919369%×1.0 |
-| 코딩 | 29.6 | -1.36 | 실측 | [[terminal-bench]] 0.0%×0.5 |
-| 에이전트 | 30.1 | -1.32 | 실측 | [[tau2-bench]] 13.157894736842099%×1.0, [[terminal-bench]] 0.0%×1.0 |
+| 전문 지식 | 25.6 | -1.62 | 실측 | [[gpqa-diamond]] 26.0606%×0.4, [[humanitys-last-exam]] 5.51437%×0.3 |
+| 추론 | 30.0 | -1.33 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 26.0606%×1.0, [[humanitys-last-exam]] 5.51437%×1.0 |
+| 코딩 | 29.2 | -1.38 | 실측 | [[terminal-bench]] 0%×0.5 |
+| 에이전트 | 28.6 | -1.43 | 실측 | [[tau2-bench]] 13.1579%×1.0, [[terminal-bench]] 0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 26.1 | -1.59 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 19.5 | -2.03 | 실측 | [[ifbench]] 15.9183673469388%×1.0 |
+| 긴문맥 | 23.5 | -1.77 | 실측 | [[aa-lcr]] 0%×1.0 |
+| 지시 따르기 | 21.9 | -1.87 | 실측 | [[ifbench]] 15.9184%×1.0 |
 
-> r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
+> 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.
 
 ## 출처
 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)

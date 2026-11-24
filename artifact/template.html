@@ -163,6 +163,7 @@
         <button class="tab" data-view="radar" aria-selected="true">레이더 비교</button>
         <button class="tab" data-view="explore" aria-selected="false">최신 실측·용도별 탐색</button>
         <button class="tab" data-view="scatter" aria-selected="false">토큰 단가 비교</button>
+        <button class="tab" data-view="size" aria-selected="false">모델 크기별 성능</button>
       </div>
       <div class="view">
         <div class="view-wrap" id="viewwrap"></div>
@@ -176,12 +177,13 @@
   </div>
 
   <div class="foot">
-    <span>출처: <a href="https://artificialanalysis.ai/leaderboards/models" target="_blank" rel="noopener" style="color:var(--signal)">artificialanalysis.ai</a> · 8축 = 평균 50 기준선(z-score) · 추정/미측정 구분 표기</span>
+    <span>출처: <a href="https://artificialanalysis.ai/leaderboards/models" target="_blank" rel="noopener" style="color:var(--signal)">artificialanalysis.ai</a> · <a href="https://artificialanalysis.ai/methodology/intelligence-benchmarking">AA 지수 구성과 방법론</a></span>
     <span id="footdate"></span>
   </div>
 </div>
 
 <script>
+__BENCHMARKS__
 __EXPLORER_CORE__
 const PAYLOAD = __CARDS__;
 const AX = PAYLOAD.axes, LAB = PAYLOAD.labels, MODELS = PAYLOAD.models;
@@ -192,7 +194,7 @@ const SERIES=["--series-0","--series-1","--series-2"];
 
 const savedPreferences=readCreatorPreferences();
 let pinnedCreators=new Set(savedPreferences.creators),pinnedOnly=savedPreferences.only,qualityFloor=savedPreferences.minIntelligence;
-let state={view:"radar",selected:[(MODELS.find(m=>m.status==="current"&&(!pinnedOnly||pinnedCreators.has(m.creator)))||MODELS[0]).slug],q:"",creators:new Set(pinnedOnly?pinnedCreators:[]),lic:new Set(),maxPrice:Infinity,minCtx:0,sizes:new Set(),reasoning:new Set(),curOnly:true,axesOpen:false};
+let state={view:"radar",radarMode:"__RADAR_MODE__",sizeMode:MODELS.some(m=>m.params>0 && Number.isFinite(m.intel))?"total":"group",openSizes:new Set(["Small"]),openEvidence:new Set(["explore-index"]),selected:[(MODELS.find(m=>m.status==="current"&&(!pinnedOnly||pinnedCreators.has(m.creator)))||MODELS[0]).slug],q:"",creators:new Set(pinnedOnly?pinnedCreators:[]),lic:new Set(),maxPrice:Infinity,minCtx:0,sizes:new Set(),reasoning:new Set(),curOnly:true,axesOpen:false};
 
 // ---------- filters ----------
 function buildFilters(){
@@ -215,9 +217,9 @@ function buildFilters(){
   // 크기 (AA Size: 파라미터 버킷)
   const sg=el("div","filter-grp");sg.innerHTML="<span>크기 (파라미터)</span>";
   const sch=el("div","chips");
-  const SIZE_LAB={Tiny:"Tiny <4.5B",Small:"Small 4.5–40B",Medium:"Med 40–150B",Large:"Large >150B",Unknown:"비공개"};
+  const sizeLabel=s=>sizeRanges[s] ? s+" "+sizeRanges[s] : "크기 미상";
   ["Tiny","Small","Medium","Large","Unknown"].filter(s=>MODELS.some(m=>m.size===s)).forEach(s=>{
-    const b=el("span","chip");b.textContent=SIZE_LAB[s];b.setAttribute("aria-pressed","false");
+    const b=el("span","chip");b.textContent=sizeLabel(s);b.setAttribute("aria-pressed","false");
     b.onclick=()=>{b.getAttribute("aria-pressed")==="true"?(state.sizes.delete(s),b.setAttribute("aria-pressed","false")):(state.sizes.add(s),b.setAttribute("aria-pressed","true"));render();};
     sch.appendChild(b);});
   sg.appendChild(sch);f.appendChild(sg);
@@ -295,46 +297,7 @@ function buildComparisonSlots(){
  }
 }
 
-// ---------- radar ----------
-function radarSVG(){
-  const S=460,cx=S/2,cy=S/2+6,R=158,n=AX.length;
-  const ang=i=>-Math.PI/2 + i*2*Math.PI/n;
-  const pt=(i,rad)=>[cx+Math.cos(ang(i))*rad*(R/100), cy+Math.sin(ang(i))*rad*(R/100)];
-  let g=`<svg viewBox="0 0 ${S} ${S+20}" role="img" aria-label="능력 레이더">`;
-  // rings
-  [25,50,75,100].forEach(rr=>{
-    const pts=AX.map((_,i)=>pt(i,rr).join(",")).join(" ");
-    const base=rr===50;
-    g+=`<polygon points="${pts}" fill="none" stroke="${base?'var(--base)':'var(--line)'}" stroke-width="${base?1.4:1}" ${base?'stroke-dasharray="2 3"':''}/>`;
-  });
-  // spokes + labels
-  AX.forEach((ax,i)=>{
-    const [x,y]=pt(i,100);
-    g+=`<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="var(--line)" stroke-width="1"/>`;
-    const [lx,ly]=pt(i,118);
-    const anchor=Math.abs(lx-cx)<6?"middle":lx>cx?"start":"end";
-    g+=`<text x="${lx}" y="${ly+3}" text-anchor="${anchor}" font-size="11" font-weight="600" fill="var(--ink)">${LAB[ax]}</text>`;
-  });
-  g+=`<text x="${cx}" y="${pt(4,50)[1]-4}" text-anchor="middle" font-size="9" fill="var(--base)">평균</text>`;
-  // model polygons
-  state.selected.forEach((slug,si)=>{
-    const m=MODELS.find(x=>x.slug===slug);if(!m)return;
-    const col=`var(${SERIES[si]})`;
-    const verts=AX.map((ax,i)=>{const d=m.radar[ax];const rad=d.measured?d.r:50;return {i,rad,d,xy:pt(i,rad)};});
-    const poly=verts.map(v=>v.xy.join(",")).join(" ");
-    g+=`<polygon class="trace" points="${poly}" fill="${si===0?'var(--signal-soft)':'none'}" stroke="${col}" stroke-width="2" stroke-linejoin="round" style="--i:${si}"/>`;
-    verts.forEach(v=>{
-      if(v.d.measured){
-        const above=v.d.r>=50;
-        g+=`<circle cx="${v.xy[0]}" cy="${v.xy[1]}" r="3.2" fill="${col}"><title>${LAB[AX[v.i]]}: r ${v.d.r} (z ${v.d.z>=0?'+':''}${v.d.z})</title></circle>`;
-      } else {
-        g+=`<circle cx="${v.xy[0]}" cy="${v.xy[1]}" r="3.4" fill="var(--ground)" stroke="var(--base)" stroke-width="1.2" stroke-dasharray="2 2"><title>${LAB[AX[v.i]]}: 측정 안 됨</title></circle>`;
-      }
-    });
-  });
-  g+=`</svg>`;
-  return g;
-}
+__COMPARISON_CHARTS__
 
 // ---------- scatter (가성비) ----------
 function scatterSVG(){
@@ -381,7 +344,7 @@ const METRICS=[
    tip:"첫 답변 토큰이 나올 때까지의 대기. 전체 응답 완료시간과 다릅니다."},
   {k:"과제 시간", g:m=>m.aa?.timePerTask==null?null:m.aa.timePerTask/60, dir:-1, unit:" 분"},
   {k:"멀티모달",    g:m=>m.radar.multimodal.measured?"측정":"미측정", dir:0},
-  {k:"크기",        g:m=>m.size==="Unknown"?"비공개":m.size, dir:0,
+  {k:"크기",        g:m=>m.size==="Unknown"?"미상":m.size, dir:0,
    sub:m=>m.params!=null?` ${m.params}B`:""},
   {k:"추론 / 상태", g:m=>m.reasoning===true?"추론":m.reasoning===false?"비추론":DASH, dir:0,
    sub:m=>` · ${m.status}`},
@@ -413,19 +376,19 @@ function axesHTML(sel){
   const rows=AX.map(ax=>{
     // 본표와 같은 강조 규칙을 쓴다 (동점 모두 / 전원 동점·유효값 1개는 강조 없음).
     // r 은 평균 대비 반경이라 8축 모두 클수록 좋음. 미측정은 null 로 넘겨 후보에서 빠진다.
-    const best=bestIdx({g:m=>m.radar[ax].measured?m.radar[ax].r:null, dir:+1}, sel);
+    const best=bestIdx({g:m=>measuredLegacy(m,ax), dir:+1}, sel);
     const tds=sel.map((m,i)=>{
       const d=m.radar[ax];
-      return d.measured
-        ? `<td class="${best.has(i)?"best":""}">${d.r}${d.estimated?"<small>*</small>":""}</td>`
+      return measuredLegacy(m,ax)!=null
+        ? `<td class="${best.has(i)?"best":""}">${d.r}</td>`
         : `<td class="na">미측정</td>`;
     }).join("");
     return `<tr><th>${LAB[ax]}</th>${tds}</tr>`;
   }).join("");
   return `<details class="cmp-axes"${state.axesOpen?" open":""}>`
-    +`<summary>8축 점수 (평균=50 기준선)</summary>`
+    +`<summary>구형 8축 점수 (평균=50)</summary>`
     +`<div class="cmp-wrap"><table class="cmp-tbl"><tbody>${rows}</tbody></table></div>`
-    +`<p class="axnote">r=50이 추적 모델 평균. * = kNN 추정값.</p></details>`;
+    +`<p class="axnote">50점은 해당 축에 실측이 있는 모델의 평균입니다.</p></details>`;
 }
 
 function badgeView(m){
@@ -458,7 +421,7 @@ function compareView(sel){
   // cmp-main = 실용 지표 본표. 8축 표와 구분해야 스타일·조회가 섞이지 않는다.
   return `<div class="cmp-wrap"><table class="cmp-tbl cmp-main">`
     +`<thead><tr><th></th>${head}</tr></thead><tbody>${rows}</tbody></table></div>`
-    +axesHTML(sel);
+    +(state.view==="radar" && state.radarMode==="legacy" ? axesHTML(sel) : "");
 }
 
 function panelHTML(){
@@ -477,29 +440,38 @@ function panelHTML(){
 // ---------- legend ----------
 function legendHTML(){
   const lg=$("#legend"),hint=$("#hint");
-  if(state.view==="radar"){
-    lg.innerHTML=state.selected.map((s,i)=>{const m=MODELS.find(x=>x.slug===s);return m?`<span class="it"><span class="sw" style="background:var(${SERIES[i]})"></span>${safe(m.name)}</span>`:'';}).join('')
-      +`<span class="it"><span class="sw" style="background:var(--base)"></span>평균(50) 기준선</span>`;
-    hint.textContent="기존 8축은 구형 평가 기반 자체 상대지표입니다. v5 지수와 다릅니다. 축이 기준선 밖 = 평균 이상. 점선 표식 = 측정 안 됨. 목록의 + 버튼으로 최대 3개 비교.";
-  } else {
-    lg.innerHTML="";
-    hint.textContent="왼쪽 위일수록 가성비 우수(싸고 똑똑). 점 클릭 → 선택. 가격은 로그 축.";
-  }
+  lg.innerHTML="";
+  hint.textContent=state.view==="scatter"?"점 하나는 모델 하나입니다. 점을 누르면 선택됩니다. 가로축은 토큰 혼합 단가(로그), 세로축은 AA 지수입니다.":"";
+
 }
 
 // ---------- render ----------
 function render(){
+  document.querySelectorAll("details[data-evidence], details[data-size]").forEach(d=>{
+    const opened=d.dataset.evidence ? state.openEvidence : state.openSizes;
+    const key=d.dataset.evidence || d.dataset.size;
+    if(d.open) opened.add(key); else opened.delete(key);
+  });
   document.querySelector(".grid").classList.toggle("cmp", state.selected.length>1);
+  const sel=state.selected.map(id=>MODELS.find(m=>m.slug===id)).filter(Boolean);
   buildComparisonSlots();buildList();panelHTML();legendHTML();
   if(state.view==="explore"){
     $("#viewwrap").innerHTML=explorerHTML();
-    const sel=state.selected.map(id=>MODELS.find(m=>m.slug===id)).filter(Boolean);
     $("#panel").innerHTML=evidenceHTML(sel);$("#legend").innerHTML="";$("#hint").textContent="모델명을 눌러 최대 3개를 비교하세요. 선택은 최소 1개 유지되며, 3개일 때는 먼저 하나를 해제하세요.";bindExplorer();return;
   }
-  $("#viewwrap").innerHTML = state.view==="radar"?radarSVG():scatterSVG();
-  if(state.view==="scatter"){
-    $("#viewwrap").querySelectorAll("circle[data-slug]").forEach(c=>c.onclick=e=>toggleSelect(c.getAttribute("data-slug"),e.metaKey||e.ctrlKey||e.shiftKey));
+  const wrap=$("#viewwrap");
+  if(state.view==="radar"){
+    wrap.innerHTML=radarHTML(sel)+benchmarkTables(sel);
+    $("#radar-mode").onchange=e=>{state.radarMode=e.target.value;render();};
+    return;
   }
+  wrap.innerHTML=state.view==="size"?sizeHTML(sel):scatterSVG();
+  const sizeMode=$("#size-mode");
+  if(sizeMode) sizeMode.onchange=e=>{state.sizeMode=e.target.value;render();};
+  wrap.querySelectorAll("circle[data-slug]").forEach(c=>c.onclick=e=>toggleSelect(c.dataset.slug,e.metaKey||e.ctrlKey||e.shiftKey));
+  wrap.querySelectorAll("[data-model]").forEach(b=>b.onclick=()=>toggleSelect(b.dataset.model,false));
+  wrap.querySelectorAll("[data-add-model]").forEach(b=>b.onclick=()=>toggleSelect(b.dataset.addModel,true));
+
 }
 
 __CREATOR_PREFS__

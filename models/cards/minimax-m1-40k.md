@@ -9,28 +9,28 @@ output_speed_tps: None
 context_window: 1000000
 status: past
 size_class: Large
-params_b: null
+params_b: 456
 is_reasoning: true
 radar:
-  knowledge: { s: 42.5, z: -0.23, r: 46.5, estimated: false }  # 전문 지식
-  reasoning: { s: 38.4, z: 0.14, r: 52.1, estimated: false }  # 추론
-  coding: { s: 3.4, z: -1.24, r: 31.4, estimated: false }  # 코딩
-  agentic: { s: 17.7, z: -0.94, r: 35.9, estimated: false }  # 에이전트
+  knowledge: { s: 42.5, z: -0.21, r: 46.9, estimated: false }  # 전문 지식
+  reasoning: { s: 38.4, z: 0.16, r: 52.4, estimated: false }  # 추론
+  coding: { s: 3.4, z: -1.27, r: 31.0, estimated: false }  # 코딩
+  agentic: { s: 17.7, z: -1.04, r: 34.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 31.1, z: -0.67, r: 40.0, estimated: true }  # 긴문맥
-  instruction: { s: 40.9, z: -0.54, r: 41.8, estimated: false }  # 지시 따르기
+  long_context: { s: null, z: null, r: null, estimated: false }  # 긴문맥
+  instruction: { s: 40.9, z: -0.4, r: 44.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax M1 40k
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-23
-timestamp: 2026-11-23T00:00:00Z
+updated: 2026-11-24
+timestamp: 2026-11-24T00:00:00Z
 ---
 
 # MiniMax M1 40k
 
-MiniMax · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ past(구세대)
+MiniMax · Open · Large(456B) · 컨텍스트 1M · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 전문 지식
@@ -41,18 +41,18 @@ MiniMax · Open · Large · 컨텍스트 1M · 종합지능 **None** · ⚠️ p
 
 ## 레이더 8축 (평균=50 기준선)
 
-| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
+| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(원점수) |
 |---|---|---|---|---|
-| 전문 지식 | 46.5 | -0.23 | 실측 | [[gpqa-diamond]] 68.1818181818182%×0.4, [[humanitys-last-exam]] 7.83132530120482%×0.3 |
-| 추론 | 52.1 | +0.14 | 실측 | [[gpqa-diamond]] 68.1818181818182%×1.0, [[humanitys-last-exam]] 7.83132530120482%×1.0 |
-| 코딩 | 31.4 | -1.24 | 실측 | [[terminal-bench]] 2.27272727272727%×0.5 |
-| 에이전트 | 35.9 | -0.94 | 실측 | [[tau2-bench]] 31.5789473684211%×1.0, [[terminal-bench]] 2.27272727272727%×1.0 |
+| 전문 지식 | 46.9 | -0.21 | 실측 | [[gpqa-diamond]] 68.1818%×0.4, [[humanitys-last-exam]] 7.83133%×0.3 |
+| 추론 | 52.4 | +0.16 | 실측 | [[gpqa-diamond]] 68.1818%×1.0, [[humanitys-last-exam]] 7.83133%×1.0 |
+| 코딩 | 31.0 | -1.27 | 실측 | [[terminal-bench]] 2.27273%×0.5 |
+| 에이전트 | 34.4 | -1.04 | 실측 | [[tau2-bench]] 31.5789%×1.0, [[terminal-bench]] 2.27273%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 40.0 | -0.67 | 추정 | (추정) |
-| 지시 따르기 | 41.8 | -0.54 | 실측 | [[ifbench]] 41.2244897959184%×1.0 |
+| 긴문맥 | — | — | 측정 안 됨 | — |
+| 지시 따르기 | 44.0 | -0.4 | 실측 | [[ifbench]] 41.2245%×1.0 |
 
-> r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
+> 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.
 
 ## 출처
 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)

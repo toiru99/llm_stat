@@ -9,31 +9,31 @@ output_speed_tps: None
 context_window: 128000
 status: past
 size_class: Small
-params_b: null
+params_b: 4.5
 is_reasoning: true
 radar:
-  knowledge: { s: 22.9, z: -1.18, r: 32.3, estimated: false }  # 전문 지식
-  reasoning: { s: 20.7, z: -0.73, r: 39.0, estimated: false }  # 추론
-  coding: { s: 10.3, z: -1.01, r: 34.9, estimated: true }  # 코딩
-  agentic: { s: 11.8, z: -1.15, r: 32.8, estimated: false }  # 에이전트
+  knowledge: { s: 22.9, z: -1.16, r: 32.6, estimated: false }  # 전문 지식
+  reasoning: { s: 20.7, z: -0.72, r: 39.3, estimated: false }  # 추론
+  coding: { s: null, z: null, r: null, estimated: false }  # 코딩
+  agentic: { s: 11.8, z: -1.24, r: 31.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.59, r: 26.1, estimated: false }  # 긴문맥
-  instruction: { s: 18.8, z: -1.47, r: 28.0, estimated: false }  # 지시 따르기
+  long_context: { s: 0.0, z: -1.77, r: 23.5, estimated: false }  # 긴문맥
+  instruction: { s: 18.8, z: -1.31, r: 30.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama 3.1 Nemotron Nano 4B v1.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-23
-timestamp: 2026-11-23T00:00:00Z
+updated: 2026-11-24
+timestamp: 2026-11-24T00:00:00Z
 ---
 
 # Llama 3.1 Nemotron Nano 4B v1.1
 
-NVIDIA · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠️ past(구세대)
+NVIDIA · Open · Small(4.5B) · 컨텍스트 128k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 추론, 코딩
+- **강점**: 추론, 전문 지식
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
@@ -41,18 +41,18 @@ NVIDIA · Open · Small · 컨텍스트 128k · 종합지능 **None** · ⚠️ 
 
 ## 레이더 8축 (평균=50 기준선)
 
-| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
+| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(원점수) |
 |---|---|---|---|---|
-| 전문 지식 | 32.3 | -1.18 | 실측 | [[gpqa-diamond]] 40.808080808080796%×0.4, [[humanitys-last-exam]] 5.18999073215941%×0.3 |
-| 추론 | 39.0 | -0.73 | 실측 | [[gpqa-diamond]] 40.808080808080796%×1.0, [[humanitys-last-exam]] 5.18999073215941%×1.0 |
-| 코딩 | 34.9 | -1.01 | 추정 | (추정) |
-| 에이전트 | 32.8 | -1.15 | 실측 | [[tau2-bench]] 11.6959064327485%×1.0 |
+| 전문 지식 | 32.6 | -1.16 | 실측 | [[gpqa-diamond]] 40.8081%×0.4, [[humanitys-last-exam]] 5.18999%×0.3 |
+| 추론 | 39.3 | -0.72 | 실측 | [[gpqa-diamond]] 40.8081%×1.0, [[humanitys-last-exam]] 5.18999%×1.0 |
+| 코딩 | — | — | 측정 안 됨 | — |
+| 에이전트 | 31.3 | -1.24 | 실측 | [[tau2-bench]] 11.6959%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 26.1 | -1.59 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 28.0 | -1.47 | 실측 | [[ifbench]] 25.510204081632697%×1.0 |
+| 긴문맥 | 23.5 | -1.77 | 실측 | [[aa-lcr]] 0%×1.0 |
+| 지시 따르기 | 30.3 | -1.31 | 실측 | [[ifbench]] 25.5102%×1.0 |
 
-> r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
+> 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.
 
 ## 출처
 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)

@@ -9,31 +9,31 @@ output_speed_tps: None
 context_window: 262000
 status: current
 size_class: Large
-params_b: null
+params_b: 397
 is_reasoning: true
 radar:
-  knowledge: { s: 71.6, z: 1.17, r: 67.6, estimated: false }  # 전문 지식
-  reasoning: { s: 53.5, z: 0.88, r: 63.2, estimated: false }  # 추론
-  coding: { s: 59.8, z: 0.67, r: 60.1, estimated: false }  # 코딩
-  agentic: { s: 60.9, z: 0.55, r: 58.3, estimated: false }  # 에이전트
+  knowledge: { s: 71.6, z: 1.21, r: 68.1, estimated: false }  # 전문 지식
+  reasoning: { s: 53.5, z: 0.91, r: 63.7, estimated: false }  # 추론
+  coding: { s: 59.8, z: 0.63, r: 59.5, estimated: false }  # 코딩
+  agentic: { s: 60.9, z: 0.49, r: 57.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 92.1, z: 1.14, r: 67.1, estimated: false }  # 긴문맥
-  instruction: { s: 75.9, z: 0.92, r: 63.8, estimated: false }  # 지시 따르기
+  long_context: { s: 92.1, z: 1.05, r: 65.8, estimated: false }  # 긴문맥
+  instruction: { s: 75.9, z: 1.06, r: 65.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nex-N2-Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-23
-timestamp: 2026-11-23T00:00:00Z
+updated: 2026-11-24
+timestamp: 2026-11-24T00:00:00Z
 ---
 
 # Nex-N2-Pro
 
-Nex AGI · Open · Large · 컨텍스트 262k · 종합지능 **None**
+Nex AGI · Open · Large(397B) · 컨텍스트 262k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 전문 지식, 긴문맥
+- **강점**: 전문 지식, 지시 따르기
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
@@ -41,18 +41,18 @@ Nex AGI · Open · Large · 컨텍스트 262k · 종합지능 **None**
 
 ## 레이더 8축 (평균=50 기준선)
 
-| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
+| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(원점수) |
 |---|---|---|---|---|
-| 전문 지식 | 67.6 | +1.17 | 실측 | [[gpqa-diamond]] 89.1919191919192%×0.4, [[humanitys-last-exam]] 33.734939759036095%×0.3 |
-| 추론 | 63.2 | +0.88 | 실측 | [[critpt]] 8.57142857142857%×1.0, [[gpqa-diamond]] 89.1919191919192%×1.0, [[humanitys-last-exam]] 33.734939759036095%×1.0 |
-| 코딩 | 60.1 | +0.67 | 실측 | [[scicode]] 43.287037037037%×1.0 |
-| 에이전트 | 58.3 | +0.55 | 실측 | [[gdpval]] 1109.21%×1.0, [[tau2-bench]] 81.5789473684211%×1.0, [[tau3-banking]] 17.5257731958763%×1.0 |
+| 전문 지식 | 68.1 | +1.21 | 실측 | [[gpqa-diamond]] 89.1919%×0.4, [[humanitys-last-exam]] 33.7349%×0.3 |
+| 추론 | 63.7 | +0.91 | 실측 | [[critpt]] 8.57143%×1.0, [[gpqa-diamond]] 89.1919%×1.0, [[humanitys-last-exam]] 33.7349%×1.0 |
+| 코딩 | 59.5 | +0.63 | 실측 | [[scicode]] 43.287%×1.0 |
+| 에이전트 | 57.3 | +0.49 | 실측 | [[gdpval]] 1109.21 Elo×1.0, [[tau2-bench]] 81.5789%×1.0, [[tau3-banking]] 17.5258%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 67.1 | +1.14 | 실측 | [[aa-lcr]] 81.6666666666667%×1.0 |
-| 지시 따르기 | 63.8 | +0.92 | 실측 | [[ifbench]] 66.1904761904762%×1.0 |
+| 긴문맥 | 65.8 | +1.05 | 실측 | [[aa-lcr]] 81.6667%×1.0 |
+| 지시 따르기 | 65.9 | +1.06 | 실측 | [[ifbench]] 66.1905%×1.0 |
 
-> r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
+> 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.
 
 ## 출처
 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)

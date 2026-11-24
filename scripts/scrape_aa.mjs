@@ -13,6 +13,7 @@ import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { extractModelAttrs } from './extract_attrs.mjs';
+import { attachModelSizes, readSizeTable, SIZE_SOURCE } from './model_sizes.mjs';
 import { checkContract } from './check_contract.mjs';
 import { normalizeModels } from './normalize_models.mjs';
 import { captureModels } from './capture_models.mjs';
@@ -85,11 +86,15 @@ const run = async () => {
 
   const loaded = await page.evaluate(() => JSON.stringify(globalThis.__llmStatModels || []));
   console.log(`[수집] 추가 로드 모델 ${JSON.parse(loaded).length}개`);
-  await browser.close();
+
 
   // 초기 임베드와 지연 로드 데이터를 함께 파싱해 상세 속성을 유지한다.
   const normalized = normalizeModels(JSON.parse(loaded));
   if (!normalized.length) throw new Error("v2 구조화 모델 수집 실패 — 이전 데이터 보존");
+  const openWithClass = normalized.filter(r=>r.License==='Open' && r.paramClass!=null).length;
+  const sizeTable = await readSizeTable(page, Math.max(1,Math.ceil(openWithClass/2)));
+  await browser.close();
+  attachModelSizes(normalized, sizeTable);
   if (normalized.length) data = {structured:true,headerCount:Object.keys(normalized[0]).length, headers:Object.keys(normalized[0]), modelCount:normalized.length, rows:normalized};
   const attrs = extractModelAttrs(embed + '\n' + loaded);
   const EMPTY = { paramClass: null, totalParameters: null, isReasoning: null, deprecated: null,
@@ -121,7 +126,7 @@ const run = async () => {
       if (count < 10) throw new Error(`핵심 필드 소실: ${field} ${count}개`);
     }
   }
-  const payload = { schema_version: 2, methodology: {intelligence:observedVersion,performance:performanceVersion,verified_at:'2026-11-17',source:'https://artificialanalysis.ai/methodology/intelligence-benchmarking'}, scraped_at: today, source: URL, currentCount:data.rows.filter(r=>r.deprecated===false).length, ...data };
+  const payload = { schema_version: 2, methodology: {intelligence:observedVersion,performance:performanceVersion,verified_at:today,source:'https://artificialanalysis.ai/methodology/intelligence-benchmarking'}, scraped_at: today, size_source: SIZE_SOURCE, source: URL, currentCount:data.rows.filter(r=>r.deprecated===false).length, ...data };
   mkdirSync(DATA, { recursive: true });
   const out = JSON.stringify(payload, null, 2);
   writeFileSync(join(DATA, `aa-leaderboard-${today}.json`), out);

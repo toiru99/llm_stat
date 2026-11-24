@@ -11,6 +11,8 @@ tpl = (ROOT / "artifact" / "template.html").read_text(encoding="utf-8")
 data = (ROOT / "models" / "data" / "cards.json").read_text(encoding="utf-8")
 
 body = tpl.replace("__CARDS__", data.replace("</", "<\\/"))
+body = body.replace("__BENCHMARKS__", (ROOT / "artifact/benchmarks.mjs").read_text().replace("export ", ""))
+body = body.replace("__COMPARISON_CHARTS__", (ROOT / "artifact/comparison-charts.js").read_text())
 body = body.replace("__EXPLORER_CORE__", (ROOT / "artifact/explorer.mjs").read_text().replace("export ", ""))
 body = body.replace("__CREATOR_PREFS__", (ROOT / "artifact/creator-prefs.js").read_text())
 body = body.replace("__EXPLORER_UI__", (ROOT / "artifact/explorer-ui.js").read_text())
@@ -31,8 +33,8 @@ HEAD = (
 out = HEAD + body + "\n</body>\n</html>\n"
 
 dest = ROOT / "artifact" / "llm-radar-legacy.html"
-dest.write_text(out, encoding="utf-8")
-(ROOT / "artifact/llm-radar.html").write_text(out, encoding="utf-8")
+dest.write_text(out.replace("__RADAR_MODE__", "legacy"), encoding="utf-8")
+(ROOT / "artifact/llm-radar.html").write_text(out.replace("__RADAR_MODE__", "current"), encoding="utf-8")
 print(f"[완료] {dest.relative_to(ROOT)} 생성 ({len(out)} bytes, 완결 문서)")
 
 # Astryx is bundled locally; the deployed file needs no CDN or runtime build server.

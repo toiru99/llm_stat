@@ -5,27 +5,27 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 38.1652076677975
 price_blended_usd_1m: 0.735
-output_speed_tps: 66.801220507194
+output_speed_tps: 67.3056133008825
 context_window: 1000000
 status: current
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 53.5, z: 0.3, r: 54.4, estimated: false }  # 전문 지식
-  reasoning: { s: 56.7, z: 1.04, r: 65.6, estimated: false }  # 추론
-  coding: { s: 73.5, z: 1.14, r: 67.0, estimated: false }  # 코딩
-  agentic: { s: 76.1, z: 1.08, r: 66.2, estimated: false }  # 에이전트
+  knowledge: { s: 53.5, z: 0.33, r: 54.9, estimated: false }  # 전문 지식
+  reasoning: { s: 56.7, z: 1.07, r: 66.1, estimated: false }  # 추론
+  coding: { s: 73.5, z: 1.09, r: 66.4, estimated: false }  # 코딩
+  agentic: { s: 76.1, z: 1.02, r: 65.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 91.1, z: 1.0, r: 65.1, estimated: false }  # 멀티모달
-  long_context: { s: 91.0, z: 1.11, r: 66.6, estimated: false }  # 긴문맥
-  instruction: { s: 66.5, z: 0.53, r: 57.9, estimated: true }  # 지시 따르기
+  long_context: { s: 91.0, z: 1.02, r: 65.3, estimated: false }  # 긴문맥
+  instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6.1 Terra (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-23
-timestamp: 2026-11-23T00:00:00Z
+updated: 2026-11-24
+timestamp: 2026-11-24T00:00:00Z
 ---
 
 # GPT-6.1 Terra (medium)
@@ -33,26 +33,26 @@ timestamp: 2026-11-23T00:00:00Z
 OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **38.1652076677975**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 코딩, 긴문맥
-- **약점**: 지시 따르기, 전문 지식
+- **강점**: 코딩, 추론
+- **약점**: 멀티모달, 전문 지식
 
 ## 실용 지표
-`입력 $1.0 · 출력 $5.0 · 혼합 $0.735/1M · 66.801220507194 t/s · TTFT 4.9627489389489s · 1M ctx` · 가성비 51.9
+`입력 $1.0 · 출력 $5.0 · 혼합 $0.735/1M · 67.3056133008825 t/s · TTFT 4.96729993765128s · 1M ctx` · 가성비 51.9
 
 ## 레이더 8축 (평균=50 기준선)
 
-| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
+| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(원점수) |
 |---|---|---|---|---|
-| 전문 지식 | 54.4 | +0.3 | 실측 | [[humanitys-last-exam]] 40.2224281742354%×0.3 |
-| 추론 | 65.6 | +1.04 | 실측 | [[critpt]] 21.4285714285714%×1.0, [[humanitys-last-exam]] 40.2224281742354%×1.0 |
-| 코딩 | 67.0 | +1.14 | 실측 | [[scicode]] 51.6203703703704%×1.0 |
-| 에이전트 | 66.2 | +1.08 | 실측 | [[gdpval]] 1324.24%×1.0 |
+| 전문 지식 | 54.9 | +0.33 | 실측 | [[humanitys-last-exam]] 40.2224%×0.3 |
+| 추론 | 66.1 | +1.07 | 실측 | [[critpt]] 21.4286%×1.0, [[humanitys-last-exam]] 40.2224%×1.0 |
+| 코딩 | 66.4 | +1.09 | 실측 | [[scicode]] 51.6204%×1.0 |
+| 에이전트 | 65.3 | +1.02 | 실측 | [[gdpval]] 1324.24 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 65.1 | +1.0 | 실측 | [[mmmu-pro]] 82.7745664739884%×1.0 |
-| 긴문맥 | 66.6 | +1.11 | 실측 | [[aa-lcr]] 80.6666666666667%×1.0 |
-| 지시 따르기 | 57.9 | +0.53 | 추정 | (추정) |
+| 멀티모달 | 65.1 | +1.0 | 실측 | [[mmmu-pro]] 82.7746%×1.0 |
+| 긴문맥 | 65.3 | +1.02 | 실측 | [[aa-lcr]] 80.6667%×1.0 |
+| 지시 따르기 | — | — | 측정 안 됨 | — |
 
-> r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
+> 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.
 
 ## 출처
 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)

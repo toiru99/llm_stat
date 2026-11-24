@@ -1,6 +1,6 @@
 # llm_stat 설정 — 이 파일만 고치면 파이프라인 동작이 바뀝니다.
 # 파싱: Python 3.11+ 표준 라이브러리 tomllib (외부 의존성 없음).
-# 자주 바뀌는 값(제작사 필터·갱신주기·추정 방식 등)을 여기 모아 둠.
+# 자주 바뀌는 값(제작사 필터·갱신주기·표시 방식 등)을 여기 모아 둠.
 
 [creators]
 # 카드로 만들 제작사 화이트리스트 — 리더보드 "Creator" 표기와 정확히 일치해야 함.
@@ -34,13 +34,6 @@ timezone = "Asia/Seoul"       # 시각 기준 타임존
 # 시각 선정: GitHub Actions 저부하 창(02~07 UTC) 이동 — 과거 21 UTC 피크에서 Pages 배포 transient 실패 다발
 # 주의: GitHub 스케줄은 고부하 시 지연될 수 있음 → 실제 발동은 유동적
 cron = "29 2 * * *"
-
-[imputation]
-# 빈 축 추정 — models/radar-spec.md 방법론과 동기화.
-empty_axis_method = "knn"     # "knn" | "none"
-knn_k = 5
-mark_estimated = true         # 추정값은 '추정'으로 표기(실측과 구분)
-multimodal_modality_gate = true  # 비전 미지원 모델은 추정 대신 "미지원"
 
 [normalization]
 # 평균 기준선(z-score) 표시: r = center + scale * z (clamp 0~100)

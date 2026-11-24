@@ -9,50 +9,50 @@ output_speed_tps: None
 context_window: 256000
 status: past
 size_class: Small
-params_b: null
+params_b: 23.6
 is_reasoning: false
 radar:
-  knowledge: { s: 24.0, z: -1.13, r: 33.1, estimated: false }  # 전문 지식
-  reasoning: { s: 14.3, z: -1.05, r: 34.3, estimated: false }  # 추론
-  coding: { s: 9.2, z: -1.05, r: 34.3, estimated: false }  # 코딩
-  agentic: { s: 23.8, z: -0.73, r: 39.0, estimated: false }  # 에이전트
+  knowledge: { s: 24.0, z: -1.11, r: 33.4, estimated: false }  # 전문 지식
+  reasoning: { s: 14.3, z: -1.04, r: 34.5, estimated: false }  # 추론
+  coding: { s: 9.2, z: -1.07, r: 33.9, estimated: false }  # 코딩
+  agentic: { s: 23.8, z: -0.82, r: 37.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 36.1, z: -0.52, r: 42.2, estimated: false }  # 긴문맥
-  instruction: { s: 27.4, z: -1.11, r: 33.4, estimated: false }  # 지시 따르기
+  long_context: { s: 36.1, z: -0.66, r: 40.0, estimated: false }  # 긴문맥
+  instruction: { s: 27.4, z: -0.96, r: 35.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Devstral Small (May)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-23
-timestamp: 2026-11-23T00:00:00Z
+updated: 2026-11-24
+timestamp: 2026-11-24T00:00:00Z
 ---
 
 # Devstral Small (May)
 
-Mistral · Open · Small · 컨텍스트 256k · 종합지능 **None** · ⚠️ past(구세대)
+Mistral · Open · Small(23.6B) · 컨텍스트 256k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 에이전트
-- **약점**: 지시 따르기, 전문 지식
+- **약점**: 코딩, 전문 지식
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
-| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
+| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(원점수) |
 |---|---|---|---|---|
-| 전문 지식 | 33.1 | -1.13 | 실측 | [[gpqa-diamond]] 43.4343434343434%×0.4, [[humanitys-last-exam]] 4.03151065801668%×0.3 |
-| 추론 | 34.3 | -1.05 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 43.4343434343434%×1.0, [[humanitys-last-exam]] 4.03151065801668%×1.0 |
-| 코딩 | 34.3 | -1.05 | 실측 | [[terminal-bench]] 6.06060606060606%×0.5 |
-| 에이전트 | 39.0 | -0.73 | 실측 | [[tau2-bench]] 38.0116959064327%×1.0, [[terminal-bench]] 6.06060606060606%×1.0 |
+| 전문 지식 | 33.4 | -1.11 | 실측 | [[gpqa-diamond]] 43.4343%×0.4, [[humanitys-last-exam]] 4.03151%×0.3 |
+| 추론 | 34.5 | -1.04 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 43.4343%×1.0, [[humanitys-last-exam]] 4.03151%×1.0 |
+| 코딩 | 33.9 | -1.07 | 실측 | [[terminal-bench]] 6.06061%×0.5 |
+| 에이전트 | 37.7 | -0.82 | 실측 | [[tau2-bench]] 38.0117%×1.0, [[terminal-bench]] 6.06061%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 42.2 | -0.52 | 실측 | [[aa-lcr]] 32.0%×1.0 |
-| 지시 따르기 | 33.4 | -1.11 | 실측 | [[ifbench]] 31.632653061224502%×1.0 |
+| 긴문맥 | 40.0 | -0.66 | 실측 | [[aa-lcr]] 32%×1.0 |
+| 지시 따르기 | 35.6 | -0.96 | 실측 | [[ifbench]] 31.6327%×1.0 |
 
-> r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
+> 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.
 
 ## 출처
 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)

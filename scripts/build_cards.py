@@ -3,7 +3,7 @@
 
 - 표준 라이브러리만 (tomllib 포함, Python 3.11+).
 - 축↔벤치마크 매핑은 benchmarks/*.md 의 frontmatter(column/axes)가 SSOT.
-- 방법론: models/radar-spec.md (정규화→가중평균→z-score 평균기준선, kNN 결측 추정).
+- 방법론: models/radar-spec.md (정규화→가중평균→z-score 평균기준선, 실측 축만 표시).
 - 사용: python3 scripts/build_cards.py
 - 산출물: <output_dir>/<slug>.md, models/index.md
 """
@@ -41,6 +41,8 @@ def cache_hit_price(row):
     return None
 
 def pct(v):
+    if isinstance(v, (float, int)):
+        return float(v) if math.isfinite(v) else None
     if v is None or v in ("--", ""): return None
     m = re.search(r"-?\d+(?:\.\d+)?", str(v));  return float(m.group()) if m else None
 
@@ -60,7 +62,7 @@ def slugify(name):
 
 # ---------- AA 필터 속성 파생 (스크래퍼가 조인한 paramClass/deprecated/가격 → UI 버킷) ----------
 def size_bucket(param_class):
-    """AA Size 필터 버킷: Tiny(<4.5B)/Small(4.5-40B)/Medium(40-150B)/Large(>150B). 비공개는 Unknown."""
+    """AA Size 필터 버킷: Tiny(<4B)/Small(4-40B)/Medium(40-150B)/Large(>150B). 비공개는 Unknown."""
     return {"tiny": "Tiny", "small": "Small", "medium": "Medium", "large": "Large"}.get(param_class or "", "Unknown")
 
 def price_bucket(blended, price_class=None):
@@ -133,9 +135,6 @@ def main():
     wl = CFG["creators"]["whitelist"]
     top_n = CFG["cards"].get("top_n", 0)
     out_dir = ROOT / CFG["cards"].get("output_dir", "models/cards")
-    knn_k = CFG["imputation"].get("knn_k", 5)
-    method = CFG["imputation"].get("empty_axis_method", "knn")
-    mm_gate = CFG["imputation"].get("multimodal_modality_gate", True)
     center = CFG["normalization"].get("zscore_center", 50)
     scale = CFG["normalization"].get("zscore_scale", 15)
 
@@ -198,31 +197,10 @@ def main():
             "speed": pct(col(m, H_SPEED)), "ctx": ctx(col(m, H_CTX)),
             "size": size_bucket(m.get("paramClass")), "params": m.get("totalParameters"),
             "reasoning": m.get("isReasoning"), "status": status_of(m.get("deprecated")),
-            "s": axes_s, "comps": comps, "est": {ax: False for ax in AX_ORDER},
+            "s": axes_s, "comps": comps,
         })
 
-    # 4) 빈 축 kNN 추정 (멀티모달은 모달리티 게이트 미구축 → 추정 안 함)
-    report = {ax: {"measured": 0, "imputed": 0, "missing": 0} for ax in AX_ORDER}
-    def dist(a, b):
-        common = [ax for ax in AX_ORDER if a["s"][ax] is not None and b["s"][ax] is not None]
-        if not common: return None
-        return math.sqrt(sum((a["s"][ax] - b["s"][ax]) ** 2 for ax in common) / len(common))
-    for r in recs:
-        for ax in AX_ORDER:
-            if r["s"][ax] is not None:
-                report[ax]["measured"] += 1; continue
-            gated = (ax == "multimodal" and mm_gate)   # 모달리티 데이터 없을 때 멀티모달은 추정 보류
-            if method == "knn" and not gated:
-                donors = [(dist(r, o), o) for o in recs if o is not r and o["s"][ax] is not None]
-                donors = [(d, o) for d, o in donors if d is not None]
-                donors.sort(key=lambda x: x[0])
-                if donors:
-                    knn = donors[:knn_k]
-                    r["s"][ax] = sum(o["s"][ax] for _, o in knn) / len(knn)
-                    r["est"][ax] = True; report[ax]["imputed"] += 1; continue
-            report[ax]["missing"] += 1
-
-    # 5) 축별 평균기준선(μ,σ) — 실측+추정 포함된 s 기준
+    # 구형 8축의 기준 집단은 각 축에 실측값이 있는 모델이다.
     base = {}
     for ax in AX_ORDER:
         vals = [r["s"][ax] for r in recs if r["s"][ax] is not None]
@@ -271,7 +249,7 @@ def main():
             sv = round(s, 1) if s is not None else "null"
             zv = zz if zz is not None else "null"
             rv = rr if rr is not None else "null"
-            fm.append(f"  {ax}: {{ s: {sv}, z: {zv}, r: {rv}, estimated: {str(m['est'][ax]).lower()} }}  # {AX_LABEL[ax]}")
+            fm.append(f"  {ax}: {{ s: {sv}, z: {zv}, r: {rv}, estimated: false }}  # {AX_LABEL[ax]}")
         fm += ["sources:", "  - type: leaderboard", f"    title: Artificial Analysis — {m['name']}",
                "    url: https://artificialanalysis.ai/leaderboards/models",
                f"updated: {scraped_at}", f"timestamp: {scraped_at}T00:00:00Z", "---"]
@@ -288,17 +266,17 @@ def main():
                 f"`입력 ${m['price_in']} · 출력 ${m['price_out']} · 혼합 ${m['price']}/1M · {m['speed']} t/s · TTFT {m['ttft']}s · {ctxd} ctx`"
                 + (f" · 가성비 {value}" if value else ""), "",
                 "## 레이더 8축 (평균=50 기준선)", "",
-                "| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |", "|---|---|---|---|---|"]
+                "| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(원점수) |", "|---|---|---|---|---|"]
         for ax in AX_ORDER:
             zz, rr = z[ax]
             if m["s"][ax] is None:
                 state, rr_disp, z_disp, parts = "측정 안 됨", "—", "—", "—"
             else:
-                state = "추정" if m["est"][ax] else "실측"
+                state = "실측"
                 rr_disp, z_disp = rr, (f"+{zz}" if zz >= 0 else f"{zz}")
-                parts = ", ".join(f"[[{b}]] {raw}%×{w}" for b, raw, w in m["comps"][ax]) or "(추정)"
+                parts = ", ".join(f"[[{b}]] {raw:g}{' Elo' if b == 'gdpval' else '%'}×{w}" for b, raw, w in m["comps"][ax])
             body.append(f"| {AX_LABEL[ax]} | {rr_disp} | {z_disp} | {state} | {parts} |")
-        body += ["", "> r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).",
+        body += ["", "> 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.",
                  "", "## 출처", "출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)", ""]
         (out_dir / f"{slug}.md").write_text("\n".join(fm + body), encoding="utf-8")
         written.append((slug, m["name"], m["intel"], m["status"]))
@@ -308,7 +286,7 @@ def main():
             "ttft": m["ttft"], "total_resp": m["total_resp"], "speed": m["speed"], "ctx": m["ctx"], "value": value,
             "size": m["size"], "params": m["params"], "reasoning": m["reasoning"],
             "status": m["status"], "priceBucket": price_bucket(m["price"], m["priceClass"]),
-            "radar": {ax: {"r": z[ax][1], "z": z[ax][0], "estimated": m["est"][ax],
+            "radar": {ax: {"r": z[ax][1], "z": z[ax][0], "estimated": False,
                            "measured": m["s"][ax] is not None} for ax in AX_ORDER},
         })
 
@@ -335,10 +313,9 @@ def main():
 
     # 리포트
     print(f"[완료] {len(written)}개 카드 → {out_dir.relative_to(ROOT)} (필터 통과 {len(models)}/{len(rows)}, 데이터 {scraped_at})")
-    print("축별 실측/추정/결측:")
     for ax in AX_ORDER:
-        r = report[ax]
-        print(f"  {AX_LABEL[ax]:7s} 실측 {r['measured']:3d} · 추정 {r['imputed']:3d} · 결측 {r['missing']:3d}")
+        count = sum(r["s"][ax] is not None for r in recs)
+        print(f"  {AX_LABEL[ax]:7s} 실측 {count:3d} · 결측 {len(recs) - count:3d}")
 
 
 if __name__ == "__main__":

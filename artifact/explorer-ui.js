@@ -2,7 +2,6 @@ let purpose='all';
 const budget={input:1000,output:500,count:1000};
 const safe=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const dec=v=>Number.isFinite(v)?new Intl.NumberFormat('ko-KR',{maximumFractionDigits:2}).format(v):'미측정';
-const BMARKS=[['업무','aa-briefcase','문서·산출물 · AA-Briefcase','Elo'],['업무','automationbench-aa','SaaS 자동화 · AutomationBench','%'],['업무','gdp-pdf','PDF 이해 · GDP.pdf','%'],['코딩','frontiercode-2-0','저장소 수정 · FrontierCode 2.0','%'],['코딩','terminalbench-4-0','터미널 수행 · Terminal-Bench 4','%'],['과학','terminal-bench-science','과학 과업 · Terminal-Bench-Science','%'],['과학','critpt-v2-hard','과학 추론 · CritPt v2 Hard','%'],['일반','omniscience-accuracy','지식 정확도 · Omniscience v1.1','%'],['일반','omniscience-non-hallucination','비환각률 · Omniscience v1.1','%'],['일반','hle-diamond','고난도 지식·추론 · HLE-Diamond','%']];
 function scoreText(v,unit){return Number.isFinite(v)?dec(v*(unit==='%'?100:1))+(unit==='%'?'%':' '+unit):'미측정';}
 function explorerHTML(){
  const rows=rankModels(filtered(),purpose,qualityFloor),p=PURPOSES[purpose];
@@ -18,7 +17,41 @@ function explorerHTML(){
  <details class="developer-tools"><summary>API 비용 계산 · 개발자 도구</summary><p>요청당 입·출력 토큰과 월 요청 수를 입력하세요. 추론·도구·캐시 저장 비용은 포함하지 않습니다.</p><div class="cost-inputs"><label>입력 토큰<input id="budget-in" type="number" min="0" value="${budget.input}"></label><label>출력 토큰<input id="budget-out" type="number" min="0" value="${budget.output}"></label><label>월 요청 수<input id="budget-count" type="number" min="0" value="${budget.count}"></label></div><div id="budget-results"></div></details>
  <details class="developer-tools"><summary>평가 구성·데이터 한계</summary><p>v5: 업무·코딩·과학·일반 각 25%. 공식 영역 점수를 자체로 만들지 않고 개별 실측을 보여줍니다. 영어 중심 평가이며 한국어 능력을 보장하지 않습니다. 이미지 입력이 일부 과제에 포함됩니다.</p><p>성능 v3의 속도는 첫 토큰 대기를 포함합니다. 첫 토큰(TTFT)과 첫 답변 토큰은 별도 지표입니다. 구형 데이터와 직접 시계열 비교하지 않습니다.</p><a href="https://artificialanalysis.ai/methodology/intelligence-benchmarking" target="_blank" rel="noopener">공식 방법론 읽기 ↗</a></details></div>`;
 }
-function evidenceHTML(sel){return `<div class="evidence-head"><span class="eyebrow">선택한 모델 · ${sel.length}/3</span><h2>비교의 근거</h2><button id="download-comparison">비교 JSON 저장</button></div><div class="evidence-table-wrap"><table class="evidence-table"><thead><tr><th>실측 지표</th>${sel.map(m=>`<th>${safe(m.name)}</th>`).join('')}</tr></thead><tbody>${BMARKS.map(([group,key,label,unit])=>`<tr><th><small>${group}</small>${label}</th>${sel.map(m=>`<td>${scoreText(m.aa?.scores?.[key],unit)}</td>`).join('')}</tr>`).join('')}<tr><th>첫 답변 대기</th>${sel.map(m=>`<td>${scoreText(m.aa?.firstAnswer,'초')}</td>`).join('')}</tr></tbody></table></div><p class="explore-note">미측정은 능력 부족·미지원과 다릅니다. 변형별 추론 설정과 평가가 다를 수 있습니다.</p>`;}
+// Extra and historical leaderboard scores outside the current index.
+const extraNames = {
+  'aa-3d':'AA-3D','aa-analyst-agent':'AA-AnalystAgent','aime-2025':'AIME 2025',
+  'apex-agents-aa':'APEX-Agents-AA','artificial-analysis-long-context-reasoning':'AA-LCR',
+  'code2video-aa':'Code2Video-AA','critpt':'CritPt','enterprise-ops-gym-aa':'EnterpriseOps-Gym-AA',
+  'frontiercode':'FrontierCode','gdpval-aa-normalized':'GDPval-AA','gpqa-diamond':'GPQA Diamond',
+  'harvey-lab-aa':'Harvey LAB-AA','healthbench':'HealthBench','healthbench-professional':'HealthBench Professional',
+  'humanitys-last-exam':"Humanity’s Last Exam",'ifbench':'IFBench','itbench-aa':'ITBench-AA',
+  'livecodebench':'LiveCodeBench','mka':'MKA','mlcr-aa':'MLCR-AA','mmmu-pro':'MMMU-Pro',
+  'scicode':'SciCode','tau2-bench':'τ²-Bench Telecom','tau3-banking':'τ³-Banking',
+  'terminalbench-2-1':'Terminal-Bench 2.1','terminalbench-hard':'Terminal-Bench Hard','vials-aa':'VIALS-AA'
+};
+const extraElo = new Set(['aa-3d','code2video-aa','gdpval-aa-normalized']);
+const indexKeys = new Set(INDEX_COMPONENTS.map(c=>c.key));
+const extraKeys = [...new Set(MODELS.flatMap(m=>Object.entries(m.aa?.scores??{})
+  .filter(([key,v])=>!indexKeys.has(key)&&Number.isFinite(v)).map(([key])=>key)))].sort();
+
+function scoreTable(sel, metrics) {
+  const head = sel.map((m,i)=>`<th scope="col" style="border-top:3px solid var(${SERIES[i]})">${safe(m.name)}</th>`).join('');
+  const rows = metrics.map(c=>`<tr><th scope="row">${c.group?`<small>${c.group} · 지수 비중 ${c.weight}%</small>`:''}${safe(c.label)}${c.short?`<small>${c.short}</small>`:''}</th>
+    ${sel.map(m=>`<td>${scoreText(m.aa?.scores?.[c.key],c.unit)}</td>`).join('')}</tr>`).join('');
+  return `<div class="evidence-table-wrap"><table class="evidence-table"><thead><tr><th>실측 지표</th>${head}</tr></thead><tbody>${rows}</tbody></table></div>`;
+}
+function benchmarkTables(sel) {
+  const prefix=state.view;
+  const extra = extraKeys.map(key=>({key,label:extraNames[key]||key,unit:extraElo.has(key)?'Elo':Object.hasOwn(extraNames,key)?'%':'원본값'}));
+  return `<details class="score-detail" data-evidence="${prefix}-index" ${state.openEvidence.has(prefix+'-index')?'open':''}><summary>AA 지수 구성 · 9개 평가 / 10개 점수</summary>${scoreTable(sel,INDEX_COMPONENTS)}</details>
+    <details class="score-detail" data-evidence="${prefix}-extra" ${state.openEvidence.has(prefix+'-extra')?'open':''}><summary>지수 외 평가 · 수집된 ${extra.length}개 점수</summary>${scoreTable(sel,extra)}</details>`;
+}
+function evidenceHTML(sel){
+  return `<div class="evidence-head"><h2>비교의 근거</h2><button id="download-comparison">비교 JSON 저장</button></div>
+    ${benchmarkTables(sel)}
+    <p class="chart-note">첫 답변 대기 · ${sel.map(m=>safe(m.name)+' '+scoreText(m.aa?.firstAnswer,'초')).join(' / ')}</p>
+    <p class="chart-note">미측정은 공개된 점수가 없는 경우입니다. 추론 설정에 따라 같은 모델도 결과가 달라집니다.</p>`;
+}
 function bindExplorer(){
  const floor=$('#quality-floor');if(floor)floor.onchange=()=>{qualityFloor=Number(floor.value);persistPreferences();render();};
  document.querySelectorAll('[data-purpose]').forEach(b=>b.onclick=()=>{purpose=b.dataset.purpose;render();});

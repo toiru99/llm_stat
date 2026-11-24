@@ -9,50 +9,50 @@ output_speed_tps: None
 context_window: 32768
 status: past
 size_class: Tiny
-params_b: null
+params_b: 2.6
 is_reasoning: false
 radar:
-  knowledge: { s: 16.3, z: -1.5, r: 27.6, estimated: false }  # 전문 지식
-  reasoning: { s: 10.0, z: -1.26, r: 31.1, estimated: false }  # 추론
-  coding: { s: 1.1, z: -1.32, r: 30.2, estimated: false }  # 코딩
-  agentic: { s: 7.4, z: -1.3, r: 30.5, estimated: false }  # 에이전트
+  knowledge: { s: 16.3, z: -1.48, r: 27.8, estimated: false }  # 전문 지식
+  reasoning: { s: 10.0, z: -1.25, r: 31.3, estimated: false }  # 추론
+  coding: { s: 1.1, z: -1.35, r: 29.8, estimated: false }  # 코딩
+  agentic: { s: 7.4, z: -1.4, r: 29.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.59, r: 26.1, estimated: false }  # 긴문맥
-  instruction: { s: 10.4, z: -1.82, r: 22.7, estimated: false }  # 지시 따르기
+  long_context: { s: 0.0, z: -1.77, r: 23.5, estimated: false }  # 긴문맥
+  instruction: { s: 10.4, z: -1.66, r: 25.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — LFM2 2.6B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-23
-timestamp: 2026-11-23T00:00:00Z
+updated: 2026-11-24
+timestamp: 2026-11-24T00:00:00Z
 ---
 
 # LFM2 2.6B
 
-Liquid AI · Open · Tiny · 컨텍스트 32k · 종합지능 **None** · ⚠️ past(구세대)
+Liquid AI · Open · Tiny(2.6B) · 컨텍스트 32k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 추론, 에이전트
-- **약점**: 긴문맥, 지시 따르기
+- **강점**: 추론, 코딩
+- **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 32k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
-| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
+| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(원점수) |
 |---|---|---|---|---|
-| 전문 지식 | 27.6 | -1.5 | 실측 | [[gpqa-diamond]] 30.6060606060606%×0.4, [[humanitys-last-exam]] 5.4680259499536605%×0.3 |
-| 추론 | 31.1 | -1.26 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 30.6060606060606%×1.0, [[humanitys-last-exam]] 5.4680259499536605%×1.0 |
-| 코딩 | 30.2 | -1.32 | 실측 | [[terminal-bench]] 0.757575757575758%×0.5 |
-| 에이전트 | 30.5 | -1.3 | 실측 | [[tau2-bench]] 13.450292397660801%×1.0, [[terminal-bench]] 0.757575757575758%×1.0 |
+| 전문 지식 | 27.8 | -1.48 | 실측 | [[gpqa-diamond]] 30.6061%×0.4, [[humanitys-last-exam]] 5.46803%×0.3 |
+| 추론 | 31.3 | -1.25 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 30.6061%×1.0, [[humanitys-last-exam]] 5.46803%×1.0 |
+| 코딩 | 29.8 | -1.35 | 실측 | [[terminal-bench]] 0.757576%×0.5 |
+| 에이전트 | 29.0 | -1.4 | 실측 | [[tau2-bench]] 13.4503%×1.0, [[terminal-bench]] 0.757576%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 26.1 | -1.59 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 22.7 | -1.82 | 실측 | [[ifbench]] 19.523809523809497%×1.0 |
+| 긴문맥 | 23.5 | -1.77 | 실측 | [[aa-lcr]] 0%×1.0 |
+| 지시 따르기 | 25.0 | -1.66 | 실측 | [[ifbench]] 19.5238%×1.0 |
 
-> r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
+> 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.
 
 ## 출처
 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)

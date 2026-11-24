@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 61.3982491392674
 price_blended_usd_1m: 2.205
-output_speed_tps: 99.4626339616859
+output_speed_tps: 91.2108721829868
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 4 Neon (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-23
-timestamp: 2026-11-23T00:00:00Z
+updated: 2026-11-24
+timestamp: 2026-11-24T00:00:00Z
 ---
 
 # Gemini 4 Neon (xhigh)
@@ -37,11 +37,11 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **61.3982491
 - **약점**: —
 
 ## 실용 지표
-`입력 $3.0 · 출력 $15.0 · 혼합 $2.205/1M · 99.4626339616859 t/s · TTFT 58.0096132825143s · 1M ctx` · 가성비 27.8
+`입력 $3.0 · 출력 $15.0 · 혼합 $2.205/1M · 91.2108721829868 t/s · TTFT 57.9268011644199s · 1M ctx` · 가성비 27.8
 
 ## 레이더 8축 (평균=50 기준선)
 
-| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
+| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(원점수) |
 |---|---|---|---|---|
 | 전문 지식 | — | — | 측정 안 됨 | — |
 | 추론 | — | — | 측정 안 됨 | — |
@@ -52,7 +52,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **61.3982491
 | 긴문맥 | — | — | 측정 안 됨 | — |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
-> r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
+> 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.
 
 ## 출처
 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)

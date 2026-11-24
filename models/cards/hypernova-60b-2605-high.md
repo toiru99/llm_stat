@@ -9,28 +9,28 @@ output_speed_tps: None
 context_window: 131072
 status: current
 size_class: Medium
-params_b: null
+params_b: 58.7
 is_reasoning: true
 radar:
-  knowledge: { s: 51.1, z: 0.18, r: 52.7, estimated: false }  # 전문 지식
-  reasoning: { s: 32.4, z: -0.16, r: 47.6, estimated: false }  # 추론
-  coding: { s: 35.6, z: -0.15, r: 47.7, estimated: false }  # 코딩
-  agentic: { s: 36.8, z: -0.28, r: 45.8, estimated: false }  # 에이전트
+  knowledge: { s: 51.1, z: 0.21, r: 53.2, estimated: false }  # 전문 지식
+  reasoning: { s: 32.4, z: -0.14, r: 47.9, estimated: false }  # 추론
+  coding: { s: 35.6, z: -0.18, r: 47.3, estimated: false }  # 코딩
+  agentic: { s: 36.8, z: -0.36, r: 44.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 41.0, z: -0.38, r: 44.4, estimated: false }  # 긴문맥
-  instruction: { s: 76.3, z: 0.94, r: 64.1, estimated: false }  # 지시 따르기
+  long_context: { s: 41.0, z: -0.51, r: 42.3, estimated: false }  # 긴문맥
+  instruction: { s: 76.3, z: 1.08, r: 66.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — HyperNova 60B 2605 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-23
-timestamp: 2026-11-23T00:00:00Z
+updated: 2026-11-24
+timestamp: 2026-11-24T00:00:00Z
 ---
 
 # HyperNova 60B 2605 (high)
 
-Multiverse Computing · Open · Medium · 컨텍스트 131k · 종합지능 **None**
+Multiverse Computing · Open · Medium(58.7B) · 컨텍스트 131k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 전문 지식
@@ -41,18 +41,18 @@ Multiverse Computing · Open · Medium · 컨텍스트 131k · 종합지능 **No
 
 ## 레이더 8축 (평균=50 기준선)
 
-| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
+| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(원점수) |
 |---|---|---|---|---|
-| 전문 지식 | 52.7 | +0.18 | 실측 | [[gpqa-diamond]] 73.3333333333333%×0.4, [[humanitys-last-exam]] 16.635773864689497%×0.3 |
-| 추론 | 47.6 | -0.16 | 실측 | [[critpt]] 0.857142857142857%×1.0, [[gpqa-diamond]] 73.3333333333333%×1.0, [[humanitys-last-exam]] 16.635773864689497%×1.0 |
-| 코딩 | 47.7 | -0.15 | 실측 | [[terminal-bench]] 23.4848484848485%×0.5 |
-| 에이전트 | 45.8 | -0.28 | 실측 | [[gdpval]] 448.25%×1.0, [[tau2-bench]] 63.1578947368421%×1.0, [[tau3-banking]] 5.56701030927835%×1.0, [[terminal-bench]] 23.4848484848485%×1.0 |
+| 전문 지식 | 53.2 | +0.21 | 실측 | [[gpqa-diamond]] 73.3333%×0.4, [[humanitys-last-exam]] 16.6358%×0.3 |
+| 추론 | 47.9 | -0.14 | 실측 | [[critpt]] 0.857143%×1.0, [[gpqa-diamond]] 73.3333%×1.0, [[humanitys-last-exam]] 16.6358%×1.0 |
+| 코딩 | 47.3 | -0.18 | 실측 | [[terminal-bench]] 23.4848%×0.5 |
+| 에이전트 | 44.6 | -0.36 | 실측 | [[gdpval]] 448.25 Elo×1.0, [[tau2-bench]] 63.1579%×1.0, [[tau3-banking]] 5.56701%×1.0, [[terminal-bench]] 23.4848%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 44.4 | -0.38 | 실측 | [[aa-lcr]] 36.3333333333333%×1.0 |
-| 지시 따르기 | 64.1 | +0.94 | 실측 | [[ifbench]] 66.4625850340136%×1.0 |
+| 긴문맥 | 42.3 | -0.51 | 실측 | [[aa-lcr]] 36.3333%×1.0 |
+| 지시 따르기 | 66.1 | +1.08 | 실측 | [[ifbench]] 66.4626%×1.0 |
 
-> r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
+> 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.
 
 ## 출처
 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)

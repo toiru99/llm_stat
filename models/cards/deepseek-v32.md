@@ -5,54 +5,54 @@ creator: DeepSeek
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.1078
-output_speed_tps: 34.8849285397021
+output_speed_tps: 31.49751869689715
 context_window: 128000
 status: past
 size_class: Large
-params_b: null
+params_b: 685
 is_reasoning: true
 radar:
-  knowledge: { s: 62.8, z: 0.75, r: 61.2, estimated: false }  # 전문 지식
-  reasoning: { s: 42.0, z: 0.31, r: 54.7, estimated: false }  # 추론
-  coding: { s: 54.0, z: 0.47, r: 57.1, estimated: false }  # 코딩
-  agentic: { s: 64.7, z: 0.68, r: 60.2, estimated: false }  # 에이전트
+  knowledge: { s: 62.8, z: 0.78, r: 61.7, estimated: false }  # 전문 지식
+  reasoning: { s: 42.0, z: 0.34, r: 55.1, estimated: false }  # 추론
+  coding: { s: 54.0, z: 0.44, r: 56.6, estimated: false }  # 코딩
+  agentic: { s: 64.7, z: 0.62, r: 59.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 82.7, z: 0.86, r: 62.9, estimated: false }  # 긴문맥
-  instruction: { s: 68.2, z: 0.6, r: 59.0, estimated: false }  # 지시 따르기
+  long_context: { s: 82.7, z: 0.76, r: 61.5, estimated: false }  # 긴문맥
+  instruction: { s: 68.2, z: 0.74, r: 61.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V3.2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-23
-timestamp: 2026-11-23T00:00:00Z
+updated: 2026-11-24
+timestamp: 2026-11-24T00:00:00Z
 ---
 
 # DeepSeek V3.2
 
-DeepSeek · Open · Large · 컨텍스트 128k · 종합지능 **None** · ⚠️ past(구세대)
+DeepSeek · Open · Large(685B) · 컨텍스트 128k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 긴문맥, 전문 지식
+- **강점**: 전문 지식, 긴문맥
 - **약점**: 코딩, 추론
 
 ## 실용 지표
-`입력 $0.28 · 출력 $0.42 · 혼합 $0.1078/1M · 34.8849285397021 t/s · TTFT 2.804758272845815s · 128k ctx`
+`입력 $0.28 · 출력 $0.42 · 혼합 $0.1078/1M · 31.49751869689715 t/s · TTFT 3.451015040066685s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
-| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
+| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(원점수) |
 |---|---|---|---|---|
-| 전문 지식 | 61.2 | +0.75 | 실측 | [[gpqa-diamond]] 84.040404040404%×0.4, [[humanitys-last-exam]] 24.5597775718258%×0.3 |
-| 추론 | 54.7 | +0.31 | 실측 | [[critpt]] 2.85714285714286%×1.0, [[gpqa-diamond]] 84.040404040404%×1.0, [[humanitys-last-exam]] 24.5597775718258%×1.0 |
-| 코딩 | 57.1 | +0.47 | 실측 | [[terminal-bench]] 35.6060606060606%×0.5 |
-| 에이전트 | 60.2 | +0.68 | 실측 | [[gdpval]] 698.46%×1.0, [[tau2-bench]] 90.6432748538012%×1.0, [[terminal-bench]] 35.6060606060606%×1.0 |
+| 전문 지식 | 61.7 | +0.78 | 실측 | [[gpqa-diamond]] 84.0404%×0.4, [[humanitys-last-exam]] 24.5598%×0.3 |
+| 추론 | 55.1 | +0.34 | 실측 | [[critpt]] 2.85714%×1.0, [[gpqa-diamond]] 84.0404%×1.0, [[humanitys-last-exam]] 24.5598%×1.0 |
+| 코딩 | 56.6 | +0.44 | 실측 | [[terminal-bench]] 35.6061%×0.5 |
+| 에이전트 | 59.3 | +0.62 | 실측 | [[gdpval]] 698.46 Elo×1.0, [[tau2-bench]] 90.6433%×1.0, [[terminal-bench]] 35.6061%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 62.9 | +0.86 | 실측 | [[aa-lcr]] 73.3333333333333%×1.0 |
-| 지시 따르기 | 59.0 | +0.6 | 실측 | [[ifbench]] 60.6802721088435%×1.0 |
+| 긴문맥 | 61.5 | +0.76 | 실측 | [[aa-lcr]] 73.3333%×1.0 |
+| 지시 따르기 | 61.1 | +0.74 | 실측 | [[ifbench]] 60.6803%×1.0 |
 
-> r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
+> 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.
 
 ## 출처
 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)

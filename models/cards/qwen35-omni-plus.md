@@ -5,27 +5,27 @@ creator: Alibaba
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.84
-output_speed_tps: 65.6419856391657
+output_speed_tps: 65.7255335685802
 context_window: 256000
 status: current
 size_class: Unknown
 params_b: null
 is_reasoning: false
 radar:
-  knowledge: { s: 56.2, z: 0.43, r: 56.4, estimated: false }  # 전문 지식
-  reasoning: { s: 34.9, z: -0.04, r: 49.5, estimated: false }  # 추론
-  coding: { s: 32.2, z: -0.27, r: 46.0, estimated: false }  # 코딩
-  agentic: { s: 60.6, z: 0.54, r: 58.2, estimated: false }  # 에이전트
+  knowledge: { s: 56.2, z: 0.46, r: 56.9, estimated: false }  # 전문 지식
+  reasoning: { s: 34.9, z: -0.01, r: 49.8, estimated: false }  # 추론
+  coding: { s: 32.2, z: -0.3, r: 45.5, estimated: false }  # 코딩
+  agentic: { s: 60.6, z: 0.48, r: 57.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 74.7, z: 0.17, r: 52.5, estimated: false }  # 멀티모달
-  long_context: { s: 71.8, z: 0.54, r: 58.1, estimated: false }  # 긴문맥
-  instruction: { s: 54.8, z: 0.04, r: 50.6, estimated: false }  # 지시 따르기
+  long_context: { s: 71.8, z: 0.43, r: 56.5, estimated: false }  # 긴문맥
+  instruction: { s: 54.8, z: 0.18, r: 52.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 Omni Plus
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-23
-timestamp: 2026-11-23T00:00:00Z
+updated: 2026-11-24
+timestamp: 2026-11-24T00:00:00Z
 ---
 
 # Qwen3.5 Omni Plus
@@ -33,26 +33,26 @@ timestamp: 2026-11-23T00:00:00Z
 Alibaba · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 에이전트, 긴문맥
+- **강점**: 에이전트, 전문 지식
 - **약점**: 추론, 코딩
 
 ## 실용 지표
-`입력 $0.4 · 출력 $4.8 · 혼합 $0.84/1M · 65.6419856391657 t/s · TTFT 3.26227285883409s · 256k ctx`
+`입력 $0.4 · 출력 $4.8 · 혼합 $0.84/1M · 65.7255335685802 t/s · TTFT 3.35023177858963s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
-| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
+| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(원점수) |
 |---|---|---|---|---|
-| 전문 지식 | 56.4 | +0.43 | 실측 | [[gpqa-diamond]] 82.6262626262626%×0.4, [[humanitys-last-exam]] 14.874884151992601%×0.3 |
-| 추론 | 49.5 | -0.04 | 실측 | [[critpt]] 0.5632653061224491%×1.0, [[gpqa-diamond]] 82.6262626262626%×1.0, [[humanitys-last-exam]] 14.874884151992601%×1.0 |
-| 코딩 | 46.0 | -0.27 | 실측 | [[terminal-bench]] 21.2121212121212%×0.5 |
-| 에이전트 | 58.2 | +0.54 | 실측 | [[tau2-bench]] 88.3040935672515%×1.0, [[terminal-bench]] 21.2121212121212%×1.0 |
+| 전문 지식 | 56.9 | +0.46 | 실측 | [[gpqa-diamond]] 82.6263%×0.4, [[humanitys-last-exam]] 14.8749%×0.3 |
+| 추론 | 49.8 | -0.01 | 실측 | [[critpt]] 0.563265%×1.0, [[gpqa-diamond]] 82.6263%×1.0, [[humanitys-last-exam]] 14.8749%×1.0 |
+| 코딩 | 45.5 | -0.3 | 실측 | [[terminal-bench]] 21.2121%×0.5 |
+| 에이전트 | 57.2 | +0.48 | 실측 | [[tau2-bench]] 88.3041%×1.0, [[terminal-bench]] 21.2121%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 52.5 | +0.17 | 실측 | [[mmmu-pro]] 70.52023121387279%×1.0 |
-| 긴문맥 | 58.1 | +0.54 | 실측 | [[aa-lcr]] 63.66666666666671%×1.0 |
-| 지시 따르기 | 50.6 | +0.04 | 실측 | [[ifbench]] 51.156462585034%×1.0 |
+| 멀티모달 | 52.5 | +0.17 | 실측 | [[mmmu-pro]] 70.5202%×1.0 |
+| 긴문맥 | 56.5 | +0.43 | 실측 | [[aa-lcr]] 63.6667%×1.0 |
+| 지시 따르기 | 52.7 | +0.18 | 실측 | [[ifbench]] 51.1565%×1.0 |
 
-> r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
+> 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.
 
 ## 출처
 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)

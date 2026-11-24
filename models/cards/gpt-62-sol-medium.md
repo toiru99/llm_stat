@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 52.6777305876603
 price_blended_usd_1m: 1.47
-output_speed_tps: 63.5597921525849
+output_speed_tps: 63.5873015220982
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6.2 Sol (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-23
-timestamp: 2026-11-23T00:00:00Z
+updated: 2026-11-24
+timestamp: 2026-11-24T00:00:00Z
 ---
 
 # GPT-6.2 Sol (medium)
@@ -37,11 +37,11 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **52.6777305
 - **약점**: —
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.47/1M · 63.5597921525849 t/s · TTFT 3.62763275883934s · 1M ctx` · 가성비 35.8
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.47/1M · 63.5873015220982 t/s · TTFT 3.93855078629663s · 1M ctx` · 가성비 35.8
 
 ## 레이더 8축 (평균=50 기준선)
 
-| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
+| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(원점수) |
 |---|---|---|---|---|
 | 전문 지식 | — | — | 측정 안 됨 | — |
 | 추론 | — | — | 측정 안 됨 | — |
@@ -52,7 +52,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **52.6777305
 | 긴문맥 | — | — | 측정 안 됨 | — |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
-> r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
+> 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.
 
 ## 출처
 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)

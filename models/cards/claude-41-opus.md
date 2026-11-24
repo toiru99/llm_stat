@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 53.7, z: 0.31, r: 54.6, estimated: false }  # 전문 지식
-  reasoning: { s: 32.6, z: -0.15, r: 47.8, estimated: false }  # 추론
-  coding: { s: 52.1, z: 0.41, r: 56.1, estimated: false }  # 코딩
-  agentic: { s: 62.0, z: 0.59, r: 58.9, estimated: false }  # 에이전트
+  knowledge: { s: 53.7, z: 0.33, r: 55.0, estimated: false }  # 전문 지식
+  reasoning: { s: 32.6, z: -0.13, r: 48.1, estimated: false }  # 추론
+  coding: { s: 52.1, z: 0.37, r: 55.6, estimated: false }  # 코딩
+  agentic: { s: 62.0, z: 0.53, r: 57.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 71.2, z: -0.01, r: 49.9, estimated: false }  # 멀티모달
-  long_context: { s: 85.7, z: 0.95, r: 64.3, estimated: false }  # 긴문맥
-  instruction: { s: 60.8, z: 0.29, r: 54.4, estimated: false }  # 지시 따르기
+  long_context: { s: 85.7, z: 0.86, r: 62.8, estimated: false }  # 긴문맥
+  instruction: { s: 60.8, z: 0.43, r: 56.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 4.1 Opus
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-23
-timestamp: 2026-11-23T00:00:00Z
+updated: 2026-11-24
+timestamp: 2026-11-24T00:00:00Z
 ---
 
 # Claude 4.1 Opus
@@ -41,18 +41,18 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None*
 
 ## 레이더 8축 (평균=50 기준선)
 
-| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
+| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(원점수) |
 |---|---|---|---|---|
-| 전문 지식 | 54.6 | +0.31 | 실측 | [[gpqa-diamond]] 80.9%×0.4, [[humanitys-last-exam]] 12.4652455977757%×0.3 |
-| 추론 | 47.8 | -0.15 | 실측 | [[critpt]] 0.0%×1.0, [[gpqa-diamond]] 80.9%×1.0, [[humanitys-last-exam]] 12.4652455977757%×1.0 |
-| 코딩 | 56.1 | +0.41 | 실측 | [[terminal-bench]] 34.3352330715909%×0.5 |
-| 에이전트 | 58.9 | +0.59 | 실측 | [[tau2-bench]] 71.3660933660934%×1.0, [[terminal-bench]] 34.3352330715909%×1.0 |
+| 전문 지식 | 55.0 | +0.33 | 실측 | [[gpqa-diamond]] 80.9%×0.4, [[humanitys-last-exam]] 12.4652%×0.3 |
+| 추론 | 48.1 | -0.13 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 80.9%×1.0, [[humanitys-last-exam]] 12.4652%×1.0 |
+| 코딩 | 55.6 | +0.37 | 실측 | [[terminal-bench]] 34.3352%×0.5 |
+| 에이전트 | 57.9 | +0.53 | 실측 | [[tau2-bench]] 71.3661%×1.0, [[terminal-bench]] 34.3352%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 49.9 | -0.01 | 실측 | [[mmmu-pro]] 67.9190751445087%×1.0 |
-| 긴문맥 | 64.3 | +0.95 | 실측 | [[aa-lcr]] 76.0%×1.0 |
-| 지시 따르기 | 54.4 | +0.29 | 실측 | [[ifbench]] 55.442176870748305%×1.0 |
+| 멀티모달 | 49.9 | -0.01 | 실측 | [[mmmu-pro]] 67.9191%×1.0 |
+| 긴문맥 | 62.8 | +0.86 | 실측 | [[aa-lcr]] 76%×1.0 |
+| 지시 따르기 | 56.5 | +0.43 | 실측 | [[ifbench]] 55.4422%×1.0 |
 
-> r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
+> 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.
 
 ## 출처
 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)

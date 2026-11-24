@@ -1,10 +1,10 @@
 # 모델 (Models)
 
-`scripts/build_cards.py` 자동 생성 · 데이터 2026-11-23 · 제작사 61곳 · current 289 + past 476 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
+`scripts/build_cards.py` 자동 생성 · 데이터 2026-11-24 · 제작사 61곳 · current 290 + past 476 · 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
 
 - 레이더 축·방법론: [radar-spec.md](radar-spec.md) · 설정: [../config.toml](../config.toml)
 
-## 모델 목록 (종합지능 내림차순, 765개)
+## 모델 목록 (종합지능 내림차순, 766개)
 
 * [Claude Fable 5.2 (max)](cards/claude-fable-52-max.md) - 종합지능 64.563595756626
 * [Claude Fable 5.2 (xhigh)](cards/claude-fable-52-xhigh.md) - 종합지능 62.2167392403357
@@ -107,6 +107,7 @@
 * [Agnes 2.5 Pro Theta](cards/agnes-25-pro-theta.md) - 종합지능 24.029012523359
 * [GPT-5.6 Luna (max)](cards/gpt-56-luna-max.md) - 종합지능 23.7902433286348 · past
 * [GPT-6 Luna (xhigh)](cards/gpt-6-luna-xhigh.md) - 종합지능 23.4508728089378
+* [Ling-3.2-air](cards/ling-32-air.md) - 종합지능 23.3877547890296
 * [Mistral Large 4 (medium)](cards/mistral-large-4-medium.md) - 종합지능 23.1277321742266
 * [GLM-5.3 (low)](cards/glm-53-low.md) - 종합지능 23.1079373025379
 * [DeepSeek V4 Pro 0813 (max)](cards/deepseek-v4-pro-0813-max.md) - 종합지능 23.0632981493003

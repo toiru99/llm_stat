@@ -12,20 +12,20 @@ size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 43.5, z: -0.18, r: 47.2, estimated: false }  # 전문 지식
-  reasoning: { s: 26.6, z: -0.44, r: 43.4, estimated: false }  # 추론
-  coding: { s: 13.8, z: -0.89, r: 36.6, estimated: false }  # 코딩
-  agentic: { s: 18.5, z: -0.91, r: 36.3, estimated: false }  # 에이전트
+  knowledge: { s: 43.5, z: -0.16, r: 47.6, estimated: false }  # 전문 지식
+  reasoning: { s: 26.6, z: -0.42, r: 43.7, estimated: false }  # 추론
+  coding: { s: 13.8, z: -0.92, r: 36.2, estimated: false }  # 코딩
+  agentic: { s: 18.5, z: -1.01, r: 34.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 0.0, z: -1.59, r: 26.1, estimated: false }  # 긴문맥
-  instruction: { s: 18.2, z: -1.49, r: 27.6, estimated: false }  # 지시 따르기
+  long_context: { s: 0.0, z: -1.77, r: 23.5, estimated: false }  # 긴문맥
+  instruction: { s: 18.2, z: -1.34, r: 29.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Magistral Medium 1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-23
-timestamp: 2026-11-23T00:00:00Z
+updated: 2026-11-24
+timestamp: 2026-11-24T00:00:00Z
 ---
 
 # Magistral Medium 1
@@ -41,18 +41,18 @@ Mistral · Proprietary · Unknown · 컨텍스트 40k · 종합지능 **None** �
 
 ## 레이더 8축 (평균=50 기준선)
 
-| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
+| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(원점수) |
 |---|---|---|---|---|
-| 전문 지식 | 47.2 | -0.18 | 실측 | [[gpqa-diamond]] 67.8787878787879%×0.4, [[humanitys-last-exam]] 9.82391102873031%×0.3 |
-| 추론 | 43.4 | -0.44 | 실측 | [[critpt]] 0.28571428571428603%×1.0, [[gpqa-diamond]] 67.8787878787879%×1.0, [[humanitys-last-exam]] 9.82391102873031%×1.0 |
-| 코딩 | 36.6 | -0.89 | 실측 | [[terminal-bench]] 9.09090909090909%×0.5 |
-| 에이전트 | 36.3 | -0.91 | 실측 | [[tau2-bench]] 23.0994152046784%×1.0, [[terminal-bench]] 9.09090909090909%×1.0 |
+| 전문 지식 | 47.6 | -0.16 | 실측 | [[gpqa-diamond]] 67.8788%×0.4, [[humanitys-last-exam]] 9.82391%×0.3 |
+| 추론 | 43.7 | -0.42 | 실측 | [[critpt]] 0.285714%×1.0, [[gpqa-diamond]] 67.8788%×1.0, [[humanitys-last-exam]] 9.82391%×1.0 |
+| 코딩 | 36.2 | -0.92 | 실측 | [[terminal-bench]] 9.09091%×0.5 |
+| 에이전트 | 34.9 | -1.01 | 실측 | [[tau2-bench]] 23.0994%×1.0, [[terminal-bench]] 9.09091%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 26.1 | -1.59 | 실측 | [[aa-lcr]] 0.0%×1.0 |
-| 지시 따르기 | 27.6 | -1.49 | 실측 | [[ifbench]] 25.1020408163265%×1.0 |
+| 긴문맥 | 23.5 | -1.77 | 실측 | [[aa-lcr]] 0%×1.0 |
+| 지시 따르기 | 29.9 | -1.34 | 실측 | [[ifbench]] 25.102%×1.0 |
 
-> r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
+> 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.
 
 ## 출처
 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)

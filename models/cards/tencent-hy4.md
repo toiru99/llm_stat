@@ -5,11 +5,11 @@ creator: Tencent
 license: Open
 intelligence_index: 34.5552385392508
 price_blended_usd_1m: 0.4463
-output_speed_tps: 93.3855255945481
+output_speed_tps: 93.7234653584913
 context_window: 1048576
 status: current
 size_class: Large
-params_b: null
+params_b: 774
 is_reasoning: true
 radar:
   knowledge: { s: null, z: null, r: null, estimated: false }  # 전문 지식
@@ -24,24 +24,24 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Tencent Hy4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-23
-timestamp: 2026-11-23T00:00:00Z
+updated: 2026-11-24
+timestamp: 2026-11-24T00:00:00Z
 ---
 
 # Tencent Hy4
 
-Tencent · Open · Large · 컨텍스트 1M · 종합지능 **34.5552385392508**
+Tencent · Open · Large(774B) · 컨텍스트 1M · 종합지능 **34.5552385392508**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: —
 - **약점**: —
 
 ## 실용 지표
-`입력 $0.834 · 출력 $2.501 · 혼합 $0.4463/1M · 93.3855255945481 t/s · TTFT 2.68067353115735s · 1M ctx` · 가성비 77.4
+`입력 $0.834 · 출력 $2.501 · 혼합 $0.4463/1M · 93.7234653584913 t/s · TTFT 2.76038749540522s · 1M ctx` · 가성비 77.4
 
 ## 레이더 8축 (평균=50 기준선)
 
-| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
+| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(원점수) |
 |---|---|---|---|---|
 | 전문 지식 | — | — | 측정 안 됨 | — |
 | 추론 | — | — | 측정 안 됨 | — |
@@ -52,7 +52,7 @@ Tencent · Open · Large · 컨텍스트 1M · 종합지능 **34.5552385392508**
 | 긴문맥 | — | — | 측정 안 됨 | — |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
-> r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
+> 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.
 
 ## 출처
 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)

@@ -5,27 +5,27 @@ creator: Upstage
 license: Proprietary
 intelligence_index: 14.1589437644357
 price_blended_usd_1m: 0.222
-output_speed_tps: 80.0157834573794
+output_speed_tps: 82.4123559441733
 context_window: 512000
 status: current
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 69.2, z: 1.06, r: 65.9, estimated: false }  # 전문 지식
-  reasoning: { s: 49.5, z: 0.69, r: 60.3, estimated: false }  # 추론
-  coding: { s: 67.6, z: 0.94, r: 64.0, estimated: false }  # 코딩
-  agentic: { s: 55.8, z: 0.38, r: 55.7, estimated: false }  # 에이전트
+  knowledge: { s: 69.2, z: 1.09, r: 66.4, estimated: false }  # 전문 지식
+  reasoning: { s: 49.5, z: 0.71, r: 60.7, estimated: false }  # 추론
+  coding: { s: 67.6, z: 0.9, r: 63.4, estimated: false }  # 코딩
+  agentic: { s: 55.8, z: 0.31, r: 54.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 79.7, z: 0.77, r: 61.6, estimated: false }  # 긴문맥
-  instruction: { s: 84.9, z: 1.3, r: 69.4, estimated: true }  # 지시 따르기
+  long_context: { s: 79.7, z: 0.67, r: 60.1, estimated: false }  # 긴문맥
+  instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Pro 4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-23
-timestamp: 2026-11-23T00:00:00Z
+updated: 2026-11-24
+timestamp: 2026-11-24T00:00:00Z
 ---
 
 # Solar Pro 4
@@ -33,26 +33,26 @@ timestamp: 2026-11-23T00:00:00Z
 Upstage · Proprietary · Unknown · 컨텍스트 512k · 종합지능 **14.1589437644357**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 지시 따르기, 전문 지식
-- **약점**: 추론, 에이전트
+- **강점**: 전문 지식, 코딩
+- **약점**: 긴문맥, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 80.0157834573794 t/s · TTFT 2.53302535959434s · 512k ctx` · 가성비 63.8
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 82.4123559441733 t/s · TTFT 2.59955314198333s · 512k ctx` · 가성비 63.8
 
 ## 레이더 8축 (평균=50 기준선)
 
-| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
+| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(원점수) |
 |---|---|---|---|---|
-| 전문 지식 | 65.9 | +1.06 | 실측 | [[gpqa-diamond]] 89.0909090909091%×0.4, [[humanitys-last-exam]] 29.842446709916597%×0.3 |
-| 추론 | 60.3 | +0.69 | 실측 | [[critpt]] 6.28571428571429%×1.0, [[gpqa-diamond]] 89.0909090909091%×1.0, [[humanitys-last-exam]] 29.842446709916597%×1.0 |
-| 코딩 | 64.0 | +0.94 | 실측 | [[scicode]] 48.032407407407405%×1.0 |
-| 에이전트 | 55.7 | +0.38 | 실측 | [[gdpval]] 1105.73%×1.0, [[tau3-banking]] 23.298969072164898%×1.0 |
+| 전문 지식 | 66.4 | +1.09 | 실측 | [[gpqa-diamond]] 89.0909%×0.4, [[humanitys-last-exam]] 29.8424%×0.3 |
+| 추론 | 60.7 | +0.71 | 실측 | [[critpt]] 6.28571%×1.0, [[gpqa-diamond]] 89.0909%×1.0, [[humanitys-last-exam]] 29.8424%×1.0 |
+| 코딩 | 63.4 | +0.9 | 실측 | [[scicode]] 48.0324%×1.0 |
+| 에이전트 | 54.6 | +0.31 | 실측 | [[gdpval]] 1105.73 Elo×1.0, [[tau3-banking]] 23.299%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 61.6 | +0.77 | 실측 | [[aa-lcr]] 70.6666666666667%×1.0 |
-| 지시 따르기 | 69.4 | +1.3 | 추정 | (추정) |
+| 긴문맥 | 60.1 | +0.67 | 실측 | [[aa-lcr]] 70.6667%×1.0 |
+| 지시 따르기 | — | — | 측정 안 됨 | — |
 
-> r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
+> 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.
 
 ## 출처
 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)

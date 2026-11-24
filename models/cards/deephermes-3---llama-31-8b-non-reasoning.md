@@ -9,50 +9,50 @@ output_speed_tps: None
 context_window: 128000
 status: current
 size_class: Small
-params_b: null
+params_b: 8
 is_reasoning: false
 radar:
-  knowledge: { s: 13.2, z: -1.65, r: 25.3, estimated: false }  # 전문 지식
-  reasoning: { s: 12.1, z: -1.16, r: 32.6, estimated: false }  # 추론
-  coding: { s: 0.1, z: -1.35, r: 29.7, estimated: true }  # 코딩
-  agentic: { s: 5.6, z: -1.36, r: 29.6, estimated: true }  # 에이전트
+  knowledge: { s: 13.2, z: -1.63, r: 25.5, estimated: false }  # 전문 지식
+  reasoning: { s: 12.1, z: -1.15, r: 32.8, estimated: false }  # 추론
+  coding: { s: null, z: null, r: null, estimated: false }  # 코딩
+  agentic: { s: null, z: null, r: null, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 2.5, z: -1.52, r: 27.2, estimated: true }  # 긴문맥
-  instruction: { s: 16.5, z: -1.56, r: 26.6, estimated: true }  # 지시 따르기
+  long_context: { s: null, z: null, r: null, estimated: false }  # 긴문맥
+  instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepHermes 3 - Llama-3.1 8B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-23
-timestamp: 2026-11-23T00:00:00Z
+updated: 2026-11-24
+timestamp: 2026-11-24T00:00:00Z
 ---
 
 # DeepHermes 3 - Llama-3.1 8B (non-reasoning)
 
-Nous Research · Open · Small · 컨텍스트 128k · 종합지능 **None**
+Nous Research · Open · Small(8B) · 컨텍스트 128k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 추론, 코딩
-- **약점**: 지시 따르기, 전문 지식
+- **강점**: 추론, 전문 지식
+- **약점**: —
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
-| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
+| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(원점수) |
 |---|---|---|---|---|
-| 전문 지식 | 25.3 | -1.65 | 실측 | [[gpqa-diamond]] 26.969696969696997%×0.4, [[humanitys-last-exam]] 4.26%×0.3 |
-| 추론 | 32.6 | -1.16 | 실측 | [[gpqa-diamond]] 26.969696969696997%×1.0, [[humanitys-last-exam]] 4.26%×1.0 |
-| 코딩 | 29.7 | -1.35 | 추정 | (추정) |
-| 에이전트 | 29.6 | -1.36 | 추정 | (추정) |
+| 전문 지식 | 25.5 | -1.63 | 실측 | [[gpqa-diamond]] 26.9697%×0.4, [[humanitys-last-exam]] 4.26%×0.3 |
+| 추론 | 32.8 | -1.15 | 실측 | [[gpqa-diamond]] 26.9697%×1.0, [[humanitys-last-exam]] 4.26%×1.0 |
+| 코딩 | — | — | 측정 안 됨 | — |
+| 에이전트 | — | — | 측정 안 됨 | — |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 27.2 | -1.52 | 추정 | (추정) |
-| 지시 따르기 | 26.6 | -1.56 | 추정 | (추정) |
+| 긴문맥 | — | — | 측정 안 됨 | — |
+| 지시 따르기 | — | — | 측정 안 됨 | — |
 
-> r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
+> 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.
 
 ## 출처
 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)

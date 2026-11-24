@@ -9,28 +9,28 @@ output_speed_tps: None
 context_window: 262144
 status: current
 size_class: Medium
-params_b: null
+params_b: 74
 is_reasoning: true
 radar:
-  knowledge: { s: 32.2, z: -0.73, r: 39.1, estimated: false }  # 전문 지식
-  reasoning: { s: 22.1, z: -0.67, r: 40.0, estimated: false }  # 추론
-  coding: { s: 53.9, z: 0.47, r: 57.0, estimated: false }  # 코딩
-  agentic: { s: 60.9, z: 0.55, r: 58.3, estimated: false }  # 에이전트
+  knowledge: { s: 32.2, z: -0.71, r: 39.4, estimated: false }  # 전문 지식
+  reasoning: { s: 22.1, z: -0.65, r: 40.3, estimated: false }  # 추론
+  coding: { s: 53.9, z: 0.43, r: 56.5, estimated: false }  # 코딩
+  agentic: { s: 60.9, z: 0.49, r: 57.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 78.6, z: 0.74, r: 61.1, estimated: false }  # 긴문맥
-  instruction: { s: 52.3, z: -0.07, r: 49.0, estimated: true }  # 지시 따르기
+  long_context: { s: 78.6, z: 0.64, r: 59.6, estimated: false }  # 긴문맥
+  instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3.5 Bolt 74B-A9B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-23
-timestamp: 2026-11-23T00:00:00Z
+updated: 2026-11-24
+timestamp: 2026-11-24T00:00:00Z
 ---
 
 # Nemotron 3.5 Bolt 74B-A9B
 
-NVIDIA · Open · Medium · 컨텍스트 262k · 종합지능 **None**
+NVIDIA · Open · Medium(74B) · 컨텍스트 262k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 에이전트
@@ -41,18 +41,18 @@ NVIDIA · Open · Medium · 컨텍스트 262k · 종합지능 **None**
 
 ## 레이더 8축 (평균=50 기준선)
 
-| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
+| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(원점수) |
 |---|---|---|---|---|
-| 전문 지식 | 39.1 | -0.73 | 실측 | [[humanitys-last-exam]] 24.6524559777572%×0.3 |
-| 추론 | 40.0 | -0.67 | 실측 | [[critpt]] 4.28571428571429%×1.0, [[humanitys-last-exam]] 24.6524559777572%×1.0 |
-| 코딩 | 57.0 | +0.47 | 실측 | [[scicode]] 39.6990740740741%×1.0 |
-| 에이전트 | 58.3 | +0.55 | 실측 | [[gdpval]] 979.03%×1.0 |
+| 전문 지식 | 39.4 | -0.71 | 실측 | [[humanitys-last-exam]] 24.6525%×0.3 |
+| 추론 | 40.3 | -0.65 | 실측 | [[critpt]] 4.28571%×1.0, [[humanitys-last-exam]] 24.6525%×1.0 |
+| 코딩 | 56.5 | +0.43 | 실측 | [[scicode]] 39.6991%×1.0 |
+| 에이전트 | 57.3 | +0.49 | 실측 | [[gdpval]] 979.03 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 61.1 | +0.74 | 실측 | [[aa-lcr]] 69.6666666666667%×1.0 |
-| 지시 따르기 | 49.0 | -0.07 | 추정 | (추정) |
+| 긴문맥 | 59.6 | +0.64 | 실측 | [[aa-lcr]] 69.6667%×1.0 |
+| 지시 따르기 | — | — | 측정 안 됨 | — |
 
-> r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
+> 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.
 
 ## 출처
 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)

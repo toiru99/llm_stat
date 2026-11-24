@@ -5,27 +5,27 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 48.2081024960691
 price_blended_usd_1m: 2.94
-output_speed_tps: 107.735347092824
+output_speed_tps: 105.925146435167
 context_window: 1000000
 status: current
 size_class: Unknown
 params_b: null
 is_reasoning: true
 radar:
-  knowledge: { s: 73.3, z: 1.25, r: 68.8, estimated: false }  # 전문 지식
-  reasoning: { s: 75.4, z: 1.97, r: 79.5, estimated: false }  # 추론
-  coding: { s: 86.1, z: 1.56, r: 73.4, estimated: false }  # 코딩
-  agentic: { s: 87.8, z: 1.48, r: 72.3, estimated: false }  # 에이전트
+  knowledge: { s: 73.3, z: 1.29, r: 69.3, estimated: false }  # 전문 지식
+  reasoning: { s: 75.4, z: 2.0, r: 80.0, estimated: false }  # 추론
+  coding: { s: 86.1, z: 1.52, r: 72.8, estimated: false }  # 코딩
+  agentic: { s: 87.8, z: 1.44, r: 71.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 95.0, z: 1.2, r: 68.1, estimated: false }  # 멀티모달
-  long_context: { s: 95.1, z: 1.23, r: 68.5, estimated: false }  # 긴문맥
-  instruction: { s: 81.9, z: 1.17, r: 67.6, estimated: true }  # 지시 따르기
+  long_context: { s: 95.1, z: 1.14, r: 67.2, estimated: false }  # 긴문맥
+  instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 5.5 (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-23
-timestamp: 2026-11-23T00:00:00Z
+updated: 2026-11-24
+timestamp: 2026-11-24T00:00:00Z
 ---
 
 # Claude Opus 5.5 (medium)
@@ -34,25 +34,25 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **48.2081
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 코딩
-- **약점**: 멀티모달, 지시 따르기
+- **약점**: 멀티모달, 긴문맥
 
 ## 실용 지표
-`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 107.735347092824 t/s · TTFT 13.1047607569498s · 1M ctx` · 가성비 16.4
+`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 105.925146435167 t/s · TTFT 13.3873061732541s · 1M ctx` · 가성비 16.4
 
 ## 레이더 8축 (평균=50 기준선)
 
-| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(raw%) |
+| 축 | 점수(r) | 평균대비(z) | 상태 | 구성 벤치마크(원점수) |
 |---|---|---|---|---|
-| 전문 지식 | 68.8 | +1.25 | 실측 | [[humanitys-last-exam]] 54.72659870250231%×0.3 |
-| 추론 | 79.5 | +1.97 | 실측 | [[critpt]] 27.7142857142857%×1.0, [[humanitys-last-exam]] 54.72659870250231%×1.0 |
-| 코딩 | 73.4 | +1.56 | 실측 | [[scicode]] 59.2592592592593%×1.0 |
-| 에이전트 | 72.3 | +1.48 | 실측 | [[gdpval]] 1590.15%×1.0 |
+| 전문 지식 | 69.3 | +1.29 | 실측 | [[humanitys-last-exam]] 54.7266%×0.3 |
+| 추론 | 80.0 | +2.0 | 실측 | [[critpt]] 27.7143%×1.0, [[humanitys-last-exam]] 54.7266%×1.0 |
+| 코딩 | 72.8 | +1.52 | 실측 | [[scicode]] 59.2593%×1.0 |
+| 에이전트 | 71.5 | +1.44 | 실측 | [[gdpval]] 1590.15 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
-| 멀티모달 | 68.1 | +1.2 | 실측 | [[mmmu-pro]] 85.72254335260119%×1.0 |
-| 긴문맥 | 68.5 | +1.23 | 실측 | [[aa-lcr]] 84.3333333333333%×1.0 |
-| 지시 따르기 | 67.6 | +1.17 | 추정 | (추정) |
+| 멀티모달 | 68.1 | +1.2 | 실측 | [[mmmu-pro]] 85.7225%×1.0 |
+| 긴문맥 | 67.2 | +1.14 | 실측 | [[aa-lcr]] 84.3333%×1.0 |
+| 지시 따르기 | — | — | 측정 안 됨 | — |
 
-> r=50이 추적 모델 평균. 50 초과=평균 이상. '추정'=같은 축 결측을 kNN으로 보완. '측정 안 됨'=미측정(추정 보류).
+> 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.
 
 ## 출처
 출처: [artificialanalysis.ai](https://artificialanalysis.ai/leaderboards/models)
