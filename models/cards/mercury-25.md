@@ -5,7 +5,7 @@ creator: Inception
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.129
-output_speed_tps: 521.592039031683
+output_speed_tps: 512.192964680242
 context_window: 260000
 status: current
 size_class: Unknown
@@ -37,7 +37,7 @@ Inception · Proprietary · Unknown · 컨텍스트 260k · 종합지능 **None*
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.75 · 혼합 $0.129/1M · 521.592039031683 t/s · TTFT 2.19478122377187s · 260k ctx`
+`입력 $0.2 · 출력 $0.75 · 혼합 $0.129/1M · 512.192964680242 t/s · TTFT 2.21485204899888s · 260k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Inception · Proprietary · Unknown · 컨텍스트 260k · 종합지능 **None*
 | 전문 지식 | 26.6 | -1.56 | 실측 | [[humanitys-last-exam]] 11.7702%×0.3 |
 | 추론 | 29.2 | -1.38 | 실측 | [[critpt]] 0%×1.0, [[humanitys-last-exam]] 11.7702%×1.0 |
 | 코딩 | 55.5 | +0.37 | 실측 | [[scicode]] 38.5417%×1.0 |
-| 에이전트 | 45.7 | -0.29 | 실측 | [[gdpval]] 481.63 Elo×1.0 |
+| 에이전트 | 45.7 | -0.29 | 실측 | [[gdpval]] 481.66 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 60.6 | +0.71 | 실측 | [[aa-lcr]] 71.6667%×1.0 |

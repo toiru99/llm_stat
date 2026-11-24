@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.2025
-output_speed_tps: 208.22258748862
+output_speed_tps: 197.922561989605
 context_window: 1000000
 status: past
 size_class: Medium
@@ -37,7 +37,7 @@ NVIDIA · Open · Medium(120.6B) · 컨텍스트 1M · 종합지능 **None** · 
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $0.9 · 혼합 $0.2025/1M · 208.22258748862 t/s · TTFT 0.992494225800018s · 1M ctx`
+`입력 $0.3 · 출력 $0.9 · 혼합 $0.2025/1M · 197.922561989605 t/s · TTFT 1.02477304806392s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ NVIDIA · Open · Medium(120.6B) · 컨텍스트 1M · 종합지능 **None** · 
 | 전문 지식 | 58.1 | +0.54 | 실측 | [[gpqa-diamond]] 80%×0.4, [[humanitys-last-exam]] 20.76%×0.3 |
 | 추론 | 52.8 | +0.19 | 실측 | [[critpt]] 3.14286%×1.0, [[gpqa-diamond]] 80%×1.0, [[humanitys-last-exam]] 20.76%×1.0 |
 | 코딩 | 52.8 | +0.19 | 실측 | [[scicode]] 36.2269%×1.0, [[terminal-bench]] 28.7879%×0.5 |
-| 에이전트 | 47.8 | -0.15 | 실측 | [[gdpval]] 497.16 Elo×1.0, [[tau2-bench]] 67.8363%×1.0, [[tau3-banking]] 10.3093%×1.0, [[terminal-bench]] 28.7879%×1.0 |
+| 에이전트 | 47.8 | -0.15 | 실측 | [[gdpval]] 497.18 Elo×1.0, [[tau2-bench]] 67.8363%×1.0, [[tau3-banking]] 10.3093%×1.0, [[terminal-bench]] 28.7879%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 57.5 | +0.5 | 실측 | [[aa-lcr]] 65.6667%×1.0 |

@@ -5,7 +5,7 @@ creator: DeepSeek
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.1845
-output_speed_tps: 221.811098433918
+output_speed_tps: 223.7894095512575
 context_window: 1000000
 status: past
 size_class: Large
@@ -37,7 +37,7 @@ DeepSeek · Open · Large(552B) · 컨텍스트 1M · 종합지능 **None** · �
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.1845/1M · 221.811098433918 t/s · TTFT 0.879326007000016s · 1M ctx`
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.1845/1M · 223.7894095512575 t/s · TTFT 0.8870333635444205s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ DeepSeek · Open · Large(552B) · 컨텍스트 1M · 종합지능 **None** · �
 | 전문 지식 | 25.6 | -1.63 | 실측 | [[humanitys-last-exam]] 10.797%×0.3 |
 | 추론 | 29.0 | -1.4 | 실측 | [[critpt]] 0.285714%×1.0, [[humanitys-last-exam]] 10.797%×1.0 |
 | 코딩 | 53.0 | +0.2 | 실측 | [[scicode]] 35.5324%×1.0 |
-| 에이전트 | 65.9 | +1.06 | 실측 | [[gdpval]] 1347.31 Elo×1.0 |
+| 에이전트 | 65.9 | +1.06 | 실측 | [[gdpval]] 1347.01 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 47.5 | -0.17 | 실측 | [[mmmu-pro]] 65.6069%×1.0 |
 | 긴문맥 | 52.1 | +0.14 | 실측 | [[aa-lcr]] 55.3333%×1.0 |

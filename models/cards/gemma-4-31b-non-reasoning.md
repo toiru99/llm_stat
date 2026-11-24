@@ -5,7 +5,7 @@ creator: Google
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.168
-output_speed_tps: 40.3019738492107
+output_speed_tps: 41.084604421914
 context_window: 256000
 status: current
 size_class: Small
@@ -37,7 +37,7 @@ Google · Open · Small(30.7B) · 컨텍스트 256k · 종합지능 **None**
 - **약점**: 긴문맥, 추론
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.4 · 혼합 $0.168/1M · 40.3019738492107 t/s · TTFT 3.16543027083276s · 256k ctx`
+`입력 $0.15 · 출력 $0.4 · 혼합 $0.168/1M · 41.084604421914 t/s · TTFT 3.81657888412479s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Google · Open · Small(30.7B) · 컨텍스트 256k · 종합지능 **None**
 | 전문 지식 | 52.5 | +0.17 | 실측 | [[gpqa-diamond]] 76.2626%×0.4, [[humanitys-last-exam]] 11.8165%×0.3 |
 | 추론 | 46.5 | -0.23 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 76.2626%×1.0, [[humanitys-last-exam]] 11.8165%×1.0 |
 | 코딩 | 52.5 | +0.17 | 실측 | [[terminal-bench]] 30.303%×0.5 |
-| 에이전트 | 47.7 | -0.15 | 실측 | [[gdpval]] 554.69 Elo×1.0, [[tau2-bench]] 65.4971%×1.0, [[tau3-banking]] 8.86598%×1.0, [[terminal-bench]] 30.303%×1.0 |
+| 에이전트 | 47.7 | -0.15 | 실측 | [[gdpval]] 554.71 Elo×1.0, [[tau2-bench]] 65.4971%×1.0, [[tau3-banking]] 8.86598%×1.0, [[terminal-bench]] 30.303%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 52.4 | +0.16 | 실측 | [[mmmu-pro]] 70.3468%×1.0 |
 | 긴문맥 | 47.6 | -0.16 | 실측 | [[aa-lcr]] 46.6667%×1.0 |

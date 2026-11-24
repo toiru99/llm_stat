@@ -5,7 +5,7 @@ creator: Thinking Machines
 license: Open
 intelligence_index: 12.4781698715401
 price_blended_usd_1m: 0.724
-output_speed_tps: 85.9031473944663
+output_speed_tps: 88.9474067073123
 context_window: 1000000
 status: current
 size_class: Large
@@ -37,7 +37,7 @@ Thinking Machines · Open · Large(975B) · 컨텍스트 1M · 종합지능 **12
 - **약점**: 에이전트, 멀티모달
 
 ## 실용 지표
-`입력 $1.0 · 출력 $4.05 · 혼합 $0.724/1M · 85.9031473944663 t/s · TTFT 1.90930968343749s · 1M ctx` · 가성비 17.2
+`입력 $1.0 · 출력 $4.05 · 혼합 $0.724/1M · 88.9474067073123 t/s · TTFT 1.8485919107286s · 1M ctx` · 가성비 17.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Thinking Machines · Open · Large(975B) · 컨텍스트 1M · 종합지능 **12
 | 전문 지식 | 66.3 | +1.09 | 실측 | [[gpqa-diamond]] 87.1717%×0.4, [[humanitys-last-exam]] 31.8814%×0.3 |
 | 추론 | 60.3 | +0.68 | 실측 | [[critpt]] 5.42857%×1.0, [[gpqa-diamond]] 87.1717%×1.0, [[humanitys-last-exam]] 31.8814%×1.0 |
 | 코딩 | 62.6 | +0.84 | 실측 | [[scicode]] 46.9907%×1.0 |
-| 에이전트 | 57.3 | +0.49 | 실측 | [[gdpval]] 1080.29 Elo×1.0, [[tau3-banking]] 29.0722%×1.0 |
+| 에이전트 | 57.3 | +0.49 | 실측 | [[gdpval]] 1080.53 Elo×1.0, [[tau3-banking]] 29.0722%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 55.5 | +0.37 | 실측 | [[mmmu-pro]] 73.4682%×1.0 |
 | 긴문맥 | 63.5 | +0.9 | 실측 | [[aa-lcr]] 77.3333%×1.0 |

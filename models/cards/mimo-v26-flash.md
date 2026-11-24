@@ -5,7 +5,7 @@ creator: Xiaomi
 license: Open
 intelligence_index: 26.7276981444568
 price_blended_usd_1m: 0.058
-output_speed_tps: 39.6809525652377
+output_speed_tps: 39.7293263842379
 context_window: 1000000
 status: current
 size_class: Large
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 46.5, z: -0.02, r: 49.8, estimated: false }  # 전문 지식
   reasoning: { s: 40.0, z: 0.24, r: 53.6, estimated: false }  # 추론
   coding: { s: 73.0, z: 1.08, r: 66.1, estimated: false }  # 코딩
-  agentic: { s: 88.9, z: 1.47, r: 72.1, estimated: false }  # 에이전트
+  agentic: { s: 89.0, z: 1.48, r: 72.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 78.1, z: 0.34, r: 55.1, estimated: false }  # 멀티모달
   long_context: { s: 83.8, z: 0.8, r: 62.0, estimated: false }  # 긴문맥
@@ -37,7 +37,7 @@ Xiaomi · Open · Large(309B) · 컨텍스트 1M · 종합지능 **26.7276981444
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.14 · 출력 $0.28 · 혼합 $0.058/1M · 39.6809525652377 t/s · TTFT 5.30943360528957s · 1M ctx` · 가성비 460.8
+`입력 $0.14 · 출력 $0.28 · 혼합 $0.058/1M · 39.7293263842379 t/s · TTFT 5.08429959459157s · 1M ctx` · 가성비 460.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Xiaomi · Open · Large(309B) · 컨텍스트 1M · 종합지능 **26.7276981444
 | 전문 지식 | 49.8 | -0.02 | 실측 | [[humanitys-last-exam]] 35.0788%×0.3 |
 | 추론 | 53.6 | +0.24 | 실측 | [[critpt]] 12%×1.0, [[humanitys-last-exam]] 35.0788%×1.0 |
 | 코딩 | 66.1 | +1.08 | 실측 | [[scicode]] 51.2731%×1.0 |
-| 에이전트 | 72.1 | +1.47 | 실측 | [[gdpval]] 1614.74 Elo×1.0 |
+| 에이전트 | 72.1 | +1.48 | 실측 | [[gdpval]] 1615.72 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 55.1 | +0.34 | 실측 | [[mmmu-pro]] 73.0636%×1.0 |
 | 긴문맥 | 62.0 | +0.8 | 실측 | [[aa-lcr]] 74.3333%×1.0 |

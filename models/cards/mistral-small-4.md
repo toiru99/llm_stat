@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: 4.29716249600478
 price_blended_usd_1m: 0.1005
-output_speed_tps: 148.243125724875
+output_speed_tps: 145.296478104707
 context_window: 256000
 status: current
 size_class: Medium
@@ -37,7 +37,7 @@ Mistral · Open · Medium(119B) · 컨텍스트 256k · 종합지능 **4.2971624
 - **약점**: 에이전트, 멀티모달
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · 148.243125724875 t/s · TTFT 1.4183047103479s · 256k ctx` · 가성비 42.8
+`입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · 145.296478104707 t/s · TTFT 1.42030863455165s · 256k ctx` · 가성비 42.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Mistral · Open · Medium(119B) · 컨텍스트 256k · 종합지능 **4.2971624
 | 전문 지식 | 52.0 | +0.13 | 실측 | [[gpqa-diamond]] 76.8687%×0.4, [[humanitys-last-exam]] 9.87025%×0.3 |
 | 추론 | 46.3 | -0.25 | 실측 | [[critpt]] 0.285714%×1.0, [[gpqa-diamond]] 76.8687%×1.0, [[humanitys-last-exam]] 9.87025%×1.0 |
 | 코딩 | 51.4 | +0.09 | 실측 | [[scicode]] 38.7731%×1.0, [[terminal-bench]] 17.4242%×0.5 |
-| 에이전트 | 39.8 | -0.68 | 실측 | [[gdpval]] 369.35 Elo×1.0, [[tau2-bench]] 41.2281%×1.0, [[tau3-banking]] 4.94845%×1.0, [[terminal-bench]] 17.4242%×1.0 |
+| 에이전트 | 39.8 | -0.68 | 실측 | [[gdpval]] 369.37 Elo×1.0, [[tau2-bench]] 41.2281%×1.0, [[tau3-banking]] 4.94845%×1.0, [[terminal-bench]] 17.4242%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 38.5 | -0.76 | 실측 | [[mmmu-pro]] 56.8208%×1.0 |
 | 긴문맥 | 49.2 | -0.05 | 실측 | [[aa-lcr]] 49.6667%×1.0 |

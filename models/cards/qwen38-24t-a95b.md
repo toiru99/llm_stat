@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 1.175
-output_speed_tps: 41.8102667202025
+output_speed_tps: 42.3301441536351
 context_window: 262000
 status: current
 size_class: Large
@@ -37,7 +37,7 @@ Alibaba · Open · Large(2400B) · 컨텍스트 262k · 종합지능 **None**
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
-`입력 $2.0 · 출력 $6.0 · 혼합 $1.175/1M · 41.8102667202025 t/s · TTFT 4.84638296653024s · 262k ctx`
+`입력 $2.0 · 출력 $6.0 · 혼합 $1.175/1M · 42.3301441536351 t/s · TTFT 4.86054337853297s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Alibaba · Open · Large(2400B) · 컨텍스트 262k · 종합지능 **None**
 | 전문 지식 | 73.9 | +1.59 | 실측 | [[gpqa-diamond]] 93.5354%×0.4, [[humanitys-last-exam]] 42.4467%×0.3 |
 | 추론 | 75.8 | +1.72 | 실측 | [[critpt]] 20%×1.0, [[gpqa-diamond]] 93.5354%×1.0, [[humanitys-last-exam]] 42.4467%×1.0 |
 | 코딩 | 68.4 | +1.23 | 실측 | [[scicode]] 54.0509%×1.0 |
-| 에이전트 | 73.9 | +1.59 | 실측 | [[gdpval]] 1613.86 Elo×1.0, [[tau3-banking]] 49.0722%×1.0 |
+| 에이전트 | 73.9 | +1.59 | 실측 | [[gdpval]] 1612.95 Elo×1.0, [[tau3-banking]] 49.0722%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 65.1 | +1.01 | 실측 | [[aa-lcr]] 80.3333%×1.0 |

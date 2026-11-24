@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.27
-output_speed_tps: 34.8855773485196
+output_speed_tps: 33.630093899564
 context_window: 32768
 status: past
 size_class: Small
@@ -37,7 +37,7 @@ Alibaba · Open · Small(32.8B) · 컨텍스트 32k · 종합지능 **None** · 
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.24000000000000002 · 출력 $0.54 · 혼합 $0.27/1M · 34.8855773485196 t/s · TTFT 0.745614139887225s · 32k ctx`
+`입력 $0.24000000000000002 · 출력 $0.54 · 혼합 $0.27/1M · 33.630093899564 t/s · TTFT 0.759357807253846s · 32k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Alibaba · Open · Small(32.8B) · 컨텍스트 32k · 종합지능 **None** · 
 | 전문 지식 | 46.1 | -0.26 | 실측 | [[gpqa-diamond]] 66.7677%×0.4, [[humanitys-last-exam]] 7.41%×0.3 |
 | 추론 | 42.5 | -0.5 | 실측 | [[critpt]] 0.285714%×1.0, [[gpqa-diamond]] 66.7677%×1.0, [[humanitys-last-exam]] 7.41%×1.0 |
 | 코딩 | 46.1 | -0.26 | 실측 | [[scicode]] 35.9954%×1.0, [[terminal-bench]] 3.0303%×0.5 |
-| 에이전트 | 33.6 | -1.09 | 실측 | [[gdpval]] 40.53 Elo×1.0, [[tau2-bench]] 29.8246%×1.0, [[tau3-banking]] 5.36082%×1.0, [[terminal-bench]] 3.0303%×1.0 |
+| 에이전트 | 33.6 | -1.09 | 실측 | [[gdpval]] 40.55 Elo×1.0, [[tau2-bench]] 29.8246%×1.0, [[tau3-banking]] 5.36082%×1.0, [[terminal-bench]] 3.0303%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 23.5 | -1.77 | 실측 | [[aa-lcr]] 0%×1.0 |

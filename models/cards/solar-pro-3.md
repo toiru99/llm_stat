@@ -5,7 +5,7 @@ creator: Upstage
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.1005
-output_speed_tps: 117.677326492112
+output_speed_tps: 116.488779279137
 context_window: 128000
 status: past
 size_class: Medium
@@ -37,7 +37,7 @@ Upstage · Proprietary · Medium · 컨텍스트 128k · 종합지능 **None** �
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · 117.677326492112 t/s · TTFT 1.82351997258322s · 128k ctx`
+`입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · 116.488779279137 t/s · TTFT 1.81597646678881s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Upstage · Proprietary · Medium · 컨텍스트 128k · 종합지능 **None** �
 | 전문 지식 | 50.0 | +0.0 | 실측 | [[gpqa-diamond]] 72.4242%×0.4, [[humanitys-last-exam]] 10.2873%×0.3 |
 | 추론 | 44.9 | -0.34 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 72.4242%×1.0, [[humanitys-last-exam]] 10.2873%×1.0 |
 | 코딩 | 41.4 | -0.57 | 실측 | [[scicode]] 25.463%×1.0, [[terminal-bench]] 7.57576%×0.5 |
-| 에이전트 | 44.2 | -0.38 | 실측 | [[gdpval]] 271.72 Elo×1.0, [[tau2-bench]] 86.2573%×1.0, [[tau3-banking]] 8.65979%×1.0, [[terminal-bench]] 7.57576%×1.0 |
+| 에이전트 | 44.2 | -0.38 | 실측 | [[gdpval]] 271.74 Elo×1.0, [[tau2-bench]] 86.2573%×1.0, [[tau3-banking]] 8.65979%×1.0, [[terminal-bench]] 7.57576%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 40.2 | -0.65 | 실측 | [[aa-lcr]] 32.3333%×1.0 |

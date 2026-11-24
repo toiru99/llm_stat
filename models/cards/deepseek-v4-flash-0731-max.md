@@ -5,7 +5,7 @@ creator: DeepSeek
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.0756
-output_speed_tps: 138.732414114131
+output_speed_tps: 135.204512695578
 context_window: 1000000
 status: past
 size_class: Large
@@ -37,7 +37,7 @@ DeepSeek · Open · Large(284B) · 컨텍스트 1M · 종합지능 **None** · �
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
-`입력 $0.14 · 출력 $0.28 · 혼합 $0.0756/1M · 138.732414114131 t/s · TTFT 1.52027557278331s · 1M ctx`
+`입력 $0.14 · 출력 $0.28 · 혼합 $0.0756/1M · 135.204512695578 t/s · TTFT 1.5521882872638s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ DeepSeek · Open · Large(284B) · 컨텍스트 1M · 종합지능 **None** · �
 | 전문 지식 | 70.9 | +1.4 | 실측 | [[gpqa-diamond]] 90.8081%×0.4, [[humanitys-last-exam]] 38.5542%×0.3 |
 | 추론 | 71.3 | +1.42 | 실측 | [[critpt]] 16.5714%×1.0, [[gpqa-diamond]] 90.8081%×1.0, [[humanitys-last-exam]] 38.5542%×1.0 |
 | 코딩 | 65.4 | +1.02 | 실측 | [[scicode]] 50.3472%×1.0 |
-| 에이전트 | 66.8 | +1.12 | 실측 | [[gdpval]] 1436.82 Elo×1.0, [[tau3-banking]] 39.3814%×1.0 |
+| 에이전트 | 66.8 | +1.12 | 실측 | [[gdpval]] 1436.18 Elo×1.0, [[tau3-banking]] 39.3814%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 64.7 | +0.98 | 실측 | [[aa-lcr]] 79.6667%×1.0 |

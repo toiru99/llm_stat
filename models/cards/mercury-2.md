@@ -5,7 +5,7 @@ creator: Inception
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.1425
-output_speed_tps: 328.90036322126
+output_speed_tps: 316.14032444026
 context_window: 128000
 status: past
 size_class: Unknown
@@ -37,7 +37,7 @@ Inception · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None*
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.25 · 출력 $0.75 · 혼합 $0.1425/1M · 328.90036322126 t/s · TTFT 3.58369519103327s · 128k ctx`
+`입력 $0.25 · 출력 $0.75 · 혼합 $0.1425/1M · 316.14032444026 t/s · TTFT 3.49076396979161s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Inception · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None*
 | 전문 지식 | 55.1 | +0.34 | 실측 | [[gpqa-diamond]] 76.9697%×0.4, [[humanitys-last-exam]] 17.1455%×0.3 |
 | 추론 | 49.1 | -0.06 | 실측 | [[critpt]] 0.84898%×1.0, [[gpqa-diamond]] 76.9697%×1.0, [[humanitys-last-exam]] 17.1455%×1.0 |
 | 코딩 | 53.1 | +0.21 | 실측 | [[scicode]] 37.7315%×1.0, [[terminal-bench]] 26.5152%×0.5 |
-| 에이전트 | 47.5 | -0.17 | 실측 | [[gdpval]] 501.37 Elo×1.0, [[tau2-bench]] 70.7602%×1.0, [[tau3-banking]] 9.48454%×1.0, [[terminal-bench]] 26.5152%×1.0 |
+| 에이전트 | 47.5 | -0.17 | 실측 | [[gdpval]] 501.39 Elo×1.0, [[tau2-bench]] 70.7602%×1.0, [[tau3-banking]] 9.48454%×1.0, [[terminal-bench]] 26.5152%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 46.1 | -0.26 | 실측 | [[aa-lcr]] 43.6667%×1.0 |

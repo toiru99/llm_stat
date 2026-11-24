@@ -46,7 +46,7 @@ Institute of Foundation Models · Open · Medium(70B) · 컨텍스트 262k · �
 | 전문 지식 | 49.4 | -0.04 | 실측 | [[gpqa-diamond]] 71.3131%×0.4, [[humanitys-last-exam]] 10.1019%×0.3 |
 | 추론 | 44.5 | -0.36 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 71.3131%×1.0, [[humanitys-last-exam]] 10.1019%×1.0 |
 | 코딩 | 34.5 | -1.04 | 실측 | [[terminal-bench]] 6.81818%×0.5 |
-| 에이전트 | 35.6 | -0.96 | 실측 | [[gdpval]] 136.86 Elo×1.0, [[tau2-bench]] 25.4386%×1.0, [[terminal-bench]] 6.81818%×1.0 |
+| 에이전트 | 35.6 | -0.96 | 실측 | [[gdpval]] 136.87 Elo×1.0, [[tau2-bench]] 25.4386%×1.0, [[terminal-bench]] 6.81818%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 53.0 | +0.2 | 실측 | [[aa-lcr]] 57%×1.0 |

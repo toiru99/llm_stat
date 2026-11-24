@@ -5,7 +5,7 @@ creator: SpaceXAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.64
-output_speed_tps: 81.3549776858291
+output_speed_tps: 80.6014577140841
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -37,7 +37,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** �
 - **약점**: 추론, 긴문맥
 
 ## 실용 지표
-`입력 $1.25 · 출력 $2.5 · 혼합 $0.64/1M · 81.3549776858291 t/s · TTFT 1.30799368533335s · 1M ctx`
+`입력 $1.25 · 출력 $2.5 · 혼합 $0.64/1M · 80.6014577140841 t/s · TTFT 1.27185838402222s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** �
 | 전문 지식 | 45.3 | -0.31 | 실측 | [[gpqa-diamond]] 65.7576%×0.4, [[humanitys-last-exam]] 6.76552%×0.3 |
 | 추론 | 41.8 | -0.55 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 65.7576%×1.0, [[humanitys-last-exam]] 6.76552%×1.0 |
 | 코딩 | 52.1 | +0.14 | 실측 | [[scicode]] 39.3519%×1.0, [[terminal-bench]] 18.9394%×0.5 |
-| 에이전트 | 47.6 | -0.16 | 실측 | [[gdpval]] 948.52 Elo×1.0, [[tau2-bench]] 65.7895%×1.0, [[tau3-banking]] 8.04124%×1.0, [[terminal-bench]] 18.9394%×1.0 |
+| 에이전트 | 47.6 | -0.16 | 실측 | [[gdpval]] 948.5 Elo×1.0, [[tau2-bench]] 65.7895%×1.0, [[tau3-banking]] 8.04124%×1.0, [[terminal-bench]] 18.9394%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 46.7 | -0.22 | 실측 | [[mmmu-pro]] 64.7977%×1.0 |
 | 긴문맥 | 40.2 | -0.65 | 실측 | [[aa-lcr]] 32.3333%×1.0 |

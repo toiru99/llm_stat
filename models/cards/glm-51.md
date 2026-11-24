@@ -5,7 +5,7 @@ creator: Z AI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.794
-output_speed_tps: 68.44913657584661
+output_speed_tps: 71.12944392684204
 context_window: 200000
 status: past
 size_class: Large
@@ -37,7 +37,7 @@ Z AI · Open · Large(744B) · 컨텍스트 200k · 종합지능 **None** · ⚠
 - **약점**: 에이전트, 추론
 
 ## 실용 지표
-`입력 $1.19 · 출력 $3.74 · 혼합 $0.794/1M · 68.44913657584661 t/s · TTFT 3.8939212908499847s · 200k ctx`
+`입력 $1.19 · 출력 $3.74 · 혼합 $0.794/1M · 71.12944392684204 t/s · TTFT 3.895004318136115s · 200k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Z AI · Open · Large(744B) · 컨텍스트 200k · 종합지능 **None** · ⚠
 | 전문 지식 | 65.4 | +1.02 | 실측 | [[gpqa-diamond]] 86.7677%×0.4, [[humanitys-last-exam]] 30.0741%×0.3 |
 | 추론 | 58.9 | +0.6 | 실측 | [[critpt]] 4.57143%×1.0, [[gpqa-diamond]] 86.7677%×1.0, [[humanitys-last-exam]] 30.0741%×1.0 |
 | 코딩 | 61.3 | +0.75 | 실측 | [[scicode]] 44.7917%×1.0, [[terminal-bench]] 43.1818%×0.5 |
-| 에이전트 | 59.1 | +0.61 | 실측 | [[gdpval]] 1124.69 Elo×1.0, [[tau2-bench]] 97.6608%×1.0, [[tau3-banking]] 13.6082%×1.0, [[terminal-bench]] 43.1818%×1.0 |
+| 에이전트 | 59.1 | +0.61 | 실측 | [[gdpval]] 1124.7 Elo×1.0, [[tau2-bench]] 97.6608%×1.0, [[tau3-banking]] 13.6082%×1.0, [[terminal-bench]] 43.1818%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 61.6 | +0.78 | 실측 | [[aa-lcr]] 73.6667%×1.0 |

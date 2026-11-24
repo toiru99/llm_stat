@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 3.85
-output_speed_tps: 72.7521324886036
+output_speed_tps: 73.7306526750033
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 - **약점**: 멀티모달, 에이전트
 
 ## 실용 지표
-`입력 $5.0 · 출력 $25.0 · 혼합 $3.85/1M · 72.7521324886036 t/s · TTFT 3.08355390530002s · 1M ctx`
+`입력 $5.0 · 출력 $25.0 · 혼합 $3.85/1M · 73.7306526750033 t/s · TTFT 3.27866790484169s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 | 전문 지식 | 72.1 | +1.47 | 실측 | [[gpqa-diamond]] 88.8889%×0.4, [[humanitys-last-exam]] 43.4198%×0.3 |
 | 추론 | 77.0 | +1.8 | 실측 | [[critpt]] 23.1429%×1.0, [[gpqa-diamond]] 88.8889%×1.0, [[humanitys-last-exam]] 43.4198%×1.0 |
 | 코딩 | 64.4 | +0.96 | 실측 | [[scicode]] 49.1898%×1.0 |
-| 에이전트 | 60.6 | +0.71 | 실측 | [[gdpval]] 1306.67 Elo×1.0, [[tau3-banking]] 30.3093%×1.0 |
+| 에이전트 | 60.6 | +0.71 | 실측 | [[gdpval]] 1307 Elo×1.0, [[tau3-banking]] 30.3093%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 62.0 | +0.8 | 실측 | [[mmmu-pro]] 79.8266%×1.0 |
 | 긴문맥 | 65.6 | +1.04 | 실측 | [[aa-lcr]] 81.3333%×1.0 |

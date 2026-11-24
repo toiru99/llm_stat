@@ -1,11 +1,11 @@
 ---
 type: Model
-title: GLM-5.3-Flash
+title: GLM-5.3-Flash (max)
 creator: Z AI
 license: Open
 intelligence_index: 27.803889160883
 price_blended_usd_1m: 0.101
-output_speed_tps: 61.440844696282
+output_speed_tps: 61.223080997001
 context_window: 1000000
 status: current
 size_class: Large
@@ -22,13 +22,13 @@ radar:
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
-    title: Artificial Analysis — GLM-5.3-Flash
+    title: Artificial Analysis — GLM-5.3-Flash (max)
     url: https://artificialanalysis.ai/leaderboards/models
 updated: 2026-11-24
 timestamp: 2026-11-24T00:00:00Z
 ---
 
-# GLM-5.3-Flash
+# GLM-5.3-Flash (max)
 
 Z AI · Open · Large(320B) · 컨텍스트 1M · 종합지능 **27.803889160883**
 
@@ -37,7 +37,7 @@ Z AI · Open · Large(320B) · 컨텍스트 1M · 종합지능 **27.803889160883
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.5 · 혼합 $0.101/1M · 61.440844696282 t/s · TTFT 3.16866427508058s · 1M ctx` · 가성비 275.3
+`입력 $0.15 · 출력 $0.5 · 혼합 $0.101/1M · 61.223080997001 t/s · TTFT 3.1523636735993s · 1M ctx` · 가성비 275.3
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Z AI · Open · Large(320B) · 컨텍스트 1M · 종합지능 **27.803889160883
 | 전문 지식 | 71.7 | +1.45 | 실측 | [[gpqa-diamond]] 91.2121%×0.4, [[humanitys-last-exam]] 39.8517%×0.3 |
 | 추론 | 71.1 | +1.41 | 실측 | [[critpt]] 15.4286%×1.0, [[gpqa-diamond]] 91.2121%×1.0, [[humanitys-last-exam]] 39.8517%×1.0 |
 | 코딩 | 66.4 | +1.09 | 실측 | [[scicode]] 51.6204%×1.0 |
-| 에이전트 | 73.3 | +1.55 | 실측 | [[gdpval]] 1648.28 Elo×1.0, [[tau3-banking]] 47.2165%×1.0 |
+| 에이전트 | 73.3 | +1.55 | 실측 | [[gdpval]] 1648.59 Elo×1.0, [[tau3-banking]] 47.2165%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 64.9 | +0.99 | 실측 | [[aa-lcr]] 80%×1.0 |

@@ -5,7 +5,7 @@ creator: MiniMax
 license: Open
 intelligence_index: 18.8789083859255
 price_blended_usd_1m: 0.222
-output_speed_tps: 108.515310482126
+output_speed_tps: 108.301477179654
 context_window: 1000000
 status: current
 size_class: Large
@@ -37,7 +37,7 @@ MiniMax · Open · Large(428B) · 컨텍스트 1M · 종합지능 **18.878908385
 - **약점**: 멀티모달, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 108.515310482126 t/s · TTFT 1.88784322426874s · 1M ctx` · 가성비 85.0
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 108.301477179654 t/s · TTFT 1.84635219919934s · 1M ctx` · 가성비 85.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ MiniMax · Open · Large(428B) · 컨텍스트 1M · 종합지능 **18.878908385
 | 전문 지식 | 72.1 | +1.48 | 실측 | [[gpqa-diamond]] 92.9293%×0.4, [[humanitys-last-exam]] 38.9713%×0.3 |
 | 추론 | 63.1 | +0.88 | 실측 | [[critpt]] 3.71429%×1.0, [[gpqa-diamond]] 92.9293%×1.0, [[humanitys-last-exam]] 38.9713%×1.0 |
 | 코딩 | 62.4 | +0.82 | 실측 | [[scicode]] 47.1065%×1.0, [[terminal-bench]] 42.4242%×0.5 |
-| 에이전트 | 59.0 | +0.6 | 실측 | [[gdpval]] 1249.67 Elo×1.0, [[tau2-bench]] 88.8889%×1.0, [[tau3-banking]] 15.2577%×1.0, [[terminal-bench]] 42.4242%×1.0 |
+| 에이전트 | 59.0 | +0.6 | 실측 | [[gdpval]] 1249.71 Elo×1.0, [[tau2-bench]] 88.8889%×1.0, [[tau3-banking]] 15.2577%×1.0, [[terminal-bench]] 42.4242%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 60.7 | +0.72 | 실측 | [[mmmu-pro]] 78.5549%×1.0 |
 | 긴문맥 | 66.5 | +1.1 | 실측 | [[aa-lcr]] 83%×1.0 |

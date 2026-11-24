@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 23.4508728089378
 price_blended_usd_1m: 0.077
-output_speed_tps: 106.281334240442
+output_speed_tps: 108.122559500916
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **23.4508728
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.5 · 혼합 $0.077/1M · 106.281334240442 t/s · TTFT 16.027853559774s · 1M ctx` · 가성비 304.6
+`입력 $0.1 · 출력 $0.5 · 혼합 $0.077/1M · 108.122559500916 t/s · TTFT 15.4091599112036s · 1M ctx` · 가성비 304.6
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **23.4508728
 | 전문 지식 | 49.0 | -0.06 | 실측 | [[humanitys-last-exam]] 34.3373%×0.3 |
 | 추론 | 58.9 | +0.59 | 실측 | [[critpt]] 17.4286%×1.0, [[humanitys-last-exam]] 34.3373%×1.0 |
 | 코딩 | 66.5 | +1.1 | 실측 | [[scicode]] 51.7361%×1.0 |
-| 에이전트 | 66.5 | +1.1 | 실측 | [[gdpval]] 1374.29 Elo×1.0 |
+| 에이전트 | 66.5 | +1.1 | 실측 | [[gdpval]] 1374.09 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 61.9 | +0.79 | 실측 | [[mmmu-pro]] 79.711%×1.0 |
 | 긴문맥 | 64.9 | +0.99 | 실측 | [[aa-lcr]] 80%×1.0 |

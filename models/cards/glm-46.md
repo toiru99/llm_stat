@@ -5,7 +5,7 @@ creator: Z AI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.407
-output_speed_tps: 46.42887013067875
+output_speed_tps: 48.75551577872049
 context_window: 200000
 status: past
 size_class: Large
@@ -37,7 +37,7 @@ Z AI · Open · Large(357B) · 컨텍스트 200k · 종합지능 **None** · ⚠
 - **약점**: 코딩, 지시 따르기
 
 ## 실용 지표
-`입력 $0.55 · 출력 $2.2 · 혼합 $0.407/1M · 46.42887013067875 t/s · TTFT 4.037417957971095s · 200k ctx`
+`입력 $0.55 · 출력 $2.2 · 혼합 $0.407/1M · 48.75551577872049 t/s · TTFT 3.98626291848165s · 200k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

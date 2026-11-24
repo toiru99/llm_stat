@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 56.9986252138657
 price_blended_usd_1m: 5.88
-output_speed_tps: 46.6174178618604
+output_speed_tps: 46.0561095031948
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **56.9986252
 - **약점**: —
 
 ## 실용 지표
-`입력 $8.0 · 출력 $40.0 · 혼합 $5.88/1M · 46.6174178618604 t/s · TTFT 3.32529845130001s · 1M ctx` · 가성비 9.7
+`입력 $8.0 · 출력 $40.0 · 혼합 $5.88/1M · 46.0561095031948 t/s · TTFT 3.318233554685s · 1M ctx` · 가성비 9.7
 
 ## 레이더 8축 (평균=50 기준선)
 

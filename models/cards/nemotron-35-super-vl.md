@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: 13.6203422723141
 price_blended_usd_1m: 0.115
-output_speed_tps: 347.423031374349
+output_speed_tps: 353.529114093036
 context_window: 1000000
 status: current
 size_class: Medium
@@ -37,7 +37,7 @@ NVIDIA · Open · Medium(120B) · 컨텍스트 1M · 종합지능 **13.620342272
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.5 · 혼합 $0.115/1M · 347.423031374349 t/s · TTFT 0.974087918882903s · 1M ctx` · 가성비 118.4
+`입력 $0.15 · 출력 $0.5 · 혼합 $0.115/1M · 353.529114093036 t/s · TTFT 0.97212030957827s · 1M ctx` · 가성비 118.4
 
 ## 레이더 8축 (평균=50 기준선)
 

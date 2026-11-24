@@ -5,7 +5,7 @@ creator: Meta
 license: Open
 intelligence_index: 24.8815868992913
 price_blended_usd_1m: 0.78
-output_speed_tps: 175.823371763592
+output_speed_tps: 175.250428860946
 context_window: 1048576
 status: current
 size_class: Large
@@ -37,7 +37,7 @@ Meta · Open · Large(816B) · 컨텍스트 1M · 종합지능 **24.881586899291
 - **약점**: 긴문맥, 멀티모달
 
 ## 실용 지표
-`입력 $1.25 · 출력 $4.25 · 혼합 $0.78/1M · 175.823371763592 t/s · TTFT 1.00753435041666s · 1M ctx` · 가성비 31.9
+`입력 $1.25 · 출력 $4.25 · 혼합 $0.78/1M · 175.250428860946 t/s · TTFT 1.04108838434814s · 1M ctx` · 가성비 31.9
 
 ## 레이더 8축 (평균=50 기준선)
 

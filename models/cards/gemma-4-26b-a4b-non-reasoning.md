@@ -5,7 +5,7 @@ creator: Google
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.115
-output_speed_tps: 87.6107851683535
+output_speed_tps: 87.5045762559648
 context_window: 256000
 status: current
 size_class: Small
@@ -37,7 +37,7 @@ Google · Open · Small(25.2B) · 컨텍스트 256k · 종합지능 **None**
 - **약점**: 긴문맥, 추론
 
 ## 실용 지표
-`입력 $0.13 · 출력 $0.4 · 혼합 $0.115/1M · 87.6107851683535 t/s · TTFT 1.67110241185856s · 256k ctx`
+`입력 $0.13 · 출력 $0.4 · 혼합 $0.115/1M · 87.5045762559648 t/s · TTFT 1.65339915881353s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

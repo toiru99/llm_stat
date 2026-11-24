@@ -5,7 +5,7 @@ creator: Thinking Machines
 license: Open
 intelligence_index: 20.1315214698783
 price_blended_usd_1m: 0.0905
-output_speed_tps: 194.338667335567
+output_speed_tps: 187.433811819725
 context_window: 1024000
 status: current
 size_class: Small
@@ -37,7 +37,7 @@ Thinking Machines · Open · Small(26B) · 컨텍스트 1M · 종합지능 **20.
 - **약점**: —
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.5 · 혼합 $0.0905/1M · 194.338667335567 t/s · TTFT 1.74941203533334s · 1M ctx` · 가성비 222.4
+`입력 $0.15 · 출력 $0.5 · 혼합 $0.0905/1M · 187.433811819725 t/s · TTFT 1.75891891828333s · 1M ctx` · 가성비 222.4
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: Tencent
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.1105
-output_speed_tps: 68.5042425688382
+output_speed_tps: 68.7612174110963
 context_window: 256000
 status: past
 size_class: Large
@@ -37,7 +37,7 @@ Tencent · Open · Large(299B) · 컨텍스트 256k · 종합지능 **None** · 
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.14 · 출력 $0.58 · 혼합 $0.1105/1M · 68.5042425688382 t/s · TTFT 5.24595106891668s · 256k ctx`
+`입력 $0.14 · 출력 $0.58 · 혼합 $0.1105/1M · 68.7612174110963 t/s · TTFT 5.24018044852502s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Tencent · Open · Large(299B) · 컨텍스트 256k · 종합지능 **None** · 
 | 전문 지식 | 68.2 | +1.21 | 실측 | [[gpqa-diamond]] 89.697%×0.4, [[humanitys-last-exam]] 33.4569%×0.3 |
 | 추론 | 61.1 | +0.74 | 실측 | [[critpt]] 4.85714%×1.0, [[gpqa-diamond]] 89.697%×1.0, [[humanitys-last-exam]] 33.4569%×1.0 |
 | 코딩 | 63.9 | +0.93 | 실측 | [[scicode]] 48.6111%×1.0 |
-| 에이전트 | 54.0 | +0.26 | 실측 | [[gdpval]] 1068.94 Elo×1.0, [[tau3-banking]] 22.8866%×1.0 |
+| 에이전트 | 54.0 | +0.26 | 실측 | [[gdpval]] 1068.78 Elo×1.0, [[tau3-banking]] 22.8866%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 64.4 | +0.96 | 실측 | [[aa-lcr]] 79%×1.0 |

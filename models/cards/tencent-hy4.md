@@ -5,7 +5,7 @@ creator: Tencent
 license: Open
 intelligence_index: 34.5552385392508
 price_blended_usd_1m: 0.4463
-output_speed_tps: 93.7234653584913
+output_speed_tps: 94.0706535657622
 context_window: 1048576
 status: current
 size_class: Large
@@ -37,7 +37,7 @@ Tencent · Open · Large(774B) · 컨텍스트 1M · 종합지능 **34.555238539
 - **약점**: —
 
 ## 실용 지표
-`입력 $0.834 · 출력 $2.501 · 혼합 $0.4463/1M · 93.7234653584913 t/s · TTFT 2.76038749540522s · 1M ctx` · 가성비 77.4
+`입력 $0.834 · 출력 $2.501 · 혼합 $0.4463/1M · 94.0706535657622 t/s · TTFT 2.74821610696687s · 1M ctx` · 가성비 77.4
 
 ## 레이더 8축 (평균=50 기준선)
 

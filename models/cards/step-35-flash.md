@@ -5,7 +5,7 @@ creator: StepFun
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.064
-output_speed_tps: 126.732808940571
+output_speed_tps: 125.058100225078
 context_window: 256000
 status: past
 size_class: Large
@@ -37,7 +37,7 @@ StepFun · Open · Large(196B) · 컨텍스트 256k · 종합지능 **None** · 
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.3 · 혼합 $0.064/1M · 126.732808940571 t/s · TTFT 3.64811412043333s · 256k ctx`
+`입력 $0.1 · 출력 $0.3 · 혼합 $0.064/1M · 125.058100225078 t/s · TTFT 3.64140042180278s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

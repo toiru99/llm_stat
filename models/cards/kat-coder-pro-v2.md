@@ -46,7 +46,7 @@ KwaiKAT · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **None**
 | 전문 지식 | 58.8 | +0.59 | 실측 | [[gpqa-diamond]] 85.4545%×0.4, [[humanitys-last-exam]] 16.126%×0.3 |
 | 추론 | 50.6 | +0.04 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 85.4545%×1.0, [[humanitys-last-exam]] 16.126%×1.0 |
 | 코딩 | 67.0 | +1.13 | 실측 | [[terminal-bench]] 49.2424%×0.5 |
-| 에이전트 | 54.7 | +0.31 | 실측 | [[gdpval]] 741.81 Elo×1.0, [[tau2-bench]] 89.4737%×1.0, [[tau3-banking]] 4.53608%×1.0, [[terminal-bench]] 49.2424%×1.0 |
+| 에이전트 | 54.7 | +0.31 | 실측 | [[gdpval]] 741.8 Elo×1.0, [[tau2-bench]] 89.4737%×1.0, [[tau3-banking]] 4.53608%×1.0, [[terminal-bench]] 49.2424%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 61.3 | +0.75 | 실측 | [[aa-lcr]] 73%×1.0 |

@@ -5,7 +5,7 @@ creator: Upstage
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.15
-output_speed_tps: 54.0278871067911
+output_speed_tps: 54.0576718999561
 context_window: 4096
 status: past
 size_class: Small
@@ -37,7 +37,7 @@ Upstage · Open · Small(10.7B) · 컨텍스트 4k · 종합지능 **None** · �
 - **약점**: —
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.15 · 혼합 $0.15/1M · 54.0278871067911 t/s · TTFT 0.87755551010008s · 4k ctx`
+`입력 $0.15 · 출력 $0.15 · 혼합 $0.15/1M · 54.0576718999561 t/s · TTFT 0.872910174583268s · 4k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

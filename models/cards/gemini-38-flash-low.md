@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 22.548302237854
 price_blended_usd_1m: 0.5775
-output_speed_tps: 97.1195297563953
+output_speed_tps: 88.5859155172692
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **22.5483022
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.75 · 출력 $3.75 · 혼합 $0.5775/1M · 97.1195297563953 t/s · TTFT 5.83947103666667s · 1M ctx` · 가성비 39.0
+`입력 $0.75 · 출력 $3.75 · 혼합 $0.5775/1M · 88.5859155172692 t/s · TTFT 4.12689174942777s · 1M ctx` · 가성비 39.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **22.5483022
 | 전문 지식 | 70.9 | +1.39 | 실측 | [[gpqa-diamond]] 92.0202%×0.4, [[humanitys-last-exam]] 37.0714%×0.3 |
 | 추론 | 62.4 | +0.83 | 실측 | [[critpt]] 4%×1.0, [[gpqa-diamond]] 92.0202%×1.0, [[humanitys-last-exam]] 37.0714%×1.0 |
 | 코딩 | 69.2 | +1.28 | 실측 | [[scicode]] 54.9769%×1.0 |
-| 에이전트 | 62.2 | +0.81 | 실측 | [[gdpval]] 1314.93 Elo×1.0, [[tau3-banking]] 33.1959%×1.0 |
+| 에이전트 | 62.2 | +0.81 | 실측 | [[gdpval]] 1315.08 Elo×1.0, [[tau3-banking]] 33.1959%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 66.8 | +1.12 | 실측 | [[mmmu-pro]] 84.5087%×1.0 |
 | 긴문맥 | 65.3 | +1.02 | 실측 | [[aa-lcr]] 80.6667%×1.0 |

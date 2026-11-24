@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 1.3375
-output_speed_tps: 122.705701052086
+output_speed_tps: 122.663845883149
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 - **약점**: 지시 따르기, 에이전트
 
 ## 실용 지표
-`입력 $1.25 · 출력 $10.0 · 혼합 $1.3375/1M · 122.705701052086 t/s · TTFT 12.1955144166999s · 1M ctx`
+`입력 $1.25 · 출력 $10.0 · 혼합 $1.3375/1M · 122.663845883149 t/s · TTFT 12.0751628520083s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 | 전문 지식 | 61.0 | +0.73 | 실측 | [[gpqa-diamond]] 84.4444%×0.4, [[humanitys-last-exam]] 22.5209%×0.3 |
 | 추론 | 54.3 | +0.29 | 실측 | [[critpt]] 2.57143%×1.0, [[gpqa-diamond]] 84.4444%×1.0, [[humanitys-last-exam]] 22.5209%×1.0 |
 | 코딩 | 57.9 | +0.52 | 실측 | [[scicode]] 46.2963%×1.0, [[terminal-bench]] 26.5152%×0.5 |
-| 에이전트 | 45.1 | -0.33 | 실측 | [[gdpval]] 462.73 Elo×1.0, [[tau2-bench]] 54.0936%×1.0, [[tau3-banking]] 9.69072%×1.0, [[terminal-bench]] 26.5152%×1.0 |
+| 에이전트 | 45.1 | -0.33 | 실측 | [[gdpval]] 462.75 Elo×1.0, [[tau2-bench]] 54.0936%×1.0, [[tau3-banking]] 9.69072%×1.0, [[terminal-bench]] 26.5152%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 57.0 | +0.47 | 실측 | [[mmmu-pro]] 74.9133%×1.0 |
 | 긴문맥 | 59.2 | +0.61 | 실측 | [[aa-lcr]] 69%×1.0 |

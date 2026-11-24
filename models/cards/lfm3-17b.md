@@ -5,7 +5,7 @@ creator: Liquid AI
 license: Open
 intelligence_index: 5.99389916662478
 price_blended_usd_1m: 0.05
-output_speed_tps: 335.355922184734
+output_speed_tps: 336.524108133462
 context_window: 262144
 status: current
 size_class: Tiny
@@ -37,7 +37,7 @@ Liquid AI · Open · Tiny(1.7B) · 컨텍스트 262k · 종합지능 **5.9938991
 - **약점**: —
 
 ## 실용 지표
-`입력 $0.08 · 출력 $0.2 · 혼합 $0.05/1M · 335.355922184734 t/s · TTFT 0.422076248664549s · 262k ctx` · 가성비 119.9
+`입력 $0.08 · 출력 $0.2 · 혼합 $0.05/1M · 336.524108133462 t/s · TTFT 0.419600927199874s · 262k ctx` · 가성비 119.9
 
 ## 레이더 8축 (평균=50 기준선)
 

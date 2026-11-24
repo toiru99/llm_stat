@@ -96,7 +96,7 @@
 * [Step 5 Preview](cards/step-5-preview.md) - 종합지능 28.5283090216016
 * [JoyAI-VL-Preview](cards/joyai-vl-preview.md) - 종합지능 28.0361254876924
 * [GPT-6 Luna (max)](cards/gpt-6-luna-max.md) - 종합지능 27.8552004938153
-* [GLM-5.3-Flash](cards/glm-53-flash.md) - 종합지능 27.803889160883
+* [GLM-5.3-Flash (max)](cards/glm-53-flash-max.md) - 종합지능 27.803889160883
 * [Gemini 4 Hydrogen (low)](cards/gemini-4-hydrogen-low.md) - 종합지능 26.8936694361562
 * [MiMo-V2.6-Flash](cards/mimo-v26-flash.md) - 종합지능 26.7276981444568
 * [Mistral Large 4 (high)](cards/mistral-large-4-high.md) - 종합지능 26.1249946754784

@@ -5,7 +5,7 @@ creator: Mistral
 license: Proprietary
 intelligence_index: 25.336451488165
 price_blended_usd_1m: 0.399
-output_speed_tps: 59.618122577901
+output_speed_tps: 65.3101501957757
 context_window: 524288
 status: past
 size_class: Large
@@ -37,7 +37,7 @@ Mistral · Proprietary · Large · 컨텍스트 524k · 종합지능 **25.336451
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.7 · 출력 $2.1 · 혼합 $0.399/1M · 59.618122577901 t/s · TTFT 2.66843463998337s · 524k ctx` · 가성비 63.5
+`입력 $0.7 · 출력 $2.1 · 혼합 $0.399/1M · 65.3101501957757 t/s · TTFT 2.61480838520837s · 524k ctx` · 가성비 63.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Mistral · Proprietary · Large · 컨텍스트 524k · 종합지능 **25.336451
 | 전문 지식 | 49.7 | -0.02 | 실측 | [[humanitys-last-exam]] 35.0324%×0.3 |
 | 추론 | 52.1 | +0.14 | 실측 | [[critpt]] 10.5714%×1.0, [[humanitys-last-exam]] 35.0324%×1.0 |
 | 코딩 | 68.5 | +1.24 | 실측 | [[scicode]] 54.1667%×1.0 |
-| 에이전트 | 67.8 | +1.19 | 실측 | [[gdpval]] 1431.08 Elo×1.0 |
+| 에이전트 | 67.8 | +1.19 | 실측 | [[gdpval]] 1431.16 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 58.6 | +0.57 | 실측 | [[mmmu-pro]] 76.4162%×1.0 |
 | 긴문맥 | 65.6 | +1.04 | 실측 | [[aa-lcr]] 81.3333%×1.0 |

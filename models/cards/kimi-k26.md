@@ -5,7 +5,7 @@ creator: Kimi
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.702
-output_speed_tps: 38.562299402289
+output_speed_tps: 37.8809699301855
 context_window: 256000
 status: past
 size_class: Large
@@ -37,7 +37,7 @@ Kimi · Open · Large(1000B) · 컨텍스트 256k · 종합지능 **None** · �
 - **약점**: 멀티모달, 에이전트
 
 ## 실용 지표
-`입력 $0.95 · 출력 $4.0 · 혼합 $0.702/1M · 38.562299402289 t/s · TTFT 8.38027804220003s · 256k ctx`
+`입력 $0.95 · 출력 $4.0 · 혼합 $0.702/1M · 37.8809699301855 t/s · TTFT 8.19148483879168s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Kimi · Open · Large(1000B) · 컨텍스트 256k · 종합지능 **None** · �
 | 전문 지식 | 70.6 | +1.37 | 실측 | [[gpqa-diamond]] 91.1111%×0.4, [[humanitys-last-exam]] 37.4884%×0.3 |
 | 추론 | 65.1 | +1.01 | 실측 | [[critpt]] 8%×1.0, [[gpqa-diamond]] 91.1111%×1.0, [[humanitys-last-exam]] 37.4884%×1.0 |
 | 코딩 | 65.2 | +1.01 | 실측 | [[scicode]] 51.5046%×1.0, [[terminal-bench]] 43.9394%×0.5 |
-| 에이전트 | 61.1 | +0.74 | 실측 | [[gdpval]] 1046.37 Elo×1.0, [[tau2-bench]] 95.9064%×1.0, [[tau3-banking]] 23.299%×1.0, [[terminal-bench]] 43.9394%×1.0 |
+| 에이전트 | 61.1 | +0.74 | 실측 | [[gdpval]] 1046.72 Elo×1.0, [[tau2-bench]] 95.9064%×1.0, [[tau3-banking]] 23.299%×1.0, [[terminal-bench]] 43.9394%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 61.6 | +0.77 | 실측 | [[mmmu-pro]] 79.3642%×1.0 |
 | 긴문맥 | 65.4 | +1.03 | 실측 | [[aa-lcr]] 81%×1.0 |

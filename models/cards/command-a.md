@@ -5,7 +5,7 @@ creator: Cohere
 license: Open
 intelligence_index: 6.24120025576958
 price_blended_usd_1m: 0
-output_speed_tps: 212.89145235599
+output_speed_tps: 209.802638382244
 context_window: 192000
 status: current
 size_class: Large
@@ -37,7 +37,7 @@ Cohere · Open · Large(218B) · 컨텍스트 192k · 종합지능 **6.241200255
 - **약점**: 추론, 멀티모달
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 212.89145235599 t/s · TTFT 0.94101293946436s · 192k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 209.802638382244 t/s · TTFT 0.927145695861394s · 192k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Cohere · Open · Large(218B) · 컨텍스트 192k · 종합지능 **6.241200255
 | 전문 지식 | 52.5 | +0.16 | 실측 | [[gpqa-diamond]] 76.0606%×0.4, [[humanitys-last-exam]] 11.9555%×0.3 |
 | 추론 | 46.7 | -0.22 | 실측 | [[critpt]] 0.285714%×1.0, [[gpqa-diamond]] 76.0606%×1.0, [[humanitys-last-exam]] 11.9555%×1.0 |
 | 코딩 | 53.2 | +0.21 | 실측 | [[scicode]] 38.5417%×1.0, [[terminal-bench]] 25%×0.5 |
-| 에이전트 | 47.7 | -0.15 | 실측 | [[gdpval]] 521.53 Elo×1.0, [[tau2-bench]] 80.7018%×1.0, [[tau3-banking]] 5.97938%×1.0, [[terminal-bench]] 25%×1.0 |
+| 에이전트 | 47.7 | -0.15 | 실측 | [[gdpval]] 521.55 Elo×1.0, [[tau2-bench]] 80.7018%×1.0, [[tau3-banking]] 5.97938%×1.0, [[terminal-bench]] 25%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 45.1 | -0.33 | 실측 | [[mmmu-pro]] 63.237%×1.0 |
 | 긴문맥 | 50.8 | +0.05 | 실측 | [[aa-lcr]] 52.6667%×1.0 |

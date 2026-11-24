@@ -5,7 +5,7 @@ creator: Institute of Foundation Models
 license: Open
 intelligence_index: 17.8202731734027
 price_blended_usd_1m: 0
-output_speed_tps: 276.576401647397
+output_speed_tps: 294.712030586186
 context_window: 524288
 status: current
 size_class: Large
@@ -37,7 +37,7 @@ Institute of Foundation Models · Open · Large(375B) · 컨텍스트 524k · �
 - **약점**: 추론, 코딩
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 276.576401647397 t/s · TTFT 3.0227457501979s · 524k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 294.712030586186 t/s · TTFT 3.03202238543008s · 524k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Institute of Foundation Models · Open · Large(375B) · 컨텍스트 524k · �
 | 전문 지식 | 66.4 | +1.09 | 실측 | [[gpqa-diamond]] 87.2727%×0.4, [[humanitys-last-exam]] 31.9741%×0.3 |
 | 추론 | 59.7 | +0.65 | 실측 | [[critpt]] 4.57143%×1.0, [[gpqa-diamond]] 87.2727%×1.0, [[humanitys-last-exam]] 31.9741%×1.0 |
 | 코딩 | 59.2 | +0.61 | 실측 | [[scicode]] 42.9398%×1.0 |
-| 에이전트 | 63.3 | +0.88 | 실측 | [[gdpval]] 1363.18 Elo×1.0, [[tau3-banking]] 34.2268%×1.0 |
+| 에이전트 | 63.3 | +0.88 | 실측 | [[gdpval]] 1363.76 Elo×1.0, [[tau3-banking]] 34.2268%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 64.9 | +0.99 | 실측 | [[aa-lcr]] 80%×1.0 |

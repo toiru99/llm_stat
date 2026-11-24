@@ -5,7 +5,7 @@ creator: Meta
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.78
-output_speed_tps: 202.789529856927
+output_speed_tps: 209.847093735116
 context_window: 1048576
 status: past
 size_class: Unknown
@@ -37,7 +37,7 @@ Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · �
 - **약점**: 긴문맥, 에이전트
 
 ## 실용 지표
-`입력 $1.25 · 출력 $4.25 · 혼합 $0.78/1M · 202.789529856927 t/s · TTFT 10.6557233958166s · 1M ctx`
+`입력 $1.25 · 출력 $4.25 · 혼합 $0.78/1M · 209.847093735116 t/s · TTFT 10.741792878175s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · �
 | 전문 지식 | 73.7 | +1.58 | 실측 | [[gpqa-diamond]] 89.798%×0.4, [[humanitys-last-exam]] 46.2002%×0.3 |
 | 추론 | 72.6 | +1.51 | 실측 | [[critpt]] 15.1429%×1.0, [[gpqa-diamond]] 89.798%×1.0, [[humanitys-last-exam]] 46.2002%×1.0 |
 | 코딩 | 72.4 | +1.49 | 실측 | [[scicode]] 58.7963%×1.0 |
-| 에이전트 | 60.3 | +0.68 | 실측 | [[gdpval]] 1215.8 Elo×1.0, [[tau3-banking]] 31.7526%×1.0 |
+| 에이전트 | 60.3 | +0.68 | 실측 | [[gdpval]] 1215.43 Elo×1.0, [[tau3-banking]] 31.7526%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 63.7 | +0.91 | 실측 | [[aa-lcr]] 77.6667%×1.0 |

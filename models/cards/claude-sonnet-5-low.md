@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 1.54
-output_speed_tps: 95.4220618299249
+output_speed_tps: 96.6394134227372
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 95.4220618299249 t/s · TTFT 2.02658130216246s · 1M ctx`
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 96.6394134227372 t/s · TTFT 2.2980632449826s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 | 전문 지식 | 36.7 | -0.89 | 실측 | [[humanitys-last-exam]] 21.9184%×0.3 |
 | 추론 | 39.2 | -0.72 | 실측 | [[critpt]] 4.57143%×1.0, [[humanitys-last-exam]] 21.9184%×1.0 |
 | 코딩 | 65.2 | +1.01 | 실측 | [[scicode]] 50.1157%×1.0 |
-| 에이전트 | 59.5 | +0.64 | 실측 | [[gdpval]] 1075.06 Elo×1.0 |
+| 에이전트 | 59.5 | +0.64 | 실측 | [[gdpval]] 1074.97 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 58.4 | +0.56 | 실측 | [[aa-lcr]] 67.3333%×1.0 |

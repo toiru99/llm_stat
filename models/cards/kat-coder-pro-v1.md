@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 63.1, z: 0.79, r: 61.9, estimated: false }  # 전문 지식
   reasoning: { s: 40.5, z: 0.27, r: 54.0, estimated: false }  # 추론
   coding: { s: 13.8, z: -0.92, r: 36.2, estimated: false }  # 코딩
-  agentic: { s: 51.1, z: 0.14, r: 52.1, estimated: false }  # 에이전트
+  agentic: { s: 51.2, z: 0.14, r: 52.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 43.6, z: -0.43, r: 43.5, estimated: false }  # 긴문맥
@@ -46,7 +46,7 @@ KwaiKAT · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **None** 
 | 전문 지식 | 61.9 | +0.79 | 실측 | [[gpqa-diamond]] 76.3636%×0.4, [[humanitys-last-exam]] 33.6423%×0.3 |
 | 추론 | 54.0 | +0.27 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 76.3636%×1.0, [[humanitys-last-exam]] 33.6423%×1.0 |
 | 코딩 | 36.2 | -0.92 | 실측 | [[terminal-bench]] 9.09091%×0.5 |
-| 에이전트 | 52.1 | +0.14 | 실측 | [[gdpval]] 738 Elo×1.0, [[tau2-bench]] 88.5965%×1.0, [[terminal-bench]] 9.09091%×1.0 |
+| 에이전트 | 52.1 | +0.14 | 실측 | [[gdpval]] 738.26 Elo×1.0, [[tau2-bench]] 88.5965%×1.0, [[terminal-bench]] 9.09091%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 43.5 | -0.43 | 실측 | [[aa-lcr]] 38.6667%×1.0 |

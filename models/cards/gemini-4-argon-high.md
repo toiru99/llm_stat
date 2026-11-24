@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 50.4121935905389
 price_blended_usd_1m: 2.94
-output_speed_tps: 80.7756040620811
+output_speed_tps: 82.7876742679338
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 76.5, z: 1.45, r: 71.7, estimated: false }  # 전문 지식
   reasoning: { s: 76.3, z: 2.04, r: 80.6, estimated: false }  # 추론
   coding: { s: 90.3, z: 1.66, r: 74.9, estimated: false }  # 코딩
-  agentic: { s: 89.7, z: 1.5, r: 72.6, estimated: false }  # 에이전트
+  agentic: { s: 89.8, z: 1.5, r: 72.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 89.8, z: 0.98, r: 64.7, estimated: false }  # 긴문맥
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **50.4121935
 - **약점**: 전문 지식, 긴문맥
 
 ## 실용 지표
-`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 80.7756040620811 t/s · TTFT 35.9361859587861s · 1M ctx` · 가성비 17.1
+`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 82.7876742679338 t/s · TTFT 35.9259206706453s · 1M ctx` · 가성비 17.1
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **50.4121935
 | 전문 지식 | 71.7 | +1.45 | 실측 | [[humanitys-last-exam]] 57.0899%×0.3 |
 | 추론 | 80.6 | +2.04 | 실측 | [[critpt]] 27.1429%×1.0, [[humanitys-last-exam]] 57.0899%×1.0 |
 | 코딩 | 74.9 | +1.66 | 실측 | [[scicode]] 61.8056%×1.0 |
-| 에이전트 | 72.6 | +1.5 | 실측 | [[gdpval]] 1633.51 Elo×1.0 |
+| 에이전트 | 72.6 | +1.5 | 실측 | [[gdpval]] 1634.15 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 64.7 | +0.98 | 실측 | [[aa-lcr]] 79.6667%×1.0 |

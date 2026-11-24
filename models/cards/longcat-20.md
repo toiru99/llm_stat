@@ -5,7 +5,7 @@ creator: LongCat
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.4555
-output_speed_tps: 55.4248651089196
+output_speed_tps: 54.9786532147744
 context_window: 1000000
 status: current
 size_class: Large
@@ -37,7 +37,7 @@ LongCat · Open · Large(1600B) · 컨텍스트 1M · 종합지능 **None**
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.75 · 출력 $2.95 · 혼합 $0.4555/1M · 55.4248651089196 t/s · TTFT 3.22880771654067s · 1M ctx`
+`입력 $0.75 · 출력 $2.95 · 혼합 $0.4555/1M · 54.9786532147744 t/s · TTFT 3.18132639539569s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ LongCat · Open · Large(1600B) · 컨텍스트 1M · 종합지능 **None**
 | 전문 지식 | 62.7 | +0.84 | 실측 | [[gpqa-diamond]] 77.9798%×0.4, [[humanitys-last-exam]] 33.6886%×0.3 |
 | 추론 | 56.2 | +0.42 | 실측 | [[critpt]] 2.57143%×1.0, [[gpqa-diamond]] 77.9798%×1.0, [[humanitys-last-exam]] 33.6886%×1.0 |
 | 코딩 | 53.7 | +0.25 | 실측 | [[scicode]] 36.3426%×1.0 |
-| 에이전트 | 46.7 | -0.22 | 실측 | [[gdpval]] 876.13 Elo×1.0, [[tau3-banking]] 13.1959%×1.0 |
+| 에이전트 | 46.7 | -0.22 | 실측 | [[gdpval]] 876.1 Elo×1.0, [[tau3-banking]] 13.1959%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 57.1 | +0.48 | 실측 | [[aa-lcr]] 65%×1.0 |

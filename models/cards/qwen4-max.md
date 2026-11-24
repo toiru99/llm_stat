@@ -5,7 +5,7 @@ creator: Alibaba
 license: Proprietary
 intelligence_index: 42.8914543287565
 price_blended_usd_1m: 0.8025
-output_speed_tps: 65.1174928247675
+output_speed_tps: 71.5026221961859
 context_window: 983616
 status: current
 size_class: Unknown
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 983k · 종합지능 **42.8914
 - **약점**: —
 
 ## 실용 지표
-`입력 $1.5 · 출력 $4.5 · 혼합 $0.8025/1M · 65.1174928247675 t/s · TTFT 5.26028890400379s · 983k ctx` · 가성비 53.4
+`입력 $1.5 · 출력 $4.5 · 혼합 $0.8025/1M · 71.5026221961859 t/s · TTFT 5.40570003452025s · 983k ctx` · 가성비 53.4
 
 ## 레이더 8축 (평균=50 기준선)
 

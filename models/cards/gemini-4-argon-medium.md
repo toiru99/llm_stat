@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 47.6040598289046
 price_blended_usd_1m: 2.94
-output_speed_tps: 71.8741201661893
+output_speed_tps: 68.9497701760427
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **47.6040598
 - **약점**: 전문 지식, 긴문맥
 
 ## 실용 지표
-`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 71.8741201661893 t/s · TTFT 12.1200457391249s · 1M ctx` · 가성비 16.2
+`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 68.9497701760427 t/s · TTFT 11.0736207912378s · 1M ctx` · 가성비 16.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **47.6040598
 | 전문 지식 | 64.5 | +0.97 | 실측 | [[humanitys-last-exam]] 49.9073%×0.3 |
 | 추론 | 72.8 | +1.52 | 실측 | [[critpt]] 23.1429%×1.0, [[humanitys-last-exam]] 49.9073%×1.0 |
 | 코딩 | 72.5 | +1.5 | 실측 | [[scicode]] 58.912%×1.0 |
-| 에이전트 | 71.3 | +1.42 | 실측 | [[gdpval]] 1578.39 Elo×1.0 |
+| 에이전트 | 71.3 | +1.42 | 실측 | [[gdpval]] 1577.96 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 70.7 | +1.38 | 실측 | [[mmmu-pro]] 88.3237%×1.0 |
 | 긴문맥 | 64.1 | +0.94 | 실측 | [[aa-lcr]] 78.3333%×1.0 |

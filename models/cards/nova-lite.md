@@ -5,7 +5,7 @@ creator: Amazon
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.0465
-output_speed_tps: 122.097406182011
+output_speed_tps: 125.778383758613
 context_window: 300000
 status: past
 size_class: Unknown
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 300k · 종합지능 **None** �
 - **약점**: 코딩, 멀티모달
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.24 · 혼합 $0.0465/1M · 122.097406182011 t/s · TTFT 1.69409508798337s · 300k ctx`
+`입력 $0.06 · 출력 $0.24 · 혼합 $0.0465/1M · 125.778383758613 t/s · TTFT 1.6952041126195s · 300k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: InclusionAI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.183
-output_speed_tps: 32.9533331428957
+output_speed_tps: 31.7803840601303
 context_window: 128000
 status: past
 size_class: Medium
@@ -37,7 +37,7 @@ InclusionAI · Open · Medium(103B) · 컨텍스트 128k · 종합지능 **None*
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.14 · 출력 $0.57 · 혼합 $0.183/1M · 32.9533331428957 t/s · TTFT 4.2009931757s · 128k ctx`
+`입력 $0.14 · 출력 $0.57 · 혼합 $0.183/1M · 31.7803840601303 t/s · TTFT 4.13604781231999s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

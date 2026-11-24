@@ -5,7 +5,7 @@ creator: DeepSeek
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.1842
-output_speed_tps: 223.972771101265
+output_speed_tps: 224.348241225395
 context_window: 1000000
 status: past
 size_class: Large
@@ -37,7 +37,7 @@ DeepSeek · Open · Large(552B) · 컨텍스트 1M · 종합지능 **None** · �
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.1842/1M · 223.972771101265 t/s · TTFT 0.907480868833265s · 1M ctx`
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.1842/1M · 224.348241225395 t/s · TTFT 0.893391252950019s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

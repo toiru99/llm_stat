@@ -5,7 +5,7 @@ creator: Meta
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.053
-output_speed_tps: 133.9289217376045
+output_speed_tps: 131.02864943144402
 context_window: 128000
 status: past
 size_class: Small
@@ -37,7 +37,7 @@ Meta · Open · Small(8B) · 컨텍스트 128k · 종합지능 **None** · ⚠�
 - **약점**: 에이전트, 전문 지식
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.08 · 혼합 $0.053/1M · 133.9289217376045 t/s · TTFT 1.453590775735s · 128k ctx`
+`입력 $0.05 · 출력 $0.08 · 혼합 $0.053/1M · 131.02864943144402 t/s · TTFT 1.45527231099452s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Meta · Open · Small(8B) · 컨텍스트 128k · 종합지능 **None** · ⚠�
 | 전문 지식 | 25.4 | -1.64 | 실측 | [[gpqa-diamond]] 25.8586%×0.4, [[humanitys-last-exam]] 5.29%×0.3 |
 | 추론 | 29.8 | -1.34 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 25.8586%×1.0, [[humanitys-last-exam]] 5.29%×1.0 |
 | 코딩 | 29.8 | -1.35 | 실측 | [[terminal-bench]] 0.757576%×0.5 |
-| 에이전트 | 28.4 | -1.44 | 실측 | [[gdpval]] -379.94 Elo×1.0, [[tau2-bench]] 16.3743%×1.0, [[terminal-bench]] 0.757576%×1.0 |
+| 에이전트 | 28.4 | -1.44 | 실측 | [[gdpval]] -379.93 Elo×1.0, [[tau2-bench]] 16.3743%×1.0, [[terminal-bench]] 0.757576%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 32.8 | -1.15 | 실측 | [[aa-lcr]] 18%×1.0 |

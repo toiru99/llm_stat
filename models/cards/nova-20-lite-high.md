@@ -5,7 +5,7 @@ creator: Amazon
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.52
-output_speed_tps: 142.878448317451
+output_speed_tps: 143.175967203037
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None**
 - **약점**: 멀티모달, 코딩
 
 ## 실용 지표
-`입력 $0.3 · 출력 $2.5 · 혼합 $0.52/1M · 142.878448317451 t/s · TTFT 18.3560971805229s · 1M ctx`
+`입력 $0.3 · 출력 $2.5 · 혼합 $0.52/1M · 143.175967203037 t/s · TTFT 18.3276923964449s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None**
 | 전문 지식 | 54.8 | +0.32 | 실측 | [[gpqa-diamond]] 81.1111%×0.4, [[humanitys-last-exam]] 11.6311%×0.3 |
 | 추론 | 48.1 | -0.13 | 실측 | [[critpt]] 0.285714%×1.0, [[gpqa-diamond]] 81.1111%×1.0, [[humanitys-last-exam]] 11.6311%×1.0 |
 | 코딩 | 42.0 | -0.53 | 실측 | [[terminal-bench]] 16.6667%×0.5 |
-| 에이전트 | 48.5 | -0.1 | 실측 | [[gdpval]] 373.24 Elo×1.0, [[tau2-bench]] 72.807%×1.0, [[terminal-bench]] 16.6667%×1.0 |
+| 에이전트 | 48.5 | -0.1 | 실측 | [[gdpval]] 373.26 Elo×1.0, [[tau2-bench]] 72.807%×1.0, [[terminal-bench]] 16.6667%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 45.6 | -0.29 | 실측 | [[mmmu-pro]] 63.7572%×1.0 |
 | 긴문맥 | 54.7 | +0.32 | 실측 | [[aa-lcr]] 60.3333%×1.0 |

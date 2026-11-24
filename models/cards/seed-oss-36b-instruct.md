@@ -5,7 +5,7 @@ creator: ByteDance Seed
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.246
-output_speed_tps: 36.3931704756366
+output_speed_tps: 36.875647731645
 context_window: 512000
 status: past
 size_class: Small
@@ -37,7 +37,7 @@ ByteDance Seed · Open · Small(36.2B) · 컨텍스트 512k · 종합지능 **No
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $0.21 · 출력 $0.57 · 혼합 $0.246/1M · 36.3931704756366 t/s · TTFT 6.35516385091667s · 512k ctx`
+`입력 $0.21 · 출력 $0.57 · 혼합 $0.246/1M · 36.875647731645 t/s · TTFT 6.28488376846945s · 512k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

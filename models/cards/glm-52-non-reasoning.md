@@ -5,7 +5,7 @@ creator: Z AI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.8845
-output_speed_tps: 134.2736534321405
+output_speed_tps: 133.06105335794348
 context_window: 1000000
 status: past
 size_class: Large
@@ -37,7 +37,7 @@ Z AI · Open · Large(753B) · 컨텍스트 1M · 종합지능 **None** · ⚠�
 - **약점**: 추론, 긴문맥
 
 ## 실용 지표
-`입력 $1.4 · 출력 $4.4 · 혼합 $0.8845/1M · 134.2736534321405 t/s · TTFT 2.02556855083333s · 1M ctx`
+`입력 $1.4 · 출력 $4.4 · 혼합 $0.8845/1M · 133.06105335794348 t/s · TTFT 2.0131945470680552s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Z AI · Open · Large(753B) · 컨텍스트 1M · 종합지능 **None** · ⚠�
 | 전문 지식 | 47.9 | -0.14 | 실측 | [[gpqa-diamond]] 68.5859%×0.4, [[humanitys-last-exam]] 9.77757%×0.3 |
 | 추론 | 45.8 | -0.28 | 실측 | [[critpt]] 3.14286%×1.0, [[gpqa-diamond]] 68.5859%×1.0, [[humanitys-last-exam]] 9.77757%×1.0 |
 | 코딩 | — | — | 측정 안 됨 | — |
-| 에이전트 | 52.9 | +0.19 | 실측 | [[gdpval]] 1248.71 Elo×1.0, [[tau3-banking]] 16.701%×1.0 |
+| 에이전트 | 52.9 | +0.19 | 실측 | [[gdpval]] 1248.51 Elo×1.0, [[tau3-banking]] 16.701%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 45.4 | -0.31 | 실측 | [[aa-lcr]] 42.3333%×1.0 |

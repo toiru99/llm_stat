@@ -5,7 +5,7 @@ creator: Sarvam
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.0436
-output_speed_tps: 259.235950163003
+output_speed_tps: 250.694176382451
 context_window: 128000
 status: current
 size_class: Medium
@@ -37,7 +37,7 @@ Sarvam · Open · Medium(106B) · 컨텍스트 128k · 종합지능 **None**
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
-`입력 $0.042 · 출력 $0.17 · 혼합 $0.0436/1M · 259.235950163003 t/s · TTFT 2.31726292351687s · 128k ctx`
+`입력 $0.042 · 출력 $0.17 · 혼합 $0.0436/1M · 250.694176382451 t/s · TTFT 2.30912736997048s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

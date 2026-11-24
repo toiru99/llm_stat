@@ -5,7 +5,7 @@ creator: Celeris
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.124
-output_speed_tps: 745.400710770946
+output_speed_tps: 729.838456542534
 context_window: 131072
 status: current
 size_class: Unknown
@@ -37,7 +37,7 @@ Celeris · Proprietary · Unknown · 컨텍스트 131k · 종합지능 **None**
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.7 · 혼합 $0.124/1M · 745.400710770946 t/s · TTFT 0.703504000991305s · 131k ctx`
+`입력 $0.2 · 출력 $0.7 · 혼합 $0.124/1M · 729.838456542534 t/s · TTFT 0.691914722139527s · 131k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Celeris · Proprietary · Unknown · 컨텍스트 131k · 종합지능 **None**
 | 전문 지식 | 44.0 | -0.4 | 실측 | [[gpqa-diamond]] 63.1313%×0.4, [[humanitys-last-exam]] 6.81186%×0.3 |
 | 추론 | 41.1 | -0.6 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 63.1313%×1.0, [[humanitys-last-exam]] 6.81186%×1.0 |
 | 코딩 | 41.5 | -0.57 | 실측 | [[scicode]] 21.6435%×1.0 |
-| 에이전트 | 35.3 | -0.98 | 실측 | [[gdpval]] 309.13 Elo×1.0, [[tau3-banking]] 3.91753%×1.0 |
+| 에이전트 | 35.3 | -0.98 | 실측 | [[gdpval]] 309.14 Elo×1.0, [[tau3-banking]] 3.91753%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 43.2 | -0.46 | 실측 | [[aa-lcr]] 38%×1.0 |

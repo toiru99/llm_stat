@@ -5,7 +5,7 @@ creator: InclusionAI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0
-output_speed_tps: 172.622190808753
+output_speed_tps: 170.482098015764
 context_window: 262144
 status: current
 size_class: Small
@@ -37,7 +37,7 @@ InclusionAI · Open · Small(7.9B) · 컨텍스트 262k · 종합지능 **None**
 - **약점**: 추론, 코딩
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 172.622190808753 t/s · TTFT 3.6175140860701s · 262k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 170.482098015764 t/s · TTFT 3.63216096315042s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ InclusionAI · Open · Small(7.9B) · 컨텍스트 262k · 종합지능 **None**
 | 전문 지식 | 50.1 | +0.01 | 실측 | [[gpqa-diamond]] 73.4343%×0.4, [[humanitys-last-exam]] 9.31418%×0.3 |
 | 추론 | 44.9 | -0.34 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 73.4343%×1.0, [[humanitys-last-exam]] 9.31418%×1.0 |
 | 코딩 | 43.6 | -0.43 | 실측 | [[scicode]] 24.1898%×1.0 |
-| 에이전트 | 47.1 | -0.2 | 실측 | [[gdpval]] 567.85 Elo×1.0, [[tau3-banking]] 20.8247%×1.0 |
+| 에이전트 | 47.1 | -0.2 | 실측 | [[gdpval]] 567.87 Elo×1.0, [[tau3-banking]] 20.8247%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 54.7 | +0.32 | 실측 | [[aa-lcr]] 60.3333%×1.0 |

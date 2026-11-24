@@ -5,7 +5,7 @@ creator: Alibaba
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.296
-output_speed_tps: 55.4542273921116
+output_speed_tps: 55.1277634158525
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None**
 - **약점**: 긴문맥, 에이전트
 
 ## 실용 지표
-`입력 $0.4 · 출력 $1.6 · 혼합 $0.296/1M · 55.4542273921116 t/s · TTFT 2.84881600005412s · 1M ctx`
+`입력 $0.4 · 출력 $1.6 · 혼합 $0.296/1M · 55.1277634158525 t/s · TTFT 2.8040981228457s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None**
 | 전문 지식 | 69.3 | +1.29 | 실측 | [[gpqa-diamond]] 90%×0.4, [[humanitys-last-exam]] 35.6348%×0.3 |
 | 추론 | 64.9 | +1.0 | 실측 | [[critpt]] 9.14286%×1.0, [[gpqa-diamond]] 90%×1.0, [[humanitys-last-exam]] 35.6348%×1.0 |
 | 코딩 | 63.0 | +0.86 | 실측 | [[scicode]] 46.0648%×1.0, [[terminal-bench]] 46.9697%×0.5 |
-| 에이전트 | 58.3 | +0.55 | 실측 | [[gdpval]] 774.43 Elo×1.0, [[tau2-bench]] 92.9825%×1.0, [[tau3-banking]] 17.5258%×1.0, [[terminal-bench]] 46.9697%×1.0 |
+| 에이전트 | 58.3 | +0.55 | 실측 | [[gdpval]] 774.45 Elo×1.0, [[tau2-bench]] 92.9825%×1.0, [[tau3-banking]] 17.5258%×1.0, [[terminal-bench]] 46.9697%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 62.7 | +0.85 | 실측 | [[mmmu-pro]] 80.4624%×1.0 |
 | 긴문맥 | 61.3 | +0.75 | 실측 | [[aa-lcr]] 73%×1.0 |

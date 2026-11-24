@@ -5,7 +5,7 @@ creator: Upstage
 license: Proprietary
 intelligence_index: 14.1589437644357
 price_blended_usd_1m: 0.222
-output_speed_tps: 82.4123559441733
+output_speed_tps: 82.3488100715971
 context_window: 512000
 status: current
 size_class: Unknown
@@ -37,7 +37,7 @@ Upstage · Proprietary · Unknown · 컨텍스트 512k · 종합지능 **14.1589
 - **약점**: 긴문맥, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 82.4123559441733 t/s · TTFT 2.59955314198333s · 512k ctx` · 가성비 63.8
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 82.3488100715971 t/s · TTFT 2.57435611143124s · 512k ctx` · 가성비 63.8
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: MiniMax
 license: Open
 intelligence_index: 29.0595214290458
 price_blended_usd_1m: 0.1005
-output_speed_tps: 133.578124811624
+output_speed_tps: 131.268174732599
 context_window: 1000000
 status: current
 size_class: Large
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 64.1, z: 0.84, r: 62.6, estimated: false }  # 전문 지식
   reasoning: { s: 63.2, z: 1.39, r: 70.9, estimated: false }  # 추론
   coding: { s: 76.4, z: 1.19, r: 67.9, estimated: false }  # 코딩
-  agentic: { s: 82.3, z: 1.24, r: 68.6, estimated: false }  # 에이전트
+  agentic: { s: 82.4, z: 1.24, r: 68.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 86.2, z: 0.76, r: 61.3, estimated: false }  # 멀티모달
   long_context: { s: 89.8, z: 0.98, r: 64.7, estimated: false }  # 긴문맥
@@ -37,7 +37,7 @@ MiniMax · Open · Large(428B) · 컨텍스트 1M · 종합지능 **29.059521429
 - **약점**: 전문 지식, 멀티모달
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · 133.578124811624 t/s · TTFT 1.51169594273022s · 1M ctx` · 가성비 289.1
+`입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · 131.268174732599 t/s · TTFT 1.52808433514528s · 1M ctx` · 가성비 289.1
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ MiniMax · Open · Large(428B) · 컨텍스트 1M · 종합지능 **29.059521429
 | 전문 지식 | 62.6 | +0.84 | 실측 | [[humanitys-last-exam]] 47.9611%×0.3 |
 | 추론 | 70.9 | +1.39 | 실측 | [[critpt]] 22.2857%×1.0, [[humanitys-last-exam]] 47.9611%×1.0 |
 | 코딩 | 67.9 | +1.19 | 실측 | [[scicode]] 53.3565%×1.0 |
-| 에이전트 | 68.6 | +1.24 | 실측 | [[gdpval]] 1465.3 Elo×1.0 |
+| 에이전트 | 68.7 | +1.24 | 실측 | [[gdpval]] 1466.41 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 61.3 | +0.76 | 실측 | [[mmmu-pro]] 79.1329%×1.0 |
 | 긴문맥 | 64.7 | +0.98 | 실측 | [[aa-lcr]] 79.6667%×1.0 |
