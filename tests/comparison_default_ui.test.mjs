@@ -2,7 +2,7 @@ import {test,before,after} from 'node:test';import assert from 'node:assert/stri
 let b,p;
 before(async()=>{b=await chromium.launch();p=await b.newPage({viewport:{width:1440,height:1000}});await p.goto('file://'+process.cwd()+'/artifact/llm-radar.html');});after(async()=>await b?.close());
 test('기본 화면에서 레이더와 비교 대상이 바로 보임',async()=>{await p.getByRole('img',{name:'능력 레이더'}).waitFor();assert.equal(await p.locator('#comparison-slots').count(),1);});
-test('보조키 없이 비교 추가·삭제하고 차트와 표가 함께 갱신',async()=>{await p.locator('.add-slot').click();await p.locator('.model-pick:enabled').first().click();assert.equal(await p.locator('#panel .cmp-main').count(),1);assert.equal(await p.locator('.trace').count(),2);await p.locator('#comparison-slots button[data-remove]').last().click();assert.equal(await p.locator('.trace').count(),1);});
+test('보조키 없이 비교 추가·삭제하고 차트와 표가 함께 갱신',async()=>{await p.locator('.add-slot').click();await p.locator('.model-pick[aria-pressed=false]:enabled').first().click();assert.equal(await p.locator('#panel .cmp-main').count(),1);assert.equal(await p.locator('.trace').count(),2);await p.locator('#comparison-slots button[data-remove]').last().click();assert.equal(await p.locator('.trace').count(),1);});
 
 test('모바일 목록에서 추가한 결과가 즉시 반영되고 완료하면 레이더로 돌아온다',async()=>{
   await p.setViewportSize({width:390,height:844});
@@ -12,7 +12,7 @@ test('모바일 목록에서 추가한 결과가 즉시 반영되고 완료하�
   await p.getByRole('button',{name:'+ 모델 추가',exact:true}).click();
   assert.equal(await library.isVisible(),true);
   assert.equal(await p.locator('#model-query').evaluate(el=>el===document.activeElement),true);
-  await p.locator('#list .model-pick:enabled').first().press('Enter');
+  await p.locator('#list .model-pick[aria-pressed=false]:enabled').first().press('Enter');
   assert.equal(await p.locator('.trace').count(),2);
   assert.equal(await library.isVisible(),true);
   await p.getByRole('button',{name:'선택 완료'}).click();
@@ -109,4 +109,62 @@ test('세 모델을 편집하면서 하나를 빼고 검색과 방향키로 다�
   await p.locator('.add-slot').click();
   await p.locator('#view-title').click();
   assert.equal(await list.isVisible(),false);
+});
+
+test('마지막 ×를 누르면 빈 레이더로 전환되고 첫 모델부터 연속으로 추가할 수 있다',async()=>{
+  for(const width of [390,1440]){
+    await p.setViewportSize({width,height:850});await p.reload();
+    await p.locator('[data-remove]').press('Enter');
+    assert.equal(await p.locator('#cmpnote').innerText(),'0 / 3');
+    assert.equal(await p.locator('.add-slot').evaluate(e=>e===document.activeElement),true);
+    assert.equal(await p.locator('.trace,.score-detail,#panel .badges').count(),0);
+    assert.equal(await p.locator('#panel').isVisible(),false);
+    const start=p.getByRole('button',{name:'모델 찾아보기'});
+    await start.click();await p.locator('#model-query').press('Escape');
+    assert.equal(await start.evaluate(e=>e===document.activeElement),true);
+    await start.click();
+    await p.locator('#model-query').fill('OpenAI');
+    const candidate=p.locator('.model-pick[aria-pressed=false]:enabled').first();
+    await candidate.click();
+    assert.equal(await p.locator('#panel .badges').isVisible(),true);
+    assert.equal(await p.locator('#model-library').isVisible(),true);
+    await candidate.click();
+    assert.equal(await p.locator('#panel .cmp-main').isVisible(),true);
+    await p.getByRole('button',{name:'선택 완료'}).click();
+    assert.equal(await p.locator('.trace').count(),2);
+    assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+  }
+});
+
+test('선택이 없어도 탐색·단가·크기 데이터에서 비교를 시작하고 다시 해제할 수 있다',async()=>{
+  await p.reload();
+  await p.locator('.add-slot').click();
+  await p.locator('.model-pick[aria-pressed=true]').click();
+  await p.getByRole('button',{name:'선택 완료'}).click();
+  const targets=[
+    ['explore','.explore-table','data-choose'],
+    ['scatter','.price-chart','data-slug'],
+    ['size','.size-group[open]','data-add-model']
+  ];
+  for(const [view,container,attr] of targets){
+    await p.locator('[data-view='+view+']').click();
+    assert.equal(await p.locator('#cmpnote').innerText(),'0 / 3');
+    assert.equal(await p.locator('#panel .panel-placeholder').isVisible(),true);
+    assert.equal(await p.locator('#download-comparison,.evidence-table').count(),0);
+    if(view==='explore'){
+      await p.locator('summary').filter({hasText:'API 비용'}).click();
+      assert.match(await p.locator('#budget-results').innerText(),/모델을 선택/);
+    }
+    if(view==='size' && !await p.locator('.size-group[open]').count()){
+      await p.locator('.size-group summary').first().click();
+    }
+    const choices=p.locator(`${container} [${attr}]`);
+    // The last scatter dot is drawn on top, including when two values coincide.
+    const candidate=view==='scatter'?choices.last():choices.first();
+    const id=await candidate.getAttribute(attr);
+    await candidate.click();
+    assert.equal(await p.locator('#cmpnote').innerText(),'1 / 3');
+    await p.locator(`${container} [${attr}="${id}"]`).click();
+    assert.equal(await p.locator('#cmpnote').innerText(),'0 / 3');
+  }
 });

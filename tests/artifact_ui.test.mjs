@@ -25,7 +25,7 @@ after(async () => { await browser.close(); });
 
 // 같은 세 후보를 실제 추가·삭제 버튼으로 고른다.
 const select = async (n) => {
-  while (await page.locator('[data-remove]').count()) {
+  while (await page.locator('.comparison-slot').count()>1) {
     await page.locator('[data-remove]').last().click();
   }
   if(n>1) await page.locator('.add-slot').click();

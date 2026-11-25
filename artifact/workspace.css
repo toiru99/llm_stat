@@ -115,6 +115,16 @@ svg {display:block}
 .filter-toggle {display:flex;align-items:center;gap:6px;margin-left:auto;border:1px solid var(--line);background:white;padding:4px 10px;font-weight:600}
 .filter-toggle svg {width:16px;height:16px}.filter-toggle[aria-expanded=true] {border-color:var(--signal);color:var(--signal)}
 #comparison-status {width:100%;font-size:12px;color:var(--muted)}#comparison-status:empty {display:none}
+.slots-placeholder {color:var(--muted);font-size:13px}
+.stage:has(.empty-radar) {grid-column:1/-1}
+.empty-radar {display:grid;justify-items:center;align-content:center;min-height:clamp(240px,34vh,350px);padding:24px 12px;text-align:center}
+.empty-radar-mark {position:relative;width:54px;height:54px;border-radius:50%;color:var(--series-0);background:repeating-radial-gradient(circle at center,transparent 0 8px,#b2d7f4 8px 9px),#eff7ff}
+.empty-radar-mark::after {content:"";position:absolute;left:50%;bottom:50%;width:2px;height:21px;border-radius:2px;background:currentColor;transform:rotate(45deg);transform-origin:bottom}
+.empty-radar h2 {margin:14px 0 4px;font-size:21px;line-height:1.35;letter-spacing:-.04em}
+.empty-radar p,.panel-placeholder p {color:var(--muted);font-size:14px;word-break:keep-all}
+.start-comparison {margin-top:16px;padding:8px 17px;border:1px solid #b2d3ed;border-radius:8px;background:var(--signal-soft);color:var(--signal);font-weight:650}
+.start-comparison:hover {background:#d6ebfc}
+.panel-placeholder {padding:20px}.panel-placeholder h2 {font-size:16px;margin:0 0 7px}
 .grid {display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:18px;align-items:start}
 .card {min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:16px}
 .stage {padding:20px}.panel {overflow:hidden}

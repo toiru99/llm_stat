@@ -72,6 +72,6 @@ function bindExplorer(){
  document.querySelectorAll('[data-choose]').forEach(b=>b.onclick=()=>toggleSelect(b.dataset.choose));
  const selected=MODELS.filter(m=>state.selected.includes(m.slug));
  const dl=$('#download-comparison');if(dl)dl.onclick=()=>{const blob=new Blob([JSON.stringify({scraped_at:PAYLOAD.scraped_at,methodology:PAYLOAD.methodology,purpose,models:selected.map(m=>({id:m.aa?.id,name:m.name,aa:m.aa,intel:m.intel}))},null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='model-comparison.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);};
- const update=()=>{const a=Number($('#budget-in').value),b=Number($('#budget-out').value),n=Number($('#budget-count').value);Object.assign(budget,{input:a,output:b,count:n});$('#budget-results').textContent=selected.map(m=>{const c=tokenCost(m,a,b,n);return m.name+': '+(c==null?'계산 불가':'월 $'+dec(c));}).join(' / ');};
+ const update=()=>{const a=Number($('#budget-in').value),b=Number($('#budget-out').value),n=Number($('#budget-count').value);Object.assign(budget,{input:a,output:b,count:n});$('#budget-results').textContent=selected.map(m=>{const c=tokenCost(m,a,b,n);return m.name+': '+(c==null?'계산 불가':'월 $'+dec(c));}).join(' / ') || '비용을 계산할 모델을 선택하세요.';};
  if($('#budget-in')){['#budget-in','#budget-out','#budget-count'].forEach(id=>$(id).oninput=update);update();}
 }

@@ -108,7 +108,7 @@ function sizeHTML(sel) {
     return `<details class="size-group" data-size="${size}" ${state.openSizes.has(size)?'open':''}><summary><strong>${size} · ${range}</strong><span>${models.length}개 모델</span></summary>
       <table class="size-table"><thead><tr><th>모델</th><th>전체</th><th>활성</th><th>AA 지수</th><th>비교</th></tr></thead><tbody>${models.map(m=>{
         const i=state.selected.indexOf(m.slug), display=k=>parameterCount(m,k)==null?'—':dec(parameterCount(m,k))+'B';
-        return `<tr><td><button data-model="${safe(m.slug)}">${safe(m.name)}</button></td><td>${display('total')}</td><td>${display('active')}</td><td>${dec(m.intel)}</td><td><button data-add-model="${safe(m.slug)}" aria-label="${safe(m.name)} ${i<0?'비교에 추가':'비교에서 제외'}" ${i>=0&&state.selected.length===1?'disabled':''}>${i<0?'+':'✓'}</button></td></tr>`;
+        return `<tr><td><button data-model="${safe(m.slug)}">${safe(m.name)}</button></td><td>${display('total')}</td><td>${display('active')}</td><td>${dec(m.intel)}</td><td><button data-add-model="${safe(m.slug)}" aria-label="${safe(m.name)} ${i<0?'비교에 추가':'비교에서 제외'}">${i<0?'+':'✓'}</button></td></tr>`;
       }).join('')}</tbody></table></details>`;
   }).join('');
   const note = {total:'모델 전체의 파라미터 수와 AA 종합지수를 비교합니다.',active:'추론 시 토큰 하나를 처리할 때 쓰는 파라미터 수입니다. AA가 활성 수를 별도로 공개한 모델을 표시합니다.',group:'AA의 파라미터 구간별로 종합지수를 비교합니다.'}[mode];
