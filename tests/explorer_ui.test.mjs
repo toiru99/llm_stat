@@ -7,23 +7,24 @@ test('음수 토큰 비용 계산 거부 및 비교 다운로드 제공',async()
 test('모바일에서 문서 전체가 가로로 넘치지 않음',async()=>{await p.setViewportSize({width:390,height:844});assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));assert.deepEqual(errors,[]);await p.screenshot({path:'/tmp/llm-explorer-mobile.png',fullPage:true});await p.setViewportSize({width:1440,height:1000});await p.screenshot({path:'/tmp/llm-explorer-desktop.png',fullPage:true});});
 
 test('전체 제작사 검색·고정·취소·재방문 유지와 전체 보기',async()=>{
+ await p.locator('#filter-toggle').click();
  await p.getByRole('button',{name:'고정 편집'}).click();
  await p.getByRole('button',{name:'모두 해제',exact:true}).click();
- await p.getByLabel('제작사 검색').fill('OpenAI');
+ await p.getByLabel('제작사 검색',{exact:true}).fill('OpenAI');
  await p.getByRole('checkbox',{name:'OpenAI',exact:true}).check();
  await p.getByRole('button',{name:'저장하고 적용'}).click();
  assert.equal(await p.locator('#creator-manager').isVisible(),false);
- await p.reload();await p.locator('[data-view=explore]').click();
+ await p.reload();await p.locator('[data-view=explore]').click();await p.locator('#filter-toggle').click();
  assert.equal(await p.getByRole('button',{name:'고정만 (1)',exact:true}).getAttribute('aria-pressed'),'true');
  assert.ok(await p.locator('.explore-table tbody tr').count()>0);
  const creators=await p.locator('.explore-table tbody tr td:first-child small').allTextContents();
  assert.ok(creators.every(s=>s.startsWith('OpenAI')));
  await p.getByRole('button',{name:'고정 편집'}).click();
  await p.getByRole('button',{name:'모두 해제',exact:true}).click();
- await p.keyboard.press('Escape');await p.reload();await p.locator('[data-view=explore]').click();
+ await p.keyboard.press('Escape');await p.reload();await p.locator('[data-view=explore]').click();await p.locator('#filter-toggle').click();
  assert.equal(await p.getByRole('button',{name:'고정만 (1)',exact:true}).getAttribute('aria-pressed'),'true');
  await p.getByRole('button',{name:'전체 보기',exact:true}).click();
- await p.reload();await p.locator('[data-view=explore]').click();assert.equal(await p.getByRole('button',{name:'전체 보기',exact:true}).getAttribute('aria-pressed'),'true');
+ await p.reload();await p.locator('[data-view=explore]').click();await p.locator('#filter-toggle').click();assert.equal(await p.getByRole('button',{name:'전체 보기',exact:true}).getAttribute('aria-pressed'),'true');
 });
 test('빠른 답변 품질 조건 적용·저장 및 비용 가정 유지',async()=>{
  await p.locator('[data-purpose=fast]').click();
@@ -36,4 +37,15 @@ test('빠른 답변 품질 조건 적용·저장 및 비용 가정 유지',async
  await p.locator('summary').filter({hasText:'API 비용'}).click();await p.locator('#budget-in').fill('9000');
  await p.locator('[data-purpose=coding]').click();assert.equal(await p.locator('#budget-in').inputValue(),'9000');
  assert.deepEqual(errors,[]);
+});
+
+test('용도별 순위 페이지 이동과 필터 변경 후 첫 페이지 복귀',async()=>{
+  await p.reload();await p.locator('[data-view=explore]').click();
+  const rows=p.locator('.explore-table [data-choose]');
+  const first=await rows.first().getAttribute('data-choose');
+  await p.locator('#rank-pages [data-step="1"]').click();
+  assert.notEqual(await rows.first().getAttribute('data-choose'),first);
+  assert.equal(await p.locator('.explore-table-wrap').evaluate(e=>e.scrollHeight<=e.clientHeight),true);
+  await p.locator('[data-purpose=coding]').click();
+  assert.equal(await p.locator('#rank-pages [data-step="-1"]').isDisabled(),true);
 });

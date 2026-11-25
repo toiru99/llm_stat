@@ -48,11 +48,37 @@ test('크기별 차트·순위표는 필터, 선택, 파라미터 기준, 빈 �
   }
   await page.locator('.size-group[data-size=Small] button[data-add-model]').first().click();
   assert.equal(await page.locator('#panel .cmp-main thead th').count(),3);
+  await page.locator('#filter-toggle').click();
   await page.locator('#search').fill('no-matching-model-here');
   assert.equal(await page.locator('#viewwrap circle[data-slug]').count(),0);
   assert.ok(await page.locator('#viewwrap .empty').isVisible());
   await page.locator('#search').fill('');
   await page.setViewportSize({width:390,height:844});
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  assert.deepEqual(errors,[]);
+});
+
+test('비용 차트는 작업당 비용으로 열리고 단가 전환 시 비용 0과 미측정을 구분한다',async()=>{
+  await page.locator('[data-view=scatter]').click();
+  assert.equal(await page.locator('[data-cost-mode=task]').getAttribute('aria-pressed'),'true');
+  for(const metric of ['task','tokens']){
+    await page.locator('[data-cost-mode='+metric+']').click();
+    const points=await page.locator('.price-chart circle').evaluateAll(nodes=>nodes.map(n=>({
+      slug:n.dataset.slug, x:Number(n.getAttribute('cx')), y:Number(n.getAttribute('cy'))
+    })));
+    const costs=await page.evaluate(key=>Object.fromEntries(filtered().filter(m=>Number.isFinite(m.intel))
+      .map(m=>[m.slug,key==='task'?m.aa?.costPerTask:m.price])
+      .filter(([,cost])=>Number.isFinite(cost)&&cost>=0)),metric);
+    assert.deepEqual(points.map(v=>v.slug).sort(),Object.keys(costs).sort());
+    const ordered=points.toSorted((a,b)=>costs[a.slug]-costs[b.slug]);
+    assert.ok(ordered.every((v,i)=>Number.isFinite(v.y)&&(!i || v.x>=ordered[i-1].x)));
+    const zeros=ordered.filter(v=>costs[v.slug]===0);
+    if(zeros.length && zeros.length<ordered.length) assert.ok(zeros[0].x<ordered[zeros.length].x);
+    assert.match(await page.locator('.cost-coverage').innerText(),/비용 미공개/);
+  }
+  await page.locator('#filter-toggle').click();
+  await page.locator('#search').fill('no-matching-cost');
+  assert.equal(await page.locator('.price-chart circle').count(),0);
+  assert.ok(await page.locator('#viewwrap .empty').isVisible());
   assert.deepEqual(errors,[]);
 });

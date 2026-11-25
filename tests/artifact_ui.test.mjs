@@ -18,17 +18,20 @@ before(async () => {
   jsErrors = [];
   page.on('pageerror', (e) => jsErrors.push(e.message));
   await page.goto(PAGE, { waitUntil: 'load' });
-  await page.waitForSelector('#list .mrow');
+  await page.waitForSelector('.replace-slot');
   await page.locator('[data-view=radar]').click();
 });
 after(async () => { await browser.close(); });
 
-// 목록에서 n개를 고른다 (첫 클릭은 단일 선택, 이후는 ⌘+클릭으로 비교 추가)
+// 같은 세 후보를 실제 추가·삭제 버튼으로 고른다.
 const select = async (n) => {
-  if (!await page.locator('#model-library').evaluate(d=>d.open)) await page.locator('#model-library > summary').click();
-  const rows = page.locator('#list .mrow');
-  await rows.nth(0).click();
-  for (let i = 1; i < n; i++) await rows.nth(i).click({ modifiers: ['Meta'] });
+  while (await page.locator('[data-remove]').count()) {
+    await page.locator('[data-remove]').last().click();
+  }
+  for (let i=1; i<n; i++) {
+    await page.locator('.add-slot').click();
+    await page.locator('#list .model-pick:enabled').first().click();
+  }
 };
 
 test('1개 선택하면 배지 그리드, 비교표는 없음', async () => {
@@ -52,7 +55,7 @@ test('3개 선택하면 모델 열이 3개', async () => {
 
 test('비교를 해제해 1개로 돌아오면 배지로 복귀', async () => {
   await select(3);
-  await page.locator('#list .mrow').nth(0).click();   // 일반 클릭 = 단일 선택
+  await select(1);
   assert.equal(await page.locator('#panel .badges').count(), 1);
   assert.equal(await page.locator('#panel .cmp-main').count(), 0);
 });
@@ -158,7 +161,7 @@ test('8축을 펼친 뒤 필터를 건드려도 펼친 상태가 유지된다', 
   await page.locator('#panel .cmp-axes summary').click();
   assert.equal(await page.locator('#panel .cmp-axes').evaluate((el) => el.open), true);
   // 리렌더 유발: 최대가격 슬라이더를 움직인다
-  await page.locator('#advanced-filters > summary').click();
+  await page.locator('#filter-toggle').click();
   const slider = page.locator('.filters input[type=range]');
   await slider.fill(await slider.getAttribute('max'));
   await slider.dispatchEvent('input');
