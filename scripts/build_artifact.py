@@ -4,7 +4,7 @@
 build_cards.py 다음에 실행. 템플릿(artifact/template.html, body 내용)에 데이터를 주입하고
 doctype/head(title·viewport·favicon)로 감싼 자체 완결 문서를 만든다.
 """
-import pathlib, subprocess
+import base64, pathlib, subprocess
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 tpl = (ROOT / "artifact" / "template.html").read_text(encoding="utf-8")
@@ -16,7 +16,12 @@ body = body.replace("__COMPARISON_CHARTS__", (ROOT / "artifact/comparison-charts
 body = body.replace("__EXPLORER_CORE__", (ROOT / "artifact/explorer.mjs").read_text().replace("export ", ""))
 body = body.replace("__CREATOR_PREFS__", (ROOT / "artifact/creator-prefs.js").read_text())
 body = body.replace("__EXPLORER_UI__", (ROOT / "artifact/explorer-ui.js").read_text())
-body = "<style>" + (ROOT / "artifact/explorer.css").read_text() + (ROOT / "artifact/comparison.css").read_text() + "</style>" + body
+# Ship a small OFL-licensed subset of Pretendard v1.3.9 with the standalone comparison views.
+font_dir = ROOT / "artifact/fonts"
+font = base64.b64encode((font_dir / "model-guide-sans.woff2").read_bytes()).decode("ascii")
+styles = "\n".join((ROOT / "artifact" / name).read_text() for name in ("explorer.css", "comparison.css", "workspace.css"))
+styles = styles.replace("__UI_FONT__", font)
+body = "<style>/* " + (font_dir / "OFL.txt").read_text() + " */\n" + styles + "</style>" + body
 assert "__CARDS__" not in body, "주입 실패: 템플릿에 __CARDS__ 토큰이 없습니다"
 
 FAVICON = ("data:image/svg+xml,"

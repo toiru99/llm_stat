@@ -5,7 +5,7 @@ function creatorControls(container){
  const head=el('div','creator-heading');const title=el('strong');title.textContent='내 제작사';const manage=el('button','creator-button');manage.type='button';manage.textContent='고정 편집';manage.onclick=openCreatorManager;head.append(title,manage);container.append(head);
  const modes=el('div','creator-modes');
  for(const [only,label] of [[false,'전체 보기'],[true,`고정만 (${pinnedCreators.size})`]]){const b=el('button','creator-button');b.type='button';b.textContent=label;b.disabled=only&&!pinnedCreators.size;b.setAttribute('aria-pressed',String(only===pinnedOnly));b.onclick=()=>{pinnedOnly=only;state.creators=new Set(only?pinnedCreators:[]);persistPreferences();refreshCreatorControls();render();};modes.append(b);}container.append(modes);
- const saved=el('div','pinned-summary');saved.textContent=pinnedCreators.size?[...pinnedCreators].slice(0,3).join(' · ')+(pinnedCreators.size>3?` 외 ${pinnedCreators.size-3}곳`:''):'원하는 제작사를 고정해 두세요. 다음 방문에도 유지됩니다.';container.append(saved);
+ const saved=el('div','pinned-summary');saved.textContent=pinnedCreators.size?[...pinnedCreators].slice(0,3).join(' · ')+(pinnedCreators.size>3?` 외 ${pinnedCreators.size-3}곳`:''):'';container.append(saved);
 }
 function openCreatorManager(){
  let dialog=$('#creator-manager');if(!dialog){dialog=el('dialog','creator-dialog');dialog.id='creator-manager';document.body.append(dialog);}

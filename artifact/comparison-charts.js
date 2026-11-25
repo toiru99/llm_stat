@@ -55,7 +55,7 @@ function radarHTML(sel) {
   const elo = INDEX_COMPONENTS.find(c=>c.unit==='Elo');
   const eloBand = legacy ? '' : `<div class="elo-band"><strong>문서 업무 <small>${elo.label}</small></strong><div>
     ${sel.map((m,i)=>`<span style="--slot-color:var(${SERIES[i]})"><b>${safe(m.name)}</b> ${scoreText(m.aa?.scores?.[elo.key],elo.unit)}</span>`).join('')}</div></div>`;
-  return mode + `<p class="chart-note">${legacy?'축별 실측 모델의 평균은 50점입니다. 빈 축은 실측 근거가 없습니다.':'9개 벤치마크의 10개 점수 중 9개를 백분율로 표시합니다. 문서 업무는 아래의 Elo 점수로 비교하세요.'}</p>
+  return mode + `<p class="chart-note">${legacy?'축별 실측 모델의 평균은 50점입니다. 빈 축은 실측 근거가 없습니다.':'백분율로 측정한 9개 점수입니다. 문서 업무는 아래에 Elo로 표시합니다.'}</p>
     <svg class="radar-chart" viewBox="0 0 480 388" role="img" aria-label="능력 레이더">${spokes}${grid}${traces}</svg>
     <div class="chart-keys">${descriptions.join('')}</div>${eloBand}`;
 }

@@ -6,7 +6,7 @@ function scoreText(v,unit){return Number.isFinite(v)?dec(v*(unit==='%'?100:1))+(
 function explorerHTML(){
  const rows=rankModels(filtered(),purpose,qualityFloor),p=PURPOSES[purpose];
  const quality=rows.filter(m=>m.intel!=null).length,priced=rows.filter(m=>m.aa?.costPerTask!=null).length;
- return `<div class="explorer"><div class="explore-intro"><span class="eyebrow">MODEL EXPLORER / 02</span><h2>무엇을 함께 해낼까요?</h2><p>용도를 고르고, 실측 근거로 비교하세요.</p></div>
+ return `<div class="explorer"><div class="explore-intro"><h2>용도별 실측 순위</h2></div>
  <div class="purpose-tabs" aria-label="용도">${Object.entries(PURPOSES).map(([k,v])=>`<button data-purpose="${k}" aria-pressed="${k===purpose}">${v.label}</button>`).join('')}</div>
  ${purpose==='fast'?`<div class="quality-control"><label for="quality-floor">품질 조건</label><select id="quality-floor" aria-label="빠른 답변 최소 종합지수">${[0,20,30,40,50,qualityFloor].filter((v,i,a)=>a.indexOf(v)===i).sort((a,b)=>a-b).map(v=>`<option value="${v}" ${qualityFloor===v?'selected':''}>종합지수 ${v} 이상${v===30?' · 기본':''}</option>`).join('')}</select><p>실측 종합지수와 첫 답변 대기가 모두 있는 모델만 표시합니다. 기본 30은 탐색용 기준이며 실제 업무 품질을 보장하지 않습니다. 전체 답변 완료 시간이 아닌 첫 답변 토큰까지의 대기입니다.</p></div>`:''}
  <p class="explore-note">${p.key?`정렬 근거: ${safe(p.bench)} · ${p.lower?'낮을수록':'높을수록'} 우수. 이 평가 하나로 해당 업무 전체의 적합성을 보장하지 않습니다.`:'정렬 근거: AA Intelligence Index v'+safe(PAYLOAD.methodology?.intelligence||'미확인')+'. 점수가 없는 모델은 아래에 표시합니다.'}</p>

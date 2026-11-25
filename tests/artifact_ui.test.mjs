@@ -25,6 +25,7 @@ after(async () => { await browser.close(); });
 
 // 목록에서 n개를 고른다 (첫 클릭은 단일 선택, 이후는 ⌘+클릭으로 비교 추가)
 const select = async (n) => {
+  if (!await page.locator('#model-library').evaluate(d=>d.open)) await page.locator('#model-library > summary').click();
   const rows = page.locator('#list .mrow');
   await rows.nth(0).click();
   for (let i = 1; i < n; i++) await rows.nth(i).click({ modifiers: ['Meta'] });
@@ -157,6 +158,7 @@ test('8축을 펼친 뒤 필터를 건드려도 펼친 상태가 유지된다', 
   await page.locator('#panel .cmp-axes summary').click();
   assert.equal(await page.locator('#panel .cmp-axes').evaluate((el) => el.open), true);
   // 리렌더 유발: 최대가격 슬라이더를 움직인다
+  await page.locator('#advanced-filters > summary').click();
   const slider = page.locator('.filters input[type=range]');
   await slider.fill(await slider.getAttribute('max'));
   await slider.dispatchEvent('input');
