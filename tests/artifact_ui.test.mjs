@@ -18,7 +18,6 @@ before(async () => {
   jsErrors = [];
   page.on('pageerror', (e) => jsErrors.push(e.message));
   await page.goto(PAGE, { waitUntil: 'load' });
-  await page.waitForSelector('.replace-slot');
   await page.locator('[data-view=radar]').click();
 });
 after(async () => { await browser.close(); });
@@ -28,8 +27,9 @@ const select = async (n) => {
   while (await page.locator('.comparison-slot').count()>1) {
     await page.locator('[data-remove]').last().click();
   }
-  if(n>1) await page.locator('.add-slot').click();
-  for(let i=1;i<n;i++) await page.locator('.model-pick[aria-pressed=false]:enabled').first().click();
+  const count=await page.locator('.comparison-slot').count();
+  if(n>count) await page.locator('.add-slot').click();
+  for(let i=count;i<n;i++) await page.locator('.model-pick[aria-pressed=false]:enabled').first().click();
   if(await page.locator('#model-library').isVisible()) await page.getByRole('button',{name:'선택 완료'}).click();
 };
 

@@ -1,12 +1,26 @@
 import {test,before,after} from 'node:test';import assert from 'node:assert/strict';import {chromium} from 'playwright';
 let b,p;
 before(async()=>{b=await chromium.launch();p=await b.newPage({viewport:{width:1440,height:1000}});await p.goto('file://'+process.cwd()+'/artifact/llm-radar.html');});after(async()=>await b?.close());
-test('기본 화면에서 레이더와 비교 대상이 바로 보임',async()=>{await p.getByRole('img',{name:'능력 레이더'}).waitFor();assert.equal(await p.locator('#comparison-slots').count(),1);});
-test('보조키 없이 비교 추가·삭제하고 차트와 표가 함께 갱신',async()=>{await p.locator('.add-slot').click();await p.locator('.model-pick[aria-pressed=false]:enabled').first().click();assert.equal(await p.locator('#panel .cmp-main').count(),1);assert.equal(await p.locator('.trace').count(),2);await p.locator('#comparison-slots button[data-remove]').last().click();assert.equal(await p.locator('.trace').count(),1);});
+async function openWithOneSelection(){
+  await p.reload();
+  while(await p.locator('.replace-slot').count()>1) await p.locator('[data-remove]').last().click();
+  if(!await p.locator('.replace-slot').count()){
+    await p.locator('.add-slot').click();
+    await p.locator('.model-pick:enabled').first().click();
+    await p.getByRole('button',{name:'선택 완료'}).click();
+  }
+}
+
+test('첫 방문은 자동 선택 없이 빈 비교 화면으로 시작',async()=>{
+  assert.equal(await p.locator('.comparison-slot').count(),0);
+  assert.equal(await p.locator('#cmpnote').innerText(),'0 / 3');
+  assert.ok(await p.getByRole('button',{name:'모델 찾아보기'}).isVisible());
+});
+test('보조키 없이 비교 추가·삭제하고 차트와 표가 함께 갱신',async()=>{await openWithOneSelection();await p.locator('.add-slot').click();await p.locator('.model-pick[aria-pressed=false]:enabled').first().click();assert.equal(await p.locator('#panel .cmp-main').count(),1);assert.equal(await p.locator('.trace').count(),2);await p.locator('#comparison-slots button[data-remove]').last().click();assert.equal(await p.locator('.trace').count(),1);});
 
 test('모바일 목록에서 추가한 결과가 즉시 반영되고 완료하면 레이더로 돌아온다',async()=>{
   await p.setViewportSize({width:390,height:844});
-  await p.reload();
+  await openWithOneSelection();
   const library=p.locator('#model-library');
   assert.equal(await library.isVisible(),false);
   await p.getByRole('button',{name:'+ 모델 추가',exact:true}).click();
@@ -23,7 +37,7 @@ test('모바일 목록에서 추가한 결과가 즉시 반영되고 완료하�
 
 test('PC 문서 스크롤바만 숨기며 본문과 모델 목록의 휠 이동을 보존한다',async()=>{
   await p.setViewportSize({width:1280,height:720});
-  await p.reload();
+  await openWithOneSelection();
   assert.equal(await p.locator('html').evaluate(e=>getComputedStyle(e).scrollbarWidth),'none');
   await p.locator('.stage').hover({position:{x:20,y:20}});
   await p.mouse.wheel(0,220);
@@ -45,7 +59,7 @@ test('PC 문서 스크롤바만 숨기며 본문과 모델 목록의 휠 이동�
 });
 
 test('세 모델 중 지정한 슬롯만 교체하고 선택용 검색어는 탐색 필터에 남기지 않는다',async()=>{
-  await p.reload();
+  await openWithOneSelection();
   await p.locator('.add-slot').click();
   for(let n=0;n<2;n++) await p.locator('.model-pick[aria-pressed=false]:enabled').first().click();
   const slots=p.locator('.replace-slot');
@@ -65,7 +79,7 @@ test('세 모델 중 지정한 슬롯만 교체하고 선택용 검색어는 탐
 test('목록 열기·연속 추가·닫기 전후에 차트가 밀리지 않는다',async()=>{
   for(const width of [320,390,768,1440]){
     await p.setViewportSize({width,height:800});
-    await p.reload();await p.evaluate(()=>document.fonts.ready);
+    await openWithOneSelection();await p.evaluate(()=>document.fonts.ready);
     const geometry=()=>p.evaluate(()=>[document.querySelector('.grid').getBoundingClientRect().top,scrollY,document.documentElement.scrollWidth]);
     const before=await geometry();
     await p.locator('.add-slot').click();
@@ -90,7 +104,7 @@ test('목록 열기·연속 추가·닫기 전후에 차트가 밀리지 않는�
 });
 
 test('세 모델을 편집하면서 하나를 빼고 검색과 방향키로 다시 추가한다',async()=>{
-  await p.reload();
+  await openWithOneSelection();
   await p.locator('.add-slot').click();
   for(let i=0;i<2;i++) await p.locator('.model-pick[aria-pressed=false]:enabled').first().click();
   await p.locator('.add-slot').click();
@@ -113,7 +127,7 @@ test('세 모델을 편집하면서 하나를 빼고 검색과 방향키로 다�
 
 test('마지막 ×를 누르면 빈 레이더로 전환되고 첫 모델부터 연속으로 추가할 수 있다',async()=>{
   for(const width of [390,1440]){
-    await p.setViewportSize({width,height:850});await p.reload();
+    await p.setViewportSize({width,height:850});await openWithOneSelection();
     await p.locator('[data-remove]').press('Enter');
     assert.equal(await p.locator('#cmpnote').innerText(),'0 / 3');
     assert.equal(await p.locator('.add-slot').evaluate(e=>e===document.activeElement),true);
@@ -137,7 +151,7 @@ test('마지막 ×를 누르면 빈 레이더로 전환되고 첫 모델부터 �
 });
 
 test('선택이 없어도 탐색·단가·크기 데이터에서 비교를 시작하고 다시 해제할 수 있다',async()=>{
-  await p.reload();
+  await openWithOneSelection();
   await p.locator('.add-slot').click();
   await p.locator('.model-pick[aria-pressed=true]').click();
   await p.getByRole('button',{name:'선택 완료'}).click();
@@ -167,4 +181,37 @@ test('선택이 없어도 탐색·단가·크기 데이터에서 비교를 시�
     await p.locator(`${container} [${attr}="${id}"]`).click();
     assert.equal(await p.locator('#cmpnote').innerText(),'0 / 3');
   }
+});
+
+test('새로고침은 직접 선택·교체한 모델 순서와 마지막 삭제를 보존한다',async()=>{
+  const page=await b.newPage();
+  try {
+    await page.goto('file://'+process.cwd()+'/artifact/llm-radar.html');
+    await page.reload();
+    assert.equal(await page.locator('#cmpnote').innerText(),'0 / 3');
+    await page.locator('.add-slot').click();
+    await page.locator('#model-query').fill('Google');
+    await page.locator('.model-pick:enabled').first().click();
+    await page.locator('#model-query').fill('OpenAI');
+    await page.locator('.model-pick:enabled').first().click();
+    const slots=page.locator('.replace-slot');
+    const picked=await slots.allTextContents();
+    await page.reload();
+    assert.deepEqual(await slots.allTextContents(),picked);
+
+    await slots.first().click();
+    await page.locator('#model-query').fill('Anthropic');
+    const replacement=page.locator('.model-pick:enabled').first();
+    const name=await replacement.locator('.nm').textContent();
+    await replacement.click();
+    await page.reload();
+    assert.deepEqual(await slots.allTextContents(),[name,picked[1]]);
+    await page.locator('[data-remove]').first().click();
+    await page.reload();
+    assert.deepEqual(await slots.allTextContents(),[picked[1]]);
+    await page.locator('[data-remove]').click();
+    await page.reload();
+    assert.equal(await slots.count(),0);
+    assert.ok(await page.locator('.start-comparison').isVisible());
+  } finally {await page.close();}
 });

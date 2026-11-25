@@ -72307,9 +72307,33 @@ const $=s=>document.querySelector(s), el=(t,c)=>{const e=document.createElement(
 const fmtCtx=n=>!n?"—":n>=1e6?(n/1e6)+"M":Math.round(n/1e3)+"k";
 const SERIES=["--series-0","--series-1","--series-2"];
 
+const selectionKey="llm-guide-comparison-v1";
+const selectionId=m=>m.aa?.id ?? "slug:"+m.slug;
+
+function readSelection(){
+  try {
+    const saved=JSON.parse(sessionStorage.getItem(selectionKey));
+    if(!Array.isArray(saved)) return [];
+    // Resolve saved IDs against today's snapshot, keeping the user's column order.
+    const byId=new Map(MODELS.map(m=>[selectionId(m),m.slug]));
+    return [...new Set(saved)].filter(id=>byId.has(id)).slice(0,3).map(id=>byId.get(id));
+  } catch {
+    return [];
+  }
+}
+
+function saveSelection(){
+  const ids=state.selected.map(slug=>selectionId(MODELS.find(m=>m.slug===slug)));
+  try {
+    sessionStorage.setItem(selectionKey,JSON.stringify(ids));
+  } catch {
+    // Storage can be unavailable in an embedded or local-file preview.
+  }
+}
+
 const savedPreferences=readCreatorPreferences();
 let pinnedCreators=new Set(savedPreferences.creators),pinnedOnly=savedPreferences.only,qualityFloor=savedPreferences.minIntelligence;
-let state={view:"radar",costMode:"task",radarMode:"legacy",sizeMode:MODELS.some(m=>m.params>0 && Number.isFinite(m.intel))?"total":"group",openSizes:new Set(["Small"]),openEvidence:new Set(["explore-index"]),selected:[(MODELS.find(m=>m.status==="current"&&(!pinnedOnly||pinnedCreators.has(m.creator)))||MODELS[0]).slug],q:"",creators:new Set(pinnedOnly?pinnedCreators:[]),lic:new Set(),maxPrice:Infinity,minCtx:0,sizes:new Set(),reasoning:new Set(),curOnly:true,axesOpen:false};
+let state={view:"radar",costMode:"task",radarMode:"legacy",sizeMode:MODELS.some(m=>m.params>0 && Number.isFinite(m.intel))?"total":"group",openSizes:new Set(["Small"]),openEvidence:new Set(["explore-index"]),selected:readSelection(),q:"",creators:new Set(pinnedOnly?pinnedCreators:[]),lic:new Set(),maxPrice:Infinity,minCtx:0,sizes:new Set(),reasoning:new Set(),curOnly:true,axesOpen:false};
 
 // ---------- filters ----------
 function buildFilters(){
@@ -72474,7 +72498,7 @@ function pickModel(button){
   const slug=button.dataset.slug;
   if(replaceIndex!==null){
     state.selected[replaceIndex]=slug;
-    render();closePicker(true);
+    saveSelection();render();closePicker(true);
   } else {
     toggleSelect(slug);
     if(state.selected.length===3) closePicker(true);
@@ -72504,6 +72528,7 @@ function toggleSelect(slug){
     $("#comparison-status").textContent="3개를 비교 중입니다. 상단에서 교체할 모델명을 누르세요.";
     return;
   }
+  saveSelection();
   $("#comparison-status").classList.add("sr-only");
   $("#comparison-status").textContent=state.selected.length?"":"비교 모델을 모두 해제했습니다.";
   render();

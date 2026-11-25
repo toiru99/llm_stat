@@ -13,6 +13,9 @@ before(async()=>{
 after(async()=>await browser?.close());
 
 test('기본 레이더의 실제 좌표와 Elo 별도 표기가 원본 평가 점수에 일치',async()=>{
+  await page.locator('.add-slot').click();
+  await page.locator('.model-pick:enabled').first().click();
+  await page.getByRole('button',{name:'선택 완료'}).click();
   const {value,y,elo}=await page.evaluate(()=>{
     const m=MODELS.find(m=>m.slug===state.selected[0]);
     const first=document.querySelector('.trace [data-axis="automationbench-aa"]');
