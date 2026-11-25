@@ -5,7 +5,7 @@ creator: Kimi
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.79
-output_speed_tps: 101.582528275111
+output_speed_tps: 103.094871364499
 context_window: 256000
 status: past
 size_class: Large
@@ -37,7 +37,7 @@ Kimi · Open · Large(1000B) · 컨텍스트 256k · 종합지능 **None** · �
 - **약점**: 추론, 코딩
 
 ## 실용 지표
-`입력 $0.6 · 출력 $2.5 · 혼합 $0.79/1M · 101.582528275111 t/s · TTFT 2.62865464690007s · 256k ctx`
+`입력 $0.6 · 출력 $2.5 · 혼합 $0.79/1M · 103.094871364499 t/s · TTFT 2.65624951887508s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

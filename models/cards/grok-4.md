@@ -5,7 +5,7 @@ creator: SpaceXAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 4.2
-output_speed_tps: 67.3426480279002
+output_speed_tps: 68.2937049687924
 context_window: 256000
 status: past
 size_class: Unknown
@@ -37,7 +37,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **None**
 - **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
-`입력 $3.0 · 출력 $15.0 · 혼합 $4.2/1M · 67.3426480279002 t/s · TTFT 15.4965644310862s · 256k ctx`
+`입력 $3.0 · 출력 $15.0 · 혼합 $4.2/1M · 68.2937049687924 t/s · TTFT 18.8329284516917s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

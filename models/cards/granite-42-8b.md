@@ -5,7 +5,7 @@ creator: IBM
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.0475
-output_speed_tps: 97.3424446145931
+output_speed_tps: 97.4472414078883
 context_window: 131072
 status: current
 size_class: Small
@@ -37,7 +37,7 @@ IBM · Open · Small(8B) · 컨텍스트 131k · 종합지능 **None**
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.25 · 혼합 $0.0475/1M · 97.3424446145931 t/s · TTFT 1.84425605593405s · 131k ctx`
+`입력 $0.06 · 출력 $0.25 · 혼합 $0.0475/1M · 97.4472414078883 t/s · TTFT 1.84245142871928s · 131k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

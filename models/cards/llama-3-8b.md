@@ -5,7 +5,7 @@ creator: Meta
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.07
-output_speed_tps: 72.0068175665573
+output_speed_tps: 71.6531861705564
 context_window: 8192
 status: past
 size_class: Small
@@ -37,7 +37,7 @@ Meta · Open · Small(8B) · 컨텍스트 8k · 종합지능 **None** · ⚠️ 
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.25 · 혼합 $0.07/1M · 72.0068175665573 t/s · TTFT 0.57705041070012s · 8k ctx`
+`입력 $0.05 · 출력 $0.25 · 혼합 $0.07/1M · 71.6531861705564 t/s · TTFT 0.570702584333578s · 8k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

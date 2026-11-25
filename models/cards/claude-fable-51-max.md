@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 49.2782199915657
 price_blended_usd_1m: 7.175
-output_speed_tps: 85.0205429572184
+output_speed_tps: 85.5206582626834
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **49.2782
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $10.0 · 출력 $50.0 · 혼합 $7.175/1M · 85.0205429572184 t/s · TTFT 171.861143658365s · 1M ctx` · 가성비 6.9
+`입력 $10.0 · 출력 $50.0 · 혼합 $7.175/1M · 85.5206582626834 t/s · TTFT 171.880074025854s · 1M ctx` · 가성비 6.9
 
 ## 레이더 8축 (평균=50 기준선)
 

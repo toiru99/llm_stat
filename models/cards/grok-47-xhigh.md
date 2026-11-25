@@ -5,7 +5,7 @@ creator: SpaceXAI
 license: Proprietary
 intelligence_index: 35.3663261006589
 price_blended_usd_1m: 1.35
-output_speed_tps: 76.7111861607013
+output_speed_tps: 76.8958477761105
 context_window: 500000
 status: current
 size_class: Unknown
@@ -37,7 +37,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **35.366
 - **약점**: 긴문맥, 전문 지식
 
 ## 실용 지표
-`입력 $2.0 · 출력 $6.0 · 혼합 $1.35/1M · 76.7111861607013 t/s · TTFT 54.0640735514287s · 500k ctx` · 가성비 26.2
+`입력 $2.0 · 출력 $6.0 · 혼합 $1.35/1M · 76.8958477761105 t/s · TTFT 53.5576070546227s · 500k ctx` · 가성비 26.2
 
 ## 레이더 8축 (평균=50 기준선)
 

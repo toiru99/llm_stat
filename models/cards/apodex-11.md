@@ -5,7 +5,7 @@ creator: Apodex
 license: Proprietary
 intelligence_index: 13.7217935132339
 price_blended_usd_1m: 0.381
-output_speed_tps: None
+output_speed_tps: 178.878764138113
 context_window: 256000
 status: current
 size_class: Unknown
@@ -37,7 +37,7 @@ Apodex · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **13.72179
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $3.0 · 혼합 $0.381/1M · None t/s · TTFT Nones · 256k ctx` · 가성비 36.0
+`입력 $0.3 · 출력 $3.0 · 혼합 $0.381/1M · 178.878764138113 t/s · TTFT 0.90637806923393s · 256k ctx` · 가성비 36.0
 
 ## 레이더 8축 (평균=50 기준선)
 
