@@ -5,7 +5,7 @@ creator: Upstage
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.1005
-output_speed_tps: 116.488779279137
+output_speed_tps: 119.212437972715
 context_window: 128000
 status: past
 size_class: Medium
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Pro 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Solar Pro 3
@@ -37,7 +37,7 @@ Upstage · Proprietary · Medium · 컨텍스트 128k · 종합지능 **None** �
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · 116.488779279137 t/s · TTFT 1.81597646678881s · 128k ctx`
+`입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · 119.212437972715 t/s · TTFT 1.83726160934716s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

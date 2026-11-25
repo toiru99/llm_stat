@@ -5,7 +5,7 @@ creator: Google
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0
-output_speed_tps: 23.845628400072
+output_speed_tps: 25.2193945050739
 context_window: 128000
 status: past
 size_class: Small
@@ -18,14 +18,14 @@ radar:
   agentic: { s: 4.4, z: -1.51, r: 27.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 44.7, z: -1.36, r: 29.6, estimated: false }  # 멀티모달
-  long_context: { s: 8.3, z: -1.52, r: 27.3, estimated: false }  # 긴문맥
+  long_context: { s: 8.3, z: -1.51, r: 27.3, estimated: false }  # 긴문맥
   instruction: { s: 27.7, z: -0.95, r: 35.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemma 3 27B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Gemma 3 27B
@@ -37,7 +37,7 @@ Google · Open · Small(27.4B) · 컨텍스트 128k · 종합지능 **None** · 
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 23.845628400072 t/s · TTFT 3.31830413587502s · 128k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 25.2193945050739 t/s · TTFT 3.33447955236668s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ Google · Open · Small(27.4B) · 컨텍스트 128k · 종합지능 **None** · 
 | 에이전트 | 27.4 | -1.51 | 실측 | [[gdpval]] -401.2 Elo×1.0, [[tau2-bench]] 10.5263%×1.0, [[tau3-banking]] 0.824742%×1.0, [[terminal-bench]] 3.78788%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 29.6 | -1.36 | 실측 | [[mmmu-pro]] 48.0347%×1.0 |
-| 긴문맥 | 27.3 | -1.52 | 실측 | [[aa-lcr]] 7.33333%×1.0 |
+| 긴문맥 | 27.3 | -1.51 | 실측 | [[aa-lcr]] 7.33333%×1.0 |
 | 지시 따르기 | 35.8 | -0.95 | 실측 | [[ifbench]] 31.8367%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

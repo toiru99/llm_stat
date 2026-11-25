@@ -18,14 +18,14 @@ radar:
   agentic: { s: 16.3, z: -1.08, r: 33.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 15.1, z: -2.87, r: 6.9, estimated: false }  # 멀티모달
-  long_context: { s: 10.2, z: -1.46, r: 28.1, estimated: false }  # 긴문맥
+  long_context: { s: 10.2, z: -1.46, r: 28.2, estimated: false }  # 긴문맥
   instruction: { s: 13.2, z: -1.55, r: 26.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 0.8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Qwen3.5 0.8B
@@ -49,7 +49,7 @@ Alibaba · Open · Tiny(0.9B) · 컨텍스트 262k · 종합지능 **None**
 | 에이전트 | 33.7 | -1.08 | 실측 | [[gdpval]] -381.33 Elo×1.0, [[tau2-bench]] 47.6608%×1.0, [[terminal-bench]] 0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 6.9 | -2.87 | 실측 | [[mmmu-pro]] 25.8382%×1.0 |
-| 긴문맥 | 28.1 | -1.46 | 실측 | [[aa-lcr]] 9%×1.0 |
+| 긴문맥 | 28.2 | -1.46 | 실측 | [[aa-lcr]] 9%×1.0 |
 | 지시 따르기 | 26.8 | -1.55 | 실측 | [[ifbench]] 21.4966%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

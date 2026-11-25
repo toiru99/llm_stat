@@ -5,7 +5,7 @@ creator: Amazon
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 1.4684
-output_speed_tps: 98.9042701762493
+output_speed_tps: 99.4567601548205
 context_window: 256000
 status: current
 size_class: Unknown
@@ -18,14 +18,14 @@ radar:
   agentic: { s: 56.3, z: 0.33, r: 54.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 66.7, z: -0.24, r: 46.4, estimated: false }  # 멀티모달
-  long_context: { s: 72.2, z: 0.44, r: 56.6, estimated: false }  # 긴문맥
+  long_context: { s: 72.2, z: 0.44, r: 56.7, estimated: false }  # 긴문맥
   instruction: { s: 94.0, z: 1.81, r: 77.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nova 2.0 Pro Preview (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Nova 2.0 Pro Preview (medium)
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **None**
 - **약점**: 추론, 멀티모달
 
 ## 실용 지표
-`입력 $1.25 · 출력 $10.0 · 혼합 $1.4684/1M · 98.9042701762493 t/s · TTFT 14.7977074474302s · 256k ctx`
+`입력 $1.25 · 출력 $10.0 · 혼합 $1.4684/1M · 99.4567601548205 t/s · TTFT 13.0668013702838s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **None**
 | 에이전트 | 54.9 | +0.33 | 실측 | [[gdpval]] 476.51 Elo×1.0, [[tau2-bench]] 92.6901%×1.0, [[terminal-bench]] 24.2424%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 46.4 | -0.24 | 실측 | [[mmmu-pro]] 64.5087%×1.0 |
-| 긴문맥 | 56.6 | +0.44 | 실측 | [[aa-lcr]] 64%×1.0 |
+| 긴문맥 | 56.7 | +0.44 | 실측 | [[aa-lcr]] 64%×1.0 |
 | 지시 따르기 | 77.2 | +1.81 | 실측 | [[ifbench]] 79.0476%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Olmo 3 7B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Olmo 3 7B

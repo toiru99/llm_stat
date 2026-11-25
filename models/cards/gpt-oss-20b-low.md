@@ -5,7 +5,7 @@ creator: OpenAI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.093
-output_speed_tps: 142.330894441184
+output_speed_tps: 152.301166756301
 context_window: 131072
 status: current
 size_class: Small
@@ -18,14 +18,14 @@ radar:
   agentic: { s: 28.8, z: -0.64, r: 40.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 35.0, z: -0.7, r: 39.5, estimated: false }  # 긴문맥
+  long_context: { s: 35.0, z: -0.7, r: 39.6, estimated: false }  # 긴문맥
   instruction: { s: 64.2, z: 0.57, r: 58.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — gpt-oss-20b (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # gpt-oss-20b (low)
@@ -37,7 +37,7 @@ OpenAI · Open · Small(21B) · 컨텍스트 131k · 종합지능 **None**
 - **약점**: 긴문맥, 코딩
 
 ## 실용 지표
-`입력 $0.07 · 출력 $0.3 · 혼합 $0.093/1M · 142.330894441184 t/s · TTFT 1.23577954591157s · 131k ctx`
+`입력 $0.07 · 출력 $0.3 · 혼합 $0.093/1M · 152.301166756301 t/s · TTFT 1.18571130292187s · 131k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ OpenAI · Open · Small(21B) · 컨텍스트 131k · 종합지능 **None**
 | 에이전트 | 40.3 | -0.64 | 실측 | [[tau2-bench]] 50.2924%×1.0, [[terminal-bench]] 4.54545%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 39.5 | -0.7 | 실측 | [[aa-lcr]] 31%×1.0 |
+| 긴문맥 | 39.6 | -0.7 | 실측 | [[aa-lcr]] 31%×1.0 |
 | 지시 따르기 | 58.6 | +0.57 | 실측 | [[ifbench]] 57.8231%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

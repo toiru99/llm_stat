@@ -18,14 +18,14 @@ radar:
   agentic: { s: 68.0, z: 0.74, r: 61.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 85.7, z: 0.86, r: 62.8, estimated: false }  # 긴문맥
+  long_context: { s: 85.7, z: 0.86, r: 62.9, estimated: false }  # 긴문맥
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Motif 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Motif 3
@@ -49,7 +49,7 @@ Motif Technologies · Open · Large(314B) · 컨텍스트 262k · 종합지능 *
 | 에이전트 | 61.0 | +0.74 | 실측 | [[gdpval]] 1126.49 Elo×1.0, [[tau3-banking]] 35.2577%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 62.8 | +0.86 | 실측 | [[aa-lcr]] 76%×1.0 |
+| 긴문맥 | 62.9 | +0.86 | 실측 | [[aa-lcr]] 76%×1.0 |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

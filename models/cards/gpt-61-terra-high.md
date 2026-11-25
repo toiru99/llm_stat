@@ -3,9 +3,9 @@ type: Model
 title: GPT-6.1 Terra (high)
 creator: OpenAI
 license: Proprietary
-intelligence_index: 42.4344508712563
+intelligence_index: 42.5354609722664
 price_blended_usd_1m: 0.735
-output_speed_tps: 66.7734283975972
+output_speed_tps: 67.1166400642703
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -18,26 +18,26 @@ radar:
   agentic: { s: 77.4, z: 1.07, r: 66.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 92.4, z: 1.07, r: 66.1, estimated: false }  # 멀티모달
-  long_context: { s: 92.9, z: 1.07, r: 66.1, estimated: false }  # 긴문맥
+  long_context: { s: 92.9, z: 1.08, r: 66.1, estimated: false }  # 긴문맥
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6.1 Terra (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # GPT-6.1 Terra (high)
 
-OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **42.4344508712563**
+OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **42.5354609722664**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 코딩
-- **약점**: 긴문맥, 전문 지식
+- **약점**: 멀티모달, 전문 지식
 
 ## 실용 지표
-`입력 $1.0 · 출력 $5.0 · 혼합 $0.735/1M · 66.7734283975972 t/s · TTFT 9.8967223843521s · 1M ctx` · 가성비 57.7
+`입력 $1.0 · 출력 $5.0 · 혼합 $0.735/1M · 67.1166400642703 t/s · TTFT 11.5568658494089s · 1M ctx` · 가성비 57.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **42.4344508
 | 에이전트 | 66.1 | +1.07 | 실측 | [[gdpval]] 1354.59 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 66.1 | +1.07 | 실측 | [[mmmu-pro]] 83.815%×1.0 |
-| 긴문맥 | 66.1 | +1.07 | 실측 | [[aa-lcr]] 82.3333%×1.0 |
+| 긴문맥 | 66.1 | +1.08 | 실측 | [[aa-lcr]] 82.3333%×1.0 |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

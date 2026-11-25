@@ -18,14 +18,14 @@ radar:
   agentic: { s: 75.6, z: 1.0, r: 65.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 87.6, z: 0.83, r: 62.4, estimated: false }  # 멀티모달
-  long_context: { s: 85.7, z: 0.86, r: 62.8, estimated: false }  # 긴문맥
+  long_context: { s: 85.7, z: 0.86, r: 62.9, estimated: false }  # 긴문맥
   instruction: { s: 81.9, z: 1.31, r: 69.6, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3 Pro Preview (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Gemini 3 Pro Preview (high)
@@ -49,7 +49,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 | 에이전트 | 65.1 | +1.0 | 실측 | [[tau2-bench]] 87.1345%×1.0, [[terminal-bench]] 41.6667%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 62.4 | +0.83 | 실측 | [[mmmu-pro]] 80.1734%×1.0 |
-| 긴문맥 | 62.8 | +0.86 | 실측 | [[aa-lcr]] 76%×1.0 |
+| 긴문맥 | 62.9 | +0.86 | 실측 | [[aa-lcr]] 76%×1.0 |
 | 지시 따르기 | 69.6 | +1.31 | 실측 | [[ifbench]] 70.4082%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

@@ -3,9 +3,9 @@ type: Model
 title: Claude Fable 5.1 (xhigh)
 creator: Anthropic
 license: Proprietary
-intelligence_index: 50.0216384248632
+intelligence_index: 50.0408215056713
 price_blended_usd_1m: 7.175
-output_speed_tps: 85.9942935452196
+output_speed_tps: 85.4992181402162
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Fable 5.1 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Claude Fable 5.1 (xhigh)
 
-Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **50.0216384248632** · ⚠️ past(구세대)
+Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **50.0408215056713** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 전문 지식
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $10.0 · 출력 $50.0 · 혼합 $7.175/1M · 85.9942935452196 t/s · TTFT 51.3442328399408s · 1M ctx` · 가성비 7.0
+`입력 $10.0 · 출력 $50.0 · 혼합 $7.175/1M · 85.4992181402162 t/s · TTFT 69.3465364026214s · 1M ctx` · 가성비 7.0
 
 ## 레이더 8축 (평균=50 기준선)
 

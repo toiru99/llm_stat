@@ -53,7 +53,7 @@ const run = async () => {
   if (!performanceResponse.ok()) throw new Error('성능 방법론 조회 실패');
   const performanceVersion = (await performanceResponse.text()).replace(/<[^>]*>/g,' ').match(/Version\s+(\d+\.\d+\.\d+)/)?.[1];
   if (performanceVersion !== '3.0.0') throw new Error(`성능 버전 변경/미확인: ${performanceVersion || 'unknown'}`);
-  if (observedVersion !== '5.0.1') throw new Error(`지수 버전 변경/미확인: ${observedVersion || 'unknown'} — 매핑 검토 필요`);
+  if (observedVersion !== '5.0.2') throw new Error(`지수 버전 변경/미확인: ${observedVersion || 'unknown'} — 매핑 검토 필요`);
 
   // Status 필터의 "Current" 체크 해제 → 과거(deprecated) 모델 포함 전체 행 노출.
   // 기본(current) 행 수를 기록해 두면 조인 없이도 current/past 규모를 검증할 수 있다.

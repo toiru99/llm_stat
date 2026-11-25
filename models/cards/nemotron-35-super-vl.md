@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: 13.6203422723141
 price_blended_usd_1m: 0.115
-output_speed_tps: 353.529114093036
+output_speed_tps: 340.088626097997
 context_window: 1000000
 status: current
 size_class: Medium
@@ -18,14 +18,14 @@ radar:
   agentic: { s: 69.0, z: 0.77, r: 61.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 77.8, z: 0.61, r: 59.2, estimated: false }  # 긴문맥
+  long_context: { s: 77.8, z: 0.62, r: 59.2, estimated: false }  # 긴문맥
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3.5 Super VL
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Nemotron 3.5 Super VL
@@ -37,7 +37,7 @@ NVIDIA · Open · Medium(120B) · 컨텍스트 1M · 종합지능 **13.620342272
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.5 · 혼합 $0.115/1M · 353.529114093036 t/s · TTFT 0.97212030957827s · 1M ctx` · 가성비 118.4
+`입력 $0.15 · 출력 $0.5 · 혼합 $0.115/1M · 340.088626097997 t/s · TTFT 0.998453720919593s · 1M ctx` · 가성비 118.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ NVIDIA · Open · Medium(120B) · 컨텍스트 1M · 종합지능 **13.620342272
 | 에이전트 | 61.6 | +0.77 | 실측 | [[gdpval]] 1162.41 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 59.2 | +0.61 | 실측 | [[aa-lcr]] 69%×1.0 |
+| 긴문맥 | 59.2 | +0.62 | 실측 | [[aa-lcr]] 69%×1.0 |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

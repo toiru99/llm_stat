@@ -18,14 +18,14 @@ radar:
   agentic: { s: 15.6, z: -1.11, r: 33.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 27.8, z: -0.92, r: 36.2, estimated: false }  # 긴문맥
+  long_context: { s: 27.8, z: -0.92, r: 36.3, estimated: false }  # 긴문맥
   instruction: { s: 29.2, z: -0.88, r: 36.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Llama Nemotron Super 49B v1.5 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Llama Nemotron Super 49B v1.5 (non-reasoning)
@@ -49,7 +49,7 @@ NVIDIA · Open · Medium(49B) · 컨텍스트 128k · 종합지능 **None** · �
 | 에이전트 | 33.3 | -1.11 | 실측 | [[tau2-bench]] 25.1462%×1.0, [[terminal-bench]] 3.78788%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 36.2 | -0.92 | 실측 | [[aa-lcr]] 24.6667%×1.0 |
+| 긴문맥 | 36.3 | -0.92 | 실측 | [[aa-lcr]] 24.6667%×1.0 |
 | 지시 따르기 | 36.8 | -0.88 | 실측 | [[ifbench]] 32.9252%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

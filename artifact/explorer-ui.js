@@ -36,7 +36,7 @@ const extraNames = {
   'humanitys-last-exam':"Humanity’s Last Exam",'ifbench':'IFBench','itbench-aa':'ITBench-AA',
   'livecodebench':'LiveCodeBench','mka':'MKA','mlcr-aa':'MLCR-AA','mmmu-pro':'MMMU-Pro',
   'scicode':'SciCode','tau2-bench':'τ²-Bench Telecom','tau3-banking':'τ³-Banking',
-  'terminalbench-2-1':'Terminal-Bench 2.1','terminalbench-hard':'Terminal-Bench Hard','vials-aa':'VIALS-AA'
+  'terminalbench-4-0':'Terminal-Bench 4.0','terminalbench-2-1':'Terminal-Bench 2.1','terminalbench-hard':'Terminal-Bench Hard','vials-aa':'VIALS-AA'
 };
 const extraElo = new Set(['aa-3d','code2video-aa','gdpval-aa-normalized']);
 const indexKeys = new Set(INDEX_COMPONENTS.map(c=>c.key));

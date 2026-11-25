@@ -18,14 +18,14 @@ radar:
   agentic: { s: 45.4, z: -0.06, r: 49.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 10.2, z: -1.46, r: 28.1, estimated: false }  # 긴문맥
+  long_context: { s: 10.2, z: -1.46, r: 28.2, estimated: false }  # 긴문맥
   instruction: { s: 52.2, z: 0.07, r: 51.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Mi:dm K 2.5 Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Mi:dm K 2.5 Pro
@@ -49,7 +49,7 @@ Korea Telecom · Proprietary · Small · 컨텍스트 128k · 종합지능 **Non
 | 에이전트 | 49.1 | -0.06 | 실측 | [[tau2-bench]] 86.5497%×1.0, [[terminal-bench]] 2.27273%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 28.1 | -1.46 | 실측 | [[aa-lcr]] 9%×1.0 |
+| 긴문맥 | 28.2 | -1.46 | 실측 | [[aa-lcr]] 9%×1.0 |
 | 지시 따르기 | 51.1 | +0.07 | 실측 | [[ifbench]] 49.3197%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

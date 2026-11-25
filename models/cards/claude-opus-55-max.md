@@ -3,9 +3,9 @@ type: Model
 title: Claude Opus 5.5 (max)
 creator: Anthropic
 license: Proprietary
-intelligence_index: 59.1060336078904
+intelligence_index: 59.1249717392035
 price_blended_usd_1m: 2.94
-output_speed_tps: 116.400031765482
+output_speed_tps: 116.922991272957
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -18,26 +18,26 @@ radar:
   agentic: { s: 100.0, z: 1.87, r: 78.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 97.6, z: 1.34, r: 70.1, estimated: false }  # 멀티모달
-  long_context: { s: 95.5, z: 1.16, r: 67.3, estimated: false }  # 긴문맥
+  long_context: { s: 95.5, z: 1.16, r: 67.4, estimated: false }  # 긴문맥
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Opus 5.5 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Claude Opus 5.5 (max)
 
-Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **59.1060336078904**
+Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **59.1249717392035**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 코딩
 - **약점**: 멀티모달, 긴문맥
 
 ## 실용 지표
-`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 116.400031765482 t/s · TTFT 325.115711425164s · 1M ctx` · 가성비 20.1
+`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 116.922991272957 t/s · TTFT 337.809683193142s · 1M ctx` · 가성비 20.1
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **59.1060
 | 에이전트 | 78.0 | +1.87 | 실측 | [[gdpval]] 1866.27 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 70.1 | +1.34 | 실측 | [[mmmu-pro]] 87.6879%×1.0 |
-| 긴문맥 | 67.3 | +1.16 | 실측 | [[aa-lcr]] 84.6667%×1.0 |
+| 긴문맥 | 67.4 | +1.16 | 실측 | [[aa-lcr]] 84.6667%×1.0 |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

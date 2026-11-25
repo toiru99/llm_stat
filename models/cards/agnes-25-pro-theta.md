@@ -3,9 +3,9 @@ type: Model
 title: Agnes 2.5 Pro Theta
 creator: Sapiens AI
 license: Proprietary
-intelligence_index: 24.029012523359
+intelligence_index: 24.0795175738641
 price_blended_usd_1m: 0.057
-output_speed_tps: 151.440579654546
+output_speed_tps: 152.029984396594
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -18,26 +18,26 @@ radar:
   agentic: { s: 84.2, z: 1.31, r: 69.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 85.3, z: 0.71, r: 60.6, estimated: false }  # 멀티모달
-  long_context: { s: 95.5, z: 1.16, r: 67.3, estimated: false }  # 긴문맥
+  long_context: { s: 95.5, z: 1.16, r: 67.4, estimated: false }  # 긴문맥
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Agnes 2.5 Pro Theta
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Agnes 2.5 Pro Theta
 
-Sapiens AI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **24.029012523359**
+Sapiens AI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **24.0795175738641**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 코딩, 에이전트
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.3 · 혼합 $0.057/1M · 151.440579654546 t/s · TTFT 3.77914345309101s · 1M ctx` · 가성비 421.6
+`입력 $0.1 · 출력 $0.3 · 혼합 $0.057/1M · 152.029984396594 t/s · TTFT 3.17070877181626s · 1M ctx` · 가성비 422.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ Sapiens AI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **24.029
 | 에이전트 | 69.6 | +1.31 | 실측 | [[gdpval]] 1507 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 60.6 | +0.71 | 실측 | [[mmmu-pro]] 78.4393%×1.0 |
-| 긴문맥 | 67.3 | +1.16 | 실측 | [[aa-lcr]] 84.6667%×1.0 |
+| 긴문맥 | 67.4 | +1.16 | 실측 | [[aa-lcr]] 84.6667%×1.0 |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

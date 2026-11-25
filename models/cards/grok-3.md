@@ -18,14 +18,14 @@ radar:
   agentic: { s: 33.3, z: -0.49, r: 42.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 65.4, z: 0.23, r: 53.5, estimated: false }  # 긴문맥
+  long_context: { s: 65.4, z: 0.24, r: 53.5, estimated: false }  # 긴문맥
   instruction: { s: 48.9, z: -0.06, r: 49.0, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 3
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Grok 3
@@ -49,7 +49,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** �
 | 에이전트 | 42.7 | -0.49 | 실측 | [[tau2-bench]] 48.8304%×1.0, [[terminal-bench]] 11.3636%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 53.5 | +0.23 | 실측 | [[aa-lcr]] 58%×1.0 |
+| 긴문맥 | 53.5 | +0.24 | 실측 | [[aa-lcr]] 58%×1.0 |
 | 지시 따르기 | 49.0 | -0.06 | 실측 | [[ifbench]] 46.9388%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

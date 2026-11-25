@@ -5,7 +5,7 @@ creator: Z AI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.511
-output_speed_tps: 75.8202866107676
+output_speed_tps: 73.1111328966525
 context_window: 200000
 status: past
 size_class: Large
@@ -18,14 +18,14 @@ radar:
   agentic: { s: 70.5, z: 0.82, r: 62.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 45.9, z: -0.36, r: 44.5, estimated: false }  # 긴문맥
+  long_context: { s: 45.9, z: -0.36, r: 44.6, estimated: false }  # 긴문맥
   instruction: { s: 59.7, z: 0.38, r: 55.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.7 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # GLM-4.7 (non-reasoning)
@@ -37,7 +37,7 @@ Z AI · Open · Large(357B) · 컨텍스트 200k · 종합지능 **None** · ⚠
 - **약점**: 긴문맥, 추론
 
 ## 실용 지표
-`입력 $0.525 · 출력 $2.1 · 혼합 $0.511/1M · 75.8202866107676 t/s · TTFT 3.54184499156665s · 200k ctx`
+`입력 $0.525 · 출력 $2.1 · 혼합 $0.511/1M · 73.1111328966525 t/s · TTFT 3.56546856126112s · 200k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ Z AI · Open · Large(357B) · 컨텍스트 200k · 종합지능 **None** · ⚠
 | 에이전트 | 62.4 | +0.82 | 실측 | [[tau2-bench]] 94.152%×1.0, [[terminal-bench]] 30.303%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 44.5 | -0.36 | 실측 | [[aa-lcr]] 40.6667%×1.0 |
+| 긴문맥 | 44.6 | -0.36 | 실측 | [[aa-lcr]] 40.6667%×1.0 |
 | 지시 따르기 | 55.8 | +0.38 | 실측 | [[ifbench]] 54.6259%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

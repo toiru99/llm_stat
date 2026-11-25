@@ -18,14 +18,14 @@ radar:
   agentic: { s: 62.0, z: 0.53, r: 57.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 71.2, z: -0.01, r: 49.9, estimated: false }  # 멀티모달
-  long_context: { s: 85.7, z: 0.86, r: 62.8, estimated: false }  # 긴문맥
+  long_context: { s: 85.7, z: 0.86, r: 62.9, estimated: false }  # 긴문맥
   instruction: { s: 60.8, z: 0.43, r: 56.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 4.1 Opus
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Claude 4.1 Opus
@@ -49,7 +49,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None*
 | 에이전트 | 57.9 | +0.53 | 실측 | [[tau2-bench]] 71.3661%×1.0, [[terminal-bench]] 34.3352%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 49.9 | -0.01 | 실측 | [[mmmu-pro]] 67.9191%×1.0 |
-| 긴문맥 | 62.8 | +0.86 | 실측 | [[aa-lcr]] 76%×1.0 |
+| 긴문맥 | 62.9 | +0.86 | 실측 | [[aa-lcr]] 76%×1.0 |
 | 지시 따르기 | 56.5 | +0.43 | 실측 | [[ifbench]] 55.4422%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

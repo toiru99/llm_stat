@@ -3,9 +3,9 @@ type: Model
 title: Mistral Large 4 Preview
 creator: Mistral
 license: Proprietary
-intelligence_index: 25.336451488165
+intelligence_index: 25.2354413871549
 price_blended_usd_1m: 0.399
-output_speed_tps: 65.3101501957757
+output_speed_tps: 67.2663326015686
 context_window: 524288
 status: past
 size_class: Large
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Large 4 Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Mistral Large 4 Preview
 
-Mistral · Proprietary · Large · 컨텍스트 524k · 종합지능 **25.336451488165** · ⚠️ past(구세대)
+Mistral · Proprietary · Large · 컨텍스트 524k · 종합지능 **25.2354413871549** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 코딩, 에이전트
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.7 · 출력 $2.1 · 혼합 $0.399/1M · 65.3101501957757 t/s · TTFT 2.61480838520837s · 524k ctx` · 가성비 63.5
+`입력 $0.7 · 출력 $2.1 · 혼합 $0.399/1M · 67.2663326015686 t/s · TTFT 2.61431043457505s · 524k ctx` · 가성비 63.2
 
 ## 레이더 8축 (평균=50 기준선)
 

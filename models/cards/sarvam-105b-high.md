@@ -5,7 +5,7 @@ creator: Sarvam
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.0436
-output_speed_tps: 250.694176382451
+output_speed_tps: 263.97466492383
 context_window: 128000
 status: current
 size_class: Medium
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Sarvam 105B (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Sarvam 105B (high)
@@ -37,7 +37,7 @@ Sarvam · Open · Medium(106B) · 컨텍스트 128k · 종합지능 **None**
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
-`입력 $0.042 · 출력 $0.17 · 혼합 $0.0436/1M · 250.694176382451 t/s · TTFT 2.30912736997048s · 128k ctx`
+`입력 $0.042 · 출력 $0.17 · 혼합 $0.0436/1M · 263.97466492383 t/s · TTFT 2.30314031995674s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -3,7 +3,7 @@ type: Model
 title: Nanbeige4.3-33B
 creator: Nanbeige
 license: Open
-intelligence_index: 20.4071119588083
+intelligence_index: 20.3566069083032
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 524288
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nanbeige4.3-33B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Nanbeige4.3-33B
 
-Nanbeige · Open · Small(33B) · 컨텍스트 524k · 종합지능 **20.4071119588083**
+Nanbeige · Open · Small(33B) · 컨텍스트 524k · 종합지능 **20.3566069083032**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: —

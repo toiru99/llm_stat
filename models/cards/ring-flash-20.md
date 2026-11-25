@@ -18,14 +18,14 @@ radar:
   agentic: { s: 5.7, z: -1.46, r: 28.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 23.7, z: -1.04, r: 34.3, estimated: false }  # 긴문맥
+  long_context: { s: 23.7, z: -1.04, r: 34.4, estimated: false }  # 긴문맥
   instruction: { s: 43.7, z: -0.28, r: 45.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Ring-flash-2.0
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Ring-flash-2.0
@@ -49,7 +49,7 @@ InclusionAI · Open · Medium(103B) · 컨텍스트 128k · 종합지능 **None*
 | 에이전트 | 28.1 | -1.46 | 실측 | [[tau2-bench]] 0%×1.0, [[terminal-bench]] 7.57576%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 34.3 | -1.04 | 실측 | [[aa-lcr]] 21%×1.0 |
+| 긴문맥 | 34.4 | -1.04 | 실측 | [[aa-lcr]] 21%×1.0 |
 | 지시 따르기 | 45.8 | -0.28 | 실측 | [[ifbench]] 43.2653%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

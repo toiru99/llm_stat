@@ -3,9 +3,9 @@ type: Model
 title: GLM-5.3 (max)
 creator: Z AI
 license: Open
-intelligence_index: 31.653381843882
+intelligence_index: 31.5523717428719
 price_blended_usd_1m: 0.902
-output_speed_tps: 71.2905507068001
+output_speed_tps: 70.5277429224148
 context_window: 1000000
 status: current
 size_class: Large
@@ -18,26 +18,26 @@ radar:
   agentic: { s: 94.3, z: 1.66, r: 75.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 89.8, z: 0.98, r: 64.7, estimated: false }  # 긴문맥
+  long_context: { s: 89.8, z: 0.98, r: 64.8, estimated: false }  # 긴문맥
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5.3 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # GLM-5.3 (max)
 
-Z AI · Open · Large(753B) · 컨텍스트 1M · 종합지능 **31.653381843882**
+Z AI · Open · Large(753B) · 컨텍스트 1M · 종합지능 **31.5523717428719**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 추론
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
-`입력 $1.4 · 출력 $4.4 · 혼합 $0.902/1M · 71.2905507068001 t/s · TTFT 4.53486908998161s · 1M ctx` · 가성비 35.1
+`입력 $1.4 · 출력 $4.4 · 혼합 $0.902/1M · 70.5277429224148 t/s · TTFT 4.33179807778975s · 1M ctx` · 가성비 35.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ Z AI · Open · Large(753B) · 컨텍스트 1M · 종합지능 **31.653381843882
 | 에이전트 | 75.0 | +1.66 | 실측 | [[gdpval]] 1654.2 Elo×1.0, [[tau3-banking]] 50.3093%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 64.7 | +0.98 | 실측 | [[aa-lcr]] 79.6667%×1.0 |
+| 긴문맥 | 64.8 | +0.98 | 실측 | [[aa-lcr]] 79.6667%×1.0 |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

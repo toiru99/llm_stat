@@ -18,14 +18,14 @@ radar:
   agentic: { s: 40.7, z: -0.23, r: 46.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 81.6, z: 0.73, r: 60.9, estimated: false }  # 긴문맥
+  long_context: { s: 81.6, z: 0.73, r: 61.0, estimated: false }  # 긴문맥
   instruction: { s: 59.0, z: 0.36, r: 55.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V3.2 Exp
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # DeepSeek V3.2 Exp
@@ -49,7 +49,7 @@ DeepSeek · Open · Large(685B) · 컨텍스트 128k · 종합지능 **None** ·
 | 에이전트 | 46.6 | -0.23 | 실측 | [[tau2-bench]] 33.9181%×1.0, [[terminal-bench]] 31.0606%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 60.9 | +0.73 | 실측 | [[aa-lcr]] 72.3333%×1.0 |
+| 긴문맥 | 61.0 | +0.73 | 실측 | [[aa-lcr]] 72.3333%×1.0 |
 | 지시 따르기 | 55.4 | +0.36 | 실측 | [[ifbench]] 54.1497%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

@@ -3,9 +3,9 @@ type: Model
 title: Inkling 2 Small
 creator: Thinking Machines
 license: Open
-intelligence_index: 30.6286781498958
+intelligence_index: 30.6791832004009
 price_blended_usd_1m: 0.181
-output_speed_tps: 103.11085978318
+output_speed_tps: 102.082567540283
 context_window: 1024000
 status: current
 size_class: Large
@@ -18,26 +18,26 @@ radar:
   agentic: { s: 84.1, z: 1.31, r: 69.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 89.4, z: 0.92, r: 63.8, estimated: false }  # 멀티모달
-  long_context: { s: 94.0, z: 1.11, r: 66.6, estimated: false }  # 긴문맥
+  long_context: { s: 94.0, z: 1.11, r: 66.7, estimated: false }  # 긴문맥
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Inkling 2 Small
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Inkling 2 Small
 
-Thinking Machines · Open · Large(594B) · 컨텍스트 1M · 종합지능 **30.6286781498958**
+Thinking Machines · Open · Large(594B) · 컨텍스트 1M · 종합지능 **30.6791832004009**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 추론
 - **약점**: 멀티모달, 전문 지식
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.0 · 혼합 $0.181/1M · 103.11085978318 t/s · TTFT 2.18968815416244s · 1M ctx` · 가성비 169.2
+`입력 $0.3 · 출력 $1.0 · 혼합 $0.181/1M · 102.082567540283 t/s · TTFT 2.15460043519573s · 1M ctx` · 가성비 169.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ Thinking Machines · Open · Large(594B) · 컨텍스트 1M · 종합지능 **30
 | 에이전트 | 69.6 | +1.31 | 실측 | [[gdpval]] 1630.23 Elo×1.0, [[tau3-banking]] 40.4124%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 63.8 | +0.92 | 실측 | [[mmmu-pro]] 81.5607%×1.0 |
-| 긴문맥 | 66.6 | +1.11 | 실측 | [[aa-lcr]] 83.3333%×1.0 |
+| 긴문맥 | 66.7 | +1.11 | 실측 | [[aa-lcr]] 83.3333%×1.0 |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

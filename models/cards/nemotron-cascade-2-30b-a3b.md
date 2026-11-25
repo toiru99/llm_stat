@@ -18,14 +18,14 @@ radar:
   agentic: { s: 38.5, z: -0.3, r: 45.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 44.4, z: -0.41, r: 43.8, estimated: false }  # 긴문맥
+  long_context: { s: 44.4, z: -0.41, r: 43.9, estimated: false }  # 긴문맥
   instruction: { s: 95.9, z: 1.89, r: 78.3, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron Cascade 2 30B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Nemotron Cascade 2 30B A3B
@@ -49,7 +49,7 @@ NVIDIA · Open · Small(31.6B) · 컨텍스트 1M · 종합지능 **None**
 | 에이전트 | 45.5 | -0.3 | 실측 | [[gdpval]] 271.98 Elo×1.0, [[tau2-bench]] 53.2164%×1.0, [[terminal-bench]] 21.2121%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 43.8 | -0.41 | 실측 | [[aa-lcr]] 39.3333%×1.0 |
+| 긴문맥 | 43.9 | -0.41 | 실측 | [[aa-lcr]] 39.3333%×1.0 |
 | 지시 따르기 | 78.3 | +1.89 | 실측 | [[ifbench]] 80.4082%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

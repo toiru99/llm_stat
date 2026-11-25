@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 15.6850612405479
 price_blended_usd_1m: 0.47
-output_speed_tps: 66.887175890131
+output_speed_tps: 61.0881360269043
 context_window: 256000
 status: current
 size_class: Small
@@ -18,14 +18,14 @@ radar:
   agentic: { s: 70.2, z: 0.82, r: 62.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 79.0, z: 0.39, r: 55.8, estimated: false }  # 멀티모달
-  long_context: { s: 87.2, z: 0.9, r: 63.5, estimated: false }  # 긴문맥
+  long_context: { s: 87.2, z: 0.9, r: 63.6, estimated: false }  # 긴문맥
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.8 27B (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Qwen3.8 27B (low)
@@ -37,7 +37,7 @@ Alibaba · Open · Small(27B) · 컨텍스트 256k · 종합지능 **15.68506124
 - **약점**: 멀티모달, 추론
 
 ## 실용 지표
-`입력 $0.5 · 출력 $3.0 · 혼합 $0.47/1M · 66.887175890131 t/s · TTFT 6.65112679506326s · 256k ctx` · 가성비 33.4
+`입력 $0.5 · 출력 $3.0 · 혼합 $0.47/1M · 61.0881360269043 t/s · TTFT 9.34782150259312s · 256k ctx` · 가성비 33.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ Alibaba · Open · Small(27B) · 컨텍스트 256k · 종합지능 **15.68506124
 | 에이전트 | 62.2 | +0.82 | 실측 | [[gdpval]] 1366.08 Elo×1.0, [[tau3-banking]] 32.1649%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 55.8 | +0.39 | 실측 | [[mmmu-pro]] 73.7572%×1.0 |
-| 긴문맥 | 63.5 | +0.9 | 실측 | [[aa-lcr]] 77.3333%×1.0 |
+| 긴문맥 | 63.6 | +0.9 | 실측 | [[aa-lcr]] 77.3333%×1.0 |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

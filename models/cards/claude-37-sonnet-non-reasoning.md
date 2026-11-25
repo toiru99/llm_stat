@@ -18,14 +18,14 @@ radar:
   agentic: { s: 41.3, z: -0.2, r: 46.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 60.8, z: -0.54, r: 41.8, estimated: false }  # 멀티모달
-  long_context: { s: 58.3, z: 0.02, r: 50.2, estimated: false }  # 긴문맥
+  long_context: { s: 58.3, z: 0.02, r: 50.3, estimated: false }  # 긴문맥
   instruction: { s: 44.8, z: -0.23, r: 46.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 3.7 Sonnet (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Claude 3.7 Sonnet (non-reasoning)
@@ -49,7 +49,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None*
 | 에이전트 | 46.9 | -0.2 | 실측 | [[tau2-bench]] 50%×1.0, [[terminal-bench]] 21.2121%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 41.8 | -0.54 | 실측 | [[mmmu-pro]] 60.0578%×1.0 |
-| 긴문맥 | 50.2 | +0.02 | 실측 | [[aa-lcr]] 51.6667%×1.0 |
+| 긴문맥 | 50.3 | +0.02 | 실측 | [[aa-lcr]] 51.6667%×1.0 |
 | 지시 따르기 | 46.5 | -0.23 | 실측 | [[ifbench]] 44.0136%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

@@ -3,9 +3,9 @@ type: Model
 title: Claude Sonnet 5.5 (low)
 creator: Anthropic
 license: Proprietary
-intelligence_index: 25.649704549789
+intelligence_index: 25.599199499284
 price_blended_usd_1m: 1.47
-output_speed_tps: 130.053680295896
+output_speed_tps: 132.12472676826
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -18,26 +18,26 @@ radar:
   agentic: { s: 69.9, z: 0.8, r: 62.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 85.7, z: 0.86, r: 62.8, estimated: false }  # 긴문맥
+  long_context: { s: 85.7, z: 0.86, r: 62.9, estimated: false }  # 긴문맥
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5.5 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Claude Sonnet 5.5 (low)
 
-Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **25.649704549789**
+Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **25.599199499284**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 코딩, 긴문맥
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.47/1M · 130.053680295896 t/s · TTFT 3.41804645370276s · 1M ctx` · 가성비 17.4
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.47/1M · 132.12472676826 t/s · TTFT 4.20036747473733s · 1M ctx` · 가성비 17.4
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **25.6497
 | 에이전트 | 62.0 | +0.8 | 실측 | [[gdpval]] 1182.36 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 62.8 | +0.86 | 실측 | [[aa-lcr]] 76%×1.0 |
+| 긴문맥 | 62.9 | +0.86 | 실측 | [[aa-lcr]] 76%×1.0 |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

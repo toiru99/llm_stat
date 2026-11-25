@@ -3,9 +3,9 @@ type: Model
 title: DeepSeek V4.1 Flash 1017 (high)
 creator: DeepSeek
 license: Open
-intelligence_index: 28.6437391540402
+intelligence_index: 28.7447492550503
 price_blended_usd_1m: 0.1842
-output_speed_tps: 174.781099673969
+output_speed_tps: 177.539161010383
 context_window: 1000000
 status: current
 size_class: Large
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4.1 Flash 1017 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # DeepSeek V4.1 Flash 1017 (high)
 
-DeepSeek · Open · Large(552B) · 컨텍스트 1M · 종합지능 **28.6437391540402**
+DeepSeek · Open · Large(552B) · 컨텍스트 1M · 종합지능 **28.7447492550503**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 멀티모달
 - **약점**: —
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.1842/1M · 174.781099673969 t/s · TTFT 0.971095343688053s · 1M ctx` · 가성비 155.5
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.1842/1M · 177.539161010383 t/s · TTFT 0.958455434284358s · 1M ctx` · 가성비 156.1
 
 ## 레이더 8축 (평균=50 기준선)
 

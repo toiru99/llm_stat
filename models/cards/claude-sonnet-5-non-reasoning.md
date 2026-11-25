@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 1.54
-output_speed_tps: 97.8629594147697
+output_speed_tps: 96.8860040397823
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -18,14 +18,14 @@ radar:
   agentic: { s: 50.9, z: 0.13, r: 52.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 76.6, z: 0.26, r: 54.0, estimated: false }  # 멀티모달
-  long_context: { s: 78.9, z: 0.65, r: 59.7, estimated: false }  # 긴문맥
+  long_context: { s: 78.9, z: 0.65, r: 59.8, estimated: false }  # 긴문맥
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Claude Sonnet 5 (non-reasoning)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 - **약점**: 에이전트, 추론
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 97.8629594147697 t/s · TTFT 1.14882400427218s · 1M ctx`
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 96.8860040397823 t/s · TTFT 1.34691942853886s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** 
 | 에이전트 | 52.0 | +0.13 | 실측 | [[gdpval]] 1219.45 Elo×1.0, [[tau3-banking]] 15.6701%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 54.0 | +0.26 | 실측 | [[mmmu-pro]] 71.9075%×1.0 |
-| 긴문맥 | 59.7 | +0.65 | 실측 | [[aa-lcr]] 70%×1.0 |
+| 긴문맥 | 59.8 | +0.65 | 실측 | [[aa-lcr]] 70%×1.0 |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

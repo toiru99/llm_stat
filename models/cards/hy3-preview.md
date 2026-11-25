@@ -18,14 +18,14 @@ radar:
   agentic: { s: 72.6, z: 0.9, r: 63.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 72.9, z: 0.46, r: 57.0, estimated: false }  # 긴문맥
+  long_context: { s: 72.9, z: 0.47, r: 57.0, estimated: false }  # 긴문맥
   instruction: { s: 71.6, z: 0.88, r: 63.2, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Hy3-preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Hy3-preview
@@ -49,7 +49,7 @@ Tencent · Open · Large(295B) · 컨텍스트 256k · 종합지능 **None** · 
 | 에이전트 | 63.5 | +0.9 | 실측 | [[tau2-bench]] 92.6901%×1.0, [[terminal-bench]] 34.0909%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 57.0 | +0.46 | 실측 | [[aa-lcr]] 64.6667%×1.0 |
+| 긴문맥 | 57.0 | +0.47 | 실측 | [[aa-lcr]] 64.6667%×1.0 |
 | 지시 따르기 | 63.2 | +0.88 | 실측 | [[ifbench]] 63.1293%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

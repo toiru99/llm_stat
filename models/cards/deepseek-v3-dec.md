@@ -5,7 +5,7 @@ creator: DeepSeek
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.377
-output_speed_tps: 82.03581741812364
+output_speed_tps: 86.53332732552595
 context_window: 128000
 status: past
 size_class: Large
@@ -18,14 +18,14 @@ radar:
   agentic: { s: 14.8, z: -1.14, r: 32.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 33.1, z: -0.76, r: 38.7, estimated: false }  # 긴문맥
+  long_context: { s: 33.1, z: -0.75, r: 38.7, estimated: false }  # 긴문맥
   instruction: { s: 31.8, z: -0.77, r: 38.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V3 (Dec)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # DeepSeek V3 (Dec)
@@ -37,7 +37,7 @@ DeepSeek · Open · Large(671B) · 컨텍스트 128k · 종합지능 **None** ·
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.32 · 출력 $0.89 · 혼합 $0.377/1M · 82.03581741812364 t/s · TTFT 1.565694563357285s · 128k ctx`
+`입력 $0.32 · 출력 $0.89 · 혼합 $0.377/1M · 86.53332732552595 t/s · TTFT 1.376154868092265s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ DeepSeek · Open · Large(671B) · 컨텍스트 128k · 종합지능 **None** ·
 | 에이전트 | 32.9 | -1.14 | 실측 | [[gdpval]] -21.62 Elo×1.0, [[tau2-bench]] 22.807%×1.0, [[tau3-banking]] 4.74227%×1.0, [[terminal-bench]] 6.81818%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 38.7 | -0.76 | 실측 | [[aa-lcr]] 29.3333%×1.0 |
+| 긴문맥 | 38.7 | -0.75 | 실측 | [[aa-lcr]] 29.3333%×1.0 |
 | 지시 따르기 | 38.4 | -0.77 | 실측 | [[ifbench]] 34.7619%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

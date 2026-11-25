@@ -5,7 +5,7 @@ creator: MiniMax
 license: Open
 intelligence_index: 29.0595214290458
 price_blended_usd_1m: 0.1005
-output_speed_tps: 131.268174732599
+output_speed_tps: 129.351542320855
 context_window: 1000000
 status: current
 size_class: Large
@@ -18,14 +18,14 @@ radar:
   agentic: { s: 82.4, z: 1.24, r: 68.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 86.2, z: 0.76, r: 61.3, estimated: false }  # 멀티모달
-  long_context: { s: 89.8, z: 0.98, r: 64.7, estimated: false }  # 긴문맥
+  long_context: { s: 89.8, z: 0.98, r: 64.8, estimated: false }  # 긴문맥
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax-M3.1-Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # MiniMax-M3.1-Flash
@@ -37,7 +37,7 @@ MiniMax · Open · Large(428B) · 컨텍스트 1M · 종합지능 **29.059521429
 - **약점**: 전문 지식, 멀티모달
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · 131.268174732599 t/s · TTFT 1.52808433514528s · 1M ctx` · 가성비 289.1
+`입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · 129.351542320855 t/s · TTFT 1.54748688413542s · 1M ctx` · 가성비 289.1
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ MiniMax · Open · Large(428B) · 컨텍스트 1M · 종합지능 **29.059521429
 | 에이전트 | 68.7 | +1.24 | 실측 | [[gdpval]] 1466.41 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 61.3 | +0.76 | 실측 | [[mmmu-pro]] 79.1329%×1.0 |
-| 긴문맥 | 64.7 | +0.98 | 실측 | [[aa-lcr]] 79.6667%×1.0 |
+| 긴문맥 | 64.8 | +0.98 | 실측 | [[aa-lcr]] 79.6667%×1.0 |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

@@ -3,9 +3,9 @@ type: Model
 title: Qwen3.8-Flash-Next
 creator: Alibaba
 license: Open
-intelligence_index: 28.5750026655353
+intelligence_index: 28.4739925645252
 price_blended_usd_1m: 0.0882
-output_speed_tps: 66.5023248793098
+output_speed_tps: 72.1169895102349
 context_window: 256000
 status: current
 size_class: Large
@@ -18,26 +18,26 @@ radar:
   agentic: { s: 89.1, z: 1.48, r: 72.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 85.5, z: 0.72, r: 60.8, estimated: false }  # 멀티모달
-  long_context: { s: 89.8, z: 0.98, r: 64.7, estimated: false }  # 긴문맥
+  long_context: { s: 89.8, z: 0.98, r: 64.8, estimated: false }  # 긴문맥
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.8-Flash-Next
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Qwen3.8-Flash-Next
 
-Alibaba · Open · Large(180B) · 컨텍스트 256k · 종합지능 **28.5750026655353**
+Alibaba · Open · Large(180B) · 컨텍스트 256k · 종합지능 **28.4739925645252**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 전문 지식
 - **약점**: 긴문맥, 멀티모달
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.47 · 혼합 $0.0882/1M · 66.5023248793098 t/s · TTFT 2.60051819652187s · 256k ctx` · 가성비 324.0
+`입력 $0.15 · 출력 $0.47 · 혼합 $0.0882/1M · 72.1169895102349 t/s · TTFT 2.49630876271462s · 256k ctx` · 가성비 322.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ Alibaba · Open · Large(180B) · 컨텍스트 256k · 종합지능 **28.5750026
 | 에이전트 | 72.2 | +1.48 | 실측 | [[gdpval]] 1637.03 Elo×1.0, [[tau3-banking]] 45.3608%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 60.8 | +0.72 | 실측 | [[mmmu-pro]] 78.6127%×1.0 |
-| 긴문맥 | 64.7 | +0.98 | 실측 | [[aa-lcr]] 79.6667%×1.0 |
+| 긴문맥 | 64.8 | +0.98 | 실측 | [[aa-lcr]] 79.6667%×1.0 |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

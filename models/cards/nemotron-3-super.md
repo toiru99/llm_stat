@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.2025
-output_speed_tps: 197.922561989605
+output_speed_tps: 200.747514229661
 context_window: 1000000
 status: past
 size_class: Medium
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3 Super
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Nemotron 3 Super
@@ -37,7 +37,7 @@ NVIDIA · Open · Medium(120.6B) · 컨텍스트 1M · 종합지능 **None** · 
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $0.9 · 혼합 $0.2025/1M · 197.922561989605 t/s · TTFT 1.02477304806392s · 1M ctx`
+`입력 $0.3 · 출력 $0.9 · 혼합 $0.2025/1M · 200.747514229661 t/s · TTFT 0.991864019175111s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

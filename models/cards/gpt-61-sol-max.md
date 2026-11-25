@@ -3,9 +3,9 @@ type: Model
 title: GPT-6.1 Sol (max)
 creator: OpenAI
 license: Proprietary
-intelligence_index: 54.6087338138148
+intelligence_index: 54.6592388643199
 price_blended_usd_1m: 1.47
-output_speed_tps: 49.1087026787633
+output_speed_tps: 45.1779016420539
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6.1 Sol (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # GPT-6.1 Sol (max)
 
-OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **54.6087338138148** · ⚠️ past(구세대)
+OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **54.6592388643199** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 에이전트
 - **약점**: 전문 지식, 긴문맥
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.47/1M · 49.1087026787633 t/s · TTFT 105.069268673458s · 1M ctx` · 가성비 37.1
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.47/1M · 45.1779016420539 t/s · TTFT 101.167933512467s · 1M ctx` · 가성비 37.2
 
 ## 레이더 8축 (평균=50 기준선)
 

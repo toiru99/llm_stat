@@ -18,14 +18,14 @@ radar:
   agentic: { s: 6.3, z: -1.44, r: 28.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 18.0, z: -1.22, r: 31.8, estimated: false }  # 긴문맥
+  long_context: { s: 18.0, z: -1.21, r: 31.8, estimated: false }  # 긴문맥
   instruction: { s: 27.0, z: -0.97, r: 35.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Jamba 1.7 Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Jamba 1.7 Mini
@@ -49,7 +49,7 @@ AI21 Labs · Open · Medium(52B) · 컨텍스트 258k · 종합지능 **None**
 | 에이전트 | 28.4 | -1.44 | 실측 | [[tau2-bench]] 12.5731%×1.0, [[terminal-bench]] 0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 31.8 | -1.22 | 실측 | [[aa-lcr]] 16%×1.0 |
+| 긴문맥 | 31.8 | -1.21 | 실측 | [[aa-lcr]] 16%×1.0 |
 | 지시 따르기 | 35.4 | -0.97 | 실측 | [[ifbench]] 31.3605%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

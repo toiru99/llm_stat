@@ -18,14 +18,14 @@ radar:
   agentic: { s: 9.8, z: -1.32, r: 30.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 73.3, z: 0.48, r: 57.1, estimated: false }  # 긴문맥
+  long_context: { s: 73.3, z: 0.48, r: 57.2, estimated: false }  # 긴문맥
   instruction: { s: 46.2, z: -0.18, r: 47.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5 (ChatGPT)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # GPT-5 (ChatGPT)
@@ -49,7 +49,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None** �
 | 에이전트 | 30.3 | -1.32 | 실측 | [[tau2-bench]] 0%×1.0, [[terminal-bench]] 12.8788%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 57.1 | +0.48 | 실측 | [[aa-lcr]] 65%×1.0 |
+| 긴문맥 | 57.2 | +0.48 | 실측 | [[aa-lcr]] 65%×1.0 |
 | 지시 따르기 | 47.4 | -0.18 | 실측 | [[ifbench]] 45.034%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

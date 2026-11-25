@@ -3,9 +3,9 @@ type: Model
 title: Gemini 4 Carbon (high)
 creator: Google
 license: Proprietary
-intelligence_index: 60.025738829526
+intelligence_index: 60.1267489305361
 price_blended_usd_1m: 2.94
-output_speed_tps: 59.6872425516974
+output_speed_tps: 53.6670484435934
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -18,26 +18,26 @@ radar:
   agentic: { s: 94.1, z: 1.66, r: 74.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 89.5, z: 0.97, r: 64.6, estimated: false }  # 긴문맥
+  long_context: { s: null, z: null, r: null, estimated: false }  # 긴문맥
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 4 Carbon (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Gemini 4 Carbon (high)
 
-Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **60.025738829526**
+Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **60.1267489305361**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 에이전트, 긴문맥
+- **강점**: 에이전트
 - **약점**: —
 
 ## 실용 지표
-`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 59.6872425516974 t/s · TTFT 69.2048833251279s · 1M ctx` · 가성비 20.4
+`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 53.6670484435934 t/s · TTFT 73.2970700058955s · 1M ctx` · 가성비 20.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **60.0257388
 | 에이전트 | 74.9 | +1.66 | 실측 | [[gdpval]] 1732.68 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 64.6 | +0.97 | 실측 | [[aa-lcr]] 79.3333%×1.0 |
+| 긴문맥 | — | — | 측정 안 됨 | — |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

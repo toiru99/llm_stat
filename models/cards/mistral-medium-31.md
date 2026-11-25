@@ -18,14 +18,14 @@ radar:
   agentic: { s: 27.0, z: -0.71, r: 39.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 52.9, z: -0.95, r: 35.8, estimated: false }  # 멀티모달
-  long_context: { s: 48.1, z: -0.3, r: 45.6, estimated: false }  # 긴문맥
+  long_context: { s: 48.1, z: -0.29, r: 45.6, estimated: false }  # 긴문맥
   instruction: { s: 38.9, z: -0.48, r: 42.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Medium 3.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Mistral Medium 3.1
@@ -49,7 +49,7 @@ Mistral · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None** 
 | 에이전트 | 39.3 | -0.71 | 실측 | [[gdpval]] 392.35 Elo×1.0, [[tau2-bench]] 40.6433%×1.0, [[tau3-banking]] 8.24742%×1.0, [[terminal-bench]] 10.6061%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 35.8 | -0.95 | 실측 | [[mmmu-pro]] 54.1618%×1.0 |
-| 긴문맥 | 45.6 | -0.3 | 실측 | [[aa-lcr]] 42.6667%×1.0 |
+| 긴문맥 | 45.6 | -0.29 | 실측 | [[aa-lcr]] 42.6667%×1.0 |
 | 지시 따르기 | 42.8 | -0.48 | 실측 | [[ifbench]] 39.7959%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

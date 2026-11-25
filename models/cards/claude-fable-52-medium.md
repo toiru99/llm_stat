@@ -3,9 +3,9 @@ type: Model
 title: Claude Fable 5.2 (medium)
 creator: Anthropic
 license: Proprietary
-intelligence_index: 56.4083157101519
+intelligence_index: 56.3220356596468
 price_blended_usd_1m: 5.74
-output_speed_tps: 108.606165068332
+output_speed_tps: 109.730259347706
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -18,26 +18,26 @@ radar:
   agentic: { s: 87.8, z: 1.44, r: 71.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 90.2, z: 0.99, r: 64.9, estimated: false }  # 긴문맥
+  long_context: { s: 90.2, z: 1.0, r: 64.9, estimated: false }  # 긴문맥
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Fable 5.2 (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Claude Fable 5.2 (medium)
 
-Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **56.4083157101519**
+Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **56.3220356596468**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 전문 지식
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $8.0 · 출력 $40.0 · 혼합 $5.74/1M · 108.606165068332 t/s · TTFT 11.1455229628395s · 1M ctx` · 가성비 9.8
+`입력 $8.0 · 출력 $40.0 · 혼합 $5.74/1M · 109.730259347706 t/s · TTFT 12.2900377261211s · 1M ctx` · 가성비 9.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **56.4083
 | 에이전트 | 71.6 | +1.44 | 실측 | [[gdpval]] 1590.56 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 64.9 | +0.99 | 실측 | [[aa-lcr]] 80%×1.0 |
+| 긴문맥 | 64.9 | +1.0 | 실측 | [[aa-lcr]] 80%×1.0 |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

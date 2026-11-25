@@ -3,9 +3,9 @@ type: Model
 title: Qwen4 Max
 creator: Alibaba
 license: Proprietary
-intelligence_index: 42.8914543287565
+intelligence_index: 42.7904442277464
 price_blended_usd_1m: 0.8025
-output_speed_tps: 71.5026221961859
+output_speed_tps: 93.3627290926454
 context_window: 983616
 status: current
 size_class: Unknown
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen4 Max
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Qwen4 Max
 
-Alibaba · Proprietary · Unknown · 컨텍스트 983k · 종합지능 **42.8914543287565**
+Alibaba · Proprietary · Unknown · 컨텍스트 983k · 종합지능 **42.7904442277464**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트
 - **약점**: —
 
 ## 실용 지표
-`입력 $1.5 · 출력 $4.5 · 혼합 $0.8025/1M · 71.5026221961859 t/s · TTFT 5.40570003452025s · 983k ctx` · 가성비 53.4
+`입력 $1.5 · 출력 $4.5 · 혼합 $0.8025/1M · 93.3627290926454 t/s · TTFT 6.14356357733057s · 983k ctx` · 가성비 53.3
 
 ## 레이더 8축 (평균=50 기준선)
 

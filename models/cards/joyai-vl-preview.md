@@ -3,7 +3,7 @@ type: Model
 title: JoyAI-VL-Preview
 creator: Joy Future Academy
 license: Proprietary
-intelligence_index: 28.0361254876924
+intelligence_index: 27.9178174068843
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 1048576
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — JoyAI-VL-Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # JoyAI-VL-Preview
 
-Joy Future Academy · Proprietary · Large · 컨텍스트 1M · 종합지능 **28.0361254876924**
+Joy Future Academy · Proprietary · Large · 컨텍스트 1M · 종합지능 **27.9178174068843**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: —

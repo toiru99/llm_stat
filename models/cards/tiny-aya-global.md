@@ -5,7 +5,7 @@ creator: Cohere
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0
-output_speed_tps: 131.111967741091
+output_speed_tps: 130.944779285444
 context_window: 8192
 status: current
 size_class: Tiny
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Tiny Aya Global
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Tiny Aya Global
@@ -37,7 +37,7 @@ Cohere · Open · Tiny(3.4B) · 컨텍스트 8k · 종합지능 **None**
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 131.111967741091 t/s · TTFT 0.202790674944518s · 8k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 130.944779285444 t/s · TTFT 0.209218669470666s · 8k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

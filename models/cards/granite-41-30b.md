@@ -18,14 +18,14 @@ radar:
   agentic: { s: 24.1, z: -0.81, r: 37.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 26.7, z: -0.95, r: 35.7, estimated: false }  # 긴문맥
+  long_context: { s: 26.7, z: -0.95, r: 35.8, estimated: false }  # 긴문맥
   instruction: { s: 45.3, z: -0.21, r: 46.8, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.1 30B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Granite 4.1 30B
@@ -49,7 +49,7 @@ IBM · Open · Small(30B) · 컨텍스트 131k · 종합지능 **None** · ⚠�
 | 에이전트 | 37.8 | -0.81 | 실측 | [[gdpval]] 195.15 Elo×1.0, [[tau2-bench]] 42.1053%×1.0, [[terminal-bench]] 2.27273%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 35.7 | -0.95 | 실측 | [[aa-lcr]] 23.6667%×1.0 |
+| 긴문맥 | 35.8 | -0.95 | 실측 | [[aa-lcr]] 23.6667%×1.0 |
 | 지시 따르기 | 46.8 | -0.21 | 실측 | [[ifbench]] 44.3537%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

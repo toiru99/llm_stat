@@ -3,9 +3,9 @@ type: Model
 title: K2 Horizon 375B A23B
 creator: Institute of Foundation Models
 license: Open
-intelligence_index: 17.8202731734027
+intelligence_index: 17.7898262037058
 price_blended_usd_1m: 0
-output_speed_tps: 294.712030586186
+output_speed_tps: 291.428779256788
 context_window: 524288
 status: current
 size_class: Large
@@ -18,26 +18,26 @@ radar:
   agentic: { s: 72.2, z: 0.88, r: 63.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 90.2, z: 0.99, r: 64.9, estimated: false }  # 긴문맥
+  long_context: { s: 90.2, z: 1.0, r: 64.9, estimated: false }  # 긴문맥
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — K2 Horizon 375B A23B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # K2 Horizon 375B A23B
 
-Institute of Foundation Models · Open · Large(375B) · 컨텍스트 524k · 종합지능 **17.8202731734027**
+Institute of Foundation Models · Open · Large(375B) · 컨텍스트 524k · 종합지능 **17.7898262037058**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 전문 지식, 긴문맥
 - **약점**: 추론, 코딩
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 294.712030586186 t/s · TTFT 3.03202238543008s · 524k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 291.428779256788 t/s · TTFT 2.99901393714028s · 524k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ Institute of Foundation Models · Open · Large(375B) · 컨텍스트 524k · �
 | 에이전트 | 63.3 | +0.88 | 실측 | [[gdpval]] 1363.76 Elo×1.0, [[tau3-banking]] 34.2268%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 64.9 | +0.99 | 실측 | [[aa-lcr]] 80%×1.0 |
+| 긴문맥 | 64.9 | +1.0 | 실측 | [[aa-lcr]] 80%×1.0 |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

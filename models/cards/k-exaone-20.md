@@ -18,14 +18,14 @@ radar:
   agentic: { s: 37.9, z: -0.32, r: 45.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 67.7, z: 0.3, r: 54.6, estimated: false }  # 긴문맥
+  long_context: { s: 67.7, z: 0.31, r: 54.6, estimated: false }  # 긴문맥
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — K-EXAONE 2.0
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # K-EXAONE 2.0
@@ -49,7 +49,7 @@ LG AI Research · Open · Large(750B) · 컨텍스트 262k · 종합지능 **7.5
 | 에이전트 | 45.2 | -0.32 | 실측 | [[gdpval]] 816.11 Elo×1.0, [[tau3-banking]] 11.5464%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 54.6 | +0.3 | 실측 | [[aa-lcr]] 60%×1.0 |
+| 긴문맥 | 54.6 | +0.31 | 실측 | [[aa-lcr]] 60%×1.0 |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

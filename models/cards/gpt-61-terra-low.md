@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 29.4169280792131
 price_blended_usd_1m: 0.735
-output_speed_tps: 64.4937913349878
+output_speed_tps: 65.4495367512375
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -18,14 +18,14 @@ radar:
   agentic: { s: 70.8, z: 0.84, r: 62.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 90.7, z: 0.98, r: 64.8, estimated: false }  # 멀티모달
-  long_context: { s: 91.4, z: 1.03, r: 65.4, estimated: false }  # 긴문맥
+  long_context: { s: 91.4, z: 1.03, r: 65.5, estimated: false }  # 긴문맥
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6.1 Terra (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # GPT-6.1 Terra (low)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **29.4169280
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $1.0 · 출력 $5.0 · 혼합 $0.735/1M · 64.4937913349878 t/s · TTFT 2.7734482556459s · 1M ctx` · 가성비 40.0
+`입력 $1.0 · 출력 $5.0 · 혼합 $0.735/1M · 65.4495367512375 t/s · TTFT 2.85793613907852s · 1M ctx` · 가성비 40.0
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **29.4169280
 | 에이전트 | 62.6 | +0.84 | 실측 | [[gdpval]] 1204.89 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 64.8 | +0.98 | 실측 | [[mmmu-pro]] 82.4855%×1.0 |
-| 긴문맥 | 65.4 | +1.03 | 실측 | [[aa-lcr]] 81%×1.0 |
+| 긴문맥 | 65.5 | +1.03 | 실측 | [[aa-lcr]] 81%×1.0 |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

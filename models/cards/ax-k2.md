@@ -18,14 +18,14 @@ radar:
   agentic: { s: 45.7, z: -0.05, r: 49.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 78.9, z: 0.65, r: 59.7, estimated: false }  # 긴문맥
+  long_context: { s: 78.9, z: 0.65, r: 59.8, estimated: false }  # 긴문맥
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — A.X-K2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # A.X-K2
@@ -49,7 +49,7 @@ SK Telecom · Open · Large(692B) · 컨텍스트 262k · 종합지능 **9.04405
 | 에이전트 | 49.3 | -0.05 | 실측 | [[gdpval]] 967.21 Elo×1.0, [[tau3-banking]] 16.0825%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 59.7 | +0.65 | 실측 | [[aa-lcr]] 70%×1.0 |
+| 긴문맥 | 59.8 | +0.65 | 실측 | [[aa-lcr]] 70%×1.0 |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

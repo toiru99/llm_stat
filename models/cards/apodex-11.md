@@ -3,7 +3,7 @@ type: Model
 title: Apodex 1.1
 creator: Apodex
 license: Proprietary
-intelligence_index: 13.6712884627289
+intelligence_index: 13.7217935132339
 price_blended_usd_1m: 0.381
 output_speed_tps: None
 context_window: 256000
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Apodex 1.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Apodex 1.1
 
-Apodex · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **13.6712884627289**
+Apodex · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **13.7217935132339**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 전문 지식, 긴문맥
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $3.0 · 혼합 $0.381/1M · None t/s · TTFT Nones · 256k ctx` · 가성비 35.9
+`입력 $0.3 · 출력 $3.0 · 혼합 $0.381/1M · None t/s · TTFT Nones · 256k ctx` · 가성비 36.0
 
 ## 레이더 8축 (평균=50 기준선)
 

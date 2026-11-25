@@ -3,9 +3,9 @@ type: Model
 title: North Mini Code
 creator: Cohere
 license: Open
-intelligence_index: 3.42470262148493
+intelligence_index: 3.37419757097988
 price_blended_usd_1m: 0
-output_speed_tps: 250.505207203383
+output_speed_tps: 252.048443765293
 context_window: 256000
 status: current
 size_class: Small
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — North Mini Code
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # North Mini Code
 
-Cohere · Open · Small(30B) · 컨텍스트 256k · 종합지능 **3.42470262148493**
+Cohere · Open · Small(30B) · 컨텍스트 256k · 종합지능 **3.37419757097988**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 코딩
 - **약점**: 긴문맥, 에이전트
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 250.505207203383 t/s · TTFT 0.66243510019251s · 256k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 252.048443765293 t/s · TTFT 0.678365585174426s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

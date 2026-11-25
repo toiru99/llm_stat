@@ -5,7 +5,7 @@ creator: MiniMax
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.715
-output_speed_tps: 52.2701494859739
+output_speed_tps: 51.5983754952936
 context_window: 1000000
 status: past
 size_class: Large
@@ -18,14 +18,14 @@ radar:
   agentic: { s: 19.6, z: -0.97, r: 35.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 65.0, z: 0.22, r: 53.3, estimated: false }  # 긴문맥
+  long_context: { s: 65.0, z: 0.22, r: 53.4, estimated: false }  # 긴문맥
   instruction: { s: 41.6, z: -0.37, r: 44.5, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax M1 80k
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # MiniMax M1 80k
@@ -37,7 +37,7 @@ MiniMax · Open · Large(456B) · 컨텍스트 1M · 종합지능 **None** · �
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $0.55 · 출력 $2.2 · 혼합 $0.715/1M · 52.2701494859739 t/s · TTFT 4.2559170152889s · 1M ctx`
+`입력 $0.55 · 출력 $2.2 · 혼합 $0.715/1M · 51.5983754952936 t/s · TTFT 4.19678415796666s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ MiniMax · Open · Large(456B) · 컨텍스트 1M · 종합지능 **None** · �
 | 에이전트 | 35.4 | -0.97 | 실측 | [[tau2-bench]] 34.2105%×1.0, [[terminal-bench]] 3.0303%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 53.3 | +0.22 | 실측 | [[aa-lcr]] 57.6667%×1.0 |
+| 긴문맥 | 53.4 | +0.22 | 실측 | [[aa-lcr]] 57.6667%×1.0 |
 | 지시 따르기 | 44.5 | -0.37 | 실측 | [[ifbench]] 41.7687%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

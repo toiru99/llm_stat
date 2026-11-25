@@ -18,14 +18,14 @@ radar:
   agentic: { s: 12.2, z: -1.23, r: 31.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 25.6, z: -0.99, r: 35.2, estimated: false }  # 긴문맥
+  long_context: { s: 25.6, z: -0.98, r: 35.2, estimated: false }  # 긴문맥
   instruction: { s: 21.8, z: -1.19, r: 32.1, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — NVIDIA Nemotron Nano 9B V2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # NVIDIA Nemotron Nano 9B V2
@@ -49,7 +49,7 @@ NVIDIA · Open · Small(9B) · 컨텍스트 131k · 종합지능 **None**
 | 에이전트 | 31.5 | -1.23 | 실측 | [[tau2-bench]] 21.9298%×1.0, [[terminal-bench]] 1.51515%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 35.2 | -0.99 | 실측 | [[aa-lcr]] 22.6667%×1.0 |
+| 긴문맥 | 35.2 | -0.98 | 실측 | [[aa-lcr]] 22.6667%×1.0 |
 | 지시 따르기 | 32.1 | -1.19 | 실측 | [[ifbench]] 27.619%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

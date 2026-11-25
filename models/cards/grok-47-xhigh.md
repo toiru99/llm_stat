@@ -3,9 +3,9 @@ type: Model
 title: Grok 4.7 (xhigh)
 creator: SpaceXAI
 license: Proprietary
-intelligence_index: 35.4850117067196
+intelligence_index: 35.3663261006589
 price_blended_usd_1m: 1.35
-output_speed_tps: 75.8199255414066
+output_speed_tps: 76.7111861607013
 context_window: 500000
 status: current
 size_class: Unknown
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.7 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Grok 4.7 (xhigh)
 
-SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **35.4850117067196**
+SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **35.3663261006589**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 코딩
 - **약점**: 긴문맥, 전문 지식
 
 ## 실용 지표
-`입력 $2.0 · 출력 $6.0 · 혼합 $1.35/1M · 75.8199255414066 t/s · TTFT 55.5262157195539s · 500k ctx` · 가성비 26.3
+`입력 $2.0 · 출력 $6.0 · 혼합 $1.35/1M · 76.7111861607013 t/s · TTFT 54.0640735514287s · 500k ctx` · 가성비 26.2
 
 ## 레이더 8축 (평균=50 기준선)
 

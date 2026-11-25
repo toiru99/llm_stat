@@ -18,14 +18,14 @@ radar:
   agentic: { s: 43.1, z: -0.14, r: 47.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 45.3, z: -1.34, r: 30.0, estimated: false }  # 멀티모달
-  long_context: { s: 35.3, z: -0.69, r: 39.7, estimated: false }  # 긴문맥
+  long_context: { s: 35.3, z: -0.68, r: 39.7, estimated: false }  # 긴문맥
   instruction: { s: 34.2, z: -0.68, r: 39.9, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.1 Fast (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Grok 4.1 Fast (non-reasoning)
@@ -34,7 +34,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 2M · 종합지능 **None** �
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 전문 지식
-- **약점**: 긴문맥, 멀티모달
+- **약점**: 지시 따르기, 멀티모달
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 2M ctx`
@@ -49,7 +49,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 2M · 종합지능 **None** �
 | 에이전트 | 47.9 | -0.14 | 실측 | [[tau2-bench]] 63.7427%×1.0, [[terminal-bench]] 14.3939%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 30.0 | -1.34 | 실측 | [[mmmu-pro]] 48.4393%×1.0 |
-| 긴문맥 | 39.7 | -0.69 | 실측 | [[aa-lcr]] 31.3333%×1.0 |
+| 긴문맥 | 39.7 | -0.68 | 실측 | [[aa-lcr]] 31.3333%×1.0 |
 | 지시 따르기 | 39.9 | -0.68 | 실측 | [[ifbench]] 36.4626%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

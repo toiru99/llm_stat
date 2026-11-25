@@ -3,9 +3,9 @@ type: Model
 title: Claude Haiku 5.5 (xhigh)
 creator: Anthropic
 license: Proprietary
-intelligence_index: 34.6387759486628
+intelligence_index: 34.5882708981578
 price_blended_usd_1m: 0.077
-output_speed_tps: 236.545424035737
+output_speed_tps: 235.222858577026
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Haiku 5.5 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Claude Haiku 5.5 (xhigh)
 
-Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **34.6387759486628**
+Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **34.5882708981578**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 추론
 - **약점**: 긴문맥, 전문 지식
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.5 · 혼합 $0.077/1M · 236.545424035737 t/s · TTFT 43.296452366733s · 1M ctx` · 가성비 449.9
+`입력 $0.1 · 출력 $0.5 · 혼합 $0.077/1M · 235.222858577026 t/s · TTFT 44.3776229702559s · 1M ctx` · 가성비 449.2
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -3,9 +3,9 @@ type: Model
 title: Kimi K3.1 Pro
 creator: Kimi
 license: Open
-intelligence_index: 46.4526236744189
+intelligence_index: 46.553633775429
 price_blended_usd_1m: 1.54
-output_speed_tps: 33.7267490154702
+output_speed_tps: 35.405096115593
 context_window: 1000000
 status: current
 size_class: Large
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K3.1 Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Kimi K3.1 Pro
 
-Kimi · Open · Large(2800B) · 컨텍스트 1M · 종합지능 **46.4526236744189**
+Kimi · Open · Large(2800B) · 컨텍스트 1M · 종합지능 **46.553633775429**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 에이전트, 추론
 - **약점**: 전문 지식, 멀티모달
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 33.7267490154702 t/s · TTFT 3.63015308486608s · 1M ctx` · 가성비 30.2
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.54/1M · 35.405096115593 t/s · TTFT 3.5802494310313s · 1M ctx` · 가성비 30.2
 
 ## 레이더 8축 (평균=50 기준선)
 

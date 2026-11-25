@@ -5,7 +5,7 @@ creator: Amazon
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 2.125
-output_speed_tps: 105.487246152678
+output_speed_tps: 102.349425760467
 context_window: 256000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nova 2.0 Pro Preview (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Nova 2.0 Pro Preview (non-reasoning)
@@ -37,7 +37,7 @@ Amazon · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **None**
 - **약점**: 추론, 긴문맥
 
 ## 실용 지표
-`입력 $1.25 · 출력 $10.0 · 혼합 $2.125/1M · 105.487246152678 t/s · TTFT 1.45906698299262s · 256k ctx`
+`입력 $1.25 · 출력 $10.0 · 혼합 $2.125/1M · 102.349425760467 t/s · TTFT 1.41018502179902s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

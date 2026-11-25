@@ -5,7 +5,7 @@ creator: Meta
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.78
-output_speed_tps: 209.847093735116
+output_speed_tps: 198.987803201604
 context_window: 1048576
 status: past
 size_class: Unknown
@@ -18,14 +18,14 @@ radar:
   agentic: { s: 66.5, z: 0.68, r: 60.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 87.6, z: 0.91, r: 63.7, estimated: false }  # 긴문맥
+  long_context: { s: 87.6, z: 0.92, r: 63.7, estimated: false }  # 긴문맥
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Spark 1.1 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Muse Spark 1.1 (xhigh)
@@ -37,7 +37,7 @@ Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · �
 - **약점**: 긴문맥, 에이전트
 
 ## 실용 지표
-`입력 $1.25 · 출력 $4.25 · 혼합 $0.78/1M · 209.847093735116 t/s · TTFT 10.741792878175s · 1M ctx`
+`입력 $1.25 · 출력 $4.25 · 혼합 $0.78/1M · 198.987803201604 t/s · TTFT 11.5772997978972s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · �
 | 에이전트 | 60.3 | +0.68 | 실측 | [[gdpval]] 1215.43 Elo×1.0, [[tau3-banking]] 31.7526%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 63.7 | +0.91 | 실측 | [[aa-lcr]] 77.6667%×1.0 |
+| 긴문맥 | 63.7 | +0.92 | 실측 | [[aa-lcr]] 77.6667%×1.0 |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

@@ -5,7 +5,7 @@ creator: Upstage
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.067
-output_speed_tps: 127.424651822809
+output_speed_tps: 125.803087657525
 context_window: 1048576
 status: current
 size_class: Small
@@ -18,14 +18,14 @@ radar:
   agentic: { s: 65.8, z: 0.66, r: 59.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 94.0, z: 1.11, r: 66.6, estimated: false }  # 긴문맥
+  long_context: { s: 94.0, z: 1.11, r: 66.7, estimated: false }  # 긴문맥
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Mini 4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Solar Mini 4
@@ -37,7 +37,7 @@ Upstage · Proprietary · Small · 컨텍스트 1M · 종합지능 **None**
 - **약점**: 전문 지식, 추론
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.4 · 혼합 $0.067/1M · 127.424651822809 t/s · TTFT 2.60939924598285s · 1M ctx`
+`입력 $0.1 · 출력 $0.4 · 혼합 $0.067/1M · 125.803087657525 t/s · TTFT 2.6661982420897s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ Upstage · Proprietary · Small · 컨텍스트 1M · 종합지능 **None**
 | 에이전트 | 59.9 | +0.66 | 실측 | [[gdpval]] 1091.28 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 66.6 | +1.11 | 실측 | [[aa-lcr]] 83.3333%×1.0 |
+| 긴문맥 | 66.7 | +1.11 | 실측 | [[aa-lcr]] 83.3333%×1.0 |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

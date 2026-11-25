@@ -3,9 +3,9 @@ type: Model
 title: Granite 4.2 8B
 creator: IBM
 license: Open
-intelligence_index: 5.09826495217051
+intelligence_index: None
 price_blended_usd_1m: 0.0475
-output_speed_tps: 103.226506515261
+output_speed_tps: 97.3424446145931
 context_window: 131072
 status: current
 size_class: Small
@@ -24,20 +24,20 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.2 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Granite 4.2 8B
 
-IBM · Open · Small(8B) · 컨텍스트 131k · 종합지능 **5.09826495217051**
+IBM · Open · Small(8B) · 컨텍스트 131k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 코딩, 긴문맥
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.25 · 혼합 $0.0475/1M · 103.226506515261 t/s · TTFT 1.85026233511187s · 131k ctx` · 가성비 107.3
+`입력 $0.06 · 출력 $0.25 · 혼합 $0.0475/1M · 97.3424446145931 t/s · TTFT 1.84425605593405s · 131k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

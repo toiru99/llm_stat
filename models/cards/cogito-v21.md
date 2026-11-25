@@ -18,14 +18,14 @@ radar:
   agentic: { s: 25.3, z: -0.77, r: 38.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 25.6, z: -0.99, r: 35.2, estimated: false }  # 긴문맥
+  long_context: { s: 25.6, z: -0.98, r: 35.2, estimated: false }  # 긴문맥
   instruction: { s: 47.9, z: -0.1, r: 48.4, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Cogito v2.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Cogito v2.1
@@ -49,7 +49,7 @@ Deep Cogito · Open · Large(671B) · 컨텍스트 128k · 종합지능 **None**
 | 에이전트 | 38.5 | -0.77 | 실측 | [[terminal-bench]] 16.6667%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 35.2 | -0.99 | 실측 | [[aa-lcr]] 22.6667%×1.0 |
+| 긴문맥 | 35.2 | -0.98 | 실측 | [[aa-lcr]] 22.6667%×1.0 |
 | 지시 따르기 | 48.4 | -0.1 | 실측 | [[ifbench]] 46.2585%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

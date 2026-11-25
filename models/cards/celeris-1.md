@@ -5,7 +5,7 @@ creator: Celeris
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.124
-output_speed_tps: 729.838456542534
+output_speed_tps: 724.925135207771
 context_window: 131072
 status: current
 size_class: Unknown
@@ -18,14 +18,14 @@ radar:
   agentic: { s: 19.3, z: -0.98, r: 35.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 42.9, z: -0.46, r: 43.2, estimated: false }  # 긴문맥
+  long_context: { s: 42.9, z: -0.45, r: 43.2, estimated: false }  # 긴문맥
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Celeris-1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Celeris-1
@@ -37,7 +37,7 @@ Celeris · Proprietary · Unknown · 컨텍스트 131k · 종합지능 **None**
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.7 · 혼합 $0.124/1M · 729.838456542534 t/s · TTFT 0.691914722139527s · 131k ctx`
+`입력 $0.2 · 출력 $0.7 · 혼합 $0.124/1M · 724.925135207771 t/s · TTFT 0.676924420622747s · 131k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ Celeris · Proprietary · Unknown · 컨텍스트 131k · 종합지능 **None**
 | 에이전트 | 35.3 | -0.98 | 실측 | [[gdpval]] 309.14 Elo×1.0, [[tau3-banking]] 3.91753%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 43.2 | -0.46 | 실측 | [[aa-lcr]] 38%×1.0 |
+| 긴문맥 | 43.2 | -0.45 | 실측 | [[aa-lcr]] 38%×1.0 |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

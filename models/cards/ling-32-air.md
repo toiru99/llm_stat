@@ -3,7 +3,7 @@ type: Model
 title: Ling-3.2-air
 creator: InclusionAI
 license: Open
-intelligence_index: 23.3877547890296
+intelligence_index: 23.4382598395346
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 1048576
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling-3.2-air
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Ling-3.2-air
 
-InclusionAI · Open · Medium(124B) · 컨텍스트 1M · 종합지능 **23.3877547890296**
+InclusionAI · Open · Medium(124B) · 컨텍스트 1M · 종합지능 **23.4382598395346**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: —

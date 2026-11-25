@@ -3,9 +3,9 @@ type: Model
 title: Gemini 4 Argon (high)
 creator: Google
 license: Proprietary
-intelligence_index: 50.4121935905389
+intelligence_index: 50.513203691549
 price_blended_usd_1m: 2.94
-output_speed_tps: 82.7876742679338
+output_speed_tps: 81.5333409486348
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -18,26 +18,26 @@ radar:
   agentic: { s: 89.8, z: 1.5, r: 72.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 89.8, z: 0.98, r: 64.7, estimated: false }  # 긴문맥
+  long_context: { s: 89.8, z: 0.98, r: 64.8, estimated: false }  # 긴문맥
   instruction: { s: null, z: null, r: null, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 4 Argon (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Gemini 4 Argon (high)
 
-Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **50.4121935905389**
+Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **50.513203691549**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 코딩
 - **약점**: 전문 지식, 긴문맥
 
 ## 실용 지표
-`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 82.7876742679338 t/s · TTFT 35.9259206706453s · 1M ctx` · 가성비 17.1
+`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 81.5333409486348 t/s · TTFT 37.4596010350085s · 1M ctx` · 가성비 17.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -49,7 +49,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **50.4121935
 | 에이전트 | 72.6 | +1.5 | 실측 | [[gdpval]] 1634.15 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 64.7 | +0.98 | 실측 | [[aa-lcr]] 79.6667%×1.0 |
+| 긴문맥 | 64.8 | +0.98 | 실측 | [[aa-lcr]] 79.6667%×1.0 |
 | 지시 따르기 | — | — | 측정 안 됨 | — |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

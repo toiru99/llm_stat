@@ -18,14 +18,14 @@ radar:
   agentic: { s: 41.6, z: -0.19, r: 47.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
-  long_context: { s: 5.6, z: -1.6, r: 26.1, estimated: false }  # 긴문맥
+  long_context: { s: 5.6, z: -1.59, r: 26.1, estimated: false }  # 긴문맥
   instruction: { s: 32.4, z: -0.75, r: 38.7, estimated: false }  # 지시 따르기
 sources:
   - type: leaderboard
     title: Artificial Analysis — MiniCPM5-1B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # MiniCPM5-1B (non-reasoning)
@@ -49,7 +49,7 @@ OpenBMB · Open · Tiny(1B) · 컨텍스트 128k · 종합지능 **None**
 | 에이전트 | 47.1 | -0.19 | 실측 | [[tau2-bench]] 82.4561%×1.0, [[terminal-bench]] 0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
-| 긴문맥 | 26.1 | -1.6 | 실측 | [[aa-lcr]] 5%×1.0 |
+| 긴문맥 | 26.1 | -1.59 | 실측 | [[aa-lcr]] 5%×1.0 |
 | 지시 따르기 | 38.7 | -0.75 | 실측 | [[ifbench]] 35.1701%×1.0 |
 
 > 구형 8축에서 r=50은 해당 축 실측 모델의 평균입니다. 측정값이 없는 축은 비웁니다.

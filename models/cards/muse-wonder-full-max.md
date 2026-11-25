@@ -3,7 +3,7 @@ type: Model
 title: Muse Wonder Full (max)
 creator: Meta
 license: Proprietary
-intelligence_index: 50.0772123627021
+intelligence_index: 49.9256972111869
 price_blended_usd_1m: None
 output_speed_tps: None
 context_window: 1000000
@@ -24,13 +24,13 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Wonder Full (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-24
-timestamp: 2026-11-24T00:00:00Z
+updated: 2026-11-25
+timestamp: 2026-11-25T00:00:00Z
 ---
 
 # Muse Wonder Full (max)
 
-Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **50.0772123627021**
+Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **49.9256972111869**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 추론, 에이전트
