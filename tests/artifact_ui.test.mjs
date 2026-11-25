@@ -28,10 +28,9 @@ const select = async (n) => {
   while (await page.locator('[data-remove]').count()) {
     await page.locator('[data-remove]').last().click();
   }
-  for (let i=1; i<n; i++) {
-    await page.locator('.add-slot').click();
-    await page.locator('#list .model-pick:enabled').first().click();
-  }
+  if(n>1) await page.locator('.add-slot').click();
+  for(let i=1;i<n;i++) await page.locator('.model-pick[aria-pressed=false]:enabled').first().click();
+  if(await page.locator('#model-library').isVisible()) await page.getByRole('button',{name:'선택 완료'}).click();
 };
 
 test('1개 선택하면 배지 그리드, 비교표는 없음', async () => {

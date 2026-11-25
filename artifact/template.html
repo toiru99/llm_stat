@@ -16,12 +16,13 @@
     <section class="comparison-bar" tabindex="-1" aria-label="비교 대상">
       <div class="comparison-label"><strong>비교 모델</strong><span id="cmpnote"></span></div>
       <div id="comparison-slots"></div>
+      <button class="add-slot" type="button" aria-controls="model-library" aria-haspopup="dialog" aria-expanded="false">+ 모델 추가</button>
       <button id="filter-toggle" class="filter-toggle" type="button" aria-expanded="false" aria-controls="advanced-filters"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 7h7m4 0h7M3 17h11m4 0h3"/><circle cx="12" cy="7" r="2"/><circle cx="16" cy="17" r="2"/></svg>필터<span id="filter-count"></span></button>
-      <section id="model-library" class="tray" aria-labelledby="picker-title" hidden>
-        <div class="tray-head"><h2 id="picker-title">모델 추가</h2><button class="close-tray" type="button" aria-label="모델 목록 닫기">닫기</button></div>
+      <section id="model-library" class="model-picker" role="dialog" aria-labelledby="picker-title" hidden>
+        <div class="tray-head"><h2 id="picker-title">모델 추가</h2><button class="close-tray" type="button" aria-label="선택 완료">완료</button></div>
         <input class="search-field" id="model-query" type="search" aria-label="추가하거나 교체할 모델 또는 제작사 검색" placeholder="모델명 또는 제작사 검색" autocomplete="off">
-        <div class="list" id="list" tabindex="0" role="region" aria-label="검색된 모델 목록"></div>
-        <div class="tray-foot"><span id="listcount" role="status"></span></div>
+        <div class="list" id="list" role="group" aria-label="검색된 모델 목록"></div>
+        <div class="tray-foot"><span id="listcount"></span><strong id="picker-count" role="status"></strong></div>
       </section>
       <section id="advanced-filters" class="tray" aria-labelledby="filter-title" hidden>
         <div class="tray-head"><h2 id="filter-title">모델 목록·탐색 필터</h2><button class="close-tray" type="button" aria-label="필터 닫기">닫기</button></div>
@@ -114,11 +115,37 @@ function filtered(){
 
 // The open control determines which slot changes. Searching never changes the chart.
 let replaceIndex=null;
+const picker=$("#model-library"), addButton=$(".add-slot");
+function pickerTrigger(){
+  return replaceIndex===null ? addButton : document.querySelectorAll(".replace-slot")[replaceIndex];
+}
 function closePicker(restore=false) {
-  $("#model-library").hidden=true;
-  const trigger=replaceIndex===null ? $(".add-slot") : document.querySelectorAll(".replace-slot")[replaceIndex];
-  trigger?.setAttribute("aria-expanded","false");
-  if(restore) (trigger || $(".replace-slot")).focus();
+  if(picker.hidden) return;
+  picker.hidden=true;
+  const trigger=pickerTrigger();
+  trigger.setAttribute("aria-expanded","false");
+  if(restore) trigger.focus({preventScroll:true});
+}
+function positionPicker(){
+  if(picker.hidden) return;
+  const anchor=pickerTrigger().getBoundingClientRect();
+  // The visual viewport shrinks when the phone keyboard is open.
+  const viewport=window.visualViewport;
+  const gutter=8, x=(viewport?.offsetLeft??0)+gutter, y=(viewport?.offsetTop??0)+gutter;
+  const right=x+(viewport?.width??innerWidth)-2*gutter;
+  const bottom=y+(viewport?.height??innerHeight)-2*gutter;
+  const narrow=right-x<460;
+  const anchorBottom=narrow && $("#advanced-filters").hidden ? $(".comparison-bar").getBoundingClientRect().bottom : anchor.bottom;
+  const below=bottom-anchorBottom-gutter, above=anchor.top-y-gutter;
+  const compact=Math.max(above,below)<240;
+  const useAbove=below<230 && above>below;
+  picker.style.maxHeight=(compact?bottom-y:Math.min(bottom-y,useAbove?above:below))+"px";
+  const top=compact?y+(bottom-y-picker.offsetHeight)/2:useAbove?anchor.top-gutter-picker.offsetHeight:anchorBottom+gutter;
+  let left=anchor.left;
+  if(narrow) left=(x+right-picker.offsetWidth)/2;
+  else if(anchor.left+anchor.width/2>(x+right)/2) left=anchor.right-picker.offsetWidth;
+  picker.style.top=Math.max(y,Math.min(top,bottom-picker.offsetHeight))+"px";
+  picker.style.left=Math.max(x,Math.min(left,right-picker.offsetWidth))+"px";
 }
 function setFiltersOpen(open) {
   $("#advanced-filters").hidden=!open;
@@ -128,46 +155,76 @@ function openPicker(index, trigger) {
   const same=!$("#model-library").hidden && replaceIndex===index;
   closePicker();
   if(same) return;
-  setFiltersOpen(false);
   replaceIndex=index;
   $("#model-query").value="";
-  $("#picker-title").textContent=index===null?"비교할 모델 추가":MODELS.find(m=>m.slug===state.selected[index]).name+" 교체";
+  $("#picker-title").textContent=index===null?"비교 모델 선택":MODELS.find(m=>m.slug===state.selected[index]).name+" 교체";
   trigger.setAttribute("aria-expanded","true");
   $("#model-library").hidden=false;
   buildList();
-  $("#model-query").focus();
+  positionPicker();
+  $("#model-query").focus({preventScroll:true});
 }
 function buildList(){
   const list=$("#list");
   const query=$("#model-query").value.trim().toLowerCase();
-  const rows=filtered().filter(m=>(m.name+" "+m.creator).toLowerCase().includes(query));
+  const candidates=filtered();
+  const editingFullSet=replaceIndex===null && state.selected.length===3;
+  // At the limit, even selections outside the active filters must be removable.
+  const pool=editingFullSet ? [...state.selected.map(id=>MODELS.find(m=>m.slug===id)),
+    ...candidates.filter(m=>!state.selected.includes(m.slug))] : candidates;
+  const rows=pool.filter(m=>(m.name+" "+m.creator).toLowerCase().includes(query));
   list.replaceChildren();
   for(const m of rows){
-    const selected=state.selected.indexOf(m.slug);
     const pick=el("button","model-pick");
-    pick.type="button";
-    pick.disabled=selected>=0;
+    pick.type="button";pick.dataset.slug=m.slug;pick.tabIndex=-1;
+    pick.dataset.outside=String(editingFullSet && state.selected.includes(m.slug) && !candidates.includes(m));
     const name=el("strong","nm");name.textContent=m.name;
-    const detail=el("small");detail.textContent=m.creator+(m.status==="past"?" · 이전 모델":"");
-    const score=el("span","ix");score.textContent=selected>=0?"비교 중":m.intel==null?"AA —":"AA "+m.intel.toFixed(1);
+    const detail=el("small");detail.textContent=m.creator+(m.status==="past"?" · 이전 모델":"")+(pick.dataset.outside==="true"?" · 필터 밖":"");
+    const score=el("span","ix");score.textContent=m.intel==null?"AA —":"AA "+m.intel.toFixed(1);
     pick.append(name,detail,score);
-    pick.onclick=()=>{
-      const index=replaceIndex??state.selected.length;
-      closePicker();
-      if(replaceIndex===null) state.selected.push(m.slug);
-      else state.selected[index]=m.slug;
-      render();
-      document.querySelectorAll(".replace-slot")[index].focus();
-      $("#comparison-status").classList.add("sr-only");
-      $("#comparison-status").textContent=m.name+(replaceIndex===null?" 추가됨":" 교체됨");
-    };
     list.append(pick);
   }
   if(!rows.length){
     const empty=el("p","empty");empty.textContent="일치하는 모델이 없습니다. 검색어나 필터를 바꿔 보세요.";list.append(empty);
   }
   $("#listcount").textContent=rows.length+(filterCount()?"개 · 필터 적용 중":"개 모델");
+  updatePickerChoices();
   list.scrollTop=0;
+}
+function updatePickerChoices(){
+  const count=state.selected.length;
+  const swap=replaceIndex!==null;
+  const buttons=$("#list").querySelectorAll(".model-pick");
+  for(const button of buttons){
+    const index=state.selected.indexOf(button.dataset.slug);
+    const selected=index>=0;
+    button.setAttribute("aria-pressed",String(selected));
+    button.disabled=selected ? swap||count===1 : button.dataset.outside==="true" || (!swap&&count===3);
+    if(selected) button.style.setProperty("--pick-color",`var(${SERIES[index]})`);
+  }
+  const tabStop=$("#list .model-pick[tabindex='0']");
+  if(!tabStop || tabStop.disabled){
+    if(tabStop) tabStop.tabIndex=-1;
+    const next=$("#list .model-pick:enabled");
+    if(next) next.tabIndex=0;
+  }
+  $("#picker-count").textContent=count+" / 3 선택"+(!swap && count===3?" · 해제 후 추가":"");
+}
+function pickModel(button){
+  const slug=button.dataset.slug;
+  if(replaceIndex!==null){
+    state.selected[replaceIndex]=slug;
+    render();closePicker(true);
+  } else {
+    toggleSelect(slug);
+    if(state.selected.length===3) closePicker(true);
+    else if(button.disabled) $("#model-query").focus({preventScroll:true});
+  }
+  const rail=$("#comparison-slots"), chip=rail.children[state.selected.indexOf(slug)];
+  if(chip && rail.scrollWidth>rail.clientWidth){
+    const row=rail.getBoundingClientRect(), item=chip.getBoundingClientRect();
+    rail.scrollLeft+=Math.max(0,item.right-row.right)+Math.min(0,item.left-row.left);
+  }
 }
 function filterCount(){
   return state.lic.size+state.sizes.size+state.reasoning.size+Number(Number.isFinite(state.maxPrice))+Number(!state.curOnly)+Number(Boolean(state.q))+Number(pinnedOnly);
@@ -199,7 +256,8 @@ function buildComparisonSlots(){
    const slot=el("div","comparison-slot");slot.style.setProperty("--slot-color",`var(${SERIES[i]})`);
    const name=el("button","replace-slot");name.type="button";name.textContent=m.name;
    name.setAttribute("aria-label",m.name+" 교체");name.title=m.name+" 교체";
-   name.setAttribute("aria-controls","model-library");name.setAttribute("aria-expanded","false");
+   name.setAttribute("aria-controls","model-library");name.setAttribute("aria-haspopup","dialog");
+   name.setAttribute("aria-expanded",String(!picker.hidden && replaceIndex===i));
    name.onclick=()=>openPicker(i,name);
    slot.append(name);
    if(state.selected.length>1){
@@ -208,12 +266,7 @@ function buildComparisonSlots(){
    }
    slots.append(slot);
  });
- if(state.selected.length<3){
-   const add=el("button","add-slot");add.type="button";add.textContent="+ 모델 추가";
-   add.setAttribute("aria-controls","model-library");add.setAttribute("aria-expanded","false");
-   add.onclick=()=>openPicker(null,add);
-   slots.append(add);
- }
+ addButton.textContent=state.selected.length===3?"모델 편집":"+ 모델 추가";
 }
 
 __COMPARISON_CHARTS__
@@ -399,8 +452,8 @@ function render(){
   });
   document.querySelector(".grid").classList.toggle("cmp", state.selected.length>1);
   const sel=state.selected.map(id=>MODELS.find(m=>m.slug===id)).filter(Boolean);
-  closePicker();
   buildComparisonSlots();
+  if(!picker.hidden) updatePickerChoices();
   $("#cmpnote").textContent=state.selected.length+" / 3";
   $("#filter-count").textContent=filterCount()||"";
   panelHTML();legendHTML();
@@ -441,7 +494,36 @@ $("#meta").textContent=`Artificial Analysis · 총 ${MODELS.length}개 모델 �
 const ageDays=Math.floor((Date.now()-Date.parse(PAYLOAD.scraped_at+'T00:00:00Z'))/86400000);
 $("#freshness").classList.toggle("stale",ageDays>2);
 $("#freshness").textContent=`AA v${PAYLOAD.methodology?.intelligence||"미확인"} · ${PAYLOAD.scraped_at}${ageDays>2?" · 갱신 지연":""}`;
-$("#model-query").oninput=buildList;
+addButton.onclick=()=>openPicker(null,addButton);
+$("#model-query").oninput=()=>{buildList();positionPicker();};
+$("#list").onclick=e=>{
+  const button=e.target.closest(".model-pick");
+  if(button && !button.disabled) pickModel(button);
+};
+$("#list").onfocusin=e=>{
+  if(!e.target.matches(".model-pick")) return;
+  const old=$("#list .model-pick[tabindex='0']");
+  if(old) old.tabIndex=-1;
+  e.target.tabIndex=0;
+};
+picker.onkeydown=e=>{
+  if(e.isComposing || e.keyCode===229) return;
+  const input=$("#model-query");
+  if(e.target===input && e.key==="Enter" && input.value.trim()){
+    e.preventDefault();$("#list .model-pick[aria-pressed=false]:enabled")?.click();
+  } else if(e.key==="ArrowDown" || e.key==="ArrowUp"){
+    const rows=[...$("#list").querySelectorAll(".model-pick:enabled")];
+    const index=rows.indexOf(e.target), step=e.key==="ArrowDown"?1:-1;
+    e.preventDefault();rows[Math.max(0,Math.min(rows.length-1,index+step))]?.focus();
+  }
+};
+window.addEventListener("resize",positionPicker);
+window.addEventListener("scroll",positionPicker,{passive:true});
+window.visualViewport?.addEventListener("resize",positionPicker);
+window.visualViewport?.addEventListener("scroll",positionPicker);
+document.addEventListener("focusin",e=>{
+  if(!picker.hidden && !picker.contains(e.target) && !e.target.closest(".replace-slot,.add-slot")) closePicker();
+});
 $("#filter-toggle").onclick=()=>{closePicker();setFiltersOpen($("#advanced-filters").hidden);};
 $("#model-library .close-tray").onclick=()=>closePicker(true);
 $("#advanced-filters .close-tray").onclick=()=>{setFiltersOpen(false);$("#filter-toggle").focus();};
@@ -450,6 +532,9 @@ document.addEventListener("keydown",e=>{
   if(!$("#model-library").hidden) closePicker(true);
   else if(!$("#advanced-filters").hidden){setFiltersOpen(false);$("#filter-toggle").focus();}
 });
+document.addEventListener("pointerdown",e=>{
+  if(!picker.hidden && !e.target.closest("#model-library,.replace-slot,.add-slot")) closePicker();
+});
 document.addEventListener("click",e=>{
   if(!e.composedPath().includes($(".comparison-bar")) && !e.composedPath().includes($("#creator-manager"))) {
     closePicker();setFiltersOpen(false);
@@ -457,6 +542,7 @@ document.addEventListener("click",e=>{
 });
 $("#search").oninput=e=>{state.q=e.target.value.toLowerCase().trim();filtersChanged();};
 document.querySelectorAll(".tab").forEach(t=>t.onclick=()=>{
+  closePicker();
   state.view=t.dataset.view;
   document.querySelectorAll(".tab").forEach(x=>{if(x===t)x.setAttribute("aria-current","page");else x.removeAttribute("aria-current");});
   $("#view-title").textContent=t.textContent.trim();$("#view-description").textContent=viewDescriptions[state.view];

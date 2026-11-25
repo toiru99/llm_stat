@@ -194,13 +194,24 @@ svg {display:block}
 .chip {border:1px solid var(--line);border-radius:6px;background:white;font-size:12px;padding:3px 7px}
 .chip[aria-pressed=true] {background:var(--ink);border-color:var(--ink);color:white}
 .rng input {min-width:0;flex:1;accent-color:var(--signal)}
-.list {overflow-y:auto;max-height:235px;overscroll-behavior-y:contain;scrollbar-gutter:stable;scrollbar-width:thin;scrollbar-color:#a7b6c6 var(--sunken);padding:3px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px 10px;margin-top:8px}
-.model-pick {display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;column-gap:6px;row-gap:2px;min-width:0;text-align:left;border:1px solid var(--line-soft);border-radius:8px;background:white;padding:8px 10px}
-.model-pick:enabled:hover {background:var(--signal-soft);border-color:var(--accent)}
+.model-picker {position:fixed;z-index:15;display:flex;flex-direction:column;width:min(348px,calc(100vw - 16px));padding:12px;border:1px solid #c8d4df;border-radius:12px;background:white;box-shadow:0 8px 30px #263e5829}
+.model-picker .tray-head,.model-picker .search-field,.model-picker .tray-foot {flex:none}
+.model-picker .tray-head {margin-bottom:8px}
+.model-picker .tray-head h2 {font-size:15px}
+.model-picker .close-tray {color:var(--signal);min-height:30px;border:0;background:var(--signal-soft);font-weight:650}
+.model-picker .tray-foot {border-top:1px solid var(--line-soft);margin-top:6px}
+#picker-count {color:var(--ink)}
+.list {overflow-y:auto;min-height:0;max-height:256px;overscroll-behavior-y:contain;scrollbar-gutter:stable;scrollbar-width:thin;scrollbar-color:#a7b6c6 var(--sunken);padding:3px;display:grid;grid-template-columns:minmax(0,1fr);gap:1px;margin-top:6px}
+.model-pick {position:relative;display:grid;grid-template-columns:20px minmax(0,1fr) auto;align-items:center;column-gap:6px;row-gap:2px;min-width:0;text-align:left;border:0;border-radius:6px;background:white;padding:7px}
+.model-pick:enabled:hover {background:var(--sunken)}
+.model-pick::before {content:"";grid-area:1/1/3/2;width:15px;height:15px;border:1px solid #9eaec0;border-radius:4px}
+.model-pick[aria-pressed=true] {background:color-mix(in srgb,var(--pick-color) 7%,white)}
+.model-pick[aria-pressed=true]::before {content:"✓";display:grid;place-items:center;background:var(--pick-color);border-color:var(--pick-color);color:white;font-size:12px;line-height:1}
+.model-pick .nm {grid-column:2}
 .model-pick:disabled {background:var(--ground);opacity:.76}
 .model-pick .nm {font-size:13px;line-height:1.35;overflow-wrap:anywhere}
-.model-pick small {color:var(--muted);font-size:11px;grid-column:1}
-.model-pick .ix {grid-area:1/2/3/3;color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums}
+.model-pick small {color:var(--muted);font-size:11px;grid-column:2}
+.model-pick .ix {grid-area:1/3/3/4;color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums}
 .list .empty {grid-column:1/-1}
 .workspace {min-width:0;padding:27px 0 24px}
 .top {display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
@@ -208,18 +219,19 @@ svg {display:block}
 .top p {margin-top:7px;color:var(--muted);font-size:14px}
 .freshness {display:flex;align-items:center;gap:7px;color:var(--muted);padding:0;font-size:12px;font-variant-numeric:tabular-nums}
 .freshness::before {content:"";width:7px;height:7px;border-radius:50%;background:#30976d}.freshness.stale::before {background:#c06b22}
-.comparison-bar {position:relative;display:flex;align-items:center;flex-wrap:wrap;gap:10px 14px;margin:18px 0 16px;padding:12px 16px;border:1px solid var(--line);border-radius:12px;background:white}
+.comparison-bar {position:relative;display:grid;grid-template-columns:auto minmax(0,1fr) auto auto;align-items:center;gap:10px 14px;margin:18px 0 16px;padding:12px 16px;border:1px solid var(--line);border-radius:12px;background:white}
 .comparison-label,#comparison-slots,.comparison-slot {display:flex;align-items:center;gap:7px}
 .comparison-label strong {font-size:13px}
-#comparison-slots {flex-wrap:wrap;min-width:0;max-width:100%}
+#comparison-slots {min-width:0;max-width:100%;height:40px}
+.comparison-bar>.tray,.comparison-bar>#comparison-status {grid-column:1/-1}
 .comparison-slot,.add-slot,.filter-toggle {min-height:36px;border-radius:8px;font-size:13px}
 .comparison-slot {min-width:0;max-width:100%;gap:0;padding-inline:8px 2px;background:color-mix(in srgb,var(--slot-color) 8%,white);border:1px solid color-mix(in srgb,var(--slot-color) 37%,white);font-weight:625}
 .comparison-slot::before,.chart-keys span::before,.elo-band span::before {content:"";width:8px;height:8px;border-radius:50%;background:var(--slot-color);flex:none}
 .comparison-slot button {background:transparent;border:0;min-height:32px}
-.replace-slot {min-width:0;text-align:left;overflow-wrap:anywhere;font-weight:640;padding:3px 6px}
+.replace-slot {min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;font-weight:640;padding:3px 6px}
 .replace-slot::after {content:"";display:inline-block;width:5px;height:5px;border:solid var(--muted);border-width:0 1px 1px 0;transform:translateY(-2px) rotate(45deg);margin-inline:7px 3px}
 .comparison-slot [data-remove] {width:30px;flex:none;color:var(--muted);font-size:18px}
-.add-slot {border:1px solid var(--ink);background:var(--ink);color:white;padding:4px 12px;font-weight:600}
+.add-slot {min-width:88px;border:1px solid var(--ink);background:var(--ink);color:white;padding:4px 12px;font-weight:600}
 .filter-toggle {display:flex;align-items:center;gap:6px;margin-left:auto;border:1px solid var(--line);background:white;padding:4px 10px;font-weight:600}
 .filter-toggle svg {width:16px;height:16px}.filter-toggle[aria-expanded=true] {border-color:var(--signal);color:var(--signal)}
 #comparison-status {width:100%;font-size:12px;color:var(--muted)}#comparison-status:empty {display:none}
@@ -278,19 +290,22 @@ svg {display:block}
  .masthead-inner{display:block}.brand{padding:12px 0 4px;font-size:19px}.brand-mark{width:31px;height:31px}
  .tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px}
  .tab{min-height:45px;gap:4px;font-size:12px;padding:3px 0}.nav-icon{width:18px;height:18px}.nav-icon svg{width:14px;height:14px}
+ #model-query{font-size:16px}
  .workspace{padding:18px 0}.top{gap:7px}.top h1{font-size:27px}.top p{font-size:13px;margin-top:4px}.freshness{font-size:11px}
- .comparison-bar{display:grid;grid-template-columns:1fr auto;gap:8px;margin:12px 0;padding:10px}
- .comparison-label{grid-area:1/1}.filter-toggle{grid-area:1/2;min-height:32px}
+ .comparison-bar{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:6px;margin:12px 0;padding:10px}
+ .comparison-label{grid-area:1/1}.add-slot{grid-area:1/2}.filter-toggle{grid-area:1/3}
+ #comparison-slots{grid-row:2;height:44px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin}
+ .comparison-slot{flex:none;max-width:100%}
  #comparison-slots,.tray,#comparison-status{grid-column:1/-1}
  .comparison-slot button,.add-slot,.pager button,.close-tray{min-height:38px}
  .grid{gap:12px}.stage{padding:14px}.card{border-radius:12px}.chart-heading{gap:6px}.chart-heading h2{font-size:18px}
- .radar-chart{max-height:340px}.badges{grid-template-columns:1fr 1fr}.list,.filters{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .radar-chart{max-height:340px}.badges{grid-template-columns:1fr 1fr}.filters{grid-template-columns:repeat(2,minmax(0,1fr))}
  .filter-body{grid-template-columns:1fr;gap:12px}
 }
 @media(max-width:450px){
  .tabs .tab{flex-direction:column;gap:2px;font-size:11px;min-height:46px}
  .top{display:grid}.chart-heading label{font-size:11px}.chart-heading select{max-width:152px}.chart-note,.score-detail summary{font-size:12px}
- .list{grid-template-columns:1fr;max-height:min(32dvh,220px)}.model-pick{padding:6px 10px;min-height:44px}
+ .list{max-height:min(40dvh,260px)}.model-pick{padding:6px 10px;min-height:44px}
  .cmp-wrap{padding:0 7px 9px}.cmp-tbl td,.cmp-tbl th{padding:7px 4px}
 }
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
@@ -336,12 +351,13 @@ svg {display:block}
     <section class="comparison-bar" tabindex="-1" aria-label="비교 대상">
       <div class="comparison-label"><strong>비교 모델</strong><span id="cmpnote"></span></div>
       <div id="comparison-slots"></div>
+      <button class="add-slot" type="button" aria-controls="model-library" aria-haspopup="dialog" aria-expanded="false">+ 모델 추가</button>
       <button id="filter-toggle" class="filter-toggle" type="button" aria-expanded="false" aria-controls="advanced-filters"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 7h7m4 0h7M3 17h11m4 0h3"/><circle cx="12" cy="7" r="2"/><circle cx="16" cy="17" r="2"/></svg>필터<span id="filter-count"></span></button>
-      <section id="model-library" class="tray" aria-labelledby="picker-title" hidden>
-        <div class="tray-head"><h2 id="picker-title">모델 추가</h2><button class="close-tray" type="button" aria-label="모델 목록 닫기">닫기</button></div>
+      <section id="model-library" class="model-picker" role="dialog" aria-labelledby="picker-title" hidden>
+        <div class="tray-head"><h2 id="picker-title">모델 추가</h2><button class="close-tray" type="button" aria-label="선택 완료">완료</button></div>
         <input class="search-field" id="model-query" type="search" aria-label="추가하거나 교체할 모델 또는 제작사 검색" placeholder="모델명 또는 제작사 검색" autocomplete="off">
-        <div class="list" id="list" tabindex="0" role="region" aria-label="검색된 모델 목록"></div>
-        <div class="tray-foot"><span id="listcount" role="status"></span></div>
+        <div class="list" id="list" role="group" aria-label="검색된 모델 목록"></div>
+        <div class="tray-foot"><span id="listcount"></span><strong id="picker-count" role="status"></strong></div>
       </section>
       <section id="advanced-filters" class="tray" aria-labelledby="filter-title" hidden>
         <div class="tray-head"><h2 id="filter-title">모델 목록·탐색 필터</h2><button class="close-tray" type="button" aria-label="필터 닫기">닫기</button></div>
@@ -72345,11 +72361,37 @@ function filtered(){
 
 // The open control determines which slot changes. Searching never changes the chart.
 let replaceIndex=null;
+const picker=$("#model-library"), addButton=$(".add-slot");
+function pickerTrigger(){
+  return replaceIndex===null ? addButton : document.querySelectorAll(".replace-slot")[replaceIndex];
+}
 function closePicker(restore=false) {
-  $("#model-library").hidden=true;
-  const trigger=replaceIndex===null ? $(".add-slot") : document.querySelectorAll(".replace-slot")[replaceIndex];
-  trigger?.setAttribute("aria-expanded","false");
-  if(restore) (trigger || $(".replace-slot")).focus();
+  if(picker.hidden) return;
+  picker.hidden=true;
+  const trigger=pickerTrigger();
+  trigger.setAttribute("aria-expanded","false");
+  if(restore) trigger.focus({preventScroll:true});
+}
+function positionPicker(){
+  if(picker.hidden) return;
+  const anchor=pickerTrigger().getBoundingClientRect();
+  // The visual viewport shrinks when the phone keyboard is open.
+  const viewport=window.visualViewport;
+  const gutter=8, x=(viewport?.offsetLeft??0)+gutter, y=(viewport?.offsetTop??0)+gutter;
+  const right=x+(viewport?.width??innerWidth)-2*gutter;
+  const bottom=y+(viewport?.height??innerHeight)-2*gutter;
+  const narrow=right-x<460;
+  const anchorBottom=narrow && $("#advanced-filters").hidden ? $(".comparison-bar").getBoundingClientRect().bottom : anchor.bottom;
+  const below=bottom-anchorBottom-gutter, above=anchor.top-y-gutter;
+  const compact=Math.max(above,below)<240;
+  const useAbove=below<230 && above>below;
+  picker.style.maxHeight=(compact?bottom-y:Math.min(bottom-y,useAbove?above:below))+"px";
+  const top=compact?y+(bottom-y-picker.offsetHeight)/2:useAbove?anchor.top-gutter-picker.offsetHeight:anchorBottom+gutter;
+  let left=anchor.left;
+  if(narrow) left=(x+right-picker.offsetWidth)/2;
+  else if(anchor.left+anchor.width/2>(x+right)/2) left=anchor.right-picker.offsetWidth;
+  picker.style.top=Math.max(y,Math.min(top,bottom-picker.offsetHeight))+"px";
+  picker.style.left=Math.max(x,Math.min(left,right-picker.offsetWidth))+"px";
 }
 function setFiltersOpen(open) {
   $("#advanced-filters").hidden=!open;
@@ -72359,46 +72401,76 @@ function openPicker(index, trigger) {
   const same=!$("#model-library").hidden && replaceIndex===index;
   closePicker();
   if(same) return;
-  setFiltersOpen(false);
   replaceIndex=index;
   $("#model-query").value="";
-  $("#picker-title").textContent=index===null?"비교할 모델 추가":MODELS.find(m=>m.slug===state.selected[index]).name+" 교체";
+  $("#picker-title").textContent=index===null?"비교 모델 선택":MODELS.find(m=>m.slug===state.selected[index]).name+" 교체";
   trigger.setAttribute("aria-expanded","true");
   $("#model-library").hidden=false;
   buildList();
-  $("#model-query").focus();
+  positionPicker();
+  $("#model-query").focus({preventScroll:true});
 }
 function buildList(){
   const list=$("#list");
   const query=$("#model-query").value.trim().toLowerCase();
-  const rows=filtered().filter(m=>(m.name+" "+m.creator).toLowerCase().includes(query));
+  const candidates=filtered();
+  const editingFullSet=replaceIndex===null && state.selected.length===3;
+  // At the limit, even selections outside the active filters must be removable.
+  const pool=editingFullSet ? [...state.selected.map(id=>MODELS.find(m=>m.slug===id)),
+    ...candidates.filter(m=>!state.selected.includes(m.slug))] : candidates;
+  const rows=pool.filter(m=>(m.name+" "+m.creator).toLowerCase().includes(query));
   list.replaceChildren();
   for(const m of rows){
-    const selected=state.selected.indexOf(m.slug);
     const pick=el("button","model-pick");
-    pick.type="button";
-    pick.disabled=selected>=0;
+    pick.type="button";pick.dataset.slug=m.slug;pick.tabIndex=-1;
+    pick.dataset.outside=String(editingFullSet && state.selected.includes(m.slug) && !candidates.includes(m));
     const name=el("strong","nm");name.textContent=m.name;
-    const detail=el("small");detail.textContent=m.creator+(m.status==="past"?" · 이전 모델":"");
-    const score=el("span","ix");score.textContent=selected>=0?"비교 중":m.intel==null?"AA —":"AA "+m.intel.toFixed(1);
+    const detail=el("small");detail.textContent=m.creator+(m.status==="past"?" · 이전 모델":"")+(pick.dataset.outside==="true"?" · 필터 밖":"");
+    const score=el("span","ix");score.textContent=m.intel==null?"AA —":"AA "+m.intel.toFixed(1);
     pick.append(name,detail,score);
-    pick.onclick=()=>{
-      const index=replaceIndex??state.selected.length;
-      closePicker();
-      if(replaceIndex===null) state.selected.push(m.slug);
-      else state.selected[index]=m.slug;
-      render();
-      document.querySelectorAll(".replace-slot")[index].focus();
-      $("#comparison-status").classList.add("sr-only");
-      $("#comparison-status").textContent=m.name+(replaceIndex===null?" 추가됨":" 교체됨");
-    };
     list.append(pick);
   }
   if(!rows.length){
     const empty=el("p","empty");empty.textContent="일치하는 모델이 없습니다. 검색어나 필터를 바꿔 보세요.";list.append(empty);
   }
   $("#listcount").textContent=rows.length+(filterCount()?"개 · 필터 적용 중":"개 모델");
+  updatePickerChoices();
   list.scrollTop=0;
+}
+function updatePickerChoices(){
+  const count=state.selected.length;
+  const swap=replaceIndex!==null;
+  const buttons=$("#list").querySelectorAll(".model-pick");
+  for(const button of buttons){
+    const index=state.selected.indexOf(button.dataset.slug);
+    const selected=index>=0;
+    button.setAttribute("aria-pressed",String(selected));
+    button.disabled=selected ? swap||count===1 : button.dataset.outside==="true" || (!swap&&count===3);
+    if(selected) button.style.setProperty("--pick-color",`var(${SERIES[index]})`);
+  }
+  const tabStop=$("#list .model-pick[tabindex='0']");
+  if(!tabStop || tabStop.disabled){
+    if(tabStop) tabStop.tabIndex=-1;
+    const next=$("#list .model-pick:enabled");
+    if(next) next.tabIndex=0;
+  }
+  $("#picker-count").textContent=count+" / 3 선택"+(!swap && count===3?" · 해제 후 추가":"");
+}
+function pickModel(button){
+  const slug=button.dataset.slug;
+  if(replaceIndex!==null){
+    state.selected[replaceIndex]=slug;
+    render();closePicker(true);
+  } else {
+    toggleSelect(slug);
+    if(state.selected.length===3) closePicker(true);
+    else if(button.disabled) $("#model-query").focus({preventScroll:true});
+  }
+  const rail=$("#comparison-slots"), chip=rail.children[state.selected.indexOf(slug)];
+  if(chip && rail.scrollWidth>rail.clientWidth){
+    const row=rail.getBoundingClientRect(), item=chip.getBoundingClientRect();
+    rail.scrollLeft+=Math.max(0,item.right-row.right)+Math.min(0,item.left-row.left);
+  }
 }
 function filterCount(){
   return state.lic.size+state.sizes.size+state.reasoning.size+Number(Number.isFinite(state.maxPrice))+Number(!state.curOnly)+Number(Boolean(state.q))+Number(pinnedOnly);
@@ -72430,7 +72502,8 @@ function buildComparisonSlots(){
    const slot=el("div","comparison-slot");slot.style.setProperty("--slot-color",`var(${SERIES[i]})`);
    const name=el("button","replace-slot");name.type="button";name.textContent=m.name;
    name.setAttribute("aria-label",m.name+" 교체");name.title=m.name+" 교체";
-   name.setAttribute("aria-controls","model-library");name.setAttribute("aria-expanded","false");
+   name.setAttribute("aria-controls","model-library");name.setAttribute("aria-haspopup","dialog");
+   name.setAttribute("aria-expanded",String(!picker.hidden && replaceIndex===i));
    name.onclick=()=>openPicker(i,name);
    slot.append(name);
    if(state.selected.length>1){
@@ -72439,12 +72512,7 @@ function buildComparisonSlots(){
    }
    slots.append(slot);
  });
- if(state.selected.length<3){
-   const add=el("button","add-slot");add.type="button";add.textContent="+ 모델 추가";
-   add.setAttribute("aria-controls","model-library");add.setAttribute("aria-expanded","false");
-   add.onclick=()=>openPicker(null,add);
-   slots.append(add);
- }
+ addButton.textContent=state.selected.length===3?"모델 편집":"+ 모델 추가";
 }
 
 // The percentage evaluations share a physical scale. The Elo evaluation keeps its own unit.
@@ -72751,8 +72819,8 @@ function render(){
   });
   document.querySelector(".grid").classList.toggle("cmp", state.selected.length>1);
   const sel=state.selected.map(id=>MODELS.find(m=>m.slug===id)).filter(Boolean);
-  closePicker();
   buildComparisonSlots();
+  if(!picker.hidden) updatePickerChoices();
   $("#cmpnote").textContent=state.selected.length+" / 3";
   $("#filter-count").textContent=filterCount()||"";
   panelHTML();legendHTML();
@@ -72890,7 +72958,36 @@ $("#meta").textContent=`Artificial Analysis · 총 ${MODELS.length}개 모델 �
 const ageDays=Math.floor((Date.now()-Date.parse(PAYLOAD.scraped_at+'T00:00:00Z'))/86400000);
 $("#freshness").classList.toggle("stale",ageDays>2);
 $("#freshness").textContent=`AA v${PAYLOAD.methodology?.intelligence||"미확인"} · ${PAYLOAD.scraped_at}${ageDays>2?" · 갱신 지연":""}`;
-$("#model-query").oninput=buildList;
+addButton.onclick=()=>openPicker(null,addButton);
+$("#model-query").oninput=()=>{buildList();positionPicker();};
+$("#list").onclick=e=>{
+  const button=e.target.closest(".model-pick");
+  if(button && !button.disabled) pickModel(button);
+};
+$("#list").onfocusin=e=>{
+  if(!e.target.matches(".model-pick")) return;
+  const old=$("#list .model-pick[tabindex='0']");
+  if(old) old.tabIndex=-1;
+  e.target.tabIndex=0;
+};
+picker.onkeydown=e=>{
+  if(e.isComposing || e.keyCode===229) return;
+  const input=$("#model-query");
+  if(e.target===input && e.key==="Enter" && input.value.trim()){
+    e.preventDefault();$("#list .model-pick[aria-pressed=false]:enabled")?.click();
+  } else if(e.key==="ArrowDown" || e.key==="ArrowUp"){
+    const rows=[...$("#list").querySelectorAll(".model-pick:enabled")];
+    const index=rows.indexOf(e.target), step=e.key==="ArrowDown"?1:-1;
+    e.preventDefault();rows[Math.max(0,Math.min(rows.length-1,index+step))]?.focus();
+  }
+};
+window.addEventListener("resize",positionPicker);
+window.addEventListener("scroll",positionPicker,{passive:true});
+window.visualViewport?.addEventListener("resize",positionPicker);
+window.visualViewport?.addEventListener("scroll",positionPicker);
+document.addEventListener("focusin",e=>{
+  if(!picker.hidden && !picker.contains(e.target) && !e.target.closest(".replace-slot,.add-slot")) closePicker();
+});
 $("#filter-toggle").onclick=()=>{closePicker();setFiltersOpen($("#advanced-filters").hidden);};
 $("#model-library .close-tray").onclick=()=>closePicker(true);
 $("#advanced-filters .close-tray").onclick=()=>{setFiltersOpen(false);$("#filter-toggle").focus();};
@@ -72899,6 +72996,9 @@ document.addEventListener("keydown",e=>{
   if(!$("#model-library").hidden) closePicker(true);
   else if(!$("#advanced-filters").hidden){setFiltersOpen(false);$("#filter-toggle").focus();}
 });
+document.addEventListener("pointerdown",e=>{
+  if(!picker.hidden && !e.target.closest("#model-library,.replace-slot,.add-slot")) closePicker();
+});
 document.addEventListener("click",e=>{
   if(!e.composedPath().includes($(".comparison-bar")) && !e.composedPath().includes($("#creator-manager"))) {
     closePicker();setFiltersOpen(false);
@@ -72906,6 +73006,7 @@ document.addEventListener("click",e=>{
 });
 $("#search").oninput=e=>{state.q=e.target.value.toLowerCase().trim();filtersChanged();};
 document.querySelectorAll(".tab").forEach(t=>t.onclick=()=>{
+  closePicker();
   state.view=t.dataset.view;
   document.querySelectorAll(".tab").forEach(x=>{if(x===t)x.setAttribute("aria-current","page");else x.removeAttribute("aria-current");});
   $("#view-title").textContent=t.textContent.trim();$("#view-description").textContent=viewDescriptions[state.view];
