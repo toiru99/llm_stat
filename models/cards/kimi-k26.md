@@ -5,7 +5,7 @@ creator: Kimi
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.702
-output_speed_tps: 38.491620951414
+output_speed_tps: 39.0958760407006
 context_window: 256000
 status: past
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2.6
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-25
-timestamp: 2026-11-25T00:00:00Z
+updated: 2026-11-26
+timestamp: 2026-11-26T00:00:00Z
 ---
 
 # Kimi K2.6
@@ -37,7 +37,7 @@ Kimi · Open · Large(1000B) · 컨텍스트 256k · 종합지능 **None** · �
 - **약점**: 멀티모달, 에이전트
 
 ## 실용 지표
-`입력 $0.95 · 출력 $4.0 · 혼합 $0.702/1M · 38.491620951414 t/s · TTFT 7.56015918335274s · 256k ctx`
+`입력 $0.95 · 출력 $4.0 · 혼합 $0.702/1M · 39.0958760407006 t/s · TTFT 7.20284628784716s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: Institute of Foundation Models
 license: Open
 intelligence_index: 17.7898262037058
 price_blended_usd_1m: 0
-output_speed_tps: 291.428779256788
+output_speed_tps: 281.271301955129
 context_window: 524288
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — K2 Horizon 375B A23B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-25
-timestamp: 2026-11-25T00:00:00Z
+updated: 2026-11-26
+timestamp: 2026-11-26T00:00:00Z
 ---
 
 # K2 Horizon 375B A23B
@@ -37,7 +37,7 @@ Institute of Foundation Models · Open · Large(375B) · 컨텍스트 524k · �
 - **약점**: 추론, 코딩
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 291.428779256788 t/s · TTFT 2.99901393714028s · 524k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 281.271301955129 t/s · TTFT 2.98203017702179s · 524k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

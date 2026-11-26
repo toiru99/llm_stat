@@ -5,7 +5,7 @@ creator: Liquid AI
 license: Open
 intelligence_index: 1.70629313092144
 price_blended_usd_1m: 0.084
-output_speed_tps: 340.045891468223
+output_speed_tps: 344.436489352455
 context_window: 128000
 status: current
 size_class: Tiny
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — LFM3-VL-2B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-25
-timestamp: 2026-11-25T00:00:00Z
+updated: 2026-11-26
+timestamp: 2026-11-26T00:00:00Z
 ---
 
 # LFM3-VL-2B
@@ -37,7 +37,7 @@ Liquid AI · Open · Tiny(1.9B) · 컨텍스트 128k · 종합지능 **1.7062931
 - **약점**: —
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.5 · 혼합 $0.084/1M · 340.045891468223 t/s · TTFT 0.51300591892034s · 128k ctx` · 가성비 20.3
+`입력 $0.1 · 출력 $0.5 · 혼합 $0.084/1M · 344.436489352455 t/s · TTFT 0.496673548903436s · 128k ctx` · 가성비 20.3
 
 ## 레이더 8축 (평균=50 기준선)
 

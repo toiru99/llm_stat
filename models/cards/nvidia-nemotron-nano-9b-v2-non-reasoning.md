@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.077
-output_speed_tps: 151.031629974065
+output_speed_tps: 153.229217882733
 context_window: 131072
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — NVIDIA Nemotron Nano 9B V2 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-25
-timestamp: 2026-11-25T00:00:00Z
+updated: 2026-11-26
+timestamp: 2026-11-26T00:00:00Z
 ---
 
 # NVIDIA Nemotron Nano 9B V2 (non-reasoning)
@@ -37,7 +37,7 @@ NVIDIA · Open · Small(9B) · 컨텍스트 131k · 종합지능 **None**
 - **약점**: 지시 따르기, 코딩
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.23 · 혼합 $0.077/1M · 151.031629974065 t/s · TTFT 1.56084217833824s · 131k ctx`
+`입력 $0.06 · 출력 $0.23 · 혼합 $0.077/1M · 153.229217882733 t/s · TTFT 1.55093035323321s · 131k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

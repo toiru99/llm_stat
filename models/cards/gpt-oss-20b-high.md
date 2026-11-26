@@ -5,7 +5,7 @@ creator: OpenAI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.067
-output_speed_tps: 137.08895012856854
+output_speed_tps: 124.8246165810894
 context_window: 131072
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — gpt-oss-20b (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-25
-timestamp: 2026-11-25T00:00:00Z
+updated: 2026-11-26
+timestamp: 2026-11-26T00:00:00Z
 ---
 
 # gpt-oss-20b (high)
@@ -37,7 +37,7 @@ OpenAI · Open · Small(21B) · 컨텍스트 131k · 종합지능 **None**
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $0.05 · 출력 $0.22 · 혼합 $0.067/1M · 137.08895012856854 t/s · TTFT 1.060587598058112s · 131k ctx`
+`입력 $0.05 · 출력 $0.22 · 혼합 $0.067/1M · 124.8246165810894 t/s · TTFT 1.1017593155195555s · 131k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 6
-output_speed_tps: 92.7234628218952
+output_speed_tps: 84.721448637108
 context_window: 128000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-4o (May)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-25
-timestamp: 2026-11-25T00:00:00Z
+updated: 2026-11-26
+timestamp: 2026-11-26T00:00:00Z
 ---
 
 # GPT-4o (May)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 128k · 종합지능 **None** �
 - **약점**: —
 
 ## 실용 지표
-`입력 $5.0 · 출력 $15.0 · 혼합 $6/1M · 92.7234628218952 t/s · TTFT 1.7267581884521s · 128k ctx`
+`입력 $5.0 · 출력 $15.0 · 혼합 $6/1M · 84.721448637108 t/s · TTFT 1.73442337548055s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

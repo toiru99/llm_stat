@@ -5,7 +5,7 @@ creator: OpenAI
 license: Open
 intelligence_index: 3.81981165137417
 price_blended_usd_1m: 0.16
-output_speed_tps: 186.637616317611
+output_speed_tps: 191.538166028938
 context_window: 131072
 status: current
 size_class: Medium
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — gpt-oss-120b (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-25
-timestamp: 2026-11-25T00:00:00Z
+updated: 2026-11-26
+timestamp: 2026-11-26T00:00:00Z
 ---
 
 # gpt-oss-120b (high)
@@ -37,7 +37,7 @@ OpenAI · Open · Medium(117B) · 컨텍스트 131k · 종합지능 **3.81981165
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.6 · 혼합 $0.16/1M · 186.637616317611 t/s · TTFT 1.30958180024923s · 131k ctx` · 가성비 23.9
+`입력 $0.15 · 출력 $0.6 · 혼합 $0.16/1M · 191.538166028938 t/s · TTFT 1.29533353103855s · 131k ctx` · 가성비 23.9
 
 ## 레이더 8축 (평균=50 기준선)
 

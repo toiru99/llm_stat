@@ -5,7 +5,7 @@ creator: Meta
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.78
-output_speed_tps: 258.050484537347
+output_speed_tps: 259.87127380679
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Spark 1.3 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-25
-timestamp: 2026-11-25T00:00:00Z
+updated: 2026-11-26
+timestamp: 2026-11-26T00:00:00Z
 ---
 
 # Muse Spark 1.3 (xhigh)
@@ -37,7 +37,7 @@ Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · �
 - **약점**: 긴문맥, 멀티모달
 
 ## 실용 지표
-`입력 $1.25 · 출력 $4.25 · 혼합 $0.78/1M · 258.050484537347 t/s · TTFT 9.92955252908328s · 1M ctx`
+`입력 $1.25 · 출력 $4.25 · 혼합 $0.78/1M · 259.87127380679 t/s · TTFT 10.1108424116055s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

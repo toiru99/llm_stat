@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mi:dm K 2.5 Pro Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-25
-timestamp: 2026-11-25T00:00:00Z
+updated: 2026-11-26
+timestamp: 2026-11-26T00:00:00Z
 ---
 
 # Mi:dm K 2.5 Pro Preview

@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 60.1267489305361
 price_blended_usd_1m: 2.94
-output_speed_tps: 53.6670484435934
+output_speed_tps: 48.5120627717662
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 4 Carbon (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-25
-timestamp: 2026-11-25T00:00:00Z
+updated: 2026-11-26
+timestamp: 2026-11-26T00:00:00Z
 ---
 
 # Gemini 4 Carbon (high)
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **60.1267489
 - **약점**: —
 
 ## 실용 지표
-`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 53.6670484435934 t/s · TTFT 73.2970700058955s · 1M ctx` · 가성비 20.5
+`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 48.5120627717662 t/s · TTFT 65.4570845841259s · 1M ctx` · 가성비 20.5
 
 ## 레이더 8축 (평균=50 기준선)
 

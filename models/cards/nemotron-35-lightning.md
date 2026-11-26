@@ -5,7 +5,7 @@ creator: NVIDIA
 license: Open
 intelligence_index: 5.5346663903388
 price_blended_usd_1m: 0.0565
-output_speed_tps: 318.69785300399997
+output_speed_tps: 313.964080396691
 context_window: 1000000
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3.5 Lightning
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-25
-timestamp: 2026-11-25T00:00:00Z
+updated: 2026-11-26
+timestamp: 2026-11-26T00:00:00Z
 ---
 
 # Nemotron 3.5 Lightning
@@ -37,7 +37,7 @@ NVIDIA · Open · Small(31.6B) · 컨텍스트 1M · 종합지능 **5.5346663903
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.2 · 혼합 $0.0565/1M · 318.69785300399997 t/s · TTFT 0.756560139256818s · 1M ctx` · 가성비 98.0
+`입력 $0.06 · 출력 $0.2 · 혼합 $0.0565/1M · 313.964080396691 t/s · TTFT 0.7525761927564505s · 1M ctx` · 가성비 98.0
 
 ## 레이더 8축 (평균=50 기준선)
 
