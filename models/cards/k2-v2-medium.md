@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 35.0, z: -0.57, r: 41.4, estimated: false }  # 전문 지식
   reasoning: { s: 20.8, z: -0.71, r: 39.3, estimated: false }  # 추론
   coding: { s: 12.6, z: -0.96, r: 35.6, estimated: false }  # 코딩
-  agentic: { s: 18.9, z: -1.0, r: 35.1, estimated: false }  # 에이전트
+  agentic: { s: 18.9, z: -1.0, r: 35.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 31.6, z: -0.8, r: 38.0, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — K2-V2 (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # K2-V2 (medium)
@@ -46,7 +46,7 @@ Institute of Foundation Models · Open · Medium(70B) · 컨텍스트 512k · �
 | 전문 지식 | 41.4 | -0.57 | 실측 | [[gpqa-diamond]] 59.798%×0.4, [[humanitys-last-exam]] 4.35589%×0.3 |
 | 추론 | 39.3 | -0.71 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 59.798%×1.0, [[humanitys-last-exam]] 4.35589%×1.0 |
 | 코딩 | 35.6 | -0.96 | 실측 | [[terminal-bench]] 8.33333%×0.5 |
-| 에이전트 | 35.1 | -1.0 | 실측 | [[tau2-bench]] 24.8538%×1.0, [[terminal-bench]] 8.33333%×1.0 |
+| 에이전트 | 35.0 | -1.0 | 실측 | [[tau2-bench]] 24.8538%×1.0, [[terminal-bench]] 8.33333%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 38.0 | -0.8 | 실측 | [[aa-lcr]] 28%×1.0 |

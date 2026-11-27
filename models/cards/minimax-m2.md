@@ -5,7 +5,7 @@ creator: MiniMax
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.39
-output_speed_tps: 98.3586989172443
+output_speed_tps: 99.731719440886
 context_window: 204800
 status: past
 size_class: Large
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 52.2, z: 0.27, r: 54.0, estimated: false }  # 전문 지식
   reasoning: { s: 32.7, z: -0.12, r: 48.2, estimated: false }  # 추론
   coding: { s: 39.1, z: -0.07, r: 49.0, estimated: false }  # 코딩
-  agentic: { s: 63.3, z: 0.57, r: 58.6, estimated: false }  # 에이전트
+  agentic: { s: 63.3, z: 0.57, r: 58.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 72.6, z: 0.45, r: 56.8, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax-M2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # MiniMax-M2
@@ -37,7 +37,7 @@ MiniMax · Open · Large(230B) · 컨텍스트 204k · 종합지능 **None** · 
 - **약점**: 코딩, 추론
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.39/1M · 98.3586989172443 t/s · TTFT 1.74170438979717s · 204k ctx`
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.39/1M · 99.731719440886 t/s · TTFT 1.55279328087494s · 204k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ MiniMax · Open · Large(230B) · 컨텍스트 204k · 종합지능 **None** · 
 | 전문 지식 | 54.0 | +0.27 | 실측 | [[gpqa-diamond]] 77.6768%×0.4, [[humanitys-last-exam]] 13.6701%×0.3 |
 | 추론 | 48.2 | -0.12 | 실측 | [[critpt]] 0.857143%×1.0, [[gpqa-diamond]] 77.6768%×1.0, [[humanitys-last-exam]] 13.6701%×1.0 |
 | 코딩 | 49.0 | -0.07 | 실측 | [[terminal-bench]] 25.7576%×0.5 |
-| 에이전트 | 58.6 | +0.57 | 실측 | [[tau2-bench]] 86.8421%×1.0, [[terminal-bench]] 25.7576%×1.0 |
+| 에이전트 | 58.5 | +0.57 | 실측 | [[tau2-bench]] 86.8421%×1.0, [[terminal-bench]] 25.7576%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 56.8 | +0.45 | 실측 | [[aa-lcr]] 64.3333%×1.0 |

@@ -5,7 +5,7 @@ creator: InclusionAI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.0475
-output_speed_tps: 177.096452632968
+output_speed_tps: 181.154825993371
 context_window: 262144
 status: past
 size_class: Medium
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 63.2, z: 0.8, r: 62.0, estimated: false }  # 전문 지식
   reasoning: { s: 41.1, z: 0.29, r: 54.4, estimated: false }  # 추론
   coding: { s: 57.7, z: 0.56, r: 58.4, estimated: false }  # 코딩
-  agentic: { s: 56.3, z: 0.33, r: 54.9, estimated: false }  # 에이전트
+  agentic: { s: 56.3, z: 0.32, r: 54.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 82.3, z: 0.75, r: 61.3, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling 3.0 Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Ling 3.0 Flash
@@ -37,7 +37,7 @@ InclusionAI · Open · Medium(124B) · 컨텍스트 262k · 종합지능 **None*
 - **약점**: 에이전트, 추론
 
 ## 실용 지표
-`입력 $0.075 · 출력 $0.22 · 혼합 $0.0475/1M · 177.096452632968 t/s · TTFT 1.96625048112407s · 262k ctx`
+`입력 $0.075 · 출력 $0.22 · 혼합 $0.0475/1M · 181.154825993371 t/s · TTFT 2.12608065656665s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ InclusionAI · Open · Medium(124B) · 컨텍스트 262k · 종합지능 **None*
 | 전문 지식 | 62.0 | +0.8 | 실측 | [[gpqa-diamond]] 85.4545%×0.4, [[humanitys-last-exam]] 23.6793%×0.3 |
 | 추론 | 54.4 | +0.29 | 실측 | [[critpt]] 1.71429%×1.0, [[gpqa-diamond]] 85.4545%×1.0, [[humanitys-last-exam]] 23.6793%×1.0 |
 | 코딩 | 58.4 | +0.56 | 실측 | [[scicode]] 42.0139%×1.0 |
-| 에이전트 | 54.9 | +0.33 | 실측 | [[gdpval]] 955.96 Elo×1.0, [[tau3-banking]] 27.2165%×1.0 |
+| 에이전트 | 54.8 | +0.32 | 실측 | [[gdpval]] 955.96 Elo×1.0, [[tau3-banking]] 27.2165%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 61.3 | +0.75 | 실측 | [[aa-lcr]] 73%×1.0 |

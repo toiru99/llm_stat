@@ -5,7 +5,7 @@ creator: Kimi
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.743
-output_speed_tps: 40.9673166948942
+output_speed_tps: 54.4831945462916
 context_window: 128000
 status: past
 size_class: Large
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 47.8, z: 0.05, r: 50.8, estimated: false }  # 전문 지식
   reasoning: { s: 28.6, z: -0.32, r: 45.1, estimated: false }  # 추론
   coding: { s: 24.1, z: -0.57, r: 41.4, estimated: false }  # 코딩
-  agentic: { s: 42.9, z: -0.15, r: 47.8, estimated: false }  # 에이전트
+  agentic: { s: 42.9, z: -0.15, r: 47.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 59.8, z: 0.06, r: 51.0, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Kimi K2
@@ -37,7 +37,7 @@ Kimi · Open · Large(1000B) · 컨텍스트 128k · 종합지능 **None** · �
 - **약점**: 지시 따르기, 코딩
 
 ## 실용 지표
-`입력 $0.57 · 출력 $2.3 · 혼합 $0.743/1M · 40.9673166948942 t/s · TTFT 2.98478647258896s · 128k ctx`
+`입력 $0.57 · 출력 $2.3 · 혼합 $0.743/1M · 54.4831945462916 t/s · TTFT 2.83308939561114s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Kimi · Open · Large(1000B) · 컨텍스트 128k · 종합지능 **None** · �
 | 전문 지식 | 50.8 | +0.05 | 실측 | [[gpqa-diamond]] 76.5657%×0.4, [[humanitys-last-exam]] 7.41427%×0.3 |
 | 추론 | 45.1 | -0.32 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 76.5657%×1.0, [[humanitys-last-exam]] 7.41427%×1.0 |
 | 코딩 | 41.4 | -0.57 | 실측 | [[terminal-bench]] 15.9091%×0.5 |
-| 에이전트 | 47.8 | -0.15 | 실측 | [[tau2-bench]] 61.1111%×1.0, [[terminal-bench]] 15.9091%×1.0 |
+| 에이전트 | 47.7 | -0.15 | 실측 | [[tau2-bench]] 61.1111%×1.0, [[terminal-bench]] 15.9091%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 51.0 | +0.06 | 실측 | [[aa-lcr]] 53%×1.0 |

@@ -5,7 +5,7 @@ creator: SpaceXAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 1.35
-output_speed_tps: 67.0205401957085
+output_speed_tps: 77.2954969765134
 context_window: 500000
 status: past
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 67.1, z: 0.99, r: 64.9, estimated: false }  # 전문 지식
   reasoning: { s: 47.5, z: 0.61, r: 59.2, estimated: false }  # 추론
   coding: { s: 69.9, z: 0.97, r: 64.6, estimated: false }  # 코딩
-  agentic: { s: 77.3, z: 1.06, r: 66.0, estimated: false }  # 에이전트
+  agentic: { s: 77.3, z: 1.06, r: 65.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 91.0, z: 1.02, r: 65.3, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.6 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Grok 4.6 (low)
@@ -37,7 +37,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **None**
 - **약점**: 코딩, 추론
 
 ## 실용 지표
-`입력 $2.0 · 출력 $6.0 · 혼합 $1.35/1M · 67.0205401957085 t/s · TTFT 8.01741297818472s · 500k ctx`
+`입력 $2.0 · 출력 $6.0 · 혼합 $1.35/1M · 77.2954969765134 t/s · TTFT 6.48862793019234s · 500k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **None**
 | 전문 지식 | 64.9 | +0.99 | 실측 | [[gpqa-diamond]] 87.8788%×0.4, [[humanitys-last-exam]] 27.6182%×0.3 |
 | 추론 | 59.2 | +0.61 | 실측 | [[critpt]] 5.71429%×1.0, [[gpqa-diamond]] 87.8788%×1.0, [[humanitys-last-exam]] 27.6182%×1.0 |
 | 코딩 | 64.6 | +0.97 | 실측 | [[scicode]] 49.4213%×1.0 |
-| 에이전트 | 66.0 | +1.06 | 실측 | [[gdpval]] 1420.76 Elo×1.0, [[tau3-banking]] 38.1443%×1.0 |
+| 에이전트 | 65.9 | +1.06 | 실측 | [[gdpval]] 1420.76 Elo×1.0, [[tau3-banking]] 38.1443%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 65.3 | +1.02 | 실측 | [[aa-lcr]] 80.6667%×1.0 |

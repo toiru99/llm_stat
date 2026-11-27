@@ -5,7 +5,7 @@ creator: DeepSeek
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.531
-output_speed_tps: 70.1922780982514
+output_speed_tps: 79.6206226203516
 context_window: 128000
 status: past
 size_class: Large
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 45.4, z: -0.07, r: 49.0, estimated: false }  # 전문 지식
   reasoning: { s: 27.1, z: -0.4, r: 44.0, estimated: false }  # 추론
   coding: { s: 36.8, z: -0.14, r: 47.8, estimated: false }  # 코딩
-  agentic: { s: 35.9, z: -0.39, r: 44.1, estimated: false }  # 에이전트
+  agentic: { s: 35.9, z: -0.4, r: 44.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 53.0, z: -0.14, r: 47.8, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V3.1 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # DeepSeek V3.1 (non-reasoning)
@@ -34,10 +34,10 @@ DeepSeek · Open · Large(685B) · 컨텍스트 128k · 종합지능 **None** ·
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 전문 지식, 코딩
-- **약점**: 추론, 지시 따르기
+- **약점**: 에이전트, 지시 따르기
 
 ## 실용 지표
-`입력 $0.53 · 출력 $1.5899999999999999 · 혼합 $0.531/1M · 70.1922780982514 t/s · TTFT 2.72649192297642s · 128k ctx`
+`입력 $0.53 · 출력 $1.5899999999999999 · 혼합 $0.531/1M · 79.6206226203516 t/s · TTFT 3.27009989760071s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ DeepSeek · Open · Large(685B) · 컨텍스트 128k · 종합지능 **None** ·
 | 전문 지식 | 49.0 | -0.07 | 실측 | [[gpqa-diamond]] 73.5354%×0.4, [[humanitys-last-exam]] 6.67285%×0.3 |
 | 추론 | 44.0 | -0.4 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 73.5354%×1.0, [[humanitys-last-exam]] 6.67285%×1.0 |
 | 코딩 | 47.8 | -0.14 | 실측 | [[terminal-bench]] 24.2424%×0.5 |
-| 에이전트 | 44.1 | -0.39 | 실측 | [[tau2-bench]] 34.7953%×1.0, [[terminal-bench]] 24.2424%×1.0 |
+| 에이전트 | 44.1 | -0.4 | 실측 | [[tau2-bench]] 34.7953%×1.0, [[terminal-bench]] 24.2424%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 47.8 | -0.14 | 실측 | [[aa-lcr]] 47%×1.0 |

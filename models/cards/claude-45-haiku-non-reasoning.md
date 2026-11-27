@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.77
-output_speed_tps: 92.5901933891501
+output_speed_tps: 94.194063928622
 context_window: 200000
 status: past
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 38.1, z: -0.42, r: 43.7, estimated: false }  # 전문 지식
   reasoning: { s: 22.6, z: -0.62, r: 40.6, estimated: false }  # 추론
   coding: { s: 41.4, z: 0.01, r: 50.2, estimated: false }  # 코딩
-  agentic: { s: 37.1, z: -0.35, r: 44.7, estimated: false }  # 에이전트
+  agentic: { s: 37.1, z: -0.36, r: 44.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 54.2, z: -0.88, r: 36.8, estimated: false }  # 멀티모달
   long_context: { s: 56.0, z: -0.05, r: 49.2, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 4.5 Haiku (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Claude 4.5 Haiku (non-reasoning)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None*
 - **약점**: 추론, 멀티모달
 
 ## 실용 지표
-`입력 $1.0 · 출력 $5.0 · 혼합 $0.77/1M · 92.5901933891501 t/s · TTFT 1.16581395357777s · 200k ctx`
+`입력 $1.0 · 출력 $5.0 · 혼합 $0.77/1M · 94.194063928622 t/s · TTFT 1.1040160571972s · 200k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None*
 | 전문 지식 | 43.7 | -0.42 | 실측 | [[gpqa-diamond]] 64.6465%×0.4, [[humanitys-last-exam]] 4.21687%×0.3 |
 | 추론 | 40.6 | -0.62 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 64.6465%×1.0, [[humanitys-last-exam]] 4.21687%×1.0 |
 | 코딩 | 50.2 | +0.01 | 실측 | [[terminal-bench]] 27.2727%×0.5 |
-| 에이전트 | 44.7 | -0.35 | 실측 | [[tau2-bench]] 32.4561%×1.0, [[terminal-bench]] 27.2727%×1.0 |
+| 에이전트 | 44.7 | -0.36 | 실측 | [[tau2-bench]] 32.4561%×1.0, [[terminal-bench]] 27.2727%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 36.8 | -0.88 | 실측 | [[mmmu-pro]] 55.1445%×1.0 |
 | 긴문맥 | 49.2 | -0.05 | 실측 | [[aa-lcr]] 49.6667%×1.0 |

@@ -5,7 +5,7 @@ creator: MiniMax
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.2115
-output_speed_tps: 54.1183855431429
+output_speed_tps: 51.3459714903116
 context_window: 204800
 status: past
 size_class: Large
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 61.0, z: 0.69, r: 60.4, estimated: false }  # 전문 지식
   reasoning: { s: 38.9, z: 0.18, r: 52.8, estimated: false }  # 추론
   coding: { s: 52.9, z: 0.4, r: 56.0, estimated: false }  # 코딩
-  agentic: { s: 74.5, z: 0.97, r: 64.5, estimated: false }  # 에이전트
+  agentic: { s: 74.5, z: 0.96, r: 64.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 82.7, z: 0.77, r: 61.5, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax-M2.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # MiniMax-M2.5
@@ -37,7 +37,7 @@ MiniMax · Open · Large(230B) · 컨텍스트 204k · 종합지능 **None** · 
 - **약점**: 코딩, 추론
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.2115/1M · 54.1183855431429 t/s · TTFT 3.93125373896941s · 204k ctx`
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.2115/1M · 51.3459714903116 t/s · TTFT 3.94733908978883s · 204k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ MiniMax · Open · Large(230B) · 컨텍스트 204k · 종합지능 **None** · 
 | 전문 지식 | 60.4 | +0.69 | 실측 | [[gpqa-diamond]] 84.8485%×0.4, [[humanitys-last-exam]] 20.5283%×0.3 |
 | 추론 | 52.8 | +0.18 | 실측 | [[critpt]] 1.14286%×1.0, [[gpqa-diamond]] 84.8485%×1.0, [[humanitys-last-exam]] 20.5283%×1.0 |
 | 코딩 | 56.0 | +0.4 | 실측 | [[terminal-bench]] 34.8485%×0.5 |
-| 에이전트 | 64.5 | +0.97 | 실측 | [[tau2-bench]] 95.3216%×1.0, [[terminal-bench]] 34.8485%×1.0 |
+| 에이전트 | 64.4 | +0.96 | 실측 | [[tau2-bench]] 95.3216%×1.0, [[terminal-bench]] 34.8485%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 61.5 | +0.77 | 실측 | [[aa-lcr]] 73.3333%×1.0 |

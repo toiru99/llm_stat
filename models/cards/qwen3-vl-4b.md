@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 19.5, z: -1.33, r: 30.1, estimated: false }  # 전문 지식
   reasoning: { s: 11.7, z: -1.17, r: 32.5, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.38, r: 29.2, estimated: false }  # 코딩
-  agentic: { s: 11.8, z: -1.24, r: 31.3, estimated: false }  # 에이전트
+  agentic: { s: 11.8, z: -1.25, r: 31.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 39.2, z: -1.65, r: 25.3, estimated: false }  # 멀티모달
   long_context: { s: 15.8, z: -1.28, r: 30.7, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 VL 4B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Qwen3 VL 4B
@@ -46,7 +46,7 @@ Alibaba · Open · Tiny(4.4B) · 컨텍스트 256k · 종합지능 **None** · �
 | 전문 지식 | 30.1 | -1.33 | 실측 | [[gpqa-diamond]] 37.0707%×0.4, [[humanitys-last-exam]] 3.61446%×0.3 |
 | 추론 | 32.5 | -1.17 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 37.0707%×1.0, [[humanitys-last-exam]] 3.61446%×1.0 |
 | 코딩 | 29.2 | -1.38 | 실측 | [[terminal-bench]] 0%×0.5 |
-| 에이전트 | 31.3 | -1.24 | 실측 | [[tau2-bench]] 23.3918%×1.0, [[terminal-bench]] 0%×1.0 |
+| 에이전트 | 31.3 | -1.25 | 실측 | [[tau2-bench]] 23.3918%×1.0, [[terminal-bench]] 0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 25.3 | -1.65 | 실측 | [[mmmu-pro]] 43.8728%×1.0 |
 | 긴문맥 | 30.7 | -1.28 | 실측 | [[aa-lcr]] 14%×1.0 |

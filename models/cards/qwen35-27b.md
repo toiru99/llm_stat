@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.51
-output_speed_tps: 22.0141448896389
+output_speed_tps: 23.5295804989064
 context_window: 262144
 status: past
 size_class: Small
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 63.6, z: 0.82, r: 62.2, estimated: false }  # 전문 지식
   reasoning: { s: 40.5, z: 0.26, r: 54.0, estimated: false }  # 추론
   coding: { s: 49.4, z: 0.28, r: 54.2, estimated: false }  # 코딩
-  agentic: { s: 72.1, z: 0.88, r: 63.2, estimated: false }  # 에이전트
+  agentic: { s: 72.1, z: 0.88, r: 63.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 80.7, z: 0.48, r: 57.1, estimated: false }  # 멀티모달
   long_context: { s: 87.6, z: 0.92, r: 63.7, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 27B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Qwen3.5 27B
@@ -37,7 +37,7 @@ Alibaba · Open · Small(27.8B) · 컨텍스트 262k · 종합지능 **None** ·
 - **약점**: 코딩, 추론
 
 ## 실용 지표
-`입력 $0.3 · 출력 $2.4 · 혼합 $0.51/1M · 22.0141448896389 t/s · TTFT 12.8183385569944s · 262k ctx`
+`입력 $0.3 · 출력 $2.4 · 혼합 $0.51/1M · 23.5295804989064 t/s · TTFT 12.2723455261166s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Alibaba · Open · Small(27.8B) · 컨텍스트 262k · 종합지능 **None** ·
 | 전문 지식 | 62.2 | +0.82 | 실측 | [[gpqa-diamond]] 85.7576%×0.4, [[humanitys-last-exam]] 23.911%×0.3 |
 | 추론 | 54.0 | +0.26 | 실측 | [[critpt]] 0.853061%×1.0, [[gpqa-diamond]] 85.7576%×1.0, [[humanitys-last-exam]] 23.911%×1.0 |
 | 코딩 | 54.2 | +0.28 | 실측 | [[terminal-bench]] 32.5758%×0.5 |
-| 에이전트 | 63.2 | +0.88 | 실측 | [[tau2-bench]] 93.8596%×1.0, [[terminal-bench]] 32.5758%×1.0 |
+| 에이전트 | 63.1 | +0.88 | 실측 | [[tau2-bench]] 93.8596%×1.0, [[terminal-bench]] 32.5758%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 57.1 | +0.48 | 실측 | [[mmmu-pro]] 75.0289%×1.0 |
 | 긴문맥 | 63.7 | +0.92 | 실측 | [[aa-lcr]] 77.6667%×1.0 |

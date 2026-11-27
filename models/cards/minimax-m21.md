@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 61.3, z: 0.71, r: 60.6, estimated: false }  # 전문 지식
   reasoning: { s: 38.6, z: 0.17, r: 52.5, estimated: false }  # 추론
   coding: { s: 43.7, z: 0.09, r: 51.3, estimated: false }  # 코딩
-  agentic: { s: 64.9, z: 0.63, r: 59.4, estimated: false }  # 에이전트
+  agentic: { s: 64.9, z: 0.62, r: 59.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 76.3, z: 0.57, r: 58.5, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax-M2.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # MiniMax-M2.1
@@ -46,7 +46,7 @@ MiniMax · Open · Large(230B) · 컨텍스트 204k · 종합지능 **None** · 
 | 전문 지식 | 60.6 | +0.71 | 실측 | [[gpqa-diamond]] 83.0303%×0.4, [[humanitys-last-exam]] 23.1696%×0.3 |
 | 추론 | 52.5 | +0.17 | 실측 | [[critpt]] 0.285714%×1.0, [[gpqa-diamond]] 83.0303%×1.0, [[humanitys-last-exam]] 23.1696%×1.0 |
 | 코딩 | 51.3 | +0.09 | 실측 | [[terminal-bench]] 28.7879%×0.5 |
-| 에이전트 | 59.4 | +0.63 | 실측 | [[tau2-bench]] 85.3801%×1.0, [[terminal-bench]] 28.7879%×1.0 |
+| 에이전트 | 59.4 | +0.62 | 실측 | [[tau2-bench]] 85.3801%×1.0, [[terminal-bench]] 28.7879%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 58.5 | +0.57 | 실측 | [[aa-lcr]] 67.6667%×1.0 |

@@ -5,7 +5,7 @@ creator: SpaceXAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 1.35
-output_speed_tps: 69.9943100337911
+output_speed_tps: 75.1914956536661
 context_window: 500000
 status: past
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 80.8, z: 1.65, r: 74.8, estimated: false }  # 전문 지식
   reasoning: { s: 67.9, z: 1.63, r: 74.4, estimated: false }  # 추론
   coding: { s: 81.5, z: 1.36, r: 70.5, estimated: false }  # 코딩
-  agentic: { s: 94.1, z: 1.66, r: 74.9, estimated: false }  # 에이전트
+  agentic: { s: 94.1, z: 1.65, r: 74.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 90.6, z: 1.01, r: 65.1, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.6 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Grok 4.6 (high)
@@ -33,11 +33,11 @@ timestamp: 2026-11-26T00:00:00Z
 SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **None** · ⚠️ past(구세대)
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 에이전트, 전문 지식
+- **강점**: 전문 지식, 에이전트
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
-`입력 $2.0 · 출력 $6.0 · 혼합 $1.35/1M · 69.9943100337911 t/s · TTFT 23.5880744039138s · 500k ctx`
+`입력 $2.0 · 출력 $6.0 · 혼합 $1.35/1M · 75.1914956536661 t/s · TTFT 25.0338859284917s · 500k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **None**
 | 전문 지식 | 74.8 | +1.65 | 실측 | [[gpqa-diamond]] 94.9495%×0.4, [[humanitys-last-exam]] 42.9101%×0.3 |
 | 추론 | 74.4 | +1.63 | 실측 | [[critpt]] 17.1429%×1.0, [[gpqa-diamond]] 94.9495%×1.0, [[humanitys-last-exam]] 42.9101%×1.0 |
 | 코딩 | 70.5 | +1.36 | 실측 | [[scicode]] 56.4815%×1.0 |
-| 에이전트 | 74.9 | +1.66 | 실측 | [[gdpval]] 1627.39 Elo×1.0, [[tau3-banking]] 50.7216%×1.0 |
+| 에이전트 | 74.8 | +1.65 | 실측 | [[gdpval]] 1627.39 Elo×1.0, [[tau3-banking]] 50.7216%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 65.1 | +1.01 | 실측 | [[aa-lcr]] 80.3333%×1.0 |

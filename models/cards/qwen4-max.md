@@ -5,7 +5,7 @@ creator: Alibaba
 license: Proprietary
 intelligence_index: 42.7904442277464
 price_blended_usd_1m: 0.8025
-output_speed_tps: 107.538333847242
+output_speed_tps: 110.443639121682
 context_window: 983616
 status: current
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: null, z: null, r: null, estimated: false }  # 전문 지식
   reasoning: { s: null, z: null, r: null, estimated: false }  # 추론
   coding: { s: null, z: null, r: null, estimated: false }  # 코딩
-  agentic: { s: 97.5, z: 1.78, r: 76.6, estimated: false }  # 에이전트
+  agentic: { s: 97.5, z: 1.77, r: 76.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: null, z: null, r: null, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen4 Max
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Qwen4 Max
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 983k · 종합지능 **42.7904
 - **약점**: —
 
 ## 실용 지표
-`입력 $1.5 · 출력 $4.5 · 혼합 $0.8025/1M · 107.538333847242 t/s · TTFT 6.50177672968908s · 983k ctx` · 가성비 53.3
+`입력 $1.5 · 출력 $4.5 · 혼합 $0.8025/1M · 110.443639121682 t/s · TTFT 6.78080054348609s · 983k ctx` · 가성비 53.3
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 983k · 종합지능 **42.7904
 | 전문 지식 | — | — | 측정 안 됨 | — |
 | 추론 | — | — | 측정 안 됨 | — |
 | 코딩 | — | — | 측정 안 됨 | — |
-| 에이전트 | 76.6 | +1.78 | 실측 | [[gdpval]] 1808.87 Elo×1.0 |
+| 에이전트 | 76.6 | +1.77 | 실측 | [[gdpval]] 1808.87 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | — | — | 측정 안 됨 | — |

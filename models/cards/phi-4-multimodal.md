@@ -5,7 +5,7 @@ creator: Microsoft
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.104
-output_speed_tps: 20.5240421227752
+output_speed_tps: 20.3243630907703
 context_window: 128000
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Phi-4 Multimodal
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Phi-4 Multimodal
@@ -37,7 +37,7 @@ Microsoft · Open · Small(5.6B) · 컨텍스트 128k · 종합지능 **None**
 - **약점**: —
 
 ## 실용 지표
-`입력 $0.08 · 출력 $0.32 · 혼합 $0.104/1M · 20.5240421227752 t/s · TTFT 0.522588314088223s · 128k ctx`
+`입력 $0.08 · 출력 $0.32 · 혼합 $0.104/1M · 20.3243630907703 t/s · TTFT 0.51752591502778s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

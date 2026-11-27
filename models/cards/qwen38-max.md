@@ -5,7 +5,7 @@ creator: Alibaba
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 1.175
-output_speed_tps: 56.1170700701222
+output_speed_tps: 57.3691327022502
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 79.4, z: 1.58, r: 73.8, estimated: false }  # 전문 지식
   reasoning: { s: 69.8, z: 1.72, r: 75.8, estimated: false }  # 추론
   coding: { s: 76.2, z: 1.18, r: 67.8, estimated: false }  # 코딩
-  agentic: { s: 94.4, z: 1.67, r: 75.0, estimated: false }  # 에이전트
+  agentic: { s: 94.4, z: 1.66, r: 74.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 90.4, z: 0.97, r: 64.6, estimated: false }  # 멀티모달
   long_context: { s: 88.3, z: 0.94, r: 64.1, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.8 Max
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Qwen3.8 Max
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** ·
 - **약점**: 멀티모달, 긴문맥
 
 ## 실용 지표
-`입력 $2.0 · 출력 $6.0 · 혼합 $1.175/1M · 56.1170700701222 t/s · TTFT 4.21315338204162s · 1M ctx`
+`입력 $2.0 · 출력 $6.0 · 혼합 $1.175/1M · 57.3691327022502 t/s · TTFT 5.1343709276944s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** ·
 | 전문 지식 | 73.8 | +1.58 | 실측 | [[gpqa-diamond]] 92.7273%×0.4, [[humanitys-last-exam]] 43.0491%×0.3 |
 | 추론 | 75.8 | +1.72 | 실측 | [[critpt]] 20%×1.0, [[gpqa-diamond]] 92.7273%×1.0, [[humanitys-last-exam]] 43.0491%×1.0 |
 | 코딩 | 67.8 | +1.18 | 실측 | [[scicode]] 53.2407%×1.0 |
-| 에이전트 | 75.0 | +1.67 | 실측 | [[gdpval]] 1611.83 Elo×1.0, [[tau3-banking]] 51.3402%×1.0 |
+| 에이전트 | 74.9 | +1.66 | 실측 | [[gdpval]] 1611.83 Elo×1.0, [[tau3-banking]] 51.3402%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 64.6 | +0.97 | 실측 | [[mmmu-pro]] 82.3121%×1.0 |
 | 긴문맥 | 64.1 | +0.94 | 실측 | [[aa-lcr]] 78.3333%×1.0 |

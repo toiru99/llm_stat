@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 51.1, z: 0.21, r: 53.2, estimated: false }  # 전문 지식
   reasoning: { s: 32.4, z: -0.14, r: 47.9, estimated: false }  # 추론
   coding: { s: 35.6, z: -0.18, r: 47.3, estimated: false }  # 코딩
-  agentic: { s: 36.8, z: -0.36, r: 44.6, estimated: false }  # 에이전트
+  agentic: { s: 36.8, z: -0.36, r: 44.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 41.0, z: -0.51, r: 42.3, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — HyperNova 60B 2605 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # HyperNova 60B 2605 (high)
@@ -46,7 +46,7 @@ Multiverse Computing · Open · Medium(58.7B) · 컨텍스트 131k · 종합지�
 | 전문 지식 | 53.2 | +0.21 | 실측 | [[gpqa-diamond]] 73.3333%×0.4, [[humanitys-last-exam]] 16.6358%×0.3 |
 | 추론 | 47.9 | -0.14 | 실측 | [[critpt]] 0.857143%×1.0, [[gpqa-diamond]] 73.3333%×1.0, [[humanitys-last-exam]] 16.6358%×1.0 |
 | 코딩 | 47.3 | -0.18 | 실측 | [[terminal-bench]] 23.4848%×0.5 |
-| 에이전트 | 44.6 | -0.36 | 실측 | [[gdpval]] 448.27 Elo×1.0, [[tau2-bench]] 63.1579%×1.0, [[tau3-banking]] 5.56701%×1.0, [[terminal-bench]] 23.4848%×1.0 |
+| 에이전트 | 44.5 | -0.36 | 실측 | [[gdpval]] 448.27 Elo×1.0, [[tau2-bench]] 63.1579%×1.0, [[tau3-banking]] 5.56701%×1.0, [[terminal-bench]] 23.4848%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 42.3 | -0.51 | 실측 | [[aa-lcr]] 36.3333%×1.0 |

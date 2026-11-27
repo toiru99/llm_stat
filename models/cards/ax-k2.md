@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 66.8, z: 0.97, r: 64.6, estimated: false }  # 전문 지식
   reasoning: { s: 50.5, z: 0.76, r: 61.4, estimated: false }  # 추론
   coding: { s: 56.0, z: 0.5, r: 57.6, estimated: false }  # 코딩
-  agentic: { s: 45.7, z: -0.05, r: 49.3, estimated: false }  # 에이전트
+  agentic: { s: 45.7, z: -0.05, r: 49.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 78.9, z: 0.65, r: 59.8, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — A.X-K2
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # A.X-K2
@@ -46,7 +46,7 @@ SK Telecom · Open · Large(692B) · 컨텍스트 262k · 종합지능 **9.04405
 | 전문 지식 | 64.6 | +0.97 | 실측 | [[gpqa-diamond]] 85.6566%×0.4, [[humanitys-last-exam]] 29.5644%×0.3 |
 | 추론 | 61.4 | +0.76 | 실측 | [[critpt]] 8.85714%×1.0, [[gpqa-diamond]] 85.6566%×1.0, [[humanitys-last-exam]] 29.5644%×1.0 |
 | 코딩 | 57.6 | +0.5 | 실측 | [[scicode]] 40.9722%×1.0 |
-| 에이전트 | 49.3 | -0.05 | 실측 | [[gdpval]] 967.21 Elo×1.0, [[tau3-banking]] 16.0825%×1.0 |
+| 에이전트 | 49.2 | -0.05 | 실측 | [[gdpval]] 967.21 Elo×1.0, [[tau3-banking]] 16.0825%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 59.8 | +0.65 | 실측 | [[aa-lcr]] 70%×1.0 |

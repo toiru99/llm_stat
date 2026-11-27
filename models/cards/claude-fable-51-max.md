@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 49.2782199915657
 price_blended_usd_1m: 7.175
-output_speed_tps: 85.5509733389271
+output_speed_tps: 88.9828841427279
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 89.5, z: 2.07, r: 81.1, estimated: false }  # 전문 지식
   reasoning: { s: 86.5, z: 2.55, r: 88.3, estimated: false }  # 추론
   coding: { s: 92.4, z: 1.73, r: 76.0, estimated: false }  # 코딩
-  agentic: { s: 93.8, z: 1.65, r: 74.7, estimated: false }  # 에이전트
+  agentic: { s: 93.8, z: 1.64, r: 74.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 96.2, z: 1.18, r: 67.7, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Fable 5.1 (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Claude Fable 5.1 (max)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **49.2782
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $10.0 · 출력 $50.0 · 혼합 $7.175/1M · 85.5509733389271 t/s · TTFT 176.979201051556s · 1M ctx` · 가성비 6.9
+`입력 $10.0 · 출력 $50.0 · 혼합 $7.175/1M · 88.9828841427279 t/s · TTFT 163.078848246653s · 1M ctx` · 가성비 6.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **49.2782
 | 전문 지식 | 81.1 | +2.07 | 실측 | [[gpqa-diamond]] 93.7374%×0.4, [[humanitys-last-exam]] 59.1288%×0.3 |
 | 추론 | 88.3 | +2.55 | 실측 | [[critpt]] 29.7143%×1.0, [[gpqa-diamond]] 93.7374%×1.0, [[humanitys-last-exam]] 59.1288%×1.0 |
 | 코딩 | 76.0 | +1.73 | 실측 | [[scicode]] 63.0787%×1.0 |
-| 에이전트 | 74.7 | +1.65 | 실측 | [[gdpval]] 1766.54 Elo×1.0, [[tau3-banking]] 47.2165%×1.0 |
+| 에이전트 | 74.6 | +1.64 | 실측 | [[gdpval]] 1766.54 Elo×1.0, [[tau3-banking]] 47.2165%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 67.7 | +1.18 | 실측 | [[aa-lcr]] 85.3333%×1.0 |

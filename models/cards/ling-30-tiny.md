@@ -5,7 +5,7 @@ creator: InclusionAI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0
-output_speed_tps: 189.689917620865
+output_speed_tps: 186.965949473251
 context_window: 262144
 status: current
 size_class: Small
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 46.9, z: 0.01, r: 50.1, estimated: false }  # 전문 지식
   reasoning: { s: 28.3, z: -0.34, r: 44.9, estimated: false }  # 추론
   coding: { s: 28.4, z: -0.43, r: 43.6, estimated: false }  # 코딩
-  agentic: { s: 41.5, z: -0.2, r: 47.1, estimated: false }  # 에이전트
+  agentic: { s: 41.5, z: -0.2, r: 47.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 68.0, z: 0.32, r: 54.8, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling 3.0 Tiny
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Ling 3.0 Tiny
@@ -37,7 +37,7 @@ InclusionAI · Open · Small(7.9B) · 컨텍스트 262k · 종합지능 **None**
 - **약점**: 추론, 코딩
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 189.689917620865 t/s · TTFT 3.6089324282579s · 262k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 186.965949473251 t/s · TTFT 3.54980037904662s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ InclusionAI · Open · Small(7.9B) · 컨텍스트 262k · 종합지능 **None**
 | 전문 지식 | 50.1 | +0.01 | 실측 | [[gpqa-diamond]] 73.4343%×0.4, [[humanitys-last-exam]] 9.31418%×0.3 |
 | 추론 | 44.9 | -0.34 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 73.4343%×1.0, [[humanitys-last-exam]] 9.31418%×1.0 |
 | 코딩 | 43.6 | -0.43 | 실측 | [[scicode]] 24.1898%×1.0 |
-| 에이전트 | 47.1 | -0.2 | 실측 | [[gdpval]] 567.87 Elo×1.0, [[tau3-banking]] 20.8247%×1.0 |
+| 에이전트 | 47.0 | -0.2 | 실측 | [[gdpval]] 567.87 Elo×1.0, [[tau3-banking]] 20.8247%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 54.8 | +0.32 | 실측 | [[aa-lcr]] 60.3333%×1.0 |

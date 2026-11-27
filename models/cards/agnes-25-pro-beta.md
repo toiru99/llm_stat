@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 74.7, z: 1.36, r: 70.4, estimated: false }  # 전문 지식
   reasoning: { s: 62.4, z: 1.35, r: 70.3, estimated: false }  # 추론
   coding: { s: 69.0, z: 0.94, r: 64.1, estimated: false }  # 코딩
-  agentic: { s: 73.0, z: 0.91, r: 63.7, estimated: false }  # 에이전트
+  agentic: { s: 73.0, z: 0.91, r: 63.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 81.3, z: 0.5, r: 57.6, estimated: false }  # 멀티모달
   long_context: { s: 93.6, z: 1.1, r: 66.5, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Agnes 2.5 Pro Beta
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Agnes 2.5 Pro Beta
@@ -46,7 +46,7 @@ Sapiens AI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None**
 | 전문 지식 | 70.4 | +1.36 | 실측 | [[gpqa-diamond]] 90.5051%×0.4, [[humanitys-last-exam]] 37.5348%×0.3 |
 | 추론 | 70.3 | +1.35 | 실측 | [[critpt]] 15.7143%×1.0, [[gpqa-diamond]] 90.5051%×1.0, [[humanitys-last-exam]] 37.5348%×1.0 |
 | 코딩 | 64.1 | +0.94 | 실측 | [[scicode]] 48.8426%×1.0 |
-| 에이전트 | 63.7 | +0.91 | 실측 | [[gdpval]] 1334.43 Elo×1.0, [[tau3-banking]] 35.6701%×1.0 |
+| 에이전트 | 63.6 | +0.91 | 실측 | [[gdpval]] 1334.43 Elo×1.0, [[tau3-banking]] 35.6701%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 57.6 | +0.5 | 실측 | [[mmmu-pro]] 75.4335%×1.0 |
 | 긴문맥 | 66.5 | +1.1 | 실측 | [[aa-lcr]] 83%×1.0 |

@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 13.3, z: -1.63, r: 25.6, estimated: false }  # 전문 지식
   reasoning: { s: 8.2, z: -1.34, r: 29.9, estimated: false }  # 추론
   coding: { s: 0.0, z: -1.38, r: 29.2, estimated: false }  # 코딩
-  agentic: { s: 41.6, z: -0.19, r: 47.1, estimated: false }  # 에이전트
+  agentic: { s: 41.6, z: -0.2, r: 47.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 5.6, z: -1.59, r: 26.1, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniCPM5-1B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # MiniCPM5-1B (non-reasoning)
@@ -46,7 +46,7 @@ OpenBMB · Open · Tiny(1B) · 컨텍스트 128k · 종합지능 **None**
 | 전문 지식 | 25.6 | -1.63 | 실측 | [[gpqa-diamond]] 26.8687%×0.4, [[humanitys-last-exam]] 4.54124%×0.3 |
 | 추론 | 29.9 | -1.34 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 26.8687%×1.0, [[humanitys-last-exam]] 4.54124%×1.0 |
 | 코딩 | 29.2 | -1.38 | 실측 | [[terminal-bench]] 0%×0.5 |
-| 에이전트 | 47.1 | -0.19 | 실측 | [[tau2-bench]] 82.4561%×1.0, [[terminal-bench]] 0%×1.0 |
+| 에이전트 | 47.1 | -0.2 | 실측 | [[tau2-bench]] 82.4561%×1.0, [[terminal-bench]] 0%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 26.1 | -1.59 | 실측 | [[aa-lcr]] 5%×1.0 |

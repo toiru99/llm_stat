@@ -5,7 +5,7 @@ creator: IBM
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.0475
-output_speed_tps: 90.3783550634568
+output_speed_tps: 85.928262231596
 context_window: 131072
 status: current
 size_class: Small
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 40.3, z: -0.32, r: 45.3, estimated: false }  # 전문 지식
   reasoning: { s: 24.8, z: -0.52, r: 42.2, estimated: false }  # 추론
   coding: { s: 40.4, z: -0.02, r: 49.7, estimated: false }  # 코딩
-  agentic: { s: 27.1, z: -0.7, r: 39.4, estimated: false }  # 에이전트
+  agentic: { s: 27.1, z: -0.71, r: 39.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 50.8, z: -0.21, r: 46.8, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Granite 4.2 8B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Granite 4.2 8B
@@ -37,7 +37,7 @@ IBM · Open · Small(8B) · 컨텍스트 131k · 종합지능 **None**
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.06 · 출력 $0.25 · 혼합 $0.0475/1M · 90.3783550634568 t/s · TTFT 1.86746300094702s · 131k ctx`
+`입력 $0.06 · 출력 $0.25 · 혼합 $0.0475/1M · 85.928262231596 t/s · TTFT 1.91468202966656s · 131k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ IBM · Open · Small(8B) · 컨텍스트 131k · 종합지능 **None**
 | 전문 지식 | 45.3 | -0.32 | 실측 | [[gpqa-diamond]] 63.1313%×0.4, [[humanitys-last-exam]] 9.68489%×0.3 |
 | 추론 | 42.2 | -0.52 | 실측 | [[critpt]] 0.285714%×1.0, [[gpqa-diamond]] 63.1313%×1.0, [[humanitys-last-exam]] 9.68489%×1.0 |
 | 코딩 | 49.7 | -0.02 | 실측 | [[scicode]] 31.4815%×1.0 |
-| 에이전트 | 39.4 | -0.7 | 실측 | [[gdpval]] 498.42 Elo×1.0, [[tau3-banking]] 7.62887%×1.0 |
+| 에이전트 | 39.4 | -0.71 | 실측 | [[gdpval]] 498.42 Elo×1.0, [[tau3-banking]] 7.62887%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 46.8 | -0.21 | 실측 | [[aa-lcr]] 45%×1.0 |

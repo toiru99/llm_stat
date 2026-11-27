@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.5625
-output_speed_tps: 102.533563223919
+output_speed_tps: 100.792498872954
 context_window: 262144
 status: current
 size_class: Small
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 61.5, z: 0.72, r: 60.8, estimated: false }  # 전문 지식
   reasoning: { s: 38.6, z: 0.17, r: 52.5, estimated: false }  # 추론
   coding: { s: 50.1, z: 0.31, r: 54.6, estimated: false }  # 코딩
-  agentic: { s: 56.0, z: 0.32, r: 54.7, estimated: false }  # 에이전트
+  agentic: { s: 56.0, z: 0.31, r: 54.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 80.7, z: 0.48, r: 57.1, estimated: false }  # 멀티모달
   long_context: { s: 80.8, z: 0.71, r: 60.6, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.6 35B A3B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Qwen3.6 35B A3B
@@ -34,10 +34,10 @@ Alibaba · Open · Small(36B) · 컨텍스트 262k · 종합지능 **None**
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 지시 따르기, 전문 지식
-- **약점**: 코딩, 추론
+- **약점**: 에이전트, 추론
 
 ## 실용 지표
-`입력 $0.375 · 출력 $2.25 · 혼합 $0.5625/1M · 102.533563223919 t/s · TTFT 3.16431541626037s · 262k ctx`
+`입력 $0.375 · 출력 $2.25 · 혼합 $0.5625/1M · 100.792498872954 t/s · TTFT 3.12630746893351s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Alibaba · Open · Small(36B) · 컨텍스트 262k · 종합지능 **None**
 | 전문 지식 | 60.8 | +0.72 | 실측 | [[gpqa-diamond]] 84.1414%×0.4, [[humanitys-last-exam]] 22.2428%×0.3 |
 | 추론 | 52.5 | +0.17 | 실측 | [[critpt]] 0.285714%×1.0, [[gpqa-diamond]] 84.1414%×1.0, [[humanitys-last-exam]] 22.2428%×1.0 |
 | 코딩 | 54.6 | +0.31 | 실측 | [[scicode]] 36.5741%×1.0, [[terminal-bench]] 34.8485%×0.5 |
-| 에이전트 | 54.7 | +0.32 | 실측 | [[gdpval]] 898.85 Elo×1.0, [[tau2-bench]] 95.3216%×1.0, [[tau3-banking]] 9.27835%×1.0, [[terminal-bench]] 34.8485%×1.0 |
+| 에이전트 | 54.7 | +0.31 | 실측 | [[gdpval]] 898.85 Elo×1.0, [[tau2-bench]] 95.3216%×1.0, [[tau3-banking]] 9.27835%×1.0, [[terminal-bench]] 34.8485%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 57.1 | +0.48 | 실측 | [[mmmu-pro]] 75.0289%×1.0 |
 | 긴문맥 | 60.6 | +0.71 | 실측 | [[aa-lcr]] 71.6667%×1.0 |

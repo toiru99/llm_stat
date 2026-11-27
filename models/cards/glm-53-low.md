@@ -5,7 +5,7 @@ creator: Z AI
 license: Open
 intelligence_index: 23.1079373025379
 price_blended_usd_1m: 0.902
-output_speed_tps: 68.0551519153137
+output_speed_tps: 73.0639745964167
 context_window: 1000000
 status: current
 size_class: Large
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 48.5, z: 0.08, r: 51.2, estimated: false }  # 전문 지식
   reasoning: { s: 44.6, z: 0.47, r: 57.1, estimated: false }  # 추론
   coding: { s: 57.7, z: 0.56, r: 58.4, estimated: false }  # 코딩
-  agentic: { s: 76.5, z: 1.04, r: 65.5, estimated: false }  # 에이전트
+  agentic: { s: 76.5, z: 1.03, r: 65.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 82.0, z: 0.74, r: 61.1, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-5.3 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # GLM-5.3 (low)
@@ -37,7 +37,7 @@ Z AI · Open · Large(753B) · 컨텍스트 1M · 종합지능 **23.107937302537
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $1.4 · 출력 $4.4 · 혼합 $0.902/1M · 68.0551519153137 t/s · TTFT 1.83760262961451s · 1M ctx` · 가성비 25.6
+`입력 $1.4 · 출력 $4.4 · 혼합 $0.902/1M · 73.0639745964167 t/s · TTFT 1.4702052358811s · 1M ctx` · 가성비 25.6
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Z AI · Open · Large(753B) · 컨텍스트 1M · 종합지능 **23.107937302537
 | 전문 지식 | 51.2 | +0.08 | 실측 | [[humanitys-last-exam]] 36.5616%×0.3 |
 | 추론 | 57.1 | +0.47 | 실측 | [[critpt]] 14.5714%×1.0, [[humanitys-last-exam]] 36.5616%×1.0 |
 | 코딩 | 58.4 | +0.56 | 실측 | [[scicode]] 42.0139%×1.0 |
-| 에이전트 | 65.5 | +1.04 | 실측 | [[gdpval]] 1332.52 Elo×1.0 |
+| 에이전트 | 65.5 | +1.03 | 실측 | [[gdpval]] 1332.52 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 61.1 | +0.74 | 실측 | [[aa-lcr]] 72.6667%×1.0 |

@@ -5,7 +5,7 @@ creator: DeepSeek
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.0622
-output_speed_tps: 76.6996290404119
+output_speed_tps: 85.5005567885943
 context_window: 1000000
 status: past
 size_class: Large
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 72.4, z: 1.24, r: 68.7, estimated: false }  # 전문 지식
   reasoning: { s: 52.7, z: 0.87, r: 63.1, estimated: false }  # 추론
   coding: { s: 60.0, z: 0.64, r: 59.6, estimated: false }  # 코딩
-  agentic: { s: 68.4, z: 0.75, r: 61.3, estimated: false }  # 에이전트
+  agentic: { s: 68.4, z: 0.75, r: 61.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 83.8, z: 0.8, r: 62.0, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — DeepSeek V4 Flash (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # DeepSeek V4 Flash (max)
@@ -37,7 +37,7 @@ DeepSeek · Open · Large(284B) · 컨텍스트 1M · 종합지능 **None** · �
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $0.1119 · 출력 $0.2338 · 혼합 $0.0622/1M · 76.6996290404119 t/s · TTFT 1.53394380208212s · 1M ctx`
+`입력 $0.1119 · 출력 $0.2338 · 혼합 $0.0622/1M · 85.5005567885943 t/s · TTFT 1.57727176630272s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ DeepSeek · Open · Large(284B) · 컨텍스트 1M · 종합지능 **None** · �
 | 전문 지식 | 68.7 | +1.24 | 실측 | [[gpqa-diamond]] 89.3939%×0.4, [[humanitys-last-exam]] 34.8471%×0.3 |
 | 추론 | 63.1 | +0.87 | 실측 | [[critpt]] 7.14286%×1.0, [[gpqa-diamond]] 89.3939%×1.0, [[humanitys-last-exam]] 34.8471%×1.0 |
 | 코딩 | 59.6 | +0.64 | 실측 | [[scicode]] 45.2546%×1.0, [[terminal-bench]] 35.6061%×0.5 |
-| 에이전트 | 61.3 | +0.75 | 실측 | [[gdpval]] 1045.03 Elo×1.0, [[tau2-bench]] 95.0292%×1.0, [[tau3-banking]] 30.9278%×1.0, [[terminal-bench]] 35.6061%×1.0 |
+| 에이전트 | 61.2 | +0.75 | 실측 | [[gdpval]] 1045.03 Elo×1.0, [[tau2-bench]] 95.0292%×1.0, [[tau3-banking]] 30.9278%×1.0, [[terminal-bench]] 35.6061%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 62.0 | +0.8 | 실측 | [[aa-lcr]] 74.3333%×1.0 |

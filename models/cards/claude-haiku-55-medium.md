@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 24.6013254343023
 price_blended_usd_1m: 0.077
-output_speed_tps: 220.566374040654
+output_speed_tps: 223.994747620336
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 44.7, z: -0.1, r: 48.5, estimated: false }  # 전문 지식
   reasoning: { s: 40.3, z: 0.26, r: 53.9, estimated: false }  # 추론
   coding: { s: 69.1, z: 0.95, r: 64.2, estimated: false }  # 코딩
-  agentic: { s: 74.3, z: 0.96, r: 64.4, estimated: false }  # 에이전트
+  agentic: { s: 74.3, z: 0.95, r: 64.3, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 87.2, z: 0.9, r: 63.6, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Haiku 5.5 (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Claude Haiku 5.5 (medium)
@@ -33,11 +33,11 @@ timestamp: 2026-11-26T00:00:00Z
 Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **24.6013254343023**
 
 ## 강점 / 약점 (평균 대비)
-- **강점**: 에이전트, 코딩
+- **강점**: 코딩, 에이전트
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.5 · 혼합 $0.077/1M · 220.566374040654 t/s · TTFT 10.487977868195s · 1M ctx` · 가성비 319.5
+`입력 $0.1 · 출력 $0.5 · 혼합 $0.077/1M · 223.994747620336 t/s · TTFT 10.0865276241577s · 1M ctx` · 가성비 319.5
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **24.6013
 | 전문 지식 | 48.5 | -0.1 | 실측 | [[humanitys-last-exam]] 33.7813%×0.3 |
 | 추론 | 53.9 | +0.26 | 실측 | [[critpt]] 12.8571%×1.0, [[humanitys-last-exam]] 33.7813%×1.0 |
 | 코딩 | 64.2 | +0.95 | 실측 | [[scicode]] 48.9583%×1.0 |
-| 에이전트 | 64.4 | +0.96 | 실측 | [[gdpval]] 1282.93 Elo×1.0 |
+| 에이전트 | 64.3 | +0.95 | 실측 | [[gdpval]] 1282.93 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 63.6 | +0.9 | 실측 | [[aa-lcr]] 77.3333%×1.0 |

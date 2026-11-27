@@ -5,7 +5,7 @@ creator: StepFun
 license: Open
 intelligence_index: 28.5161663448339
 price_blended_usd_1m: 0.54
-output_speed_tps: 78.3094803454015
+output_speed_tps: 77.031750424047
 context_window: 1000000
 status: current
 size_class: Large
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 62.0, z: 0.74, r: 61.1, estimated: false }  # 전문 지식
   reasoning: { s: 60.2, z: 1.24, r: 68.7, estimated: false }  # 추론
   coding: { s: 85.5, z: 1.5, r: 72.5, estimated: false }  # 코딩
-  agentic: { s: 87.9, z: 1.44, r: 71.6, estimated: false }  # 에이전트
+  agentic: { s: 87.9, z: 1.43, r: 71.5, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 82.5, z: 0.57, r: 58.5, estimated: false }  # 멀티모달
   long_context: { s: 99.6, z: 1.28, r: 69.3, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Step 5 Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Step 5 Preview
@@ -37,7 +37,7 @@ StepFun · Open · Large(600B) · 컨텍스트 1M · 종합지능 **28.516166344
 - **약점**: 전문 지식, 멀티모달
 
 ## 실용 지표
-`입력 $1.0 · 출력 $2.7 · 혼합 $0.54/1M · 78.3094803454015 t/s · TTFT 20.0796571735489s · 1M ctx` · 가성비 52.8
+`입력 $1.0 · 출력 $2.7 · 혼합 $0.54/1M · 77.031750424047 t/s · TTFT 21.0393636112166s · 1M ctx` · 가성비 52.8
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ StepFun · Open · Large(600B) · 컨텍스트 1M · 종합지능 **28.516166344
 | 전문 지식 | 61.1 | +0.74 | 실측 | [[humanitys-last-exam]] 46.4782%×0.3 |
 | 추론 | 68.7 | +1.24 | 실측 | [[critpt]] 20.8571%×1.0, [[humanitys-last-exam]] 46.4782%×1.0 |
 | 코딩 | 72.5 | +1.5 | 실측 | [[scicode]] 58.912%×1.0 |
-| 에이전트 | 71.6 | +1.44 | 실측 | [[gdpval]] 1590.99 Elo×1.0 |
+| 에이전트 | 71.5 | +1.43 | 실측 | [[gdpval]] 1590.99 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 58.5 | +0.57 | 실측 | [[mmmu-pro]] 76.3584%×1.0 |
 | 긴문맥 | 69.3 | +1.28 | 실측 | [[aa-lcr]] 88.3333%×1.0 |

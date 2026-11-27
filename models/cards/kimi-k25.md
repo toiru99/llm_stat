@@ -5,7 +5,7 @@ creator: Kimi
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.49
-output_speed_tps: 45.5190231503745
+output_speed_tps: 39.7311857371984
 context_window: 256000
 status: past
 size_class: Large
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 69.0, z: 1.08, r: 66.2, estimated: false }  # 전문 지식
   reasoning: { s: 46.5, z: 0.57, r: 58.5, estimated: false }  # 추론
   coding: { s: 52.9, z: 0.4, r: 56.0, estimated: false }  # 코딩
-  agentic: { s: 58.0, z: 0.39, r: 55.8, estimated: false }  # 에이전트
+  agentic: { s: 58.0, z: 0.38, r: 55.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 81.2, z: 0.5, r: 57.5, estimated: false }  # 멀티모달
   long_context: { s: 88.0, z: 0.93, r: 63.9, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K2.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Kimi K2.5
@@ -37,7 +37,7 @@ Kimi · Open · Large(1000B) · 컨텍스트 256k · 종합지능 **None** · �
 - **약점**: 코딩, 에이전트
 
 ## 실용 지표
-`입력 $0.6 · 출력 $3.0 · 혼합 $0.49/1M · 45.5190231503745 t/s · TTFT 2.95192546695638s · 256k ctx`
+`입력 $0.6 · 출력 $3.0 · 혼합 $0.49/1M · 39.7311857371984 t/s · TTFT 2.81129583425875s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Kimi · Open · Large(1000B) · 컨텍스트 256k · 종합지능 **None** · �
 | 전문 지식 | 66.2 | +1.08 | 실측 | [[gpqa-diamond]] 87.8788%×0.4, [[humanitys-last-exam]] 30.7229%×0.3 |
 | 추론 | 58.5 | +0.57 | 실측 | [[critpt]] 3.14286%×1.0, [[gpqa-diamond]] 87.8788%×1.0, [[humanitys-last-exam]] 30.7229%×1.0 |
 | 코딩 | 56.0 | +0.4 | 실측 | [[terminal-bench]] 34.8485%×0.5 |
-| 에이전트 | 55.8 | +0.39 | 실측 | [[gdpval]] 846.28 Elo×1.0, [[tau2-bench]] 95.9064%×1.0, [[tau3-banking]] 14.2268%×1.0, [[terminal-bench]] 34.8485%×1.0 |
+| 에이전트 | 55.7 | +0.38 | 실측 | [[gdpval]] 846.28 Elo×1.0, [[tau2-bench]] 95.9064%×1.0, [[tau3-banking]] 14.2268%×1.0, [[terminal-bench]] 34.8485%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 57.5 | +0.5 | 실측 | [[mmmu-pro]] 75.3757%×1.0 |
 | 긴문맥 | 63.9 | +0.93 | 실측 | [[aa-lcr]] 78%×1.0 |

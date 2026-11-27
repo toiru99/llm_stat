@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 51.5, z: 0.23, r: 53.4, estimated: false }  # 전문 지식
   reasoning: { s: 30.6, z: -0.22, r: 46.6, estimated: false }  # 추론
   coding: { s: 43.7, z: 0.09, r: 51.3, estimated: false }  # 코딩
-  agentic: { s: 71.8, z: 0.87, r: 63.1, estimated: false }  # 에이전트
+  agentic: { s: 71.8, z: 0.87, r: 63.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 74.1, z: 0.5, r: 57.5, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — JT-35B-Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # JT-35B-Flash
@@ -46,7 +46,7 @@ China Mobile · Proprietary · Small · 컨텍스트 256k · 종합지능 **None
 | 전문 지식 | 53.4 | +0.23 | 실측 | [[gpqa-diamond]] 82.9293%×0.4, [[humanitys-last-exam]] 6.44115%×0.3 |
 | 추론 | 46.6 | -0.22 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 82.9293%×1.0, [[humanitys-last-exam]] 6.44115%×1.0 |
 | 코딩 | 51.3 | +0.09 | 실측 | [[terminal-bench]] 28.7879%×0.5 |
-| 에이전트 | 63.1 | +0.87 | 실측 | [[tau2-bench]] 99.1228%×1.0, [[terminal-bench]] 28.7879%×1.0 |
+| 에이전트 | 63.0 | +0.87 | 실측 | [[tau2-bench]] 99.1228%×1.0, [[terminal-bench]] 28.7879%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 57.5 | +0.5 | 실측 | [[aa-lcr]] 65.6667%×1.0 |

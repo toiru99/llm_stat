@@ -5,7 +5,7 @@ creator: Z AI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.511
-output_speed_tps: 89.2482817864249
+output_speed_tps: 81.6583896215158
 context_window: 200000
 status: past
 size_class: Large
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 65.7, z: 0.92, r: 63.8, estimated: false }  # 전문 지식
   reasoning: { s: 42.9, z: 0.38, r: 55.8, estimated: false }  # 추론
   coding: { s: 48.3, z: 0.24, r: 53.6, estimated: false }  # 코딩
-  agentic: { s: 57.8, z: 0.38, r: 55.7, estimated: false }  # 에이전트
+  agentic: { s: 57.8, z: 0.37, r: 55.6, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 80.1, z: 0.69, r: 60.3, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.7
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # GLM-4.7
@@ -37,7 +37,7 @@ Z AI · Open · Large(357B) · 컨텍스트 200k · 종합지능 **None** · ⚠
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $0.525 · 출력 $2.1 · 혼합 $0.511/1M · 89.2482817864249 t/s · TTFT 3.55533986951114s · 200k ctx`
+`입력 $0.525 · 출력 $2.1 · 혼합 $0.511/1M · 81.6583896215158 t/s · TTFT 3.58068600653619s · 200k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Z AI · Open · Large(357B) · 컨텍스트 200k · 종합지능 **None** · ⚠
 | 전문 지식 | 63.8 | +0.92 | 실측 | [[gpqa-diamond]] 85.8586%×0.4, [[humanitys-last-exam]] 27.3865%×0.3 |
 | 추론 | 55.8 | +0.38 | 실측 | [[critpt]] 1.7102%×1.0, [[gpqa-diamond]] 85.8586%×1.0, [[humanitys-last-exam]] 27.3865%×1.0 |
 | 코딩 | 53.6 | +0.24 | 실측 | [[terminal-bench]] 31.8182%×0.5 |
-| 에이전트 | 55.7 | +0.38 | 실측 | [[gdpval]] 1021.21 Elo×1.0, [[tau2-bench]] 95.9064%×1.0, [[tau3-banking]] 12.1649%×1.0, [[terminal-bench]] 31.8182%×1.0 |
+| 에이전트 | 55.6 | +0.37 | 실측 | [[gdpval]] 1021.21 Elo×1.0, [[tau2-bench]] 95.9064%×1.0, [[tau3-banking]] 12.1649%×1.0, [[terminal-bench]] 31.8182%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 60.3 | +0.69 | 실측 | [[aa-lcr]] 71%×1.0 |

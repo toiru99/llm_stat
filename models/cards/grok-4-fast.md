@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 60.1, z: 0.65, r: 59.7, estimated: false }  # 전문 지식
   reasoning: { s: 39.8, z: 0.23, r: 53.4, estimated: false }  # 추론
   coding: { s: 28.7, z: -0.42, r: 43.8, estimated: false }  # 코딩
-  agentic: { s: 47.6, z: 0.02, r: 50.2, estimated: false }  # 에이전트
+  agentic: { s: 47.6, z: 0.01, r: 50.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 63.1, z: -0.43, r: 43.6, estimated: false }  # 멀티모달
   long_context: { s: 83.1, z: 0.78, r: 61.7, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4 Fast
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Grok 4 Fast
@@ -46,7 +46,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 2M · 종합지능 **None** �
 | 전문 지식 | 59.7 | +0.65 | 실측 | [[gpqa-diamond]] 84.7475%×0.4, [[humanitys-last-exam]] 19.0918%×0.3 |
 | 추론 | 53.4 | +0.23 | 실측 | [[critpt]] 2.85714%×1.0, [[gpqa-diamond]] 84.7475%×1.0, [[humanitys-last-exam]] 19.0918%×1.0 |
 | 코딩 | 43.8 | -0.42 | 실측 | [[terminal-bench]] 18.9394%×0.5 |
-| 에이전트 | 50.2 | +0.02 | 실측 | [[tau2-bench]] 65.7895%×1.0, [[terminal-bench]] 18.9394%×1.0 |
+| 에이전트 | 50.2 | +0.01 | 실측 | [[tau2-bench]] 65.7895%×1.0, [[terminal-bench]] 18.9394%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 43.6 | -0.43 | 실측 | [[mmmu-pro]] 61.7919%×1.0 |
 | 긴문맥 | 61.7 | +0.78 | 실측 | [[aa-lcr]] 73.6667%×1.0 |

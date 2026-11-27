@@ -5,7 +5,7 @@ creator: Z AI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.5835
-output_speed_tps: 57.30640017437
+output_speed_tps: 57.3723865891172
 context_window: 200000
 status: past
 size_class: Large
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 37.9, z: -0.43, r: 43.5, estimated: false }  # 전문 지식
   reasoning: { s: 22.6, z: -0.62, r: 40.6, estimated: false }  # 추론
   coding: { s: 43.7, z: 0.09, r: 51.3, estimated: false }  # 코딩
-  agentic: { s: 60.6, z: 0.48, r: 57.2, estimated: false }  # 에이전트
+  agentic: { s: 60.6, z: 0.47, r: 57.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 29.7, z: -0.86, r: 37.1, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GLM-4.6 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # GLM-4.6 (non-reasoning)
@@ -37,7 +37,7 @@ Z AI · Open · Large(357B) · 컨텍스트 200k · 종합지능 **None** · ⚠
 - **약점**: 지시 따르기, 긴문맥
 
 ## 실용 지표
-`입력 $0.575 · 출력 $2.2 · 혼합 $0.5835/1M · 57.30640017437 t/s · TTFT 2.55120388360281s · 200k ctx`
+`입력 $0.575 · 출력 $2.2 · 혼합 $0.5835/1M · 57.3723865891172 t/s · TTFT 2.57871045430557s · 200k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Z AI · Open · Large(357B) · 컨텍스트 200k · 종합지능 **None** · ⚠
 | 전문 지식 | 43.5 | -0.43 | 실측 | [[gpqa-diamond]] 63.2323%×0.4, [[humanitys-last-exam]] 5.46803%×0.3 |
 | 추론 | 40.6 | -0.62 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 63.2323%×1.0, [[humanitys-last-exam]] 5.46803%×1.0 |
 | 코딩 | 51.3 | +0.09 | 실측 | [[terminal-bench]] 28.7879%×0.5 |
-| 에이전트 | 57.2 | +0.48 | 실측 | [[tau2-bench]] 76.9006%×1.0, [[terminal-bench]] 28.7879%×1.0 |
+| 에이전트 | 57.1 | +0.47 | 실측 | [[tau2-bench]] 76.9006%×1.0, [[terminal-bench]] 28.7879%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 37.1 | -0.86 | 실측 | [[aa-lcr]] 26.3333%×1.0 |

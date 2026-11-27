@@ -5,7 +5,7 @@ creator: Inception
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.129
-output_speed_tps: 489.825974070744
+output_speed_tps: 472.342115376834
 context_window: 260000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mercury 2.5
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Mercury 2.5
@@ -37,7 +37,7 @@ Inception · Proprietary · Unknown · 컨텍스트 260k · 종합지능 **None*
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.2 · 출력 $0.75 · 혼합 $0.129/1M · 489.825974070744 t/s · TTFT 2.57981691956028s · 260k ctx`
+`입력 $0.2 · 출력 $0.75 · 혼합 $0.129/1M · 472.342115376834 t/s · TTFT 2.58637929643394s · 260k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

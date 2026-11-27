@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 34.5882708981578
 price_blended_usd_1m: 0.077
-output_speed_tps: 237.20144188221
+output_speed_tps: 236.409568884994
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 56.8, z: 0.49, r: 57.3, estimated: false }  # 전문 지식
   reasoning: { s: 60.0, z: 1.24, r: 68.5, estimated: false }  # 추론
   coding: { s: 73.7, z: 1.1, r: 66.5, estimated: false }  # 코딩
-  agentic: { s: 84.9, z: 1.33, r: 70.0, estimated: false }  # 에이전트
+  agentic: { s: 84.9, z: 1.33, r: 69.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 88.3, z: 0.94, r: 64.1, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Haiku 5.5 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Claude Haiku 5.5 (xhigh)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **34.5882
 - **약점**: 긴문맥, 전문 지식
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.5 · 혼합 $0.077/1M · 237.20144188221 t/s · TTFT 52.0268295149132s · 1M ctx` · 가성비 449.2
+`입력 $0.1 · 출력 $0.5 · 혼합 $0.077/1M · 236.409568884994 t/s · TTFT 50.9826944510432s · 1M ctx` · 가성비 449.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **34.5882
 | 전문 지식 | 57.3 | +0.49 | 실측 | [[humanitys-last-exam]] 42.6784%×0.3 |
 | 추론 | 68.5 | +1.24 | 실측 | [[critpt]] 22.5714%×1.0, [[humanitys-last-exam]] 42.6784%×1.0 |
 | 코딩 | 66.5 | +1.1 | 실측 | [[scicode]] 51.7361%×1.0 |
-| 에이전트 | 70.0 | +1.33 | 실측 | [[gdpval]] 1523.13 Elo×1.0 |
+| 에이전트 | 69.9 | +1.33 | 실측 | [[gdpval]] 1523.13 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 64.1 | +0.94 | 실측 | [[aa-lcr]] 78.3333%×1.0 |

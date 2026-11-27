@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 53.7, z: 0.33, r: 55.0, estimated: false }  # 전문 지식
   reasoning: { s: 32.6, z: -0.13, r: 48.1, estimated: false }  # 추론
   coding: { s: 52.1, z: 0.37, r: 55.6, estimated: false }  # 코딩
-  agentic: { s: 62.0, z: 0.53, r: 57.9, estimated: false }  # 에이전트
+  agentic: { s: 62.0, z: 0.52, r: 57.9, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 71.2, z: -0.01, r: 49.9, estimated: false }  # 멀티모달
   long_context: { s: 85.7, z: 0.86, r: 62.9, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 4.1 Opus
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Claude 4.1 Opus
@@ -46,7 +46,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None*
 | 전문 지식 | 55.0 | +0.33 | 실측 | [[gpqa-diamond]] 80.9%×0.4, [[humanitys-last-exam]] 12.4652%×0.3 |
 | 추론 | 48.1 | -0.13 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 80.9%×1.0, [[humanitys-last-exam]] 12.4652%×1.0 |
 | 코딩 | 55.6 | +0.37 | 실측 | [[terminal-bench]] 34.3352%×0.5 |
-| 에이전트 | 57.9 | +0.53 | 실측 | [[tau2-bench]] 71.3661%×1.0, [[terminal-bench]] 34.3352%×1.0 |
+| 에이전트 | 57.9 | +0.52 | 실측 | [[tau2-bench]] 71.3661%×1.0, [[terminal-bench]] 34.3352%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 49.9 | -0.01 | 실측 | [[mmmu-pro]] 67.9191%×1.0 |
 | 긴문맥 | 62.9 | +0.86 | 실측 | [[aa-lcr]] 76%×1.0 |

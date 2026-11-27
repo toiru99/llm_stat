@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 71.8, z: 1.22, r: 68.2, estimated: false }  # 전문 지식
   reasoning: { s: 81.9, z: 2.32, r: 84.8, estimated: false }  # 추론
   coding: { s: 91.6, z: 1.71, r: 75.6, estimated: false }  # 코딩
-  agentic: { s: 99.6, z: 1.85, r: 77.8, estimated: false }  # 에이전트
+  agentic: { s: 99.6, z: 1.85, r: 77.7, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 94.4, z: 1.12, r: 66.8, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Wonder Full (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Muse Wonder Full (max)
@@ -46,7 +46,7 @@ Meta · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **49.925697211
 | 전문 지식 | 68.2 | +1.22 | 실측 | [[humanitys-last-exam]] 53.6145%×0.3 |
 | 추론 | 84.8 | +2.32 | 실측 | [[critpt]] 32.8571%×1.0, [[humanitys-last-exam]] 53.6145%×1.0 |
 | 코딩 | 75.6 | +1.71 | 실측 | [[scicode]] 62.6157%×1.0 |
-| 에이전트 | 77.8 | +1.85 | 실측 | [[gdpval]] 1857.09 Elo×1.0 |
+| 에이전트 | 77.7 | +1.85 | 실측 | [[gdpval]] 1857.09 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 66.8 | +1.12 | 실측 | [[aa-lcr]] 83.6667%×1.0 |

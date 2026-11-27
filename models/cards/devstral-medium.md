@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 27.6, z: -0.93, r: 36.0, estimated: false }  # 전문 지식
   reasoning: { s: 16.4, z: -0.93, r: 36.0, estimated: false }  # 추론
   coding: { s: 13.8, z: -0.92, r: 36.2, estimated: false }  # 코딩
-  agentic: { s: 16.9, z: -1.06, r: 34.0, estimated: false }  # 에이전트
+  agentic: { s: 16.9, z: -1.07, r: 34.0, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 36.1, z: -0.66, r: 40.1, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Devstral Medium
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Devstral Medium
@@ -34,7 +34,7 @@ Mistral · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **None** 
 
 ## 강점 / 약점 (평균 대비)
 - **강점**: 긴문맥, 코딩
-- **약점**: 에이전트, 지시 따르기
+- **약점**: 지시 따르기, 에이전트
 
 ## 실용 지표
 `입력 $None · 출력 $None · 혼합 $None/1M · None t/s · TTFT Nones · 256k ctx`
@@ -46,7 +46,7 @@ Mistral · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **None** 
 | 전문 지식 | 36.0 | -0.93 | 실측 | [[gpqa-diamond]] 49.1919%×0.4, [[humanitys-last-exam]] 3.75348%×0.3 |
 | 추론 | 36.0 | -0.93 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 49.1919%×1.0, [[humanitys-last-exam]] 3.75348%×1.0 |
 | 코딩 | 36.2 | -0.92 | 실측 | [[terminal-bench]] 9.09091%×0.5 |
-| 에이전트 | 34.0 | -1.06 | 실측 | [[tau2-bench]] 19.883%×1.0, [[terminal-bench]] 9.09091%×1.0 |
+| 에이전트 | 34.0 | -1.07 | 실측 | [[tau2-bench]] 19.883%×1.0, [[terminal-bench]] 9.09091%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 40.1 | -0.66 | 실측 | [[aa-lcr]] 32%×1.0 |

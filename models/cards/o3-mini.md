@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 1.045
-output_speed_tps: 195.825992859706
+output_speed_tps: 195.074884670564
 context_window: 200000
 status: past
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 47.0, z: 0.01, r: 50.2, estimated: false }  # 전문 지식
   reasoning: { s: 42.3, z: 0.35, r: 55.3, estimated: false }  # 추론
   coding: { s: 10.3, z: -1.04, r: 34.5, estimated: false }  # 코딩
-  agentic: { s: 19.6, z: -0.97, r: 35.5, estimated: false }  # 에이전트
+  agentic: { s: 19.6, z: -0.97, r: 35.4, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: null, z: null, r: null, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — o3-mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # o3-mini
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None** �
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $1.1 · 출력 $4.4 · 혼합 $1.045/1M · 195.825992859706 t/s · TTFT 5.27210634305001s · 200k ctx`
+`입력 $1.1 · 출력 $4.4 · 혼합 $1.045/1M · 195.074884670564 t/s · TTFT 5.68878266914666s · 200k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None** �
 | 전문 지식 | 50.2 | +0.01 | 실측 | [[gpqa-diamond]] 74.8485%×0.4, [[humanitys-last-exam]] 7.91%×0.3 |
 | 추론 | 55.3 | +0.35 | 실측 | [[gpqa-diamond]] 74.8485%×1.0, [[humanitys-last-exam]] 7.91%×1.0 |
 | 코딩 | 34.5 | -1.04 | 실측 | [[terminal-bench]] 6.81818%×0.5 |
-| 에이전트 | 35.5 | -0.97 | 실측 | [[tau2-bench]] 28.655%×1.0, [[terminal-bench]] 6.81818%×1.0 |
+| 에이전트 | 35.4 | -0.97 | 실측 | [[tau2-bench]] 28.655%×1.0, [[terminal-bench]] 6.81818%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | — | — | 측정 안 됨 | — |

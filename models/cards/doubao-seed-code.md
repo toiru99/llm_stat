@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 51.6, z: 0.24, r: 53.5, estimated: false }  # 전문 지식
   reasoning: { s: 31.9, z: -0.16, r: 47.5, estimated: false }  # 추론
   coding: { s: 40.2, z: -0.03, r: 49.6, estimated: false }  # 코딩
-  agentic: { s: 49.5, z: 0.08, r: 51.3, estimated: false }  # 에이전트
+  agentic: { s: 49.5, z: 0.08, r: 51.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 71.5, z: 0.0, r: 50.1, estimated: false }  # 멀티모달
   long_context: { s: 80.8, z: 0.71, r: 60.6, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Doubao Seed Code
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Doubao Seed Code
@@ -46,7 +46,7 @@ ByteDance Seed · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **
 | 전문 지식 | 53.5 | +0.24 | 실측 | [[gpqa-diamond]] 76.3636%×0.4, [[humanitys-last-exam]] 14.0871%×0.3 |
 | 추론 | 47.5 | -0.16 | 실측 | [[critpt]] 0.285714%×1.0, [[gpqa-diamond]] 76.3636%×1.0, [[humanitys-last-exam]] 14.0871%×1.0 |
 | 코딩 | 49.6 | -0.03 | 실측 | [[terminal-bench]] 26.5152%×0.5 |
-| 에이전트 | 51.3 | +0.08 | 실측 | [[tau2-bench]] 58.1871%×1.0, [[terminal-bench]] 26.5152%×1.0 |
+| 에이전트 | 51.2 | +0.08 | 실측 | [[tau2-bench]] 58.1871%×1.0, [[terminal-bench]] 26.5152%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 50.1 | +0.0 | 실측 | [[mmmu-pro]] 68.0925%×1.0 |
 | 긴문맥 | 60.6 | +0.71 | 실측 | [[aa-lcr]] 71.6667%×1.0 |

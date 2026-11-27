@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 7.43033851624488
 price_blended_usd_1m: 0.77
-output_speed_tps: 112.055850736941
+output_speed_tps: 104.568189874166
 context_window: 200000
 status: past
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 43.4, z: -0.17, r: 47.5, estimated: false }  # 전문 지식
   reasoning: { s: 26.4, z: -0.44, r: 43.4, estimated: false }  # 추론
   coding: { s: 52.5, z: 0.39, r: 55.8, estimated: false }  # 코딩
-  agentic: { s: 41.2, z: -0.21, r: 46.9, estimated: false }  # 에이전트
+  agentic: { s: 41.2, z: -0.21, r: 46.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 58.8, z: -0.65, r: 40.3, estimated: false }  # 멀티모달
   long_context: { s: 83.8, z: 0.8, r: 62.0, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 4.5 Haiku
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Claude 4.5 Haiku
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **7.430
 - **약점**: 추론, 멀티모달
 
 ## 실용 지표
-`입력 $1.0 · 출력 $5.0 · 혼합 $0.77/1M · 112.055850736941 t/s · TTFT 19.7191219198681s · 200k ctx` · 가성비 9.6
+`입력 $1.0 · 출력 $5.0 · 혼합 $0.77/1M · 104.568189874166 t/s · TTFT 22.5182590567195s · 200k ctx` · 가성비 9.6
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **7.430
 | 전문 지식 | 47.5 | -0.17 | 실측 | [[gpqa-diamond]] 67.1717%×0.4, [[humanitys-last-exam]] 10.38%×0.3 |
 | 추론 | 43.4 | -0.44 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 67.1717%×1.0, [[humanitys-last-exam]] 10.38%×1.0 |
 | 코딩 | 55.8 | +0.39 | 실측 | [[scicode]] 42.2454%×1.0, [[terminal-bench]] 27.2727%×0.5 |
-| 에이전트 | 46.9 | -0.21 | 실측 | [[gdpval]] 739.32 Elo×1.0, [[tau2-bench]] 54.6784%×1.0, [[tau3-banking]] 9.27835%×1.0, [[terminal-bench]] 27.2727%×1.0 |
+| 에이전트 | 46.8 | -0.21 | 실측 | [[gdpval]] 739.32 Elo×1.0, [[tau2-bench]] 54.6784%×1.0, [[tau3-banking]] 9.27835%×1.0, [[terminal-bench]] 27.2727%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 40.3 | -0.65 | 실측 | [[mmmu-pro]] 58.5549%×1.0 |
 | 긴문맥 | 62.0 | +0.8 | 실측 | [[aa-lcr]] 74.3333%×1.0 |

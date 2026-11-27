@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 32.2, z: -0.71, r: 39.4, estimated: false }  # 전문 지식
   reasoning: { s: 22.1, z: -0.65, r: 40.3, estimated: false }  # 추론
   coding: { s: 53.9, z: 0.43, r: 56.5, estimated: false }  # 코딩
-  agentic: { s: 60.9, z: 0.49, r: 57.3, estimated: false }  # 에이전트
+  agentic: { s: 60.9, z: 0.48, r: 57.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 78.6, z: 0.64, r: 59.6, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Nemotron 3.5 Bolt 74B-A9B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Nemotron 3.5 Bolt 74B-A9B
@@ -46,7 +46,7 @@ NVIDIA · Open · Medium(74B) · 컨텍스트 262k · 종합지능 **None**
 | 전문 지식 | 39.4 | -0.71 | 실측 | [[humanitys-last-exam]] 24.6525%×0.3 |
 | 추론 | 40.3 | -0.65 | 실측 | [[critpt]] 4.28571%×1.0, [[humanitys-last-exam]] 24.6525%×1.0 |
 | 코딩 | 56.5 | +0.43 | 실측 | [[scicode]] 39.6991%×1.0 |
-| 에이전트 | 57.3 | +0.49 | 실측 | [[gdpval]] 979.03 Elo×1.0 |
+| 에이전트 | 57.2 | +0.48 | 실측 | [[gdpval]] 979.03 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 59.6 | +0.64 | 실측 | [[aa-lcr]] 69.6667%×1.0 |

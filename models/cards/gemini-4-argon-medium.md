@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: 47.7050699299147
 price_blended_usd_1m: 2.94
-output_speed_tps: 68.7166306555619
+output_speed_tps: 67.0581301996273
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 66.7, z: 0.97, r: 64.5, estimated: false }  # 전문 지식
   reasoning: { s: 65.8, z: 1.52, r: 72.8, estimated: false }  # 추론
   coding: { s: 85.5, z: 1.5, r: 72.5, estimated: false }  # 코딩
-  agentic: { s: 87.3, z: 1.42, r: 71.3, estimated: false }  # 에이전트
+  agentic: { s: 87.3, z: 1.41, r: 71.2, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: 98.5, z: 1.38, r: 70.7, estimated: false }  # 멀티모달
   long_context: { s: 88.3, z: 0.94, r: 64.1, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 4 Argon (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Gemini 4 Argon (medium)
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **47.7050699
 - **약점**: 전문 지식, 긴문맥
 
 ## 실용 지표
-`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 68.7166306555619 t/s · TTFT 10.3953555900802s · 1M ctx` · 가성비 16.2
+`입력 $4.0 · 출력 $20.0 · 혼합 $2.94/1M · 67.0581301996273 t/s · TTFT 9.17629694053765s · 1M ctx` · 가성비 16.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **47.7050699
 | 전문 지식 | 64.5 | +0.97 | 실측 | [[humanitys-last-exam]] 49.9073%×0.3 |
 | 추론 | 72.8 | +1.52 | 실측 | [[critpt]] 23.1429%×1.0, [[humanitys-last-exam]] 49.9073%×1.0 |
 | 코딩 | 72.5 | +1.5 | 실측 | [[scicode]] 58.912%×1.0 |
-| 에이전트 | 71.3 | +1.42 | 실측 | [[gdpval]] 1577.96 Elo×1.0 |
+| 에이전트 | 71.2 | +1.41 | 실측 | [[gdpval]] 1577.96 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 70.7 | +1.38 | 실측 | [[mmmu-pro]] 88.3237%×1.0 |
 | 긴문맥 | 64.1 | +0.94 | 실측 | [[aa-lcr]] 78.3333%×1.0 |

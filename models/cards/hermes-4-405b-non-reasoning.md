@@ -5,7 +5,7 @@ creator: Nous Research
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 1.2
-output_speed_tps: 32.2841755834408
+output_speed_tps: 32.7310027911723
 context_window: 128000
 status: current
 size_class: Large
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 30.8, z: -0.78, r: 38.4, estimated: false }  # 전문 지식
   reasoning: { s: 18.3, z: -0.84, r: 37.5, estimated: false }  # 추론
   coding: { s: 14.9, z: -0.88, r: 36.8, estimated: false }  # 코딩
-  agentic: { s: 20.9, z: -0.92, r: 36.1, estimated: false }  # 에이전트
+  agentic: { s: 20.9, z: -0.93, r: 36.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 24.8, z: -1.01, r: 34.9, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Hermes 4 405B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Hermes 4 405B (non-reasoning)
@@ -37,7 +37,7 @@ Nous Research · Open · Large(406B) · 컨텍스트 128k · 종합지능 **None
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $1.0 · 출력 $3.0 · 혼합 $1.2/1M · 32.2841755834408 t/s · TTFT 5.06518495101893s · 128k ctx`
+`입력 $1.0 · 출력 $3.0 · 혼합 $1.2/1M · 32.7310027911723 t/s · TTFT 5.10117847308512s · 128k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Nous Research · Open · Large(406B) · 컨텍스트 128k · 종합지능 **None
 | 전문 지식 | 38.4 | -0.78 | 실측 | [[gpqa-diamond]] 53.6364%×0.4, [[humanitys-last-exam]] 4.21687%×0.3 |
 | 추론 | 37.5 | -0.84 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 53.6364%×1.0, [[humanitys-last-exam]] 4.21687%×1.0 |
 | 코딩 | 36.8 | -0.88 | 실측 | [[terminal-bench]] 9.84848%×0.5 |
-| 에이전트 | 36.1 | -0.92 | 실측 | [[tau2-bench]] 26.6082%×1.0, [[terminal-bench]] 9.84848%×1.0 |
+| 에이전트 | 36.1 | -0.93 | 실측 | [[tau2-bench]] 26.6082%×1.0, [[terminal-bench]] 9.84848%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 34.9 | -1.01 | 실측 | [[aa-lcr]] 22%×1.0 |

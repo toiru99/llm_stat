@@ -5,7 +5,7 @@ creator: Upstage
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.15
-output_speed_tps: 54.9823415450937
+output_speed_tps: 54.8996400258817
 context_window: 4096
 status: past
 size_class: Small
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: null, z: null, r: null, estimated: false }  # 전문 지식
   reasoning: { s: null, z: null, r: null, estimated: false }  # 추론
   coding: { s: null, z: null, r: null, estimated: false }  # 코딩
-  agentic: { s: 20.4, z: -0.94, r: 35.9, estimated: false }  # 에이전트
+  agentic: { s: 20.4, z: -0.94, r: 35.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: null, z: null, r: null, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Mini
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-26
-timestamp: 2026-11-26T00:00:00Z
+updated: 2026-11-27
+timestamp: 2026-11-27T00:00:00Z
 ---
 
 # Solar Mini
@@ -37,7 +37,7 @@ Upstage · Open · Small(10.7B) · 컨텍스트 4k · 종합지능 **None** · �
 - **약점**: —
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.15 · 혼합 $0.15/1M · 54.9823415450937 t/s · TTFT 0.868447317166508s · 4k ctx`
+`입력 $0.15 · 출력 $0.15 · 혼합 $0.15/1M · 54.8996400258817 t/s · TTFT 0.836446393499832s · 4k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Upstage · Open · Small(10.7B) · 컨텍스트 4k · 종합지능 **None** · �
 | 전문 지식 | — | — | 측정 안 됨 | — |
 | 추론 | — | — | 측정 안 됨 | — |
 | 코딩 | — | — | 측정 안 됨 | — |
-| 에이전트 | 35.9 | -0.94 | 실측 | [[tau2-bench]] 20.1754%×1.0 |
+| 에이전트 | 35.8 | -0.94 | 실측 | [[tau2-bench]] 20.1754%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | — | — | 측정 안 됨 | — |
