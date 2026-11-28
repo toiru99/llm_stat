@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: 17.5023479440148
 price_blended_usd_1m: 0.47
-output_speed_tps: 57.9057859338214
+output_speed_tps: 59.3736887063596
 context_window: 256000
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.8 27B (medium)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # Qwen3.8 27B (medium)
@@ -37,7 +37,7 @@ Alibaba · Open · Small(27B) · 컨텍스트 256k · 종합지능 **17.50234794
 - **약점**: 코딩, 추론
 
 ## 실용 지표
-`입력 $0.5 · 출력 $3.0 · 혼합 $0.47/1M · 57.9057859338214 t/s · TTFT 15.2969773602008s · 256k ctx` · 가성비 37.2
+`입력 $0.5 · 출력 $3.0 · 혼합 $0.47/1M · 59.3736887063596 t/s · TTFT 15.4044649925633s · 256k ctx` · 가성비 37.2
 
 ## 레이더 8축 (평균=50 기준선)
 

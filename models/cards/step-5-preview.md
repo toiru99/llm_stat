@@ -5,7 +5,7 @@ creator: StepFun
 license: Open
 intelligence_index: 28.5161663448339
 price_blended_usd_1m: 0.54
-output_speed_tps: 77.031750424047
+output_speed_tps: 77.929618327249
 context_window: 1000000
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Step 5 Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # Step 5 Preview
@@ -37,7 +37,7 @@ StepFun · Open · Large(600B) · 컨텍스트 1M · 종합지능 **28.516166344
 - **약점**: 전문 지식, 멀티모달
 
 ## 실용 지표
-`입력 $1.0 · 출력 $2.7 · 혼합 $0.54/1M · 77.031750424047 t/s · TTFT 21.0393636112166s · 1M ctx` · 가성비 52.8
+`입력 $1.0 · 출력 $2.7 · 혼합 $0.54/1M · 77.929618327249 t/s · TTFT 19.3953879216408s · 1M ctx` · 가성비 52.8
 
 ## 레이더 8축 (평균=50 기준선)
 

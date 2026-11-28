@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.77
-output_speed_tps: 94.194063928622
+output_speed_tps: 92.4964906858538
 context_window: 200000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude 4.5 Haiku (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # Claude 4.5 Haiku (non-reasoning)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 200k · 종합지능 **None*
 - **약점**: 추론, 멀티모달
 
 ## 실용 지표
-`입력 $1.0 · 출력 $5.0 · 혼합 $0.77/1M · 94.194063928622 t/s · TTFT 1.1040160571972s · 200k ctx`
+`입력 $1.0 · 출력 $5.0 · 혼합 $0.77/1M · 92.4964906858538 t/s · TTFT 1.09607676308333s · 200k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

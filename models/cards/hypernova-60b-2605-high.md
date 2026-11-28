@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — HyperNova 60B 2605 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # HyperNova 60B 2605 (high)

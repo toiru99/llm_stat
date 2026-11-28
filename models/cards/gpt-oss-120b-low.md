@@ -5,7 +5,7 @@ creator: OpenAI
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.172
-output_speed_tps: 178.345900270512
+output_speed_tps: 182.772610064152
 context_window: 131072
 status: current
 size_class: Medium
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — gpt-oss-120b (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # gpt-oss-120b (low)
@@ -37,7 +37,7 @@ OpenAI · Open · Medium(117B) · 컨텍스트 131k · 종합지능 **None**
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $0.125 · 출력 $0.595 · 혼합 $0.172/1M · 178.345900270512 t/s · TTFT 1.0604435256734348s · 131k ctx`
+`입력 $0.125 · 출력 $0.595 · 혼합 $0.172/1M · 182.772610064152 t/s · TTFT 1.0835182895523499s · 131k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ OpenAI · Open · Medium(117B) · 컨텍스트 131k · 종합지능 **None**
 | 전문 지식 | 45.6 | -0.29 | 실측 | [[gpqa-diamond]] 67.1717%×0.4, [[humanitys-last-exam]] 5.88508%×0.3 |
 | 추론 | 41.9 | -0.54 | 실측 | [[critpt]] 0%×1.0, [[gpqa-diamond]] 67.1717%×1.0, [[humanitys-last-exam]] 5.88508%×1.0 |
 | 코딩 | 33.3 | -1.11 | 실측 | [[terminal-bench]] 5.30303%×0.5 |
-| 에이전트 | 36.2 | -0.92 | 실측 | [[gdpval]] 179.12 Elo×1.0, [[tau2-bench]] 45.0292%×1.0, [[tau3-banking]] 2.8866%×1.0, [[terminal-bench]] 5.30303%×1.0 |
+| 에이전트 | 36.2 | -0.92 | 실측 | [[gdpval]] 179.36 Elo×1.0, [[tau2-bench]] 45.0292%×1.0, [[tau3-banking]] 2.8866%×1.0, [[terminal-bench]] 5.30303%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 47.3 | -0.18 | 실측 | [[aa-lcr]] 46%×1.0 |

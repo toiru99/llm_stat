@@ -5,7 +5,7 @@ creator: MiniMax
 license: Open
 intelligence_index: 29.0595214290458
 price_blended_usd_1m: 0.1005
-output_speed_tps: 131.982560449681
+output_speed_tps: 133.55024645744
 context_window: 1000000
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiniMax-M3.1-Flash
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # MiniMax-M3.1-Flash
@@ -37,7 +37,7 @@ MiniMax · Open · Large(428B) · 컨텍스트 1M · 종합지능 **29.059521429
 - **약점**: 전문 지식, 멀티모달
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · 131.982560449681 t/s · TTFT 1.55717665619463s · 1M ctx` · 가성비 289.1
+`입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · 133.55024645744 t/s · TTFT 1.51110305230131s · 1M ctx` · 가성비 289.1
 
 ## 레이더 8축 (평균=50 기준선)
 

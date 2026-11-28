@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.9
-output_speed_tps: 48.2302116042177
+output_speed_tps: 47.6892251928516
 context_window: 262144
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 397B A17B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # Qwen3.5 397B A17B (non-reasoning)
@@ -37,7 +37,7 @@ Alibaba · Open · Large(397B) · 컨텍스트 262k · 종합지능 **None**
 - **약점**: 추론, 멀티모달
 
 ## 실용 지표
-`입력 $0.6 · 출력 $3.6 · 혼합 $0.9/1M · 48.2302116042177 t/s · TTFT 2.4816463320385s · 262k ctx`
+`입력 $0.6 · 출력 $3.6 · 혼합 $0.9/1M · 47.6892251928516 t/s · TTFT 2.41321033598533s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

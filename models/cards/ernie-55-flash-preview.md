@@ -5,7 +5,7 @@ creator: Baidu
 license: Open
 intelligence_index: 31.2872256906399
 price_blended_usd_1m: 0.1886
-output_speed_tps: 182.954173315904
+output_speed_tps: 176.506261417735
 context_window: 1024000
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — ERNIE 5.5 Flash Preview
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # ERNIE 5.5 Flash Preview
@@ -37,7 +37,7 @@ Baidu · Open · Large(280B) · 컨텍스트 1M · 종합지능 **31.28722569063
 - **약점**: —
 
 ## 실용 지표
-`입력 $0.28 · 출력 $1.13 · 혼합 $0.1886/1M · 182.954173315904 t/s · TTFT 2.71974817378054s · 1M ctx` · 가성비 165.9
+`입력 $0.28 · 출력 $1.13 · 혼합 $0.1886/1M · 176.506261417735 t/s · TTFT 3.65857872434999s · 1M ctx` · 가성비 165.9
 
 ## 레이더 8축 (평균=50 기준선)
 

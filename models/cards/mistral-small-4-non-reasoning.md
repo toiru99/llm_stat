@@ -5,7 +5,7 @@ creator: Mistral
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.1005
-output_speed_tps: 130.577322610518
+output_speed_tps: 127.003569297378
 context_window: 256000
 status: current
 size_class: Medium
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Mistral Small 4 (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # Mistral Small 4 (non-reasoning)
@@ -37,7 +37,7 @@ Mistral · Open · Medium(119B) · 컨텍스트 256k · 종합지능 **None**
 - **약점**: 에이전트, 멀티모달
 
 ## 실용 지표
-`입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · 130.577322610518 t/s · TTFT 1.53543533004056s · 256k ctx`
+`입력 $0.15 · 출력 $0.6 · 혼합 $0.1005/1M · 127.003569297378 t/s · TTFT 1.50950268122171s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

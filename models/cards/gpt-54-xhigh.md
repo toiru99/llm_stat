@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 2.175
-output_speed_tps: 75.7208312418593
+output_speed_tps: 78.1807574056531
 context_window: 1050000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-5.4 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # GPT-5.4 (xhigh)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 - **약점**: 긴문맥, 멀티모달
 
 ## 실용 지표
-`입력 $2.5 · 출력 $15.0 · 혼합 $2.175/1M · 75.7208312418593 t/s · TTFT 94.9031604727999s · 1M ctx`
+`입력 $2.5 · 출력 $15.0 · 혼합 $2.175/1M · 78.1807574056531 t/s · TTFT 83.3327783245972s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

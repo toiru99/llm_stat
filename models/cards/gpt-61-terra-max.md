@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 51.3907865344692
 price_blended_usd_1m: 0.735
-output_speed_tps: 63.0035947892391
+output_speed_tps: 61.5330637352849
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6.1 Terra (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # GPT-6.1 Terra (max)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **51.3907865
 - **약점**: 긴문맥, 전문 지식
 
 ## 실용 지표
-`입력 $1.0 · 출력 $5.0 · 혼합 $0.735/1M · 63.0035947892391 t/s · TTFT 194.880214618079s · 1M ctx` · 가성비 69.9
+`입력 $1.0 · 출력 $5.0 · 혼합 $0.735/1M · 61.5330637352849 t/s · TTFT 202.275939706731s · 1M ctx` · 가성비 69.9
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **51.3907865
 | 전문 지식 | 60.9 | +0.73 | 실측 | [[humanitys-last-exam]] 46.2465%×0.3 |
 | 추론 | 76.0 | +1.73 | 실측 | [[critpt]] 28%×1.0, [[humanitys-last-exam]] 46.2465%×1.0 |
 | 코딩 | 69.3 | +1.29 | 실측 | [[scicode]] 55.0926%×1.0 |
-| 에이전트 | 68.8 | +1.25 | 실측 | [[gdpval]] 1474.92 Elo×1.0 |
+| 에이전트 | 68.8 | +1.25 | 실측 | [[gdpval]] 1475.02 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 67.0 | +1.13 | 실측 | [[mmmu-pro]] 84.6821%×1.0 |
 | 긴문맥 | 66.3 | +1.09 | 실측 | [[aa-lcr]] 82.6667%×1.0 |

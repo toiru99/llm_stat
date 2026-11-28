@@ -5,7 +5,7 @@ creator: OpenAI
 license: Proprietary
 intelligence_index: 42.5354609722664
 price_blended_usd_1m: 0.735
-output_speed_tps: 60.3112320473174
+output_speed_tps: 58.730913229983
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — GPT-6.1 Terra (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # GPT-6.1 Terra (high)
@@ -37,7 +37,7 @@ OpenAI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **42.5354609
 - **약점**: 멀티모달, 전문 지식
 
 ## 실용 지표
-`입력 $1.0 · 출력 $5.0 · 혼합 $0.735/1M · 60.3112320473174 t/s · TTFT 13.8917394423185s · 1M ctx` · 가성비 57.9
+`입력 $1.0 · 출력 $5.0 · 혼합 $0.735/1M · 58.730913229983 t/s · TTFT 14.3581555542633s · 1M ctx` · 가성비 57.9
 
 ## 레이더 8축 (평균=50 기준선)
 

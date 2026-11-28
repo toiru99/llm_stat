@@ -5,7 +5,7 @@ creator: Kimi
 license: Open
 intelligence_index: 17.4191985300887
 price_blended_usd_1m: 2.31
-output_speed_tps: 39.9016069525314
+output_speed_tps: 40.9971299098249
 context_window: 1048576
 status: past
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Kimi K3 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # Kimi K3 (low)
@@ -37,7 +37,7 @@ Kimi · Open · Large(2800B) · 컨텍스트 1M · 종합지능 **17.41919853008
 - **약점**: 멀티모달, 추론
 
 ## 실용 지표
-`입력 $3.0 · 출력 $15.0 · 혼합 $2.31/1M · 39.9016069525314 t/s · TTFT 4.93076612055834s · 1M ctx` · 가성비 7.5
+`입력 $3.0 · 출력 $15.0 · 혼합 $2.31/1M · 40.9971299098249 t/s · TTFT 4.49389521304031s · 1M ctx` · 가성비 7.5
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: Sapiens AI
 license: Proprietary
 intelligence_index: 24.0795175738641
 price_blended_usd_1m: 0.057
-output_speed_tps: 151.252069567518
+output_speed_tps: 151.631152862549
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Agnes 2.5 Pro Theta
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # Agnes 2.5 Pro Theta
@@ -37,7 +37,7 @@ Sapiens AI · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **24.079
 - **약점**: 추론, 전문 지식
 
 ## 실용 지표
-`입력 $0.1 · 출력 $0.3 · 혼합 $0.057/1M · 151.252069567518 t/s · TTFT 2.98097452634452s · 1M ctx` · 가성비 422.4
+`입력 $0.1 · 출력 $0.3 · 혼합 $0.057/1M · 151.631152862549 t/s · TTFT 2.89994356065227s · 1M ctx` · 가성비 422.4
 
 ## 레이더 8축 (평균=50 기준선)
 

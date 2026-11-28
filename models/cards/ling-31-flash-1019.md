@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 57.9, z: 0.54, r: 58.1, estimated: false }  # 전문 지식
   reasoning: { s: 65.4, z: 1.5, r: 72.5, estimated: false }  # 추론
   coding: { s: 82.1, z: 1.38, r: 70.8, estimated: false }  # 코딩
-  agentic: { s: 90.8, z: 1.54, r: 73.1, estimated: false }  # 에이전트
+  agentic: { s: 90.9, z: 1.54, r: 73.1, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 92.9, z: 1.08, r: 66.1, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Ling 3.1 Flash 1019
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # Ling 3.1 Flash 1019
@@ -46,7 +46,7 @@ InclusionAI · Open · Large(560B) · 컨텍스트 1M · 종합지능 **29.65471
 | 전문 지식 | 58.1 | +0.54 | 실측 | [[humanitys-last-exam]] 43.4662%×0.3 |
 | 추론 | 72.5 | +1.5 | 실측 | [[critpt]] 26%×1.0, [[humanitys-last-exam]] 43.4662%×1.0 |
 | 코딩 | 70.8 | +1.38 | 실측 | [[scicode]] 56.8287%×1.0 |
-| 에이전트 | 73.1 | +1.54 | 실측 | [[gdpval]] 1658.34 Elo×1.0 |
+| 에이전트 | 73.1 | +1.54 | 실측 | [[gdpval]] 1659.54 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 66.1 | +1.08 | 실측 | [[aa-lcr]] 82.3333%×1.0 |

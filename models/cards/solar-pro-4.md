@@ -5,7 +5,7 @@ creator: Upstage
 license: Proprietary
 intelligence_index: 14.1589437644357
 price_blended_usd_1m: 0.222
-output_speed_tps: 80.9544353448477
+output_speed_tps: 92.1347238925546
 context_window: 512000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Solar Pro 4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # Solar Pro 4
@@ -37,7 +37,7 @@ Upstage · Proprietary · Unknown · 컨텍스트 512k · 종합지능 **14.1589
 - **약점**: 긴문맥, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 80.9544353448477 t/s · TTFT 2.40219196482158s · 512k ctx` · 가성비 63.8
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.222/1M · 92.1347238925546 t/s · TTFT 2.36812871988512s · 512k ctx` · 가성비 63.8
 
 ## 레이더 8축 (평균=50 기준선)
 

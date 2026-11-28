@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 1.175
-output_speed_tps: 40.361759565126
+output_speed_tps: 41.0857963696679
 context_window: 262000
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.8 2.4T A95B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # Qwen3.8 2.4T A95B
@@ -37,7 +37,7 @@ Alibaba · Open · Large(2400B) · 컨텍스트 262k · 종합지능 **None**
 - **약점**: 코딩, 긴문맥
 
 ## 실용 지표
-`입력 $2.0 · 출력 $6.0 · 혼합 $1.175/1M · 40.361759565126 t/s · TTFT 4.79522950175447s · 262k ctx`
+`입력 $2.0 · 출력 $6.0 · 혼합 $1.175/1M · 41.0857963696679 t/s · TTFT 4.64386560228163s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

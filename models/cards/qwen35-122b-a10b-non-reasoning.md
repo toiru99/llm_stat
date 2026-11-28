@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.68
-output_speed_tps: 105.322620339454
+output_speed_tps: 102.614420691521
 context_window: 262144
 status: current
 size_class: Medium
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 122B A10B (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # Qwen3.5 122B A10B (non-reasoning)
@@ -37,7 +37,7 @@ Alibaba · Open · Medium(125B) · 컨텍스트 262k · 종합지능 **None**
 - **약점**: 에이전트, 추론
 
 ## 실용 지표
-`입력 $0.4 · 출력 $3.2 · 혼합 $0.68/1M · 105.322620339454 t/s · TTFT 4.40071163066309s · 262k ctx`
+`입력 $0.4 · 출력 $3.2 · 혼합 $0.68/1M · 102.614420691521 t/s · TTFT 4.36327653914908s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

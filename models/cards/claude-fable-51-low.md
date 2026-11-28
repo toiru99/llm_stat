@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 38.683648810734
 price_blended_usd_1m: 7.175
-output_speed_tps: 87.9357732843586
+output_speed_tps: 88.7980476033397
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Fable 5.1 (low)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # Claude Fable 5.1 (low)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **38.6836
 - **약점**: 에이전트, 긴문맥
 
 ## 실용 지표
-`입력 $10.0 · 출력 $50.0 · 혼합 $7.175/1M · 87.9357732843586 t/s · TTFT 4.1976173043287s · 1M ctx` · 가성비 5.4
+`입력 $10.0 · 출력 $50.0 · 혼합 $7.175/1M · 88.7980476033397 t/s · TTFT 3.67810501232451s · 1M ctx` · 가성비 5.4
 
 ## 레이더 8축 (평균=50 기준선)
 

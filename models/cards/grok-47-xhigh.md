@@ -5,7 +5,7 @@ creator: SpaceXAI
 license: Proprietary
 intelligence_index: 35.3663261006589
 price_blended_usd_1m: 1.35
-output_speed_tps: 77.0051138629989
+output_speed_tps: 77.1373402541674
 context_window: 500000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Grok 4.7 (xhigh)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # Grok 4.7 (xhigh)
@@ -37,7 +37,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **35.366
 - **약점**: 긴문맥, 전문 지식
 
 ## 실용 지표
-`입력 $2.0 · 출력 $6.0 · 혼합 $1.35/1M · 77.0051138629989 t/s · TTFT 51.3948991119911s · 500k ctx` · 가성비 26.2
+`입력 $2.0 · 출력 $6.0 · 혼합 $1.35/1M · 77.1373402541674 t/s · TTFT 47.4754760886734s · 500k ctx` · 가성비 26.2
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ SpaceXAI · Proprietary · Unknown · 컨텍스트 500k · 종합지능 **35.366
 | 전문 지식 | 57.8 | +0.52 | 실측 | [[humanitys-last-exam]] 43.1418%×0.3 |
 | 추론 | 63.7 | +0.91 | 실측 | [[critpt]] 17.7143%×1.0, [[humanitys-last-exam]] 43.1418%×1.0 |
 | 코딩 | 71.2 | +1.42 | 실측 | [[scicode]] 57.4074%×1.0 |
-| 에이전트 | 74.4 | +1.63 | 실측 | [[gdpval]] 1717.09 Elo×1.0 |
+| 에이전트 | 74.4 | +1.63 | 실측 | [[gdpval]] 1716.24 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 63.2 | +0.88 | 실측 | [[aa-lcr]] 76.6667%×1.0 |

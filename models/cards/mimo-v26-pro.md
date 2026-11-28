@@ -5,7 +5,7 @@ creator: Xiaomi
 license: Open
 intelligence_index: 29.9402883598371
 price_blended_usd_1m: 0.1765
-output_speed_tps: 43.1534372078208
+output_speed_tps: 43.9052541993838
 context_window: 1000000
 status: current
 size_class: Large
@@ -15,7 +15,7 @@ radar:
   knowledge: { s: 65.9, z: 0.93, r: 64.0, estimated: false }  # 전문 지식
   reasoning: { s: 70.2, z: 1.74, r: 76.1, estimated: false }  # 추론
   coding: { s: 88.8, z: 1.61, r: 74.1, estimated: false }  # 코딩
-  agentic: { s: 92.3, z: 1.59, r: 73.8, estimated: false }  # 에이전트
+  agentic: { s: 92.2, z: 1.59, r: 73.8, estimated: false }  # 에이전트
   trust: { s: null, z: null, r: null, estimated: false }  # 신뢰성
   multimodal: { s: null, z: null, r: null, estimated: false }  # 멀티모달
   long_context: { s: 97.4, z: 1.21, r: 68.2, estimated: false }  # 긴문맥
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — MiMo-V2.6-Pro
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # MiMo-V2.6-Pro
@@ -37,7 +37,7 @@ Xiaomi · Open · Large(1000B) · 컨텍스트 1M · 종합지능 **29.940288359
 - **약점**: 긴문맥, 전문 지식
 
 ## 실용 지표
-`입력 $0.435 · 출력 $0.87 · 혼합 $0.1765/1M · 43.1534372078208 t/s · TTFT 4.36900910549368s · 1M ctx` · 가성비 169.6
+`입력 $0.435 · 출력 $0.87 · 혼합 $0.1765/1M · 43.9052541993838 t/s · TTFT 4.34090291904913s · 1M ctx` · 가성비 169.6
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Xiaomi · Open · Large(1000B) · 컨텍스트 1M · 종합지능 **29.940288359
 | 전문 지식 | 64.0 | +0.93 | 실측 | [[humanitys-last-exam]] 49.3513%×0.3 |
 | 추론 | 76.1 | +1.74 | 실측 | [[critpt]] 26.5714%×1.0, [[humanitys-last-exam]] 49.3513%×1.0 |
 | 코딩 | 74.1 | +1.61 | 실측 | [[scicode]] 60.8796%×1.0 |
-| 에이전트 | 73.8 | +1.59 | 실측 | [[gdpval]] 1691.43 Elo×1.0 |
+| 에이전트 | 73.8 | +1.59 | 실측 | [[gdpval]] 1690.23 Elo×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 68.2 | +1.21 | 실측 | [[aa-lcr]] 86.3333%×1.0 |

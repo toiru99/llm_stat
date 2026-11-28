@@ -5,7 +5,7 @@ creator: Tencent
 license: Open
 intelligence_index: 34.5713610139983
 price_blended_usd_1m: 0.4463
-output_speed_tps: 98.1060287953321
+output_speed_tps: 98.5337426758772
 context_window: 1048576
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Tencent Hy4
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # Tencent Hy4
@@ -37,7 +37,7 @@ Tencent · Open · Large(774B) · 컨텍스트 1M · 종합지능 **34.571361013
 - **약점**: —
 
 ## 실용 지표
-`입력 $0.834 · 출력 $2.501 · 혼합 $0.4463/1M · 98.1060287953321 t/s · TTFT 2.90095915268582s · 1M ctx` · 가성비 77.5
+`입력 $0.834 · 출력 $2.501 · 혼합 $0.4463/1M · 98.5337426758772 t/s · TTFT 2.87469860007308s · 1M ctx` · 가성비 77.5
 
 ## 레이더 8축 (평균=50 기준선)
 

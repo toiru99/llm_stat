@@ -5,7 +5,7 @@ creator: Alibaba
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.84
-output_speed_tps: 69.3877078595753
+output_speed_tps: 71.5854823718441
 context_window: 256000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3.5 Omni Plus
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # Qwen3.5 Omni Plus
@@ -37,7 +37,7 @@ Alibaba · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **None**
 - **약점**: 추론, 코딩
 
 ## 실용 지표
-`입력 $0.4 · 출력 $4.8 · 혼합 $0.84/1M · 69.3877078595753 t/s · TTFT 2.80470320035882s · 256k ctx`
+`입력 $0.4 · 출력 $4.8 · 혼합 $0.84/1M · 71.5854823718441 t/s · TTFT 2.7170589203458s · 256k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

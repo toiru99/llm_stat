@@ -5,7 +5,7 @@ creator: Anthropic
 license: Proprietary
 intelligence_index: 41.4835446931087
 price_blended_usd_1m: 1.47
-output_speed_tps: 142.147833536316
+output_speed_tps: 141.233349452209
 context_window: 1000000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Claude Sonnet 5.5 (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # Claude Sonnet 5.5 (high)
@@ -37,7 +37,7 @@ Anthropic · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **41.4835
 - **약점**: 긴문맥, 전문 지식
 
 ## 실용 지표
-`입력 $2.0 · 출력 $10.0 · 혼합 $1.47/1M · 142.147833536316 t/s · TTFT 13.6309651137256s · 1M ctx` · 가성비 28.2
+`입력 $2.0 · 출력 $10.0 · 혼합 $1.47/1M · 141.233349452209 t/s · TTFT 12.9864354870087s · 1M ctx` · 가성비 28.2
 
 ## 레이더 8축 (평균=50 기준선)
 

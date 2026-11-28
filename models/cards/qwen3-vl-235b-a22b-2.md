@@ -5,7 +5,7 @@ creator: Alibaba
 license: Open
 intelligence_index: None
 price_blended_usd_1m: 0.294
-output_speed_tps: 29.4511779986241
+output_speed_tps: 33.2501920532697
 context_window: 262144
 status: past
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Qwen3 VL 235B A22B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # Qwen3 VL 235B A22B
@@ -37,7 +37,7 @@ Alibaba · Open · Large(235B) · 컨텍스트 262k · 종합지능 **None** · 
 - **약점**: 에이전트, 코딩
 
 ## 실용 지표
-`입력 $0.215 · 출력 $1.39 · 혼합 $0.294/1M · 29.4511779986241 t/s · TTFT 3.01395695634666s · 262k ctx`
+`입력 $0.215 · 출력 $1.39 · 혼합 $0.294/1M · 33.2501920532697 t/s · TTFT 3.12046259983003s · 262k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

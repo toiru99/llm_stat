@@ -5,7 +5,7 @@ creator: Institute of Foundation Models
 license: Open
 intelligence_index: 17.7898262037058
 price_blended_usd_1m: 0
-output_speed_tps: 318.731666323318
+output_speed_tps: 323.900332916803
 context_window: 524288
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — K2 Horizon 375B A23B
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # K2 Horizon 375B A23B
@@ -37,7 +37,7 @@ Institute of Foundation Models · Open · Large(375B) · 컨텍스트 524k · �
 - **약점**: 추론, 코딩
 
 ## 실용 지표
-`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 318.731666323318 t/s · TTFT 3.05340465115331s · 524k ctx`
+`입력 $0.0 · 출력 $0.0 · 혼합 $0/1M · 323.900332916803 t/s · TTFT 2.97613185127018s · 524k ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Institute of Foundation Models · Open · Large(375B) · 컨텍스트 524k · �
 | 전문 지식 | 66.4 | +1.09 | 실측 | [[gpqa-diamond]] 87.2727%×0.4, [[humanitys-last-exam]] 31.9741%×0.3 |
 | 추론 | 59.7 | +0.65 | 실측 | [[critpt]] 4.57143%×1.0, [[gpqa-diamond]] 87.2727%×1.0, [[humanitys-last-exam]] 31.9741%×1.0 |
 | 코딩 | 59.2 | +0.61 | 실측 | [[scicode]] 42.9398%×1.0 |
-| 에이전트 | 63.2 | +0.88 | 실측 | [[gdpval]] 1363.76 Elo×1.0, [[tau3-banking]] 34.2268%×1.0 |
+| 에이전트 | 63.2 | +0.88 | 실측 | [[gdpval]] 1363.83 Elo×1.0, [[tau3-banking]] 34.2268%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | — | — | 측정 안 됨 | — |
 | 긴문맥 | 64.9 | +1.0 | 실측 | [[aa-lcr]] 80%×1.0 |

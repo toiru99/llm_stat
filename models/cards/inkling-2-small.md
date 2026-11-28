@@ -5,7 +5,7 @@ creator: Thinking Machines
 license: Open
 intelligence_index: 30.6791832004009
 price_blended_usd_1m: 0.181
-output_speed_tps: 104.02187427729
+output_speed_tps: 107.289640500968
 context_window: 1024000
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Inkling 2 Small
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # Inkling 2 Small
@@ -37,7 +37,7 @@ Thinking Machines · Open · Large(594B) · 컨텍스트 1M · 종합지능 **30
 - **약점**: 멀티모달, 전문 지식
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.0 · 혼합 $0.181/1M · 104.02187427729 t/s · TTFT 1.9309512308162s · 1M ctx` · 가성비 169.5
+`입력 $0.3 · 출력 $1.0 · 혼합 $0.181/1M · 107.289640500968 t/s · TTFT 1.75189145459318s · 1M ctx` · 가성비 169.5
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: Google
 license: Proprietary
 intelligence_index: None
 price_blended_usd_1m: 0.435
-output_speed_tps: 171.988063302014
+output_speed_tps: 171.834342732873
 context_window: 1000000
 status: past
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Gemini 3 Flash (non-reasoning)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # Gemini 3 Flash (non-reasoning)
@@ -37,7 +37,7 @@ Google · Proprietary · Unknown · 컨텍스트 1M · 종합지능 **None** · 
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.5 · 출력 $3.0 · 혼합 $0.435/1M · 171.988063302014 t/s · TTFT 1.2852437720111s · 1M ctx`
+`입력 $0.5 · 출력 $3.0 · 혼합 $0.435/1M · 171.834342732873 t/s · TTFT 1.28999103813064s · 1M ctx`
 
 ## 레이더 8축 (평균=50 기준선)
 

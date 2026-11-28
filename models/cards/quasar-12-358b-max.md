@@ -5,7 +5,7 @@ creator: Multiverse Computing
 license: Proprietary
 intelligence_index: 23.0788933047591
 price_blended_usd_1m: 0.0592
-output_speed_tps: 130.877230493704
+output_speed_tps: 137.345937938179
 context_window: 1000000
 status: current
 size_class: Large
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Quasar 1.2 358B (max)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # Quasar 1.2 358B (max)
@@ -37,7 +37,7 @@ Multiverse Computing · Proprietary · Large · 컨텍스트 1M · 종합지능 
 - **약점**: —
 
 ## 실용 지표
-`입력 $0.11 · 출력 $0.33 · 혼합 $0.0592/1M · 130.877230493704 t/s · TTFT 1.86158306527776s · 1M ctx` · 가성비 389.8
+`입력 $0.11 · 출력 $0.33 · 혼합 $0.0592/1M · 137.345937938179 t/s · TTFT 2.61697916779305s · 1M ctx` · 가성비 389.8
 
 ## 레이더 8축 (평균=50 기준선)
 

@@ -5,7 +5,7 @@ creator: Meta
 license: Open
 intelligence_index: 6.31022664307401
 price_blended_usd_1m: 0.208
-output_speed_tps: 88.7801381515557
+output_speed_tps: 93.1663971456682
 context_window: 131072
 status: current
 size_class: Small
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Muse Glimmer (high)
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # Muse Glimmer (high)
@@ -37,7 +37,7 @@ Meta · Open · Small(30B) · 컨텍스트 131k · 종합지능 **6.310226643074
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $1.2 · 혼합 $0.208/1M · 88.7801381515557 t/s · TTFT 1.17934637855621s · 131k ctx` · 가성비 30.3
+`입력 $0.3 · 출력 $1.2 · 혼합 $0.208/1M · 93.1663971456682 t/s · TTFT 1.19212217225547s · 131k ctx` · 가성비 30.3
 
 ## 레이더 8축 (평균=50 기준선)
 
@@ -46,7 +46,7 @@ Meta · Open · Small(30B) · 컨텍스트 131k · 종합지능 **6.310226643074
 | 전문 지식 | 60.3 | +0.69 | 실측 | [[gpqa-diamond]] 83.5354%×0.4, [[humanitys-last-exam]] 21.9648%×0.3 |
 | 추론 | 53.9 | +0.26 | 실측 | [[critpt]] 2.57143%×1.0, [[gpqa-diamond]] 83.5354%×1.0, [[humanitys-last-exam]] 21.9648%×1.0 |
 | 코딩 | 60.8 | +0.72 | 실측 | [[scicode]] 44.9074%×1.0 |
-| 에이전트 | 51.0 | +0.07 | 실측 | [[gdpval]] 791.69 Elo×1.0, [[tau3-banking]] 23.5052%×1.0 |
+| 에이전트 | 51.0 | +0.07 | 실측 | [[gdpval]] 791.93 Elo×1.0, [[tau3-banking]] 23.5052%×1.0 |
 | 신뢰성 | — | — | 측정 안 됨 | — |
 | 멀티모달 | 56.4 | +0.43 | 실측 | [[mmmu-pro]] 74.3353%×1.0 |
 | 긴문맥 | 66.7 | +1.11 | 실측 | [[aa-lcr]] 83.3333%×1.0 |

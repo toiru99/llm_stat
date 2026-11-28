@@ -5,7 +5,7 @@ creator: Apodex
 license: Proprietary
 intelligence_index: 13.7217935132339
 price_blended_usd_1m: 0.381
-output_speed_tps: 143.752977951784
+output_speed_tps: 143.540114828436
 context_window: 256000
 status: current
 size_class: Unknown
@@ -24,8 +24,8 @@ sources:
   - type: leaderboard
     title: Artificial Analysis — Apodex 1.1
     url: https://artificialanalysis.ai/leaderboards/models
-updated: 2026-11-27
-timestamp: 2026-11-27T00:00:00Z
+updated: 2026-11-28
+timestamp: 2026-11-28T00:00:00Z
 ---
 
 # Apodex 1.1
@@ -37,7 +37,7 @@ Apodex · Proprietary · Unknown · 컨텍스트 256k · 종합지능 **13.72179
 - **약점**: 추론, 에이전트
 
 ## 실용 지표
-`입력 $0.3 · 출력 $3.0 · 혼합 $0.381/1M · 143.752977951784 t/s · TTFT 1.99473490273894s · 256k ctx` · 가성비 36.0
+`입력 $0.3 · 출력 $3.0 · 혼합 $0.381/1M · 143.540114828436 t/s · TTFT 1.96163432583176s · 256k ctx` · 가성비 36.0
 
 ## 레이더 8축 (평균=50 기준선)
 
